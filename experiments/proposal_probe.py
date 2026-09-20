@@ -75,6 +75,7 @@ def verdict(text: str) -> str | None:
 
 
 def grade_rows(rows: list[dict], worlds: list[dict], seeds: list[int], modes: list[str]) -> dict:
+    problems = {w["id"]: render(w) for w in worlds}
     expected = {
         (w["id"], seed, mode): oracle(w) for w in worlds for seed in seeds for mode in modes
     }
@@ -83,6 +84,11 @@ def grade_rows(rows: list[dict], worlds: list[dict], seeds: list[int], modes: li
         key = row["id"], row["seed"], row["result"]["mode"]
         if key not in expected or key in observed:
             raise ValueError("Unexpected or duplicate evaluation row")
+        if any(
+            row["request"].get(field) != problems[row["id"]][field]
+            for field in ("question", "evidence")
+        ):
+            raise ValueError("Recorded problem does not match the oracle fixture")
         observed[key] = row["result"]
     grades = []
     for (case_id, seed, mode), gold in expected.items():

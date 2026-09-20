@@ -22,3 +22,8 @@ Keep raw public-safe inputs, candidates, decisions, returned model versions, and
 summary provenance together. Write a new dated report for a new experiment;
 never rewrite historical evidence to match a desired conclusion. Negative results
 and differences from a hypothesis are findings, not reasons to hide a run.
+
+
+When joining generated outputs to an oracle, verify the recorded question and
+source evidence as well as the case ID. A reused ID can otherwise attach a valid
+label to a different problem. Keep missing planned runs in the denominator.

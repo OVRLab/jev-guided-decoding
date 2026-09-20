@@ -1,0 +1,30 @@
+{
+  "instructions": {
+    "planned_batches": 8,
+    "executed_batches": 8,
+    "batches_with_eligible_candidate": 0,
+    "eligible_candidates": 0,
+    "generated_tokens": 276,
+    "decode_token_slots": 288,
+    "prefill_tokens": 6678,
+    "api_calls": 8,
+    "jev_input_tokens": 7252,
+    "jev_output_tokens": 526,
+    "elapsed_seconds": 23.603691457770765,
+    "jev_seconds": 2.710427791811526
+  },
+  "examples": {
+    "planned_batches": 8,
+    "executed_batches": 8,
+    "batches_with_eligible_candidate": 6,
+    "eligible_candidates": 7,
+    "generated_tokens": 490,
+    "decode_token_slots": 519,
+    "prefill_tokens": 18966,
+    "api_calls": 8,
+    "jev_input_tokens": 8830,
+    "jev_output_tokens": 678,
+    "elapsed_seconds": 65.25404637353495,
+    "jev_seconds": 5.33724195882678
+  }
+}

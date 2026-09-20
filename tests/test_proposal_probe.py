@@ -95,6 +95,7 @@ def test_grading_keeps_missing_and_incomplete_runs_in_the_denominator():
             },
         }
     ]
+    rows[0]["request"] = probe()["render"](world())
     grade = probe()["grade_rows"](rows, [world()], [42, 43], ["jev"])
     assert grade["summary"]["jev"] == {
         "planned_runs": 2,
@@ -116,7 +117,25 @@ def test_grading_rejects_duplicate_rows_and_checks_actual_verdict():
             "stop_reason": "complete",
         },
     }
+    row["request"] = probe()["render"](world())
     grade = probe()["grade_rows"]([row], [world()], [42], ["jev"])
     assert grade["summary"]["jev"]["matching_verdicts"] == 0
     with pytest.raises(ValueError, match="duplicate"):
         probe()["grade_rows"]([row, row], [world()], [42], ["jev"])
+
+
+def test_grading_refuses_a_reused_case_id_with_different_evidence():
+    row = {
+        "id": "test",
+        "seed": 42,
+        "request": probe()["render"](world()),
+        "result": {
+            "mode": "jev",
+            "phase": "complete",
+            "text": "UNKNOWN",
+            "stop_reason": "complete",
+        },
+    }
+    row["request"]["evidence"] = "DIFFERENT_PROBLEM"
+    with pytest.raises(ValueError, match="problem"):
+        probe()["grade_rows"]([row], [world()], [42], ["jev"])

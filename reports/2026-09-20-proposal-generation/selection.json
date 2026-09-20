@@ -1,0 +1,38 @@
+{
+  "selected_at_utc": "2026-09-20T12:18:44.289390+00:00",
+  "selected_style": "examples",
+  "revision": "conclusion-first demonstrations v2",
+  "prompt_source_commit": "20aa8454d3beaf26d6d635c729b93acbd06260d7",
+  "prompt_sha256": "80953fcd02df93f9c14dc5a459f715dc4bb0654034421a8892677dab751fb7c8",
+  "fixture_sha256": "3a05fc85aee33f9e87bad8c0dd091f4da2eda52372cbd59c0e4b06588f71685a",
+  "evaluation_dataset_sha256": "fda468b966c607584e7fe36b14db8e5a4ec8dbb04b4c0302db54de8af2aeb198",
+  "reason": "6/8 eligible development batches versus 0/8 instructions and 1/8 examples-v1. Author review confirms clear new conclusions on 4/8 batches; two conjunction batches only combine premises and assert conditions are met. Missing-conjunction cases still fail.",
+  "development_decision_caveat": "Second round was selected after observing weak v1 results; this refines the initial failure-only revision rule. No evaluation results existed at selection.",
+  "evaluation": {
+    "cases": 6,
+    "seeds": [
+      42,
+      43
+    ],
+    "modes": [
+      "greedy",
+      "likelihood",
+      "final_jev",
+      "jev"
+    ],
+    "planned_runs": 48,
+    "stage_seconds": 1800
+  },
+  "frozen": [
+    "prompt",
+    "fixtures",
+    "frame parser",
+    "Jev questions",
+    "thresholds",
+    "sampling",
+    "budgets",
+    "oracle",
+    "verdict parser"
+  ],
+  "no_more_prompt_tuning": true
+}

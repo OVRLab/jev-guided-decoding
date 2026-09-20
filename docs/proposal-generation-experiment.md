@@ -96,3 +96,19 @@ any gain to one phrase or example. Keep the original root results unchanged and
 repeat the same 16-batch development comparison once. Then choose the style with
 more eligible development batches, check actual contents, and freeze it for the
 separate evaluation; no third development revision is allowed in this experiment.
+
+
+## Frozen evaluation selection
+
+The second example revision offered eligible candidates in 6/8 development batches,
+versus 0/8 for instructions alone (both rounds) and 1/8 for the first examples.
+Author review found clear new conclusions in four batches, weaker combination-of-
+conditions steps in two, and continued failure on the missing-conjunction problem.
+The [selection record](../reports/2026-09-20-proposal-generation/selection.json)
+freezes the prompt/fixture hashes before evaluation. Use the examples config for all
+four evaluation modes; do not revise prompts, thresholds, grading, or fixtures after
+seeing evaluation results. The original default/config remains unchanged.
+
+A review regression additionally requires the grader to match recorded question
+and evidence to the oracle fixture; reusing an ID alone is not sufficient provenance.
+Missing, incomplete, and unrecognized verdicts remain in the planned denominator.
