@@ -77,7 +77,8 @@ and all three arms. Inspect final-token provenance, candidate diversity, accepte
 steps, Jev's changed selections, and model answer formatting. Do not require higher
 accuracy to pass a pilot: that would select for a favorable result. Require every
 final answer to have model-token provenance, no Jev scoring of finals, no errors,
-at least 90% final-frame completion per arm, and evidence that intermediate guidance
+at least 90% final-frame completion and valid requested answer format per arm,
+and evidence that intermediate guidance
 actually executes and selects a different candidate on at least one development
 prefix. If those fail, correct the mechanism using development data only and preserve
 all attempts. Freeze exact settings and sample size before test inference, using
@@ -106,6 +107,20 @@ all resource reservations, cancellation, ambiguous provider failures, durable sp
 accounting, disjoint data selection, independent grading, exclusive recording and
 no replay of started jobs. Run canonical checks and a small real CUDA pilot before
 freezing the new evaluation. Review results against these contracts before claims.
+The [independent audit](../experiments/audit_generated_answers.py) reconstructs
+every accepted continuation and final answer from recorded model token IDs and
+rejects final scoring or controller-inserted answer content. Run it on development
+results before admitting the main evaluation:
+
+```bash
+uv run --no-sync python experiments/audit_generated_answers.py \
+  --output results/generated-answer-pilot
+```
+
+Initial tests failed because the new controller, data adapter, budget ledger, and
+audit modules were absent. Further regressions reproduced premature completion
+of a cancelled final, acceptance of text inconsistent with token IDs, and decimal
+normalization rounding a long answer; all were fixed before paid inference.
 
 Primary sources: [GSM8K](https://github.com/openai/grade-school-math),
 [TypeSafe API](https://docs.typesafe.ai/api),
