@@ -57,3 +57,12 @@ Primary documentation checked: [Choice](https://docs.typesafe.ai/primitives/choi
 [HTTP API](https://docs.typesafe.ai/api), and the
 [classification cookbook](https://docs.typesafe.ai/cookbooks/hierarchical_classification).
 Choice supplies alternatives and probabilities; it does not establish their truth.
+
+## Recorded outcome
+
+The [completed check](../reports/2026-09-20-fixed-verdict/README.md) retained all
+18 runs: original step guidance matched 2/6 labels, fixed mode 6/6, and direct
+Jev 6/6. Both UNKNOWN cases were classified correctly by fixed/direct modes.
+Paired generated token sequences and selected paths were identical; the extra
+final decision resolved classifications without improving Granite's search.
+There was no post-result tuning, service error, or continuation stage.

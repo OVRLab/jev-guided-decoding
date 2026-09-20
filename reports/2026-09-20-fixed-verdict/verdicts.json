@@ -1,0 +1,208 @@
+{
+  "metric": "First-word verdict agreement, not explanation/step correctness",
+  "summary": {
+    "jev": {
+      "planned_runs": 6,
+      "not_run": 0,
+      "completed": 3,
+      "recognized_verdicts": 2,
+      "matching_verdicts": 2
+    },
+    "fixed_jev": {
+      "planned_runs": 6,
+      "not_run": 0,
+      "completed": 6,
+      "recognized_verdicts": 6,
+      "matching_verdicts": 6
+    },
+    "direct_jev": {
+      "planned_runs": 6,
+      "not_run": 0,
+      "completed": 6,
+      "recognized_verdicts": 6,
+      "matching_verdicts": 6
+    }
+  },
+  "runs": [
+    {
+      "id": "fixed_ent_join",
+      "seed": 42,
+      "mode": "jev",
+      "expected": "ENTAILED",
+      "predicted": "ENTAILED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "fixed_ent_join",
+      "seed": 42,
+      "mode": "fixed_jev",
+      "expected": "ENTAILED",
+      "predicted": "ENTAILED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "fixed_ent_join",
+      "seed": 42,
+      "mode": "direct_jev",
+      "expected": "ENTAILED",
+      "predicted": "ENTAILED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "fixed_ent_seeded_cycle",
+      "seed": 42,
+      "mode": "jev",
+      "expected": "ENTAILED",
+      "predicted": null,
+      "complete": true,
+      "verdict_match": false,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "fixed_ent_seeded_cycle",
+      "seed": 42,
+      "mode": "fixed_jev",
+      "expected": "ENTAILED",
+      "predicted": "ENTAILED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "fixed_ent_seeded_cycle",
+      "seed": 42,
+      "mode": "direct_jev",
+      "expected": "ENTAILED",
+      "predicted": "ENTAILED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "fixed_contra_join",
+      "seed": 42,
+      "mode": "jev",
+      "expected": "CONTRADICTED",
+      "predicted": null,
+      "complete": false,
+      "verdict_match": false,
+      "stop_reason": "no_eligible_branch"
+    },
+    {
+      "id": "fixed_contra_join",
+      "seed": 42,
+      "mode": "fixed_jev",
+      "expected": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "fixed_contra_join",
+      "seed": 42,
+      "mode": "direct_jev",
+      "expected": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "fixed_contra_routes",
+      "seed": 42,
+      "mode": "jev",
+      "expected": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "fixed_contra_routes",
+      "seed": 42,
+      "mode": "fixed_jev",
+      "expected": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "fixed_contra_routes",
+      "seed": 42,
+      "mode": "direct_jev",
+      "expected": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "fixed_unknown_join",
+      "seed": 42,
+      "mode": "jev",
+      "expected": "UNKNOWN",
+      "predicted": null,
+      "complete": false,
+      "verdict_match": false,
+      "stop_reason": "no_eligible_branch"
+    },
+    {
+      "id": "fixed_unknown_join",
+      "seed": 42,
+      "mode": "fixed_jev",
+      "expected": "UNKNOWN",
+      "predicted": "UNKNOWN",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "fixed_unknown_join",
+      "seed": 42,
+      "mode": "direct_jev",
+      "expected": "UNKNOWN",
+      "predicted": "UNKNOWN",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "fixed_unknown_cycle",
+      "seed": 42,
+      "mode": "jev",
+      "expected": "UNKNOWN",
+      "predicted": null,
+      "complete": false,
+      "verdict_match": false,
+      "stop_reason": "no_eligible_branch"
+    },
+    {
+      "id": "fixed_unknown_cycle",
+      "seed": 42,
+      "mode": "fixed_jev",
+      "expected": "UNKNOWN",
+      "predicted": "UNKNOWN",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "fixed_unknown_cycle",
+      "seed": 42,
+      "mode": "direct_jev",
+      "expected": "UNKNOWN",
+      "predicted": "UNKNOWN",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    }
+  ]
+}

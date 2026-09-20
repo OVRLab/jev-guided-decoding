@@ -1,0 +1,179 @@
+{
+  "checks": "Frozen hashes; exact-token reconstruction using pinned tokenizer; original reasoning outcomes; step eligibility; canonical Choice labels and exact evidence-only payload shape; direct-control zero generation; summary/work accounting; budgets. This is not semantic proof grading.",
+  "totals": {
+    "generated_tokens": 3350,
+    "decode_token_slots": 3654,
+    "prefill_tokens": 135102,
+    "api_calls": 58,
+    "jev_input_tokens": 63650,
+    "jev_output_tokens": 4520,
+    "backtracks": 4,
+    "proposals": 52,
+    "paths": 18,
+    "choice_decisions": 12
+  },
+  "rows": [
+    {
+      "id": "fixed_ent_join",
+      "mode": "jev",
+      "exact_path_verified": true,
+      "proposals": 6,
+      "choice_evaluated": false,
+      "unclassified_late_candidates": 0,
+      "usage_unknown": false
+    },
+    {
+      "id": "fixed_ent_join",
+      "mode": "fixed_jev",
+      "exact_path_verified": true,
+      "proposals": 6,
+      "choice_evaluated": true,
+      "unclassified_late_candidates": 0,
+      "usage_unknown": false
+    },
+    {
+      "id": "fixed_ent_join",
+      "mode": "direct_jev",
+      "exact_path_verified": true,
+      "proposals": 0,
+      "choice_evaluated": true,
+      "unclassified_late_candidates": 0,
+      "usage_unknown": false
+    },
+    {
+      "id": "fixed_ent_seeded_cycle",
+      "mode": "fixed_jev",
+      "exact_path_verified": true,
+      "proposals": 3,
+      "choice_evaluated": true,
+      "unclassified_late_candidates": 0,
+      "usage_unknown": false
+    },
+    {
+      "id": "fixed_ent_seeded_cycle",
+      "mode": "direct_jev",
+      "exact_path_verified": true,
+      "proposals": 0,
+      "choice_evaluated": true,
+      "unclassified_late_candidates": 0,
+      "usage_unknown": false
+    },
+    {
+      "id": "fixed_ent_seeded_cycle",
+      "mode": "jev",
+      "exact_path_verified": true,
+      "proposals": 3,
+      "choice_evaluated": false,
+      "unclassified_late_candidates": 0,
+      "usage_unknown": false
+    },
+    {
+      "id": "fixed_contra_join",
+      "mode": "direct_jev",
+      "exact_path_verified": true,
+      "proposals": 0,
+      "choice_evaluated": true,
+      "unclassified_late_candidates": 0,
+      "usage_unknown": false
+    },
+    {
+      "id": "fixed_contra_join",
+      "mode": "jev",
+      "exact_path_verified": true,
+      "proposals": 2,
+      "choice_evaluated": false,
+      "unclassified_late_candidates": 0,
+      "usage_unknown": false
+    },
+    {
+      "id": "fixed_contra_join",
+      "mode": "fixed_jev",
+      "exact_path_verified": true,
+      "proposals": 2,
+      "choice_evaluated": true,
+      "unclassified_late_candidates": 0,
+      "usage_unknown": false
+    },
+    {
+      "id": "fixed_contra_routes",
+      "mode": "jev",
+      "exact_path_verified": true,
+      "proposals": 5,
+      "choice_evaluated": false,
+      "unclassified_late_candidates": 0,
+      "usage_unknown": false
+    },
+    {
+      "id": "fixed_contra_routes",
+      "mode": "fixed_jev",
+      "exact_path_verified": true,
+      "proposals": 5,
+      "choice_evaluated": true,
+      "unclassified_late_candidates": 0,
+      "usage_unknown": false
+    },
+    {
+      "id": "fixed_contra_routes",
+      "mode": "direct_jev",
+      "exact_path_verified": true,
+      "proposals": 0,
+      "choice_evaluated": true,
+      "unclassified_late_candidates": 0,
+      "usage_unknown": false
+    },
+    {
+      "id": "fixed_unknown_join",
+      "mode": "fixed_jev",
+      "exact_path_verified": true,
+      "proposals": 5,
+      "choice_evaluated": true,
+      "unclassified_late_candidates": 0,
+      "usage_unknown": false
+    },
+    {
+      "id": "fixed_unknown_join",
+      "mode": "direct_jev",
+      "exact_path_verified": true,
+      "proposals": 0,
+      "choice_evaluated": true,
+      "unclassified_late_candidates": 0,
+      "usage_unknown": false
+    },
+    {
+      "id": "fixed_unknown_join",
+      "mode": "jev",
+      "exact_path_verified": true,
+      "proposals": 5,
+      "choice_evaluated": false,
+      "unclassified_late_candidates": 0,
+      "usage_unknown": false
+    },
+    {
+      "id": "fixed_unknown_cycle",
+      "mode": "direct_jev",
+      "exact_path_verified": true,
+      "proposals": 0,
+      "choice_evaluated": true,
+      "unclassified_late_candidates": 0,
+      "usage_unknown": false
+    },
+    {
+      "id": "fixed_unknown_cycle",
+      "mode": "jev",
+      "exact_path_verified": true,
+      "proposals": 5,
+      "choice_evaluated": false,
+      "unclassified_late_candidates": 0,
+      "usage_unknown": false
+    },
+    {
+      "id": "fixed_unknown_cycle",
+      "mode": "fixed_jev",
+      "exact_path_verified": true,
+      "proposals": 5,
+      "choice_evaluated": true,
+      "unclassified_late_candidates": 0,
+      "usage_unknown": false
+    }
+  ]
+}

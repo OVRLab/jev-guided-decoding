@@ -173,6 +173,12 @@ this decision stage. These modes assume consistent evidence and a classification
 question, not an arbitrary question needing a general answer. See the
 [design and evaluation plan](docs/fixed-verdict-experiment.md).
 
+In the [six-world fixed-choice check](reports/2026-09-20-fixed-verdict/README.md),
+fixed mode matched 6/6 verdicts, including both UNKNOWN cases, versus 2/6 with
+generated finals. Direct Jev also matched 6/6. All paired Granite searches retained
+identical candidate token sequences and selected paths; the added final decision
+resolved the classifications without improving the underlying reasoning search.
+
 ## Compare the four modes
 
 ```bash

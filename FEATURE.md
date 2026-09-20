@@ -14,6 +14,12 @@ matched 6/12 oracle verdicts; final-only Jev matched 5/12. All 48 attempts are
 retained, including one ambiguous timeout and the declared continuation stage.
 Early guidance avoided an invalid derivation in one controlled trace, but all
 modes failed both UNKNOWN worlds. Broader quality improvement remains unproven.
+The subsequent [fixed-choice check](reports/2026-09-20-fixed-verdict/README.md)
+supplies all three final labels in code: existing step guidance matched 2/6 fresh
+verdicts, fixed mode 6/6, and direct Jev 6/6. Both UNKNOWN cases were classified
+correctly, while the paired Granite reasoning paths remained unchanged. This
+demonstrates a final-classification improvement in the sample, not added accuracy
+from Granite's reasoning or repaired intermediate derivations.
 See [LAUNCH.md](LAUNCH.md) and [LIVE.md](LIVE.md) for the initial prototype scope.
 
 ## Problem
@@ -32,9 +38,11 @@ The experiments establish neither improved quality nor general verifier accuracy
 4. Separate judgments for grounded validity, progress, and final completion.
 5. Opt-in proposal examples, a separate six-world/two-seed comparison, and an
    independent symbolic verdict oracle with all unfinished runs in the denominator.
-6. Remaining: proposals that identify missing premises and finish with UNKNOWN;
-   exact verdict-label reliability; larger fresh evaluation and independent checking
-   of explanations/steps, beyond agreement on the final verdict word.
+6. Code-defined final Choices with separate reasoning provenance, reserved time/API
+   budgets, explicit uncertainty/error states, and a direct-Jev control.
+7. Remaining: useful reasoning recovery and justified explanations when premises
+   are missing; larger fresh evaluation and independent checking of steps; evidence
+   that Granite's intermediate reasoning adds value beyond direct classification.
 
 Jev remains the live evaluator; no surrogate critic or weight training is part of
 this direction. Serving integration and colocated runtime performance need separate

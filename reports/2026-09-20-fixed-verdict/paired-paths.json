@@ -1,0 +1,50 @@
+[
+  {
+    "id": "fixed_ent_join",
+    "same_actual_request": true,
+    "same_proposal_token_sequences": true,
+    "same_selected_token_path": true,
+    "original_reasoning_stop": "complete",
+    "fixed_choice": "ENTAILED"
+  },
+  {
+    "id": "fixed_ent_seeded_cycle",
+    "same_actual_request": true,
+    "same_proposal_token_sequences": true,
+    "same_selected_token_path": true,
+    "original_reasoning_stop": "complete",
+    "fixed_choice": "ENTAILED"
+  },
+  {
+    "id": "fixed_contra_join",
+    "same_actual_request": true,
+    "same_proposal_token_sequences": true,
+    "same_selected_token_path": true,
+    "original_reasoning_stop": "no_eligible_branch",
+    "fixed_choice": "CONTRADICTED"
+  },
+  {
+    "id": "fixed_contra_routes",
+    "same_actual_request": true,
+    "same_proposal_token_sequences": true,
+    "same_selected_token_path": true,
+    "original_reasoning_stop": "complete",
+    "fixed_choice": "CONTRADICTED"
+  },
+  {
+    "id": "fixed_unknown_join",
+    "same_actual_request": true,
+    "same_proposal_token_sequences": true,
+    "same_selected_token_path": true,
+    "original_reasoning_stop": "no_eligible_branch",
+    "fixed_choice": "UNKNOWN"
+  },
+  {
+    "id": "fixed_unknown_cycle",
+    "same_actual_request": true,
+    "same_proposal_token_sequences": true,
+    "same_selected_token_path": true,
+    "original_reasoning_stop": "no_eligible_branch",
+    "fixed_choice": "UNKNOWN"
+  }
+]
