@@ -1,0 +1,58 @@
+# Claude entrypoint and repository map
+
+Read [AGENTS.md](AGENTS.md) first; it is the authority for planning, test-first
+development, evidence, security, PR review, and preserving lessons. The
+[development workflow](docs/development-workflow.md) defines executable checks.
+Shared [rules](.claude/rules/) apply across coding assistants. Do not duplicate or
+weaken their requirements in this entrypoint.
+
+## Architecture
+
+| Path | Responsibility |
+| --- | --- |
+| [types.py](src/jev_guided_decoding/types.py) | Requests, configuration, immutable candidates, results, backend/scorer protocols |
+| [controller.py](src/jev_guided_decoding/controller.py) | Accepted prefix, candidate selection, budgets, retry/stop outcomes |
+| [jev.py](src/jev_guided_decoding/jev.py) | Credentials, typed questions, HTTP validation, bounded retries, usage |
+| [Transformers backend](src/jev_guided_decoding/backends/transformers.py) | Frozen causal model, token generation, stopping, likelihood, device accounting |
+| [benchmark.py](src/jev_guided_decoding/benchmark.py) | Dataset validation, lexical metrics, summaries |
+| [cli.py](src/jev_guided_decoding/cli.py) | Configuration, generation/benchmark flows, trace output |
+| [configs](configs/) / [data](data/) | Pinned experiments and fictional fixtures |
+| [tests](tests/) / [reports](reports/) | Offline checks and immutable experimental evidence |
+
+The code is Python, with optional Transformers/PyTorch dependencies. The core
+controller and Jev client must remain importable without them. Core CI needs no
+GPU, provider account, personal skill, or model download. The inference backend
+is optional and currently validated on Granite; compatibility with other models
+requires separate evidence. A vLLM backend is not implemented.
+
+## Role guides
+
+Read the relevant guide as instructions; these files do not provision subagents.
+
+| Task | Read |
+| --- | --- |
+| Planning or design | [planner](agents/planner.md), [architect](agents/architect.md) |
+| Code or behavior changes | [tdd-guide](agents/tdd-guide.md) |
+| Reviews | [code-reviewer](agents/code-reviewer.md), [python-reviewer](agents/python-reviewer.md) |
+| Credentials, provider calls, files, limits | [security-reviewer](agents/security-reviewer.md) |
+| Build/import/dependency failures | [build-error-resolver](agents/build-error-resolver.md) |
+| Refactoring | [refactor-cleaner](agents/refactor-cleaner.md) |
+| End-to-end validation | [e2e-runner](agents/e2e-runner.md), [flow catalog](flows.md) |
+
+Use the task guides in [.claude/skills](.claude/skills/) for more detailed test,
+API, security, or evaluation work. They are repository documents; do not assume
+an agent host automatically installs or exposes them as callable skills.
+
+## Current implementation constraints
+
+- The Transformers adapter recomputes the accepted prefix between chunks and
+  uses KV caching within a chunk; do not call that retained-prefix optimization.
+- `JevScorer` returns optional relevance for empty EOS; `None` means unasked, not zero.
+- `all_rejected` may retain a correct but uncompleted prefix. API failure is a
+  separate outcome with potentially unknown usage; do not rewrite either as success.
+- Padded decode slots and accepted output tokens measure different things.
+- Device sampling, API scores, and latency may vary despite fixed seeds/version IDs.
+- MPS allocation snapshots are not peak-memory measurements.
+- Use [Jev guidance](docs/JEV.md) before modifying request shapes or interpreting scores.
+
+For guidance changes, run `uv run --no-sync python scripts/check_ai_docs.py`.

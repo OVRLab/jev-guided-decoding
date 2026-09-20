@@ -165,7 +165,20 @@ claims or reject good ones; see [Jev's limitations](https://docs.typesafe.ai/mod
 
 ## Development
 
+Contributors and coding agents should start with [AGENTS.md](AGENTS.md),
+[the development workflow](docs/development-workflow.md), and
+[the shared rules](.claude/rules/). [CLAUDE.md](CLAUDE.md) and [GEMINI.md](GEMINI.md)
+route to the same policy; [CONTRIBUTING.md](CONTRIBUTING.md) explains the public
+workflow, and [SECURITY.md](SECURITY.md) covers credentials and experiment data.
+Scope and verified status live in [Project.md](Project.md), [LAUNCH.md](LAUNCH.md),
+and [LIVE.md](LIVE.md); [flows.md](flows.md) maps validation to changed behavior.
+
+The [adaptation record](docs/ai-guidance-import.md) explains how OVRLab's accumulated
+guidance was rewritten for this Python project. Run the offline guidance checker
+whenever rules, role guides, links, or documented commands change.
+
 ```bash
+uv run --no-sync python scripts/check_ai_docs.py
 uv run --no-sync ruff check .
 uv run --no-sync ruff format --check .
 uv run --no-sync pytest -q
