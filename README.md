@@ -11,6 +11,10 @@ synthetic smoke benchmark. This is generation-time text guidance, not a fusion o
 Jev into attention layers. A vLLM serving extension is conditional on measured
 gains; no vLLM extension is included in this version.
 
+[Initial measured results](reports/2026-09-20-granite-smoke/README.md): the 12-case
+smoke test demonstrated in-generation control, but no established quality gain;
+Jev added latency and incorrectly rejected the ending of one correct answer.
+
 ```mermaid
 flowchart LR
   A[Accepted token prefix] --> B[Generate candidate continuations]
