@@ -192,7 +192,13 @@ control without generating the same path twice. The runner freezes source/data
 hashes, journals jobs before dispatch, preserves failures, and reports paired
 confidence intervals grouped by problem. See the protocol for the separate pilot,
 resource ceilings, partial step-audit limits, and executable reproduction commands.
-This is a planned evaluation design, not a claim of improved benchmark accuracy.
+The [completed study](reports/2026-09-20-controlled-study/README.md) recorded all
+2,400 main jobs and 96 separate stress jobs. Guided accuracy was 84.5% versus
+84.7% for direct Jev; all three adjusted comparison intervals include zero.
+In 542/600 guided runs no intermediate step was accepted. The report also documents
+conflicting generated-answer instructions, which limit interpretation of the
+derived Granite-alone score. No added accuracy from intermediate guidance was
+established for this configuration.
 
 ## Compare the four modes
 

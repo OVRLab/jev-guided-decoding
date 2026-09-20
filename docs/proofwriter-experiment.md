@@ -194,8 +194,27 @@ clean source `62f6bedd992afb522421b4fbf73a5fcfd02f8011`, before their inference.
 Their dataset SHA-256 values are respectively
 `bc257fc51265cb3f5647ba51693ae72f0ad43cae380a307f520b1aa9a2abcf4b` and
 `82306b20c593e662f1cf0047a1614aff33b0201739ce384c764409818e44a09f`.
-The main study is in progress, followed by the separate stress test. The temporary
-server has a twelve-hour lifetime cap and shuts down after completion/failure.
-Private backups run every minute while the controlling machine is connected;
-automated deletion requires a matching SHA-256 manifest of every result file.
-If backup verification fails, retain the disk for recovery and stop GPU billing.
+Both studies completed: all 2,400 main and 96 stress jobs were recorded without
+provider/backend failures or unknown usage. The temporary server used a twelve-hour
+lifetime cap and completion shutdown; private backups ran every minute while the
+controlling machine was connected. All 27 final result files were hash-verified
+before deletion of the study server, disk, security group, and rules completed at
+18:32:44 UTC. The [final report](../reports/2026-09-20-controlled-study/README.md)
+contains unchanged aggregate analyses, provenance, and the post-run integrity audit.
+
+## Post-run interpretation, without protocol changes
+
+Guided accuracy was 84.5% versus 84.7% for direct Jev, with all three adjusted
+comparison intervals including zero. Most guided runs (542/600) retained no steps.
+This frozen implementation did not satisfy the predefined positive-evidence rule.
+
+Post-run inspection also identified a generated-answer contract conflict: the
+examples system prompt requests a label plus its reason, whereas the dataset
+question requests the exact label alone. The derived controls' zero strict-label
+scores therefore cannot be interpreted as a clean measure of Granite's reasoning
+ability. Report the already specified first-label diagnostic alongside them, and
+retain both the original strict scores and incomplete-run denominators. All
+generation arms share this limitation; code-rendered Choice scores describe this
+configuration, not a corrected prompt. No post-hoc prompt changes, grading changes,
+or held-out reruns were made. A follow-up needs development validation of a consistent
+contract and a new frozen evaluation on fresh problems.

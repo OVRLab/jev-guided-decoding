@@ -55,5 +55,13 @@ Jev Choice, retain direct Jev and Granite-alone outcomes, and compare 200 theori
 making a broader improvement claim. A separate development pilot precedes the
 frozen test run. All attempted outcomes remain in the denominator.
 The owner authorized a small cloud GPU for this study. The twelve-job CUDA pilot
-completed on one L40S, and the frozen main study is running; final results remain
-pending. The separate synthetic stress test has 24 new worlds.
+completed on one L40S, followed by all 2,400 main jobs and 96 stress jobs across
+24 new worlds. The [final report](reports/2026-09-20-controlled-study/README.md)
+records 84.5% guided accuracy versus 84.7% direct Jev; all adjusted main comparison
+intervals include zero. In 542/600 guided runs no step survived before the Choice.
+The generated-answer controls have conflicting label-only versus label-and-reason
+instructions, documented without changing their frozen scores. A future experiment
+should reconcile this contract and improve useful proposal acceptance on development
+data, then freeze a new evaluation on fresh problems. No follow-up tuning or reruns
+of held-out cases are part of the completed study. Temporary cloud resources were
+deleted after all result files were backed up and verified.

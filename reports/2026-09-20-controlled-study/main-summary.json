@@ -1,0 +1,680 @@
+{
+  "independent_problems": 200,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "study_complete": true,
+  "modes": {
+    "fixed_jev": {
+      "planned": 600,
+      "correct": 507,
+      "completed": 523,
+      "missing": 0,
+      "recognized": 523,
+      "first_label_correct": 507,
+      "accuracy": 0.845,
+      "coverage": 0.8716666666666667,
+      "accuracy_given_completion": 0.9694072657743786,
+      "unknown_precision": 0.9226190476190477,
+      "unknown_recall": 0.7828282828282829,
+      "confusion": {
+        "CONTRADICTED->CONTRADICTED": 173,
+        "CONTRADICTED->NO_VERDICT": 22,
+        "CONTRADICTED->UNKNOWN": 6,
+        "ENTAILED->ENTAILED": 179,
+        "ENTAILED->NO_VERDICT": 15,
+        "ENTAILED->UNKNOWN": 7,
+        "UNKNOWN->ENTAILED": 3,
+        "UNKNOWN->NO_VERDICT": 40,
+        "UNKNOWN->UNKNOWN": 155
+      },
+      "by_depth": {
+        "None": {
+          "planned": 198,
+          "correct": 155,
+          "completed": 158
+        },
+        "4": {
+          "planned": 66,
+          "correct": 56,
+          "completed": 60
+        },
+        "0": {
+          "planned": 66,
+          "correct": 66,
+          "completed": 66
+        },
+        "2": {
+          "planned": 66,
+          "correct": 63,
+          "completed": 63
+        },
+        "1": {
+          "planned": 66,
+          "correct": 60,
+          "completed": 60
+        },
+        "3": {
+          "planned": 66,
+          "correct": 65,
+          "completed": 65
+        },
+        "5": {
+          "planned": 72,
+          "correct": 42,
+          "completed": 51
+        }
+      },
+      "by_seed": {
+        "42": {
+          "planned": 200,
+          "correct": 167,
+          "completed": 171
+        },
+        "43": {
+          "planned": 200,
+          "correct": 170,
+          "completed": 176
+        },
+        "44": {
+          "planned": 200,
+          "correct": 170,
+          "completed": 176
+        }
+      }
+    },
+    "unguided_fixed_jev": {
+      "planned": 600,
+      "correct": 497,
+      "completed": 514,
+      "missing": 0,
+      "recognized": 514,
+      "first_label_correct": 497,
+      "accuracy": 0.8283333333333334,
+      "coverage": 0.8566666666666667,
+      "accuracy_given_completion": 0.9669260700389105,
+      "unknown_precision": 0.9349112426035503,
+      "unknown_recall": 0.797979797979798,
+      "confusion": {
+        "CONTRADICTED->CONTRADICTED": 161,
+        "CONTRADICTED->NO_VERDICT": 35,
+        "CONTRADICTED->UNKNOWN": 5,
+        "ENTAILED->ENTAILED": 178,
+        "ENTAILED->NO_VERDICT": 17,
+        "ENTAILED->UNKNOWN": 6,
+        "UNKNOWN->CONTRADICTED": 3,
+        "UNKNOWN->ENTAILED": 3,
+        "UNKNOWN->NO_VERDICT": 34,
+        "UNKNOWN->UNKNOWN": 158
+      },
+      "by_depth": {
+        "None": {
+          "planned": 198,
+          "correct": 158,
+          "completed": 164
+        },
+        "4": {
+          "planned": 66,
+          "correct": 47,
+          "completed": 49
+        },
+        "0": {
+          "planned": 66,
+          "correct": 66,
+          "completed": 66
+        },
+        "2": {
+          "planned": 66,
+          "correct": 61,
+          "completed": 61
+        },
+        "1": {
+          "planned": 66,
+          "correct": 61,
+          "completed": 61
+        },
+        "3": {
+          "planned": 66,
+          "correct": 59,
+          "completed": 59
+        },
+        "5": {
+          "planned": 72,
+          "correct": 45,
+          "completed": 54
+        }
+      },
+      "by_seed": {
+        "42": {
+          "planned": 200,
+          "correct": 165,
+          "completed": 170
+        },
+        "43": {
+          "planned": 200,
+          "correct": 166,
+          "completed": 173
+        },
+        "44": {
+          "planned": 200,
+          "correct": 166,
+          "completed": 171
+        }
+      }
+    },
+    "final_only_fixed_jev": {
+      "planned": 600,
+      "correct": 490,
+      "completed": 505,
+      "missing": 0,
+      "recognized": 505,
+      "first_label_correct": 490,
+      "accuracy": 0.8166666666666667,
+      "coverage": 0.8416666666666667,
+      "accuracy_given_completion": 0.9702970297029703,
+      "unknown_precision": 0.9352941176470588,
+      "unknown_recall": 0.803030303030303,
+      "confusion": {
+        "CONTRADICTED->CONTRADICTED": 160,
+        "CONTRADICTED->NO_VERDICT": 35,
+        "CONTRADICTED->UNKNOWN": 6,
+        "ENTAILED->ENTAILED": 171,
+        "ENTAILED->NO_VERDICT": 25,
+        "ENTAILED->UNKNOWN": 5,
+        "UNKNOWN->CONTRADICTED": 2,
+        "UNKNOWN->ENTAILED": 2,
+        "UNKNOWN->NO_VERDICT": 35,
+        "UNKNOWN->UNKNOWN": 159
+      },
+      "by_depth": {
+        "None": {
+          "planned": 198,
+          "correct": 159,
+          "completed": 163
+        },
+        "4": {
+          "planned": 66,
+          "correct": 47,
+          "completed": 50
+        },
+        "0": {
+          "planned": 66,
+          "correct": 66,
+          "completed": 66
+        },
+        "2": {
+          "planned": 66,
+          "correct": 58,
+          "completed": 58
+        },
+        "1": {
+          "planned": 66,
+          "correct": 59,
+          "completed": 59
+        },
+        "3": {
+          "planned": 66,
+          "correct": 59,
+          "completed": 59
+        },
+        "5": {
+          "planned": 72,
+          "correct": 42,
+          "completed": 50
+        }
+      },
+      "by_seed": {
+        "42": {
+          "planned": 200,
+          "correct": 161,
+          "completed": 164
+        },
+        "43": {
+          "planned": 200,
+          "correct": 161,
+          "completed": 169
+        },
+        "44": {
+          "planned": 200,
+          "correct": 168,
+          "completed": 172
+        }
+      }
+    },
+    "direct_jev": {
+      "planned": 600,
+      "correct": 508,
+      "completed": 521,
+      "missing": 0,
+      "recognized": 521,
+      "first_label_correct": 508,
+      "accuracy": 0.8466666666666667,
+      "coverage": 0.8683333333333333,
+      "accuracy_given_completion": 0.9750479846449136,
+      "unknown_precision": 0.9302325581395349,
+      "unknown_recall": 0.8080808080808081,
+      "confusion": {
+        "CONTRADICTED->CONTRADICTED": 169,
+        "CONTRADICTED->NO_VERDICT": 27,
+        "CONTRADICTED->UNKNOWN": 5,
+        "ENTAILED->ENTAILED": 179,
+        "ENTAILED->NO_VERDICT": 15,
+        "ENTAILED->UNKNOWN": 7,
+        "UNKNOWN->ENTAILED": 1,
+        "UNKNOWN->NO_VERDICT": 37,
+        "UNKNOWN->UNKNOWN": 160
+      },
+      "by_depth": {
+        "None": {
+          "planned": 198,
+          "correct": 160,
+          "completed": 161
+        },
+        "4": {
+          "planned": 66,
+          "correct": 55,
+          "completed": 58
+        },
+        "0": {
+          "planned": 66,
+          "correct": 66,
+          "completed": 66
+        },
+        "2": {
+          "planned": 66,
+          "correct": 63,
+          "completed": 63
+        },
+        "1": {
+          "planned": 66,
+          "correct": 60,
+          "completed": 60
+        },
+        "3": {
+          "planned": 66,
+          "correct": 63,
+          "completed": 63
+        },
+        "5": {
+          "planned": 72,
+          "correct": 41,
+          "completed": 50
+        }
+      },
+      "by_seed": {
+        "42": {
+          "planned": 200,
+          "correct": 172,
+          "completed": 175
+        },
+        "43": {
+          "planned": 200,
+          "correct": 169,
+          "completed": 175
+        },
+        "44": {
+          "planned": 200,
+          "correct": 167,
+          "completed": 171
+        }
+      }
+    },
+    "granite_alone": {
+      "planned": 600,
+      "correct": 0,
+      "completed": 449,
+      "missing": 0,
+      "recognized": 0,
+      "first_label_correct": 155,
+      "accuracy": 0.0,
+      "coverage": 0.0,
+      "accuracy_given_completion": 0.0,
+      "unknown_precision": null,
+      "unknown_recall": 0.0,
+      "confusion": {
+        "CONTRADICTED->NO_VERDICT": 201,
+        "ENTAILED->NO_VERDICT": 201,
+        "UNKNOWN->NO_VERDICT": 198
+      },
+      "by_depth": {
+        "None": {
+          "planned": 198,
+          "correct": 0,
+          "completed": 131
+        },
+        "4": {
+          "planned": 66,
+          "correct": 0,
+          "completed": 55
+        },
+        "0": {
+          "planned": 66,
+          "correct": 0,
+          "completed": 52
+        },
+        "2": {
+          "planned": 66,
+          "correct": 0,
+          "completed": 52
+        },
+        "1": {
+          "planned": 66,
+          "correct": 0,
+          "completed": 49
+        },
+        "3": {
+          "planned": 66,
+          "correct": 0,
+          "completed": 55
+        },
+        "5": {
+          "planned": 72,
+          "correct": 0,
+          "completed": 55
+        }
+      },
+      "by_seed": {
+        "42": {
+          "planned": 200,
+          "correct": 0,
+          "completed": 145
+        },
+        "43": {
+          "planned": 200,
+          "correct": 0,
+          "completed": 151
+        },
+        "44": {
+          "planned": 200,
+          "correct": 0,
+          "completed": 153
+        }
+      }
+    },
+    "guided_generated": {
+      "planned": 600,
+      "correct": 0,
+      "completed": 19,
+      "missing": 0,
+      "recognized": 0,
+      "first_label_correct": 10,
+      "accuracy": 0.0,
+      "coverage": 0.0,
+      "accuracy_given_completion": 0.0,
+      "unknown_precision": null,
+      "unknown_recall": 0.0,
+      "confusion": {
+        "CONTRADICTED->NO_VERDICT": 201,
+        "ENTAILED->NO_VERDICT": 201,
+        "UNKNOWN->NO_VERDICT": 198
+      },
+      "by_depth": {
+        "None": {
+          "planned": 198,
+          "correct": 0,
+          "completed": 0
+        },
+        "4": {
+          "planned": 66,
+          "correct": 0,
+          "completed": 4
+        },
+        "0": {
+          "planned": 66,
+          "correct": 0,
+          "completed": 0
+        },
+        "2": {
+          "planned": 66,
+          "correct": 0,
+          "completed": 4
+        },
+        "1": {
+          "planned": 66,
+          "correct": 0,
+          "completed": 6
+        },
+        "3": {
+          "planned": 66,
+          "correct": 0,
+          "completed": 4
+        },
+        "5": {
+          "planned": 72,
+          "correct": 0,
+          "completed": 1
+        }
+      },
+      "by_seed": {
+        "42": {
+          "planned": 200,
+          "correct": 0,
+          "completed": 4
+        },
+        "43": {
+          "planned": 200,
+          "correct": 0,
+          "completed": 12
+        },
+        "44": {
+          "planned": 200,
+          "correct": 0,
+          "completed": 3
+        }
+      }
+    },
+    "final_filtered_generated": {
+      "planned": 600,
+      "correct": 0,
+      "completed": 65,
+      "missing": 0,
+      "recognized": 0,
+      "first_label_correct": 33,
+      "accuracy": 0.0,
+      "coverage": 0.0,
+      "accuracy_given_completion": 0.0,
+      "unknown_precision": null,
+      "unknown_recall": 0.0,
+      "confusion": {
+        "CONTRADICTED->NO_VERDICT": 201,
+        "ENTAILED->NO_VERDICT": 201,
+        "UNKNOWN->NO_VERDICT": 198
+      },
+      "by_depth": {
+        "None": {
+          "planned": 198,
+          "correct": 0,
+          "completed": 2
+        },
+        "4": {
+          "planned": 66,
+          "correct": 0,
+          "completed": 3
+        },
+        "0": {
+          "planned": 66,
+          "correct": 0,
+          "completed": 17
+        },
+        "2": {
+          "planned": 66,
+          "correct": 0,
+          "completed": 11
+        },
+        "1": {
+          "planned": 66,
+          "correct": 0,
+          "completed": 13
+        },
+        "3": {
+          "planned": 66,
+          "correct": 0,
+          "completed": 9
+        },
+        "5": {
+          "planned": 72,
+          "correct": 0,
+          "completed": 10
+        }
+      },
+      "by_seed": {
+        "42": {
+          "planned": 200,
+          "correct": 0,
+          "completed": 19
+        },
+        "43": {
+          "planned": 200,
+          "correct": 0,
+          "completed": 22
+        },
+        "44": {
+          "planned": 200,
+          "correct": 0,
+          "completed": 24
+        }
+      }
+    }
+  },
+  "primary_contrasts": {
+    "unguided_fixed_jev": {
+      "difference": 0.016666666666666666,
+      "ci_adjusted": [
+        -0.030000000000000002,
+        0.06333333333333334
+      ],
+      "confidence_level": 0.9833333333333333,
+      "wins": 22,
+      "losses": 15,
+      "ties": 163,
+      "independent_problems": 200,
+      "method": "5000 problem-cluster bootstrap samples; 3 adjusted contrasts"
+    },
+    "final_only_fixed_jev": {
+      "difference": 0.028333333333333335,
+      "ci_adjusted": [
+        -0.016666666666666663,
+        0.07500000000000001
+      ],
+      "confidence_level": 0.9833333333333333,
+      "wins": 26,
+      "losses": 17,
+      "ties": 157,
+      "independent_problems": 200,
+      "method": "5000 problem-cluster bootstrap samples; 3 adjusted contrasts"
+    },
+    "direct_jev": {
+      "difference": -0.0016666666666666674,
+      "ci_adjusted": [
+        -0.02,
+        0.016666666666666666
+      ],
+      "confidence_level": 0.9833333333333333,
+      "wins": 6,
+      "losses": 6,
+      "ties": 188,
+      "independent_problems": 200,
+      "method": "5000 problem-cluster bootstrap samples; 3 adjusted contrasts"
+    }
+  },
+  "resources": {
+    "fixed_jev": {
+      "generated_tokens": 85169,
+      "decode_token_slots": 102033,
+      "prefill_tokens": 3626556,
+      "api_calls": 1898,
+      "jev_input_tokens": 2180420,
+      "jev_output_tokens": 156099,
+      "elapsed_seconds": 1494.6967242380142,
+      "generation_seconds": 945.7929495289959,
+      "jev_seconds": 546.4268779849803,
+      "backtracks": 9,
+      "resamples": 633,
+      "unknown_usage_runs": 0,
+      "stop_reasons": {
+        "complete": 523,
+        "uncertain_verdict": 77
+      }
+    },
+    "unguided_fixed_jev": {
+      "generated_tokens": 309956,
+      "decode_token_slots": 356526,
+      "prefill_tokens": 13294827,
+      "api_calls": 600,
+      "jev_input_tokens": 490700,
+      "jev_output_tokens": 27357,
+      "elapsed_seconds": 3626.212564596008,
+      "generation_seconds": 3328.1468655440403,
+      "jev_seconds": 293.50121514000136,
+      "backtracks": 673,
+      "resamples": 632,
+      "unknown_usage_runs": 0,
+      "stop_reasons": {
+        "complete": 514,
+        "uncertain_verdict": 86
+      }
+    },
+    "final_only_fixed_jev": {
+      "generated_tokens": 498621,
+      "decode_token_slots": 581658,
+      "prefill_tokens": 21195801,
+      "api_calls": 2780,
+      "jev_input_tokens": 3277913,
+      "jev_output_tokens": 189375,
+      "elapsed_seconds": 6338.524998625007,
+      "generation_seconds": 5420.350485883986,
+      "jev_seconds": 911.4748758799477,
+      "backtracks": 1708,
+      "resamples": 1645,
+      "unknown_usage_runs": 0,
+      "stop_reasons": {
+        "complete": 505,
+        "uncertain_verdict": 95
+      }
+    },
+    "direct_jev": {
+      "generated_tokens": 0,
+      "decode_token_slots": 0,
+      "prefill_tokens": 0,
+      "api_calls": 600,
+      "jev_input_tokens": 432249,
+      "jev_output_tokens": 27357,
+      "elapsed_seconds": 173.01933497600305,
+      "generation_seconds": 0.0,
+      "jev_seconds": 172.97915839099812,
+      "backtracks": 0,
+      "resamples": 0,
+      "unknown_usage_runs": 0,
+      "stop_reasons": {
+        "complete": 521,
+        "uncertain_verdict": 79
+      }
+    }
+  },
+  "leading_claim_audits": {
+    "fixed_jev": {
+      "unparsed": 24,
+      "supported_new": 72
+    },
+    "unguided_fixed_jev": {
+      "premise": 958,
+      "unsupported": 814,
+      "supported_new": 854,
+      "unparsed": 268,
+      "repeated": 28
+    },
+    "final_only_fixed_jev": {
+      "premise": 1071,
+      "unsupported": 886,
+      "supported_new": 867,
+      "unparsed": 334,
+      "repeated": 39
+    },
+    "direct_jev": {}
+  },
+  "step_audit_limit": "Only recognized leading atomic claims are checked; full inference and cited justifications are not verified.",
+  "claim_limit": "Intervals describe this selected benchmark; no universal proof, no contamination guarantee.",
+  "positive_accuracy_evidence": false
+}
