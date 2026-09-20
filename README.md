@@ -11,9 +11,18 @@ and bounded search over intermediate steps with saved alternatives. This is gene
 Jev into attention layers. A vLLM serving extension is conditional on measured
 gains; no vLLM extension is included in this version.
 
+[Latest generated-answer study](reports/2026-09-20-generated-answer-study/README.md):
+all 3,600 trials were recorded with Granite generating every final answer. Jev did
+not demonstrate an accuracy gain: math was 56.5% versus 61.5% single-candidate
+Granite and 67.8% likelihood selection; logic was 52.5%, 52.7%, and 52.8%
+respectively. The report includes adjusted paired intervals, actual work, and
+verified token provenance. This uses a common staged prompt, not default chat.
+
 [Initial measured results](reports/2026-09-20-granite-smoke/README.md): the 12-case
 smoke test demonstrated in-generation control, but no established quality gain;
 Jev added latency and incorrectly rejected the ending of one correct answer.
+
+The earlier saved-alternative reasoning-search controller follows this flow:
 
 ```mermaid
 flowchart LR
@@ -216,7 +225,11 @@ provenance and no final Jev calls. A separate persistent ledger reserves the max
 input-token charge before each Jev request. The first development pilot failed the
 format gate and was preserved; the [corrected pilot](reports/2026-09-20-generated-answer-pilot-v2/README.md)
 passed final-token ownership, format, and exercised-guidance checks. The 3,600-job
-fresh evaluation is running on one L40S; no held-out result is claimed yet.
+[evaluation is complete](reports/2026-09-20-generated-answer-study/README.md):
+Jev changed 484 intermediate selections but did not demonstrate higher final-answer
+accuracy. All final generations passed the token audit. The temporary L40S and
+related resources were deleted after verified backup retrieval; estimated compute,
+disk and Jev cost was $3.29 before tax and separate network charges.
 
 After downloading the pinned GSM8K files and ProofWriter archive described in the
 protocol, freeze and run development data first:

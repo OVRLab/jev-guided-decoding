@@ -1,0 +1,15 @@
+{
+  "authorized_usd": 50,
+  "pricing_basis": "Compute, disk and Jev rate estimate before taxes and any separately billed network charges, using creation-to-confirmed-deletion wall time as a conservative duration proxy; not a provider invoice.",
+  "total_instance_wall_hours": 2.0421490825,
+  "compute_usd_per_hour": 1.5484,
+  "disk_usd_per_hour": 0.007780821917808219,
+  "compute_and_disk_estimated_usd": 3.1779532376835475,
+  "jev_calls_both_pilots_and_main": 2306,
+  "jev_input_tokens_both_pilots_and_main": 2563893,
+  "jev_estimated_usd_at_documented_rate": 0.10768350600000001,
+  "jev_conservative_ledger_usd": 0.12819465000000002,
+  "unsettled_reservations": 0,
+  "temporary_resources": "Instance, managed boot disk, task security rules/group deleted and absence verified.",
+  "total_estimated_usd_before_tax": 3.2856367436835474
+}

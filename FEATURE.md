@@ -1,5 +1,11 @@
 # Feature: Jev-guided intermediate reasoning
 
+**Current status:** the [corrected 3,600-job generated-answer study](reports/2026-09-20-generated-answer-study/README.md)
+is complete. Granite generated every final answer; Jev did not demonstrate an
+accuracy gain over either control. Source, grading and data stayed frozen, and
+the temporary cloud resources were deleted after verified backup retrieval.
+The earlier experiments below provide historical context for the current contract.
+
 The owner requested investigating Jev as an active helper during inference. The
 [investigation](docs/reasoning-step-investigation.md) and
 [diagnostic report](reports/2026-09-20-reasoning-investigation/README.md) are complete;
@@ -83,5 +89,18 @@ problems. Development validation and a new test freeze must precede any new clai
 The first replacement pilot failed the shared format gate and remains recorded.
 The [second 48-job development pilot](reports/2026-09-20-generated-answer-pilot-v2/README.md)
 passed, using explicit EOS termination and a versioned TRUE/FALSE/UNKNOWN contract.
-The admitted main study is running on 400 fresh test problems across three seeds
+The admitted main study completed all 400 fresh test problems across three seeds
 and three arms (3,600 jobs), with source, settings, grading, and exclusions frozen.
+Math accuracy was 61.5% single, 67.8% likelihood selection, and 56.5% Jev; logic
+was 52.7%, 52.8%, and 52.5%. Jev changed 484 intermediate selections but retained
+no step in 572/600 logic runs. The math difference versus likelihood was negative
+throughout the adjusted confidence interval; the other intervals included zero.
+All 3,600 final generations passed the independent token audit, reproduced locally.
+The [report](reports/2026-09-20-generated-answer-study/README.md) includes actual
+latency/work, both incomplete outputs, all invalid formats, and the $3.29 estimated
+compute/disk/Jev cost before tax and separate network charges.
+
+Useful retained reasoning remains unproven. A next development investigation
+should distinguish weak proposals from incorrect rejection before proposing a
+fresh test; there is no authority here to tune on or rerun the completed test set.
+No model training, changed weights, vLLM integration, merge, or release is claimed.

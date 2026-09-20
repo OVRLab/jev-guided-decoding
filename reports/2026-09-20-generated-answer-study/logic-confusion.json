@@ -1,0 +1,52 @@
+{
+  "single": {
+    "ENTAILED": {
+      "UNKNOWN": 10,
+      "ENTAILED": 170,
+      "CONTRADICTED": 21
+    },
+    "CONTRADICTED": {
+      "CONTRADICTED": 131,
+      "ENTAILED": 70
+    },
+    "UNKNOWN": {
+      "ENTAILED": 104,
+      "CONTRADICTED": 79,
+      "UNKNOWN": 15
+    }
+  },
+  "likelihood": {
+    "ENTAILED": {
+      "UNKNOWN": 12,
+      "ENTAILED": 170,
+      "CONTRADICTED": 19
+    },
+    "CONTRADICTED": {
+      "CONTRADICTED": 128,
+      "ENTAILED": 73
+    },
+    "UNKNOWN": {
+      "ENTAILED": 104,
+      "CONTRADICTED": 74,
+      "UNKNOWN": 19,
+      "INVALID_OR_INCOMPLETE": 1
+    }
+  },
+  "jev": {
+    "ENTAILED": {
+      "UNKNOWN": 16,
+      "ENTAILED": 172,
+      "CONTRADICTED": 13
+    },
+    "CONTRADICTED": {
+      "ENTAILED": 73,
+      "CONTRADICTED": 125,
+      "UNKNOWN": 3
+    },
+    "UNKNOWN": {
+      "ENTAILED": 99,
+      "CONTRADICTED": 81,
+      "UNKNOWN": 18
+    }
+  }
+}

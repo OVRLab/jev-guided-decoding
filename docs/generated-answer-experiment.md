@@ -153,3 +153,60 @@ Primary sources: [GSM8K](https://github.com/openai/grade-school-math),
 [TypeSafe API](https://docs.typesafe.ai/api),
 [Jev model pricing and limits](https://docs.typesafe.ai/models), and
 [Nebius pricing](https://docs.nebius.com/compute/resources/pricing).
+
+## Reproduce the admitted evaluation
+
+Use the inference source revision recorded in the report metadata and the locked
+development/Transformers environment. Download the original Granite revision in
+the configuration before running; the runner uses local model files only. The
+GSM8K train/test JSONL files come from the authors' `main/` directory at commit
+`3101c7d5072418e28b9008a6636bde82a006892c`. The
+[ProofWriter source and archive](proofwriter-experiment.md#sources-and-rights)
+and the adapter's checksums identify the other input. Preserve source notices.
+
+Run the development commands in the [README](../README.md), then its independent
+audit. Only a passing development gate admits a new held-out run. The original
+evaluation used the corrected pilot v2 selection as the additional exclusion:
+
+```bash
+uv run --no-sync python experiments/audit_generated_answers.py \
+  --output results/generated-answer-pilot-v2
+uv run --no-sync python experiments/generated_answer_study.py freeze \
+  --archive results/proofwriter-source/proofwriter-dataset-V2020.12.3.zip \
+  --gsm results/generated-answer-source/gsm8k-test.jsonl \
+  --exclusions data/generated-answer-exclusions.json \
+  --exclude-cases results/generated-answer-pilot-v2/cases.jsonl \
+  --output results/generated-answer-main
+uv run --no-sync python experiments/generated_answer_study.py run \
+  --output results/generated-answer-main \
+  --ledger results/generated-answer-budget.jsonl
+uv run --no-sync python experiments/generated_answer_study.py analyze \
+  --output results/generated-answer-main
+uv run --no-sync python experiments/audit_generated_answers.py \
+  --output results/generated-answer-main
+```
+
+For a new reproduction, substitute its pilot directory consistently and use fresh
+output directories; never overwrite a historical result. Freeze requires clean,
+committed source. Analysis and token-provenance auditing are offline operations;
+the `run` command performs paid Jev calls and model inference. Cloud lifecycle
+limits are deployment responsibilities in addition to the runner's own limits.
+
+## Completed evaluation
+
+The [full report](../reports/2026-09-20-generated-answer-study/README.md) records all
+3,600 jobs with no provider/backend failures or unknown usage. Independent token
+auditing passed for every final generation and reproduced from the local backup.
+Jev changed 484 intermediate selections but did not demonstrate an accuracy gain:
+math was 61.5% single, 67.8% likelihood, and 56.5% Jev; logic was 52.7%, 52.8%, and
+52.5%. The adjusted math contrast versus likelihood was negative throughout its
+interval. All other adjusted intervals included zero. Test settings and grading
+were left unchanged; both incomplete outputs remain in the denominator.
+
+Jev retained no reasoning step in 572/600 logic runs and 150/600 math runs. This
+identifies limited retained reasoning under the policy, without establishing
+whether weak proposals or incorrect rejection caused it. A future investigation
+must distinguish those mechanisms on development data before any new evaluation.
+The original study is complete; it does not authorize tuning and rerunning these
+held-out cases. All task cloud resources were deleted after verified retrieval;
+estimated compute, disk and Jev cost was $3.29 before tax and separate network charges.

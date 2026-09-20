@@ -1,0 +1,128 @@
+{
+  "created_at": "2026-09-20T20:42:06.725303+00:00",
+  "purpose": "evaluation",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "modes": [
+    "single",
+    "likelihood",
+    "jev"
+  ],
+  "config": {
+    "model": {
+      "model_id": "ibm-granite/granite-4.0-1b",
+      "revision": "6a7381ba1f54d684ff508d991aeb7dc580157103",
+      "device": "auto",
+      "dtype": "auto",
+      "temperature": 0.8,
+      "top_p": 0.95
+    },
+    "generation": {
+      "candidates": 3,
+      "max_steps": 8,
+      "chunk_tokens": 64,
+      "final_tokens": 96,
+      "max_decode_tokens": 1632,
+      "max_prefill_tokens": 100000,
+      "max_context_tokens": 4096,
+      "max_path_tokens": 768,
+      "max_api_calls": 8,
+      "max_seconds": 90.0,
+      "final_reserve_seconds": 15.0,
+      "support_threshold": 0.5,
+      "progress_threshold": 0.5,
+      "seed": 42
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "request_timeout": 20.0,
+      "max_retries": 0
+    }
+  },
+  "dataset_sha256": "606131e4c659784b8d04b9cfde004b1b30374fc15e27344637b6c54a08a39828",
+  "exclusions_sha256": "a7914880d06bd0701e6a22d1aa27a8219d8a0e1a028b79c9a746ed1673318689",
+  "source_hashes": {
+    "src/jev_guided_decoding/__init__.py": "39c1d8706715ddc0aa94b1cb23aa3238034250643c3cbd012f81dcc1fdcbaf7c",
+    "src/jev_guided_decoding/backends/__init__.py": "46991b291f9d0f364d515733ab89c42103b51963899530c727b9f8a4638250ae",
+    "src/jev_guided_decoding/backends/transformers.py": "acb2c8ba0ec427593482cada06faf74f5072871260c2c86c276d70dbf98677d3",
+    "src/jev_guided_decoding/benchmark.py": "f25566805b88ff418e10a24d9f8b9017034fc06fede3420051fda7ec235bad43",
+    "src/jev_guided_decoding/cli.py": "1f344c891800e1969d66ded7dc79ff0cc7ff4043d9a2e47d2c5b3a32c7c993e8",
+    "src/jev_guided_decoding/controller.py": "e487360178cc45cb2ce044c2f766fabc64d3b582cc861aec0182163770e1cccc",
+    "src/jev_guided_decoding/experiment_budget.py": "24cdd6c3d963a1590f17e71988108bfca1dfd7aa737b58e4f990f08c9a96ccf6",
+    "src/jev_guided_decoding/framing.py": "df5f1c0e09f497cf4bb296ddb12fb70851876a2b40ff2affb6c4084d2e812a0f",
+    "src/jev_guided_decoding/generated_answer.py": "8bca33972c42097b6a479978de2093f398b4e5c927e0ca74ab26eef8abab3d3e",
+    "src/jev_guided_decoding/jev.py": "4742408ebd3c0c4c1ca719023630e022e7c7ddcfa5cbb3e3f0fb6b10c7642bec",
+    "src/jev_guided_decoding/reasoning.py": "5d5dba688466e418f419cf89d48ba9acbc6e3fddbed249a455110d171c61d907",
+    "src/jev_guided_decoding/reasoning_scorer.py": "e880a0d7de6ec47e7a418c1d7fc6200a1b433fcc358defe23f9f5704d3edf706",
+    "src/jev_guided_decoding/types.py": "dcb887802393fa8caeb73191e0e8b16530ab55ed78dfc50aab5065eb21ffc696",
+    "src/jev_guided_decoding/verdict.py": "d381794c5872de0aa156a4736c075cde9a4083ebb28e030563036bd10e692d1d",
+    "experiments/audit_generated_answers.py": "0540215325508898076eb344fd084b3ee81ce0402c04492469c04238680a62ae",
+    "experiments/complete_proposal_jobs.py": "8d2da38999dcd490690e41c408b8d73bd8de786a0deda6c14464e02c72a13db4",
+    "experiments/controlled_study.py": "eabe93aef182611f8a7f4da865eb66a768961b5162e77b7cf12aa48758e91508",
+    "experiments/fixed_verdict_probe.py": "0721df67e4dd2ceb75c15a15003b97cd546956f14f7b23be7c689526327d3c8d",
+    "experiments/generated_answer_data.py": "87ccdefd8b6b23808a51fc49d147cbbb5104a44357988a77bd6ebb4f7856dd79",
+    "experiments/generated_answer_study.py": "2c310466aabe169120c6fa069748d7e063258a184447e3e4b35044344b0d7afa",
+    "experiments/proofwriter_data.py": "b47d692664d003c9195de0a6848c87ab10495aac515cb4eb273a5cb6a715ab32",
+    "experiments/proposal_probe.py": "aafcecb3386f2487bfb0dfdd2f910ce27c39b0e1de2475cc4dd5d80c6c9d1140",
+    "experiments/reasoning_stress.py": "51e9d924cd95f8ae73c562e6017a8550ffde33a19df3c303fab39ee068604e71",
+    "experiments/step_probe.py": "83d08d5875c15271f2ec76917e106210d6ea37497091b7c1152148aae826c0a2"
+  },
+  "git_revision": "966fdb7518f67b751a17834dc3e92d329997fe65",
+  "working_tree_dirty": false,
+  "prompt_sha256": "950cf2b7fa8a784e9a06b62de302219f2b99e476fd21a24fb21bd373e512aba1",
+  "sources": {
+    "gsm8k_revision": "3101c7d5072418e28b9008a6636bde82a006892c",
+    "gsm8k_sha256": "3730d312f6e3440559ace48831e51066acaca737f6eabec99bccb9e4b3c39d14",
+    "proofwriter_sha256": "bbc5694901e8306d0bd659aa1ad53ccfd02c201864f4b320ffa3777827d1fc26"
+  },
+  "max_active_seconds": 64800,
+  "budget": {
+    "shared_jev_cap_usd": 3,
+    "accounting_usd_per_million_input": 0.05,
+    "request_ceiling_tokens": 65536
+  },
+  "output_contract": "All final answers are Granite-generated; no Jev final calls. Same grading for all arms.",
+  "analysis": "Four task-specific contrasts; 5000 paired problem-cluster draws; 98.75% intervals; all planned outcomes in denominators.",
+  "runtime": {
+    "backend": {
+      "backend": "transformers",
+      "model": "ibm-granite/granite-4.0-1b",
+      "requested_revision": "6a7381ba1f54d684ff508d991aeb7dc580157103",
+      "resolved_revision": "6a7381ba1f54d684ff508d991aeb7dc580157103",
+      "device": "cuda:0",
+      "dtype": "torch.bfloat16",
+      "parameters": 1631750144,
+      "trainable_parameters": 0,
+      "torch": "2.8.0+cu128",
+      "transformers": "4.57.1",
+      "temperature": 0.8,
+      "top_p": 0.95,
+      "cache_between_chunks": "recompute accepted prefix"
+    },
+    "load_seconds": 1.049728377000065,
+    "warmup": "Two tokens at batch one and configured candidates; excluded from jobs",
+    "platform": "Linux-6.11.0-1016-nvidia-x86_64-with-glibc2.39",
+    "python": "3.12.13"
+  },
+  "hardware": {
+    "gpu": "NVIDIA L40S 48 GB",
+    "gpu_count": 1,
+    "vcpus": 8,
+    "ram_gib": 32,
+    "boot_disk_gib": 80
+  },
+  "privacy": "Aggregates, source identifiers and hashes only; raw ProofWriter text and full traces remain private.",
+  "artifact_sha256": {
+    "runs.jsonl": "5fc6c5322d16ddd83256fd1692bf4014c9147141f42b4ba7b1077ffd767fbf0b",
+    "audit-20260920T222321424784Z.json": "ca6636e955093387a395a3eab7561b3933fc3d614df8277a1c0614708e72cc4c",
+    "session-20260920T204211315444Z.json": "db8bc79b8ee49b690630520013ce79dd530a297f8ae8331138d8aca65c5c3bdc",
+    "journal.jsonl": "1cb0fd38bb17d4907b4ee4cf307770716d0fd444a471d0296cc3b88e46f05938",
+    "cases.jsonl": "606131e4c659784b8d04b9cfde004b1b30374fc15e27344637b6c54a08a39828",
+    "protocol.json": "4f0b4b5f88c2b38692ff241dfc65901b78974c63140e9e1f5962580c4652262b",
+    "exclusions.json": "a7914880d06bd0701e6a22d1aa27a8219d8a0e1a028b79c9a746ed1673318689",
+    "analysis-20260920T222314530573Z.json": "cc1d837e3893ce76b08350bb8dd18257b4a7b27a840bbab8071353ccb0888b08"
+  }
+}

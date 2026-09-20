@@ -16,6 +16,9 @@ weaken their requirements in this entrypoint.
 | [framing.py](src/jev_guided_decoding/framing.py) | Frame parsing and versioned-by-source instruction/example prompt variants |
 | [reasoning_scorer.py](src/jev_guided_decoding/reasoning_scorer.py) | Whole-prefix validity, new-step progress, final completion using shared Jev transport |
 | [verdict.py](src/jev_guided_decoding/verdict.py) | Fixed typed verdict choices, reserved final-call budget, and direct-Jev classification control |
+| [generated_answer.py](src/jev_guided_decoding/generated_answer.py) | Intermediate-only selection with a reserved, generator-owned final answer; framing tokens have separate provenance |
+| [experiment_budget.py](src/jev_guided_decoding/experiment_budget.py) | Exclusive durable reservations before paid attempts; known-usage settlement and fail-closed spending |
+| [Generated-answer audit](experiments/audit_generated_answers.py) | Independent reconstruction of final tokens, accepted prefixes, scoring phases, and resource counters |
 | [jev.py](src/jev_guided_decoding/jev.py) | Credentials, typed questions, HTTP validation, bounded retries, usage |
 | [Transformers backend](src/jev_guided_decoding/backends/transformers.py) | Frozen causal model, token generation, stopping, likelihood, device accounting |
 | [benchmark.py](src/jev_guided_decoding/benchmark.py) | Dataset validation, lexical metrics, summaries |

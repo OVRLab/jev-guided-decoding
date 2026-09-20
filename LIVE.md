@@ -27,6 +27,7 @@ a published release.
 | Twelve-run CUDA pilot on one L40S: all four executed arms matched 2/3 verdicts, without provider/backend errors | [CUDA pilot report](reports/2026-09-20-cuda-pilot/README.md) |
 | Completed 2,400-job ProofWriter study and 96-job synthetic stress test; guided 84.5% versus direct Jev 84.7%, without demonstrated added accuracy | [final report, aggregate results, and integrity audit](reports/2026-09-20-controlled-study/README.md) |
 | Separate controller keeps Granite as final answerer, scores intermediate steps only, and reserves final generation plus durable Jev spending | [replacement protocol](docs/generated-answer-experiment.md), [controller tests](tests/test_generated_answer.py), [budget tests](tests/test_experiment_budget.py) |
+| Completed 3,600-job generated-answer study: no demonstrated accuracy gain; all final generations passed token-provenance audit | [final report, controls, intervals, and resource accounting](reports/2026-09-20-generated-answer-study/README.md) |
 
 The recorded smoke run used original Granite with zero trainable parameters.
 Guided decoding averaged 3.71 seconds versus 1.10 seconds greedy, with no
@@ -51,9 +52,15 @@ total budget. Its implementation has offline checks; its new development pilot a
 fresh evaluation follow a separate protocol. The first pilot failed formatting;
 the [corrected 48-job pilot](reports/2026-09-20-generated-answer-pilot-v2/README.md)
 passed the admission gate, including an independent final-token audit and nine
-changed intermediate selections. The fresh 3,600-job main evaluation is running
-on one L40S; no held-out accuracy result is available yet. Final-answer attribution
-is now an explicit invariant.
+changed intermediate selections. The [3,600-job evaluation](reports/2026-09-20-generated-answer-study/README.md)
+is complete: math accuracy was 61.5% single, 67.8% likelihood, and 56.5% Jev;
+logic was 52.7%, 52.8%, and 52.5%. The math decrease versus likelihood remained
+below zero throughout its adjusted interval; other intervals included zero.
+All 3,600 final generations passed the token audit, reproduced from local backups.
+Jev retained no step in 572/600 logic runs. The 206-test local suite passed; raw
+results were verified before the temporary server/disk/network resources were
+deleted. Estimated compute, disk and Jev cost was $3.29 before tax and separate
+network charges. Final-answer attribution is now an explicit invariant.
 
 - vLLM extension, retained-prefix cache reuse between chunks, or concurrent serving.
 - Guaranteed semantic candidate diversity; deduplication currently uses exact token IDs.

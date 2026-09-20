@@ -1,0 +1,31 @@
+{
+  "provenance_audit_passed": true,
+  "jobs_audited": 3600,
+  "accepted_steps": 10116,
+  "final_generations": 3600,
+  "completion": {
+    "single": {
+      "frame_completion": 0.9983333333333333,
+      "answer_format_valid": 0.995
+    },
+    "likelihood": {
+      "frame_completion": 1.0,
+      "answer_format_valid": 0.9966666666666667
+    },
+    "jev": {
+      "frame_completion": 1.0,
+      "answer_format_valid": 0.9966666666666667
+    }
+  },
+  "jev_changed_intermediate_choices": 484,
+  "development_gate_passed": null,
+  "audit_reproduced_from_local_backup": true,
+  "recorded_sampling_seeds_counts_and_final_policy_verified": true,
+  "matched_initial_candidate_batches": 1200,
+  "paired_initial_candidate_batches": 1200,
+  "identical_final_prefixes_with_different_greedy_tokens": 0,
+  "unique_problem_evidence_hashes": 400,
+  "excluded_theory_or_evidence_overlap": 0,
+  "ledger_reconciles_both_pilots_and_main": true,
+  "raw_backup_files_verified_before_deletion": 41
+}
