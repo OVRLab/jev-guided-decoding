@@ -134,7 +134,7 @@ class VerdictConfig:
 
 @dataclass
 class FixedVerdictResult(ReasoningResult):
-    mode: Literal["fixed_jev", "direct_jev"]
+    mode: Literal["fixed_jev", "unguided_fixed_jev", "direct_jev"]
     schema_version: str = "fixed-verdict-v1"
     output_source: str = "jev_choice"
     reasoning_outcome: dict | None = None
@@ -150,13 +150,13 @@ class FixedVerdictController:
         self._lock = asyncio.Lock()
 
     async def run(self, request: Request, mode="fixed_jev") -> FixedVerdictResult:
-        if mode not in ("fixed_jev", "direct_jev"):
+        if mode not in ("fixed_jev", "unguided_fixed_jev", "direct_jev"):
             raise ValueError("Unknown fixed-verdict mode")
         if self.scorer is None:
             raise ValueError("Fixed verdicts require a scorer")
-        if mode == "fixed_jev":
+        if mode != "direct_jev":
             if self.backend is None:
-                raise ValueError("fixed_jev requires a backend")
+                raise ValueError(f"{mode} requires a backend")
             self.verdict.validate_reservation(self.config)
         async with self._lock:
             return await self._run(request, mode)
@@ -191,7 +191,7 @@ class FixedVerdictController:
             )
             return result
 
-        if mode == "fixed_jev":
+        if mode != "direct_jev":
             reasoning_config = replace(
                 self.config,
                 max_api_calls=self.config.max_api_calls - 1,
@@ -200,7 +200,7 @@ class FixedVerdictController:
             try:
                 reasoning = await ReasoningController(
                     self.backend, reasoning_config, self.scorer, clock=self.clock
-                ).run(request, "jev")
+                ).run(request, "jev" if mode == "fixed_jev" else "likelihood")
             except ReasoningCancelled as exc:
                 result = adopt(exc.result)
                 raise ReasoningCancelled(finish("cancelled")) from None
