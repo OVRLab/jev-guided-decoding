@@ -54,3 +54,19 @@ def test_unguided_cli_mode_is_accepted():
         ]
     )
     assert args.mode == "unguided_fixed_jev"
+
+
+def test_final_filter_control_scores_only_generated_finals_then_uses_same_choice():
+    step = candidate("<step>B</step>")
+    final = candidate("<final>CONTRADICTED</final>")
+    scorer = Decider()
+    result = asyncio.run(
+        FixedVerdictController(
+            Backend([[step], [final]]), ReasoningConfig(max_resamples=0), scorer, VerdictConfig()
+        ).run(REQUEST, "final_only_fixed_jev")
+    )
+    assert len(scorer.calls) == 1
+    assert scorer.calls[0][1][0].text == final.text
+    assert scorer.decisions[0][1] == ["B"]
+    assert result.reasoning_outcome["mode"] == "final_jev"
+    assert result.api_calls == 2 and result.text == "UNKNOWN"

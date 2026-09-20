@@ -229,13 +229,13 @@ def audit_steps(world, steps):
         status = "unparsed"
         if value is not None:
             status = (
-                "premise"
+                "unsupported"
+                if value not in closure
+                else "premise"
                 if value in premises
                 else "repeated"
                 if value in seen
                 else "supported_new"
-                if value in closure
-                else "unsupported"
             )
             seen.add(value)
         rows.append(

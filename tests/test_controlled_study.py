@@ -19,7 +19,7 @@ SPEC.loader.exec_module(study)
 def test_planned_jobs_pair_all_modes_and_seeds_and_never_replay_started_work():
     cases = [data.case_from(world(), "q1")]
     jobs = study.plan_jobs(cases, [42, 43, 44])
-    assert len(jobs) == 9 and len({j["key"] for j in jobs}) == 9
+    assert len(jobs) == 12 and len({j["key"] for j in jobs}) == 12
     assert study.remaining_jobs(jobs, [{"event": "started", "key": jobs[0]["key"]}]) == jobs[1:]
     with pytest.raises(ValueError, match="Duplicate"):
         study.remaining_jobs(jobs, [{"event": "started", "key": jobs[0]["key"]}] * 2)
@@ -58,9 +58,9 @@ def test_analysis_retains_missing_attempts_and_does_not_multiply_sample_size_by_
 def test_paired_interval_groups_seeds_at_problem_level():
     result = study.paired_interval([1.0] * 20)
     assert result["difference"] == 1.0
-    assert result["ci_97_5"] == [1.0, 1.0]
+    assert result["ci_adjusted"] == [1.0, 1.0]
     assert result["wins"] == 20 and result["losses"] == 0
-    assert study.paired_interval([0] * 20)["ci_97_5"] == [0, 0]
+    assert study.paired_interval([0] * 20)["ci_adjusted"] == [0, 0]
 
 
 def test_fixed_generated_answer_is_a_separate_control_not_the_final_choice():
@@ -110,7 +110,7 @@ def test_runner_records_all_arms_once_and_rejects_concurrent_or_modified_runs(
     monkeypatch.setattr(study, "VerdictScorer", Client)
     assert asyncio.run(study.execute(tmp_path)) == 0
     before = (tmp_path / "runs.jsonl").read_bytes()
-    assert len(study.read_lines(tmp_path / "runs.jsonl")) == 3
+    assert len(study.read_lines(tmp_path / "runs.jsonl")) == 4
     assert asyncio.run(study.execute(tmp_path)) == 0
     assert (tmp_path / "runs.jsonl").read_bytes() == before
     (tmp_path / "running.lock").write_text("123")

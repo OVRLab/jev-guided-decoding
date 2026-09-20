@@ -13,6 +13,12 @@ from .reasoning_scorer import ReasoningScorer
 from .types import Request, ScorerError
 
 VERDICTS = ("ENTAILED", "CONTRADICTED", "UNKNOWN")
+FIXED_REASONING_MODES = {
+    "fixed_jev": "jev",
+    "unguided_fixed_jev": "likelihood",
+    "final_only_fixed_jev": "final_jev",
+}
+FIXED_MODES = (*FIXED_REASONING_MODES, "direct_jev")
 VERDICT_CRITERIA = {
     "ENTAILED": "The claim follows from the original evidence through valid deductions.",
     "CONTRADICTED": "The explicit negation of the claim follows from the original evidence.",
@@ -134,7 +140,7 @@ class VerdictConfig:
 
 @dataclass
 class FixedVerdictResult(ReasoningResult):
-    mode: Literal["fixed_jev", "unguided_fixed_jev", "direct_jev"]
+    mode: Literal["fixed_jev", "unguided_fixed_jev", "final_only_fixed_jev", "direct_jev"]
     schema_version: str = "fixed-verdict-v1"
     output_source: str = "jev_choice"
     reasoning_outcome: dict | None = None
@@ -150,7 +156,7 @@ class FixedVerdictController:
         self._lock = asyncio.Lock()
 
     async def run(self, request: Request, mode="fixed_jev") -> FixedVerdictResult:
-        if mode not in ("fixed_jev", "unguided_fixed_jev", "direct_jev"):
+        if mode not in FIXED_MODES:
             raise ValueError("Unknown fixed-verdict mode")
         if self.scorer is None:
             raise ValueError("Fixed verdicts require a scorer")
@@ -200,7 +206,7 @@ class FixedVerdictController:
             try:
                 reasoning = await ReasoningController(
                     self.backend, reasoning_config, self.scorer, clock=self.clock
-                ).run(request, "jev" if mode == "fixed_jev" else "likelihood")
+                ).run(request, FIXED_REASONING_MODES[mode])
             except ReasoningCancelled as exc:
                 result = adopt(exc.result)
                 raise ReasoningCancelled(finish("cancelled")) from None

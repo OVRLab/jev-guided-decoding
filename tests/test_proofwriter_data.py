@@ -100,3 +100,22 @@ def test_claim_audit_does_not_call_unparsed_or_partial_reasoning_a_verified_proo
     )
     assert [r["status"] for r in checks] == ["supported_new", "unsupported", "premise", "unparsed"]
     assert all(r["full_inference_verified"] is False for r in checks)
+
+
+def test_repeating_an_unsupported_claim_remains_unsupported():
+    checks = data.audit_steps(world(), ["A is green.", "A is green."])
+    assert [c["status"] for c in checks] == ["unsupported", "unsupported"]
+
+
+def test_selection_is_deterministic_and_rejects_duplicate_theories_and_text():
+    import copy
+
+    a = world()
+    b = copy.deepcopy(a)
+    b["id"] = "another-id"
+    quota = {("CONTRADICTED", 1): 1}
+    assert data.select_cases([a, b], quota) == data.select_cases([b, a], quota)
+    with pytest.raises(ValueError, match="distinct theories"):
+        data.select_cases([a, b], {("CONTRADICTED", 1): 2})
+    with pytest.raises(ValueError, match="Duplicate"):
+        data.select_cases([a, a], quota)

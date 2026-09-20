@@ -28,8 +28,13 @@ from jev_guided_decoding.verdict import FixedVerdictController, VerdictConfig, V
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = runpy.run_path(str(ROOT / "experiments/proofwriter_data.py"))
-MODES = ["fixed_jev", "unguided_fixed_jev", "direct_jev"]
-DERIVED = {"granite_alone": "unguided_fixed_jev", "guided_generated": "fixed_jev"}
+MODES = ["fixed_jev", "unguided_fixed_jev", "final_only_fixed_jev", "direct_jev"]
+DERIVED = {
+    "granite_alone": "unguided_fixed_jev",
+    "guided_generated": "fixed_jev",
+    "final_filtered_generated": "final_only_fixed_jev",
+}
+PRIMARY_CONTROLS = ("unguided_fixed_jev", "final_only_fixed_jev", "direct_jev")
 
 
 def prepared(case):
@@ -51,14 +56,17 @@ def source_hashes():
     return {str(p.relative_to(ROOT)): hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
 
 
-def plan_jobs(cases, seeds):
+def plan_jobs(cases, seeds, modes=None):
+    modes = MODES if modes is None else modes
+    if not modes or len(set(modes)) != len(modes) or not set(modes) <= set(MODES):
+        raise ValueError("Invalid study modes")
     if len(seeds) != len(set(seeds)) or len({c["id"] for c in cases}) != len(cases):
         raise ValueError("Duplicate case or seed")
     jobs = []
     for i, case in enumerate(cases):
         for j, seed in enumerate(seeds):
-            offset = (i + j) % len(MODES)
-            for mode in MODES[offset:] + MODES[:offset]:
+            offset = (i + j) % len(modes)
+            for mode in modes[offset:] + modes[:offset]:
                 jobs.append(
                     {
                         "key": f"{case['id']}|{seed}|{mode}",
@@ -80,36 +88,39 @@ def remaining_jobs(jobs, events):
     return [j for j in jobs if j["key"] not in set(started)]
 
 
-def paired_interval(differences):
-    """Problem-level percentile bootstrap; 97.5% per contrast for two planned contrasts."""
+def paired_interval(differences, comparisons=3):
+    """Problem-level percentile bootstrap with Bonferroni familywise adjustment."""
     rng = random.Random(20260920)
     n = len(differences)
     draws = sorted(mean(rng.choices(differences, k=n)) for _ in range(5000))
+    tail = 0.05 / (2 * comparisons)
     return {
         "difference": mean(differences),
-        "ci_97_5": [draws[62], draws[4937]],
+        "ci_adjusted": [draws[int(5000 * tail)], draws[min(4999, int(5000 * (1 - tail)))]],
+        "confidence_level": 1 - 0.05 / comparisons,
         "wins": sum(d > 0 for d in differences),
         "losses": sum(d < 0 for d in differences),
         "ties": sum(d == 0 for d in differences),
         "independent_problems": n,
-        "method": "5000 problem-cluster bootstrap samples; two Bonferroni-adjusted contrasts",
+        "method": f"5000 problem-cluster bootstrap samples; {comparisons} adjusted contrasts",
     }
 
 
-def analyze(cases, seeds, rows):
+def analyze(cases, seeds, rows, modes=None):
+    modes = MODES if modes is None else modes
     case_map = {c["id"]: c for c in cases}
     indexed = {}
     for row in rows:
         key = (row["id"], row["seed"], row["result"]["mode"])
         if key in indexed:
             raise ValueError("Duplicate result")
-        if key[0] not in case_map or key[1] not in seeds or key[2] not in MODES:
+        if key[0] not in case_map or key[1] not in seeds or key[2] not in modes:
             raise ValueError("Unplanned result")
         if row["request"] != prepared(case_map[key[0]]):
             raise ValueError("Problem identity mismatch")
         indexed[key] = row
-    modes, correctness = {}, {}
-    all_modes = [*MODES, *DERIVED]
+    mode_results, correctness = {}, {}
+    all_modes = [*modes, *(m for m, source in DERIVED.items() if source in modes)]
     for mode in all_modes:
         counters = Counter(planned=len(cases) * len(seeds))
         strata, seed_counts, confusion = defaultdict(Counter), defaultdict(Counter), Counter()
@@ -125,12 +136,14 @@ def analyze(cases, seeds, rows):
                 text = result.get("text", "").strip() if result else ""
                 predicted = text if complete and text in DATA["LABELS"] else "NO_VERDICT"
                 correct = predicted == case["label"]
+                first_word = text.split()[0].strip(".,:;") if text else ""
                 scores.append(int(correct))
                 counters.update(
                     correct=int(correct),
                     completed=int(complete),
                     missing=int(row is None),
                     recognized=int(predicted != "NO_VERDICT"),
+                    first_label_correct=int(complete and first_word == case["label"]),
                 )
                 confusion[(case["label"], predicted)] += 1
                 for target in (strata[str(case["depth"])], seed_counts[str(seed)]):
@@ -140,7 +153,7 @@ def analyze(cases, seeds, rows):
         tp = confusion[("UNKNOWN", "UNKNOWN")]
         predicted_unknown = sum(n for (a, b), n in confusion.items() if b == "UNKNOWN")
         actual_unknown = sum(n for (a, b), n in confusion.items() if a == "UNKNOWN")
-        modes[mode] = {
+        mode_results[mode] = {
             **dict(counters),
             "accuracy": counters["correct"] / total,
             "coverage": counters["recognized"] / total,
@@ -166,41 +179,71 @@ def analyze(cases, seeds, rows):
         "backtracks",
         "resamples",
     ]
-    for mode in MODES:
+    claim_audits = {}
+    for mode in modes:
         selected = [r["result"] for r in rows if r["result"]["mode"] == mode]
         resources[mode] = {f: sum(r.get(f, 0) for r in selected) for f in fields}
         resources[mode]["unknown_usage_runs"] = sum(bool(r.get("usage_unknown")) for r in selected)
         resources[mode]["stop_reasons"] = dict(Counter(r["stop_reason"] for r in selected))
+        claim_audits[mode] = dict(
+            Counter(
+                check["status"]
+                for row in rows
+                if row["result"]["mode"] == mode
+                for check in DATA["audit_steps"](
+                    case_map[row["id"]]["world"], row["result"]["steps"]
+                )
+            )
+        )
+    controls = [c for c in PRIMARY_CONTROLS if c in modes] if "fixed_jev" in modes else []
     contrasts = {
         control: paired_interval(
-            [a - b for a, b in zip(correctness["fixed_jev"], correctness[control], strict=True)]
+            [a - b for a, b in zip(correctness["fixed_jev"], correctness[control], strict=True)],
+            comparisons=len(controls),
         )
-        for control in ("unguided_fixed_jev", "direct_jev")
+        for control in controls
     }
-    complete = len(indexed) == len(cases) * len(seeds) * len(MODES)
+    complete = len(indexed) == len(cases) * len(seeds) * len(modes)
     return {
         "independent_problems": len(cases),
         "seeds": seeds,
         "study_complete": complete,
-        "modes": modes,
+        "modes": mode_results,
         "primary_contrasts": contrasts,
         "resources": resources,
+        "leading_claim_audits": claim_audits,
+        "step_audit_limit": (
+            "Only recognized leading atomic claims are checked; "
+            "full inference and cited justifications are not verified."
+        ),
         "claim_limit": (
             "Intervals describe this selected benchmark; "
             "no universal proof, no contamination guarantee."
         ),
         "positive_accuracy_evidence": complete
-        and all(c["ci_97_5"][0] > 0 for c in contrasts.values()),
+        and len(cases) >= 200
+        and len(contrasts) == len(PRIMARY_CONTROLS)
+        and not any(
+            r["result"].get("usage_unknown")
+            or r["result"]["stop_reason"]
+            in ("scorer_error", "backend_error", "backend_contract_error", "cancelled")
+            for r in rows
+        )
+        and all(c["ci_adjusted"][0] > 0 for c in contrasts.values()),
     }
 
 
-def freeze(archive, output, config_path, pilot=False):
+def freeze(archive, output, config_path, pilot=False, extra_control_only=False, stress=False):
+    if stress and pilot:
+        raise ValueError("Stress evaluation is separate from the development pilot")
+    if extra_control_only and not pilot:
+        raise ValueError("Extra-control-only is a development pilot option")
     config = tomllib.loads(config_path.read_text())
     decoding = ReasoningConfig(**config["reasoning"])
     VerdictConfig(**config["verdict"]).validate_reservation(decoding)
     if decoding.prompt_style != "examples":
         raise ValueError("This protocol freezes the existing examples prompt")
-    split = "dev" if pilot else "test"
+    split = "generated" if stress else "dev" if pilot else "test"
     quotas = (
         {
             (label, depth): 1
@@ -209,9 +252,14 @@ def freeze(archive, output, config_path, pilot=False):
         if pilot
         else DATA["main_quotas"]()
     )
-    cases = DATA["select_cases"](DATA["load_split"](archive, split), quotas)
-    seeds = [42] if pilot else [42, 43, 44]
-    jobs = plan_jobs(cases, seeds)
+    cases = (
+        runpy.run_path(str(ROOT / "experiments/reasoning_stress.py"))["make_cases"]()
+        if stress
+        else DATA["select_cases"](DATA["load_split"](archive, split), quotas)
+    )
+    seeds = [42] if pilot or stress else [42, 43, 44]
+    modes = ["final_only_fixed_jev"] if extra_control_only else MODES
+    jobs = plan_jobs(cases, seeds, modes)
     output.mkdir(parents=True, exist_ok=False)
     dataset = "".join(json.dumps(c, sort_keys=True) + "\n" for c in cases)
     (output / "cases.jsonl").write_text(dataset)
@@ -219,12 +267,13 @@ def freeze(archive, output, config_path, pilot=False):
         output / "protocol.json",
         {
             "created_at": datetime.now(UTC).isoformat(),
-            "purpose": "pilot" if pilot else "evaluation",
-            "dataset_source": DATA["ARCHIVE_URL"],
-            "archive_sha256": DATA["ARCHIVE_SHA256"],
+            "purpose": "pilot" if pilot else "stress" if stress else "evaluation",
+            "dataset_source": "experiments/reasoning_stress.py" if stress else DATA["ARCHIVE_URL"],
+            "archive_sha256": None if stress else DATA["ARCHIVE_SHA256"],
             "split": split,
             "strata": DATA["counts"](cases),
             "seeds": seeds,
+            "modes": modes,
             "jobs": jobs,
             "dataset_sha256": hashlib.sha256(dataset.encode()).hexdigest(),
             "config": config,
@@ -238,17 +287,20 @@ def freeze(archive, output, config_path, pilot=False):
                 ).strip()
             ),
             "prompt_sha256": hashlib.sha256(DEMONSTRATION_PROMPT.encode()).hexdigest(),
-            "max_active_seconds": 1200 if pilot else 129600,
+            "max_active_seconds": 1200 if pilot else 10800 if stress else 172800,
             "max_api_calls": sum(
-                decoding.max_api_calls if j["mode"] == "fixed_jev" else 1 for j in jobs
+                decoding.max_api_calls if j["mode"] in ("fixed_jev", "final_only_fixed_jev") else 1
+                for j in jobs
             ),
             "rights": (
-                "Archive has a README but no explicit dataset license; "
+                "New fictional worlds generated by this repository's MIT-licensed code."
+                if stress
+                else "Archive has a README but no explicit dataset license; "
                 "raw source text stays local pending clarification."
             ),
             "analysis": (
                 "Exact canonical verdict; incomplete and missing count incorrect; "
-                "5000 problem-cluster bootstrap draws, 97.5% per two primary contrasts."
+                "5000 problem-cluster bootstrap draws; three adjusted primary contrasts."
             ),
         },
     )
@@ -337,7 +389,11 @@ async def execute(output):
                 (output / "runs.jsonl").open("a") as stream,
             ):
                 for job in jobs:
-                    reserve_calls = decoding.max_api_calls if job["mode"] == "fixed_jev" else 1
+                    reserve_calls = (
+                        decoding.max_api_calls
+                        if job["mode"] in ("fixed_jev", "final_only_fixed_jev")
+                        else 1
+                    )
                     if (
                         active_used + decoding.max_seconds > protocol["max_active_seconds"]
                         or calls_used + reserve_calls > protocol["max_api_calls"]
@@ -400,12 +456,16 @@ def main():
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--archive", type=Path)
     parser.add_argument(
-        "--config", type=Path, default=ROOT / "configs/granite-4.0-1b-fixed-verdict.toml"
+        "--config", type=Path, default=ROOT / "configs/granite-4.0-1b-proofwriter.toml"
     )
     parser.add_argument("--pilot", action="store_true")
+    parser.add_argument("--extra-control-only", action="store_true")
+    parser.add_argument("--stress", action="store_true")
     args = parser.parse_args()
     if args.action == "freeze":
-        freeze(args.archive, args.output, args.config, args.pilot)
+        freeze(
+            args.archive, args.output, args.config, args.pilot, args.extra_control_only, args.stress
+        )
     elif args.action == "run":
         return asyncio.run(execute(args.output))
     else:
@@ -414,7 +474,8 @@ def main():
             read_lines(args.output / "runs.jsonl"),
         )
         protocol = json.loads((args.output / "protocol.json").read_text())
-        result = analyze(cases, protocol["seeds"], rows)
+        modes = protocol.get("modes", list(dict.fromkeys(j["mode"] for j in protocol["jobs"])))
+        result = analyze(cases, protocol["seeds"], rows, modes)
         stamp = datetime.now(UTC).strftime("%Y%m%dT%H%M%S%fZ")
         write_json(args.output / f"analysis-{stamp}.json", result)
         print(json.dumps(result, indent=2))

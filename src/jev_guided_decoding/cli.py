@@ -24,7 +24,13 @@ from .reasoning import (
 )
 from .reasoning_scorer import ReasoningScorer
 from .types import DecodeConfig, Request
-from .verdict import FixedVerdictController, VerdictConfig, VerdictScorer
+from .verdict import (
+    FIXED_MODES,
+    FIXED_REASONING_MODES,
+    FixedVerdictController,
+    VerdictConfig,
+    VerdictScorer,
+)
 
 
 def parser() -> argparse.ArgumentParser:
@@ -34,7 +40,7 @@ def parser() -> argparse.ArgumentParser:
         reasoning = name.startswith("reason")
         choices = ["jev", "greedy", "sample", "likelihood"]
         if reasoning:
-            choices.extend(["final_jev", "fixed_jev", "unguided_fixed_jev", "direct_jev"])
+            choices.extend(["final_jev", *FIXED_MODES])
         p = sub.add_parser(name)
         p.add_argument("--config", type=Path, required=True)
         p.add_argument("--output", type=Path, required=True)
@@ -83,7 +89,7 @@ async def run(args: argparse.Namespace) -> int:
 
     async def execute(request, mode, run_config):
         try:
-            if mode in ("fixed_jev", "unguided_fixed_jev", "direct_jev"):
+            if mode in FIXED_MODES:
                 return await FixedVerdictController(backend, run_config, scorer, verdict).run(
                     request, mode
                 )
@@ -103,9 +109,9 @@ async def run(args: argparse.Namespace) -> int:
     if price is not None and (not isinstance(price, (int, float)) or not 0 <= price < float("inf")):
         raise ValueError("Jev input price must be finite and nonnegative")
     modes = [args.mode] if generation else list(dict.fromkeys(args.modes))
-    fixed_modes = any(m in ("fixed_jev", "unguided_fixed_jev", "direct_jev") for m in modes)
+    fixed_modes = any(m in FIXED_MODES for m in modes)
     verdict = VerdictConfig(**config.get("verdict", {})) if fixed_modes else None
-    if any(m in ("fixed_jev", "unguided_fixed_jev") for m in modes):
+    if any(m in FIXED_REASONING_MODES for m in modes):
         verdict.validate_reservation(decoding)
     if fixed_modes:
         scorer_type = VerdictScorer
@@ -126,10 +132,7 @@ async def run(args: argparse.Namespace) -> int:
         request = make_request(args.question, args.evidence_file.read_text())
     key = (
         load_api_key(args.key_file)
-        if any(
-            m in ("jev", "final_jev", "fixed_jev", "unguided_fixed_jev", "direct_jev")
-            for m in modes
-        )
+        if any(m in ("jev", "final_jev", *FIXED_MODES) for m in modes)
         else None
     )
     # Import the heavy optional backend only after validating the request/configuration.
@@ -196,8 +199,7 @@ async def run(args: argparse.Namespace) -> int:
         warmup = make_request(cases[0]["question"], cases[0]["evidence"])
         warmup_counts = {1} if backend is not None else set()
         if any(
-            mode in ("jev", "likelihood", "final_jev", "fixed_jev", "unguided_fixed_jev")
-            for mode in modes
+            mode in ("jev", "likelihood", "final_jev", *FIXED_REASONING_MODES) for mode in modes
         ):
             warmup_counts.add(decoding.candidates)
         for count in sorted(warmup_counts):

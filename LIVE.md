@@ -22,6 +22,8 @@ a published release.
 | Fixed final choices and direct-Jev control; separate generated-token/decision provenance, reserved budgets, and validated uncertainty/error outcomes | [implementation](src/jev_guided_decoding/verdict.py), [controller tests](tests/test_fixed_verdict.py), [client tests](tests/test_verdict_scorer.py), [CLI tests](tests/test_fixed_verdict_cli.py) |
 | 18-run fixed-choice check: 6/6 verdict matches for both fixed mode and direct Jev, versus 2/6 existing step guidance; both UNKNOWN cases classified | [dated report and all evidence](reports/2026-09-20-fixed-verdict/README.md) |
 | Intermediate-reasoning investigation: 16 fixed-candidate scorer calls and four generated-derivation runs | [follow-up report](reports/2026-09-20-reasoning-investigation/README.md), [proposed engine design](docs/reasoning-step-investigation.md) |
+| Controlled-study runner, unguided/final-only fixed-choice controls, independently checked ProofWriter data and synthetic stress worlds | [protocol](docs/proofwriter-experiment.md), [runner tests](tests/test_controlled_study.py), [control tests](tests/test_unguided_verdict.py) |
+| Nine-run ProofWriter development pilot on MPS: each executed arm matched 2/3 verdicts | [pilot report](reports/2026-09-20-proofwriter-pilot/README.md) |
 
 The recorded smoke run used original Granite with zero trainable parameters.
 Guided decoding averaged 3.71 seconds versus 1.10 seconds greedy, with no
@@ -30,6 +32,10 @@ wording was accepted elsewhere. These are historical small-sample findings,
 not freshly rerun checks or a general accuracy estimate.
 
 ## Not implemented or not demonstrated
+
+The [controlled study](docs/proofwriter-experiment.md) specifies 200 distinct theories,
+three seeds, four executed arms, and problem-level paired comparisons. Its expanded
+offline suite passes 174 tests; the full study has not yet produced an accuracy result.
 
 - vLLM extension, retained-prefix cache reuse between chunks, or concurrent serving.
 - Guaranteed semantic candidate diversity; deduplication currently uses exact token IDs.

@@ -48,3 +48,11 @@ Jev remains the live evaluator; no surrogate critic or weight training is part o
 this direction. Serving integration and colocated runtime performance need separate
 evidence. Do not tune on the published diagnostic fixtures or treat empty rejection
 as a corrected answer. The investigation specifies implementation tests and controls.
+
+The owner authorized the [controlled ProofWriter study](docs/proofwriter-experiment.md):
+add unguided and final-only-filtered Granite reasoning with the same fixed final
+Jev Choice, retain direct Jev and Granite-alone outcomes, and compare 200 theories across three seeds before
+making a broader improvement claim. A separate development pilot precedes the
+frozen test run. All attempted outcomes remain in the denominator.
+The owner authorized a small cloud GPU for this study; server integration and the
+main results remain pending. The separate synthetic stress test has 24 new worlds.

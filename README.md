@@ -150,6 +150,12 @@ then judges the original evidence with the selected intermediate steps treated a
 tentative suggestions. Granite does not need to generate any of the verdict labels.
 `direct_jev` is a control using the same decision without Granite reasoning; when
 used alone it does not load or import the inference backend.
+`unguided_fixed_jev` supplies the missing control: Granite selects intermediate
+candidates by likelihood, with no step-scoring calls, followed by the identical
+final Jev Choice and reservation. Compare it with `fixed_jev` to isolate the effect
+of guidance before the final decision. `final_only_fixed_jev` also filters
+generated final frames, but leaves intermediate steps unjudged; this separates
+intermediate guidance from that final-frame filter.
 
 ```bash
 uv run --no-sync jev-decode reason-benchmark \
@@ -178,6 +184,15 @@ fixed mode matched 6/6 verdicts, including both UNKNOWN cases, versus 2/6 with
 generated finals. Direct Jev also matched 6/6. All paired Granite searches retained
 identical candidate token sequences and selected paths; the added final decision
 resolved the classifications without improving the underlying reasoning search.
+
+The [controlled ProofWriter protocol](docs/proofwriter-experiment.md) compares these
+four final-decision arms on 200 distinct theories and three seeds. It also grades
+Granite's preserved final answer before the Choice, yielding a Granite-alone
+control without generating the same path twice. The runner freezes source/data
+hashes, journals jobs before dispatch, preserves failures, and reports paired
+confidence intervals grouped by problem. See the protocol for the separate pilot,
+resource ceilings, partial step-audit limits, and executable reproduction commands.
+This is a planned evaluation design, not a claim of improved benchmark accuracy.
 
 ## Compare the four modes
 
