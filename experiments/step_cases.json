@@ -1,0 +1,80 @@
+{
+  "atoms": {
+    "training": "Mira completed orientation",
+    "approval": "Mira has manager approval",
+    "badge": "Mira has a valid badge",
+    "entry": "Mira may enter the archive",
+    "blocked": "Mira is blocked from the archive",
+    "not_blocked": "Mira is not blocked from the archive",
+    "no_entry": "Mira must stay outside the archive",
+    "lunch": "The lunchroom is open",
+    "meal": "Lunch can be served",
+    "vault": "Mira may open the inner vault"
+  },
+  "cases": [
+    {
+      "id": "useful-incomplete-step",
+      "facts": ["training", "lunch"],
+      "rules": [[["training"], "badge"], [["badge"], "entry"]],
+      "prefix": [],
+      "goal": "entry",
+      "candidates": ["badge", "blocked", "lunch"]
+    },
+    {
+      "id": "continue-and-avoid-repetition",
+      "facts": ["training", "lunch"],
+      "rules": [[["training"], "badge"], [["badge"], "entry"]],
+      "prefix": ["badge"],
+      "goal": "entry",
+      "candidates": ["badge", "lunch", "entry"]
+    },
+    {
+      "id": "missing-conjunct",
+      "facts": ["training"],
+      "rules": [[["training", "approval"], "badge"], [["badge"], "entry"]],
+      "prefix": [],
+      "goal": "entry",
+      "candidates": ["badge", "approval", "entry"]
+    },
+    {
+      "id": "conjunct-present",
+      "facts": ["training", "approval"],
+      "rules": [[["training", "approval"], "badge"], [["badge"], "entry"]],
+      "prefix": [],
+      "goal": "entry",
+      "candidates": ["blocked", "badge", "meal"]
+    },
+    {
+      "id": "reverse-implication",
+      "facts": ["badge", "lunch"],
+      "rules": [[["training"], "badge"]],
+      "prefix": [],
+      "goal": "training",
+      "candidates": ["training", "badge", "lunch"]
+    },
+    {
+      "id": "explicit-negation",
+      "facts": ["badge", "not_blocked"],
+      "rules": [[["badge", "not_blocked"], "entry"], [["blocked"], "no_entry"]],
+      "prefix": [],
+      "goal": "entry",
+      "candidates": ["no_entry", "entry", "blocked"]
+    },
+    {
+      "id": "true-but-irrelevant-inference",
+      "facts": ["training", "lunch"],
+      "rules": [[["lunch"], "meal"], [["training"], "badge"], [["badge"], "entry"]],
+      "prefix": [],
+      "goal": "entry",
+      "candidates": ["meal", "badge", "approval"]
+    },
+    {
+      "id": "contaminated-prefix",
+      "facts": ["training"],
+      "rules": [[["badge"], "entry"], [["entry"], "vault"]],
+      "prefix": ["badge"],
+      "goal": "vault",
+      "candidates": ["entry", "vault", "training"]
+    }
+  ]
+}
