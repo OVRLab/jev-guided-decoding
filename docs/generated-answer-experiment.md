@@ -140,6 +140,15 @@ All three arms receive these changes. Separate regressions reproduced the EOS
 and versioned-contract failures before the correction. Preserve and rerun the same
 development selection under a new manifest; do not tune on held-out cases.
 
+The [second pilot](../reports/2026-09-20-generated-answer-pilot-v2/README.md) passed:
+15/16, 15/16, and 16/16 outputs met the requested format; all 48 final generations
+had verified model-token provenance, and Jev changed nine intermediate selections.
+No accuracy advantage was required. Source `966fdb7` was admitted for the full
+400-problem, three-seed, three-arm evaluation. Tokenization preflight found input
+lengths of 470--717 tokens; the full configured continuation fits the context
+ceiling in every case. The temporary L40S has a twelve-hour shutdown cap, within
+the authorized maximum 20 GPU hours, plus completion shutdown and verified backups.
+
 Primary sources: [GSM8K](https://github.com/openai/grade-school-math),
 [TypeSafe API](https://docs.typesafe.ai/api),
 [Jev model pricing and limits](https://docs.typesafe.ai/models), and

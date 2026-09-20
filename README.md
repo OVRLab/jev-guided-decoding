@@ -213,8 +213,10 @@ Granite generates the content, retaining its exact accepted reasoning tokens.
 The [controller](src/jev_guided_decoding/generated_answer.py) reserves one common
 Granite final generation even after all steps are rejected. Tests enforce answer
 provenance and no final Jev calls. A separate persistent ledger reserves the maximum
-input-token charge before each Jev request. This replacement is awaiting its new
-development pilot and frozen evaluation; no new accuracy claim is made.
+input-token charge before each Jev request. The first development pilot failed the
+format gate and was preserved; the [corrected pilot](reports/2026-09-20-generated-answer-pilot-v2/README.md)
+passed final-token ownership, format, and exercised-guidance checks. The 3,600-job
+fresh evaluation is running on one L40S; no held-out result is claimed yet.
 
 After downloading the pinned GSM8K files and ProofWriter archive described in the
 protocol, freeze and run development data first:

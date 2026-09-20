@@ -79,3 +79,9 @@ All three retain Granite's accepted token continuation and use the same Granite
 final-generation rule, including when no reasoning step is usable. Jev cannot choose
 the final answer. Independent grading uses fresh logic cases and numerical word
 problems. Development validation and a new test freeze must precede any new claim.
+
+The first replacement pilot failed the shared format gate and remains recorded.
+The [second 48-job development pilot](reports/2026-09-20-generated-answer-pilot-v2/README.md)
+passed, using explicit EOS termination and a versioned TRUE/FALSE/UNKNOWN contract.
+The admitted main study is running on 400 fresh test problems across three seeds
+and three arms (3,600 jobs), with source, settings, grading, and exclusions frozen.

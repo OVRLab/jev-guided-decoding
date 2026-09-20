@@ -48,7 +48,12 @@ All temporary cloud resources were deleted after verified result retrieval.
 The fixed-choice result answers a different question from whether Jev improves
 Granite-generated answers. The owner authorized a replacement study with a $50
 total budget. Its implementation has offline checks; its new development pilot and
-fresh evaluation remain pending. Final-answer attribution is now an explicit invariant.
+fresh evaluation follow a separate protocol. The first pilot failed formatting;
+the [corrected 48-job pilot](reports/2026-09-20-generated-answer-pilot-v2/README.md)
+passed the admission gate, including an independent final-token audit and nine
+changed intermediate selections. The fresh 3,600-job main evaluation is running
+on one L40S; no held-out accuracy result is available yet. Final-answer attribution
+is now an explicit invariant.
 
 - vLLM extension, retained-prefix cache reuse between chunks, or concurrent serving.
 - Guaranteed semantic candidate diversity; deduplication currently uses exact token IDs.
