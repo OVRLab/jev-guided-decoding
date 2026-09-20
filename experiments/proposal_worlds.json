@@ -1,0 +1,341 @@
+[
+  {
+    "id": "dev_chain",
+    "split": "development",
+    "structure": "two_hop",
+    "atoms": {
+      "a": "Lira has a teal pass",
+      "b": "Lira may enter the studio",
+      "g": "Lira may borrow a camera",
+      "not_g": "Lira may not borrow a camera"
+    },
+    "facts": [
+      "a"
+    ],
+    "rules": [
+      [
+        [
+          "a"
+        ],
+        "b"
+      ],
+      [
+        [
+          "b"
+        ],
+        "g"
+      ]
+    ],
+    "goal": "g",
+    "opposite": "not_g"
+  },
+  {
+    "id": "dev_and",
+    "split": "development",
+    "structure": "direct_conjunction",
+    "atoms": {
+      "a": "Bin Vedo is sealed",
+      "b": "Bin Vedo is weighed",
+      "g": "Bin Vedo is ready for collection",
+      "not_g": "Bin Vedo is not ready for collection"
+    },
+    "facts": [
+      "a",
+      "b"
+    ],
+    "rules": [
+      [
+        [
+          "a",
+          "b"
+        ],
+        "g"
+      ]
+    ],
+    "goal": "g",
+    "opposite": "not_g"
+  },
+  {
+    "id": "dev_missing",
+    "split": "development",
+    "structure": "missing_direct_conjunction",
+    "atoms": {
+      "a": "Teno has completed orientation",
+      "b": "Teno has supervisor approval",
+      "g": "Teno may operate the console",
+      "not_g": "Teno may not operate the console"
+    },
+    "facts": [
+      "a"
+    ],
+    "rules": [
+      [
+        [
+          "a",
+          "b"
+        ],
+        "g"
+      ]
+    ],
+    "goal": "g",
+    "opposite": "not_g"
+  },
+  {
+    "id": "dev_negative",
+    "split": "development",
+    "structure": "direct_negative",
+    "atoms": {
+      "a": "Gate Zura has a fault flag",
+      "g": "Gate Zura is open",
+      "not_g": "Gate Zura is not open"
+    },
+    "facts": [
+      "a"
+    ],
+    "rules": [
+      [
+        [
+          "a"
+        ],
+        "not_g"
+      ]
+    ],
+    "goal": "g",
+    "opposite": "not_g"
+  },
+  {
+    "id": "eval_chain",
+    "split": "evaluation",
+    "structure": "three_hop_with_distractor",
+    "atoms": {
+      "a": "Parcel Omi has a violet sticker",
+      "b": "Parcel Omi is inspected",
+      "c": "Parcel Omi is registered",
+      "g": "Parcel Omi may be dispatched",
+      "d": "Parcel Omi has a quarantine flag",
+      "not_g": "Parcel Omi may not be dispatched"
+    },
+    "facts": [
+      "a"
+    ],
+    "rules": [
+      [
+        [
+          "a"
+        ],
+        "b"
+      ],
+      [
+        [
+          "b"
+        ],
+        "c"
+      ],
+      [
+        [
+          "c"
+        ],
+        "g"
+      ],
+      [
+        [
+          "d"
+        ],
+        "not_g"
+      ]
+    ],
+    "goal": "g",
+    "opposite": "not_g"
+  },
+  {
+    "id": "eval_merge",
+    "split": "evaluation",
+    "structure": "branch_merge",
+    "atoms": {
+      "a": "Vela has passed the written test",
+      "b": "Vela has passed the practical test",
+      "c": "Vela has a theory certificate",
+      "d": "Vela has a skills certificate",
+      "g": "Vela qualifies for a license",
+      "not_g": "Vela does not qualify for a license"
+    },
+    "facts": [
+      "a",
+      "b"
+    ],
+    "rules": [
+      [
+        [
+          "a"
+        ],
+        "c"
+      ],
+      [
+        [
+          "b"
+        ],
+        "d"
+      ],
+      [
+        [
+          "c",
+          "d"
+        ],
+        "g"
+      ]
+    ],
+    "goal": "g",
+    "opposite": "not_g"
+  },
+  {
+    "id": "eval_alternative",
+    "split": "evaluation",
+    "structure": "alternative_negative_derivations",
+    "atoms": {
+      "a": "Sensor Mivo has an overheating flag",
+      "b": "Sensor Mivo needs inspection",
+      "c": "Sensor Mivo has a recall notice",
+      "d": "Sensor Mivo has a thermal lock",
+      "g": "Sensor Mivo may run",
+      "not_g": "Sensor Mivo may not run"
+    },
+    "facts": [
+      "a"
+    ],
+    "rules": [
+      [
+        [
+          "a"
+        ],
+        "b"
+      ],
+      [
+        [
+          "b",
+          "c"
+        ],
+        "not_g"
+      ],
+      [
+        [
+          "a"
+        ],
+        "d"
+      ],
+      [
+        [
+          "d"
+        ],
+        "not_g"
+      ]
+    ],
+    "goal": "g",
+    "opposite": "not_g"
+  },
+  {
+    "id": "eval_negative",
+    "split": "evaluation",
+    "structure": "negative_two_hop",
+    "atoms": {
+      "a": "Vessel Runa has a cracked hull",
+      "b": "Vessel Runa is unsafe",
+      "g": "Vessel Runa may sail",
+      "not_g": "Vessel Runa may not sail"
+    },
+    "facts": [
+      "a"
+    ],
+    "rules": [
+      [
+        [
+          "a"
+        ],
+        "b"
+      ],
+      [
+        [
+          "b"
+        ],
+        "not_g"
+      ]
+    ],
+    "goal": "g",
+    "opposite": "not_g"
+  },
+  {
+    "id": "eval_cycle",
+    "split": "evaluation",
+    "structure": "unseeded_cycle",
+    "atoms": {
+      "a": "Daro wears a blue jacket",
+      "b": "Daro is on the access list",
+      "d": "Daro is visible to the camera",
+      "g": "Daro may enter the vault",
+      "not_g": "Daro may not enter the vault"
+    },
+    "facts": [
+      "a"
+    ],
+    "rules": [
+      [
+        [
+          "g"
+        ],
+        "b"
+      ],
+      [
+        [
+          "b"
+        ],
+        "g"
+      ],
+      [
+        [
+          "a"
+        ],
+        "d"
+      ]
+    ],
+    "goal": "g",
+    "opposite": "not_g"
+  },
+  {
+    "id": "eval_missing",
+    "split": "evaluation",
+    "structure": "missing_conjunction_after_derivation",
+    "atoms": {
+      "a": "Module Keli passed the bench test",
+      "b": "Module Keli has a test certificate",
+      "c": "Module Keli has a site permit",
+      "d": "Module Keli is cleared for installation",
+      "g": "Module Keli may be activated",
+      "not_g": "Module Keli may not be activated"
+    },
+    "facts": [
+      "a"
+    ],
+    "rules": [
+      [
+        [
+          "a"
+        ],
+        "b"
+      ],
+      [
+        [
+          "b",
+          "c"
+        ],
+        "d"
+      ],
+      [
+        [
+          "d"
+        ],
+        "g"
+      ]
+    ],
+    "goal": "g",
+    "opposite": "not_g"
+  }
+]

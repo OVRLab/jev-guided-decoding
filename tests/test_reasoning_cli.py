@@ -20,6 +20,7 @@ def backend(monkeypatch):
 
         def encode(self, request):
             assert "<step>" in request.system
+            type(self).last_request = request
             return (1,)
 
         def decode(self, ids):
@@ -50,9 +51,14 @@ def backend(monkeypatch):
     return Backend
 
 
-def test_reason_command_works_without_credentials_and_records_actual_prompt(backend, tmp_path):
+@pytest.mark.parametrize("prompt_style", ["instructions", "examples"])
+def test_reason_command_works_without_credentials_and_records_actual_prompt(
+    backend, tmp_path, prompt_style
+):
     config = tmp_path / "config.toml"
-    config.write_text('[model]\nmodel_id="fake"\n[reasoning]\nmax_resamples=0\n')
+    config.write_text(
+        f'[model]\nmodel_id="fake"\n[reasoning]\nmax_resamples=0\nprompt_style="{prompt_style}"\n'
+    )
     evidence = tmp_path / "evidence.txt"
     evidence.write_text("Public fixture")
     output = tmp_path / "run.json"
@@ -76,6 +82,10 @@ def test_reason_command_works_without_credentials_and_records_actual_prompt(back
     assert saved["result"]["text"] == "Done"
     assert saved["result"]["schema_version"] == "reasoning-v1"
     assert "<step>" in saved["request"]["system"]
+    from jev_guided_decoding.framing import REASONING_PROMPTS
+
+    assert saved["request"]["system"] == REASONING_PROMPTS[prompt_style]
+    assert backend.last_request.system == saved["request"]["system"]
     with pytest.raises(ValueError, match="already exists"):
         asyncio.run(cli.run(args))
 

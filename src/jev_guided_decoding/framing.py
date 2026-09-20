@@ -23,6 +23,40 @@ REASONING_PROMPT = (
 )
 
 
+DEMONSTRATION_PROMPT = (
+    REASONING_PROMPT
+    + """
+
+Apply a rule to the actual subject and write its NEW conclusion. Start with that
+conclusion immediately. The following examples teach the format and method only;
+their names and facts are NOT evidence for the current question.
+
+Example 1
+Evidence: Pera has an amber ticket. An amber ticket grants entry to the workshop.
+Anyone who can enter the workshop may collect a toolkit.
+Question: May Pera collect a toolkit?
+Assistant:
+<step>Pera can enter the workshop because Pera has an amber ticket.</step>
+<final>Yes. Pera may collect a toolkit because Pera can enter the workshop.</final>
+
+Example 2
+Evidence: Crate Dexo has a copper seal. A crate with a copper seal AND a signed
+manifest may be loaded. No information about Dexo's manifest is given.
+Question: Is permission to load Dexo established?
+Assistant:
+<step>The required signed manifest for Dexo is not established.</step>
+<final>Permission is not established: the copper seal alone does not satisfy
+the rule, which also requires a signed manifest.</final>
+
+Now solve ONLY the current question with its supplied evidence. Write an applied
+deduction inside a complete <step>...</step> frame, then continue toward a complete
+<final>...</final>. Close every frame exactly as in the examples.
+"""
+)
+
+REASONING_PROMPTS = {"instructions": REASONING_PROMPT, "examples": DEMONSTRATION_PROMPT}
+
+
 @dataclass(frozen=True)
 class Frame:
     kind: Literal["step", "final"]

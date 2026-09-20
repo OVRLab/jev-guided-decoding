@@ -78,7 +78,7 @@ async def run(args: argparse.Namespace) -> int:
 
     def make_request(question, evidence):
         request = Request(question, evidence)
-        return prepare_reasoning_request(request) if reasoning else request
+        return prepare_reasoning_request(request, decoding.prompt_style) if reasoning else request
 
     async def execute(request, mode, run_config):
         try:

@@ -9,18 +9,26 @@ import time
 from dataclasses import asdict, dataclass, field, replace
 from typing import Literal, Protocol
 
-from .framing import REASONING_PROMPT, Frame, parse_frame
+from .framing import REASONING_PROMPTS, Frame, parse_frame
 from .types import SYSTEM_PROMPT, Backend, Proposal, Request, RunResult, Scorer, ScorerError
 
 ReasoningMode = Literal["greedy", "sample", "likelihood", "jev", "final_jev"]
 
 
-def prepare_reasoning_request(request: Request) -> Request:
-    if request.system == REASONING_PROMPT or request.system.endswith("\n\n" + REASONING_PROMPT):
-        return request
-    system = REASONING_PROMPT
-    if request.system != SYSTEM_PROMPT:
-        system = request.system + "\n\n" + system
+def prepare_reasoning_request(request: Request, prompt_style: str = "instructions") -> Request:
+    if not isinstance(prompt_style, str) or prompt_style not in REASONING_PROMPTS:
+        raise ValueError("Unknown prompt_style")
+    custom = request.system
+    for known in REASONING_PROMPTS.values():
+        if custom == known:
+            custom = SYSTEM_PROMPT
+            break
+        if custom.endswith("\n\n" + known):
+            custom = custom[: -len("\n\n" + known)]
+            break
+    system = REASONING_PROMPTS[prompt_style]
+    if custom != SYSTEM_PROMPT:
+        system = custom + "\n\n" + system
     return replace(request, system=system)
 
 
@@ -58,8 +66,11 @@ class ReasoningConfig:
     progress_threshold: float = 0.60
     completion_threshold: float = 0.75
     seed: int = 42
+    prompt_style: Literal["instructions", "examples"] = "instructions"
 
     def __post_init__(self):
+        if not isinstance(self.prompt_style, str) or self.prompt_style not in REASONING_PROMPTS:
+            raise ValueError("Unknown prompt_style")
         for name in (
             "candidates",
             "keep_branches",
@@ -144,7 +155,7 @@ class ReasoningController:
             raise ValueError("Unknown reasoning mode")
         if mode in ("jev", "final_jev") and self.scorer is None:
             raise ValueError("This reasoning mode requires a scorer")
-        request = prepare_reasoning_request(request)
+        request = prepare_reasoning_request(request, self.config.prompt_style)
         async with self._lock:
             return await self._run(request, mode)
 
