@@ -130,3 +130,11 @@ the restart. Early provider/backend errors stop this stage; errors coinciding wi
 the request deadline are retained while unrelated jobs may continue. The manifest
 marks attempts before dispatch and never schedules prior failed/cancelled rows.
 If the stage limit interrupts another job, keep it and every not-started job visible.
+
+The stage attempted all thirteen jobs and returned exit 3 for incomplete searches.
+The final [report](../reports/2026-09-20-proposal-generation/README.md) retains all
+48 attempts and both execution stages. Step Jev, greedy, and likelihood each
+matched 6/12 verdicts; final-only Jev matched 5/12. No frozen prompt, scorer,
+threshold, fixture, or grading setting changed after evaluation began. The combined
+results explicitly retain mixed process-loading/warm-up provenance and unknown
+usage from the original timeout.

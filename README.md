@@ -136,6 +136,13 @@ The grader counts missing/incomplete runs and unrecognized labels as nonmatches;
 verdict agreement does not establish correct explanations or intermediate steps.
 Use the generic `reason` command with the examples config for your own questions.
 
+The [completed proposal experiment](reports/2026-09-20-proposal-generation/README.md)
+improved development candidate availability from 0/8 to 6/8 batches. In the separate
+48-run comparison, step Jev, greedy, and likelihood each matched 6/12 oracle verdicts;
+final-only Jev matched 5/12. One trace demonstrates a useful early intervention, but
+both UNKNOWN worlds remained unsolved. The report retains every failure, label typo,
+and the timeout that required completing never-started jobs in a separate stage.
+
 ## Compare the four modes
 
 ```bash

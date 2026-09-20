@@ -1,0 +1,29 @@
+{
+  "jev": {
+    "runs": 1,
+    "mean_exact_match": 0.0,
+    "mean_token_f1": 0.0,
+    "mean_elapsed_seconds": 44.32461699983105,
+    "generated_tokens": 345,
+    "decode_token_slots": 351,
+    "prefill_tokens": 12717,
+    "api_calls": 4,
+    "jev_input_tokens": 4503,
+    "estimated_jev_input_cost_usd": 0.000189126,
+    "usage_unknown": false,
+    "stop_reasons": {
+      "no_eligible_branch": 1
+    },
+    "selected_path_tokens_per_second": 0.4737773594316685,
+    "completed_runs": 0,
+    "api_attempts_unknown": false,
+    "generation_seconds": 41.409057416487485,
+    "jev_seconds": 2.911854167934507,
+    "backtracks": 1,
+    "resamples": 2,
+    "duplicate_candidates": 7,
+    "unique_candidates": 8,
+    "expansions": 3,
+    "proposal_batches": 5
+  }
+}

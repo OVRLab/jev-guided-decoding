@@ -17,6 +17,8 @@ a published release.
 | Explicit step/final frames, exact-token search, deduplication, bounded resampling and backtracking | [implementation](docs/reasoning-controller.md), [controller tests](tests/test_reasoning.py), [scorer tests](tests/test_reasoning_scorer.py) |
 | Reasoning CLI and final-only Jev control; baseline operation without credentials | [CLI tests](tests/test_reasoning_cli.py), [reasoning config](configs/granite-4.0-1b-reasoning.toml) |
 | 16-run framed reasoning mechanism check: five verified backtracks, but no completed step-guided answers | [live report and all outcomes](reports/2026-09-20-reasoning-controller/README.md) |
+| Opt-in worked proposal examples, fixed rule oracle, and a completion planner that excludes all prior attempts | [protocol](docs/proposal-generation-experiment.md), [prompt tests](tests/test_reasoning_prompts.py), [oracle tests](tests/test_proposal_probe.py), [completion tests](tests/test_proposal_completion.py) |
+| 32 development batches and 48 separate evaluation attempts: step Jev 6/12 verdict matches, equal to greedy/likelihood; all UNKNOWN worlds unsolved | [full report, raw traces, and independent grades](reports/2026-09-20-proposal-generation/README.md) |
 | Intermediate-reasoning investigation: 16 fixed-candidate scorer calls and four generated-derivation runs | [follow-up report](reports/2026-09-20-reasoning-investigation/README.md), [proposed engine design](docs/reasoning-step-investigation.md) |
 
 The recorded smoke run used original Granite with zero trainable parameters.

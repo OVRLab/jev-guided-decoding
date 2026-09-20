@@ -1,0 +1,153 @@
+{
+  "derived_at_utc": "2026-09-20T12:59:44.863990+00:00",
+  "description": "Offline concatenation and frozen oracle grading of 35 primary rows plus 13 never-started jobs; every raw line is unchanged. All 48 planned jobs were attempted exactly once.",
+  "config": {
+    "model": {
+      "model_id": "ibm-granite/granite-4.0-1b",
+      "revision": "6a7381ba1f54d684ff508d991aeb7dc580157103",
+      "device": "auto",
+      "dtype": "auto",
+      "temperature": 0.8,
+      "top_p": 0.95
+    },
+    "reasoning": {
+      "prompt_style": "examples",
+      "candidates": 3,
+      "keep_branches": 2,
+      "chunk_tokens": 96,
+      "max_steps": 6,
+      "max_expansions": 8,
+      "max_pending": 6,
+      "max_resamples": 1,
+      "max_path_tokens": 384,
+      "max_decode_tokens": 1536,
+      "max_prefill_tokens": 30000,
+      "max_context_tokens": 4096,
+      "max_api_calls": 12,
+      "max_seconds": 90.0,
+      "support_threshold": 0.75,
+      "progress_threshold": 0.6,
+      "completion_threshold": 0.75,
+      "seed": 42
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "request_timeout": 30.0,
+      "max_retries": 2,
+      "input_usd_per_million": 0.042
+    }
+  },
+  "backend": {
+    "backend": "transformers",
+    "model": "ibm-granite/granite-4.0-1b",
+    "requested_revision": "6a7381ba1f54d684ff508d991aeb7dc580157103",
+    "resolved_revision": "6a7381ba1f54d684ff508d991aeb7dc580157103",
+    "device": "mps:0",
+    "dtype": "torch.bfloat16",
+    "parameters": 1631750144,
+    "trainable_parameters": 0,
+    "torch": "2.8.0",
+    "transformers": "4.57.1",
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "cache_between_chunks": "recompute accepted prefix"
+  },
+  "dataset_sha256": "fda468b966c607584e7fe36b14db8e5a4ec8dbb04b4c0302db54de8af2aeb198",
+  "case_ids": [
+    "eval_chain",
+    "eval_merge",
+    "eval_alternative",
+    "eval_negative",
+    "eval_cycle",
+    "eval_missing"
+  ],
+  "seeds": [
+    42,
+    43
+  ],
+  "modes": [
+    "greedy",
+    "likelihood",
+    "final_jev",
+    "jev"
+  ],
+  "primary_source_commit": "11d3d7d0a2c2d81c38a25381b7cf2f2df0f748af",
+  "completion_source_commit": "dc91df9d843c41d35221dbd72065b1d348738cda",
+  "source_trees_clean_at_capture": true,
+  "execution_deviation": "Primary stopped after a scorer timeout. A separate 900-second stage dispatched only never-started jobs; original failed row retained without replay. Prompt/model/config/scorer/oracle unchanged.",
+  "timing": "Primary shared one model load and two-token warm-ups at sizes one and three. Completion reloads per job, warming size one plus size three for search modes. Per-run time excludes loading/warm-up. Restart and shared-machine effects limit comparisons.",
+  "sources": [
+    {
+      "path": "evaluation-primary/runs.jsonl",
+      "sha256": "b2fa2491e6f742ec2328952a953bf2c967dd4c5001dff2af0be342a5d454b160",
+      "rows": 35
+    },
+    {
+      "path": "completion/job-00/runs.jsonl",
+      "sha256": "6178f06ebd293f97d985d9671f8ccf5b7de23b1f672883e4c0649e3c3aa015ff",
+      "rows": 1
+    },
+    {
+      "path": "completion/job-01/runs.jsonl",
+      "sha256": "e8f8dd90aa17a38885acbf9cbd8d2b86a491c5a73f524305309da2e5615fdf66",
+      "rows": 1
+    },
+    {
+      "path": "completion/job-02/runs.jsonl",
+      "sha256": "8a9eb080e347ef0b69b24299acf38e33a926aafe3a72baaf3d907360db782ecf",
+      "rows": 1
+    },
+    {
+      "path": "completion/job-03/runs.jsonl",
+      "sha256": "971d428fd0ddfa1a2b4d4c340914f826c0ff490bc756fffebc8f42bafa8c17f2",
+      "rows": 1
+    },
+    {
+      "path": "completion/job-04/runs.jsonl",
+      "sha256": "bf21728dea9e101ba3dd29d10b616802be3340ed92db6660ce78e9744ced33fa",
+      "rows": 1
+    },
+    {
+      "path": "completion/job-05/runs.jsonl",
+      "sha256": "8906b49f60a65556ec1aaa44485c08ad3de417b2f87b41878c43f871842a2009",
+      "rows": 1
+    },
+    {
+      "path": "completion/job-06/runs.jsonl",
+      "sha256": "292bf3c1be61746d14db845ba8f273b2bb7e3fc442083d1aca06fdb3ff1b666a",
+      "rows": 1
+    },
+    {
+      "path": "completion/job-07/runs.jsonl",
+      "sha256": "43a84767d95e68cb46c64810fd881342cf4f1078a02860d086e15086f82e8a8b",
+      "rows": 1
+    },
+    {
+      "path": "completion/job-08/runs.jsonl",
+      "sha256": "00e24b0e7bba36a3bd9384be324408b7116a43da7a9b69e2b7e81cfc22159722",
+      "rows": 1
+    },
+    {
+      "path": "completion/job-09/runs.jsonl",
+      "sha256": "ecf53078f679f2b95832fcc89ac8d05cfdf3708f68006870446d98636f99cc1e",
+      "rows": 1
+    },
+    {
+      "path": "completion/job-10/runs.jsonl",
+      "sha256": "9c639d18f16165e342889291921e807067fb4ffd4f5ad91ced1636705a638188",
+      "rows": 1
+    },
+    {
+      "path": "completion/job-11/runs.jsonl",
+      "sha256": "b1f494a7635794078b5d4824c0192eceb5ec72184953b4fe2e677c6f6c31535c",
+      "rows": 1
+    },
+    {
+      "path": "completion/job-12/runs.jsonl",
+      "sha256": "27e10b67f3d8d05ea5e76ce1e0d1df340c16a828bd35840bd370c702344a33df",
+      "rows": 1
+    }
+  ],
+  "combined_runs_sha256": "3d6b43405682bf0a95103004dcdbd7eca2c39525695a4dcdeec47029765bb3a9",
+  "usage": "64 HTTP attempts; 63 responses have recorded usage and one ambiguous timeout has unknown provider usage. Known input-token cost estimates exclude that unknown usage, output charges, and local compute."
+}

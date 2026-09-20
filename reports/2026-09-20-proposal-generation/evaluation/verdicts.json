@@ -1,0 +1,515 @@
+{
+  "metric": "First-word verdict agreement, not explanation/step correctness",
+  "summary": {
+    "greedy": {
+      "planned_runs": 12,
+      "not_run": 0,
+      "completed": 8,
+      "recognized_verdicts": 8,
+      "matching_verdicts": 6
+    },
+    "likelihood": {
+      "planned_runs": 12,
+      "not_run": 0,
+      "completed": 12,
+      "recognized_verdicts": 9,
+      "matching_verdicts": 6
+    },
+    "final_jev": {
+      "planned_runs": 12,
+      "not_run": 0,
+      "completed": 7,
+      "recognized_verdicts": 5,
+      "matching_verdicts": 5
+    },
+    "jev": {
+      "planned_runs": 12,
+      "not_run": 0,
+      "completed": 7,
+      "recognized_verdicts": 6,
+      "matching_verdicts": 6
+    }
+  },
+  "runs": [
+    {
+      "id": "eval_chain",
+      "seed": 42,
+      "mode": "greedy",
+      "expected": "ENTAILED",
+      "predicted": "ENTAILED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_chain",
+      "seed": 42,
+      "mode": "likelihood",
+      "expected": "ENTAILED",
+      "predicted": "ENTAILED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_chain",
+      "seed": 42,
+      "mode": "final_jev",
+      "expected": "ENTAILED",
+      "predicted": null,
+      "complete": true,
+      "verdict_match": false,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_chain",
+      "seed": 42,
+      "mode": "jev",
+      "expected": "ENTAILED",
+      "predicted": "ENTAILED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_chain",
+      "seed": 43,
+      "mode": "greedy",
+      "expected": "ENTAILED",
+      "predicted": "ENTAILED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_chain",
+      "seed": 43,
+      "mode": "likelihood",
+      "expected": "ENTAILED",
+      "predicted": "ENTAILED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_chain",
+      "seed": 43,
+      "mode": "final_jev",
+      "expected": "ENTAILED",
+      "predicted": "ENTAILED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_chain",
+      "seed": 43,
+      "mode": "jev",
+      "expected": "ENTAILED",
+      "predicted": "ENTAILED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_merge",
+      "seed": 42,
+      "mode": "greedy",
+      "expected": "ENTAILED",
+      "predicted": null,
+      "complete": false,
+      "verdict_match": false,
+      "stop_reason": "premature_eos"
+    },
+    {
+      "id": "eval_merge",
+      "seed": 42,
+      "mode": "likelihood",
+      "expected": "ENTAILED",
+      "predicted": null,
+      "complete": true,
+      "verdict_match": false,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_merge",
+      "seed": 42,
+      "mode": "final_jev",
+      "expected": "ENTAILED",
+      "predicted": "ENTAILED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_merge",
+      "seed": 42,
+      "mode": "jev",
+      "expected": "ENTAILED",
+      "predicted": "ENTAILED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_merge",
+      "seed": 43,
+      "mode": "greedy",
+      "expected": "ENTAILED",
+      "predicted": null,
+      "complete": false,
+      "verdict_match": false,
+      "stop_reason": "premature_eos"
+    },
+    {
+      "id": "eval_merge",
+      "seed": 43,
+      "mode": "likelihood",
+      "expected": "ENTAILED",
+      "predicted": null,
+      "complete": true,
+      "verdict_match": false,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_merge",
+      "seed": 43,
+      "mode": "final_jev",
+      "expected": "ENTAILED",
+      "predicted": null,
+      "complete": true,
+      "verdict_match": false,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_merge",
+      "seed": 43,
+      "mode": "jev",
+      "expected": "ENTAILED",
+      "predicted": null,
+      "complete": true,
+      "verdict_match": false,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_alternative",
+      "seed": 42,
+      "mode": "greedy",
+      "expected": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_alternative",
+      "seed": 42,
+      "mode": "likelihood",
+      "expected": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_alternative",
+      "seed": 42,
+      "mode": "final_jev",
+      "expected": "CONTRADICTED",
+      "predicted": null,
+      "complete": false,
+      "verdict_match": false,
+      "stop_reason": "time_budget"
+    },
+    {
+      "id": "eval_alternative",
+      "seed": 42,
+      "mode": "jev",
+      "expected": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_alternative",
+      "seed": 43,
+      "mode": "greedy",
+      "expected": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_alternative",
+      "seed": 43,
+      "mode": "likelihood",
+      "expected": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_alternative",
+      "seed": 43,
+      "mode": "final_jev",
+      "expected": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_alternative",
+      "seed": 43,
+      "mode": "jev",
+      "expected": "CONTRADICTED",
+      "predicted": null,
+      "complete": false,
+      "verdict_match": false,
+      "stop_reason": "no_eligible_branch"
+    },
+    {
+      "id": "eval_negative",
+      "seed": 42,
+      "mode": "greedy",
+      "expected": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_negative",
+      "seed": 42,
+      "mode": "likelihood",
+      "expected": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_negative",
+      "seed": 42,
+      "mode": "final_jev",
+      "expected": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_negative",
+      "seed": 42,
+      "mode": "jev",
+      "expected": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_negative",
+      "seed": 43,
+      "mode": "greedy",
+      "expected": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_negative",
+      "seed": 43,
+      "mode": "likelihood",
+      "expected": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_negative",
+      "seed": 43,
+      "mode": "final_jev",
+      "expected": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_negative",
+      "seed": 43,
+      "mode": "jev",
+      "expected": "CONTRADICTED",
+      "predicted": "CONTRADICTED",
+      "complete": true,
+      "verdict_match": true,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_cycle",
+      "seed": 42,
+      "mode": "greedy",
+      "expected": "UNKNOWN",
+      "predicted": "ENTAILED",
+      "complete": true,
+      "verdict_match": false,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_cycle",
+      "seed": 42,
+      "mode": "likelihood",
+      "expected": "UNKNOWN",
+      "predicted": "ENTAILED",
+      "complete": true,
+      "verdict_match": false,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_cycle",
+      "seed": 42,
+      "mode": "final_jev",
+      "expected": "UNKNOWN",
+      "predicted": null,
+      "complete": false,
+      "verdict_match": false,
+      "stop_reason": "scorer_error"
+    },
+    {
+      "id": "eval_cycle",
+      "seed": 42,
+      "mode": "jev",
+      "expected": "UNKNOWN",
+      "predicted": null,
+      "complete": false,
+      "verdict_match": false,
+      "stop_reason": "no_eligible_branch"
+    },
+    {
+      "id": "eval_cycle",
+      "seed": 43,
+      "mode": "greedy",
+      "expected": "UNKNOWN",
+      "predicted": "ENTAILED",
+      "complete": true,
+      "verdict_match": false,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_cycle",
+      "seed": 43,
+      "mode": "likelihood",
+      "expected": "UNKNOWN",
+      "predicted": null,
+      "complete": true,
+      "verdict_match": false,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_cycle",
+      "seed": 43,
+      "mode": "final_jev",
+      "expected": "UNKNOWN",
+      "predicted": null,
+      "complete": false,
+      "verdict_match": false,
+      "stop_reason": "no_eligible_branch"
+    },
+    {
+      "id": "eval_cycle",
+      "seed": 43,
+      "mode": "jev",
+      "expected": "UNKNOWN",
+      "predicted": null,
+      "complete": false,
+      "verdict_match": false,
+      "stop_reason": "no_eligible_branch"
+    },
+    {
+      "id": "eval_missing",
+      "seed": 42,
+      "mode": "greedy",
+      "expected": "UNKNOWN",
+      "predicted": null,
+      "complete": false,
+      "verdict_match": false,
+      "stop_reason": "premature_eos"
+    },
+    {
+      "id": "eval_missing",
+      "seed": 42,
+      "mode": "likelihood",
+      "expected": "UNKNOWN",
+      "predicted": "ENTAILED",
+      "complete": true,
+      "verdict_match": false,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_missing",
+      "seed": 42,
+      "mode": "final_jev",
+      "expected": "UNKNOWN",
+      "predicted": null,
+      "complete": false,
+      "verdict_match": false,
+      "stop_reason": "time_budget"
+    },
+    {
+      "id": "eval_missing",
+      "seed": 42,
+      "mode": "jev",
+      "expected": "UNKNOWN",
+      "predicted": null,
+      "complete": false,
+      "verdict_match": false,
+      "stop_reason": "no_eligible_branch"
+    },
+    {
+      "id": "eval_missing",
+      "seed": 43,
+      "mode": "greedy",
+      "expected": "UNKNOWN",
+      "predicted": null,
+      "complete": false,
+      "verdict_match": false,
+      "stop_reason": "premature_eos"
+    },
+    {
+      "id": "eval_missing",
+      "seed": 43,
+      "mode": "likelihood",
+      "expected": "UNKNOWN",
+      "predicted": "ENTAILED",
+      "complete": true,
+      "verdict_match": false,
+      "stop_reason": "complete"
+    },
+    {
+      "id": "eval_missing",
+      "seed": 43,
+      "mode": "final_jev",
+      "expected": "UNKNOWN",
+      "predicted": null,
+      "complete": false,
+      "verdict_match": false,
+      "stop_reason": "time_budget"
+    },
+    {
+      "id": "eval_missing",
+      "seed": 43,
+      "mode": "jev",
+      "expected": "UNKNOWN",
+      "predicted": null,
+      "complete": false,
+      "verdict_match": false,
+      "stop_reason": "no_eligible_branch"
+    }
+  ]
+}

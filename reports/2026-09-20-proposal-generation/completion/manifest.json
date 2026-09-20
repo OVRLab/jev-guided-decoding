@@ -1,0 +1,179 @@
+{
+  "created_at": "2026-09-20T12:47:30.795262+00:00",
+  "previous": "results/proposal-evaluation-20260920",
+  "previous_results_sha256": "b2fa2491e6f742ec2328952a953bf2c967dd4c5001dff2af0be342a5d454b160",
+  "config": {
+    "model": {
+      "model_id": "ibm-granite/granite-4.0-1b",
+      "revision": "6a7381ba1f54d684ff508d991aeb7dc580157103",
+      "device": "auto",
+      "dtype": "auto",
+      "temperature": 0.8,
+      "top_p": 0.95
+    },
+    "reasoning": {
+      "prompt_style": "examples",
+      "candidates": 3,
+      "keep_branches": 2,
+      "chunk_tokens": 96,
+      "max_steps": 6,
+      "max_expansions": 8,
+      "max_pending": 6,
+      "max_resamples": 1,
+      "max_path_tokens": 384,
+      "max_decode_tokens": 1536,
+      "max_prefill_tokens": 30000,
+      "max_context_tokens": 4096,
+      "max_api_calls": 12,
+      "max_seconds": 90.0,
+      "support_threshold": 0.75,
+      "progress_threshold": 0.6,
+      "completion_threshold": 0.75,
+      "seed": 42
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "request_timeout": 30.0,
+      "max_retries": 2,
+      "input_usd_per_million": 0.042
+    }
+  },
+  "max_stage_seconds": 900,
+  "source_commit": "dc91df9d843c41d35221dbd72065b1d348738cda",
+  "source_dirty": false,
+  "policy": "Only never-started jobs. Keep all failures. Stop on an early service/backend error. A scorer error coinciding with the request deadline is retained and does not block unrelated jobs.",
+  "timing_caveat": "Each job reloads and warms the model in a separate process. Per-job metadata records loading; per-run elapsed excludes loading/warm-up.",
+  "jobs": [
+    {
+      "id": "eval_cycle",
+      "seed": 42,
+      "mode": "jev",
+      "status": "attempted",
+      "output": "job-00",
+      "exit_code": 3,
+      "stop_reason": "no_eligible_branch",
+      "usage_unknown": false
+    },
+    {
+      "id": "eval_cycle",
+      "seed": 43,
+      "mode": "likelihood",
+      "status": "attempted",
+      "output": "job-01",
+      "exit_code": 0,
+      "stop_reason": "complete",
+      "usage_unknown": false
+    },
+    {
+      "id": "eval_cycle",
+      "seed": 43,
+      "mode": "final_jev",
+      "status": "attempted",
+      "output": "job-02",
+      "exit_code": 3,
+      "stop_reason": "no_eligible_branch",
+      "usage_unknown": false
+    },
+    {
+      "id": "eval_cycle",
+      "seed": 43,
+      "mode": "jev",
+      "status": "attempted",
+      "output": "job-03",
+      "exit_code": 3,
+      "stop_reason": "no_eligible_branch",
+      "usage_unknown": false
+    },
+    {
+      "id": "eval_cycle",
+      "seed": 43,
+      "mode": "greedy",
+      "status": "attempted",
+      "output": "job-04",
+      "exit_code": 0,
+      "stop_reason": "complete",
+      "usage_unknown": false
+    },
+    {
+      "id": "eval_missing",
+      "seed": 42,
+      "mode": "likelihood",
+      "status": "attempted",
+      "output": "job-05",
+      "exit_code": 0,
+      "stop_reason": "complete",
+      "usage_unknown": false
+    },
+    {
+      "id": "eval_missing",
+      "seed": 42,
+      "mode": "final_jev",
+      "status": "attempted",
+      "output": "job-06",
+      "exit_code": 3,
+      "stop_reason": "time_budget",
+      "usage_unknown": false
+    },
+    {
+      "id": "eval_missing",
+      "seed": 42,
+      "mode": "jev",
+      "status": "attempted",
+      "output": "job-07",
+      "exit_code": 3,
+      "stop_reason": "no_eligible_branch",
+      "usage_unknown": false
+    },
+    {
+      "id": "eval_missing",
+      "seed": 42,
+      "mode": "greedy",
+      "status": "attempted",
+      "output": "job-08",
+      "exit_code": 3,
+      "stop_reason": "premature_eos",
+      "usage_unknown": false
+    },
+    {
+      "id": "eval_missing",
+      "seed": 43,
+      "mode": "final_jev",
+      "status": "attempted",
+      "output": "job-09",
+      "exit_code": 3,
+      "stop_reason": "time_budget",
+      "usage_unknown": false
+    },
+    {
+      "id": "eval_missing",
+      "seed": 43,
+      "mode": "jev",
+      "status": "attempted",
+      "output": "job-10",
+      "exit_code": 3,
+      "stop_reason": "no_eligible_branch",
+      "usage_unknown": false
+    },
+    {
+      "id": "eval_missing",
+      "seed": 43,
+      "mode": "greedy",
+      "status": "attempted",
+      "output": "job-11",
+      "exit_code": 3,
+      "stop_reason": "premature_eos",
+      "usage_unknown": false
+    },
+    {
+      "id": "eval_missing",
+      "seed": 43,
+      "mode": "likelihood",
+      "status": "attempted",
+      "output": "job-12",
+      "exit_code": 0,
+      "stop_reason": "complete",
+      "usage_unknown": false
+    }
+  ],
+  "exit_code": 3
+}
