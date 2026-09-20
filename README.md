@@ -165,6 +165,10 @@ claims or reject good ones; see [Jev's limitations](https://docs.typesafe.ai/mod
 
 ## Development
 
+The [intermediate-reasoning investigation](docs/reasoning-step-investigation.md)
+includes [live diagnostic results](reports/2026-09-20-reasoning-investigation/README.md)
+and a proposed step-search design. That search controller is not implemented yet.
+
 Contributors and coding agents should start with [AGENTS.md](AGENTS.md),
 [the development workflow](docs/development-workflow.md), and
 [the shared rules](.claude/rules/). [CLAUDE.md](CLAUDE.md) and [GEMINI.md](GEMINI.md)

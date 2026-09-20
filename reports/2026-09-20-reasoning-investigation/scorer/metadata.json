@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-09-20T11:08:32.036642+00:00",
+  "source_commit": "3c05a7d869514f9017a7b339d8f03ce3cd013ee3",
+  "source_dirty": false,
+  "fixture_sha256": "164c08abc8ad08b708767fde8b9d933b52e73c626c038472337d02da088aee93",
+  "inputs_sha256": "a318f9c7b1012cc387a9766e41fbb405ea49f2aeefd275e4b99b3c53c52fab71",
+  "python": "3.12.13",
+  "httpx": "0.28.1",
+  "requested_model": "jev-1.13.0",
+  "max_calls": 16,
+  "request_seconds": 15.0,
+  "total_seconds": 180.0,
+  "candidates_are": "authored synthetic statements; no Granite inference"
+}

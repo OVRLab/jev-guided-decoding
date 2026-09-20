@@ -1,23 +1,29 @@
-# Next feature: evaluate the verifier's decisions
+# Next feature: Jev-guided intermediate reasoning
 
-This is a proposed next experiment, not work already implemented or automatically
-authorized by this document. See [LAUNCH.md](LAUNCH.md) and [LIVE.md](LIVE.md).
+The owner requested investigating Jev as an active helper during inference. The
+[investigation](docs/reasoning-step-investigation.md) and
+[diagnostic report](reports/2026-09-20-reasoning-investigation/README.md) are complete;
+the reasoning-search controller described below is proposed, not implemented.
+See [LAUNCH.md](LAUNCH.md) and [LIVE.md](LIVE.md) for the initial prototype scope.
 
 ## Problem
 
-The smoke test proves generation-time intervention but does not establish a quality
-gain. It contains both an incorrect EOS rejection and accepted misleading wording.
-Changing thresholds on those same examples would not establish generalization.
+The fixed step diagnostic gave correct decisions for both scorer rubrics, but the
+Granite check exposed duplicate candidates, repeated premises, a missing-premise
+hallucination in likelihood selection, and empty rejection in Jev mode. Correct
+final text can also end with `step_budget` because the engine lacks a final phase.
+The experiments establish neither improved quality nor general verifier accuracy.
 
 ## Candidate work and acceptance evidence
 
-1. Define a separate validation/test split, answer rubric, and independent grader.
-2. Measure candidate quality before selection, selected-answer quality, incorrect
-   acceptance, incorrect rejection, completion rate, and budget/error outcomes.
-3. Compare baseline, equal-candidate likelihood selection, and Jev guidance using
-   multiple seeds and actual compute/call counts; separate retries from selection gains.
-4. Record prompt/rubric changes and calibrated thresholds before held-out testing.
-5. Publish all scoped results, including regressions, with licensing and provenance.
+1. Add explicit reasoning/final states and reliable step boundaries with exact tokens.
+2. Deduplicate candidates and permit bounded diversification before concluding no path exists.
+3. Retain alternate branches and test backtracking under global resource limits.
+4. Evaluate grounded validity, progress, and final completion as distinct decisions.
+5. Compare unguided reasoning, likelihood search, final-only Jev selection, and step
+   guidance on held-out cases with independent grading, several seeds, and actual work.
 
-This experiment should determine whether and where a serving optimization is worth
-building. A vLLM implementation or weight training should not be bundled into it.
+Jev remains the live evaluator; no surrogate critic or weight training is part of
+this direction. Serving integration and colocated runtime performance need separate
+evidence. Do not tune on the published diagnostic fixtures or treat empty rejection
+as a corrected answer. The investigation specifies implementation tests and controls.

@@ -14,6 +14,7 @@ a published release.
 | Frozen Transformers backend and exact-token continuation | [backend](src/jev_guided_decoding/backends/transformers.py), [offline backend tests](tests/test_transformers_backend.py) |
 | CLI, lexical benchmark, and pinned Granite configuration | [README](README.md), [config](configs/granite-4.0-1b.toml) |
 | 12-case live smoke run plus separate two-sentence demonstration | [dated report and raw traces](reports/2026-09-20-granite-smoke/README.md) |
+| Intermediate-reasoning investigation: 16 fixed-candidate scorer calls and four generated-derivation runs | [follow-up report](reports/2026-09-20-reasoning-investigation/README.md), [proposed engine design](docs/reasoning-step-investigation.md) |
 
 The recorded smoke run used original Granite with zero trainable parameters.
 Guided decoding averaged 3.71 seconds versus 1.10 seconds greedy, with no
@@ -24,6 +25,7 @@ not freshly rerun checks or a general accuracy estimate.
 ## Not implemented or not demonstrated
 
 - vLLM extension, retained-prefix cache reuse between chunks, or concurrent serving.
+- Dedicated intermediate/final phases, diverse-step search, or saved-branch backtracking.
 - Neural fusion, training, changed model weights, or a new Hugging Face checkpoint.
 - Improved held-out answer quality, general mathematical reasoning, or GPU-server speedups.
 - Validated compatibility beyond the recorded Granite and tiny-model checks.
