@@ -8,7 +8,7 @@ import runpy
 from decimal import Decimal
 from pathlib import Path
 
-from jev_guided_decoding.framing import parse_frame
+from jev_guided_decoding.generated_answer import final_body
 from jev_guided_decoding.types import Request
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -25,9 +25,11 @@ def digest_text(text):
     return hashlib.sha256(text.encode()).hexdigest()
 
 
-def normalize_answer(task, text):
+def normalize_answer(task, text, answer_format=None):
     text = text.strip()
     if task == "proofwriter":
+        if answer_format == "boolean-v2":
+            return {"TRUE": "ENTAILED", "FALSE": "CONTRADICTED", "UNKNOWN": "UNKNOWN"}.get(text)
         return text if text in PROOF["LABELS"] else None
     if task != "gsm8k":
         raise ValueError("Unknown task")
@@ -50,15 +52,16 @@ def grade(case, result):
     if result.get("output_source") != "granite_generated":
         raise ValueError("Final answer provenance is not model generation")
     complete = result.get("phase") == "complete"
-    frame = parse_frame("<final>" + result.get("final_raw_text", ""))
+    body = final_body(result.get("final_raw_text", ""), result.get("final_finish_reason", "frame"))
     if complete and (
-        not result.get("final_token_ids")
-        or frame is None
-        or frame.kind != "final"
-        or frame.body != result.get("text")
+        not result.get("final_token_ids") or body is None or body != result.get("text")
     ):
         raise ValueError("Final answer provenance does not match the generated final frame")
-    predicted = normalize_answer(case["task"], result.get("text", "")) if complete else None
+    predicted = (
+        normalize_answer(case["task"], result.get("text", ""), case.get("answer_format"))
+        if complete
+        else None
+    )
     return {
         "correct": predicted is not None and predicted == case["answer"],
         "completed": complete,
@@ -138,13 +141,15 @@ def select_cases(archive, gsm_path, exclusions, *, pilot=False):
     logic = []
     for case in selected:
         request = PROOF["request_for"](case)
+        question = request.question.replace("ENTAILED", "TRUE").replace("CONTRADICTED", "FALSE")
         logic.append(
             {
                 **case,
                 "id": "proofwriter/" + case["id"],
                 "source_id": case["id"],
                 "task": "proofwriter",
-                "question": request.question,
+                "question": question,
+                "answer_format": "boolean-v2",
                 "answer": case["label"],
                 "evidence_sha256": digest_text(request.evidence),
             }

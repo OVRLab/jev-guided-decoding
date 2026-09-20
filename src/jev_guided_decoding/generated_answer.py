@@ -24,7 +24,8 @@ one useful deduction or calculation, rather than repeat the given facts or previ
 working. The opening tag is already supplied: continue its body and close that
 same frame. Do not open another frame within it. Keep each step concise.
 When the opening <final> tag is supplied, finish the calculation or inference and
-write only the answer requested by the question, then </final>. Do not include
+write only the answer requested by the question, then </final> or end the message.
+Do not include
 an explanation in the final frame. The earlier working may be wrong; check it.
 
 Illustrative format examples only; these facts do not apply to the current problem:
@@ -33,9 +34,13 @@ A problem with three bags of four items, then two more items:
 <step>Adding the two extra items gives 12 + 2 = 14.</step>
 <final>14</final>
 A rule problem where Nora is blue and every blue person is calm, asking whether
-Nora is calm with the choices ENTAILED, CONTRADICTED, UNKNOWN:
+Nora is calm with the choices TRUE, FALSE, UNKNOWN:
 <step>The blue-to-calm rule applies to Nora, so Nora is calm.</step>
-<final>ENTAILED</final>
+<final>TRUE</final>
+A relational rule problem where Rin visits Toma, anyone who visits Toma helps Toma,
+and the question asks whether Rin helps Toma:
+<step>Rin helps Toma by applying the visits-to-helps rule to Rin.</step>
+<final>TRUE</final>
 If neither a logical claim nor its explicit negation follows, the label is UNKNOWN.
 Follow the current question's answer format, not a different example's format.
 """
@@ -50,6 +55,16 @@ class BackendContractError(ValueError):
 def prepare_generated_request(request: Request) -> Request:
     # This experimental controller owns a single, shared and hashed system contract.
     return replace(request, system=GENERATED_PROMPT)
+
+
+def final_body(raw: str, finish_reason: str) -> str | None:
+    """A model EOS can end a final field; length/time/cancellation cannot stand in for EOS."""
+    frame = parse_frame("<final>" + raw)
+    if frame is not None and frame.kind == "final":
+        return frame.body
+    if finish_reason == "eos" and raw.strip() and "<" not in raw and ">" not in raw:
+        return raw.strip()
+    return None
 
 
 class IntermediateScorer(ReasoningScorer):
@@ -114,7 +129,7 @@ class GeneratedAnswerConfig:
 @dataclass
 class GeneratedAnswerResult(RunResult):
     mode: Literal["single", "likelihood", "jev"]
-    schema_version: str = "generated-answer-v1"
+    schema_version: str = "generated-answer-v2"
     output_source: str = "granite_generated"
     phase: str = "reasoning"
     steps: list[str] = field(default_factory=list)
@@ -122,6 +137,7 @@ class GeneratedAnswerResult(RunResult):
     final_token_ids: tuple[int, ...] = ()
     reasoning_stop_reason: str = "step_budget"
     final_raw_text: str = ""
+    final_finish_reason: str = ""
     api_attempts_unknown: bool = False
 
 
@@ -385,14 +401,15 @@ class GeneratedAnswerController:
             result.generated_token_ids += candidate.token_ids
             result.final_token_ids = candidate.token_ids
             result.final_raw_text = candidate.text
-            frame = parse_frame("<final>" + candidate.text)
+            result.final_finish_reason = candidate.finish_reason
+            body = final_body(candidate.text, candidate.finish_reason)
             if candidate.finish_reason == "cancelled":
                 return finish("cancelled")
             if self.clock() >= deadline or candidate.finish_reason == "time":
                 return finish("time_budget")
-            if frame is None or frame.kind != "final" or not candidate.token_ids:
+            if body is None or not candidate.token_ids:
                 return finish("incomplete_final")
-            result.text = frame.body
+            result.text = body
             return finish("complete")
         except asyncio.CancelledError:
             raise ReasoningCancelled(finish("cancelled")) from None

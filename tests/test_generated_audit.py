@@ -73,3 +73,23 @@ def test_independent_audit_rejects_final_scoring_and_control_answer_tokens():
     value["result"]["trace"][0]["control_token_ids"] = tuple(map(ord, "<final>6"))
     with pytest.raises(ValueError):
         AUDIT["audit_row"](value, lambda ids: "".join(map(chr, ids)))
+
+
+def test_audit_retains_a_budget_stop_before_any_generation():
+    value = row()
+    r = value["result"]
+    r.update(
+        phase="stopped",
+        text="",
+        trace=[],
+        token_ids=(),
+        generated_token_ids=(),
+        final_token_ids=(),
+        final_raw_text="",
+        final_finish_reason="",
+        generated_tokens=0,
+        decode_token_slots=0,
+        prefill_tokens=0,
+        generation_seconds=0,
+    )
+    assert AUDIT["audit_row"](value, lambda ids: "".join(map(chr, ids))) == {}

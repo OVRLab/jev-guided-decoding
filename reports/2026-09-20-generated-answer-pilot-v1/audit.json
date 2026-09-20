@@ -1,0 +1,22 @@
+{
+  "provenance_audit_passed": true,
+  "jobs_audited": 48,
+  "accepted_steps": 104,
+  "final_generations": 48,
+  "completion": {
+    "single": {
+      "frame_completion": 0.875,
+      "answer_format_valid": 0.875
+    },
+    "likelihood": {
+      "frame_completion": 1.0,
+      "answer_format_valid": 0.875
+    },
+    "jev": {
+      "frame_completion": 0.9375,
+      "answer_format_valid": 0.9375
+    }
+  },
+  "jev_changed_intermediate_choices": 7,
+  "development_gate_passed": false
+}

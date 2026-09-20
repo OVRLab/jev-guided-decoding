@@ -10,6 +10,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 
 from jev_guided_decoding.framing import parse_frame
+from jev_guided_decoding.generated_answer import final_body
 
 ROOT = Path(__file__).resolve().parents[1]
 STUDY = runpy.run_path(str(ROOT / "experiments/generated_answer_study.py"))
@@ -25,6 +26,7 @@ def audit_row(row, decode):
     require(r["output_source"] == "granite_generated", "Wrong output owner")
     accepted, generated, final, steps = (), (), (), []
     final_raw = ""
+    final_finish = ""
     sums = Counter()
     diagnostics = Counter()
     for event in r["trace"]:
@@ -93,6 +95,7 @@ def audit_row(row, decode):
         else:
             final = tuple(candidate["token_ids"])
             final_raw = candidate["text"]
+            final_finish = candidate.get("finish_reason", "frame")
     require(diagnostics["final_generations"] <= 1, "More than one final generation")
     require(tuple(r["token_ids"]) == accepted, "Final continuation mismatch")
     require(tuple(r["generated_token_ids"]) == generated, "Generated token provenance mismatch")
@@ -102,11 +105,15 @@ def audit_row(row, decode):
     )
     require(r["steps"] == steps, "Accepted reasoning text mismatch")
     if r["phase"] == "complete":
-        frame = parse_frame("<final>" + final_raw)
+        body = final_body(final_raw, final_finish)
         require(
-            bool(final) and frame is not None and frame.body == r["text"],
+            bool(final) and body is not None and body == r["text"],
             "Final answer was replaced",
         )
+    require(
+        r.get("final_finish_reason", "frame" if final else "") == final_finish,
+        "Final stop provenance mismatch",
+    )
     for field, value in sums.items():
         require(
             math.isclose(r.get(field, 0), value, abs_tol=1e-6),

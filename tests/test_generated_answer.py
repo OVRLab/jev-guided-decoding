@@ -211,3 +211,18 @@ def test_cancelled_model_worker_drains_before_request_ownership_is_released():
         assert caught.value.result.stop_reason == "cancelled"
 
     asyncio.run(scenario())
+
+
+def test_explicit_model_eos_completes_a_plain_final_without_inventing_closing_tokens():
+    backend = Backend([[candidate("A.</step>")], [candidate("6", finish="eos")]])
+    result = run(backend, mode="single")
+    assert result.stop_reason == "complete" and result.text == "6"
+    assert result.final_finish_reason == "eos"
+    assert result.final_token_ids == tuple(map(ord, "6"))
+    assert backend.decode(result.token_ids).endswith("<final>6")
+
+
+def test_eos_final_cannot_smuggle_intermediate_frames_into_the_answer():
+    backend = Backend([[candidate("A.</step>")], [candidate("<step>6</step>", finish="eos")]])
+    result = run(backend, mode="single")
+    assert result.stop_reason == "incomplete_final" and result.text == ""

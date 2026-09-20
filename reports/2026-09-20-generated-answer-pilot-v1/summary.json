@@ -1,0 +1,386 @@
+{
+  "study_complete": true,
+  "planned_jobs": 48,
+  "recorded_jobs": 48,
+  "seeds": [
+    42
+  ],
+  "tasks": {
+    "gsm8k": {
+      "independent_problems": 8,
+      "modes": {
+        "single": {
+          "planned": 8,
+          "correct": 6,
+          "completed": 8,
+          "format_valid": 8,
+          "missing": 0,
+          "accuracy": 0.75,
+          "by_seed": {
+            "42": {
+              "planned": 8,
+              "correct": 6,
+              "completed": 8,
+              "format_valid": 8,
+              "missing": 0
+            }
+          },
+          "by_depth": {
+            "None": {
+              "planned": 8,
+              "correct": 6,
+              "completed": 8,
+              "format_valid": 8,
+              "missing": 0
+            }
+          }
+        },
+        "likelihood": {
+          "planned": 8,
+          "correct": 5,
+          "completed": 8,
+          "format_valid": 7,
+          "missing": 0,
+          "accuracy": 0.625,
+          "by_seed": {
+            "42": {
+              "planned": 8,
+              "correct": 5,
+              "completed": 8,
+              "format_valid": 7,
+              "missing": 0
+            }
+          },
+          "by_depth": {
+            "None": {
+              "planned": 8,
+              "correct": 5,
+              "completed": 8,
+              "format_valid": 7,
+              "missing": 0
+            }
+          }
+        },
+        "jev": {
+          "planned": 8,
+          "correct": 5,
+          "completed": 8,
+          "format_valid": 8,
+          "missing": 0,
+          "accuracy": 0.625,
+          "by_seed": {
+            "42": {
+              "planned": 8,
+              "correct": 5,
+              "completed": 8,
+              "format_valid": 8,
+              "missing": 0
+            }
+          },
+          "by_depth": {
+            "None": {
+              "planned": 8,
+              "correct": 5,
+              "completed": 8,
+              "format_valid": 8,
+              "missing": 0
+            }
+          }
+        }
+      },
+      "primary_contrasts": {
+        "single": {
+          "difference": -0.125,
+          "ci_adjusted": [
+            -0.5,
+            0
+          ],
+          "confidence_level": 0.9875,
+          "wins": 0,
+          "losses": 1,
+          "ties": 7,
+          "independent_problems": 8,
+          "method": "5000 problem-cluster bootstrap samples; 4 adjusted contrasts"
+        },
+        "likelihood": {
+          "difference": 0,
+          "ci_adjusted": [
+            0,
+            0
+          ],
+          "confidence_level": 0.9875,
+          "wins": 0,
+          "losses": 0,
+          "ties": 8,
+          "independent_problems": 8,
+          "method": "5000 problem-cluster bootstrap samples; 4 adjusted contrasts"
+        }
+      }
+    },
+    "proofwriter": {
+      "independent_problems": 8,
+      "modes": {
+        "single": {
+          "planned": 8,
+          "correct": 3,
+          "completed": 6,
+          "format_valid": 6,
+          "missing": 0,
+          "accuracy": 0.375,
+          "by_seed": {
+            "42": {
+              "planned": 8,
+              "correct": 3,
+              "completed": 6,
+              "format_valid": 6,
+              "missing": 0
+            }
+          },
+          "by_depth": {
+            "2": {
+              "planned": 1,
+              "correct": 0,
+              "completed": 1,
+              "format_valid": 1,
+              "missing": 0
+            },
+            "0": {
+              "planned": 2,
+              "correct": 0,
+              "completed": 2,
+              "format_valid": 2,
+              "missing": 0
+            },
+            "None": {
+              "planned": 2,
+              "correct": 2,
+              "completed": 2,
+              "format_valid": 2,
+              "missing": 0
+            },
+            "5": {
+              "planned": 2,
+              "correct": 1,
+              "completed": 1,
+              "format_valid": 1,
+              "missing": 0
+            },
+            "3": {
+              "planned": 1,
+              "correct": 0,
+              "completed": 0,
+              "format_valid": 0,
+              "missing": 0
+            }
+          }
+        },
+        "likelihood": {
+          "planned": 8,
+          "correct": 4,
+          "completed": 8,
+          "format_valid": 7,
+          "missing": 0,
+          "accuracy": 0.5,
+          "by_seed": {
+            "42": {
+              "planned": 8,
+              "correct": 4,
+              "completed": 8,
+              "format_valid": 7,
+              "missing": 0
+            }
+          },
+          "by_depth": {
+            "2": {
+              "planned": 1,
+              "correct": 0,
+              "completed": 1,
+              "format_valid": 1,
+              "missing": 0
+            },
+            "0": {
+              "planned": 2,
+              "correct": 0,
+              "completed": 2,
+              "format_valid": 2,
+              "missing": 0
+            },
+            "None": {
+              "planned": 2,
+              "correct": 2,
+              "completed": 2,
+              "format_valid": 2,
+              "missing": 0
+            },
+            "5": {
+              "planned": 2,
+              "correct": 1,
+              "completed": 2,
+              "format_valid": 1,
+              "missing": 0
+            },
+            "3": {
+              "planned": 1,
+              "correct": 1,
+              "completed": 1,
+              "format_valid": 1,
+              "missing": 0
+            }
+          }
+        },
+        "jev": {
+          "planned": 8,
+          "correct": 3,
+          "completed": 7,
+          "format_valid": 7,
+          "missing": 0,
+          "accuracy": 0.375,
+          "by_seed": {
+            "42": {
+              "planned": 8,
+              "correct": 3,
+              "completed": 7,
+              "format_valid": 7,
+              "missing": 0
+            }
+          },
+          "by_depth": {
+            "2": {
+              "planned": 1,
+              "correct": 0,
+              "completed": 1,
+              "format_valid": 1,
+              "missing": 0
+            },
+            "0": {
+              "planned": 2,
+              "correct": 0,
+              "completed": 2,
+              "format_valid": 2,
+              "missing": 0
+            },
+            "None": {
+              "planned": 2,
+              "correct": 2,
+              "completed": 2,
+              "format_valid": 2,
+              "missing": 0
+            },
+            "5": {
+              "planned": 2,
+              "correct": 0,
+              "completed": 1,
+              "format_valid": 1,
+              "missing": 0
+            },
+            "3": {
+              "planned": 1,
+              "correct": 1,
+              "completed": 1,
+              "format_valid": 1,
+              "missing": 0
+            }
+          }
+        }
+      },
+      "primary_contrasts": {
+        "single": {
+          "difference": 0,
+          "ci_adjusted": [
+            -0.375,
+            0.5
+          ],
+          "confidence_level": 0.9875,
+          "wins": 1,
+          "losses": 1,
+          "ties": 6,
+          "independent_problems": 8,
+          "method": "5000 problem-cluster bootstrap samples; 4 adjusted contrasts"
+        },
+        "likelihood": {
+          "difference": -0.125,
+          "ci_adjusted": [
+            -0.5,
+            0
+          ],
+          "confidence_level": 0.9875,
+          "wins": 0,
+          "losses": 1,
+          "ties": 7,
+          "independent_problems": 8,
+          "method": "5000 problem-cluster bootstrap samples; 4 adjusted contrasts"
+        }
+      }
+    }
+  },
+  "resources": {
+    "single": {
+      "generated_tokens": 692,
+      "decode_token_slots": 692,
+      "prefill_tokens": 37053,
+      "api_calls": 0,
+      "jev_input_tokens": 0,
+      "jev_output_tokens": 0,
+      "elapsed_seconds": 17.895759016000056,
+      "generation_seconds": 17.828258060000053,
+      "jev_seconds": 0.0,
+      "stop_reasons": {
+        "complete": 14,
+        "incomplete_final": 2
+      },
+      "reasoning_stops": {
+        "no_valid_step": 16
+      },
+      "accepted_steps": 38,
+      "zero_step_runs": 6,
+      "intermediate_choices_different_from_likelihood": 0,
+      "unknown_usage_runs": 0
+    },
+    "likelihood": {
+      "generated_tokens": 2429,
+      "decode_token_slots": 2666,
+      "prefill_tokens": 115217,
+      "api_calls": 0,
+      "jev_input_tokens": 0,
+      "jev_output_tokens": 0,
+      "elapsed_seconds": 25.909012907000033,
+      "generation_seconds": 25.827391312000316,
+      "jev_seconds": 0.0,
+      "stop_reasons": {
+        "complete": 16
+      },
+      "reasoning_stops": {
+        "no_valid_step": 16
+      },
+      "accepted_steps": 50,
+      "zero_step_runs": 6,
+      "intermediate_choices_different_from_likelihood": 0,
+      "unknown_usage_runs": 0
+    },
+    "jev": {
+      "generated_tokens": 1233,
+      "decode_token_slots": 1418,
+      "prefill_tokens": 57362,
+      "api_calls": 24,
+      "jev_input_tokens": 26671,
+      "jev_output_tokens": 1996,
+      "elapsed_seconds": 23.36360405800002,
+      "generation_seconds": 14.181696551000186,
+      "jev_seconds": 9.046552487999975,
+      "stop_reasons": {
+        "complete": 15,
+        "incomplete_final": 1
+      },
+      "reasoning_stops": {
+        "all_rejected": 8,
+        "no_valid_step": 8
+      },
+      "accepted_steps": 16,
+      "zero_step_runs": 10,
+      "intermediate_choices_different_from_likelihood": 7,
+      "unknown_usage_runs": 0
+    }
+  },
+  "positive_accuracy_evidence": false,
+  "claim_limit": "Granite-generated answers under this staged controller; no classifier replacement, universal reasoning claim, or contamination guarantee."
+}

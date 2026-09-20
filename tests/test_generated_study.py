@@ -111,3 +111,20 @@ def test_jobs_rotate_modes_and_started_jobs_cannot_replay():
 def test_numeric_normalization_never_rounds_model_output_into_reference():
     number = "123456789012345678901234567890123456789"
     assert DATA["normalize_answer"]("gsm8k", number) == number
+
+
+def test_boolean_logic_contract_is_versioned_and_does_not_regrade_old_results():
+    c = case(task="proofwriter", answer="ENTAILED")
+    result = {
+        "text": "TRUE",
+        "phase": "complete",
+        "output_source": "granite_generated",
+        "final_token_ids": [1],
+        "final_raw_text": "TRUE",
+        "final_finish_reason": "eos",
+    }
+    assert DATA["grade"]({**c, "answer_format": "boolean-v2"}, result)["correct"]
+    assert not DATA["grade"](c, result)["correct"]
+    result["text"] = "ENTAINED"
+    result["final_raw_text"] = "ENTAINED"
+    assert not DATA["grade"]({**c, "answer_format": "boolean-v2"}, result)["correct"]

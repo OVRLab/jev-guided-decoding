@@ -46,8 +46,8 @@ final reserve. Report actual work, not only equal ceilings.
 Use two independently reported tasks: numerical word problems from the authors'
 GSM8K release and ProofWriter OWA D5 logic questions. GSM8K references stay out of
 both models' inputs; its requested final frame contains only the numeric answer.
-Logic references and proof depth stay out of model inputs; its final frame contains
-only ENTAILED, CONTRADICTED, or UNKNOWN. System instructions and examples must agree
+Logic references and proof depth stay out of model inputs; the initial pilot's final
+frame contains only ENTAILED, CONTRADICTED, or UNKNOWN. System instructions and examples must agree
 with these requirements. A deterministic parser/oracle grades the same Granite
 output field for every arm. Report answer accuracy and format completion separately;
 do not silently correct misspelled labels or infer answers from intermediate text.
@@ -121,6 +121,24 @@ Initial tests failed because the new controller, data adapter, budget ledger, an
 audit modules were absent. Further regressions reproduced premature completion
 of a cancelled final, acceptance of text inconsistent with token IDs, and decimal
 normalization rounding a long answer; all were fixed before paid inference.
+
+## Development-only correction after pilot v1
+
+The [first 48-job pilot](../reports/2026-09-20-generated-answer-pilot-v1/README.md)
+passed token ownership and intermediate-only scoring checks but failed the format
+gate: valid requested answers were 14/16, 14/16, and 15/16 across the three arms.
+No test-set inference was admitted. Its data and grading remain unchanged.
+
+Version 2 accepts an explicit model EOS as the end of a plain final field even
+without a closing tag; length/time/cancellation never substitute for EOS. No
+closing tokens or answer content are invented. New logic requests use exactly
+TRUE/FALSE/UNKNOWN, mapped to the original symbolic labels only by the independent
+grader. This reduces a recurring ENTAILED spelling failure. The case's
+`answer_format = "boolean-v2"` makes this contract explicit; old cases keep their
+old label rules. The shared prompt adds one illustrative relational deduction.
+All three arms receive these changes. Separate regressions reproduced the EOS
+and versioned-contract failures before the correction. Preserve and rerun the same
+development selection under a new manifest; do not tune on held-out cases.
 
 Primary sources: [GSM8K](https://github.com/openai/grade-school-math),
 [TypeSafe API](https://docs.typesafe.ai/api),
