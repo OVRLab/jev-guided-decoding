@@ -16,6 +16,7 @@ from transformers import (
     StoppingCriteriaList,
 )
 
+from ..framing import frame_boundary
 from ..types import Candidate, Proposal, Request
 
 _ENDING = re.compile(r"""[.!?]["')\]]*\s*$|\n\s*\n$""")
@@ -52,6 +53,27 @@ class ChunkStop(StoppingCriteria):
                 elif sentence_boundary(self.tokenizer.decode(ids, skip_special_tokens=True)):
                     self.stopped_at[i] = len(ids)
                     self.reasons[i] = "sentence"
+        return torch.tensor([n is not None for n in self.stopped_at], device=input_ids.device)
+
+
+class FrameStop(ChunkStop):
+    def __init__(self, tokenizer, prefix_length, count, deadline, cancel_event=None):
+        super().__init__(tokenizer, prefix_length, count, deadline)
+        self.cancel_event = cancel_event
+
+    def __call__(self, input_ids, scores, **kwargs):
+        rows = input_ids[:, self.prefix_length :].tolist()
+        cancelled = self.cancel_event is not None and self.cancel_event.is_set()
+        timed_out = time.monotonic() >= self.deadline
+        for i, ids in enumerate(rows):
+            if self.stopped_at[i] is not None:
+                continue
+            if cancelled or timed_out:
+                self.stopped_at[i] = len(ids)
+                self.reasons[i] = "cancelled" if cancelled else "time"
+            elif frame_boundary(self.tokenizer.decode(ids, skip_special_tokens=True)):
+                self.stopped_at[i] = len(ids)
+                self.reasons[i] = "frame"
         return torch.tensor([n is not None for n in self.stopped_at], device=input_ids.device)
 
 
@@ -176,6 +198,8 @@ class TransformersBackend:
         seed: int,
         greedy: bool,
         max_seconds: float,
+        framed: bool = False,
+        cancel_event: threading.Event | None = None,
     ) -> Proposal:
         if greedy and count != 1:
             raise ValueError("Greedy generation has one candidate")
@@ -188,7 +212,11 @@ class TransformersBackend:
             started = time.monotonic()
             torch.manual_seed(seed)
             inputs = torch.tensor([ids], dtype=torch.long, device=self.device)
-            stop = ChunkStop(self.tokenizer, len(ids), count, started + max_seconds)
+            stop = (
+                FrameStop(self.tokenizer, len(ids), count, started + max_seconds, cancel_event)
+                if framed
+                else ChunkStop(self.tokenizer, len(ids), count, started + max_seconds)
+            )
             # Build explicitly, so a model repo's sampling defaults do not affect comparisons.
             generation = GenerationConfig(
                 max_new_tokens=max_tokens,
@@ -260,6 +288,11 @@ class TransformersBackend:
                 len(ids) * count,
                 time.monotonic() - started,
             )
+
+    def propose_frames(self, prompt_ids, accepted_ids, *, cancel_event=None, **kwargs):
+        return self.propose(
+            prompt_ids, accepted_ids, framed=True, cancel_event=cancel_event, **kwargs
+        )
 
     def metadata(self) -> dict[str, Any]:
         return {

@@ -15,9 +15,12 @@ future edge case listed below is already tested.
 | Rejection and budgets | Retry same prefix with bounded work; count discarded/padded work and HTTP attempts; keep partial result/status | [controller tests](tests/test_controller.py), new boundary tests for affected counters |
 | Provider failure | Classify 429/529; honor Retry-After; timeout may be billed; no silent unscored fallback | [client tests](tests/test_jev.py), fake transport negative paths |
 | Benchmark recording | Unique cases, no reference leakage, fresh output path, exact raw traces and summary; failed/incomplete runs retained | [benchmark tests](tests/test_benchmark.py), inspect CLI output and recompute summaries for changed artifacts |
+| Reasoning search | Complete step/final boundaries; final without EOS; duplicate scoring once; saved sibling restores exact IDs; budgets never reset | [reasoning tests](tests/test_reasoning.py), [framed backend tests](tests/test_transformers_backend.py) |
+| Reasoning scoring and CLI | Whole-prefix validity; distinct step/final rubrics; baseline without key; exact prompt saved; errors retain a stopped trace | [scorer tests](tests/test_reasoning_scorer.py), [CLI tests](tests/test_reasoning_cli.py), scoped live mechanism check |
+| Reasoning cancellation | Signal model worker, drain before releasing request ownership; no late final commit; unknown remote usage explicit | [cancellation and deadline tests](tests/test_reasoning.py) |
 | Documentation changes | Entrypoints discover rules, links remain local/valid, commands are portable, historical reports untouched | [AI-docs tests](tests/test_ai_docs.py), `uv run --no-sync python scripts/check_ai_docs.py` |
 
-For cancellation or future parallel scheduling, add request ownership, lock/cache
-isolation, timeout, and late-result tests before implementation. Do not claim the
+For future parallel scheduling, extend request ownership, lock/cache isolation,
+timeout, and late-result coverage before implementation. Do not claim the
 single-backend prototype validates concurrent serving. Run real inference only
 when the changed behavior needs it and scoped resources/data are available.

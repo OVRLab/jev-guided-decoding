@@ -33,7 +33,8 @@ def test_per_candidate_stopping_and_decimal_handling():
     assert sentence_boundary('The answer is ready."')
 
 
-def test_real_tiny_causal_model_matches_native_greedy_and_keeps_weights_frozen():
+@pytest.mark.parametrize("framed", [False, True])
+def test_real_tiny_causal_model_matches_native_greedy_and_keeps_weights_frozen(framed):
     vocab = {"[UNK]": 0, "[PAD]": 1, "[EOS]": 2, "alpha": 3, "beta": 4, "gamma": 5}
     raw = Tokenizer(WordLevel(vocab, unk_token="[UNK]"))
     raw.pre_tokenizer = Whitespace()
@@ -59,9 +60,8 @@ def test_real_tiny_causal_model_matches_native_greedy_and_keeps_weights_frozen()
     )
     backend = TransformersBackend(model, tokenizer, model_id="tiny-test")
     before = {name: value.clone() for name, value in model.state_dict().items()}
-    proposal = backend.propose(
-        (3, 4), (), count=1, max_tokens=4, seed=7, greedy=True, max_seconds=20
-    )
+    propose = backend.propose_frames if framed else backend.propose
+    proposal = propose((3, 4), (), count=1, max_tokens=4, seed=7, greedy=True, max_seconds=20)
     with torch.inference_mode():
         expected = model.generate(
             torch.tensor([[3, 4]]),
@@ -81,10 +81,25 @@ def test_real_tiny_causal_model_matches_native_greedy_and_keeps_weights_frozen()
     # Continuation must start with the exact accepted IDs, without decoding/re-tokenizing them.
     accepted = proposal.candidates[0].token_ids
     if proposal.candidates[0].finish_reason != "eos":
-        continued = backend.propose(
+        continued = propose(
             (3, 4), accepted, count=2, max_tokens=3, seed=7, greedy=False, max_seconds=20
         )
         assert continued.prefill_tokens == (2 + len(accepted)) * 2
         assert len(continued.candidates) == 2
         for candidate in continued.candidates:
             assert candidate.full_text == backend.decode(accepted + candidate.token_ids)
+
+
+def test_frame_stopping_ignores_sentence_punctuation_and_waits_for_complete_delimiter():
+    from jev_guided_decoding.backends.transformers import FrameStop
+
+    class Pieces:
+        def decode(self, ids, **kwargs):
+            pieces = {0: "", 1: "<step>Dr. Li: 3.14.\n", 2: "</st", 3: "ep>", 4: "More"}
+            return "".join(pieces[i] for i in ids)
+
+    stop = FrameStop(Pieces(), 1, 2, float("inf"))
+    assert stop(torch.tensor([[0, 1, 2], [0, 1, 4]]), None).tolist() == [False, False]
+    assert stop(torch.tensor([[0, 1, 2, 3], [0, 1, 4, 4]]), None).tolist() == [True, False]
+    assert stop.stopped_at == [3, None]
+    assert stop.reasons[0] == "frame"

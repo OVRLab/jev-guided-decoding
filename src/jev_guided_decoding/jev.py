@@ -155,6 +155,19 @@ class JevScorer:
     async def __aexit__(self, *args: Any) -> None:
         await self._client.aclose()
 
+    def _build_payload(self, request, prefix, candidates):
+        return build_payload(request, prefix, candidates, self.model)
+
+    def _parse_judgments(self, answers, candidates):
+        return tuple(
+            Judgment(
+                _probability(answers, f"support_{i}"),
+                _probability(answers, f"relevance_{i}") if not c.empty_eos else None,
+                _probability(answers, f"completion_{i}") if c.finish_reason == "eos" else None,
+            )
+            for i, c in enumerate(candidates)
+        )
+
     async def score(
         self,
         request: Request,
@@ -166,7 +179,7 @@ class JevScorer:
     ) -> Evaluation:
         if not candidates:
             raise ValueError("Cannot evaluate an empty candidate batch")
-        payload = build_payload(request, prefix, candidates, self.model)
+        payload = self._build_payload(request, prefix, candidates)
         started = time.monotonic()
         deadline = started + timeout
         attempts = 0
@@ -205,16 +218,7 @@ class JevScorer:
             try:
                 raw = response.json()
                 answers = raw["answers"]
-                judgments = tuple(
-                    Judgment(
-                        _probability(answers, f"support_{i}"),
-                        _probability(answers, f"relevance_{i}") if not c.empty_eos else None,
-                        _probability(answers, f"completion_{i}")
-                        if c.finish_reason == "eos"
-                        else None,
-                    )
-                    for i, c in enumerate(candidates)
-                )
+                judgments = self._parse_judgments(answers, candidates)
                 actual_model = raw["model"]
                 usage = raw["usage"]
                 if not isinstance(actual_model, str) or not actual_model:

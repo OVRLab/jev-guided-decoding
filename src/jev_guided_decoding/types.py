@@ -66,7 +66,7 @@ class Candidate:
     token_ids: tuple[int, ...]
     text: str
     mean_logprob: float
-    finish_reason: Literal["sentence", "eos", "length", "time"]
+    finish_reason: Literal["sentence", "frame", "eos", "length", "time", "cancelled"]
     full_text: str | None = None
 
     @property

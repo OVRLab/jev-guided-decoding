@@ -12,6 +12,8 @@ weaken their requirements in this entrypoint.
 | --- | --- |
 | [types.py](src/jev_guided_decoding/types.py) | Requests, configuration, immutable candidates, results, backend/scorer protocols |
 | [controller.py](src/jev_guided_decoding/controller.py) | Accepted prefix, candidate selection, budgets, retry/stop outcomes |
+| [reasoning.py](src/jev_guided_decoding/reasoning.py) | Explicit frames, branch selection, deferred siblings, global resource budgets and cancellation |
+| [reasoning_scorer.py](src/jev_guided_decoding/reasoning_scorer.py) | Whole-prefix validity, new-step progress, final completion using shared Jev transport |
 | [jev.py](src/jev_guided_decoding/jev.py) | Credentials, typed questions, HTTP validation, bounded retries, usage |
 | [Transformers backend](src/jev_guided_decoding/backends/transformers.py) | Frozen causal model, token generation, stopping, likelihood, device accounting |
 | [benchmark.py](src/jev_guided_decoding/benchmark.py) | Dataset validation, lexical metrics, summaries |
@@ -50,6 +52,8 @@ an agent host automatically installs or exposes them as callable skills.
 - `JevScorer` returns optional relevance for empty EOS; `None` means unasked, not zero.
 - `all_rejected` may retain a correct but uncompleted prefix. API failure is a
   separate outcome with potentially unknown usage; do not rewrite either as success.
+- Reasoning results return only the final frame body in `text`; partial steps are separate.
+  `final_jev` leaves intermediate steps unjudged; it does not invent passing scores.
 - Padded decode slots and accepted output tokens measure different things.
 - Device sampling, API scores, and latency may vary despite fixed seeds/version IDs.
 - MPS allocation snapshots are not peak-memory measurements.

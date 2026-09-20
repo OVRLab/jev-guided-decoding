@@ -1,13 +1,13 @@
 # Jev-guided decoding
 
-An experimental Python controller that asks a language model for several next
-sentences, uses [TypeSafe Jev](https://docs.typesafe.ai/concepts/system-one) to
-evaluate those candidates, and continues generation from the selected tokens.
+Experimental Python controllers that ask a language model for candidate answer
+continuations or explicit reasoning steps, use [TypeSafe Jev](https://docs.typesafe.ai/concepts/system-one) to
+evaluate those candidates, and continue generation from the selected tokens.
 IBM Granite 4.0 1B is the first test model; the controller uses backend and scorer
 protocols so other compatible models can be evaluated independently.
 
-**Status:** initial Transformers prototype with frozen model weights and a small
-synthetic smoke benchmark. This is generation-time text guidance, not a fusion of
+**Status:** a Transformers prototype with frozen model weights, an answer controller,
+and bounded search over intermediate steps with saved alternatives. This is generation-time text guidance, not a fusion of
 Jev into attention layers. A vLLM serving extension is conditional on measured
 gains; no vLLM extension is included in this version.
 
@@ -17,12 +17,14 @@ Jev added latency and incorrectly rejected the ending of one correct answer.
 
 ```mermaid
 flowchart LR
-  A[Accepted token prefix] --> B[Generate candidate continuations]
-  B --> C[Jev evaluates evidence support and relevance]
-  C --> D[Controller selects eligible candidate]
+  A[Selected token prefix] --> B[Generate distinct step or final candidates]
+  B --> C[Jev evaluates validity and progress or completion]
+  C --> D[Controller selects a branch and saves alternatives]
   D --> A
-  D --> E[Finish on a selected EOS]
-  C --> F[Bounded retry or explicit stop]
+  D --> E[Finish on a validated final frame]
+  C --> F[Bounded resample or backtrack]
+  F --> A
+  F --> G[Explicit stop if no path or budget remains]
 ```
 
 ## Install
@@ -73,6 +75,40 @@ TypeSafe's hosted API. The fixtures are fictional and authored for this reposito
 Reference answers are used only by the local benchmark, never by the generator or
 Jev scorer. Traces contain the input text, so review them before publishing results
 produced from your own documents.
+
+## Guide intermediate reasoning
+
+The new [reasoning controller](docs/reasoning-controller.md) lets Granite propose
+complete `<step>` or `<final>` frames. Jev judges each candidate against the original
+evidence and tentative derivation; Python selects a path, keeps alternatives, and
+backtracks if that path gets stuck. No training or weight changes are required.
+
+```bash
+uv run --no-sync jev-decode reason-benchmark \
+  --config configs/granite-4.0-1b-reasoning.toml \
+  --dataset data/reasoning-controller-smoke.jsonl \
+  --modes greedy likelihood final_jev jev \
+  --seeds 42 \
+  --output results/reasoning-controller
+```
+
+For one question, use `reason` with the same `--question`, `--evidence-file`,
+`--mode`, and `--output` arguments as `generate`, and the reasoning config above.
+`greedy` and `likelihood` provide unguided controls; `final_jev` checks only final
+candidates; `jev` also checks intermediate steps. All use the same frame prompt.
+Exact duplicate token sequences are scored once per parent; bounded resampling
+can seek alternatives but does not guarantee semantic diversity.
+
+Only a completed final frame populates `result.text`. Partial steps are retained
+separately, and final completion does not require an extra EOS token. Reasoning
+commands exit with 0 for completion, 3 for an incomplete search, 2 for a backend or
+scorer error, and 130 for recorded cancellation. A benchmark keeps incomplete runs
+and returns 3 if any search was incomplete. Baselines never read a Jev key.
+
+This controls explicitly generated text during inference. It does not expose
+Granite's hidden neural states. The four-case fixture is a mechanism check, not a
+held-out quality evaluation. See the controller documentation for resource limits,
+trace semantics, cancellation, and remaining validation work.
 
 ## Compare the four modes
 
@@ -167,7 +203,9 @@ claims or reject good ones; see [Jev's limitations](https://docs.typesafe.ai/mod
 
 The [intermediate-reasoning investigation](docs/reasoning-step-investigation.md)
 includes [live diagnostic results](reports/2026-09-20-reasoning-investigation/README.md)
-and a proposed step-search design. That search controller is not implemented yet.
+and the original step-search proposal. The implemented
+[reasoning controller](docs/reasoning-controller.md) follows that investigation;
+its validation is recorded separately from those historical probes.
 
 Contributors and coding agents should start with [AGENTS.md](AGENTS.md),
 [the development workflow](docs/development-workflow.md), and
@@ -195,7 +233,8 @@ an offline tiny causal model checks native greedy equivalence and unchanged weig
 core-only CI skips backend tests. Tests never call live Jev or download model weights.
 
 `types.py` defines `Backend` and `Scorer` protocols; `controller.py` contains selection
-and budgets; `jev.py` contains the HTTP scorer; `backends/transformers.py` contains
+and budgets for answer continuations; `reasoning.py` implements framed search;
+`reasoning_scorer.py` defines step/final judgments; `jev.py` contains the shared HTTP transport; `backends/transformers.py` contains
 the first adapter. For another model, create a config with its ID/revision and
 validate its chat template, EOS behavior, context limits, and results. Current
 support covers decoder-only causal LMs supported natively by Transformers without
