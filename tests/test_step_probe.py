@@ -54,6 +54,16 @@ def test_request_builders_do_not_send_oracle_labels_or_other_candidates():
         assert "Mira is blocked from the archive" not in json.dumps(question)
 
 
+def test_granite_request_contains_only_the_problem_and_step_instructions():
+    data = fixture()
+    case = data["cases"][0] | {"expected": "PRIVATE_REFERENCE_CANARY"}
+    request = probe()["reasoning_request"](data["atoms"], case)
+    assert "Step:" in request.system and "Final:" in request.system
+    assert "PRIVATE_REFERENCE_CANARY" not in str(request)
+    assert "Mira is blocked from the archive" not in str(request)
+    assert "Fact: Mira completed orientation" in request.evidence
+
+
 @pytest.mark.parametrize("value", [True, -0.1, 1.1, float("nan"), "0.9"])
 def test_invalid_provider_probabilities_are_not_judgments(value):
     with pytest.raises(ValueError):

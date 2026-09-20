@@ -87,3 +87,23 @@ tests, bounded requests, output preservation, documentation links, lint/tests/bu
 
 The implementation design and diagnostic outcome will be recorded here after the
 fixed diagnostic completes, keeping planned behavior separate from measured facts.
+
+## Follow-up generation check, declared after the scorer diagnostic
+
+Both rubrics matched all eight fixture decisions, so there is no observed selection
+advantage for the new rubric here. Before recommending an engine extension, check
+whether the existing frozen Granite can produce explicit deductions. This is a
+separate diagnostic, not an extension of the 16-call scorer result.
+
+Run the existing controller on `useful-incomplete-step` and `missing-conjunct`, with
+an explicit deduction/final-answer system prompt. Compare likelihood selection and
+the existing Jev scorer, one seed (42), three candidates, 48-token chunks, four
+steps, 160 accepted tokens and 576 decode slots maximum, no resampling retries,
+120 seconds per run. Use at most eight Jev HTTP attempts across the two guided
+runs. Rotate the two modes' order, load the already cached pinned Granite revision,
+and warm up the three-candidate shape before timing. Keep all four results.
+
+This checks generated step boundaries and exact-prefix continuation using existing
+code. No backtracking, dedicated step scorer, or retained branch cache is added.
+Qualitative review of generated traces is distinct from the symbolic oracle's
+evaluation of the authored statements. No second attempt to repair a poor result.
