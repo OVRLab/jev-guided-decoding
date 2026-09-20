@@ -58,8 +58,10 @@ def parser() -> argparse.ArgumentParser:
     return root
 
 
-def _write(path: Path, data: dict) -> None:
-    path.write_text(json.dumps(data, indent=2, ensure_ascii=False, allow_nan=False) + "\n")
+def _write(path: Path, data: dict, *, exclusive: bool = False) -> None:
+    encoded = json.dumps(data, indent=2, ensure_ascii=False, allow_nan=False) + "\n"
+    with path.open("x" if exclusive else "w") as stream:
+        stream.write(encoded)
 
 
 async def run(args: argparse.Namespace) -> int:
@@ -150,6 +152,7 @@ async def run(args: argparse.Namespace) -> int:
                     "result": result.to_dict(),
                     "memory": backend.memory(),
                 },
+                exclusive=True,
             )
             print(result.text)
             print(f"Stop: {result.stop_reason}; trace: {args.output}", file=sys.stderr)

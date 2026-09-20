@@ -173,3 +173,36 @@ def test_reason_cli_preserves_cancelled_result(backend, monkeypatch, tmp_path):
     assert asyncio.run(cli.run(args)) == 130
     saved = json.loads(output.read_text())["result"]
     assert saved["stop_reason"] == "cancelled" and saved["usage_unknown"]
+
+
+def test_output_created_during_inference_is_not_overwritten(backend, monkeypatch, tmp_path):
+    output = tmp_path / "run.json"
+    propose = backend.propose_frames
+
+    def competing_writer(self, *args, **kwargs):
+        output.write_text("Another process's result")
+        return propose(self, *args, **kwargs)
+
+    monkeypatch.setattr(backend, "propose_frames", competing_writer)
+    config = tmp_path / "config.toml"
+    config.write_text('[model]\nmodel_id="fake"\n')
+    evidence = tmp_path / "evidence.txt"
+    evidence.write_text("E")
+    args = cli.parser().parse_args(
+        [
+            "reason",
+            "--config",
+            str(config),
+            "--output",
+            str(output),
+            "--evidence-file",
+            str(evidence),
+            "--question",
+            "Q",
+            "--mode",
+            "greedy",
+        ]
+    )
+    with pytest.raises(FileExistsError):
+        asyncio.run(cli.run(args))
+    assert output.read_text() == "Another process's result"

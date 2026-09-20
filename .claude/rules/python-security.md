@@ -8,6 +8,9 @@ Keep remote model code disabled by default. Review dependencies and the actual
 loader/serialization path when adding models; do not claim a file extension alone
 makes arbitrary artifacts safe. Validate output paths according to the caller's
 trust boundary and preserve the CLI's no-overwrite behavior.
+Use exclusive creation when publishing a new single-run artifact. An existence
+check before model loading does not protect against another process creating the
+path during inference. Test that race without overwriting the competing result.
 
 Credentials belong in approved environment/key-file inputs, never request state,
 repr/debug output, or stored traces. Tests use clearly fake keys. A checksum or
