@@ -18,6 +18,7 @@ future edge case listed below is already tested.
 | Reasoning search | Complete step/final boundaries; final without EOS; duplicate scoring once; saved sibling restores exact IDs; budgets never reset | [reasoning tests](tests/test_reasoning.py), [framed backend tests](tests/test_transformers_backend.py) |
 | Reasoning scoring and CLI | Whole-prefix validity; distinct step/final rubrics; baseline without key; exact prompt saved; errors retain a stopped trace | [scorer tests](tests/test_reasoning_scorer.py), [CLI tests](tests/test_reasoning_cli.py), scoped live mechanism check |
 | Reasoning cancellation | Signal model worker, drain before releasing request ownership; no late final commit; unknown remote usage explicit | [cancellation and deadline tests](tests/test_reasoning.py) |
+| Proposal prompt and oracle evaluation | Styles preserve custom system/problem; no example/reference leakage; oracle checks conjunction, cycles, explicit negatives, and recorded problem identity; missing runs retained | [prompt tests](tests/test_reasoning_prompts.py), [experiment tests](tests/test_proposal_probe.py), [frozen protocol](docs/proposal-generation-experiment.md) |
 | Documentation changes | Entrypoints discover rules, links remain local/valid, commands are portable, historical reports untouched | [AI-docs tests](tests/test_ai_docs.py), `uv run --no-sync python scripts/check_ai_docs.py` |
 
 For future parallel scheduling, extend request ownership, lock/cache isolation,

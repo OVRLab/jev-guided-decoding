@@ -112,3 +112,21 @@ seeing evaluation results. The original default/config remains unchanged.
 A review regression additionally requires the grader to match recorded question
 and evidence to the oracle fixture; reusing an ID alone is not sufficient provenance.
 Missing, incomplete, and unrecognized verdicts remain in the planned denominator.
+
+
+## Continuation after the evaluation interruption
+
+The primary batch stopped after 35/48 jobs: `eval_cycle`, seed 42, `final_jev`
+recorded a scorer timeout at 90.0018 seconds, its request deadline. The failed
+request remains in the results with unknown provider usage and is never replayed.
+There are thirteen never-started jobs, not thirteen failed jobs to retry.
+
+A separately bounded 900-second completion stage runs only those thirteen jobs
+with the unchanged config, prompt, fixtures, oracle, and original mode order.
+This is an explicit execution-protocol deviation after the interruption; no model
+or grading tuning is performed. Each job uses the existing CLI in a fresh process,
+so loading/warm-up is recorded per job and latency comparisons must acknowledge
+the restart. Early provider/backend errors stop this stage; errors coinciding with
+the request deadline are retained while unrelated jobs may continue. The manifest
+marks attempts before dispatch and never schedules prior failed/cancelled rows.
+If the stage limit interrupts another job, keep it and every not-started job visible.

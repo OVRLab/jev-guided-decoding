@@ -150,3 +150,19 @@ The live result remains tied to its original source and was not rerun for this
 output-only fix. Final local verification passed 91 tests, lint, formatting,
 documentation checks, package build, CLI help, and core imports without loading
 optional inference dependencies. CI and review availability are recorded on PR #2.
+
+
+## Optional worked examples
+
+`ReasoningConfig.prompt_style` selects `instructions` (the original default) or
+`examples`. The examples prompt demonstrates a rule's new conclusion, missing
+requirements, and explicit negation. It does not change frame acceptance or Jev
+thresholds. Prompt preparation preserves custom system text and the current
+question/evidence, is idempotent, and can switch styles without accumulating old
+examples. The CLI records the same full system prompt the backend encodes.
+
+The [proposal experiment](proposal-generation-experiment.md) records two bounded
+development rounds and a separately frozen evaluation. Its positive development
+signal is candidate availability, not proof of general reasoning improvement.
+Examples increase prompt length and repeated-prefill work. They remain opt-in;
+the original config and historical reports keep their original behavior.

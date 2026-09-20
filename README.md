@@ -113,6 +113,29 @@ trace semantics, cancellation, and remaining validation work. The
 branch recovery but found 0/4 completions with step guidance: Granite kept proposing
 copied premises. No quality improvement was established.
 
+The optional `prompt_style = "examples"` setting adds worked rule-application
+examples and a conclusion-first cue. It is configured in
+[the examples config](configs/granite-4.0-1b-reasoning-examples.toml); `instructions`
+remains the default. The [proposal experiment](docs/proposal-generation-experiment.md)
+separates prompt development from evaluation and grades final verdict labels with
+an independent rule oracle. The examples are instructions, not training data used
+to change weights, and are not evidence for the current question.
+
+```bash
+# Fixed six-case, two-seed comparison with a 1,800-second stage limit:
+uv run --no-sync python experiments/proposal_probe.py evaluate \
+  --config configs/granite-4.0-1b-reasoning-examples.toml \
+  --output results/proposal-evaluation
+
+# Offline oracle grading; writes verdicts.json without overwriting prior grades:
+uv run --no-sync python experiments/proposal_probe.py grade \
+  --output results/proposal-evaluation
+```
+
+The grader counts missing/incomplete runs and unrecognized labels as nonmatches;
+verdict agreement does not establish correct explanations or intermediate steps.
+Use the generic `reason` command with the examples config for your own questions.
+
 ## Compare the four modes
 
 ```bash
