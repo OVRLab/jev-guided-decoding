@@ -27,30 +27,48 @@ DEMONSTRATION_PROMPT = (
     REASONING_PROMPT
     + """
 
-Apply a rule to the actual subject and write its NEW conclusion. Start with that
-conclusion immediately. The following examples teach the format and method only;
-their names and facts are NOT evidence for the current question.
+Write the CONSEQUENCE of an applicable rule first. A proof step is the rule's
+THEN statement applied to the current subject, with a short reason. Do not list
+or summarize the input facts before deriving something. Each step starts with
+"Therefore," and states a NEW consequence or a specific missing requirement.
 
-Example 1
-Evidence: Pera has an amber ticket. An amber ticket grants entry to the workshop.
-Anyone who can enter the workshop may collect a toolkit.
-Question: May Pera collect a toolkit?
-Assistant:
-<step>Pera can enter the workshop because Pera has an amber ticket.</step>
-<final>Yes. Pera may collect a toolkit because Pera can enter the workshop.</final>
+These worked examples teach the method only. Their facts do not apply to the
+current question. If a question asks for a verdict label, put that label first
+inside the final frame and include its reason.
 
-Example 2
-Evidence: Crate Dexo has a copper seal. A crate with a copper seal AND a signed
-manifest may be loaded. No information about Dexo's manifest is given.
-Question: Is permission to load Dexo established?
-Assistant:
-<step>The required signed manifest for Dexo is not established.</step>
-<final>Permission is not established: the copper seal alone does not satisfy
-the rule, which also requires a signed manifest.</final>
+Example 1:
+Fact: Pera has an amber ticket.
+Rule: If Pera has an amber ticket, then Pera may enter the workshop.
+Rule: If Pera may enter the workshop, then Pera may collect a toolkit.
+Question: Classify the claim 'Pera may collect a toolkit'.
+Correct output:
+<step>Therefore, Pera may enter the workshop: the amber-ticket rule applies.</step>
+<final>ENTAILED. Pera may collect a toolkit because Pera may enter the workshop.</final>
+Copying "Pera has an amber ticket" would NOT be a proof step: it is already given.
 
-Now solve ONLY the current question with its supplied evidence. Write an applied
-deduction inside a complete <step>...</step> frame, then continue toward a complete
-<final>...</final>. Close every frame exactly as in the examples.
+Example 2:
+Fact: Crate Dexo has a copper seal.
+Rule: If Crate Dexo has a copper seal AND Crate Dexo has a signed manifest, then
+Crate Dexo may be loaded.
+Question: Classify the claim 'Crate Dexo may be loaded'.
+Correct output:
+<step>Therefore, the loading rule cannot yet establish permission: Dexo's required
+signed manifest is missing from the evidence.</step>
+<final>UNKNOWN. The copper seal is given but the required signed manifest is not.</final>
+A missing premise does NOT prove the opposite of the claim.
+
+Example 3:
+Fact: Lamp Bex has a red fault light.
+Rule: If Lamp Bex has a red fault light, then Lamp Bex is not ready.
+Question: Classify the claim 'Lamp Bex is ready'.
+Correct output:
+<step>Therefore, Lamp Bex is not ready: the red-fault-light rule applies.</step>
+<final>CONTRADICTED. The rule establishes that Lamp Bex is not ready.</final>
+
+For the current problem, start immediately with <step>Therefore, followed by
+a rule's NEW consequence about the actual subject, or a specific missing
+requirement. Close the step with </step>. Continue until a final frame answers
+the current question. Always include </final> before finishing.
 """
 )
 

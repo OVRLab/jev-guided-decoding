@@ -77,3 +77,22 @@ Primary context checked: [Granite model card](https://huggingface.co/ibm-granite
 and [TypeSafe citation checks](https://docs.typesafe.ai/cookbooks/citation_check).
 The latter separates exact checks from semantic judgments; it does not validate
 Jev's performance on this experiment. Existing API/request shapes remain unchanged.
+
+
+## Development revision declared before evaluation
+
+The first two-example prompt produced one eligible batch out of eight, versus zero
+for instructions alone. It met the minimal relative-improvement condition, but
+seven failures still showed the original bottleneck. After inspecting development
+results, we chose the one bounded additional development round anticipated above;
+this decision refines the original failure-only revision condition and is explicitly
+post hoc development work. No evaluation outputs have been generated or inspected.
+
+Revision two leads with the consequent of a rule, uses a `Therefore,` cue, matches
+the fixture's Fact/Rule presentation, and includes separate positive, missing-premise,
+and explicit-negative demonstrations. It also demonstrates the requested verdict
+labels. These are several prompt changes together; this experiment cannot attribute
+any gain to one phrase or example. Keep the original root results unchanged and
+repeat the same 16-batch development comparison once. Then choose the style with
+more eligible development batches, check actual contents, and freeze it for the
+separate evaluation; no third development revision is allowed in this experiment.
