@@ -56,6 +56,13 @@ def test_render_does_not_leak_gold_labels_or_unrelated_metadata():
     assert all(label in case["question"] for label in ("ENTAILED", "CONTRADICTED", "UNKNOWN"))
 
 
+def test_label_only_fixture_does_not_request_an_unimplemented_explanation():
+    case = probe()["render"](world(label_only=True))
+    assert "return only this label" in case["question"]
+    assert "short reason" not in case["question"]
+    assert "short reason" in probe()["render"](world())["question"]
+
+
 @pytest.mark.parametrize(
     "text,expected",
     [

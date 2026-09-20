@@ -15,6 +15,7 @@ weaken their requirements in this entrypoint.
 | [reasoning.py](src/jev_guided_decoding/reasoning.py) | Explicit frames, branch selection, deferred siblings, global resource budgets and cancellation |
 | [framing.py](src/jev_guided_decoding/framing.py) | Frame parsing and versioned-by-source instruction/example prompt variants |
 | [reasoning_scorer.py](src/jev_guided_decoding/reasoning_scorer.py) | Whole-prefix validity, new-step progress, final completion using shared Jev transport |
+| [verdict.py](src/jev_guided_decoding/verdict.py) | Fixed typed verdict choices, reserved final-call budget, and direct-Jev classification control |
 | [jev.py](src/jev_guided_decoding/jev.py) | Credentials, typed questions, HTTP validation, bounded retries, usage |
 | [Transformers backend](src/jev_guided_decoding/backends/transformers.py) | Frozen causal model, token generation, stopping, likelihood, device accounting |
 | [benchmark.py](src/jev_guided_decoding/benchmark.py) | Dataset validation, lexical metrics, summaries |
@@ -55,6 +56,9 @@ an agent host automatically installs or exposes them as callable skills.
   separate outcome with potentially unknown usage; do not rewrite either as success.
 - Reasoning results return only the final frame body in `text`; partial steps are separate.
   `final_jev` leaves intermediate steps unjudged; it does not invent passing scores.
+- `fixed-verdict-v1` has a code-rendered Choice label and separate reasoning outcome;
+  its Granite token path does not encode that final label. UNKNOWN is distinct from
+  low confidence, budget stops, provider errors, and cancellation.
 - Padded decode slots and accepted output tokens measure different things.
 - Device sampling, API scores, and latency may vary despite fixed seeds/version IDs.
 - MPS allocation snapshots are not peak-memory measurements.

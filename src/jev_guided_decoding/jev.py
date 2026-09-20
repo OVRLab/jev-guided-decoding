@@ -180,6 +180,16 @@ class JevScorer:
         if not candidates:
             raise ValueError("Cannot evaluate an empty candidate batch")
         payload = self._build_payload(request, prefix, candidates)
+        values = await self._evaluate(
+            payload,
+            lambda answers: self._parse_judgments(answers, candidates),
+            timeout=timeout,
+            max_attempts=max_attempts,
+        )
+        return Evaluation(*values)
+
+    async def _evaluate(self, payload, parse_answers, *, timeout, max_attempts):
+        """Shared bounded transport; the caller validates its primitive's answer."""
         started = time.monotonic()
         deadline = started + timeout
         attempts = 0
@@ -218,7 +228,7 @@ class JevScorer:
             try:
                 raw = response.json()
                 answers = raw["answers"]
-                judgments = self._parse_judgments(answers, candidates)
+                judgments = parse_answers(answers)
                 actual_model = raw["model"]
                 usage = raw["usage"]
                 if not isinstance(actual_model, str) or not actual_model:
@@ -232,7 +242,7 @@ class JevScorer:
                     attempts=attempts,
                     usage_unknown=True,
                 ) from None
-            return Evaluation(
+            return (
                 judgments,
                 actual_model,
                 usage["input_tokens"],

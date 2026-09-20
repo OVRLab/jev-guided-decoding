@@ -1,5 +1,11 @@
 # Reasoning controller implementation
 
+The opt-in [fixed-verdict extension](fixed-verdict-experiment.md) runs this search
+with a reserved final-call budget, then asks Jev to choose among three labels
+supplied by code. Its `fixed-verdict-v1` result distinguishes the generated token
+path from the rendered verdict and retains the original reasoning outcome. The
+`reasoning-v1` contract below continues to describe the original search modes.
+
 Authorized on 2026-09-20 following the
 [investigation](reasoning-step-investigation.md). The actual Jev model participates
 during inference; neither model is trained. The controller and offline checks are implemented in

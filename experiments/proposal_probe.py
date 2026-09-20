@@ -59,7 +59,8 @@ def render(world: dict) -> dict:
     question = (
         f"Classify the claim '{atoms[world['goal']]}' using only these facts and rules. "
         "Begin the final answer with ENTAILED if the claim follows, CONTRADICTED if its "
-        "explicit negation follows, or UNKNOWN if neither follows; then give a short reason."
+        "explicit negation follows, or UNKNOWN if neither follows; "
+        + ("return only this label." if world.get("label_only") else "then give a short reason.")
     )
     return {
         "id": world["id"],

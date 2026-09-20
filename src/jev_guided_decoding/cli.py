@@ -24,6 +24,7 @@ from .reasoning import (
 )
 from .reasoning_scorer import ReasoningScorer
 from .types import DecodeConfig, Request
+from .verdict import FixedVerdictController, VerdictConfig, VerdictScorer
 
 
 def parser() -> argparse.ArgumentParser:
@@ -33,7 +34,7 @@ def parser() -> argparse.ArgumentParser:
         reasoning = name.startswith("reason")
         choices = ["jev", "greedy", "sample", "likelihood"]
         if reasoning:
-            choices.append("final_jev")
+            choices.extend(["final_jev", "fixed_jev", "direct_jev"])
         p = sub.add_parser(name)
         p.add_argument("--config", type=Path, required=True)
         p.add_argument("--output", type=Path, required=True)
@@ -82,6 +83,10 @@ async def run(args: argparse.Namespace) -> int:
 
     async def execute(request, mode, run_config):
         try:
+            if mode in ("fixed_jev", "direct_jev"):
+                return await FixedVerdictController(backend, run_config, scorer, verdict).run(
+                    request, mode
+                )
             return await controller_type(backend, run_config, scorer).run(request, mode)
         except ReasoningCancelled as exc:
             return exc.result
@@ -97,8 +102,15 @@ async def run(args: argparse.Namespace) -> int:
     price = jev.pop("input_usd_per_million", None)
     if price is not None and (not isinstance(price, (int, float)) or not 0 <= price < float("inf")):
         raise ValueError("Jev input price must be finite and nonnegative")
-    model_config = dict(config["model"])
     modes = [args.mode] if generation else list(dict.fromkeys(args.modes))
+    fixed_modes = any(m in ("fixed_jev", "direct_jev") for m in modes)
+    verdict = VerdictConfig(**config.get("verdict", {})) if fixed_modes else None
+    if "fixed_jev" in modes:
+        verdict.validate_reservation(decoding)
+    if fixed_modes:
+        scorer_type = VerdictScorer
+    needs_backend = any(m != "direct_jev" for m in modes)
+    model_config = dict(config["model"]) if needs_backend else None
     if args.output.exists():
         raise ValueError("Output already exists; choose a new path to preserve prior results")
     if not generation:
@@ -112,13 +124,19 @@ async def run(args: argparse.Namespace) -> int:
             replace(decoding, seed=seed)
     else:
         request = make_request(args.question, args.evidence_file.read_text())
-    key = load_api_key(args.key_file) if any(m in ("jev", "final_jev") for m in modes) else None
+    key = (
+        load_api_key(args.key_file)
+        if any(m in ("jev", "final_jev", "fixed_jev", "direct_jev") for m in modes)
+        else None
+    )
     # Import the heavy optional backend only after validating the request/configuration.
-    from .backends.transformers import TransformersBackend
+    backend, load_seconds = None, 0.0
+    if needs_backend:
+        from .backends.transformers import TransformersBackend
 
-    load_started = time.monotonic()
-    backend = TransformersBackend.load(**model_config, local_files_only=args.local_files_only)
-    load_seconds = time.monotonic() - load_started
+        load_started = time.monotonic()
+        backend = TransformersBackend.load(**model_config, local_files_only=args.local_files_only)
+        load_seconds = time.monotonic() - load_started
     try:
         revision = subprocess.check_output(
             ["git", "rev-parse", "HEAD"],
@@ -131,7 +149,7 @@ async def run(args: argparse.Namespace) -> int:
     metadata = {
         "created_at": datetime.now(UTC).isoformat(),
         "config": config,
-        "backend": backend.metadata(),
+        "backend": backend.metadata() if backend is not None else None,
         "load_seconds": load_seconds,
         "platform": platform.platform(),
         "python": platform.python_version(),
@@ -141,7 +159,8 @@ async def run(args: argparse.Namespace) -> int:
     async with AsyncExitStack() as stack:
         scorer = await stack.enter_async_context(scorer_type(key, **jev)) if key else None
         if generation:
-            backend.reset_memory_peak()
+            if backend is not None:
+                backend.reset_memory_peak()
             result = await execute(request, args.mode, decoding)
             args.output.parent.mkdir(parents=True, exist_ok=True)
             _write(
@@ -150,7 +169,7 @@ async def run(args: argparse.Namespace) -> int:
                     "metadata": metadata,
                     "request": asdict(request),
                     "result": result.to_dict(),
-                    "memory": backend.memory(),
+                    "memory": backend.memory() if backend is not None else {},
                 },
                 exclusive=True,
             )
@@ -172,8 +191,8 @@ async def run(args: argparse.Namespace) -> int:
         _write(args.output / "metadata.json", metadata)
         # Warm kernels with the same public fixture; excluded from reported generation times.
         warmup = make_request(cases[0]["question"], cases[0]["evidence"])
-        warmup_counts = {1}
-        if any(mode in ("jev", "likelihood", "final_jev") for mode in modes):
+        warmup_counts = {1} if backend is not None else set()
+        if any(mode in ("jev", "likelihood", "final_jev", "fixed_jev") for mode in modes):
             warmup_counts.add(decoding.candidates)
         for count in sorted(warmup_counts):
             await asyncio.to_thread(
@@ -195,7 +214,8 @@ async def run(args: argparse.Namespace) -> int:
                     # Rotate mode order to reduce systematic warm-up/thermal ordering effects.
                     offset = (case_index + seed_index) % len(modes)
                     for mode in modes[offset:] + modes[:offset]:
-                        backend.reset_memory_peak()
+                        if backend is not None:
+                            backend.reset_memory_peak()
                         result = await execute(request, mode, replace(decoding, seed=seed))
                         record = {
                             "id": case["id"],
@@ -204,7 +224,9 @@ async def run(args: argparse.Namespace) -> int:
                             "references": case["answers"],
                             "result": result.to_dict(),
                             "metrics": answer_metrics(result.text, case["answers"]),
-                            "memory": backend.memory(),
+                            "memory": backend.memory()
+                            if backend is not None and mode != "direct_jev"
+                            else {},
                             "estimated_jev_input_cost_usd": (
                                 result.jev_input_tokens * price / 1_000_000
                                 if price is not None
