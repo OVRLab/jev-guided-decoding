@@ -54,5 +54,6 @@ add unguided and final-only-filtered Granite reasoning with the same fixed final
 Jev Choice, retain direct Jev and Granite-alone outcomes, and compare 200 theories across three seeds before
 making a broader improvement claim. A separate development pilot precedes the
 frozen test run. All attempted outcomes remain in the denominator.
-The owner authorized a small cloud GPU for this study; server integration and the
-main results remain pending. The separate synthetic stress test has 24 new worlds.
+The owner authorized a small cloud GPU for this study. The twelve-job CUDA pilot
+completed on one L40S, and the frozen main study is running; final results remain
+pending. The separate synthetic stress test has 24 new worlds.

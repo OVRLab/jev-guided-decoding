@@ -186,3 +186,16 @@ server lifetime, and periodic result backups. A provider interruption must prese
 the started-job journal; resumption skips every previously started job. Stop GPU
 billing after completion or failure, retrieve evidence, then delete only the
 temporary resources created for this study. Never reuse production model servers.
+
+The [twelve-job CUDA pilot](../reports/2026-09-20-cuda-pilot/README.md) completed on
+one L40S without provider/backend errors; every arm matched 2/3 development labels.
+The main and stress manifests were frozen at 15:06:06 UTC on 2026-09-20, using
+clean source `62f6bedd992afb522421b4fbf73a5fcfd02f8011`, before their inference.
+Their dataset SHA-256 values are respectively
+`bc257fc51265cb3f5647ba51693ae72f0ad43cae380a307f520b1aa9a2abcf4b` and
+`82306b20c593e662f1cf0047a1614aff33b0201739ce384c764409818e44a09f`.
+The main study is in progress, followed by the separate stress test. The temporary
+server has a twelve-hour lifetime cap and shuts down after completion/failure.
+Private backups run every minute while the controlling machine is connected;
+automated deletion requires a matching SHA-256 manifest of every result file.
+If backup verification fails, retain the disk for recovery and stop GPU billing.

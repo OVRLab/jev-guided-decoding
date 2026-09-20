@@ -24,6 +24,7 @@ a published release.
 | Intermediate-reasoning investigation: 16 fixed-candidate scorer calls and four generated-derivation runs | [follow-up report](reports/2026-09-20-reasoning-investigation/README.md), [proposed engine design](docs/reasoning-step-investigation.md) |
 | Controlled-study runner, unguided/final-only fixed-choice controls, independently checked ProofWriter data and synthetic stress worlds | [protocol](docs/proofwriter-experiment.md), [runner tests](tests/test_controlled_study.py), [control tests](tests/test_unguided_verdict.py) |
 | Nine-run ProofWriter development pilot on MPS: each executed arm matched 2/3 verdicts | [pilot report](reports/2026-09-20-proofwriter-pilot/README.md) |
+| Twelve-run CUDA pilot on one L40S: all four executed arms matched 2/3 verdicts, without provider/backend errors | [CUDA pilot report](reports/2026-09-20-cuda-pilot/README.md) |
 
 The recorded smoke run used original Granite with zero trainable parameters.
 Guided decoding averaged 3.71 seconds versus 1.10 seconds greedy, with no
@@ -36,6 +37,8 @@ not freshly rerun checks or a general accuracy estimate.
 The [controlled study](docs/proofwriter-experiment.md) specifies 200 distinct theories,
 three seeds, four executed arms, and problem-level paired comparisons. Its expanded
 offline suite passes 174 tests; the full study has not yet produced an accuracy result.
+The CUDA integration pilot passed, and the frozen main study is running on a
+single L40S. This is remote Jev evaluation, not a colocated Jev runtime.
 
 - vLLM extension, retained-prefix cache reuse between chunks, or concurrent serving.
 - Guaranteed semantic candidate diversity; deduplication currently uses exact token IDs.
