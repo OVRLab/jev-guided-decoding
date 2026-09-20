@@ -200,7 +200,44 @@ conflicting generated-answer instructions, which limit interpretation of the
 derived Granite-alone score. No added accuracy from intermediate guidance was
 established for this configuration.
 
-## Compare the four modes
+## Compare Granite-generated answers
+
+The owner identified a scope error in the fixed-choice study: its final answer
+came from Jev. Its scores do not establish improvement in Granite's generated
+answers. The replacement [generated-answer protocol](docs/generated-answer-experiment.md)
+keeps Granite as the answerer in all three arms: single sampled reasoning,
+three-candidate likelihood selection, and three-candidate intermediate Jev selection.
+Jev never scores or supplies the final answer. Code supplies framing delimiters;
+Granite generates the content, retaining its exact accepted reasoning tokens.
+
+The [controller](src/jev_guided_decoding/generated_answer.py) reserves one common
+Granite final generation even after all steps are rejected. Tests enforce answer
+provenance and no final Jev calls. A separate persistent ledger reserves the maximum
+input-token charge before each Jev request. This replacement is awaiting its new
+development pilot and frozen evaluation; no new accuracy claim is made.
+
+After downloading the pinned GSM8K files and ProofWriter archive described in the
+protocol, freeze and run development data first:
+
+```bash
+uv run --no-sync python experiments/generated_answer_study.py freeze --pilot \
+  --archive results/proofwriter-source/proofwriter-dataset-V2020.12.3.zip \
+  --gsm results/generated-answer-source/gsm8k-train.jsonl \
+  --exclusions data/generated-answer-exclusions.json \
+  --output results/generated-answer-pilot
+uv run --no-sync python experiments/generated_answer_study.py run \
+  --output results/generated-answer-pilot \
+  --ledger results/generated-answer-budget.jsonl
+uv run --no-sync python experiments/generated_answer_study.py analyze \
+  --output results/generated-answer-pilot
+```
+
+The ledger's $3 cap is shared across pilot and evaluation. Freeze requires a clean
+committed source tree. Model files must already be downloaded at the pinned revision.
+The single-candidate baseline uses the same staged prompt and is not an unrestricted
+default-chat benchmark. See the protocol for the development gate and fresh evaluation.
+
+## Compare the four original decoding modes
 
 ```bash
 uv run --no-sync jev-decode benchmark \

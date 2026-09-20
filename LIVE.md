@@ -26,6 +26,7 @@ a published release.
 | Nine-run ProofWriter development pilot on MPS: each executed arm matched 2/3 verdicts | [pilot report](reports/2026-09-20-proofwriter-pilot/README.md) |
 | Twelve-run CUDA pilot on one L40S: all four executed arms matched 2/3 verdicts, without provider/backend errors | [CUDA pilot report](reports/2026-09-20-cuda-pilot/README.md) |
 | Completed 2,400-job ProofWriter study and 96-job synthetic stress test; guided 84.5% versus direct Jev 84.7%, without demonstrated added accuracy | [final report, aggregate results, and integrity audit](reports/2026-09-20-controlled-study/README.md) |
+| Separate controller keeps Granite as final answerer, scores intermediate steps only, and reserves final generation plus durable Jev spending | [replacement protocol](docs/generated-answer-experiment.md), [controller tests](tests/test_generated_answer.py), [budget tests](tests/test_experiment_budget.py) |
 
 The recorded smoke run used original Granite with zero trainable parameters.
 Guided decoding averaged 3.71 seconds versus 1.10 seconds greedy, with no
@@ -43,6 +44,11 @@ demonstrated gain from intermediate guidance; 542/600 guided paths retained no
 step. Conflicting output instructions limit interpretation of the derived
 generated-answer controls. Remote Jev was used; colocated performance is unmeasured.
 All temporary cloud resources were deleted after verified result retrieval.
+
+The fixed-choice result answers a different question from whether Jev improves
+Granite-generated answers. The owner authorized a replacement study with a $50
+total budget. Its implementation has offline checks; its new development pilot and
+fresh evaluation remain pending. Final-answer attribution is now an explicit invariant.
 
 - vLLM extension, retained-prefix cache reuse between chunks, or concurrent serving.
 - Guaranteed semantic candidate diversity; deduplication currently uses exact token IDs.

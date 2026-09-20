@@ -5,6 +5,9 @@ development lessons. Follow [AGENTS.md](../../AGENTS.md) and [FEATURE.md](../../
 
 Before experimenting, define the hypothesis, baseline/control modes, datasets and
 rights, validation/test split, independent rubric, seeds, budgets, and stop criteria.
+Check which component actually supplies the scored output. For generator-quality
+claims, test that the generator owns the final tokens in all arms and that system
+instructions, examples, task instructions, and grading require the same format.
 Keep target/reference answers out of generation and scorer inputs. Preserve failed,
 empty, incomplete, and rejected runs in the denominator or explicitly disclose
 any exclusions and their reasons.

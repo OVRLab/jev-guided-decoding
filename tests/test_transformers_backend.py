@@ -103,3 +103,16 @@ def test_frame_stopping_ignores_sentence_punctuation_and_waits_for_complete_deli
     assert stop(torch.tensor([[0, 1, 2, 3], [0, 1, 4, 4]]), None).tolist() == [True, False]
     assert stop.stopped_at == [3, None]
     assert stop.reasons[0] == "frame"
+
+
+def test_control_encoding_is_literal_delimiters_without_model_answers():
+    class Tokenizer:
+        def encode(self, text, *, add_special_tokens):
+            assert not add_special_tokens
+            return [ord(c) for c in text]
+
+    backend = TransformersBackend.__new__(TransformersBackend)
+    backend.tokenizer = Tokenizer()
+    assert backend.encode_control("\n<final>") == tuple(map(ord, "\n<final>"))
+    with pytest.raises(ValueError):
+        backend.encode_control("<final>ENTAILED")

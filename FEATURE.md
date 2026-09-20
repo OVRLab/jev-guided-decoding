@@ -65,3 +65,17 @@ should reconcile this contract and improve useful proposal acceptance on develop
 data, then freeze a new evaluation on fresh problems. No follow-up tuning or reruns
 of held-out cases are part of the completed study. Temporary cloud resources were
 deleted after all result files were backed up and verified.
+
+## Corrected owner objective: Granite supplies the final answer
+
+The owner identified that the fixed-choice workaround had changed the research
+question. The recorded 84.5% is a pipeline ending in Jev classification, not a
+measurement of Granite's own improved answer. The owner authorized rebuilding the
+experiment and spending up to $50 total on a small Nebius GPU and Jev.
+
+The [replacement protocol](docs/generated-answer-experiment.md) compares single-path
+Granite, multiple-candidate likelihood selection, and intermediate-only Jev selection.
+All three retain Granite's accepted token continuation and use the same Granite
+final-generation rule, including when no reasoning step is usable. Jev cannot choose
+the final answer. Independent grading uses fresh logic cases and numerical word
+problems. Development validation and a new test freeze must precede any new claim.

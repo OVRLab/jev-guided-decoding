@@ -182,6 +182,12 @@ class TransformersBackend:
             clean_up_tokenization_spaces=False,
         )
 
+    def encode_control(self, text: str) -> tuple[int, ...]:
+        """Encode only a framing delimiter, never an answer or model-generated text."""
+        if text not in ("<step>", "\n<step>", "<final>", "\n<final>"):
+            raise ValueError("Unsupported control delimiter")
+        return tuple(self.tokenizer.encode(text, add_special_tokens=False))
+
     def _sync(self) -> None:
         if self.device.type == "mps":
             torch.mps.synchronize()

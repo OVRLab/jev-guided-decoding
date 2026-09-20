@@ -36,6 +36,10 @@ guides must defer here rather than maintain conflicting copies.
 
 ## Keep the experiment honest
 
+- When testing whether Jev improves a generator's answers, that generator must
+  produce the final answer in every compared arm. Keep Jev final classifiers as
+  separately named experiments; their scores cannot stand in for generated-answer
+  quality. Verify final-token provenance and a consistent prompt/grading contract.
 - Jev guidance currently selects **text continuations during inference**. Do not
   describe it as fused attention, access to hidden reasoning, training, a vLLM
   extension, or an improved model checkpoint unless that work is implemented and verified.

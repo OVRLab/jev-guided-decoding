@@ -1,0 +1,28 @@
+[model]
+model_id = "ibm-granite/granite-4.0-1b"
+revision = "6a7381ba1f54d684ff508d991aeb7dc580157103"
+device = "auto"
+dtype = "auto"
+temperature = 0.8
+top_p = 0.95
+
+[generation]
+candidates = 3
+max_steps = 8
+chunk_tokens = 64
+final_tokens = 96
+max_decode_tokens = 1632
+max_prefill_tokens = 100000
+max_context_tokens = 4096
+max_path_tokens = 768
+max_api_calls = 8
+max_seconds = 90.0
+final_reserve_seconds = 15.0
+support_threshold = 0.5
+progress_threshold = 0.5
+seed = 42
+
+[jev]
+model = "jev-1.13.0"
+request_timeout = 20.0
+max_retries = 0
