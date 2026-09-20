@@ -3,7 +3,9 @@
 Started 2026-09-20 at the owner's request, before merging PR #1. The target is
 the actual Jev model evaluating intermediate steps during inference, with both
 models' weights unchanged. This is a follow-up investigation, not an implemented
-reasoning-search feature or a claim of improved Granite answers.
+reasoning-search feature or a claim of improved Granite answers. The subsequent
+[controller implementation](reasoning-controller.md) has its own verification
+record; the diagnostic protocol and results below remain historical.
 
 ## Plan and diagnostic protocol
 

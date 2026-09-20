@@ -3,7 +3,8 @@
 Authorized on 2026-09-20 following the
 [investigation](reasoning-step-investigation.md). The actual Jev model participates
 during inference; neither model is trained. The controller and offline checks are implemented in
-the work branch; live validation follows in a separate report. The investigation's historical results remain unchanged.
+the work branch. A [separate live report](../reports/2026-09-20-reasoning-controller/README.md)
+records 16 runs, bounded recovery, and the negative step-guidance result. The investigation's historical results remain unchanged.
 
 ## Plan
 
@@ -131,3 +132,21 @@ Tests also cover discarded-token accounting, exact sibling prefixes, partial
 frames, completion without EOS, all resource ceilings, bounded pending branches,
 late scores, worker cancellation, and remote cancellation. Live-model compatibility
 and held-out improvement are separate questions from these deterministic checks.
+
+
+## Live outcome and review follow-up
+
+The [live mechanism check](../reports/2026-09-20-reasoning-controller/README.md)
+verified all proposal/selected prefixes and five backtracks. Final-only Jev
+recovered through a saved sibling once, while likelihood and final-only search
+also demonstrated bounded exhaustion. Step guidance completed 0/4 cases because
+Granite supplied copied premises rather than useful deductions; live step-guided
+backtracking was not reached. No quality gain or broad compatibility is claimed.
+
+After the run, an offline review test reproduced a single-run artifact overwrite
+race during inference. The CLI now uses exclusive file creation; an initial
+existence check alone was insufficient. The security rule records this lesson.
+The live result remains tied to its original source and was not rerun for this
+output-only fix. Final local verification passed 91 tests, lint, formatting,
+documentation checks, package build, CLI help, and core imports without loading
+optional inference dependencies. CI and review availability are recorded on PR #2.

@@ -1,0 +1,75 @@
+{
+  "created_at": "2026-09-20T11:48:10.212209+00:00",
+  "config": {
+    "model": {
+      "model_id": "ibm-granite/granite-4.0-1b",
+      "revision": "6a7381ba1f54d684ff508d991aeb7dc580157103",
+      "device": "auto",
+      "dtype": "auto",
+      "temperature": 0.8,
+      "top_p": 0.95
+    },
+    "reasoning": {
+      "candidates": 3,
+      "keep_branches": 2,
+      "chunk_tokens": 96,
+      "max_steps": 6,
+      "max_expansions": 8,
+      "max_pending": 6,
+      "max_resamples": 1,
+      "max_path_tokens": 384,
+      "max_decode_tokens": 1536,
+      "max_prefill_tokens": 30000,
+      "max_context_tokens": 4096,
+      "max_api_calls": 12,
+      "max_seconds": 90.0,
+      "support_threshold": 0.75,
+      "progress_threshold": 0.6,
+      "completion_threshold": 0.75,
+      "seed": 42
+    },
+    "jev": {
+      "model": "jev-1.13.0",
+      "request_timeout": 30.0,
+      "max_retries": 2,
+      "input_usd_per_million": 0.042
+    }
+  },
+  "backend": {
+    "backend": "transformers",
+    "model": "ibm-granite/granite-4.0-1b",
+    "requested_revision": "6a7381ba1f54d684ff508d991aeb7dc580157103",
+    "resolved_revision": "6a7381ba1f54d684ff508d991aeb7dc580157103",
+    "device": "mps:0",
+    "dtype": "torch.bfloat16",
+    "parameters": 1631750144,
+    "trainable_parameters": 0,
+    "torch": "2.8.0",
+    "transformers": "4.57.1",
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "cache_between_chunks": "recompute accepted prefix"
+  },
+  "load_seconds": 4.100501541979611,
+  "platform": "macOS-26.3.1-arm64-arm-64bit",
+  "python": "3.12.13",
+  "git_revision": "ea5b699018364b8e60c80e1bb601c091065900c9",
+  "working_tree_dirty": false,
+  "dataset_sha256": "8db76954504e9f6cc33b6ffc687850f5a4e560ef5a09a535cbf7a52662a5b3c1",
+  "case_ids": [
+    "two_hop",
+    "missing_conjunct",
+    "reverse_rule",
+    "distractor_chain"
+  ],
+  "seeds": [
+    42
+  ],
+  "modes": [
+    "greedy",
+    "likelihood",
+    "final_jev",
+    "jev"
+  ],
+  "comparison": "Same configured token ceilings; actual work can differ by EOS, selection and retries. Compare recorded tokens and time, not ceilings alone."
+}

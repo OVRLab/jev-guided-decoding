@@ -108,7 +108,10 @@ and returns 3 if any search was incomplete. Baselines never read a Jev key.
 This controls explicitly generated text during inference. It does not expose
 Granite's hidden neural states. The four-case fixture is a mechanism check, not a
 held-out quality evaluation. See the controller documentation for resource limits,
-trace semantics, cancellation, and remaining validation work.
+trace semantics, cancellation, and remaining validation work. The
+[first live reasoning run](reports/2026-09-20-reasoning-controller/README.md) verified
+branch recovery but found 0/4 completions with step guidance: Granite kept proposing
+copied premises. No quality improvement was established.
 
 ## Compare the four modes
 
