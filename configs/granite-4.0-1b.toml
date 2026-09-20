@@ -1,0 +1,28 @@
+[model]
+model_id = "ibm-granite/granite-4.0-1b"
+revision = "6a7381ba1f54d684ff508d991aeb7dc580157103"
+device = "auto"
+dtype = "auto"
+temperature = 0.8
+top_p = 0.95
+
+[decoding]
+candidates = 3
+chunk_tokens = 48
+max_answer_tokens = 128
+max_decode_tokens = 768
+max_steps = 6
+max_retries = 1
+max_api_calls = 18
+max_seconds = 300.0
+support_threshold = 0.75
+relevance_threshold = 0.6
+completion_threshold = 0.75
+seed = 42
+
+[jev]
+model = "jev-1.13.0"
+request_timeout = 30.0
+max_retries = 2
+# Documented input price on 2026-09-20; override when prices change.
+input_usd_per_million = 0.042
