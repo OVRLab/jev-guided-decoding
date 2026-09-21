@@ -83,3 +83,9 @@ No test outcome will change its method or trigger accuracy-based early stopping.
 [Raw attempts](pilot-v2/runs.jsonl.gz), [summary](pilot-v2/summary.json),
 [independent analysis](pilot-v2/independent-analysis.json),
 [manifest](../../research/protocols/structured-v2/manifest.json).
+
+The [figure renderer](../../experiments/plot_structured_study.py) is prepared for
+the completed independent summary. It exports accuracy/latency and the three
+primary contrast intervals as PNG, SVG and PDF, recording source/data hashes and
+plotting-library versions. Figures require all 6,300 outcomes and will receive
+visual/table verification after the run; no invented preview data is used.

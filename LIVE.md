@@ -39,6 +39,8 @@ established quality gain. One correct ending was rejected and misleading causal
 wording was accepted elsewhere. These are historical small-sample findings,
 not freshly rerun checks or a general accuracy estimate.
 
+The [R13 report](reports/2026-09-21-structured-study/README.md) adds fresh hosted scoring on the L40S: both 168-job pilots completed without API/backend errors; V1 failed format admission, and V2 passed after adding a common three-label final grammar. V2 independently reconstructed all 168 token paths and matched all 96 paired initial candidate pools. The 6,300-job test is running; no accuracy gain is established.
+
 ## Not implemented or not demonstrated
 
 The [controlled study](docs/proofwriter-experiment.md) specifies 200 distinct theories,
@@ -73,9 +75,10 @@ network charges. Final-answer attribution is now an explicit invariant.
 - Validated compatibility beyond the recorded Granite and tiny-model checks.
 - A validated hidden-layer mapping or an effective layer identified by experiment.
   The [output-logit prototype](reports/2026-09-21-logit-guidance/README.md) is mechanically
-  checked with replayed scores; a fresh live hosted end-to-end logit trial and an
-  admitted independent answer-quality study have not run. One provider failure
-  retains unknown usage; no further paid dispatch occurs under that stopped protocol.
+  checked with replayed scores. R13 subsequently verified fresh hosted structured
+  logit guidance and admitted a new exploratory test, currently running. R12
+  retains one actual-usage-unknown call at its full maximum charge; its original
+  stopped protocol was not retroactively resumed or declared admitted.
 
 Update this inventory when verified behavior changes, naming the PR/report and
 keeping branch, merged, experimental, and released states distinct. Guidance-only

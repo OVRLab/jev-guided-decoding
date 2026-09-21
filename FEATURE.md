@@ -1,5 +1,11 @@
 # Feature: Jev-guided intermediate reasoning
 
+The [R13 corrected pilot](reports/2026-09-21-structured-study/README.md) now passes
+all operational gates after API recovery and a shared final-label grammar repair.
+The frozen seven-arm, 6,300-job test is running on one Nebius L40S. Granite chooses
+every final label, all weights remain frozen, and accuracy improvement is unproven.
+The failed first R13 pilot and every earlier result remain in the research record.
+
 **Current status:** the [corrected 3,600-job generated-answer study](reports/2026-09-20-generated-answer-study/README.md)
 is complete. Granite generated every final answer; Jev did not demonstrate an
 accuracy gain over either control. Source, grading and data stayed frozen, and
