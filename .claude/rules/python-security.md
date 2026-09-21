@@ -15,3 +15,7 @@ path during inference. Test that race without overwriting the competing result.
 Credentials belong in approved environment/key-file inputs, never request state,
 repr/debug output, or stored traces. Tests use clearly fake keys. A checksum or
 synthetic test credential is not automatically an exposure; inspect context.
+
+Preserve exhausted retryable responses too: status, bounded redacted body and
+parsed Retry-After. A missing usage receipt stays unknown even on HTTP 429/529;
+never infer a zero charge or replay an ambiguous request during recovery.

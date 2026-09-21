@@ -34,3 +34,32 @@ def test_provider_error_keeps_bounded_details_without_echoing_a_credential():
         assert failure.value.usage_unknown
 
     asyncio.run(exercise())
+
+
+@pytest.mark.parametrize("status", [429, 529])
+def test_exhausted_retryable_response_keeps_status_and_unknown_usage(status):
+    async def exercise():
+        fake = "test-rate-limit-credential"
+        calls = []
+
+        def reply(request):
+            calls.append(request)
+            return httpx.Response(
+                status,
+                headers={"retry-after": "3", "x-request-id": "rate-request"},
+                json={"error": "try later", "echo": fake},
+            )
+
+        async with JevScorer(fake, max_retries=0, transport=httpx.MockTransport(reply)) as scorer:
+            with pytest.raises(ScorerError) as failure:
+                await scorer.score(
+                    Request("Q", "E"), "", (Candidate((1,), "Claim", -0.1, "frame"),)
+                )
+        assert len(calls) == failure.value.attempts == 1
+        assert failure.value.usage_unknown
+        assert failure.value.diagnostics["status_code"] == status
+        assert failure.value.diagnostics["retry_after_seconds"] == 3
+        assert failure.value.diagnostics["request_id"] == "rate-request"
+        assert fake not in json.dumps(failure.value.diagnostics)
+
+    asyncio.run(exercise())

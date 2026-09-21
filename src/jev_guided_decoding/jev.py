@@ -215,6 +215,7 @@ class JevScorer:
         started = time.monotonic()
         deadline = started + timeout
         attempts = 0
+        last_diagnostics = None
         while attempts < min(max_attempts, self.max_retries + 1):
             remaining = deadline - time.monotonic()
             if remaining <= 0:
@@ -235,6 +236,10 @@ class JevScorer:
                 ) from None
             if response.status_code in (429, 529):
                 delay = _retry_delay(response.headers.get("retry-after"), attempts)
+                last_diagnostics = {
+                    **self._error_diagnostics(response),
+                    "retry_after_seconds": delay,
+                }
                 if attempts >= min(max_attempts, self.max_retries + 1):
                     break
                 if delay >= deadline - time.monotonic():
@@ -275,4 +280,9 @@ class JevScorer:
                 time.monotonic() - started,
                 raw,
             )
-        raise ScorerError("Jev retry or request budget exhausted", attempts=attempts)
+        raise ScorerError(
+            "Jev retry or request budget exhausted",
+            attempts=attempts,
+            usage_unknown=attempts > 0,
+            diagnostics=last_diagnostics,
+        )
