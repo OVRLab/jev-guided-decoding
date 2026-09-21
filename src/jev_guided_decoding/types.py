@@ -110,10 +110,18 @@ class Evaluation:
 
 
 class ScorerError(RuntimeError):
-    def __init__(self, message: str, *, attempts: int = 0, usage_unknown: bool = False):
+    def __init__(
+        self,
+        message: str,
+        *,
+        attempts: int = 0,
+        usage_unknown: bool = False,
+        diagnostics: dict[str, Any] | None = None,
+    ):
         super().__init__(message)
         self.attempts = attempts
         self.usage_unknown = usage_unknown
+        self.diagnostics = diagnostics
 
 
 class Backend(Protocol):

@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import asyncio
+import hashlib
+import json
 import math
 import os
 import time
@@ -8,6 +10,7 @@ from datetime import UTC, datetime
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote
 
 import httpx
 
@@ -155,6 +158,25 @@ class JevScorer:
     async def __aexit__(self, *args: Any) -> None:
         await self._client.aclose()
 
+    def _error_diagnostics(self, response):
+        # Error bodies can echo credentials. Redact before exposing any excerpt,
+        # and never include request headers in a diagnostic or exception message.
+        key = self._client.headers.get("Authorization", "").removeprefix("Bearer ")
+        sensitive = {key, quote(key, safe=""), json.dumps(key)[1:-1]} - {""}
+        body = response.text
+        request_id = response.headers.get("x-request-id", response.headers.get("request-id", ""))
+        for value in sensitive:
+            body = body.replace(value, "[REDACTED]")
+            request_id = request_id.replace(value, "[REDACTED]")
+        return {
+            "status_code": response.status_code,
+            "request_id": request_id[:128],
+            "body_excerpt": body[:4096],
+            "body_truncated": len(body) > 4096,
+            "response_bytes": len(response.content),
+            "response_sha256": hashlib.sha256(response.content).hexdigest(),
+        }
+
     def _build_payload(self, request, prefix, candidates):
         return build_payload(request, prefix, candidates, self.model)
 
@@ -224,6 +246,7 @@ class JevScorer:
                     f"Jev returned HTTP {response.status_code}",
                     attempts=attempts,
                     usage_unknown=True,
+                    diagnostics=self._error_diagnostics(response),
                 )
             try:
                 raw = response.json()
@@ -241,6 +264,7 @@ class JevScorer:
                     "Jev returned an invalid response",
                     attempts=attempts,
                     usage_unknown=True,
+                    diagnostics=self._error_diagnostics(response),
                 ) from None
             return (
                 judgments,

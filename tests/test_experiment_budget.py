@@ -55,6 +55,36 @@ def test_truncated_budget_record_fails_closed(tmp_path):
             pass
 
 
+def test_authorized_unknown_charge_stays_maximum_and_survives_restart(tmp_path):
+    path = tmp_path / "budget.jsonl"
+    with InputTokenBudget(path) as budget:
+        token = budget.reserve()
+        assert token in budget.unresolved
+        budget.acknowledge_max_charge(
+            token, reason="Receipt unavailable", authorization="Owner explicitly resumed R13"
+        )
+        assert budget.charged_tokens == 65536
+        assert not budget.unresolved
+        assert not budget.settled
+        assert token in budget.max_charged
+        with pytest.raises(ValueError):
+            budget.settle(token, 0)
+    with InputTokenBudget(path) as budget:
+        assert budget.charged_tokens == 65536 and not budget.unresolved
+        next_token = budget.reserve()
+        assert budget.unresolved == {next_token}
+        assert budget.charged_tokens == 131072
+
+
+def test_unknown_maximum_acknowledgment_requires_reason_and_authorization(tmp_path):
+    with InputTokenBudget(tmp_path / "budget.jsonl") as budget:
+        token = budget.reserve()
+        for reason, authorization in [("", "Owner"), ("Known error", ""), (None, "Owner")]:
+            with pytest.raises(ValueError):
+                budget.acknowledge_max_charge(token, reason=reason, authorization=authorization)
+        assert budget.unresolved == {token}
+
+
 @pytest.mark.parametrize("kind", ["success", "timeout", "wrong_model"])
 def test_http_spending_is_reserved_before_dispatch_and_only_known_usage_is_refunded(tmp_path, kind):
     import asyncio

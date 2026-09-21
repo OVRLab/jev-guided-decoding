@@ -35,7 +35,7 @@ class InputTokenBudget:
         if not cap.is_finite() or not rate.is_finite() or cap <= 0 or rate <= 0:
             raise ValueError("Invalid budget terms")
         self.token_limit = int(cap * 1000000 / rate)
-        self.reserved, self.settled = {}, {}
+        self.reserved, self.settled, self.max_charged = {}, {}, {}
         self.stream = None
 
     def __enter__(self):
@@ -60,6 +60,12 @@ class InputTokenBudget:
                     elif event["event"] == "settle":
                         self._validate_settlement(key, event["input_tokens"])
                         self.settled[key] = event["input_tokens"]
+                    elif event["event"] == "charge_max_unknown":
+                        self._validate_max_charge(key, event["reason"], event["authorization"])
+                        self.max_charged[key] = {
+                            "reason": event["reason"],
+                            "authorization": event["authorization"],
+                        }
                     else:
                         raise ValueError("Unknown budget event")
             self.stream = self.path.open("a")
@@ -90,6 +96,35 @@ class InputTokenBudget:
     def charged_tokens(self):
         return sum(self.settled.get(key, amount) for key, amount in self.reserved.items())
 
+    @property
+    def unresolved(self):
+        return set(self.reserved) - set(self.settled) - set(self.max_charged)
+
+    def _validate_max_charge(self, key, reason, authorization):
+        if key not in self.unresolved:
+            raise ValueError("Maximum charge requires one unresolved reservation")
+        if any(
+            not isinstance(v, str) or not v.strip() or len(v) > 500 for v in (reason, authorization)
+        ):
+            raise ValueError("Explicit reason and authorization are required")
+
+    def acknowledge_max_charge(self, key, *, reason, authorization):
+        """Record an authorized conservative charge, never an actual usage receipt.
+
+        Scorers do not call this method. A separately authorized recovery workflow
+        may permit new work while retaining the old unknown call at its full cost.
+        """
+        self._validate_max_charge(key, reason, authorization)
+        self._append(
+            {
+                "event": "charge_max_unknown",
+                "id": key,
+                "reason": reason,
+                "authorization": authorization,
+            }
+        )
+        self.max_charged[key] = {"reason": reason, "authorization": authorization}
+
     def reserve(self):
         if self.charged_tokens + 65536 > self.token_limit:
             raise BudgetExhausted("Input-token spending cap reached before dispatch")
@@ -99,7 +134,7 @@ class InputTokenBudget:
         return key
 
     def _validate_settlement(self, key, tokens):
-        if key not in self.reserved or key in self.settled:
+        if key not in self.reserved or key in self.settled or key in self.max_charged:
             raise ValueError("Missing or already settled reservation")
         if type(tokens) is not int or not 0 <= tokens <= 65536:
             raise ValueError("Invalid input token usage")

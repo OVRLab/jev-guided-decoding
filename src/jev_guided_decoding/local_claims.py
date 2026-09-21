@@ -92,7 +92,7 @@ class LocalClaimScorer(JevScorer):
         payload = self._build_payload(request, prefix, candidates)
         reservation = None
         if self.budget is not None:
-            if set(self.budget.reserved) != set(self.budget.settled):
+            if self.budget.unresolved:
                 raise ScorerError(
                     "Unsettled previous usage blocks another request", usage_unknown=True
                 )
