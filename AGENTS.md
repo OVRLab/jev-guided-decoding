@@ -52,6 +52,10 @@ guides must defer here rather than maintain conflicting copies.
 - Compare the same prompts, model revisions, sampling settings, and candidate
   budgets; disclose **actual** generated tokens, padded slots, repeated prefill,
   latency, and API use. Equal ceilings do not prove equal computation.
+- If syntax constraints are used, disclose their action-space restriction in every
+  arm. Keep reference truth out of the grammar, preserve generator ownership of
+  semantic choices, and treat guaranteed formatting as a controller property.
+  A constrained-label baseline is not unrestricted default model generation.
 - Separate calibration from held-out evaluation. Keep reference answers out of
   model inputs and Jev questions. Retain negative results and all incomplete runs.
 - Lexical exact match/F1 are not general accuracy or grounding measures. Distinguish
