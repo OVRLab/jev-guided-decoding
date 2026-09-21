@@ -6,6 +6,12 @@ fixtures, scoring code, thresholds, source hashes and runtime settings must be
 committed in an execution manifest before each stage. R10 test results cannot
 serve as the held-out evaluation of this redesign.
 
+Execution update: [R12 development and mechanism report](../reports/2026-09-21-logit-guidance/README.md).
+Versioned development protocols ran; a provider error interrupted scoring, local
+proposal completion and replayed-score mechanism checks followed. The held-out
+critic gate and Gate C did not run. This umbrella design remains the original
+decision plan; frozen subprotocols and reports specify actual executed scope.
+
 ## Question and hypothesis
 
 Can a hosted, non-generative semantic critic improve the final answers of a

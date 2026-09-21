@@ -1,0 +1,13 @@
+{
+  "planned": 4,
+  "recorded": 4,
+  "complete": 4,
+  "weights_after_sha256": "311c1141187580dc0905c810e9d9e78853a0bf37b865bd5a5a511f6eed72f8c9",
+  "weights_unchanged": true,
+  "passed": true,
+  "paid_calls": 0,
+  "replayed_scores": true,
+  "answer_quality_evaluated": false,
+  "seconds": 29.986383582931012,
+  "runs_sha256": "4afce13b237456ebb6d88ee0216314b31879e383a275eccf36b794ade08e1d7f"
+}

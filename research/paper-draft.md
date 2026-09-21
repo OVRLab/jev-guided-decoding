@@ -20,8 +20,10 @@ selection is −11.33 percentage points, with interval [−18.17, −4.50]. A su
 offline analysis separates first-step scorer rejection in 307/600 guided logic
 runs from no valid proposal in 265/600. These results expose interacting proposal,
 verification and stopping-policy limitations; they do not establish a causal
-benefit from any alternative insertion point. We specify a gated investigation
-of local critic quality and bounded output-logit intervention as future work.
+benefit from any alternative insertion point. A subsequent local-claim pilot and
+bounded output-logit prototype verify probability control and no-op identity, but
+development grader coverage remains 67% and provider failure interrupts critic
+scoring. The held-out critic gate and a new answer-quality study remain unexecuted.
 
 ## 1. Question and scope
 
@@ -140,7 +142,7 @@ generator without a usable continuation. Candidate availability and scorer quali
 must be evaluated separately. The pilot already showed poor retained-step coverage;
 future admission needs a stronger gate than correct formatting alone.
 
-## 7. Proposed integration, not an experimental result
+## 7. Bounded logit prototype and incomplete critic admission
 
 The [new architecture](architecture-reassessment.md) specifies sparse, bounded
 logit intervention after Granite's final head/scaling, informed by Jev judgments
@@ -150,9 +152,39 @@ discrimination on generated candidates. A real internal-layer alternative requir
 a validated mapping from judgments to activation directions and a causal site
 study; no best layer is currently known.
 
-Do not insert a positive-results table for this design until the
-[next-study gates](next-experiment.md) are executed. If future work improves only
-semantic grounding, describe that domain and retain the negative math/logic record.
+The [development report](../reports/2026-09-21-logit-guidance/README.md) now records
+versioned inference on 60 authored worlds. V1 sampled three complete claims;
+only two scored sets contained both independently graded correct and incorrect
+claims. On 59 unique graded/scored candidates Jev separated all 17 false from
+42 true claims at support thresholds 0.2/0.8, but this favorable conditional subset
+excluded unassessed text and did not pass an independent critic gate.
+
+A development-only revision branches at a Granite-generated subject/copula
+boundary, taking four distinct next-token actions with short greedy continuations.
+Jev's rubric remains unchanged; the exact grader adds one positive established
+wrapper. The seventh world's request returned HTTP 400 without a usage receipt;
+no paid retry followed. Separate local completion of only the 53 never-attempted
+proposal jobs yields 56/60 checkpoints, 224 proposals, 150 independently graded
+claims (67.0%), 54 worlds with a graded correct option, and eight fully graded
+mixed-quality sets. These are development opportunity counts, not critic accuracy
+or new final-answer results. Most graded claims concern what is not established.
+
+The actual returned-logit controller was mechanically checked on the four exact
+prefixes with successful pre-error Jev scores. Across native, zero, Jev, shuffled
+and synthetic controls, no-op paths matched and full model state hashes were
+unchanged. Jev changed all four distributions within the 0.02 KL ceiling (observed
+maximum 0.013683), changing 6/256 fixed root draws. Those draws are not independent
+problems. The four selected continuation seeds yielded identical paths across all
+five modes. All 20 final continuations were Granite-generated, but none closed the
+requested final frame. Thus probability/provenance correctness and final-format
+reliability differ. Scores were replayed without fresh hosted requests; the assembled
+live checkpoint function has offline tests but no new paid end-to-end trial.
+
+The 100-world critic gate and Gate C remain unexecuted. Independent proposal/grader
+coverage, provider failure reconciliation and a reliable final contract remain
+necessary before a new prospective test. No positive answer-quality table is
+justified for this prototype. Future success in a narrow semantic domain would
+not erase the previous negative math/logic findings.
 
 ## 8. Limitations and threats to validity
 

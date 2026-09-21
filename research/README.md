@@ -9,8 +9,11 @@ release. All dates below are report dates; source artifacts retain execution tim
 did not improve Granite-generated answers. The best next *testable hypothesis*
 with the available interfaces is sparse, bounded intervention at Granite's output
 logits, informed by Jev's judgments of short counterfactual continuations. This
-requires a critic-quality gate first. No hidden layer has been shown to be an
-effective insertion point, and the new decoder is not implemented or evaluated.
+requires a critic-quality gate first. The [new implementation and development report](../reports/2026-09-21-logit-guidance/README.md)
+now verifies bounded probability changes, unchanged weights and zero-bias identity
+on real Granite using replayed Jev scores. Development scoring was interrupted by
+HTTP 400; unpaid proposal analysis found 67% grader coverage. No held-out gate or
+new answer-quality study ran. No hidden layer has an established benefit.
 
 | Read | Purpose |
 | --- | --- |
@@ -18,6 +21,7 @@ effective insertion point, and the new decoder is not implemented or evaluated.
 | [Architecture reassessment](architecture-reassessment.md) | Exact checkpoint, interface constraints, insertion-point decision and alternatives |
 | [New diagnostic report](../reports/2026-09-21-architecture-reassessment/README.md) | Reproducible decomposition of 3,600 main and 48 development traces |
 | [Next experiment](next-experiment.md) | Staged evidence gates, controls, budgets, held-out evaluation and stop rules |
+| [Logit-guidance development](../reports/2026-09-21-logit-guidance/README.md) | Completed/interrupted pilots, full authored traces, mechanical controls and remaining limits |
 | [Related work](related-work.md) | Primary sources and what they do—and do not—support |
 | [Paper draft](paper-draft.md) | Evidence-grounded manuscript scaffold and publication requirements |
 | [Work plan](../docs/research-reassessment-plan.md) | Scope and validation for this reassessment |

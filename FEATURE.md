@@ -10,9 +10,12 @@ The owner's subsequent request for a fresh architecture assessment and a durable
 research record is covered by the [research notebook](research/README.md).
 The [offline audit](reports/2026-09-21-architecture-reassessment/README.md) separates
 first-batch rejection from absent valid proposals without changing prior results.
-The next proposed stage is [critic discrimination and candidate coverage](research/next-experiment.md),
-before implementing a bounded output-logit hook. A new live study has not started;
-no hidden layer or new decoder has a demonstrated quality advantage.
+The [critic development and bounded logit prototype](reports/2026-09-21-logit-guidance/README.md)
+have now run. Jev scoring was interrupted by HTTP 400; all development proposals
+were subsequently collected without further paid calls. The real-Granite replay
+check verifies probability control, unchanged weights and zero-bias identity, but
+does not establish quality: grader coverage is 67% and all 20 final continuations
+omit the requested closing frame. The held-out gate remains unexecuted.
 
 The owner requested investigating Jev as an active helper during inference. The
 [investigation](docs/reasoning-step-investigation.md) and

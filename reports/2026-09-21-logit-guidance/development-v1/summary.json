@@ -1,0 +1,78 @@
+{
+  "planned": 60,
+  "recorded": 60,
+  "complete": 60,
+  "raw_candidates": 180,
+  "assessed_candidates": 114,
+  "unassessed_candidates": 66,
+  "certified_false_candidates": 29,
+  "canonical_coverage": 0.6333333333333333,
+  "batches_with_correct_candidate": 39,
+  "mixed_batches": 2,
+  "calibration": {
+    "unique_assessed_scored_candidates": 59,
+    "brier_score": 0.0010677966101694926,
+    "bins": [
+      {
+        "lower": 0.0,
+        "upper": 0.2,
+        "count": 17,
+        "mean_probability": 0.02235294117647059,
+        "observed_fraction": 0.0
+      },
+      {
+        "lower": 0.2,
+        "upper": 0.4,
+        "count": 0,
+        "mean_probability": null,
+        "observed_fraction": null
+      },
+      {
+        "lower": 0.4,
+        "upper": 0.6,
+        "count": 0,
+        "mean_probability": null,
+        "observed_fraction": null
+      },
+      {
+        "lower": 0.6,
+        "upper": 0.8,
+        "count": 0,
+        "mean_probability": null,
+        "observed_fraction": null
+      },
+      {
+        "lower": 0.8,
+        "upper": 1.0,
+        "count": 42,
+        "mean_probability": 0.9685714285714285,
+        "observed_fraction": 1.0
+      }
+    ]
+  },
+  "ranking": {
+    "jev_correct": 2,
+    "likelihood_correct": 1,
+    "denominator": 2,
+    "difference": 0.5,
+    "difference_interval": [
+      0.0,
+      1.0
+    ]
+  },
+  "selected_high_score": 53,
+  "selected_false_or_uncertified": 17,
+  "acceptance_risk_upper": 0.4326955758122781,
+  "gates": {
+    "all_jobs_completed": true,
+    "canonical_coverage": false,
+    "mixed_opportunities": false,
+    "ranking_advantage": false,
+    "acceptance_risk": false
+  },
+  "admitted": false,
+  "ledger_charged_tokens_including_previous_studies": 2605804,
+  "unsettled_reservations": 0,
+  "runs_sha256": "7a2886320cc5bbf4c734dc7c1758cdaa75a258bb2b2f787f1edb5eb1cf61d7d8",
+  "seconds": 167.59429454104975
+}

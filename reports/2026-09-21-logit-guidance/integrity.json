@@ -1,0 +1,28 @@
+{
+  "copied_raw_files_match": true,
+  "source_and_manifest_hashes_match": true,
+  "reconstructed_critic_payloads": 65,
+  "all_critic_versions_exact": true,
+  "all_score_requests_one_attempt": true,
+  "all_native_prefixes_reconstructed": true,
+  "all_final_tokens_reconstructed": true,
+  "historical_reports_unchanged": true,
+  "ledger_sha256": "d689113c70356178c5da04cc63e3ecefacffcb7d78393c447e6fe484274e698e",
+  "reservations": 2371,
+  "settled_requests": 2370,
+  "unsettled_requests": 1,
+  "new_successful_calls": 64,
+  "new_failed_usage_unknown_calls": 1,
+  "new_known_input_tokens": 46891,
+  "maximum_unknown_input_tokens": 65536,
+  "new_conservative_cost_upper_usd": 0.005621350000000001,
+  "estimated_prior_plus_new_reserved_usd": 3.2912580936835476,
+  "new_cloud_resources": [],
+  "post_run_environment": {
+    "python": "3.12.13",
+    "platform": "Darwin",
+    "os_version": "26.3.1",
+    "machine": "arm64",
+    "cpu": "Apple M1 Pro"
+  }
+}

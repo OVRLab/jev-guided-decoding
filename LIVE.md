@@ -29,6 +29,9 @@ a published release.
 | Separate controller keeps Granite as final answerer, scores intermediate steps only, and reserves final generation plus durable Jev spending | [replacement protocol](docs/generated-answer-experiment.md), [controller tests](tests/test_generated_answer.py), [budget tests](tests/test_experiment_budget.py) |
 | Completed 3,600-job generated-answer study: no demonstrated accuracy gain; all final generations passed token-provenance audit | [final report, controls, intervals, and resource accounting](reports/2026-09-20-generated-answer-study/README.md) |
 | Offline analysis of all 3,600 main and 48 development traces, checkpoint/source inspection, and persistent research register | [new aggregate report](reports/2026-09-21-architecture-reassessment/README.md), [analyzer tests](tests/test_trace_diagnostics.py), [research notebook](research/README.md) |
+| Bounded full-distribution logit bias, isolated token selection, local-claim scoring and versioned critic pilots | [new report](reports/2026-09-21-logit-guidance/README.md), [bias tests](tests/test_logit_bias.py), [runtime tests](tests/test_logit_runtime.py), [controller tests](tests/test_logit_controller.py) |
+| Asynchronous one-checkpoint scoring-to-token flow with no commit on provider failure/cancellation and a durable-budget requirement | [research interface](research/experiments/live_logit_checkpoint.py), [six offline flow tests](tests/test_live_logit_checkpoint.py); fresh hosted execution remains unverified |
+| Four-prefix real-Granite replay check: changed probabilities, exact no-op identity, unchanged model state and all final-token provenance checks; no valid closing final frames | [mechanism artifacts](reports/2026-09-21-logit-guidance/mechanism-v1/summary.json), [full limitations](reports/2026-09-21-logit-guidance/README.md) |
 
 The recorded smoke run used original Granite with zero trainable parameters.
 Guided decoding averaged 3.71 seconds versus 1.10 seconds greedy, with no
@@ -68,9 +71,11 @@ network charges. Final-answer attribution is now an explicit invariant.
 - Neural fusion, training, changed model weights, or a new Hugging Face checkpoint.
 - Improved held-out answer quality, general mathematical reasoning, or GPU-server speedups.
 - Validated compatibility beyond the recorded Granite and tiny-model checks.
-- The proposed [bounded output-logit intervention](research/architecture-reassessment.md),
-  a validated hidden-layer mapping, or an effective layer identified by experiment.
-  These remain designs; the [next-study gates](research/next-experiment.md) have not run.
+- A validated hidden-layer mapping or an effective layer identified by experiment.
+  The [output-logit prototype](reports/2026-09-21-logit-guidance/README.md) is mechanically
+  checked with replayed scores; a fresh live hosted end-to-end logit trial and an
+  admitted independent answer-quality study have not run. One provider failure
+  retains unknown usage; no further paid dispatch occurs under that stopped protocol.
 
 Update this inventory when verified behavior changes, naming the PR/report and
 keeping branch, merged, experimental, and released states distinct. Guidance-only

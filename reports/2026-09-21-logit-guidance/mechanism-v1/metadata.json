@@ -1,0 +1,22 @@
+{
+  "manifest_sha256": "e1a827aec77381540babfd7e0681907f96564e85efcdf219424b41fa014ca691",
+  "model": {
+    "backend": "transformers",
+    "model": "ibm-granite/granite-4.0-1b",
+    "requested_revision": "6a7381ba1f54d684ff508d991aeb7dc580157103",
+    "resolved_revision": "6a7381ba1f54d684ff508d991aeb7dc580157103",
+    "device": "mps:0",
+    "dtype": "torch.bfloat16",
+    "parameters": 1631750144,
+    "trainable_parameters": 0,
+    "torch": "2.8.0",
+    "transformers": "4.57.1",
+    "temperature": 1,
+    "top_p": 1,
+    "cache_between_chunks": "recompute accepted prefix"
+  },
+  "loading_seconds": 3.3902074582874775,
+  "weights_before_sha256": "311c1141187580dc0905c810e9d9e78853a0bf37b865bd5a5a511f6eed72f8c9",
+  "paid_calls": 0,
+  "replayed_scores": true
+}

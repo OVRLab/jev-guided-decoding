@@ -1,7 +1,10 @@
 # Where Jev should influence Granite
 
-Date: 2026-09-21. Status: **research decision and proposed design**, not an
-implemented replacement decoder or a demonstrated quality improvement.
+Date: 2026-09-21. Original status: research decision and proposed design.
+Execution update: the [bounded output-logit prototype](../reports/2026-09-21-logit-guidance/README.md)
+is implemented and mechanically checked on real Granite with replayed scores.
+Critic development was interrupted; no held-out quality improvement is established.
+The design below includes serving and broader evaluation work beyond that prototype.
 
 ## Decision
 
@@ -37,11 +40,13 @@ file hashes match; the [inspection record](../reports/2026-09-21-architecture-re
 preserves the exact fields and hashes. A hook written for the separate
 `GraniteForCausalLM` class would target the wrong implementation.
 
-The current backend reads model-produced logits internally but exposes complete
-candidate continuations to the controller. Jev does not see those logits, residual
-vectors, attention heads or KV cache. The controller's choice changes which token
-prefix Granite sees on the next generation call; it changes no weight or hidden
-activation directly. It also repeats prefix prefill between chunks.
+The original text-controller backend reads model-produced logits internally but
+exposes complete candidate continuations to its controller. Its choice changes
+which token prefix Granite sees next. The new experimental token backend also
+exposes the returned distribution for a bounded pre-sampling adjustment. Jev itself
+still sees text, not logits, residual vectors, attention heads or KV cache. Neither
+path changes weights or hidden activations directly; both use repeated prefix
+prefill as the reference implementation.
 
 ## What Jev can supply
 

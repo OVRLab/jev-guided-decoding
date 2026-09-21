@@ -20,9 +20,11 @@ verified token provenance. This uses a common staged prompt, not default chat.
 
 [Research notebook](research/README.md): the complete study register, a new
 offline failure analysis, primary-source architecture review, next-study design,
-and a paper draft. Sparse output-logit intervention is the next hypothesis,
-conditional on an independent critic-quality gate; it is not implemented or
-shown to improve answers. No effective hidden-layer insertion point is established.
+and a paper draft. The [new sparse logit-control prototype](reports/2026-09-21-logit-guidance/README.md)
+now passes real-Granite probability, frozen-weight and zero-bias checks with replayed
+Jev scores. Its development scoring was interrupted by a provider error; proposal
+coverage and final formatting remain inadequate. No held-out quality gain or
+effective hidden-layer insertion point is established.
 
 [Initial measured results](reports/2026-09-20-granite-smoke/README.md): the 12-case
 smoke test demonstrated in-generation control, but no established quality gain;

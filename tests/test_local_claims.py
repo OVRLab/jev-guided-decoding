@@ -98,3 +98,29 @@ def test_budgeted_local_scoring_rejects_wrong_version_and_preserves_reservation(
     import asyncio
 
     asyncio.run(exercise())
+
+
+def test_http_400_leaves_unknown_usage_and_blocks_any_subsequent_dispatch(tmp_path):
+    async def exercise():
+        dispatched = []
+
+        def reply(request):
+            dispatched.append(request)
+            return httpx.Response(400, json={"error": "Test failure, no usage receipt"})
+
+        with InputTokenBudget(tmp_path / "budget.jsonl") as budget:
+            async with LocalClaimScorer(
+                "test-key", budget=budget, transport=httpx.MockTransport(reply)
+            ) as scorer:
+                with pytest.raises(ScorerError, match="HTTP 400") as failure:
+                    await scorer.score(Request("Q", "E"), "", (candidate("Mira is blue."),))
+                assert failure.value.usage_unknown
+                with pytest.raises(ScorerError, match="Unsettled"):
+                    await scorer.score(Request("Q", "E"), "", (candidate("Mira is blue."),))
+                assert len(dispatched) == 1
+                assert budget.charged_tokens == 65536
+                assert len(budget.reserved) == 1 and not budget.settled
+
+    import asyncio
+
+    asyncio.run(exercise())

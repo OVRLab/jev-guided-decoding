@@ -41,3 +41,15 @@ counterexamples; aggregate reconciliation and hashes; canonical lint/format/test
 guidance/build; PR review and current CI. All live attempts and development changes
 get reports, including gate failures. Cloud launch, if useful, follows code readiness
 with a hard timer, conservative shared spending record and verified cleanup.
+
+## Execution outcome
+
+The [dated report](../reports/2026-09-21-logit-guidance/README.md) records completed
+V1 development, provider-interrupted V2 scoring, all 53 unpaid proposal-completion
+jobs and the four-prefix real-model mechanism check. The sparse bias, token backend,
+bound-score selector and asynchronous live checkpoint function are implemented.
+Fresh hosted checkpoint execution is unverified after the paid stop; the real-model
+check replays already received judgments. Final framing failed in all 20 mechanical
+continuations, although token ownership and no-op/probability invariants passed.
+No held-out gate or Gate C was admitted. Broader authored diagnostics and ablations
+remain unexecuted under this stopped protocol, not quietly replaced by pilot results.
