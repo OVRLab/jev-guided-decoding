@@ -157,8 +157,9 @@ def grade_metrics(records, cases):
     index = {c["id"]: c for c in cases}
 
     def correct(r):
-        return r["label"] == index[r["id"]]["reference"]
+        return r.get("status") == "complete" and r.get("label") == index[r["id"]]["reference"]
 
+    successful = [r for r in records if r["status"] == "complete"]
     out = dict(
         accuracy=sum(correct(r) for r in records) / len(records),
         mean_logprob=sum(
@@ -167,9 +168,9 @@ def grade_metrics(records, cases):
                     index[r["id"]]["labels"].index(index[r["id"]]["reference"])
                 ]
             )
-            for r in records
+            for r in successful
         )
-        / len(records),
+        / len(successful),
     )
     for name, keep in [
         ("answerable", lambda c: not c["missing"]),
@@ -213,6 +214,47 @@ def run(args):
     require(
         metadata["model"]["resolved_revision"] == manifest["revision"], "Model revision mismatch"
     )
+    recovery = None
+    if (args.results / "recovery.json").exists():
+        recovery = read(args.results / "recovery.json")
+        require(
+            args.prior is not None and args.ledger is not None,
+            "Recovery needs original artifacts and ledger",
+        )
+        require(recovery == read(args.manifest / "recovery.json"), "Recovery registration changed")
+        for name, expected in recovery["prior_files"].items():
+            original_bytes = (args.prior / name).read_bytes()
+            require(
+                len(original_bytes) == expected["bytes"]
+                and hashlib.sha256(original_bytes).hexdigest() == expected["sha256"],
+                "Original interrupted artifact changed",
+            )
+            if name.endswith(".jsonl"):
+                require(
+                    (args.results / name).read_bytes().startswith(original_bytes),
+                    "Original raw prefix changed",
+                )
+        for path_key, hash_key in (
+            ("helper_path", "helper_sha256"),
+            ("amendment_path", "amendment_sha256"),
+        ):
+            require(
+                hashlib.sha256((ROOT / recovery[path_key]).read_bytes()).hexdigest()
+                == recovery[hash_key],
+                "Recovery source or amendment changed",
+            )
+        require(
+            read(args.prior / "completion.json")["weights_after"] == metadata["weights_before"],
+            "Recovery weight lineage changed",
+        )
+        require(
+            not any(
+                (args.prior / name).exists()
+                for name in ("selected-policy.json", "test.jsonl", "challenge.jsonl")
+            ),
+            "Recovery occurred after selection or test",
+        )
+        require(recovery["at"] < metadata["at"], "Recovery was not registered prospectively")
     previous = manifest["previous_policy"]
     ranking = read(ROOT / "reports/2026-09-21-evidence-attention/artifacts/head-ranking.json")
     original = read(ROOT / "reports/2026-09-21-evidence-attention/artifacts/selected-policy.json")
@@ -279,14 +321,34 @@ def run(args):
     encoded = A["audit_inputs"](
         rows(args.results / "inputs.jsonl"), all_cases, tokenizer, runtime["SYSTEM"]
     )
-    counters = dict(inputs=len(encoded), decisions=0, receipts=0, zero_pairs=0)
+    counters = dict(
+        inputs=len(encoded),
+        decisions=0,
+        receipts=0,
+        zero_pairs=0,
+        failed_receipts=0,
+        failed_outputs=0,
+    )
     evaluations = {}
     for stage in splits:
         by = {}
         for r in rows(args.results / f"{stage}-scores.jsonl"):
             require(r["id"] not in by, "Duplicate receipt")
             by[r["id"]] = r
-            require(r["status"] == "complete", "Full audit requires successful receipts")
+            if r["status"] != "complete":
+                transport = (
+                    r.get("status_code") is None
+                    and r.get("usage_unknown") is True
+                    and r.get("message") == "Jev request failed or timed out; it was not replayed"
+                )
+                require(
+                    recovery is not None and (transport or r.get("status_code") in (429, 529)),
+                    "Unadmitted provider failure",
+                )
+                require("evaluation" not in r, "Failure invents receipt")
+                counters["failed_receipts"] += 1
+                require(counters["failed_receipts"] <= 3, "Too many admitted incidents")
+                continue
             case = all_cases[r["id"]]
             require(
                 r["payload"]
@@ -320,6 +382,18 @@ def run(args):
     expected = {(c["id"], p["id"]) for c in splits["development"] for p in grid}
     expected |= {(c["id"], "native") for c in splits["development"]}
     expected |= {(c["id"], "zero_check") for c in splits["development"][:12]}
+    if recovery:
+        original_ids = {
+            r["id"] for r in rows(args.prior / "development.jsonl") if r["mode"] == "native"
+        }
+        fresh_successful = [
+            c
+            for c in splits["development"]
+            if c["id"] not in original_ids
+            and evaluations["development"][c["id"]]["status"] == "complete"
+        ][:12]
+        require(len(fresh_successful) == 12, "Missing fresh zero sample")
+        expected |= {(c["id"], "recovery_zero_check") for c in fresh_successful}
     require(
         len(dev) == len(expected) and {(r["id"], r["mode"]) for r in dev} == expected,
         "Development schedule mismatch",
@@ -329,12 +403,26 @@ def run(args):
     dev_pairs = {}
     grid_by = {p["id"]: p for p in grid}
     for r in dev:
-        require(r["status"] == "complete", "Incomplete development decision")
+        if r["status"] != "complete":
+            receipt = evaluations["development"][r["id"]]
+            require(
+                recovery is not None and receipt["status"] == "failed" and r["mode"] in grid_by,
+                "Unexplained failed development output",
+            )
+            require(
+                r["provider_failure"] == receipt
+                and "label" not in r
+                and "generated_token_ids" not in r,
+                "Fabricated failed output",
+            )
+            buckets[r["mode"]].append(r)
+            counters["failed_outputs"] += 1
+            continue
         policy = (
             None
             if r["mode"] == "native"
             else {**previous, "strength": 0.0}
-            if r["mode"] == "zero_check"
+            if r["mode"] in ("zero_check", "recovery_zero_check")
             else grid_by[r["mode"]]
         )
         scores = (
@@ -348,7 +436,7 @@ def run(args):
         dev_pairs[r["id"], r["mode"]] = r
         if r["mode"] == "native":
             native.append(r)
-        elif r["mode"] != "zero_check":
+        elif r["mode"] not in ("zero_check", "recovery_zero_check"):
             buckets[r["mode"]].append(r)
     prior_metrics = grade_metrics(buckets[previous["id"]], splits["development"])
     candidates = []
@@ -393,6 +481,19 @@ def run(args):
         and all(r["equal"] and r["max_logit_delta"] <= 1e-6 for r in equivalence),
         "Full-vocabulary zero control failed",
     )
+    if recovery:
+        require(
+            [r["id"] for r in equivalence] == [c["id"] for c in fresh_successful],
+            "Full-vocabulary checks are not first new successful contexts",
+        )
+        for c in fresh_successful:
+            a, b = dev_pairs[c["id"], "native"], dev_pairs[c["id"], "recovery_zero_check"]
+            require(
+                a["label_logits"] == b["label_logits"]
+                and a["generated_token_ids"] == b["generated_token_ids"],
+                "Fresh zero control mismatch",
+            )
+            counters["zero_pairs"] += 1
     statistics = {}
     all_records = {"development": dev}
     for stage in ("test", "challenge"):
@@ -405,12 +506,31 @@ def run(args):
         )
         index = {(r["id"], r["mode"]): r for r in records}
         for ci, c in enumerate(splits[stage]):
-            scores = evaluations[stage][c["id"]]["evaluation"]["scores"]
+            receipt = evaluations[stage][c["id"]]
+            scores = receipt.get("evaluation", {}).get("scores", [])
             shuffled = scores.copy()
             random.Random(f"r15/{stage}/{ci}/shuffle").shuffle(shuffled)
             for arm in ARMS:
                 r = index[c["id"], arm]
-                require(r["status"] == "complete", "Incomplete held-out decision")
+                dependent = arm not in ("native", "lexical", "oracle", "zero")
+                if receipt["status"] == "failed" and dependent:
+                    require(
+                        r["status"] == "failed"
+                        and "label" not in r
+                        and "generated_token_ids" not in r,
+                        "Failed receipt produced guided tokens",
+                    )
+                    require(
+                        r["provider_failure"]
+                        == {k: v for k, v in receipt.items() if k not in ("id", "stage", "status")},
+                        "Failed outcome receipt mismatch",
+                    )
+                    counters["failed_outputs"] += 1
+                    continue
+                require(
+                    r["status"] == "complete",
+                    "Incomplete independent or successful guided decision",
+                )
                 policy = expected_policy(arm, previous, selected)
                 raw = (
                     None
@@ -461,6 +581,7 @@ def run(args):
         ("model", stage, r["id"], r["mode"])
         for stage, records in all_records.items()
         for r in records
+        if r["status"] == "complete"
     }
     expected_starts |= {
         ("jev", stage, c["id"], "relevance") for stage, cases in splits.items() for c in cases
@@ -486,12 +607,46 @@ def run(args):
         "Held-out operation before freeze",
     )
     total = sum(
-        r["evaluation"]["input_tokens"] for stage in evaluations.values() for r in stage.values()
+        r["evaluation"]["input_tokens"]
+        for stage in evaluations.values()
+        for r in stage.values()
+        if r["status"] == "complete"
     )
     require(
-        completion["ledger"] == dict(charged_input_tokens=total, unresolved=0),
+        completion["ledger"]
+        == dict(charged_input_tokens=total + 65536 * counters["failed_receipts"], unresolved=0),
         "Budget usage mismatch",
     )
+    if recovery:
+        events = rows(args.ledger)
+        reserves = [r["id"] for r in events if r["event"] == "reserve"]
+        settlements = [r for r in events if r["event"] == "settle"]
+        maximums = [r for r in events if r["event"] == "charge_max_unknown"]
+        require(
+            len(reserves)
+            == len(set(reserves))
+            == counters["receipts"] + counters["failed_receipts"],
+            "Reservation count mismatch",
+        )
+        require(
+            len(settlements) == counters["receipts"]
+            and sum(r["input_tokens"] for r in settlements) == total,
+            "Settled usage mismatch",
+        )
+        require(
+            len(maximums) == counters["failed_receipts"], "Missing conservative unknown charges"
+        )
+        require(
+            {r["id"] for r in settlements}.isdisjoint({r["id"] for r in maximums}),
+            "Unknown charge overwritten",
+        )
+        require(
+            {r["id"] for r in settlements + maximums} == set(reserves), "Unaccounted reservation"
+        )
+        require(
+            all(r["at"] > recovery["at"] for r in starts[len(rows(args.prior / "starts.jsonl")) :]),
+            "New work before registration",
+        )
     result = dict(
         status="passed",
         counters=counters,
@@ -511,4 +666,6 @@ if __name__ == "__main__":
     p.add_argument("--manifest", type=Path, required=True)
     p.add_argument("--results", type=Path, required=True)
     p.add_argument("--output", type=Path, required=True)
+    p.add_argument("--prior", type=Path)
+    p.add_argument("--ledger", type=Path)
     run(p.parse_args())

@@ -56,3 +56,35 @@ def test_independent_single_factor_arm_reconstruction_changes_only_named_factor(
     assert heads["heads"] == new["heads"] and heads["count"] == 2
     assert heads["mapping"] == "soft" and heads["scope"] == "question" and heads["strength"] == 1
     assert module["expected_policy"]("scope_only", old, new)["scope"] == "answer"
+
+
+def test_auditor_grades_failed_rows_in_planned_denominator():
+    import runpy
+    from pathlib import Path
+
+    audit = runpy.run_path(
+        str(Path(__file__).resolve().parents[1] / "research/analysis/evidence_v2.py")
+    )
+    cases = [
+        {
+            "id": "a",
+            "reference": "red",
+            "labels": ["red", "UNKNOWN"],
+            "missing": False,
+            "condition": "clean",
+        },
+        {
+            "id": "b",
+            "reference": "UNKNOWN",
+            "labels": ["red", "UNKNOWN"],
+            "missing": True,
+            "condition": "distracted",
+        },
+    ]
+    records = [
+        {"id": "a", "status": "complete", "label": "red", "label_probabilities": [0.8, 0.2]},
+        {"id": "b", "status": "failed"},
+    ]
+    result = audit["grade_metrics"](records, cases)
+    assert result["accuracy"] == 0.5
+    assert result["missing"] == 0

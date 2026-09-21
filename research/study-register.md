@@ -107,3 +107,11 @@ retains that common failed block, maximum unknown charge and all raw prefixes;
 continues only never-started jobs with a 90-second transport limit; adds twelve
 fresh full-vocabulary zero checks. Four recovery tests pass; all 349 local tests
 pass before resumed inference. Selection and held-out results remain pending.
+
+The first R15 recovery then stopped on a zero-check snapshot FileExistsError,
+after two new successful provider requests, before selection/test. The
+[checkpoint repair amendment](evidence-attention-v2-checkpoint-repair.md) preserves
+that segment too and resumes individual never-started jobs. Two new full-development
+mock tests reproduce the old checkpoint/partial-block failures and pass with the
+separate repaired helper. Paid attempts and original scientific comparisons remain
+unchanged; one additional fresh zero forward replaces missing persisted evidence.
