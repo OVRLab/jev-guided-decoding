@@ -1,0 +1,4087 @@
+[
+  {
+    "split": "gate",
+    "index": 0,
+    "motif": "forward",
+    "entities": [
+      "Veboci",
+      "Marure",
+      "Girajo"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Marure is ready.",
+      "Veboci is blue.",
+      "Girajo is small."
+    ],
+    "rules": [
+      [
+        [
+          "Veboci is blue."
+        ],
+        "Veboci is calm."
+      ],
+      [
+        [
+          "Veboci is calm."
+        ],
+        "Veboci is warm."
+      ],
+      [
+        [
+          "Veboci is warm."
+        ],
+        "Veboci is quiet."
+      ]
+    ],
+    "target": "Veboci is quiet.",
+    "template": "gate-rules-v1",
+    "evidence": "Marure is ready. Veboci is blue. Girajo is small. Whenever Veboci is blue, it follows that Veboci is calm. Whenever Veboci is calm, it follows that Veboci is warm. Whenever Veboci is warm, it follows that Veboci is quiet.",
+    "id": "local-claims/gate/97571429da480a8e"
+  },
+  {
+    "split": "gate",
+    "index": 1,
+    "motif": "conjunction",
+    "entities": [
+      "Pokopu",
+      "Nogelu",
+      "Jugeku"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Pokopu is small.",
+      "Pokopu is striped.",
+      "Jugeku is calm.",
+      "Nogelu is quiet."
+    ],
+    "rules": [
+      [
+        [
+          "Pokopu is striped.",
+          "Pokopu is small."
+        ],
+        "Pokopu is bright."
+      ]
+    ],
+    "target": "Pokopu is bright.",
+    "template": "gate-rules-v1",
+    "evidence": "Pokopu is small. Pokopu is striped. Jugeku is calm. Nogelu is quiet. Whenever Pokopu is striped and Pokopu is small, it follows that Pokopu is bright.",
+    "id": "local-claims/gate/6120488837472e93"
+  },
+  {
+    "split": "gate",
+    "index": 2,
+    "motif": "missing",
+    "entities": [
+      "Judusa",
+      "Vineto",
+      "Pebiba"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Judusa is quiet.",
+      "Vineto is bright.",
+      "Pebiba is small.",
+      "Vineto is striped."
+    ],
+    "rules": [
+      [
+        [
+          "Judusa is quiet.",
+          "Judusa is bright."
+        ],
+        "Judusa is ready."
+      ]
+    ],
+    "target": "Judusa is ready.",
+    "template": "gate-rules-v1",
+    "evidence": "Judusa is quiet. Vineto is bright. Pebiba is small. Vineto is striped. Whenever Judusa is quiet and Judusa is bright, it follows that Judusa is ready.",
+    "id": "local-claims/gate/16fe39597e787b71"
+  },
+  {
+    "split": "gate",
+    "index": 3,
+    "motif": "reverse",
+    "entities": [
+      "Gujepi",
+      "Kapina",
+      "Metupo"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Gujepi is calm.",
+      "Metupo is striped.",
+      "Gujepi is blue.",
+      "Kapina is quiet."
+    ],
+    "rules": [
+      [
+        [
+          "Gujepi is small."
+        ],
+        "Gujepi is blue."
+      ]
+    ],
+    "target": "Gujepi is small.",
+    "template": "gate-rules-v1",
+    "evidence": "Gujepi is calm. Metupo is striped. Gujepi is blue. Kapina is quiet. Whenever Gujepi is small, it follows that Gujepi is blue.",
+    "id": "local-claims/gate/daad7a0ac8e440e6"
+  },
+  {
+    "split": "gate",
+    "index": 4,
+    "motif": "negative",
+    "entities": [
+      "Narehu",
+      "Cegome",
+      "Saholu"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Narehu is calm.",
+      "Saholu is blue.",
+      "Cegome is striped."
+    ],
+    "rules": [
+      [
+        [
+          "Narehu is calm."
+        ],
+        "Narehu is not ready."
+      ]
+    ],
+    "target": "Narehu is not ready.",
+    "template": "gate-rules-v1",
+    "evidence": "Narehu is calm. Saholu is blue. Cegome is striped. Whenever Narehu is calm, it follows that Narehu is not ready.",
+    "id": "local-claims/gate/bc90bd53017cdc6d"
+  },
+  {
+    "split": "gate",
+    "index": 5,
+    "motif": "distractor",
+    "entities": [
+      "Saloka",
+      "Vedebe",
+      "Guliti"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Guliti is striped.",
+      "Vedebe is small.",
+      "Saloka is warm."
+    ],
+    "rules": [
+      [
+        [
+          "Vedebe is small."
+        ],
+        "Vedebe is quiet."
+      ],
+      [
+        [
+          "Saloka is warm."
+        ],
+        "Saloka is bright."
+      ]
+    ],
+    "target": "Saloka is quiet.",
+    "template": "gate-rules-v1",
+    "evidence": "Guliti is striped. Vedebe is small. Saloka is warm. Whenever Vedebe is small, it follows that Vedebe is quiet. Whenever Saloka is warm, it follows that Saloka is bright.",
+    "id": "local-claims/gate/81d139b53843430b"
+  },
+  {
+    "split": "gate",
+    "index": 6,
+    "motif": "forward",
+    "entities": [
+      "Pusuca",
+      "Cupija",
+      "Mecuni"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Cupija is calm.",
+      "Pusuca is quiet.",
+      "Mecuni is ready."
+    ],
+    "rules": [
+      [
+        [
+          "Pusuca is quiet."
+        ],
+        "Pusuca is warm."
+      ],
+      [
+        [
+          "Pusuca is warm."
+        ],
+        "Pusuca is striped."
+      ],
+      [
+        [
+          "Pusuca is striped."
+        ],
+        "Pusuca is blue."
+      ]
+    ],
+    "target": "Pusuca is blue.",
+    "template": "gate-rules-v1",
+    "evidence": "Cupija is calm. Pusuca is quiet. Mecuni is ready. Whenever Pusuca is quiet, it follows that Pusuca is warm. Whenever Pusuca is warm, it follows that Pusuca is striped. Whenever Pusuca is striped, it follows that Pusuca is blue.",
+    "id": "local-claims/gate/0946bf70a81a6fe5"
+  },
+  {
+    "split": "gate",
+    "index": 7,
+    "motif": "conjunction",
+    "entities": [
+      "Heneje",
+      "Gonose",
+      "Tubafe"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Tubafe is blue.",
+      "Gonose is warm.",
+      "Heneje is bright.",
+      "Heneje is quiet."
+    ],
+    "rules": [
+      [
+        [
+          "Heneje is quiet.",
+          "Heneje is bright."
+        ],
+        "Heneje is calm."
+      ]
+    ],
+    "target": "Heneje is calm.",
+    "template": "gate-rules-v1",
+    "evidence": "Tubafe is blue. Gonose is warm. Heneje is bright. Heneje is quiet. Whenever Heneje is quiet and Heneje is bright, it follows that Heneje is calm.",
+    "id": "local-claims/gate/4bc6f9d1488b5bfc"
+  },
+  {
+    "split": "gate",
+    "index": 8,
+    "motif": "missing",
+    "entities": [
+      "Repipi",
+      "Harifi",
+      "Cagada"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Repipi is quiet.",
+      "Harifi is ready.",
+      "Harifi is calm.",
+      "Cagada is warm."
+    ],
+    "rules": [
+      [
+        [
+          "Repipi is quiet.",
+          "Repipi is ready."
+        ],
+        "Repipi is blue."
+      ]
+    ],
+    "target": "Repipi is blue.",
+    "template": "gate-rules-v1",
+    "evidence": "Repipi is quiet. Harifi is ready. Harifi is calm. Cagada is warm. Whenever Repipi is quiet and Repipi is ready, it follows that Repipi is blue.",
+    "id": "local-claims/gate/c56d6321288067c4"
+  },
+  {
+    "split": "gate",
+    "index": 9,
+    "motif": "reverse",
+    "entities": [
+      "Gakoma",
+      "Jereje",
+      "Dodogu"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Gakoma is blue.",
+      "Gakoma is warm.",
+      "Jereje is ready.",
+      "Dodogu is striped."
+    ],
+    "rules": [
+      [
+        [
+          "Gakoma is small."
+        ],
+        "Gakoma is blue."
+      ]
+    ],
+    "target": "Gakoma is small.",
+    "template": "gate-rules-v1",
+    "evidence": "Gakoma is blue. Gakoma is warm. Jereje is ready. Dodogu is striped. Whenever Gakoma is small, it follows that Gakoma is blue.",
+    "id": "local-claims/gate/7246e6d83ee38e59"
+  },
+  {
+    "split": "gate",
+    "index": 10,
+    "motif": "negative",
+    "entities": [
+      "Cubuco",
+      "Setuju",
+      "Denaju"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Denaju is quiet.",
+      "Cubuco is ready.",
+      "Setuju is striped."
+    ],
+    "rules": [
+      [
+        [
+          "Cubuco is ready."
+        ],
+        "Cubuco is not warm."
+      ]
+    ],
+    "target": "Cubuco is not warm.",
+    "template": "gate-rules-v1",
+    "evidence": "Denaju is quiet. Cubuco is ready. Setuju is striped. Whenever Cubuco is ready, it follows that Cubuco is not warm.",
+    "id": "local-claims/gate/271e2783556615ee"
+  },
+  {
+    "split": "gate",
+    "index": 11,
+    "motif": "distractor",
+    "entities": [
+      "Sefife",
+      "Vovimu",
+      "Cajere"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Sefife is small.",
+      "Vovimu is blue.",
+      "Cajere is calm."
+    ],
+    "rules": [
+      [
+        [
+          "Sefife is small."
+        ],
+        "Sefife is quiet."
+      ],
+      [
+        [
+          "Vovimu is blue."
+        ],
+        "Vovimu is striped."
+      ]
+    ],
+    "target": "Sefife is striped.",
+    "template": "gate-rules-v1",
+    "evidence": "Sefife is small. Vovimu is blue. Cajere is calm. Whenever Sefife is small, it follows that Sefife is quiet. Whenever Vovimu is blue, it follows that Vovimu is striped.",
+    "id": "local-claims/gate/46d199b96dba0127"
+  },
+  {
+    "split": "gate",
+    "index": 12,
+    "motif": "forward",
+    "entities": [
+      "Gisuno",
+      "Hegiha",
+      "Simuje"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Simuje is blue.",
+      "Hegiha is small.",
+      "Gisuno is warm."
+    ],
+    "rules": [
+      [
+        [
+          "Gisuno is bright."
+        ],
+        "Gisuno is calm."
+      ],
+      [
+        [
+          "Gisuno is warm."
+        ],
+        "Gisuno is ready."
+      ],
+      [
+        [
+          "Gisuno is ready."
+        ],
+        "Gisuno is bright."
+      ]
+    ],
+    "target": "Gisuno is calm.",
+    "template": "gate-rules-v1",
+    "evidence": "Simuje is blue. Hegiha is small. Gisuno is warm. Whenever Gisuno is bright, it follows that Gisuno is calm. Whenever Gisuno is warm, it follows that Gisuno is ready. Whenever Gisuno is ready, it follows that Gisuno is bright.",
+    "id": "local-claims/gate/dab378569e2bb056"
+  },
+  {
+    "split": "gate",
+    "index": 13,
+    "motif": "conjunction",
+    "entities": [
+      "Gobofu",
+      "Kopehi",
+      "Juseja"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Gobofu is blue.",
+      "Juseja is bright.",
+      "Gobofu is quiet.",
+      "Kopehi is calm."
+    ],
+    "rules": [
+      [
+        [
+          "Gobofu is blue.",
+          "Gobofu is quiet."
+        ],
+        "Gobofu is warm."
+      ]
+    ],
+    "target": "Gobofu is warm.",
+    "template": "gate-rules-v1",
+    "evidence": "Gobofu is blue. Juseja is bright. Gobofu is quiet. Kopehi is calm. Whenever Gobofu is blue and Gobofu is quiet, it follows that Gobofu is warm.",
+    "id": "local-claims/gate/3ca4e1381d59956b"
+  },
+  {
+    "split": "gate",
+    "index": 14,
+    "motif": "missing",
+    "entities": [
+      "Kukedu",
+      "Nahubu",
+      "Lurepa"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Nahubu is calm.",
+      "Lurepa is quiet.",
+      "Kukedu is blue.",
+      "Nahubu is striped."
+    ],
+    "rules": [
+      [
+        [
+          "Kukedu is blue.",
+          "Kukedu is calm."
+        ],
+        "Kukedu is small."
+      ]
+    ],
+    "target": "Kukedu is small.",
+    "template": "gate-rules-v1",
+    "evidence": "Nahubu is calm. Lurepa is quiet. Kukedu is blue. Nahubu is striped. Whenever Kukedu is blue and Kukedu is calm, it follows that Kukedu is small.",
+    "id": "local-claims/gate/6c5bc61ae5960359"
+  },
+  {
+    "split": "gate",
+    "index": 15,
+    "motif": "reverse",
+    "entities": [
+      "Sebube",
+      "Dekeho",
+      "Makuse"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Dekeho is small.",
+      "Makuse is calm.",
+      "Sebube is striped.",
+      "Sebube is warm."
+    ],
+    "rules": [
+      [
+        [
+          "Sebube is ready."
+        ],
+        "Sebube is striped."
+      ]
+    ],
+    "target": "Sebube is ready.",
+    "template": "gate-rules-v1",
+    "evidence": "Dekeho is small. Makuse is calm. Sebube is striped. Sebube is warm. Whenever Sebube is ready, it follows that Sebube is striped.",
+    "id": "local-claims/gate/deaa0ab81dd773a0"
+  },
+  {
+    "split": "gate",
+    "index": 16,
+    "motif": "negative",
+    "entities": [
+      "Labori",
+      "Fafeka",
+      "Bahelu"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Fafeka is quiet.",
+      "Labori is warm.",
+      "Bahelu is small."
+    ],
+    "rules": [
+      [
+        [
+          "Labori is warm."
+        ],
+        "Labori is not blue."
+      ]
+    ],
+    "target": "Labori is not blue.",
+    "template": "gate-rules-v1",
+    "evidence": "Fafeka is quiet. Labori is warm. Bahelu is small. Whenever Labori is warm, it follows that Labori is not blue.",
+    "id": "local-claims/gate/3b5ea636f8b22b1d"
+  },
+  {
+    "split": "gate",
+    "index": 17,
+    "motif": "distractor",
+    "entities": [
+      "Hejupo",
+      "Havoca",
+      "Sibolu"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Havoca is ready.",
+      "Sibolu is calm.",
+      "Hejupo is striped."
+    ],
+    "rules": [
+      [
+        [
+          "Hejupo is striped."
+        ],
+        "Hejupo is small."
+      ],
+      [
+        [
+          "Havoca is ready."
+        ],
+        "Havoca is bright."
+      ]
+    ],
+    "target": "Hejupo is bright.",
+    "template": "gate-rules-v1",
+    "evidence": "Havoca is ready. Sibolu is calm. Hejupo is striped. Whenever Hejupo is striped, it follows that Hejupo is small. Whenever Havoca is ready, it follows that Havoca is bright.",
+    "id": "local-claims/gate/8aae937f3c5a14ca"
+  },
+  {
+    "split": "gate",
+    "index": 18,
+    "motif": "forward",
+    "entities": [
+      "Kifide",
+      "Fajusa",
+      "Kopevo"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Fajusa is striped.",
+      "Kopevo is warm.",
+      "Kifide is quiet."
+    ],
+    "rules": [
+      [
+        [
+          "Kifide is bright."
+        ],
+        "Kifide is calm."
+      ],
+      [
+        [
+          "Kifide is calm."
+        ],
+        "Kifide is small."
+      ],
+      [
+        [
+          "Kifide is quiet."
+        ],
+        "Kifide is bright."
+      ]
+    ],
+    "target": "Kifide is small.",
+    "template": "gate-rules-v1",
+    "evidence": "Fajusa is striped. Kopevo is warm. Kifide is quiet. Whenever Kifide is bright, it follows that Kifide is calm. Whenever Kifide is calm, it follows that Kifide is small. Whenever Kifide is quiet, it follows that Kifide is bright.",
+    "id": "local-claims/gate/4a3a7d4e62be055a"
+  },
+  {
+    "split": "gate",
+    "index": 19,
+    "motif": "conjunction",
+    "entities": [
+      "Gepafo",
+      "Lucuhi",
+      "Fukese"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Gepafo is calm.",
+      "Gepafo is blue.",
+      "Lucuhi is striped.",
+      "Fukese is bright."
+    ],
+    "rules": [
+      [
+        [
+          "Gepafo is calm.",
+          "Gepafo is blue."
+        ],
+        "Gepafo is small."
+      ]
+    ],
+    "target": "Gepafo is small.",
+    "template": "gate-rules-v1",
+    "evidence": "Gepafo is calm. Gepafo is blue. Lucuhi is striped. Fukese is bright. Whenever Gepafo is calm and Gepafo is blue, it follows that Gepafo is small.",
+    "id": "local-claims/gate/3d5d6e2d125dfeae"
+  },
+  {
+    "split": "gate",
+    "index": 20,
+    "motif": "missing",
+    "entities": [
+      "Senalu",
+      "Sukido",
+      "Vajeke"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Sukido is calm.",
+      "Sukido is blue.",
+      "Vajeke is quiet.",
+      "Senalu is warm."
+    ],
+    "rules": [
+      [
+        [
+          "Senalu is warm.",
+          "Senalu is blue."
+        ],
+        "Senalu is striped."
+      ]
+    ],
+    "target": "Senalu is striped.",
+    "template": "gate-rules-v1",
+    "evidence": "Sukido is calm. Sukido is blue. Vajeke is quiet. Senalu is warm. Whenever Senalu is warm and Senalu is blue, it follows that Senalu is striped.",
+    "id": "local-claims/gate/d7843f65c4933e55"
+  },
+  {
+    "split": "gate",
+    "index": 21,
+    "motif": "reverse",
+    "entities": [
+      "Lilare",
+      "Jufiri",
+      "Pufako"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Pufako is blue.",
+      "Lilare is small.",
+      "Jufiri is quiet.",
+      "Lilare is calm."
+    ],
+    "rules": [
+      [
+        [
+          "Lilare is bright."
+        ],
+        "Lilare is small."
+      ]
+    ],
+    "target": "Lilare is bright.",
+    "template": "gate-rules-v1",
+    "evidence": "Pufako is blue. Lilare is small. Jufiri is quiet. Lilare is calm. Whenever Lilare is bright, it follows that Lilare is small.",
+    "id": "local-claims/gate/e8b82b537bff620d"
+  },
+  {
+    "split": "gate",
+    "index": 22,
+    "motif": "negative",
+    "entities": [
+      "Nelude",
+      "Caribi",
+      "Holoja"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Nelude is warm.",
+      "Holoja is small.",
+      "Caribi is blue."
+    ],
+    "rules": [
+      [
+        [
+          "Nelude is warm."
+        ],
+        "Nelude is not quiet."
+      ]
+    ],
+    "target": "Nelude is not quiet.",
+    "template": "gate-rules-v1",
+    "evidence": "Nelude is warm. Holoja is small. Caribi is blue. Whenever Nelude is warm, it follows that Nelude is not quiet.",
+    "id": "local-claims/gate/64c90193e7adbd12"
+  },
+  {
+    "split": "gate",
+    "index": 23,
+    "motif": "distractor",
+    "entities": [
+      "Pologa",
+      "Vimude",
+      "Mekoho"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Pologa is bright.",
+      "Mekoho is ready.",
+      "Vimude is warm."
+    ],
+    "rules": [
+      [
+        [
+          "Pologa is bright."
+        ],
+        "Pologa is small."
+      ],
+      [
+        [
+          "Vimude is warm."
+        ],
+        "Vimude is striped."
+      ]
+    ],
+    "target": "Pologa is striped.",
+    "template": "gate-rules-v1",
+    "evidence": "Pologa is bright. Mekoho is ready. Vimude is warm. Whenever Pologa is bright, it follows that Pologa is small. Whenever Vimude is warm, it follows that Vimude is striped.",
+    "id": "local-claims/gate/315f4f2efbb9ed6e"
+  },
+  {
+    "split": "gate",
+    "index": 24,
+    "motif": "forward",
+    "entities": [
+      "Botolo",
+      "Hifula",
+      "Patabu"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Botolo is striped.",
+      "Hifula is bright.",
+      "Patabu is warm."
+    ],
+    "rules": [
+      [
+        [
+          "Botolo is small."
+        ],
+        "Botolo is quiet."
+      ],
+      [
+        [
+          "Botolo is quiet."
+        ],
+        "Botolo is blue."
+      ],
+      [
+        [
+          "Botolo is striped."
+        ],
+        "Botolo is small."
+      ]
+    ],
+    "target": "Botolo is blue.",
+    "template": "gate-rules-v1",
+    "evidence": "Botolo is striped. Hifula is bright. Patabu is warm. Whenever Botolo is small, it follows that Botolo is quiet. Whenever Botolo is quiet, it follows that Botolo is blue. Whenever Botolo is striped, it follows that Botolo is small.",
+    "id": "local-claims/gate/0f6df70a29274f3b"
+  },
+  {
+    "split": "gate",
+    "index": 25,
+    "motif": "conjunction",
+    "entities": [
+      "Fetoho",
+      "Lecave",
+      "Kehuna"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Lecave is quiet.",
+      "Kehuna is blue.",
+      "Fetoho is warm.",
+      "Fetoho is striped."
+    ],
+    "rules": [
+      [
+        [
+          "Fetoho is warm.",
+          "Fetoho is striped."
+        ],
+        "Fetoho is bright."
+      ]
+    ],
+    "target": "Fetoho is bright.",
+    "template": "gate-rules-v1",
+    "evidence": "Lecave is quiet. Kehuna is blue. Fetoho is warm. Fetoho is striped. Whenever Fetoho is warm and Fetoho is striped, it follows that Fetoho is bright.",
+    "id": "local-claims/gate/69e40fb950e1c33a"
+  },
+  {
+    "split": "gate",
+    "index": 26,
+    "motif": "missing",
+    "entities": [
+      "Tefebi",
+      "Cugebe",
+      "Semolu"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Cugebe is small.",
+      "Tefebi is bright.",
+      "Semolu is calm.",
+      "Cugebe is warm."
+    ],
+    "rules": [
+      [
+        [
+          "Tefebi is bright.",
+          "Tefebi is warm."
+        ],
+        "Tefebi is quiet."
+      ]
+    ],
+    "target": "Tefebi is quiet.",
+    "template": "gate-rules-v1",
+    "evidence": "Cugebe is small. Tefebi is bright. Semolu is calm. Cugebe is warm. Whenever Tefebi is bright and Tefebi is warm, it follows that Tefebi is quiet.",
+    "id": "local-claims/gate/acba83ae2ee79070"
+  },
+  {
+    "split": "gate",
+    "index": 27,
+    "motif": "reverse",
+    "entities": [
+      "Tinamu",
+      "Kibani",
+      "Muvuko"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Muvuko is ready.",
+      "Kibani is warm.",
+      "Tinamu is striped.",
+      "Tinamu is bright."
+    ],
+    "rules": [
+      [
+        [
+          "Tinamu is calm."
+        ],
+        "Tinamu is striped."
+      ]
+    ],
+    "target": "Tinamu is calm.",
+    "template": "gate-rules-v1",
+    "evidence": "Muvuko is ready. Kibani is warm. Tinamu is striped. Tinamu is bright. Whenever Tinamu is calm, it follows that Tinamu is striped.",
+    "id": "local-claims/gate/9cef20d3acc5c939"
+  },
+  {
+    "split": "gate",
+    "index": 28,
+    "motif": "negative",
+    "entities": [
+      "Guvusu",
+      "Pavecu",
+      "Rotesa"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Pavecu is calm.",
+      "Rotesa is quiet.",
+      "Guvusu is warm."
+    ],
+    "rules": [
+      [
+        [
+          "Guvusu is warm."
+        ],
+        "Guvusu is not blue."
+      ]
+    ],
+    "target": "Guvusu is not blue.",
+    "template": "gate-rules-v1",
+    "evidence": "Pavecu is calm. Rotesa is quiet. Guvusu is warm. Whenever Guvusu is warm, it follows that Guvusu is not blue.",
+    "id": "local-claims/gate/78243eb621990009"
+  },
+  {
+    "split": "gate",
+    "index": 29,
+    "motif": "distractor",
+    "entities": [
+      "Kabebi",
+      "Sagihi",
+      "Bujefu"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Sagihi is calm.",
+      "Bujefu is bright.",
+      "Kabebi is blue."
+    ],
+    "rules": [
+      [
+        [
+          "Kabebi is blue."
+        ],
+        "Kabebi is warm."
+      ],
+      [
+        [
+          "Sagihi is calm."
+        ],
+        "Sagihi is striped."
+      ]
+    ],
+    "target": "Kabebi is striped.",
+    "template": "gate-rules-v1",
+    "evidence": "Sagihi is calm. Bujefu is bright. Kabebi is blue. Whenever Kabebi is blue, it follows that Kabebi is warm. Whenever Sagihi is calm, it follows that Sagihi is striped.",
+    "id": "local-claims/gate/b24d5fe4bb25a3c3"
+  },
+  {
+    "split": "gate",
+    "index": 30,
+    "motif": "forward",
+    "entities": [
+      "Gemodi",
+      "Segufe",
+      "Sulivu"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Gemodi is quiet.",
+      "Segufe is small.",
+      "Sulivu is ready."
+    ],
+    "rules": [
+      [
+        [
+          "Gemodi is quiet."
+        ],
+        "Gemodi is bright."
+      ],
+      [
+        [
+          "Gemodi is bright."
+        ],
+        "Gemodi is calm."
+      ],
+      [
+        [
+          "Gemodi is calm."
+        ],
+        "Gemodi is warm."
+      ]
+    ],
+    "target": "Gemodi is warm.",
+    "template": "gate-rules-v1",
+    "evidence": "Gemodi is quiet. Segufe is small. Sulivu is ready. Whenever Gemodi is quiet, it follows that Gemodi is bright. Whenever Gemodi is bright, it follows that Gemodi is calm. Whenever Gemodi is calm, it follows that Gemodi is warm.",
+    "id": "local-claims/gate/cb15e4593cece87e"
+  },
+  {
+    "split": "gate",
+    "index": 31,
+    "motif": "conjunction",
+    "entities": [
+      "Vovoju",
+      "Menoco",
+      "Comiro"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Vovoju is quiet.",
+      "Vovoju is warm.",
+      "Comiro is blue.",
+      "Menoco is calm."
+    ],
+    "rules": [
+      [
+        [
+          "Vovoju is quiet.",
+          "Vovoju is warm."
+        ],
+        "Vovoju is ready."
+      ]
+    ],
+    "target": "Vovoju is ready.",
+    "template": "gate-rules-v1",
+    "evidence": "Vovoju is quiet. Vovoju is warm. Comiro is blue. Menoco is calm. Whenever Vovoju is quiet and Vovoju is warm, it follows that Vovoju is ready.",
+    "id": "local-claims/gate/3143a1f37a70b316"
+  },
+  {
+    "split": "gate",
+    "index": 32,
+    "motif": "missing",
+    "entities": [
+      "Naduda",
+      "Riketa",
+      "Mecike"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Riketa is blue.",
+      "Riketa is calm.",
+      "Mecike is striped.",
+      "Naduda is bright."
+    ],
+    "rules": [
+      [
+        [
+          "Naduda is bright.",
+          "Naduda is calm."
+        ],
+        "Naduda is quiet."
+      ]
+    ],
+    "target": "Naduda is quiet.",
+    "template": "gate-rules-v1",
+    "evidence": "Riketa is blue. Riketa is calm. Mecike is striped. Naduda is bright. Whenever Naduda is bright and Naduda is calm, it follows that Naduda is quiet.",
+    "id": "local-claims/gate/966289db3624fa58"
+  },
+  {
+    "split": "gate",
+    "index": 33,
+    "motif": "reverse",
+    "entities": [
+      "Hepebi",
+      "Lokaha",
+      "Loludu"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Lokaha is bright.",
+      "Hepebi is blue.",
+      "Hepebi is quiet.",
+      "Loludu is warm."
+    ],
+    "rules": [
+      [
+        [
+          "Hepebi is small."
+        ],
+        "Hepebi is quiet."
+      ]
+    ],
+    "target": "Hepebi is small.",
+    "template": "gate-rules-v1",
+    "evidence": "Lokaha is bright. Hepebi is blue. Hepebi is quiet. Loludu is warm. Whenever Hepebi is small, it follows that Hepebi is quiet.",
+    "id": "local-claims/gate/46f55800e94886d5"
+  },
+  {
+    "split": "gate",
+    "index": 34,
+    "motif": "negative",
+    "entities": [
+      "Kemomu",
+      "Tanela",
+      "Riruhe"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Kemomu is ready.",
+      "Tanela is blue.",
+      "Riruhe is bright."
+    ],
+    "rules": [
+      [
+        [
+          "Kemomu is ready."
+        ],
+        "Kemomu is not warm."
+      ]
+    ],
+    "target": "Kemomu is not warm.",
+    "template": "gate-rules-v1",
+    "evidence": "Kemomu is ready. Tanela is blue. Riruhe is bright. Whenever Kemomu is ready, it follows that Kemomu is not warm.",
+    "id": "local-claims/gate/be8855eb526c430a"
+  },
+  {
+    "split": "gate",
+    "index": 35,
+    "motif": "distractor",
+    "entities": [
+      "Sujahu",
+      "Cuhiji",
+      "Gupisu"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Sujahu is blue.",
+      "Cuhiji is ready.",
+      "Gupisu is calm."
+    ],
+    "rules": [
+      [
+        [
+          "Sujahu is blue."
+        ],
+        "Sujahu is quiet."
+      ],
+      [
+        [
+          "Cuhiji is ready."
+        ],
+        "Cuhiji is striped."
+      ]
+    ],
+    "target": "Sujahu is striped.",
+    "template": "gate-rules-v1",
+    "evidence": "Sujahu is blue. Cuhiji is ready. Gupisu is calm. Whenever Sujahu is blue, it follows that Sujahu is quiet. Whenever Cuhiji is ready, it follows that Cuhiji is striped.",
+    "id": "local-claims/gate/e65ce1da5c21d1bd"
+  },
+  {
+    "split": "gate",
+    "index": 36,
+    "motif": "forward",
+    "entities": [
+      "Lelijo",
+      "Cebunu",
+      "Lidobi"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Lelijo is striped.",
+      "Lidobi is small.",
+      "Cebunu is quiet."
+    ],
+    "rules": [
+      [
+        [
+          "Lelijo is bright."
+        ],
+        "Lelijo is warm."
+      ],
+      [
+        [
+          "Lelijo is ready."
+        ],
+        "Lelijo is bright."
+      ],
+      [
+        [
+          "Lelijo is striped."
+        ],
+        "Lelijo is ready."
+      ]
+    ],
+    "target": "Lelijo is warm.",
+    "template": "gate-rules-v1",
+    "evidence": "Lelijo is striped. Lidobi is small. Cebunu is quiet. Whenever Lelijo is bright, it follows that Lelijo is warm. Whenever Lelijo is ready, it follows that Lelijo is bright. Whenever Lelijo is striped, it follows that Lelijo is ready.",
+    "id": "local-claims/gate/2167a30197420032"
+  },
+  {
+    "split": "gate",
+    "index": 37,
+    "motif": "conjunction",
+    "entities": [
+      "Pobopo",
+      "Talabu",
+      "Mitaro"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Pobopo is small.",
+      "Pobopo is striped.",
+      "Talabu is quiet.",
+      "Mitaro is calm."
+    ],
+    "rules": [
+      [
+        [
+          "Pobopo is small.",
+          "Pobopo is striped."
+        ],
+        "Pobopo is ready."
+      ]
+    ],
+    "target": "Pobopo is ready.",
+    "template": "gate-rules-v1",
+    "evidence": "Pobopo is small. Pobopo is striped. Talabu is quiet. Mitaro is calm. Whenever Pobopo is small and Pobopo is striped, it follows that Pobopo is ready.",
+    "id": "local-claims/gate/93bd60f80f9c4d43"
+  },
+  {
+    "split": "gate",
+    "index": 38,
+    "motif": "missing",
+    "entities": [
+      "Natafu",
+      "Vedune",
+      "Pebigo"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Vedune is blue.",
+      "Vedune is calm.",
+      "Natafu is warm.",
+      "Pebigo is small."
+    ],
+    "rules": [
+      [
+        [
+          "Natafu is warm.",
+          "Natafu is blue."
+        ],
+        "Natafu is ready."
+      ]
+    ],
+    "target": "Natafu is ready.",
+    "template": "gate-rules-v1",
+    "evidence": "Vedune is blue. Vedune is calm. Natafu is warm. Pebigo is small. Whenever Natafu is warm and Natafu is blue, it follows that Natafu is ready.",
+    "id": "local-claims/gate/3ecbc3637293e61b"
+  },
+  {
+    "split": "gate",
+    "index": 39,
+    "motif": "reverse",
+    "entities": [
+      "Bapica",
+      "Jijuge",
+      "Ruduga"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Ruduga is small.",
+      "Bapica is blue.",
+      "Bapica is calm.",
+      "Jijuge is striped."
+    ],
+    "rules": [
+      [
+        [
+          "Bapica is bright."
+        ],
+        "Bapica is blue."
+      ]
+    ],
+    "target": "Bapica is bright.",
+    "template": "gate-rules-v1",
+    "evidence": "Ruduga is small. Bapica is blue. Bapica is calm. Jijuge is striped. Whenever Bapica is bright, it follows that Bapica is blue.",
+    "id": "local-claims/gate/d9962fe40e1fc0eb"
+  },
+  {
+    "split": "gate",
+    "index": 40,
+    "motif": "negative",
+    "entities": [
+      "Rodimi",
+      "Vejasu",
+      "Misuje"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Rodimi is bright.",
+      "Misuje is warm.",
+      "Vejasu is blue."
+    ],
+    "rules": [
+      [
+        [
+          "Rodimi is bright."
+        ],
+        "Rodimi is not calm."
+      ]
+    ],
+    "target": "Rodimi is not calm.",
+    "template": "gate-rules-v1",
+    "evidence": "Rodimi is bright. Misuje is warm. Vejasu is blue. Whenever Rodimi is bright, it follows that Rodimi is not calm.",
+    "id": "local-claims/gate/bba2cd2793a1fe9d"
+  },
+  {
+    "split": "gate",
+    "index": 41,
+    "motif": "distractor",
+    "entities": [
+      "Biduru",
+      "Ruduko",
+      "Tefupo"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Tefupo is small.",
+      "Biduru is warm.",
+      "Ruduko is bright."
+    ],
+    "rules": [
+      [
+        [
+          "Biduru is warm."
+        ],
+        "Biduru is calm."
+      ],
+      [
+        [
+          "Ruduko is bright."
+        ],
+        "Ruduko is blue."
+      ]
+    ],
+    "target": "Biduru is blue.",
+    "template": "gate-rules-v1",
+    "evidence": "Tefupo is small. Biduru is warm. Ruduko is bright. Whenever Biduru is warm, it follows that Biduru is calm. Whenever Ruduko is bright, it follows that Ruduko is blue.",
+    "id": "local-claims/gate/2e2d48200c35f502"
+  },
+  {
+    "split": "gate",
+    "index": 42,
+    "motif": "forward",
+    "entities": [
+      "Hemeba",
+      "Cigola",
+      "Milema"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Milema is bright.",
+      "Cigola is ready.",
+      "Hemeba is striped."
+    ],
+    "rules": [
+      [
+        [
+          "Hemeba is small."
+        ],
+        "Hemeba is warm."
+      ],
+      [
+        [
+          "Hemeba is striped."
+        ],
+        "Hemeba is quiet."
+      ],
+      [
+        [
+          "Hemeba is quiet."
+        ],
+        "Hemeba is small."
+      ]
+    ],
+    "target": "Hemeba is warm.",
+    "template": "gate-rules-v1",
+    "evidence": "Milema is bright. Cigola is ready. Hemeba is striped. Whenever Hemeba is small, it follows that Hemeba is warm. Whenever Hemeba is striped, it follows that Hemeba is quiet. Whenever Hemeba is quiet, it follows that Hemeba is small.",
+    "id": "local-claims/gate/aa34da5fa06c018f"
+  },
+  {
+    "split": "gate",
+    "index": 43,
+    "motif": "conjunction",
+    "entities": [
+      "Dogubu",
+      "Jicitu",
+      "Gocolu"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Dogubu is small.",
+      "Gocolu is quiet.",
+      "Jicitu is bright.",
+      "Dogubu is striped."
+    ],
+    "rules": [
+      [
+        [
+          "Dogubu is striped.",
+          "Dogubu is small."
+        ],
+        "Dogubu is ready."
+      ]
+    ],
+    "target": "Dogubu is ready.",
+    "template": "gate-rules-v1",
+    "evidence": "Dogubu is small. Gocolu is quiet. Jicitu is bright. Dogubu is striped. Whenever Dogubu is striped and Dogubu is small, it follows that Dogubu is ready.",
+    "id": "local-claims/gate/a86085bd7094d9b5"
+  },
+  {
+    "split": "gate",
+    "index": 44,
+    "motif": "missing",
+    "entities": [
+      "Bipete",
+      "Cerero",
+      "Velunu"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Cerero is quiet.",
+      "Velunu is small.",
+      "Bipete is warm.",
+      "Cerero is bright."
+    ],
+    "rules": [
+      [
+        [
+          "Bipete is warm.",
+          "Bipete is quiet."
+        ],
+        "Bipete is blue."
+      ]
+    ],
+    "target": "Bipete is blue.",
+    "template": "gate-rules-v1",
+    "evidence": "Cerero is quiet. Velunu is small. Bipete is warm. Cerero is bright. Whenever Bipete is warm and Bipete is quiet, it follows that Bipete is blue.",
+    "id": "local-claims/gate/8af7d3dcdbd2ceec"
+  },
+  {
+    "split": "gate",
+    "index": 45,
+    "motif": "reverse",
+    "entities": [
+      "Cisoha",
+      "Piluga",
+      "Merise"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Cisoha is calm.",
+      "Piluga is small.",
+      "Cisoha is quiet.",
+      "Merise is bright."
+    ],
+    "rules": [
+      [
+        [
+          "Cisoha is striped."
+        ],
+        "Cisoha is quiet."
+      ]
+    ],
+    "target": "Cisoha is striped.",
+    "template": "gate-rules-v1",
+    "evidence": "Cisoha is calm. Piluga is small. Cisoha is quiet. Merise is bright. Whenever Cisoha is striped, it follows that Cisoha is quiet.",
+    "id": "local-claims/gate/d10553665f245651"
+  },
+  {
+    "split": "gate",
+    "index": 46,
+    "motif": "negative",
+    "entities": [
+      "Supono",
+      "Nokupo",
+      "Lurovi"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Lurovi is bright.",
+      "Nokupo is warm.",
+      "Supono is ready."
+    ],
+    "rules": [
+      [
+        [
+          "Supono is ready."
+        ],
+        "Supono is not blue."
+      ]
+    ],
+    "target": "Supono is not blue.",
+    "template": "gate-rules-v1",
+    "evidence": "Lurovi is bright. Nokupo is warm. Supono is ready. Whenever Supono is ready, it follows that Supono is not blue.",
+    "id": "local-claims/gate/82b3f90e76ae5ef7"
+  },
+  {
+    "split": "gate",
+    "index": 47,
+    "motif": "distractor",
+    "entities": [
+      "Tadece",
+      "Humasi",
+      "Supedu"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Supedu is quiet.",
+      "Humasi is small.",
+      "Tadece is bright."
+    ],
+    "rules": [
+      [
+        [
+          "Tadece is bright."
+        ],
+        "Tadece is ready."
+      ],
+      [
+        [
+          "Humasi is small."
+        ],
+        "Humasi is calm."
+      ]
+    ],
+    "target": "Tadece is calm.",
+    "template": "gate-rules-v1",
+    "evidence": "Supedu is quiet. Humasi is small. Tadece is bright. Whenever Tadece is bright, it follows that Tadece is ready. Whenever Humasi is small, it follows that Humasi is calm.",
+    "id": "local-claims/gate/4fb2f6f0915ff9a3"
+  },
+  {
+    "split": "gate",
+    "index": 48,
+    "motif": "forward",
+    "entities": [
+      "Jomodi",
+      "Rifuru",
+      "Lumebi"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Lumebi is bright.",
+      "Jomodi is quiet.",
+      "Rifuru is ready."
+    ],
+    "rules": [
+      [
+        [
+          "Jomodi is quiet."
+        ],
+        "Jomodi is small."
+      ],
+      [
+        [
+          "Jomodi is blue."
+        ],
+        "Jomodi is warm."
+      ],
+      [
+        [
+          "Jomodi is small."
+        ],
+        "Jomodi is blue."
+      ]
+    ],
+    "target": "Jomodi is warm.",
+    "template": "gate-rules-v1",
+    "evidence": "Lumebi is bright. Jomodi is quiet. Rifuru is ready. Whenever Jomodi is quiet, it follows that Jomodi is small. Whenever Jomodi is blue, it follows that Jomodi is warm. Whenever Jomodi is small, it follows that Jomodi is blue.",
+    "id": "local-claims/gate/7dd4d66b6ed4cfa2"
+  },
+  {
+    "split": "gate",
+    "index": 49,
+    "motif": "conjunction",
+    "entities": [
+      "Muteka",
+      "Fetake",
+      "Vusudu"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Vusudu is small.",
+      "Muteka is bright.",
+      "Muteka is quiet.",
+      "Fetake is blue."
+    ],
+    "rules": [
+      [
+        [
+          "Muteka is bright.",
+          "Muteka is quiet."
+        ],
+        "Muteka is calm."
+      ]
+    ],
+    "target": "Muteka is calm.",
+    "template": "gate-rules-v1",
+    "evidence": "Vusudu is small. Muteka is bright. Muteka is quiet. Fetake is blue. Whenever Muteka is bright and Muteka is quiet, it follows that Muteka is calm.",
+    "id": "local-claims/gate/61bd8057734c9aaa"
+  },
+  {
+    "split": "gate",
+    "index": 50,
+    "motif": "missing",
+    "entities": [
+      "Puhiba",
+      "Jacava",
+      "Kikelo"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Jacava is bright.",
+      "Jacava is small.",
+      "Kikelo is blue.",
+      "Puhiba is striped."
+    ],
+    "rules": [
+      [
+        [
+          "Puhiba is striped.",
+          "Puhiba is small."
+        ],
+        "Puhiba is ready."
+      ]
+    ],
+    "target": "Puhiba is ready.",
+    "template": "gate-rules-v1",
+    "evidence": "Jacava is bright. Jacava is small. Kikelo is blue. Puhiba is striped. Whenever Puhiba is striped and Puhiba is small, it follows that Puhiba is ready.",
+    "id": "local-claims/gate/39e42e420660a87c"
+  },
+  {
+    "split": "gate",
+    "index": 51,
+    "motif": "reverse",
+    "entities": [
+      "Juteve",
+      "Fimimi",
+      "Titiga"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Fimimi is quiet.",
+      "Juteve is striped.",
+      "Juteve is bright.",
+      "Titiga is blue."
+    ],
+    "rules": [
+      [
+        [
+          "Juteve is calm."
+        ],
+        "Juteve is striped."
+      ]
+    ],
+    "target": "Juteve is calm.",
+    "template": "gate-rules-v1",
+    "evidence": "Fimimi is quiet. Juteve is striped. Juteve is bright. Titiga is blue. Whenever Juteve is calm, it follows that Juteve is striped.",
+    "id": "local-claims/gate/c7a8ee1517695210"
+  },
+  {
+    "split": "gate",
+    "index": 52,
+    "motif": "negative",
+    "entities": [
+      "Celone",
+      "Cavede",
+      "Civaro"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Celone is blue.",
+      "Civaro is striped.",
+      "Cavede is bright."
+    ],
+    "rules": [
+      [
+        [
+          "Celone is blue."
+        ],
+        "Celone is not calm."
+      ]
+    ],
+    "target": "Celone is not calm.",
+    "template": "gate-rules-v1",
+    "evidence": "Celone is blue. Civaro is striped. Cavede is bright. Whenever Celone is blue, it follows that Celone is not calm.",
+    "id": "local-claims/gate/6e7efface2e79653"
+  },
+  {
+    "split": "gate",
+    "index": 53,
+    "motif": "distractor",
+    "entities": [
+      "Secese",
+      "Jihobo",
+      "Govide"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Secese is calm.",
+      "Jihobo is ready.",
+      "Govide is warm."
+    ],
+    "rules": [
+      [
+        [
+          "Jihobo is ready."
+        ],
+        "Jihobo is small."
+      ],
+      [
+        [
+          "Secese is calm."
+        ],
+        "Secese is striped."
+      ]
+    ],
+    "target": "Secese is small.",
+    "template": "gate-rules-v1",
+    "evidence": "Secese is calm. Jihobo is ready. Govide is warm. Whenever Jihobo is ready, it follows that Jihobo is small. Whenever Secese is calm, it follows that Secese is striped.",
+    "id": "local-claims/gate/ddd5754c5dfeb1a6"
+  },
+  {
+    "split": "gate",
+    "index": 54,
+    "motif": "forward",
+    "entities": [
+      "Nigoju",
+      "Huhega",
+      "Ropera"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Huhega is ready.",
+      "Nigoju is quiet.",
+      "Ropera is blue."
+    ],
+    "rules": [
+      [
+        [
+          "Nigoju is warm."
+        ],
+        "Nigoju is striped."
+      ],
+      [
+        [
+          "Nigoju is quiet."
+        ],
+        "Nigoju is calm."
+      ],
+      [
+        [
+          "Nigoju is calm."
+        ],
+        "Nigoju is warm."
+      ]
+    ],
+    "target": "Nigoju is striped.",
+    "template": "gate-rules-v1",
+    "evidence": "Huhega is ready. Nigoju is quiet. Ropera is blue. Whenever Nigoju is warm, it follows that Nigoju is striped. Whenever Nigoju is quiet, it follows that Nigoju is calm. Whenever Nigoju is calm, it follows that Nigoju is warm.",
+    "id": "local-claims/gate/3fd647b21c0c38af"
+  },
+  {
+    "split": "gate",
+    "index": 55,
+    "motif": "conjunction",
+    "entities": [
+      "Doculi",
+      "Tutena",
+      "Gegiti"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Tutena is striped.",
+      "Doculi is warm.",
+      "Gegiti is quiet.",
+      "Doculi is small."
+    ],
+    "rules": [
+      [
+        [
+          "Doculi is small.",
+          "Doculi is warm."
+        ],
+        "Doculi is calm."
+      ]
+    ],
+    "target": "Doculi is calm.",
+    "template": "gate-rules-v1",
+    "evidence": "Tutena is striped. Doculi is warm. Gegiti is quiet. Doculi is small. Whenever Doculi is small and Doculi is warm, it follows that Doculi is calm.",
+    "id": "local-claims/gate/f88f6a5fd9e639c6"
+  },
+  {
+    "split": "gate",
+    "index": 56,
+    "motif": "missing",
+    "entities": [
+      "Golidu",
+      "Gakoda",
+      "Vatike"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Gakoda is ready.",
+      "Vatike is blue.",
+      "Golidu is quiet.",
+      "Gakoda is warm."
+    ],
+    "rules": [
+      [
+        [
+          "Golidu is quiet.",
+          "Golidu is warm."
+        ],
+        "Golidu is striped."
+      ]
+    ],
+    "target": "Golidu is striped.",
+    "template": "gate-rules-v1",
+    "evidence": "Gakoda is ready. Vatike is blue. Golidu is quiet. Gakoda is warm. Whenever Golidu is quiet and Golidu is warm, it follows that Golidu is striped.",
+    "id": "local-claims/gate/5973b938d51b2420"
+  },
+  {
+    "split": "gate",
+    "index": 57,
+    "motif": "reverse",
+    "entities": [
+      "Hulepa",
+      "Fodafa",
+      "Nitepo"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Fodafa is blue.",
+      "Hulepa is calm.",
+      "Nitepo is warm.",
+      "Hulepa is small."
+    ],
+    "rules": [
+      [
+        [
+          "Hulepa is striped."
+        ],
+        "Hulepa is calm."
+      ]
+    ],
+    "target": "Hulepa is striped.",
+    "template": "gate-rules-v1",
+    "evidence": "Fodafa is blue. Hulepa is calm. Nitepo is warm. Hulepa is small. Whenever Hulepa is striped, it follows that Hulepa is calm.",
+    "id": "local-claims/gate/bb42e981ec26a7df"
+  },
+  {
+    "split": "gate",
+    "index": 58,
+    "motif": "negative",
+    "entities": [
+      "Gujana",
+      "Pokesa",
+      "Duhoku"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Gujana is small.",
+      "Duhoku is ready.",
+      "Pokesa is warm."
+    ],
+    "rules": [
+      [
+        [
+          "Gujana is small."
+        ],
+        "Gujana is not striped."
+      ]
+    ],
+    "target": "Gujana is not striped.",
+    "template": "gate-rules-v1",
+    "evidence": "Gujana is small. Duhoku is ready. Pokesa is warm. Whenever Gujana is small, it follows that Gujana is not striped.",
+    "id": "local-claims/gate/e2916027148bc5e1"
+  },
+  {
+    "split": "gate",
+    "index": 59,
+    "motif": "distractor",
+    "entities": [
+      "Leducu",
+      "Hediho",
+      "Jocasa"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Leducu is ready.",
+      "Hediho is warm.",
+      "Jocasa is small."
+    ],
+    "rules": [
+      [
+        [
+          "Hediho is warm."
+        ],
+        "Hediho is quiet."
+      ],
+      [
+        [
+          "Leducu is ready."
+        ],
+        "Leducu is blue."
+      ]
+    ],
+    "target": "Leducu is quiet.",
+    "template": "gate-rules-v1",
+    "evidence": "Leducu is ready. Hediho is warm. Jocasa is small. Whenever Hediho is warm, it follows that Hediho is quiet. Whenever Leducu is ready, it follows that Leducu is blue.",
+    "id": "local-claims/gate/0f132e1378be2847"
+  },
+  {
+    "split": "gate",
+    "index": 60,
+    "motif": "forward",
+    "entities": [
+      "Ricepu",
+      "Mamego",
+      "Mepeja"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Ricepu is bright.",
+      "Mepeja is quiet.",
+      "Mamego is blue."
+    ],
+    "rules": [
+      [
+        [
+          "Ricepu is bright."
+        ],
+        "Ricepu is warm."
+      ],
+      [
+        [
+          "Ricepu is small."
+        ],
+        "Ricepu is ready."
+      ],
+      [
+        [
+          "Ricepu is warm."
+        ],
+        "Ricepu is small."
+      ]
+    ],
+    "target": "Ricepu is ready.",
+    "template": "gate-rules-v1",
+    "evidence": "Ricepu is bright. Mepeja is quiet. Mamego is blue. Whenever Ricepu is bright, it follows that Ricepu is warm. Whenever Ricepu is small, it follows that Ricepu is ready. Whenever Ricepu is warm, it follows that Ricepu is small.",
+    "id": "local-claims/gate/481dff042c6ff1b2"
+  },
+  {
+    "split": "gate",
+    "index": 61,
+    "motif": "conjunction",
+    "entities": [
+      "Gekuje",
+      "Mugiki",
+      "Migiro"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Mugiki is calm.",
+      "Migiro is quiet.",
+      "Gekuje is warm.",
+      "Gekuje is bright."
+    ],
+    "rules": [
+      [
+        [
+          "Gekuje is bright.",
+          "Gekuje is warm."
+        ],
+        "Gekuje is blue."
+      ]
+    ],
+    "target": "Gekuje is blue.",
+    "template": "gate-rules-v1",
+    "evidence": "Mugiki is calm. Migiro is quiet. Gekuje is warm. Gekuje is bright. Whenever Gekuje is bright and Gekuje is warm, it follows that Gekuje is blue.",
+    "id": "local-claims/gate/568ba07669f88b92"
+  },
+  {
+    "split": "gate",
+    "index": 62,
+    "motif": "missing",
+    "entities": [
+      "Jisule",
+      "Homebe",
+      "Matika"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Matika is calm.",
+      "Homebe is warm.",
+      "Homebe is blue.",
+      "Jisule is striped."
+    ],
+    "rules": [
+      [
+        [
+          "Jisule is striped.",
+          "Jisule is warm."
+        ],
+        "Jisule is small."
+      ]
+    ],
+    "target": "Jisule is small.",
+    "template": "gate-rules-v1",
+    "evidence": "Matika is calm. Homebe is warm. Homebe is blue. Jisule is striped. Whenever Jisule is striped and Jisule is warm, it follows that Jisule is small.",
+    "id": "local-claims/gate/5599e42a032f5f26"
+  },
+  {
+    "split": "gate",
+    "index": 63,
+    "motif": "reverse",
+    "entities": [
+      "Nufaku",
+      "Poviti",
+      "Pehako"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Nufaku is calm.",
+      "Nufaku is ready.",
+      "Poviti is striped.",
+      "Pehako is quiet."
+    ],
+    "rules": [
+      [
+        [
+          "Nufaku is warm."
+        ],
+        "Nufaku is calm."
+      ]
+    ],
+    "target": "Nufaku is warm.",
+    "template": "gate-rules-v1",
+    "evidence": "Nufaku is calm. Nufaku is ready. Poviti is striped. Pehako is quiet. Whenever Nufaku is warm, it follows that Nufaku is calm.",
+    "id": "local-claims/gate/c753ed05eda76c02"
+  },
+  {
+    "split": "gate",
+    "index": 64,
+    "motif": "negative",
+    "entities": [
+      "Pefiru",
+      "Danima",
+      "Pudoba"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Danima is calm.",
+      "Pefiru is quiet.",
+      "Pudoba is bright."
+    ],
+    "rules": [
+      [
+        [
+          "Pefiru is quiet."
+        ],
+        "Pefiru is not small."
+      ]
+    ],
+    "target": "Pefiru is not small.",
+    "template": "gate-rules-v1",
+    "evidence": "Danima is calm. Pefiru is quiet. Pudoba is bright. Whenever Pefiru is quiet, it follows that Pefiru is not small.",
+    "id": "local-claims/gate/8a1a4b4dcfdc7686"
+  },
+  {
+    "split": "gate",
+    "index": 65,
+    "motif": "distractor",
+    "entities": [
+      "Retode",
+      "Culona",
+      "Fivuse"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Culona is warm.",
+      "Fivuse is quiet.",
+      "Retode is blue."
+    ],
+    "rules": [
+      [
+        [
+          "Culona is warm."
+        ],
+        "Culona is small."
+      ],
+      [
+        [
+          "Retode is blue."
+        ],
+        "Retode is calm."
+      ]
+    ],
+    "target": "Retode is small.",
+    "template": "gate-rules-v1",
+    "evidence": "Culona is warm. Fivuse is quiet. Retode is blue. Whenever Culona is warm, it follows that Culona is small. Whenever Retode is blue, it follows that Retode is calm.",
+    "id": "local-claims/gate/c4c801e54d89acb5"
+  },
+  {
+    "split": "gate",
+    "index": 66,
+    "motif": "forward",
+    "entities": [
+      "Cesivo",
+      "Vavada",
+      "Cerefo"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Cerefo is ready.",
+      "Cesivo is striped.",
+      "Vavada is bright."
+    ],
+    "rules": [
+      [
+        [
+          "Cesivo is calm."
+        ],
+        "Cesivo is quiet."
+      ],
+      [
+        [
+          "Cesivo is warm."
+        ],
+        "Cesivo is calm."
+      ],
+      [
+        [
+          "Cesivo is striped."
+        ],
+        "Cesivo is warm."
+      ]
+    ],
+    "target": "Cesivo is quiet.",
+    "template": "gate-rules-v1",
+    "evidence": "Cerefo is ready. Cesivo is striped. Vavada is bright. Whenever Cesivo is calm, it follows that Cesivo is quiet. Whenever Cesivo is warm, it follows that Cesivo is calm. Whenever Cesivo is striped, it follows that Cesivo is warm.",
+    "id": "local-claims/gate/02dd642e5eb0fba6"
+  },
+  {
+    "split": "gate",
+    "index": 67,
+    "motif": "conjunction",
+    "entities": [
+      "Ruteku",
+      "Kehesu",
+      "Duleto"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Ruteku is calm.",
+      "Kehesu is blue.",
+      "Ruteku is quiet.",
+      "Duleto is warm."
+    ],
+    "rules": [
+      [
+        [
+          "Ruteku is quiet.",
+          "Ruteku is calm."
+        ],
+        "Ruteku is striped."
+      ]
+    ],
+    "target": "Ruteku is striped.",
+    "template": "gate-rules-v1",
+    "evidence": "Ruteku is calm. Kehesu is blue. Ruteku is quiet. Duleto is warm. Whenever Ruteku is quiet and Ruteku is calm, it follows that Ruteku is striped.",
+    "id": "local-claims/gate/71b8464b585d0bca"
+  },
+  {
+    "split": "gate",
+    "index": 68,
+    "motif": "missing",
+    "entities": [
+      "Bokuve",
+      "Detoda",
+      "Mulade"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Detoda is bright.",
+      "Detoda is calm.",
+      "Bokuve is quiet.",
+      "Mulade is small."
+    ],
+    "rules": [
+      [
+        [
+          "Bokuve is quiet.",
+          "Bokuve is calm."
+        ],
+        "Bokuve is blue."
+      ]
+    ],
+    "target": "Bokuve is blue.",
+    "template": "gate-rules-v1",
+    "evidence": "Detoda is bright. Detoda is calm. Bokuve is quiet. Mulade is small. Whenever Bokuve is quiet and Bokuve is calm, it follows that Bokuve is blue.",
+    "id": "local-claims/gate/63b20d9f157ede7f"
+  },
+  {
+    "split": "gate",
+    "index": 69,
+    "motif": "reverse",
+    "entities": [
+      "Notime",
+      "Novuje",
+      "Nanofi"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Nanofi is blue.",
+      "Notime is quiet.",
+      "Novuje is warm.",
+      "Notime is calm."
+    ],
+    "rules": [
+      [
+        [
+          "Notime is striped."
+        ],
+        "Notime is quiet."
+      ]
+    ],
+    "target": "Notime is striped.",
+    "template": "gate-rules-v1",
+    "evidence": "Nanofi is blue. Notime is quiet. Novuje is warm. Notime is calm. Whenever Notime is striped, it follows that Notime is quiet.",
+    "id": "local-claims/gate/7c9dea4782527220"
+  },
+  {
+    "split": "gate",
+    "index": 70,
+    "motif": "negative",
+    "entities": [
+      "Hovidi",
+      "Kujoce",
+      "Lifuli"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Hovidi is quiet.",
+      "Kujoce is ready.",
+      "Lifuli is calm."
+    ],
+    "rules": [
+      [
+        [
+          "Hovidi is quiet."
+        ],
+        "Hovidi is not striped."
+      ]
+    ],
+    "target": "Hovidi is not striped.",
+    "template": "gate-rules-v1",
+    "evidence": "Hovidi is quiet. Kujoce is ready. Lifuli is calm. Whenever Hovidi is quiet, it follows that Hovidi is not striped.",
+    "id": "local-claims/gate/dfc15b6905aabdbc"
+  },
+  {
+    "split": "gate",
+    "index": 71,
+    "motif": "distractor",
+    "entities": [
+      "Kotidu",
+      "Nanula",
+      "Fisica"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Fisica is striped.",
+      "Nanula is warm.",
+      "Kotidu is bright."
+    ],
+    "rules": [
+      [
+        [
+          "Nanula is warm."
+        ],
+        "Nanula is quiet."
+      ],
+      [
+        [
+          "Kotidu is bright."
+        ],
+        "Kotidu is small."
+      ]
+    ],
+    "target": "Kotidu is quiet.",
+    "template": "gate-rules-v1",
+    "evidence": "Fisica is striped. Nanula is warm. Kotidu is bright. Whenever Nanula is warm, it follows that Nanula is quiet. Whenever Kotidu is bright, it follows that Kotidu is small.",
+    "id": "local-claims/gate/4784156b86474187"
+  },
+  {
+    "split": "gate",
+    "index": 72,
+    "motif": "forward",
+    "entities": [
+      "Tocese",
+      "Caleto",
+      "Cuvova"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Tocese is small.",
+      "Cuvova is bright.",
+      "Caleto is striped."
+    ],
+    "rules": [
+      [
+        [
+          "Tocese is warm."
+        ],
+        "Tocese is calm."
+      ],
+      [
+        [
+          "Tocese is small."
+        ],
+        "Tocese is warm."
+      ],
+      [
+        [
+          "Tocese is calm."
+        ],
+        "Tocese is quiet."
+      ]
+    ],
+    "target": "Tocese is quiet.",
+    "template": "gate-rules-v1",
+    "evidence": "Tocese is small. Cuvova is bright. Caleto is striped. Whenever Tocese is warm, it follows that Tocese is calm. Whenever Tocese is small, it follows that Tocese is warm. Whenever Tocese is calm, it follows that Tocese is quiet.",
+    "id": "local-claims/gate/97d0a971c896a36b"
+  },
+  {
+    "split": "gate",
+    "index": 73,
+    "motif": "conjunction",
+    "entities": [
+      "Nabeca",
+      "Ninigo",
+      "Casoke"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Casoke is calm.",
+      "Nabeca is small.",
+      "Nabeca is striped.",
+      "Ninigo is warm."
+    ],
+    "rules": [
+      [
+        [
+          "Nabeca is small.",
+          "Nabeca is striped."
+        ],
+        "Nabeca is quiet."
+      ]
+    ],
+    "target": "Nabeca is quiet.",
+    "template": "gate-rules-v1",
+    "evidence": "Casoke is calm. Nabeca is small. Nabeca is striped. Ninigo is warm. Whenever Nabeca is small and Nabeca is striped, it follows that Nabeca is quiet.",
+    "id": "local-claims/gate/df787c42c12a6469"
+  },
+  {
+    "split": "gate",
+    "index": 74,
+    "motif": "missing",
+    "entities": [
+      "Gilevi",
+      "Teboki",
+      "Nobafi"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Nobafi is calm.",
+      "Gilevi is ready.",
+      "Teboki is bright.",
+      "Teboki is small."
+    ],
+    "rules": [
+      [
+        [
+          "Gilevi is ready.",
+          "Gilevi is small."
+        ],
+        "Gilevi is quiet."
+      ]
+    ],
+    "target": "Gilevi is quiet.",
+    "template": "gate-rules-v1",
+    "evidence": "Nobafi is calm. Gilevi is ready. Teboki is bright. Teboki is small. Whenever Gilevi is ready and Gilevi is small, it follows that Gilevi is quiet.",
+    "id": "local-claims/gate/7c5e21f420fd037a"
+  },
+  {
+    "split": "gate",
+    "index": 75,
+    "motif": "reverse",
+    "entities": [
+      "Veheni",
+      "Coduco",
+      "Jubabe"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Veheni is quiet.",
+      "Veheni is blue.",
+      "Jubabe is warm.",
+      "Coduco is bright."
+    ],
+    "rules": [
+      [
+        [
+          "Veheni is striped."
+        ],
+        "Veheni is quiet."
+      ]
+    ],
+    "target": "Veheni is striped.",
+    "template": "gate-rules-v1",
+    "evidence": "Veheni is quiet. Veheni is blue. Jubabe is warm. Coduco is bright. Whenever Veheni is striped, it follows that Veheni is quiet.",
+    "id": "local-claims/gate/06d57fe96aec5b12"
+  },
+  {
+    "split": "gate",
+    "index": 76,
+    "motif": "negative",
+    "entities": [
+      "Kiruru",
+      "Rinumu",
+      "Megeca"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Rinumu is warm.",
+      "Megeca is small.",
+      "Kiruru is quiet."
+    ],
+    "rules": [
+      [
+        [
+          "Kiruru is quiet."
+        ],
+        "Kiruru is not ready."
+      ]
+    ],
+    "target": "Kiruru is not ready.",
+    "template": "gate-rules-v1",
+    "evidence": "Rinumu is warm. Megeca is small. Kiruru is quiet. Whenever Kiruru is quiet, it follows that Kiruru is not ready.",
+    "id": "local-claims/gate/a4d3ff4d337a8686"
+  },
+  {
+    "split": "gate",
+    "index": 77,
+    "motif": "distractor",
+    "entities": [
+      "Vasotu",
+      "Purume",
+      "Dimama"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Purume is striped.",
+      "Dimama is small.",
+      "Vasotu is warm."
+    ],
+    "rules": [
+      [
+        [
+          "Vasotu is warm."
+        ],
+        "Vasotu is ready."
+      ],
+      [
+        [
+          "Purume is striped."
+        ],
+        "Purume is blue."
+      ]
+    ],
+    "target": "Vasotu is blue.",
+    "template": "gate-rules-v1",
+    "evidence": "Purume is striped. Dimama is small. Vasotu is warm. Whenever Vasotu is warm, it follows that Vasotu is ready. Whenever Purume is striped, it follows that Purume is blue.",
+    "id": "local-claims/gate/a0ef0afcc0a4e954"
+  },
+  {
+    "split": "gate",
+    "index": 78,
+    "motif": "forward",
+    "entities": [
+      "Pudofo",
+      "Begite",
+      "Numune"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Numune is quiet.",
+      "Begite is small.",
+      "Pudofo is blue."
+    ],
+    "rules": [
+      [
+        [
+          "Pudofo is bright."
+        ],
+        "Pudofo is calm."
+      ],
+      [
+        [
+          "Pudofo is blue."
+        ],
+        "Pudofo is striped."
+      ],
+      [
+        [
+          "Pudofo is striped."
+        ],
+        "Pudofo is bright."
+      ]
+    ],
+    "target": "Pudofo is calm.",
+    "template": "gate-rules-v1",
+    "evidence": "Numune is quiet. Begite is small. Pudofo is blue. Whenever Pudofo is bright, it follows that Pudofo is calm. Whenever Pudofo is blue, it follows that Pudofo is striped. Whenever Pudofo is striped, it follows that Pudofo is bright.",
+    "id": "local-claims/gate/448accb87507d4a7"
+  },
+  {
+    "split": "gate",
+    "index": 79,
+    "motif": "conjunction",
+    "entities": [
+      "Cevopa",
+      "Hutavu",
+      "Nepihu"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Cevopa is calm.",
+      "Hutavu is small.",
+      "Nepihu is ready.",
+      "Cevopa is striped."
+    ],
+    "rules": [
+      [
+        [
+          "Cevopa is striped.",
+          "Cevopa is calm."
+        ],
+        "Cevopa is quiet."
+      ]
+    ],
+    "target": "Cevopa is quiet.",
+    "template": "gate-rules-v1",
+    "evidence": "Cevopa is calm. Hutavu is small. Nepihu is ready. Cevopa is striped. Whenever Cevopa is striped and Cevopa is calm, it follows that Cevopa is quiet.",
+    "id": "local-claims/gate/2ed493a9ccf0f321"
+  },
+  {
+    "split": "gate",
+    "index": 80,
+    "motif": "missing",
+    "entities": [
+      "Cigope",
+      "Panosi",
+      "Hicolu"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Hicolu is quiet.",
+      "Cigope is warm.",
+      "Panosi is bright.",
+      "Panosi is striped."
+    ],
+    "rules": [
+      [
+        [
+          "Cigope is warm.",
+          "Cigope is bright."
+        ],
+        "Cigope is calm."
+      ]
+    ],
+    "target": "Cigope is calm.",
+    "template": "gate-rules-v1",
+    "evidence": "Hicolu is quiet. Cigope is warm. Panosi is bright. Panosi is striped. Whenever Cigope is warm and Cigope is bright, it follows that Cigope is calm.",
+    "id": "local-claims/gate/c326ac796401ad67"
+  },
+  {
+    "split": "gate",
+    "index": 81,
+    "motif": "reverse",
+    "entities": [
+      "Sokici",
+      "Betala",
+      "Jutuka"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Betala is small.",
+      "Sokici is ready.",
+      "Jutuka is quiet.",
+      "Sokici is blue."
+    ],
+    "rules": [
+      [
+        [
+          "Sokici is calm."
+        ],
+        "Sokici is ready."
+      ]
+    ],
+    "target": "Sokici is calm.",
+    "template": "gate-rules-v1",
+    "evidence": "Betala is small. Sokici is ready. Jutuka is quiet. Sokici is blue. Whenever Sokici is calm, it follows that Sokici is ready.",
+    "id": "local-claims/gate/37dee07bfcf560fd"
+  },
+  {
+    "split": "gate",
+    "index": 82,
+    "motif": "negative",
+    "entities": [
+      "Vekele",
+      "Sotoja",
+      "Rumaso"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Rumaso is quiet.",
+      "Sotoja is bright.",
+      "Vekele is blue."
+    ],
+    "rules": [
+      [
+        [
+          "Vekele is blue."
+        ],
+        "Vekele is not calm."
+      ]
+    ],
+    "target": "Vekele is not calm.",
+    "template": "gate-rules-v1",
+    "evidence": "Rumaso is quiet. Sotoja is bright. Vekele is blue. Whenever Vekele is blue, it follows that Vekele is not calm.",
+    "id": "local-claims/gate/63c293249298cdab"
+  },
+  {
+    "split": "gate",
+    "index": 83,
+    "motif": "distractor",
+    "entities": [
+      "Jacelo",
+      "Cuvopo",
+      "Podili"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Jacelo is calm.",
+      "Podili is blue.",
+      "Cuvopo is bright."
+    ],
+    "rules": [
+      [
+        [
+          "Jacelo is calm."
+        ],
+        "Jacelo is striped."
+      ],
+      [
+        [
+          "Cuvopo is bright."
+        ],
+        "Cuvopo is small."
+      ]
+    ],
+    "target": "Jacelo is small.",
+    "template": "gate-rules-v1",
+    "evidence": "Jacelo is calm. Podili is blue. Cuvopo is bright. Whenever Jacelo is calm, it follows that Jacelo is striped. Whenever Cuvopo is bright, it follows that Cuvopo is small.",
+    "id": "local-claims/gate/ed50aad1c9e50f44"
+  },
+  {
+    "split": "gate",
+    "index": 84,
+    "motif": "forward",
+    "entities": [
+      "Fitiji",
+      "Kasuha",
+      "Vumupu"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Fitiji is bright.",
+      "Vumupu is ready.",
+      "Kasuha is calm."
+    ],
+    "rules": [
+      [
+        [
+          "Fitiji is bright."
+        ],
+        "Fitiji is quiet."
+      ],
+      [
+        [
+          "Fitiji is quiet."
+        ],
+        "Fitiji is blue."
+      ],
+      [
+        [
+          "Fitiji is blue."
+        ],
+        "Fitiji is small."
+      ]
+    ],
+    "target": "Fitiji is small.",
+    "template": "gate-rules-v1",
+    "evidence": "Fitiji is bright. Vumupu is ready. Kasuha is calm. Whenever Fitiji is bright, it follows that Fitiji is quiet. Whenever Fitiji is quiet, it follows that Fitiji is blue. Whenever Fitiji is blue, it follows that Fitiji is small.",
+    "id": "local-claims/gate/a0490cc6993de434"
+  },
+  {
+    "split": "gate",
+    "index": 85,
+    "motif": "conjunction",
+    "entities": [
+      "Himuku",
+      "Parujo",
+      "Mivipe"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Mivipe is blue.",
+      "Himuku is calm.",
+      "Himuku is ready.",
+      "Parujo is small."
+    ],
+    "rules": [
+      [
+        [
+          "Himuku is ready.",
+          "Himuku is calm."
+        ],
+        "Himuku is warm."
+      ]
+    ],
+    "target": "Himuku is warm.",
+    "template": "gate-rules-v1",
+    "evidence": "Mivipe is blue. Himuku is calm. Himuku is ready. Parujo is small. Whenever Himuku is ready and Himuku is calm, it follows that Himuku is warm.",
+    "id": "local-claims/gate/273f28fd7e59d477"
+  },
+  {
+    "split": "gate",
+    "index": 86,
+    "motif": "missing",
+    "entities": [
+      "Binogo",
+      "Numubo",
+      "Jaseho"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Numubo is ready.",
+      "Numubo is calm.",
+      "Jaseho is quiet.",
+      "Binogo is small."
+    ],
+    "rules": [
+      [
+        [
+          "Binogo is small.",
+          "Binogo is calm."
+        ],
+        "Binogo is striped."
+      ]
+    ],
+    "target": "Binogo is striped.",
+    "template": "gate-rules-v1",
+    "evidence": "Numubo is ready. Numubo is calm. Jaseho is quiet. Binogo is small. Whenever Binogo is small and Binogo is calm, it follows that Binogo is striped.",
+    "id": "local-claims/gate/9936aa571cbd3553"
+  },
+  {
+    "split": "gate",
+    "index": 87,
+    "motif": "reverse",
+    "entities": [
+      "Begage",
+      "Sakita",
+      "Databi"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Databi is bright.",
+      "Begage is calm.",
+      "Sakita is ready.",
+      "Begage is blue."
+    ],
+    "rules": [
+      [
+        [
+          "Begage is small."
+        ],
+        "Begage is calm."
+      ]
+    ],
+    "target": "Begage is small.",
+    "template": "gate-rules-v1",
+    "evidence": "Databi is bright. Begage is calm. Sakita is ready. Begage is blue. Whenever Begage is small, it follows that Begage is calm.",
+    "id": "local-claims/gate/db01c8a39a03286d"
+  },
+  {
+    "split": "gate",
+    "index": 88,
+    "motif": "negative",
+    "entities": [
+      "Gavale",
+      "Tegopo",
+      "Pisore"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Gavale is warm.",
+      "Tegopo is small.",
+      "Pisore is calm."
+    ],
+    "rules": [
+      [
+        [
+          "Gavale is warm."
+        ],
+        "Gavale is not bright."
+      ]
+    ],
+    "target": "Gavale is not bright.",
+    "template": "gate-rules-v1",
+    "evidence": "Gavale is warm. Tegopo is small. Pisore is calm. Whenever Gavale is warm, it follows that Gavale is not bright.",
+    "id": "local-claims/gate/d3d906f98bbd3aca"
+  },
+  {
+    "split": "gate",
+    "index": 89,
+    "motif": "distractor",
+    "entities": [
+      "Caniji",
+      "Kaboma",
+      "Babavo"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Kaboma is bright.",
+      "Babavo is small.",
+      "Caniji is blue."
+    ],
+    "rules": [
+      [
+        [
+          "Caniji is blue."
+        ],
+        "Caniji is quiet."
+      ],
+      [
+        [
+          "Kaboma is bright."
+        ],
+        "Kaboma is warm."
+      ]
+    ],
+    "target": "Caniji is warm.",
+    "template": "gate-rules-v1",
+    "evidence": "Kaboma is bright. Babavo is small. Caniji is blue. Whenever Caniji is blue, it follows that Caniji is quiet. Whenever Kaboma is bright, it follows that Kaboma is warm.",
+    "id": "local-claims/gate/afe9d7e76fb4df03"
+  },
+  {
+    "split": "gate",
+    "index": 90,
+    "motif": "forward",
+    "entities": [
+      "Forora",
+      "Nusari",
+      "Mipobu"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Nusari is warm.",
+      "Forora is ready.",
+      "Mipobu is small."
+    ],
+    "rules": [
+      [
+        [
+          "Forora is blue."
+        ],
+        "Forora is quiet."
+      ],
+      [
+        [
+          "Forora is ready."
+        ],
+        "Forora is striped."
+      ],
+      [
+        [
+          "Forora is striped."
+        ],
+        "Forora is blue."
+      ]
+    ],
+    "target": "Forora is quiet.",
+    "template": "gate-rules-v1",
+    "evidence": "Nusari is warm. Forora is ready. Mipobu is small. Whenever Forora is blue, it follows that Forora is quiet. Whenever Forora is ready, it follows that Forora is striped. Whenever Forora is striped, it follows that Forora is blue.",
+    "id": "local-claims/gate/abf062d43d39930f"
+  },
+  {
+    "split": "gate",
+    "index": 91,
+    "motif": "conjunction",
+    "entities": [
+      "Parumu",
+      "Rejaca",
+      "Cohibo"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Parumu is blue.",
+      "Parumu is small.",
+      "Rejaca is warm.",
+      "Cohibo is striped."
+    ],
+    "rules": [
+      [
+        [
+          "Parumu is blue.",
+          "Parumu is small."
+        ],
+        "Parumu is quiet."
+      ]
+    ],
+    "target": "Parumu is quiet.",
+    "template": "gate-rules-v1",
+    "evidence": "Parumu is blue. Parumu is small. Rejaca is warm. Cohibo is striped. Whenever Parumu is blue and Parumu is small, it follows that Parumu is quiet.",
+    "id": "local-claims/gate/7f46674c730ccac8"
+  },
+  {
+    "split": "gate",
+    "index": 92,
+    "motif": "missing",
+    "entities": [
+      "Revobu",
+      "Pireho",
+      "Pevedu"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Pireho is blue.",
+      "Pireho is ready.",
+      "Pevedu is quiet.",
+      "Revobu is striped."
+    ],
+    "rules": [
+      [
+        [
+          "Revobu is striped.",
+          "Revobu is ready."
+        ],
+        "Revobu is warm."
+      ]
+    ],
+    "target": "Revobu is warm.",
+    "template": "gate-rules-v1",
+    "evidence": "Pireho is blue. Pireho is ready. Pevedu is quiet. Revobu is striped. Whenever Revobu is striped and Revobu is ready, it follows that Revobu is warm.",
+    "id": "local-claims/gate/3d02b15d8cfd7e85"
+  },
+  {
+    "split": "gate",
+    "index": 93,
+    "motif": "reverse",
+    "entities": [
+      "Puvulo",
+      "Pokaco",
+      "Govike"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Govike is warm.",
+      "Puvulo is striped.",
+      "Puvulo is calm.",
+      "Pokaco is small."
+    ],
+    "rules": [
+      [
+        [
+          "Puvulo is blue."
+        ],
+        "Puvulo is striped."
+      ]
+    ],
+    "target": "Puvulo is blue.",
+    "template": "gate-rules-v1",
+    "evidence": "Govike is warm. Puvulo is striped. Puvulo is calm. Pokaco is small. Whenever Puvulo is blue, it follows that Puvulo is striped.",
+    "id": "local-claims/gate/366089869a79fef0"
+  },
+  {
+    "split": "gate",
+    "index": 94,
+    "motif": "negative",
+    "entities": [
+      "Poguro",
+      "Dijale",
+      "Jiduru"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Jiduru is quiet.",
+      "Poguro is small.",
+      "Dijale is bright."
+    ],
+    "rules": [
+      [
+        [
+          "Poguro is small."
+        ],
+        "Poguro is not blue."
+      ]
+    ],
+    "target": "Poguro is not blue.",
+    "template": "gate-rules-v1",
+    "evidence": "Jiduru is quiet. Poguro is small. Dijale is bright. Whenever Poguro is small, it follows that Poguro is not blue.",
+    "id": "local-claims/gate/e45d10fc1075febd"
+  },
+  {
+    "split": "gate",
+    "index": 95,
+    "motif": "distractor",
+    "entities": [
+      "Cefona",
+      "Halavu",
+      "Mohini"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Cefona is ready.",
+      "Mohini is bright.",
+      "Halavu is blue."
+    ],
+    "rules": [
+      [
+        [
+          "Cefona is ready."
+        ],
+        "Cefona is striped."
+      ],
+      [
+        [
+          "Halavu is blue."
+        ],
+        "Halavu is small."
+      ]
+    ],
+    "target": "Cefona is small.",
+    "template": "gate-rules-v1",
+    "evidence": "Cefona is ready. Mohini is bright. Halavu is blue. Whenever Cefona is ready, it follows that Cefona is striped. Whenever Halavu is blue, it follows that Halavu is small.",
+    "id": "local-claims/gate/ce46d21334189d27"
+  },
+  {
+    "split": "gate",
+    "index": 96,
+    "motif": "forward",
+    "entities": [
+      "Fetogu",
+      "Bakafu",
+      "Pipota"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Bakafu is blue.",
+      "Fetogu is quiet.",
+      "Pipota is calm."
+    ],
+    "rules": [
+      [
+        [
+          "Fetogu is striped."
+        ],
+        "Fetogu is bright."
+      ],
+      [
+        [
+          "Fetogu is ready."
+        ],
+        "Fetogu is striped."
+      ],
+      [
+        [
+          "Fetogu is quiet."
+        ],
+        "Fetogu is ready."
+      ]
+    ],
+    "target": "Fetogu is bright.",
+    "template": "gate-rules-v1",
+    "evidence": "Bakafu is blue. Fetogu is quiet. Pipota is calm. Whenever Fetogu is striped, it follows that Fetogu is bright. Whenever Fetogu is ready, it follows that Fetogu is striped. Whenever Fetogu is quiet, it follows that Fetogu is ready.",
+    "id": "local-claims/gate/42d056d5926336fa"
+  },
+  {
+    "split": "gate",
+    "index": 97,
+    "motif": "conjunction",
+    "entities": [
+      "Hubevo",
+      "Kupiko",
+      "Rirufu"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Kupiko is blue.",
+      "Hubevo is small.",
+      "Rirufu is calm.",
+      "Hubevo is striped."
+    ],
+    "rules": [
+      [
+        [
+          "Hubevo is small.",
+          "Hubevo is striped."
+        ],
+        "Hubevo is bright."
+      ]
+    ],
+    "target": "Hubevo is bright.",
+    "template": "gate-rules-v1",
+    "evidence": "Kupiko is blue. Hubevo is small. Rirufu is calm. Hubevo is striped. Whenever Hubevo is small and Hubevo is striped, it follows that Hubevo is bright.",
+    "id": "local-claims/gate/796f3d12b93cf8f4"
+  },
+  {
+    "split": "gate",
+    "index": 98,
+    "motif": "missing",
+    "entities": [
+      "Ricenu",
+      "Desubi",
+      "Kumede"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Ricenu is bright.",
+      "Kumede is quiet.",
+      "Desubi is warm.",
+      "Desubi is small."
+    ],
+    "rules": [
+      [
+        [
+          "Ricenu is bright.",
+          "Ricenu is small."
+        ],
+        "Ricenu is calm."
+      ]
+    ],
+    "target": "Ricenu is calm.",
+    "template": "gate-rules-v1",
+    "evidence": "Ricenu is bright. Kumede is quiet. Desubi is warm. Desubi is small. Whenever Ricenu is bright and Ricenu is small, it follows that Ricenu is calm.",
+    "id": "local-claims/gate/09c08cfb8494804c"
+  },
+  {
+    "split": "gate",
+    "index": 99,
+    "motif": "reverse",
+    "entities": [
+      "Pipeli",
+      "Guhoni",
+      "Nurose"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Pipeli is bright.",
+      "Guhoni is calm.",
+      "Nurose is quiet.",
+      "Pipeli is striped."
+    ],
+    "rules": [
+      [
+        [
+          "Pipeli is ready."
+        ],
+        "Pipeli is bright."
+      ]
+    ],
+    "target": "Pipeli is ready.",
+    "template": "gate-rules-v1",
+    "evidence": "Pipeli is bright. Guhoni is calm. Nurose is quiet. Pipeli is striped. Whenever Pipeli is ready, it follows that Pipeli is bright.",
+    "id": "local-claims/gate/f1a226033e0ab8e8"
+  }
+]
