@@ -214,6 +214,54 @@ def run(args):
     require(
         metadata["model"]["resolved_revision"] == manifest["revision"], "Model revision mismatch"
     )
+    continuation = None
+    if (args.results / "continuation.json").exists():
+        continuation = read(args.results / "continuation.json")
+        require(args.service_prior is not None, "Service-interrupted segment required")
+        require(
+            continuation == read(args.manifest / "continuation.json"),
+            "Service continuation changed",
+        )
+        for name, expected in continuation["prior_files"].items():
+            raw = (args.service_prior / name).read_bytes()
+            require(
+                len(raw) == expected["bytes"]
+                and hashlib.sha256(raw).hexdigest() == expected["sha256"],
+                "Service-interrupted artifact changed",
+            )
+            if name.endswith(".jsonl"):
+                require(
+                    (args.results / name).read_bytes().startswith(raw),
+                    "Service continuation changed raw prefix",
+                )
+            elif name in (
+                "selected-policy.json",
+                "test-freeze.json",
+                "zero-equivalence.json",
+                "recovery.json",
+            ):
+                require(
+                    (args.results / name).read_bytes() == raw,
+                    "Service continuation changed frozen decision",
+                )
+        for key, digest_key in (
+            ("helper_path", "helper_sha256"),
+            ("amendment_path", "amendment_sha256"),
+        ):
+            require(
+                hashlib.sha256((ROOT / continuation[key]).read_bytes()).hexdigest()
+                == continuation[digest_key],
+                "Service continuation source changed",
+            )
+        require(
+            read(args.service_prior / "completion.json")["weights_after"]
+            == metadata["weights_before"],
+            "Service continuation weight lineage changed",
+        )
+        require(
+            continuation["at"] < metadata["at"],
+            "Service continuation not registered before new execution",
+        )
     recovery = None
     if (args.results / "recovery.json").exists():
         recovery = read(args.results / "recovery.json")
@@ -384,12 +432,20 @@ def run(args):
                     and r.get("message") == "Jev request failed or timed out; it was not replayed"
                 )
                 require(
-                    recovery is not None and (transport or r.get("status_code") in (429, 529)),
+                    recovery is not None
+                    and (
+                        transport
+                        or r.get("status_code")
+                        in ((429, 502, 503, 504, 529) if continuation else (429, 529))
+                    ),
                     "Unadmitted provider failure",
                 )
                 require("evaluation" not in r, "Failure invents receipt")
                 counters["failed_receipts"] += 1
-                require(counters["failed_receipts"] <= 3, "Too many admitted incidents")
+                require(
+                    counters["failed_receipts"] <= (30 if continuation else 3),
+                    "Too many admitted incidents",
+                )
                 continue
             case = all_cases[r["id"]]
             require(
@@ -714,6 +770,16 @@ def run(args):
             all(r["at"] > recovery["at"] for r in starts[len(rows(args.prior / "starts.jsonl")) :]),
             "New work before registration",
         )
+    if continuation:
+        prefix_starts = rows(args.service_prior / "starts.jsonl")
+        require(
+            all(r["at"] > continuation["at"] for r in starts[len(prefix_starts) :]),
+            "Service continuation started before registration",
+        )
+        require(
+            not any(r["stage"] == "development" for r in starts[len(prefix_starts) :]),
+            "Service continuation reran development",
+        )
     result = dict(
         status="passed",
         counters=counters,
@@ -722,7 +788,7 @@ def run(args):
         persisted_full_vocabulary_zero_pairs=len(equivalence),
         source_segments=[
             read(path / "metadata.json")["source_revision"]
-            for path in (args.original, args.prior, args.results)
+            for path in (args.original, args.prior, args.service_prior, args.results)
             if path is not None
         ],
         input_hashes={
@@ -748,5 +814,6 @@ if __name__ == "__main__":
     p.add_argument("--output", type=Path, required=True)
     p.add_argument("--prior", type=Path)
     p.add_argument("--original", type=Path)
+    p.add_argument("--service-prior", type=Path)
     p.add_argument("--ledger", type=Path)
     run(p.parse_args())

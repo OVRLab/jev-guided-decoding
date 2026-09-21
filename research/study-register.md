@@ -124,3 +124,10 @@ was registered after testing began, explicitly expands transient admission to
 same budget/deadline, retains every failed dependent output and replays no paid
 request. All original scientific comparisons are preserved; final interpretation
 must identify the operational amendments. Two new offline continuation tests pass.
+
+The service-continuation prelaunch rejected a list/tuple serialization mismatch in
+its freeze check before any new model/scorer operations. Identical raw JSONL
+prefixes verify zero new jobs. The [serialized-freeze repair](evidence-attention-v2-freeze-repair.md)
+adds a regression that reproduces the false rejection, then confirms semantic
+JSON comparison while preserving the original freeze bytes and rejecting actual
+policy changes. Service admission and all scientific settings remain unchanged.
