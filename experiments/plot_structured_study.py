@@ -90,7 +90,8 @@ def render(summary, output):
         0.02,
         0.025,
         "Three seeds per world; 900 planned jobs per arm. Failed jobs count as incorrect.\n"
-        "All arms share a final-label grammar. Timing includes hosted Jev and discarded lookaheads;\n"
+        "All arms share a final-label grammar. Timing includes hosted Jev "
+        "and discarded lookaheads;\n"
         "model loading and between-job recovery are excluded from these per-job means.",
         fontsize=9,
         color="#4d5660",
