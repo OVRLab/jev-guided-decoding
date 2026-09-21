@@ -1,7 +1,8 @@
 # R13: API recovery and controlled inference study
 
-Status: the corrected V2 pilot passed operational admission and the frozen
-6,300-job test is running on one Nebius L40S. Accuracy improvement is unproven.
+Status: the V2 test stopped after 3,015 completed jobs and one provider failure.
+A bounded continuation is registered for the 3,284 never-started jobs; the failed
+job remains incorrect. Accuracy improvement is unproven.
 The first GPU pilot failed final formatting and is retained below. Original
 Granite weights and all historical negative results are preserved. No test
 outcomes existed at this report's initial commit; subsequent stages are appended.
@@ -96,3 +97,25 @@ the frozen case. The new regression first failed because that independent check
 was absent, then passed while rejecting altered inputs under an unchanged case ID.
 All 168 V2 pilot prompts also passed this additional reconstruction. This changes
 offline verification only; the frozen GPU inference code and protocol are unchanged.
+
+## V2 service interruption and registered continuation
+
+The original test stopped at attempt 3,016. Its last soft-step request followed
+the HTTP 429/529 exhaustion branch, which lost the exact status/body and wrongly
+labeled usage known. The ledger nevertheless retained the full 65,536-token
+reservation. That client diagnostic defect is now regression-tested and fixed;
+the lost status is not recoverable. All 19 remote result files matched the local
+backup, and the first VM, disk and task network resources were deleted. Granite
+weights remained unchanged. [All stopped attempts](stopped-v2/runs.jsonl.gz),
+[stopped summary](stopped-v2/summary.json) and [completion record](stopped-v2/completion.json)
+are preserved, including the original error fields.
+
+The [prospective continuation](../../research/structured-study-continuation.md)
+excludes every started key, preserves the 6,300-job denominator, and changes only
+operational recovery and error diagnostics. Successful inference policy is fixed.
+The unknown request was carried at its full maximum under the existing owner
+authorization; it was not replayed or settled at zero. One [new service probe](continuation-api-recovery.json)
+succeeded. A new L40S will execute only the 3,284 remaining jobs, with at most three
+bounded cooldowns after explicit rate-limit/overload failures; each failed job
+stays failed. Other service/backend failures stop the continuation. The original
+$50 cumulative allowance remains in force.

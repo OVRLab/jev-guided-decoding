@@ -2,7 +2,9 @@
 
 The [R13 corrected pilot](reports/2026-09-21-structured-study/README.md) now passes
 all operational gates after API recovery and a shared final-label grammar repair.
-The frozen seven-arm, 6,300-job test is running on one Nebius L40S. Granite chooses
+The seven-arm test stopped after 3,015 complete jobs and one provider failure. A
+[registered continuation](research/structured-study-continuation.md) excludes all
+started jobs and preserves that failure in the 6,300-job denominator. Granite chooses
 every final label, all weights remain frozen, and accuracy improvement is unproven.
 The failed first R13 pilot and every earlier result remain in the research record.
 

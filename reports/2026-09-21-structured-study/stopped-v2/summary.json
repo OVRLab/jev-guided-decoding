@@ -1,0 +1,138 @@
+{
+  "planned": 6300,
+  "recorded": 3016,
+  "missing": 3284,
+  "arms": {
+    "native": {
+      "planned": 900,
+      "recorded": 431,
+      "complete": 431,
+      "correct": 180,
+      "valid_format": 431,
+      "seconds": 44.45235617199387,
+      "accuracy": 0.2
+    },
+    "staged": {
+      "planned": 900,
+      "recorded": 431,
+      "complete": 431,
+      "correct": 171,
+      "valid_format": 431,
+      "seconds": 338.0514841719955,
+      "accuracy": 0.19
+    },
+    "likelihood": {
+      "planned": 900,
+      "recorded": 431,
+      "complete": 431,
+      "correct": 161,
+      "valid_format": 431,
+      "seconds": 600.4032981430064,
+      "accuracy": 0.17888888888888888
+    },
+    "jev": {
+      "planned": 900,
+      "recorded": 431,
+      "complete": 431,
+      "correct": 162,
+      "valid_format": 431,
+      "seconds": 847.8300677460013,
+      "accuracy": 0.18
+    },
+    "shuffled": {
+      "planned": 900,
+      "recorded": 430,
+      "complete": 430,
+      "correct": 169,
+      "valid_format": 430,
+      "seconds": 846.456864645003,
+      "accuracy": 0.18777777777777777
+    },
+    "zero": {
+      "planned": 900,
+      "recorded": 431,
+      "complete": 431,
+      "correct": 171,
+      "valid_format": 431,
+      "seconds": 847.5706236620019,
+      "accuracy": 0.19
+    },
+    "soft_step": {
+      "planned": 900,
+      "recorded": 431,
+      "complete": 430,
+      "correct": 161,
+      "valid_format": 430,
+      "seconds": 777.3130326149931,
+      "accuracy": 0.17888888888888888
+    }
+  },
+  "zero_identity": {
+    "matched": 431,
+    "pairs": 431
+  },
+  "claim_grades": {
+    "graded": 17228,
+    "total": 17228
+  },
+  "checkpoints": {
+    "observed": 4307,
+    "possible": 4308
+  },
+  "audits": 3015,
+  "gates": {
+    "all_complete": false,
+    "per_arm_format": false,
+    "overall_format": false,
+    "provenance": false,
+    "zero_identity": false,
+    "grading": true,
+    "checkpoints": true
+  },
+  "admitted": false,
+  "jev": {
+    "calls": 3444,
+    "input_tokens": 4928542,
+    "output_tokens": 537264,
+    "receipt_cost_usd": 0.20699876400000003
+  },
+  "biased_checkpoints": 2524,
+  "max_kl": 0.019999999999999993,
+  "contrasts": {
+    "jev_minus_native": {
+      "difference": -0.020000000000000004,
+      "interval": [
+        -0.08222222222222222,
+        0.04444444444444444
+      ],
+      "level": 0.9833333333333333,
+      "clusters": 300,
+      "draws": 5000,
+      "superiority": false
+    },
+    "jev_minus_staged": {
+      "difference": -0.01,
+      "interval": [
+        -0.02,
+        -0.0022222222222222222
+      ],
+      "level": 0.9833333333333333,
+      "clusters": 300,
+      "draws": 5000,
+      "superiority": false
+    },
+    "jev_minus_likelihood": {
+      "difference": 0.001111111111111111,
+      "interval": [
+        -0.02222222222222222,
+        0.023333333333333334
+      ],
+      "level": 0.9833333333333333,
+      "clusters": 300,
+      "draws": 5000,
+      "superiority": false
+    }
+  },
+  "elapsed_seconds": 4316.792514275,
+  "stopped_reason": "ScorerError"
+}

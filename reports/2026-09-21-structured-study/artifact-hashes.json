@@ -31,6 +31,18 @@
     "pilot-v2/independent-analysis.json": {
       "sha256": "207f46b282a4c0def870813d6013153bac41a7f18688f53e201df978f95a6e35",
       "bytes": 18213
+    },
+    "stopped-v2/runs.jsonl": {
+      "sha256": "4d6613f66bb8e3d57c3182ea07633570b7643b05911e06efbb5675b375fa3bb1",
+      "bytes": 60430001
+    },
+    "stopped-v2/job-starts.jsonl": {
+      "sha256": "905c26603ffb5ca47d4015f1cd7d165491c93d92c7c3da2716e2318bf00776f1",
+      "bytes": 420946
+    },
+    "stopped-v2/summary.json": {
+      "sha256": "2d2a689eeb9e8c05314e6074ee867c4f5e4f2b46e3af16a671638c3fc436f10d",
+      "bytes": 3029
     }
   },
   "files": {
@@ -45,6 +57,12 @@
     "pilot-v2/metadata.json": "38f6ca510e59c744d9f3bc84ce6391aefb8f6930c35a0ff5c86a50dd7b223e67",
     "pilot-v2/independent-analysis.json": "207f46b282a4c0def870813d6013153bac41a7f18688f53e201df978f95a6e35",
     "pilot-v2/runs.jsonl.gz": "4f368dbbafefca318587983a68cfd3730fb687f2ef2854024fa78ceaefbac87b",
-    "pilot-v2/job-starts.jsonl.gz": "cacc3c3376a511ef7ba6b89307cf08457efb84730d1dbccb07e5d2eb8c1e3e08"
+    "pilot-v2/job-starts.jsonl.gz": "cacc3c3376a511ef7ba6b89307cf08457efb84730d1dbccb07e5d2eb8c1e3e08",
+    "continuation-api-recovery.json": "344b8efa5cf18475999cb9294cdb0e76c7a11f444ae3e08a21a83c509ce1f7e0",
+    "stopped-v2/summary.json": "2d2a689eeb9e8c05314e6074ee867c4f5e4f2b46e3af16a671638c3fc436f10d",
+    "stopped-v2/metadata.json": "38f6ca510e59c744d9f3bc84ce6391aefb8f6930c35a0ff5c86a50dd7b223e67",
+    "stopped-v2/runs.jsonl.gz": "5c83fe7df42eff36abd30461e692de88fd9acc05be4be81f334c2fd68efaf327",
+    "stopped-v2/job-starts.jsonl.gz": "05b0d71510430b712e8c0b91bf709bd2f0883fc7ea4f8349a2f51dee6619c5b0",
+    "stopped-v2/completion.json": "4bb4e6ef6f22c50c71fb3885e9e6cb5ab7e9739924aef832623364ccd58f9392"
   }
 }
