@@ -5,8 +5,16 @@ Granite inference. It includes negative results, corrections, new analyses, and
 proposed experiments. It is a basis for a paper, not a claim of a successful model
 release. All dates below are report dates; source artifacts retain execution times.
 
-**Current conclusion, 2026-09-21:** neither the earlier step-selection policy nor
-the new bounded output-logit policy demonstrates a useful final-answer gain.
+**Current conclusion:** [R14 internal evidence attention](../reports/2026-09-21-evidence-attention/README.md)
+completed all 5,760 held-out outputs with no errors: Granite 42.22%, Jev attention
+51.25% (+9.03 pp, adjusted interval [5.83, 12.50]). This supports a narrow gain
+over native and shuffled controls; superiority over lexical/prompt highlighting
+is inconclusive, so the all-four-control success criterion is unmet. Always
+UNKNOWN obtains 50% on this balanced task, limiting absolute utility. Weights
+remain unchanged; all task resources are deleted; cumulative estimate $9.27/$50.
+
+The earlier step-selection and bounded output-logit policies did not demonstrate
+a useful final-answer gain on their different tasks.
 The [completed R13 comparison](../reports/2026-09-21-structured-study/README.md)
 records 6,300 planned attempts on 300 authored worlds: 42.67% direct Granite,
 37.00% staged, 35.44% likelihood and 36.00% Jev. All adjusted primary intervals
@@ -19,7 +27,7 @@ weights are unchanged, and both temporary GPU deployments are deleted.
 | --- | --- |
 | [Study register](study-register.md) | Every recorded live study, failed pilot, correction, and offline follow-up |
 | [Architecture reassessment](architecture-reassessment.md) | Exact checkpoint, interface constraints, insertion-point decision and alternatives |
-| [Evidence-attention study](../reports/2026-09-21-evidence-attention/README.md) | R14 attention hook implemented and locally verified; [execution plan](evidence-attention-protocol.md), real-model evaluation pending |
+| [Evidence-attention study](../reports/2026-09-21-evidence-attention/README.md) | Completed R14: eight arms, narrow native-baseline gain with inconclusive simpler controls; [frozen plan](evidence-attention-protocol.md), all traces and audit |
 | [New diagnostic report](../reports/2026-09-21-architecture-reassessment/README.md) | Reproducible decomposition of 3,600 main and 48 development traces |
 | [Next experiment](next-experiment.md) | Staged evidence gates, controls, budgets, held-out evaluation and stop rules |
 | [Logit-guidance development](../reports/2026-09-21-logit-guidance/README.md) | Completed/interrupted pilots, full authored traces, mechanical controls and remaining limits |

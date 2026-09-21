@@ -1,0 +1,26 @@
+{
+  "versions": {
+    "matplotlib": "3.10.8",
+    "numpy": "2.5.3"
+  },
+  "source_hashes": {
+    "head-ranking.json": "ce83a947963c85d93d5798911d7b328a7a3670dbf9320eeb448cede665c67dd1",
+    "selected-policy.json": "4f5c546f946eebc8e4c2fc9425ac2101e7d148bdb7928034883e27711224072d",
+    "test-summary.json": "007c395b88dd116bb125f2c24a3f487391dd972075332489f96d6963e0854119"
+  },
+  "renderer_sha256": "25aef2d005adecc6755d31c4ad0a4f9a0a1410b6d4c7151fb51e719a9aa37f43",
+  "artifacts": {
+    "head-profile.png": "16e923bcd6f27c077a4dcb589ee8501db9024b9f0c5e91ba88589cd37bcfb5b9",
+    "head-profile.svg": "1ab8158cfc1734d067af11ceffe7de92755830f3432099df88c94a1e7c4862fb",
+    "head-profile.pdf": "4803b7e48b1cc9a7b257822146a675baf2e805d56a188e4dce8e4d7ceec70cb6",
+    "oracle-calibration.png": "bb4483341754981e9ea89ebe28e6bdc162446cdc8fbf222a019ae374d343447b",
+    "oracle-calibration.svg": "6ef7699e70d2a486d52cd50e7bda4fcec132faf228df7d8c2265c3a1f08b8945",
+    "oracle-calibration.pdf": "ad628664bca76b460ceeeb6d9982892bc93ab9bb307d3ccfcfc476a3e8cfa37a",
+    "test-accuracy.png": "0baab7b54ffb68333014baa3c1b735cee9f72573b1935a2ac2426faf4fb308b3",
+    "test-accuracy.svg": "08dfcdf9566c5ebd8d30ebefed3656d5bdba54113af5d09c23152450fda6edde",
+    "test-accuracy.pdf": "f301857e3c94e8f80d34e388eac6f9f1943d848cd1b00362b2fa80aba62c9be1",
+    "primary-contrasts.png": "f00e4e2142f4128decdb2de9250d57f2b4d92ca93c86b3e9724ad48f6f772f77",
+    "primary-contrasts.svg": "53adb15aee7722785a17422073e2850606ff39d9ecd773421d574ce9863c0178",
+    "primary-contrasts.pdf": "6144dd6015efe11c52539eee2d6a69396bf0ce2cf34fb4f4e53712a7118905f8"
+  }
+}

@@ -123,3 +123,19 @@ Useful retained reasoning remains unproven. A next development investigation
 should distinguish weak proposals from incorrect rejection before proposing a
 fresh test; there is no authority here to tune on or rerun the completed test set.
 No model training, changed weights, vLLM integration, merge, or release is claimed.
+
+
+## R14 completed: internal attention to source evidence
+
+The [frozen plan](research/evidence-attention-protocol.md) and [completed report](reports/2026-09-21-evidence-attention/README.md)
+implement and evaluate a static Jev source-relevance map inside selected Granite
+attention heads. All 5,760 held-out outputs completed, with a +9.03 pp native-baseline
+gain (42.22% to 51.25%; adjusted interval [5.83,12.50]). The stricter all-controls
+criterion failed because lexical/prompt comparisons remain inconclusive; always
+UNKNOWN scores 50% on these constrained authored cases. All model decisions,
+receipts, unchanged weights, costs and cleanup are audited and documented.
+
+No further cloud run is pending. Any redesign must treat this test as exposed,
+freeze new development/held-out splits and compare against the simpler relevance
+controls. Generalization, open-ended output, concurrent serving and colocated Jev
+remain untested; no model training or release is implied.

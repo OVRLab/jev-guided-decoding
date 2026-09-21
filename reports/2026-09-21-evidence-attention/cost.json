@@ -1,0 +1,21 @@
+{
+  "prior_cumulative_estimate_usd": 8.488813983037277,
+  "new_compute_disk_hours": 0.45520797194444446,
+  "created_at": "2026-09-21T21:21:53.254207Z",
+  "deletion_verified_at": "2026-09-21T21:49:12.002906+00:00",
+  "compute_usd_hour": 1.5484,
+  "disk_usd_hour": 0.007780821917808219,
+  "new_cloud_estimate_usd": 0.7083859159240441,
+  "new_jev_calls": 732,
+  "new_jev_input_tokens": 1802440,
+  "new_jev_receipt_cost_usd": 0.07570248000000002,
+  "new_jev_conservative_allowance_usd": 0.090122,
+  "new_unknown_calls": 0,
+  "new_cumulative_estimate_usd": 9.272902378961321,
+  "authorized_cumulative_usd": 50,
+  "resources_deleted": true,
+  "verified_remote_result_files": 19,
+  "billing_note": "Estimate before tax and separately billed network; not a provider invoice. Prior estimate retains earlier maximum-charged unknown usage.",
+  "cloud_price_source": "https://docs.nebius.com/compute/resources/pricing",
+  "jev_price_source": "https://docs.typesafe.ai/models"
+}

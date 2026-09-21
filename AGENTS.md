@@ -40,9 +40,11 @@ guides must defer here rather than maintain conflicting copies.
   produce the final answer in every compared arm. Keep Jev final classifiers as
   separately named experiments; their scores cannot stand in for generated-answer
   quality. Verify final-token provenance and a consistent prompt/grading contract.
-- Jev guidance currently selects **text continuations during inference**. Do not
-  describe it as fused attention, access to hidden reasoning, training, a vLLM
-  extension, or an improved model checkpoint unless that work is implemented and verified.
+- The package controllers select **text continuations during inference**. The
+  separate R14 research hook applies Jev source-relevance biases inside selected
+  Granite attention heads; distinguish its static, constrained-QA evidence from
+  the package path. Neither is neural fusion, access to hidden reasoning, training,
+  a vLLM extension, or an improved model checkpoint. Claims need matching evidence.
 - Preserve the original model weights and exact accepted token IDs in this scope.
   Rejected branches must never enter the continuation prefix or another request's cache.
 - Retain explicit EOS, rejection, timeout, and budget outcomes. Empty EOS is a
@@ -56,6 +58,8 @@ guides must defer here rather than maintain conflicting copies.
   arm. Keep reference truth out of the grammar, preserve generator ownership of
   semantic choices, and treat guaranteed formatting as a controller property.
   A constrained-label baseline is not unrestricted default model generation.
+  Report class balance and a trivial constant-label reference alongside absolute
+  accuracy; a gain over a weak native baseline does not establish deployment utility.
 - Separate calibration from held-out evaluation. Keep reference answers out of
   model inputs and Jev questions. Retain negative results and all incomplete runs.
 - Lexical exact match/F1 are not general accuracy or grounding measures. Distinguish

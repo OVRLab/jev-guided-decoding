@@ -1,4 +1,4 @@
-# From Claim Verification to Generated Answers: Jev Guidance in Frozen Granite
+# From Claim Verification to Evidence Attention: Jev Guidance in Frozen Granite
 
 Working title and manuscript scaffold, 2026-09-21. Not submitted, peer reviewed,
 or a report of a successful replacement architecture. Authors, affiliations,
@@ -24,10 +24,19 @@ prespecified useful-gain criterion is unmet. Jev's highest-support lookahead is
 correct in all 1,179 mixed candidate sets, yet supported accepted claims rise
 only from 58.83% to 61.89% while final accuracy falls relative to staged generation.
 Every completed final-token path is independently reconstructed, zero bias exactly
-reproduces staged paths, and weights remain unchanged. These results distinguish
-accurate local verification from improved final answers; they establish neither
-a better hidden-layer insertion point nor a general limitation of verifier-guided
-inference beyond the tested models, policies and narrow distributions.
+reproduces staged paths, and weights remain unchanged.
+
+A third prospective study maps Jev source relevance to bounded biases inside eight
+selected Granite attention heads. On 360 held-out containment worlds with two
+context conditions and eight arms, all 5,760 constrained one-token answers complete.
+Native Granite scores 42.22%, Jev attention 51.25%, shuffled scores 43.75%, lexical
+relevance 48.89%, and Jev prompt highlighting 46.81%. The adjusted native contrast
+is +9.03 points [5.83,12.50]; lexical/prompt contrasts include zero, so the stricter
+all-controls criterion is unmet. Always UNKNOWN scores 50% on this balanced task.
+This is a narrow supported gain over native generation with limited absolute
+utility, not a general reasoning improvement. The combined studies distinguish
+local judgment accuracy, insertion mechanism and final-answer quality; changes
+in tasks and generation contracts prevent a direct ranking of insertion points.
 
 ## 1. Question and scope
 
@@ -304,25 +313,87 @@ Both temporary L40S deployments, managed disks and task network resources are
 verified deleted. Cumulative estimated spending is $8.49 including the earlier
 $3.2913 allowance, with unknown calls carried conservatively; this is not an invoice.
 
-### 7.3 Unexecuted follow-up: attention to source evidence
+### 7.3 R14: completed attention-to-evidence study
 
-The [R14 design note](evidence-attention-proposal.md) proposes evaluating Jev as
-a source-span relevance judge whose outputs become bounded biases inside selected
-Granite attention heads, before softmax/value aggregation. This differs from both
-complete-step selection and vocabulary-logit bias. It is an external semantic
-controller of internal attention, not a shared representation with Jev.
-[PASTA](https://arxiv.org/abs/2311.02262) is a relevant established mechanism family;
-we claim neither its invention nor a successful Jev/Granite adaptation.
+The [prospective R14 protocol](evidence-attention-protocol.md) evaluates Jev as a
+source-span relevance judge. Scores become bounded evidence-key biases inside
+selected Granite attention heads before softmax/value aggregation, for query
+positions after the evidence block. A relevance map is computed once before final
+generation and remains static. Jev sees the question and complete source records,
+without final choices, reference answers or hidden tensors. This is external
+semantic control of internal attention; [PASTA](https://arxiv.org/abs/2311.02262)
+is the established attention-steering/head-profiling precedent.
 
-The subsequently authorized [execution plan](evidence-attention-protocol.md) has
-an implemented hook and offline verification; real-model evaluation is pending
-in the [dated report](../reports/2026-09-21-evidence-attention/README.md). The first
-planned diagnostic separates whether correctly identified evidence helps Granite
-from whether Jev can identify it. Oracle evidence is a privileged diagnostic, not
-Jev performance. A subsequent study would require new development/test data,
-causal head selection, same-input controls, a prompt-highlighting comparator,
-and a frozen final-generation policy. This future work does not change any
-reported result or establish that an internal placement will improve reasoning.
+Development profiles all 640 query heads individually at ln(4) on 24 worlds, then
+compares the top 1/2/4/8 heads at ln(2)/ln(4)/ln(8) on 72 other worlds in two context
+conditions. Oracle annotations serve only development selection and the named
+privileged diagnostic arm. The selected eight heads at ln(8) raise calibration
+accuracy from 46.53% to 67.36%, with no clean-context harm, passing the predeclared
+causal-headroom gate. A 12-context Jev pilot passes operational admission before
+the frozen test; a positive pilot effect is not required. All development attempts
+remain public, including unfavorable head/configuration interventions.
+
+Selected zero-based (layer, query head) pairs are (34,4), (38,11), (37,14), (30,4),
+(23,8), (19,6), (21,13), (19,11). Bias is ln(8) × max(0,2r−1), with all-equal
+scores producing no-op behavior and ordinary BF16 mask quantization. The hook
+preserves causal masking, RoPE, GQA and weights, and is removed per request even
+on errors. Cached/incremental inputs are rejected in this serial reference.
+
+The test has 360 fresh authored containment worlds, balanced across depths 1/2/3
+and answerable/missing final links. Each has one or six unrelated three-link chains.
+Test wording reverses the development relation template. A separate visible-text
+parser reconstructs edge direction and follows the queried chain to independently
+grade the answer. All arms expose all six color labels and UNKNOWN; Granite chooses
+one token from the same constrained action space. No intermediate text is forced.
+The final is generator-owned and attention-guided, unlike R13's unassisted final.
+
+| Arm | Correct / 720 | Accuracy |
+| --- | ---: | ---: |
+| Native Granite | 304 | 42.22% |
+| Zero bias | 304 | 42.22% |
+| Oracle evidence (privileged diagnostic) | 408 | 56.67% |
+| Jev evidence attention | 369 | 51.25% |
+| Shuffled Jev scores | 315 | 43.75% |
+| Lexical relevance | 352 | 48.89% |
+| Random heads with Jev scores | 298 | 41.39% |
+| Jev prompt highlighting | 337 | 46.81% |
+
+All 5,760 planned outputs complete, without model/API failures. Primary intervals
+use 10,000 paired bootstrap draws over worlds, averaging each world's two contexts;
+individual 98.75% intervals provide nominal 95% family coverage across four
+contrasts. Jev-minus-native is +9.03 pp [5.83,12.50]; minus shuffled +7.50 [4.31,10.83];
+minus lexical +2.36 [−0.97,5.97]; minus prompt +4.44 [−0.28,9.17]. The conjunctive
+criterion (at least +3 pp native gain and all four interval lower bounds above zero)
+is unmet. Native/shuffled contrasts support a narrow gain; simpler-control
+superiority remains inconclusive. These are approximate intervals within one
+authored distribution, not universal evidence or proof of control equivalence.
+
+Post-hoc descriptive diagnostics identify 74 fixes, nine regressions and 27 other
+label changes relative to native. Answerable accuracy rises from 74/360 (20.56%)
+to 136/360 (37.78%), while missing-evidence accuracy changes only from 230/360
+(63.89%) to 233/360 (64.72%). Always answering UNKNOWN scores 50%, limiting absolute
+utility; no inferential comparison against that reference was predeclared. Jev's
+8,640 held-out source judgments have 1,080 true positives, 243 false positives,
+7,317 true negatives and no false negatives at >0.5, with Brier score 0.04034.
+These correlated local judgments do not establish general semantic reliability.
+
+The independent audit verifies all 23,136 profiling/calibration/pilot/test model
+decisions and bias maps, 1,509 distinct input variants, 756 native/zero pairs and
+732 Jev receipts; it independently recomputes paired statistics. All weight hashes
+match. The full study takes 16.03 minutes on one L40S, including loading and hashing.
+Native model latency averages 0.02561 seconds/context; Jev attention adds a
+0.02745-second model forward to a 0.37097-second remote scoring call (approximately
+0.39843 seconds combined, excluding ancillary deployment overhead). Scores are
+reused across dependent arms; actual call counts are recorded once. Colocation
+and concurrent serving are untested.
+
+The [full report](../reports/2026-09-21-evidence-attention/README.md) contains all
+public raw traces, frozen source/data, standalone figures, analysis and reproduction
+commands. All task VM/disk/network resources are deleted. R14 adds approximately
+$0.78, for cumulative estimated spending $9.27/$50 before tax/separate network,
+not an invoice. The result supports a specific internal intervention on a narrow
+task but does not establish Jev-specific superiority over simpler relevance
+controls, broadly useful accuracy, or the best insertion point across tasks.
 
 ## 8. Limitations and threats to validity
 
@@ -330,6 +401,11 @@ reported result or establish that an internal placement will improve reasoning.
   separates several policies, but its direct arm uses constrained final labels
   and is not unrestricted default chat. Its grammar-specific result cannot
   establish performance on open-ended reasoning.
+- R14 uses one greedy label token and oracle-selected heads on short authored
+  containment contexts; the motifs overlap across splits and the 50% UNKNOWN
+  reference is strong. Lexical/prompt superiority is unresolved. Its internal
+  steering during the final phase cannot be pooled with R13's different task and
+  unassisted final phase to identify a generally best insertion point.
 - Equal configured limits did not produce equal actual compute. More search and
   different stopping are potential explanations independent of scorer knowledge.
 - Final correctness does not certify intermediate explanations. Most trace
@@ -339,8 +415,8 @@ reported result or establish that an internal placement will improve reasoning.
   used cases in this project does not establish training-data noncontamination.
 - A small model, one checkpoint, limited task distributions and a hosted judge version limit
   generalization. Provider outputs can vary despite pinned requested identifiers.
-- Private external traces limit public per-example reproduction. Rights-cleared
-  authored future fixtures can improve transparency but introduce template bias.
+- Private external traces limit public per-example reproduction. R13/R14 authored
+  fixtures improve public transparency but introduce template bias.
 - Post-hoc inspection informed the redesign. The old test is exposed and cannot
   test the new hypothesis independently. Smaller or negative effects are reportable.
 
@@ -350,7 +426,7 @@ Public reports include source revisions, model revisions, case IDs, hashes,
 aggregate outcomes, cost assumptions and reproduction commands. Authored fixture
 traces are public. Raw external benchmark text/full traces remain private under
 the stated dataset-rights policy; the repository license does not relicense them.
-All temporary infrastructure for R10 and R13 was deleted after verified artifact retrieval.
+All temporary infrastructure for R10, R13 and R14 was deleted after verified artifact retrieval.
 The estimated $3.29 cost covers the corrected study and its two pilots, not all
 development or a provider invoice.
 
@@ -363,5 +439,8 @@ than inventing them; and ensure all claims point to supporting artifacts.
 Peer review and human scientific review have not occurred. The unavailable
 automated code reviewer is not evidence of scientific review or approval.
 
-The project can publish a transparent negative-results study without a successful
-new architecture. It cannot publish the proposed design as a proven improvement.
+The evidence supports a transparent report of negative step/logit-guidance studies
+and a qualified positive native-baseline result for source attention. It does not
+support a general model-improvement release or conclusive superiority over all
+simpler controls. This manuscript remains a draft; no scientific review or
+publication is implied by successful engineering checks.

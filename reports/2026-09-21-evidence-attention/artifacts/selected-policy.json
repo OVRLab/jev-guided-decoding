@@ -1,0 +1,209 @@
+{
+  "count": 8,
+  "strength": 2.0794415416798357,
+  "accuracy": 0.6736111111111112,
+  "clean_accuracy": 0.6944444444444444,
+  "mean_logprob": -1.8445736057040867,
+  "improvement": 0.20833333333333337,
+  "clean_change": 0.2361111111111111,
+  "admitted": true,
+  "heads": [
+    [
+      34,
+      4
+    ],
+    [
+      38,
+      11
+    ],
+    [
+      37,
+      14
+    ],
+    [
+      30,
+      4
+    ],
+    [
+      23,
+      8
+    ],
+    [
+      19,
+      6
+    ],
+    [
+      21,
+      13
+    ],
+    [
+      19,
+      11
+    ]
+  ],
+  "native": {
+    "accuracy": 0.4652777777777778,
+    "clean_accuracy": 0.4583333333333333,
+    "mean_logprob": -3.67974697461837
+  },
+  "all_configurations": [
+    {
+      "count": 1,
+      "strength": 0.6931471805599453,
+      "accuracy": 0.4722222222222222,
+      "clean_accuracy": 0.4583333333333333,
+      "mean_logprob": -3.5228105563386327
+    },
+    {
+      "count": 1,
+      "strength": 1.3862943611198906,
+      "accuracy": 0.4722222222222222,
+      "clean_accuracy": 0.4583333333333333,
+      "mean_logprob": -3.30783047520495
+    },
+    {
+      "count": 1,
+      "strength": 2.0794415416798357,
+      "accuracy": 0.4861111111111111,
+      "clean_accuracy": 0.4583333333333333,
+      "mean_logprob": -3.056195173857192
+    },
+    {
+      "count": 2,
+      "strength": 0.6931471805599453,
+      "accuracy": 0.4722222222222222,
+      "clean_accuracy": 0.4583333333333333,
+      "mean_logprob": -3.2729812135367546
+    },
+    {
+      "count": 2,
+      "strength": 1.3862943611198906,
+      "accuracy": 0.5208333333333334,
+      "clean_accuracy": 0.5,
+      "mean_logprob": -2.756208644055684
+    },
+    {
+      "count": 2,
+      "strength": 2.0794415416798357,
+      "accuracy": 0.5902777777777778,
+      "clean_accuracy": 0.5833333333333334,
+      "mean_logprob": -2.263933930258048
+    },
+    {
+      "count": 4,
+      "strength": 0.6931471805599453,
+      "accuracy": 0.4791666666666667,
+      "clean_accuracy": 0.4722222222222222,
+      "mean_logprob": -3.1950240241820875
+    },
+    {
+      "count": 4,
+      "strength": 1.3862943611198906,
+      "accuracy": 0.5277777777777778,
+      "clean_accuracy": 0.5,
+      "mean_logprob": -2.5744820672663495
+    },
+    {
+      "count": 4,
+      "strength": 2.0794415416798357,
+      "accuracy": 0.6319444444444444,
+      "clean_accuracy": 0.6527777777777778,
+      "mean_logprob": -2.0237380629741963
+    },
+    {
+      "count": 8,
+      "strength": 0.6931471805599453,
+      "accuracy": 0.4791666666666667,
+      "clean_accuracy": 0.4722222222222222,
+      "mean_logprob": -3.0781052978967662
+    },
+    {
+      "count": 8,
+      "strength": 1.3862943611198906,
+      "accuracy": 0.5486111111111112,
+      "clean_accuracy": 0.5416666666666666,
+      "mean_logprob": -2.413438385233678
+    },
+    {
+      "count": 8,
+      "strength": 2.0794415416798357,
+      "accuracy": 0.6736111111111112,
+      "clean_accuracy": 0.6944444444444444,
+      "mean_logprob": -1.8445736057040867
+    }
+  ],
+  "frozen_at": "2026-09-21T21:37:29.452425+00:00",
+  "source_hashes": {
+    "research/experiments/api_recovery.py": "887f357faa663c0267e69bdb5ba62cda63cc5a07a603fbb38a30bf5c7f91631b",
+    "research/experiments/claim_forks.py": "8c96c0fda1aa2083d5553b41baaec45387b6b91b8052d106d2cb0ca4c99e2b01",
+    "research/experiments/claim_gate.py": "cc68df2c40ec20dc3083b3fc20c4a2f926f49c25d3500da9df6dd3b87d30f3f5",
+    "research/experiments/claim_grammar.py": "aa29458f90263b49dff448c58057d3a8c5134342e03e1f5982c3d8c90d6c2c08",
+    "research/experiments/claim_worlds.py": "1d679f4496af66890a3fd03d92541a27ef1a9482dd7c0a80db125403fd6edcc7",
+    "research/experiments/evidence_attention.py": "950ee6c7dcd54ea46e7ae0b77311a6672bf03637e351eca6cc24a92fb1f31729",
+    "research/experiments/evidence_data.py": "4cc962e852c6d661d43d6b46492017d75b8aad648403bd1073f4f2d1e635dae7",
+    "research/experiments/evidence_runtime.py": "8018892394c8fe2aec8b49b54b21a4a6804aa83c2d973d969e57779278318b35",
+    "research/experiments/evidence_scorer.py": "9f3a679a25b0d65e64ed71a8de74f41461ee4406933a91fc2641981e4d554820",
+    "research/experiments/evidence_study.py": "0fadc4b578fb46bcb1e12d5c632d575e268afa045f515007a43084bfb0b9d5f4",
+    "research/experiments/fork_completion.py": "6e6d1a1368e42d06751f2b33f2c4a6cfb1c7687c15947331c41a1c5abec2dc5a",
+    "research/experiments/live_logit_checkpoint.py": "d592259bd06cb7d3c705186170e07a29b073d2f6b1f37b315800ce8dc6c17e69",
+    "research/experiments/logit_controller.py": "01d21eff1da8a501dd0b608adf02454c3640ded759fdc724edbbcad3e56901fd",
+    "research/experiments/logit_mechanism.py": "4a0b111612fc964dfc3f54ae3c0aa7c3e76ffc29f8b5c1a4f4f0aa7e54c63049",
+    "research/experiments/logit_runtime.py": "9eb969c914953d905d78ff99fdfb52d80cc848773d562b1f8f618663fd9e72ca",
+    "research/experiments/structured_completion.py": "e4801ffc59fb55966a54c37b86208c9752644e05f377ab7e20d6f70ad9caa335",
+    "research/experiments/structured_controller.py": "10621eb734a7f15e9204997ba70243b21aed657df809e89ae1b1b06e57d4d527",
+    "research/experiments/structured_data.py": "1dc24deb9e8881ee68c03ed246f3ecfe63f09b17fca2a74b8546b555094610b2",
+    "research/experiments/structured_runtime.py": "5dc69da39ae21912eef97dd485c3128e49ca8190f6c7d168fa799015f13214fa",
+    "research/experiments/structured_study.py": "059e05c5fed77e4592bf01cb1788321d16deee7960a5a3b8cab65a2e7a081748",
+    "src/jev_guided_decoding/__init__.py": "39c1d8706715ddc0aa94b1cb23aa3238034250643c3cbd012f81dcc1fdcbaf7c",
+    "src/jev_guided_decoding/backends/__init__.py": "46991b291f9d0f364d515733ab89c42103b51963899530c727b9f8a4638250ae",
+    "src/jev_guided_decoding/backends/transformers.py": "acb2c8ba0ec427593482cada06faf74f5072871260c2c86c276d70dbf98677d3",
+    "src/jev_guided_decoding/benchmark.py": "f25566805b88ff418e10a24d9f8b9017034fc06fede3420051fda7ec235bad43",
+    "src/jev_guided_decoding/cli.py": "1f344c891800e1969d66ded7dc79ff0cc7ff4043d9a2e47d2c5b3a32c7c993e8",
+    "src/jev_guided_decoding/controller.py": "e487360178cc45cb2ce044c2f766fabc64d3b582cc861aec0182163770e1cccc",
+    "src/jev_guided_decoding/experiment_budget.py": "67eae5b043cbb43b45b0a5c2ba74f51d9a4b5d0618c7f88644494d059a41b390",
+    "src/jev_guided_decoding/framing.py": "df5f1c0e09f497cf4bb296ddb12fb70851876a2b40ff2affb6c4084d2e812a0f",
+    "src/jev_guided_decoding/generated_answer.py": "8bca33972c42097b6a479978de2093f398b4e5c927e0ca74ab26eef8abab3d3e",
+    "src/jev_guided_decoding/jev.py": "c87bb0b5c5e202f67623b42d9a5a390bc87ca28ba48acc4b9a63362a70a4fe2a",
+    "src/jev_guided_decoding/local_claims.py": "205d117d2893d36915de5af12b6b544fac203673a1308c0e1d3264d79884a6a4",
+    "src/jev_guided_decoding/logit_bias.py": "4f12176f75b81e72e67e3c405f4c139cf9db18d033118f77b50db149ac1e4243",
+    "src/jev_guided_decoding/reasoning.py": "5d5dba688466e418f419cf89d48ba9acbc6e3fddbed249a455110d171c61d907",
+    "src/jev_guided_decoding/reasoning_scorer.py": "e880a0d7de6ec47e7a418c1d7fc6200a1b433fcc358defe23f9f5704d3edf706",
+    "src/jev_guided_decoding/types.py": "3591d0eef912255d3df2c5b2107da8cc44ee6b0507d40e72e09c2814f09c9151",
+    "src/jev_guided_decoding/verdict.py": "d381794c5872de0aa156a4736c075cde9a4083ebb28e030563036bd10e692d1d",
+    "uv.lock": "b581bd9cbb34bae515ecfdae8c1de58e222106ccb78e6186ac7e63ef47277137"
+  },
+  "random_heads": [
+    [
+      13,
+      3
+    ],
+    [
+      22,
+      10
+    ],
+    [
+      22,
+      12
+    ],
+    [
+      7,
+      11
+    ],
+    [
+      23,
+      15
+    ],
+    [
+      31,
+      8
+    ],
+    [
+      31,
+      6
+    ],
+    [
+      14,
+      0
+    ]
+  ]
+}

@@ -1,13 +1,15 @@
 # R14 proposal: Jev-guided attention to source evidence
 
-Date: 2026-09-21. Status: **design proposal only; no hook implemented, no new
+Date: 2026-09-21. Original status: **design proposal only; no hook implemented, no new
 inference, no measured gain**. This follows the owner's request to reconsider
 placement after the two negative studies. It is not a frozen execution protocol.
 
 Execution update: the owner subsequently authorized implementation and testing.
 The [prospective execution plan](evidence-attention-protocol.md) and
 [dated report](../reports/2026-09-21-evidence-attention/README.md) record current
-status. The original proposal below is preserved; it is not a result claim.
+status: R14 completed with a narrow native-baseline gain, inconclusive lexical/
+prompt superiority, and all resources deleted. The original proposal below is
+preserved as historical; current result claims belong to the dated report.
 
 ## Documentation plan
 

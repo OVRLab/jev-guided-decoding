@@ -26,16 +26,28 @@ hosted Jev service; none trained an improved checkpoint.
 | R13 · completed planned comparison; one failure retained | [Full report](../reports/2026-09-21-structured-study/README.md), [V1 protocol](structured-study-protocol.md), [V2 correction](structured-study-v2-protocol.md) | 300 worlds × three seeds × seven arms; 6,300 attempted, 6,299 completed, one failed soft-step request | Direct 42.67%, staged 37.00%, likelihood 35.44%, Jev 36.00%; all adjusted primary intervals include zero. All completed token paths independently audited; both deployments deleted; cumulative estimate $8.49/$50. V1 failed format and original V2 interruption remain preserved. |
 | R13-C · completed operational continuation | [Registered recovery](structured-study-continuation.md), [frozen remaining schedule](protocols/structured-v2-completion/manifest.json), [new-segment records](../reports/2026-09-21-structured-study/continuation/runs.jsonl.gz) | Only 3,284 never-started jobs after the original 3,016 attempts; unchanged successful inference policy | All 3,284 completed, zero further recovery incidents. No started job or failed request replayed; original failure stays incorrect. Combined raw bytes exactly equal the two segments concatenated. |
 
-## R14 follow-up: implementation verified, GPU evaluation pending
+## R14: completed internal evidence-attention comparison
 
 The owner authorized full implementation/testing and a small cloud GPU after the
-[proposal](evidence-attention-proposal.md). The prospective
-[protocol](evidence-attention-protocol.md) fixes development selection, oracle
-admission, 360 held-out worlds with two contexts/eight arms, and paired statistics.
-The hook/data/runtime/scorer/runner pass local checks: 329 tests, including 21 new
-capability tests. [The report](../reports/2026-09-21-evidence-attention/README.md)
-retains initial failures and verification. Real-model profiling and Jev quality
-evaluation have not run yet; no accuracy gain or new cloud spending is claimed.
+[proposal](evidence-attention-proposal.md). The [prospective protocol](evidence-attention-protocol.md)
+was frozen before inference. All 640 heads were individually profiled on 24 worlds;
+oracle calibration on 72 other worlds selected eight heads at ln(8), improving
+46.53% native to 67.36%. A 12-context authenticated pilot passed operational gates.
+
+All 360 held-out worlds × two contexts × eight arms = **5,760 outputs** completed,
+with zero failures and Granite choosing every final token. Native scored 42.22%,
+Jev attention 51.25%, shuffled 43.75%, lexical 48.89%, prompt 46.81%, random heads
+41.39%, and oracle 56.67%. The adjusted native contrast is +9.03 pp [5.83,12.50];
+lexical/prompt intervals cross zero, leaving the strict all-controls criterion unmet.
+The descriptive constant-UNKNOWN reference is 50%. These are constrained authored
+containment answers, not general reasoning or directly comparable R10/R13 scores.
+
+[The final report](../reports/2026-09-21-evidence-attention/README.md) includes every
+development/test trace, 23,136 independently audited model decisions, 732 Jev
+receipts, initial test failures, unchanged weight hashes and reproducible figures.
+Inference commit 9484509 and source/data/protocol hashes remained frozen. All task
+VM/disk/network resources were deleted after retrieval; new cost about $0.78,
+cumulative estimate $9.27/$50. No inference retry or protocol amendment was needed.
 
 ## Corrections that the paper must retain
 

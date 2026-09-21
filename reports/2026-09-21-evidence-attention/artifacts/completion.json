@@ -1,0 +1,14 @@
+{
+  "oracle_admitted": true,
+  "test_complete": true,
+  "useful_gain": false,
+  "ledger": {
+    "charged_input_tokens": 1802440,
+    "unresolved": 0
+  },
+  "weights_before": "311c1141187580dc0905c810e9d9e78853a0bf37b865bd5a5a511f6eed72f8c9",
+  "weights_after": "311c1141187580dc0905c810e9d9e78853a0bf37b865bd5a5a511f6eed72f8c9",
+  "elapsed_seconds": 962.027704037,
+  "finished_at": "2026-09-21T21:45:12.201244+00:00",
+  "weights_unchanged": true
+}

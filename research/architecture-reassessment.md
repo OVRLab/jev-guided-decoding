@@ -8,8 +8,11 @@ The design below includes serving and broader evaluation work beyond that protot
 
 Later update, 2026-09-21: the [completed R13 test](../reports/2026-09-21-structured-study/README.md)
 did not demonstrate a useful gain from this output-logit mechanism. The historical
-decision below is retained. A [new source-attention proposal](evidence-attention-proposal.md)
-considers an actual internal intervention; it is not implemented or evaluated.
+decision below is retained as historical. The subsequent [R14 internal-attention study](../reports/2026-09-21-evidence-attention/README.md)
+is now implemented and evaluated: 42.22% native versus 51.25% Jev on a different
+constrained containment task; lexical/prompt superiority remains inconclusive.
+Its selected heads and narrow evidence supersede the statements below that no
+internal layer has yet been selected; they do not establish a universal placement.
 
 ## Decision
 

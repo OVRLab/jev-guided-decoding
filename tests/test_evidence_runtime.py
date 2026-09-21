@@ -54,6 +54,23 @@ def test_full_runtime_preserves_prompt_and_generator_owned_answer():
         r.encode({**view, "reference": case["reference"]})
 
 
+def test_unicode_and_repeated_source_text_keep_distinct_exact_token_spans():
+    r = runtime()
+    text = "The parcel café is inside the crate naïve."
+    view = {
+        "id": "unicode",
+        "question": "Which room contains parcel café?",
+        "sources": [{"id": "E01", "text": text}, {"id": "E02", "text": text}],
+        "labels": list(D["LABELS"]),
+    }
+    encoded = r.encode(view)
+    first, second = encoded["span_token_indices"]
+    assert not set(first).intersection(second)
+    assert first[-1] < second[0] < encoded["query_start"]
+    for source, (start, end) in zip(view["sources"], encoded["character_ranges"], strict=True):
+        assert encoded["rendered_prompt"][start:end] == f"[{source['id']}] {text}"
+
+
 def test_full_study_flow_retains_overload_and_continues_only_new_context(tmp_path, monkeypatch):
     import asyncio
     import json

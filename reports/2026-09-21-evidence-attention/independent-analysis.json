@@ -1,0 +1,370 @@
+{
+  "status": "passed",
+  "counters": {
+    "inputs": 1509,
+    "decisions": 23136,
+    "biases": 23136,
+    "zero_pairs": 756,
+    "scorer_receipts": 732
+  },
+  "weights_unchanged": true,
+  "stages": {
+    "pilot": {
+      "summary": {
+        "planned": 96,
+        "recorded": 96,
+        "worlds": 6,
+        "arms": {
+          "native": {
+            "planned": 12,
+            "recorded": 12,
+            "missing": 0,
+            "complete": 12,
+            "correct": 4,
+            "accuracy": 0.3333333333333333,
+            "seconds": 0.30876430600005733,
+            "by_condition": {
+              "clean": 0.3333333333333333,
+              "distracted": 0.3333333333333333
+            }
+          },
+          "zero": {
+            "planned": 12,
+            "recorded": 12,
+            "missing": 0,
+            "complete": 12,
+            "correct": 4,
+            "accuracy": 0.3333333333333333,
+            "seconds": 0.3136141919999318,
+            "by_condition": {
+              "clean": 0.3333333333333333,
+              "distracted": 0.3333333333333333
+            }
+          },
+          "oracle": {
+            "planned": 12,
+            "recorded": 12,
+            "missing": 0,
+            "complete": 12,
+            "correct": 7,
+            "accuracy": 0.5833333333333334,
+            "seconds": 0.33087732000012693,
+            "by_condition": {
+              "clean": 0.6666666666666666,
+              "distracted": 0.5
+            }
+          },
+          "jev": {
+            "planned": 12,
+            "recorded": 12,
+            "missing": 0,
+            "complete": 12,
+            "correct": 6,
+            "accuracy": 0.5,
+            "seconds": 0.3274858049996965,
+            "by_condition": {
+              "clean": 0.5,
+              "distracted": 0.5
+            }
+          },
+          "shuffled": {
+            "planned": 12,
+            "recorded": 12,
+            "missing": 0,
+            "complete": 12,
+            "correct": 3,
+            "accuracy": 0.25,
+            "seconds": 0.3307452940001667,
+            "by_condition": {
+              "clean": 0.3333333333333333,
+              "distracted": 0.16666666666666666
+            }
+          },
+          "lexical": {
+            "planned": 12,
+            "recorded": 12,
+            "missing": 0,
+            "complete": 12,
+            "correct": 6,
+            "accuracy": 0.5,
+            "seconds": 0.336444995999841,
+            "by_condition": {
+              "clean": 0.5,
+              "distracted": 0.5
+            }
+          },
+          "random_heads": {
+            "planned": 12,
+            "recorded": 12,
+            "missing": 0,
+            "complete": 12,
+            "correct": 4,
+            "accuracy": 0.3333333333333333,
+            "seconds": 0.32780836400002045,
+            "by_condition": {
+              "clean": 0.3333333333333333,
+              "distracted": 0.3333333333333333
+            }
+          },
+          "prompt": {
+            "planned": 12,
+            "recorded": 12,
+            "missing": 0,
+            "complete": 12,
+            "correct": 6,
+            "accuracy": 0.5,
+            "seconds": 0.30916313600005196,
+            "by_condition": {
+              "clean": 0.5,
+              "distracted": 0.5
+            }
+          }
+        },
+        "comparisons": {
+          "native": {
+            "difference": 0.16666666666666666,
+            "wins": 2,
+            "losses": 0,
+            "ties": 4
+          },
+          "shuffled": {
+            "difference": 0.25,
+            "wins": 2,
+            "losses": 0,
+            "ties": 4
+          },
+          "lexical": {
+            "difference": 0.0,
+            "wins": 0,
+            "losses": 0,
+            "ties": 6
+          },
+          "prompt": {
+            "difference": 0.0,
+            "wins": 0,
+            "losses": 0,
+            "ties": 6
+          }
+        },
+        "useful_gain": false
+      },
+      "independent_statistics": {
+        "accuracy": {
+          "native": 0.3333333333333333,
+          "zero": 0.3333333333333333,
+          "oracle": 0.5833333333333334,
+          "jev": 0.5,
+          "shuffled": 0.25,
+          "lexical": 0.5,
+          "random_heads": 0.3333333333333333,
+          "prompt": 0.5
+        },
+        "comparisons": {}
+      }
+    },
+    "test": {
+      "summary": {
+        "planned": 5760,
+        "recorded": 5760,
+        "worlds": 360,
+        "arms": {
+          "native": {
+            "planned": 720,
+            "recorded": 720,
+            "missing": 0,
+            "complete": 720,
+            "correct": 304,
+            "accuracy": 0.4222222222222222,
+            "seconds": 18.441568995000125,
+            "by_condition": {
+              "clean": 0.4361111111111111,
+              "distracted": 0.4083333333333333
+            }
+          },
+          "zero": {
+            "planned": 720,
+            "recorded": 720,
+            "missing": 0,
+            "complete": 720,
+            "correct": 304,
+            "accuracy": 0.4222222222222222,
+            "seconds": 18.55154618499739,
+            "by_condition": {
+              "clean": 0.4361111111111111,
+              "distracted": 0.4083333333333333
+            }
+          },
+          "oracle": {
+            "planned": 720,
+            "recorded": 720,
+            "missing": 0,
+            "complete": 720,
+            "correct": 408,
+            "accuracy": 0.5666666666666667,
+            "seconds": 19.761555065000834,
+            "by_condition": {
+              "clean": 0.5944444444444444,
+              "distracted": 0.5388888888888889
+            }
+          },
+          "jev": {
+            "planned": 720,
+            "recorded": 720,
+            "missing": 0,
+            "complete": 720,
+            "correct": 369,
+            "accuracy": 0.5125,
+            "seconds": 19.767301423005733,
+            "by_condition": {
+              "clean": 0.5361111111111111,
+              "distracted": 0.4888888888888889
+            }
+          },
+          "shuffled": {
+            "planned": 720,
+            "recorded": 720,
+            "missing": 0,
+            "complete": 720,
+            "correct": 315,
+            "accuracy": 0.4375,
+            "seconds": 19.76021974299772,
+            "by_condition": {
+              "clean": 0.46944444444444444,
+              "distracted": 0.40555555555555556
+            }
+          },
+          "lexical": {
+            "planned": 720,
+            "recorded": 720,
+            "missing": 0,
+            "complete": 720,
+            "correct": 352,
+            "accuracy": 0.4888888888888889,
+            "seconds": 19.742186858998025,
+            "by_condition": {
+              "clean": 0.5,
+              "distracted": 0.4777777777777778
+            }
+          },
+          "random_heads": {
+            "planned": 720,
+            "recorded": 720,
+            "missing": 0,
+            "complete": 720,
+            "correct": 298,
+            "accuracy": 0.41388888888888886,
+            "seconds": 19.643586049998703,
+            "by_condition": {
+              "clean": 0.4361111111111111,
+              "distracted": 0.39166666666666666
+            }
+          },
+          "prompt": {
+            "planned": 720,
+            "recorded": 720,
+            "missing": 0,
+            "complete": 720,
+            "correct": 337,
+            "accuracy": 0.46805555555555556,
+            "seconds": 18.475827794003408,
+            "by_condition": {
+              "clean": 0.46111111111111114,
+              "distracted": 0.475
+            }
+          }
+        },
+        "comparisons": {
+          "native": {
+            "difference": 0.09027777777777778,
+            "wins": 60,
+            "losses": 8,
+            "ties": 292,
+            "interval": [
+              0.058333333333333334,
+              0.125
+            ],
+            "interval_level": 0.9875
+          },
+          "shuffled": {
+            "difference": 0.075,
+            "wins": 61,
+            "losses": 12,
+            "ties": 287,
+            "interval": [
+              0.043055555555555555,
+              0.10833333333333334
+            ],
+            "interval_level": 0.9875
+          },
+          "lexical": {
+            "difference": 0.02361111111111111,
+            "wins": 35,
+            "losses": 22,
+            "ties": 303,
+            "interval": [
+              -0.009722222222222222,
+              0.059722222222222225
+            ],
+            "interval_level": 0.9875
+          },
+          "prompt": {
+            "difference": 0.044444444444444446,
+            "wins": 73,
+            "losses": 48,
+            "ties": 239,
+            "interval": [
+              -0.002777777777777778,
+              0.09166666666666666
+            ],
+            "interval_level": 0.9875
+          }
+        },
+        "useful_gain": false
+      },
+      "independent_statistics": {
+        "accuracy": {
+          "native": 0.4222222222222222,
+          "zero": 0.4222222222222222,
+          "oracle": 0.5666666666666667,
+          "jev": 0.5125,
+          "shuffled": 0.4375,
+          "lexical": 0.4888888888888889,
+          "random_heads": 0.41388888888888886,
+          "prompt": 0.46805555555555556
+        },
+        "comparisons": {
+          "native": {
+            "difference": 0.09027777777777778,
+            "interval": [
+              0.058333333333333334,
+              0.125
+            ]
+          },
+          "shuffled": {
+            "difference": 0.075,
+            "interval": [
+              0.043055555555555555,
+              0.10833333333333334
+            ]
+          },
+          "lexical": {
+            "difference": 0.02361111111111111,
+            "interval": [
+              -0.009722222222222222,
+              0.059722222222222225
+            ]
+          },
+          "prompt": {
+            "difference": 0.044444444444444446,
+            "interval": [
+              -0.002777777777777778,
+              0.09166666666666666
+            ]
+          }
+        }
+      }
+    }
+  },
+  "oracle_admitted": true,
+  "analysis_source_sha256": "24e16ddaa0877f9f025be9e1c090113729cde191e46f6d4ad6bd31a1e9fcc166"
+}

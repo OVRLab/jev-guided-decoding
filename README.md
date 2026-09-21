@@ -6,12 +6,21 @@ evaluate those candidates, and continue generation from the selected tokens.
 IBM Granite 4.0 1B is the first test model; the controller uses backend and scorer
 protocols so other compatible models can be evaluated independently.
 
-**Status:** a Transformers prototype with frozen model weights, an answer controller,
-and bounded search over intermediate steps with saved alternatives. This is generation-time text guidance, not a fusion of
-Jev into attention layers. A vLLM serving extension is conditional on measured
-gains; no vLLM extension is included in this version.
+**Status:** frozen-weight Transformers controllers for continuations and reasoning
+steps, plus a separate experimental hook that turns Jev source relevance into
+biases inside selected Granite attention heads. No model training or vLLM serving
+extension is included.
 
-[Latest seven-arm study](reports/2026-09-21-structured-study/README.md): all 6,300
+[Latest internal-attention study](reports/2026-09-21-evidence-attention/README.md):
+all **5,760 outputs completed without errors**. Granite scored **42.22%** and Jev
+attention **51.25%** (+9.03 pp, adjusted interval [5.83,12.50]) on held-out authored
+containment questions. Lexical/prompt superiority is inconclusive, so the stricter
+all-controls criterion is unmet. Always UNKNOWN obtains 50% on this constrained
+one-token task; general reasoning improvement is unproven. Full traces, source/data
+hashes, independent audits and figures are public. Weights are unchanged; all task
+resources are deleted; cumulative estimated spending is **$9.27/$50**.
+
+[Earlier seven-arm study](reports/2026-09-21-structured-study/README.md): all 6,300
 planned jobs were attempted on 300 authored logic worlds; 6,299 completed and one
 service failure remains incorrect. Direct Granite scored **42.67%**, staged
 Granite **37.00%**, likelihood search **35.44%**, and bounded Jev guidance **36.00%**.
@@ -19,7 +28,7 @@ No primary comparison established a useful accuracy gain. Every arm used the sam
 final-label grammar, and Granite chose every completed final label. The report
 includes complete public traces, adjusted intervals, controls, figures and an
 independent token/input audit. Both GPU deployments are deleted; cumulative
-estimated spending is $8.49 of the $50 allowance.
+estimated spending at R13 completion was $8.49 of the $50 allowance.
 
 [Earlier external-benchmark study](reports/2026-09-20-generated-answer-study/README.md):
 all 3,600 trials were recorded with Granite generating every final answer. Jev did
@@ -35,7 +44,8 @@ now passes real-Granite probability, frozen-weight and zero-bias checks with rep
 Jev scores. Its original R12 development scoring was interrupted by a provider error, with
 inadequate grader coverage and final formatting. R13 subsequently repaired the
 operational issues and completed the comparison above, without demonstrating a
-quality gain. No effective hidden-layer insertion point is established.
+quality gain. R14 subsequently evaluated the internal-attention mechanism above;
+its narrower evidence does not establish a generally best insertion point.
 
 [Initial measured results](reports/2026-09-20-granite-smoke/README.md): the 12-case
 smoke test demonstrated in-generation control, but no established quality gain;

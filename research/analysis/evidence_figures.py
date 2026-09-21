@@ -23,6 +23,10 @@ def render(results, output):
         for extension in ("png", "svg", "pdf"):
             path = output / f"{name}.{extension}"
             fig.savefig(path, dpi=180, bbox_inches="tight")
+            if extension == "svg":
+                path.write_text(
+                    "\n".join(line.rstrip() for line in path.read_text().splitlines()) + "\n"
+                )
             artifacts.append(path)
         plt.close(fig)
 
@@ -43,14 +47,17 @@ def render(results, output):
         "24 development worlds; circles mark selected heads",
     )
     fig.colorbar(
-        shown, ax=ax, label="Mean change in log probability of reference answer", shrink=0.8
+        shown,
+        ax=ax,
+        label="Mean change in reference log probability (seven-label grammar)",
+        shrink=0.8,
     )
     fig.tight_layout()
     save(fig, "head-profile")
 
     configurations = policy["all_configurations"]
     labels = ["Native"] + [
-        f"{c['count']} head{'s' if c['count'] != 1 else ''}\nstrength {c['strength']:.2f}"
+        f"{c['count']} head{'s' if c['count'] != 1 else ''}\nln({round(np.exp(c['strength']))})"
         for c in configurations
     ]
     scores = [policy["native"]["accuracy"]] + [c["accuracy"] for c in configurations]
@@ -116,9 +123,10 @@ def render(results, output):
             ax.text(
                 bar.get_x() + bar.get_width() / 2,
                 score + 1.2,
-                f"{score:.1f}%",
+                f"{score:.2f}%",
                 ha="center",
                 fontsize=9,
+                bbox={"facecolor": "white", "edgecolor": "none", "pad": 0.5},
             )
         ax.set(
             ylim=(0, 108),
@@ -127,6 +135,15 @@ def render(results, output):
             "360 worlds, two contexts; *oracle uses privileged span annotations",
         )
         ax.tick_params(axis="x", rotation=15)
+        ax.axhline(50, color="#333333", linestyle=":", linewidth=0.8)
+        ax.text(
+            0.99,
+            0.88,
+            "Always UNKNOWN: 50% (post-hoc descriptive reference)",
+            transform=ax.transAxes,
+            ha="right",
+            fontsize=9,
+        )
         fig.tight_layout()
         save(fig, "test-accuracy")
 

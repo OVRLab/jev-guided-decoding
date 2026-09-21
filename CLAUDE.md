@@ -23,6 +23,7 @@ weaken their requirements in this entrypoint.
 | [Transformers backend](src/jev_guided_decoding/backends/transformers.py) | Frozen causal model, token generation, stopping, likelihood, device accounting |
 | [benchmark.py](src/jev_guided_decoding/benchmark.py) | Dataset validation, lexical metrics, summaries |
 | [cli.py](src/jev_guided_decoding/cli.py) | Configuration, generation/benchmark flows, trace output |
+| [Evidence attention research](research/experiments/evidence_attention.py) | Scoped source-key biases within selected Granite attention heads; [full study](reports/2026-09-21-evidence-attention/README.md), separate from package controllers |
 | [configs](configs/) / [data](data/) | Pinned experiments and fictional fixtures |
 | [tests](tests/) / [reports](reports/) | Offline checks and immutable experimental evidence |
 

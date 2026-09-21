@@ -1,10 +1,13 @@
 # Verified implementation inventory
 
-R14 update: a scoped internal attention hook and source-relevance study runner
-are implemented on the research branch, with 21 new offline tests and 329 total
-passing. Real-model quality evaluation is pending; see the
-[dated report](reports/2026-09-21-evidence-attention/README.md). This does not change
-the scope of the published package or establish an improved checkpoint.
+R14 update: the internal attention hook and full study are completed on the
+research branch. All 5,760 held-out outputs completed without API/model failures;
+Granite scored 42.22%, Jev attention 51.25% (+9.03 pp, adjusted interval [5.83,12.50]).
+Lexical/prompt superiority is inconclusive and the all-controls criterion is unmet;
+always UNKNOWN scores 50% on this constrained task. See the [full report](reports/2026-09-21-evidence-attention/README.md)
+for all traces, 23,136 audited decisions, 732 receipts and unchanged weight hashes.
+All task resources are deleted; cumulative estimate $9.27/$50. This is research
+branch evidence, not a published package/model or general reasoning improvement.
 
 Inventory introduced on 2026-09-20 by
 [PR #1](https://github.com/OVRLab/jev-guided-decoding/pull/1); its GitHub status
@@ -53,7 +56,7 @@ Independent audits match all 6,300 frozen prompts, all 6,299 completed token pat
 35,996 candidate grades and 10,798 accepted-claim grades. Zero bias reproduces all
 900 staged paths, and all 3,600 initial-pool comparisons match. Both L40S deployments
 and their task resources are deleted after verified retrieval. Cumulative estimated
-spending is $8.49 before tax/separate network charges. No accuracy gain is established.
+spending at R13 completion was $8.49 before tax/separate network charges. R13 established no accuracy gain; the later R14 result is stated above.
 
 
 ## Not implemented or not demonstrated

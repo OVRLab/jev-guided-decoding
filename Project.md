@@ -20,7 +20,9 @@ reasoning improvement. Negative results and verifier mistakes are valid findings
 The backend proposes token continuations. A scorer evaluates their text and
 evidence. The controller selects an eligible continuation or explicitly stops.
 The CLI records inputs, decisions, counts, and results; the benchmark compares
-guided behavior with generation controls. See [CLAUDE.md](CLAUDE.md) for paths.
+guided behavior with generation controls. A separate [R14 research path](reports/2026-09-21-evidence-attention/README.md)
+maps Jev source relevance into selected internal attention heads during constrained
+answer generation. See [CLAUDE.md](CLAUDE.md) for paths.
 
 The current scope is frozen-weight inference, a Transformers adapter, Jev's hosted
 API, and document-grounded fixtures. It does not merge neural networks, access

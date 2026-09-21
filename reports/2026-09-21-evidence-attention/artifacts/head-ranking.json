@@ -1,0 +1,4482 @@
+[
+  {
+    "head": [
+      34,
+      4
+    ],
+    "mean_logprob_change": 0.6537690667834058
+  },
+  {
+    "head": [
+      38,
+      11
+    ],
+    "mean_logprob_change": 0.4459149779913239
+  },
+  {
+    "head": [
+      37,
+      14
+    ],
+    "mean_logprob_change": 0.16038236590477484
+  },
+  {
+    "head": [
+      30,
+      4
+    ],
+    "mean_logprob_change": 0.15612118729561839
+  },
+  {
+    "head": [
+      23,
+      8
+    ],
+    "mean_logprob_change": 0.1546998051125
+  },
+  {
+    "head": [
+      19,
+      6
+    ],
+    "mean_logprob_change": 0.1495479035801956
+  },
+  {
+    "head": [
+      21,
+      13
+    ],
+    "mean_logprob_change": 0.14468917028045442
+  },
+  {
+    "head": [
+      19,
+      11
+    ],
+    "mean_logprob_change": 0.1393226048394825
+  },
+  {
+    "head": [
+      19,
+      15
+    ],
+    "mean_logprob_change": 0.1321858439995013
+  },
+  {
+    "head": [
+      21,
+      14
+    ],
+    "mean_logprob_change": 0.13205633280122808
+  },
+  {
+    "head": [
+      29,
+      10
+    ],
+    "mean_logprob_change": 0.13094574157514247
+  },
+  {
+    "head": [
+      20,
+      11
+    ],
+    "mean_logprob_change": 0.12659801662047276
+  },
+  {
+    "head": [
+      19,
+      7
+    ],
+    "mean_logprob_change": 0.12577619019302724
+  },
+  {
+    "head": [
+      35,
+      2
+    ],
+    "mean_logprob_change": 0.11041027513823393
+  },
+  {
+    "head": [
+      16,
+      10
+    ],
+    "mean_logprob_change": 0.11019335154682042
+  },
+  {
+    "head": [
+      19,
+      13
+    ],
+    "mean_logprob_change": 0.11005278744444048
+  },
+  {
+    "head": [
+      4,
+      13
+    ],
+    "mean_logprob_change": 0.10785841522739088
+  },
+  {
+    "head": [
+      4,
+      3
+    ],
+    "mean_logprob_change": 0.10705830551403996
+  },
+  {
+    "head": [
+      20,
+      1
+    ],
+    "mean_logprob_change": 0.10664854239572914
+  },
+  {
+    "head": [
+      0,
+      7
+    ],
+    "mean_logprob_change": 0.10483426478798184
+  },
+  {
+    "head": [
+      0,
+      5
+    ],
+    "mean_logprob_change": 0.1027869294329637
+  },
+  {
+    "head": [
+      32,
+      3
+    ],
+    "mean_logprob_change": 0.10127436089781135
+  },
+  {
+    "head": [
+      21,
+      10
+    ],
+    "mean_logprob_change": 0.0964045604392591
+  },
+  {
+    "head": [
+      9,
+      5
+    ],
+    "mean_logprob_change": 0.09515301356368933
+  },
+  {
+    "head": [
+      32,
+      2
+    ],
+    "mean_logprob_change": 0.09018116362599515
+  },
+  {
+    "head": [
+      19,
+      9
+    ],
+    "mean_logprob_change": 0.08783328575580379
+  },
+  {
+    "head": [
+      19,
+      2
+    ],
+    "mean_logprob_change": 0.08708791620384004
+  },
+  {
+    "head": [
+      39,
+      5
+    ],
+    "mean_logprob_change": 0.0868528446601974
+  },
+  {
+    "head": [
+      21,
+      7
+    ],
+    "mean_logprob_change": 0.08463975654207558
+  },
+  {
+    "head": [
+      19,
+      1
+    ],
+    "mean_logprob_change": 0.0842137194328818
+  },
+  {
+    "head": [
+      18,
+      14
+    ],
+    "mean_logprob_change": 0.08396121350304946
+  },
+  {
+    "head": [
+      19,
+      14
+    ],
+    "mean_logprob_change": 0.08270082311890872
+  },
+  {
+    "head": [
+      30,
+      2
+    ],
+    "mean_logprob_change": 0.08174628575902085
+  },
+  {
+    "head": [
+      27,
+      5
+    ],
+    "mean_logprob_change": 0.08034340173522764
+  },
+  {
+    "head": [
+      19,
+      4
+    ],
+    "mean_logprob_change": 0.07978049294754638
+  },
+  {
+    "head": [
+      14,
+      11
+    ],
+    "mean_logprob_change": 0.0795159771581521
+  },
+  {
+    "head": [
+      28,
+      5
+    ],
+    "mean_logprob_change": 0.0789797720623602
+  },
+  {
+    "head": [
+      3,
+      3
+    ],
+    "mean_logprob_change": 0.0784946726279691
+  },
+  {
+    "head": [
+      25,
+      11
+    ],
+    "mean_logprob_change": 0.07813153793379611
+  },
+  {
+    "head": [
+      23,
+      10
+    ],
+    "mean_logprob_change": 0.07803804293300591
+  },
+  {
+    "head": [
+      18,
+      9
+    ],
+    "mean_logprob_change": 0.0777661648518776
+  },
+  {
+    "head": [
+      22,
+      10
+    ],
+    "mean_logprob_change": 0.07722028520206568
+  },
+  {
+    "head": [
+      25,
+      0
+    ],
+    "mean_logprob_change": 0.07713458932503811
+  },
+  {
+    "head": [
+      27,
+      4
+    ],
+    "mean_logprob_change": 0.0761128631420409
+  },
+  {
+    "head": [
+      4,
+      15
+    ],
+    "mean_logprob_change": 0.07546393933408341
+  },
+  {
+    "head": [
+      19,
+      8
+    ],
+    "mean_logprob_change": 0.07523098026214713
+  },
+  {
+    "head": [
+      23,
+      6
+    ],
+    "mean_logprob_change": 0.07511345095096354
+  },
+  {
+    "head": [
+      19,
+      3
+    ],
+    "mean_logprob_change": 0.07469742128345987
+  },
+  {
+    "head": [
+      0,
+      6
+    ],
+    "mean_logprob_change": 0.0742936410937476
+  },
+  {
+    "head": [
+      37,
+      3
+    ],
+    "mean_logprob_change": 0.07348519583701234
+  },
+  {
+    "head": [
+      19,
+      10
+    ],
+    "mean_logprob_change": 0.07268608247632473
+  },
+  {
+    "head": [
+      26,
+      13
+    ],
+    "mean_logprob_change": 0.0697731367306299
+  },
+  {
+    "head": [
+      29,
+      2
+    ],
+    "mean_logprob_change": 0.06889260730534431
+  },
+  {
+    "head": [
+      28,
+      12
+    ],
+    "mean_logprob_change": 0.06687450302135521
+  },
+  {
+    "head": [
+      4,
+      4
+    ],
+    "mean_logprob_change": 0.06400761016249254
+  },
+  {
+    "head": [
+      30,
+      5
+    ],
+    "mean_logprob_change": 0.06280318465395011
+  },
+  {
+    "head": [
+      23,
+      7
+    ],
+    "mean_logprob_change": 0.06243409657140089
+  },
+  {
+    "head": [
+      0,
+      4
+    ],
+    "mean_logprob_change": 0.062213350039954235
+  },
+  {
+    "head": [
+      18,
+      8
+    ],
+    "mean_logprob_change": 0.06015400367178488
+  },
+  {
+    "head": [
+      28,
+      1
+    ],
+    "mean_logprob_change": 0.05984840905164946
+  },
+  {
+    "head": [
+      22,
+      9
+    ],
+    "mean_logprob_change": 0.058953668144251035
+  },
+  {
+    "head": [
+      28,
+      0
+    ],
+    "mean_logprob_change": 0.05878213852711692
+  },
+  {
+    "head": [
+      9,
+      0
+    ],
+    "mean_logprob_change": 0.0577203421497935
+  },
+  {
+    "head": [
+      19,
+      5
+    ],
+    "mean_logprob_change": 0.05731170482778571
+  },
+  {
+    "head": [
+      16,
+      2
+    ],
+    "mean_logprob_change": 0.05705421215474471
+  },
+  {
+    "head": [
+      37,
+      4
+    ],
+    "mean_logprob_change": 0.05653881173853704
+  },
+  {
+    "head": [
+      36,
+      6
+    ],
+    "mean_logprob_change": 0.056221949781609694
+  },
+  {
+    "head": [
+      0,
+      11
+    ],
+    "mean_logprob_change": 0.0552923799606494
+  },
+  {
+    "head": [
+      23,
+      5
+    ],
+    "mean_logprob_change": 0.05512428320970474
+  },
+  {
+    "head": [
+      22,
+      1
+    ],
+    "mean_logprob_change": 0.054647782005185004
+  },
+  {
+    "head": [
+      24,
+      3
+    ],
+    "mean_logprob_change": 0.05365051731194242
+  },
+  {
+    "head": [
+      18,
+      6
+    ],
+    "mean_logprob_change": 0.05243590713843632
+  },
+  {
+    "head": [
+      7,
+      4
+    ],
+    "mean_logprob_change": 0.05229785546318954
+  },
+  {
+    "head": [
+      20,
+      12
+    ],
+    "mean_logprob_change": 0.05180770868339369
+  },
+  {
+    "head": [
+      4,
+      11
+    ],
+    "mean_logprob_change": 0.051409293598292376
+  },
+  {
+    "head": [
+      28,
+      9
+    ],
+    "mean_logprob_change": 0.0513079009353074
+  },
+  {
+    "head": [
+      23,
+      9
+    ],
+    "mean_logprob_change": 0.051052694221488094
+  },
+  {
+    "head": [
+      3,
+      14
+    ],
+    "mean_logprob_change": 0.05082090945975181
+  },
+  {
+    "head": [
+      9,
+      6
+    ],
+    "mean_logprob_change": 0.05067471894821007
+  },
+  {
+    "head": [
+      27,
+      7
+    ],
+    "mean_logprob_change": 0.05045390276286476
+  },
+  {
+    "head": [
+      17,
+      8
+    ],
+    "mean_logprob_change": 0.050419431621132306
+  },
+  {
+    "head": [
+      10,
+      1
+    ],
+    "mean_logprob_change": 0.0499264182353704
+  },
+  {
+    "head": [
+      1,
+      13
+    ],
+    "mean_logprob_change": 0.049596312283916776
+  },
+  {
+    "head": [
+      22,
+      7
+    ],
+    "mean_logprob_change": 0.04911540907812107
+  },
+  {
+    "head": [
+      3,
+      13
+    ],
+    "mean_logprob_change": 0.04826878921110819
+  },
+  {
+    "head": [
+      33,
+      2
+    ],
+    "mean_logprob_change": 0.04796010094990336
+  },
+  {
+    "head": [
+      16,
+      11
+    ],
+    "mean_logprob_change": 0.04791070551586765
+  },
+  {
+    "head": [
+      17,
+      14
+    ],
+    "mean_logprob_change": 0.04762584600423563
+  },
+  {
+    "head": [
+      24,
+      5
+    ],
+    "mean_logprob_change": 0.047553945000249474
+  },
+  {
+    "head": [
+      18,
+      5
+    ],
+    "mean_logprob_change": 0.04726436937170662
+  },
+  {
+    "head": [
+      16,
+      7
+    ],
+    "mean_logprob_change": 0.0465421315478479
+  },
+  {
+    "head": [
+      0,
+      12
+    ],
+    "mean_logprob_change": 0.046456456327728046
+  },
+  {
+    "head": [
+      20,
+      10
+    ],
+    "mean_logprob_change": 0.0460224524980905
+  },
+  {
+    "head": [
+      16,
+      13
+    ],
+    "mean_logprob_change": 0.0454517913952289
+  },
+  {
+    "head": [
+      36,
+      14
+    ],
+    "mean_logprob_change": 0.045436816491343124
+  },
+  {
+    "head": [
+      9,
+      4
+    ],
+    "mean_logprob_change": 0.0451475290257368
+  },
+  {
+    "head": [
+      10,
+      3
+    ],
+    "mean_logprob_change": 0.04506793378299803
+  },
+  {
+    "head": [
+      8,
+      4
+    ],
+    "mean_logprob_change": 0.044444155677578694
+  },
+  {
+    "head": [
+      37,
+      1
+    ],
+    "mean_logprob_change": 0.0444125440787276
+  },
+  {
+    "head": [
+      6,
+      9
+    ],
+    "mean_logprob_change": 0.04428593605619217
+  },
+  {
+    "head": [
+      20,
+      6
+    ],
+    "mean_logprob_change": 0.043738774936210124
+  },
+  {
+    "head": [
+      28,
+      13
+    ],
+    "mean_logprob_change": 0.04362540600580966
+  },
+  {
+    "head": [
+      9,
+      11
+    ],
+    "mean_logprob_change": 0.04294762330254995
+  },
+  {
+    "head": [
+      39,
+      11
+    ],
+    "mean_logprob_change": 0.042773008592972644
+  },
+  {
+    "head": [
+      21,
+      0
+    ],
+    "mean_logprob_change": 0.04158777266612947
+  },
+  {
+    "head": [
+      23,
+      3
+    ],
+    "mean_logprob_change": 0.04157385578011788
+  },
+  {
+    "head": [
+      22,
+      5
+    ],
+    "mean_logprob_change": 0.04143743298394665
+  },
+  {
+    "head": [
+      27,
+      1
+    ],
+    "mean_logprob_change": 0.04130417985748304
+  },
+  {
+    "head": [
+      36,
+      15
+    ],
+    "mean_logprob_change": 0.0410958545456831
+  },
+  {
+    "head": [
+      36,
+      0
+    ],
+    "mean_logprob_change": 0.04109464230539737
+  },
+  {
+    "head": [
+      22,
+      15
+    ],
+    "mean_logprob_change": 0.04107188818081844
+  },
+  {
+    "head": [
+      33,
+      15
+    ],
+    "mean_logprob_change": 0.04048406926333683
+  },
+  {
+    "head": [
+      33,
+      7
+    ],
+    "mean_logprob_change": 0.03984077621133969
+  },
+  {
+    "head": [
+      24,
+      2
+    ],
+    "mean_logprob_change": 0.03980091034747808
+  },
+  {
+    "head": [
+      24,
+      13
+    ],
+    "mean_logprob_change": 0.03916504139390901
+  },
+  {
+    "head": [
+      35,
+      12
+    ],
+    "mean_logprob_change": 0.03877835002609731
+  },
+  {
+    "head": [
+      25,
+      15
+    ],
+    "mean_logprob_change": 0.03857645709884951
+  },
+  {
+    "head": [
+      18,
+      15
+    ],
+    "mean_logprob_change": 0.038526277453124716
+  },
+  {
+    "head": [
+      35,
+      0
+    ],
+    "mean_logprob_change": 0.03849026970778142
+  },
+  {
+    "head": [
+      21,
+      3
+    ],
+    "mean_logprob_change": 0.037917837448157195
+  },
+  {
+    "head": [
+      18,
+      3
+    ],
+    "mean_logprob_change": 0.03732474217463388
+  },
+  {
+    "head": [
+      35,
+      15
+    ],
+    "mean_logprob_change": 0.036686655441847286
+  },
+  {
+    "head": [
+      14,
+      5
+    ],
+    "mean_logprob_change": 0.03646605500783251
+  },
+  {
+    "head": [
+      0,
+      10
+    ],
+    "mean_logprob_change": 0.036418055256788755
+  },
+  {
+    "head": [
+      37,
+      8
+    ],
+    "mean_logprob_change": 0.035574728325215084
+  },
+  {
+    "head": [
+      37,
+      7
+    ],
+    "mean_logprob_change": 0.03557064580586534
+  },
+  {
+    "head": [
+      18,
+      10
+    ],
+    "mean_logprob_change": 0.035413641738705516
+  },
+  {
+    "head": [
+      30,
+      10
+    ],
+    "mean_logprob_change": 0.03532137322051171
+  },
+  {
+    "head": [
+      23,
+      4
+    ],
+    "mean_logprob_change": 0.03523294695741814
+  },
+  {
+    "head": [
+      33,
+      14
+    ],
+    "mean_logprob_change": 0.03486764451008265
+  },
+  {
+    "head": [
+      19,
+      0
+    ],
+    "mean_logprob_change": 0.03443556588349451
+  },
+  {
+    "head": [
+      30,
+      13
+    ],
+    "mean_logprob_change": 0.03415297820916131
+  },
+  {
+    "head": [
+      23,
+      13
+    ],
+    "mean_logprob_change": 0.034151501641305634
+  },
+  {
+    "head": [
+      36,
+      4
+    ],
+    "mean_logprob_change": 0.03411384767358853
+  },
+  {
+    "head": [
+      33,
+      6
+    ],
+    "mean_logprob_change": 0.03375205086271179
+  },
+  {
+    "head": [
+      9,
+      12
+    ],
+    "mean_logprob_change": 0.033675555690300306
+  },
+  {
+    "head": [
+      8,
+      13
+    ],
+    "mean_logprob_change": 0.03257028136500092
+  },
+  {
+    "head": [
+      36,
+      5
+    ],
+    "mean_logprob_change": 0.03230976394309049
+  },
+  {
+    "head": [
+      39,
+      12
+    ],
+    "mean_logprob_change": 0.03207682166310578
+  },
+  {
+    "head": [
+      14,
+      4
+    ],
+    "mean_logprob_change": 0.03187256354286365
+  },
+  {
+    "head": [
+      38,
+      9
+    ],
+    "mean_logprob_change": 0.03187103536229888
+  },
+  {
+    "head": [
+      39,
+      14
+    ],
+    "mean_logprob_change": 0.03159032173223524
+  },
+  {
+    "head": [
+      29,
+      0
+    ],
+    "mean_logprob_change": 0.03152479160369903
+  },
+  {
+    "head": [
+      38,
+      2
+    ],
+    "mean_logprob_change": 0.031501815737298246
+  },
+  {
+    "head": [
+      36,
+      11
+    ],
+    "mean_logprob_change": 0.03122776743656216
+  },
+  {
+    "head": [
+      15,
+      15
+    ],
+    "mean_logprob_change": 0.031138555337461474
+  },
+  {
+    "head": [
+      4,
+      1
+    ],
+    "mean_logprob_change": 0.03028310900738287
+  },
+  {
+    "head": [
+      27,
+      11
+    ],
+    "mean_logprob_change": 0.029991551932782346
+  },
+  {
+    "head": [
+      36,
+      3
+    ],
+    "mean_logprob_change": 0.02968391600469487
+  },
+  {
+    "head": [
+      26,
+      1
+    ],
+    "mean_logprob_change": 0.029335338878639882
+  },
+  {
+    "head": [
+      14,
+      10
+    ],
+    "mean_logprob_change": 0.029046845910750876
+  },
+  {
+    "head": [
+      1,
+      11
+    ],
+    "mean_logprob_change": 0.028926456406162687
+  },
+  {
+    "head": [
+      38,
+      5
+    ],
+    "mean_logprob_change": 0.02887379795591799
+  },
+  {
+    "head": [
+      30,
+      8
+    ],
+    "mean_logprob_change": 0.028867099255101208
+  },
+  {
+    "head": [
+      30,
+      9
+    ],
+    "mean_logprob_change": 0.028636598469363807
+  },
+  {
+    "head": [
+      18,
+      2
+    ],
+    "mean_logprob_change": 0.028327601173175242
+  },
+  {
+    "head": [
+      21,
+      5
+    ],
+    "mean_logprob_change": 0.027769626605832112
+  },
+  {
+    "head": [
+      33,
+      11
+    ],
+    "mean_logprob_change": 0.027688233027268565
+  },
+  {
+    "head": [
+      24,
+      9
+    ],
+    "mean_logprob_change": 0.02709748310560553
+  },
+  {
+    "head": [
+      25,
+      14
+    ],
+    "mean_logprob_change": 0.027044779805636365
+  },
+  {
+    "head": [
+      4,
+      5
+    ],
+    "mean_logprob_change": 0.026808827412331038
+  },
+  {
+    "head": [
+      23,
+      15
+    ],
+    "mean_logprob_change": 0.026673569264649477
+  },
+  {
+    "head": [
+      22,
+      3
+    ],
+    "mean_logprob_change": 0.02664909186736861
+  },
+  {
+    "head": [
+      4,
+      7
+    ],
+    "mean_logprob_change": 0.02655209417915469
+  },
+  {
+    "head": [
+      39,
+      7
+    ],
+    "mean_logprob_change": 0.026092466004001166
+  },
+  {
+    "head": [
+      9,
+      14
+    ],
+    "mean_logprob_change": 0.025998145874785637
+  },
+  {
+    "head": [
+      13,
+      2
+    ],
+    "mean_logprob_change": 0.025958769264808296
+  },
+  {
+    "head": [
+      4,
+      0
+    ],
+    "mean_logprob_change": 0.02576846466014975
+  },
+  {
+    "head": [
+      10,
+      13
+    ],
+    "mean_logprob_change": 0.02561210469705706
+  },
+  {
+    "head": [
+      18,
+      12
+    ],
+    "mean_logprob_change": 0.025449600541589536
+  },
+  {
+    "head": [
+      38,
+      1
+    ],
+    "mean_logprob_change": 0.025365150955779164
+  },
+  {
+    "head": [
+      39,
+      15
+    ],
+    "mean_logprob_change": 0.024965247938740585
+  },
+  {
+    "head": [
+      9,
+      10
+    ],
+    "mean_logprob_change": 0.02485283311005108
+  },
+  {
+    "head": [
+      28,
+      15
+    ],
+    "mean_logprob_change": 0.024658711380429525
+  },
+  {
+    "head": [
+      34,
+      10
+    ],
+    "mean_logprob_change": 0.02457722949701589
+  },
+  {
+    "head": [
+      9,
+      2
+    ],
+    "mean_logprob_change": 0.024269251844088947
+  },
+  {
+    "head": [
+      34,
+      3
+    ],
+    "mean_logprob_change": 0.02421379550734182
+  },
+  {
+    "head": [
+      7,
+      2
+    ],
+    "mean_logprob_change": 0.024050739921380807
+  },
+  {
+    "head": [
+      37,
+      11
+    ],
+    "mean_logprob_change": 0.02393038772864652
+  },
+  {
+    "head": [
+      30,
+      1
+    ],
+    "mean_logprob_change": 0.02383880817302336
+  },
+  {
+    "head": [
+      24,
+      10
+    ],
+    "mean_logprob_change": 0.023783562494994834
+  },
+  {
+    "head": [
+      36,
+      1
+    ],
+    "mean_logprob_change": 0.023083914713966716
+  },
+  {
+    "head": [
+      36,
+      7
+    ],
+    "mean_logprob_change": 0.022969357294195015
+  },
+  {
+    "head": [
+      39,
+      1
+    ],
+    "mean_logprob_change": 0.022787351097225936
+  },
+  {
+    "head": [
+      33,
+      10
+    ],
+    "mean_logprob_change": 0.022687580295518834
+  },
+  {
+    "head": [
+      25,
+      5
+    ],
+    "mean_logprob_change": 0.022613812802783156
+  },
+  {
+    "head": [
+      39,
+      3
+    ],
+    "mean_logprob_change": 0.022533064685964485
+  },
+  {
+    "head": [
+      18,
+      7
+    ],
+    "mean_logprob_change": 0.022108855363411447
+  },
+  {
+    "head": [
+      24,
+      12
+    ],
+    "mean_logprob_change": 0.021831712640802383
+  },
+  {
+    "head": [
+      34,
+      5
+    ],
+    "mean_logprob_change": 0.021744336304540337
+  },
+  {
+    "head": [
+      25,
+      3
+    ],
+    "mean_logprob_change": 0.021692826637998725
+  },
+  {
+    "head": [
+      33,
+      4
+    ],
+    "mean_logprob_change": 0.0216840685294075
+  },
+  {
+    "head": [
+      30,
+      15
+    ],
+    "mean_logprob_change": 0.02117050319350154
+  },
+  {
+    "head": [
+      35,
+      7
+    ],
+    "mean_logprob_change": 0.021056297855945757
+  },
+  {
+    "head": [
+      20,
+      14
+    ],
+    "mean_logprob_change": 0.021019132124282632
+  },
+  {
+    "head": [
+      28,
+      6
+    ],
+    "mean_logprob_change": 0.020921546292463806
+  },
+  {
+    "head": [
+      34,
+      2
+    ],
+    "mean_logprob_change": 0.020708473833923702
+  },
+  {
+    "head": [
+      4,
+      8
+    ],
+    "mean_logprob_change": 0.020667150655542404
+  },
+  {
+    "head": [
+      35,
+      3
+    ],
+    "mean_logprob_change": 0.020482491967270876
+  },
+  {
+    "head": [
+      38,
+      12
+    ],
+    "mean_logprob_change": 0.02038518653960285
+  },
+  {
+    "head": [
+      39,
+      10
+    ],
+    "mean_logprob_change": 0.02004261204237241
+  },
+  {
+    "head": [
+      34,
+      1
+    ],
+    "mean_logprob_change": 0.020005455052795804
+  },
+  {
+    "head": [
+      16,
+      4
+    ],
+    "mean_logprob_change": 0.019976445644398915
+  },
+  {
+    "head": [
+      4,
+      14
+    ],
+    "mean_logprob_change": 0.019911065322398166
+  },
+  {
+    "head": [
+      0,
+      8
+    ],
+    "mean_logprob_change": 0.019754490699927314
+  },
+  {
+    "head": [
+      17,
+      5
+    ],
+    "mean_logprob_change": 0.01958372701613945
+  },
+  {
+    "head": [
+      38,
+      6
+    ],
+    "mean_logprob_change": 0.019260785030602943
+  },
+  {
+    "head": [
+      22,
+      12
+    ],
+    "mean_logprob_change": 0.01870301360709066
+  },
+  {
+    "head": [
+      35,
+      1
+    ],
+    "mean_logprob_change": 0.01858571592152865
+  },
+  {
+    "head": [
+      38,
+      3
+    ],
+    "mean_logprob_change": 0.018533643095115012
+  },
+  {
+    "head": [
+      36,
+      10
+    ],
+    "mean_logprob_change": 0.018319630383185632
+  },
+  {
+    "head": [
+      31,
+      15
+    ],
+    "mean_logprob_change": 0.018244124997839048
+  },
+  {
+    "head": [
+      29,
+      8
+    ],
+    "mean_logprob_change": 0.01812167992186571
+  },
+  {
+    "head": [
+      39,
+      4
+    ],
+    "mean_logprob_change": 0.017723441515409367
+  },
+  {
+    "head": [
+      16,
+      6
+    ],
+    "mean_logprob_change": 0.017476235818041523
+  },
+  {
+    "head": [
+      36,
+      8
+    ],
+    "mean_logprob_change": 0.01746893651582989
+  },
+  {
+    "head": [
+      21,
+      4
+    ],
+    "mean_logprob_change": 0.017252569442233263
+  },
+  {
+    "head": [
+      32,
+      0
+    ],
+    "mean_logprob_change": 0.01710520810626584
+  },
+  {
+    "head": [
+      7,
+      6
+    ],
+    "mean_logprob_change": 0.0170434341044142
+  },
+  {
+    "head": [
+      35,
+      9
+    ],
+    "mean_logprob_change": 0.01698338028217569
+  },
+  {
+    "head": [
+      38,
+      10
+    ],
+    "mean_logprob_change": 0.016735816803536637
+  },
+  {
+    "head": [
+      9,
+      9
+    ],
+    "mean_logprob_change": 0.016646301827323358
+  },
+  {
+    "head": [
+      34,
+      14
+    ],
+    "mean_logprob_change": 0.016470580484973067
+  },
+  {
+    "head": [
+      18,
+      11
+    ],
+    "mean_logprob_change": 0.016427577118385276
+  },
+  {
+    "head": [
+      32,
+      12
+    ],
+    "mean_logprob_change": 0.01612945453039823
+  },
+  {
+    "head": [
+      38,
+      0
+    ],
+    "mean_logprob_change": 0.01594878760664721
+  },
+  {
+    "head": [
+      3,
+      15
+    ],
+    "mean_logprob_change": 0.0158594170463927
+  },
+  {
+    "head": [
+      33,
+      12
+    ],
+    "mean_logprob_change": 0.01545329247848166
+  },
+  {
+    "head": [
+      35,
+      10
+    ],
+    "mean_logprob_change": 0.015325256584175386
+  },
+  {
+    "head": [
+      35,
+      13
+    ],
+    "mean_logprob_change": 0.015298728740399154
+  },
+  {
+    "head": [
+      7,
+      5
+    ],
+    "mean_logprob_change": 0.014957162186978392
+  },
+  {
+    "head": [
+      16,
+      5
+    ],
+    "mean_logprob_change": 0.014917998517196532
+  },
+  {
+    "head": [
+      16,
+      1
+    ],
+    "mean_logprob_change": 0.01438814646671051
+  },
+  {
+    "head": [
+      21,
+      12
+    ],
+    "mean_logprob_change": 0.014276341572853095
+  },
+  {
+    "head": [
+      36,
+      2
+    ],
+    "mean_logprob_change": 0.013952830443242468
+  },
+  {
+    "head": [
+      28,
+      14
+    ],
+    "mean_logprob_change": 0.01388002894238686
+  },
+  {
+    "head": [
+      25,
+      7
+    ],
+    "mean_logprob_change": 0.013849068463044132
+  },
+  {
+    "head": [
+      38,
+      7
+    ],
+    "mean_logprob_change": 0.013801595626391626
+  },
+  {
+    "head": [
+      20,
+      0
+    ],
+    "mean_logprob_change": 0.01371734299263449
+  },
+  {
+    "head": [
+      22,
+      0
+    ],
+    "mean_logprob_change": 0.013705689358901577
+  },
+  {
+    "head": [
+      33,
+      9
+    ],
+    "mean_logprob_change": 0.01369227417858109
+  },
+  {
+    "head": [
+      37,
+      15
+    ],
+    "mean_logprob_change": 0.01357490324732627
+  },
+  {
+    "head": [
+      4,
+      9
+    ],
+    "mean_logprob_change": 0.013536223216057014
+  },
+  {
+    "head": [
+      22,
+      8
+    ],
+    "mean_logprob_change": 0.013379184515286245
+  },
+  {
+    "head": [
+      35,
+      14
+    ],
+    "mean_logprob_change": 0.013233180548149323
+  },
+  {
+    "head": [
+      6,
+      14
+    ],
+    "mean_logprob_change": 0.01266805546109751
+  },
+  {
+    "head": [
+      27,
+      6
+    ],
+    "mean_logprob_change": 0.012562371578512315
+  },
+  {
+    "head": [
+      9,
+      7
+    ],
+    "mean_logprob_change": 0.012539278424840553
+  },
+  {
+    "head": [
+      28,
+      8
+    ],
+    "mean_logprob_change": 0.012384202195813399
+  },
+  {
+    "head": [
+      34,
+      11
+    ],
+    "mean_logprob_change": 0.011949958904502534
+  },
+  {
+    "head": [
+      9,
+      1
+    ],
+    "mean_logprob_change": 0.011949310014455575
+  },
+  {
+    "head": [
+      14,
+      7
+    ],
+    "mean_logprob_change": 0.011942615835831803
+  },
+  {
+    "head": [
+      35,
+      5
+    ],
+    "mean_logprob_change": 0.011743281464120106
+  },
+  {
+    "head": [
+      37,
+      9
+    ],
+    "mean_logprob_change": 0.011583052542790797
+  },
+  {
+    "head": [
+      33,
+      1
+    ],
+    "mean_logprob_change": 0.011317960997053149
+  },
+  {
+    "head": [
+      6,
+      2
+    ],
+    "mean_logprob_change": 0.011244675681157156
+  },
+  {
+    "head": [
+      0,
+      14
+    ],
+    "mean_logprob_change": 0.011195220263581796
+  },
+  {
+    "head": [
+      34,
+      15
+    ],
+    "mean_logprob_change": 0.011103392185858693
+  },
+  {
+    "head": [
+      29,
+      7
+    ],
+    "mean_logprob_change": 0.011099413402921072
+  },
+  {
+    "head": [
+      37,
+      2
+    ],
+    "mean_logprob_change": 0.010945732578676317
+  },
+  {
+    "head": [
+      38,
+      15
+    ],
+    "mean_logprob_change": 0.010256302995851705
+  },
+  {
+    "head": [
+      28,
+      2
+    ],
+    "mean_logprob_change": 0.010107894074958964
+  },
+  {
+    "head": [
+      38,
+      14
+    ],
+    "mean_logprob_change": 0.010069322851854622
+  },
+  {
+    "head": [
+      32,
+      4
+    ],
+    "mean_logprob_change": 0.010064367526155173
+  },
+  {
+    "head": [
+      6,
+      8
+    ],
+    "mean_logprob_change": 0.009869713588096435
+  },
+  {
+    "head": [
+      26,
+      2
+    ],
+    "mean_logprob_change": 0.009731537622690769
+  },
+  {
+    "head": [
+      3,
+      7
+    ],
+    "mean_logprob_change": 0.009728568566078519
+  },
+  {
+    "head": [
+      27,
+      12
+    ],
+    "mean_logprob_change": 0.00962430513647177
+  },
+  {
+    "head": [
+      22,
+      4
+    ],
+    "mean_logprob_change": 0.009491231239035358
+  },
+  {
+    "head": [
+      27,
+      8
+    ],
+    "mean_logprob_change": 0.009469224405908964
+  },
+  {
+    "head": [
+      36,
+      9
+    ],
+    "mean_logprob_change": 0.009316028499810391
+  },
+  {
+    "head": [
+      38,
+      13
+    ],
+    "mean_logprob_change": 0.009315174543412852
+  },
+  {
+    "head": [
+      9,
+      3
+    ],
+    "mean_logprob_change": 0.009275277459710985
+  },
+  {
+    "head": [
+      28,
+      10
+    ],
+    "mean_logprob_change": 0.009267804505421735
+  },
+  {
+    "head": [
+      14,
+      3
+    ],
+    "mean_logprob_change": 0.009249407393574383
+  },
+  {
+    "head": [
+      39,
+      8
+    ],
+    "mean_logprob_change": 0.009206012695093836
+  },
+  {
+    "head": [
+      24,
+      7
+    ],
+    "mean_logprob_change": 0.009149534928369408
+  },
+  {
+    "head": [
+      10,
+      5
+    ],
+    "mean_logprob_change": 0.009061464676306212
+  },
+  {
+    "head": [
+      25,
+      6
+    ],
+    "mean_logprob_change": 0.008674080609978659
+  },
+  {
+    "head": [
+      39,
+      13
+    ],
+    "mean_logprob_change": 0.008589700492732654
+  },
+  {
+    "head": [
+      35,
+      4
+    ],
+    "mean_logprob_change": 0.0082559838499298
+  },
+  {
+    "head": [
+      8,
+      8
+    ],
+    "mean_logprob_change": 0.008024411477107873
+  },
+  {
+    "head": [
+      21,
+      9
+    ],
+    "mean_logprob_change": 0.007975397745464895
+  },
+  {
+    "head": [
+      37,
+      5
+    ],
+    "mean_logprob_change": 0.0076952118281704875
+  },
+  {
+    "head": [
+      33,
+      0
+    ],
+    "mean_logprob_change": 0.0076501264017260736
+  },
+  {
+    "head": [
+      39,
+      0
+    ],
+    "mean_logprob_change": 0.007306190518875881
+  },
+  {
+    "head": [
+      6,
+      15
+    ],
+    "mean_logprob_change": 0.007243423290826104
+  },
+  {
+    "head": [
+      20,
+      5
+    ],
+    "mean_logprob_change": 0.007003772272895836
+  },
+  {
+    "head": [
+      21,
+      8
+    ],
+    "mean_logprob_change": 0.006805957662654336
+  },
+  {
+    "head": [
+      33,
+      13
+    ],
+    "mean_logprob_change": 0.006763922932154034
+  },
+  {
+    "head": [
+      36,
+      13
+    ],
+    "mean_logprob_change": 0.006648914183425557
+  },
+  {
+    "head": [
+      35,
+      11
+    ],
+    "mean_logprob_change": 0.006124697112420446
+  },
+  {
+    "head": [
+      18,
+      13
+    ],
+    "mean_logprob_change": 0.005908391372123538
+  },
+  {
+    "head": [
+      34,
+      6
+    ],
+    "mean_logprob_change": 0.0058338959278030214
+  },
+  {
+    "head": [
+      27,
+      2
+    ],
+    "mean_logprob_change": 0.005272037375491349
+  },
+  {
+    "head": [
+      34,
+      13
+    ],
+    "mean_logprob_change": 0.004961684924253918
+  },
+  {
+    "head": [
+      27,
+      10
+    ],
+    "mean_logprob_change": 0.004793606472512484
+  },
+  {
+    "head": [
+      1,
+      15
+    ],
+    "mean_logprob_change": 0.0047434469468801595
+  },
+  {
+    "head": [
+      8,
+      11
+    ],
+    "mean_logprob_change": 0.004728308458793927
+  },
+  {
+    "head": [
+      15,
+      8
+    ],
+    "mean_logprob_change": 0.0046591833931027655
+  },
+  {
+    "head": [
+      7,
+      13
+    ],
+    "mean_logprob_change": 0.0044981203019103895
+  },
+  {
+    "head": [
+      22,
+      11
+    ],
+    "mean_logprob_change": 0.004089340252390126
+  },
+  {
+    "head": [
+      7,
+      9
+    ],
+    "mean_logprob_change": 0.00403849738608817
+  },
+  {
+    "head": [
+      37,
+      10
+    ],
+    "mean_logprob_change": 0.003966040809849362
+  },
+  {
+    "head": [
+      29,
+      13
+    ],
+    "mean_logprob_change": 0.003776890176809099
+  },
+  {
+    "head": [
+      38,
+      4
+    ],
+    "mean_logprob_change": 0.003765383608050319
+  },
+  {
+    "head": [
+      39,
+      6
+    ],
+    "mean_logprob_change": 0.0037636084523923947
+  },
+  {
+    "head": [
+      33,
+      5
+    ],
+    "mean_logprob_change": 0.0037066212625311693
+  },
+  {
+    "head": [
+      17,
+      6
+    ],
+    "mean_logprob_change": 0.0035918883169041224
+  },
+  {
+    "head": [
+      34,
+      12
+    ],
+    "mean_logprob_change": 0.002954549041309817
+  },
+  {
+    "head": [
+      21,
+      15
+    ],
+    "mean_logprob_change": 0.002927288609622118
+  },
+  {
+    "head": [
+      35,
+      8
+    ],
+    "mean_logprob_change": 0.002896717031126844
+  },
+  {
+    "head": [
+      11,
+      13
+    ],
+    "mean_logprob_change": 0.0027896766440995654
+  },
+  {
+    "head": [
+      27,
+      3
+    ],
+    "mean_logprob_change": 0.002696801490528373
+  },
+  {
+    "head": [
+      36,
+      12
+    ],
+    "mean_logprob_change": 0.002518826966354682
+  },
+  {
+    "head": [
+      7,
+      7
+    ],
+    "mean_logprob_change": 0.002435336016062886
+  },
+  {
+    "head": [
+      10,
+      8
+    ],
+    "mean_logprob_change": 0.00219945917396785
+  },
+  {
+    "head": [
+      34,
+      8
+    ],
+    "mean_logprob_change": 0.0020985406324556546
+  },
+  {
+    "head": [
+      31,
+      4
+    ],
+    "mean_logprob_change": 0.0019797256984175602
+  },
+  {
+    "head": [
+      14,
+      13
+    ],
+    "mean_logprob_change": 0.0016765654688234868
+  },
+  {
+    "head": [
+      13,
+      0
+    ],
+    "mean_logprob_change": 0.0015468953804199826
+  },
+  {
+    "head": [
+      24,
+      8
+    ],
+    "mean_logprob_change": 0.0015345419816541897
+  },
+  {
+    "head": [
+      23,
+      14
+    ],
+    "mean_logprob_change": 0.0015104269802766323
+  },
+  {
+    "head": [
+      34,
+      0
+    ],
+    "mean_logprob_change": 0.0014380485896939392
+  },
+  {
+    "head": [
+      22,
+      6
+    ],
+    "mean_logprob_change": 0.0011210431063203774
+  },
+  {
+    "head": [
+      28,
+      7
+    ],
+    "mean_logprob_change": 0.0010185667521204866
+  },
+  {
+    "head": [
+      27,
+      15
+    ],
+    "mean_logprob_change": 0.0009711552660937019
+  },
+  {
+    "head": [
+      10,
+      14
+    ],
+    "mean_logprob_change": 0.0005054551009829219
+  },
+  {
+    "head": [
+      12,
+      2
+    ],
+    "mean_logprob_change": 0.0003354372439158394
+  },
+  {
+    "head": [
+      14,
+      9
+    ],
+    "mean_logprob_change": 0.00020719869311567221
+  },
+  {
+    "head": [
+      38,
+      8
+    ],
+    "mean_logprob_change": 0.00018825175230307713
+  },
+  {
+    "head": [
+      28,
+      11
+    ],
+    "mean_logprob_change": 1.6712766244289117e-05
+  },
+  {
+    "head": [
+      33,
+      8
+    ],
+    "mean_logprob_change": -4.405608630297309e-05
+  },
+  {
+    "head": [
+      32,
+      13
+    ],
+    "mean_logprob_change": -4.576211018862483e-05
+  },
+  {
+    "head": [
+      10,
+      9
+    ],
+    "mean_logprob_change": -0.00015543356588078113
+  },
+  {
+    "head": [
+      16,
+      3
+    ],
+    "mean_logprob_change": -0.00031788562714776353
+  },
+  {
+    "head": [
+      37,
+      0
+    ],
+    "mean_logprob_change": -0.0007343808172114503
+  },
+  {
+    "head": [
+      39,
+      9
+    ],
+    "mean_logprob_change": -0.0010656251517955524
+  },
+  {
+    "head": [
+      35,
+      6
+    ],
+    "mean_logprob_change": -0.0011241309286729641
+  },
+  {
+    "head": [
+      34,
+      7
+    ],
+    "mean_logprob_change": -0.001282113152406003
+  },
+  {
+    "head": [
+      18,
+      4
+    ],
+    "mean_logprob_change": -0.0015699315406389627
+  },
+  {
+    "head": [
+      25,
+      12
+    ],
+    "mean_logprob_change": -0.0016175894773145178
+  },
+  {
+    "head": [
+      1,
+      12
+    ],
+    "mean_logprob_change": -0.0016545684726960383
+  },
+  {
+    "head": [
+      39,
+      2
+    ],
+    "mean_logprob_change": -0.0017351711429900247
+  },
+  {
+    "head": [
+      21,
+      1
+    ],
+    "mean_logprob_change": -0.001737625006329164
+  },
+  {
+    "head": [
+      26,
+      4
+    ],
+    "mean_logprob_change": -0.001809617169175619
+  },
+  {
+    "head": [
+      8,
+      1
+    ],
+    "mean_logprob_change": -0.0021087146769851344
+  },
+  {
+    "head": [
+      0,
+      0
+    ],
+    "mean_logprob_change": -0.0021626133322065946
+  },
+  {
+    "head": [
+      0,
+      1
+    ],
+    "mean_logprob_change": -0.0021626133322065946
+  },
+  {
+    "head": [
+      0,
+      2
+    ],
+    "mean_logprob_change": -0.0021626133322065946
+  },
+  {
+    "head": [
+      0,
+      3
+    ],
+    "mean_logprob_change": -0.0021626133322065946
+  },
+  {
+    "head": [
+      30,
+      14
+    ],
+    "mean_logprob_change": -0.002346887893191765
+  },
+  {
+    "head": [
+      21,
+      11
+    ],
+    "mean_logprob_change": -0.0023595421806961066
+  },
+  {
+    "head": [
+      3,
+      10
+    ],
+    "mean_logprob_change": -0.002464300289963134
+  },
+  {
+    "head": [
+      15,
+      11
+    ],
+    "mean_logprob_change": -0.0029494065340334996
+  },
+  {
+    "head": [
+      29,
+      11
+    ],
+    "mean_logprob_change": -0.003474670462786202
+  },
+  {
+    "head": [
+      16,
+      9
+    ],
+    "mean_logprob_change": -0.003889881968842395
+  },
+  {
+    "head": [
+      1,
+      5
+    ],
+    "mean_logprob_change": -0.003950282576552854
+  },
+  {
+    "head": [
+      20,
+      4
+    ],
+    "mean_logprob_change": -0.003958099792036638
+  },
+  {
+    "head": [
+      3,
+      5
+    ],
+    "mean_logprob_change": -0.0042932782584599325
+  },
+  {
+    "head": [
+      1,
+      9
+    ],
+    "mean_logprob_change": -0.004708264998268939
+  },
+  {
+    "head": [
+      31,
+      8
+    ],
+    "mean_logprob_change": -0.004850002926067192
+  },
+  {
+    "head": [
+      37,
+      12
+    ],
+    "mean_logprob_change": -0.005076108470840569
+  },
+  {
+    "head": [
+      7,
+      14
+    ],
+    "mean_logprob_change": -0.005122898570004542
+  },
+  {
+    "head": [
+      14,
+      8
+    ],
+    "mean_logprob_change": -0.005708579350386179
+  },
+  {
+    "head": [
+      29,
+      9
+    ],
+    "mean_logprob_change": -0.006091451678315149
+  },
+  {
+    "head": [
+      12,
+      7
+    ],
+    "mean_logprob_change": -0.0061258218186228544
+  },
+  {
+    "head": [
+      14,
+      14
+    ],
+    "mean_logprob_change": -0.0062794435711241514
+  },
+  {
+    "head": [
+      29,
+      1
+    ],
+    "mean_logprob_change": -0.0065343038466691645
+  },
+  {
+    "head": [
+      1,
+      4
+    ],
+    "mean_logprob_change": -0.006788023555405862
+  },
+  {
+    "head": [
+      25,
+      4
+    ],
+    "mean_logprob_change": -0.006894119891877844
+  },
+  {
+    "head": [
+      24,
+      1
+    ],
+    "mean_logprob_change": -0.006985705222241609
+  },
+  {
+    "head": [
+      17,
+      4
+    ],
+    "mean_logprob_change": -0.007128039804750249
+  },
+  {
+    "head": [
+      17,
+      9
+    ],
+    "mean_logprob_change": -0.007357500071320075
+  },
+  {
+    "head": [
+      31,
+      10
+    ],
+    "mean_logprob_change": -0.007487195655982635
+  },
+  {
+    "head": [
+      7,
+      10
+    ],
+    "mean_logprob_change": -0.007678262518652959
+  },
+  {
+    "head": [
+      24,
+      11
+    ],
+    "mean_logprob_change": -0.008235435467011932
+  },
+  {
+    "head": [
+      1,
+      0
+    ],
+    "mean_logprob_change": -0.008363818425301851
+  },
+  {
+    "head": [
+      21,
+      2
+    ],
+    "mean_logprob_change": -0.008417277283566666
+  },
+  {
+    "head": [
+      14,
+      15
+    ],
+    "mean_logprob_change": -0.008627441177481564
+  },
+  {
+    "head": [
+      32,
+      8
+    ],
+    "mean_logprob_change": -0.00920529766901256
+  },
+  {
+    "head": [
+      32,
+      10
+    ],
+    "mean_logprob_change": -0.009258909938181311
+  },
+  {
+    "head": [
+      32,
+      15
+    ],
+    "mean_logprob_change": -0.010121804772248619
+  },
+  {
+    "head": [
+      23,
+      0
+    ],
+    "mean_logprob_change": -0.010270773017465503
+  },
+  {
+    "head": [
+      8,
+      0
+    ],
+    "mean_logprob_change": -0.010451692060975166
+  },
+  {
+    "head": [
+      25,
+      8
+    ],
+    "mean_logprob_change": -0.010898185171692241
+  },
+  {
+    "head": [
+      24,
+      4
+    ],
+    "mean_logprob_change": -0.011316633879032409
+  },
+  {
+    "head": [
+      16,
+      14
+    ],
+    "mean_logprob_change": -0.011474980026861528
+  },
+  {
+    "head": [
+      15,
+      3
+    ],
+    "mean_logprob_change": -0.011488382374954155
+  },
+  {
+    "head": [
+      32,
+      6
+    ],
+    "mean_logprob_change": -0.011598554387964212
+  },
+  {
+    "head": [
+      32,
+      5
+    ],
+    "mean_logprob_change": -0.011698347076200771
+  },
+  {
+    "head": [
+      3,
+      0
+    ],
+    "mean_logprob_change": -0.011797842405782749
+  },
+  {
+    "head": [
+      17,
+      12
+    ],
+    "mean_logprob_change": -0.012078809441554346
+  },
+  {
+    "head": [
+      25,
+      13
+    ],
+    "mean_logprob_change": -0.012255580309892771
+  },
+  {
+    "head": [
+      4,
+      10
+    ],
+    "mean_logprob_change": -0.012281331210067513
+  },
+  {
+    "head": [
+      14,
+      6
+    ],
+    "mean_logprob_change": -0.012492798933824727
+  },
+  {
+    "head": [
+      31,
+      14
+    ],
+    "mean_logprob_change": -0.012568994643936189
+  },
+  {
+    "head": [
+      31,
+      12
+    ],
+    "mean_logprob_change": -0.012772325410400851
+  },
+  {
+    "head": [
+      7,
+      15
+    ],
+    "mean_logprob_change": -0.012911108174127169
+  },
+  {
+    "head": [
+      28,
+      4
+    ],
+    "mean_logprob_change": -0.013224819406251054
+  },
+  {
+    "head": [
+      10,
+      12
+    ],
+    "mean_logprob_change": -0.013391879271033011
+  },
+  {
+    "head": [
+      23,
+      1
+    ],
+    "mean_logprob_change": -0.013611690541984231
+  },
+  {
+    "head": [
+      30,
+      11
+    ],
+    "mean_logprob_change": -0.013763660243357718
+  },
+  {
+    "head": [
+      7,
+      11
+    ],
+    "mean_logprob_change": -0.013952644404981765
+  },
+  {
+    "head": [
+      34,
+      9
+    ],
+    "mean_logprob_change": -0.014126227542044614
+  },
+  {
+    "head": [
+      32,
+      14
+    ],
+    "mean_logprob_change": -0.014281593040630597
+  },
+  {
+    "head": [
+      4,
+      2
+    ],
+    "mean_logprob_change": -0.014381112052479774
+  },
+  {
+    "head": [
+      26,
+      14
+    ],
+    "mean_logprob_change": -0.014704768211113243
+  },
+  {
+    "head": [
+      32,
+      9
+    ],
+    "mean_logprob_change": -0.015983695281244405
+  },
+  {
+    "head": [
+      31,
+      2
+    ],
+    "mean_logprob_change": -0.016491112705966763
+  },
+  {
+    "head": [
+      20,
+      3
+    ],
+    "mean_logprob_change": -0.016496607709954262
+  },
+  {
+    "head": [
+      19,
+      12
+    ],
+    "mean_logprob_change": -0.01653884807154279
+  },
+  {
+    "head": [
+      37,
+      6
+    ],
+    "mean_logprob_change": -0.017006921127032715
+  },
+  {
+    "head": [
+      14,
+      12
+    ],
+    "mean_logprob_change": -0.01720593060481097
+  },
+  {
+    "head": [
+      31,
+      7
+    ],
+    "mean_logprob_change": -0.017266789798399133
+  },
+  {
+    "head": [
+      15,
+      2
+    ],
+    "mean_logprob_change": -0.01738684530687094
+  },
+  {
+    "head": [
+      27,
+      0
+    ],
+    "mean_logprob_change": -0.017514328703952354
+  },
+  {
+    "head": [
+      12,
+      5
+    ],
+    "mean_logprob_change": -0.017547647320529932
+  },
+  {
+    "head": [
+      2,
+      15
+    ],
+    "mean_logprob_change": -0.017687486134967394
+  },
+  {
+    "head": [
+      31,
+      9
+    ],
+    "mean_logprob_change": -0.018459372539599953
+  },
+  {
+    "head": [
+      10,
+      4
+    ],
+    "mean_logprob_change": -0.018597231630583546
+  },
+  {
+    "head": [
+      2,
+      4
+    ],
+    "mean_logprob_change": -0.01897553449697224
+  },
+  {
+    "head": [
+      26,
+      0
+    ],
+    "mean_logprob_change": -0.019181255717931715
+  },
+  {
+    "head": [
+      11,
+      2
+    ],
+    "mean_logprob_change": -0.019415805383641772
+  },
+  {
+    "head": [
+      11,
+      7
+    ],
+    "mean_logprob_change": -0.019663044705161743
+  },
+  {
+    "head": [
+      29,
+      6
+    ],
+    "mean_logprob_change": -0.020051834581631393
+  },
+  {
+    "head": [
+      15,
+      9
+    ],
+    "mean_logprob_change": -0.020089919500744288
+  },
+  {
+    "head": [
+      25,
+      2
+    ],
+    "mean_logprob_change": -0.02031570291960742
+  },
+  {
+    "head": [
+      15,
+      1
+    ],
+    "mean_logprob_change": -0.02042882706789899
+  },
+  {
+    "head": [
+      18,
+      1
+    ],
+    "mean_logprob_change": -0.020686338887735668
+  },
+  {
+    "head": [
+      16,
+      0
+    ],
+    "mean_logprob_change": -0.020947898729688257
+  },
+  {
+    "head": [
+      16,
+      8
+    ],
+    "mean_logprob_change": -0.02125155830873633
+  },
+  {
+    "head": [
+      15,
+      5
+    ],
+    "mean_logprob_change": -0.021277098722460516
+  },
+  {
+    "head": [
+      14,
+      2
+    ],
+    "mean_logprob_change": -0.02166410101186551
+  },
+  {
+    "head": [
+      8,
+      12
+    ],
+    "mean_logprob_change": -0.022001970216874528
+  },
+  {
+    "head": [
+      13,
+      6
+    ],
+    "mean_logprob_change": -0.022111250694329176
+  },
+  {
+    "head": [
+      20,
+      13
+    ],
+    "mean_logprob_change": -0.022355130430699786
+  },
+  {
+    "head": [
+      24,
+      6
+    ],
+    "mean_logprob_change": -0.022387450512415207
+  },
+  {
+    "head": [
+      4,
+      6
+    ],
+    "mean_logprob_change": -0.02278596396231025
+  },
+  {
+    "head": [
+      27,
+      9
+    ],
+    "mean_logprob_change": -0.023051334939497712
+  },
+  {
+    "head": [
+      7,
+      3
+    ],
+    "mean_logprob_change": -0.02328046736535118
+  },
+  {
+    "head": [
+      22,
+      2
+    ],
+    "mean_logprob_change": -0.023298804012721424
+  },
+  {
+    "head": [
+      26,
+      7
+    ],
+    "mean_logprob_change": -0.02335508640778901
+  },
+  {
+    "head": [
+      4,
+      12
+    ],
+    "mean_logprob_change": -0.02390176385771076
+  },
+  {
+    "head": [
+      29,
+      14
+    ],
+    "mean_logprob_change": -0.02401373704987929
+  },
+  {
+    "head": [
+      3,
+      12
+    ],
+    "mean_logprob_change": -0.024387468610954782
+  },
+  {
+    "head": [
+      31,
+      13
+    ],
+    "mean_logprob_change": -0.02461691204818733
+  },
+  {
+    "head": [
+      17,
+      2
+    ],
+    "mean_logprob_change": -0.025156172148294173
+  },
+  {
+    "head": [
+      12,
+      4
+    ],
+    "mean_logprob_change": -0.02558944320931841
+  },
+  {
+    "head": [
+      6,
+      4
+    ],
+    "mean_logprob_change": -0.025722980973436532
+  },
+  {
+    "head": [
+      10,
+      6
+    ],
+    "mean_logprob_change": -0.02597765111360616
+  },
+  {
+    "head": [
+      6,
+      7
+    ],
+    "mean_logprob_change": -0.02622790299619362
+  },
+  {
+    "head": [
+      18,
+      0
+    ],
+    "mean_logprob_change": -0.026246515740957557
+  },
+  {
+    "head": [
+      11,
+      10
+    ],
+    "mean_logprob_change": -0.026433722495013235
+  },
+  {
+    "head": [
+      26,
+      15
+    ],
+    "mean_logprob_change": -0.02658044287937458
+  },
+  {
+    "head": [
+      16,
+      12
+    ],
+    "mean_logprob_change": -0.026769570140211123
+  },
+  {
+    "head": [
+      32,
+      11
+    ],
+    "mean_logprob_change": -0.02680799737767155
+  },
+  {
+    "head": [
+      1,
+      8
+    ],
+    "mean_logprob_change": -0.027853093740937408
+  },
+  {
+    "head": [
+      30,
+      7
+    ],
+    "mean_logprob_change": -0.028101415929913293
+  },
+  {
+    "head": [
+      3,
+      11
+    ],
+    "mean_logprob_change": -0.02849560151689356
+  },
+  {
+    "head": [
+      20,
+      2
+    ],
+    "mean_logprob_change": -0.028843776634642843
+  },
+  {
+    "head": [
+      31,
+      3
+    ],
+    "mean_logprob_change": -0.029097108183842965
+  },
+  {
+    "head": [
+      29,
+      12
+    ],
+    "mean_logprob_change": -0.03011928220825455
+  },
+  {
+    "head": [
+      30,
+      0
+    ],
+    "mean_logprob_change": -0.03029072266239721
+  },
+  {
+    "head": [
+      25,
+      10
+    ],
+    "mean_logprob_change": -0.03075960237359526
+  },
+  {
+    "head": [
+      29,
+      5
+    ],
+    "mean_logprob_change": -0.030774334403165904
+  },
+  {
+    "head": [
+      15,
+      7
+    ],
+    "mean_logprob_change": -0.030989926479844197
+  },
+  {
+    "head": [
+      8,
+      9
+    ],
+    "mean_logprob_change": -0.03138563580904674
+  },
+  {
+    "head": [
+      3,
+      4
+    ],
+    "mean_logprob_change": -0.031542873716859716
+  },
+  {
+    "head": [
+      3,
+      9
+    ],
+    "mean_logprob_change": -0.032194252036496916
+  },
+  {
+    "head": [
+      9,
+      15
+    ],
+    "mean_logprob_change": -0.032509449060790556
+  },
+  {
+    "head": [
+      7,
+      1
+    ],
+    "mean_logprob_change": -0.032541013212683816
+  },
+  {
+    "head": [
+      6,
+      12
+    ],
+    "mean_logprob_change": -0.032543412252339116
+  },
+  {
+    "head": [
+      24,
+      14
+    ],
+    "mean_logprob_change": -0.032765421245816294
+  },
+  {
+    "head": [
+      10,
+      0
+    ],
+    "mean_logprob_change": -0.03289509499353467
+  },
+  {
+    "head": [
+      30,
+      12
+    ],
+    "mean_logprob_change": -0.03341843339678981
+  },
+  {
+    "head": [
+      24,
+      0
+    ],
+    "mean_logprob_change": -0.03345260301003076
+  },
+  {
+    "head": [
+      11,
+      1
+    ],
+    "mean_logprob_change": -0.03379625301765529
+  },
+  {
+    "head": [
+      29,
+      4
+    ],
+    "mean_logprob_change": -0.03380136879691353
+  },
+  {
+    "head": [
+      1,
+      6
+    ],
+    "mean_logprob_change": -0.03393906339449469
+  },
+  {
+    "head": [
+      10,
+      7
+    ],
+    "mean_logprob_change": -0.03401092418246777
+  },
+  {
+    "head": [
+      15,
+      6
+    ],
+    "mean_logprob_change": -0.03420705293200291
+  },
+  {
+    "head": [
+      12,
+      15
+    ],
+    "mean_logprob_change": -0.03421909497575073
+  },
+  {
+    "head": [
+      10,
+      2
+    ],
+    "mean_logprob_change": -0.034810353595504114
+  },
+  {
+    "head": [
+      2,
+      6
+    ],
+    "mean_logprob_change": -0.0352624252215897
+  },
+  {
+    "head": [
+      6,
+      10
+    ],
+    "mean_logprob_change": -0.03527098507913249
+  },
+  {
+    "head": [
+      12,
+      6
+    ],
+    "mean_logprob_change": -0.03572032651099353
+  },
+  {
+    "head": [
+      26,
+      3
+    ],
+    "mean_logprob_change": -0.03582335791122666
+  },
+  {
+    "head": [
+      3,
+      1
+    ],
+    "mean_logprob_change": -0.03590941248889892
+  },
+  {
+    "head": [
+      20,
+      8
+    ],
+    "mean_logprob_change": -0.03626831837711276
+  },
+  {
+    "head": [
+      13,
+      5
+    ],
+    "mean_logprob_change": -0.03645024603950977
+  },
+  {
+    "head": [
+      10,
+      11
+    ],
+    "mean_logprob_change": -0.03651052592572417
+  },
+  {
+    "head": [
+      31,
+      6
+    ],
+    "mean_logprob_change": -0.036745649204003805
+  },
+  {
+    "head": [
+      17,
+      1
+    ],
+    "mean_logprob_change": -0.037181322108668084
+  },
+  {
+    "head": [
+      26,
+      11
+    ],
+    "mean_logprob_change": -0.03726933797643072
+  },
+  {
+    "head": [
+      9,
+      13
+    ],
+    "mean_logprob_change": -0.03775915426093062
+  },
+  {
+    "head": [
+      6,
+      11
+    ],
+    "mean_logprob_change": -0.03783389111818864
+  },
+  {
+    "head": [
+      26,
+      9
+    ],
+    "mean_logprob_change": -0.0382399111247917
+  },
+  {
+    "head": [
+      9,
+      8
+    ],
+    "mean_logprob_change": -0.038364498010319055
+  },
+  {
+    "head": [
+      31,
+      1
+    ],
+    "mean_logprob_change": -0.03847484182367675
+  },
+  {
+    "head": [
+      17,
+      3
+    ],
+    "mean_logprob_change": -0.03923601056099046
+  },
+  {
+    "head": [
+      21,
+      6
+    ],
+    "mean_logprob_change": -0.040245335910639744
+  },
+  {
+    "head": [
+      8,
+      3
+    ],
+    "mean_logprob_change": -0.04136659179850581
+  },
+  {
+    "head": [
+      0,
+      9
+    ],
+    "mean_logprob_change": -0.041621518674805284
+  },
+  {
+    "head": [
+      0,
+      15
+    ],
+    "mean_logprob_change": -0.041767946165255
+  },
+  {
+    "head": [
+      15,
+      14
+    ],
+    "mean_logprob_change": -0.04206403798952557
+  },
+  {
+    "head": [
+      15,
+      12
+    ],
+    "mean_logprob_change": -0.04207079489011139
+  },
+  {
+    "head": [
+      16,
+      15
+    ],
+    "mean_logprob_change": -0.04218356017857683
+  },
+  {
+    "head": [
+      6,
+      13
+    ],
+    "mean_logprob_change": -0.042658936490577205
+  },
+  {
+    "head": [
+      25,
+      1
+    ],
+    "mean_logprob_change": -0.04344541378648784
+  },
+  {
+    "head": [
+      2,
+      14
+    ],
+    "mean_logprob_change": -0.04372597268088537
+  },
+  {
+    "head": [
+      13,
+      12
+    ],
+    "mean_logprob_change": -0.04406357875283765
+  },
+  {
+    "head": [
+      22,
+      14
+    ],
+    "mean_logprob_change": -0.04432974113401832
+  },
+  {
+    "head": [
+      12,
+      8
+    ],
+    "mean_logprob_change": -0.044822326250399364
+  },
+  {
+    "head": [
+      26,
+      8
+    ],
+    "mean_logprob_change": -0.04566061914569441
+  },
+  {
+    "head": [
+      12,
+      14
+    ],
+    "mean_logprob_change": -0.04577232989768773
+  },
+  {
+    "head": [
+      27,
+      13
+    ],
+    "mean_logprob_change": -0.04586840753301621
+  },
+  {
+    "head": [
+      6,
+      3
+    ],
+    "mean_logprob_change": -0.045911128432174264
+  },
+  {
+    "head": [
+      17,
+      11
+    ],
+    "mean_logprob_change": -0.046148460013032994
+  },
+  {
+    "head": [
+      3,
+      8
+    ],
+    "mean_logprob_change": -0.04669182730519625
+  },
+  {
+    "head": [
+      17,
+      0
+    ],
+    "mean_logprob_change": -0.047156510837397914
+  },
+  {
+    "head": [
+      31,
+      11
+    ],
+    "mean_logprob_change": -0.04760859643298423
+  },
+  {
+    "head": [
+      14,
+      0
+    ],
+    "mean_logprob_change": -0.047827123408249156
+  },
+  {
+    "head": [
+      1,
+      10
+    ],
+    "mean_logprob_change": -0.04784989702143416
+  },
+  {
+    "head": [
+      11,
+      4
+    ],
+    "mean_logprob_change": -0.04791113429072028
+  },
+  {
+    "head": [
+      3,
+      2
+    ],
+    "mean_logprob_change": -0.04797291129251119
+  },
+  {
+    "head": [
+      2,
+      1
+    ],
+    "mean_logprob_change": -0.04825143106621759
+  },
+  {
+    "head": [
+      7,
+      0
+    ],
+    "mean_logprob_change": -0.048344526178339654
+  },
+  {
+    "head": [
+      37,
+      13
+    ],
+    "mean_logprob_change": -0.04927144506027517
+  },
+  {
+    "head": [
+      12,
+      0
+    ],
+    "mean_logprob_change": -0.04942320975632205
+  },
+  {
+    "head": [
+      8,
+      7
+    ],
+    "mean_logprob_change": -0.05000479873799971
+  },
+  {
+    "head": [
+      5,
+      11
+    ],
+    "mean_logprob_change": -0.050806497960920884
+  },
+  {
+    "head": [
+      13,
+      3
+    ],
+    "mean_logprob_change": -0.051555568199157215
+  },
+  {
+    "head": [
+      6,
+      6
+    ],
+    "mean_logprob_change": -0.051866086584466085
+  },
+  {
+    "head": [
+      7,
+      8
+    ],
+    "mean_logprob_change": -0.05259950505723155
+  },
+  {
+    "head": [
+      25,
+      9
+    ],
+    "mean_logprob_change": -0.053048095171051496
+  },
+  {
+    "head": [
+      6,
+      0
+    ],
+    "mean_logprob_change": -0.054108004379290114
+  },
+  {
+    "head": [
+      13,
+      8
+    ],
+    "mean_logprob_change": -0.054401647282197825
+  },
+  {
+    "head": [
+      2,
+      0
+    ],
+    "mean_logprob_change": -0.05442921962914535
+  },
+  {
+    "head": [
+      2,
+      11
+    ],
+    "mean_logprob_change": -0.05507802071750697
+  },
+  {
+    "head": [
+      31,
+      5
+    ],
+    "mean_logprob_change": -0.055211751642561674
+  },
+  {
+    "head": [
+      15,
+      4
+    ],
+    "mean_logprob_change": -0.055560661215877334
+  },
+  {
+    "head": [
+      8,
+      14
+    ],
+    "mean_logprob_change": -0.055686144592684166
+  },
+  {
+    "head": [
+      26,
+      10
+    ],
+    "mean_logprob_change": -0.055946295354696945
+  },
+  {
+    "head": [
+      2,
+      8
+    ],
+    "mean_logprob_change": -0.055985144102106005
+  },
+  {
+    "head": [
+      12,
+      3
+    ],
+    "mean_logprob_change": -0.056569689727553774
+  },
+  {
+    "head": [
+      5,
+      7
+    ],
+    "mean_logprob_change": -0.05687575150516542
+  },
+  {
+    "head": [
+      20,
+      7
+    ],
+    "mean_logprob_change": -0.056934778208415006
+  },
+  {
+    "head": [
+      26,
+      6
+    ],
+    "mean_logprob_change": -0.05756608954603637
+  },
+  {
+    "head": [
+      12,
+      12
+    ],
+    "mean_logprob_change": -0.05786648300384625
+  },
+  {
+    "head": [
+      13,
+      13
+    ],
+    "mean_logprob_change": -0.05809057958925254
+  },
+  {
+    "head": [
+      14,
+      1
+    ],
+    "mean_logprob_change": -0.058192125660009066
+  },
+  {
+    "head": [
+      15,
+      10
+    ],
+    "mean_logprob_change": -0.05975085424661406
+  },
+  {
+    "head": [
+      29,
+      15
+    ],
+    "mean_logprob_change": -0.05982246487509784
+  },
+  {
+    "head": [
+      2,
+      2
+    ],
+    "mean_logprob_change": -0.06133697974134683
+  },
+  {
+    "head": [
+      17,
+      10
+    ],
+    "mean_logprob_change": -0.061703183913062315
+  },
+  {
+    "head": [
+      6,
+      5
+    ],
+    "mean_logprob_change": -0.062445893789107414
+  },
+  {
+    "head": [
+      13,
+      11
+    ],
+    "mean_logprob_change": -0.0642702531004191
+  },
+  {
+    "head": [
+      11,
+      15
+    ],
+    "mean_logprob_change": -0.06434477098249679
+  },
+  {
+    "head": [
+      13,
+      15
+    ],
+    "mean_logprob_change": -0.0652218118550068
+  },
+  {
+    "head": [
+      10,
+      15
+    ],
+    "mean_logprob_change": -0.06527010727218598
+  },
+  {
+    "head": [
+      2,
+      7
+    ],
+    "mean_logprob_change": -0.06629507139652341
+  },
+  {
+    "head": [
+      8,
+      6
+    ],
+    "mean_logprob_change": -0.06632067848457035
+  },
+  {
+    "head": [
+      8,
+      10
+    ],
+    "mean_logprob_change": -0.06718661615032116
+  },
+  {
+    "head": [
+      10,
+      10
+    ],
+    "mean_logprob_change": -0.06779838977067888
+  },
+  {
+    "head": [
+      26,
+      12
+    ],
+    "mean_logprob_change": -0.06824776707101703
+  },
+  {
+    "head": [
+      23,
+      12
+    ],
+    "mean_logprob_change": -0.06832965323232575
+  },
+  {
+    "head": [
+      11,
+      9
+    ],
+    "mean_logprob_change": -0.06856273862769098
+  },
+  {
+    "head": [
+      20,
+      15
+    ],
+    "mean_logprob_change": -0.06885888853186632
+  },
+  {
+    "head": [
+      11,
+      12
+    ],
+    "mean_logprob_change": -0.07016473094747697
+  },
+  {
+    "head": [
+      8,
+      5
+    ],
+    "mean_logprob_change": -0.07020030445690209
+  },
+  {
+    "head": [
+      5,
+      13
+    ],
+    "mean_logprob_change": -0.07078680899528889
+  },
+  {
+    "head": [
+      31,
+      0
+    ],
+    "mean_logprob_change": -0.07144874417300588
+  },
+  {
+    "head": [
+      17,
+      7
+    ],
+    "mean_logprob_change": -0.07155627568078457
+  },
+  {
+    "head": [
+      13,
+      4
+    ],
+    "mean_logprob_change": -0.07179452568282405
+  },
+  {
+    "head": [
+      5,
+      3
+    ],
+    "mean_logprob_change": -0.07308197642301963
+  },
+  {
+    "head": [
+      26,
+      5
+    ],
+    "mean_logprob_change": -0.07318212002938383
+  },
+  {
+    "head": [
+      33,
+      3
+    ],
+    "mean_logprob_change": -0.07352281699559164
+  },
+  {
+    "head": [
+      28,
+      3
+    ],
+    "mean_logprob_change": -0.07417211632968317
+  },
+  {
+    "head": [
+      1,
+      14
+    ],
+    "mean_logprob_change": -0.07562978625609389
+  },
+  {
+    "head": [
+      1,
+      3
+    ],
+    "mean_logprob_change": -0.07780546920516802
+  },
+  {
+    "head": [
+      12,
+      1
+    ],
+    "mean_logprob_change": -0.0778340716017762
+  },
+  {
+    "head": [
+      12,
+      10
+    ],
+    "mean_logprob_change": -0.07807343167887489
+  },
+  {
+    "head": [
+      2,
+      3
+    ],
+    "mean_logprob_change": -0.07833834930584642
+  },
+  {
+    "head": [
+      1,
+      1
+    ],
+    "mean_logprob_change": -0.07885572523502597
+  },
+  {
+    "head": [
+      8,
+      15
+    ],
+    "mean_logprob_change": -0.0804755141385117
+  },
+  {
+    "head": [
+      5,
+      9
+    ],
+    "mean_logprob_change": -0.08084208184589187
+  },
+  {
+    "head": [
+      11,
+      14
+    ],
+    "mean_logprob_change": -0.08087380888767844
+  },
+  {
+    "head": [
+      17,
+      13
+    ],
+    "mean_logprob_change": -0.08093967043446933
+  },
+  {
+    "head": [
+      1,
+      7
+    ],
+    "mean_logprob_change": -0.08103718443165588
+  },
+  {
+    "head": [
+      20,
+      9
+    ],
+    "mean_logprob_change": -0.08128254167485867
+  },
+  {
+    "head": [
+      12,
+      9
+    ],
+    "mean_logprob_change": -0.0815663627539781
+  },
+  {
+    "head": [
+      2,
+      12
+    ],
+    "mean_logprob_change": -0.08169335042728522
+  },
+  {
+    "head": [
+      17,
+      15
+    ],
+    "mean_logprob_change": -0.08231939945533527
+  },
+  {
+    "head": [
+      2,
+      13
+    ],
+    "mean_logprob_change": -0.08274637311427611
+  },
+  {
+    "head": [
+      13,
+      9
+    ],
+    "mean_logprob_change": -0.08483453019493581
+  },
+  {
+    "head": [
+      7,
+      12
+    ],
+    "mean_logprob_change": -0.08554716336368078
+  },
+  {
+    "head": [
+      0,
+      13
+    ],
+    "mean_logprob_change": -0.08628242200171211
+  },
+  {
+    "head": [
+      5,
+      1
+    ],
+    "mean_logprob_change": -0.0873886998766386
+  },
+  {
+    "head": [
+      23,
+      2
+    ],
+    "mean_logprob_change": -0.08742738199898868
+  },
+  {
+    "head": [
+      12,
+      13
+    ],
+    "mean_logprob_change": -0.08764536635599068
+  },
+  {
+    "head": [
+      5,
+      8
+    ],
+    "mean_logprob_change": -0.0882194127276658
+  },
+  {
+    "head": [
+      11,
+      5
+    ],
+    "mean_logprob_change": -0.08901999479540235
+  },
+  {
+    "head": [
+      24,
+      15
+    ],
+    "mean_logprob_change": -0.09144386031016642
+  },
+  {
+    "head": [
+      1,
+      2
+    ],
+    "mean_logprob_change": -0.09179559408226638
+  },
+  {
+    "head": [
+      13,
+      1
+    ],
+    "mean_logprob_change": -0.09282494696687198
+  },
+  {
+    "head": [
+      13,
+      14
+    ],
+    "mean_logprob_change": -0.09394427830033132
+  },
+  {
+    "head": [
+      13,
+      10
+    ],
+    "mean_logprob_change": -0.09461279873083288
+  },
+  {
+    "head": [
+      30,
+      6
+    ],
+    "mean_logprob_change": -0.09815866076798956
+  },
+  {
+    "head": [
+      8,
+      2
+    ],
+    "mean_logprob_change": -0.09828579798345448
+  },
+  {
+    "head": [
+      15,
+      0
+    ],
+    "mean_logprob_change": -0.09870840108947015
+  },
+  {
+    "head": [
+      15,
+      13
+    ],
+    "mean_logprob_change": -0.09995520143874286
+  },
+  {
+    "head": [
+      3,
+      6
+    ],
+    "mean_logprob_change": -0.101071285970929
+  },
+  {
+    "head": [
+      5,
+      15
+    ],
+    "mean_logprob_change": -0.10341280869612147
+  },
+  {
+    "head": [
+      11,
+      8
+    ],
+    "mean_logprob_change": -0.10391857895443297
+  },
+  {
+    "head": [
+      11,
+      3
+    ],
+    "mean_logprob_change": -0.10436993552929881
+  },
+  {
+    "head": [
+      5,
+      5
+    ],
+    "mean_logprob_change": -0.1054442129810933
+  },
+  {
+    "head": [
+      5,
+      10
+    ],
+    "mean_logprob_change": -0.10564980510325646
+  },
+  {
+    "head": [
+      6,
+      1
+    ],
+    "mean_logprob_change": -0.10722761642465099
+  },
+  {
+    "head": [
+      11,
+      11
+    ],
+    "mean_logprob_change": -0.10792258745346607
+  },
+  {
+    "head": [
+      2,
+      5
+    ],
+    "mean_logprob_change": -0.10977239343776646
+  },
+  {
+    "head": [
+      12,
+      11
+    ],
+    "mean_logprob_change": -0.10982231407183522
+  },
+  {
+    "head": [
+      13,
+      7
+    ],
+    "mean_logprob_change": -0.11049387589428515
+  },
+  {
+    "head": [
+      5,
+      6
+    ],
+    "mean_logprob_change": -0.11645657318886209
+  },
+  {
+    "head": [
+      5,
+      14
+    ],
+    "mean_logprob_change": -0.11729868200654948
+  },
+  {
+    "head": [
+      11,
+      6
+    ],
+    "mean_logprob_change": -0.12501961189987554
+  },
+  {
+    "head": [
+      11,
+      0
+    ],
+    "mean_logprob_change": -0.1285281159690599
+  },
+  {
+    "head": [
+      5,
+      2
+    ],
+    "mean_logprob_change": -0.1343023057544704
+  },
+  {
+    "head": [
+      30,
+      3
+    ],
+    "mean_logprob_change": -0.1363176526928185
+  },
+  {
+    "head": [
+      5,
+      0
+    ],
+    "mean_logprob_change": -0.1371177374432429
+  },
+  {
+    "head": [
+      2,
+      9
+    ],
+    "mean_logprob_change": -0.15211130470817055
+  },
+  {
+    "head": [
+      22,
+      13
+    ],
+    "mean_logprob_change": -0.1538685605085881
+  },
+  {
+    "head": [
+      2,
+      10
+    ],
+    "mean_logprob_change": -0.15422968244216922
+  },
+  {
+    "head": [
+      5,
+      12
+    ],
+    "mean_logprob_change": -0.16363591099178088
+  },
+  {
+    "head": [
+      29,
+      3
+    ],
+    "mean_logprob_change": -0.17214093576051726
+  },
+  {
+    "head": [
+      5,
+      4
+    ],
+    "mean_logprob_change": -0.21471522089904047
+  },
+  {
+    "head": [
+      27,
+      14
+    ],
+    "mean_logprob_change": -0.22503532886384583
+  },
+  {
+    "head": [
+      23,
+      11
+    ],
+    "mean_logprob_change": -0.32283759730465844
+  },
+  {
+    "head": [
+      32,
+      1
+    ],
+    "mean_logprob_change": -0.3698183588428363
+  },
+  {
+    "head": [
+      32,
+      7
+    ],
+    "mean_logprob_change": -0.44535388484573285
+  }
+]
