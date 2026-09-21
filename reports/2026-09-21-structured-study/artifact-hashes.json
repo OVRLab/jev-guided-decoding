@@ -63,6 +63,7 @@
     "stopped-v2/metadata.json": "38f6ca510e59c744d9f3bc84ce6391aefb8f6930c35a0ff5c86a50dd7b223e67",
     "stopped-v2/runs.jsonl.gz": "5c83fe7df42eff36abd30461e692de88fd9acc05be4be81f334c2fd68efaf327",
     "stopped-v2/job-starts.jsonl.gz": "05b0d71510430b712e8c0b91bf709bd2f0883fc7ea4f8349a2f51dee6619c5b0",
-    "stopped-v2/completion.json": "4bb4e6ef6f22c50c71fb3885e9e6cb5ab7e9739924aef832623364ccd58f9392"
+    "stopped-v2/completion.json": "4bb4e6ef6f22c50c71fb3885e9e6cb5ab7e9739924aef832623364ccd58f9392",
+    "stopped-v2/independent-analysis.json": "776e6023540f30c697d80931fc5e40fcecd3d73b85175c4e51b8141562ba35da"
   }
 }

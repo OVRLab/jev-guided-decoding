@@ -89,8 +89,9 @@ def render(summary, output):
     fig.text(
         0.02,
         0.025,
-        "Three seeds per world; 900 answers per arm. All arms share a final-label grammar.\n"
-        "Timing includes hosted Jev and discarded lookaheads; model loading is excluded.",
+        "Three seeds per world; 900 planned jobs per arm. Failed jobs count as incorrect.\n"
+        "All arms share a final-label grammar. Timing includes hosted Jev and discarded lookaheads;\n"
+        "model loading and between-job recovery are excluded from these per-job means.",
         fontsize=9,
         color="#4d5660",
     )
@@ -131,7 +132,7 @@ def render(summary, output):
         0.02,
         0.025,
         "World-cluster bootstrap: 5,000 draws after averaging seeds within each world.\n"
-        "98.333% intervals adjust the three primary comparisons to a 95% family level.",
+        "98.333% intervals adjust three comparisons to a nominal 95% family level.",
         fontsize=9,
         color="#4d5660",
     )

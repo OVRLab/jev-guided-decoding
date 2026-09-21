@@ -130,6 +130,27 @@ def audit_tokens(row, base):
     return True
 
 
+def audit_grades(row, case):
+    verified = dict(branches=0, accepted=0)
+    for step in row.get("steps", []):
+        for branch in step.get("checkpoint", {}).get("branches", []):
+            if branch.get("body"):
+                require(
+                    STUDY["DATA"]["grade_claim"](case, branch["body"]) == branch.get("oracle"),
+                    "Branch oracle mismatch",
+                )
+                verified["branches"] += 1
+        if step.get("text"):
+            frame = parse_frame(step["text"])
+            require(frame is not None and frame.kind == "step", "Accepted claim frame mismatch")
+            require(
+                STUDY["DATA"]["grade_claim"](case, frame.body) == step.get("oracle"),
+                "Accepted claim oracle mismatch",
+            )
+            verified["accepted"] += 1
+    return verified
+
+
 def diagnostics(rows):
     arms = defaultdict(lambda: defaultdict(float))
     confusion = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
@@ -245,6 +266,7 @@ def main():
         )
     )
     certified = input_certified = 0
+    grade_audits = dict(branches=0, accepted=0)
     for row in rows:
         case = by_id[row["id"]]
         require(STUDY["DATA"]["truth"](case) == row["reference_label"], "Reference mismatch")
@@ -252,13 +274,8 @@ def main():
             input_certified += audit_input(row, case, manifest, tokenizer)
         if row["status"] == "complete":
             certified += audit_tokens(row, base)
-        for step in row.get("steps", []):
-            for branch in step.get("checkpoint", {}).get("branches", []):
-                if branch.get("body"):
-                    require(
-                        STUDY["DATA"]["grade_claim"](case, branch["body"]) == branch["oracle"],
-                        "Oracle mismatch",
-                    )
+        for kind, count in audit_grades(row, case).items():
+            grade_audits[kind] += count
     result = STUDY["summarize"](
         rows,
         cases,
@@ -269,6 +286,7 @@ def main():
     result.update(
         independent_input_audits=input_certified,
         independent_token_audits=certified,
+        independent_claim_grade_audits=grade_audits,
         diagnostics=diagnostics(rows),
         raw_sha256=STUDY["sha"](args.runs),
         analysis_sha256=STUDY["sha"](Path(__file__)),

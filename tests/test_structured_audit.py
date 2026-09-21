@@ -72,3 +72,33 @@ def test_input_audit_rejects_reused_id_with_changed_question_evidence_or_prompt(
     bad["prompt_ids"].append(99)
     with pytest.raises(ValueError, match="prompt"):
         A["audit_input"](bad, case, manifest, Tokenizer())
+
+
+def test_grade_audit_recomputes_accepted_claims_as_well_as_rejected_branches():
+    case = {
+        "facts": ["Mira is blue."],
+        "rules": [],
+        "entities": ["Mira"],
+        "properties": ["blue", "calm"],
+    }
+    grade = A["STUDY"]["DATA"]["grade_claim"]
+    row = {
+        "steps": [
+            {
+                "text": "<step>Mira is blue.</step>",
+                "oracle": grade(case, "Mira is blue."),
+                "checkpoint": {
+                    "branches": [{"body": "Mira is calm.", "oracle": grade(case, "Mira is calm.")}]
+                },
+            }
+        ]
+    }
+    assert A["audit_grades"](row, case)
+    bad = copy.deepcopy(row)
+    bad["steps"][0]["oracle"]["correct"] = False
+    with pytest.raises(ValueError, match="Accepted claim"):
+        A["audit_grades"](bad, case)
+    bad = copy.deepcopy(row)
+    bad["steps"][0]["checkpoint"]["branches"][0]["oracle"]["correct"] = True
+    with pytest.raises(ValueError, match="Branch"):
+        A["audit_grades"](bad, case)
