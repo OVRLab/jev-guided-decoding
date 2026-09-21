@@ -86,3 +86,16 @@ reassessment. Each original report links its own source/data/summary artifacts.
 The new analyzer records its own source hash, parser hash and exact private input
 file hash. Earlier reports saying “pending” describe their creation time; later
 rows supply the completion record without rewriting those historical files.
+
+## R15: planned refinement and complete fresh evaluation
+
+The owner authorized iterating the positive R14 native-baseline result, then
+explicitly requested a full plan, implementation, cloud test and documentation.
+The [prospective R15 protocol](evidence-attention-v2-protocol.md) compares 90
+bounded policies on 96 development worlds and freezes one before 600 primary-test
+and 120 longer-chain challenge worlds. Twelve arms separate the previous R14
+version, native Granite, simpler controls and one-factor ablations. The new primary
+question is improvement over native and R14, with simpler controls secondary;
+R14's historical criterion/results are unchanged. Status: implementation verified
+with 343 local passing tests; [pre-execution report](../reports/2026-09-22-evidence-attention-refinement/README.md),
+fresh model evaluation pending.

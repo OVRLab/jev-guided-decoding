@@ -27,6 +27,7 @@ weights are unchanged, and both temporary GPU deployments are deleted.
 | --- | --- |
 | [Study register](study-register.md) | Every recorded live study, failed pilot, correction, and offline follow-up |
 | [Architecture reassessment](architecture-reassessment.md) | Exact checkpoint, interface constraints, insertion-point decision and alternatives |
+| [Attention refinement](../reports/2026-09-22-evidence-attention-refinement/README.md) | R15 implemented and locally verified; [fresh evaluation plan](evidence-attention-v2-protocol.md), cloud results pending |
 | [Evidence-attention study](../reports/2026-09-21-evidence-attention/README.md) | Completed R14: eight arms, narrow native-baseline gain with inconclusive simpler controls; [frozen plan](evidence-attention-protocol.md), all traces and audit |
 | [New diagnostic report](../reports/2026-09-21-architecture-reassessment/README.md) | Reproducible decomposition of 3,600 main and 48 development traces |
 | [Next experiment](next-experiment.md) | Staged evidence gates, controls, budgets, held-out evaluation and stop rules |

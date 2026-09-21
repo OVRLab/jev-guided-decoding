@@ -1,5 +1,10 @@
 # Feature: Jev-guided intermediate reasoning
 
+Current work: [R15 refinement](reports/2026-09-22-evidence-attention-refinement/README.md)
+implements a bounded search around R14's positive attention result, with fresh
+primary/challenge cohorts and separate improvement-versus-R14 criteria. All 343
+local tests pass; cloud execution and final quality results are pending.
+
 The [R13 full study](reports/2026-09-21-structured-study/README.md) is complete:
 6,300 planned jobs attempted, 6,299 completed and one provider failure retained.
 Direct Granite scored 42.67%, staged 37.00%, likelihood 35.44% and Jev token
