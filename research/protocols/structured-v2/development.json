@@ -1,0 +1,1366 @@
+[
+  {
+    "split": "development",
+    "index": 0,
+    "motif": "forward",
+    "depth": 2,
+    "entities": [
+      "Fovepa",
+      "Sifaca",
+      "Pipoti"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Pipoti is quiet.",
+      "Fovepa is calm.",
+      "Sifaca is bright."
+    ],
+    "rules": [
+      [
+        [
+          "Sifaca is bright."
+        ],
+        "Sifaca is small."
+      ],
+      [
+        [
+          "Fovepa is calm."
+        ],
+        "Fovepa is bright."
+      ],
+      [
+        [
+          "Fovepa is bright."
+        ],
+        "Fovepa is warm."
+      ]
+    ],
+    "target": "Fovepa is warm.",
+    "evidence": "Pipoti is quiet. Fovepa is calm. Sifaca is bright. If Sifaca is bright, then Sifaca is small. If Fovepa is calm, then Fovepa is bright. If Fovepa is bright, then Fovepa is warm.",
+    "reference_label": "TRUE",
+    "id": "structured/development/2b10550e8850fef4"
+  },
+  {
+    "split": "development",
+    "index": 1,
+    "motif": "conjunction",
+    "depth": 2,
+    "entities": [
+      "Modiro",
+      "Senoce",
+      "Curiva"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Curiva is calm.",
+      "Senoce is ready.",
+      "Modiro is calm.",
+      "Modiro is striped."
+    ],
+    "rules": [
+      [
+        [
+          "Modiro is ready."
+        ],
+        "Modiro is blue."
+      ],
+      [
+        [
+          "Modiro is striped.",
+          "Modiro is calm."
+        ],
+        "Modiro is ready."
+      ],
+      [
+        [
+          "Senoce is ready."
+        ],
+        "Senoce is quiet."
+      ]
+    ],
+    "target": "Modiro is blue.",
+    "evidence": "Curiva is calm. Senoce is ready. Modiro is calm. Modiro is striped. If Modiro is ready, then Modiro is blue. If Modiro is striped and Modiro is calm, then Modiro is ready. If Senoce is ready, then Senoce is quiet.",
+    "reference_label": "TRUE",
+    "id": "structured/development/e4e7c5700981f165"
+  },
+  {
+    "split": "development",
+    "index": 2,
+    "motif": "negative",
+    "depth": 2,
+    "entities": [
+      "Lekura",
+      "Lecari",
+      "Gocode"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Lecari is bright.",
+      "Gocode is small.",
+      "Lekura is calm."
+    ],
+    "rules": [
+      [
+        [
+          "Lecari is bright."
+        ],
+        "Lecari is warm."
+      ],
+      [
+        [
+          "Lekura is calm."
+        ],
+        "Lekura is bright."
+      ],
+      [
+        [
+          "Lekura is bright."
+        ],
+        "Lekura is not striped."
+      ]
+    ],
+    "target": "Lekura is striped.",
+    "evidence": "Lecari is bright. Gocode is small. Lekura is calm. If Lecari is bright, then Lecari is warm. If Lekura is calm, then Lekura is bright. If Lekura is bright, then Lekura is not striped.",
+    "reference_label": "FALSE",
+    "id": "structured/development/9b6bd32f5d3d08f2"
+  },
+  {
+    "split": "development",
+    "index": 3,
+    "motif": "negative_conjunction",
+    "depth": 2,
+    "entities": [
+      "Miniti",
+      "Tadija",
+      "Mabobo"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Mabobo is striped.",
+      "Tadija is bright.",
+      "Miniti is striped.",
+      "Miniti is small."
+    ],
+    "rules": [
+      [
+        [
+          "Miniti is bright."
+        ],
+        "Miniti is not quiet."
+      ],
+      [
+        [
+          "Tadija is bright."
+        ],
+        "Tadija is ready."
+      ],
+      [
+        [
+          "Miniti is small.",
+          "Miniti is striped."
+        ],
+        "Miniti is bright."
+      ]
+    ],
+    "target": "Miniti is quiet.",
+    "evidence": "Mabobo is striped. Tadija is bright. Miniti is striped. Miniti is small. If Miniti is bright, then Miniti is not quiet. If Tadija is bright, then Tadija is ready. If Miniti is small and Miniti is striped, then Miniti is bright.",
+    "reference_label": "FALSE",
+    "id": "structured/development/d1f3272b5c3e317e"
+  },
+  {
+    "split": "development",
+    "index": 4,
+    "motif": "missing",
+    "depth": 2,
+    "entities": [
+      "Vomici",
+      "Taduho",
+      "Lodenu"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Vomici is blue.",
+      "Lodenu is bright.",
+      "Taduho is calm."
+    ],
+    "rules": [
+      [
+        [
+          "Taduho is calm."
+        ],
+        "Taduho is striped."
+      ],
+      [
+        [
+          "Vomici is blue.",
+          "Vomici is bright."
+        ],
+        "Vomici is calm."
+      ],
+      [
+        [
+          "Vomici is calm."
+        ],
+        "Vomici is small."
+      ]
+    ],
+    "target": "Vomici is small.",
+    "evidence": "Vomici is blue. Lodenu is bright. Taduho is calm. If Taduho is calm, then Taduho is striped. If Vomici is blue and Vomici is bright, then Vomici is calm. If Vomici is calm, then Vomici is small.",
+    "reference_label": "UNKNOWN",
+    "id": "structured/development/bc7b5a866bf16290"
+  },
+  {
+    "split": "development",
+    "index": 5,
+    "motif": "reverse",
+    "depth": 2,
+    "entities": [
+      "Hesafi",
+      "Ticusu",
+      "Fuhule"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Fuhule is small.",
+      "Ticusu is striped.",
+      "Hesafi is warm."
+    ],
+    "rules": [
+      [
+        [
+          "Ticusu is striped."
+        ],
+        "Ticusu is ready."
+      ],
+      [
+        [
+          "Hesafi is calm."
+        ],
+        "Hesafi is striped."
+      ],
+      [
+        [
+          "Hesafi is striped."
+        ],
+        "Hesafi is warm."
+      ]
+    ],
+    "target": "Hesafi is calm.",
+    "evidence": "Fuhule is small. Ticusu is striped. Hesafi is warm. If Ticusu is striped, then Ticusu is ready. If Hesafi is calm, then Hesafi is striped. If Hesafi is striped, then Hesafi is warm.",
+    "reference_label": "UNKNOWN",
+    "id": "structured/development/26d8d9901086edd4"
+  },
+  {
+    "split": "development",
+    "index": 6,
+    "motif": "forward",
+    "depth": 4,
+    "entities": [
+      "Tecuvi",
+      "Cumubo",
+      "Pacaru"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Tecuvi is warm.",
+      "Pacaru is ready.",
+      "Cumubo is blue."
+    ],
+    "rules": [
+      [
+        [
+          "Tecuvi is quiet."
+        ],
+        "Tecuvi is striped."
+      ],
+      [
+        [
+          "Tecuvi is warm."
+        ],
+        "Tecuvi is blue."
+      ],
+      [
+        [
+          "Cumubo is blue."
+        ],
+        "Cumubo is calm."
+      ],
+      [
+        [
+          "Tecuvi is striped."
+        ],
+        "Tecuvi is small."
+      ],
+      [
+        [
+          "Tecuvi is blue."
+        ],
+        "Tecuvi is quiet."
+      ]
+    ],
+    "target": "Tecuvi is small.",
+    "evidence": "Tecuvi is warm. Pacaru is ready. Cumubo is blue. If Tecuvi is quiet, then Tecuvi is striped. If Tecuvi is warm, then Tecuvi is blue. If Cumubo is blue, then Cumubo is calm. If Tecuvi is striped, then Tecuvi is small. If Tecuvi is blue, then Tecuvi is quiet.",
+    "reference_label": "TRUE",
+    "id": "structured/development/1bc11b8c750ab874"
+  },
+  {
+    "split": "development",
+    "index": 7,
+    "motif": "conjunction",
+    "depth": 4,
+    "entities": [
+      "Pebimu",
+      "Sehusi",
+      "Tusogu"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Pebimu is bright.",
+      "Sehusi is quiet.",
+      "Tusogu is small.",
+      "Pebimu is small."
+    ],
+    "rules": [
+      [
+        [
+          "Pebimu is striped."
+        ],
+        "Pebimu is warm."
+      ],
+      [
+        [
+          "Pebimu is quiet."
+        ],
+        "Pebimu is ready."
+      ],
+      [
+        [
+          "Pebimu is ready."
+        ],
+        "Pebimu is striped."
+      ],
+      [
+        [
+          "Sehusi is quiet."
+        ],
+        "Sehusi is blue."
+      ],
+      [
+        [
+          "Pebimu is bright.",
+          "Pebimu is small."
+        ],
+        "Pebimu is quiet."
+      ]
+    ],
+    "target": "Pebimu is warm.",
+    "evidence": "Pebimu is bright. Sehusi is quiet. Tusogu is small. Pebimu is small. If Pebimu is striped, then Pebimu is warm. If Pebimu is quiet, then Pebimu is ready. If Pebimu is ready, then Pebimu is striped. If Sehusi is quiet, then Sehusi is blue. If Pebimu is bright and Pebimu is small, then Pebimu is quiet.",
+    "reference_label": "TRUE",
+    "id": "structured/development/a7ed8a853e7eb260"
+  },
+  {
+    "split": "development",
+    "index": 8,
+    "motif": "negative",
+    "depth": 4,
+    "entities": [
+      "Micuhi",
+      "Lojiba",
+      "Pikage"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Lojiba is bright.",
+      "Micuhi is ready.",
+      "Pikage is calm."
+    ],
+    "rules": [
+      [
+        [
+          "Micuhi is warm."
+        ],
+        "Micuhi is not quiet."
+      ],
+      [
+        [
+          "Lojiba is bright."
+        ],
+        "Lojiba is striped."
+      ],
+      [
+        [
+          "Micuhi is bright."
+        ],
+        "Micuhi is small."
+      ],
+      [
+        [
+          "Micuhi is ready."
+        ],
+        "Micuhi is bright."
+      ],
+      [
+        [
+          "Micuhi is small."
+        ],
+        "Micuhi is warm."
+      ]
+    ],
+    "target": "Micuhi is quiet.",
+    "evidence": "Lojiba is bright. Micuhi is ready. Pikage is calm. If Micuhi is warm, then Micuhi is not quiet. If Lojiba is bright, then Lojiba is striped. If Micuhi is bright, then Micuhi is small. If Micuhi is ready, then Micuhi is bright. If Micuhi is small, then Micuhi is warm.",
+    "reference_label": "FALSE",
+    "id": "structured/development/eb39747e02eede35"
+  },
+  {
+    "split": "development",
+    "index": 9,
+    "motif": "negative_conjunction",
+    "depth": 4,
+    "entities": [
+      "Sahulu",
+      "Casivo",
+      "Dujomo"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Sahulu is striped.",
+      "Sahulu is bright.",
+      "Casivo is blue.",
+      "Dujomo is bright."
+    ],
+    "rules": [
+      [
+        [
+          "Sahulu is calm."
+        ],
+        "Sahulu is warm."
+      ],
+      [
+        [
+          "Sahulu is blue."
+        ],
+        "Sahulu is calm."
+      ],
+      [
+        [
+          "Sahulu is warm."
+        ],
+        "Sahulu is not small."
+      ],
+      [
+        [
+          "Casivo is blue."
+        ],
+        "Casivo is ready."
+      ],
+      [
+        [
+          "Sahulu is striped.",
+          "Sahulu is bright."
+        ],
+        "Sahulu is blue."
+      ]
+    ],
+    "target": "Sahulu is small.",
+    "evidence": "Sahulu is striped. Sahulu is bright. Casivo is blue. Dujomo is bright. If Sahulu is calm, then Sahulu is warm. If Sahulu is blue, then Sahulu is calm. If Sahulu is warm, then Sahulu is not small. If Casivo is blue, then Casivo is ready. If Sahulu is striped and Sahulu is bright, then Sahulu is blue.",
+    "reference_label": "FALSE",
+    "id": "structured/development/3ddc34c4ed9310eb"
+  },
+  {
+    "split": "development",
+    "index": 10,
+    "motif": "missing",
+    "depth": 4,
+    "entities": [
+      "Hofele",
+      "Lutiri",
+      "Jokave"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Hofele is striped.",
+      "Jokave is warm.",
+      "Lutiri is quiet."
+    ],
+    "rules": [
+      [
+        [
+          "Hofele is quiet."
+        ],
+        "Hofele is small."
+      ],
+      [
+        [
+          "Hofele is small."
+        ],
+        "Hofele is blue."
+      ],
+      [
+        [
+          "Hofele is striped.",
+          "Hofele is warm."
+        ],
+        "Hofele is quiet."
+      ],
+      [
+        [
+          "Hofele is blue."
+        ],
+        "Hofele is bright."
+      ],
+      [
+        [
+          "Lutiri is quiet."
+        ],
+        "Lutiri is ready."
+      ]
+    ],
+    "target": "Hofele is bright.",
+    "evidence": "Hofele is striped. Jokave is warm. Lutiri is quiet. If Hofele is quiet, then Hofele is small. If Hofele is small, then Hofele is blue. If Hofele is striped and Hofele is warm, then Hofele is quiet. If Hofele is blue, then Hofele is bright. If Lutiri is quiet, then Lutiri is ready.",
+    "reference_label": "UNKNOWN",
+    "id": "structured/development/514870f02cfb11f6"
+  },
+  {
+    "split": "development",
+    "index": 11,
+    "motif": "reverse",
+    "depth": 4,
+    "entities": [
+      "Radusa",
+      "Fafibe",
+      "Nepivo"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Fafibe is striped.",
+      "Radusa is small.",
+      "Nepivo is bright."
+    ],
+    "rules": [
+      [
+        [
+          "Radusa is quiet."
+        ],
+        "Radusa is small."
+      ],
+      [
+        [
+          "Fafibe is striped."
+        ],
+        "Fafibe is ready."
+      ],
+      [
+        [
+          "Radusa is striped."
+        ],
+        "Radusa is calm."
+      ],
+      [
+        [
+          "Radusa is blue."
+        ],
+        "Radusa is striped."
+      ],
+      [
+        [
+          "Radusa is calm."
+        ],
+        "Radusa is quiet."
+      ]
+    ],
+    "target": "Radusa is blue.",
+    "evidence": "Fafibe is striped. Radusa is small. Nepivo is bright. If Radusa is quiet, then Radusa is small. If Fafibe is striped, then Fafibe is ready. If Radusa is striped, then Radusa is calm. If Radusa is blue, then Radusa is striped. If Radusa is calm, then Radusa is quiet.",
+    "reference_label": "UNKNOWN",
+    "id": "structured/development/060f1183255d9135"
+  },
+  {
+    "split": "development",
+    "index": 12,
+    "motif": "forward",
+    "depth": 2,
+    "entities": [
+      "Daharu",
+      "Vekoca",
+      "Dodihu"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Daharu is striped.",
+      "Vekoca is small.",
+      "Dodihu is bright."
+    ],
+    "rules": [
+      [
+        [
+          "Daharu is striped."
+        ],
+        "Daharu is small."
+      ],
+      [
+        [
+          "Daharu is small."
+        ],
+        "Daharu is ready."
+      ],
+      [
+        [
+          "Vekoca is small."
+        ],
+        "Vekoca is calm."
+      ]
+    ],
+    "target": "Daharu is ready.",
+    "evidence": "Daharu is striped. Vekoca is small. Dodihu is bright. If Daharu is striped, then Daharu is small. If Daharu is small, then Daharu is ready. If Vekoca is small, then Vekoca is calm.",
+    "reference_label": "TRUE",
+    "id": "structured/development/87438487ffc59247"
+  },
+  {
+    "split": "development",
+    "index": 13,
+    "motif": "conjunction",
+    "depth": 2,
+    "entities": [
+      "Mibagu",
+      "Kokimu",
+      "Rubuva"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Rubuva is blue.",
+      "Kokimu is striped.",
+      "Mibagu is blue.",
+      "Mibagu is bright."
+    ],
+    "rules": [
+      [
+        [
+          "Mibagu is bright.",
+          "Mibagu is blue."
+        ],
+        "Mibagu is striped."
+      ],
+      [
+        [
+          "Mibagu is striped."
+        ],
+        "Mibagu is warm."
+      ],
+      [
+        [
+          "Kokimu is striped."
+        ],
+        "Kokimu is ready."
+      ]
+    ],
+    "target": "Mibagu is warm.",
+    "evidence": "Rubuva is blue. Kokimu is striped. Mibagu is blue. Mibagu is bright. If Mibagu is bright and Mibagu is blue, then Mibagu is striped. If Mibagu is striped, then Mibagu is warm. If Kokimu is striped, then Kokimu is ready.",
+    "reference_label": "TRUE",
+    "id": "structured/development/3da12b4ed7ad4741"
+  },
+  {
+    "split": "development",
+    "index": 14,
+    "motif": "negative",
+    "depth": 2,
+    "entities": [
+      "Fejisi",
+      "Hetafa",
+      "Komula"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Komula is warm.",
+      "Hetafa is blue.",
+      "Fejisi is ready."
+    ],
+    "rules": [
+      [
+        [
+          "Fejisi is blue."
+        ],
+        "Fejisi is not bright."
+      ],
+      [
+        [
+          "Fejisi is ready."
+        ],
+        "Fejisi is blue."
+      ],
+      [
+        [
+          "Hetafa is blue."
+        ],
+        "Hetafa is small."
+      ]
+    ],
+    "target": "Fejisi is bright.",
+    "evidence": "Komula is warm. Hetafa is blue. Fejisi is ready. If Fejisi is blue, then Fejisi is not bright. If Fejisi is ready, then Fejisi is blue. If Hetafa is blue, then Hetafa is small.",
+    "reference_label": "FALSE",
+    "id": "structured/development/0384ff54448b5bb2"
+  },
+  {
+    "split": "development",
+    "index": 15,
+    "motif": "negative_conjunction",
+    "depth": 2,
+    "entities": [
+      "Tegaba",
+      "Hepalu",
+      "Mahaki"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Tegaba is striped.",
+      "Hepalu is blue.",
+      "Mahaki is quiet.",
+      "Tegaba is quiet."
+    ],
+    "rules": [
+      [
+        [
+          "Hepalu is blue."
+        ],
+        "Hepalu is small."
+      ],
+      [
+        [
+          "Tegaba is striped.",
+          "Tegaba is quiet."
+        ],
+        "Tegaba is blue."
+      ],
+      [
+        [
+          "Tegaba is blue."
+        ],
+        "Tegaba is not bright."
+      ]
+    ],
+    "target": "Tegaba is bright.",
+    "evidence": "Tegaba is striped. Hepalu is blue. Mahaki is quiet. Tegaba is quiet. If Hepalu is blue, then Hepalu is small. If Tegaba is striped and Tegaba is quiet, then Tegaba is blue. If Tegaba is blue, then Tegaba is not bright.",
+    "reference_label": "FALSE",
+    "id": "structured/development/be383f6a4de1a0dd"
+  },
+  {
+    "split": "development",
+    "index": 16,
+    "motif": "missing",
+    "depth": 2,
+    "entities": [
+      "Bejulu",
+      "Famihe",
+      "Bohoci"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Bohoci is warm.",
+      "Bejulu is ready.",
+      "Famihe is striped."
+    ],
+    "rules": [
+      [
+        [
+          "Famihe is striped."
+        ],
+        "Famihe is small."
+      ],
+      [
+        [
+          "Bejulu is striped."
+        ],
+        "Bejulu is calm."
+      ],
+      [
+        [
+          "Bejulu is ready.",
+          "Bejulu is warm."
+        ],
+        "Bejulu is striped."
+      ]
+    ],
+    "target": "Bejulu is calm.",
+    "evidence": "Bohoci is warm. Bejulu is ready. Famihe is striped. If Famihe is striped, then Famihe is small. If Bejulu is striped, then Bejulu is calm. If Bejulu is ready and Bejulu is warm, then Bejulu is striped.",
+    "reference_label": "UNKNOWN",
+    "id": "structured/development/812bc2b42b922b2d"
+  },
+  {
+    "split": "development",
+    "index": 17,
+    "motif": "reverse",
+    "depth": 2,
+    "entities": [
+      "Lakoho",
+      "Gatuva",
+      "Rahejo"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Lakoho is quiet.",
+      "Rahejo is bright.",
+      "Gatuva is ready."
+    ],
+    "rules": [
+      [
+        [
+          "Gatuva is ready."
+        ],
+        "Gatuva is warm."
+      ],
+      [
+        [
+          "Lakoho is ready."
+        ],
+        "Lakoho is quiet."
+      ],
+      [
+        [
+          "Lakoho is striped."
+        ],
+        "Lakoho is ready."
+      ]
+    ],
+    "target": "Lakoho is striped.",
+    "evidence": "Lakoho is quiet. Rahejo is bright. Gatuva is ready. If Gatuva is ready, then Gatuva is warm. If Lakoho is ready, then Lakoho is quiet. If Lakoho is striped, then Lakoho is ready.",
+    "reference_label": "UNKNOWN",
+    "id": "structured/development/1a8c615bec91b3a4"
+  },
+  {
+    "split": "development",
+    "index": 18,
+    "motif": "forward",
+    "depth": 4,
+    "entities": [
+      "Cufefe",
+      "Sunoci",
+      "Bopagu"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Bopagu is calm.",
+      "Cufefe is warm.",
+      "Sunoci is small."
+    ],
+    "rules": [
+      [
+        [
+          "Cufefe is quiet."
+        ],
+        "Cufefe is striped."
+      ],
+      [
+        [
+          "Cufefe is warm."
+        ],
+        "Cufefe is small."
+      ],
+      [
+        [
+          "Sunoci is small."
+        ],
+        "Sunoci is ready."
+      ],
+      [
+        [
+          "Cufefe is small."
+        ],
+        "Cufefe is quiet."
+      ],
+      [
+        [
+          "Cufefe is striped."
+        ],
+        "Cufefe is blue."
+      ]
+    ],
+    "target": "Cufefe is blue.",
+    "evidence": "Bopagu is calm. Cufefe is warm. Sunoci is small. If Cufefe is quiet, then Cufefe is striped. If Cufefe is warm, then Cufefe is small. If Sunoci is small, then Sunoci is ready. If Cufefe is small, then Cufefe is quiet. If Cufefe is striped, then Cufefe is blue.",
+    "reference_label": "TRUE",
+    "id": "structured/development/8944e7ed58f77eb1"
+  },
+  {
+    "split": "development",
+    "index": 19,
+    "motif": "conjunction",
+    "depth": 4,
+    "entities": [
+      "Mekobi",
+      "Bakevi",
+      "Jaligi"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Mekobi is bright.",
+      "Bakevi is ready.",
+      "Mekobi is striped.",
+      "Jaligi is striped."
+    ],
+    "rules": [
+      [
+        [
+          "Bakevi is ready."
+        ],
+        "Bakevi is blue."
+      ],
+      [
+        [
+          "Mekobi is bright.",
+          "Mekobi is striped."
+        ],
+        "Mekobi is ready."
+      ],
+      [
+        [
+          "Mekobi is small."
+        ],
+        "Mekobi is quiet."
+      ],
+      [
+        [
+          "Mekobi is ready."
+        ],
+        "Mekobi is warm."
+      ],
+      [
+        [
+          "Mekobi is warm."
+        ],
+        "Mekobi is small."
+      ]
+    ],
+    "target": "Mekobi is quiet.",
+    "evidence": "Mekobi is bright. Bakevi is ready. Mekobi is striped. Jaligi is striped. If Bakevi is ready, then Bakevi is blue. If Mekobi is bright and Mekobi is striped, then Mekobi is ready. If Mekobi is small, then Mekobi is quiet. If Mekobi is ready, then Mekobi is warm. If Mekobi is warm, then Mekobi is small.",
+    "reference_label": "TRUE",
+    "id": "structured/development/f784d88639b02de5"
+  },
+  {
+    "split": "development",
+    "index": 20,
+    "motif": "negative",
+    "depth": 4,
+    "entities": [
+      "Kulehu",
+      "Huromi",
+      "Fulama"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Fulama is calm.",
+      "Huromi is blue.",
+      "Kulehu is striped."
+    ],
+    "rules": [
+      [
+        [
+          "Kulehu is striped."
+        ],
+        "Kulehu is blue."
+      ],
+      [
+        [
+          "Kulehu is ready."
+        ],
+        "Kulehu is not small."
+      ],
+      [
+        [
+          "Kulehu is bright."
+        ],
+        "Kulehu is ready."
+      ],
+      [
+        [
+          "Huromi is blue."
+        ],
+        "Huromi is quiet."
+      ],
+      [
+        [
+          "Kulehu is blue."
+        ],
+        "Kulehu is bright."
+      ]
+    ],
+    "target": "Kulehu is small.",
+    "evidence": "Fulama is calm. Huromi is blue. Kulehu is striped. If Kulehu is striped, then Kulehu is blue. If Kulehu is ready, then Kulehu is not small. If Kulehu is bright, then Kulehu is ready. If Huromi is blue, then Huromi is quiet. If Kulehu is blue, then Kulehu is bright.",
+    "reference_label": "FALSE",
+    "id": "structured/development/4f7dd07bcf39d235"
+  },
+  {
+    "split": "development",
+    "index": 21,
+    "motif": "negative_conjunction",
+    "depth": 4,
+    "entities": [
+      "Vuvohi",
+      "Gejice",
+      "Kicebe"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Kicebe is striped.",
+      "Gejice is small.",
+      "Vuvohi is ready.",
+      "Vuvohi is striped."
+    ],
+    "rules": [
+      [
+        [
+          "Vuvohi is bright."
+        ],
+        "Vuvohi is quiet."
+      ],
+      [
+        [
+          "Gejice is small."
+        ],
+        "Gejice is calm."
+      ],
+      [
+        [
+          "Vuvohi is quiet."
+        ],
+        "Vuvohi is not warm."
+      ],
+      [
+        [
+          "Vuvohi is small."
+        ],
+        "Vuvohi is bright."
+      ],
+      [
+        [
+          "Vuvohi is ready.",
+          "Vuvohi is striped."
+        ],
+        "Vuvohi is small."
+      ]
+    ],
+    "target": "Vuvohi is warm.",
+    "evidence": "Kicebe is striped. Gejice is small. Vuvohi is ready. Vuvohi is striped. If Vuvohi is bright, then Vuvohi is quiet. If Gejice is small, then Gejice is calm. If Vuvohi is quiet, then Vuvohi is not warm. If Vuvohi is small, then Vuvohi is bright. If Vuvohi is ready and Vuvohi is striped, then Vuvohi is small.",
+    "reference_label": "FALSE",
+    "id": "structured/development/8fd9808b90e6527e"
+  },
+  {
+    "split": "development",
+    "index": 22,
+    "motif": "missing",
+    "depth": 4,
+    "entities": [
+      "Kaheji",
+      "Tihobe",
+      "Dakage"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Dakage is blue.",
+      "Tihobe is bright.",
+      "Kaheji is small."
+    ],
+    "rules": [
+      [
+        [
+          "Kaheji is small.",
+          "Kaheji is blue."
+        ],
+        "Kaheji is bright."
+      ],
+      [
+        [
+          "Tihobe is bright."
+        ],
+        "Tihobe is warm."
+      ],
+      [
+        [
+          "Kaheji is bright."
+        ],
+        "Kaheji is ready."
+      ],
+      [
+        [
+          "Kaheji is ready."
+        ],
+        "Kaheji is calm."
+      ],
+      [
+        [
+          "Kaheji is calm."
+        ],
+        "Kaheji is striped."
+      ]
+    ],
+    "target": "Kaheji is striped.",
+    "evidence": "Dakage is blue. Tihobe is bright. Kaheji is small. If Kaheji is small and Kaheji is blue, then Kaheji is bright. If Tihobe is bright, then Tihobe is warm. If Kaheji is bright, then Kaheji is ready. If Kaheji is ready, then Kaheji is calm. If Kaheji is calm, then Kaheji is striped.",
+    "reference_label": "UNKNOWN",
+    "id": "structured/development/ceb84061f2ff3aaa"
+  },
+  {
+    "split": "development",
+    "index": 23,
+    "motif": "reverse",
+    "depth": 4,
+    "entities": [
+      "Derino",
+      "Lutili",
+      "Cucuti"
+    ],
+    "properties": [
+      "blue",
+      "calm",
+      "ready",
+      "striped",
+      "quiet",
+      "warm",
+      "small",
+      "bright"
+    ],
+    "facts": [
+      "Derino is blue.",
+      "Lutili is bright.",
+      "Cucuti is quiet."
+    ],
+    "rules": [
+      [
+        [
+          "Derino is striped."
+        ],
+        "Derino is ready."
+      ],
+      [
+        [
+          "Derino is ready."
+        ],
+        "Derino is blue."
+      ],
+      [
+        [
+          "Derino is calm."
+        ],
+        "Derino is bright."
+      ],
+      [
+        [
+          "Lutili is bright."
+        ],
+        "Lutili is warm."
+      ],
+      [
+        [
+          "Derino is bright."
+        ],
+        "Derino is striped."
+      ]
+    ],
+    "target": "Derino is calm.",
+    "evidence": "Derino is blue. Lutili is bright. Cucuti is quiet. If Derino is striped, then Derino is ready. If Derino is ready, then Derino is blue. If Derino is calm, then Derino is bright. If Lutili is bright, then Lutili is warm. If Derino is bright, then Derino is striped.",
+    "reference_label": "UNKNOWN",
+    "id": "structured/development/cc769a89d6fd2fd2"
+  }
+]
