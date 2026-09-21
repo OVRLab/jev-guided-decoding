@@ -107,8 +107,20 @@ def audit_tokens(row, base):
 
 def diagnostics(rows):
     arms = defaultdict(lambda: defaultdict(float))
+    confusion = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
+    strata = defaultdict(lambda: defaultdict(lambda: dict(jobs=0, correct=0)))
     for row in rows:
         arm = arms[row["mode"]]
+        if "reference_label" in row:
+            confusion[row["mode"]][row["reference_label"]][row.get("label") or "INVALID"] += 1
+            for field in ("depth", "motif", "reference_label"):
+                if field in row:
+                    group = strata[row["mode"]][f"{field}:{row[field]}"]
+                    group["jobs"] += 1
+                    group["correct"] += (
+                        row.get("status") == "complete"
+                        and row.get("label") == row["reference_label"]
+                    )
         arm["jobs"] += 1
         arm["seconds"] += row.get("seconds", 0)
         for k, v in row.get("work", {}).items():
@@ -178,7 +190,12 @@ def diagnostics(rows):
                     and [x.get("token_ids") for x in ca["branches"]]
                     == [x.get("token_ids") for x in cb["branches"]]
                 )
-    return dict(arms=dict(arms), first_branch_pool_identity=first)
+    return dict(
+        arms=dict(arms),
+        first_branch_pool_identity=first,
+        confusion=json.loads(json.dumps(confusion)),
+        strata=json.loads(json.dumps(strata)),
+    )
 
 
 def main():

@@ -28,3 +28,13 @@ def test_final_token_loop_prefix_is_audited_separately():
     row["final"]["token_trace"] = {"trace": [{"token": 9, "prefix_digest": "wrong"}]}
     with pytest.raises(ValueError, match="Final trace"):
         A["audit_tokens"](row, F["Base"]())
+
+
+def test_confusion_diagnostics_retain_invalid_outputs():
+    a = F["run"]("native")
+    a.update(reference_label="FALSE", depth=3, motif="negative")
+    b = F["run"]("native")
+    b.update(reference_label="UNKNOWN", label=None, depth=5, motif="missing")
+    result = A["diagnostics"]([a, b])
+    assert result["confusion"]["native"] == {"FALSE": {"TRUE": 1}, "UNKNOWN": {"INVALID": 1}}
+    assert result["strata"]["native"]["depth:5"] == {"jobs": 1, "correct": 0}
