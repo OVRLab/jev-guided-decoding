@@ -99,3 +99,11 @@ question is improvement over native and R14, with simpler controls secondary;
 R14's historical criterion/results are unchanged. Status: implementation verified
 with 343 local passing tests; [pre-execution report](../reports/2026-09-22-evidence-attention-refinement/README.md),
 fresh model evaluation pending.
+
+R15 execution interruption: the 103rd development Jev request timed out after 102
+complete contexts; original weights stayed unchanged and no held-out operation
+started. The [prospective recovery amendment](evidence-attention-v2-recovery.md)
+retains that common failed block, maximum unknown charge and all raw prefixes;
+continues only never-started jobs with a 90-second transport limit; adds twelve
+fresh full-vocabulary zero checks. Four recovery tests pass; all 349 local tests
+pass before resumed inference. Selection and held-out results remain pending.
