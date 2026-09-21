@@ -1,10 +1,10 @@
 # R13: API recovery and controlled inference study
 
-Status: API recovery succeeded; the first GPU pilot failed final formatting.
-The [V2 common final-label correction](../../research/structured-study-v2-protocol.md)
-is registered before another pilot. No R13 test outcomes exist at this report's
-initial commit. Original Granite weights and all historical negative results are
-preserved. This report will append subsequent execution evidence.
+Status: the corrected V2 pilot passed operational admission and the frozen
+6,300-job test is running on one Nebius L40S. Accuracy improvement is unproven.
+The first GPU pilot failed final formatting and is retained below. Original
+Granite weights and all historical negative results are preserved. No test
+outcomes existed at this report's initial commit; subsequent stages are appended.
 
 ## API recovery
 
@@ -52,3 +52,34 @@ The [V1 protocol](../../research/structured-study-protocol.md),
 [independent analysis](pilot-v1/independent-analysis.json), and
 [artifact hashes](artifact-hashes.json) preserve this attempt. All fixtures are
 authored rule worlds; no claim of general math improvement is supported.
+
+## V2 GPU pilot: passed operational admission
+
+Source `b6ca4cb`, freeze `97fc05c`. The same development worlds were rerun after the
+prospectively recorded [shared final-label grammar change](../../research/structured-study-v2-protocol.md).
+Test data hashes are unchanged and no test outcome informed that correction.
+All 295 offline tests passed locally and on the GPU server before V2 inference.
+
+All 168 jobs completed with valid Granite-generated labels; 960/960 candidate
+claims were independently gradable, 240/240 checkpoints were reached, 168/168
+online token/prompt audits passed, and staged/zero paths matched 24/24 pairs.
+Independent local token reconstruction also passed 168/168, including the final
+constrained token loop; initial proposal pools matched all 96 paired comparisons.
+Formatting is enforced by the shared grammar and is not learned instruction-following.
+
+Pilot accuracy was 11/24 direct Granite, 8/24 staged, 7/24 likelihood and 8/24 in
+each Jev/shuffled/zero/soft-step arm. This development pilot demonstrates operational
+readiness, not an accuracy gain. In the Jev arm's 36 mixed-quality candidate sets,
+Jev's highest-support proposal was independently correct in 36, versus 27 for
+highest likelihood. This descriptive critic ranking is distinct from the bounded
+stochastic token policy and its final-answer quality.
+
+Elapsed pilot time was 244.39 seconds excluding loading/warm-up. All 192 Jev calls
+succeeded: 270,264 input / 29,952 output tokens ($0.011351088 input list price).
+The original cumulative ledger remains in use. The measured runtime plus the
+prespecified margin admitted the full 6,300-job, 300-world, three-seed test.
+No test outcome will change its method or trigger accuracy-based early stopping.
+
+[Raw attempts](pilot-v2/runs.jsonl.gz), [summary](pilot-v2/summary.json),
+[independent analysis](pilot-v2/independent-analysis.json),
+[manifest](../../research/protocols/structured-v2/manifest.json).

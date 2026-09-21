@@ -26,7 +26,7 @@ new answer-quality study ran. No hidden layer has an established benefit.
 | [Paper draft](paper-draft.md) | Evidence-grounded manuscript scaffold and publication requirements |
 | [Work plan](../docs/research-reassessment-plan.md) | Scope and validation for this reassessment |
 
-The owner subsequently authorized [R13 recovery and a complete controlled comparison](structured-study-protocol.md). Two fresh API diagnostics passed. New admission tests operational correctness rather than requiring a positive pilot gain; the earlier R12 critic gate remains unpassed. Full R13 inference is pending.
+The owner subsequently authorized [R13 recovery and a complete controlled comparison](structured-study-protocol.md). Two fresh API diagnostics passed. The first GPU pilot failed final formatting; the corrected common-label-grammar pilot passed all operational gates, and the 6,300-job test is running. New admission tests operational correctness rather than requiring a positive pilot gain; the earlier R12 critic gate remains unpassed. [All attempts](../reports/2026-09-21-structured-study/README.md) are retained.
 
 ## Recording subsequent work
 
