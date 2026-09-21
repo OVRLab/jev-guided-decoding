@@ -119,3 +119,10 @@ succeeded. A new L40S will execute only the 3,284 remaining jobs, with at most t
 bounded cooldowns after explicit rate-limit/overload failures; each failed job
 stays failed. Other service/backend failures stop the continuation. The original
 $50 cumulative allowance remains in force.
+
+Additional offline descriptive diagnostics count lookaheads whose tails still
+permit a semantic choice, selections outside the scored root pool, and differences
+between a scored greedy lookahead and the claim actually accepted after root-only
+guidance. These are exploratory mechanism diagnostics, not new primary tests.
+Their regression first exposed the missing counters, then verified that differing
+accepted text is not counted as the scored claim. No live inference code changed.

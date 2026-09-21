@@ -102,3 +102,19 @@ def test_grade_audit_recomputes_accepted_claims_as_well_as_rejected_branches():
     bad["steps"][0]["checkpoint"]["branches"][0]["oracle"]["correct"] = True
     with pytest.raises(ValueError, match="Branch"):
         A["audit_grades"](bad, case)
+
+
+def test_diagnostics_distinguish_scored_lookahead_from_actual_committed_claim():
+    row = F["run"]("jev", F["Scorer"]())
+    row["steps"] = row["steps"][:1]
+    step = row["steps"][0]
+    cp = step["checkpoint"]
+    chosen = next(b for b in cp["branches"] if b["root"] == cp["selection"]["token"])
+    chosen["continuation"]["trace"] = [{"allowed_count": 8}]
+    step["text"] = "<step>A different continuation.</step>"
+    result = A["diagnostics"]([row])["arms"]["jev"]
+    assert result["branches_with_tail_choice"] == 1
+    assert result["selected_evaluated_branches"] == 1
+    assert result["selected_branches_with_tail_choice"] == 1
+    assert result["accepted_scored_claim_matches"] == 0
+    assert result["accepted_scored_claim_differences"] == 1

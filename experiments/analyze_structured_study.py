@@ -185,13 +185,34 @@ def diagnostics(rows):
             arm["checkpoints"] += 1
             arm["nonzero_bias"] += bool(plan.get("bias"))
             arm["max_kl"] = max(arm["max_kl"], plan.get("kl", 0))
+            candidates = cp["branches"]
+            choices = {
+                b["root"]: any(
+                    t.get("allowed_count", 1) > 1
+                    for t in b.get("continuation", {}).get("trace", [])
+                )
+                for b in candidates
+            }
+            arm["lookahead_branches"] += len(candidates)
+            arm["branches_with_tail_choice"] += sum(choices.values())
+            selection = cp.get("selection")
+            if selection:
+                selected = next((b for b in candidates if b["root"] == selection["token"]), None)
+                arm["selected_unevaluated_roots"] += selected is None
+                if selected:
+                    arm["selected_evaluated_branches"] += 1
+                    arm["selected_branches_with_tail_choice"] += choices[selected["root"]]
+                    frame = parse_frame(step.get("text", ""))
+                    if frame:
+                        match = frame.body == selected.get("body")
+                        arm["accepted_scored_claim_matches"] += match
+                        arm["accepted_scored_claim_differences"] += not match
             evaluation = cp.get("evaluation")
             if not evaluation:
                 continue
             arm["api_calls"] += evaluation["attempts"]
             arm["api_seconds"] += evaluation["seconds"]
             arm["api_input_tokens"] += evaluation["input_tokens"]
-            candidates = cp["branches"]
             judgments = evaluation["judgments"]
             for b, j in zip(candidates, judgments, strict=True):
                 if b.get("oracle") is None:
