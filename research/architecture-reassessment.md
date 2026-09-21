@@ -6,6 +6,11 @@ is implemented and mechanically checked on real Granite with replayed scores.
 Critic development was interrupted; no held-out quality improvement is established.
 The design below includes serving and broader evaluation work beyond that prototype.
 
+Later update, 2026-09-21: the [completed R13 test](../reports/2026-09-21-structured-study/README.md)
+did not demonstrate a useful gain from this output-logit mechanism. The historical
+decision below is retained. A [new source-attention proposal](evidence-attention-proposal.md)
+considers an actual internal intervention; it is not implemented or evaluated.
+
 ## Decision
 
 With the interfaces we actually have, the most defensible next insertion point

@@ -19,6 +19,7 @@ weights are unchanged, and both temporary GPU deployments are deleted.
 | --- | --- |
 | [Study register](study-register.md) | Every recorded live study, failed pilot, correction, and offline follow-up |
 | [Architecture reassessment](architecture-reassessment.md) | Exact checkpoint, interface constraints, insertion-point decision and alternatives |
+| [Evidence-attention study](../reports/2026-09-21-evidence-attention/README.md) | R14 attention hook implemented and locally verified; [execution plan](evidence-attention-protocol.md), real-model evaluation pending |
 | [New diagnostic report](../reports/2026-09-21-architecture-reassessment/README.md) | Reproducible decomposition of 3,600 main and 48 development traces |
 | [Next experiment](next-experiment.md) | Staged evidence gates, controls, budgets, held-out evaluation and stop rules |
 | [Logit-guidance development](../reports/2026-09-21-logit-guidance/README.md) | Completed/interrupted pilots, full authored traces, mechanical controls and remaining limits |

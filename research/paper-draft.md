@@ -304,6 +304,26 @@ Both temporary L40S deployments, managed disks and task network resources are
 verified deleted. Cumulative estimated spending is $8.49 including the earlier
 $3.2913 allowance, with unknown calls carried conservatively; this is not an invoice.
 
+### 7.3 Unexecuted follow-up: attention to source evidence
+
+The [R14 design note](evidence-attention-proposal.md) proposes evaluating Jev as
+a source-span relevance judge whose outputs become bounded biases inside selected
+Granite attention heads, before softmax/value aggregation. This differs from both
+complete-step selection and vocabulary-logit bias. It is an external semantic
+controller of internal attention, not a shared representation with Jev.
+[PASTA](https://arxiv.org/abs/2311.02262) is a relevant established mechanism family;
+we claim neither its invention nor a successful Jev/Granite adaptation.
+
+The subsequently authorized [execution plan](evidence-attention-protocol.md) has
+an implemented hook and offline verification; real-model evaluation is pending
+in the [dated report](../reports/2026-09-21-evidence-attention/README.md). The first
+planned diagnostic separates whether correctly identified evidence helps Granite
+from whether Jev can identify it. Oracle evidence is a privileged diagnostic, not
+Jev performance. A subsequent study would require new development/test data,
+causal head selection, same-input controls, a prompt-highlighting comparator,
+and a frozen final-generation policy. This future work does not change any
+reported result or establish that an internal placement will improve reasoning.
+
 ## 8. Limitations and threats to validity
 
 - R10 combines Jev ranking and rejection and lacks a direct-prompt control. R13

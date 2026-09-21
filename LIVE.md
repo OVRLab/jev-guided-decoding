@@ -1,5 +1,11 @@
 # Verified implementation inventory
 
+R14 update: a scoped internal attention hook and source-relevance study runner
+are implemented on the research branch, with 21 new offline tests and 329 total
+passing. Real-model quality evaluation is pending; see the
+[dated report](reports/2026-09-21-evidence-attention/README.md). This does not change
+the scope of the published package or establish an improved checkpoint.
+
 Inventory introduced on 2026-09-20 by
 [PR #1](https://github.com/OVRLab/jev-guided-decoding/pull/1); its GitHub status
 records whether it has merged. Entries describe this checkout: on the work branch
