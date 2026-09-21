@@ -24,6 +24,16 @@ Two independent local checks remain useful and authorized:
    must use a consistent prompt and retain exact token provenance; otherwise label
    this explicitly a single-claim mechanism check, not a final-answer trial.
 
+The mechanical runner uses a common separate final-phase prompt after the
+single-claim continuation, since the proposal prompt requested an intermediate
+claim only. It re-prefills original evidence plus the exact generated step tokens
+and a framing delimiter; the new final instruction marks prior reasoning as
+tentative, never new evidence. Granite generates the complete final label/reason
+greedily, at most 64 tokens. Invalid step framing is recorded and omitted from
+every mode's final prefix by the same rule. This demonstrates token ownership
+and phase plumbing only; no final-answer accuracy comparison is authorized by
+these four exposed records.
+
 Replaying already paid judgments tests a control mechanism, not fresh hosted
 integration or independent quality. Jev does not choose a final label. The four
 available batches are selected by pre-error availability, not their quality.
