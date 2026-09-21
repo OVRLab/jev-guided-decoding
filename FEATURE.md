@@ -1,14 +1,14 @@
 # Feature: Jev-guided intermediate reasoning
 
-The [R13 corrected pilot](reports/2026-09-21-structured-study/README.md) now passes
-all operational gates after API recovery and a shared final-label grammar repair.
-The seven-arm test stopped after 3,015 complete jobs and one provider failure. A
-[registered continuation](research/structured-study-continuation.md) excludes all
-started jobs and preserves that failure in the 6,300-job denominator. Granite chooses
-every final label, all weights remain frozen, and accuracy improvement is unproven.
-The failed first R13 pilot and every earlier result remain in the research record.
+The [R13 full study](reports/2026-09-21-structured-study/README.md) is complete:
+6,300 planned jobs attempted, 6,299 completed and one provider failure retained.
+Direct Granite scored 42.67%, staged 37.00%, likelihood 35.44% and Jev token
+guidance 36.00%; all three adjusted primary intervals include zero. No useful
+accuracy gain is established. Both temporary GPU deployments are deleted.
+All 6,300 prompts and 6,299 completed token paths passed independent reconstruction;
+weights are unchanged. All failed pilots and interrupted results remain available.
 
-**Current status:** the [corrected 3,600-job generated-answer study](reports/2026-09-20-generated-answer-study/README.md)
+**Earlier external-benchmark comparison:** the [corrected 3,600-job generated-answer study](reports/2026-09-20-generated-answer-study/README.md)
 is complete. Granite generated every final answer; Jev did not demonstrate an
 accuracy gain over either control. Source, grading and data stayed frozen, and
 the temporary cloud resources were deleted after verified backup retrieval.

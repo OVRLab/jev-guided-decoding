@@ -7,25 +7,27 @@ contributions and publication venue are intentionally unset pending owner decisi
 ## Abstract draft
 
 We study whether a hosted, non-generative judgment model can improve answers from
-a frozen small language model through intermediate inference-time guidance. Our
-initial fixed-choice pipeline returned Jev's final classification, so it could
-not establish improved Granite-generated answers. We preserve that result and
-evaluate a corrected three-arm design in which Granite generates every final
-answer. Across 200 GSM8K and 200 ProofWriter problems, three seeds and three
-conditions, all 3,600 planned outcomes are retained and their final-token provenance
-is audited. Intermediate Jev selection scores 56.5% on math versus 61.5% for
-single-candidate generation and 67.8% for likelihood selection; logic scores are
-52.5%, 52.7% and 52.8%, respectively. The adjusted math difference against likelihood
-selection is −11.33 percentage points, with interval [−18.17, −4.50]. A subsequent
-offline analysis separates first-step scorer rejection in 307/600 guided logic
-runs from no valid proposal in 265/600. These results expose interacting proposal,
-verification and stopping-policy limitations; they do not establish a causal
-benefit from any alternative insertion point. A subsequent local-claim pilot and
-bounded output-logit prototype verify probability control and no-op identity, but
-development grader coverage remains 67% and provider failure interrupts critic
-scoring. The held-out R12 critic gate remains unexecuted. A subsequent, separately
-registered seven-arm rule-world comparison repaired provider/format issues, passed
-operational admission, and is running; its final test results are not yet available.
+a frozen small language model during inference. Our initial fixed-choice pipeline
+returned Jev's classification, which could not establish improved Granite-generated
+answers; that correction and its negative evidence are retained. In a corrected
+3,600-job study on 200 GSM8K and 200 ProofWriter problems with three seeds, Jev
+step selection scores 56.5% on math versus 61.5% single-candidate and 67.8%
+likelihood selection, and 52.5% on logic versus 52.7% and 52.8%. Its adjusted math
+difference against likelihood is −11.33 percentage points [−18.17, −4.50].
+
+A subsequent seven-arm study evaluates bounded output-logit guidance on 300
+authored rule worlds, three seeds and a common final-label grammar. All 6,300
+planned jobs are attempted: 6,299 complete and one service failure is retained.
+Direct Granite scores 42.67%, staged Granite 37.00%, likelihood search 35.44%, and
+Jev guidance 36.00%. All three adjusted primary intervals include zero; the
+prespecified useful-gain criterion is unmet. Jev's highest-support lookahead is
+correct in all 1,179 mixed candidate sets, yet supported accepted claims rise
+only from 58.83% to 61.89% while final accuracy falls relative to staged generation.
+Every completed final-token path is independently reconstructed, zero bias exactly
+reproduces staged paths, and weights remain unchanged. These results distinguish
+accurate local verification from improved final answers; they establish neither
+a better hidden-layer insertion point nor a general limitation of verifier-guided
+inference beyond the tested models, policies and narrow distributions.
 
 ## 1. Question and scope
 
@@ -240,7 +242,67 @@ useful gain requires at least five percentage points and an interval above zero.
 Other ablations and critic/accepted-claim diagnostics are descriptive. Failed,
 invalid and missing outcomes remain in denominators. No test outcome will alter
 the controller. The [report](../reports/2026-09-21-structured-study/README.md)
-currently contains both pilots and will append the completed test.
+contains both pilots, both test segments and the completed comparison below.
+
+### 7.2 R13 results, service interruption and interpretation
+
+The original segment completed 3,015 jobs and stopped on a retryable HTTP response
+at job 3,016. Its client lost the exact 429/529 status and mislabeled usage known,
+while the durable ledger correctly preserved a full reservation. A separately
+registered operational amendment repaired diagnostics, retained the failed job,
+and scheduled only 3,284 never-started keys. One fresh service diagnostic succeeded;
+the continuation completed all remaining jobs without another failure. No test
+outcome changed successful inference policy, and no started job was replayed.
+Both raw segments, the original stopped summary and the amendment remain public.
+
+| Arm | Correct / 900 planned | Accuracy | Mean seconds/job |
+| --- | ---: | ---: | ---: |
+| Direct Granite | 384 | 42.67% | 0.103 |
+| Staged Granite | 333 | 37.00% | 0.777 |
+| Likelihood search | 319 | 35.44% | 1.384 |
+| Jev token guidance | 324 | 36.00% | 1.961 |
+| Shuffled scores | 333 | 37.00% | 1.962 |
+| Zero-bias shadow | 333 | 37.00% | 1.963 |
+| Soft-step commitment | 323 | 35.89% | 1.795 |
+
+The soft-step arm contains the sole failed job; all primary-comparison arms have
+900 completed finals. Jev-minus-direct is −6.67 percentage points with adjusted
+interval [−15.33, +2.44]; Jev-minus-staged is −1.00 [−2.33, +0.22]; Jev-minus-likelihood
+is +0.56 [−2.44, +3.56]. These nominal family-adjusted intervals include zero and
+none meets the useful-gain criterion. The result is not evidence of equivalence
+or conclusive harm in a broader population. The direct-to-staged point decrease
+is 5.67 points before Jev is introduced; it must not all be attributed to Jev.
+
+Exploratory local diagnostics show strong scoring but limited downstream benefit:
+Jev's highest-support claim is correct in 1,179/1,179 mixed candidate sets, versus
+874/1,179 for likelihood; its 7,200 claim scores have Brier score 0.00881. Supported
+accepted claims are 1,114/1,800 with Jev versus 1,059/1,800 staged. Relative to staged,
+Jev changes 56 accepted paths and 24 final labels, correcting five answers and
+spoiling 14. The bounded stochastic policy is not a greedy highest-score selector;
+local support is also not a value function for eventual answer correctness.
+
+Only four selected in-pool Jev roots retain a tail choice, and only one accepted
+claim differs from its scored lookahead; most tails are syntax-forced. Jev and
+soft-step final labels match in all 899 jointly completed pairs. The one-answer
+soft-step deficit comes from the retained service failure. This limited behavioral
+separation, plus the commitment/decoding confound, prevents an inference about a
+superior insertion point. UNKNOWN recall changes from 8.00% direct to 51.00% staged
+and 51.33% Jev, while TRUE recall drops from 97.00% to 22.33% and 22.67%; most of
+that trade-off is introduced by staging, not the critic.
+
+Independent audits match all 6,300 prompts, all 6,299 completed token paths, 35,996
+candidate grades and 10,798 accepted-claim grades. All 900 staged/zero paths and
+3,600 initial-pool comparisons match. No weights change. The original all-complete
+and full-planned-provenance gates remain false because one job has no final answer.
+
+The two main execution segments total 2.495 hours excluding loading/deployment
+recovery. Hosted API time contributes 0.556 seconds to Jev's 1.961-second mean;
+substantial remaining work is repeated model prefill/lookahead. Colocation and
+optimized serving are not measured. All public raw traces, statistics, figures,
+resource accounting and hashes are linked in the [full report](../reports/2026-09-21-structured-study/README.md).
+Both temporary L40S deployments, managed disks and task network resources are
+verified deleted. Cumulative estimated spending is $8.49 including the earlier
+$3.2913 allowance, with unknown calls carried conservatively; this is not an invoice.
 
 ## 8. Limitations and threats to validity
 
@@ -255,7 +317,7 @@ currently contains both pilots and will append the completed test.
   independent human annotations.
 - Shared test benchmarks may have appeared in pretraining. Excluding previously
   used cases in this project does not establish training-data noncontamination.
-- A small model, one checkpoint, two tasks and a hosted judge version limit
+- A small model, one checkpoint, limited task distributions and a hosted judge version limit
   generalization. Provider outputs can vary despite pinned requested identifiers.
 - Private external traces limit public per-example reproduction. Rights-cleared
   authored future fixtures can improve transparency but introduce template bias.
@@ -268,7 +330,7 @@ Public reports include source revisions, model revisions, case IDs, hashes,
 aggregate outcomes, cost assumptions and reproduction commands. Authored fixture
 traces are public. Raw external benchmark text/full traces remain private under
 the stated dataset-rights policy; the repository license does not relicense them.
-The prior temporary infrastructure was deleted after verified artifact retrieval.
+All temporary infrastructure for R10 and R13 was deleted after verified artifact retrieval.
 The estimated $3.29 cost covers the corrected study and its two pilots, not all
 development or a provider invoice.
 

@@ -115,7 +115,9 @@ def render(summary, output):
             f"{point:+.2f} pp  [{low:+.2f}, {high:+.2f}]",
             transform=axis.get_yaxis_transform(),
             ha="right",
+            va="top",
             fontsize=9,
+            bbox={"facecolor": "white", "edgecolor": "none", "pad": 1.5},
         )
         extrema.extend([low, high])
     axis.axvline(0, color="#9099a3", linestyle="--", linewidth=1)

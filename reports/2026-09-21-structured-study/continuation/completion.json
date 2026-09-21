@@ -1,0 +1,15 @@
+{
+  "all_planned_attempted": true,
+  "new_recorded": 3284,
+  "prior_recorded": 3016,
+  "rate_recoveries": 0,
+  "stopped_reason": null,
+  "weights_before": "311c1141187580dc0905c810e9d9e78853a0bf37b865bd5a5a511f6eed72f8c9",
+  "weights_after": "311c1141187580dc0905c810e9d9e78853a0bf37b865bd5a5a511f6eed72f8c9",
+  "weights_unchanged": true,
+  "ledger": {
+    "charged_input_tokens": 13584427,
+    "unresolved": 0,
+    "maximum_charged_unknown_calls": 2
+  }
+}

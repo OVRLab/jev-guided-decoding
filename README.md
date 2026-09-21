@@ -11,7 +11,17 @@ and bounded search over intermediate steps with saved alternatives. This is gene
 Jev into attention layers. A vLLM serving extension is conditional on measured
 gains; no vLLM extension is included in this version.
 
-[Latest generated-answer study](reports/2026-09-20-generated-answer-study/README.md):
+[Latest seven-arm study](reports/2026-09-21-structured-study/README.md): all 6,300
+planned jobs were attempted on 300 authored logic worlds; 6,299 completed and one
+service failure remains incorrect. Direct Granite scored **42.67%**, staged
+Granite **37.00%**, likelihood search **35.44%**, and bounded Jev guidance **36.00%**.
+No primary comparison established a useful accuracy gain. Every arm used the same
+final-label grammar, and Granite chose every completed final label. The report
+includes complete public traces, adjusted intervals, controls, figures and an
+independent token/input audit. Both GPU deployments are deleted; cumulative
+estimated spending is $8.49 of the $50 allowance.
+
+[Earlier external-benchmark study](reports/2026-09-20-generated-answer-study/README.md):
 all 3,600 trials were recorded with Granite generating every final answer. Jev did
 not demonstrate an accuracy gain: math was 56.5% versus 61.5% single-candidate
 Granite and 67.8% likelihood selection; logic was 52.5%, 52.7%, and 52.8%
@@ -22,9 +32,10 @@ verified token provenance. This uses a common staged prompt, not default chat.
 offline failure analysis, primary-source architecture review, next-study design,
 and a paper draft. The [new sparse logit-control prototype](reports/2026-09-21-logit-guidance/README.md)
 now passes real-Granite probability, frozen-weight and zero-bias checks with replayed
-Jev scores. Its development scoring was interrupted by a provider error; proposal
-coverage and final formatting remain inadequate. No held-out quality gain or
-effective hidden-layer insertion point is established.
+Jev scores. Its original R12 development scoring was interrupted by a provider error, with
+inadequate grader coverage and final formatting. R13 subsequently repaired the
+operational issues and completed the comparison above, without demonstrating a
+quality gain. No effective hidden-layer insertion point is established.
 
 [Initial measured results](reports/2026-09-20-granite-smoke/README.md): the 12-case
 smoke test demonstrated in-generation control, but no established quality gain;

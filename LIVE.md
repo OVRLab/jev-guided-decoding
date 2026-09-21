@@ -39,7 +39,16 @@ established quality gain. One correct ending was rejected and misleading causal
 wording was accepted elsewhere. These are historical small-sample findings,
 not freshly rerun checks or a general accuracy estimate.
 
-The [R13 report](reports/2026-09-21-structured-study/README.md) adds fresh hosted scoring on the L40S: both 168-job pilots completed without API/backend errors; V1 failed format admission, and V2 passed after adding a common three-label final grammar. V2 independently reconstructed all 168 token paths and matched all 96 paired initial candidate pools. The V2 test stopped after 3,015 complete jobs and one provider failure. A registered continuation retains that failed job and schedules only 3,284 never-started jobs; no accuracy gain is established.
+The [R13 report](reports/2026-09-21-structured-study/README.md) records the completed
+seven-arm comparison: 6,300 planned jobs attempted, 6,299 completed and one
+soft-step service failure retained. Direct/staged/likelihood/Jev accuracy is
+42.67%/37.00%/35.44%/36.00%; none of the three adjusted Jev intervals excludes zero.
+Independent audits match all 6,300 frozen prompts, all 6,299 completed token paths,
+35,996 candidate grades and 10,798 accepted-claim grades. Zero bias reproduces all
+900 staged paths, and all 3,600 initial-pool comparisons match. Both L40S deployments
+and their task resources are deleted after verified retrieval. Cumulative estimated
+spending is $8.49 before tax/separate network charges. No accuracy gain is established.
+
 
 ## Not implemented or not demonstrated
 
@@ -75,8 +84,9 @@ network charges. Final-answer attribution is now an explicit invariant.
 - Validated compatibility beyond the recorded Granite and tiny-model checks.
 - A validated hidden-layer mapping or an effective layer identified by experiment.
   The [output-logit prototype](reports/2026-09-21-logit-guidance/README.md) is mechanically
-  checked with replayed scores. R13 subsequently verified fresh hosted structured
-  logit guidance and admitted a new exploratory test, subsequently interrupted by a retryable service response; its remaining jobs have a separate registered continuation. R12
+  checked with replayed scores. R13 subsequently completed a fresh hosted seven-arm comparison without a
+  demonstrated accuracy gain; its interrupted segment and bounded continuation
+  are preserved separately. R12
   retains one actual-usage-unknown call at its full maximum charge; its original
   stopped protocol was not retroactively resumed or declared admitted.
 

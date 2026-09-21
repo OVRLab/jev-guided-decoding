@@ -5,15 +5,15 @@ Granite inference. It includes negative results, corrections, new analyses, and
 proposed experiments. It is a basis for a paper, not a claim of a successful model
 release. All dates below are report dates; source artifacts retain execution times.
 
-**Current conclusion, 2026-09-21:** the tested intermediate text-selection policy
-did not improve Granite-generated answers. The best next *testable hypothesis*
-with the available interfaces is sparse, bounded intervention at Granite's output
-logits, informed by Jev's judgments of short counterfactual continuations. This
-requires a critic-quality gate first. The [new implementation and development report](../reports/2026-09-21-logit-guidance/README.md)
-now verifies bounded probability changes, unchanged weights and zero-bias identity
-on real Granite using replayed Jev scores. Development scoring was interrupted by
-HTTP 400; unpaid proposal analysis found 67% grader coverage. No held-out gate or
-new answer-quality study ran. No hidden layer has an established benefit.
+**Current conclusion, 2026-09-21:** neither the earlier step-selection policy nor
+the new bounded output-logit policy demonstrates a useful final-answer gain.
+The [completed R13 comparison](../reports/2026-09-21-structured-study/README.md)
+records 6,300 planned attempts on 300 authored worlds: 42.67% direct Granite,
+37.00% staged, 35.44% likelihood and 36.00% Jev. All adjusted primary intervals
+include zero. Jev ranks local claims accurately on these fixtures, but this does
+not establish better final answers or an effective hidden-layer insertion point.
+One provider failure is retained; every completed final belongs to Granite,
+weights are unchanged, and both temporary GPU deployments are deleted.
 
 | Read | Purpose |
 | --- | --- |
@@ -22,11 +22,12 @@ new answer-quality study ran. No hidden layer has an established benefit.
 | [New diagnostic report](../reports/2026-09-21-architecture-reassessment/README.md) | Reproducible decomposition of 3,600 main and 48 development traces |
 | [Next experiment](next-experiment.md) | Staged evidence gates, controls, budgets, held-out evaluation and stop rules |
 | [Logit-guidance development](../reports/2026-09-21-logit-guidance/README.md) | Completed/interrupted pilots, full authored traces, mechanical controls and remaining limits |
+| [Completed seven-arm study](../reports/2026-09-21-structured-study/README.md) | Full public traces, controls, adjusted intervals, diagnostics, figures and cleanup/cost evidence |
 | [Related work](related-work.md) | Primary sources and what they do—and do not—support |
 | [Paper draft](paper-draft.md) | Evidence-grounded manuscript scaffold and publication requirements |
 | [Work plan](../docs/research-reassessment-plan.md) | Scope and validation for this reassessment |
 
-The owner subsequently authorized [R13 recovery and a complete controlled comparison](structured-study-protocol.md). Two fresh API diagnostics passed. The first GPU pilot failed final formatting; the corrected common-label-grammar pilot passed all operational gates, and the test then stopped after 3,015 complete jobs and one provider failure. A [bounded continuation](structured-study-continuation.md) covers only the 3,284 never-started jobs, retaining that failure. New admission tests operational correctness rather than requiring a positive pilot gain; the earlier R12 critic gate remains unpassed. [All attempts](../reports/2026-09-21-structured-study/README.md) are retained.
+The owner subsequently authorized [R13 recovery and a complete controlled comparison](structured-study-protocol.md). Two fresh API diagnostics passed. The first GPU pilot failed final formatting; the corrected common-label-grammar pilot passed all operational gates, and the test then stopped after 3,015 complete jobs and one provider failure. A [bounded continuation](structured-study-continuation.md) completed all 3,284 never-started jobs without another failure, retaining the original failure in the combined denominator. New admission tests operational correctness rather than requiring a positive pilot gain; the earlier R12 critic gate remains unpassed. [All attempts](../reports/2026-09-21-structured-study/README.md) are retained.
 
 ## Recording subsequent work
 
