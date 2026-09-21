@@ -221,7 +221,49 @@ def run(args):
             args.prior is not None and args.ledger is not None,
             "Recovery needs original artifacts and ledger",
         )
-        require(recovery == read(args.manifest / "recovery.json"), "Recovery registration changed")
+        registration_name = (
+            "recovery2.json" if "ancestor_registration" in recovery else "recovery.json"
+        )
+        require(
+            recovery == read(args.manifest / registration_name), "Recovery registration changed"
+        )
+        if "ancestor_registration" in recovery:
+            ancestor = read(ROOT / recovery["ancestor_registration"])
+            require(args.original is not None, "Original transport segment is required")
+            require(
+                read(args.prior / "recovery.json") == ancestor,
+                "Original recovery registration changed",
+            )
+            for name, expected in ancestor["prior_files"].items():
+                raw = (args.original / name).read_bytes()
+                require(
+                    len(raw) == expected["bytes"]
+                    and hashlib.sha256(raw).hexdigest() == expected["sha256"],
+                    "Original transport artifact changed",
+                )
+                if name.endswith(".jsonl"):
+                    require(
+                        (args.prior / name).read_bytes().startswith(raw),
+                        "First recovery changed raw prefix",
+                    )
+            for key, digest_key in (
+                ("helper_path", "helper_sha256"),
+                ("amendment_path", "amendment_sha256"),
+            ):
+                require(
+                    hashlib.sha256((ROOT / ancestor[key]).read_bytes()).hexdigest()
+                    == ancestor[digest_key],
+                    "First recovery source changed",
+                )
+            require(
+                read(args.original / "completion.json")["weights_after"]
+                == read(args.prior / "metadata.json")["weights_before"],
+                "First recovery weights changed",
+            )
+            require(
+                ancestor["at"] < read(args.prior / "metadata.json")["at"],
+                "First recovery registration not prospective",
+            )
         for name, expected in recovery["prior_files"].items():
             original_bytes = (args.prior / name).read_bytes()
             require(
@@ -391,8 +433,17 @@ def run(args):
             for c in splits["development"]
             if c["id"] not in original_ids
             and evaluations["development"][c["id"]]["status"] == "complete"
-        ][:12]
-        require(len(fresh_successful) == 12, "Missing fresh zero sample")
+        ][: recovery.get("new_full_vocabulary_checks", 12)]
+        require(
+            len(fresh_successful) == recovery.get("new_full_vocabulary_checks", 12),
+            "Missing fresh zero sample",
+        )
+        if "ancestor_registration" in recovery:
+            previous_checks = (
+                recovery["retained_full_vocabulary_check_ids"]
+                + recovery["lost_full_vocabulary_check_ids"]
+            )
+            expected |= {(ident, "recovery_zero_check") for ident in previous_checks}
         expected |= {(c["id"], "recovery_zero_check") for c in fresh_successful}
     require(
         len(dev) == len(expected) and {(r["id"], r["mode"]) for r in dev} == expected,
@@ -410,7 +461,11 @@ def run(args):
                 "Unexplained failed development output",
             )
             require(
-                r["provider_failure"] == receipt
+                r["provider_failure"]
+                in (
+                    receipt,
+                    {k: v for k, v in receipt.items() if k not in ("id", "stage", "status")},
+                )
                 and "label" not in r
                 and "generated_token_ids" not in r,
                 "Fabricated failed output",
@@ -442,6 +497,11 @@ def run(args):
     candidates = []
     for policy in grid:
         metric = grade_metrics(buckets[policy["id"]], splits["development"])
+        if recovery:
+            metric.update(
+                complete=sum(r["status"] == "complete" for r in buckets[policy["id"]]),
+                failed=sum(r["status"] != "complete" for r in buckets[policy["id"]]),
+            )
         failures = [
             k
             for k in ("answerable", "missing", "clean")
@@ -483,10 +543,17 @@ def run(args):
     )
     if recovery:
         require(
-            [r["id"] for r in equivalence] == [c["id"] for c in fresh_successful],
+            [r["id"] for r in equivalence]
+            == recovery.get("retained_full_vocabulary_check_ids", [])
+            + [c["id"] for c in fresh_successful],
             "Full-vocabulary checks are not first new successful contexts",
         )
-        for c in fresh_successful:
+        checks = [
+            all_cases[ident]
+            for ident in recovery.get("retained_full_vocabulary_check_ids", [])
+            + recovery.get("lost_full_vocabulary_check_ids", [])
+        ] + fresh_successful
+        for c in checks:
             a, b = dev_pairs[c["id"], "native"], dev_pairs[c["id"], "recovery_zero_check"]
             require(
                 a["label_logits"] == b["label_logits"]
@@ -650,6 +717,19 @@ def run(args):
     result = dict(
         status="passed",
         counters=counters,
+        recorded_outputs=sum(len(records) for records in all_records.values()),
+        scorer_attempts=counters["receipts"] + counters["failed_receipts"],
+        persisted_full_vocabulary_zero_pairs=len(equivalence),
+        source_segments=[
+            read(path / "metadata.json")["source_revision"]
+            for path in (args.original, args.prior, args.results)
+            if path is not None
+        ],
+        input_hashes={
+            str(p): hashlib.sha256(p.read_bytes()).hexdigest()
+            for p in sorted(args.results.iterdir())
+            if p.is_file()
+        },
         selected_policy=selected,
         weights_unchanged=True,
         statistics=statistics,
@@ -667,5 +747,6 @@ if __name__ == "__main__":
     p.add_argument("--results", type=Path, required=True)
     p.add_argument("--output", type=Path, required=True)
     p.add_argument("--prior", type=Path)
+    p.add_argument("--original", type=Path)
     p.add_argument("--ledger", type=Path)
     run(p.parse_args())

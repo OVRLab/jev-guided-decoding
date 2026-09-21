@@ -1,0 +1,65 @@
+{
+  "at": "2026-09-21T23:46:42.806336+00:00",
+  "prior_source_revision": "e9f16c5",
+  "helper_path": "research/iterations/evidence_v2_continuation.py",
+  "amendment_path": "research/evidence-attention-v2-service-continuation.md",
+  "prior_files": {
+    "completion.json": {
+      "sha256": "b61dba7ddfdeb896da4c81d6227751e92d295fbc45c16868eb8bd9403806e52a",
+      "bytes": 340
+    },
+    "development-scores.jsonl": {
+      "sha256": "bab1b620e44ddb059770563b094cf90ec8a579e1c140af516a53da484ea9b2df",
+      "bytes": 2006706
+    },
+    "development.jsonl": {
+      "sha256": "610758c6c9ee65f2f149b99d87b9ab565de52a02feb5ed7028cae437a158e755",
+      "bytes": 32781790
+    },
+    "inputs.jsonl": {
+      "sha256": "83d24b9ebcb413a9e039656201ba7cb7c1d389720d43cceb1679bae2c47205a1",
+      "bytes": 1164612
+    },
+    "metadata.json": {
+      "sha256": "12f2bbe14d47629afb63961a35fffc1b06a647335e1626fc4054bb266ed6d209",
+      "bytes": 5838
+    },
+    "recovery.json": {
+      "sha256": "436e6ad61dbbedef0f4733eede9182baea1626747c74761bce810a46867a8bd9",
+      "bytes": 1940
+    },
+    "selected-policy.json": {
+      "sha256": "673016821263ff12076bbc37fab4d23a348c6d4d10b968efaaa913b4934cd182",
+      "bytes": 80746
+    },
+    "starts.jsonl": {
+      "sha256": "0e6e5016ec65126d7e70a504c47d4d1546139f4fd0b7e3c9adcd40281f3388b7",
+      "bytes": 3185014
+    },
+    "test-freeze.json": {
+      "sha256": "230fc27fbc33e68ecc4143194c844f0b86db838af1c0f96dc073fad0c12ff102",
+      "bytes": 5605
+    },
+    "test-scores.jsonl": {
+      "sha256": "4c8676540bfd67a4abd01a4d6d8dc8f4eb6ebfb3f1bbcb445452d49f7b3c34e0",
+      "bytes": 485194
+    },
+    "test.jsonl": {
+      "sha256": "449c583890db6776562ee6907b42027e17b6960830da8fd02856c124b7331ff3",
+      "bytes": 945111
+    },
+    "zero-equivalence.json": {
+      "sha256": "3cd1ed9ae3bb67fe1e8efd3dc7842ffcbad3a102fc7217606b2756f99252ace3",
+      "bytes": 1418
+    }
+  },
+  "max_incidents": 30,
+  "prior_incidents": 2,
+  "prior_complete_test_contexts": 47,
+  "prior_failed_score_context": "evidence-v2/test/42e1dd2052914a6c/distracted",
+  "new_request_timeout_seconds": 90,
+  "selected_policy_sha256": "673016821263ff12076bbc37fab4d23a348c6d4d10b968efaaa913b4934cd182",
+  "test_freeze_sha256": "230fc27fbc33e68ecc4143194c844f0b86db838af1c0f96dc073fad0c12ff102",
+  "helper_sha256": "563ddbe45c014df88438acbeb8ed5fb0737d48ed4d5433523d6c14375d045a5b",
+  "amendment_sha256": "6d702c155cbb97f9ef7100acae649599eb709ce28393000fb0d6c6a275ecb79a"
+}

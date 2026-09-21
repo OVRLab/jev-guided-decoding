@@ -115,3 +115,12 @@ that segment too and resumes individual never-started jobs. Two new full-develop
 mock tests reproduce the old checkpoint/partial-block failures and pass with the
 separate repaired helper. Paid attempts and original scientific comparisons remain
 unchanged; one additional fresh zero forward replaces missing persisted evidence.
+
+The repaired R15 run finished development and 47 test contexts, then stopped on
+HTTP 503 at the 48th test request. Its selected policy and original test freeze
+remain unchanged. The [service continuation](evidence-attention-v2-service-continuation.md)
+was registered after testing began, explicitly expands transient admission to
+503 and related gateway errors, raises the incident bound to thirty within the
+same budget/deadline, retains every failed dependent output and replays no paid
+request. All original scientific comparisons are preserved; final interpretation
+must identify the operational amendments. Two new offline continuation tests pass.
