@@ -38,3 +38,37 @@ def test_confusion_diagnostics_retain_invalid_outputs():
     result = A["diagnostics"]([a, b])
     assert result["confusion"]["native"] == {"FALSE": {"TRUE": 1}, "UNKNOWN": {"INVALID": 1}}
     assert result["strata"]["native"]["depth:5"] == {"jobs": 1, "correct": 0}
+
+
+def test_input_audit_rejects_reused_id_with_changed_question_evidence_or_prompt():
+    class Tokenizer:
+        chat_template = "fixture"
+
+        def apply_chat_template(self, messages, *, tokenize, add_generation_prompt):
+            assert tokenize and add_generation_prompt
+            return list("|".join(m["content"] for m in messages).encode())
+
+    case = {"id": "same-id", "target": "Mira is blue.", "evidence": "Mira is calm."}
+    manifest = {"system": "Frozen system instructions."}
+    row = {
+        "id": "same-id",
+        "request": {
+            "question": "Determine whether this target follows: Mira is blue.",
+            "evidence": "Mira is calm.",
+            "system": "Frozen system instructions.",
+        },
+        "prompt_ids": list(
+            b"Frozen system instructions.|Evidence:\nMira is calm.\n\nQuestion:\n"
+            b"Determine whether this target follows: Mira is blue."
+        ),
+    }
+    assert A["audit_input"](row, case, manifest, Tokenizer())
+    for field in ("question", "evidence", "system"):
+        bad = copy.deepcopy(row)
+        bad["request"][field] += " The answer is TRUE."
+        with pytest.raises(ValueError, match="request"):
+            A["audit_input"](bad, case, manifest, Tokenizer())
+    bad = copy.deepcopy(row)
+    bad["prompt_ids"].append(99)
+    with pytest.raises(ValueError, match="prompt"):
+        A["audit_input"](bad, case, manifest, Tokenizer())

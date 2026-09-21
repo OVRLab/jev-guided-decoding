@@ -23,6 +23,31 @@ def require(condition, message):
         raise ValueError(message)
 
 
+def audit_input(row, case, manifest, tokenizer):
+    """Bind recorded text and prompt tokens to the frozen case, not its ID alone."""
+    request = {
+        "question": f"Determine whether this target follows: {case['target']}",
+        "evidence": case["evidence"],
+        "system": manifest["system"],
+    }
+    require(row["id"] == case["id"], "Input case ID mismatch")
+    require(row["request"] == request, "Frozen request mismatch")
+    user = f"Evidence:\n{request['evidence']}\n\nQuestion:\n{request['question']}"
+    if tokenizer.chat_template:
+        expected = tokenizer.apply_chat_template(
+            [
+                {"role": "system", "content": request["system"]},
+                {"role": "user", "content": user},
+            ],
+            tokenize=True,
+            add_generation_prompt=True,
+        )
+    else:
+        expected = tokenizer.encode(f"{request['system']}\n\n{user}\n\nAnswer:")
+    require(row["prompt_ids"] == list(expected), "Frozen prompt token mismatch")
+    return True
+
+
 def audit_tokens(row, base):
     require(row["status"] == "complete", "Cannot certify incomplete generation")
     prompt, accepted = list(row["prompt_ids"]), []
@@ -219,10 +244,12 @@ def main():
             list(ids), skip_special_tokens=True, clean_up_tokenization_spaces=False
         )
     )
-    certified = 0
+    certified = input_certified = 0
     for row in rows:
         case = by_id[row["id"]]
         require(STUDY["DATA"]["truth"](case) == row["reference_label"], "Reference mismatch")
+        if row["status"] == "complete" or row.get("request") is not None:
+            input_certified += audit_input(row, case, manifest, tokenizer)
         if row["status"] == "complete":
             certified += audit_tokens(row, base)
         for step in row.get("steps", []):
@@ -240,6 +267,7 @@ def main():
         bootstrap=5000 if args.split == "test" else 0,
     )
     result.update(
+        independent_input_audits=input_certified,
         independent_token_audits=certified,
         diagnostics=diagnostics(rows),
         raw_sha256=STUDY["sha"](args.runs),

@@ -26,6 +26,8 @@ def render(summary, output):
         raise ValueError("Figures require all 6,300 planned test outcomes")
     if summary["independent_token_audits"] != sum(a["complete"] for a in summary["arms"].values()):
         raise ValueError("Every completed model answer must pass independent token reconstruction")
+    if summary["independent_input_audits"] != summary["recorded"]:
+        raise ValueError("Every recorded prompt must match the frozen question and evidence")
     import matplotlib
 
     matplotlib.use("Agg")

@@ -89,3 +89,10 @@ the completed independent summary. It exports accuracy/latency and the three
 primary contrast intervals as PNG, SVG and PDF, recording source/data hashes and
 plotting-library versions. Figures require all 6,300 outcomes and will receive
 visual/table verification after the run; no invented preview data is used.
+
+During main execution, the offline auditor was strengthened to bind each recorded
+question, evidence, system instruction and exact chat-template prompt tokens to
+the frozen case. The new regression first failed because that independent check
+was absent, then passed while rejecting altered inputs under an unchanged case ID.
+All 168 V2 pilot prompts also passed this additional reconstruction. This changes
+offline verification only; the frozen GPU inference code and protocol are unchanged.
