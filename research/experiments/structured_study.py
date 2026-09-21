@@ -51,7 +51,10 @@ def prepare(output):
     write(
         output / "manifest.json",
         dict(
-            schema="structured-study-v1",
+            schema="structured-study-v2",
+            final_grammar=True,
+            revision_reason="V1 pilot: 168 jobs complete; 121 valid final formats. "
+            "V2 applies all-three-label final syntax equally to every arm. Test remains unseen.",
             created_at=datetime.now(UTC).isoformat(),
             source_revision=subprocess.check_output(
                 ["git", "rev-parse", "HEAD"], cwd=ROOT, text=True
@@ -286,6 +289,7 @@ async def run_stage(args, manifest, split, base, runtime, scorer):
                             scorer=scorer,
                             record=record,
                             limits=manifest["limits"],
+                            final_grammar=manifest.get("final_grammar", False),
                         )
                         record["audit"] = audit(record, view, base)
                         if not all(record["audit"].values()):

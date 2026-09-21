@@ -1,0 +1,29 @@
+{
+  "uncompressed": {
+    "pilot-v1/runs.jsonl": {
+      "sha256": "e5c8c977484c2bf2d6a0daf188623e1679caa91f4186d12b229e94abb94d9a52",
+      "bytes": 3087692
+    },
+    "pilot-v1/job-starts.jsonl": {
+      "sha256": "00dd300159fcb4a15e0f5095e6a07a186d4e6674d0be304b9d034a01b39274db",
+      "bytes": 24624
+    },
+    "pilot-v1/summary.json": {
+      "sha256": "0e8e5d365847499385afb42664e16ffbc261f962da6c8e2604442f418fbfb7c7",
+      "bytes": 2223
+    },
+    "pilot-v1/independent-analysis.json": {
+      "sha256": "f912b350efe1dccf1cf5c7fc9be49d6925dbb573bfeab876a282ac9ff8a8f320",
+      "bytes": 8844
+    }
+  },
+  "files": {
+    "api-recovery.json": "0425019c00107896cac5a04048a754cbe8d434cac01dc457bed6c00602c7e3d7",
+    "pilot-v1/summary.json": "0e8e5d365847499385afb42664e16ffbc261f962da6c8e2604442f418fbfb7c7",
+    "pilot-v1/metadata.json": "f14312ff1e70cb4e45028670bd95f90e36bffad36163f8c601744b1c56f5bf97",
+    "pilot-v1/independent-analysis.json": "f912b350efe1dccf1cf5c7fc9be49d6925dbb573bfeab876a282ac9ff8a8f320",
+    "pilot-v1/runs.jsonl.gz": "41f549bef0a9163cd52851184272535159420c4fabd16e0d3108dbaf4e0d69cb",
+    "pilot-v1/job-starts.jsonl.gz": "3adfb1afa69d381a2b7b82c9d0e79552dbd20a3b436b7a38ce09fbd78c052beb",
+    "pilot-v1/completion.json": "ee6a051010c5efa15ccc6212721c3181aa8ef485d8808536e47736eeb153ce6d"
+  }
+}

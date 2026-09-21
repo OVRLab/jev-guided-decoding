@@ -65,3 +65,23 @@ def test_grammar_keeps_supplied_opening_when_tokenizer_merges_text_boundary():
     grammar, opening = S["StructuredRuntime"](base).make_grammar(["Mira"], ["blue"])
     assert opening == (3,)
     assert grammar.allowed(opening) == (4, 5, 6)
+
+
+def test_final_grammar_leaves_all_labels_to_original_model_probabilities():
+    base = TINY["backend"]().base
+    base.encode_control = lambda text: (3,)
+    base.tokenizer.encode = lambda text, **kwargs: {
+        "TRUE</final>": (4, 6),
+        "FALSE</final>": (5, 6),
+        "UNKNOWN</final>": (7, 6),
+    }[text]
+    base.tokenizer.decode = lambda ids, **kwargs: "".join(
+        {3: "<final>", 4: "TRUE", 5: "FALSE", 7: "UNKNOWN", 6: "</final>"}.get(i, "") for i in ids
+    )
+    runtime = S["StructuredRuntime"](base)
+    expected = runtime.inspect((1, 2), (3,), allowed=(4, 5, 7)).options[0][0]
+    proposal, trace = runtime.propose_final((1, 2), (), max_tokens=8, seed=42, max_seconds=10)
+    assert proposal.candidates[0].token_ids == (expected, 6)
+    assert proposal.candidates[0].finish_reason == "frame"
+    assert proposal.generated_tokens == 2 and len(trace["trace"]) == 2
+    assert trace["trace"][0]["allowed_count"] == 3

@@ -186,3 +186,28 @@ def test_cancelled_provider_has_no_late_commit():
     with pytest.raises(asyncio.CancelledError):
         run("jev", Cancelled(), record)
     assert record["status"] == "cancelled" and record["accepted_ids"] == []
+
+
+def test_constrained_final_uses_its_own_reserved_forward_budget():
+    runtime = Runtime()
+
+    def final(prompt, accepted, **kwargs):
+        runtime.inspect(prompt, tuple(accepted) + (8,), allowed=(9,))
+        return runtime.base.propose_frames(prompt, tuple(accepted) + (8,)), {
+            "trace": [],
+            "syntax": "all-three-labels",
+        }
+
+    runtime.propose_final = final
+    result = asyncio.run(
+        C["run_job"](
+            VIEW,
+            runtime,
+            mode="staged",
+            seed=42,
+            limits={"reasoning_forwards": 1},
+            final_grammar=True,
+        )
+    )
+    assert result["reasoning_stop"] == "budget" and result["label"] == "TRUE"
+    assert result["work"]["reasoning_forwards"] == 1 and result["work"]["final_forwards"] == 1

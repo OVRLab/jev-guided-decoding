@@ -47,6 +47,7 @@ class Work:
     def __init__(self, limits):
         self.limits, self.started = limits, time.monotonic()
         self.counts = dict(reasoning_forwards=0, reasoning_prefill=0, forced_root_tokens=0)
+        self.counts.update(final_forwards=0, final_prefill=0)
 
     def remaining(self):
         return (
@@ -65,6 +66,16 @@ class Work:
             raise WorkLimit("Reasoning budget exhausted; final reserve retained")
         self.counts["reasoning_forwards"] += 1
         self.counts["reasoning_prefill"] += tokens
+
+    def reserve_final(self, tokens):
+        if (
+            time.monotonic() - self.started >= self.limits["job_seconds"]
+            or self.counts["final_forwards"] >= self.limits["final_tokens"]
+            or tokens > self.limits["context_tokens"]
+        ):
+            raise WorkLimit("Final generation budget exhausted")
+        self.counts["final_forwards"] += 1
+        self.counts["final_prefill"] += tokens
 
 
 def boundary(text, entities):
@@ -156,7 +167,9 @@ async def checkpoint(
     return (selection["token"],)
 
 
-async def run_job(view, runtime, *, mode, seed, scorer=None, record=None, limits=None):
+async def run_job(
+    view, runtime, *, mode, seed, scorer=None, record=None, limits=None, final_grammar=False
+):
     request = request_for(view)
     if mode not in ARMS:
         raise ValueError("Unknown arm")
@@ -267,15 +280,26 @@ async def run_job(view, runtime, *, mode, seed, scorer=None, record=None, limits
         remaining = config["job_seconds"] - (time.monotonic() - work.started)
         if remaining <= 0:
             raise TimeoutError("Final reserve expired")
-        proposal = base.propose_frames(
-            prompt,
-            final_prefix,
-            count=1,
-            max_tokens=config["final_tokens"],
-            seed=seed + 9000,
-            greedy=True,
-            max_seconds=min(config["final_seconds"], remaining),
-        )
+        final_trace = None
+        if final_grammar:
+            runtime.before_forward = work.reserve_final
+            proposal, final_trace = runtime.propose_final(
+                prompt,
+                accepted,
+                max_tokens=config["final_tokens"],
+                seed=seed + 9000,
+                max_seconds=min(config["final_seconds"], remaining),
+            )
+        else:
+            proposal = base.propose_frames(
+                prompt,
+                final_prefix,
+                count=1,
+                max_tokens=config["final_tokens"],
+                seed=seed + 9000,
+                greedy=True,
+                max_seconds=min(config["final_seconds"], remaining),
+            )
         if len(proposal.candidates) != 1:
             raise ValueError("Wrong final candidate count")
         candidate = proposal.candidates[0]
@@ -293,6 +317,8 @@ async def run_job(view, runtime, *, mode, seed, scorer=None, record=None, limits
             decode_token_slots=proposal.decode_token_slots,
             prefill_tokens=proposal.prefill_tokens,
             seconds=proposal.seconds,
+            grammar=final_grammar,
+            token_trace=final_trace,
         )
         record.update(label=label, status="complete")
         return record

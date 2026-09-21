@@ -8,6 +8,8 @@ from pathlib import Path
 
 import torch
 
+from jev_guided_decoding.types import Candidate, Proposal
+
 HERE = Path(__file__).parent
 BASE = runpy.run_path(str(HERE / "logit_runtime.py"))
 GRAMMAR = runpy.run_path(str(HERE / "claim_grammar.py"))
@@ -138,3 +140,41 @@ class StructuredRuntime(BASE["LogitTokenBackend"]):
                 raise ValueError("Tokenizer cannot round-trip canonical claim syntax")
             sequences.append(ids)
         return GRAMMAR["TokenTrie"](sequences), opening
+
+    def propose_final(self, prompt, accepted, *, max_tokens, seed, max_seconds):
+        opening = tuple(self.base.encode_control("<final>"))
+        sequences = []
+        for label in ("TRUE", "FALSE", "UNKNOWN"):
+            ids = opening + tuple(
+                self.base.tokenizer.encode(label + "</final>", add_special_tokens=False)
+            )
+            if self.base.decode(ids) != "<final>" + label + "</final>":
+                raise ValueError("Final label grammar failed tokenizer round trip")
+            sequences.append(ids)
+        grammar = GRAMMAR["TokenTrie"](sequences)
+        prefix = tuple(accepted) + opening
+        trace = self.continue_frame(
+            prompt,
+            prefix,
+            frame_offset=len(accepted),
+            grammar=grammar,
+            max_tokens=max_tokens,
+            seed=seed,
+            greedy=True,
+            max_seconds=max_seconds,
+        )
+        generated = tuple(trace["token_ids"])
+        candidate = Candidate(
+            generated,
+            self.base.decode(generated),
+            trace["logprob_sum"] / max(1, len(generated)),
+            trace["finish_reason"],
+            self.base.decode(prefix + generated),
+        )
+        return Proposal(
+            (candidate,),
+            trace["generated_tokens"],
+            trace["decode_token_slots"],
+            trace["prefill_tokens"],
+            trace["seconds"],
+        ), trace
