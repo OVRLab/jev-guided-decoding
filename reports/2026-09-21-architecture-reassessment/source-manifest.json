@@ -1,0 +1,72 @@
+[
+  {
+    "name": "confidence",
+    "url": "https://docs.typesafe.ai/confidence.md",
+    "retrieved_at": "2026-09-21T04:51:59.219389+00:00",
+    "sha256": "97dafe98b77979906a2ad456013dd85a70dcecd109d0644b096817d910997ea5",
+    "bytes": 11396
+  },
+  {
+    "name": "granite-config",
+    "url": "https://huggingface.co/ibm-granite/granite-4.0-1b/raw/6a7381ba1f54d684ff508d991aeb7dc580157103/config.json",
+    "retrieved_at": "2026-09-21T04:51:59.189127+00:00",
+    "sha256": "5313872f81102e62617e638f8be541ee68f14ded1ae484a892645b5c5a10aea9",
+    "bytes": 1969
+  },
+  {
+    "name": "granite-forward",
+    "url": "https://raw.githubusercontent.com/huggingface/transformers/v4.57.1/src/transformers/models/granitemoehybrid/modeling_granitemoehybrid.py",
+    "retrieved_at": "2026-09-21T04:51:59.321208+00:00",
+    "sha256": "95a125f72806f67d56c250f9c74584b245aac0e131dfcba613c604f13b592f06",
+    "bytes": 84423
+  },
+  {
+    "name": "jaggedness",
+    "url": "https://docs.typesafe.ai/model-jaggedness/jev-1.13.md",
+    "retrieved_at": "2026-09-21T04:51:59.258566+00:00",
+    "sha256": "e69329bd32e91ac08f0bd2681ceb4aacc34923b9190e29c15c8f75d8e22950e2",
+    "bytes": 11588
+  },
+  {
+    "name": "noul",
+    "url": "https://docs.typesafe.ai/primitives/noul.md",
+    "retrieved_at": "2026-09-21T04:51:59.247921+00:00",
+    "sha256": "aa7bff0d04bd42614e0e851a9ad4917ccc6287c882bc5dece7689b085ef789e6",
+    "bytes": 27363
+  },
+  {
+    "name": "rerank",
+    "url": "https://docs.typesafe.ai/cookbooks/rerank_typesafe.md",
+    "retrieved_at": "2026-09-21T04:51:59.238814+00:00",
+    "sha256": "85b8158a7cc00bef100bf07aa00a506e117e2979d38c3650b50e122c8e69f1df",
+    "bytes": 26143
+  },
+  {
+    "name": "score",
+    "url": "https://docs.typesafe.ai/primitives/score.md",
+    "retrieved_at": "2026-09-21T04:51:59.244262+00:00",
+    "sha256": "5afe0db1d2d108c3bf35f73f5fddbfcd2b9ade2d3c6f553af8a02b2bfd005ae9",
+    "bytes": 43992
+  },
+  {
+    "name": "typesafe-api",
+    "url": "https://docs.typesafe.ai/api.md",
+    "retrieved_at": "2026-09-21T05:06:41.967880+00:00",
+    "sha256": "7ea1c82d9d16bd06e3d38885a5292548293f91e6d1ade4682c27398ced51a9e5",
+    "bytes": 11772
+  },
+  {
+    "name": "typesafe-index",
+    "url": "https://docs.typesafe.ai/llms.txt",
+    "retrieved_at": "2026-09-21T05:06:41.839958+00:00",
+    "sha256": "9bb713532b8b5b836d48bf19733a6649525aff8353e22c5cbebf5524a498ff24",
+    "bytes": 16369
+  },
+  {
+    "name": "typesafe-models",
+    "url": "https://docs.typesafe.ai/models.md",
+    "retrieved_at": "2026-09-21T05:06:41.992608+00:00",
+    "sha256": "9d20bb3c90a0147532d0b20ddc4c64579391be7842e965543b27bad684eeb4d6",
+    "bytes": 7245
+  }
+]

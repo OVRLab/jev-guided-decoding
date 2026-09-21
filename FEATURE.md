@@ -6,6 +6,14 @@ accuracy gain over either control. Source, grading and data stayed frozen, and
 the temporary cloud resources were deleted after verified backup retrieval.
 The earlier experiments below provide historical context for the current contract.
 
+The owner's subsequent request for a fresh architecture assessment and a durable
+research record is covered by the [research notebook](research/README.md).
+The [offline audit](reports/2026-09-21-architecture-reassessment/README.md) separates
+first-batch rejection from absent valid proposals without changing prior results.
+The next proposed stage is [critic discrimination and candidate coverage](research/next-experiment.md),
+before implementing a bounded output-logit hook. A new live study has not started;
+no hidden layer or new decoder has a demonstrated quality advantage.
+
 The owner requested investigating Jev as an active helper during inference. The
 [investigation](docs/reasoning-step-investigation.md) and
 [diagnostic report](reports/2026-09-20-reasoning-investigation/README.md) are complete;

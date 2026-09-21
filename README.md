@@ -18,6 +18,12 @@ Granite and 67.8% likelihood selection; logic was 52.5%, 52.7%, and 52.8%
 respectively. The report includes adjusted paired intervals, actual work, and
 verified token provenance. This uses a common staged prompt, not default chat.
 
+[Research notebook](research/README.md): the complete study register, a new
+offline failure analysis, primary-source architecture review, next-study design,
+and a paper draft. Sparse output-logit intervention is the next hypothesis,
+conditional on an independent critic-quality gate; it is not implemented or
+shown to improve answers. No effective hidden-layer insertion point is established.
+
 [Initial measured results](reports/2026-09-20-granite-smoke/README.md): the 12-case
 smoke test demonstrated in-generation control, but no established quality gain;
 Jev added latency and incorrectly rejected the ending of one correct answer.

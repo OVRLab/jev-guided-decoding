@@ -59,6 +59,11 @@ guides must defer here rather than maintain conflicting copies.
 - Record seeds, versions, dataset hashes, hardware, warm-up, model-loading treatment,
   source revision, dirty state, and returned Jev version. Do not edit old raw results
   to match new code; write a new report and link the earlier one.
+- Maintain the [research notebook](research/README.md) and
+  [study register](research/study-register.md) for every subsequent experiment,
+  including failed, interrupted and offline analyses. Register the protocol before
+  new live inference; distinguish proposed mechanisms from implemented hooks and
+  independently evaluated quality. Preserve corrections and negative evidence.
 
 ## Security and public content
 

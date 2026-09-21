@@ -28,6 +28,7 @@ a published release.
 | Completed 2,400-job ProofWriter study and 96-job synthetic stress test; guided 84.5% versus direct Jev 84.7%, without demonstrated added accuracy | [final report, aggregate results, and integrity audit](reports/2026-09-20-controlled-study/README.md) |
 | Separate controller keeps Granite as final answerer, scores intermediate steps only, and reserves final generation plus durable Jev spending | [replacement protocol](docs/generated-answer-experiment.md), [controller tests](tests/test_generated_answer.py), [budget tests](tests/test_experiment_budget.py) |
 | Completed 3,600-job generated-answer study: no demonstrated accuracy gain; all final generations passed token-provenance audit | [final report, controls, intervals, and resource accounting](reports/2026-09-20-generated-answer-study/README.md) |
+| Offline analysis of all 3,600 main and 48 development traces, checkpoint/source inspection, and persistent research register | [new aggregate report](reports/2026-09-21-architecture-reassessment/README.md), [analyzer tests](tests/test_trace_diagnostics.py), [research notebook](research/README.md) |
 
 The recorded smoke run used original Granite with zero trainable parameters.
 Guided decoding averaged 3.71 seconds versus 1.10 seconds greedy, with no
@@ -67,6 +68,9 @@ network charges. Final-answer attribution is now an explicit invariant.
 - Neural fusion, training, changed model weights, or a new Hugging Face checkpoint.
 - Improved held-out answer quality, general mathematical reasoning, or GPU-server speedups.
 - Validated compatibility beyond the recorded Granite and tiny-model checks.
+- The proposed [bounded output-logit intervention](research/architecture-reassessment.md),
+  a validated hidden-layer mapping, or an effective layer identified by experiment.
+  These remain designs; the [next-study gates](research/next-experiment.md) have not run.
 
 Update this inventory when verified behavior changes, naming the PR/report and
 keeping branch, merged, experimental, and released states distinct. Guidance-only
