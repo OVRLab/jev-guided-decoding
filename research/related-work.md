@@ -15,6 +15,8 @@ are identified; reported gains in other work are not independently reproduced he
 | Liu et al., **DExperts: Decoding-Time Controlled Text Generation with Experts and Anti-Experts**, ACL 2021 ([paper](https://arxiv.org/abs/2105.03023)) | Combines generator and expert/anti-expert language-model output distributions | Jev's typed answers are not a language model distribution over Granite's vocabulary. We cannot directly add “Jev logits” by analogy. Reviewed abstract. |
 | Zhao et al., **Probabilistic Inference in Language Models via Twisted Sequential Monte Carlo**, 2024 ([paper](https://arxiv.org/abs/2404.17546)) | Uses learned twisting functions and sequential Monte Carlo to guide generation | Relevant for future-value estimation and maintaining several paths; more complex than the proposed bounded first prototype. Our local-score policy is not an implementation of its exact inference target. Reviewed abstract. |
 
+A subsequent [targeted method comparison](decoding-method-comparison.md) reads FUDGE Section 3, Controlled Decoding Sections 2–3, and DeAL Section 3.2.2 against the frozen R13 implementation. It separates local claim support from future-answer value and records the exact KL reference distribution.
+
 ## Actual hidden-state intervention and critic quality
 
 | Source | Relevant contribution | Boundary for our design |
