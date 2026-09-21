@@ -76,6 +76,8 @@ independently graded claims actually accepted, and Granite's final-answer accura
 High proposal-ranking accuracy alone establishes neither of the latter two.
 Native/staged separates the common reasoning protocol; likelihood/Jev separates
 two root policies; zero checks mechanical identity; shuffled tests score-to-action
-assignment; soft-step tests commitment granularity. These comparisons isolate
+assignment; soft-step compares whole greedy continuation commitment with one-root commitment
+followed by a sampled tail. That changes two linked choices and cannot isolate
+placement from tail decoding. These comparisons isolate
 specific parts of this controller, not an optimal hidden layer or universal
 benefit of adding a second model.

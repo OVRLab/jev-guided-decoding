@@ -1,4 +1,4 @@
-# When a Critic Stops the Generator: Studying Jev Guidance in Frozen Granite
+# From Claim Verification to Generated Answers: Jev Guidance in Frozen Granite
 
 Working title and manuscript scaffold, 2026-09-21. Not submitted, peer reviewed,
 or a report of a successful replacement architecture. Authors, affiliations,
@@ -23,7 +23,9 @@ verification and stopping-policy limitations; they do not establish a causal
 benefit from any alternative insertion point. A subsequent local-claim pilot and
 bounded output-logit prototype verify probability control and no-op identity, but
 development grader coverage remains 67% and provider failure interrupts critic
-scoring. The held-out critic gate and a new answer-quality study remain unexecuted.
+scoring. The held-out R12 critic gate remains unexecuted. A subsequent, separately
+registered seven-arm rule-world comparison repaired provider/format issues, passed
+operational admission, and is running; its final test results are not yet available.
 
 ## 1. Question and scope
 
@@ -186,10 +188,66 @@ necessary before a new prospective test. No positive answer-quality table is
 justified for this prototype. Future success in a narrow semantic domain would
 not erase the previous negative math/logic findings.
 
+### 7.1 R13: complete comparison after operational repair
+
+The owner requested resolving the remaining issues and executing a complete
+comparison under the existing budget. This changed admission prospectively:
+R13 requires operational correctness, not a positive pilot accuracy gain or a
+retroactively claimed R12 critic-gate pass. The [protocol](structured-study-protocol.md)
+and [V2 correction](structured-study-v2-protocol.md) retain both decisions.
+
+Two frozen API probes succeeded. The earlier unknown-usage call stayed charged
+at its full reservation maximum, and diagnostic error bodies are now retained
+with credential redaction. The first 168-job L40S pilot completed all jobs and
+192 authenticated Jev calls, but only 121 finals obeyed the unconstrained label
+instruction. All 960 claim grades and token/control audits passed. V2 applies
+the same three-label final grammar to every arm; original Granite logits select
+the label, and no Jev final classification occurs. Its 168-job development pilot
+passed all operational gates and independent token reconstruction, with all
+96 first-candidate-pool comparisons identical. This enforces syntax rather than
+teaching the model to follow formatting instructions.
+
+The full frozen test has 300 authored worlds, 100 per final label, three seeds
+and seven arms (6,300 jobs): direct Granite, staged native sampling, likelihood
+root search, bounded Jev root guidance, shuffled scores, zero bias with shadow
+work, and whole-lookahead commitment under the same root policy. All arms use
+the same prompt and final-label grammar. Six logical motifs, distractor entities,
+and longer test chains (3/5 versus development 2/4) permit exact independent
+forward-closure grading. This remains a narrow synthetic distribution; the
+motifs overlap across splits. Test labels and symbolic internals are withheld
+from model/scorer inputs. It is separate from R10's external benchmark results.
+
+Staged arms produce two grammar-constrained atomic claims. At the first property
+boundary in each, four distinct next-token roots receive greedy lookaheads. Jev
+judges complete local assertions against the original evidence. Its bounded
+reweighting commits one root and returns to native sampling; it does not reject
+all candidates or stop reasoning based on a progress threshold. The reference
+for the 0.02 KL ceiling is the common grammar-conditioned distribution, not
+unrestricted Granite. The [method comparison](decoding-method-comparison.md)
+distinguishes this support heuristic from a learned future-answer value function.
+
+The soft-step arm changes both commitment length and continuation policy: a
+selected evaluated root carries its complete greedy lookahead, whereas the
+one-root arm samples the remaining tail. It therefore compares these two
+specified policies; an observed difference cannot isolate an abstract insertion
+point independently of tail decoding. Direct/staged likewise tests the whole
+addition of constrained claims, not hidden reasoning ability in isolation.
+
+Primary contrasts are Jev minus direct, staged and likelihood, using 5,000
+world-cluster bootstrap draws after averaging the three seeds within each world.
+Individual 98.333% intervals adjust for those three comparisons; a prespecified
+useful gain requires at least five percentage points and an interval above zero.
+Other ablations and critic/accepted-claim diagnostics are descriptive. Failed,
+invalid and missing outcomes remain in denominators. No test outcome will alter
+the controller. The [report](../reports/2026-09-21-structured-study/README.md)
+currently contains both pilots and will append the completed test.
+
 ## 8. Limitations and threats to validity
 
-- Jev both ranks and rejects steps; the main comparison does not separate those
-  effects. Prompt staging is common across arms but has no default-chat control.
+- R10 combines Jev ranking and rejection and lacks a direct-prompt control. R13
+  separates several policies, but its direct arm uses constrained final labels
+  and is not unrestricted default chat. Its grammar-specific result cannot
+  establish performance on open-ended reasoning.
 - Equal configured limits did not produce equal actual compute. More search and
   different stopping are potential explanations independent of scorer knowledge.
 - Final correctness does not certify intermediate explanations. Most trace
