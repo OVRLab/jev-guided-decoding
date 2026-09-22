@@ -218,3 +218,13 @@ starts, reconcile actual attention-hook calls with generated phases, reject any
 answer menu in unrestricted phases, and decode framing against fixed controller
 text. Three tests first failed with missing scaffolding. This strengthens artifact
 verification without changing the frozen main auditor, scientific metrics or run.
+
+### R16 output-form diagnostics (no inference)
+
+Before consulting aggregate test quality, the [descriptive output protocol](adaptive-attention-output-diagnostics.md)
+records bare UNKNOWN versus other recognized abstentions, mistaken abstentions on
+answerable cases and final/reasoning token-limit endings. Counts bind to the audited
+output bytes and use the original parser; they neither repair grading nor exclude
+bounded/failed outcomes. Three tests first failed on missing scaffolding before
+the diagnostic implementation. This adds transparency about relaxed contracts,
+not another primary comparison or fresh replication.
