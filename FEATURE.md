@@ -1,6 +1,9 @@
 # Feature: Jev-guided intermediate reasoning
 
-Current work completed: [R16 adaptive/free-text study](reports/2026-09-22-adaptive-attention/README.md).
+Current work: [R17 selective, phase-dependent evidence attention](research/selective-attention-plan.md);
+implementation/offline validation, with no live quality result yet.
+
+Latest completed work: [R16 adaptive/free-text study](reports/2026-09-22-adaptive-attention/README.md).
 **R16 interpretation:** constrained-task improvement is established within this
 study; direct free-text performance regressed against matched R15, while dynamic
 refresh and the primary HotpotQA contrast remain inconclusive.

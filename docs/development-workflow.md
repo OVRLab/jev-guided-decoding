@@ -25,6 +25,9 @@ uv sync --locked --extra dev --extra transformers
 
 `uv sync` changes installed extras; avoid silently removing inference dependencies
 from a working environment. Use `--no-sync` for checks once the environment is ready.
+Run research/report helpers that import this package with `uv run --no-sync python`
+or the same environment's Python, including helpers outside the tracked source tree.
+System Python may lack the editable package and optional dependencies.
 
 ```bash
 uv run --no-sync python scripts/check_ai_docs.py

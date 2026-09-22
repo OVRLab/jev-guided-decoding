@@ -49,6 +49,15 @@ Inference commit 9484509 and source/data/protocol hashes remained frozen. All ta
 VM/disk/network resources were deleted after retrieval; new cost about $0.78,
 cumulative estimate $9.27/$50. No inference retry or protocol amendment was needed.
 
+## R17 prospective registration
+
+Registered 2026-09-22 before live inference: [selective-attention plan](selective-attention-plan.md).
+Test conditional Jev dispatch, prefill/fading interventions and evidence-mass
+conservation on fresh unrestricted-answer tasks. Planned 2,028 development and
+6,336 test outcomes, plus mechanical admission. Granite owns final tokens; a
+development-fitted threshold controller may change but model weights do not.
+Implementation/offline verification in progress; no live quality result claimed.
+
 ## Corrections that the paper must retain
 
 **Who answered:** R04–R07's fixed-choice results end in Jev. The number 84.5%

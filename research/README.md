@@ -5,6 +5,11 @@ Granite inference. It includes negative results, corrections, new analyses, and
 proposed experiments. It is a basis for a paper, not a claim of a successful model
 release. All dates below are report dates; source artifacts retain execution times.
 
+**Current investigation:** [R17 selective attention](selective-attention-plan.md), with
+[architecture/method](../reports/2026-09-22-selective-attention/method.md) and
+[prior-art review](selective-attention-related-work.md). Implementation and offline
+validation are in progress; no live R17 quality result yet.
+
 **Latest completed study:** [R16 adaptive attention](../reports/2026-09-22-adaptive-attention/README.md).
 **R16 interpretation:** constrained-task improvement is established within this
 study; direct free-text performance regressed against matched R15, while dynamic

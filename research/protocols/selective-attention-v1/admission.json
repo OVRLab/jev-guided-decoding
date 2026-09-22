@@ -1,0 +1,332 @@
+[
+  {
+    "id": "r17/hotpot/5ab5052a5542990594ba9ccf",
+    "world_id": "r17/hotpot/5ab5052a5542990594ba9ccf",
+    "upstream_id": "5ab5052a5542990594ba9ccf",
+    "family": "hotpot",
+    "question": "Who did a new permanent member on the fourteenth season of  So You Think You Can Dance play in High School Musical?",
+    "sources": [
+      {
+        "id": "D01",
+        "text": "Vanessa Hudgens discography: The discography of Vanessa Hudgens consists of two studio albums, one extended play, four singles, two tours and four music videos. Hudgens has also recorded eleven singles and several other releases as her \"High School Musical\" character Gabriella Montez in the \"High School Musical\" film series' soundtracks. The singles she has recorded entered several international charts and most of them were duets with the cast members of the \"High School Musical\" series, Hudgens' most successful duet is \"Breaking Free\" which was number four in the \"Billboard\" Hot 100 chart."
+      },
+      {
+        "id": "D02",
+        "text": "Vanessa Hudgens: Vanessa Anne Hudgens (born December 14, 1988) is an American actress and singer. After making her feature film debut in \"Thirteen\" (2003), Hudgens rose to prominence portraying Gabriella Montez in the \"High School Musical\" film series, which brought her significant mainstream success. The success of the first film led to Hudgens acquiring a recording contract with Hollywood Records, with whom she released two studio albums, \"V\" (2006) and \"Identified\" (2008). In addition to \"High School Musical\", Hudgens has also appeared in various films and television series for the Disney Channel."
+      },
+      {
+        "id": "D03",
+        "text": "So You Think You Can Dance (U.S. season 14): So You Think You Can Dance, an American dance competition show, returned for its fourteenth season on Monday, June 12, 2017. The new season's judge panel once again features series creator Nigel Lythgoe (who also serves as executive producer), as well as the return of ballroom expert Mary Murphy, along with new permanent member Vanessa Hudgens, while Cat Deeley continues in her role as host for a thirteenth consecutive season."
+      },
+      {
+        "id": "D04",
+        "text": "High School Musical 3: Senior Year: High School Musical 3: Senior Year is a 2008 American musical film and is the third installment in the \"High School Musical\" trilogy. Produced and released on October 24, 2008, by Walt Disney Pictures, the film is a sequel to Disney Channel Original Movie 2006 television film \"High School Musical\". It was the only film in the series to be released theatrically. Kenny Ortega returned as director and choreographer, as did all six primary actors."
+      },
+      {
+        "id": "D05",
+        "text": "High School Musical (book series): The first book in the High School Musical series, was \"High School Musical: the Junior Novel\", the novelization of the successful first film was released early June 2006, by Disney Press. This novel hit number one on the \"New York Times\" best-selling list best-selling list and remained on the list for sixteen weeks. As of August 2007, the novel has sold more than 4.5 million copies with 1 million copies of the novel's follow-up, \"High School Musical 2: The Junior Novel\", being shipped to American retailers. Shortly after the success of the original novel, Disney announced that a book series, entitled \"Stories From East High\", would be published in February 2007 with a new book being published every 60 days until July 2008. However, books from the series have been scheduled for publication after the originally announced date. A complete list of books is provided below:"
+      },
+      {
+        "id": "D06",
+        "text": "High School Musical 2: Work This Out!: High School Musical 2: Work This Out! is a musical adventure game that allows the player to play as Sharpay, Troy, Gabriella, Ryan, Chad and Taylor in storylines that extend beyond the \"High School Musical 2\" movie sequel. The game features all 10 songs from \"High School Musical 2\"."
+      },
+      {
+        "id": "D07",
+        "text": "High School Musical on Stage!: High School Musical on Stage! is a musical based on the Disney Channel Original Movie \"High School Musical\", with music and lyrics by Matthew Gerrard, Robbie Nevil, Ray and Greg Cham, Drew Seeley, Randy Petersen, Kevin Quinn, Andy Dodd, Adam Watts, Bryan Louiselle, David N. Lawrence, Faye Greenberg and Jamie Houston, and a book by David Simpatico. It has quickly become a very popular choice for high school musical theatre productions."
+      },
+      {
+        "id": "D08",
+        "text": "What Time Is It? (song): \"What Time Is It?\" is the opening musical number and first single from the Disney Channel Original Movie \"High School Musical 2\". It is featured on the \"High School Musical 2\" soundtrack, and is the first song off the \"High School Musical 2\" soundtrack."
+      },
+      {
+        "id": "D09",
+        "text": "Club HSM: Make It Happen: Club High School Musical: Make It Happen was a reality series on Disney Channel UK which started on 6 November 2009 and ended 13 of the same month. The production company, The Foundation, has produced four 15-minute weekly shows, which follow the stories of four devoted \"High School Musical\" fans; Paris, Reece, Max and Jo. Their challenge is to create one of the biggest \"High School Musical\" dance events ever \u2013 in just four days. The shows are presented by Kevin Adams. The final dance includes child stars including Lucy Mchugh, Joe Ashman, Nicole Goyder-Smith, Jessica Smith and Courtney Gammon."
+      },
+      {
+        "id": "D10",
+        "text": "High School Musical: High School Musical is a 2006 American teen/romantic comedy musical television film and the first installment in the \"High School Musical\" trilogy directed by Kenny Ortega. The movie was filmed in 2005 in Salt Lake City. Upon its release on January 20, 2006, it became the most successful film that Disney Channel Original Movie (DCOM) ever produced, with a television sequel, \"High School Musical 2,\" released in 2007 and the feature film, \",\" released theatrically in October 2008. It is the first and only DCOM to have a theatrical sequel. The film's soundtrack was the best-selling album in the United States and Cradle by Peter Strudwick reaching number 1 on the American Charts for 2006."
+      }
+    ],
+    "reference": "Gabriella Montez",
+    "depth": 2,
+    "missing": false,
+    "condition": "distractor",
+    "question_type": "bridge",
+    "split": "admission"
+  },
+  {
+    "id": "r17/hotpot/5a7cde68554299683c1c63ac",
+    "world_id": "r17/hotpot/5a7cde68554299683c1c63ac",
+    "upstream_id": "5a7cde68554299683c1c63ac",
+    "family": "hotpot",
+    "question": "\"The Simpson's\" episode featuring the  \"Itchy & Scratchy & Poochie\" show satirized the world of television production just as the episode featuring the \"Itchy & Scratchy & Marge\" satirized what type of issue?",
+    "sources": [
+      {
+        "id": "D01",
+        "text": "The Front (The Simpsons): \"The Front\" is the nineteenth episode of \"The Simpsons\"<nowiki>'</nowiki> fourth season. It originally aired in the United States on the Fox network on April 15, 1993. In the episode, Bart and Lisa decide to write an episode of \"The Itchy & Scratchy Show\"; after their script is rejected, they resubmit it under the name of their grandfather Abraham Simpson, resulting in Grampa being hired as a staff writer. Meanwhile, Homer returns to high school to retake a failed science course."
+      },
+      {
+        "id": "D02",
+        "text": "The Itchy &amp; Scratchy &amp; Poochie Show: \"The Itchy & Scratchy & Poochie Show\" is the fourteenth episode in the eighth season of the American animated television series \"The Simpsons\". It originally aired on the Fox network in the United States on February 9, 1997. In the episode, \"The Itchy & Scratchy Show\" attempts to regain viewers by introducing a new character named Poochie, whose voice is provided by Homer. The episode is largely self-referential and satirizes the world of television production, fans of \"The Simpsons\", and the series itself. It was written by David X. Cohen and directed by Steven Dean Moore. Alex Rocco is a credited guest voice as Roger Meyers, Jr. for the third and final time (having previously provided the character's voice in \"Itchy & Scratchy & Marge\" and \"The Day the Violence Died\"); Phil Hartman also guest stars as Troy McClure. Poochie would become a minor recurring character and Comic Book Guy's catchphrase, \"Worst episode ever\", is introduced in this episode. With \"The Itchy & Scratchy & Poochie Show\", the show's 167th episode, \"The Simpsons\" surpassed \"The Flintstones\" in the number of episodes produced for a prime-time animated series."
+      },
+      {
+        "id": "D03",
+        "text": "Itchy &amp; Scratchy: The Movie: \"Itchy & Scratchy: The Movie\" is the sixth episode of \"The Simpsons\"<nowiki>'</nowiki> fourth season. It originally aired on the Fox network in the United States on November 3, 1992. The plot follows Bart continually getting in trouble, and how Homer is unable to give him any suitable punishment. Marge gets Homer to agree to make a punishment stick, and he forbids Bart to see the new \"Itchy & Scratchy\" movie, a punishment that Homer takes very seriously. It was written by John Swartzwelder and was directed by Rich Moore."
+      },
+      {
+        "id": "D04",
+        "text": "Itchy &amp; Scratchy &amp; Marge: \"Itchy & Scratchy & Marge\" is the ninth episode of \"The Simpsons\"<nowiki>'</nowiki> second season. It first aired on the Fox network in the United States on December 20, 1990. In the episode, which is a satire of censorship issues, Maggie attacks Homer with a mallet and Marge blames \"The Itchy & Scratchy Show\" for Maggie's actions. It was written by John Swartzwelder and was the first episode to be directed by Jim Reardon. Alex Rocco makes his first of three guest appearances as Roger Meyers, Jr."
+      },
+      {
+        "id": "D05",
+        "text": "Krusty the Clown: Herschel Shmoikel Pinchas Yerucham Krustofsky, better known as Krusty the Clown (sometimes spelled as Krusty the Klown), is a cartoon character in the animated television series \"The Simpsons\". He is voiced by Dan Castellaneta. He is the long-time clown host of Bart and Lisa's favorite TV show, a combination of kiddie variety television hijinks and cartoons including \"The Itchy & Scratchy Show\". Krusty is often portrayed as a cynical, burnt-out, addiction-riddled smoker who is made miserable by show business but continues on anyway. He has become one of the most common characters outside of the main Simpson family and has been the focus of several episodes, most of which also spotlight Bart."
+      },
+      {
+        "id": "D06",
+        "text": "The Itchy &amp; Scratchy Show: The Itchy & Scratchy Show (often shortened as Itchy & Scratchy) is a running gag and fictional animated television series featured in the American animated television series \"The Simpsons\". It usually appears as a part of \"The Krusty the Clown Show\", watched regularly by Bart Simpson and Lisa Simpson. Itself an animated cartoon, \"The Itchy & Scratchy Show\" depicts a sadistic anthropomorphic blue mouse, Itchy (voiced by Dan Castellaneta), who repeatedly maims and kills an anthropomorphic, hapless threadbare black cat, Scratchy (voiced by Harry Shearer). The cartoon first appeared in \"The Tracey Ullman Show\" short \"The Bart Simpson Show\", which originally aired November 20, 1988. The cartoon's first appearance in \"The Simpsons\" was in the 1990 episode \"There's No Disgrace Like Home\". Typically presented as 15-to-60-second-long cartoons, the show is filled with gratuitous violence. \"The Simpsons\" also occasionally features characters who are involved with the production of \"The Itchy & Scratchy Show\", including Roger Meyers Jr. (voiced by Alex Rocco, and, later, Hank Azaria), who runs the studio and produces the show."
+      },
+      {
+        "id": "D07",
+        "text": "List of The Simpsons comics: The following is a list of comic book series based on the animated TV show The Simpsons and published by Bongo Comics in the United States. The first comic strips based on \"The Simpsons\" appeared in 1991 in the magazine \"Simpsons Illustrated\" (not to be confused with the comic publications from 2012 bearing the same name), which was a companion magazine to the show. The comic strips were popular and a one-shot comic book entitled \"Simpsons Comics and Stories\", containing three different stories, was released in 1993 for the fans. The book was a success and due to this, the creator of \"The Simpsons\", Matt Groening, and his companions Bill Morrison, Mike Rote, Steve Vance and Cindy Vance created the publishing company Bongo Comics. By the end of 1993, Bongo was publishing four titles: \"Simpsons Comics\", \"Bartman\", \"Radioactive Man\" and \"Itchy & Scratchy Comics\". Since then, many more titles have been published, out of which \"Simpsons Comics\", \"Bart Simpson\", \"Bart Simpson's Treehouse of Horror\", \"Simpsons Super Spectacular\", Simpsons Summer Shindig, and \"Simpsons Winter Wingding\"."
+      },
+      {
+        "id": "D08",
+        "text": "Treehouse of Horror IX: \"Treehouse of Horror IX\" is the fourth episode in the tenth season of the American animated television series \"The Simpsons\". It first aired on the Fox network in the United States on October 25, 1998. This is the ninth \"Treehouse of Horror\" episode, and, like the other \"Treehouse of Horror\" episodes, contains three self-contained segments: In \"Hell Toup\u00e9e\", Homer gets a hair transplant and is possessed by the spirit of an executed criminal; in \"Terror of Tiny Toon\", Bart and Lisa are trapped in a special, extremely violent episode of \"The Itchy & Scratchy Show\"; and in \"Starship Poopers\", Marge reveals that Maggie is the product of a one-night stand with the alien Kang."
+      },
+      {
+        "id": "D09",
+        "text": "The Itchy &amp; Scratchy Game: The Itchy & Scratchy Game is a platform video game that was released for the Super NES, and Game Gear. It stars the mouse and cat Itchy and Scratchy from the American animated television series \"The Simpsons\", and features the classic gory violence from the show. The main character is Itchy, who has to fight Scratchy. Reception of the game has been generally negative."
+      },
+      {
+        "id": "D10",
+        "text": "Itchy &amp; Scratchy Land: \"Itchy & Scratchy Land\" is the fourth episode of \"The Simpsons\"<nowiki>'</nowiki> sixth season. It first aired on the Fox network in the United States on October 2, 1994. Wanting a perfect family vacation, the Simpson family visits Itchy & Scratchy Land. It was written by John Swartzwelder and directed by Wes Archer."
+      }
+    ],
+    "reference": "censorship",
+    "depth": 2,
+    "missing": false,
+    "condition": "distractor",
+    "question_type": "bridge",
+    "split": "admission"
+  },
+  {
+    "id": "r17/hotpot/5abdd08d5542991f6610604c",
+    "world_id": "r17/hotpot/5abdd08d5542991f6610604c",
+    "upstream_id": "5abdd08d5542991f6610604c",
+    "family": "hotpot",
+    "question": "Which movie directed by James Gunn portrayed the fictional character, Ego the Living Planet?",
+    "sources": [
+      {
+        "id": "D01",
+        "text": "Paul Williams (The Young and the Restless): Paul Williams is a fictional character on the American CBS soap opera \"The Young and the Restless\". Paul was introduced to the show on May 23, 1978, and has been portrayed by Doug Davidson ever since. He has been a regular for 39 years. Initially Paul was a \"bad boy\", who had a romance with Nikki Newman (Melody Thomas Scott), giving her an STD. The relationship ultimately ended, but the two have remained friends since. After a year on the series, Bell gave the character a proper backstory, surname and family. This included his notoriously unstable sister Patty Williams (Stacey Haiduk). After a failed marriage to April Stevens (Cynthia Eilbacher)\u2014who gave birth to his daughter Heather Stevens (Jennifer Landon)\u2014focus turned towards Paul's career as a private investigator, as well as his relationship and eventual marriage to and later divorce from Lauren Fenmore (Tracey Bregman). Paul's string of unsuccessful romances with women\u2014including his ill-fated bride Cindy Lake (DeAnna Robbins), and Cassandra Rawlins (Nina Arvesen), the wife of one of his clients\u2014continued. Over the years, Paul continued to become heavily involved in various storylines as a private investigator."
+      },
+      {
+        "id": "D02",
+        "text": "Ego Leonard: Ego Leonard is a Dutch painter and sculptor, and possibly an anonymous guerrilla artist, whose works prominently feature outsized Lego figures. Sometimes the name also is applied to sculpture, apparently made by Leonard, which have been found on beaches at various locations in the world since the late 2000s. The sculptures are in the form of \"minifigures\", but constructed from fibreglass enlarged to two and a half metres in height, and have the message, \"No Real Than You Are\" in capital letters written on their torsos. The appearance of an \"Ego Leonard\" giant figure on Siesta Beach, Florida became number two on the \"Time\" list of the \"Top 10 Oddball-News Stories of 2011.\" It is unclear whether Ego Leonard is the name of a person or merely is a fictional character as the figure, but it is most likely a fictional name, as Ego Leonard can be reworked to read L, Ego or LEGO. The letters can also be rearranged to spell \"A LEGO nerd\"."
+      },
+      {
+        "id": "D03",
+        "text": "Ranx the Sentient City: Ranx the Sentient City is a fictional character, a supervillain in the DC Comics universe. He is typically portrayed as an enemy of Mogo the Living Planet, a Green Lantern character introduced in comics a year prior to Ranx."
+      },
+      {
+        "id": "D04",
+        "text": "Guardians of the Galaxy Vol. 2: Guardians of the Galaxy Vol. 2 is a 2017 American superhero film based on the Marvel Comics superhero team Guardians of the Galaxy, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is the sequel to 2014's \"Guardians of the Galaxy\" and the fifteenth film in the Marvel Cinematic Universe. The film is written and directed by James Gunn and stars an ensemble cast featuring Chris Pratt, Zoe Saldana, Dave Bautista, Vin Diesel, Bradley Cooper, Michael Rooker, Karen Gillan, Pom Klementieff, Elizabeth Debicki, Chris Sullivan, Sean Gunn, Sylvester Stallone, and Kurt Russell. In \"Guardians of the Galaxy Vol. 2\", the Guardians travel throughout the cosmos as they help Peter Quill learn more about his mysterious parentage."
+      },
+      {
+        "id": "D05",
+        "text": "Mogo: Mogo the \"Living Planet\" is a fictional character and planet in the DC Universe, a member of the Green Lantern Corps."
+      },
+      {
+        "id": "D06",
+        "text": "Charles Gunn (Angel): Charles Gunn is a fictional character created by Joss Whedon for the television series, \"Angel\" and introduced by writer Gary Campbell in the episode \"War Zone\". The character is portrayed by J. August Richards, and was named by Whedon after filmmaker James Gunn and actor Sean Gunn, both of whom had worked with Whedon. Gunn is introduced as the leader of a street gang which protects its neighborhood from vampires."
+      },
+      {
+        "id": "D07",
+        "text": "Ego the Living Planet: Ego the Living Planet is a fictional character appearing in American comic books published by Marvel Comics. The character first appeared in \"Thor\" #132 (September 1966) and was created by writer Stan Lee and artist Jack Kirby. Ego is portrayed by Kurt Russell in \"Guardians of the Galaxy Vol. 2\"."
+      },
+      {
+        "id": "D08",
+        "text": "Heather Stevens: Heather Stevens is a fictional character from the American CBS soap opera \"The Young and the Restless\". Created by William J. Bell, she was born onscreen in 1979 as the daughter of Paul Williams (Doug Davidson) and April Stevens (Cindy Eilbacher). She was first portrayed by a series of child actors for her first three-year period, followed by Conci Nelson as a teenager. In 2007, the character was reintroduced by former head writer Lynn Marie Latham as an adult, portrayed by Vail Bloom. At first, she is unaware that she is Paul's daughter, but they develop a father-daughter relationship. She becomes district attorney and later a high-profile lawyer."
+      },
+      {
+        "id": "D09",
+        "text": "Super (2010 American film): Super is a 2010 American superhero black comedy-drama film written and directed by James Gunn, starring Rainn Wilson, Ellen Page, Liv Tyler, Kevin Bacon and Nathan Fillion. The film is based on a story by Gunn, telling the story of Frank Darbo, a young short-order cook who becomes a superhero without even having any superhuman ability, calling himself the \"Crimson Bolt\". He sets out to rescue his wife Sarah from the hands of a drug dealer."
+      },
+      {
+        "id": "D10",
+        "text": "James Gunn: James Gunn (born August 5) is an American screenwriter, director, producer, novelist, actor, and musician. He started his career as a screenwriter in the mid-1990s, writing the scripts for \"Tromeo and Juliet\" (1996), \"Scooby-Doo\" (2002) and its sequel \"\" (2004), and the 2004 version of \"Dawn of the Dead\". He then started working also as a director, starting with \"Slither\" (2006). He subsequently wrote and directed the web series \"James Gunn's PG Porn\", and the superhero films \"Super\" (2010), \"Guardians of the Galaxy\" (2014) and \"Guardians of the Galaxy Vol. 2\" (2017)."
+      }
+    ],
+    "reference": "Guardians of the Galaxy Vol. 2",
+    "depth": 2,
+    "missing": false,
+    "condition": "distractor",
+    "question_type": "bridge",
+    "split": "admission"
+  },
+  {
+    "id": "r17/hotpot/5a877dd65542993e715abf79",
+    "world_id": "r17/hotpot/5a877dd65542993e715abf79",
+    "upstream_id": "5a877dd65542993e715abf79",
+    "family": "hotpot",
+    "question": "Were Halld\u00f3r Laxness and Timothy Leary from the same country?",
+    "sources": [
+      {
+        "id": "D01",
+        "text": "Halld\u00f3r Laxness: Halld\u00f3r Kiljan Laxness (] ; born Halld\u00f3r Gu\u00f0j\u00f3nsson; 23 April 1902 \u2013 8 February 1998) was a twentieth-century Icelandic writer. Laxness wrote poetry, newspaper articles, plays, travelogues, short stories, and novels. Major influences included August Strindberg, Sigmund Freud, Sinclair Lewis, Upton Sinclair, Bertolt Brecht and Ernest Hemingway. In 1955 he was awarded the Nobel Prize in Literature; he is the only Icelandic Nobel laureate."
+      },
+      {
+        "id": "D02",
+        "text": "Einar Arn\u00f3rsson: Einar Arn\u00f3rsson (24 February 1880 \u2013 29 March 1955) was Minister for Iceland from 4 May 1915 to 4 January 1917. Einar graduated in Law from the University of Copenhagen in 1906. He was elected to Althingi and sat there in 1914\u20131919 and 1931\u20131932 for the Independence party. He was Minister of Education and Justice in Bj\u00f6rn \u00de\u00f3r\u00f0arson's cabinet from 1942 to 1944. He was professor of Law at the University of Iceland from 1911 to 1915 and again after leaving office as Minister for Iceland from 1917 to 1922. He was a Supreme Court Judge in 1932\u20131942 and again in 1944\u20131945. He was president of the University of Iceland in 1918\u20131919 and 1929\u20131930. For a short time he was father-in-law to Halld\u00f3r Laxness. He was editor of \"\u00cdsafold\" and \"Morgunbla\u00f0i\u00f0\" in 1919\u20131920."
+      },
+      {
+        "id": "D03",
+        "text": "Halld\u00f3r Laxness (album): \"For the Nobel Prize\u2013winning Icelandic author, see Halld\u00f3r Laxness\""
+      },
+      {
+        "id": "D04",
+        "text": "The Fish Can Sing: The Fish Can Sing (Icelandic: \"Brekkukotsann\u00e1ll\" ) is a 1957 novel by Icelandic author Halld\u00f3r Laxness, who was awarded the Nobel Prize in Literature in 1955."
+      },
+      {
+        "id": "D05",
+        "text": "Gu\u00f0n\u00fd Halld\u00f3rsd\u00f3ttir: Gu\u00f0n\u00fd Halld\u00f3rsd\u00f3ttir (born 23 January 1954) is an Icelandic film director and screenwriter. She has directed eight films since 1984. Her 2007 film \"The Quiet Storm\" was entered into the 30th Moscow International Film Festival. Her father was writer and 1955 Nobel prize winner Halld\u00f3r Laxness, while her mother was writer and textile designer Au\u00f0ur Laxness."
+      },
+      {
+        "id": "D06",
+        "text": "List of Icelandic films: The following is a list of notable films produced in Iceland by Icelanders. Star marked films are films in coproduction with Iceland. Although Arne Mattsson is Swedish, his film is included because it is based on a book by the Icelandic Nobel Prize-winning author Halld\u00f3r Laxness."
+      },
+      {
+        "id": "D07",
+        "text": "Timothy Leary: Timothy Francis Leary (October 22, 1920 \u2013 May 31, 1996) was an American psychologist and writer known for advocating the exploration of the therapeutic potential of psychedelic drugs under controlled conditions. Leary conducted experiments under the Harvard Psilocybin Project during American legality of LSD and psilocybin, resulting in the Concord Prison Experiment and the Marsh Chapel Experiment. Leary's colleague, Richard Alpert (Ram Dass), was fired from Harvard University on May 27, 1963 for giving psilocybin to an undergraduate student. Leary was planning to leave Harvard when his teaching contract expired in June, the following month. He was fired, for \"failure to keep classroom appointments\", with his pay docked on April 30. National illumination as to the effects of psychedelics did not occur until after the Harvard scandal."
+      },
+      {
+        "id": "D08",
+        "text": "Au\u00f0ur Laxness: Au\u00f0ur Sveinsd\u00f3ttir Laxness (1918-2012) was an Icelandic writer and craftswoman, credited with influencing the design and popularity of the Icelandic Lopapeysa sweater during the mid-20th century. Her husband was Icelandic Nobel Literature laureate Halld\u00f3r Laxness, and Au\u00f0ur worked as his secretary and writing collaborator for many years."
+      },
+      {
+        "id": "D09",
+        "text": "Independent People: Independent People (Icelandic: \"Sj\u00e1lfst\u00e6tt f\u00f3lk\" ) is an epic novel by Nobel laureate Halld\u00f3r Laxness, originally published in two volumes in 1934 and 1935; literally the title means \"Self-standing [i.e. self-reliant] folk\". It deals with the struggle of poor Icelandic farmers in the early 20th century, only freed from debt bondage in the last generation, and surviving on isolated crofts in an inhospitable landscape."
+      },
+      {
+        "id": "D10",
+        "text": "Memoir of Halld\u00f3r Laxness: Memoir of Halld\u00f3r Laxness was published in Iceland from 2003. It is the memoir of novelist and Nobel Laureate, Halld\u00f3r Laxnessf> and is in three volumes:"
+      }
+    ],
+    "reference": "no",
+    "depth": 2,
+    "missing": false,
+    "condition": "distractor",
+    "question_type": "comparison",
+    "split": "admission"
+  },
+  {
+    "id": "r17/hotpot/5a74f3f55542993748c8974b",
+    "world_id": "r17/hotpot/5a74f3f55542993748c8974b",
+    "upstream_id": "5a74f3f55542993748c8974b",
+    "family": "hotpot",
+    "question": "What movie was the actor born on May 4, 1946 involved in in 1972?",
+    "sources": [
+      {
+        "id": "D01",
+        "text": "Colin Gordon: Colin Gordon (27 April 1911 \u2013 4 October 1972) was a British actor born in Ceylon."
+      },
+      {
+        "id": "D02",
+        "text": "Casanova Wong: Casanova Wong, also known as Ka Sat Fat (\u5361\u85a9\u4f10), is a former Korean martial arts actor born in 1945 as Yong-ho Kim in Gimje, South Korea. An expert in tae kwon do, he is a leg-fighter, and is well known for his spin kicks and was nicknamed \"The Human Tornado\" in the Republic of Korea Army. He made many appearances in martial arts movies but is most remembered for his role as Cashier Hua in \"Warriors Two\", where he starred alongside Sammo Hung, with whom he worked several times. Other films included \"Story of Drunken Master\" and \"Rivals of the Silver Fox\". One of Wong's last notable movie appearances was as Kang-ho in the 1994 Korean movie \"Bloody Mafia\"."
+      },
+      {
+        "id": "D03",
+        "text": "Paul Dillon: Paul Dillon is an American actor born in Joliet, Illinois who began his career in show business in Chicago. His movie career began in 1994 with the movie \"Blink\" in which he played the role of Neal Booker. He played Paddy O'Brien in \"\", the most successful film in which he has a credited role."
+      },
+      {
+        "id": "D04",
+        "text": "Jaya Prakash Reddy: Turpu . JayaPrakash Reddy is a Telugu actor born in Sirvel, of Kurnool district in the state of Andhra Pradesh, India. He came into the limelight with the movie \"Samarasimha Reddy\" where he played the role of Veera Raghava Reddy. Fondly called JP, he acted as the villain in blockbuster hit movie \"Jayam Manade Raa and\" \"Chennakeshava Reddy\". Apart from doing villain roles, JP also acted in several comedy movies."
+      },
+      {
+        "id": "D05",
+        "text": "Eddie Aikau: Edward Ryon Makuahanai Aikau (Kahului, Hawaii, May 4, 1946 \u2013 March 17, 1978) was a well-known Hawaiian lifeguard and surfer. The words \"Makua Hanai\" in Eddie Aikau's full name mean \"feeding parent\", an adoptive, nurturing, fostering parent, in the Hawaiian language. As the first lifeguard at Waimea Bay on the island of Oahu, he saved over 500 people and became famous for surfing the big Hawaiian surf, winning several awards including the 1977 Duke Kahanamoku Invitational Surfing Championship."
+      },
+      {
+        "id": "D06",
+        "text": "Ion Popescu-Gopo: Ion Popescu-Gopo (] ; 1 May 1923, Roe\u0219ti, V\u00e2lcea \u2013 28 November 1989, Bucharest) was a Romanian graphic artist and animator, but also writer, movie director and actor born in Bucharest, Romania. He was a prominent personality in the Romanian cinematography and the founder of the modern Romanian cartoon school. He was, together with Liviu Ciulei and Mirel Ilie\u015fiu one of the few Romanian film artists who won an award at Cannes in the 20th century. His film \"Scurt\u0103 Istorie\" (\"A Brief History\") won the \"Short Film Palme d'Or\" for best short film in 1957. His 1965 film \"The White Moor\" was entered into the 4th Moscow International Film Festival where he won the award for Best Director. In 1969 he was a member of the jury at the 6th Moscow International Film Festival. In 1977 he was a member of the jury at the 10th Moscow International Film Festival. In 1983 he was a member of the jury at the 13th Moscow International Film Festival."
+      },
+      {
+        "id": "D07",
+        "text": "Charles Kemper: Charles Kemper (September 6, 1900 \u2013 May 12, 1950) was an American character actor born in Oklahoma. The heavy-set actor was for decades a successful stage actor. He made only sporadic screen appearances until 1945, when he settled in Hollywood. Kemper had memorable supporting roles in films including \"The Southerner\" (1945), \"Scarlet Street\" (1945), \"Gallant Journey\" (1946), \"The Shocking Miss Pilgrim\" (1947), and the film noir \"On Dangerous Ground\" (as Pop Daly, his last film role)."
+      },
+      {
+        "id": "D08",
+        "text": "Five Summer Stories: Five Summer Stories is a 1972 surf film by Jim Freeman and Greg MacGillivray, starring David Nuuhiwa, Eddie Aikau, Gerry Lopez, and Sam Hawk. Its VHS re-release was in 1994, followed by a DVD release. \"The Original Sound Track from Five Summer Stories\" was composed and recorded by the Southern California native band, Honk. The soundtrack was released on LP in 1972 and re-released on CD in 1992."
+      },
+      {
+        "id": "D09",
+        "text": "Jan Decleir: Jan Decleir (born 14 February 1946) is a prolific Belgian movie and stage actor born in Niel, Antwerp."
+      },
+      {
+        "id": "D10",
+        "text": "Joseph Paul Cretzer: Joseph Paul Cretzer (April 17, 1911 \u2212 May 4, 1946) was an American bank robber and prisoner at Alcatraz who participated in and was slain in the bloody \"Battle of Alcatraz\" which took place following a failed escape attempt between May 2 and May 4, 1946."
+      }
+    ],
+    "reference": "Five Summer Stories",
+    "depth": 2,
+    "missing": false,
+    "condition": "distractor",
+    "question_type": "bridge",
+    "split": "admission"
+  },
+  {
+    "id": "r17/hotpot/5a7d3470554299452d57bb56",
+    "world_id": "r17/hotpot/5a7d3470554299452d57bb56",
+    "upstream_id": "5a7d3470554299452d57bb56",
+    "family": "hotpot",
+    "question": "A scam involving a male calling small town fast-food restaurants and pretending to be a police officer to have them strip search employees was turned into a movie of what name?",
+    "sources": [
+      {
+        "id": "D01",
+        "text": "Compliance (film): Compliance is a 2012 American thriller film written and directed by Craig Zobel, and starring Ann Dowd, Dreama Walker, and Pat Healy. The plot focuses on a prank caller who, posing as a police officer, convinces the manager of a fast food restaurant to carry out intrusive and unlawful procedures on an employee. The film is based on the strip search prank call scam that took place at a Mount Washington, Kentucky McDonald's restaurant in Bullit County. Dowd's performance as Sandra, the manager, won her the National Board of Review Award for Best Supporting Actress."
+      },
+      {
+        "id": "D02",
+        "text": "Strip search phone call scam: The strip search phone call scam is a series of incidents that extended over a period of about ten years before an arrest was made in 2004. The incidents involved a man prank calling a restaurant or grocery store, claiming to be a police officer and then convincing managers to conduct strip searches of female employees, and to perform other bizarre acts on behalf of \"the police\". The calls were most often placed to fast-food restaurants in small towns, located in rural areas of the United States."
+      },
+      {
+        "id": "D03",
+        "text": "Devyani Khobragade: Devyani Khobragade is an Indian Foreign Service officer. While serving as Indian Deputy Consul General in New York, she made international headlines when she was arrested by US law enforcement for making false statements on a visa application for her housekeeper, paying her maid $3.99 an hour despite promising on the maid's visa application to pay the minimum legal wage. Khobragade was arrested after dropping off her daughters at school in Manhattan. She was subjected to a body-cavity search commonly called a \"strip search\", presented to a judge and released the same day. This led to a major diplomatic standoff between India and the United States. In 2016, she entered the world of fiction with her first book, \"The White Sari\"."
+      },
+      {
+        "id": "D04",
+        "text": "A&amp;W Restaurants: A&W Restaurants, Inc. is a chain of fast-food restaurants distinguished by its draft root beer and root beer floats. Its origins date back to when Roy W. Allen opened a walk-up root beer stand in Lodi, California, in 1919. Allen's employee Frank Wright partnered with him and founded the first A&W restaurant in Sacramento, California, in 1923. The company name was taken respectively from the initials of their last names\u2014Allen and Wright. The company became famous in the United States for its \"frosty mugs,\" where the mugs would be kept in the freezer and eventually get filled with A&W Root Beer before they are served to customers."
+      },
+      {
+        "id": "D05",
+        "text": "Ringer Hut: Ringer Hut (\u30ea\u30f3\u30ac\u30fc\u30cf\u30c3\u30c8 ) is a Japanese chain of fast-food restaurants, specializing in Nagasaki dishes Champon and Sara udon. The Hamakatsu Co. of Nagasaki, founders of the chain in 1974, borrowed the name of the former Ringer House which had been purchased by Nagasaki City and opened as a tourist attraction in 1966. It is likely that the company borrowed the word \"hut\" from \"Pizza Hut.\" Ringer Hut operates over 550 restaurants in Japan, Taiwan, and San Jose, California along with 100 Hamakatsu Restaurants (tonkatsu restaurant chain). Ringer Hut has two headquarters located in Fukuoka and Tokyo."
+      },
+      {
+        "id": "D06",
+        "text": "Police perjury: Police perjury (or testilying in United States police slang) is the act of a police officer giving false testimony. It is typically used in a criminal trial to \"make the case\" against a defendant who the police believe to be guilty when irregularities during the suspect's arrest or search threaten to result in acquittal. It has broader meanings. It also can be extended further to encompass substantive misstatements of fact for the purpose of convicting those whom the police believe to be guilty, or even to include statements to frame an innocent citizen. More generically, it has been said to be: \"Lying under oath, especially by a police officer, to help get a conviction.\""
+      },
+      {
+        "id": "D07",
+        "text": "Jacob D. Robida: Jacob D. Robida (June 13, 1987 \u2013 February 5, 2006) was a Massachusetts teenager who attacked three patrons at a New Bedford gay bar on February 2, 2006. He fled the state and drove to Charleston, West Virginia, where he kidnapped Jennifer Rena Dunlap Bailey and drove southwest. He was stopped by Gassville, Arkansas Police Officer James W. Sell at the Brass Door Restaurant parking lot on the afternoon of February 4, 2006 for an apparent traffic violation. Robida shot and killed Sell and fled east. He turned onto Arkansas Highway 201 headed south and continued to Arkana, where he fired at Arkansas State Police Sgt. Van Nowlin. Deputies from the Baxter County Sheriff's Office had a spike strip deployed a short distance away. Robida drove over the spike strip, flattening both front tires on his Pontiac. He continued to Arkansas Highway 5, where he turned south and drove into the small town of Norfork. In the middle of town he lost control of the car due to the front tires, spun out, and hit two parked vehicles. He then shot Bailey, his kidnap victim, in the head with a Ruger 9mm semi-automatic pistol, killing her instantly. Police then opened fire on Robida. He shot himself in the right side of the head."
+      },
+      {
+        "id": "D08",
+        "text": "Part-time job terrorism: Part-time job terrorism (\u30d0\u30a4\u30c8\u30c6\u30ed , baito tero ) is a Japanese social phenomenon; part-time employees perform pranks and stunts, such as climbing into ice cream freezers or holding their body horizontally suspended, more colloquially termed 'planking', on the counter-tops at fast-food restaurants, usually with the sole purpose of gaining recognition from their peers through the photos and/or videos they later display on social media sites. This social phenomenon commonly involves people with high job dissatisfaction\u2014a factor which is commonly cited by the media alongside low pay and arduously long working hours. Although pranks such as the aforementioned would not be seen as shocking by many other cultures, they are considered disgraceful in Japanese culture."
+      },
+      {
+        "id": "D09",
+        "text": "Coronado, Panama: Coronado is a coastal city and resort located about an hour from Panama City. It is a vacation town visited yearly by thousands of national and international tourists. Coronado was Panama's first resort development, and for this reason has several years of advantage over other surrounding beach towns. The town has full scale supermarkets, pharmacies, restaurants, ranging from low cost \"fondas\" and fast-food restaurants to beachside bistros, medical and veterinary clinics, a hospital, gardening centers, hardware stores, banks, apparel shops, outdoor markets, a shopping plaza and a new shopping mall."
+      },
+      {
+        "id": "D10",
+        "text": "Body cavity search: A body cavity search, also known simply as a cavity search, is either a visual search or a manual internal inspection of body cavities for prohibited materials (contraband), such as illegal drugs, money, jewelry, or weapons. Body cavities used for concealment include nostrils, ears, mouth, navel, penis (urethra and foreskin) or vagina, and rectum. It is far more invasive than the standard strip search that is typically performed on individuals taken into custody, either upon police arrest or incarceration at a jail, prison, or psychiatric hospital. Often the procedure is repeated when the person leaves the institution."
+      }
+    ],
+    "reference": "Compliance",
+    "depth": 2,
+    "missing": false,
+    "condition": "distractor",
+    "question_type": "bridge",
+    "split": "admission"
+  }
+]
