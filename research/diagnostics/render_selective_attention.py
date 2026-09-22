@@ -114,15 +114,18 @@ def render(report):
     fig, axes = plt.subplots(1, 2, figsize=(13, 5.5))
     for ax, domain in zip(axes, ("synthetic", "hotpot"), strict=True):
         subset = ["native", "always", "uncertainty_gate", "benefit_gate", "random_gate"]
-        offsets = [(6, -18), (-115, 10), (6, 10), (6, 26), (-100, -18)]
-        for arm, offset in zip(subset, offsets, strict=True):
+        points = {}
+        for arm in subset:
             row = lookup[domain, arm]
-            x, y = 100 * row["call_fraction"], 100 * row["quality"]
-            ax.scatter(x, y, s=70, color=COLORS.get(arm, "#98A2B3"), zorder=3)
+            point = (100 * row["call_fraction"], 100 * row["quality"])
+            points.setdefault(point, []).append(arm)
+        for i, ((x, y), same) in enumerate(points.items()):
+            ax.scatter(x, y, s=70, color=COLORS.get(same[0], "#98A2B3"), zorder=3)
             ax.annotate(
-                NAMES[arm],
+                "\n".join(NAMES[arm] for arm in same),
                 (x, y),
-                xytext=offset,
+                xytext=(-10 if x > 65 else 8, 12 if i % 2 else -20),
+                ha="right" if x > 65 else "left",
                 textcoords="offset points",
                 fontsize=9,
                 arrowprops={"arrowstyle": "-", "color": "#98A2B3", "lw": 0.5},
@@ -206,7 +209,58 @@ def render(report):
     ax.set_title("Offline routing value; exploratory 95% world-bootstrap intervals")
     fig.tight_layout()
     save(fig, "routing-value")
-    return {"figures": 5, "formats": ["PNG", "SVG", "PDF"]}
+    budget_path = report / "budget-frontier.json"
+    if budget_path.exists():
+        budget = json.loads(budget_path.read_text())
+        if not budget["audit_passed"]:
+            raise ValueError("Audited budget replay required")
+        fig, axes = plt.subplots(1, 2, figsize=(13, 5.3))
+        for ax, domain in zip(axes, ("synthetic", "hotpot"), strict=True):
+            native = 100 * lookup[domain, "native"]["quality"]
+            guided = 100 * lookup[domain, "always"]["quality"]
+            ax.plot(
+                [0, 100],
+                [native, guided],
+                "--",
+                color="#98A2B3",
+                label="Expected random at same call count",
+            )
+            ax.scatter([0, 100], [native, guided], c="#175CD3", s=65, label="Live endpoints")
+            for j, item in enumerate(budget["budgets"]):
+                row = next(r for r in item["domains"] if r["domain"] == domain)
+                x, y = 100 * row["call_fraction"], 100 * row["gate_quality"]
+                ax.scatter(
+                    x,
+                    y,
+                    marker="D",
+                    s=65,
+                    color="#C65D15",
+                    label="Frozen-rule branch replay" if j == 0 else None,
+                )
+                ax.annotate(
+                    f"{100 * item['development_ceiling']:.0f}% dev ceiling",
+                    (x, y),
+                    xytext=(0, 12 + (j % 2) * 12),
+                    ha="center",
+                    textcoords="offset points",
+                    fontsize=9,
+                    arrowprops={"arrowstyle": "-", "color": "#98A2B3", "lw": 0.5},
+                )
+            ys = [native, guided] + [
+                100 * next(r for r in b["domains"] if r["domain"] == domain)["gate_quality"]
+                for b in budget["budgets"]
+            ]
+            ax.set_ylim(max(0, min(ys) - 8), min(100, max(ys) + 12))
+            ax.set_xlim(-5, 105)
+            ax.set_title("Authored free-text accuracy" if domain == "synthetic" else "HotpotQA F1")
+            ax.set_xlabel("Reconstructed questions calling Jev (%)")
+            ax.set_ylabel("Score (%)")
+            ax.grid(alpha=0.15)
+            ax.legend(loc="lower right", fontsize=8)
+        fig.suptitle("Development-frozen budget frontier: offline replay, not measured savings")
+        fig.tight_layout()
+        save(fig, "budget-frontier")
+    return {"figures": 6 if budget_path.exists() else 5, "formats": ["PNG", "SVG", "PDF"]}
 
 
 if __name__ == "__main__":

@@ -33,7 +33,7 @@ uniform-score no-op/weight identity. The separately registered
 tests that first failed because its module was missing, then passed. Its offline
 counterfactual does not change the frozen cloud source or live schedule.
 With the additional output diagnostic, additive-hook equivalence and four budget
-frontier tests, the full local suite passes **409 tests**; lint,
+frontier tests, the full local suite passes **414 tests**; lint,
 formatting, guidance checks and builds also pass. The cloud's frozen checkout
 remains `796873b`; later test/docs/offline-analysis commits do not alter its model run.
 
@@ -58,3 +58,54 @@ fixed before freezing the supplementary script and selection.
 The final report will record GPU admission, all executed counts, artifact audit,
 provider failures, source/runtime/weight hashes, actual cost and cleanup evidence.
 Do not infer those outcomes from the passing offline suite.
+
+## Offline reproduction commands
+
+Use the locked development + Transformers environment and cache the tokenizer at
+model revision `6a7381ba1f54d684ff508d991aeb7dc580157103`. The final report's raw
+manifest maps public compressed files to their original names and SHA-256 values.
+The public unpacker verifies both stored and decompressed hashes before creating
+a fresh output directory. Its five tests first failed with the module absent,
+then passed for reconstruction, duplicate/path rejection and tampered stored/raw
+bytes. These analysis commands do not execute Granite or send Jev requests:
+
+```bash
+uv run --no-sync python research/diagnostics/unpack_selective_artifacts.py \
+  --report reports/2026-09-22-selective-attention \
+  --output results/r17-public-replay
+export R17_RESULTS=results/r17-public-replay/selective-attention-v1
+uv run --no-sync python research/iterations/selective_attention/analyze.py \
+  --manifest research/protocols/selective-attention-v1 \
+  --results "$R17_RESULTS" --output /tmp/r17-audit.json
+uv run --no-sync python research/diagnostics/selective_routing.py \
+  --manifest research/protocols/selective-attention-v1 \
+  --results "$R17_RESULTS" --main-analysis /tmp/r17-audit.json \
+  --output /tmp/r17-routing.json
+uv run --no-sync python research/diagnostics/selective_outputs.py \
+  --manifest research/protocols/selective-attention-v1 \
+  --results "$R17_RESULTS" --main-analysis /tmp/r17-audit.json \
+  --output /tmp/r17-outputs.json --examples /tmp/r17-examples.md
+uv run --no-sync python research/diagnostics/selective_budget.py analyze \
+  --manifest research/protocols/selective-attention-v1 \
+  --results "$R17_RESULTS" --main-analysis /tmp/r17-audit.json \
+  --selection research/protocols/selective-budget-frontier-v1/selection.json \
+  --output /tmp/r17-budget.json
+```
+
+Use fresh output paths; scripts refuse to overwrite evidence. Audit timestamps and
+the supplementary file bindings to a newly timestamped main audit can differ on
+reproduction; underlying grades, counts and seeded statistical results should not.
+The live study's scientific source remains frozen at `796873b`; the supplementary
+analysis scripts and added tests have their own commits and source hashes.
+
+After audited report JSON exists, regenerate standalone figures with:
+
+```bash
+uv run --no-project --python 3.12.13 \
+  --with matplotlib==3.11.2 --with numpy==2.5.3 --with pillow==12.3.0 \
+  python research/diagnostics/render_selective_attention.py
+```
+
+Those exact plotting package versions were resolved and imported locally before
+the held-out run completed. The five main figures and optional sixth budget-replay
+figure still require visual inspection once actual audited results are available.
