@@ -49,15 +49,37 @@ Inference commit 9484509 and source/data/protocol hashes remained frozen. All ta
 VM/disk/network resources were deleted after retrieval; new cost about $0.78,
 cumulative estimate $9.27/$50. No inference retry or protocol amendment was needed.
 
-## R17 prospective registration
+## R17: completed selective-attention study (registered prospectively)
 
 Registered 2026-09-22 before live inference: [selective-attention plan](selective-attention-plan.md).
 Test conditional Jev dispatch, prefill/fading interventions and evidence-mass
 conservation on fresh unrestricted-answer tasks. Planned 2,028 development and
 6,336 test outcomes, plus mechanical admission. Granite owns final tokens; a
 development-fitted threshold controller may change but model weights do not.
-GPU numerical admission and development are complete; held-out evaluation is running. No held-out quality result
-is claimed at this stage.
+All **2,028 development and 6,336 test outcomes completed**, with nine GPU admission
+fixtures passing. Development selected additive/all-token strength 5, identical to
+the fixed R16 control. All three gates called on every test input and exactly
+matched always guidance; they are neither selective successes nor independent
+replications. The benefit gate discarded 5,340 pilot tokens and added a prefill per
+input, with no saved request.
+
+[Final report](../reports/2026-09-22-selective-attention/README.md): authored accuracy
+is 28.77% native / 33.13% selected Jev / 34.72% mass-conserving control; Hotpot F1
+is 25.23% / 28.76% / 28.63%. Primary guided-minus-native intervals are +4.37 pp
+[0.00,8.93] and +3.53 pp [−1.47,8.58], individually 98.75%. The exploratory
+mass-versus-R16 contrasts are inconclusive. Answerable accuracy improves 50.40% to
+61.11%, but missing-evidence accuracy declines 7.14% to 5.16%. All recognized
+abstentions use natural wording, with zero bare UNKNOWN outputs. Overall authored
+accuracy remains below constant abstention (50%).
+
+Audits reconcile 8,364 outcomes, 860 exact inputs, 169,773 final tokens, 185,793
+forwards, 704 native/fallback pairs, 2,112 pilot pairs and unchanged weights/source.
+All 860 paid attempts succeeded (1,944,119 known input tokens; zero unknown calls).
+Public lossless archives reproduce every main audit field except timestamp.
+The initial bootstrap CPU timeout and its thread-setting repair are retained.
+Local checks pass 415 tests; six scientific figures were visually inspected.
+Estimated new cost is $3.77, cumulative $23.46/$50; all temporary resources were
+deleted after 14 remote files were byte-verified against local backups.
 
 The [offline routing supplement](selective-routing-supplement.md) was registered
 after development began, before selection or held-out inference was inspected.
@@ -69,6 +91,14 @@ selected always-calling guidance, while held-out inference was in progress and
 before held-out aggregate inspection. Rules for 25/50/75% development request
 ceilings were frozen at 12:22 UTC. It reconstructs quality and work from recorded
 branches; it does not measure actual API savings or new live gated latency.
+The [completed frontier](../reports/2026-09-22-selective-attention/budget-frontier.md)
+reports all three frozen budgets. At the 25% development ceiling, authored replay
+uses 21.43% of requests for 31.55% accuracy, +2.78 pp [1.19,4.56] versus native
+and +1.84 pp [0.41,3.39] above same-count random routing (exploratory 95% intervals).
+Hotpot replay instead scores 25.00% F1 at 18.50% calls, with no positive routing
+value. The 50/75% ceilings yield authored 31.55/32.54% and Hotpot 25.69/27.09%.
+This limited authored-task signal does not establish external transfer or a
+confirmed low-cost deployment. No test-selected winning budget is promoted.
 
 The [budget accounting amendment](selective-budget-accounting-amendment.md) repairs
 reconstructed work after a failed request before supplementary analysis. It retains

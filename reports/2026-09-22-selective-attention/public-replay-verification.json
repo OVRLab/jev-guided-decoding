@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "compared_all_analysis_fields_except_audit_timestamp": true,
+  "live_calls": 0,
+  "new_model_forwards": 0,
+  "outcomes": 8364,
+  "verified_files": 11
+}

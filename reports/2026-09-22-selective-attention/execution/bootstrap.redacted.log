@@ -1,0 +1,245 @@
+Warning: Permanently added '[cloud identifier redacted]' (ED25519) to the list of known hosts.
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+.......................status: done
+active
+NVIDIA L40S, 46068 MiB, 580.173.02
+downloading uv 0.11.31 x86_64-unknown-linux-gnu
+installing to /home/study/.local/bin
+  uv
+  uvx
+everything's installed!
+
+To add $HOME/.local/bin to your PATH, either restart your shell or run:
+
+    source $HOME/.local/bin/env (sh, bash, zsh)
+    source $HOME/.local/bin/env.fish (fish)
+Cloning into '/home/study/jev-guided-decoding'...
+Note: switching to '796873b'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 796873b feat: register selective phase-dependent Jev attention study
+Downloading cpython-3.12.13-linux-x86_64-gnu (download) (32.6MiB)
+ Downloaded cpython-3.12.13-linux-x86_64-gnu (download)
+Using CPython 3.12.13
+Creating virtual environment at: .venv
+Resolved 52 packages in 0.67ms
+   Building jev-guided-decoding @ file:///home/study/jev-guided-decoding
+Downloading nvidia-cublas-cu12 (566.8MiB)
+Downloading sympy (6.0MiB)
+Downloading pygments (1.2MiB)
+Downloading hf-xet (4.3MiB)
+Downloading ruff (9.8MiB)
+Downloading nvidia-cuda-nvrtc-cu12 (84.0MiB)
+Downloading nvidia-cudnn-cu12 (674.0MiB)
+Downloading networkx (2.0MiB)
+Downloading nvidia-cusolver-cu12 (255.1MiB)
+Downloading nvidia-nvjitlink-cu12 (37.4MiB)
+Downloading tokenizers (3.1MiB)
+Downloading torch (846.8MiB)
+Downloading nvidia-cufft-cu12 (184.2MiB)
+Downloading nvidia-curand-cu12 (60.7MiB)
+Downloading numpy (15.9MiB)
+Downloading nvidia-cusparselt-cu12 (273.9MiB)
+Downloading nvidia-cuda-cupti-cu12 (9.8MiB)
+Downloading nvidia-nccl-cu12 (307.4MiB)
+Downloading triton (148.4MiB)
+Downloading nvidia-cufile-cu12 (1.1MiB)
+Downloading transformers (11.4MiB)
+Downloading nvidia-cusparse-cu12 (274.9MiB)
+ Downloaded nvidia-cufile-cu12
+ Downloaded pygments
+ Downloaded tokenizers
+      Built jev-guided-decoding @ file:///home/study/jev-guided-decoding
+ Downloaded hf-xet
+ Downloaded networkx
+ Downloaded nvidia-cuda-cupti-cu12
+ Downloaded ruff
+ Downloaded sympy
+ Downloaded numpy
+ Downloaded nvidia-nvjitlink-cu12
+ Downloaded nvidia-curand-cu12
+ Downloaded transformers
+ Downloaded nvidia-cuda-nvrtc-cu12
+ Downloaded triton
+ Downloaded nvidia-cufft-cu12
+ Downloaded nvidia-cusolver-cu12
+ Downloaded nvidia-cusparse-cu12
+ Downloaded nvidia-cusparselt-cu12
+ Downloaded nvidia-nccl-cu12
+ Downloaded nvidia-cublas-cu12
+ Downloaded nvidia-cudnn-cu12
+ Downloaded torch
+Prepared 50 packages in 32.53s
+Installed 50 packages in 2.65s
+ + anyio==4.15.1
+ + certifi==2026.7.22
+ + charset-normalizer==3.5.1
+ + filelock==4.0.1
+ + fsspec==2026.9.0
+ + h11==0.16.0
+ + hf-xet==1.6.0
+ + httpcore==1.0.9
+ + httpx==0.28.1
+ + huggingface-hub==0.36.2
+ + idna==3.20
+ + iniconfig==2.3.0
+ + jev-guided-decoding==0.1.0 (from file:///home/study/jev-guided-decoding)
+ + jinja2==3.1.6
+ + markupsafe==3.0.3
+ + mpmath==1.3.0
+ + networkx==3.6.1
+ + numpy==2.5.3
+ + nvidia-cublas-cu12==12.8.4.1
+ + nvidia-cuda-cupti-cu12==12.8.90
+ + nvidia-cuda-nvrtc-cu12==12.8.93
+ + nvidia-cuda-runtime-cu12==12.8.90
+ + nvidia-cudnn-cu12==9.10.2.21
+ + nvidia-cufft-cu12==11.3.3.83
+ + nvidia-cufile-cu12==1.13.1.3
+ + nvidia-curand-cu12==10.3.9.90
+ + nvidia-cusolver-cu12==11.7.3.90
+ + nvidia-cusparse-cu12==12.5.8.93
+ + nvidia-cusparselt-cu12==0.7.1
+ + nvidia-nccl-cu12==2.27.3
+ + nvidia-nvjitlink-cu12==12.8.93
+ + nvidia-nvtx-cu12==12.8.90
+ + packaging==26.3
+ + pluggy==1.6.0
+ + pygments==2.21.0
+ + pytest==8.4.2
+ + pyyaml==6.0.3
+ + regex==2026.9.10
+ + requests==2.34.2
+ + ruff==0.16.8
+ + safetensors==0.8.0
+ + setuptools==84.0.0
+ + sympy==1.14.0
+ + tokenizers==0.22.2
+ + torch==2.8.0
+ + tqdm==4.70.1
+ + transformers==4.57.1
+ + triton==3.4.0
+ + typing-extensions==4.16.0
+ + urllib3==2.8.0
+........................................................................ [ 18%]
+..................................F..................................... [ 36%]
+........................................................................ [ 54%]
+........................................................................ [ 72%]
+........................................................................ [ 90%]
+....................................                                     [100%]
+=================================== FAILURES ===================================
+_____ test_full_study_flow_retains_overload_and_continues_only_new_context _____
+
+tmp_path = PosixPath('/tmp/pytest-of-study/pytest-0/test_full_study_flow_retains_o0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x75270bdb3590>
+
+    def test_full_study_flow_retains_overload_and_continues_only_new_context(tmp_path, monkeypatch):
+        import asyncio
+        import json
+    
+        import httpx
+    
+        from jev_guided_decoding.experiment_budget import InputTokenBudget
+    
+        S = runpy.run_path(str(ROOT / "research/experiments/evidence_study.py"))
+        E = runpy.run_path(str(ROOT / "research/experiments/evidence_scorer.py"))
+        calls, waits = [], []
+    
+        def reply(request):
+            payload = json.loads(request.content)
+            calls.append(payload)
+            if len(calls) == 1:
+                return httpx.Response(529, headers={"retry-after": "60"}, json={"error": "overload"})
+            return httpx.Response(
+                200,
+                json={
+                    "model": "jev-1.13.0",
+                    "usage": {"input_tokens": 50, "output_tokens": 4},
+                    "answers": {
+                        key: {"type": "noul", "noul": 0.8 if i == 0 else 0.2}
+                        for i, key in enumerate(payload["questions"])
+                    },
+                },
+            )
+    
+        async def sleep(seconds):
+            waits.append(seconds)
+    
+        monkeypatch.setattr(asyncio, "sleep", sleep)
+    
+        async def exercise():
+            r = S["Runner"](runtime(), tmp_path, {"max_seconds": 60, "bootstrap_draws": 100})
+            cases = [D["context"](D["worlds"]("profile", 6)[0], c) for c in ("clean", "distracted")]
+            with InputTokenBudget(tmp_path / "ledger.jsonl") as budget:
+                async with E["EvidenceScorer"](
+                    "test-key", budget=budget, transport=httpx.MockTransport(reply)
+                ) as scorer:
+                    result = await r.evaluate(
+                        cases,
+                        {"heads": [(0, 1)], "random_heads": [(1, 2)], "strength": 1.0},
+                        scorer,
+                        name="test",
+                    )
+                assert not budget.unresolved
+                assert budget.charged_tokens == 65536 + 50
+            r.close()
+            assert result["recorded"] == 16
+            assert result["arms"]["jev"]["complete"] == 1
+            assert result["arms"]["native"]["complete"] == 2
+            assert result["provider_incidents"] == 1
+            assert waits == [60]
+            assert len(calls) == 2
+            rows = [json.loads(s) for s in (tmp_path / "test.jsonl").read_text().splitlines()]
+            assert len({(row["id"], row["mode"]) for row in rows}) == 16
+            assert sum(row["status"] == "failed" for row in rows) == 4
+    
+>       asyncio.run(exercise())
+
+tests/test_evidence_runtime.py:134: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py:195: in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+../.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py:118: in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+../.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py:691: in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+tests/test_evidence_runtime.py:115: in exercise
+    result = await r.evaluate(
+research/experiments/evidence_study.py:457: in evaluate
+    row = self.forward(
+research/experiments/evidence_study.py:208: in forward
+    self.deadline()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <<run_path>.Runner object at 0x75270bdb0ec0>
+
+    def deadline(self):
+        if time.monotonic() - self.started >= self.manifest["max_seconds"]:
+>           raise TimeoutError("Frozen study wall-time limit")
+E           TimeoutError: Frozen study wall-time limit
+
+research/experiments/evidence_study.py:197: TimeoutError
+----------------------------- Captured stdout call -----------------------------
+{"stage": "test", "contexts_done": 1, "planned": 2, "elapsed": 28.38034497599999}
+=========================== short test summary info ============================
+FAILED tests/test_evidence_runtime.py::test_full_study_flow_retains_overload_and_continues_only_new_context
+1 failed, 395 passed in 134.96s (0:02:14)

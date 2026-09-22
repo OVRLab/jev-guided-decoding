@@ -4,6 +4,17 @@ Design note, 2026-09-22, written while R17 held-out inference was running. This 
 an **unimplemented hypothesis**, not R18 registration, a tested speedup or a new
 model release. Finish and interpret R17 before selecting the next quality study.
 
+## R17 result update
+
+R17 is now complete. Its main gate called on every test input, adding 5,340
+native pilot tokens without saving requests. The explicit-budget replay suggests
+some authored-task routing value but no reliable Hotpot transfer. This strengthens
+the engineering reason to avoid repeated prefill, while leaving feature usefulness
+and cross-domain quality unresolved. This design remains unimplemented; the
+[completed report](../reports/2026-09-22-selective-attention/README.md) contains the
+actual results and the [budget supplement](../reports/2026-09-22-selective-attention/budget-frontier.md)
+contains all three replay budgets.
+
 ## Why investigate this boundary
 
 R17 buffers up to eight native tokens before deciding to call Jev. A call discards

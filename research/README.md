@@ -5,15 +5,32 @@ Granite inference. It includes negative results, corrections, new analyses, and
 proposed experiments. It is a basis for a paper, not a claim of a successful model
 release. All dates below are report dates; source artifacts retain execution times.
 
-**Current investigation:** [R17 selective attention](selective-attention-plan.md), with
-[architecture/method](../reports/2026-09-22-selective-attention/method.md) and
-[prior-art review](selective-attention-related-work.md). Implementation and offline
-validation are complete; held-out inference is running. The quality-first development
-gate selected calls on every case; the separately registered
-[budget frontier](selective-budget-frontier.md) will also examine explicit request
-ceilings. No held-out R17 quality result yet.
+**Latest completed study:** [R17 selective attention](../reports/2026-09-22-selective-attention/README.md),
+with [architecture/method](../reports/2026-09-22-selective-attention/method.md),
+[request-budget results](../reports/2026-09-22-selective-attention/budget-frontier.md)
+and [prior-art review](selective-attention-related-work.md).
 
-**Latest completed study:** [R16 adaptive attention](../reports/2026-09-22-adaptive-attention/README.md).
+**R17 completed:** Jev guidance raises authored free-text accuracy from
+**28.77% to 33.13%**, and HotpotQA answer F1 from **25.23% to 28.76%**.
+The primary 98.75% intervals include zero: **+4.37 pp [0.00, 8.93]** and
+**+3.53 pp [−1.47, 8.58]**. Development selected the existing R16 policy;
+new timing/conservation variants did not win that selection.
+
+The live gates called on **every input**, saving no requests and adding pilot work.
+In a separately registered **offline replay**, a development-frozen budget rule
+uses 21.43% of calls on authored tasks for 31.55% accuracy, but only 25.00% Hotpot F1
+at 18.50% calls. This is a limited routing signal, not measured deployment savings
+or reliable transfer. All three replay budgets and negative findings are retained.
+Natural abstention remains poor, and overall authored scores stay below the 50%
+constant-abstention reference. Granite owns every final token; weights are unchanged.
+
+All **8,364 development/test outcomes** pass token/input/source/weight and public
+archive replay audits. **860 Jev attempts succeeded, with no provider failures**.
+New estimated cost is **$3.77**, cumulative **$23.46/$50** before tax/separate
+network; all temporary GPU, disk and network resources are deleted. No generally
+superior architecture or trained model release is established.
+
+**Previous completed study:** [R16 adaptive attention](../reports/2026-09-22-adaptive-attention/README.md).
 **R16 interpretation:** constrained-task improvement is established within this
 study; direct free-text performance regressed against matched R15, while dynamic
 refresh and the primary HotpotQA contrast remain inconclusive.
@@ -71,6 +88,7 @@ weights are unchanged, and both temporary GPU deployments are deleted.
 
 | Read | Purpose |
 | --- | --- |
+| [Selective evidence attention](../reports/2026-09-22-selective-attention/README.md) | R17 complete: nine held-out arms, all-call gate failure, three offline budgets, natural-answer failures and six figures |
 | [Study register](study-register.md) | Every recorded live study, failed pilot, correction, and offline follow-up |
 | [Architecture reassessment](architecture-reassessment.md) | Exact checkpoint, interface constraints, insertion-point decision and alternatives |
 | [Adaptive and unrestricted attention](../reports/2026-09-22-adaptive-attention/README.md) | R16 complete: three primary comparisons, eight panels, factorial controls, natural uncertainty and public HotpotQA traces |

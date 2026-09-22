@@ -1,6 +1,32 @@
 # Verified implementation inventory
 
-[R16 completed study](reports/2026-09-22-adaptive-attention/README.md):
+[R17 completed study](reports/2026-09-22-selective-attention/README.md).
+
+**R17 completed:** Jev guidance raises authored free-text accuracy from
+**28.77% to 33.13%**, and HotpotQA answer F1 from **25.23% to 28.76%**.
+The primary 98.75% intervals include zero: **+4.37 pp [0.00, 8.93]** and
+**+3.53 pp [−1.47, 8.58]**. Development selected the existing R16 policy;
+new timing/conservation variants did not win that selection.
+
+The live gates called on **every input**, saving no requests and adding pilot work.
+In a separately registered **offline replay**, a development-frozen budget rule
+uses 21.43% of calls on authored tasks for 31.55% accuracy, but only 25.00% Hotpot F1
+at 18.50% calls. This is a limited routing signal, not measured deployment savings
+or reliable transfer. All three replay budgets and negative findings are retained.
+Natural abstention remains poor, and overall authored scores stay below the 50%
+constant-abstention reference. Granite owns every final token; weights are unchanged.
+
+All **8,364 development/test outcomes** pass token/input/source/weight and public
+archive replay audits. **860 Jev attempts succeeded, with no provider failures**.
+New estimated cost is **$3.77**, cumulative **$23.46/$50** before tax/separate
+network; all temporary GPU, disk and network resources are deleted. No generally
+superior architecture or trained model release is established.
+
+Current local verification: **415 tests pass**, Ruff lint/format, 49-file guidance
+check and builds pass. Six standalone figures were visually checked; public archive
+reconstruction reproduces every audit field except its timestamp.
+
+[Previous R16 completed study](reports/2026-09-22-adaptive-attention/README.md):
 **R16 interpretation:** constrained-task improvement is established within this
 study; direct free-text performance regressed against matched R15, while dynamic
 refresh and the primary HotpotQA contrast remain inconclusive.
@@ -30,7 +56,7 @@ audits. All temporary resources are deleted. New estimated cost is
 before tax/separate network charges. This is research-branch evidence, not a trained
 checkpoint release or a general reasoning guarantee.
 
-The full local inference suite passes **385 tests**. Core-only CI passes on
+At R16 completion, the local inference suite passed **385 tests**. Core-only CI passes on
 Python 3.11/3.12; optional inference tests are not represented by those CI jobs.
 The original BF16 admission failure and prospective precision amendment are retained.
 

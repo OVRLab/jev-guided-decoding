@@ -63,6 +63,16 @@ def render(report):
         ax.bar_label(bars, fmt="%.1f", padding=3, fontsize=9)
         ax.set_xticks(range(len(arms)), [NAMES[x] for x in arms], rotation=48, ha="right")
         ax.set_ylim(0, max(55, max(values) + 10))
+        if domain == "synthetic":
+            ax.axhline(50, color="#475467", linestyle="--", linewidth=1)
+            ax.text(
+                8.4,
+                50.8,
+                "Constant abstention: 50% (0% answerable)",
+                ha="right",
+                fontsize=9,
+                color="#475467",
+            )
         ax.set_title(
             "Authored free-text accuracy" if domain == "synthetic" else "HotpotQA answer F1"
         )

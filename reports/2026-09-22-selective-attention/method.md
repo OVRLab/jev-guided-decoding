@@ -1,8 +1,8 @@
 # R17 method and prospective scope
 
-This study has passed numerical admission and development; held-out evaluation
-is running, and no
-held-out quality result is claimed at this stage. The [plan](../../research/selective-attention-plan.md)
+This completed study passed numerical admission and retained all 2,028 development
+and 6,336 held-out outcomes. The [results](README.md) report quality, failed selective
+routing and offline request-budget exploration. The [plan](../../research/selective-attention-plan.md)
 defines hypotheses, selection, controls, data counts, budgets and primary tests.
 The [related-work review](../../research/selective-attention-related-work.md)
 separates prior ideas from the proposed combination.
@@ -61,8 +61,12 @@ expected treatment benefit.
 
 The benefit gate fits one threshold, direction and feature on development outcomes.
 It does not train the language model. Its features can fail to predict treatment
-benefit; confidence is not a correctness guarantee. Fresh held-out comparisons
-determine whether the gate saves calls and preserves quality.
+benefit; confidence is not a correctness guarantee. In the completed experiment,
+both fitted gates selected always-calling behavior, and the random gate consequently
+also called on every test input. They saved no requests and produced exactly the
+always-guided answers, with additional pilot work. Development selected the existing
+R16 additive/all-token policy at strength 5; none of the new timing or conserving
+variants won the development selection.
 
 Benefits/costs are paired by authored world or external question. All controls
 receive the full original evidence. Static controls reuse exact Jev receipts,

@@ -41,10 +41,12 @@ guides must defer here rather than maintain conflicting copies.
   separately named experiments; their scores cannot stand in for generated-answer
   quality. Verify final-token provenance and a consistent prompt/grading contract.
 - The package controllers select **text continuations during inference**. The
-  separate R14/R16 research hooks apply Jev source-relevance biases inside selected
+  separate R14–R17 research hooks apply Jev source-relevance biases inside selected
   Granite attention heads. R14 is static constrained QA; R16 adds serial cached
   generation, optional relevance refresh and full-vocabulary output contracts.
-  Distinguish each study from the package path. Neither is neural fusion, access to hidden reasoning, training,
+  R17 tests conditional dispatch, timing envelopes and local evidence-mass
+  conservation. Distinguish each study from the package path. These are not neural
+  fusion, access to hidden reasoning, training,
   a vLLM extension, or an improved model checkpoint. Claims need matching evidence.
 - Preserve the original model weights and exact accepted token IDs in this scope.
   Rejected branches must never enter the continuation prefix or another request's cache.
@@ -55,6 +57,9 @@ guides must defer here rather than maintain conflicting copies.
 - Compare the same prompts, model revisions, sampling settings, and candidate
   budgets; disclose **actual** generated tokens, padded slots, repeated prefill,
   latency, and API use. Equal ceilings do not prove equal computation.
+- Separate a charged request from a successful intervention. A failed request can
+  retain the native cache without restarting; its charge still belongs in cost
+  accounting. Offline branch replay is not measured deployment savings.
 - If syntax constraints are used, disclose their action-space restriction in every
   arm. Keep reference truth out of the grammar, preserve generator ownership of
   semantic choices, and treat guaranteed formatting as a controller property.

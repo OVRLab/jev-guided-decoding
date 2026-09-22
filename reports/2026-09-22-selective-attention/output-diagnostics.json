@@ -1,0 +1,1251 @@
+{
+  "audit_passed": true,
+  "main_analysis_sha256": "baca45d0d01b32cb711b5ee1e545730fa6b44423e613e434e13e6448a4a0e9c6",
+  "script_sha256": "28bfefa2cca6fb0863048179f908d4920bb20aab174c952cce52560d4a22374a",
+  "new_model_forwards": 0,
+  "new_api_calls": 0,
+  "diagnostics": [
+    {
+      "domain": "hotpot",
+      "arm": "always",
+      "cases": 200,
+      "eos": 178,
+      "token_limit": 22,
+      "recognized_abstentions": null,
+      "bare_unknown": null,
+      "natural_abstentions": null,
+      "correct_abstentions": null,
+      "wrong_abstentions": null,
+      "unparsed": null,
+      "provider_fallbacks": 0,
+      "logical_calls": 200
+    },
+    {
+      "domain": "hotpot",
+      "arm": "benefit_gate",
+      "cases": 200,
+      "eos": 178,
+      "token_limit": 22,
+      "recognized_abstentions": null,
+      "bare_unknown": null,
+      "natural_abstentions": null,
+      "correct_abstentions": null,
+      "wrong_abstentions": null,
+      "unparsed": null,
+      "provider_fallbacks": 0,
+      "logical_calls": 200
+    },
+    {
+      "domain": "hotpot",
+      "arm": "lexical",
+      "cases": 200,
+      "eos": 173,
+      "token_limit": 27,
+      "recognized_abstentions": null,
+      "bare_unknown": null,
+      "natural_abstentions": null,
+      "correct_abstentions": null,
+      "wrong_abstentions": null,
+      "unparsed": null,
+      "provider_fallbacks": 0,
+      "logical_calls": 0
+    },
+    {
+      "domain": "hotpot",
+      "arm": "mass_all",
+      "cases": 200,
+      "eos": 173,
+      "token_limit": 27,
+      "recognized_abstentions": null,
+      "bare_unknown": null,
+      "natural_abstentions": null,
+      "correct_abstentions": null,
+      "wrong_abstentions": null,
+      "unparsed": null,
+      "provider_fallbacks": 0,
+      "logical_calls": 200
+    },
+    {
+      "domain": "hotpot",
+      "arm": "native",
+      "cases": 200,
+      "eos": 169,
+      "token_limit": 31,
+      "recognized_abstentions": null,
+      "bare_unknown": null,
+      "natural_abstentions": null,
+      "correct_abstentions": null,
+      "wrong_abstentions": null,
+      "unparsed": null,
+      "provider_fallbacks": 0,
+      "logical_calls": 0
+    },
+    {
+      "domain": "hotpot",
+      "arm": "r16",
+      "cases": 200,
+      "eos": 178,
+      "token_limit": 22,
+      "recognized_abstentions": null,
+      "bare_unknown": null,
+      "natural_abstentions": null,
+      "correct_abstentions": null,
+      "wrong_abstentions": null,
+      "unparsed": null,
+      "provider_fallbacks": 0,
+      "logical_calls": 200
+    },
+    {
+      "domain": "hotpot",
+      "arm": "random_gate",
+      "cases": 200,
+      "eos": 178,
+      "token_limit": 22,
+      "recognized_abstentions": null,
+      "bare_unknown": null,
+      "natural_abstentions": null,
+      "correct_abstentions": null,
+      "wrong_abstentions": null,
+      "unparsed": null,
+      "provider_fallbacks": 0,
+      "logical_calls": 200
+    },
+    {
+      "domain": "hotpot",
+      "arm": "shuffled",
+      "cases": 200,
+      "eos": 176,
+      "token_limit": 24,
+      "recognized_abstentions": null,
+      "bare_unknown": null,
+      "natural_abstentions": null,
+      "correct_abstentions": null,
+      "wrong_abstentions": null,
+      "unparsed": null,
+      "provider_fallbacks": 0,
+      "logical_calls": 200
+    },
+    {
+      "domain": "hotpot",
+      "arm": "uncertainty_gate",
+      "cases": 200,
+      "eos": 178,
+      "token_limit": 22,
+      "recognized_abstentions": null,
+      "bare_unknown": null,
+      "natural_abstentions": null,
+      "correct_abstentions": null,
+      "wrong_abstentions": null,
+      "unparsed": null,
+      "provider_fallbacks": 0,
+      "logical_calls": 200
+    },
+    {
+      "domain": "synthetic",
+      "arm": "always",
+      "cases": 504,
+      "eos": 309,
+      "token_limit": 195,
+      "recognized_abstentions": 13,
+      "bare_unknown": 0,
+      "natural_abstentions": 13,
+      "correct_abstentions": 13,
+      "wrong_abstentions": 0,
+      "unparsed": 270,
+      "provider_fallbacks": 0,
+      "logical_calls": 504
+    },
+    {
+      "domain": "synthetic",
+      "arm": "benefit_gate",
+      "cases": 504,
+      "eos": 309,
+      "token_limit": 195,
+      "recognized_abstentions": 13,
+      "bare_unknown": 0,
+      "natural_abstentions": 13,
+      "correct_abstentions": 13,
+      "wrong_abstentions": 0,
+      "unparsed": 270,
+      "provider_fallbacks": 0,
+      "logical_calls": 504
+    },
+    {
+      "domain": "synthetic",
+      "arm": "lexical",
+      "cases": 504,
+      "eos": 291,
+      "token_limit": 213,
+      "recognized_abstentions": 17,
+      "bare_unknown": 0,
+      "natural_abstentions": 17,
+      "correct_abstentions": 17,
+      "wrong_abstentions": 0,
+      "unparsed": 319,
+      "provider_fallbacks": 0,
+      "logical_calls": 0
+    },
+    {
+      "domain": "synthetic",
+      "arm": "mass_all",
+      "cases": 504,
+      "eos": 331,
+      "token_limit": 173,
+      "recognized_abstentions": 16,
+      "bare_unknown": 0,
+      "natural_abstentions": 16,
+      "correct_abstentions": 16,
+      "wrong_abstentions": 0,
+      "unparsed": 209,
+      "provider_fallbacks": 0,
+      "logical_calls": 504
+    },
+    {
+      "domain": "synthetic",
+      "arm": "native",
+      "cases": 504,
+      "eos": 335,
+      "token_limit": 169,
+      "recognized_abstentions": 18,
+      "bare_unknown": 0,
+      "natural_abstentions": 18,
+      "correct_abstentions": 18,
+      "wrong_abstentions": 0,
+      "unparsed": 167,
+      "provider_fallbacks": 0,
+      "logical_calls": 0
+    },
+    {
+      "domain": "synthetic",
+      "arm": "r16",
+      "cases": 504,
+      "eos": 309,
+      "token_limit": 195,
+      "recognized_abstentions": 13,
+      "bare_unknown": 0,
+      "natural_abstentions": 13,
+      "correct_abstentions": 13,
+      "wrong_abstentions": 0,
+      "unparsed": 270,
+      "provider_fallbacks": 0,
+      "logical_calls": 504
+    },
+    {
+      "domain": "synthetic",
+      "arm": "random_gate",
+      "cases": 504,
+      "eos": 309,
+      "token_limit": 195,
+      "recognized_abstentions": 13,
+      "bare_unknown": 0,
+      "natural_abstentions": 13,
+      "correct_abstentions": 13,
+      "wrong_abstentions": 0,
+      "unparsed": 270,
+      "provider_fallbacks": 0,
+      "logical_calls": 504
+    },
+    {
+      "domain": "synthetic",
+      "arm": "shuffled",
+      "cases": 504,
+      "eos": 296,
+      "token_limit": 208,
+      "recognized_abstentions": 13,
+      "bare_unknown": 0,
+      "natural_abstentions": 13,
+      "correct_abstentions": 13,
+      "wrong_abstentions": 0,
+      "unparsed": 218,
+      "provider_fallbacks": 0,
+      "logical_calls": 504
+    },
+    {
+      "domain": "synthetic",
+      "arm": "uncertainty_gate",
+      "cases": 504,
+      "eos": 309,
+      "token_limit": 195,
+      "recognized_abstentions": 13,
+      "bare_unknown": 0,
+      "natural_abstentions": 13,
+      "correct_abstentions": 13,
+      "wrong_abstentions": 0,
+      "unparsed": 270,
+      "provider_fallbacks": 0,
+      "logical_calls": 504
+    }
+  ],
+  "subgroups": [
+    {
+      "field": "condition",
+      "value": "heavy",
+      "arm": "always",
+      "cases": 252,
+      "accuracy": 0.3412698412698413,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "condition",
+      "value": "heavy",
+      "arm": "benefit_gate",
+      "cases": 252,
+      "accuracy": 0.3412698412698413,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "condition",
+      "value": "heavy",
+      "arm": "lexical",
+      "cases": 252,
+      "accuracy": 0.2261904761904762,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "condition",
+      "value": "heavy",
+      "arm": "mass_all",
+      "cases": 252,
+      "accuracy": 0.32142857142857145,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "condition",
+      "value": "heavy",
+      "arm": "native",
+      "cases": 252,
+      "accuracy": 0.25793650793650796,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "condition",
+      "value": "heavy",
+      "arm": "r16",
+      "cases": 252,
+      "accuracy": 0.3412698412698413,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "condition",
+      "value": "heavy",
+      "arm": "random_gate",
+      "cases": 252,
+      "accuracy": 0.3412698412698413,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "condition",
+      "value": "heavy",
+      "arm": "shuffled",
+      "cases": 252,
+      "accuracy": 0.15873015873015872,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "condition",
+      "value": "heavy",
+      "arm": "uncertainty_gate",
+      "cases": 252,
+      "accuracy": 0.3412698412698413,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "condition",
+      "value": "light",
+      "arm": "always",
+      "cases": 252,
+      "accuracy": 0.32142857142857145,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "condition",
+      "value": "light",
+      "arm": "benefit_gate",
+      "cases": 252,
+      "accuracy": 0.32142857142857145,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "condition",
+      "value": "light",
+      "arm": "lexical",
+      "cases": 252,
+      "accuracy": 0.1984126984126984,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "condition",
+      "value": "light",
+      "arm": "mass_all",
+      "cases": 252,
+      "accuracy": 0.373015873015873,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "condition",
+      "value": "light",
+      "arm": "native",
+      "cases": 252,
+      "accuracy": 0.31746031746031744,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "condition",
+      "value": "light",
+      "arm": "r16",
+      "cases": 252,
+      "accuracy": 0.32142857142857145,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "condition",
+      "value": "light",
+      "arm": "random_gate",
+      "cases": 252,
+      "accuracy": 0.32142857142857145,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "condition",
+      "value": "light",
+      "arm": "shuffled",
+      "cases": 252,
+      "accuracy": 0.20634920634920634,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "condition",
+      "value": "light",
+      "arm": "uncertainty_gate",
+      "cases": 252,
+      "accuracy": 0.32142857142857145,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "1",
+      "arm": "always",
+      "cases": 84,
+      "accuracy": 0.6428571428571429,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "1",
+      "arm": "benefit_gate",
+      "cases": 84,
+      "accuracy": 0.6428571428571429,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "1",
+      "arm": "lexical",
+      "cases": 84,
+      "accuracy": 0.6666666666666666,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "depth",
+      "value": "1",
+      "arm": "mass_all",
+      "cases": 84,
+      "accuracy": 0.6785714285714286,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "1",
+      "arm": "native",
+      "cases": 84,
+      "accuracy": 0.6428571428571429,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "depth",
+      "value": "1",
+      "arm": "r16",
+      "cases": 84,
+      "accuracy": 0.6428571428571429,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "1",
+      "arm": "random_gate",
+      "cases": 84,
+      "accuracy": 0.6428571428571429,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "1",
+      "arm": "shuffled",
+      "cases": 84,
+      "accuracy": 0.3333333333333333,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "1",
+      "arm": "uncertainty_gate",
+      "cases": 84,
+      "accuracy": 0.6428571428571429,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "2",
+      "arm": "always",
+      "cases": 84,
+      "accuracy": 0.44047619047619047,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "2",
+      "arm": "benefit_gate",
+      "cases": 84,
+      "accuracy": 0.44047619047619047,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "2",
+      "arm": "lexical",
+      "cases": 84,
+      "accuracy": 0.3333333333333333,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "depth",
+      "value": "2",
+      "arm": "mass_all",
+      "cases": 84,
+      "accuracy": 0.47619047619047616,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "2",
+      "arm": "native",
+      "cases": 84,
+      "accuracy": 0.42857142857142855,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "depth",
+      "value": "2",
+      "arm": "r16",
+      "cases": 84,
+      "accuracy": 0.44047619047619047,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "2",
+      "arm": "random_gate",
+      "cases": 84,
+      "accuracy": 0.44047619047619047,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "2",
+      "arm": "shuffled",
+      "cases": 84,
+      "accuracy": 0.16666666666666666,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "2",
+      "arm": "uncertainty_gate",
+      "cases": 84,
+      "accuracy": 0.44047619047619047,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "3",
+      "arm": "always",
+      "cases": 84,
+      "accuracy": 0.35714285714285715,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "3",
+      "arm": "benefit_gate",
+      "cases": 84,
+      "accuracy": 0.35714285714285715,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "3",
+      "arm": "lexical",
+      "cases": 84,
+      "accuracy": 0.10714285714285714,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "depth",
+      "value": "3",
+      "arm": "mass_all",
+      "cases": 84,
+      "accuracy": 0.38095238095238093,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "3",
+      "arm": "native",
+      "cases": 84,
+      "accuracy": 0.21428571428571427,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "depth",
+      "value": "3",
+      "arm": "r16",
+      "cases": 84,
+      "accuracy": 0.35714285714285715,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "3",
+      "arm": "random_gate",
+      "cases": 84,
+      "accuracy": 0.35714285714285715,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "3",
+      "arm": "shuffled",
+      "cases": 84,
+      "accuracy": 0.21428571428571427,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "3",
+      "arm": "uncertainty_gate",
+      "cases": 84,
+      "accuracy": 0.35714285714285715,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "4",
+      "arm": "always",
+      "cases": 84,
+      "accuracy": 0.23809523809523808,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "4",
+      "arm": "benefit_gate",
+      "cases": 84,
+      "accuracy": 0.23809523809523808,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "4",
+      "arm": "lexical",
+      "cases": 84,
+      "accuracy": 0.047619047619047616,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "depth",
+      "value": "4",
+      "arm": "mass_all",
+      "cases": 84,
+      "accuracy": 0.20238095238095238,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "4",
+      "arm": "native",
+      "cases": 84,
+      "accuracy": 0.15476190476190477,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "depth",
+      "value": "4",
+      "arm": "r16",
+      "cases": 84,
+      "accuracy": 0.23809523809523808,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "4",
+      "arm": "random_gate",
+      "cases": 84,
+      "accuracy": 0.23809523809523808,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "4",
+      "arm": "shuffled",
+      "cases": 84,
+      "accuracy": 0.10714285714285714,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "4",
+      "arm": "uncertainty_gate",
+      "cases": 84,
+      "accuracy": 0.23809523809523808,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "5",
+      "arm": "always",
+      "cases": 84,
+      "accuracy": 0.19047619047619047,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "5",
+      "arm": "benefit_gate",
+      "cases": 84,
+      "accuracy": 0.19047619047619047,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "5",
+      "arm": "lexical",
+      "cases": 84,
+      "accuracy": 0.09523809523809523,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "depth",
+      "value": "5",
+      "arm": "mass_all",
+      "cases": 84,
+      "accuracy": 0.21428571428571427,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "5",
+      "arm": "native",
+      "cases": 84,
+      "accuracy": 0.16666666666666666,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "depth",
+      "value": "5",
+      "arm": "r16",
+      "cases": 84,
+      "accuracy": 0.19047619047619047,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "5",
+      "arm": "random_gate",
+      "cases": 84,
+      "accuracy": 0.19047619047619047,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "5",
+      "arm": "shuffled",
+      "cases": 84,
+      "accuracy": 0.14285714285714285,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "5",
+      "arm": "uncertainty_gate",
+      "cases": 84,
+      "accuracy": 0.19047619047619047,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "6",
+      "arm": "always",
+      "cases": 84,
+      "accuracy": 0.11904761904761904,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "6",
+      "arm": "benefit_gate",
+      "cases": 84,
+      "accuracy": 0.11904761904761904,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "6",
+      "arm": "lexical",
+      "cases": 84,
+      "accuracy": 0.023809523809523808,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "depth",
+      "value": "6",
+      "arm": "mass_all",
+      "cases": 84,
+      "accuracy": 0.13095238095238096,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "6",
+      "arm": "native",
+      "cases": 84,
+      "accuracy": 0.11904761904761904,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "depth",
+      "value": "6",
+      "arm": "r16",
+      "cases": 84,
+      "accuracy": 0.11904761904761904,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "6",
+      "arm": "random_gate",
+      "cases": 84,
+      "accuracy": 0.11904761904761904,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "6",
+      "arm": "shuffled",
+      "cases": 84,
+      "accuracy": 0.13095238095238096,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "depth",
+      "value": "6",
+      "arm": "uncertainty_gate",
+      "cases": 84,
+      "accuracy": 0.11904761904761904,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "family",
+      "value": "dependency",
+      "arm": "always",
+      "cases": 168,
+      "accuracy": 0.2916666666666667,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "family",
+      "value": "dependency",
+      "arm": "benefit_gate",
+      "cases": 168,
+      "accuracy": 0.2916666666666667,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "family",
+      "value": "dependency",
+      "arm": "lexical",
+      "cases": 168,
+      "accuracy": 0.17857142857142858,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "family",
+      "value": "dependency",
+      "arm": "mass_all",
+      "cases": 168,
+      "accuracy": 0.27380952380952384,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "family",
+      "value": "dependency",
+      "arm": "native",
+      "cases": 168,
+      "accuracy": 0.23809523809523808,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "family",
+      "value": "dependency",
+      "arm": "r16",
+      "cases": 168,
+      "accuracy": 0.2916666666666667,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "family",
+      "value": "dependency",
+      "arm": "random_gate",
+      "cases": 168,
+      "accuracy": 0.2916666666666667,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "family",
+      "value": "dependency",
+      "arm": "shuffled",
+      "cases": 168,
+      "accuracy": 0.16666666666666666,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "family",
+      "value": "dependency",
+      "arm": "uncertainty_gate",
+      "cases": 168,
+      "accuracy": 0.2916666666666667,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "family",
+      "value": "original",
+      "arm": "always",
+      "cases": 168,
+      "accuracy": 0.3333333333333333,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "family",
+      "value": "original",
+      "arm": "benefit_gate",
+      "cases": 168,
+      "accuracy": 0.3333333333333333,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "family",
+      "value": "original",
+      "arm": "lexical",
+      "cases": 168,
+      "accuracy": 0.20833333333333334,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "family",
+      "value": "original",
+      "arm": "mass_all",
+      "cases": 168,
+      "accuracy": 0.4166666666666667,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "family",
+      "value": "original",
+      "arm": "native",
+      "cases": 168,
+      "accuracy": 0.3333333333333333,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "family",
+      "value": "original",
+      "arm": "r16",
+      "cases": 168,
+      "accuracy": 0.3333333333333333,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "family",
+      "value": "original",
+      "arm": "random_gate",
+      "cases": 168,
+      "accuracy": 0.3333333333333333,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "family",
+      "value": "original",
+      "arm": "shuffled",
+      "cases": 168,
+      "accuracy": 0.20833333333333334,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "family",
+      "value": "original",
+      "arm": "uncertainty_gate",
+      "cases": 168,
+      "accuracy": 0.3333333333333333,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "family",
+      "value": "paraphrase",
+      "arm": "always",
+      "cases": 168,
+      "accuracy": 0.36904761904761907,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "family",
+      "value": "paraphrase",
+      "arm": "benefit_gate",
+      "cases": 168,
+      "accuracy": 0.36904761904761907,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "family",
+      "value": "paraphrase",
+      "arm": "lexical",
+      "cases": 168,
+      "accuracy": 0.25,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "family",
+      "value": "paraphrase",
+      "arm": "mass_all",
+      "cases": 168,
+      "accuracy": 0.35119047619047616,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "family",
+      "value": "paraphrase",
+      "arm": "native",
+      "cases": 168,
+      "accuracy": 0.2916666666666667,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "family",
+      "value": "paraphrase",
+      "arm": "r16",
+      "cases": 168,
+      "accuracy": 0.36904761904761907,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "family",
+      "value": "paraphrase",
+      "arm": "random_gate",
+      "cases": 168,
+      "accuracy": 0.36904761904761907,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "family",
+      "value": "paraphrase",
+      "arm": "shuffled",
+      "cases": 168,
+      "accuracy": 0.17261904761904762,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "family",
+      "value": "paraphrase",
+      "arm": "uncertainty_gate",
+      "cases": 168,
+      "accuracy": 0.36904761904761907,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "missing",
+      "value": "False",
+      "arm": "always",
+      "cases": 252,
+      "accuracy": 0.6111111111111112,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "missing",
+      "value": "False",
+      "arm": "benefit_gate",
+      "cases": 252,
+      "accuracy": 0.6111111111111112,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "missing",
+      "value": "False",
+      "arm": "lexical",
+      "cases": 252,
+      "accuracy": 0.35714285714285715,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "missing",
+      "value": "False",
+      "arm": "mass_all",
+      "cases": 252,
+      "accuracy": 0.6309523809523809,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "missing",
+      "value": "False",
+      "arm": "native",
+      "cases": 252,
+      "accuracy": 0.503968253968254,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "missing",
+      "value": "False",
+      "arm": "r16",
+      "cases": 252,
+      "accuracy": 0.6111111111111112,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "missing",
+      "value": "False",
+      "arm": "random_gate",
+      "cases": 252,
+      "accuracy": 0.6111111111111112,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "missing",
+      "value": "False",
+      "arm": "shuffled",
+      "cases": 252,
+      "accuracy": 0.3134920634920635,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "missing",
+      "value": "False",
+      "arm": "uncertainty_gate",
+      "cases": 252,
+      "accuracy": 0.6111111111111112,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "missing",
+      "value": "True",
+      "arm": "always",
+      "cases": 252,
+      "accuracy": 0.051587301587301584,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "missing",
+      "value": "True",
+      "arm": "benefit_gate",
+      "cases": 252,
+      "accuracy": 0.051587301587301584,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "missing",
+      "value": "True",
+      "arm": "lexical",
+      "cases": 252,
+      "accuracy": 0.06746031746031746,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "missing",
+      "value": "True",
+      "arm": "mass_all",
+      "cases": 252,
+      "accuracy": 0.06349206349206349,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "missing",
+      "value": "True",
+      "arm": "native",
+      "cases": 252,
+      "accuracy": 0.07142857142857142,
+      "call_fraction": 0.0
+    },
+    {
+      "field": "missing",
+      "value": "True",
+      "arm": "r16",
+      "cases": 252,
+      "accuracy": 0.051587301587301584,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "missing",
+      "value": "True",
+      "arm": "random_gate",
+      "cases": 252,
+      "accuracy": 0.051587301587301584,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "missing",
+      "value": "True",
+      "arm": "shuffled",
+      "cases": 252,
+      "accuracy": 0.051587301587301584,
+      "call_fraction": 1.0
+    },
+    {
+      "field": "missing",
+      "value": "True",
+      "arm": "uncertainty_gate",
+      "cases": 252,
+      "accuracy": 0.051587301587301584,
+      "call_fraction": 1.0
+    }
+  ],
+  "examples": [
+    {
+      "category": "Authored: guidance fixes native",
+      "case_id": "r17/test/0000/gadugina/heavy"
+    },
+    {
+      "category": "Authored: guidance harms native",
+      "case_id": "r17/test/0001/nebalapi/light"
+    },
+    {
+      "category": "Authored: gate skips and avoids harm",
+      "case_id": null
+    },
+    {
+      "category": "Authored: gate skips and misses a fix",
+      "case_id": null
+    },
+    {
+      "category": "Hotpot: guidance improves strict EM",
+      "case_id": "r17/hotpot/5a7252db5542990c210a4104"
+    },
+    {
+      "category": "Hotpot: guidance harms strict EM",
+      "case_id": "r17/hotpot/5a721b9055429971e9dc9277"
+    },
+    {
+      "category": "Authored: correct natural abstention",
+      "case_id": "r17/test/0006/relomusu/heavy"
+    },
+    {
+      "category": "Authored: incorrect positive on missing evidence",
+      "case_id": "r17/test/0007/coluditu/heavy"
+    }
+  ]
+}
