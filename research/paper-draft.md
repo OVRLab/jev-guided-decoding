@@ -598,6 +598,61 @@ not an invoice. Every temporary resource was deleted after byte-verified retriev
 The [complete report](../reports/2026-09-22-adaptive-attention/README.md) publishes
 all traces, analyses, figures, cost assumptions, failed admission and reproduction.
 
+### 7.6 R17: selective dispatch, timing and evidence-mass conservation
+
+The [R17 protocol](selective-attention-plan.md) tests a fresh full-vocabulary cohort
+with the R16 open-explicit instruction, no answer menu and no mandated UNKNOWN
+spelling. There are 156 development inputs (108 authored worlds plus 48 Hotpot
+questions) and 704 test inputs (252 authored worlds in two contexts plus 200 Hotpot
+questions). Development balances three relation wordings, depths 1–6 and missing
+versus answerable cases. All 254 external questions including six mechanical
+fixtures are disjoint from R16 and retain ten complete evidence paragraphs under
+a 3,072-input-token ceiling. Selection uses length/source count, not gold support.
+
+The finite grid combines additive versus evidence-mass-preserving steering,
+all-token versus prefill-only versus eight-token fade envelopes, and strengths
+ln(16) versus 5. Eleven existing heads and relevance threshold >0.65 remain fixed.
+The conserving operation subtracts a log-partition correction on all evidence
+keys after applying relevance bias. For current Q/K in a controlled head/query,
+it preserves total evidence attention and every outside-evidence probability;
+earlier interventions can still change downstream representations. The
+[derivation](selective-attention-math.md) explains this local constraint.
+
+A conditional controller first generates a buffered native pilot of at most eight
+tokens. A skipped call continues the same tokens/cache; a call discards that pilot
+and performs fresh guided inference. A provider error continues the native path
+with an explicit failed receipt. A development-fitted threshold uses probability,
+entropy or lexical source overlap to estimate benefit under a quality-minus-call
+objective. No final answer or reference is supplied to Jev. Granite chooses all
+final tokens from its full vocabulary, and no weights are changed.
+
+At the time of this method entry, all 2,028 development outcomes are complete and
+the 6,336-outcome held-out schedule is running. Development selects additive,
+all-token strength 5, identical to the fixed R16 policy. Both quality-first gates
+select always-calling behavior (one through a logically universal overlap
+threshold), and the random gate consequently has probability one. This is a
+selection result, not evidence of successful conditional call savings. The frozen
+schedule retains all arms to verify provenance and measure actual overhead.
+
+Four primary comparisons use individual 98.75% paired world/question bootstrap
+intervals: selected guidance minus native, and the benefit gate minus selected
+always guidance, separately for authored accuracy and Hotpot F1. The latter use
+a predeclared three-point noninferiority margin. A degenerate always gate can be
+identical in quality without showing any useful selective routing.
+
+Two separately registered offline analyses compare routing with expected random
+assignment at the observed call count and reconstruct three development-frozen
+request-budget policies. The latter was registered after development selection,
+while held-out inference was running and before aggregate test inspection. It
+selects thresholds under 25/50/75% development call ceilings; actual test fractions
+can differ. Branch replay reconstructs quality and work, not live latency or actual
+API savings. Complete results, examples, audit and cost will be added after the
+run finishes; no held-out quality result is claimed in this method entry.
+
+The [one-prefill boundary design](selective-attention-next-design.md) is a separate,
+unimplemented hypothesis intended to remove pilot/restart work. It does not
+change R17 or constitute measured architecture evidence.
+
 ## 8. Limitations and threats to validity
 
 - R16 selects its policy on constrained authored tasks and transfers it without
