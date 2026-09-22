@@ -20,8 +20,8 @@ verified retrieval. New estimated cost is **$3.77**, cumulative **$27.23/$50**
 before tax/separate network. This is research-branch evidence, with mixed external
 quality, not a generally improved checkpoint or a serving-throughput benchmark.
 
-Next hypotheses are better external treatment-benefit prediction and evidence
-sufficiency, with fresh held-out data; these are not yet executed follow-ups.
+Current follow-up: [R19 expected benefit and evidence sufficiency](research/benefit-sufficiency-plan.md).
+Implementation is under validation; no new quality evidence is claimed before the fresh study.
 
 Previous completed work: [R17 selective attention](reports/2026-09-22-selective-attention/README.md).
 
