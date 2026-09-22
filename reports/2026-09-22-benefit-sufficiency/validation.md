@@ -35,3 +35,22 @@ an additional regression confirms the production deadline still rejects the exac
 limit. Asyncio and model-runtime clocks, scientific source hashes, experiment
 limits, prompts, datasets, policies and graders are unchanged. This is a test
 portability correction, not a quality-driven protocol amendment.
+
+## Supplemental disk-round-trip correction
+
+The original supplement stopped before generation on its first job: direct Python
+equality rejected tuples in runtime `character_ranges` against their JSON list
+representation. Re-encoding all 608 test prompts found zero serialized content
+differences. The earlier control tests exercised permutation, receipts and the
+token runtime, but missed this disk-join boundary.
+
+The [explicit amendment](../../research/sufficiency-controls-canonicalization.md)
+preserves v1 source and failed artifacts and registers a separate v2 runner. The
+only generation-path change normalizes the live encoding through its original
+JSON representation before comparison. A new test first failed because v2 was
+absent; it now accepts the round trip and rejects changed IDs, prompt text,
+character boundaries and digests. All 449 tests pass locally in 7.26 seconds.
+The main 53 source hashes and original 55 supplemental hashes remain unchanged.
+The corrected supplement and final audits are pending; no main inference or paid
+request is repeated. The initial server was deleted automatically after verified
+retrieval, so the unchanged controls require one bounded replacement L40S.

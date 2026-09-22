@@ -30,3 +30,6 @@ and differences from a hypothesis are findings, not reasons to hide a run.
 When joining generated outputs to an oracle, verify the recorded question and
 source evidence as well as the case ID. A reused ID can otherwise attach a valid
 label to a different problem. Keep missing planned runs in the denominator.
+When a runner joins live encodings to persisted artifacts, test the actual JSON
+round trip as well as content tampering; equivalent tuple/list representations
+must not fail binding checks, and normalization must not accept changed tokens.

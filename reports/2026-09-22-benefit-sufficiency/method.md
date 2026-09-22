@@ -37,6 +37,9 @@ Layer numbers are zero based. The exact eleven heads are inherited from R18:
 (19,6), (19,11), (19,15), (20,11), (21,14), (23,8), (29,10), (30,4), (34,4),
 (37,14), (38,11). Layer 19 is the first existing treatment layer, not a newly
 established optimal insertion point. No bias is applied to earlier layers.
+These heads were inherited from source-attention studies, not independently
+selected as instruction-following heads. A positive or negative instruction
+result applies to this finite mechanism and strength search.
 
 The local controller observes one last-prompt-query attention row before any
 intervention. Its six inputs are evidence mass, source entropy, head disagreement,
@@ -84,6 +87,8 @@ same joint receipt. Sufficiency-only emphasizes the abstention instruction only
 when evidence is judged insufficient. Dual-always combines both branches. Three
 conditional arms apply that same frozen dual treatment: expected benefit, random,
 and the unchanged R18 threshold. Native makes no provider request.
+Native uses the same instrumented serial runtime and prompt contract; its timings
+are not a benchmark of optimized default Granite serving.
 
 The learned gate executes first per question; these calls are actual physical
 attempts. Other controls reuse exact receipts, so their standalone call counts
@@ -139,6 +144,9 @@ family level. Finite-sample percentile bootstrap coverage is approximate. Ordina
 95% secondary and supplemental intervals remain exploratory, and descriptive
 answerability groups do not introduce new significance tests. Different domain
 metrics are not pooled into a headline accuracy score.
+The main adjustment covers R19's six registered comparisons, not all questions
+asked across the project's successive experiments. Earlier positive, negative and
+interrupted studies remain part of the published record.
 
 ## Relationship to prior work
 
@@ -151,3 +159,8 @@ to guide decoding. Our experiment investigates the particular combination of
 benefit prediction, external sufficiency, and internal instruction/source steering
 within one prefill. It does not establish historical priority or superiority over
 those methods; they are not reproduced comparison arms here.
+
+The [R19 source comparison](../../research/benefit-sufficiency-related-work.md)
+also covers RouteLLM's learned quality/cost routing. Predicting comparative
+usefulness is an established idea; the question here is the effectiveness of
+this particular internal intervention and dispatch mechanism.

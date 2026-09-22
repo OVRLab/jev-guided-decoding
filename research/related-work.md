@@ -72,6 +72,10 @@ pin. The scholarly links above give the version/venue reviewed where applicable.
 
 ## Plausible contribution, still to be established
 
+The [R19 targeted comparison](benefit-sufficiency-related-work.md), added on
+2026-09-22, separates learned benefit routing, evidence sufficiency and internal
+attention steering, including RouteLLM's relative-quality routing formulation.
+
 A transparent negative result and a carefully controlled study of a hosted typed
 critic steering a small frozen generator could be useful. The candidate contribution
 is the measured boundary between judge capability, candidate availability,

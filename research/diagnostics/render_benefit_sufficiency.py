@@ -113,7 +113,45 @@ def main():
         fontsize=13,
     )
     save(fig, "answerability")
-    print(json.dumps({"figures": 3, "formats": ["png", "svg", "pdf"]}))
+
+    fig, axes = plt.subplots(1, 2, figsize=(12.5, 4.5), layout="constrained")
+    for ax, key, title, color in zip(
+        axes,
+        ("sufficiency", "routing"),
+        ("Dual minus relevance", "Benefit routing above matched random"),
+        ("#059669", "#7c3aed"),
+        strict=True,
+    ):
+        endpoints = [0.0]
+        for y, (domain, _) in enumerate(domains):
+            estimate = data["domains"][domain]["primary"][key]
+            low, high = (100 * v for v in estimate["interval"])
+            point = 100 * estimate["difference"]
+            ax.hlines(y, low, high, color=color, linewidth=2.5)
+            ax.plot(point, y, "o", color=color)
+            ax.text(
+                point,
+                y + 0.22,
+                f"{point:+.2f} [{low:+.2f}, {high:+.2f}]",
+                ha="center",
+                fontsize=9,
+            )
+            endpoints.extend((low, high, point))
+        padding = max(1, (max(endpoints) - min(endpoints)) * 0.25)
+        ax.set_xlim(min(endpoints) - padding, max(endpoints) + padding)
+        ax.set_ylim(-0.5, 2.6)
+        ax.set_yticks(range(3), ["Authored", "HotpotQA", "SQuAD2"])
+        ax.invert_yaxis()
+        ax.axvline(0, color="#64748b", linewidth=1, linestyle="--")
+        ax.set_title(title)
+        ax.set_xlabel("Difference in percentage points of each domain's metric")
+    fig.suptitle(
+        "R19 • Six prespecified primary comparisons\n"
+        "Individual 99.1667% cluster-bootstrap intervals; nominal 95% family level",
+        fontsize=13,
+    )
+    save(fig, "primary-effects")
+    print(json.dumps({"figures": 4, "formats": ["png", "svg", "pdf"]}))
 
 
 if __name__ == "__main__":

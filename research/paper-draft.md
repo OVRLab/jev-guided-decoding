@@ -45,7 +45,8 @@ answerer. A formal distinction between generator and judge is part of the method
 The system uses original IBM Granite 4.0 1B, pinned revision
 `6a7381ba1f54d684ff508d991aeb7dc580157103`, and hosted Jev `jev-1.13.0`.
 Despite a hybrid-family implementation name, the configuration contains 40
-attention layers and no experts. No model weights were trained or changed.
+attention layers and no experts. Granite and Jev weights were not trained or
+changed. R19 fits a separate small regression controller from development outcomes.
 See [architecture audit](architecture-reassessment.md) for exact source evidence.
 
 ## 2. Related work
@@ -62,6 +63,9 @@ attention-based monitoring and conditional assistance with Lookback Lens, RAUQ,
 SeaKR, CtrlA and DSSP-RAG. None is an implemented baseline in this study. Complete
 remaining method comparisons and empirical controls before making a novelty or
 superiority claim. None of their reported gains is a result of this project.
+The [R19 comparison](benefit-sufficiency-related-work.md) adds RouteLLM's learned
+relative-quality routing and separates that established principle from R19's
+specific callback and source/instruction attention mechanism.
 
 ## 3. Development history and correction
 
