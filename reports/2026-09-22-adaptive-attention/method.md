@@ -34,6 +34,10 @@ R15's fixed head identities. Development can set a head's strength to zero, disa
 an entire selected layer group, or give heads different strengths. Bias is applied
 at query positions after the evidence block, toward key tokens belonging to
 relevant sources. The all-equal relevance convention remains no intervention.
+Zero strength removes only the extra steering bias: the original attention head
+continues operating. All of Granite's heads and layers remain present. References
+to head/layer deletion in the policy search mean deletion from the steering set,
+not removal or zeroing of the model's attention computation.
 All original evidence stays in the prompt. This is source reweighting, not a new
 attention layer, neural fusion, a trained adapter or a modified checkpoint.
 
