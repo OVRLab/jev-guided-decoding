@@ -156,3 +156,23 @@ records. The primary test has 14,392 complete outputs and eight failed dependent
 outputs; challenge has 2,880 complete outputs. Development retains ninety failed
 policy outputs for its single failed scorer context. All 1,465 saved zero/native
 label-token pairs match and twelve persisted full-vocabulary comparisons pass.
+
+
+## R16 — adaptive attention and relaxed answer contracts (registered 2026-09-22)
+
+Prospective [full protocol](adaptive-attention-protocol.md). The owner authorized
+head-specific tuning, dynamic relevance refresh, external transfer and removal of
+fixed answer choices. Implementation lives in
+`research/iterations/adaptive_attention/`; prior source/data/results are unchanged.
+Status: implementation and offline checks complete; cloud inference pending.
+The finite matrix has 16,120 evaluation jobs plus development, using 300 new
+synthetic worlds, two transfer renderings and 200 HotpotQA questions. Policy is
+selected only on 96 fresh development worlds, then frozen. Full-vocabulary panels
+require neither UNKNOWN nor another special uncertainty token.
+
+Test-first logs initially recorded 13 missing-module failures; later capability
+tests caught the pinned Granite empty-cache length issue, now fixed by correct
+zero-length attention tensors. The full local suite passes 374 tests. The
+independent audit reconstructs token provenance, scores, masks, selection and
+grades; no live results or quality claims exist yet. All future results, including
+failed/interrupted runs, will be added in a separate report.

@@ -5,6 +5,11 @@ Granite inference. It includes negative results, corrections, new analyses, and
 proposed experiments. It is a basis for a paper, not a claim of a successful model
 release. All dates below are report dates; source artifacts retain execution times.
 
+**New work:** [R16 adaptive/free-text protocol](adaptive-attention-protocol.md) is
+registered; implementation and 374 offline tests pass, cloud inference is pending.
+It preserves the R15 result below while testing head-specific strengths, refreshed
+guidance and independent HotpotQA transfer.
+
 **Current conclusion:** [R15 refined evidence attention](../reports/2026-09-22-evidence-attention-refinement/README.md)
 R15's fresh 600-world comparison scores **38.08% native Granite**, **47.33%
 previous Jev attention**, and **68.42% refined Jev attention**. The paired primary

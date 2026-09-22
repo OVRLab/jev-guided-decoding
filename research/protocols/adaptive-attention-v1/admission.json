@@ -1,0 +1,662 @@
+[
+  {
+    "id": "hotpot/5ae6443355429908198fa563",
+    "world_id": "hotpot/5ae6443355429908198fa563",
+    "upstream_id": "5ae6443355429908198fa563",
+    "family": "hotpot",
+    "question": "Which king of Northumbria, who possibly became king while a still a child, attempted to have Eardwulf of Northumbria assassinated?",
+    "sources": [
+      {
+        "id": "D01",
+        "text": "Southumbrians: The Southumbrians or 'Su\u00f0anhymbre' were the Anglo-Saxon people occupying northern Mercia. The term might not have been used by the Mercians, and instead possibly coined by the Deiran or Bernician people as a territorial response to their own Kingdom of Northumbria. The \"Anglo-Saxon Chronicle\" refers to King Coenred as having become the King of the Southumbrians in 702, two years before he became King of all the Mercians. The fact that Coenred was the son of Wulfhere, the Mercian King, implies that Southumbria was a sub-kingdom of Mercia."
+      },
+      {
+        "id": "D02",
+        "text": "\u00c6thelred I of Northumbria: \u00c6thelred ( ; c. 762  \u2013 18 April 796), was the king of Northumbria from 774 to 779 and again from 790 until he was murdered in 796. He was the son of \u00c6thelwald Moll and \u00c6thelthryth and possibly became king while still a child after Alhred was deposed."
+      },
+      {
+        "id": "D03",
+        "text": "Alkmund of Derby: Alkmund of Derby (or of Lilleshall), also spelt Ealhmund, Alhmund, Alcmund, or Alchmund (d. c. 800) was a son of Alhred of Northumbria. After more than twenty years in exile as a result of Northumbrian dynastic struggles, he returned with an army. He was killed in about 800, for which King Eardwulf of Northumbria was held responsible. Whatever the exact circumstances, his death was regarded as a martyrdom, and Alkmund as a saint."
+      },
+      {
+        "id": "D04",
+        "text": "\u00c6lfwald II of Northumbria: \u00c6lfwald, according to one tradition, reigned as king of Northumbria following the deposition of Eardwulf in 806. This information appears only in the anonymous tract \"De primo Saxonum adventu\" and in the later \"Flores Historiarum\" of Roger of Wendover. Roger states that \u00c6lfwald had overthrown Eardwulf."
+      },
+      {
+        "id": "D05",
+        "text": "Eanfl\u00e6d: Eanfl\u00e6d (19 April 626 \u2013 after 685, also known as Enfleda) was a Deiran princess, queen of Northumbria and later, the abbess of an influential Christian monastery in Whitby, England. She was the daughter of King Edwin of Northumbria and \u00c6thelburg, who in turn was the daughter of King \u00c6thelberht of Kent. In or shortly after 642 Eanfl\u00e6d became the second wife of King Oswiu of Northumbria. After Oswiu's death in 670, she retired to Whitby Abbey, which had been founded by Hilda of Whitby. Eanfl\u00e6d became the abbess around 680 and remained there until her death. The monastery had strong association with members of the Northumbrian royal family and played an important role in the establishment of Roman Christianity in England."
+      },
+      {
+        "id": "D06",
+        "text": "Earl of Northumbria: Earl of Northumbria was a title in the Anglo-Danish, late Anglo-Saxon, and early Anglo-Norman period in England. The earldom of Northumbria was the successor of the earldom of Bamburgh. In the seventh century, the Anglo-Saxon kingdoms of Bernicia and Deira were united in the kingdom of Northumbria, but this was destroyed by the Vikings in 867. Southern Northumbria, the former Deira, then became the Viking kingdom of York, while English earls ruled the former northern kingdom of Bernicia from their base at Bamburgh. The northern part of Bernicia was lost to the Scots, probably in the late tenth century. In 1006 Uhtred the Bold was earl of Bamburgh, and \u00c6thelred the Unready appointed him earl of York as well, re-uniting the area of Northumbria still under English control into a single earldom. Uhtred was murdered in 1016, and Cnut then appointed Eric of Hlathir earl of Northumbria at York, but Uhtred's dynasty held onto Bernicia until 1041, when the earldom was again united. A descendant of Uhtred, Gospatric, was appointed earl by William the Conqueror in 1067, but William expelled him in 1072. Gospatric was then given lands in Scotland, and his descendants became earls of Dunbar. The earldom of Northumbria was broken up in the early Norman period and dissolved into the earldoms of York and Northumberland, with much land going to the prince-bishopric of Durham."
+      },
+      {
+        "id": "D07",
+        "text": "Eardwulf of Northumbria: Eardwulf (fl. 790 \u2013 c. 830) was king of Northumbria from 796 to 806, when he was deposed and went into exile. He may have had a second reign from 808 until perhaps 811 or 830. Northumbria in the last years of the eighth century was the scene of dynastic strife between several noble families: in 790, the then-king \u00c6thelred I attempted to have Eardwulf assassinated. Eardwulf's survival may have been viewed as a sign of divine favour. A group of nobles conspired to assassinate \u00c6thelred in April 796 and he was succeeded by Osbald: Osbald's reign lasted only twenty-seven days before he was deposed and Eardwulf became king on 14 May 796."
+      },
+      {
+        "id": "D08",
+        "text": "Eadred Lulisc: Eadred Lulisc or Eadred of Carlisle (fl. late 9th century) is the abbot of Carlisle recorded by the \"Historia de Sancto Cuthberto\". The \"Historia\" gives the abbot central place in the election of Guthred as king of Northumbria by the Viking army based in Yorkshire, and that subsequently Eadred purchased land from him, using it to endow the bishopric of St Cuthbert. The \"Historia\" also related that he and Eardwulf, Bishop of Lindisfarne, moved the body of St Cuthbert away from its previous base at Lindisfarne, tried to take it to Ireland, but failed and took it back to the east, first to Crayke and then to Chester-le-Street."
+      },
+      {
+        "id": "D09",
+        "text": "Edmund \u00c6theling: Edmund \u00c6theling ( ; \u20091015\u201317 \u2013 possibly 1046, certainly by 1054) was a member of the royal House of Wessex as the son of Edmund Ironside, who briefly ruled as King of England between April and November 1016. He fought the Danish Vikings under Cnut the Great, but following the Danish victory at the Battle of Assandun in October, it was agreed that Ironside would rule Wessex, while Cnut took Mercia and probably Northumbria. In November 1016, Ironside died and Cnut became King of all England."
+      },
+      {
+        "id": "D10",
+        "text": "Coenwulf of Mercia: Coenwulf (also spelled Cenwulf, Kenulf, or Kenwulph) was King of Mercia from December 796 until his death in 821. He was a descendant of a sibling of King Penda, who had ruled Mercia in the middle of the 7th century. He succeeded Ecgfrith, the son of Offa; Ecgfrith only reigned for five months, and Coenwulf ascended to the throne in the same year that Offa died. In the early years of Coenwulf's reign he had to deal with a revolt in Kent, which had been under Offa's control. Eadberht Pr\u00e6n returned from exile in Francia to claim the Kentish throne, and Coenwulf was forced to wait for papal support before he could intervene. When Pope Leo agreed to anathematize Eadberht, Coenwulf invaded and retook the kingdom; Eadberht was taken prisoner, was blinded, and had his hands cut off. Coenwulf also appears to have lost control of the kingdom of East Anglia during the early part of his reign, as an independent coinage appears under King Eadwald. Coenwulf's coinage reappears in 805, indicating that the kingdom was again under Mercian control. Several campaigns of Coenwulf's against the Welsh are recorded, but only one conflict with Northumbria, in 801, though it is likely that Coenwulf continued to support the opponents of the Northumbrian king Eardwulf."
+      }
+    ],
+    "reference": "\u00c6thelred I",
+    "depth": 2,
+    "missing": false,
+    "condition": "distractor",
+    "split": "external",
+    "question_type": "bridge"
+  },
+  {
+    "id": "hotpot/5abd5a135542992ac4f3829f",
+    "world_id": "hotpot/5abd5a135542992ac4f3829f",
+    "upstream_id": "5abd5a135542992ac4f3829f",
+    "family": "hotpot",
+    "question": "Are the Sleepers located north or south of the Kancamagus Highway?",
+    "sources": [
+      {
+        "id": "D01",
+        "text": "White Mountain Trail: The White Mountain Trail is a National Scenic Byway in the U.S. state of New Hampshire. It travels through the heart of the White Mountains crossing three major mountain passes. The Trail includes sections of US\u00a03 and US\u00a0302, between Lincoln and Conway, connecting at both ends with the Kancamagus Highway (part of NH\u00a0112). It also includes a branch which travels south from Bartlett to the Kancamagus over Bear Notch. The byway is primarily in the White Mountain National Forest but also traverses Franconia Notch State Park and Crawford Notch State Park. The White Mountain Trail was designated on June 9, 1998 and is approximately 100 mi long. Despite the name, it is a scenic byway accessible by car and not a hiking trail."
+      },
+      {
+        "id": "D02",
+        "text": "The Sleepers (New Hampshire): The Sleepers are two mountain peaks located in Grafton County, New Hampshire, part of the Sandwich Range of the White Mountains. The Sleepers are flanked to the northwest by Mount Tripyramid, to the northeast by Mount Passaconaway, and to the southeast by Mount Whiteface."
+      },
+      {
+        "id": "D03",
+        "text": "Nordic Seas: The Nordic Seas are located north of Iceland and south of Svalbard. They have also been defined as the region located north of the Greenland-Scotland Ridge and south of the Fram Strait-Spitsbergen-Norway intersection. Known to connect the North Pacific and the North Atlantic waters, this region is also known as having some of the densest waters, creating the densest region found in the North Atlantic Deep Water. The deepest waters of the Arctic Ocean are connected to the worlds other oceans through Nordic Seas and Fram Straight. There are three seas within the Nordic Sea: Greenland Sea, Norwegian Sea, and Iceland Sea. The Nordic Seas only make up about 0.75% of the World\u2019s Oceans. This region is known as having diverse features in such a small topographic area, such as the mid oceanic ridge systems. Some locations have shallow shelves, while others have deep slopes and basins. This region, because of the atmosphere-ocean transfer of energy and gases, has varying seasonal climate. During the winter, sea ice is formed in the western and northern regions of the Nordic Seas, whereas during the summer months, the majority of the region remains free of ice."
+      },
+      {
+        "id": "D04",
+        "text": "Famoso Raceway: The Famoso Raceway dragstrip is located north of Bakersfield, California, and is known historically as the home to the annual March Meet, also known as the U.S. Fuel and Gas Championships. The strip, located on Famoso Road between Highway 99 and Highway 65 east of the Highway 99 and Highway 46 interchange, was originally built in World War II as an auxiliary training base for the nearby Army Air Corps training base at Shafter's Minter Field. After World War II, the Army abandoned the field. It was in the 1950s that an aspiring group of drag racing pioneers from the Bakersfield area, the Bakersfield Smokers, purchased the strip and made the necessary adjustments to allow for drag racing. The Famoso Raceway hosted the first ever March Meet in 1959 and it helped establish the fledgling National Hot Rod Association's (NHRA) legitimacy."
+      },
+      {
+        "id": "D05",
+        "text": "Swift River (Bearcamp River): The Swift River is an 8.3 mi river located in eastern New Hampshire in the United States. It is a tributary of the Bearcamp River, part of the Ossipee Lake / Saco River watershed leading to the Atlantic Ocean. The Swift River is located only four miles south of the larger and longer Swift River which parallels the Kancamagus Highway in the White Mountain National Forest."
+      },
+      {
+        "id": "D06",
+        "text": "Nebraska Highway 52: Nebraska Highway 52 is a highway in central Nebraska. It is 25.89 mi in length and runs at a southeast-to-northwest angle, though signed north\u2013south. The south terminus is at an intersection with Nebraska Highway 14 north of Fullerton. The northern terminus is located north of Primrose at an intersection with Nebraska Highway 91."
+      },
+      {
+        "id": "D07",
+        "text": "Russell-Colbath House: The Russell/Colbath House is a historic house on the Kancamagus Highway in Albany, New Hampshire. It is located in the White Mountain National Forest, and is operated as a museum by the United States Forest Service. Built about 1831, it is the only surviving early homestead in the Swift River valley. It was listed on the National Register of Historic Places in 1987."
+      },
+      {
+        "id": "D08",
+        "text": "Sandwich Range: The Sandwich Range is located in the White Mountains of New Hampshire in the United States, north of the Lakes Region and south of the Kancamagus Highway. Although the range is not outstanding for its elevation, it is very rugged and has excellent views of the surrounding lakes, mountains, and forests."
+      },
+      {
+        "id": "D09",
+        "text": "Eatonville, Toronto: Eatonville is a neighbourhood in Toronto, Ontario, Canada. It is located west of the central core in the former suburb of Etobicoke. Eatonville is bisected by Highway 427, with the community generally located north of Dundas Street West and south of Rathburn Road. Eatonville consists mainly of low density residential homes (constructed primarily in the 1950s east of Highway 427, and in the 1960s and 1970s west of Highway 427). The main arterial roads in the community, such as The West Mall, The East Mall and Burnhamthorpe Road, contain a mix of rental and condominium high-rise apartments and townhouses. There are two shopping malls in the neighbourhood, Cloverdale Mall and Honeydale Mall, and community retail areas along Bloor Street West and Dundas Street West."
+      },
+      {
+        "id": "D10",
+        "text": "Rice Ridge Fire: The Rice Ridge Fire is a wildfire burning northeast of Seeley Lake in the Lolo National Forest in Montana in the United States. The fire, which was started by a lightning strike on July 24, 2017, became a megafire on September 3, growing from 40000 acre to over 100000 acre , at which time it became the national #1 wildfire priority as of early September, 2017. It was caused by lightning on July 24. Located north and east of Seeley Lake, Montana, over 700 firefighting personnel were assigned to the blaze, primarily active in a mountainous lodgepole and mixed conifer forest. The fire had burned 155900 acre and at one point threatened over 1,000 homes in Powell County and Missoula County including the town of Seeley Lake, Montana and ares north of Highway 200, east of Highway 83. Evacuation orders included parts of Powell County north of Montana Highway 200<ref name=\"9/5 evac\"> </ref> areas east of Montana Highway 83, and evacuation warnings for other sections of the forest within Missoula County.<ref name=\"evac9/3\"> </ref>"
+      }
+    ],
+    "reference": "south",
+    "depth": 2,
+    "missing": false,
+    "condition": "distractor",
+    "split": "external",
+    "question_type": "bridge"
+  },
+  {
+    "id": "hotpot/5ac02b325542992a796decb9",
+    "world_id": "hotpot/5ac02b325542992a796decb9",
+    "upstream_id": "5ac02b325542992a796decb9",
+    "family": "hotpot",
+    "question": "How tall was one of Drew Barry's brothers? ",
+    "sources": [
+      {
+        "id": "D01",
+        "text": "Tall Brothers: The Tall Brothers were four brothers among the Egyptian monks of Nitria in the fifth century by the names of Ammonius, Dioscorus, Eusebius, and Euthymius. They were referred to as the \"Tall Brothers\" because they were tall in stature and demanding in appearance."
+      },
+      {
+        "id": "D02",
+        "text": "Drew Scott: Drew Scott (born Andrew Alfred Scott; April 28, 1978) is a Canadian actor, realtor, and entrepreneur best known as the co-host (along with his identical twin brother Jonathan), on the TV series \"Property Brothers\". The home renovation program, which is produced by Cineflix Media, features Drew as the realtor and Jonathan as the contractor. The success of the show has led to several spinoffs, including \"Buying and Selling\", \"Brother vs. Brother\", and \"Property Brothers: at Home\". Scott (along with his two brothers) is also a co-founder of Scott Brothers Entertainment, which creates and produces TV shows, films, and digital content. Additionally, the twins have launched the lifestyle brand Scott Living and its subsidiary, Dream Homes."
+      },
+      {
+        "id": "D03",
+        "text": "The Cowsills: The Cowsills are an American singing group from Newport, Rhode Island. They specialized in harmonies and the ability to sing and play music at an early age. The band was formed in the spring of 1965 by brothers Bill, Bob, and Barry Cowsill; they shortly thereafter added their brother John. Originally Bill and Bob played guitar and Barry was on drums. When John learned how to play drums and joined the band, Barry went to bass. After their initial success, the brothers were joined by their siblings Susan and Paul and their mother Barbara. Bob's twin brother Richard was never the road manager, although this misinformation appears in several places on the internet. The band's road manager was Richard 'Biggie' Korn. When the group expanded to its full family membership by 1967, the six siblings ranged in age from 8 to 19. Joined by their mother, Barbara Cowsill (n\u00e9e Russell), the group was the inspiration for the 1970s television show \"The Partridge Family\"."
+      },
+      {
+        "id": "D04",
+        "text": "Homer Drew: Homer Walter Drew, Jr. (born September 29, 1944) is an American athletic administrator and former college basketball coach who is associate athletic director at Valparaiso University. Drew was the head coach of the Valparaiso Crusaders men's basketball team from 1988 to 2002 and 2003 to 2011. His younger son, Bryce Drew, succeeded him as the head coach in May 2011. His elder son Scott Drew is the head coach of Baylor University's men's basketball team after having served nine years assisting under Homer and one year as head coach of Valparaiso. Homer Drew is best known for leading Valparaiso's improbable run in the 1998 NCAA Men's Division I Basketball Tournament."
+      },
+      {
+        "id": "D05",
+        "text": "Brent Barry: Brent Robert Barry (born December 31, 1971) is an American retired professional basketball player. He is the son of former NBA player Rick Barry. The 6 ft , 210 lb shooting guard played professionally in the National Basketball Association, winning two championships with the San Antonio Spurs. He also won the 1996 NBA Slam Dunk Contest."
+      },
+      {
+        "id": "D06",
+        "text": "Chuckle Brothers: Barry David Elliott (born 24 December 1944) and Paul Harman Elliott (born 18 October 1947) are English children's entertainers, better known as Barry Chuckle and Paul Chuckle as the double-act the Chuckle Brothers. They are known for their work on their BBC show \"ChuckleVision\", which celebrated its 21st series in 2010 with a stage tour titled \"An Audience with the Chuckle Brothers.\" The comedy of the Chuckle Brothers usually derives from slapstick and other visual gags, and their catchphrases include \"To me, to you\" and \"Oh dear, oh dear\"."
+      },
+      {
+        "id": "D07",
+        "text": "Brendan Drew: Brendan Gerrard Drew (born 16 December 1983, Lismore, New South Wales) is an Australian cricketer, who played domestic cricket for the Tasmanian Tigers. When not on Tasmanian duty, Drew played Tasmanian club cricket for the Lindisfarne Cricket Club. A tall bowler who generates a lot of pace and bounce, Drew arrived in Tasmania mid-season in 2005 to fill in for a bowling attack struck by injury. He had a solid 2006 season, taking 20 Pura Cup wickets at 31.60 in six matches, and was 12th man in the Tasmania's historic first ever Pura Cup win in 2006/07. Drew later moved to Victoria and played premier cricket for Camberwell, and won the Jack Ryder Medal as Premier Cricket's best player in 2016/17."
+      },
+      {
+        "id": "D08",
+        "text": "Property Brothers: Property Brothers is a Canadian reality television series produced by Cineflix, and is the original show in the \"Property Brothers\" franchise. It airs on W Network in Canada and HGTV in the United States. The series features identical twin brothers Jonathan and Drew Scott. Drew is a real estate expert who scouts neglected houses and negotiates their purchases. His brother, Jonathan, is a licensed contractor who renovates houses. Together, the Property Brothers help families find, buy, and transform fixer-uppers into dream homes on a strict timeline and budget."
+      },
+      {
+        "id": "D09",
+        "text": "Drew Barry: Drew William Barry (born February 17, 1973) is an American retired professional basketball player. He is the son of Basketball Hall of Famer Rick Barry and has three brothers: Scooter, Jon and Brent, who also share his profession. His grandfather Bruce Hale also played in the NBA and was Rick's college coach at Miami of Florida. His stepmother is Lynn Barry."
+      },
+      {
+        "id": "D10",
+        "text": "Tip of My Tongue (Lynsey de Paul song): \"Tip of My Tongue\" is a song written by Lynsey de Paul and Barry Blue (originally registered as \"On the Tip of My Tongue\"). It was first released as the fifth single by Brotherly Love (a Liverpool-based group composed of three brothers, Mike, Ronnie and Lee Carroll) on CBS Records in 1973 and was produced by Phil Wainman. It received positive reviews from the British music press and stalled just outside the Top 50 of the UK Singles Chart that year. Barry Blue was credited as \"Barry Green\" on this release. The female soul trio Ellie (aka the Hope Sisters - Ellie, Christine and Kathy) released their version of \"Tip of My Tongue\" as a single on the Fresh Air record label in the UK and on London Records in North America in 1974, and they performed the song on the German TV music program, \"Hits a Go Go\", on 22 October 1974. Ellie Hope went on to form Liquid Gold. The song's co-writer, Barry Blue, released his version as an album track in 1974."
+      }
+    ],
+    "reference": "6 ft",
+    "depth": 2,
+    "missing": false,
+    "condition": "distractor",
+    "split": "external",
+    "question_type": "bridge"
+  },
+  {
+    "id": "hotpot/5ae638865542992ae0d1628c",
+    "world_id": "hotpot/5ae638865542992ae0d1628c",
+    "upstream_id": "5ae638865542992ae0d1628c",
+    "family": "hotpot",
+    "question": "Who created the 2003 remake of the 1983 overhead view, vehicular combat game developed by Bally Midway?",
+    "sources": [
+      {
+        "id": "D01",
+        "text": "Hot Wheels Battle Force 5 (video game): Hot Wheels Battle Force 5 is a 2009 video game developed by Sidhe Interactive and published by Activision for the Wii and Nintendo DS, and a children's vehicular combat game based on the \"Hot Wheels Battle Force 5\" 3D animated television series created by Mattel."
+      },
+      {
+        "id": "D02",
+        "text": "Namco Pac-Man: The Namco Pac-Man was an 8-bit arcade game system board that was first used by Namco in 1980; the second and third games to run on it, \"Rally-X\" and \"New Rally-X\", were modified to support a larger color palette and scrolling. Three unauthorized \"Pac-Man\" sequels were later developed by Bally Midway, Namco's old US distributor, on this board between 1981 and 1983 - and after Namco ended its partnership with Bally Midway after the release of \"Pac-Land\" in 1984, it developed \"Jump Shot\" (a basketball simulation) and \"Shoot the Bull\" (a darts game) on it, in the following year."
+      },
+      {
+        "id": "D03",
+        "text": "Star Wars: Demolition: Star Wars: Demolition is a vehicular combat game set in the Star Wars universe created by both Luxoflux and LucasArts using the \"Vigilante 8\" game engine. Its premise is that the Galactic Empire declares they've officially banned Jabba the Hutt's podraces. Jabba creates a more life-threatening vehicular combat contest to replace the sport of podracing. The game was released on both the Sony PlayStation and the Sega Dreamcast; PlayStation on November 12, 2000 and Dreamcast on November 19, 2000."
+      },
+      {
+        "id": "D04",
+        "text": "Jr. Pac-Man: Jr. Pac-Man is an arcade game, released by Bally Midway on January 1, 1983. It is based on \"Pac-Man\" and its derivatives but, like \"Ms. Pac-Man\", \"Baby Pac-Man\", and \"Pac-Man Plus\", was created without the authorization of Namco. This was one of several games that would eventually lead to the termination of the licensing agreement between Namco and Bally Midway in 1984."
+      },
+      {
+        "id": "D05",
+        "text": "Professor Pac-Man: Professor Pac-Man is a quiz arcade game that was produced by Bally Midway and is the seventh title in the \"Pac-Man\" series of games, which was released in August 1983. Like \"Ms. Pac-Man\", \"Pac-Man Plus\", \"Baby Pac-Man\" and \"Jr. Pac-Man\", it was created without authorization of Namco, who are the original creators of the \"Pac-Man\" series. It is also the last of only seven games from Bally Midway Manufacturing to run on their Midway Astrocade hardware."
+      },
+      {
+        "id": "D06",
+        "text": "Jak X: Combat Racing: Jak X: Combat Racing (Jak X in Europe, Australia and Africa) is a vehicular combat game video game developed by Naughty Dog and published by Sony Computer Entertainment for the PlayStation 2. The game was developed for 11 months with a budget of $10 million, and was first released in North America on October 18, 2005, then in Australia on October 26, 2005 and then in Europe on November 4, 2005. This is the fourth installment into the \"Jak and Daxter\" series, and the last \"Jak and Daxter\" game developed by Naughty Dog."
+      },
+      {
+        "id": "D07",
+        "text": "Spy Hunter: Spy Hunter is an overhead view, vehicular combat game developed by Bally Midway and released in arcades in 1983."
+      },
+      {
+        "id": "D08",
+        "text": "Action Fighter: Action Fighter is an overhead vehicular combat game released by Sega in 1986."
+      },
+      {
+        "id": "D09",
+        "text": "Necrodome: Necrodome is a 1996 first-person vehicular combat game developed by Raven Software and published by Strategic Simulations. It supports online multiplayer matches. The game was unique in that it offered arena based car combat, first person driving, and the ability to exit the vehicle and do battle on foot. When on foot, the player has access to a tribarrel shotgun and the ability to hijack damaged opponents."
+      },
+      {
+        "id": "D10",
+        "text": "Highway Pursuit: Highway Pursuit is a computer game remake of Spy Hunter created by Adam Dawes in association with Retrospec, initially released in 2003."
+      }
+    ],
+    "reference": "Adam Dawes",
+    "depth": 2,
+    "missing": false,
+    "condition": "distractor",
+    "split": "external",
+    "question_type": "bridge"
+  },
+  {
+    "id": "hotpot/5a7ce0ce554299452d57ba92",
+    "world_id": "hotpot/5a7ce0ce554299452d57ba92",
+    "upstream_id": "5a7ce0ce554299452d57ba92",
+    "family": "hotpot",
+    "question": "Which of the four US Presidents who have been assinated was shot on the grounds of the Pan-American Exposition at the Temple of Music in Buffalo, New York?",
+    "sources": [
+      {
+        "id": "D01",
+        "text": "Alice Russell Glenny: Alice Russell Glenny (1858\u20131924) was an American painter, sculptor, and graphic artist who lived and worked in Buffalo, New York. Glenny was a fixture of the thriving artistic scene in Buffalo in the early twentieth century. From 1893-1894 and 1903\u20131904, she served as president of the Buffalo Society of Artists. She studied under top teachers, such as William Merritt Chase and Gustav Boulanger, in both the United States and France, and was considered in her time to be one of the city's top artists. Today, Glenny is best remembered for her Art Nouveau posters and magazine illustrations. Her posters were featured prominently in Buffalo's Pan-American Exposition of 1901, famous for being the location of the shooting of President William McKinley. She also regularly contributed illustrations to the Buffalo-Courier Express, one of the major newspapers in Buffalo at the time."
+      },
+      {
+        "id": "D02",
+        "text": "Assassination of James A. Garfield: James A. Garfield, the 20th President of the United States, was assassinated at 9:30 am on July 2, 1881, less than four months into his term as President. He was shot by Charles J. Guiteau at the Baltimore and Potomac Railroad Station in Washington, D.C., and died in Elberon, New Jersey on September 19, 1881. Guiteau's motive was revenge against Garfield for an imagined political debt. Garfield was the second of four Presidents to be assassinated, following Abraham Lincoln and preceding William McKinley and John F. Kennedy. His Vice President, Chester A. Arthur, succeeded Garfield as President."
+      },
+      {
+        "id": "D03",
+        "text": "Rose C. Davison: Rosalie Compton Kahipuleokalaniahumanu Davison, known as Rose C. Davison, (September 22, 1868 \u2013 May 26, 1913) was a part Native Hawaiian female educator, philanthropist and governmental social worker. She served as assistant secretary of the Board of Education of the Territory of Hawaii and represented Hawaii in the 1901 Pan-American Exposition in Buffalo, New York."
+      },
+      {
+        "id": "D04",
+        "text": "Mission style furniture: Mission furniture is a style of furniture that originated in the late 19th century. It traces its origins to a chair made by A.J. Forbes around 1894 for San Francisco's Swedenborgian Church. The term mission furniture was first popularized by Joseph P. McHugh of New York, a furniture manufacturer and retailer who copied these chairs and offered a line of stylistically related furnishings by 1898. The word \"mission\" references the Spanish missions throughout colonial California, though the design of most Mission Style furniture owed little to the original furnishings of these missions. The style became increasingly popular following the 1901 Pan-American Exposition in Buffalo. The style was popularly associated with the American Arts and Crafts movement."
+      },
+      {
+        "id": "D05",
+        "text": "Pan-American Exposition: The Pan-American Exposition was a World's Fair held in Buffalo, New York, United States, from May 1 through November 2, 1901. The fair occupied 350 acre of land on the western edge of what is now Delaware Park, extending from Delaware Avenue to Elmwood Avenue and northward to Great Arrow Avenue. It is remembered today primarily for being the location of the assassination of President William McKinley."
+      },
+      {
+        "id": "D06",
+        "text": "Caroline Peddle Ball: Caroline Peddle Ball (1869-1938) was an American sculptor. Born at Terre Haute, Indiana, she was a pupil at the Art Students' League, under Augustus Saint-Gaudens and Kenyon Cox. She received honorable mention at Paris Exhibition, 1900. She was a member of the Guild of Arts and Crafts and of Art Students' League. This sculptor exhibited at Paris a Bronze Clock. She designed for the Tiffany Glass Company the figure of the Young Virgin and that of the Christ of the Sacred Heart. A memorial fountain at Flushing, Long Island, a medallion portrait of Miss Cox of Terre Haute, a monument to a child in the same city, a Victory in a quadriga seen on the United States Building, Paris, 1900, and also at the Pan-American Exposition in Buffalo, New York, 1901, are among her important works."
+      },
+      {
+        "id": "D07",
+        "text": "Temple of Music: The Temple of Music was a concert hall and auditorium built for the Pan-American Exposition which was held in Buffalo, New York in 1901. U.S. President William McKinley was assassinated inside the building on September 6, 1901. The structure, like most of the other buildings at the exposition, was demolished when the fair ended."
+      },
+      {
+        "id": "D08",
+        "text": "1901 State of the Union Address: The 1901 State of the Union Address was given on Tuesday, December 3, 1901, by the 26th President of the United States, Theodore Roosevelt. It was presented to both houses of the 57th United States Congress, but he was not present. He stated, \"The Congress assembles this year under the shadow of a great calamity. On the sixth of September, President McKinley was shot by an anarchist while attending the Pan-American Exposition at Buffalo, and died in that city on the fourteenth of that month.\" He concluded it with, \"Indeed, from every quarter of the civilized world we received, at the time of the President's death, assurances of such grief and regard as to touch the hearts of our people. In the midst of our affliction we reverently thank the Almighty that we are at peace with the nations of mankind; and we firmly intend that our policy shall be such as to continue unbroken these international relations of mutual respect and good will.\""
+      },
+      {
+        "id": "D09",
+        "text": "Put Me Off at Buffalo: Put Me Off at Buffalo is a song by the vaudeville team of the Dillon Brothers, with lyrics by Harry Dillon and music by John Dillon. It was first published in 1895, and also appeared in the play \"A Trip to Chinatown\". After an initial period of popularity, the tune was revived in 1901 in connection with the Pan-American Exposition held in Buffalo. The song's lyrics were planted in the lawn of Buffalo's city hall during the event."
+      },
+      {
+        "id": "D10",
+        "text": "Assassination of William McKinley: On September 6, 1901, William McKinley, the 25th President of the United States, was shot on the grounds of the Pan-American Exposition at the Temple of Music in Buffalo, New York. He was shaking hands with the public when Leon Czolgosz, an anarchist, shot him twice in the abdomen. McKinley died eight days later on September 14 of gangrene caused by the gunshot wounds. He was the third American president to have been assassinated, following Abraham Lincoln in 1865 and James A. Garfield in 1881."
+      }
+    ],
+    "reference": "William McKinley",
+    "depth": 2,
+    "missing": false,
+    "condition": "distractor",
+    "split": "external",
+    "question_type": "bridge"
+  },
+  {
+    "id": "hotpot/5a80b0565542996402f6a5f0",
+    "world_id": "hotpot/5a80b0565542996402f6a5f0",
+    "upstream_id": "5a80b0565542996402f6a5f0",
+    "family": "hotpot",
+    "question": "Which band was formed first, Lit or Adorable?",
+    "sources": [
+      {
+        "id": "D01",
+        "text": "Dubrovniks: The Dubrovniks were an Australian rock band which formed in August 1986 as The Adorable Ones. Early in 1987 they changed their name, which acknowledges two of their founders, Roddy Radalj and Boris Sujdovic, birthplace in Dubrovnik, a town in Croatia. Both Radalj and fellow founder James Baker had also founded Hoodoo Gurus (as Le Hoodoo Gurus) in 1981. All three had earlier associations in the Perth punk scene of the late 1970s. The group issued four albums, \"Dubrovnik Blues\" (August 1989), \"Audio Sonic Love Affair\" (September 1990), \"Chrome\" (June 1992), and \"Medicine Wheel\" (1994), before disbanding in 1995."
+      },
+      {
+        "id": "D02",
+        "text": "Adorable (band): Adorable was an alternative rock band, formed in Coventry in 1990. The band consisted of band members Pete Fijalkowski (vocals, guitar), Robert Dillam (guitar), Stephen 'Wil' Williams (bass) and Kevin Gritton (drums)."
+      },
+      {
+        "id": "D03",
+        "text": "Harris, Forbes &amp; Co.: Harris, Forbes & Co. was an investment banking affiliate of Harris Bank incorporated in 1911. Harris, Forbes firm was acquired by Chase Manhattan Bank in 1930 to form Chase Harris, Forbes. Just two years later, in 1932, the firm was dissolved after the passage of the Glass\u2013Steagall Act in 1932. Chase transferred what remained of its securities business to the Bank of Boston's newly formed First Boston Corporation, buttressing that firm's early municipal bond department."
+      },
+      {
+        "id": "D04",
+        "text": "West Bengal Legislative Assembly election, 1967: The West Bengal Legislative Assembly election, 1967 was held in Indian state of West Bengal in 1967 to elect 280 members to the West Bengal Legislative Assembly. United Front led by Ajoy Mukherjee won majority of seats in the election, and formed first non-Congress government of the state."
+      },
+      {
+        "id": "D05",
+        "text": "Liberty Baptist Church (Grooverville, Georgia): Liberty Baptist Church is a historic church built about 1858 in Grooverville, Georgia. It was added to the National Register of Historic Places on August 20, 2013. It is located on Liberty Church Road. There is a Georgia Historical Commission historical marker at the site. According to the marker: \"In 1841 the Ocklochnee anti-Missionary Baptist Association passed a ruling to dismiss members believing in the 'new fangled institutions of the day.'\" One of the excommunicated sisters joined with others in forming the Liberty Baptist Church. The church includes a slave gallery. Freed slaves from the area formed First Elizabeth Church in Grooverville."
+      },
+      {
+        "id": "D06",
+        "text": "SV St. Georg: SV St. Georg Hamburg is a German association football club playing in Hamburg. The club was established 3 June 1895 and shares a common origin with \"FC Hammonia Hamburg\": both sides arose out of the students group Seminarvereinigung Frisch-Auf with \"St. Georg\" being formed first on the left bank of the Alster River, and \"Hammonia\" appearing later on the right bank. Like their brother side, \"St. Georg\" was a founding member of the German Football Association (Deutscher Fussball Bund or German Football Association) at Leipzig in 1900. However, while \"Hammonia\" folded after only a short existence, \"St. Georg\" still plays today."
+      },
+      {
+        "id": "D07",
+        "text": "Primary rock: Primary rock is an early term in geology that refers to crystalline rock formed first in geologic time, containing no organic remains, such as granite, gneiss and schist as well as igneous and magmatic formations from all ages. Webster's Revised Unabridged Dictionary published in 1913 provides the following term as used in geology:"
+      },
+      {
+        "id": "D08",
+        "text": "Konstantin Vakulovsky: Captain Konstantin Konstantinovich Vakulovsky (born 28 October 1894, died Summer 1918) was a World War I flying ace credited with six aerial victories. A major general's son, he volunteered for aviation duty on 8 August 1914, six days after graduating from university. He taught himself to fly, and became one of Russia's first military pilots on 13 June 1915. After escaping the fall of the Novogeorgievsk Fortress in a hazardous flight, Vakylovsky flew reconnaissance missions, some through heavy ground fire. Given command of the newly formed First Fighter Detachment, he became a flying ace credited with six aerial victories. He died in a flying accident during Summer 1918."
+      },
+      {
+        "id": "D09",
+        "text": "Lit (band): Lit is an American rock band, formed in 1995 in Fullerton, California. They are best known for their hit song \"My Own Worst Enemy\"."
+      },
+      {
+        "id": "D10",
+        "text": "Japp\u2013Maitland condensation: The Japp\u2013Maitland condensation is an organic reaction and a type of Aldol reaction and a tandem reaction. In a reaction between the ketone 2-pentanone and the aldehyde benzaldehyde catalyzed by base the bis Aldol adduct is formed first. The second step is a ring-closing reaction when one hydroxyl group displaces the other in a nucleophilic substitution forming an oxo-tetrahydropyran."
+      }
+    ],
+    "reference": "Adorable",
+    "depth": 2,
+    "missing": false,
+    "condition": "distractor",
+    "split": "external",
+    "question_type": "comparison"
+  },
+  {
+    "id": "hotpot/5ab463da5542990594ba9c0d",
+    "world_id": "hotpot/5ab463da5542990594ba9c0d",
+    "upstream_id": "5ab463da5542990594ba9c0d",
+    "family": "hotpot",
+    "question": "What comic book does Hershel Greene and Carl Grimes appear in as characters?",
+    "sources": [
+      {
+        "id": "D01",
+        "text": "Nebraska (The Walking Dead): \"Nebraska\" is the eighth episode and mid-season premiere of the second season, and 14th episode overall of the post-apocalyptic horror television series \"The Walking Dead\". It originally aired on AMC in the United States on February 12, 2012. In the episode, the survivors deal with the aftermath of the barn shooting, which causes Hershel Greene (Scott Wilson) to order Rick's group to leave and then start drinking and disappear from the group, leading Rick Grimes (Andrew Lincoln) and Glenn (Steven Yeun) to try to find him. Meanwhile, Dale Horvath (Jeffrey DeMunn) becomes more suspicious of Shane Walsh's (Jon Bernthal) actions."
+      },
+      {
+        "id": "D02",
+        "text": "Sophia Peletier: Sophia Peletier is a fictional character from the comic series \"The Walking Dead\" and is portrayed by Madison Lintz in the television series of the same name. She is the daughter of Carol Peletier, who is fiercely protective of her, as is Carl Grimes, with whom she becomes close friends during the zombie outbreak. She becomes a major focal point in both media, despite her limited involvement in many of the central conflicts faced by the other characters."
+      },
+      {
+        "id": "D03",
+        "text": "Carl Grimes: Carl Grimes is a fictional character from the comic book series \"The Walking Dead\" and is portrayed by Chandler Riggs in the American television series of the same name, which airs on AMC in the United States. The character was created by writer Robert Kirkman and artist Tony Moore, and debuted in \"The Walking Dead\" #2 in 2003. In both forms of media, Carl is the son of primary protagonist Rick Grimes, and his wife Lori Grimes, and is one of the longest-surviving characters and one of the few original Atlanta survivors still alive."
+      },
+      {
+        "id": "D04",
+        "text": "Rosita Espinosa: Rosita Espinosa is a fictional character from the comic book series \"The Walking Dead\" and is portrayed by Christian Serratos in the American television series of the same name. She accompanies Eugene Porter and Abraham Ford on a mission to Washington, D.C. In the comic book series, she joins Rick Grimes' group after they leave Hershel Greene's farm and go to DC. Eventually Eugene is revealed to have lied but they continue onto Washington anyway, since he was still convinced the city would offer greater chance of survival, and they eventually find the Alexandria Safe-Zone. Though she and Abraham continue their relationship she eventually breaks up with him when he cheats on her with Holly and moves in with Eugene, eventually starting a relationship with him, but forgives Abraham after he is killed by Dwight. Rosita also takes part in the war against the Saviors led by Negan it's conclusion of which sees the 4 communities uniting forces. Two years later Rosita and Eugene are married but their relationship is strained. Rosita is revealed to be pregnant, but Eugene is not the father. She is ultimately killed by Alpha, leader of the Whisperers, along with 11 other key members of all 4 communities."
+      },
+      {
+        "id": "D05",
+        "text": "Hershel Greene: Hershel Greene is a fictional character in \"The Walking Dead\" whose role is depicted in the comic book, television series as portrayed by Scott Wilson and the game series. He is the widowed owner of a farm in Georgia and has previous experience in the veterinary fields. A devout Christian, with uncompromising morals and a stubborn attitude, Hershel remains fiercely protective of his large family, despite his many losses. In both the comics and television series, he is initially introduced saving the life of Carl Grimes, the son of Rick Grimes after he is shot by one of Hershel's neighbors, Otis, and becomes the moral center of the group ."
+      },
+      {
+        "id": "D06",
+        "text": "Pretty Much Dead Already: \"Pretty Much Dead Already\" is the seventh episode and mid-season finale of the second season, and 13th episode overall of the post-apocalyptic horror television series \"The Walking Dead\". It originally aired on AMC in the United States on November 27, 2011. In the episode, Glenn (Steven Yeun) reveals to the group that there are walkers in the Greenes' barn, dividing the group on what to do. Hershel Greene (Scott Wilson) sets a deadline for the group to leave, unless Rick Grimes (Andrew Lincoln) does a difficult task. Meanwhile, Shane Walsh (Jon Bernthal) slowly loses his sanity after many secrets around him are revealed and Carol Peletier begins to question whether her daughter, Sophia will be found."
+      },
+      {
+        "id": "D07",
+        "text": "Lori Grimes: Lori Grimes is a fictional character from the comic book series \"The Walking Dead\" and is portrayed by Sarah Wayne Callies in the American television series of the same name in the show's first three seasons. Created by writer Robert Kirkman and artist Tony Moore, the character made her debut in \"The Walking Dead\" #2 in 2003. In both forms of media, she is the wife of protagonist Rick Grimes and mother of Carl, and serves as the emotional core of the group. The character escaped the zombie apocalypse with Carl and Rick's partner Shane Walsh, and, believing her husband to be dead, started a relationship with Shane."
+      },
+      {
+        "id": "D08",
+        "text": "Crossed (The Walking Dead): \"Crossed\" is the seventh episode of the fifth season and 58th episode overall of the post-apocalyptic horror television series \"The Walking Dead\", which aired on AMC on November 23, 2014. It was written by Seth Hoffman and directed by Billy Gierhart. In the episode, Michonne and Carl Grimes stay at the barricaded Church with Gabriel Stokes as Rick Grimes and the others go on a rescue mission for Beth Greene and Carol Peletier in Atlanta. The episode received generally positive reviews, though most noted the set up for the mid-season finale. This is the first episode to feature all credited series regulars for the fifth season."
+      },
+      {
+        "id": "D09",
+        "text": "Secrets (The Walking Dead): \"Secrets\" is the sixth episode of the second season and 12th episode overall of the post-apocalyptic horror television series \"The Walking Dead\". It originally aired on AMC in the United States on November 20, 2011. In this episode, Glenn (Steven Yeun) tells Dale Horvath (Jeffrey DeMunn) that Lori Grimes (Sarah Wayne Callies) is pregnant and there are numerous walkers in the Greene barn. Dale confronts Hershel Greene (Scott Wilson) about hoarding walkers in his barn. Meanwhile, Shane Walsh (Jon Bernthal) attempts to teach Andrea (Laurie Holden) how to use weapons and Lori agonizes over the decision to terminate her pregnancy or keep the baby."
+      },
+      {
+        "id": "D10",
+        "text": "Beth Greene: Beth Greene is a fictional character from the American horror drama television series \"The Walking Dead\", created by season two showrunner Glen Mazzara, and portrayed by Emily Kinney. Daughter of veterinarian and farmer Hershel Greene, and younger, half-sister of Maggie, the character has no counterpart in the comic book series on which the show is based."
+      }
+    ],
+    "reference": "\"The Walking Dead\"",
+    "depth": 2,
+    "missing": false,
+    "condition": "distractor",
+    "split": "external",
+    "question_type": "bridge"
+  },
+  {
+    "id": "hotpot/5a8e8af55542990e94052b3f",
+    "world_id": "hotpot/5a8e8af55542990e94052b3f",
+    "upstream_id": "5a8e8af55542990e94052b3f",
+    "family": "hotpot",
+    "question": "Which university is a private research university, University of California, Berkeley or Brown University?",
+    "sources": [
+      {
+        "id": "D01",
+        "text": "Brown University: Brown University is a private Ivy League research university in Providence, Rhode Island, United States. Founded in 1764 as the College in the English Colony of Rhode Island and Providence Plantations, Brown is the seventh-oldest institution of higher education in the United States and one of the nine colonial colleges chartered before the American Revolution."
+      },
+      {
+        "id": "D02",
+        "text": "Alpert Medical School: The Warren Alpert Medical School (formerly known as Brown Medical School, previously known as Brown University School of Medicine) is the medical school of Brown University, located in Providence, Rhode Island, United States. Established in 1811, the school was among the first in the nation to offer academic medical education. Today, Alpert Medical School is a component of Brown\u2019s Division of Biology and Medicine, which also includes the Program in Biology. (A third component of the Division, the Program in Public Health, became the Brown University School of Public Health on July 1, 2013.) Together with the Medical School\u2019s seven affiliated teaching hospitals, the Division attracts over $300 million in external research funding per year."
+      },
+      {
+        "id": "D03",
+        "text": "Kaja Silverman: Kaja Silverman (born September 16, 1947) is an American art historian and critical theorist. She is currently the Katherine and Keith L. Sachs Professor of Art History at the University of Pennsylvania. She received her Ph.D. in English from Brown University. Thereafter, she taught at Yale University, Trinity College, Simon Fraser University, Brown University, the University of Rochester and for many years was the Class of 1940 Professor in the Rhetoric Department at the University of California, Berkeley. She was awarded a Guggenheim Fellowship in 2008, and is currently the holder of an Andrew W. Mellon Foundation Distinguished Achievement Award."
+      },
+      {
+        "id": "D04",
+        "text": "Margaret Kidwell: Margaret Gale Kidwell (born August 17, 1933) is a British American evolutionary biologist and Regents\u2019 Professor Emerita at the University of Arizona, Tucson. She grew up on a farm in the English Midlands during World War II. After graduating from the University of Nottingham in 1953, she worked in the British Civil Service as an Agricultural Advisory Officer from 1955-1960. She moved to the USA in 1960 under the auspices of a Kellogg Foundation Fellowship to study Genetics and Statistics at Iowa State University. She married quantitative geneticist James F. Kidwell in 1961, obtained her MS degree in 1962 and moved with her husband to Brown University in 1963. She received her PhD from Brown University in 1973 under the guidance of Masatoshi Nei. From 1973 to 1984 she pursued independent research into a number of anomalous genetic phenomena in \"Drosophila\" which later lead to collaborative studies resulting in the discovery of hybrid dysgenesis and the isolation of transposable P elements. After appointment as Professor of Biology at Brown University in 1984 she moved to the University of Arizona in 1985 as Professor of Ecology and Evolutionary Biology. Additional positions included Chair of the Interdisciplinary Genetics Program from 1988-1991 and Head of the Department of Ecology and Evolutionary Biology from 1992-1997. Research at the University of Arizona has increasingly focused on the evolutionary significance of transposable genetic elements. In 1996, she was the first woman from Arizona to be elected to the United States National Academy of Sciences."
+      },
+      {
+        "id": "D05",
+        "text": "University of Southern California: The University of Southern California (USC or SC) is a private research university located in Los Angeles, California. Founded in 1880, it is the oldest private research university in California. USC has historically educated a large number of the region's business leaders and professionals. In recent decades, the university has also leveraged its location in Los Angeles to establish relationships with research and cultural institutions throughout Asia and the Pacific Rim. An engine for economic activity, USC contributes $8 billion annually to the economy of the Los Angeles metropolitan area and California."
+      },
+      {
+        "id": "D06",
+        "text": "Hamdard University: Hamdard University (Urdu: ) is a private research university with campuses in Karachi and Islamabad, Pakistan. It was founded in 1991 by the renowned philanthropist Hakim Said of the Hamdard Foundation. Hamdard is one of the first and the oldest private institutions of higher education in Pakistan. In Karachi, Hamdard University is the largest private research university with a campus area of over 350 acres."
+      },
+      {
+        "id": "D07",
+        "text": "University of California Pavement Research Center: UCPRC is the University of California Pavement Research Center. It is located on the University of California Davis campus in Davis, California. UCPRC has additional facilities at the University of California, Berkeley's Field Station in Richmond, Ca. They perform pavement engineering research in pavement structures and materials. They are funded through public and private research grants."
+      },
+      {
+        "id": "D08",
+        "text": "Charles P. Nott: Charles Palmer Nott (October 25, 1872 \u2013 December 30, 1954) was an American botanist and college football player and coach. He was the head football coach at the University of California, Berkeley for one season, in 1897, compiling a record of 0\u20133\u20132. He was also worked on the faculty at UC Berkeley. Nott played college football at Brown University, where he was the captain of the Brown Bears football team in 1895. Nott came to California in 1896 and served as a line coach under Frank Butterworth for the 1896 California Golden Bears football team."
+      },
+      {
+        "id": "D09",
+        "text": "University of California, Berkeley: The University of California, Berkeley (also referred to as UC Berkeley, Berkeley, and Cal ) is a public research university located in Berkeley, California. Founded in 1868, Berkeley is the oldest of the ten research universities affiliated with the University of California system (although UCSF was founded in 1864 and predates the establishment of the UC system) and is ranked as one of the world's leading research universities and the top public university in the United States."
+      },
+      {
+        "id": "D10",
+        "text": "Brown University School of Engineering: The Brown University School of Engineering is the engineering school at Brown University, a private Ivy League research university located in Providence, Rhode Island. The school offers both graduate and undergraduate study in the field. Undergraduate students may declare their major in engineering as late as the end of their sophomore year."
+      }
+    ],
+    "reference": "Brown University",
+    "depth": 2,
+    "missing": false,
+    "condition": "distractor",
+    "split": "external",
+    "question_type": "comparison"
+  },
+  {
+    "id": "hotpot/5ab8a7f65542991b5579efca",
+    "world_id": "hotpot/5ab8a7f65542991b5579efca",
+    "upstream_id": "5ab8a7f65542991b5579efca",
+    "family": "hotpot",
+    "question": "The city in which the Disney Resort & Spa, Aulani is located in, is colloquially known as what?",
+    "sources": [
+      {
+        "id": "D01",
+        "text": "Disney's Coronado Springs Resort: Disney's Coronado Springs Resort is a resort hotel at the Walt Disney World Resort that opened on August 1, 1997. The resort is located in the Animal Kingdom Resort Area. Its theme is American colonial Spanish and southwestern American. This hotel is categorized as a 'moderate' resort. This was Walt Disney World's first attempt at a 'moderate' resort with a convention center. It is the only moderate level Disney resort with suites, a cafeteria-style restaurant, a formal dinner restaurant (Maya Grill), a gift shop, an arcade, one large pool, three quiet pools, a salon, fitness center, and a dance club. The resort is owned and operated by Walt Disney Parks and Resorts."
+      },
+      {
+        "id": "D02",
+        "text": "Disneyland Paris: Disneyland Paris, originally Euro Disney Resort, is an entertainment resort in Marne-la-Vall\u00e9e, a new town located 32 km east of the centre of Paris, and is the most visited theme park in all of Europe. It is owned and operated by The Walt Disney Company and is the only resort outside the United States to be. The resort covers 4800 acre and encompasses two theme parks, many resort hotels, a shopping, dining, and entertainment complex, and a golf course, in addition to several additional recreational and entertainment venues. Disneyland Park is the original theme park of the complex, opening with the resort on 12 April 1992. A second theme park, Walt Disney Studios Park, opened in 2002. The resort is the second Disney park to open outside the United States following the opening of the Tokyo Disney Resort in 1983."
+      },
+      {
+        "id": "D03",
+        "text": "Tokyo DisneySea: Tokyo DisneySea (\u6771\u4eac\u30c7\u30a3\u30ba\u30cb\u30fc\u30b7\u30fc , T\u014dky\u014d Dizun\u012bSh\u012b ) is a 176 acre theme park at the Tokyo Disney Resort located in Urayasu, Chiba, Japan, just outside Tokyo. It opened on 4 September 2001, at a cost of 335 billion yen. Owned by The Oriental Land Company, which licenses Disney characters and themes from The Walt Disney Company, Tokyo DisneySea attracted an estimated 11 million visitors in 2016, making it the sixth-most-visited theme park in the world. Tokyo DisneySea was the second theme park to open at the Tokyo Disney Resort and the ninth park of the twelve worldwide Disney theme parks to open. Tokyo DisneySea was the fastest theme park in the world to reach the milestone of 10 million guests, having done so in 307 days after its grand opening. The previous record-holder was Universal Studios Japan 338 days after its opening."
+      },
+      {
+        "id": "D04",
+        "text": "Ko Olina Resort: Ko Olina Resort is a 642 acre master-planned vacation and residential community on the leeward coast of Oahu, 17 mi northwest of Honolulu. Ko Olina has 2 mi of coastal frontage and includes three natural and four man-made lagoons with white-sand beaches. It is home to four hotel and vacation-club resorts: Aulani, a Disney Resort & Spa; the Ihilani Resort & Spa, Marriott's Ko Olina Beach Club, and The Four Seasons at Ko Olina, as well as several resort condominiums and villa homes. Previously, the JW Marriott at Ko Olina occupied The Four Seasons property. An Atlantis Resort, similar to Atlantis Dubai, is currently being designed as an international destination for millennial travelers. The property will be adjacent to the condominiums located on lagoon three."
+      },
+      {
+        "id": "D05",
+        "text": "Walt Disney World Swan: The Walt Disney World Swan is a resort hotel designed by architect Michael Graves located between Epcot and Disney's Hollywood Studios behind Disney's BoardWalk Resort and across from its sister resort, the Walt Disney World Dolphin. The Swan, which opened January 13, 1990 on Disney property, is a joint venture between the Walt Disney Company, Tishman Hotel Corporation, MetLife and Starwood Hotels and Resorts. The land the resort occupies is owned by the Walt Disney Company, while the buildings themselves are leased by Disney to the Tishman Hotel Corporation and MetLife and operated by Starwood Hotels & Resorts Worldwide under the Westin brand. The Walt Disney World Swan and Dolphin are a part of the Walt Disney Collection of resorts, because of this they are Disney branded and guests of the resort have access to special Disney benefits available to Disney Resort Hotel guests only."
+      },
+      {
+        "id": "D06",
+        "text": "Kapolei, Hawaii: Kapolei is a master-planned community in Honolulu County, Hawaii, United States, on the island of Oahu. It is colloquially known as the \"second city\" of Oahu, in relation to Honolulu. Officially, it is a census-designated place (CDP) within the consolidated city-county of Honolulu."
+      },
+      {
+        "id": "D07",
+        "text": "Aulani: Aulani, a Disney Resort & Spa is a beachside hotel, resort and vacation destination offering complimentary children's activities and programs at the Ko Olina Resort & Marina in Kapolei on the Hawaiian island of Oahu. Part of the Disney Vacation Club, it is the third Disney Vacation Club Resort located outside of a Disney theme park property. The resort opened on August 29, 2011."
+      },
+      {
+        "id": "D08",
+        "text": "Walt Disney World Dolphin: The Walt Disney World Dolphin is a resort hotel designed by architect Michael Graves located between Epcot and Disney's Hollywood Studios in the Walt Disney World Resort in Bay Lake, Florida, next to Disney's BoardWalk Resort area. It opened on June 1, 1990 and is joined to its sister hotel, the Walt Disney World Swan (also designed by Graves) by a palm-tree lined covered walkway crossing a lagoon. The Walt Disney World Swan and Dolphin is a joint venture between the Walt Disney Company, Tishman Hotel Corporation, MetLife and Starwood Hotels and Resorts. The land the resort occupies is owned by the Walt Disney Company, while the buildings themselves are leased by Disney to the Tishman Hotel Corporation and MetLife but operated by Starwood Hotels & Resorts Worldwide under the Sheraton Hotels brand. The Walt Disney World Swan and Dolphin are a part of the Walt Disney Collection of resorts; because of this they are Disney branded and guests of the resort have access to special Disney benefits available to Disney Resort Hotel guests only."
+      },
+      {
+        "id": "D09",
+        "text": "Disney's Grand Floridian Resort &amp; Spa: Disney's Grand Floridian Resort & Spa is a AAA Four Diamond Award\u2013winning, Victorian themed luxury hotel and spa located at the Walt Disney World Resort in Florida. The property opened on June 28, 1988 as the \"Grand Floridian Beach Resort\". The name changed to \"Disney's Grand Floridian Resort & Spa\" during the fall of 1997. The resort contains 867 rooms among six buildings at an average of 400 sqft per room. The resort is owned and operated by Walt Disney Parks and Resorts."
+      },
+      {
+        "id": "D10",
+        "text": "Djuan Rivers: Djuan Rivers is the Vice President of Disney's Animal Kingdom at Walt Disney World. He previously served as Vice President for Hotels and Business Solutions at Disneyland Paris after having been General Manager of the Disney Aulani Resort & Spa in Hawaii."
+      }
+    ],
+    "reference": "the \"second city\" of Oahu",
+    "depth": 2,
+    "missing": false,
+    "condition": "distractor",
+    "split": "external",
+    "question_type": "bridge"
+  },
+  {
+    "id": "hotpot/5ac4e03f5542995c82c4ad75",
+    "world_id": "hotpot/5ac4e03f5542995c82c4ad75",
+    "upstream_id": "5ac4e03f5542995c82c4ad75",
+    "family": "hotpot",
+    "question": "Who were the stars of the 2008 South Korean movie that was later remade as Hindi movie entitled \"Murder 2\" in 2011?",
+    "sources": [
+      {
+        "id": "D01",
+        "text": "Vishnuvardhana (film): Vishnuvardhana is a 2011 Kannada comedy thriller film starring Sudeep, Bhavana Menon and Priyamani. The film was directed and written by P. Kumar, in his debut, and produced by actor Dwarakish. The film is supposedly a tribute to south superstar, Kannada Matinee idol Dr. Vishnuvardhan who was a friend of Dwarakish. The film's music was composed by V. Harikrishna. The film was released on 8 December 2011. The movie was dubbed in Hindi as \"Mr. Mobile 2\". The film was officially remade in Bengali as \"Bachchan\". The movie was reported to be inspired by the 2009 South Korean movie \"Handphone\" which the director had vehemently denied."
+      },
+      {
+        "id": "D02",
+        "text": "Shanthi Nivasam: Shanthi Nivasam is a 1960 Telugu drama film, produced by Sundarlal Nahatha, T. Ashwadanarayana under Sri Productions banner and directed by C. S. Rao. Starring Akkineni Nageswara Rao, Rajasulochana, Kantha Rao, Krishna Kumari, Devika in lead roles and music composed by Ghantasala. The film was remade in Hindi as Gharana (1961 film) and much later remade as Hindi Movie \"Ghar Ghar Ki Kahani (1988). It was dubbed into Malayalam as \"Shanthi Nivas\" (1962)."
+      },
+      {
+        "id": "D03",
+        "text": "Mangalya Balam: Mangalya Balam (English: Power of Wedding Chain) is a 1959 Telugu drama film produced by D. Madhusudhana Rao under Annapurna Pictures and directed by Adurthi Subba Rao. Starring Akkineni Nageswara Rao, Savitri in the lead roles and music composed by Master Venu. The film is based on Aasapoorna Devi's Bengali novel \"Agni Pariksha\" which was simultaneously remade as Tamil Movie \"Manjal Mahimai\" (1959); both the movies are made simultaneously by same banner & director and some of the scenes & artists are same in both versions. Later remade as Hindi movie \"Chhoti Si Mulaqat\" (1967) with slight changes, starring Uttam Kumar, Vyjayanthimala in pivotal roles."
+      },
+      {
+        "id": "D04",
+        "text": "Do Phool: Do Phool (\"Two Flowers\") is a 1973 Indian Hindi-language comedy film directed by S. Ramanathan. The film stars Ashok Kumar, Vinod Mehra and Mehmood . The film was a remake of Tamil film \"Anubavi Raja Anubavi\" which was also later remade in Kannada as \"Kittu Puttu\". The storyline of 1993 Hindi movie \"Aankhen\" was similar to this movie."
+      },
+      {
+        "id": "D05",
+        "text": "Utkarsha: Utkarsha (Kannada: \u0c89\u0ca4\u0ccd\u0c95\u0cb0\u0ccd\u0cb7 ) is a 1990 Kannada movie by Sunil Kumar Desai starring Devraj. The concept of the movie is based on \"Jack the Ripper\". 2011 Hindi movie \"Murder 2\" which was unofficially based on the 2008 South Korean movie \"The Chaser\" also had a similar plotline."
+      },
+      {
+        "id": "D06",
+        "text": "Manjal Mahimai: Manjal Mahimai (Tamil: \u0bae\u0b9e\u0bcd\u0b9a\u0bb3\u0bcd \u0bae\u0b95\u0bbf\u0bae\u0bc8 ; English: Power of Turmeric ) is a 1959 Tamil drama film, produced by D. Madhusudhana Rao under Annapurna Pictures and directed by Adurthi Subba Rao. Starring Akkineni Nageswara Rao, Savitri in the laed roles and music composed by Master Venu. The film is based on Aasapoorna Devi's Bengali novel Agni Pariksha which was first remade as Telugu movie Mangalya Balam (1958); both the movies are made simultaneously by same banner & director and some of the scenes & artists are same in both versions. It was later remade as Hindi movie \"Chhoti Si Mulaqat\" (1967) with slight changes, starring Uttam Kumar, Vyjayanthimala in pivotal roles"
+      },
+      {
+        "id": "D07",
+        "text": "The Chaser (film): The Chaser () is a 2008 South Korean action thriller film starring Kim Yoon-seok and Ha Jung-woo. It was directed by Na Hong-jin in his directorial debut. Inspired by real-life Korean serial killer Yoo Young-chul, the film was shot on location around Mangwon-dong in the Mapo District, Seoul."
+      },
+      {
+        "id": "D08",
+        "text": "Murder 2: Murder 2 is a 2011 Indian psychological horror-slasher film and the quasi-sequel to the 2004 film, \"Murder\". It stars Emraan Hashmi, Jacqueline Fernandez and Prashant Narayanan and features Sulagna Panigrahi. Directed by Mohit Suri and produced by Mukesh Bhatt, the film released on 8 July 2011. The theatrical trailer of the film was revealed on 1 June 2011 and also in cinemas with \"Ready\". It was the second film in a series of quasi-sequels released under the Bhatt Banner including \"Raaz \u2013 The Mystery Continues\", \"Jannat 2\", \"Jism 2\", \"Raaz 3D\" and \"\", each of which had nothing to do with their respective prequels, but somehow fell into the same genre following a similar story. The film did well at the box office and was declared a \"blockbuster\" by Box Office India. It is one of the highest grossing Bollywood films of 2011. The movie is based on the 2008 South Korean movie \"The Chaser\""
+      },
+      {
+        "id": "D09",
+        "text": "Dil Ek Mandir: Dil Ek Mandir ('Heart is a Temple') is a 1963 Hindi movie directed by C. V. Sridhar. The film stars Rajendra Kumar, Meena Kumari, Raaj Kumar and Mehmood. The film's music is by Shankar Jaikishan. Almost all the songs of the film were big hits and so was the film too. The film was a remake of Tamil film, \"Nenjil Or Aalayam\" (1962), also directed by C. V. Sridhar. This movie was later remade in Telugu as \"Manase Mandiram\" (1966) starring Akkineni Nageshwara Rao, Savithri and Kongara Jaggayya and also in Kannada as \"Kumkuma Rakshe\" (1977) starring Rajinikanth and Manjula and Malayalam as \"Hridayam Oru Kshethram\" (1976) starring Madhu and Srividya."
+      },
+      {
+        "id": "D10",
+        "text": "Bharya Biddalu: Bharya Biddalu (English: Wife & Children) is a 1972 Telugu, drama film, produced by A. V. Subba Rao on Prasad Art Productions banner and directed by Tatineni Rama Rao. Starring Akkineni Nageswara Rao, Jayalalithaa in the lead roles and music composed by K. V. Mahadevan. The film is remake of Telugu Movie \"Bratuku Theruvu\" (1953), starring Akkineni Nageswara Rao, Savitri which was remade in Tamil as \"Bale Raman\" (1956) later remade as Hindi movie \"Jeene Ki Raah\" (1969) with Jeetendra, Tanuja after its success, the same was again remade as \"Bharya Biddalu\" and later in Tamil Movie as \"Naan Yen Pirandhen\" with M.G.R, Kanchana in the pivotal roles."
+      }
+    ],
+    "reference": "Kim Yoon-seok and Ha Jung-woo",
+    "depth": 2,
+    "missing": false,
+    "condition": "distractor",
+    "split": "external",
+    "question_type": "bridge"
+  },
+  {
+    "id": "hotpot/5add84a15542997545bbbd5e",
+    "world_id": "hotpot/5add84a15542997545bbbd5e",
+    "upstream_id": "5add84a15542997545bbbd5e",
+    "family": "hotpot",
+    "question": "What type of movies are 101 Dalmatians and G-Force?",
+    "sources": [
+      {
+        "id": "D01",
+        "text": "101 Dalmatians (1996 film): 101 Dalmatians is a 1996 American live-action comedy adventure film based on Walt Disney's animated 1961 movie adaptation of Dodie Smith's 1956 novel \"The Hundred and One Dalmatians.\" Directed by Stephen Herek and co-produced by John Hughes and Ricardo Mestres, it stars Glenn Close, Jeff Daniels, Joely Richardson, Joan Plowright, Hugh Laurie, Mark Williams and Tim McInnerny. In contrast with the 1961 film, none of the animals talk in this version. Released on November 27, 1996 by Walt Disney Pictures, the film was praised for its faithfulness to the animated classic. It received mixed reviews, but was a commercial success, grossing $320.6 million in theaters against a $75 million budget. Close, who was universally praised for her portrayal as Cruella de Vil, was nominated for a Golden Globe for Best Performance by an Actress in a Motion Picture - Comedy or Musical, but lost to Madonna in \"Evita\". The film was also nominated for a BAFTA award for best makeup effects. A theatrical sequel titled \"102 Dalmatians\" was released on November 22, 2000 with Close and McInnerny reprising their roles."
+      },
+      {
+        "id": "D02",
+        "text": "102 Dalmatians: 102 Dalmatians is a 2000 American live action and CG-animated film adventure drama film directed by Kevin Lima in his live-action directorial debut and produced by Edward S. Feldman and Walt Disney Pictures. It is the sequel to the 1996 film \"101 Dalmatians\", a live-action remake of the 1961 Disney animated film of the same name and stars Glenn Close reprising her role as Cruella de Vil as she attempts to steal puppies for her \"grandest\" fur coat yet. Close and Tim McInnerny were the only two actors from the first film to return for the sequel, however. The film was nominated for an Academy Award for Best Costume Design, but lost to \"Gladiator.\""
+      },
+      {
+        "id": "D03",
+        "text": "101 Dalmatians II: Patch's London Adventure: 101 Dalmatians II: Patch's London Adventure is a 2003 American direct-to-video animated adventure musical drama film, written and directed by Jim Kammerud and Brian Smith, released by Walt Disney Home Entertainment on February 25, 2003, and based on Dodie Smith's characters, \"The Hundred and One Dalmatians\" and is also inspired by \"The Starlight Barking\". It is the sequel to the 1961 Disney animated film \"101 Dalmatians\". It features the voices of Martin Short, Jason Alexander, Barry Bostwick, Susanne Blakeslee, Kath Soucie, Jeff Bennett, Jim Cummings, and Bobby Lockwood. It garnered DVDX awards for best animated feature, best director, best editing, and best musical score. Disney re-released it on September 16, 2008."
+      },
+      {
+        "id": "D04",
+        "text": "Cruella de Vil: Cruella de Vil (spelled de Vil in the novel, spelled De Vil by Disney) is a character who appeared in Dodie Smith's 1956 novel \"The Hundred and One Dalmatians\", Disney's animated film adaptations \"101 Dalmatians\" and \"\", and Disney's live-action film adaptations \"101 Dalmatians\" and \"102 Dalmatians\" as the main antagonist."
+      },
+      {
+        "id": "D05",
+        "text": "One Hundred and One Dalmatians: One Hundred and One Dalmatians, often abbreviated as 101 Dalmatians, is a 1961 American animated adventure film produced by Walt Disney and based on the 1956 novel \"The Hundred and One Dalmatians\" by Dodie Smith. The 17th Disney animated feature film, the film tells the story of a litter of dalmatian puppies who are kidnapped by the villainous Cruella de Vil (Betty Lou Gerson), who wants to use their fur to make into coats. Their parents, Pongo and Perdita, (Rod Taylor and Cate Bauer respectively) set out to save their children from Cruella, all the while rescuing 84 additional puppies that were bought in pet shops, bringing the total of dalmatians to 101."
+      },
+      {
+        "id": "D06",
+        "text": "Disney's Animated Storybook: 101 Dalmatians: Disney's Animated Storybook: 101 Dalmatians is the sixth entry in the \"Disney's Animated Storybook\" point-and-click adventure interactive storybook PC game series, based on theatrical and home video releases. This game was based on the Disney franchise of \"One Hundred and One Dalmatians\", which began with the 1961 film of the same name. Like that movie, the plot of the game sees villain and fashionista Cruella de Vil steal a series of dalmatian puppies from married couple Roger and Anita and their pets Pongo and Perdita, who then attempt to rescue them back. The game was developed by Media Station and published by Disney Interactive. It was released on March 18, 1997. The game is the only \"Animated Storybook\" title based on a Walt Disney Animation Studios film that was made before the Disney Renaissance (ignoring the two \"Winnie the Pooh\"-based titles)."
+      },
+      {
+        "id": "D07",
+        "text": "G-Force (film): G-Force is a 2009 American family comedy adventure film produced by Walt Disney Pictures and Jerry Bruckheimer Films. Written by Cormac Wibberley and Marianne Wibberley and directed by Hoyt Yeatman, the film is the directorial debut of Hoyt Yeatman, whose earlier work includes contributions in the area of visual effects. It was released in the United States on July 24, 2009. \"G-Force\" is based on a story also by Hoyt Yeatman. The film was shown in competing 3-D technologies like Dolby 3D. This is also Jerry Bruckheimer's first 3-D film. The movie stars Zach Galifianakis, Bill Nighy, and Will Arnett and it features the voices of Sam Rockwell, Tracy Morgan, Pen\u00e9lope Cruz, Nicolas Cage, Steve Buscemi, and Jon Favreau. The film received generally negative reviews, with critics praising its action, but criticizing its plot and character development and it earned $292.8 million on a $150 million budget."
+      },
+      {
+        "id": "D08",
+        "text": "The 101 Dalmatians Musical: The 101 Dalmatians Musical is a musical produced by Luis Alvarez, directed by Jerry Zaks, and sponsored by Purina Dog Chow. The music written by former Styx member Dennis DeYoung, who also co-wrote the lyrics with the musical's book author B. T. McNicholl. Based on the 1956 children's novel \"The Hundred and One Dalmatians\" written by Dodie Smith, the musical follows a pair of Dalmatian dogs as they search through London in search of their litter of fifteen puppies, which were stolen by Cruella DeVil to make dog skin fur coats. The musical features Rachel York as the infamous Cruella DeVil, and has actors sharing the stage with fifteen real Dalmatians and using stilts to simulate the novel's original canine perspective."
+      },
+      {
+        "id": "D09",
+        "text": "G-force: The g-force (with \"g\" from \"gravitational\") is a measurement of the type of acceleration that causes a perception of weight. Despite the name, it is incorrect to consider g-force a fundamental force, as \"g-force\" (lower case character) is a type of acceleration that can be measured with an accelerometer. Since g-force accelerations indirectly produce weight, any g-force can be described as a \"weight per unit mass\" (see the synonym specific weight). When the g-force acceleration is produced by the surface of one object being pushed by the surface of another object, the reaction-force to this push produces an equal and opposite weight for every unit of an object's mass. The types of forces involved are transmitted through objects by interior mechanical stresses. The g-force acceleration (save for certain electromagnetic force influences) is the cause of an object's acceleration in relation to free-fall."
+      },
+      {
+        "id": "D10",
+        "text": "One Hundred and One Dalmatians (franchise): One Hundred and One Dalmatians (also known as 101 Dalmatians) is a media franchise that commenced in 1961 with the release of the titular theatrical film. It is often associated with Disney, though not all media related to this property have been released by that company."
+      }
+    ],
+    "reference": "American family comedy adventure",
+    "depth": 2,
+    "missing": false,
+    "condition": "distractor",
+    "split": "external",
+    "question_type": "comparison"
+  },
+  {
+    "id": "hotpot/5aba7e2c55429955dce3ee5a",
+    "world_id": "hotpot/5aba7e2c55429955dce3ee5a",
+    "upstream_id": "5aba7e2c55429955dce3ee5a",
+    "family": "hotpot",
+    "question": "Did Lewis Allen or Danny DeVito play Louie De Palma?",
+    "sources": [
+      {
+        "id": "D01",
+        "text": "Palma de Mallorca Airport: Palma de Mallorca Airport (Catalan: \"Aeroport de Palma de Mallorca\" , Spanish: \"Aeropuerto de Palma de Mallorca\" ; IATA: PMI,\u00a0ICAO: LEPA ) is an international airport located 8 km east of Palma, Majorca, Spain, adjacent to the village of Can Pastilla. Also known as \"Son Sant Joan Airport\" or \"Aeroport de Son Sant Joan\", it is the third largest airport in Spain, after Madrid\u2013Barajas and Barcelona. During the summer months it is one of the busiest airports in Europe, and was used by 26.2 million passengers in 2016. The airport is the main base for the Spanish carrier Air Europa and also a focus airport for Ryanair, EasyJet and Vueling."
+      },
+      {
+        "id": "D02",
+        "text": "Duchess of Palma de Mallorca: Duchess of Palma de Mallorca (Catalan: \"Ducat de Palma de Mallorca\" , Spanish: \"Duquesa de Palma de Mallorca\" ) was a noble title granted for life by King Juan Carlos I of Spain to his daughter, The Infanta Cristina, on 26 September 1997 on the occasion of her forthcoming marriage to I\u00f1aki Urdangarin. Cristina was stripped of her Dukedom by King Felipe VI, her younger brother, on 11 June 2015, due to a corruption inquiry, and the Dukedom was merged again in the Spanish Crown."
+      },
+      {
+        "id": "D03",
+        "text": "Lewis Allen (director): Lewis Allen (25 December 1905 \u2013 3 May 2000) was an English director. Allen worked mainly in the United States, working on Broadway and directing 18 feature films between 1944 and 1959. From the mid-1950s he moved increasingly into television and worked on a number of the most popular shows of the time in the US."
+      },
+      {
+        "id": "D04",
+        "text": "Lyc\u00e9e Fran\u00e7ais de Palma: Lyc\u00e9e Fran\u00e7ais de Palma (LFP; Spanish: Liceo franc\u00e9s de Palma ) is a French international school in El Terreno (/), Palma de Mallorca, Spain. It serves \"toute petite section\" through \"lyc\u00e9e\" (senior high school/sixth form college)."
+      },
+      {
+        "id": "D05",
+        "text": "Danny DeVito: Daniel Michael DeVito, Jr. (born November 17, 1944) is an American actor, comedian, director and producer. He gained prominence for his portrayal of the taxi dispatcher Louie De Palma in the television series \"Taxi\" (1978\u20131983), which won him a Golden Globe and an Emmy."
+      },
+      {
+        "id": "D06",
+        "text": "Palma Metro: Palma Metro (Catalan: \"Metro de Palma\" , Spanish: \"Metro de Palma\" [\"de Mallorca\"] ) is a light metro system in Palma, Majorca, Spain. The initial line of the system, M1, consists of 7.2 km of route and nine stations, and was constructed between 2005 and 2007 at cost of 312 million euros; it opened for service on 25 April 2007. In March 2013, an existing 8.35 km and nine station rail line was bundled in to the metro's service as the system's M2 line."
+      },
+      {
+        "id": "D07",
+        "text": "Bay of Palma: The Bay of Palma (Catalan: \"Badia de Palma\" , Spanish: \"Bah\u00eda de Palma\" ) is a bay located to the south of Palma, Majorca, Spain. It is in the south-west of the Balearic Island of Mallorca. Palma de Majorca's harbour is located on the northern shores along with some famous beaches. It is bounded to the west by Cape Cala Figuera, to the north by the city of Palma, to the south by the Mediterranean Sea and to the east by the White Cape. The Serra de Na Burguesa terminates at its shore."
+      },
+      {
+        "id": "D08",
+        "text": "Palmanova beach: Palma Nova Beach is seven kilometers (4.3\u00a0mi) from Calvi\u00e0, situated between Punta Nadala and es Carregador, on the Spanish Balearic island of Majorca. Besides Palmanova beach, other names by which the beach is known include \"Playa de Palma Nova\", and \"Platja de Palma Nova\". The Palma Nova sea front has three beaches: Torrenova, Es Carregador, and Palma Nova. The beach has had an extension of 500 m and has needed an artificial regeneration to achieve the current aspect of fine and white sand, as well as its dimensions."
+      },
+      {
+        "id": "D09",
+        "text": "Mission: Impossible (film): Mission: Impossible is a 1996 American action spy film directed by Brian De Palma, produced by and starring Tom Cruise. Based on the , the plot follows Ethan Hunt (Cruise) and his mission to uncover the mole who has framed him for the murders of his entire Impossible Missions Force (IMF) team. Work on the script had begun early with filmmaker Sydney Pollack on board, before De Palma, Steven Zaillian, David Koepp, and Robert Towne were brought in. \"Mission: Impossible\" went into pre-production without a shooting script. De Palma came up with some action sequences, but Koepp and Towne were dissatisfied with the story that led up to those events."
+      },
+      {
+        "id": "D10",
+        "text": "Wise Guys (1986 film): Wise Guys is a 1986 black Mafia comedy crime film directed by Brian De Palma and starring Danny DeVito and Joe Piscopo. A comedy revolving around two small-time mobsters from Newark, New Jersey, it also features Harvey Keitel, Ray Sharkey, Lou Albano, Dan Hedaya, and Frank Vincent."
+      }
+    ],
+    "reference": "Daniel Michael DeVito, Jr.",
+    "depth": 2,
+    "missing": false,
+    "condition": "distractor",
+    "split": "external",
+    "question_type": "comparison"
+  }
+]
