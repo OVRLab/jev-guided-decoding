@@ -137,6 +137,17 @@ accuracy; dynamic minus tuned-static staged accuracy on original worlds; tuned
 minus native direct HotpotQA F1. All other intervals are exploratory 95% intervals.
 Each question receives its own conclusion; there is no all-controls success gate.
 
+The separately [registered factorial supplement](../../research/adaptive-attention-factorial.md)
+isolates the three changes in the selected policy: uniform active-head strength,
+disabling head (21,13), and relevance threshold. It runs the six missing corners
+of a 2×2×2 combination on the same 600 constrained contexts, replaying existing
+receipts without API calls. R15 and tuned corners reuse the original outputs.
+Registration occurred after the main test began and before consulting aggregate
+held-out quality, so all factorial comparisons remain explicitly exploratory.
+They are not a new independent test set. Their deterministic execution order is
+acceptable for these greedy quality comparisons but does not establish randomized
+timing comparisons between the six new arms.
+
 ## Precision, accounting and failures
 
 All benchmark arms use FP32. The initial BF16 admission failed before any benchmark
