@@ -21,7 +21,8 @@ before tax/separate network. This is research-branch evidence, with mixed extern
 quality, not a generally improved checkpoint or a serving-throughput benchmark.
 
 Current follow-up: [R19 expected benefit and evidence sufficiency](research/benefit-sufficiency-plan.md).
-Implementation is under validation; no new quality evidence is claimed before the fresh study.
+The held-out study and separately registered static/shuffled controls are running;
+no new quality evidence is claimed before their independent audits.
 
 Previous completed work: [R17 selective attention](reports/2026-09-22-selective-attention/README.md).
 

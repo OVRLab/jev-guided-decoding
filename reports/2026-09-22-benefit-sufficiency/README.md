@@ -17,7 +17,8 @@ logit difference and all-layer cache difference are both 0.0 against independent
 native, relevance, failure and instruction-bias replay. Canned admission scores
 made no hosted calls; the subsequent fit phase uses the real hosted Jev service.
 
-445 tests pass locally and on the GPU host. One historical test was corrected to
+448 current tests pass locally; the pre-inference 445-test suite passed on the GPU
+host. One historical test was corrected to
 use a deterministic clock before inference; all scientific source hashes remain
 unchanged. Source/data protocol was committed at `73a26e0`; execution is pinned to
 `8b0ab3f`, which adds only tests and report material. One L40S is bounded by a

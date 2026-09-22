@@ -11,7 +11,19 @@ capabilities, not a historical defect in R18.
 Current focused check: nine tests pass, including receipt failure/max charging,
 no retry, cancellation drainage, native/cache preservation, attention-map scope,
 reference exclusion, fit feature validation and audit rejection of tampering.
-GPU admission, live hosted integration and held-out evaluation remain pending.
+Twelve GPU admission comparisons passed against independent native, relevance,
+failed-request and instruction-bias replay: maximum full-vocabulary logit and
+all-layer cache differences were both 0.0. Admission used canned probabilities
+and made no hosted calls. The live study subsequently verified successful joint
+relevance/sufficiency receipts from the pinned hosted `jev-1.13.0` service.
+Held-out evaluation and its final audits remain pending.
+
+The separately registered static/shuffled supplement adds three focused tests.
+Two initial capability tests failed because the supplemental module was absent,
+then passed after implementation; a third exercises final-token ownership and
+the distinction between local callbacks, logical requests and paid attempts.
+The current local suite has 448 passing tests. The pre-inference 445-test suite
+also passed on the GPU host; the extra three control tests were run locally.
 
 ## Pre-inference server correction
 

@@ -62,6 +62,15 @@ queries begin at the question and continue through generated tokens. Bias is add
 at the same selected heads and continues through cached decoding. There is no
 special UNKNOWN token, output substitution or restricted vocabulary.
 
+The bias changes attention probabilities, not the meaning of a value vector. For
+one affected query/head with original attention mass `m` on the selected keys,
+adding bias `b` changes that mass to `exp(b) * m / (1 - m + exp(b) * m)`, holding
+the incoming logits fixed. Thus strengths 2 and 5 multiply selected-versus-other
+attention odds by about 7.39 and 148.41. Downstream layers still combine their
+value vectors with the residual stream. More attention to an abstention clause
+does not guarantee following it, and an erroneous sufficiency judgment can steer
+an answerable input toward abstention.
+
 A failed request is counted and leaves native computation unchanged. An unasked
 judgment is `None`, never a fabricated probability. The serial runtime owns its
 hooks/cache until its model thread drains, including repeated cancellation. Lower
@@ -81,6 +90,55 @@ attempts. Other controls reuse exact receipts, so their standalone call counts
 are logical usage and uncached elapsed times are reconstructed estimates. Every
 arm uses one retained prefill. Comparisons of different answers also have different
 decode lengths; equal token ceilings are not equal computation.
+
+Two [supplemental controls](../../research/benefit-sufficiency-controls.md) were
+registered during fitting, before calibration selection, held-out generation or
+quality inspection. Each adds 608 generations on the same test inputs. The static
+control always emphasizes the existing abstention clause, using the selected
+instruction strength and no Jev. Its canned callback is local computation, not a
+provider request. The shuffled control keeps each input's relevance scores but
+uses another input's sufficiency probability, through one deterministic within-domain
+permutation. It reuses receipts and makes no additional paid requests. Dual minus
+each control is reported separately with exploratory 95% intervals; the six main
+primary comparisons are unchanged. A single permutation and the dual-selected
+strength do not constitute a search for the strongest static control.
+
+The main and supplemental schedules contain 6,096 and 1,216 outcomes respectively.
+Both finish before held-out quality inspection. The scientific audit reconstructs
+the frozen prompts, source and instruction token maps, decisions, receipt bindings,
+token provenance, cache lengths, work and grades; public replay repeats that audit
+without generating new answers or contacting Jev. Reconstruction is a mechanical
+consistency check, not independent human assessment of answer meaning.
+
+## What the comparisons establish
+
+For each domain, let `N_i` be native quality, `D_i` dual-guided quality, and `g_i`
+the frozen benefit gate's call decision. Conditional generation is checked to
+match the exact dual token sequence when `g_i = 1` and native sequence otherwise.
+The primary routing statistic is
+
+```text
+mean(g_i * (D_i - N_i)) - mean(g_i) * mean(D_i - N_i)
+```
+
+This measures whether calls select larger gains than an expected random allocation
+with that domain's actual call fraction. Saving calls alone does not make this
+statistic positive. The separately executed random arm uses the calibration call
+fraction and is a different, descriptive comparator. The 50% ceiling applies to
+calibration selection, not a guaranteed runtime quota on unseen data.
+
+The other primary comparison is dual minus relevance. This tests the complete
+sufficiency-dependent policy, including withholding relevance steering at middle
+or low probabilities; it does not isolate only the instruction-bias mechanism.
+The sufficiency-only and static/shuffled controls help interpret that distinction.
+
+Ten thousand paired cluster-bootstrap resamples preserve authored light/heavy
+world pairs, Hotpot questions and SQuAD article membership. Each of six main
+intervals has 99.1667% nominal coverage, giving a Bonferroni-adjusted nominal 95%
+family level. Finite-sample percentile bootstrap coverage is approximate. Ordinary
+95% secondary and supplemental intervals remain exploratory, and descriptive
+answerability groups do not introduce new significance tests. Different domain
+metrics are not pooled into a headline accuracy score.
 
 ## Relationship to prior work
 

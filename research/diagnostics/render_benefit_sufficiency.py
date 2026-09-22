@@ -48,17 +48,26 @@ def main():
             fig.savefig(output / f"{name}.{suffix}", dpi=180, bbox_inches="tight")
         plt.close(fig)
 
-    fig, axes = plt.subplots(1, 3, figsize=(15, 5.5), layout="constrained")
+    controls_path = args.report / "controls-analysis.json"
+    controls = json.loads(controls_path.read_text())["domains"] if controls_path.exists() else None
+    quality_arms = arms + (["instruction_always", "shuffled_sufficiency"] if controls else [])
+    quality_labels = labels + (["Static instruction", "Shuffled sufficiency"] if controls else [])
+    quality_colors = colors + (["#334155", "#a16207"] if controls else [])
+
+    def score(domain, arm):
+        return data["domains"][domain]["arms"][arm] if arm in arms else controls[domain][arm]
+
+    fig, axes = plt.subplots(1, 3, figsize=(15, 6.2), layout="constrained")
     for ax, (domain, title) in zip(axes, domains, strict=True):
-        values = [100 * data["domains"][domain]["arms"][a]["quality"] for a in arms]
-        bars = ax.barh(labels, values, color=colors)
+        values = [100 * score(domain, a)["quality"] for a in quality_arms]
+        bars = ax.barh(quality_labels, values, color=quality_colors)
         ax.bar_label(bars, fmt="%.2f", padding=3)
         ax.invert_yaxis()
         ax.set_xlim(0, max(60, max(values) + 10))
         ax.set_title(title)
         ax.set_xlabel("Score (%)")
     fig.suptitle(
-        "R19 • Seven matched generation configurations\n"
+        "R19 • Main study and separately registered controls\n"
         "Different domain metrics; these scores are not pooled",
         fontsize=14,
     )
@@ -83,18 +92,17 @@ def main():
 
     fig, axes = plt.subplots(1, 2, figsize=(12, 5), layout="constrained")
     subset = ["native", "relevance", "sufficiency", "dual", "benefit_gate"]
+    subgroup_labels = ["Native", "Relevance", "Sufficiency", "Dual", "Benefit gate"]
+    if controls:
+        subset.append("instruction_always")
+        subgroup_labels.append("Static instruction")
     for ax, (domain, title) in zip(axes, [domains[0], domains[2]], strict=True):
         x = np.arange(len(subset))
         for offset, group, color in [(-0.2, "answerable", "#0284c7"), (0.2, "missing", "#d97706")]:
-            values = [
-                100 * data["domains"][domain]["arms"][a]["subgroups"][group]["quality"]
-                for a in subset
-            ]
+            values = [100 * score(domain, a)["subgroups"][group]["quality"] for a in subset]
             bars = ax.bar(x + offset, values, 0.38, label=group.title(), color=color)
             ax.bar_label(bars, fmt="%.1f", padding=2, fontsize=8)
-        ax.set_xticks(
-            x, ["Native", "Relevance", "Sufficiency", "Dual", "Benefit gate"], rotation=15
-        )
+        ax.set_xticks(x, subgroup_labels, rotation=20)
         ax.set_ylim(0, 110)
         ax.set_ylabel("Score (%)")
         ax.set_title(title)

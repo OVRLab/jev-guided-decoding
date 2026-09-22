@@ -41,13 +41,16 @@ guides must defer here rather than maintain conflicting copies.
   separately named experiments; their scores cannot stand in for generated-answer
   quality. Verify final-token provenance and a consistent prompt/grading contract.
 - The package controllers select **text continuations during inference**. The
-  separate R14–R18 research hooks apply Jev source-relevance biases inside selected
+  separate R14–R19 research hooks apply Jev source-relevance biases inside selected
   Granite attention heads. R14 is static constrained QA; R16 adds serial cached
   generation, optional relevance refresh and full-vocabulary output contracts.
   R17 tests conditional dispatch, timing envelopes and local evidence-mass
   conservation. R18 places a conditional callback before layer 19 inside a single
-  native prefill. Distinguish each study from the package path. These are not neural
-  fusion, access to hidden reasoning, training, a vLLM extension, or an improved
+  native prefill. R19 adds a fitted benefit controller and separate evidence-sufficiency
+  judgments, including attention to an existing abstention instruction. Its canned
+  and shuffled controls are distinct from live Jev dispatch. Distinguish each study
+  from the package path. These are not neural
+  fusion, access to hidden reasoning, Granite/Jev weight training, a vLLM extension, or an improved
   model checkpoint. Claims need matching evidence.
 - Preserve the original model weights and exact accepted token IDs in this scope.
   Rejected branches must never enter the continuation prefix or another request's cache.

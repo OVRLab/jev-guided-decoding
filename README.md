@@ -8,8 +8,11 @@ protocols so other compatible models can be evaluated independently.
 
 **Status:** frozen-weight Transformers controllers for continuations and reasoning
 steps, plus a separate experimental hook that turns Jev source relevance into
-biases inside selected Granite attention heads. No model training or vLLM serving
-extension is included.
+biases inside selected Granite attention heads. Granite and Jev weights remain
+unchanged; R19 fits a small regression controller. No vLLM serving extension is included.
+
+[R19 benefit/sufficiency study — running](reports/2026-09-22-benefit-sufficiency/README.md):
+new internal guidance and separately registered static/shuffled controls; quality results pending.
 
 [R18 single-prefill study](reports/2026-09-22-boundary-attention/README.md) ·
 [Architecture](reports/2026-09-22-boundary-attention/method.md) ·

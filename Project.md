@@ -30,6 +30,9 @@ hidden reasoning, train weights, deploy a service, or publish an improved checkp
 The R16 research path implements serial retained-cache generation and relevance
 refresh. R17 adds conditional dispatch after a generated pilot; R18 moves that
 decision before layer 19 inside a single prefill, using native attention features.
+R19 tests a small fitted benefit predictor and separate evidence sufficiency, with
+source or existing-instruction attention steering. Granite and Jev weights remain
+unchanged; the fitted controller is a separate statistical model.
 Concurrent serving, vLLM integration and performance of a colocated Jev deployment
 still need separate design and evidence.
 

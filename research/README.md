@@ -1,7 +1,9 @@
 # Granite + Jev research record
 
 Current follow-up: [R19 expected benefit and evidence sufficiency](benefit-sufficiency-plan.md),
-registered before live inference; implementation and independent auditing are under validation.
+registered before live inference; the held-out run is underway. A separately
+[registered supplement](benefit-sufficiency-controls.md) tests static instruction
+and shuffled sufficiency without new paid Jev calls. Quality remains pending.
 
 Latest completed work: [R18 single-prefill boundary study](../reports/2026-09-22-boundary-attention/README.md),
 with [method](../reports/2026-09-22-boundary-attention/method.md),

@@ -1,5 +1,11 @@
 # Verified implementation inventory
 
+[R19 live study](reports/2026-09-22-benefit-sufficiency/README.md) is running on one
+L40S. Twelve real-checkpoint parity checks passed with zero logit/cache difference;
+448 current local tests pass, with the pre-inference 445-test suite also passing
+on the GPU host. New static/shuffled controls add three local tests and no API
+requests. Held-out quality, final cost and resource cleanup remain pending.
+
 [R18 completed study](reports/2026-09-22-boundary-attention/README.md).
 
 **R18 completed:** the single-prefill gate raises authored accuracy from
@@ -20,7 +26,7 @@ verified retrieval. New estimated cost is **$3.77**, cumulative **$27.23/$50**
 before tax/separate network. This is research-branch evidence, with mixed external
 quality, not a generally improved checkpoint or a serving-throughput benchmark.
 
-Current local verification: **435 tests pass in 6.89 seconds**, Ruff lint/format,
+R18 handoff verification: **435 tests passed in 6.89 seconds**, Ruff lint/format,
 the 49-file guidance checker and source/wheel builds pass. All seven R18 figure
 layouts were inspected; public archive reconstruction reproduces every main-audit
 field except its timestamp. The review bot remains unavailable due to quota.
