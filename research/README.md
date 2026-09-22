@@ -6,7 +6,9 @@ proposed experiments. It is a basis for a paper, not a claim of a successful mod
 release. All dates below are report dates; source artifacts retain execution times.
 
 **New work:** [R16 adaptive/free-text protocol](adaptive-attention-protocol.md) is
-registered; implementation and 374 offline tests pass, cloud inference is pending.
+running on one L40S after the prospective FP32 amendment; 375 offline tests pass.
+Development selected 11 active heads at strength 5 and threshold 0.65; evaluation
+is in progress and no held-out quality conclusion is available.
 It preserves the R15 result below while testing head-specific strengths, refreshed
 guidance and independent HotpotQA transfer.
 

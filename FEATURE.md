@@ -1,6 +1,12 @@
 # Feature: Jev-guided intermediate reasoning
 
-Current work completed: [R15 refinement](reports/2026-09-22-evidence-attention-refinement/README.md)
+Current work: [R16 adaptive/free-text study](research/adaptive-attention-protocol.md)
+is running under the [FP32 amendment](research/adaptive-attention-fp32-amendment.md).
+The fixed 16,120-job matrix tests individual head tuning, relevance refresh between
+Granite steps, natural free-text uncertainty, relation transfer and HotpotQA.
+Development selection is frozen; held-out results and final audit are pending.
+
+Previous work completed: [R15 refinement](reports/2026-09-22-evidence-attention-refinement/README.md)
 selected 12 heads, ln(16) and hard relevance gating. Fresh primary accuracy is
 38.08% native, 47.33% previous Jev and 68.42% refined Jev, meeting the frozen
 advancement criterion. All 34,777 planned records are retained, including 98

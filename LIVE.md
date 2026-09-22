@@ -1,5 +1,12 @@
 # Verified implementation inventory
 
+R16 implementation passes 375 local tests and its GPU FP32 admission. The
+[adaptive/free-text study](research/adaptive-attention-protocol.md) is running;
+its [methods](reports/2026-09-22-adaptive-attention/method.md) describe internal
+attention refresh and unrestricted final vocabulary. Development is frozen;
+no held-out R16 quality conclusion is available yet. The first BF16 admission
+failure and prospective precision amendment remain documented.
+
 [R15 completed study](reports/2026-09-22-evidence-attention-refinement/README.md):
 R15's fresh 600-world comparison scores **38.08% native Granite**, **47.33%
 previous Jev attention**, and **68.42% refined Jev attention**. The paired primary
