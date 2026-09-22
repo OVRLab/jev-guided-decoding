@@ -63,3 +63,12 @@ def test_frozen_budget_selection_rejects_changed_rule_or_development():
         m["verify_selection"](bad, selected, "development-hash", "plan-hash")
     with pytest.raises(ValueError, match="selection"):
         m["verify_selection"](frozen, selected, "changed", "plan-hash")
+
+
+def test_failed_request_keeps_native_pilot_and_does_not_charge_a_fresh_prefill():
+    m = runpy.run_path(str(PATH))
+    native = dict(model_forwards=12, processed_tokens=111)
+    guided_fallback = dict(model_forwards=12, processed_tokens=111)
+    pilot = dict(model_forwards=8, processed_tokens=107, token_ids=list(range(8)))
+    result = m["branch_work"](True, native, guided_fallback, pilot, provider_failed=True)
+    assert result == dict(model_forwards=12, processed_tokens=111, discarded_tokens=0, prefills=1)

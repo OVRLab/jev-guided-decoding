@@ -33,7 +33,7 @@ uniform-score no-op/weight identity. The separately registered
 tests that first failed because its module was missing, then passed. Its offline
 counterfactual does not change the frozen cloud source or live schedule.
 With the additional output diagnostic, additive-hook equivalence and four budget
-frontier tests, the full local suite passes **414 tests**; lint,
+frontier tests, the full local suite passes **415 tests**; lint,
 formatting, guidance checks and builds also pass. The cloud's frozen checkout
 remains `796873b`; later test/docs/offline-analysis commits do not alter its model run.
 
@@ -88,7 +88,7 @@ uv run --no-sync python research/diagnostics/selective_outputs.py \
 uv run --no-sync python research/diagnostics/selective_budget.py analyze \
   --manifest research/protocols/selective-attention-v1 \
   --results "$R17_RESULTS" --main-analysis /tmp/r17-audit.json \
-  --selection research/protocols/selective-budget-frontier-v1/selection.json \
+  --selection research/protocols/selective-budget-frontier-v1/selection-v2.json \
   --output /tmp/r17-budget.json
 ```
 
@@ -109,3 +109,8 @@ uv run --no-project --python 3.12.13 \
 Those exact plotting package versions were resolved and imported locally before
 the held-out run completed. The five main figures and optional sixth budget-replay
 figure still require visual inspection once actual audited results are available.
+
+The [budget accounting repair](../../research/selective-budget-accounting-amendment.md)
+retains the original freeze and binds the repaired script to selection-v2. A new
+provider-failure test failed before the repair and then passed; all development
+choices are byte-equivalent after excluding the script hash and timestamp.

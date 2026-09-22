@@ -70,6 +70,11 @@ before held-out aggregate inspection. Rules for 25/50/75% development request
 ceilings were frozen at 12:22 UTC. It reconstructs quality and work from recorded
 branches; it does not measure actual API savings or new live gated latency.
 
+The [budget accounting amendment](selective-budget-accounting-amendment.md) repairs
+reconstructed work after a failed request before supplementary analysis. It retains
+the first freeze and binds a second to identical development rules; no main study
+source, output, grade or call is changed or replayed.
+
 ## Corrections that the paper must retain
 
 **Who answered:** R04–R07's fixed-choice results end in Jev. The number 84.5%

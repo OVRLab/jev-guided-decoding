@@ -66,7 +66,9 @@ def verify_selection(frozen, selected, development_sha, plan_sha):
         raise ValueError("Frozen budget selection binding/reconstruction failed")
 
 
-def branch_work(called, native, guided, pilot):
+def branch_work(called, native, guided, pilot, *, provider_failed=False):
+    # A failed request retains the pilot cache; only successful guidance restarts.
+    called = called and not provider_failed
     branch = guided if called else native
     return dict(
         model_forwards=branch["model_forwards"] + (pilot["model_forwards"] if called else 0),
@@ -117,7 +119,13 @@ def analyze(manifest, results, main_analysis, selection):
                     if receipt
                     else 0,
                     unknown_calls=int(bool(receipt and receipt["status"] != "complete")),
-                    **branch_work(called, native["final"], guided["final"], observed["pilot"]),
+                    **branch_work(
+                        called,
+                        native["final"],
+                        guided["final"],
+                        observed["pilot"],
+                        provider_failed=bool(receipt and receipt["status"] != "complete"),
+                    ),
                 )
             )
         all_rows = [r for rows in groups.values() for r in rows]
