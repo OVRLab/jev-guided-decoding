@@ -229,3 +229,26 @@ def test_early_eos_is_a_completion_and_does_not_trigger_extra_generation():
         r["generate"](runtime, encoded, view, policy, forbidden, gate={"kind": "never"})
     )
     assert result["model_forwards"] == 1 and result["final"]["finish_reason"] == "eos"
+
+
+@pytest.mark.parametrize("envelope,active_forwards", [("all", 12), ("prefill", 1), ("fade8", 8)])
+def test_real_tiny_model_stops_intervening_at_the_phase_boundary(envelope, active_forwards):
+    runtime, encoded, _, policy = tiny_runtime()
+    session = runtime.session(encoded)
+    session.extend(12, {**policy, "envelope": envelope}, [0.9, 0.1])
+    result = session.result()
+    assert sum(t["active_heads"] > 0 for t in result["tokens"]) == active_forwards
+    assert result["hook_calls"] == 2 * active_forwards
+    assert result["model_forwards"] == 12
+
+
+def test_uniform_source_judgments_are_an_exact_noop_with_unchanged_weights():
+    torch = pytest.importorskip("torch")
+    runtime, encoded, _, policy = tiny_runtime()
+    before = {k: v.clone() for k, v in runtime.base.model.state_dict().items()}
+    native, equal = runtime.session(encoded), runtime.session(encoded)
+    native.extend(12)
+    equal.extend(12, policy, [0.9, 0.9])
+    assert native.result()["token_ids"] == equal.result()["token_ids"]
+    assert equal.result()["hook_calls"] == 0
+    assert all(torch.equal(v, before[k]) for k, v in runtime.base.model.state_dict().items())

@@ -56,7 +56,13 @@ Test conditional Jev dispatch, prefill/fading interventions and evidence-mass
 conservation on fresh unrestricted-answer tasks. Planned 2,028 development and
 6,336 test outcomes, plus mechanical admission. Granite owns final tokens; a
 development-fitted threshold controller may change but model weights do not.
-Implementation/offline verification in progress; no live quality result claimed.
+GPU numerical admission passed; development is running. No held-out quality result
+is claimed at this stage.
+
+The [offline routing supplement](selective-routing-supplement.md) was registered
+after development began, before selection or held-out inference was inspected.
+It compares routing to expected random assignment at the same observed call count;
+it adds no live calls or generation and does not replace the original random arm.
 
 ## Corrections that the paper must retain
 

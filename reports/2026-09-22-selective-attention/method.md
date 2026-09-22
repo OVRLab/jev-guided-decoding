@@ -1,7 +1,7 @@
 # R17 method and prospective scope
 
-This study is being implemented and validated; no live quality result is claimed
-by this initial method record. The [plan](../../research/selective-attention-plan.md)
+This study has passed numerical admission and is in development evaluation; no
+held-out quality result is claimed at this stage. The [plan](../../research/selective-attention-plan.md)
 defines hypotheses, selection, controls, data counts, budgets and primary tests.
 The [related-work review](../../research/selective-attention-related-work.md)
 separates prior ideas from the proposed combination.
@@ -65,3 +65,9 @@ receive the full original evidence. Static controls reuse exact Jev receipts,
 while the benefit-gate arm always executes first on each test input. Report actual
 HTTP attempts, logical calls for standalone deployment, discarded pilot work and
 uncached latency estimates separately. Hosted latency is not a colocation result.
+
+The live random gate uses the benefit gate's balanced development call fraction,
+so realized call counts can differ on test. The separately registered
+[routing supplement](../../research/selective-routing-supplement.md) adds an
+offline expected random policy at the actual test call count. Its branch outcomes
+come from audited native/always traces; it is not an additional live experiment.

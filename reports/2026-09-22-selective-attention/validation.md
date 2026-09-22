@@ -16,7 +16,25 @@ The private original test logs are retained; no credentials were used by tests.
 Pre-run canonical checks pass: **396 tests**, Ruff lint and formatting, the AI
 guidance checker (49 Markdown files), and wheel/source builds. Inference tests use
 offline tiny models; the core-only CI environment skips optional dependencies.
-GPU numerical admission and live quality remain pending at this initial record.
+GPU numerical admission subsequently passed all nine real-checkpoint fixtures for
+both additive and mass-preserving cached/full-prefix computation. Development is
+running; no held-out quality result is claimed at this stage.
+
+The first cloud bootstrap had 395 passing tests and one pre-existing test's
+60-second wall-time timeout (134.96 seconds total). CPU intra-op threads were one
+but inter-op threads defaulted to four. Explicitly setting both to one produced
+**396 passing tests in 11.96 seconds** before loading the real checkpoint. The
+original failure log is retained, and no paid/model-study job was replayed. The
+inference launcher already sets both thread counts to one.
+
+Four additional offline checks exercise actual tiny-model phase boundaries and
+uniform-score no-op/weight identity. The separately registered
+[routing supplement](../../research/selective-routing-supplement.md) has three
+tests that first failed because its module was missing, then passed. Its offline
+counterfactual does not change the frozen cloud source or live schedule.
+With these additional checks, the full local suite passes **403 tests**; lint,
+formatting, guidance checks and builds also pass. The cloud's frozen checkout
+remains `796873b`; later test/docs/offline-analysis commits do not alter its model run.
 
 The prepared cohorts contain 156 development inputs, 704 test inputs and six
 external mechanics examples. All 254 Hotpot questions are disjoint from R16's
