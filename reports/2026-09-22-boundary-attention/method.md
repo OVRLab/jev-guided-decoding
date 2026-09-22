@@ -108,6 +108,9 @@ can change total evidence attention; it does not conserve that mass. Uniform
 threshold decisions across all sources use the earlier exact-no-op convention.
 The scores are fixed from the original prompt, and do not relabel future generated
 tokens as source evidence. No head, threshold or strength is retuned in R18.
+During prefill, the bias applies only to query positions at or after the question
+suffix's recorded start; the earlier evidence tokens' own queries remain native.
+During decoding it applies to each new query attending to the original source keys.
 
 ## Fitting and test isolation
 
@@ -165,6 +168,9 @@ mean/median/p95 model and first-token times. Model time excludes measured provid
 wait. Adding a saved receipt duration to a cache-hit execution estimates uncached
 wall/first-token time; it is not a separately observed live deployment latency.
 Tokenization/loading are outside per-question timings and inside whole-run cost.
+The recorded first-token timestamp is the synchronized completion of the first
+retained model forward, before the subsequent argmax/statistics/text-decoding work;
+it is a model first-token timing proxy, not end-to-end client delivery latency.
 
 The implementation uses serial Python hooks around native Transformers SDPA.
 The model worker runs in an owned thread; a boundary callback awaits the provider

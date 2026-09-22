@@ -83,3 +83,12 @@ After the five descriptive tests were added, local canonical checks passed:
 **435 tests in 6.80 seconds**, Ruff lint, Ruff format (294 files), guidance checker
 (49 Markdown files), and source/wheel builds. Figure execution/visual inspection
 and full result reconstruction remain pending the completed GPU run at this entry.
+
+Direct hardware inspection and Nebius's platform API identify `gpu-l40s-a` as
+**Intel Ice Lake**, with a Xeon Gold 6338 visible in the VM. An initial private
+cost helper had assumed the AMD CPU rate from the platform suffix; it was corrected
+before final accounting to $0.012 per vCPU-hour, giving $1.5484/hour for GPU/CPU/RAM
+plus disk. The difference is $0.016 per VM-hour and remains within the registered
+reserve. No scientific source or earlier study cost was changed. The
+[hardware record](execution/hardware.json) preserves the actual environment;
+[Nebius pricing](https://docs.nebius.com/compute/resources/pricing) supplies the rates.
