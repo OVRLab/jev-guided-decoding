@@ -180,3 +180,8 @@ no paid calls. The frozen tolerance is 1e-4, with identical accepted tokens, cac
 lengths and single-prefill work required. Scientific source and model weight hashes
 are verified independently of claims about quality. The resulting audits are
 development-team code checks, not independent human replication or peer review.
+
+The [R18 prior-method comparison](../../research/boundary-attention-related-work.md)
+distinguishes this implementation from Lookback Lens, RAUQ, SeaKR, CtrlA and
+DSSP-RAG. Attention-based monitoring and conditional knowledge integration are
+established ideas; R18 does not contain live implementations of those comparators.

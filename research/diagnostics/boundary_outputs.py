@@ -71,6 +71,20 @@ def call_outcomes(native, guided, calls):
     }
 
 
+def intervention_outcomes(rows, native):
+    successful = [r for r in rows if r["logical_jev_calls"] and r["provider_status"] == "complete"]
+    active = sum(any(t["active_heads"] for t in r["final"]["tokens"]) for r in successful)
+    changed = [
+        r for r in rows if r["final"]["token_ids"] != native[r["case_id"]]["final"]["token_ids"]
+    ]
+    return dict(
+        successful_active_calls=active,
+        successful_noop_calls=len(successful) - active,
+        called_changed_token_paths=sum(r["logical_jev_calls"] for r in changed),
+        changed_token_paths=len(changed),
+    )
+
+
 def analyze(manifest, results, main_analysis, binding):
     verify_binding(binding, main_analysis, manifest / "test.json", results)
     d = runpy.run_path(str(ROOT / "research/iterations/boundary_attention/data.py"))
@@ -106,8 +120,15 @@ def analyze(manifest, results, main_analysis, binding):
             call_fraction=statistics.mean(r["logical_jev_calls"] for r in rows),
         )
 
+    native = {ident: index[ident, "native"] for ident in cases}
     diagnostics = [
-        dict(domain=dom, arm=arm, **describe(rows, cases, dom), **scores(rows))
+        dict(
+            domain=dom,
+            arm=arm,
+            **describe(rows, cases, dom),
+            **scores(rows),
+            **intervention_outcomes(rows, native),
+        )
         for (dom, arm), rows in sorted(groups.items())
     ]
     subgroup_rows = [

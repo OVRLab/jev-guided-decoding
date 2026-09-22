@@ -34,3 +34,11 @@ mean/median/p95 timing, actual prefill/layer-token work, output forms and
 answerability groups from the audited JSON. Report feature-observation overhead
 using matched never/always branches; shared-receipt uncached timings remain
 reconstructions. Keep physical API spend separate from logical standalone use.
+
+Addendum recorded during held-out execution, before inspecting test quality
+aggregates: distinguish successful calls with at least one active head from
+successful calls with no active heads under the fixed uniform-score no-op rule.
+Count final-token-path changes relative to native separately. Break out source
+count as already registered for SQuAD; one-source contexts cannot produce mixed
+source threshold decisions. These are descriptive execution counts, not a new
+selection rule or additional significance test.

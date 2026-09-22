@@ -73,3 +73,13 @@ missing, then passed. A fourth integration test passes for all three domains and
 nine arms, verifying first-by-ID example selection and rejecting modified grades.
 Artifact tampering, raw empty output and provider failure remain distinct checks.
 The supplement changes no frozen inference or primary analysis source.
+
+A descriptive addendum, recorded during test execution before quality-aggregate
+inspection, separates paid successful no-ops, active guidance and final-token-path
+changes. Its added test first failed on the missing function, then passed after
+implementation. This adds no inference, policy change or significance test.
+
+After the five descriptive tests were added, local canonical checks passed:
+**435 tests in 6.80 seconds**, Ruff lint, Ruff format (294 files), guidance checker
+(49 Markdown files), and source/wheel builds. Figure execution/visual inspection
+and full result reconstruction remain pending the completed GPU run at this entry.

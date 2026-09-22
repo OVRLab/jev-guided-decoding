@@ -12,7 +12,7 @@ def row(ident, text, grade, *, call=0, failed=False):
         case_id=ident,
         text=text,
         grade=grade,
-        final={"finish_reason": "eos"},
+        final={"finish_reason": "eos", "tokens": [{"active_heads": 0}], "token_ids": [1]},
         provider_status="failed_fallback" if failed else "unasked",
         logical_jev_calls=call,
         physical_jev_attempts=call,
@@ -47,6 +47,30 @@ def test_call_diagnostics_use_quality_and_count_failed_attempts_as_calls():
     )
     with pytest.raises(ValueError):
         m["call_outcomes"]([0.1], [0.2], [2])
+
+
+def test_successful_noop_calls_are_separate_from_active_and_failed_calls():
+    m = runpy.run_path(str(PATH))
+    rows = [
+        dict(
+            case_id=str(i),
+            logical_jev_calls=1,
+            provider_status="complete" if i < 2 else "failed_fallback",
+            final={
+                "tokens": [{"active_heads": 11 if i == 1 else 0}],
+                "token_ids": [2 if i == 1 else 1],
+            },
+        )
+        for i in range(3)
+    ]
+    native = {str(i): {"final": {"token_ids": [1]}} for i in range(3)}
+    got = m["intervention_outcomes"](rows, native)
+    assert got == dict(
+        successful_active_calls=1,
+        successful_noop_calls=1,
+        called_changed_token_paths=1,
+        changed_token_paths=1,
+    )
 
 
 def test_artifact_binding_rejects_modified_audit_or_raw_bytes(tmp_path):
