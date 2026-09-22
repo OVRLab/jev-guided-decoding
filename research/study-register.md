@@ -209,3 +209,12 @@ reads AutoPASTA, Spotlight and CAFE against the frozen R16 implementation, retai
 primary-source retrieval hashes. It documents existing automatic/dynamic steering
 and untested comparators. It does not modify the live schedule or claim reproduced
 results or methodological novelty.
+
+### R16 additional artifact audit (no inference)
+
+During main evaluation, an independent supplementary audit was specified to bind
+every test arm to the frozen selected policy, verify that selection preceded test
+starts, reconcile actual attention-hook calls with generated phases, reject any
+answer menu in unrestricted phases, and decode framing against fixed controller
+text. Three tests first failed with missing scaffolding. This strengthens artifact
+verification without changing the frozen main auditor, scientific metrics or run.
