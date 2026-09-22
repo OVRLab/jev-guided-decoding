@@ -1,0 +1,10 @@
+{
+  "registered_before_test": true,
+  "latest_progress_at_registration": {
+    "at": "2026-09-22T21:02:33.091511+00:00",
+    "stage": "running",
+    "outcomes": 1116
+  },
+  "heldout_quality_inspected": false,
+  "reason": "Add static-instruction and shuffled-sufficiency controls; main freeze unchanged"
+}

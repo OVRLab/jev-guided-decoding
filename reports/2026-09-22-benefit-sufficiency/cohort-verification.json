@@ -1,0 +1,8 @@
+{
+  "authored_contexts_independently_reconstructed": 468,
+  "complete_squad_paragraphs_verified": 320,
+  "passed": true,
+  "unique_scorer_payloads": 1068,
+  "previous_external_question_overlap": 0,
+  "previous_squad_article_overlap": 0
+}

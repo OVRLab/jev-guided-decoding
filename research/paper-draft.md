@@ -927,6 +927,46 @@ cumulative $27.23/$50 before tax/separate network. The
 [report](../reports/2026-09-22-boundary-attention/README.md) includes seven figures,
 complete traces, exact environments, operational corrections and reproduction commands.
 
+### 7.8 R19: expected treatment benefit and evidence sufficiency
+
+The [prospective R19 protocol](benefit-sufficiency-plan.md) investigates two
+separate weaknesses identified in R18: unreliable benefit prediction across tasks
+and weak abstention when supplied evidence is insufficient. It retains the native
+prefill boundary and existing eleven-head treatment. A six-feature quadratic ridge
+controller predicts dual-guided minus native quality using a fit partition; a
+separate calibration partition selects the instruction strength and a positive
+benefit threshold under a 50% development call ceiling. Granite and Jev weights
+remain unchanged; this fits a small controller rather than either language model.
+
+Jev receives the original question and sources in one joint request containing
+per-source relevance questions and an independent evidence-sufficiency Noul. High
+sufficiency activates inherited relevance steering; low sufficiency emphasizes
+Granite's existing system instruction to explain missing evidence. Middle values
+retain native computation. The instruction is already present in every prompt,
+and Granite selects every output token from its full vocabulary. This intervention
+can be wrong; its purpose is to test whether a separate insufficiency signal can
+improve generation without substituting a classifier's final answer.
+
+There are 260 fit inputs, 200 calibration inputs, and 608 fresh test inputs:
+288 authored light/heavy contexts, 160 Hotpot questions and 160 SQuAD2 questions.
+The latter use disjoint articles from the official public training distribution,
+excluding earlier project articles; pretraining exposure remains unknown. Seven
+test arms compare native, relevance, sufficiency-only, dual-always, predicted-benefit,
+random and frozen-R18 dispatch. Six primary per-domain contrasts assess dual minus
+relevance and predicted-benefit routing above expected random at the same actual
+call count, with individual 99.1667% cluster-bootstrap intervals. Lexical and
+adapted abstention metrics retain their limitations. No conjunction across all
+controls is required for a bounded positive finding.
+
+Before live inference, twelve real-checkpoint admission checks found zero maximum
+full-vocabulary logit and all-layer cache differences from independent native,
+relevance, failure and instruction-bias replay. The first host validation exposed
+one historical CPU-time-dependent test; its clock was isolated before inference,
+without changing scientific source or real runtime/spend limits. All 445 tests
+then passed on the GPU host. The study is running; held-out results and final
+cost/resource accounting remain pending in the
+[R19 report](../reports/2026-09-22-benefit-sufficiency/README.md).
+
 ## 8. Limitations and threats to validity
 
 - R18's finite single-feature gate has highly uneven domain call rates, no primary
