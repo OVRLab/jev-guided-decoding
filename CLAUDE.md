@@ -29,6 +29,7 @@ weaken their requirements in this entrypoint.
 | [Benefit and sufficiency research](research/iterations/benefit_sufficiency/runtime.py) | R19 uses a local benefit predictor and separate Jev sufficiency judgment to select source or instruction attention; [protocol](research/benefit-sufficiency-plan.md), [static/shuffled supplement](research/benefit-sufficiency-controls.md). Granite owns every final token; a canned callback is not a Jev request. |
 | [R19 corrected controls](research/iterations/sufficiency_controls_v2.py) / [portable audit](research/diagnostics/benefit_sufficiency_audit.py) | Explicit JSON tuple/list correction and bounded logarithm roundoff adapter preserve frozen sources, raw records and all other audit checks; [completed report](reports/2026-09-22-benefit-sufficiency/README.md). |
 | [configs](configs/) / [data](data/) | Pinned experiments and fictional fixtures |
+| [Blinded semantic evaluation](research/iterations/semantic_evaluation/pipeline.py) | R20 validates a separate Qwen judge, then generates fixed native/static/Jev arms and freezes anonymous grading before analysis; [protocol](research/semantic-evaluation-plan.md). Constructed validation is not independent human annotation. |
 | [tests](tests/) / [reports](reports/) | Offline checks and immutable experimental evidence |
 
 The code is Python, with optional Transformers/PyTorch dependencies. The core

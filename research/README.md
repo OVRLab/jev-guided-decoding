@@ -1,5 +1,10 @@
 # Granite + Jev research record
 
+Current follow-up: [R20 blinded semantic evaluation](semantic-evaluation-plan.md),
+with [registration status](../reports/2026-09-23-semantic-evaluation/README.md).
+Validate the independent automated judge before generating fresh three-arm test
+answers; no new architecture or quality gain is claimed before that evaluation.
+
 Latest completed work: [R19 expected benefit and evidence sufficiency](../reports/2026-09-22-benefit-sufficiency/README.md),
 with [all controls](../reports/2026-09-22-benefit-sufficiency/tables.md),
 [answer examples](../reports/2026-09-22-benefit-sufficiency/examples.md) and

@@ -7,6 +7,7 @@ future edge case listed below is already tested.
 
 | Flow | Contract and failure cases | Current evidence / suitable validation |
 | --- | --- | --- |
+| Blinded semantic evaluation | Independent judge must pass semantic fixtures before test generation; allowlisted anonymous packets exclude treatment/scorer metadata; duplicate answers share grades; malformed/capped judgments remain unresolved; freeze grades before joining arms | [R20 tests](tests/test_semantic_evaluation.py), [protocol](research/semantic-evaluation-plan.md), [pipeline](research/iterations/semantic_evaluation/pipeline.py) |
 | Contributor setup | Core installation/imports without torch, GPU, key, or private helper; optional extras explicit | [CI](.github/workflows/checks.yml), package build, documented install and CLI help |
 | Baseline generation | No Jev credential read or provider call; original model remains frozen | [controller tests](tests/test_controller.py), [backend tests](tests/test_transformers_backend.py), CLI smoke when backend changes |
 | Candidate continuation | Exact accepted IDs feed the next step; discarded branches stay isolated; whitespace/Unicode decoding stays faithful | [controller tests](tests/test_controller.py), [backend tests](tests/test_transformers_backend.py), [two-sentence trace](reports/2026-09-20-granite-smoke/continuation/runs.jsonl) |

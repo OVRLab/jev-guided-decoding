@@ -1,5 +1,10 @@
 # Verified implementation inventory
 
+[R20 semantic evaluation](reports/2026-09-23-semantic-evaluation/README.md) is
+implemented and frozen for evaluator admission: 462 local tests pass, with exact
+blinding, failed-admission and native/static no-provider flows covered. The planned
+528-input architecture comparison has no generated quality result yet.
+
 [R19 completed study](reports/2026-09-22-benefit-sufficiency/README.md) tests a local
 benefit predictor and independent Jev sufficiency at the retained-prefill boundary.
 Native/dual scores are **26.74%/43.06%** authored parser accuracy,

@@ -1,0 +1,6338 @@
+[
+  {
+    "case_id": "r20/test/0029/sebarasi/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0029/sebarasi/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0029/sebarasi/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a79bed05542994bb9457053",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a79bed05542994bb9457053",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a79bed05542994bb9457053",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a73c9d742eae6001a3899e2",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a73c9d742eae6001a3899e2",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a73c9d742eae6001a3899e2",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a7f354b5542992e7d278c8c",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a7f354b5542992e7d278c8c",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a7f354b5542992e7d278c8c",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0057/tagasado/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0057/tagasado/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0057/tagasado/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0041/vatudare/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0041/vatudare/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0041/vatudare/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a70dbb38abb0b001a6761c6",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a70dbb38abb0b001a6761c6",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a70dbb38abb0b001a6761c6",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/570d7b4db3d812140066d9cb",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/570d7b4db3d812140066d9cb",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/570d7b4db3d812140066d9cb",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0030/teraluca/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0030/teraluca/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0030/teraluca/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0026/ripofila/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0026/ripofila/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0026/ripofila/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ac1d4ad5542994d76dccef7",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ac1d4ad5542994d76dccef7",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ac1d4ad5542994d76dccef7",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5728ca372ca10214002da7e2",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5728ca372ca10214002da7e2",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5728ca372ca10214002da7e2",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5728e91a4b864d1900165077",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5728e91a4b864d1900165077",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5728e91a4b864d1900165077",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0101/vumusola/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0101/vumusola/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0101/vumusola/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5726e7135951b619008f81e3",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5726e7135951b619008f81e3",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5726e7135951b619008f81e3",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0018/ruboremu/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0018/ruboremu/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0018/ruboremu/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0111/mavenike/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0111/mavenike/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0111/mavenike/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0088/bididuce/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0088/bididuce/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0088/bididuce/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a6501b4c2b11c001a425b97",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a6501b4c2b11c001a425b97",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a6501b4c2b11c001a425b97",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0084/ketoselu/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0084/ketoselu/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0084/ketoselu/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5ad23e52d7d075001a4288be",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5ad23e52d7d075001a4288be",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5ad23e52d7d075001a4288be",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0143/bacegibo/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0143/bacegibo/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0143/bacegibo/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0021/cenumeco/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0021/cenumeco/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0021/cenumeco/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0008/rapibuta/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0008/rapibuta/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0008/rapibuta/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0125/fadebune/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0125/fadebune/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0125/fadebune/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5709eb696d058f1900182c25",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5709eb696d058f1900182c25",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5709eb696d058f1900182c25",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a7222ad0efcfe001a8afe3d",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a7222ad0efcfe001a8afe3d",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a7222ad0efcfe001a8afe3d",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5adfa6c7554299025d62a326",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5adfa6c7554299025d62a326",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5adfa6c7554299025d62a326",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0073/vevofeku/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0073/vevofeku/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0073/vevofeku/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0037/tefunare/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0037/tefunare/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0037/tefunare/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5727a1a43acd2414000de85b",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5727a1a43acd2414000de85b",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5727a1a43acd2414000de85b",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a78b386554299148911f949",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a78b386554299148911f949",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a78b386554299148911f949",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0080/bomosefa/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0080/bomosefa/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0080/bomosefa/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a811152554299260e20a22e",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a811152554299260e20a22e",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a811152554299260e20a22e",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0019/rurupere/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0019/rurupere/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0019/rurupere/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0054/limolosa/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0054/limolosa/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0054/limolosa/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0040/dovirera/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0040/dovirera/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0040/dovirera/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ab56b3a554299637185c585",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ab56b3a554299637185c585",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ab56b3a554299637185c585",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0055/semepafo/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0055/semepafo/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0055/semepafo/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0100/lekofimi/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0100/lekofimi/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0100/lekofimi/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0012/tivubaci/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0012/tivubaci/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0012/tivubaci/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0001/titeteso/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0001/titeteso/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0001/titeteso/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a88bd1d554299206df2b357",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a88bd1d554299206df2b357",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a88bd1d554299206df2b357",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/570a5ced4103511400d5966f",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/570a5ced4103511400d5966f",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/570a5ced4103511400d5966f",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0095/kovaromu/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0095/kovaromu/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0095/kovaromu/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ade982f554299728e26c753",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ade982f554299728e26c753",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ade982f554299728e26c753",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0132/serigofo/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0132/serigofo/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0132/serigofo/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ab9188c5542991b5579f0f5",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ab9188c5542991b5579f0f5",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ab9188c5542991b5579f0f5",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/570a82334103511400d597b6",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/570a82334103511400d597b6",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/570a82334103511400d597b6",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/570da87816d0071400510c5d",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/570da87816d0071400510c5d",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/570da87816d0071400510c5d",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5726c394f1498d1400e8ea90",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5726c394f1498d1400e8ea90",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5726c394f1498d1400e8ea90",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0137/lonutaci/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0137/lonutaci/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0137/lonutaci/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0032/fikevesa/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0032/fikevesa/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0032/fikevesa/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0024/petopuvu/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0024/petopuvu/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0024/petopuvu/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a2d54d8f28ef0001a526498",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a2d54d8f28ef0001a526498",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a2d54d8f28ef0001a526498",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0082/getivena/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0082/getivena/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0082/getivena/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a82325a31013a001a3352c4",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a82325a31013a001a3352c4",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a82325a31013a001a3352c4",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/56e149c7cd28a01900c67745",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/56e149c7cd28a01900c67745",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/56e149c7cd28a01900c67745",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0081/kekolasi/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0081/kekolasi/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0081/kekolasi/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0091/begifita/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0091/begifita/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0091/begifita/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0023/petenivo/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0023/petenivo/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0023/petenivo/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0058/befakobi/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0058/befakobi/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0058/befakobi/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0053/menivebe/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0053/menivebe/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0053/menivebe/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5ad2aaf2d7d075001a429e4d",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5ad2aaf2d7d075001a429e4d",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5ad2aaf2d7d075001a429e4d",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/572785035951b619008f8c28",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/572785035951b619008f8c28",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/572785035951b619008f8c28",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0039/talibuma/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0039/talibuma/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0039/talibuma/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0043/sebibidu/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0043/sebibidu/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0043/sebibidu/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/572e8209dfa6aa1500f8d068",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/572e8209dfa6aa1500f8d068",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/572e8209dfa6aa1500f8d068",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0050/cidefidu/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0050/cidefidu/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0050/cidefidu/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ae80d25554299540e5a5709",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ae80d25554299540e5a5709",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ae80d25554299540e5a5709",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0099/lovabipe/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0099/lovabipe/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0099/lovabipe/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0000/dicepege/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0000/dicepege/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0000/dicepege/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0102/tafileco/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0102/tafileco/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0102/tafileco/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5727b7c74b864d1900163b4a",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5727b7c74b864d1900163b4a",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5727b7c74b864d1900163b4a",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/57313a17497a881900248c91",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/57313a17497a881900248c91",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/57313a17497a881900248c91",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ae608715542992663a4f244",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ae608715542992663a4f244",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ae608715542992663a4f244",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0118/dicipase/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0118/dicipase/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0118/dicipase/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/57321029e99e3014001e64bd",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/57321029e99e3014001e64bd",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/57321029e99e3014001e64bd",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0016/vacicimu/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0016/vacicimu/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0016/vacicimu/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a8a4c4d3b2508001a72aa0b",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a8a4c4d3b2508001a72aa0b",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a8a4c4d3b2508001a72aa0b",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5ace4be532bba1001ae4a200",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5ace4be532bba1001ae4a200",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5ace4be532bba1001ae4a200",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0062/mafevetu/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0062/mafevetu/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0062/mafevetu/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0036/birateli/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0036/birateli/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0036/birateli/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a7a96b055429941d65f26d7",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a7a96b055429941d65f26d7",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a7a96b055429941d65f26d7",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0041/vatudare/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0041/vatudare/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0041/vatudare/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5abbe40555429931dba145cd",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5abbe40555429931dba145cd",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5abbe40555429931dba145cd",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0071/vepicava/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0071/vepicava/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0071/vepicava/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0006/fenakino/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0006/fenakino/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0006/fenakino/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0115/ramidisi/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0115/ramidisi/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0115/ramidisi/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0066/kobapamu/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0066/kobapamu/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0066/kobapamu/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ab64285554299637185c67c",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ab64285554299637185c67c",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ab64285554299637185c67c",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/570d1264b3d812140066d3d5",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/570d1264b3d812140066d3d5",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/570d1264b3d812140066d3d5",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0011/lubogaca/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0011/lubogaca/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0011/lubogaca/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0104/buvalavu/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0104/buvalavu/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0104/buvalavu/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0096/bonovuru/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0096/bonovuru/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0096/bonovuru/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0055/semepafo/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0055/semepafo/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0055/semepafo/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a7345ed5542992359bc32ce",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a7345ed5542992359bc32ce",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a7345ed5542992359bc32ce",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ab3c53955429969a97a81b9",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ab3c53955429969a97a81b9",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ab3c53955429969a97a81b9",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a66faa1f038b7001ab0c146",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a66faa1f038b7001ab0c146",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a66faa1f038b7001ab0c146",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5ad0c764645df0001a2d02ef",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5ad0c764645df0001a2d02ef",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5ad0c764645df0001a2d02ef",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5727aad82ca10214002d933e",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5727aad82ca10214002d933e",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5727aad82ca10214002d933e",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0069/segusuga/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0069/segusuga/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0069/segusuga/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0034/tukonovu/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0034/tukonovu/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0034/tukonovu/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0108/dimukafa/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0108/dimukafa/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0108/dimukafa/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/57062dc675f01819005e7a2a",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/57062dc675f01819005e7a2a",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/57062dc675f01819005e7a2a",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ae7316e554299572ea5477e",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ae7316e554299572ea5477e",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ae7316e554299572ea5477e",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a7fd4e18f0597001ac000dd",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a7fd4e18f0597001ac000dd",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a7fd4e18f0597001ac000dd",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ac3b40a554299741d48a2e5",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ac3b40a554299741d48a2e5",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ac3b40a554299741d48a2e5",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ab8903555429916710eb08e",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ab8903555429916710eb08e",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ab8903555429916710eb08e",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/57267b7edd62a815002e86b2",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/57267b7edd62a815002e86b2",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/57267b7edd62a815002e86b2",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a1dd7ee4ea40d0018b06fc3",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a1dd7ee4ea40d0018b06fc3",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a1dd7ee4ea40d0018b06fc3",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0072/lipinabi/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0072/lipinabi/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0072/lipinabi/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0080/bomosefa/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0080/bomosefa/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0080/bomosefa/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/56f8c15c9e9bad19000a0426",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/56f8c15c9e9bad19000a0426",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/56f8c15c9e9bad19000a0426",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a807b44554299485f59860a",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a807b44554299485f59860a",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a807b44554299485f59860a",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0095/kovaromu/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0095/kovaromu/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0095/kovaromu/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0094/patafovi/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0094/patafovi/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0094/patafovi/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0123/lakosulo/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0123/lakosulo/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0123/lakosulo/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/56de7567cffd8e1900b4b942",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/56de7567cffd8e1900b4b942",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/56de7567cffd8e1900b4b942",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0081/kekolasi/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0081/kekolasi/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0081/kekolasi/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a8a59c955429930ff3c0da6",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a8a59c955429930ff3c0da6",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a8a59c955429930ff3c0da6",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0077/nicanebe/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0077/nicanebe/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0077/nicanebe/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0065/mubufoma/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0065/mubufoma/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0065/mubufoma/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a89d26b5542992e4fca83d1",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a89d26b5542992e4fca83d1",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a89d26b5542992e4fca83d1",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0089/gutosufo/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0089/gutosufo/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0089/gutosufo/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0084/ketoselu/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0084/ketoselu/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0084/ketoselu/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ac11139554299294b219083",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ac11139554299294b219083",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ac11139554299294b219083",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0008/rapibuta/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0008/rapibuta/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0008/rapibuta/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0086/vikafoga/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0086/vikafoga/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0086/vikafoga/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0003/femepuve/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0003/femepuve/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0003/femepuve/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a73d4385542992d56e7e3b1",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a73d4385542992d56e7e3b1",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a73d4385542992d56e7e3b1",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ac2ae4155429921a00ab030",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ac2ae4155429921a00ab030",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ac2ae4155429921a00ab030",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a72634d5542997f82783994",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a72634d5542997f82783994",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a72634d5542997f82783994",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ab6a261554299710c8d1f07",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ab6a261554299710c8d1f07",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ab6a261554299710c8d1f07",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a7625e8554299109176e66a",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a7625e8554299109176e66a",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a7625e8554299109176e66a",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0061/rusagasu/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0061/rusagasu/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0061/rusagasu/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0116/lelikadi/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0116/lelikadi/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0116/lelikadi/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0038/nicameca/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0038/nicameca/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0038/nicameca/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0013/rubivegi/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0013/rubivegi/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0013/rubivegi/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0113/gerasidu/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0113/gerasidu/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0113/gerasidu/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a74ab6055429916b01641b9",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a74ab6055429916b01641b9",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a74ab6055429916b01641b9",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a75e16055429976ec32bc6a",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a75e16055429976ec32bc6a",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a75e16055429976ec32bc6a",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a86681c5542991e77181644",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a86681c5542991e77181644",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a86681c5542991e77181644",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0101/vumusola/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0101/vumusola/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0101/vumusola/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5ad41708604f3c001a400365",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5ad41708604f3c001a400365",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5ad41708604f3c001a400365",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5acfdc6777cf76001a686320",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5acfdc6777cf76001a686320",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5acfdc6777cf76001a686320",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0132/serigofo/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0132/serigofo/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0132/serigofo/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0139/nilekali/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0139/nilekali/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0139/nilekali/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/57292d756aef051400154b42",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/57292d756aef051400154b42",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/57292d756aef051400154b42",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0073/vevofeku/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0073/vevofeku/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0073/vevofeku/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0048/barocuku/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0048/barocuku/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0048/barocuku/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0110/bamimupo/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0110/bamimupo/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0110/bamimupo/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0005/magupivo/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0005/magupivo/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0005/magupivo/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ac39bd8554299657fa290fe",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ac39bd8554299657fa290fe",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ac39bd8554299657fa290fe",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a89e8035542992e4fca846d",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a89e8035542992e4fca846d",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a89e8035542992e4fca846d",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/56d9b69cdc89441400fdb727",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/56d9b69cdc89441400fdb727",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/56d9b69cdc89441400fdb727",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0135/mevabifi/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0135/mevabifi/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0135/mevabifi/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0035/fidivaki/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0035/fidivaki/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0035/fidivaki/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a8b63fa55429950cd6afcd7",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a8b63fa55429950cd6afcd7",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a8b63fa55429950cd6afcd7",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0114/kivupuma/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0114/kivupuma/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0114/kivupuma/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0120/rinukunu/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0120/rinukunu/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0120/rinukunu/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/57324f89e99e3014001e66a3",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/57324f89e99e3014001e66a3",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/57324f89e99e3014001e66a3",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0070/nituvake/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0070/nituvake/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0070/nituvake/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ae0156455429942ec259c15",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ae0156455429942ec259c15",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ae0156455429942ec259c15",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5731b71e0fdd8d15006c6484",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5731b71e0fdd8d15006c6484",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5731b71e0fdd8d15006c6484",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0067/seronari/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0067/seronari/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0067/seronari/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0099/lovabipe/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0099/lovabipe/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0099/lovabipe/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a7d1cfd70df9f001a874fac",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a7d1cfd70df9f001a874fac",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a7d1cfd70df9f001a874fac",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0078/vecepilu/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0078/vecepilu/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0078/vecepilu/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5728fed41d04691400778f3f",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5728fed41d04691400778f3f",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5728fed41d04691400778f3f",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0122/ridaniri/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0122/ridaniri/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0122/ridaniri/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ae057fd55429945ae959328",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ae057fd55429945ae959328",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ae057fd55429945ae959328",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0119/raripegu/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0119/raripegu/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0119/raripegu/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0064/vunidotu/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0064/vunidotu/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0064/vunidotu/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5aba454855429901930fa794",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5aba454855429901930fa794",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5aba454855429901930fa794",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/56dfa4514a1a83140091ec06",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/56dfa4514a1a83140091ec06",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/56dfa4514a1a83140091ec06",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0128/vumacopu/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0128/vumacopu/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0128/vumacopu/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ae7525f5542991e8301cc60",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ae7525f5542991e8301cc60",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ae7525f5542991e8301cc60",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0074/satorati/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0074/satorati/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0074/satorati/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0000/dicepege/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0000/dicepege/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0000/dicepege/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a90503755429916514e7470",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a90503755429916514e7470",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a90503755429916514e7470",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0117/rikocosu/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0117/rikocosu/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0117/rikocosu/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a878d795542993e715abf9d",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a878d795542993e715abf9d",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a878d795542993e715abf9d",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0045/tecanavu/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0045/tecanavu/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0045/tecanavu/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a7c290c5542990527d55468",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a7c290c5542990527d55468",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a7c290c5542990527d55468",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0013/rubivegi/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0013/rubivegi/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0013/rubivegi/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a8747915542994775f607bb",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a8747915542994775f607bb",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a8747915542994775f607bb",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5ad14301645df0001a2d1441",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5ad14301645df0001a2d1441",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5ad14301645df0001a2d1441",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0010/befolovi/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0010/befolovi/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0010/befolovi/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0049/mekabesa/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0049/mekabesa/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0049/mekabesa/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0087/cekomona/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0087/cekomona/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0087/cekomona/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0045/tecanavu/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0045/tecanavu/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0045/tecanavu/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0009/cenineme/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0009/cenineme/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0009/cenineme/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0137/lonutaci/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0137/lonutaci/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0137/lonutaci/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0079/keregofe/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0079/keregofe/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0079/keregofe/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0102/tafileco/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0102/tafileco/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0102/tafileco/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5abea9a35542990832d3a07e",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5abea9a35542990832d3a07e",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5abea9a35542990832d3a07e",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0035/fidivaki/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0035/fidivaki/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0035/fidivaki/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ac42a64554299076e296d7b",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ac42a64554299076e296d7b",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ac42a64554299076e296d7b",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ae0b2f25542993d6555ec1c",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ae0b2f25542993d6555ec1c",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ae0b2f25542993d6555ec1c",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0124/bunicemi/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0124/bunicemi/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0124/bunicemi/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0131/tukekedu/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0131/tukekedu/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0131/tukekedu/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ade653f55429975fa854ebb",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ade653f55429975fa854ebb",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ade653f55429975fa854ebb",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0031/bifumade/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0031/bifumade/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0031/bifumade/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0010/befolovi/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0010/befolovi/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0010/befolovi/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0066/kobapamu/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0066/kobapamu/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0066/kobapamu/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ae61351554299546bf83066",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ae61351554299546bf83066",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ae61351554299546bf83066",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0094/patafovi/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0094/patafovi/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0094/patafovi/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0017/kelafotu/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0017/kelafotu/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0017/kelafotu/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0097/sesokuso/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0097/sesokuso/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0097/sesokuso/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0011/lubogaca/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0011/lubogaca/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0011/lubogaca/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a7ec90055429934daa2fc66",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a7ec90055429934daa2fc66",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a7ec90055429934daa2fc66",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0022/nuguropu/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0022/nuguropu/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0022/nuguropu/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0092/repureke/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0092/repureke/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0092/repureke/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0120/rinukunu/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0120/rinukunu/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0120/rinukunu/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0103/tigobago/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0103/tigobago/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0103/tigobago/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0111/mavenike/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0111/mavenike/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0111/mavenike/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/572eb90bcb0c0d14000f14c5",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/572eb90bcb0c0d14000f14c5",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/572eb90bcb0c0d14000f14c5",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0043/sebibidu/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0043/sebibidu/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0043/sebibidu/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0079/keregofe/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0079/keregofe/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0079/keregofe/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0138/cekanipo/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0138/cekanipo/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0138/cekanipo/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0047/desosasu/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0047/desosasu/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0047/desosasu/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a8c7623554299653c1aa07a",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a8c7623554299653c1aa07a",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a8c7623554299653c1aa07a",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a6bb3444eec6b001a80a4eb",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a6bb3444eec6b001a80a4eb",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a6bb3444eec6b001a80a4eb",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a71056c0efcfe001a8afd00",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a71056c0efcfe001a8afd00",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a71056c0efcfe001a8afd00",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0051/degamoli/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0051/degamoli/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0051/degamoli/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0130/funekenu/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0130/funekenu/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0130/funekenu/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a8f9c3f554299458435d69a",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a8f9c3f554299458435d69a",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a8f9c3f554299458435d69a",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/57278046708984140094df43",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/57278046708984140094df43",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/57278046708984140094df43",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/56d9e3e8dc89441400fdb8ac",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/56d9e3e8dc89441400fdb8ac",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/56d9e3e8dc89441400fdb8ac",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ae5b25d5542990ba0bbb2bb",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ae5b25d5542990ba0bbb2bb",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ae5b25d5542990ba0bbb2bb",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0020/fositopo/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0020/fositopo/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0020/fositopo/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0129/bagapuka/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0129/bagapuka/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0129/bagapuka/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0106/pacicami/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0106/pacicami/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0106/pacicami/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5adf8d275542993344016cfb",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5adf8d275542993344016cfb",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5adf8d275542993344016cfb",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0003/femepuve/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0003/femepuve/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0003/femepuve/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a69154f8476ee001a58aa90",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a69154f8476ee001a58aa90",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a69154f8476ee001a58aa90",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0106/pacicami/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0106/pacicami/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0106/pacicami/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0024/petopuvu/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0024/petopuvu/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0024/petopuvu/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0054/limolosa/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0054/limolosa/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0054/limolosa/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/570d3c44b3d812140066d5bc",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/570d3c44b3d812140066d5bc",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/570d3c44b3d812140066d5bc",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0131/tukekedu/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0131/tukekedu/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0131/tukekedu/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5ad24351d7d075001a4289e3",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5ad24351d7d075001a4289e3",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5ad24351d7d075001a4289e3",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a7b76225542997c3ec9719c",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a7b76225542997c3ec9719c",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a7b76225542997c3ec9719c",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0046/delevilu/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0046/delevilu/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0046/delevilu/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0107/togimoca/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0107/togimoca/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0107/togimoca/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a8c2d23554299240d9c20b7",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a8c2d23554299240d9c20b7",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a8c2d23554299240d9c20b7",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/56e75d7100c9c71400d77012",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/56e75d7100c9c71400d77012",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/56e75d7100c9c71400d77012",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0029/sebarasi/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0029/sebarasi/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0029/sebarasi/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a73984355429908901be307",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a73984355429908901be307",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a73984355429908901be307",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/57265bcbdd62a815002e8294",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/57265bcbdd62a815002e8294",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/57265bcbdd62a815002e8294",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5adfe0de55429925eb1afae9",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5adfe0de55429925eb1afae9",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5adfe0de55429925eb1afae9",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0121/pagugeno/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0121/pagugeno/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0121/pagugeno/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0127/kabadori/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0127/kabadori/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0127/kabadori/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0025/sotarafa/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0025/sotarafa/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0025/sotarafa/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0068/livuvoca/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0068/livuvoca/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0068/livuvoca/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5acd269407355d001abf36e3",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5acd269407355d001abf36e3",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5acd269407355d001abf36e3",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ae604ec5542996de7b71af9",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ae604ec5542996de7b71af9",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ae604ec5542996de7b71af9",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a87556d5542994846c1cd65",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a87556d5542994846c1cd65",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a87556d5542994846c1cd65",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0027/gotaripi/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0027/gotaripi/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0027/gotaripi/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0050/cidefidu/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0050/cidefidu/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0050/cidefidu/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0002/pusosebu/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0002/pusosebu/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0002/pusosebu/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/56e17753cd28a01900c6798f",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/56e17753cd28a01900c6798f",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/56e17753cd28a01900c6798f",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a85f8665542994775f606ce",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a85f8665542994775f606ce",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a85f8665542994775f606ce",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a8a58f355429930ff3c0da3",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a8a58f355429930ff3c0da3",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a8a58f355429930ff3c0da3",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a7e035d5542997cc2c474f6",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a7e035d5542997cc2c474f6",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a7e035d5542997cc2c474f6",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/570b6d046b8089140040f94e",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/570b6d046b8089140040f94e",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/570b6d046b8089140040f94e",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0092/repureke/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0092/repureke/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0092/repureke/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a5fa27aeae51e001ab14b69",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a5fa27aeae51e001ab14b69",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a5fa27aeae51e001ab14b69",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0033/donakeku/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0033/donakeku/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0033/donakeku/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0097/sesokuso/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0097/sesokuso/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0097/sesokuso/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/570e815b0dc6ce19002050de",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/570e815b0dc6ce19002050de",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/570e815b0dc6ce19002050de",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5ad152f1645df0001a2d1772",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5ad152f1645df0001a2d1772",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5ad152f1645df0001a2d1772",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0133/ninagenu/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0133/ninagenu/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0133/ninagenu/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5abc0ac455429959677d6a01",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5abc0ac455429959677d6a01",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5abc0ac455429959677d6a01",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/57303dae947a6a140053d303",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/57303dae947a6a140053d303",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/57303dae947a6a140053d303",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0105/casonafu/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0105/casonafu/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0105/casonafu/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5729681d6aef051400154e2c",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5729681d6aef051400154e2c",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5729681d6aef051400154e2c",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0135/mevabifi/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0135/mevabifi/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0135/mevabifi/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0027/gotaripi/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0027/gotaripi/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0027/gotaripi/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0014/sisutuke/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0014/sisutuke/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0014/sisutuke/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a53e21dbdaabd001a3867b2",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a53e21dbdaabd001a3867b2",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a53e21dbdaabd001a3867b2",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ae47cab5542996836b02cb9",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ae47cab5542996836b02cb9",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ae47cab5542996836b02cb9",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/570dc90a0b85d914000d7b5e",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/570dc90a0b85d914000d7b5e",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/570dc90a0b85d914000d7b5e",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0096/bonovuru/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0096/bonovuru/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0096/bonovuru/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5abfcdb55542993fe9a41e7b",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5abfcdb55542993fe9a41e7b",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5abfcdb55542993fe9a41e7b",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a57da08770dc0001aeefe10",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a57da08770dc0001aeefe10",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a57da08770dc0001aeefe10",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ac375495542995ef918c1a3",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ac375495542995ef918c1a3",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ac375495542995ef918c1a3",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0075/fulebadi/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0075/fulebadi/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0075/fulebadi/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5ad4d7b65b96ef001a10a316",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5ad4d7b65b96ef001a10a316",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5ad4d7b65b96ef001a10a316",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0069/segusuga/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0069/segusuga/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0069/segusuga/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0093/fodagiri/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0093/fodagiri/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0093/fodagiri/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/573610e1012e2f140011a181",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/573610e1012e2f140011a181",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/573610e1012e2f140011a181",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0121/pagugeno/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0121/pagugeno/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0121/pagugeno/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0115/ramidisi/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0115/ramidisi/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0115/ramidisi/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5727fc802ca10214002d9ac0",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5727fc802ca10214002d9ac0",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5727fc802ca10214002d9ac0",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0052/mumamido/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0052/mumamido/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0052/mumamido/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0065/mubufoma/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0065/mubufoma/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0065/mubufoma/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ade618e554299728e26c700",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ade618e554299728e26c700",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ade618e554299728e26c700",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5ad394ee604f3c001a3fe729",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5ad394ee604f3c001a3fe729",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5ad394ee604f3c001a3fe729",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0063/bucakibo/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0063/bucakibo/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0063/bucakibo/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5acd4a2507355d001abf3c1e",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5acd4a2507355d001abf3c1e",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5acd4a2507355d001abf3c1e",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5aba74ad55429955dce3ee35",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5aba74ad55429955dce3ee35",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5aba74ad55429955dce3ee35",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5abbc58455429931dba14502",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5abbc58455429931dba14502",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5abbc58455429931dba14502",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0134/lagidusu/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0134/lagidusu/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0134/lagidusu/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/56de83744396321400ee29c1",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/56de83744396321400ee29c1",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/56de83744396321400ee29c1",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0042/rorariga/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0042/rorariga/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0042/rorariga/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a8b027e55429950cd6afc45",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a8b027e55429950cd6afc45",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a8b027e55429950cd6afc45",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0083/pafavele/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0083/pafavele/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0083/pafavele/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0136/lateralo/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0136/lateralo/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0136/lateralo/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0005/magupivo/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0005/magupivo/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0005/magupivo/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a7d3cbb5542995f4f402243",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a7d3cbb5542995f4f402243",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a7d3cbb5542995f4f402243",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0001/titeteso/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0001/titeteso/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0001/titeteso/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/56dfb7187aa994140058e061",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/56dfb7187aa994140058e061",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/56dfb7187aa994140058e061",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5734415c879d6814001ca410",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5734415c879d6814001ca410",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5734415c879d6814001ca410",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5706bb542eaba6190074acae",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5706bb542eaba6190074acae",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5706bb542eaba6190074acae",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ae5f1a8554299546bf82fd9",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ae5f1a8554299546bf82fd9",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ae5f1a8554299546bf82fd9",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0085/taloruse/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0085/taloruse/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0085/taloruse/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5730b4618ab72b1400f9c6be",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5730b4618ab72b1400f9c6be",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5730b4618ab72b1400f9c6be",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/573115ade6313a140071cc10",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/573115ade6313a140071cc10",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/573115ade6313a140071cc10",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0068/livuvoca/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0068/livuvoca/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0068/livuvoca/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/57324f0de99e3014001e669a",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/57324f0de99e3014001e669a",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/57324f0de99e3014001e669a",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0059/civenobu/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0059/civenobu/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0059/civenobu/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5abb2f245542996cc5e49fd2",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5abb2f245542996cc5e49fd2",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5abb2f245542996cc5e49fd2",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a6231bef8d794001af1bec7",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a6231bef8d794001af1bec7",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a6231bef8d794001af1bec7",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0042/rorariga/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0042/rorariga/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0042/rorariga/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0032/fikevesa/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0032/fikevesa/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0032/fikevesa/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0022/nuguropu/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0022/nuguropu/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0022/nuguropu/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/57323efae17f3d140042278f",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/57323efae17f3d140042278f",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/57323efae17f3d140042278f",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a2f423ca83784001a7d2693",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a2f423ca83784001a7d2693",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a2f423ca83784001a7d2693",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0133/ninagenu/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0133/ninagenu/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0133/ninagenu/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a3aa4d33ff257001ab841da",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a3aa4d33ff257001ab841da",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a3aa4d33ff257001ab841da",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0108/dimukafa/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0108/dimukafa/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0108/dimukafa/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0056/manebili/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0056/manebili/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0056/manebili/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0021/cenumeco/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0021/cenumeco/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0021/cenumeco/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a8eaa74554299068b959e88",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a8eaa74554299068b959e88",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a8eaa74554299068b959e88",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0025/sotarafa/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0025/sotarafa/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0025/sotarafa/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0039/talibuma/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0039/talibuma/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0039/talibuma/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5ace995332bba1001ae4ac34",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5ace995332bba1001ae4ac34",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5ace995332bba1001ae4ac34",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ac258cc554299636651998e",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ac258cc554299636651998e",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ac258cc554299636651998e",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0086/vikafoga/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0086/vikafoga/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0086/vikafoga/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0015/batifesi/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0015/batifesi/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0015/batifesi/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0053/menivebe/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0053/menivebe/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0053/menivebe/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0031/bifumade/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0031/bifumade/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0031/bifumade/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a721dfd55429971e9dc928b",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a721dfd55429971e9dc928b",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a721dfd55429971e9dc928b",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/571b212d9499d21900609c2a",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/571b212d9499d21900609c2a",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/571b212d9499d21900609c2a",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0139/nilekali/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0139/nilekali/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0139/nilekali/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a8066d15542992097ad2fe8",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a8066d15542992097ad2fe8",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a8066d15542992097ad2fe8",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0119/raripegu/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0119/raripegu/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0119/raripegu/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a710bb15542994082a3e50d",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a710bb15542994082a3e50d",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a710bb15542994082a3e50d",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5acf57ff77cf76001a684bc8",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5acf57ff77cf76001a684bc8",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5acf57ff77cf76001a684bc8",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0019/rurupere/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0019/rurupere/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0019/rurupere/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0047/desosasu/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0047/desosasu/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0047/desosasu/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0062/mafevetu/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0062/mafevetu/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0062/mafevetu/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ae4ca6355429913cc204507",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ae4ca6355429913cc204507",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ae4ca6355429913cc204507",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0098/nigasane/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0098/nigasane/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0098/nigasane/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a8a40015542996c9b8d5e72",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a8a40015542996c9b8d5e72",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a8a40015542996c9b8d5e72",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0134/lagidusu/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0134/lagidusu/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0134/lagidusu/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0142/sadakafa/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0142/sadakafa/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0142/sadakafa/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0140/ralocase/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0140/ralocase/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0140/ralocase/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0077/nicanebe/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0077/nicanebe/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0077/nicanebe/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0082/getivena/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0082/getivena/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0082/getivena/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0009/cenineme/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0009/cenineme/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0009/cenineme/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0023/petenivo/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0023/petenivo/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0023/petenivo/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ac5391e5542994611c8b439",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ac5391e5542994611c8b439",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ac5391e5542994611c8b439",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a8ec3205542995a26add506",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a8ec3205542995a26add506",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a8ec3205542995a26add506",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5ad21856d7d075001a4283ff",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5ad21856d7d075001a4283ff",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5ad21856d7d075001a4283ff",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ade04a65542997545bbbe20",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ade04a65542997545bbbe20",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ade04a65542997545bbbe20",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/570db07b16d0071400510cef",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/570db07b16d0071400510cef",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/570db07b16d0071400510cef",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0090/kavikosu/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0090/kavikosu/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0090/kavikosu/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0110/bamimupo/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0110/bamimupo/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0110/bamimupo/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0007/cokibaku/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0007/cokibaku/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0007/cokibaku/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0113/gerasidu/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0113/gerasidu/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0113/gerasidu/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/56f86ea1a6d7ea1400e1761a",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/56f86ea1a6d7ea1400e1761a",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/56f86ea1a6d7ea1400e1761a",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a78c235554299078472775d",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a78c235554299078472775d",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a78c235554299078472775d",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a74f91a97ca42001a521d94",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a74f91a97ca42001a521d94",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a74f91a97ca42001a521d94",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0141/nisasuba/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0141/nisasuba/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0141/nisasuba/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5726aec3f1498d1400e8e71e",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5726aec3f1498d1400e8e71e",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5726aec3f1498d1400e8e71e",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0076/vitacave/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0076/vitacave/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0076/vitacave/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0091/begifita/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0091/begifita/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0091/begifita/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0064/vunidotu/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0064/vunidotu/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0064/vunidotu/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ab30ebf554299753aec592c",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ab30ebf554299753aec592c",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ab30ebf554299753aec592c",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0028/nekavuko/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0028/nekavuko/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0028/nekavuko/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0116/lelikadi/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0116/lelikadi/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0116/lelikadi/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5ace809232bba1001ae4a88e",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5ace809232bba1001ae4a88e",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5ace809232bba1001ae4a88e",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ab66a3555429954757d3290",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ab66a3555429954757d3290",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ab66a3555429954757d3290",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0058/befakobi/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0058/befakobi/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0058/befakobi/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a4860a984b8a4001a7e7858",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a4860a984b8a4001a7e7858",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a4860a984b8a4001a7e7858",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a89d3e15542992e4fca83d4",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a89d3e15542992e4fca83d4",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a89d3e15542992e4fca83d4",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0056/manebili/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0056/manebili/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0056/manebili/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0098/nigasane/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0098/nigasane/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0098/nigasane/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0030/teraluca/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0030/teraluca/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0030/teraluca/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0048/barocuku/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0048/barocuku/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0048/barocuku/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0075/fulebadi/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0075/fulebadi/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0075/fulebadi/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0074/satorati/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0074/satorati/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0074/satorati/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0004/betibaca/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0004/betibaca/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0004/betibaca/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0142/sadakafa/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0142/sadakafa/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0142/sadakafa/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5abb30755542996cc5e49fd8",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5abb30755542996cc5e49fd8",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5abb30755542996cc5e49fd8",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5ad3a0f0604f3c001a3fe9ca",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5ad3a0f0604f3c001a3fe9ca",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5ad3a0f0604f3c001a3fe9ca",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0126/nacidoco/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0126/nacidoco/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0126/nacidoco/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ac3bff15542995ef918c213",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ac3bff15542995ef918c213",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ac3bff15542995ef918c213",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0071/vepicava/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0071/vepicava/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0071/vepicava/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5adf9dc3554299025d62a2e6",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5adf9dc3554299025d62a2e6",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5adf9dc3554299025d62a2e6",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0016/vacicimu/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0016/vacicimu/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0016/vacicimu/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0093/fodagiri/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0093/fodagiri/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0093/fodagiri/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5acfed0477cf76001a68651b",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5acfed0477cf76001a68651b",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5acfed0477cf76001a68651b",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/56f96f929b226e1400dd144b",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/56f96f929b226e1400dd144b",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/56f96f929b226e1400dd144b",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a88696b554299206df2b25b",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a88696b554299206df2b25b",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a88696b554299206df2b25b",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5adf490a5542993a75d26488",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5adf490a5542993a75d26488",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5adf490a5542993a75d26488",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ab278745542997061209617",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ab278745542997061209617",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ab278745542997061209617",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0037/tefunare/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0037/tefunare/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0037/tefunare/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0078/vecepilu/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0078/vecepilu/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0078/vecepilu/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0044/kameviri/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0044/kameviri/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0044/kameviri/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a716a9b5542994082a3e821",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a716a9b5542994082a3e821",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a716a9b5542994082a3e821",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0130/funekenu/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0130/funekenu/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0130/funekenu/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0141/nisasuba/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0141/nisasuba/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0141/nisasuba/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a36159d788daf001a5f870b",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a36159d788daf001a5f870b",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a36159d788daf001a5f870b",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ab3c18b55429969a97a81b0",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ab3c18b55429969a97a81b0",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ab3c18b55429969a97a81b0",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0059/civenobu/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0059/civenobu/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0059/civenobu/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0049/mekabesa/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0049/mekabesa/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0049/mekabesa/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ac2ba4855429921a00ab048",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ac2ba4855429921a00ab048",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ac2ba4855429921a00ab048",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/57269184f1498d1400e8e40a",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/57269184f1498d1400e8e40a",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/57269184f1498d1400e8e40a",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/57271f22dd62a815002e993b",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/57271f22dd62a815002e993b",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/57271f22dd62a815002e993b",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0033/donakeku/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0033/donakeku/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0033/donakeku/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0012/tivubaci/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0012/tivubaci/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0012/tivubaci/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a89e0ec5542992e4fca8427",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a89e0ec5542992e4fca8427",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a89e0ec5542992e4fca8427",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a0cdd8ff5590b0018dab5e8",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a0cdd8ff5590b0018dab5e8",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a0cdd8ff5590b0018dab5e8",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0017/kelafotu/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0017/kelafotu/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0017/kelafotu/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0127/kabadori/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0127/kabadori/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0127/kabadori/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5727c4424b864d1900163cce",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5727c4424b864d1900163cce",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5727c4424b864d1900163cce",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a10eb6d06e79900185c3475",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a10eb6d06e79900185c3475",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a10eb6d06e79900185c3475",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0125/fadebune/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0125/fadebune/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0125/fadebune/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0112/tatubolu/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0112/tatubolu/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0112/tatubolu/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0085/taloruse/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0085/taloruse/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0085/taloruse/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0038/nicameca/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0038/nicameca/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0038/nicameca/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0100/lekofimi/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0100/lekofimi/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0100/lekofimi/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0107/togimoca/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0107/togimoca/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0107/togimoca/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0112/tatubolu/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0112/tatubolu/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0112/tatubolu/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a73c958554299623ed4ac5c",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a73c958554299623ed4ac5c",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a73c958554299623ed4ac5c",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ae6f2a7554299572ea5464a",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ae6f2a7554299572ea5464a",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ae6f2a7554299572ea5464a",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0040/dovirera/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0040/dovirera/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0040/dovirera/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0114/kivupuma/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0114/kivupuma/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0114/kivupuma/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5abafb6d5542992ccd8e7e92",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5abafb6d5542992ccd8e7e92",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5abafb6d5542992ccd8e7e92",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0061/rusagasu/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0061/rusagasu/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0061/rusagasu/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0072/lipinabi/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0072/lipinabi/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0072/lipinabi/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0046/delevilu/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0046/delevilu/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0046/delevilu/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a2d5d6df28ef0001a5264e7",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a2d5d6df28ef0001a5264e7",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a2d5d6df28ef0001a5264e7",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a8d7edc55429941ae14dfdc",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a8d7edc55429941ae14dfdc",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a8d7edc55429941ae14dfdc",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0002/pusosebu/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0002/pusosebu/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0002/pusosebu/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0117/rikocosu/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0117/rikocosu/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0117/rikocosu/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0020/fositopo/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0020/fositopo/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0020/fositopo/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0088/bididuce/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0088/bididuce/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0088/bididuce/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a82ebb855429966c78a6a9c",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a82ebb855429966c78a6a9c",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a82ebb855429966c78a6a9c",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0104/buvalavu/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0104/buvalavu/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0104/buvalavu/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0128/vumacopu/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0128/vumacopu/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0128/vumacopu/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a88451655429938390d3f12",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a88451655429938390d3f12",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a88451655429938390d3f12",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5acecd5132bba1001ae4b493",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5acecd5132bba1001ae4b493",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5acecd5132bba1001ae4b493",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0076/vitacave/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0076/vitacave/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0076/vitacave/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0060/pogakici/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0060/pogakici/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0060/pogakici/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a62963af8d794001af1c124",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a62963af8d794001af1c124",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a62963af8d794001af1c124",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a53d803bdaabd001a386778",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a53d803bdaabd001a386778",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a53d803bdaabd001a386778",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ae00a27554299025d62a3bb",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ae00a27554299025d62a3bb",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ae00a27554299025d62a3bb",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0123/lakosulo/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0123/lakosulo/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0123/lakosulo/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0129/bagapuka/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0129/bagapuka/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0129/bagapuka/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0028/nekavuko/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0028/nekavuko/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0028/nekavuko/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0103/tigobago/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0103/tigobago/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0103/tigobago/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a8006548f0597001ac00146",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a8006548f0597001ac00146",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a8006548f0597001ac00146",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a82053031013a001a3350df",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a82053031013a001a3350df",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a82053031013a001a3350df",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a7c3178554299683c1c62e1",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a7c3178554299683c1c62e1",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a7c3178554299683c1c62e1",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a7e59c855429934daa2fc0f",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a7e59c855429934daa2fc0f",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a7e59c855429934daa2fc0f",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5a7a6eb521c2de001afe9c3c",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a7a6eb521c2de001afe9c3c",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a7a6eb521c2de001afe9c3c",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0083/pafavele/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0083/pafavele/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0083/pafavele/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5ace73cf32bba1001ae4a71e",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5ace73cf32bba1001ae4a71e",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5ace73cf32bba1001ae4a71e",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0109/derakice/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0109/derakice/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0109/derakice/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0004/betibaca/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0004/betibaca/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0004/betibaca/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ae2c2c05542996483e64a4a",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ae2c2c05542996483e64a4a",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ae2c2c05542996483e64a4a",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0109/derakice/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0109/derakice/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0109/derakice/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0014/sisutuke/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0014/sisutuke/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0014/sisutuke/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0051/degamoli/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0051/degamoli/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0051/degamoli/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a69ba4d5ce1a5001a9696c8",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a69ba4d5ce1a5001a9696c8",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a69ba4d5ce1a5001a9696c8",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0034/tukonovu/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0034/tukonovu/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0034/tukonovu/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5ad09ee7645df0001a2cff76",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5ad09ee7645df0001a2cff76",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5ad09ee7645df0001a2cff76",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0105/casonafu/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0105/casonafu/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0105/casonafu/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0044/kameviri/heavy",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0044/kameviri/heavy",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0044/kameviri/heavy",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0018/ruboremu/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0018/ruboremu/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0018/ruboremu/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/570b5b516b8089140040f8bc",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/570b5b516b8089140040f8bc",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/570b5b516b8089140040f8bc",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0138/cekanipo/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0138/cekanipo/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0138/cekanipo/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ab2d15e554299545a2cfaa6",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ab2d15e554299545a2cfaa6",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ab2d15e554299545a2cfaa6",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ab9fe1255429939ce03dc40",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ab9fe1255429939ce03dc40",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ab9fe1255429939ce03dc40",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a771e3255429966f1a36c78",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a771e3255429966f1a36c78",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a771e3255429966f1a36c78",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a81a2705542990a1d231e30",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a81a2705542990a1d231e30",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a81a2705542990a1d231e30",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0087/cekomona/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0087/cekomona/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0087/cekomona/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0006/fenakino/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0006/fenakino/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0006/fenakino/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a6b0e56a9e0c9001a4e9ea0",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5a6b0e56a9e0c9001a4e9ea0",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5a6b0e56a9e0c9001a4e9ea0",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0070/nituvake/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0070/nituvake/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0070/nituvake/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0067/seronari/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0067/seronari/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0067/seronari/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0015/batifesi/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0015/batifesi/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0015/batifesi/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0007/cokibaku/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0007/cokibaku/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0007/cokibaku/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0140/ralocase/light/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0140/ralocase/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0140/ralocase/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ae733dc5542991e8301cbd1",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ae733dc5542991e8301cbd1",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ae733dc5542991e8301cbd1",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0026/ripofila/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0026/ripofila/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0026/ripofila/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5abd01205542992ac4f3819b",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5abd01205542992ac4f3819b",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5abd01205542992ac4f3819b",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a8463545542990548d0b2a3",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a8463545542990548d0b2a3",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a8463545542990548d0b2a3",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5acff24a77cf76001a6865dc",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5acff24a77cf76001a6865dc",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5acff24a77cf76001a6865dc",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0063/bucakibo/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0063/bucakibo/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0063/bucakibo/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ae6196d5542995703ce8afd",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ae6196d5542995703ce8afd",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ae6196d5542995703ce8afd",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/572a3b61af94a219006aa8e3",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/572a3b61af94a219006aa8e3",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/572a3b61af94a219006aa8e3",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a74bdce55429929fddd84e1",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a74bdce55429929fddd84e1",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a74bdce55429929fddd84e1",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0136/lateralo/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0136/lateralo/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0136/lateralo/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a7a59d15542996c55b2dd67",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a7a59d15542996c55b2dd67",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5a7a59d15542996c55b2dd67",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0090/kavikosu/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0090/kavikosu/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0090/kavikosu/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5acfafd677cf76001a68586a",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5acfafd677cf76001a68586a",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5acfafd677cf76001a68586a",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5ad24cbcd7d075001a428c04",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5ad24cbcd7d075001a428c04",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5ad24cbcd7d075001a428c04",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ae4cda05542990ba0bbb148",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ae4cda05542990ba0bbb148",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ae4cda05542990ba0bbb148",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0126/nacidoco/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0126/nacidoco/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0126/nacidoco/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0124/bunicemi/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0124/bunicemi/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0124/bunicemi/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0052/mumamido/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0052/mumamido/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0052/mumamido/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0089/gutosufo/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0089/gutosufo/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0089/gutosufo/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5acd469e07355d001abf3bbb",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5acd469e07355d001abf3bbb",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5acd469e07355d001abf3bbb",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a7f010955429934daa2fc8b",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5a7f010955429934daa2fc8b",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5a7f010955429934daa2fc8b",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/squad2/5ad0278877cf76001a686bf2",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/squad2/5ad0278877cf76001a686bf2",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/squad2/5ad0278877cf76001a686bf2",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0118/dicipase/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0118/dicipase/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0118/dicipase/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0122/ridaniri/light/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0122/ridaniri/light/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0122/ridaniri/light/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0057/tagasado/heavy/paraphrase",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0057/tagasado/heavy/paraphrase",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0057/tagasado/heavy/paraphrase",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/hotpot/5ae13e205542997b2ef7d157",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/hotpot/5ae13e205542997b2ef7d157",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/hotpot/5ae13e205542997b2ef7d157",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0036/birateli/light",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0036/birateli/light",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0036/birateli/light",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0143/bacegibo/heavy/dependency",
+    "arm": "dual"
+  },
+  {
+    "case_id": "r20/test/0143/bacegibo/heavy/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0143/bacegibo/heavy/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0060/pogakici/light/dependency",
+    "arm": "native"
+  },
+  {
+    "case_id": "r20/test/0060/pogakici/light/dependency",
+    "arm": "static"
+  },
+  {
+    "case_id": "r20/test/0060/pogakici/light/dependency",
+    "arm": "dual"
+  }
+]

@@ -8,10 +8,10 @@ without a reliable matched-routing advantage. All 7,312 successful generations a
 audited and publicly replayable; both servers are deleted. New estimated cost is
 $3.00, cumulative $30.23/$50 before tax/network.
 
-Next proposed step: validate a blinded semantic grading rubric on fresh data,
-including equivalent abstentions, wrong partial matches and answer completeness,
-before further architecture tuning. Preserve R19's original scores and examples;
-do not regrade its test set to select a winning treatment.
+Current follow-up: [R20 blinded semantic evaluation](research/semantic-evaluation-plan.md).
+The implemented protocol validates an independent automated judge before testing
+three fixed interventions on 528 fresh inputs. New quality results remain pending.
+Preserve R19's original scores; no architecture is tuned on the new test answers.
 
 Previous completed work: [R18 single-prefill boundary study](reports/2026-09-22-boundary-attention/README.md).
 
