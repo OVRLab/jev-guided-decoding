@@ -41,15 +41,19 @@ guides must defer here rather than maintain conflicting copies.
   separately named experiments; their scores cannot stand in for generated-answer
   quality. Verify final-token provenance and a consistent prompt/grading contract.
 - The package controllers select **text continuations during inference**. The
-  separate R14–R17 research hooks apply Jev source-relevance biases inside selected
+  separate R14–R18 research hooks apply Jev source-relevance biases inside selected
   Granite attention heads. R14 is static constrained QA; R16 adds serial cached
   generation, optional relevance refresh and full-vocabulary output contracts.
   R17 tests conditional dispatch, timing envelopes and local evidence-mass
-  conservation. Distinguish each study from the package path. These are not neural
-  fusion, access to hidden reasoning, training,
-  a vLLM extension, or an improved model checkpoint. Claims need matching evidence.
+  conservation. R18 places a conditional callback before layer 19 inside a single
+  native prefill. Distinguish each study from the package path. These are not neural
+  fusion, access to hidden reasoning, training, a vLLM extension, or an improved
+  model checkpoint. Claims need matching evidence.
 - Preserve the original model weights and exact accepted token IDs in this scope.
   Rejected branches must never enter the continuation prefix or another request's cache.
+- Cancelling an async await does not end an owned model thread. Drain that worker,
+  including through repeated cancellation, before releasing shared hooks or making
+  the runtime reusable. Reject nested attention scopes across old and new runtimes.
 - Retain explicit EOS, rejection, timeout, and budget outcomes. Empty EOS is a
   completion decision, not a demand to add another fact.
 - Code owns limits, retries, selection, and external actions. Jev scores are fallible

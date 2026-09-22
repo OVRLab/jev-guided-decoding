@@ -11,7 +11,29 @@ steps, plus a separate experimental hook that turns Jev source relevance into
 biases inside selected Granite attention heads. No model training or vLLM serving
 extension is included.
 
-[Latest R17 selective-attention study](reports/2026-09-22-selective-attention/README.md) ·
+[R18 single-prefill study](reports/2026-09-22-boundary-attention/README.md) ·
+[Architecture](reports/2026-09-22-boundary-attention/method.md) ·
+[All results and controls](reports/2026-09-22-boundary-attention/tables.md).
+
+**R18 completed:** the single-prefill gate raises authored accuracy from
+**26.98% to 31.75%**, close to always Jev's **31.94%**, while saving **27.58%**
+of requests. The exploratory selective-minus-native interval is **+4.76 pp
+[1.79, 7.94]**. Hotpot native/always/selective F1 is **27.96% / 29.40% / 27.08%**;
+SQuAD adapted F1 is **26.49% / 26.72% / 26.55%**. Primary routing intervals
+include zero in all three domains, so reliable call selection is unestablished.
+
+The gate uses **425/984 test requests**, saving **56.81% overall**, with one
+prefill and zero discarded pilot tokens. Its domain call fractions are
+72.42% / 18.33% / 6.67%; missing-evidence handling remains weak. Granite generates
+every final token with unchanged weights and no required UNKNOWN spelling.
+All **9,376 outcomes**, **184,889 final tokens** and **1,244 successful Jev
+receipts** pass reconstruction; public archive replay reproduces the analysis.
+There are zero provider failures. All temporary resources are deleted after
+verified retrieval. New estimated cost is **$3.77**, cumulative **$27.23/$50**
+before tax/separate network. This is research-branch evidence, with mixed external
+quality, not a generally improved checkpoint or a serving-throughput benchmark.
+
+[Previous R17 selective-attention study](reports/2026-09-22-selective-attention/README.md) ·
 [Request-budget replay](reports/2026-09-22-selective-attention/budget-frontier.md).
 
 **R17 completed:** Jev guidance raises authored free-text accuracy from

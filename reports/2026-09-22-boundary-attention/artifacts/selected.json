@@ -1,0 +1,4241 @@
+{
+  "at": "2026-09-22T15:45:50.962468+00:00",
+  "treatment": {
+    "mode": "additive",
+    "envelope": "all",
+    "strength": 5.0,
+    "heads": [
+      [
+        34,
+        4
+      ],
+      [
+        38,
+        11
+      ],
+      [
+        37,
+        14
+      ],
+      [
+        30,
+        4
+      ],
+      [
+        23,
+        8
+      ],
+      [
+        19,
+        6
+      ],
+      [
+        19,
+        11
+      ],
+      [
+        19,
+        15
+      ],
+      [
+        21,
+        14
+      ],
+      [
+        29,
+        10
+      ],
+      [
+        20,
+        11
+      ]
+    ],
+    "threshold": 0.65,
+    "id": "42e1896dba6c5ee8"
+  },
+  "boundary": {
+    "gate": {
+      "kind": "threshold",
+      "feature": "head_disagreement",
+      "direction": "le",
+      "threshold": 0.05478179526607767
+    },
+    "quality": 0.27242292383463523,
+    "call_fraction": 0.45384615384615384,
+    "calls": 118
+  },
+  "pilot": {
+    "gate": {
+      "kind": "threshold",
+      "feature": "copy_fraction",
+      "direction": "le",
+      "threshold": 0.8571428571428571
+    },
+    "quality": 0.26692939217109696,
+    "call_fraction": 0.49230769230769234,
+    "calls": 128
+  },
+  "development": [
+    {
+      "case_id": "r18/development/0000/vorocedu/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10461894504283009,
+        "source_entropy": 0.775666971199533,
+        "head_disagreement": 0.052830347904441605
+      },
+      "pilot_features": {
+        "min_probability": 0.5378015041351318,
+        "mean_entropy": 0.32651535031936874,
+        "copy_fraction": 0.5714285714285714
+      },
+      "native_quality": 1,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0001/mamomodu/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10689068564306581,
+        "source_entropy": 0.7990706164251316,
+        "head_disagreement": 0.05139815369767902
+      },
+      "pilot_features": {
+        "min_probability": 0.546279788017273,
+        "mean_entropy": 0.2001508846790898,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 1,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0002/raloduku/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10800541081175652,
+        "source_entropy": 0.7571421226392795,
+        "head_disagreement": 0.04948032433310059
+      },
+      "pilot_features": {
+        "min_probability": 0.5543656349182129,
+        "mean_entropy": 0.31662740776621945,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0003/bokoputi/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10716189240361018,
+        "source_entropy": 0.7772437472991169,
+        "head_disagreement": 0.0522925322472454
+      },
+      "pilot_features": {
+        "min_probability": 0.770839273929596,
+        "mean_entropy": 0.21232013744037204,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 1,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0004/lotetefa/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10423063237908536,
+        "source_entropy": 0.7975104083858091,
+        "head_disagreement": 0.04983544052458369
+      },
+      "pilot_features": {
+        "min_probability": 0.5646404027938843,
+        "mean_entropy": 0.23680003487413614,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0005/dafonoco/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09960282831116274,
+        "source_entropy": 0.7804826163519754,
+        "head_disagreement": 0.04787950642977078
+      },
+      "pilot_features": {
+        "min_probability": 0.8145744204521179,
+        "mean_entropy": 0.21126628679411397,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0006/cucukasu/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.1023556953350635,
+        "source_entropy": 0.8124694814621114,
+        "head_disagreement": 0.053703158980352356
+      },
+      "pilot_features": {
+        "min_probability": 0.5254497528076172,
+        "mean_entropy": 0.4319559931900585,
+        "copy_fraction": 0.3333333333333333
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0007/cunobedu/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.1053829044099075,
+        "source_entropy": 0.8229991812307863,
+        "head_disagreement": 0.053170968785357924
+      },
+      "pilot_features": {
+        "min_probability": 0.44012147188186646,
+        "mean_entropy": 0.32231891920309863,
+        "copy_fraction": 0.5714285714285714
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0008/dorimacu/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10056839556364139,
+        "source_entropy": 0.793292801119036,
+        "head_disagreement": 0.05281526151180015
+      },
+      "pilot_features": {
+        "min_probability": 0.4662069082260132,
+        "mean_entropy": 0.33817115932333763,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0009/fesonero/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10364714044521861,
+        "source_entropy": 0.764863227473998,
+        "head_disagreement": 0.04984731219061167
+      },
+      "pilot_features": {
+        "min_probability": 0.5168558955192566,
+        "mean_entropy": 0.18750387283682812,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0010/kolevomo/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10470596595951065,
+        "source_entropy": 0.7693944662965685,
+        "head_disagreement": 0.052196115206303184
+      },
+      "pilot_features": {
+        "min_probability": 0.6098901033401489,
+        "mean_entropy": 0.2565631094428227,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0011/sakofiti/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10838267610745334,
+        "source_entropy": 0.7573461291853338,
+        "head_disagreement": 0.050397367130452
+      },
+      "pilot_features": {
+        "min_probability": 0.47061172127723694,
+        "mean_entropy": 0.3317253039270156,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0012/gokumigu/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10891317951859492,
+        "source_entropy": 0.7677904897466913,
+        "head_disagreement": 0.05401160952950291
+      },
+      "pilot_features": {
+        "min_probability": 0.8128940463066101,
+        "mean_entropy": 0.08088157406751861,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 1,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0013/gafagori/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10989954144292824,
+        "source_entropy": 0.7883508645056871,
+        "head_disagreement": 0.05138782651170555
+      },
+      "pilot_features": {
+        "min_probability": 0.9758115410804749,
+        "mean_entropy": 0.019529848049842258,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0014/sicaveri/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10032771784176475,
+        "source_entropy": 0.7953990103446535,
+        "head_disagreement": 0.04825720348090266
+      },
+      "pilot_features": {
+        "min_probability": 0.8748704791069031,
+        "mean_entropy": 0.08013120321572842,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 1,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0015/tapugicu/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10185375993182788,
+        "source_entropy": 0.7957477496348562,
+        "head_disagreement": 0.05211253845203651
+      },
+      "pilot_features": {
+        "min_probability": 0.906572699546814,
+        "mean_entropy": 0.0526594362220294,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0016/dafupeno/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10523542124610685,
+        "source_entropy": 0.7886750854829587,
+        "head_disagreement": 0.046972441726997965
+      },
+      "pilot_features": {
+        "min_probability": 0.9352565407752991,
+        "mean_entropy": 0.038297123824904133,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 1,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0017/vabibasu/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10145123193183281,
+        "source_entropy": 0.7709087902866657,
+        "head_disagreement": 0.05078929931024818
+      },
+      "pilot_features": {
+        "min_probability": 0.8309996724128723,
+        "mean_entropy": 0.14247210140820243,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0018/fafedema/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10246203755104943,
+        "source_entropy": 0.7940106557981201,
+        "head_disagreement": 0.05342358398541452
+      },
+      "pilot_features": {
+        "min_probability": 0.6672041416168213,
+        "mean_entropy": 0.21585496589523245,
+        "copy_fraction": 0.8333333333333334
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0019/faforiro/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10830030268471091,
+        "source_entropy": 0.7876175935275344,
+        "head_disagreement": 0.05563159841249401
+      },
+      "pilot_features": {
+        "min_probability": 0.9459363222122192,
+        "mean_entropy": 0.04660167598897047,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0020/nocigupu/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10186672542386077,
+        "source_entropy": 0.7840693305695753,
+        "head_disagreement": 0.0517092435704243
+      },
+      "pilot_features": {
+        "min_probability": 0.9230452179908752,
+        "mean_entropy": 0.04806209085165847,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0021/kesobudi/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09609399328996915,
+        "source_entropy": 0.7779917328519315,
+        "head_disagreement": 0.05321156208822371
+      },
+      "pilot_features": {
+        "min_probability": 0.7712404727935791,
+        "mean_entropy": 0.1260243736277289,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0022/dofelalu/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10124140715333851,
+        "source_entropy": 0.7848325975356627,
+        "head_disagreement": 0.049993955271714775
+      },
+      "pilot_features": {
+        "min_probability": 0.9346373081207275,
+        "mean_entropy": 0.05345330196835718,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0023/pafigeve/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.1017544007311244,
+        "source_entropy": 0.7743983092797403,
+        "head_disagreement": 0.05271363543711803
+      },
+      "pilot_features": {
+        "min_probability": 0.9369182586669922,
+        "mean_entropy": 0.040905103667388865,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0024/fapicofu/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09379414965792421,
+        "source_entropy": 0.763607532468586,
+        "head_disagreement": 0.052176683745303494
+      },
+      "pilot_features": {
+        "min_probability": 0.4551916718482971,
+        "mean_entropy": 0.21113010259750808,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 1,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0025/bocafige/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09530135429349684,
+        "source_entropy": 0.7599818384897653,
+        "head_disagreement": 0.047357207770183034
+      },
+      "pilot_features": {
+        "min_probability": 0.4058785140514374,
+        "mean_entropy": 0.2674190498322062,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 1,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0026/katanefo/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09343994219125307,
+        "source_entropy": 0.7845824275334311,
+        "head_disagreement": 0.05095344519275287
+      },
+      "pilot_features": {
+        "min_probability": 0.700887143611908,
+        "mean_entropy": 0.16840711350505444,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0027/cocefise/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09231490965589728,
+        "source_entropy": 0.7592457097441286,
+        "head_disagreement": 0.05090658582840339
+      },
+      "pilot_features": {
+        "min_probability": 0.8001484274864197,
+        "mean_entropy": 0.1369507747588159,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0028/rimobura/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.0885333444139178,
+        "source_entropy": 0.7787174798927674,
+        "head_disagreement": 0.05101821033466266
+      },
+      "pilot_features": {
+        "min_probability": 0.5342061519622803,
+        "mean_entropy": 0.2555105720585402,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0029/tafaridu/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.093262958608193,
+        "source_entropy": 0.7859486126390642,
+        "head_disagreement": 0.044488629462581385
+      },
+      "pilot_features": {
+        "min_probability": 0.5780335664749146,
+        "mean_entropy": 0.17894051048870097,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0030/kulamuba/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09176547497918364,
+        "source_entropy": 0.7804367527853522,
+        "head_disagreement": 0.05561554453713208
+      },
+      "pilot_features": {
+        "min_probability": 0.41889747977256775,
+        "mean_entropy": 0.37220882348560735,
+        "copy_fraction": 0.5714285714285714
+      },
+      "native_quality": 0,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0031/tabecare/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.08861754237977948,
+        "source_entropy": 0.7827254030204877,
+        "head_disagreement": 0.04453092059419894
+      },
+      "pilot_features": {
+        "min_probability": 0.6672447919845581,
+        "mean_entropy": 0.23082500258024652,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0032/tipugona/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09085651760506153,
+        "source_entropy": 0.7698256104478037,
+        "head_disagreement": 0.05070464504242353
+      },
+      "pilot_features": {
+        "min_probability": 0.5023513436317444,
+        "mean_entropy": 0.2671737387987907,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0033/reluvefa/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09438825603820078,
+        "source_entropy": 0.7899271681069732,
+        "head_disagreement": 0.05073793183725313
+      },
+      "pilot_features": {
+        "min_probability": 0.4189819097518921,
+        "mean_entropy": 0.24304775850475835,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0034/negimide/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09152820758345115,
+        "source_entropy": 0.7766106103804957,
+        "head_disagreement": 0.046387702007782805
+      },
+      "pilot_features": {
+        "min_probability": 0.6921154260635376,
+        "mean_entropy": 0.17355805634007027,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0035/ronulinu/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09194054789486472,
+        "source_entropy": 0.738637765348198,
+        "head_disagreement": 0.04824995414245829
+      },
+      "pilot_features": {
+        "min_probability": 0.49034690856933594,
+        "mean_entropy": 0.19702109849470162,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0036/vagobobi/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10929869771302947,
+        "source_entropy": 0.8083980048961533,
+        "head_disagreement": 0.05474017816622121
+      },
+      "pilot_features": {
+        "min_probability": 0.6624101996421814,
+        "mean_entropy": 0.3504527362920271,
+        "copy_fraction": 0.5714285714285714
+      },
+      "native_quality": 1,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0037/cabotada/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10329616135322794,
+        "source_entropy": 0.7854117050751254,
+        "head_disagreement": 0.049455281451801704
+      },
+      "pilot_features": {
+        "min_probability": 0.4832734167575836,
+        "mean_entropy": 0.42020237083715983,
+        "copy_fraction": 0.5714285714285714
+      },
+      "native_quality": 0,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0038/dunudico/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10833588951777529,
+        "source_entropy": 0.7725585898024969,
+        "head_disagreement": 0.04850969263073197
+      },
+      "pilot_features": {
+        "min_probability": 0.47804728150367737,
+        "mean_entropy": 0.20541273728014176,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0039/ropotupo/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10533175385762661,
+        "source_entropy": 0.7845647144714712,
+        "head_disagreement": 0.052410566172046424
+      },
+      "pilot_features": {
+        "min_probability": 0.5999532341957092,
+        "mean_entropy": 0.31349405412328224,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0040/dupemabo/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10235562149523503,
+        "source_entropy": 0.7886693492748411,
+        "head_disagreement": 0.04861057439027099
+      },
+      "pilot_features": {
+        "min_probability": 0.6501644253730774,
+        "mean_entropy": 0.21678359910220024,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 1,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0041/tisebupu/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10106493995135679,
+        "source_entropy": 0.7787287839617424,
+        "head_disagreement": 0.05143574067791674
+      },
+      "pilot_features": {
+        "min_probability": 0.7262792587280273,
+        "mean_entropy": 0.308875669926465,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 1,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0042/korafoge/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09988424608854984,
+        "source_entropy": 0.810414158978322,
+        "head_disagreement": 0.05678430556924394
+      },
+      "pilot_features": {
+        "min_probability": 0.7338864207267761,
+        "mean_entropy": 0.32720491734335155,
+        "copy_fraction": 0.375
+      },
+      "native_quality": 1,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0043/podenoku/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10363041081677693,
+        "source_entropy": 0.7909579701525963,
+        "head_disagreement": 0.05266458452281349
+      },
+      "pilot_features": {
+        "min_probability": 0.37923020124435425,
+        "mean_entropy": 0.5419576549065823,
+        "copy_fraction": 0.5714285714285714
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0044/bocilofa/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10770440456872166,
+        "source_entropy": 0.7991572253187155,
+        "head_disagreement": 0.04853021353185035
+      },
+      "pilot_features": {
+        "min_probability": 0.5527105927467346,
+        "mean_entropy": 0.2584297498253818,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0045/cekitulu/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.11036740597069183,
+        "source_entropy": 0.7588579582847658,
+        "head_disagreement": 0.04916428055557223
+      },
+      "pilot_features": {
+        "min_probability": 0.4940398335456848,
+        "mean_entropy": 0.3266496260599183,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0046/regilegu/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10361060201216787,
+        "source_entropy": 0.7569035706319268,
+        "head_disagreement": 0.04905350270809866
+      },
+      "pilot_features": {
+        "min_probability": 0.5537995100021362,
+        "mean_entropy": 0.44308106453240725,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0047/dinesabi/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10276740350673208,
+        "source_entropy": 0.8007539660577078,
+        "head_disagreement": 0.05242184180136111
+      },
+      "pilot_features": {
+        "min_probability": 0.5515891909599304,
+        "mean_entropy": 0.2875419556089014,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0048/fufaleko/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10666572529271434,
+        "source_entropy": 0.8018381411056071,
+        "head_disagreement": 0.05370339355645954
+      },
+      "pilot_features": {
+        "min_probability": 0.8315109014511108,
+        "mean_entropy": 0.08765253849911403,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 1,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0049/cevupoci/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10335525981008686,
+        "source_entropy": 0.7859278553399143,
+        "head_disagreement": 0.052785411103082956
+      },
+      "pilot_features": {
+        "min_probability": 0.8868105411529541,
+        "mean_entropy": 0.06127756486240443,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 1,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0050/puvabine/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10373497859018244,
+        "source_entropy": 0.7967038996350854,
+        "head_disagreement": 0.04783928777544053
+      },
+      "pilot_features": {
+        "min_probability": 0.9304420948028564,
+        "mean_entropy": 0.037896891412891875,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0051/cimocefo/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.0976018058088357,
+        "source_entropy": 0.762677489062752,
+        "head_disagreement": 0.051650154928541324
+      },
+      "pilot_features": {
+        "min_probability": 0.9565421938896179,
+        "mean_entropy": 0.027615822891586816,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 1,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0052/givuleda/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.1042887861572126,
+        "source_entropy": 0.7893017547433495,
+        "head_disagreement": 0.04468934651264059
+      },
+      "pilot_features": {
+        "min_probability": 0.9193258881568909,
+        "mean_entropy": 0.07125450169587566,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0053/daketale/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10044532249355598,
+        "source_entropy": 0.7684370988277144,
+        "head_disagreement": 0.0478789271442045
+      },
+      "pilot_features": {
+        "min_probability": 0.9037330746650696,
+        "mean_entropy": 0.06672413442584713,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0054/baciraro/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.1072943797669268,
+        "source_entropy": 0.7803954336488099,
+        "head_disagreement": 0.05542125067379227
+      },
+      "pilot_features": {
+        "min_probability": 0.4094521403312683,
+        "mean_entropy": 0.4449834827357222,
+        "copy_fraction": 0.25
+      },
+      "native_quality": 1,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0055/tiratubi/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10365894686538013,
+        "source_entropy": 0.8012128306792727,
+        "head_disagreement": 0.053056902854008756
+      },
+      "pilot_features": {
+        "min_probability": 0.8823980093002319,
+        "mean_entropy": 0.07924320050381084,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0056/raredabu/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10695973954352667,
+        "source_entropy": 0.7881812938878857,
+        "head_disagreement": 0.05116179384514745
+      },
+      "pilot_features": {
+        "min_probability": 0.70250403881073,
+        "mean_entropy": 0.11822889400446002,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0057/biligiku/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10087876861280165,
+        "source_entropy": 0.7792934266145946,
+        "head_disagreement": 0.05361138940520211
+      },
+      "pilot_features": {
+        "min_probability": 0.761692225933075,
+        "mean_entropy": 0.13287151861044322,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0058/folatugo/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10204652668880954,
+        "source_entropy": 0.7876756190790412,
+        "head_disagreement": 0.048080057402050305
+      },
+      "pilot_features": {
+        "min_probability": 0.9554391503334045,
+        "mean_entropy": 0.03567591706546125,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0059/tamocecu/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.1016837266888615,
+        "source_entropy": 0.7748856486506156,
+        "head_disagreement": 0.05006189476524684
+      },
+      "pilot_features": {
+        "min_probability": 0.9052701592445374,
+        "mean_entropy": 0.06704685704244184,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0060/vagosake/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.0961064194489154,
+        "source_entropy": 0.7882372353443007,
+        "head_disagreement": 0.04634000792966042
+      },
+      "pilot_features": {
+        "min_probability": 0.3478092849254608,
+        "mean_entropy": 0.23326485895813676,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 1,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0061/kevuropo/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09500467494035547,
+        "source_entropy": 0.7475835830372428,
+        "head_disagreement": 0.044133260189946254
+      },
+      "pilot_features": {
+        "min_probability": 0.7092176675796509,
+        "mean_entropy": 0.19863328517453738,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 1,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0062/rafetuce/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09041350250527103,
+        "source_entropy": 0.7835266210050603,
+        "head_disagreement": 0.05535665727807156
+      },
+      "pilot_features": {
+        "min_probability": 0.787960946559906,
+        "mean_entropy": 0.1712958753262228,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0063/dicunore/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.08909683936417423,
+        "source_entropy": 0.7844435660131102,
+        "head_disagreement": 0.04802688673358446
+      },
+      "pilot_features": {
+        "min_probability": 0.6414635181427002,
+        "mean_entropy": 0.2404620232415553,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0064/legopune/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09633645865642393,
+        "source_entropy": 0.781019095128373,
+        "head_disagreement": 0.047042998067561445
+      },
+      "pilot_features": {
+        "min_probability": 0.5484628081321716,
+        "mean_entropy": 0.2331553079533819,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0065/pogucose/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09265533291318206,
+        "source_entropy": 0.7832447096272074,
+        "head_disagreement": 0.04457873546447861
+      },
+      "pilot_features": {
+        "min_probability": 0.6429102420806885,
+        "mean_entropy": 0.2760826958092366,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0066/copuratu/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.08965039647364392,
+        "source_entropy": 0.7855138879002476,
+        "head_disagreement": 0.05572965473511256
+      },
+      "pilot_features": {
+        "min_probability": 0.5712027549743652,
+        "mean_entropy": 0.2798622698849158,
+        "copy_fraction": 0.3333333333333333
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0067/bigepufu/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09550805739399948,
+        "source_entropy": 0.7851677696471534,
+        "head_disagreement": 0.05016928751911952
+      },
+      "pilot_features": {
+        "min_probability": 0.6328321695327759,
+        "mean_entropy": 0.2407946480617511,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0068/secimogu/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09249229351109989,
+        "source_entropy": 0.7706340583091558,
+        "head_disagreement": 0.050187903899286554
+      },
+      "pilot_features": {
+        "min_probability": 0.537010908126831,
+        "mean_entropy": 0.2655752478485738,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0069/cepodonu/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.08953445782367453,
+        "source_entropy": 0.7951203478920856,
+        "head_disagreement": 0.049459373708543156
+      },
+      "pilot_features": {
+        "min_probability": 0.7331443428993225,
+        "mean_entropy": 0.15486367331527617,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0070/mesotecu/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09407312600683326,
+        "source_entropy": 0.7774302849724153,
+        "head_disagreement": 0.05223707967163309
+      },
+      "pilot_features": {
+        "min_probability": 0.6619915962219238,
+        "mean_entropy": 0.19182724758411496,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0071/rebiruku/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.08802411258943721,
+        "source_entropy": 0.7456192918515215,
+        "head_disagreement": 0.04881125135089205
+      },
+      "pilot_features": {
+        "min_probability": 0.4581547677516937,
+        "mean_entropy": 0.22891101185064144,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0072/nobarore/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.1008741857745008,
+        "source_entropy": 0.8111058861197474,
+        "head_disagreement": 0.055160455287272106
+      },
+      "pilot_features": {
+        "min_probability": 0.4579411447048187,
+        "mean_entropy": 0.3881212603064341,
+        "copy_fraction": 0.5714285714285714
+      },
+      "native_quality": 1,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0073/fasoruba/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.1055492125665296,
+        "source_entropy": 0.7795595070879779,
+        "head_disagreement": 0.051826013672889235
+      },
+      "pilot_features": {
+        "min_probability": 0.6349201798439026,
+        "mean_entropy": 0.38985921837013393,
+        "copy_fraction": 0.5714285714285714
+      },
+      "native_quality": 0,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0074/bodukopa/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.11134260433891541,
+        "source_entropy": 0.7681062921302915,
+        "head_disagreement": 0.0455799547902262
+      },
+      "pilot_features": {
+        "min_probability": 0.5682111978530884,
+        "mean_entropy": 0.3369688896166281,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0075/gurapapo/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10055631391423958,
+        "source_entropy": 0.819284979857135,
+        "head_disagreement": 0.053327863603657676
+      },
+      "pilot_features": {
+        "min_probability": 0.5301823616027832,
+        "mean_entropy": 0.3357353520839297,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 1,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0076/debofure/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09693711699014784,
+        "source_entropy": 0.7843442900731594,
+        "head_disagreement": 0.05198629104086466
+      },
+      "pilot_features": {
+        "min_probability": 0.7265822887420654,
+        "mean_entropy": 0.2166644483530149,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0077/nerupati/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.100158864161358,
+        "source_entropy": 0.8156620750001218,
+        "head_disagreement": 0.05229016381900821
+      },
+      "pilot_features": {
+        "min_probability": 0.5372467041015625,
+        "mean_entropy": 0.3344909579182058,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0078/gevopufe/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09661375171344844,
+        "source_entropy": 0.8188792780983083,
+        "head_disagreement": 0.05242003877298476
+      },
+      "pilot_features": {
+        "min_probability": 0.8273975253105164,
+        "mean_entropy": 0.2894778943976348,
+        "copy_fraction": 0.375
+      },
+      "native_quality": 1,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0079/kobukole/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10058286780622439,
+        "source_entropy": 0.805997075327129,
+        "head_disagreement": 0.05302275460192194
+      },
+      "pilot_features": {
+        "min_probability": 0.46992117166519165,
+        "mean_entropy": 0.19136208690088097,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0080/lupefasi/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10465373432225533,
+        "source_entropy": 0.7505372674178736,
+        "head_disagreement": 0.05201072751111603
+      },
+      "pilot_features": {
+        "min_probability": 0.4302739202976227,
+        "mean_entropy": 0.26416662715797656,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0081/cunebolu/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.12047277927763389,
+        "source_entropy": 0.7955790900705509,
+        "head_disagreement": 0.055294169065260815
+      },
+      "pilot_features": {
+        "min_probability": 0.5024552941322327,
+        "mean_entropy": 0.21145950479751718,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0082/gebacate/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10487084355054321,
+        "source_entropy": 0.7995300651856703,
+        "head_disagreement": 0.05029045415493732
+      },
+      "pilot_features": {
+        "min_probability": 0.6104878783226013,
+        "mean_entropy": 0.19948603982010127,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0083/lerotuca/heavy",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10489169143295385,
+        "source_entropy": 0.783285570654397,
+        "head_disagreement": 0.049598622567875915
+      },
+      "pilot_features": {
+        "min_probability": 0.489596426486969,
+        "mean_entropy": 0.2693031764894158,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0084/vufopogo/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10716774191701006,
+        "source_entropy": 0.7674838873241984,
+        "head_disagreement": 0.05288486349744895
+      },
+      "pilot_features": {
+        "min_probability": 0.8716378211975098,
+        "mean_entropy": 0.05926613264638547,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 1,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0085/fekanula/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09908154761046717,
+        "source_entropy": 0.7673635300105314,
+        "head_disagreement": 0.054424162721222136
+      },
+      "pilot_features": {
+        "min_probability": 0.7865233421325684,
+        "mean_entropy": 0.09969619516016337,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 1,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0086/subuveto/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10739605056619439,
+        "source_entropy": 0.7821021878546877,
+        "head_disagreement": 0.050748009880926884
+      },
+      "pilot_features": {
+        "min_probability": 0.9167653918266296,
+        "mean_entropy": 0.05865263696682632,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0087/remuvapa/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10520118528825151,
+        "source_entropy": 0.776633307616327,
+        "head_disagreement": 0.05432640508322444
+      },
+      "pilot_features": {
+        "min_probability": 0.8127403855323792,
+        "mean_entropy": 0.1312667867225059,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0088/catubegi/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.0998490861177288,
+        "source_entropy": 0.7867879034625015,
+        "head_disagreement": 0.048861749322609505
+      },
+      "pilot_features": {
+        "min_probability": 0.9347817897796631,
+        "mean_entropy": 0.04052249156211474,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0089/dopisuge/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10551406034414867,
+        "source_entropy": 0.774639478587904,
+        "head_disagreement": 0.05063090557864853
+      },
+      "pilot_features": {
+        "min_probability": 0.8751294016838074,
+        "mean_entropy": 0.06288946952001595,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0090/vupetolo/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.1049271938104539,
+        "source_entropy": 0.79335563367692,
+        "head_disagreement": 0.05750112079360639
+      },
+      "pilot_features": {
+        "min_probability": 0.47290799021720886,
+        "mean_entropy": 0.4063521439636588,
+        "copy_fraction": 0.25
+      },
+      "native_quality": 1,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0091/fivebota/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10502602682481665,
+        "source_entropy": 0.7715681756689152,
+        "head_disagreement": 0.05325999781612175
+      },
+      "pilot_features": {
+        "min_probability": 0.9482967853546143,
+        "mean_entropy": 0.06795463102207577,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0092/vomotimu/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10410398836006607,
+        "source_entropy": 0.7838943892433067,
+        "head_disagreement": 0.05688831923399991
+      },
+      "pilot_features": {
+        "min_probability": 0.7408000826835632,
+        "mean_entropy": 0.1314634951293101,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0093/namucecu/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09836648668897396,
+        "source_entropy": 0.7798744715236606,
+        "head_disagreement": 0.05388365103649784
+      },
+      "pilot_features": {
+        "min_probability": 0.8762187361717224,
+        "mean_entropy": 0.06806771997878514,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0094/moregeke/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10075058671395709,
+        "source_entropy": 0.797190449815644,
+        "head_disagreement": 0.05055165233786119
+      },
+      "pilot_features": {
+        "min_probability": 0.8812257051467896,
+        "mean_entropy": 0.07361317050254002,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0095/vicekiru/heavy/paraphrase",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10142329881637124,
+        "source_entropy": 0.7744297702857511,
+        "head_disagreement": 0.052117934487528196
+      },
+      "pilot_features": {
+        "min_probability": 0.6795201897621155,
+        "mean_entropy": 0.1450892157030239,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0096/dacemino/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09186109618804039,
+        "source_entropy": 0.7544211191124067,
+        "head_disagreement": 0.04485445054736823
+      },
+      "pilot_features": {
+        "min_probability": 0.4511360824108124,
+        "mean_entropy": 0.42236923247492086,
+        "copy_fraction": 0.5714285714285714
+      },
+      "native_quality": 1,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0097/licenefe/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.0932646102983199,
+        "source_entropy": 0.7617446434917251,
+        "head_disagreement": 0.046146881314433036
+      },
+      "pilot_features": {
+        "min_probability": 0.5085108876228333,
+        "mean_entropy": 0.2281542964213077,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 1,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0098/deculido/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09208968393704708,
+        "source_entropy": 0.7690640189248994,
+        "head_disagreement": 0.0531339656272448
+      },
+      "pilot_features": {
+        "min_probability": 0.6004873514175415,
+        "mean_entropy": 0.20286339824815514,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 1,
+      "guided_quality": 1
+    },
+    {
+      "case_id": "r18/development/0099/tunumumo/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09012105423539651,
+        "source_entropy": 0.7815519225196105,
+        "head_disagreement": 0.04915119838891957
+      },
+      "pilot_features": {
+        "min_probability": 0.6997899413108826,
+        "mean_entropy": 0.23071086658382,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0100/malifobu/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09197186477285868,
+        "source_entropy": 0.7972467182858439,
+        "head_disagreement": 0.04966507494819961
+      },
+      "pilot_features": {
+        "min_probability": 0.6847246289253235,
+        "mean_entropy": 0.2267803484040769,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0101/datavigo/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09550627984936,
+        "source_entropy": 0.7941042164836559,
+        "head_disagreement": 0.04628404376955518
+      },
+      "pilot_features": {
+        "min_probability": 0.48846757411956787,
+        "mean_entropy": 0.1808437352906367,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0102/velovugu/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.0922368102017117,
+        "source_entropy": 0.7643902914851115,
+        "head_disagreement": 0.05189590502688465
+      },
+      "pilot_features": {
+        "min_probability": 0.6172285079956055,
+        "mean_entropy": 0.2516403152312705,
+        "copy_fraction": 0.3333333333333333
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0103/nabogifi/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09527893724975911,
+        "source_entropy": 0.7722114589748191,
+        "head_disagreement": 0.0442704845972879
+      },
+      "pilot_features": {
+        "min_probability": 0.6495171189308167,
+        "mean_entropy": 0.16248634878115809,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0104/gefedute/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.10075282956995579,
+        "source_entropy": 0.7919911928951262,
+        "head_disagreement": 0.04893975749743198
+      },
+      "pilot_features": {
+        "min_probability": 0.5877760648727417,
+        "mean_entropy": 0.15592181738918498,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0105/tusimoni/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09192848389238861,
+        "source_entropy": 0.7891310870111305,
+        "head_disagreement": 0.05166138646379814
+      },
+      "pilot_features": {
+        "min_probability": 0.6244056224822998,
+        "mean_entropy": 0.29157811082768603,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0106/talubole/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.08628895506012668,
+        "source_entropy": 0.7666099248556953,
+        "head_disagreement": 0.053535510969968204
+      },
+      "pilot_features": {
+        "min_probability": 0.7090209126472473,
+        "mean_entropy": 0.21682296401820622,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/development/0107/botifivu/heavy/dependency",
+      "domain": "synthetic",
+      "features": {
+        "evidence_mass": 0.09141053749772254,
+        "source_entropy": 0.7632077767069124,
+        "head_disagreement": 0.04687798721709166
+      },
+      "pilot_features": {
+        "min_probability": 0.7329582571983337,
+        "mean_entropy": 0.1815660545908031,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0,
+      "guided_quality": 0
+    },
+    {
+      "case_id": "r18/hotpot/5a83411655429966c78a6b5d",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09290620870979183,
+        "source_entropy": 0.9075100511911058,
+        "head_disagreement": 0.06046927908082321
+      },
+      "pilot_features": {
+        "min_probability": 0.2747171223163605,
+        "mean_entropy": 0.4182877142002823,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0.0,
+      "guided_quality": 1.0
+    },
+    {
+      "case_id": "r18/hotpot/5a88d7fc5542993b751ca879",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09725945474656328,
+        "source_entropy": 0.897348662599989,
+        "head_disagreement": 0.07021919879210106
+      },
+      "pilot_features": {
+        "min_probability": 0.7778521776199341,
+        "mean_entropy": 0.11241183334345806,
+        "copy_fraction": 0.8
+      },
+      "native_quality": 0.5714285714285714,
+      "guided_quality": 1.0
+    },
+    {
+      "case_id": "r18/hotpot/5ab9be4f554299753720f843",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.114332394649864,
+        "source_entropy": 0.8618763105509529,
+        "head_disagreement": 0.060046174956787476
+      },
+      "pilot_features": {
+        "min_probability": 0.653016984462738,
+        "mean_entropy": 0.18187312204219097,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5a7cffb755429907fabef09f",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.08772918942304386,
+        "source_entropy": 0.9052975633261952,
+        "head_disagreement": 0.06696622057871528
+      },
+      "pilot_features": {
+        "min_probability": 0.38996002078056335,
+        "mean_entropy": 0.4585078354709822,
+        "copy_fraction": 0.6666666666666666
+      },
+      "native_quality": 0.19047619047619047,
+      "guided_quality": 1.0
+    },
+    {
+      "case_id": "r18/hotpot/5abae3205542996cc5e49edc",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.10672865008564258,
+        "source_entropy": 0.9037616944599307,
+        "head_disagreement": 0.0662546008216795
+      },
+      "pilot_features": {
+        "min_probability": 0.45604512095451355,
+        "mean_entropy": 0.3564078683861709,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.21052631578947367,
+      "guided_quality": 0.5
+    },
+    {
+      "case_id": "r18/hotpot/5aba72d75542994dbf019912",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.11101297007735411,
+        "source_entropy": 0.9267628066380464,
+        "head_disagreement": 0.07338788888925701
+      },
+      "pilot_features": {
+        "min_probability": 0.9606185555458069,
+        "mean_entropy": 0.03282394513382769,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.5,
+      "guided_quality": 0.5
+    },
+    {
+      "case_id": "r18/hotpot/5a73d33e5542992d56e7e3a9",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.11636724738582416,
+        "source_entropy": 0.9069112482923462,
+        "head_disagreement": 0.06814960392578318
+      },
+      "pilot_features": {
+        "min_probability": 0.3062068819999695,
+        "mean_entropy": 0.41894003660127055,
+        "copy_fraction": 0.5714285714285714
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5a8651185542994775f60752",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09057304516409204,
+        "source_entropy": 0.9012157334308918,
+        "head_disagreement": 0.07297914508136108
+      },
+      "pilot_features": {
+        "min_probability": 0.5309962630271912,
+        "mean_entropy": 0.22386365602687874,
+        "copy_fraction": 0.6666666666666666
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5a81ea115542995ce29dcc78",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.08443620372236182,
+        "source_entropy": 0.9197980557400972,
+        "head_disagreement": 0.05875513576474378
+      },
+      "pilot_features": {
+        "min_probability": 0.6758291125297546,
+        "mean_entropy": 0.1986217481856727,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.19047619047619047,
+      "guided_quality": 0.19047619047619047
+    },
+    {
+      "case_id": "r18/hotpot/5a8c30f6554299240d9c20d1",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09371801423912984,
+        "source_entropy": 0.8726246848688953,
+        "head_disagreement": 0.06668095545785556
+      },
+      "pilot_features": {
+        "min_probability": 0.794029951095581,
+        "mean_entropy": 0.1707969414019317,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5a89e98955429946c8d6ea0c",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09765441912168171,
+        "source_entropy": 0.9211232622728522,
+        "head_disagreement": 0.05180016456369447
+      },
+      "pilot_features": {
+        "min_probability": 0.39491143822669983,
+        "mean_entropy": 0.28890869803672103,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5a8c49655542995e66a47598",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09733103228063555,
+        "source_entropy": 0.9110491248276528,
+        "head_disagreement": 0.04822954098055854
+      },
+      "pilot_features": {
+        "min_probability": 0.5199850797653198,
+        "mean_entropy": 0.21648011243814835,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.5714285714285714,
+      "guided_quality": 1.0
+    },
+    {
+      "case_id": "r18/hotpot/5ac10832554299012d1db687",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.08969698319378949,
+        "source_entropy": 0.928193532471172,
+        "head_disagreement": 0.05525637644332908
+      },
+      "pilot_features": {
+        "min_probability": 0.44977694749832153,
+        "mean_entropy": 0.4083997341019767,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.13333333333333333
+    },
+    {
+      "case_id": "r18/hotpot/5a7c2819554299683c1c62db",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09277507396564033,
+        "source_entropy": 0.8584275541600984,
+        "head_disagreement": 0.053101678001266174
+      },
+      "pilot_features": {
+        "min_probability": 0.7126205563545227,
+        "mean_entropy": 0.17209189536515623,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5ab36c3f55429969a97a8146",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09904481112971553,
+        "source_entropy": 0.9080053326072892,
+        "head_disagreement": 0.06564432685948303
+      },
+      "pilot_features": {
+        "min_probability": 0.49864858388900757,
+        "mean_entropy": 0.4162705284088588,
+        "copy_fraction": 0.42857142857142855
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5ae765bf5542995703ce8c12",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09880353628250305,
+        "source_entropy": 0.9310942181764709,
+        "head_disagreement": 0.07466820654777162
+      },
+      "pilot_features": {
+        "min_probability": 0.6460490822792053,
+        "mean_entropy": 0.18540475945899004,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5ade5a645542997c77adee0d",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.10258203363628127,
+        "source_entropy": 0.916669930674761,
+        "head_disagreement": 0.07582924747518495
+      },
+      "pilot_features": {
+        "min_probability": 0.589012086391449,
+        "mean_entropy": 0.3393274431436737,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.3333333333333333,
+      "guided_quality": 0.3333333333333333
+    },
+    {
+      "case_id": "r18/hotpot/5ac286c055429963665199f8",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.0956727776228945,
+        "source_entropy": 0.9153360397017898,
+        "head_disagreement": 0.04935861275777989
+      },
+      "pilot_features": {
+        "min_probability": 0.40874746441841125,
+        "mean_entropy": 0.5004789200320374,
+        "copy_fraction": 0.5714285714285714
+      },
+      "native_quality": 0.24,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5ab5b701554299637185c5e7",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09520949941361323,
+        "source_entropy": 0.8874047494891749,
+        "head_disagreement": 0.048057246516086345
+      },
+      "pilot_features": {
+        "min_probability": 0.5775856375694275,
+        "mean_entropy": 0.14798265667637622,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.16666666666666666,
+      "guided_quality": 0.14285714285714285
+    },
+    {
+      "case_id": "r18/hotpot/5a7280105542994cef4bc2e4",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.10616692055646126,
+        "source_entropy": 0.8877952945412095,
+        "head_disagreement": 0.06472177351202914
+      },
+      "pilot_features": {
+        "min_probability": 0.4687042236328125,
+        "mean_entropy": 0.4802446248747098,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 1.0,
+      "guided_quality": 1.0
+    },
+    {
+      "case_id": "r18/hotpot/5a7d6a2d5542991319bc93c6",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09735004788308288,
+        "source_entropy": 0.9264875683913262,
+        "head_disagreement": 0.05390849236810397
+      },
+      "pilot_features": {
+        "min_probability": 0.7214229702949524,
+        "mean_entropy": 0.09918479025059668,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0.06896551724137931,
+      "guided_quality": 0.4
+    },
+    {
+      "case_id": "r18/hotpot/5adec96e5542995534e8c712",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09107434639372514,
+        "source_entropy": 0.8777630078469559,
+        "head_disagreement": 0.06816811554311458
+      },
+      "pilot_features": {
+        "min_probability": 0.5936116576194763,
+        "mean_entropy": 1.1323057413101196,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.25,
+      "guided_quality": 0.25
+    },
+    {
+      "case_id": "r18/hotpot/5ac3bd0c554299204fd21e21",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09476324093293442,
+        "source_entropy": 0.8817696357377273,
+        "head_disagreement": 0.06268102619070043
+      },
+      "pilot_features": {
+        "min_probability": 0.9814407229423523,
+        "mean_entropy": 0.018282909455436425,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0.2,
+      "guided_quality": 0.2
+    },
+    {
+      "case_id": "r18/hotpot/5a8511185542992a431d1aca",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.1015851740457947,
+        "source_entropy": 0.8670375453509077,
+        "head_disagreement": 0.0713483218910083
+      },
+      "pilot_features": {
+        "min_probability": 0.6967413425445557,
+        "mean_entropy": 0.24657769323263778,
+        "copy_fraction": 0.6666666666666666
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5abff00c5542994516f45537",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.10579684548247315,
+        "source_entropy": 0.876558433999367,
+        "head_disagreement": 0.06422071478084032
+      },
+      "pilot_features": {
+        "min_probability": 0.7514205574989319,
+        "mean_entropy": 0.20112401913775102,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.18181818181818182,
+      "guided_quality": 1.0
+    },
+    {
+      "case_id": "r18/hotpot/5ae3ac665542994393b9e73f",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.125554178423954,
+        "source_entropy": 0.9155873796939252,
+        "head_disagreement": 0.07384754545448045
+      },
+      "pilot_features": {
+        "min_probability": 0.522551417350769,
+        "mean_entropy": 0.32533139728002425,
+        "copy_fraction": 0.6666666666666666
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5adf29f05542993344016c09",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09012626483036001,
+        "source_entropy": 0.8768436430622958,
+        "head_disagreement": 0.05779689147420859
+      },
+      "pilot_features": {
+        "min_probability": 0.5498948693275452,
+        "mean_entropy": 0.47745976923033595,
+        "copy_fraction": 0.7142857142857143
+      },
+      "native_quality": 0.2,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5a70f9335542994082a3e46a",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.08287690399993153,
+        "source_entropy": 0.8806720923595523,
+        "head_disagreement": 0.05811037830317643
+      },
+      "pilot_features": {
+        "min_probability": 0.40353280305862427,
+        "mean_entropy": 0.5492125249584205,
+        "copy_fraction": 0.7142857142857143
+      },
+      "native_quality": 0.35294117647058826,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5ae3de615542992f92d823a5",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.10595905613809009,
+        "source_entropy": 0.92016688718369,
+        "head_disagreement": 0.04748931524294419
+      },
+      "pilot_features": {
+        "min_probability": 0.657087504863739,
+        "mean_entropy": 0.1742582486045876,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.24242424242424243,
+      "guided_quality": 0.24242424242424243
+    },
+    {
+      "case_id": "r18/hotpot/5a7f677455429969796c1a37",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09467123384001752,
+        "source_entropy": 0.8976989477017886,
+        "head_disagreement": 0.06623509925252166
+      },
+      "pilot_features": {
+        "min_probability": 0.6882632970809937,
+        "mean_entropy": 0.16124377464797135,
+        "copy_fraction": 0.8
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5a8ae00e5542992d82986fc7",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.1060560849846297,
+        "source_entropy": 0.9117160901812594,
+        "head_disagreement": 0.06594692309734546
+      },
+      "pilot_features": {
+        "min_probability": 0.900678277015686,
+        "mean_entropy": 0.2519041934137931,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5ab2e3a15542992953946893",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09812144303487003,
+        "source_entropy": 0.8488129836305133,
+        "head_disagreement": 0.06760799623643722
+      },
+      "pilot_features": {
+        "min_probability": 0.5034691691398621,
+        "mean_entropy": 0.44032675138441846,
+        "copy_fraction": 0.42857142857142855
+      },
+      "native_quality": 0.2,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5abe4a365542993f32c2a0dc",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09152457081790999,
+        "source_entropy": 0.8672618596686171,
+        "head_disagreement": 0.05291654735436282
+      },
+      "pilot_features": {
+        "min_probability": 0.38823723793029785,
+        "mean_entropy": 0.8997204766601499,
+        "copy_fraction": 0.375
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5ac325495542995ef918c12e",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.10761136105793412,
+        "source_entropy": 0.8749906983200344,
+        "head_disagreement": 0.05980141306168238
+      },
+      "pilot_features": {
+        "min_probability": 0.48455697298049927,
+        "mean_entropy": 0.24179586101888617,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.4,
+      "guided_quality": 0.4
+    },
+    {
+      "case_id": "r18/hotpot/5a7dbc175542995ed0d1666b",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.1038413543592469,
+        "source_entropy": 0.894138829912692,
+        "head_disagreement": 0.05035083597609551
+      },
+      "pilot_features": {
+        "min_probability": 0.48751285672187805,
+        "mean_entropy": 0.5275071970099816,
+        "copy_fraction": 0.42857142857142855
+      },
+      "native_quality": 0.18181818181818182,
+      "guided_quality": 0.8
+    },
+    {
+      "case_id": "r18/hotpot/5a836d8a554299123d8c2113",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.11417036274451675,
+        "source_entropy": 0.8629171269848311,
+        "head_disagreement": 0.05772602279223603
+      },
+      "pilot_features": {
+        "min_probability": 0.40761566162109375,
+        "mean_entropy": 0.41686518555123203,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5ae3eeb25542995dadf2425e",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.12127345943554246,
+        "source_entropy": 0.8864950466263176,
+        "head_disagreement": 0.05928811054049247
+      },
+      "pilot_features": {
+        "min_probability": 0.8154458999633789,
+        "mean_entropy": 0.07236847292386983,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5ae331fb55429928c4239670",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.1001605243091035,
+        "source_entropy": 0.8962621643346742,
+        "head_disagreement": 0.0573901934936111
+      },
+      "pilot_features": {
+        "min_probability": 0.3042513430118561,
+        "mean_entropy": 0.6501203619747002,
+        "copy_fraction": 0.5
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5abbdf8055429931dba145bb",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.10134099411516218,
+        "source_entropy": 0.9223041609823265,
+        "head_disagreement": 0.05443151212932723
+      },
+      "pilot_features": {
+        "min_probability": 0.8009102940559387,
+        "mean_entropy": 0.21256900468433743,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5ab94cf0554299743d22eade",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.10575868669729971,
+        "source_entropy": 0.8850459313715766,
+        "head_disagreement": 0.05968056666384657
+      },
+      "pilot_features": {
+        "min_probability": 0.8711238503456116,
+        "mean_entropy": 0.08387532317328628,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5a8bc1565542996e8ac88a0c",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.1028027876491251,
+        "source_entropy": 0.9225224051375328,
+        "head_disagreement": 0.0798849785254392
+      },
+      "pilot_features": {
+        "min_probability": 0.8052734732627869,
+        "mean_entropy": 0.17120652693770744,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.47619047619047616,
+      "guided_quality": 0.38095238095238093
+    },
+    {
+      "case_id": "r18/hotpot/5a863b87554299211dda2ab7",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.10128324639663333,
+        "source_entropy": 0.9110915161734692,
+        "head_disagreement": 0.05750828223491428
+      },
+      "pilot_features": {
+        "min_probability": 0.7369036674499512,
+        "mean_entropy": 0.18505369239346692,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 1.0,
+      "guided_quality": 1.0
+    },
+    {
+      "case_id": "r18/hotpot/5a778ce55542995d831811c0",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.10024611346034362,
+        "source_entropy": 0.880522513793882,
+        "head_disagreement": 0.07150427040430339
+      },
+      "pilot_features": {
+        "min_probability": 0.7226487994194031,
+        "mean_entropy": 0.31140162353810297,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.16,
+      "guided_quality": 0.18181818181818182
+    },
+    {
+      "case_id": "r18/hotpot/5ab9587d55429970cfb8ea7e",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.10200899684195974,
+        "source_entropy": 0.847436752343744,
+        "head_disagreement": 0.062315417735273146
+      },
+      "pilot_features": {
+        "min_probability": 0.8170183300971985,
+        "mean_entropy": 0.11862686401094891,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.3333333333333333,
+      "guided_quality": 0.3333333333333333
+    },
+    {
+      "case_id": "r18/hotpot/5a8a1aea5542992e4fca8508",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.0812455660352498,
+        "source_entropy": 0.8992714280689081,
+        "head_disagreement": 0.06504329429317493
+      },
+      "pilot_features": {
+        "min_probability": 0.4861376881599426,
+        "mean_entropy": 0.2740118897437771,
+        "copy_fraction": 0.8333333333333334
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5a7b69b155429927d897bfbc",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09601613589347835,
+        "source_entropy": 0.8826111530193351,
+        "head_disagreement": 0.05433698787609542
+      },
+      "pilot_features": {
+        "min_probability": 0.6968172192573547,
+        "mean_entropy": 0.2686967250586445,
+        "copy_fraction": 0.6666666666666666
+      },
+      "native_quality": 0.125,
+      "guided_quality": 0.2
+    },
+    {
+      "case_id": "r18/hotpot/5add352b5542990dbb2f7dc4",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.11238955138833262,
+        "source_entropy": 0.9541437413365786,
+        "head_disagreement": 0.06202814651242142
+      },
+      "pilot_features": {
+        "min_probability": 0.6609959602355957,
+        "mean_entropy": 0.2997663182904944,
+        "copy_fraction": 0.7142857142857143
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5ae5aba0554299546bf82f17",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09758927736584155,
+        "source_entropy": 0.8940302143510186,
+        "head_disagreement": 0.05478179526607767
+      },
+      "pilot_features": {
+        "min_probability": 0.49097567796707153,
+        "mean_entropy": 0.33931392875547317,
+        "copy_fraction": 0.7142857142857143
+      },
+      "native_quality": 0.15384615384615385,
+      "guided_quality": 0.16666666666666666
+    },
+    {
+      "case_id": "r18/hotpot/5ac2f79e5542996773102661",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09348596370728046,
+        "source_entropy": 0.8561630424413686,
+        "head_disagreement": 0.05828828070965821
+      },
+      "pilot_features": {
+        "min_probability": 0.8522475361824036,
+        "mean_entropy": 0.07250979593953844,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5a762f4755429976ec32bd44",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09063106611847616,
+        "source_entropy": 0.8827559914387348,
+        "head_disagreement": 0.06258205141842489
+      },
+      "pilot_features": {
+        "min_probability": 0.8596798777580261,
+        "mean_entropy": 0.1537836294524828,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5a80de9b55429938b6142226",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09130164007729036,
+        "source_entropy": 0.9117169191058326,
+        "head_disagreement": 0.06799305405358386
+      },
+      "pilot_features": {
+        "min_probability": 0.6111783981323242,
+        "mean_entropy": 0.17962452890083114,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5ac0cf0f554299294b219018",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.11511457134065495,
+        "source_entropy": 0.8832315864839099,
+        "head_disagreement": 0.07289506594965699
+      },
+      "pilot_features": {
+        "min_probability": 0.5145077705383301,
+        "mean_entropy": 0.4533082835475284,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.16666666666666666,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5ab2d65e554299545a2cfabe",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.11219231903760374,
+        "source_entropy": 0.9299955368984665,
+        "head_disagreement": 0.057629827446018654
+      },
+      "pilot_features": {
+        "min_probability": 0.4300149977207184,
+        "mean_entropy": 0.17160912673344342,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.2608695652173913,
+      "guided_quality": 0.2608695652173913
+    },
+    {
+      "case_id": "r18/hotpot/5a89ec7b5542992e4fca8483",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.08637792592708138,
+        "source_entropy": 0.9223024277502062,
+        "head_disagreement": 0.04823642931125608
+      },
+      "pilot_features": {
+        "min_probability": 0.9416693449020386,
+        "mean_entropy": 0.03467840376970194,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 1.0,
+      "guided_quality": 1.0
+    },
+    {
+      "case_id": "r18/hotpot/5a901e5c55429933b8a2047c",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.10793381638632127,
+        "source_entropy": 0.8805431697239762,
+        "head_disagreement": 0.06682207541685839
+      },
+      "pilot_features": {
+        "min_probability": 0.5276761651039124,
+        "mean_entropy": 0.17627628604079604,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.18181818181818182,
+      "guided_quality": 0.15384615384615385
+    },
+    {
+      "case_id": "r18/hotpot/5a7663665542992d0ec060d3",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.1024023176960327,
+        "source_entropy": 0.9148962201445667,
+        "head_disagreement": 0.06620326606138774
+      },
+      "pilot_features": {
+        "min_probability": 0.607335090637207,
+        "mean_entropy": 0.19629197012091026,
+        "copy_fraction": 0.875
+      },
+      "native_quality": 0.3333333333333333,
+      "guided_quality": 0.3333333333333333
+    },
+    {
+      "case_id": "r18/hotpot/5ae0bf3a55429906c02dab21",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.10378613290231442,
+        "source_entropy": 0.9057973292150541,
+        "head_disagreement": 0.059439037643593776
+      },
+      "pilot_features": {
+        "min_probability": 0.9518334269523621,
+        "mean_entropy": 0.07568698384346817,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 1.0,
+      "guided_quality": 1.0
+    },
+    {
+      "case_id": "r18/hotpot/5a7270395542992359bc30a8",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.10658474530646345,
+        "source_entropy": 0.8841977389414177,
+        "head_disagreement": 0.06945490915842642
+      },
+      "pilot_features": {
+        "min_probability": 0.6913371682167053,
+        "mean_entropy": 0.14657932388604422,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.25,
+      "guided_quality": 0.25
+    },
+    {
+      "case_id": "r18/hotpot/5ac3271e554299218029dbd3",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.10181196276880655,
+        "source_entropy": 0.9161925306264751,
+        "head_disagreement": 0.06570764302736047
+      },
+      "pilot_features": {
+        "min_probability": 0.6964656114578247,
+        "mean_entropy": 0.15843023008268833,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.18181818181818182
+    },
+    {
+      "case_id": "r18/hotpot/5add61d65542995b365fab21",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.0934856863314053,
+        "source_entropy": 0.8923883866844128,
+        "head_disagreement": 0.06778991102794067
+      },
+      "pilot_features": {
+        "min_probability": 0.6915367841720581,
+        "mean_entropy": 0.1297758925973227,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5ab3589455429976abd1bc93",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.11358511150137929,
+        "source_entropy": 0.8603614415565725,
+        "head_disagreement": 0.07082199758766743
+      },
+      "pilot_features": {
+        "min_probability": 0.34132590889930725,
+        "mean_entropy": 0.23476488669356854,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.5555555555555556,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5a8762205542996e4f3087b8",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.08733603916061838,
+        "source_entropy": 0.8929611046303314,
+        "head_disagreement": 0.06313724205581979
+      },
+      "pilot_features": {
+        "min_probability": 0.6835376620292664,
+        "mean_entropy": 0.1949648544066349,
+        "copy_fraction": 0.8
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5abbd4425542993f40c73bcc",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.08681038493250526,
+        "source_entropy": 0.8689102060868297,
+        "head_disagreement": 0.06047571932672573
+      },
+      "pilot_features": {
+        "min_probability": 0.5518014430999756,
+        "mean_entropy": 0.2181946397849952,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5a8545ba5542997b5ce3ffdd",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09646755519679573,
+        "source_entropy": 0.8780845131145341,
+        "head_disagreement": 0.07001744489580299
+      },
+      "pilot_features": {
+        "min_probability": 0.3610147535800934,
+        "mean_entropy": 0.7372743361629546,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0.1,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5ae803915542994a481bbe80",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.11038307681155857,
+        "source_entropy": 0.8673719974895484,
+        "head_disagreement": 0.05091595101167838
+      },
+      "pilot_features": {
+        "min_probability": 0.4587726294994354,
+        "mean_entropy": 0.23642040788329158,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.375,
+      "guided_quality": 0.375
+    },
+    {
+      "case_id": "r18/hotpot/5ae0968955429924de1b7105",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09464408421627013,
+        "source_entropy": 0.903144018956695,
+        "head_disagreement": 0.07066597648402392
+      },
+      "pilot_features": {
+        "min_probability": 0.48510608077049255,
+        "mean_entropy": 0.2773132103972955,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5a815f445542995ce29dcbec",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.09187215736346843,
+        "source_entropy": 0.9055997686476673,
+        "head_disagreement": 0.0436731873360467
+      },
+      "pilot_features": {
+        "min_probability": 0.456051230430603,
+        "mean_entropy": 0.307997397436651,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.4444444444444444
+    },
+    {
+      "case_id": "r18/hotpot/5ae1a8c05542997f29b3c0ec",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.10368470006142161,
+        "source_entropy": 0.896559073161346,
+        "head_disagreement": 0.0659537350117623
+      },
+      "pilot_features": {
+        "min_probability": 0.36952412128448486,
+        "mean_entropy": 0.3781146046703725,
+        "copy_fraction": 0.5714285714285714
+      },
+      "native_quality": 0.14285714285714285,
+      "guided_quality": 0.14285714285714285
+    },
+    {
+      "case_id": "r18/hotpot/5a77e70f5542992a6e59dfeb",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.10728561868108955,
+        "source_entropy": 0.8717195906103116,
+        "head_disagreement": 0.04509918147722606
+      },
+      "pilot_features": {
+        "min_probability": 0.7599358558654785,
+        "mean_entropy": 0.08345943220058416,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 1.0
+    },
+    {
+      "case_id": "r18/hotpot/5a8249b85542990a1d231f8f",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.10425257943643373,
+        "source_entropy": 0.9091608872565099,
+        "head_disagreement": 0.06011226700107303
+      },
+      "pilot_features": {
+        "min_probability": 0.3281346261501312,
+        "mean_entropy": 0.5757414046966005,
+        "copy_fraction": 0.5714285714285714
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5a7c64bc5542996dd594b913",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.08085264115470636,
+        "source_entropy": 0.9084569744035623,
+        "head_disagreement": 0.07009372102889842
+      },
+      "pilot_features": {
+        "min_probability": 0.5161212682723999,
+        "mean_entropy": 0.4031644791029976,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0.16666666666666666,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/hotpot/5a7c53a855429935c91b515d",
+      "domain": "hotpot",
+      "features": {
+        "evidence_mass": 0.1107386640360346,
+        "source_entropy": 0.8967869809919059,
+        "head_disagreement": 0.061314643700432936
+      },
+      "pilot_features": {
+        "min_probability": 0.42181721329689026,
+        "mean_entropy": 0.2855187043648826,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.38095238095238093,
+      "guided_quality": 0.38095238095238093
+    },
+    {
+      "case_id": "r18/squad2/5ad14816645df0001a2d1541",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.13196173501637531,
+        "source_entropy": 0.9729538052588207,
+        "head_disagreement": 0.08173642544833327
+      },
+      "pilot_features": {
+        "min_probability": 0.5284923315048218,
+        "mean_entropy": 0.543080585761345,
+        "copy_fraction": 0.5714285714285714
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5a3e42de378766001a00252b",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.10576576729545195,
+        "source_entropy": 0.9273484517314037,
+        "head_disagreement": 0.07923367830714409
+      },
+      "pilot_features": {
+        "min_probability": 0.5197402834892273,
+        "mean_entropy": 0.606838266559862,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5a638a2468151a001a92234e",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.11645499579935858,
+        "source_entropy": 0.9154116516256691,
+        "head_disagreement": 0.054693886185854565
+      },
+      "pilot_features": {
+        "min_probability": 0.4929468631744385,
+        "mean_entropy": 0.5928705661644926,
+        "copy_fraction": 0.375
+      },
+      "native_quality": 1.0,
+      "guided_quality": 1.0
+    },
+    {
+      "case_id": "r18/squad2/572905ce1d04691400778f86",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.13923656473343726,
+        "source_entropy": 0.9446007972642754,
+        "head_disagreement": 0.059035594445432445
+      },
+      "pilot_features": {
+        "min_probability": 0.4996646046638489,
+        "mean_entropy": 0.4933052264204889,
+        "copy_fraction": 0.2857142857142857
+      },
+      "native_quality": 0.15384615384615385,
+      "guided_quality": 1.0
+    },
+    {
+      "case_id": "r18/squad2/5ad3f6f5604f3c001a3ffa09",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.13745912105696334,
+        "source_entropy": 0.8684310947727668,
+        "head_disagreement": 0.05856883057736561
+      },
+      "pilot_features": {
+        "min_probability": 0.6351146101951599,
+        "mean_entropy": 0.24121960080901772,
+        "copy_fraction": 0.6666666666666666
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5727490bdd62a815002e9a82",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.13096394938474987,
+        "source_entropy": 0.90218160302239,
+        "head_disagreement": 0.07908585841798246
+      },
+      "pilot_features": {
+        "min_probability": 0.317450612783432,
+        "mean_entropy": 0.6050137006677687,
+        "copy_fraction": 0.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.5
+    },
+    {
+      "case_id": "r18/squad2/572883a33acd2414000dfa7b",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.12050996735342778,
+        "source_entropy": 0.958096015620051,
+        "head_disagreement": 0.0693698412744926
+      },
+      "pilot_features": {
+        "min_probability": 0.4521697461605072,
+        "mean_entropy": 0.24350052118059295,
+        "copy_fraction": 0.5714285714285714
+      },
+      "native_quality": 0.4166666666666667,
+      "guided_quality": 0.5263157894736842
+    },
+    {
+      "case_id": "r18/squad2/5ad4e56d5b96ef001a10a599",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.12096468421077589,
+        "source_entropy": 0.9698716101251129,
+        "head_disagreement": 0.07983233110413007
+      },
+      "pilot_features": {
+        "min_probability": 0.3298170566558838,
+        "mean_entropy": 0.41437464993896356,
+        "copy_fraction": 0.5714285714285714
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5ad264d7d7d075001a429175",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.12337981646851404,
+        "source_entropy": 0.9607497767790283,
+        "head_disagreement": 0.05771902521839387
+      },
+      "pilot_features": {
+        "min_probability": 0.4119848310947418,
+        "mean_entropy": 0.45575586078393826,
+        "copy_fraction": 0.42857142857142855
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5709686c200fba1400367f77",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.13122519494208973,
+        "source_entropy": 0.9303363217898563,
+        "head_disagreement": 0.07847045356377681
+      },
+      "pilot_features": {
+        "min_probability": 0.9888156652450562,
+        "mean_entropy": 0.012525612304280287,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.5333333333333333,
+      "guided_quality": 0.5333333333333333
+    },
+    {
+      "case_id": "r18/squad2/5ad4dd325b96ef001a10a4a8",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.1163875575257407,
+        "source_entropy": 0.8710418343054388,
+        "head_disagreement": 0.07346889577345371
+      },
+      "pilot_features": {
+        "min_probability": 0.5112470984458923,
+        "mean_entropy": 0.5181112890726496,
+        "copy_fraction": 0.25
+      },
+      "native_quality": 1.0,
+      "guided_quality": 1.0
+    },
+    {
+      "case_id": "r18/squad2/572943ab1d0469140077921a",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.11439800902917341,
+        "source_entropy": 0.8986496008868694,
+        "head_disagreement": 0.08346196585020349
+      },
+      "pilot_features": {
+        "min_probability": 0.7819310426712036,
+        "mean_entropy": 0.2532084445586757,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5729fefbaf94a219006aa73b",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.1251444128647563,
+        "source_entropy": 0.9266699420555284,
+        "head_disagreement": 0.06251164804028572
+      },
+      "pilot_features": {
+        "min_probability": 0.6454402208328247,
+        "mean_entropy": 0.38850180342615204,
+        "copy_fraction": 0.4
+      },
+      "native_quality": 0.43478260869565216,
+      "guided_quality": 0.5263157894736842
+    },
+    {
+      "case_id": "r18/squad2/570d3468b3d812140066d547",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.1392018075712258,
+        "source_entropy": 0.9999727539582514,
+        "head_disagreement": 0.10295079924288693
+      },
+      "pilot_features": {
+        "min_probability": 0.5469921231269836,
+        "mean_entropy": 0.42528732908249367,
+        "copy_fraction": 0.2857142857142857
+      },
+      "native_quality": 0.2222222222222222,
+      "guided_quality": 1.0
+    },
+    {
+      "case_id": "r18/squad2/57264c42dd62a815002e80c8",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.14216963567014318,
+        "source_entropy": 0.9086495992835933,
+        "head_disagreement": 0.07860844907825543
+      },
+      "pilot_features": {
+        "min_probability": 0.29101765155792236,
+        "mean_entropy": 0.3677841158864794,
+        "copy_fraction": 0.6
+      },
+      "native_quality": 0.5,
+      "guided_quality": 0.5714285714285714
+    },
+    {
+      "case_id": "r18/squad2/5a3e307f378766001a0024d8",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.13119986083984259,
+        "source_entropy": 0.9039758272352818,
+        "head_disagreement": 0.07680085626377851
+      },
+      "pilot_features": {
+        "min_probability": 0.4165840744972229,
+        "mean_entropy": 0.48719872560104704,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/57096505ed30961900e84086",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.12736276839495986,
+        "source_entropy": 0.8835880925340163,
+        "head_disagreement": 0.07801537215088424
+      },
+      "pilot_features": {
+        "min_probability": 0.8333611488342285,
+        "mean_entropy": 0.1166591642892858,
+        "copy_fraction": 0.75
+      },
+      "native_quality": 0.3076923076923077,
+      "guided_quality": 0.3076923076923077
+    },
+    {
+      "case_id": "r18/squad2/5727515f708984140094dc12",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.13298597076209262,
+        "source_entropy": 0.9112155495093315,
+        "head_disagreement": 0.05142299933789703
+      },
+      "pilot_features": {
+        "min_probability": 0.6140116453170776,
+        "mean_entropy": 0.2605961312381737,
+        "copy_fraction": 0.75
+      },
+      "native_quality": 0.2222222222222222,
+      "guided_quality": 0.2222222222222222
+    },
+    {
+      "case_id": "r18/squad2/5ad4de4c5b96ef001a10a4dc",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.1363182517234236,
+        "source_entropy": 0.9262651226156902,
+        "head_disagreement": 0.062424229433855755
+      },
+      "pilot_features": {
+        "min_probability": 0.7375729084014893,
+        "mean_entropy": 0.22604500140369055,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5ad4c94f5b96ef001a10a09c",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.1418898564297706,
+        "source_entropy": 0.9806596447261979,
+        "head_disagreement": 0.06813737627259112
+      },
+      "pilot_features": {
+        "min_probability": 0.49627435207366943,
+        "mean_entropy": 0.36502962804388517,
+        "copy_fraction": 0.2857142857142857
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5a67978ef038b7001ab0c308",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.13163269417236734,
+        "source_entropy": 0.9695969994715313,
+        "head_disagreement": 0.07183121652066597
+      },
+      "pilot_features": {
+        "min_probability": 0.2669565975666046,
+        "mean_entropy": 0.49443928015534766,
+        "copy_fraction": 0.4
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5a3e51b6378766001a002582",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.14455616821942385,
+        "source_entropy": 0.9392072982841879,
+        "head_disagreement": 0.07584554361922415
+      },
+      "pilot_features": {
+        "min_probability": 0.3520956337451935,
+        "mean_entropy": 1.1381082410613697,
+        "copy_fraction": 0.6
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/57111380a58dae1900cd6bd8",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.12580634885307518,
+        "source_entropy": 0.8736571227314992,
+        "head_disagreement": 0.0707443795810494
+      },
+      "pilot_features": {
+        "min_probability": 0.7593038082122803,
+        "mean_entropy": 0.3551959172145871,
+        "copy_fraction": 0.42857142857142855
+      },
+      "native_quality": 0.09090909090909091,
+      "guided_quality": 0.2222222222222222
+    },
+    {
+      "case_id": "r18/squad2/57096f37200fba1400367fe8",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.13142704415076878,
+        "source_entropy": 0.9667087208272634,
+        "head_disagreement": 0.09467732785287036
+      },
+      "pilot_features": {
+        "min_probability": 0.5648441314697266,
+        "mean_entropy": 0.2454707015922395,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.75,
+      "guided_quality": 0.75
+    },
+    {
+      "case_id": "r18/squad2/5a3e4e57378766001a002564",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.13904492692745407,
+        "source_entropy": 0.9662467928905162,
+        "head_disagreement": 0.06773077579022097
+      },
+      "pilot_features": {
+        "min_probability": 0.493085116147995,
+        "mean_entropy": 0.31437203445230466,
+        "copy_fraction": 0.875
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/57286192ff5b5019007da1df",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.15490305340790655,
+        "source_entropy": 0.920360377266346,
+        "head_disagreement": 0.08431584662366932
+      },
+      "pilot_features": {
+        "min_probability": 0.7241769433021545,
+        "mean_entropy": 0.1874046138839276,
+        "copy_fraction": 0.75
+      },
+      "native_quality": 0.6,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5a638bf768151a001a922365",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.11675679258769378,
+        "source_entropy": 0.9335338771262223,
+        "head_disagreement": 0.08071103845875242
+      },
+      "pilot_features": {
+        "min_probability": 0.37715622782707214,
+        "mean_entropy": 0.7044640512322076,
+        "copy_fraction": 0.5
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5a6395e668151a001a9223a0",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.10923880333575653,
+        "source_entropy": 0.9542789451253277,
+        "head_disagreement": 0.06392038205127545
+      },
+      "pilot_features": {
+        "min_probability": 0.37478959560394287,
+        "mean_entropy": 0.42949640810510914,
+        "copy_fraction": 0.3333333333333333
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5ad3e96b604f3c001a3ff68a",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.11959867310724803,
+        "source_entropy": 0.9094864474078954,
+        "head_disagreement": 0.06386156365152629
+      },
+      "pilot_features": {
+        "min_probability": 0.5985904932022095,
+        "mean_entropy": 0.21310460730521186,
+        "copy_fraction": 0.875
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/57285ed5ff5b5019007da1ba",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.12441696532187052,
+        "source_entropy": 0.9441278797536277,
+        "head_disagreement": 0.06758705850048034
+      },
+      "pilot_features": {
+        "min_probability": 0.5582650899887085,
+        "mean_entropy": 0.19203101086361585,
+        "copy_fraction": 0.6
+      },
+      "native_quality": 0.16666666666666666,
+      "guided_quality": 0.25
+    },
+    {
+      "case_id": "r18/squad2/5a3e2ba4378766001a0024bc",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.12229644929539063,
+        "source_entropy": 0.9128051192787107,
+        "head_disagreement": 0.07940111326405161
+      },
+      "pilot_features": {
+        "min_probability": 0.42445531487464905,
+        "mean_entropy": 0.4722622717890772,
+        "copy_fraction": 0.3333333333333333
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5ad3dbc6604f3c001a3ff3e9",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.12448757917809417,
+        "source_entropy": 0.9460399053343139,
+        "head_disagreement": 0.07801418395499397
+      },
+      "pilot_features": {
+        "min_probability": 0.8138851523399353,
+        "mean_entropy": 0.14399662098513488,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5ad4d52a5b96ef001a10a261",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.1445519636163226,
+        "source_entropy": 0.8837327634666179,
+        "head_disagreement": 0.06607425133243683
+      },
+      "pilot_features": {
+        "min_probability": 0.3909626603126526,
+        "mean_entropy": 0.5535446489320748,
+        "copy_fraction": 0.3333333333333333
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5710f4b8b654c5140001fa45",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.12582848522652057,
+        "source_entropy": 0.8811551186363242,
+        "head_disagreement": 0.043542032264903476
+      },
+      "pilot_features": {
+        "min_probability": 0.9247487187385559,
+        "mean_entropy": 0.04277096610455944,
+        "copy_fraction": 0.8
+      },
+      "native_quality": 0.0,
+      "guided_quality": 1.0
+    },
+    {
+      "case_id": "r18/squad2/572759dbdd62a815002e9b96",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.12904208869258582,
+        "source_entropy": 0.9246126101255924,
+        "head_disagreement": 0.07559517723686324
+      },
+      "pilot_features": {
+        "min_probability": 0.7501695156097412,
+        "mean_entropy": 0.2356504184208461,
+        "copy_fraction": 0.2857142857142857
+      },
+      "native_quality": 0.21052631578947367,
+      "guided_quality": 0.26666666666666666
+    },
+    {
+      "case_id": "r18/squad2/572a12386aef051400155237",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.1334690123276232,
+        "source_entropy": 0.8603786416801139,
+        "head_disagreement": 0.06794869463540057
+      },
+      "pilot_features": {
+        "min_probability": 0.3638274371623993,
+        "mean_entropy": 0.38166889262174664,
+        "copy_fraction": 0.5714285714285714
+      },
+      "native_quality": 0.2,
+      "guided_quality": 0.2
+    },
+    {
+      "case_id": "r18/squad2/572a142e3f37b319004786bc",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.1411794874620682,
+        "source_entropy": 0.8919336974837154,
+        "head_disagreement": 0.07269569732604197
+      },
+      "pilot_features": {
+        "min_probability": 0.46543705463409424,
+        "mean_entropy": 0.5527912364455005,
+        "copy_fraction": 0.4
+      },
+      "native_quality": 0.4,
+      "guided_quality": 0.5
+    },
+    {
+      "case_id": "r18/squad2/57287ccb2ca10214002da3dc",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.1298381201340817,
+        "source_entropy": 0.9616734882279712,
+        "head_disagreement": 0.07067896472229641
+      },
+      "pilot_features": {
+        "min_probability": 0.47598329186439514,
+        "mean_entropy": 0.285741524944946,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.2222222222222222,
+      "guided_quality": 0.5
+    },
+    {
+      "case_id": "r18/squad2/5727482bf1498d1400e8f5a6",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.13350784833892249,
+        "source_entropy": 0.9652508652482881,
+        "head_disagreement": 0.07202396607018363
+      },
+      "pilot_features": {
+        "min_probability": 0.7738171219825745,
+        "mean_entropy": 0.236542510217987,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.6666666666666666,
+      "guided_quality": 0.6666666666666666
+    },
+    {
+      "case_id": "r18/squad2/5a2c36c4bfd06b001a5aea6b",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.13334875307918992,
+        "source_entropy": 0.9713832793947933,
+        "head_disagreement": 0.09891489281255786
+      },
+      "pilot_features": {
+        "min_probability": 0.5038576126098633,
+        "mean_entropy": 0.20923135313933017,
+        "copy_fraction": 0.75
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5a2eccc9a83784001a7d249f",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.12951239538915615,
+        "source_entropy": 0.9475557599263966,
+        "head_disagreement": 0.08829480790666212
+      },
+      "pilot_features": {
+        "min_probability": 0.7655785083770752,
+        "mean_entropy": 0.1941844901962213,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5ad402ae604f3c001a3ffd61",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.11965402128953428,
+        "source_entropy": 0.9169752366235685,
+        "head_disagreement": 0.06140594357423573
+      },
+      "pilot_features": {
+        "min_probability": 0.8137828707695007,
+        "mean_entropy": 0.20672503821792532,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5ad40b55604f3c001a3ffffb",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.1369837705278769,
+        "source_entropy": 0.9481186059630482,
+        "head_disagreement": 0.07836688297300169
+      },
+      "pilot_features": {
+        "min_probability": 0.6324618458747864,
+        "mean_entropy": 0.34782854924651474,
+        "copy_fraction": 0.375
+      },
+      "native_quality": 1.0,
+      "guided_quality": 1.0
+    },
+    {
+      "case_id": "r18/squad2/5ad4df065b96ef001a10a4f7",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.11764050819328986,
+        "source_entropy": 0.9708683299049045,
+        "head_disagreement": 0.07859090765424344
+      },
+      "pilot_features": {
+        "min_probability": 0.7083635926246643,
+        "mean_entropy": 0.1928597803352659,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/571093aba58dae1900cd6a5c",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.13816450064769015,
+        "source_entropy": 0.9427737706644562,
+        "head_disagreement": 0.06812442478830502
+      },
+      "pilot_features": {
+        "min_probability": 0.5920442342758179,
+        "mean_entropy": 0.4907234491927106,
+        "copy_fraction": 0.375
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.42857142857142855
+    },
+    {
+      "case_id": "r18/squad2/572647935951b619008f6ecb",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.11159223419599584,
+        "source_entropy": 0.8870960460670679,
+        "head_disagreement": 0.06820012260345636
+      },
+      "pilot_features": {
+        "min_probability": 0.41830065846443176,
+        "mean_entropy": 0.2036685696663107,
+        "copy_fraction": 0.7142857142857143
+      },
+      "native_quality": 0.2222222222222222,
+      "guided_quality": 0.2222222222222222
+    },
+    {
+      "case_id": "r18/squad2/5a67b94bf038b7001ab0c447",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.12210938596763299,
+        "source_entropy": 0.9730258533752792,
+        "head_disagreement": 0.06931550846561446
+      },
+      "pilot_features": {
+        "min_probability": 0.9206765294075012,
+        "mean_entropy": 0.11349067772044918,
+        "copy_fraction": 0.8571428571428571
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/56de148dcffd8e1900b4b5bc",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.13641267297589366,
+        "source_entropy": 0.8622963725749087,
+        "head_disagreement": 0.06147987141774827
+      },
+      "pilot_features": {
+        "min_probability": 0.4110998809337616,
+        "mean_entropy": 0.38839378882221354,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 1.0,
+      "guided_quality": 1.0
+    },
+    {
+      "case_id": "r18/squad2/5726542ff1498d1400e8dc2c",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.13627751383774012,
+        "source_entropy": 0.9152985340849954,
+        "head_disagreement": 0.0724401212252653
+      },
+      "pilot_features": {
+        "min_probability": 0.5103306174278259,
+        "mean_entropy": 0.3957839050635812,
+        "copy_fraction": 0.42857142857142855
+      },
+      "native_quality": 0.375,
+      "guided_quality": 0.42857142857142855
+    },
+    {
+      "case_id": "r18/squad2/5a63835a68151a001a92232e",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.1492197365150787,
+        "source_entropy": 0.985320272180619,
+        "head_disagreement": 0.08027654448800291
+      },
+      "pilot_features": {
+        "min_probability": 0.3833717703819275,
+        "mean_entropy": 0.4822962455582456,
+        "copy_fraction": 0.875
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5711163bb654c5140001fb17",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.12490544741558551,
+        "source_entropy": 0.8455811709355222,
+        "head_disagreement": 0.06796866739248711
+      },
+      "pilot_features": {
+        "min_probability": 0.9594252109527588,
+        "mean_entropy": 0.029099399252999092,
+        "copy_fraction": 0.5714285714285714
+      },
+      "native_quality": 0.26666666666666666,
+      "guided_quality": 0.4444444444444444
+    },
+    {
+      "case_id": "r18/squad2/570961aa200fba1400367f19",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.11621232441757456,
+        "source_entropy": 0.9455703521343573,
+        "head_disagreement": 0.06396447655231124
+      },
+      "pilot_features": {
+        "min_probability": 0.5171350240707397,
+        "mean_entropy": 0.3691492174790862,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.8,
+      "guided_quality": 1.0
+    },
+    {
+      "case_id": "r18/squad2/5710e9f8a58dae1900cd6b34",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.13132211033916974,
+        "source_entropy": 0.9043749939649864,
+        "head_disagreement": 0.07708895743392284
+      },
+      "pilot_features": {
+        "min_probability": 0.5373185276985168,
+        "mean_entropy": 0.15679284582634523,
+        "copy_fraction": 0.875
+      },
+      "native_quality": 0.2222222222222222,
+      "guided_quality": 0.3333333333333333
+    },
+    {
+      "case_id": "r18/squad2/5ad241c7d7d075001a42897c",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.13877835164385033,
+        "source_entropy": 0.8496072436870705,
+        "head_disagreement": 0.05813076227748353
+      },
+      "pilot_features": {
+        "min_probability": 0.4573673605918884,
+        "mean_entropy": 0.5051711508409653,
+        "copy_fraction": 0.25
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5ad40d50604f3c001a4000ca",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.11895592493237928,
+        "source_entropy": -0.0,
+        "head_disagreement": 0.0
+      },
+      "pilot_features": {
+        "min_probability": 0.4535481929779053,
+        "mean_entropy": 0.13830444724495194,
+        "copy_fraction": 0.8
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5ad4acbd5b96ef001a109d7a",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.12040431406057905,
+        "source_entropy": 0.9580192774173997,
+        "head_disagreement": 0.08217248920171247
+      },
+      "pilot_features": {
+        "min_probability": 0.44753509759902954,
+        "mean_entropy": 0.4154018360131886,
+        "copy_fraction": 0.42857142857142855
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5725ca4389a1e219009abeb4",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.13730962042518513,
+        "source_entropy": 0.8806448262876702,
+        "head_disagreement": 0.06651414151100937
+      },
+      "pilot_features": {
+        "min_probability": 0.504462718963623,
+        "mean_entropy": 0.31970693784933246,
+        "copy_fraction": 0.7142857142857143
+      },
+      "native_quality": 0.2962962962962963,
+      "guided_quality": 0.38461538461538464
+    },
+    {
+      "case_id": "r18/squad2/57293b843f37b31900478137",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.12247267527891381,
+        "source_entropy": 0.9003369689918441,
+        "head_disagreement": 0.06748350088506369
+      },
+      "pilot_features": {
+        "min_probability": 0.4111126661300659,
+        "mean_entropy": 0.42113471849734196,
+        "copy_fraction": 0.7142857142857143
+      },
+      "native_quality": 0.25,
+      "guided_quality": 0.36363636363636365
+    },
+    {
+      "case_id": "r18/squad2/57094a79efce8f15003a7dc4",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.10437339878626517,
+        "source_entropy": 0.9262739908474256,
+        "head_disagreement": 0.057395729628026124
+      },
+      "pilot_features": {
+        "min_probability": 0.36168187856674194,
+        "mean_entropy": 0.6096389052668201,
+        "copy_fraction": 0.25
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.18181818181818182
+    },
+    {
+      "case_id": "r18/squad2/5729fa40af94a219006aa711",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.12973780815082137,
+        "source_entropy": 0.988745178664888,
+        "head_disagreement": 0.06739550476830787
+      },
+      "pilot_features": {
+        "min_probability": 0.6993409395217896,
+        "mean_entropy": 0.37027240840097875,
+        "copy_fraction": 0.42857142857142855
+      },
+      "native_quality": 0.23529411764705882,
+      "guided_quality": 1.0
+    },
+    {
+      "case_id": "r18/squad2/5ad4d0385b96ef001a10a17c",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.14899574614537414,
+        "source_entropy": 0.9359533146576233,
+        "head_disagreement": 0.05773764716863549
+      },
+      "pilot_features": {
+        "min_probability": 0.9451346397399902,
+        "mean_entropy": 0.10314516003321235,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5a2ebaada83784001a7d2441",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.12812091963132843,
+        "source_entropy": 0.9456629483728917,
+        "head_disagreement": 0.062231498470930284
+      },
+      "pilot_features": {
+        "min_probability": 0.45799508690834045,
+        "mean_entropy": 0.8306736337641875,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5a2ed525a83784001a7d2503",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.11169996921944403,
+        "source_entropy": 0.9450201294158047,
+        "head_disagreement": 0.058239600548216315
+      },
+      "pilot_features": {
+        "min_probability": 0.4222952127456665,
+        "mean_entropy": 0.6615424137526134,
+        "copy_fraction": 0.125
+      },
+      "native_quality": 1.0,
+      "guided_quality": 1.0
+    },
+    {
+      "case_id": "r18/squad2/5ad4f7895b96ef001a10a7f3",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.1276026091800304,
+        "source_entropy": 0.8628308285319124,
+        "head_disagreement": 0.08502523237039888
+      },
+      "pilot_features": {
+        "min_probability": 0.46092522144317627,
+        "mean_entropy": 0.4366012451428105,
+        "copy_fraction": 0.25
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/571095a8a58dae1900cd6a79",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.12816271833162318,
+        "source_entropy": 0.8489990214169647,
+        "head_disagreement": 0.06024913474001523
+      },
+      "pilot_features": {
+        "min_probability": 0.5183402299880981,
+        "mean_entropy": 0.3163890419251647,
+        "copy_fraction": 0.3333333333333333
+      },
+      "native_quality": 0.2,
+      "guided_quality": 0.2
+    },
+    {
+      "case_id": "r18/squad2/5725c743ec44d21400f3d54d",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.13747891452294425,
+        "source_entropy": 0.8516028526419247,
+        "head_disagreement": 0.06939160337540644
+      },
+      "pilot_features": {
+        "min_probability": 0.5289998650550842,
+        "mean_entropy": 0.43003544056273313,
+        "copy_fraction": 0.42857142857142855
+      },
+      "native_quality": 0.2,
+      "guided_quality": 0.3333333333333333
+    },
+    {
+      "case_id": "r18/squad2/5ad108f9645df0001a2d0a76",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.1189733550290839,
+        "source_entropy": 0.9057659403563983,
+        "head_disagreement": 0.08619253529342283
+      },
+      "pilot_features": {
+        "min_probability": 0.5818295478820801,
+        "mean_entropy": 0.24830249623821032,
+        "copy_fraction": 0.7142857142857143
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5ad40796604f3c001a3ffeab",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.12868345775495982,
+        "source_entropy": 0.9740494984176264,
+        "head_disagreement": 0.07410733148146222
+      },
+      "pilot_features": {
+        "min_probability": 0.6613557934761047,
+        "mean_entropy": 0.23922031694451107,
+        "copy_fraction": 0.5
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5ad4b1895b96ef001a109dc8",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.1351560770672222,
+        "source_entropy": 0.8963871737426035,
+        "head_disagreement": 0.05999362257205423
+      },
+      "pilot_features": {
+        "min_probability": 0.45169591903686523,
+        "mean_entropy": 0.44780229410571337,
+        "copy_fraction": 0.375
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/57097051ed30961900e84132",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.12304132142526214,
+        "source_entropy": 0.916572556104759,
+        "head_disagreement": 0.060218516544412765
+      },
+      "pilot_features": {
+        "min_probability": 0.5453292727470398,
+        "mean_entropy": 0.09911133489913482,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.46153846153846156,
+      "guided_quality": 0.46153846153846156
+    },
+    {
+      "case_id": "r18/squad2/57107d73b654c5140001f91f",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.12917732728965348,
+        "source_entropy": 0.967482086435453,
+        "head_disagreement": 0.07173444156891125
+      },
+      "pilot_features": {
+        "min_probability": 0.5991258025169373,
+        "mean_entropy": 0.3664926572528202,
+        "copy_fraction": 0.2857142857142857
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5ad14573645df0001a2d14b0",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.10374100010085385,
+        "source_entropy": 0.9563688938406197,
+        "head_disagreement": 0.06475284744767229
+      },
+      "pilot_features": {
+        "min_probability": 0.6476430296897888,
+        "mean_entropy": 0.23007022376896202,
+        "copy_fraction": 0.3333333333333333
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/5729fb003f37b31900478627",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.11911788660654565,
+        "source_entropy": 0.9106856418730847,
+        "head_disagreement": 0.07002794473471222
+      },
+      "pilot_features": {
+        "min_probability": 0.5407673120498657,
+        "mean_entropy": 0.40070438493330585,
+        "copy_fraction": 0.42857142857142855
+      },
+      "native_quality": 0.4444444444444444,
+      "guided_quality": 0.24242424242424243
+    },
+    {
+      "case_id": "r18/squad2/5ad14b2e645df0001a2d15eb",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.10431235006217321,
+        "source_entropy": 0.9536752070711322,
+        "head_disagreement": 0.08501064355014305
+      },
+      "pilot_features": {
+        "min_probability": 0.5740617513656616,
+        "mean_entropy": 0.4972192435326406,
+        "copy_fraction": 0.25
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/57264a8cdd62a815002e8090",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.16201677934077452,
+        "source_entropy": 0.9206802300506703,
+        "head_disagreement": 0.07352781918611627
+      },
+      "pilot_features": {
+        "min_probability": 0.5573022365570068,
+        "mean_entropy": 0.2682865473525453,
+        "copy_fraction": 0.875
+      },
+      "native_quality": 0.18181818181818182,
+      "guided_quality": 0.18181818181818182
+    },
+    {
+      "case_id": "r18/squad2/57286f373acd2414000df9de",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.11865506640970125,
+        "source_entropy": 0.9143910772670135,
+        "head_disagreement": 0.09131365424853206
+      },
+      "pilot_features": {
+        "min_probability": 0.5865868926048279,
+        "mean_entropy": 0.2734119195209725,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.8,
+      "guided_quality": 0.38095238095238093
+    },
+    {
+      "case_id": "r18/squad2/5a2ed42fa83784001a7d24f8",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.11995615514024394,
+        "source_entropy": 0.9302660087883635,
+        "head_disagreement": 0.05941618948646645
+      },
+      "pilot_features": {
+        "min_probability": 0.31733438372612,
+        "mean_entropy": 0.6559864003484108,
+        "copy_fraction": 0.375
+      },
+      "native_quality": 1.0,
+      "guided_quality": 1.0
+    },
+    {
+      "case_id": "r18/squad2/572881704b864d1900164a51",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.11389834756118944,
+        "source_entropy": 0.9335287283491545,
+        "head_disagreement": 0.0669537743976357
+      },
+      "pilot_features": {
+        "min_probability": 0.7581766843795776,
+        "mean_entropy": 0.21954286605631523,
+        "copy_fraction": 0.5714285714285714
+      },
+      "native_quality": 0.3333333333333333,
+      "guided_quality": 0.5
+    },
+    {
+      "case_id": "r18/squad2/5a2eba17a83784001a7d2437",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.11561970181355719,
+        "source_entropy": 0.9593604351846508,
+        "head_disagreement": 0.06268626916563168
+      },
+      "pilot_features": {
+        "min_probability": 0.34293124079704285,
+        "mean_entropy": 0.6232773698284291,
+        "copy_fraction": 0.625
+      },
+      "native_quality": 0.0,
+      "guided_quality": 0.0
+    },
+    {
+      "case_id": "r18/squad2/57286fa83acd2414000df9e8",
+      "domain": "squad2",
+      "features": {
+        "evidence_mass": 0.12194056749285664,
+        "source_entropy": 0.9586164734283976,
+        "head_disagreement": 0.08061680886422845
+      },
+      "pilot_features": {
+        "min_probability": 0.5789695978164673,
+        "mean_entropy": 0.22336602835745278,
+        "copy_fraction": 1.0
+      },
+      "native_quality": 0.2608695652173913,
+      "guided_quality": 0.2608695652173913
+    }
+  ],
+  "development_sha256": "d7dc9c29256a98d8dd0182876e66203bf7324a04267fe8a25db725f3971b919c"
+}

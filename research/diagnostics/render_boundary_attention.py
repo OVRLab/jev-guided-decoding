@@ -128,6 +128,12 @@ def render(report):
             x, y = 100 * row["call_fraction"], 100 * row["quality"]
             ax.scatter(x, y, s=60, color=COLORS[arm], zorder=3)
             offsets = [(8, -20), (-8, 14), (-8, 22), (8, -32), (8, 8)]
+            if domain == "synthetic":
+                offsets[3], offsets[4] = (-35, 16), (10, -18)
+            elif domain == "hotpot":
+                offsets[2] = (10, 18)
+            else:
+                offsets[2] = (15, 22)
             dx, dy = offsets[i]
             ax.annotate(
                 NAMES[arm],
@@ -145,6 +151,7 @@ def render(report):
         ax.set_ylabel("Score (%)")
         ax.set_title(DOMAINS[domain])
         ax.grid(alpha=0.15)
+        ax.legend(loc="lower right", fontsize=8)
     fig.suptitle("Quality and standalone logical requests; shared receipts are charged once")
     fig.tight_layout()
     save(fig, "quality-calls")
@@ -152,7 +159,7 @@ def render(report):
     timed = ["native", "boundary_never", "always", "boundary_always", "boundary_gate", "pilot_gate"]
     metrics = {
         "model_seconds": "Model time excluding provider wait",
-        "estimated_uncached_first_token_seconds": "Uncached time to first token (estimate)",
+        "estimated_uncached_first_token_seconds": "Uncached first-token proxy (estimate)",
         "estimated_uncached_wall_seconds": "Uncached elapsed (estimate)",
     }
     fig, axes = plt.subplots(3, 3, figsize=(17.5, 13))
@@ -250,9 +257,10 @@ def render(report):
         ax.set_ylim(0, 105)
         ax.set_ylabel("Outputs (%)")
         ax.set_title(DOMAINS[domain])
-    axes[0].legend(loc="upper right", fontsize=9)
+    handles, labels = axes[0].get_legend_handles_labels()
+    fig.legend(handles, labels, loc="lower center", ncols=2, fontsize=9)
     fig.suptitle("Termination is not correctness; all capped and empty outputs are retained")
-    fig.tight_layout()
+    fig.tight_layout(rect=(0, 0.055, 1, 1))
     save(fig, "output-termination")
 
 

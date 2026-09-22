@@ -1,5 +1,30 @@
 # Verified implementation inventory
 
+[R18 completed study](reports/2026-09-22-boundary-attention/README.md).
+
+**R18 completed:** the single-prefill gate raises authored accuracy from
+**26.98% to 31.75%**, close to always Jev's **31.94%**, while saving **27.58%**
+of requests. The exploratory selective-minus-native interval is **+4.76 pp
+[1.79, 7.94]**. Hotpot native/always/selective F1 is **27.96% / 29.40% / 27.08%**;
+SQuAD adapted F1 is **26.49% / 26.72% / 26.55%**. Primary routing intervals
+include zero in all three domains, so reliable call selection is unestablished.
+
+The gate uses **425/984 test requests**, saving **56.81% overall**, with one
+prefill and zero discarded pilot tokens. Its domain call fractions are
+72.42% / 18.33% / 6.67%; missing-evidence handling remains weak. Granite generates
+every final token with unchanged weights and no required UNKNOWN spelling.
+All **9,376 outcomes**, **184,889 final tokens** and **1,244 successful Jev
+receipts** pass reconstruction; public archive replay reproduces the analysis.
+There are zero provider failures. All temporary resources are deleted after
+verified retrieval. New estimated cost is **$3.77**, cumulative **$27.23/$50**
+before tax/separate network. This is research-branch evidence, with mixed external
+quality, not a generally improved checkpoint or a serving-throughput benchmark.
+
+Current local verification: **435 tests pass in 6.89 seconds**, Ruff lint/format,
+the 49-file guidance checker and source/wheel builds pass. All seven R18 figure
+layouts were inspected; public archive reconstruction reproduces every main-audit
+field except its timestamp. The review bot remains unavailable due to quota.
+
 [R17 completed study](reports/2026-09-22-selective-attention/README.md).
 
 **R17 completed:** Jev guidance raises authored free-text accuracy from
@@ -22,7 +47,7 @@ New estimated cost is **$3.77**, cumulative **$23.46/$50** before tax/separate
 network; all temporary GPU, disk and network resources are deleted. No generally
 superior architecture or trained model release is established.
 
-Current local verification: **415 tests pass**, Ruff lint/format, 49-file guidance
+At R17 completion, local verification: **415 tests passed**, Ruff lint/format, 49-file guidance
 check and builds pass. Six standalone figures were visually checked; public archive
 reconstruction reproduces every audit field except its timestamp.
 

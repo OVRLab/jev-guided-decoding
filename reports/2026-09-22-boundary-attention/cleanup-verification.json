@@ -1,0 +1,10 @@
+{
+  "verified_deleted_at": "2026-09-22T17:48:05.113330+00:00",
+  "result_bytes_verified_before_deletion": true,
+  "verified_result_files": 15,
+  "instance_deleted": true,
+  "managed_disk_deleted": true,
+  "task_security_group_and_rules_deleted": true,
+  "automatic_allocations_deleted": true,
+  "shared_network_preserved": true
+}

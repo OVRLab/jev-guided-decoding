@@ -1,9 +1,29 @@
 # Feature: Jev-guided intermediate reasoning
 
-Current work: [R18 boundary attention](research/boundary-attention-plan.md),
-implemented with offline tests; real-model admission and held-out evaluation pending.
+Latest completed work: [R18 single-prefill boundary study](reports/2026-09-22-boundary-attention/README.md).
 
-Latest completed work: [R17 selective attention](reports/2026-09-22-selective-attention/README.md).
+**R18 completed:** the single-prefill gate raises authored accuracy from
+**26.98% to 31.75%**, close to always Jev's **31.94%**, while saving **27.58%**
+of requests. The exploratory selective-minus-native interval is **+4.76 pp
+[1.79, 7.94]**. Hotpot native/always/selective F1 is **27.96% / 29.40% / 27.08%**;
+SQuAD adapted F1 is **26.49% / 26.72% / 26.55%**. Primary routing intervals
+include zero in all three domains, so reliable call selection is unestablished.
+
+The gate uses **425/984 test requests**, saving **56.81% overall**, with one
+prefill and zero discarded pilot tokens. Its domain call fractions are
+72.42% / 18.33% / 6.67%; missing-evidence handling remains weak. Granite generates
+every final token with unchanged weights and no required UNKNOWN spelling.
+All **9,376 outcomes**, **184,889 final tokens** and **1,244 successful Jev
+receipts** pass reconstruction; public archive replay reproduces the analysis.
+There are zero provider failures. All temporary resources are deleted after
+verified retrieval. New estimated cost is **$3.77**, cumulative **$27.23/$50**
+before tax/separate network. This is research-branch evidence, with mixed external
+quality, not a generally improved checkpoint or a serving-throughput benchmark.
+
+Next hypotheses are better external treatment-benefit prediction and evidence
+sufficiency, with fresh held-out data; these are not yet executed follow-ups.
+
+Previous completed work: [R17 selective attention](reports/2026-09-22-selective-attention/README.md).
 
 **R17 completed:** Jev guidance raises authored free-text accuracy from
 **28.77% to 33.13%**, and HotpotQA answer F1 from **25.23% to 28.76%**.
@@ -25,11 +45,10 @@ New estimated cost is **$3.77**, cumulative **$23.46/$50** before tax/separate
 network; all temporary GPU, disk and network resources are deleted. No generally
 superior architecture or trained model release is established.
 
-The [single-prefill boundary design](research/selective-attention-next-design.md)
-is documented as an unimplemented follow-up hypothesis: decide before layer 19,
-then continue the same prefill to avoid the current pilot/restart work. It requires
-new feature development, parity checks and fresh held-out testing; no speed or
-quality result is claimed for it.
+At R17 completion, the [single-prefill boundary design](research/selective-attention-next-design.md)
+was an unimplemented follow-up hypothesis. R18 implements and evaluates it with
+new features, real-model parity admission and fresh held-out inputs; its mixed
+quality and measured work results are reported above.
 
 Previous completed work: [R16 adaptive/free-text study](reports/2026-09-22-adaptive-attention/README.md).
 **R16 interpretation:** constrained-task improvement is established within this

@@ -1,0 +1,9 @@
+{
+  "python": "3.12.13",
+  "numpy": "2.5.3",
+  "torch": "2.8.0",
+  "transformers": "4.57.1",
+  "os": "Darwin",
+  "model_weights_loaded_for_audit": false,
+  "api_calls_for_audit": 0
+}

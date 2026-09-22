@@ -1,14 +1,35 @@
 # Granite + Jev research record
 
-Current work: [R18 single-prefill boundary study](boundary-attention-plan.md),
-with fresh authored, HotpotQA and SQuAD2.0 subsets; no R18 live quality result yet.
+Latest completed work: [R18 single-prefill boundary study](../reports/2026-09-22-boundary-attention/README.md),
+with [method](../reports/2026-09-22-boundary-attention/method.md),
+[all controls](../reports/2026-09-22-boundary-attention/tables.md) and
+[prior-method comparison](boundary-attention-related-work.md).
+
+**R18 completed:** the single-prefill gate raises authored accuracy from
+**26.98% to 31.75%**, close to always Jev's **31.94%**, while saving **27.58%**
+of requests. The exploratory selective-minus-native interval is **+4.76 pp
+[1.79, 7.94]**. Hotpot native/always/selective F1 is **27.96% / 29.40% / 27.08%**;
+SQuAD adapted F1 is **26.49% / 26.72% / 26.55%**. Primary routing intervals
+include zero in all three domains, so reliable call selection is unestablished.
+
+The gate uses **425/984 test requests**, saving **56.81% overall**, with one
+prefill and zero discarded pilot tokens. Its domain call fractions are
+72.42% / 18.33% / 6.67%; missing-evidence handling remains weak. Granite generates
+every final token with unchanged weights and no required UNKNOWN spelling.
+All **9,376 outcomes**, **184,889 final tokens** and **1,244 successful Jev
+receipts** pass reconstruction; public archive replay reproduces the analysis.
+There are zero provider failures. All temporary resources are deleted after
+verified retrieval. New estimated cost is **$3.77**, cumulative **$27.23/$50**
+before tax/separate network. This is research-branch evidence, with mixed external
+quality, not a generally improved checkpoint or a serving-throughput benchmark.
+
 
 This is the persistent research notebook for OVRLab's investigation of Jev during
 Granite inference. It includes negative results, corrections, new analyses, and
 proposed experiments. It is a basis for a paper, not a claim of a successful model
 release. All dates below are report dates; source artifacts retain execution times.
 
-**Latest completed study:** [R17 selective attention](../reports/2026-09-22-selective-attention/README.md),
+**Previous completed study:** [R17 selective attention](../reports/2026-09-22-selective-attention/README.md),
 with [architecture/method](../reports/2026-09-22-selective-attention/method.md),
 [request-budget results](../reports/2026-09-22-selective-attention/budget-frontier.md)
 and [prior-art review](selective-attention-related-work.md).
@@ -91,6 +112,7 @@ weights are unchanged, and both temporary GPU deployments are deleted.
 
 | Read | Purpose |
 | --- | --- |
+| [Single-prefill boundary attention](../reports/2026-09-22-boundary-attention/README.md) | R18 complete: nine arms, actual conditional dispatch, authored gain, uncertain routing, mixed external transfer and seven figures |
 | [Selective evidence attention](../reports/2026-09-22-selective-attention/README.md) | R17 complete: nine held-out arms, all-call gate failure, three offline budgets, natural-answer failures and six figures |
 | [Study register](study-register.md) | Every recorded live study, failed pilot, correction, and offline follow-up |
 | [Architecture reassessment](architecture-reassessment.md) | Exact checkpoint, interface constraints, insertion-point decision and alternatives |

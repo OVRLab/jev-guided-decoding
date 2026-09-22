@@ -127,6 +127,9 @@ arms: native, always, boundary-never, boundary-always, boundary gate, boundary
 random, pilot gate, lexical relevance and shuffled relevance. The boundary gate
 runs first, ensuring its physical dispatch cannot hit a control's cached receipt.
 The eight other arms run in seeded random order and reuse the exact receipt.
+Running the primary gate first makes its dispatch accounting direct, but may
+introduce order or hardware-warmth effects in timing comparisons involving that
+arm. The matched never/always controls remain randomized among the other arms.
 
 Authored worlds, Hotpot questions and SQuAD article pools are held apart from
 development; authored worlds and Hotpot inputs also exclude previous project
@@ -171,6 +174,9 @@ Tokenization/loading are outside per-question timings and inside whole-run cost.
 The recorded first-token timestamp is the synchronized completion of the first
 retained model forward, before the subsequent argmax/statistics/text-decoding work;
 it is a model first-token timing proxy, not end-to-end client delivery latency.
+For a retained pilot, that forward can finish before the gate decides to release
+the buffered tokens. The proxy therefore cannot measure the user's wait for that
+pilot arm; total elapsed time retains the decision/provider work.
 
 The implementation uses serial Python hooks around native Transformers SDPA.
 The model worker runs in an owned thread; a boundary callback awaits the provider

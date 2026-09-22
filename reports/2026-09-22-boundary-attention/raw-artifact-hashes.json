@@ -1,0 +1,122 @@
+[
+  {
+    "remote_result": "boundary-attention-v1/admission-checks.jsonl",
+    "public_file": "artifacts/admission-checks.jsonl.gz",
+    "raw_sha256": "124a4831bf3a3183e45c90dd21a629266e537455d9efef0da4edd196a80cae50",
+    "raw_bytes": 140017,
+    "stored_sha256": "7703913ae75d845bef4a04492f339b17592fafd7250d5fa995a1a71f5c47c71b",
+    "gzip": true
+  },
+  {
+    "remote_result": "boundary-attention-v1/admission.json",
+    "public_file": "artifacts/admission.json",
+    "raw_sha256": "f466a0076b05fd1c135da973b90d0f9467c2d13424925ad20e668a639e31a0d4",
+    "raw_bytes": 252583,
+    "stored_sha256": "f466a0076b05fd1c135da973b90d0f9467c2d13424925ad20e668a639e31a0d4",
+    "gzip": false
+  },
+  {
+    "remote_result": "boundary-attention-v1/completion.json",
+    "public_file": "artifacts/completion.json",
+    "raw_sha256": "b53970d7c896858877fb0a6dbf9a8be51f41ecec2a23d2b0a374d5bb8d496bbd",
+    "raw_bytes": 341,
+    "stored_sha256": "b53970d7c896858877fb0a6dbf9a8be51f41ecec2a23d2b0a374d5bb8d496bbd",
+    "gzip": false
+  },
+  {
+    "remote_result": "boundary-attention-v1/freeze.json",
+    "public_file": "artifacts/freeze.json",
+    "raw_sha256": "aa8d8f26e675b4fbcfb878adbe68213060e2d216edc1e3b3db160dd30e99d7b5",
+    "raw_bytes": 7299,
+    "stored_sha256": "aa8d8f26e675b4fbcfb878adbe68213060e2d216edc1e3b3db160dd30e99d7b5",
+    "gzip": false
+  },
+  {
+    "remote_result": "boundary-attention-v1/inputs.jsonl",
+    "public_file": "artifacts/inputs.jsonl.gz",
+    "raw_sha256": "3ad032608f1b385eab14f78b96d36aea758e2d412ec5dbec8d5268466ae669b8",
+    "raw_bytes": 11007488,
+    "stored_sha256": "318963cbfa48e7dfc5f17953d1876a4196df2530179b4604cf7824dea0887830",
+    "gzip": true
+  },
+  {
+    "remote_result": "boundary-attention-v1/ledger.jsonl",
+    "public_file": "artifacts/ledger.jsonl.gz",
+    "raw_sha256": "e3fb80c27ba1d2598e9d99947297eb85900950079d19770bb61485253f35e7da",
+    "raw_bytes": 182604,
+    "stored_sha256": "a66ad86bdf50c7a1d9e271cb056c66adae7c1606860de83d4bb463111bdfacbd",
+    "gzip": true
+  },
+  {
+    "remote_result": "boundary-attention-v1/loads.jsonl",
+    "public_file": "artifacts/loads.jsonl.gz",
+    "raw_sha256": "f94b4ce5a046f4d480190e65a41514f2622d6bbe4e2451aec599087e7073fb67",
+    "raw_bytes": 666,
+    "stored_sha256": "224fd526af9fbdbbfe59e7aff7a81ce88c18aba15a25fbf84b15b5420cd1c6f7",
+    "gzip": true
+  },
+  {
+    "remote_result": "boundary-attention-v1/outputs.jsonl",
+    "public_file": "artifacts/outputs.jsonl.gz",
+    "raw_sha256": "c58ded0d223ed7180817198653ff71634403a6617a05af55ea5049894e2ab02c",
+    "raw_bytes": 162272598,
+    "stored_sha256": "d9aa0b0a670ea98082686661e9f638e167925bd7961e4d6e49f489dd48b40cea",
+    "gzip": true
+  },
+  {
+    "remote_result": "boundary-attention-v1/receipts.jsonl",
+    "public_file": "artifacts/receipts.jsonl.gz",
+    "raw_sha256": "530454fca7a62fe9c7f36733b1b386935db303e4c08e39afc05628ea98f6fccf",
+    "raw_bytes": 18852403,
+    "stored_sha256": "30997c3afdbc27c87f191f72a5035c5438870d5a84d1c75576eb67e1ac22b9e8",
+    "gzip": true
+  },
+  {
+    "remote_result": "boundary-attention-v1/selected.json",
+    "public_file": "artifacts/selected.json",
+    "raw_sha256": "8ac150968bb7ba3275581e7640cf0d811006b45985b50aec97c0dfd4d786a5ae",
+    "raw_bytes": 128821,
+    "stored_sha256": "8ac150968bb7ba3275581e7640cf0d811006b45985b50aec97c0dfd4d786a5ae",
+    "gzip": false
+  },
+  {
+    "remote_result": "boundary-attention-v1/starts.jsonl",
+    "public_file": "artifacts/starts.jsonl.gz",
+    "raw_sha256": "c4061f892c0b548bdd7afad03d85344901ad02f25ca4f32e7f2a119b61e36265",
+    "raw_bytes": 5236484,
+    "stored_sha256": "9853d57d0d4680a210b67a934a48d21b0dc679647c137124ecedae3e4bc4179f",
+    "gzip": true
+  },
+  {
+    "remote_result": "boundary-attention-v1/test-freeze.json",
+    "public_file": "artifacts/test-freeze.json",
+    "raw_sha256": "b8a2bc91bdf4e7780ea314845a8d56f5b8cef091deba150671019a418f0bcefd",
+    "raw_bytes": 5589,
+    "stored_sha256": "b8a2bc91bdf4e7780ea314845a8d56f5b8cef091deba150671019a418f0bcefd",
+    "gzip": false
+  },
+  {
+    "remote_result": "boundary-execution.json",
+    "public_file": "execution/boundary-execution.json",
+    "raw_sha256": "b51978257abb1bee66424c778bb29ec648eb00ef079530b199f6fa3364de0a92",
+    "raw_bytes": 169,
+    "stored_sha256": "b51978257abb1bee66424c778bb29ec648eb00ef079530b199f6fa3364de0a92",
+    "gzip": false
+  },
+  {
+    "remote_result": "boundary-exit-code.txt",
+    "public_file": "execution/boundary-exit-code.txt",
+    "raw_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "raw_bytes": 2,
+    "stored_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "gzip": false
+  },
+  {
+    "remote_result": "boundary-study.log",
+    "public_file": "execution/boundary-study.log",
+    "raw_sha256": "6b6615e560ab66de4d5e8e24c42f8604516b981b1f3327e0794e16c277279f2f",
+    "raw_bytes": 39081,
+    "stored_sha256": "6b6615e560ab66de4d5e8e24c42f8604516b981b1f3327e0794e16c277279f2f",
+    "gzip": false
+  }
+]

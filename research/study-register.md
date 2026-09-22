@@ -328,5 +328,43 @@ motivate an untested phase-specific guidance hypothesis, not a new causal findin
 The owner authorized implementation and testing of the pre-layer-19 boundary after
 R17 completion. The [prospective plan](boundary-attention-plan.md) registers one
 internal decision, new native attention features, 520 development and 8,856 held-out
-outcomes across fresh authored, Hotpot and SQuAD2.0 subsets. No new live result yet.
+outcomes across fresh authored, Hotpot and SQuAD2.0 subsets. At registration, no
+R18 live result existed.
 Prior cumulative spend is $23.46/$50; up to $15 is reserved for this iteration.
+
+### R18 completion and operational record
+
+**R18 completed:** the single-prefill gate raises authored accuracy from
+**26.98% to 31.75%**, close to always Jev's **31.94%**, while saving **27.58%**
+of requests. The exploratory selective-minus-native interval is **+4.76 pp
+[1.79, 7.94]**. Hotpot native/always/selective F1 is **27.96% / 29.40% / 27.08%**;
+SQuAD adapted F1 is **26.49% / 26.72% / 26.55%**. Primary routing intervals
+include zero in all three domains, so reliable call selection is unestablished.
+
+The gate uses **425/984 test requests**, saving **56.81% overall**, with one
+prefill and zero discarded pilot tokens. Its domain call fractions are
+72.42% / 18.33% / 6.67%; missing-evidence handling remains weak. Granite generates
+every final token with unchanged weights and no required UNKNOWN spelling.
+All **9,376 outcomes**, **184,889 final tokens** and **1,244 successful Jev
+receipts** pass reconstruction; public archive replay reproduces the analysis.
+There are zero provider failures. All temporary resources are deleted after
+verified retrieval. New estimated cost is **$3.77**, cumulative **$27.23/$50**
+before tax/separate network. This is research-branch evidence, with mixed external
+quality, not a generally improved checkpoint or a serving-throughput benchmark.
+
+The [full report](../reports/2026-09-22-boundary-attention/README.md) records the
+three primary routing contrasts: +1.17 pp [−0.70,3.03] authored, −1.14
+[−2.98,0.61] Hotpot and +0.04 [−0.47,0.43] SQuAD, with individual 98.333%
+intervals. All include zero. The source/data/selection freeze remained intact.
+The [descriptive supplement](boundary-output-diagnostics.md) was registered during
+execution before held-out aggregate inspection; no post-test policy change or
+regrading occurred. Source freeze is `7e570c0` and real admission passes 27/27
+full-logit/all-layer-cache comparisons with zero maximum differences.
+
+The run has no inference interruption or provider failure. After byte-verifying all
+15 remote result files, cleanup initially failed because CLI authentication expired;
+refreshing the existing sign-in allowed complete resource deletion. A later
+reporting metadata import used system Python without NumPy and was resumed in the
+project environment after public reanalysis had already passed. Both interruptions
+are retained in the validation record; neither caused a paid/model replay or a
+change to the frozen scientific source. Authentication delay is included in cost.
