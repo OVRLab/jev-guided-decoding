@@ -176,3 +176,19 @@ zero-length attention tensors. The full local suite passes 374 tests. The
 independent audit reconstructs token provenance, scores, masks, selection and
 grades; no live results or quality claims exist yet. All future results, including
 failed/interrupted runs, will be added in a separate report.
+
+### R16 admission interruption: cache numerical discrepancy
+
+The initial GPU admission at source `9c150df` stopped with cached/full-prefix
+maximum vocabulary-logit difference 0.5 (allowed 0.125). No benchmark/model study
+jobs or Jev requests started. The [registered diagnostic](adaptive-attention-cache-diagnostic.md)
+compares BF16/FP32 on reserved mechanics/development inputs before deciding repair.
+
+
+### R16 precision amendment, before selection or testing
+
+The 24-comparison [cache diagnostic](adaptive-attention-cache-diagnostic.md) found
+BF16 discrepancies up to 0.5458984 versus FP32 0.00005913, with identical argmax
+in every comparison. The [prospective FP32 amendment](adaptive-attention-fp32-amendment.md)
+uses FP32 for every arm and a stricter 0.0001 cache tolerance. Original R16 source,
+protocol and stopped admission stay frozen. No Jev or benchmark job is replayed.

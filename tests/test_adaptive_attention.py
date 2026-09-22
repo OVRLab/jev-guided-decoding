@@ -340,3 +340,10 @@ def test_complete_dynamic_flow_refreshes_after_generated_steps_and_keeps_final_g
     changed["phases"][0]["tokens"][0]["argmax_id"] = 9
     with pytest.raises(ValueError):
         module("analyze")["check_tokens"](changed, encoded)
+
+
+def test_precision_runner_freeze_works_from_relative_cli_entrypoint(monkeypatch):
+    monkeypatch.chdir(ROOT)
+    runner = runpy.run_path("research/iterations/adaptive_attention_fp32.py")
+    sources = runner["source_hashes"]()
+    assert "research/iterations/adaptive_attention_fp32.py" in sources
