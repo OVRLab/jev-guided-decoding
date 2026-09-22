@@ -1,0 +1,18 @@
+{
+  "source": "7e570c0cf01646ddc87f38ca5a6a1f054c4bb9b3",
+  "files": [
+    {
+      "public_file": "run-study.sh",
+      "sha256": "056feb4a6779cfb37a45229b7bd182bd2cf4923b632626811974c56f2db87e2c",
+      "remote_bytes_verified": true
+    },
+    {
+      "public_file": "study.service",
+      "sha256": "cb03a8bc231bac6860bc0df85248e6e97981c72d8aff8aa5eff1a94e22f4891d",
+      "remote_bytes_verified": true
+    }
+  ],
+  "credential_transfer_verified": true,
+  "credential_mode": "0600",
+  "credential_bytes_published": false
+}

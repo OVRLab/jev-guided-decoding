@@ -50,3 +50,26 @@ failed exact feature equality. Reconstruction now permits 1e-12 arithmetic error
 while rejecting booleans/nonfinite values; gate decisions still use recorded
 features exactly. The draft manifest was rebound before the first source commit,
 with unchanged cohort hashes and no real-model or provider inference.
+
+## Executed admission and registered diagnostics
+
+The GPU server checked out scientific freeze `7e570c0` cleanly. Its 430 offline
+tests passed in 129.96 seconds with both CPU thread pools pinned to one. Model
+download completed before study launch. The Jev credential was privately copied,
+SHA-verified and restricted to mode 0600; only boolean verification metadata is
+public. Both [executed launchers](execution/launcher-verification.json) were
+byte-verified against their public copies.
+
+Real-checkpoint admission completed **27/27** checks on nine fixtures. Maximum
+full-vocabulary logit difference and maximum all-layer KV difference were both
+**0.0**. Accepted tokens, cache lengths and one-prefill work matched in every
+native, always-guided and forced-failed-receipt comparison. Admission used canned
+scores and zero live Jev calls. Quality execution then began on development data.
+
+The [descriptive output supplement](../../research/boundary-output-diagnostics.md)
+was registered after launch, before any development/test quality aggregates
+were inspected. Three initial diagnostics tests failed because the new module was
+missing, then passed. A fourth integration test passes for all three domains and
+nine arms, verifying first-by-ID example selection and rejecting modified grades.
+Artifact tampering, raw empty output and provider failure remain distinct checks.
+The supplement changes no frozen inference or primary analysis source.
