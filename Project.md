@@ -27,7 +27,9 @@ answer generation. See [CLAUDE.md](CLAUDE.md) for paths.
 The current scope is frozen-weight inference, a Transformers adapter, Jev's hosted
 API, and document-grounded fixtures. It does not merge neural networks, access
 hidden reasoning, train weights, deploy a service, or publish an improved checkpoint.
-Retained-cache scheduling and vLLM integration need their own design and evidence.
+The R16 research path implements serial retained-cache generation and relevance
+refresh. Concurrent serving, vLLM integration and performance of a colocated Jev
+deployment still need separate design and evidence.
 
 The package has an MIT license. External models, datasets, dependencies, and Jev
 remain governed by their own terms; name their sources and preserve required notices.

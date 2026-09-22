@@ -24,6 +24,7 @@ weaken their requirements in this entrypoint.
 | [benchmark.py](src/jev_guided_decoding/benchmark.py) | Dataset validation, lexical metrics, summaries |
 | [cli.py](src/jev_guided_decoding/cli.py) | Configuration, generation/benchmark flows, trace output |
 | [Evidence attention research](research/experiments/evidence_attention.py) | Scoped source-key biases within selected Granite attention heads; [full study](reports/2026-09-21-evidence-attention/README.md), separate from package controllers |
+| [Adaptive attention research](research/iterations/adaptive_attention/runtime.py) | Serial retained-cache generation with head-specific biases and optional Jev refresh; [FP32 runner](research/iterations/adaptive_attention_fp32.py), [method](reports/2026-09-22-adaptive-attention/method.md), [extra injection/contract audit](research/diagnostics/adaptive_injection_audit.py) |
 | [configs](configs/) / [data](data/) | Pinned experiments and fictional fixtures |
 | [tests](tests/) / [reports](reports/) | Offline checks and immutable experimental evidence |
 
@@ -55,6 +56,8 @@ an agent host automatically installs or exposes them as callable skills.
 
 - The Transformers adapter recomputes the accepted prefix between chunks and
   uses KV caching within a chunk; do not call that retained-prefix optimization.
+  R16 bypasses that adapter's `propose()` method with its own serial cached
+  `Session`; new relevance affects subsequent computation, not old cached states.
 - `JevScorer` returns optional relevance for empty EOS; `None` means unasked, not zero.
 - `all_rejected` may retain a correct but uncompleted prefix. API failure is a
   separate outcome with potentially unknown usage; do not rewrite either as success.
