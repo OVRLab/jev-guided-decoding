@@ -11,7 +11,37 @@ steps, plus a separate experimental hook that turns Jev source relevance into
 biases inside selected Granite attention heads. No model training or vLLM serving
 extension is included.
 
-[Latest attention-refinement study](reports/2026-09-22-evidence-attention-refinement/README.md):
+[Latest R16 adaptive/free-text study](reports/2026-09-22-adaptive-attention/README.md):
+**R16 interpretation:** constrained-task improvement is established within this
+study; direct free-text performance regressed against matched R15, while dynamic
+refresh and the primary HotpotQA contrast remain inconclusive.
+
+All **16,120 main test outcomes** and **3,600 exploratory factorial outcomes**
+are retained. On the new depth 1–6 constrained task, native Granite scores
+**30.83%**, matched R15 **59.00%**,
+and tuned Jev attention **72.00%**. The primary
+tuned-minus-R15 contrast is **+13.00 pp [+8.67, +17.61]**.
+
+Without an answer menu or required UNKNOWN token, open-explicit accuracy is
+**27.33% native / 27.17% tuned**;
+open-neutral accuracy is **26.17% / 21.50%**.
+Refreshed versus static staged guidance changes accuracy by
+**+0.42 pp [-3.33, +4.17]**. On 200 length-filtered HotpotQA questions,
+direct answer F1 is **26.85% native /
+29.67% tuned**, with primary contrast
+**+2.82 pp [-1.35, +6.91]**. Primary intervals are 98.333%;
+other comparisons are exploratory. These tasks and output contracts have separate
+interpretations; historical R15 scores are from a different cohort and precision.
+
+Granite generates every semantic token with unchanged weights; all arms use FP32.
+The full report includes natural abstentions, answerable/missing breakdowns,
+regressions, factor interactions, API failures, exact traces and three independent
+audits. All temporary resources are deleted. New estimated cost is
+**$8.52**, cumulative **$19.69/$50**
+before tax/separate network charges. This is research-branch evidence, not a trained
+checkpoint release or a general reasoning guarantee.
+
+[Previous attention-refinement study](reports/2026-09-22-evidence-attention-refinement/README.md):
 R15's fresh 600-world comparison scores **38.08% native Granite**, **47.33%
 previous Jev attention**, and **68.42% refined Jev attention**. The paired primary
 gains are +30.33 pp [26.67,34.00] versus native and +21.08 pp [17.92,24.25] versus

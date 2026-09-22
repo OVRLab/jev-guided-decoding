@@ -1,6 +1,7 @@
 # R16 mechanism and evaluation contracts
 
-Execution is in progress; this page describes the frozen method, not results.
+Execution is complete; this page describes the frozen method. The [report](README.md)
+contains actual results, failures, resource accounting and artifact links.
 The [original plan](../../research/adaptive-attention-protocol.md),
 [FP32 amendment](../../research/adaptive-attention-fp32-amendment.md),
 [frozen manifest](../../research/protocols/adaptive-attention-fp32/manifest.json)
@@ -164,6 +165,10 @@ request receipts are retained. Receipts are reused only for identical payloads.
 Deployment latency estimates must charge each arm for its needed hosted calls even
 when experimental receipt sharing avoids duplicate billing. Timing is serial
 reference execution, not concurrent serving throughput. Colocation is unmeasured.
+Model timing includes processing pending prompt/framing tokens and constructing
+their device inputs. It excludes model loading, CPU prompt/framing bookkeeping,
+token selection/reporting and failure cooldowns. The model-plus-API sum therefore
+does not represent complete end-to-end application latency.
 
 Unknown paid usage remains charged at the full reservation; failed payloads are
 memoized and never replayed. Failed outcomes remain in denominators. The journal

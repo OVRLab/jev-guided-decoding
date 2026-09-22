@@ -164,18 +164,41 @@ Prospective [full protocol](adaptive-attention-protocol.md). The owner authorize
 head-specific tuning, dynamic relevance refresh, external transfer and removal of
 fixed answer choices. Implementation lives in
 `research/iterations/adaptive_attention/`; prior source/data/results are unchanged.
-Status: implementation and offline checks complete; cloud inference pending.
-The finite matrix has 16,120 evaluation jobs plus development, using 300 new
-synthetic worlds, two transfer renderings and 200 HotpotQA questions. Policy is
-selected only on 96 fresh development worlds, then frozen. Full-vocabulary panels
-require neither UNKNOWN nor another special uncertainty token.
+Status: **completed**, including the full main schedule, registered factorial
+supplement and three artifact audits. [Complete report](../reports/2026-09-22-adaptive-attention/README.md).
 
-Test-first logs initially recorded 13 missing-module failures; later capability
-tests caught the pinned Granite empty-cache length issue, now fixed by correct
-zero-length attention tensors. The full local suite passes 374 tests. The
-independent audit reconstructs token provenance, scores, masks, selection and
-grades; no live results or quality claims exist yet. All future results, including
-failed/interrupted runs, will be added in a separate report.
+All **16,120 main test outcomes** and **3,600 exploratory factorial outcomes**
+are retained. On the new depth 1–6 constrained task, native Granite scores
+**30.83%**, matched R15 **59.00%**,
+and tuned Jev attention **72.00%**. The primary
+tuned-minus-R15 contrast is **+13.00 pp [+8.67, +17.61]**.
+
+Without an answer menu or required UNKNOWN token, open-explicit accuracy is
+**27.33% native / 27.17% tuned**;
+open-neutral accuracy is **26.17% / 21.50%**.
+Refreshed versus static staged guidance changes accuracy by
+**+0.42 pp [-3.33, +4.17]**. On 200 length-filtered HotpotQA questions,
+direct answer F1 is **26.85% native /
+29.67% tuned**, with primary contrast
+**+2.82 pp [-1.35, +6.91]**. Primary intervals are 98.333%;
+other comparisons are exploratory. These tasks and output contracts have separate
+interpretations; historical R15 scores are from a different cohort and precision.
+
+Granite generates every semantic token with unchanged weights; all arms use FP32.
+The full report includes natural abstentions, answerable/missing breakdowns,
+regressions, factor interactions, API failures, exact traces and three independent
+audits. All temporary resources are deleted. New estimated cost is
+**$8.52**, cumulative **$19.69/$50**
+before tax/separate network charges. This is research-branch evidence, not a trained
+checkpoint release or a general reasoning guarantee.
+
+Development evaluated 70 policies on 96 new worlds before
+freezing the selected policy. Initial capability tests first failed on missing
+modules and then exposed the empty-cache representation; fixes preceded evaluation.
+The final local inference suite passes 385 tests. Full model weights, inputs,
+selection timing, generated tokens and attention maps pass independent audit.
+The operational interruptions and supplementary registrations below remain part
+of the record.
 
 ### R16 admission interruption: cache numerical discrepancy
 
@@ -228,3 +251,18 @@ output bytes and use the original parser; they neither repair grading nor exclud
 bounded/failed outcomes. Three tests first failed on missing scaffolding before
 the diagnostic implementation. This adds transparency about relaxed contracts,
 not another primary comparison or fresh replication.
+
+### R16 post-completion records and descriptive failure reading
+
+Both inference schedules completed. A local supervisor then rejected the service
+manager's return code 4 after the completed transient factorial service had been
+removed. Exit code 0 and the full completion record were verified; original bytes
+were retrieved and offline auditing/cleanup continued without inference replay.
+The [recovery record](../reports/2026-09-22-adaptive-attention/supervisor-recovery.json)
+preserves this operational interruption.
+
+After the main quality audit, a [post-hoc reading](../reports/2026-09-22-adaptive-attention/free-text-failures.md)
+examines the first four lexicographic unparsed tuned direct-answer cases. It
+documents citations and partial source restatements with natural EOS endings.
+The examples and deterministic selection are retained without regrading; they
+motivate an untested phase-specific guidance hypothesis, not a new causal finding.

@@ -5,14 +5,37 @@ Granite inference. It includes negative results, corrections, new analyses, and
 proposed experiments. It is a basis for a paper, not a claim of a successful model
 release. All dates below are report dates; source artifacts retain execution times.
 
-**New work:** [R16 adaptive/free-text protocol](adaptive-attention-protocol.md) is
-running on one L40S after the prospective FP32 amendment; 375 offline tests pass.
-Development selected 11 active heads at strength 5 and threshold 0.65; evaluation
-is in progress and no held-out quality conclusion is available.
-It preserves the R15 result below while testing head-specific strengths, refreshed
-guidance and independent HotpotQA transfer.
+**Latest completed study:** [R16 adaptive attention](../reports/2026-09-22-adaptive-attention/README.md).
+**R16 interpretation:** constrained-task improvement is established within this
+study; direct free-text performance regressed against matched R15, while dynamic
+refresh and the primary HotpotQA contrast remain inconclusive.
 
-**Current conclusion:** [R15 refined evidence attention](../reports/2026-09-22-evidence-attention-refinement/README.md)
+All **16,120 main test outcomes** and **3,600 exploratory factorial outcomes**
+are retained. On the new depth 1–6 constrained task, native Granite scores
+**30.83%**, matched R15 **59.00%**,
+and tuned Jev attention **72.00%**. The primary
+tuned-minus-R15 contrast is **+13.00 pp [+8.67, +17.61]**.
+
+Without an answer menu or required UNKNOWN token, open-explicit accuracy is
+**27.33% native / 27.17% tuned**;
+open-neutral accuracy is **26.17% / 21.50%**.
+Refreshed versus static staged guidance changes accuracy by
+**+0.42 pp [-3.33, +4.17]**. On 200 length-filtered HotpotQA questions,
+direct answer F1 is **26.85% native /
+29.67% tuned**, with primary contrast
+**+2.82 pp [-1.35, +6.91]**. Primary intervals are 98.333%;
+other comparisons are exploratory. These tasks and output contracts have separate
+interpretations; historical R15 scores are from a different cohort and precision.
+
+Granite generates every semantic token with unchanged weights; all arms use FP32.
+The full report includes natural abstentions, answerable/missing breakdowns,
+regressions, factor interactions, API failures, exact traces and three independent
+audits. All temporary resources are deleted. New estimated cost is
+**$8.52**, cumulative **$19.69/$50**
+before tax/separate network charges. This is research-branch evidence, not a trained
+checkpoint release or a general reasoning guarantee.
+
+**Previous R15 finding:** [R15 refined evidence attention](../reports/2026-09-22-evidence-attention-refinement/README.md)
 R15's fresh 600-world comparison scores **38.08% native Granite**, **47.33%
 previous Jev attention**, and **68.42% refined Jev attention**. The paired primary
 gains are +30.33 pp [26.67,34.00] versus native and +21.08 pp [17.92,24.25] versus
@@ -42,6 +65,7 @@ weights are unchanged, and both temporary GPU deployments are deleted.
 | --- | --- |
 | [Study register](study-register.md) | Every recorded live study, failed pilot, correction, and offline follow-up |
 | [Architecture reassessment](architecture-reassessment.md) | Exact checkpoint, interface constraints, insertion-point decision and alternatives |
+| [Adaptive and unrestricted attention](../reports/2026-09-22-adaptive-attention/README.md) | R16 complete: three primary comparisons, eight panels, factorial controls, natural uncertainty and public HotpotQA traces |
 | [Attention refinement](../reports/2026-09-22-evidence-attention-refinement/README.md) | R15 completed: 68.42% versus 38.08% native/47.33% prior; [frozen plan](evidence-attention-v2-protocol.md), full traces, amendments, challenge limits and audit |
 | [Evidence-attention study](../reports/2026-09-21-evidence-attention/README.md) | Completed R14: eight arms, narrow native-baseline gain with inconclusive simpler controls; [frozen plan](evidence-attention-protocol.md), all traces and audit |
 | [New diagnostic report](../reports/2026-09-21-architecture-reassessment/README.md) | Reproducible decomposition of 3,600 main and 48 development traces |

@@ -1,0 +1,87 @@
+{
+  "at": "2026-09-22T05:21:10.746904+00:00",
+  "checks": [
+    {
+      "case": "r16/development/0000/cacidato/heavy",
+      "r15_full_vocab_max_difference": 0.0,
+      "old_label": "red"
+    },
+    {
+      "case": "r16/development/0001/suvadate/heavy",
+      "r15_full_vocab_max_difference": 0.0,
+      "old_label": "UNKNOWN"
+    },
+    {
+      "case": "r16/development/0002/fetoteno/heavy",
+      "r15_full_vocab_max_difference": 0.0,
+      "old_label": "red"
+    },
+    {
+      "case": "r16/development/0000/cacidato/heavy",
+      "zero_tokens": [
+        29815,
+        389,
+        279,
+        6029
+      ],
+      "cache_full_max_difference": 3.814697265625e-05,
+      "same_argmax": true
+    },
+    {
+      "case": "r16/development/0001/suvadate/heavy",
+      "zero_tokens": [
+        791,
+        3130,
+        6437,
+        5727
+      ],
+      "cache_full_max_difference": 1.71661376953125e-05,
+      "same_argmax": true
+    },
+    {
+      "case": "r16/development/0002/fetoteno/heavy",
+      "zero_tokens": [
+        791,
+        3130,
+        2579,
+        5727
+      ],
+      "cache_full_max_difference": 3.0159950256347656e-05,
+      "same_argmax": true
+    },
+    {
+      "case": "hotpot/5ae6443355429908198fa563",
+      "zero_tokens": [
+        127,
+        228,
+        339,
+        301
+      ],
+      "cache_full_max_difference": 2.47955322265625e-05,
+      "same_argmax": true
+    },
+    {
+      "case": "hotpot/5abd5a135542992ac4f3829f",
+      "zero_tokens": [
+        29815,
+        389,
+        279,
+        6029
+      ],
+      "cache_full_max_difference": 3.719329833984375e-05,
+      "same_argmax": true
+    },
+    {
+      "case": "hotpot/5ac02b325542992a796decb9",
+      "zero_tokens": [
+        33,
+        8135,
+        31858,
+        11
+      ],
+      "cache_full_max_difference": 2.47955322265625e-05,
+      "same_argmax": true
+    }
+  ],
+  "passed": true
+}

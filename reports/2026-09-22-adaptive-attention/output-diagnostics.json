@@ -1,0 +1,860 @@
+{
+  "artifact_binding_passed": true,
+  "output_sha256": "33b5e187b25206106d6fb9bd21ad45e988b2a1c33988a825b9e7cefe47166030",
+  "diagnostic_source_sha256": "cca20709e06bc88f12c3bd020f1b7473ddaf1ce1a2650e1bfd3576102217ddbd",
+  "parser_source_sha256": "8c61096d0f63b9342b4cc07cd73fdb04b3331fb61f1e8b91528675dcf061706f",
+  "scope": "Descriptive reuse of completed R16 test outcomes; no regrading or inference.",
+  "groups": {
+    "original/constrained/r15": {
+      "outcomes": 600,
+      "complete": 600,
+      "failed": 0,
+      "recognized_abstentions": 358,
+      "bare_unknown_answers": 358,
+      "other_recognized_abstentions": 0,
+      "correct_abstentions": 229,
+      "abstentions_on_answerable_cases": 129,
+      "unparsed_complete_answers": 0,
+      "correct_at_final_token_limit": 354,
+      "final_endings": {
+        "token_limit": 600
+      },
+      "reasoning_endings": {}
+    },
+    "original/constrained/shuffled": {
+      "outcomes": 600,
+      "complete": 600,
+      "failed": 0,
+      "recognized_abstentions": 345,
+      "bare_unknown_answers": 345,
+      "other_recognized_abstentions": 0,
+      "correct_abstentions": 203,
+      "abstentions_on_answerable_cases": 142,
+      "unparsed_complete_answers": 0,
+      "correct_at_final_token_limit": 260,
+      "final_endings": {
+        "token_limit": 600
+      },
+      "reasoning_endings": {}
+    },
+    "original/constrained/native": {
+      "outcomes": 600,
+      "complete": 600,
+      "failed": 0,
+      "recognized_abstentions": 271,
+      "bare_unknown_answers": 271,
+      "other_recognized_abstentions": 0,
+      "correct_abstentions": 155,
+      "abstentions_on_answerable_cases": 116,
+      "unparsed_complete_answers": 0,
+      "correct_at_final_token_limit": 185,
+      "final_endings": {
+        "token_limit": 600
+      },
+      "reasoning_endings": {}
+    },
+    "original/constrained/lexical": {
+      "outcomes": 600,
+      "complete": 600,
+      "failed": 0,
+      "recognized_abstentions": 486,
+      "bare_unknown_answers": 486,
+      "other_recognized_abstentions": 0,
+      "correct_abstentions": 273,
+      "abstentions_on_answerable_cases": 213,
+      "unparsed_complete_answers": 0,
+      "correct_at_final_token_limit": 327,
+      "final_endings": {
+        "token_limit": 600
+      },
+      "reasoning_endings": {}
+    },
+    "original/constrained/zero": {
+      "outcomes": 600,
+      "complete": 600,
+      "failed": 0,
+      "recognized_abstentions": 271,
+      "bare_unknown_answers": 271,
+      "other_recognized_abstentions": 0,
+      "correct_abstentions": 155,
+      "abstentions_on_answerable_cases": 116,
+      "unparsed_complete_answers": 0,
+      "correct_at_final_token_limit": 185,
+      "final_endings": {
+        "token_limit": 600
+      },
+      "reasoning_endings": {}
+    },
+    "original/constrained/tuned": {
+      "outcomes": 600,
+      "complete": 600,
+      "failed": 0,
+      "recognized_abstentions": 395,
+      "bare_unknown_answers": 395,
+      "other_recognized_abstentions": 0,
+      "correct_abstentions": 269,
+      "abstentions_on_answerable_cases": 126,
+      "unparsed_complete_answers": 0,
+      "correct_at_final_token_limit": 432,
+      "final_endings": {
+        "token_limit": 600
+      },
+      "reasoning_endings": {}
+    },
+    "original/open_explicit/tuned": {
+      "outcomes": 600,
+      "complete": 600,
+      "failed": 0,
+      "recognized_abstentions": 28,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 28,
+      "correct_abstentions": 28,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 376,
+      "correct_at_final_token_limit": 8,
+      "final_endings": {
+        "eos": 537,
+        "token_limit": 63
+      },
+      "reasoning_endings": {}
+    },
+    "original/open_explicit/shuffled": {
+      "outcomes": 600,
+      "complete": 600,
+      "failed": 0,
+      "recognized_abstentions": 30,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 30,
+      "correct_abstentions": 28,
+      "abstentions_on_answerable_cases": 2,
+      "unparsed_complete_answers": 279,
+      "correct_at_final_token_limit": 10,
+      "final_endings": {
+        "eos": 486,
+        "token_limit": 114
+      },
+      "reasoning_endings": {}
+    },
+    "original/open_explicit/lexical": {
+      "outcomes": 600,
+      "complete": 600,
+      "failed": 0,
+      "recognized_abstentions": 28,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 28,
+      "correct_abstentions": 28,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 363,
+      "correct_at_final_token_limit": 3,
+      "final_endings": {
+        "eos": 521,
+        "token_limit": 79
+      },
+      "reasoning_endings": {}
+    },
+    "original/open_explicit/r15": {
+      "outcomes": 600,
+      "complete": 600,
+      "failed": 0,
+      "recognized_abstentions": 30,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 30,
+      "correct_abstentions": 28,
+      "abstentions_on_answerable_cases": 2,
+      "unparsed_complete_answers": 245,
+      "correct_at_final_token_limit": 13,
+      "final_endings": {
+        "eos": 539,
+        "token_limit": 61
+      },
+      "reasoning_endings": {}
+    },
+    "original/open_explicit/native": {
+      "outcomes": 600,
+      "complete": 600,
+      "failed": 0,
+      "recognized_abstentions": 29,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 29,
+      "correct_abstentions": 28,
+      "abstentions_on_answerable_cases": 1,
+      "unparsed_complete_answers": 138,
+      "correct_at_final_token_limit": 6,
+      "final_endings": {
+        "eos": 560,
+        "token_limit": 40
+      },
+      "reasoning_endings": {}
+    },
+    "original/open_neutral/lexical": {
+      "outcomes": 600,
+      "complete": 600,
+      "failed": 0,
+      "recognized_abstentions": 8,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 8,
+      "correct_abstentions": 8,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 410,
+      "correct_at_final_token_limit": 6,
+      "final_endings": {
+        "eos": 504,
+        "token_limit": 96
+      },
+      "reasoning_endings": {}
+    },
+    "original/open_neutral/r15": {
+      "outcomes": 600,
+      "complete": 600,
+      "failed": 0,
+      "recognized_abstentions": 7,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 7,
+      "correct_abstentions": 7,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 273,
+      "correct_at_final_token_limit": 27,
+      "final_endings": {
+        "eos": 507,
+        "token_limit": 93
+      },
+      "reasoning_endings": {}
+    },
+    "original/open_neutral/native": {
+      "outcomes": 600,
+      "complete": 600,
+      "failed": 0,
+      "recognized_abstentions": 8,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 8,
+      "correct_abstentions": 8,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 110,
+      "correct_at_final_token_limit": 8,
+      "final_endings": {
+        "eos": 538,
+        "token_limit": 62
+      },
+      "reasoning_endings": {}
+    },
+    "original/open_neutral/shuffled": {
+      "outcomes": 600,
+      "complete": 600,
+      "failed": 0,
+      "recognized_abstentions": 8,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 8,
+      "correct_abstentions": 8,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 313,
+      "correct_at_final_token_limit": 22,
+      "final_endings": {
+        "eos": 424,
+        "token_limit": 176
+      },
+      "reasoning_endings": {}
+    },
+    "original/open_neutral/tuned": {
+      "outcomes": 600,
+      "complete": 600,
+      "failed": 0,
+      "recognized_abstentions": 9,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 9,
+      "correct_abstentions": 8,
+      "abstentions_on_answerable_cases": 1,
+      "unparsed_complete_answers": 398,
+      "correct_at_final_token_limit": 16,
+      "final_endings": {
+        "eos": 492,
+        "token_limit": 108
+      },
+      "reasoning_endings": {}
+    },
+    "original/staged/dynamic": {
+      "outcomes": 240,
+      "complete": 239,
+      "failed": 1,
+      "recognized_abstentions": 3,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 3,
+      "correct_abstentions": 3,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 114,
+      "correct_at_final_token_limit": 9,
+      "final_endings": {
+        "eos": 227,
+        "token_limit": 12
+      },
+      "reasoning_endings": {
+        "newline": 579,
+        "eos": 42,
+        "token_limit": 73
+      }
+    },
+    "original/staged/r15": {
+      "outcomes": 240,
+      "complete": 240,
+      "failed": 0,
+      "recognized_abstentions": 4,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 4,
+      "correct_abstentions": 4,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 74,
+      "correct_at_final_token_limit": 5,
+      "final_endings": {
+        "eos": 232,
+        "token_limit": 8
+      },
+      "reasoning_endings": {
+        "token_limit": 109,
+        "eos": 52,
+        "newline": 521
+      }
+    },
+    "original/staged/native": {
+      "outcomes": 240,
+      "complete": 240,
+      "failed": 0,
+      "recognized_abstentions": 5,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 5,
+      "correct_abstentions": 4,
+      "abstentions_on_answerable_cases": 1,
+      "unparsed_complete_answers": 75,
+      "correct_at_final_token_limit": 0,
+      "final_endings": {
+        "eos": 240
+      },
+      "reasoning_endings": {
+        "newline": 453,
+        "eos": 53,
+        "token_limit": 170
+      }
+    },
+    "original/staged/shuffled_dynamic": {
+      "outcomes": 240,
+      "complete": 240,
+      "failed": 0,
+      "recognized_abstentions": 3,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 3,
+      "correct_abstentions": 3,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 98,
+      "correct_at_final_token_limit": 5,
+      "final_endings": {
+        "eos": 215,
+        "token_limit": 25
+      },
+      "reasoning_endings": {
+        "newline": 569,
+        "eos": 36,
+        "token_limit": 88
+      }
+    },
+    "original/staged/lexical_dynamic": {
+      "outcomes": 240,
+      "complete": 240,
+      "failed": 0,
+      "recognized_abstentions": 1,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 1,
+      "correct_abstentions": 1,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 130,
+      "correct_at_final_token_limit": 0,
+      "final_endings": {
+        "eos": 239,
+        "token_limit": 1
+      },
+      "reasoning_endings": {
+        "newline": 561,
+        "eos": 48,
+        "token_limit": 86
+      }
+    },
+    "original/staged/tuned": {
+      "outcomes": 240,
+      "complete": 240,
+      "failed": 0,
+      "recognized_abstentions": 3,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 3,
+      "correct_abstentions": 3,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 115,
+      "correct_at_final_token_limit": 8,
+      "final_endings": {
+        "eos": 229,
+        "token_limit": 11
+      },
+      "reasoning_endings": {
+        "newline": 574,
+        "eos": 43,
+        "token_limit": 79
+      }
+    },
+    "paraphrase/staged/native": {
+      "outcomes": 240,
+      "complete": 240,
+      "failed": 0,
+      "recognized_abstentions": 7,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 7,
+      "correct_abstentions": 7,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 65,
+      "correct_at_final_token_limit": 0,
+      "final_endings": {
+        "eos": 240
+      },
+      "reasoning_endings": {
+        "newline": 404,
+        "eos": 65,
+        "token_limit": 221
+      }
+    },
+    "paraphrase/staged/shuffled_dynamic": {
+      "outcomes": 240,
+      "complete": 240,
+      "failed": 0,
+      "recognized_abstentions": 4,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 4,
+      "correct_abstentions": 4,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 68,
+      "correct_at_final_token_limit": 6,
+      "final_endings": {
+        "eos": 199,
+        "token_limit": 41
+      },
+      "reasoning_endings": {
+        "newline": 577,
+        "token_limit": 106,
+        "eos": 22
+      }
+    },
+    "paraphrase/staged/dynamic": {
+      "outcomes": 240,
+      "complete": 240,
+      "failed": 0,
+      "recognized_abstentions": 5,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 5,
+      "correct_abstentions": 5,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 90,
+      "correct_at_final_token_limit": 3,
+      "final_endings": {
+        "eos": 207,
+        "token_limit": 33
+      },
+      "reasoning_endings": {
+        "newline": 591,
+        "token_limit": 84,
+        "eos": 26
+      }
+    },
+    "paraphrase/staged/lexical_dynamic": {
+      "outcomes": 240,
+      "complete": 240,
+      "failed": 0,
+      "recognized_abstentions": 5,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 5,
+      "correct_abstentions": 5,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 122,
+      "correct_at_final_token_limit": 2,
+      "final_endings": {
+        "eos": 211,
+        "token_limit": 29
+      },
+      "reasoning_endings": {
+        "newline": 499,
+        "token_limit": 137,
+        "eos": 50
+      }
+    },
+    "paraphrase/staged/tuned": {
+      "outcomes": 240,
+      "complete": 240,
+      "failed": 0,
+      "recognized_abstentions": 4,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 4,
+      "correct_abstentions": 4,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 81,
+      "correct_at_final_token_limit": 1,
+      "final_endings": {
+        "eos": 214,
+        "token_limit": 26
+      },
+      "reasoning_endings": {
+        "newline": 598,
+        "token_limit": 82,
+        "eos": 24
+      }
+    },
+    "paraphrase/staged/r15": {
+      "outcomes": 240,
+      "complete": 240,
+      "failed": 0,
+      "recognized_abstentions": 3,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 3,
+      "correct_abstentions": 3,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 62,
+      "correct_at_final_token_limit": 1,
+      "final_endings": {
+        "eos": 231,
+        "token_limit": 9
+      },
+      "reasoning_endings": {
+        "newline": 523,
+        "eos": 48,
+        "token_limit": 125
+      }
+    },
+    "dependency/staged/tuned": {
+      "outcomes": 240,
+      "complete": 240,
+      "failed": 0,
+      "recognized_abstentions": 2,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 2,
+      "correct_abstentions": 2,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 86,
+      "correct_at_final_token_limit": 0,
+      "final_endings": {
+        "eos": 229,
+        "token_limit": 11
+      },
+      "reasoning_endings": {
+        "newline": 621,
+        "eos": 44,
+        "token_limit": 32
+      }
+    },
+    "dependency/staged/dynamic": {
+      "outcomes": 240,
+      "complete": 240,
+      "failed": 0,
+      "recognized_abstentions": 2,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 2,
+      "correct_abstentions": 2,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 104,
+      "correct_at_final_token_limit": 1,
+      "final_endings": {
+        "eos": 227,
+        "token_limit": 13
+      },
+      "reasoning_endings": {
+        "newline": 618,
+        "eos": 45,
+        "token_limit": 32
+      }
+    },
+    "dependency/staged/lexical_dynamic": {
+      "outcomes": 240,
+      "complete": 240,
+      "failed": 0,
+      "recognized_abstentions": 4,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 4,
+      "correct_abstentions": 4,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 138,
+      "correct_at_final_token_limit": 0,
+      "final_endings": {
+        "eos": 232,
+        "token_limit": 8
+      },
+      "reasoning_endings": {
+        "newline": 526,
+        "eos": 68,
+        "token_limit": 89
+      }
+    },
+    "dependency/staged/native": {
+      "outcomes": 240,
+      "complete": 240,
+      "failed": 0,
+      "recognized_abstentions": 5,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 5,
+      "correct_abstentions": 5,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 90,
+      "correct_at_final_token_limit": 0,
+      "final_endings": {
+        "eos": 240
+      },
+      "reasoning_endings": {
+        "newline": 482,
+        "eos": 77,
+        "token_limit": 106
+      }
+    },
+    "dependency/staged/r15": {
+      "outcomes": 240,
+      "complete": 240,
+      "failed": 0,
+      "recognized_abstentions": 2,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 2,
+      "correct_abstentions": 2,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 64,
+      "correct_at_final_token_limit": 0,
+      "final_endings": {
+        "eos": 240
+      },
+      "reasoning_endings": {
+        "newline": 601,
+        "eos": 51,
+        "token_limit": 50
+      }
+    },
+    "dependency/staged/shuffled_dynamic": {
+      "outcomes": 240,
+      "complete": 240,
+      "failed": 0,
+      "recognized_abstentions": 2,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 2,
+      "correct_abstentions": 2,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 72,
+      "correct_at_final_token_limit": 0,
+      "final_endings": {
+        "eos": 229,
+        "token_limit": 11
+      },
+      "reasoning_endings": {
+        "newline": 628,
+        "eos": 36,
+        "token_limit": 39
+      }
+    },
+    "hotpot/open_explicit/shuffled": {
+      "outcomes": 200,
+      "complete": 200,
+      "failed": 0,
+      "recognized_abstentions": 0,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 0,
+      "correct_abstentions": 0,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 0,
+      "correct_at_final_token_limit": 0,
+      "final_endings": {
+        "eos": 187,
+        "token_limit": 13
+      },
+      "reasoning_endings": {}
+    },
+    "hotpot/open_explicit/r15": {
+      "outcomes": 200,
+      "complete": 200,
+      "failed": 0,
+      "recognized_abstentions": 0,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 0,
+      "correct_abstentions": 0,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 0,
+      "correct_at_final_token_limit": 0,
+      "final_endings": {
+        "eos": 183,
+        "token_limit": 17
+      },
+      "reasoning_endings": {}
+    },
+    "hotpot/open_explicit/tuned": {
+      "outcomes": 200,
+      "complete": 200,
+      "failed": 0,
+      "recognized_abstentions": 0,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 0,
+      "correct_abstentions": 0,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 0,
+      "correct_at_final_token_limit": 0,
+      "final_endings": {
+        "eos": 180,
+        "token_limit": 20
+      },
+      "reasoning_endings": {}
+    },
+    "hotpot/open_explicit/lexical": {
+      "outcomes": 200,
+      "complete": 200,
+      "failed": 0,
+      "recognized_abstentions": 0,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 0,
+      "correct_abstentions": 0,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 0,
+      "correct_at_final_token_limit": 0,
+      "final_endings": {
+        "eos": 178,
+        "token_limit": 22
+      },
+      "reasoning_endings": {}
+    },
+    "hotpot/open_explicit/native": {
+      "outcomes": 200,
+      "complete": 200,
+      "failed": 0,
+      "recognized_abstentions": 0,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 0,
+      "correct_abstentions": 0,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 0,
+      "correct_at_final_token_limit": 0,
+      "final_endings": {
+        "eos": 170,
+        "token_limit": 30
+      },
+      "reasoning_endings": {}
+    },
+    "hotpot/staged/r15": {
+      "outcomes": 200,
+      "complete": 200,
+      "failed": 0,
+      "recognized_abstentions": 0,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 0,
+      "correct_abstentions": 0,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 0,
+      "correct_at_final_token_limit": 0,
+      "final_endings": {
+        "eos": 192,
+        "token_limit": 8
+      },
+      "reasoning_endings": {
+        "newline": 221,
+        "token_limit": 315,
+        "eos": 39
+      }
+    },
+    "hotpot/staged/tuned": {
+      "outcomes": 200,
+      "complete": 200,
+      "failed": 0,
+      "recognized_abstentions": 0,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 0,
+      "correct_abstentions": 0,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 0,
+      "correct_at_final_token_limit": 0,
+      "final_endings": {
+        "eos": 188,
+        "token_limit": 12
+      },
+      "reasoning_endings": {
+        "newline": 223,
+        "token_limit": 271,
+        "eos": 59
+      }
+    },
+    "hotpot/staged/dynamic": {
+      "outcomes": 200,
+      "complete": 200,
+      "failed": 0,
+      "recognized_abstentions": 0,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 0,
+      "correct_abstentions": 0,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 0,
+      "correct_at_final_token_limit": 0,
+      "final_endings": {
+        "eos": 189,
+        "token_limit": 11
+      },
+      "reasoning_endings": {
+        "newline": 215,
+        "token_limit": 278,
+        "eos": 61
+      }
+    },
+    "hotpot/staged/lexical_dynamic": {
+      "outcomes": 200,
+      "complete": 200,
+      "failed": 0,
+      "recognized_abstentions": 0,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 0,
+      "correct_abstentions": 0,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 0,
+      "correct_at_final_token_limit": 0,
+      "final_endings": {
+        "eos": 193,
+        "token_limit": 7
+      },
+      "reasoning_endings": {
+        "token_limit": 272,
+        "eos": 46,
+        "newline": 243
+      }
+    },
+    "hotpot/staged/native": {
+      "outcomes": 200,
+      "complete": 200,
+      "failed": 0,
+      "recognized_abstentions": 0,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 0,
+      "correct_abstentions": 0,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 0,
+      "correct_at_final_token_limit": 0,
+      "final_endings": {
+        "eos": 194,
+        "token_limit": 6
+      },
+      "reasoning_endings": {
+        "token_limit": 310,
+        "eos": 54,
+        "newline": 194
+      }
+    },
+    "hotpot/staged/shuffled_dynamic": {
+      "outcomes": 200,
+      "complete": 200,
+      "failed": 0,
+      "recognized_abstentions": 0,
+      "bare_unknown_answers": 0,
+      "other_recognized_abstentions": 0,
+      "correct_abstentions": 0,
+      "abstentions_on_answerable_cases": 0,
+      "unparsed_complete_answers": 0,
+      "correct_at_final_token_limit": 0,
+      "final_endings": {
+        "eos": 192,
+        "token_limit": 8
+      },
+      "reasoning_endings": {
+        "newline": 216,
+        "token_limit": 310,
+        "eos": 40
+      }
+    }
+  }
+}

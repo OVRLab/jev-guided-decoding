@@ -1,11 +1,38 @@
 # Verified implementation inventory
 
-R16 implementation passes 375 local tests and its GPU FP32 admission. The
-[adaptive/free-text study](research/adaptive-attention-protocol.md) is running;
-its [methods](reports/2026-09-22-adaptive-attention/method.md) describe internal
-attention refresh and unrestricted final vocabulary. Development is frozen;
-no held-out R16 quality conclusion is available yet. The first BF16 admission
-failure and prospective precision amendment remain documented.
+[R16 completed study](reports/2026-09-22-adaptive-attention/README.md):
+**R16 interpretation:** constrained-task improvement is established within this
+study; direct free-text performance regressed against matched R15, while dynamic
+refresh and the primary HotpotQA contrast remain inconclusive.
+
+All **16,120 main test outcomes** and **3,600 exploratory factorial outcomes**
+are retained. On the new depth 1–6 constrained task, native Granite scores
+**30.83%**, matched R15 **59.00%**,
+and tuned Jev attention **72.00%**. The primary
+tuned-minus-R15 contrast is **+13.00 pp [+8.67, +17.61]**.
+
+Without an answer menu or required UNKNOWN token, open-explicit accuracy is
+**27.33% native / 27.17% tuned**;
+open-neutral accuracy is **26.17% / 21.50%**.
+Refreshed versus static staged guidance changes accuracy by
+**+0.42 pp [-3.33, +4.17]**. On 200 length-filtered HotpotQA questions,
+direct answer F1 is **26.85% native /
+29.67% tuned**, with primary contrast
+**+2.82 pp [-1.35, +6.91]**. Primary intervals are 98.333%;
+other comparisons are exploratory. These tasks and output contracts have separate
+interpretations; historical R15 scores are from a different cohort and precision.
+
+Granite generates every semantic token with unchanged weights; all arms use FP32.
+The full report includes natural abstentions, answerable/missing breakdowns,
+regressions, factor interactions, API failures, exact traces and three independent
+audits. All temporary resources are deleted. New estimated cost is
+**$8.52**, cumulative **$19.69/$50**
+before tax/separate network charges. This is research-branch evidence, not a trained
+checkpoint release or a general reasoning guarantee.
+
+The full local inference suite passes **385 tests**. Core-only CI passes on
+Python 3.11/3.12; optional inference tests are not represented by those CI jobs.
+The original BF16 admission failure and prospective precision amendment are retained.
 
 [R15 completed study](reports/2026-09-22-evidence-attention-refinement/README.md):
 R15's fresh 600-world comparison scores **38.08% native Granite**, **47.33%
@@ -100,12 +127,15 @@ results were verified before the temporary server/disk/network resources were
 deleted. Estimated compute, disk and Jev cost was $3.29 before tax and separate
 network charges. Final-answer attribution is now an explicit invariant.
 
-- vLLM extension, retained-prefix cache reuse between chunks, or concurrent serving.
+- vLLM extension or concurrent serving. The package proposal path recomputes
+  prefixes; the separate R16 research runner retains an isolated request cache.
 - Guaranteed semantic candidate diversity; deduplication currently uses exact token IDs.
 - Neural fusion, training, changed model weights, or a new Hugging Face checkpoint.
-- Improved held-out answer quality, general mathematical reasoning, or GPU-server speedups.
+- General mathematical reasoning improvement or a colocated/serving-throughput
+  speedup; narrow held-out attention results are described above.
 - Validated compatibility beyond the recorded Granite and tiny-model checks.
-- A validated hidden-layer mapping or an effective layer identified by experiment.
+- A generally optimal hidden-layer mapping across tasks or models. R14–R16
+  identify and test selected source-attention interventions on the recorded tasks.
   The [output-logit prototype](reports/2026-09-21-logit-guidance/README.md) is mechanically
   checked with replayed scores. R13 subsequently completed a fresh hosted seven-arm comparison without a
   demonstrated accuracy gain; its interrupted segment and bounded continuation

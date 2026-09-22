@@ -1,10 +1,34 @@
 # Feature: Jev-guided intermediate reasoning
 
-Current work: [R16 adaptive/free-text study](research/adaptive-attention-protocol.md)
-is running under the [FP32 amendment](research/adaptive-attention-fp32-amendment.md).
-The fixed 16,120-job matrix tests individual head tuning, relevance refresh between
-Granite steps, natural free-text uncertainty, relation transfer and HotpotQA.
-Development selection is frozen; held-out results and final audit are pending.
+Current work completed: [R16 adaptive/free-text study](reports/2026-09-22-adaptive-attention/README.md).
+**R16 interpretation:** constrained-task improvement is established within this
+study; direct free-text performance regressed against matched R15, while dynamic
+refresh and the primary HotpotQA contrast remain inconclusive.
+
+All **16,120 main test outcomes** and **3,600 exploratory factorial outcomes**
+are retained. On the new depth 1–6 constrained task, native Granite scores
+**30.83%**, matched R15 **59.00%**,
+and tuned Jev attention **72.00%**. The primary
+tuned-minus-R15 contrast is **+13.00 pp [+8.67, +17.61]**.
+
+Without an answer menu or required UNKNOWN token, open-explicit accuracy is
+**27.33% native / 27.17% tuned**;
+open-neutral accuracy is **26.17% / 21.50%**.
+Refreshed versus static staged guidance changes accuracy by
+**+0.42 pp [-3.33, +4.17]**. On 200 length-filtered HotpotQA questions,
+direct answer F1 is **26.85% native /
+29.67% tuned**, with primary contrast
+**+2.82 pp [-1.35, +6.91]**. Primary intervals are 98.333%;
+other comparisons are exploratory. These tasks and output contracts have separate
+interpretations; historical R15 scores are from a different cohort and precision.
+
+Granite generates every semantic token with unchanged weights; all arms use FP32.
+The full report includes natural abstentions, answerable/missing breakdowns,
+regressions, factor interactions, API failures, exact traces and three independent
+audits. All temporary resources are deleted. New estimated cost is
+**$8.52**, cumulative **$19.69/$50**
+before tax/separate network charges. This is research-branch evidence, not a trained
+checkpoint release or a general reasoning guarantee.
 
 Previous work completed: [R15 refinement](reports/2026-09-22-evidence-attention-refinement/README.md)
 selected 12 heads, ln(16) and hard relevance gating. Fresh primary accuracy is
@@ -151,7 +175,9 @@ criterion failed because lexical/prompt comparisons remain inconclusive; always
 UNKNOWN scores 50% on these constrained authored cases. All model decisions,
 receipts, unchanged weights, costs and cleanup are audited and documented.
 
-No further cloud run is pending. Any redesign must treat this test as exposed,
-freeze new development/held-out splits and compare against the simpler relevance
-controls. Generalization, open-ended output, concurrent serving and colocated Jev
-remain untested; no model training or release is implied.
+At R14 completion, no further cloud run was pending and open-ended transfer
+remained untested. R15 and R16 subsequently evaluated their separately frozen
+protocols. R16 adds full-vocabulary and external QA evidence above. Any next tuning
+study must treat all completed cohorts as exposed and reserve fresh evaluation
+cases. Concurrent serving and colocated Jev remain untested; no model training or
+release is implied.

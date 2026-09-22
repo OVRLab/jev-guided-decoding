@@ -1,0 +1,61 @@
+{
+  "rule": "first qualifying case by lexicographic ID, separate predefined benefits/harms/natural-abstention categories",
+  "selections": [
+    {
+      "category": "Constrained: tuned fixes native",
+      "case_id": "r16/test/0000/duratiri/heavy",
+      "contract": "constrained",
+      "baseline": "native",
+      "guided": "tuned"
+    },
+    {
+      "category": "Constrained: tuned harms native",
+      "case_id": "r16/test/0027/micosaba/heavy",
+      "contract": "constrained",
+      "baseline": "native",
+      "guided": "tuned"
+    },
+    {
+      "category": "Open explicit: natural abstention",
+      "case_id": "r16/test/0006/lenovare/heavy",
+      "contract": "open_explicit",
+      "baseline": "native",
+      "guided": "tuned"
+    },
+    {
+      "category": "Open neutral: answerable improvement",
+      "case_id": "r16/test/0000/duratiri/light",
+      "contract": "open_neutral",
+      "baseline": "native",
+      "guided": "tuned"
+    },
+    {
+      "category": "Staged: dynamic fixes static",
+      "case_id": "r16/test/0003/ducubino/heavy",
+      "contract": "staged",
+      "baseline": "tuned",
+      "guided": "dynamic"
+    },
+    {
+      "category": "Staged: dynamic harms static",
+      "case_id": "r16/test/0026/geducica/heavy",
+      "contract": "staged",
+      "baseline": "tuned",
+      "guided": "dynamic"
+    },
+    {
+      "category": "HotpotQA: tuned fixes native EM",
+      "case_id": "hotpot/5a738d27554299623ed4abf3",
+      "contract": "open_explicit",
+      "baseline": "native",
+      "guided": "tuned"
+    },
+    {
+      "category": "HotpotQA: tuned harms native EM",
+      "case_id": "hotpot/5a73b2fd55429978a71e907f",
+      "contract": "open_explicit",
+      "baseline": "native",
+      "guided": "tuned"
+    }
+  ]
+}

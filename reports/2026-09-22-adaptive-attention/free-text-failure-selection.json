@@ -1,0 +1,13 @@
+{
+  "post_hoc": true,
+  "selection": "First four lexicographic case IDs among complete, unparsed original/open_explicit/tuned test outcomes.",
+  "selected_case_ids": [
+    "r16/test/0001/nugulogi/light",
+    "r16/test/0002/pililego/light",
+    "r16/test/0004/rolitumi/heavy",
+    "r16/test/0004/rolitumi/light"
+  ],
+  "output_sha256": "33b5e187b25206106d6fb9bd21ad45e988b2a1c33988a825b9e7cefe47166030",
+  "no_regrading": true,
+  "no_new_inference": true
+}
