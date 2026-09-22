@@ -1,0 +1,9 @@
+{
+  "failed": true,
+  "error_type": "FileExistsError",
+  "weights_before": "311c1141187580dc0905c810e9d9e78853a0bf37b865bd5a5a511f6eed72f8c9",
+  "weights_after": "311c1141187580dc0905c810e9d9e78853a0bf37b865bd5a5a511f6eed72f8c9",
+  "elapsed_seconds": 15.003524225000092,
+  "at": "2026-09-21T23:30:20.766633+00:00",
+  "weights_unchanged": true
+}

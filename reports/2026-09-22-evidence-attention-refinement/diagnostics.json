@@ -1,0 +1,1350 @@
+{
+  "test": {
+    "by_group": {
+      "native": {
+        "all": {
+          "correct": 457,
+          "total": 1200
+        },
+        "depth-1-missing-False": {
+          "correct": 39,
+          "total": 200
+        },
+        "missing-False": {
+          "correct": 82,
+          "total": 600
+        },
+        "clean": {
+          "correct": 251,
+          "total": 600
+        },
+        "distracted": {
+          "correct": 206,
+          "total": 600
+        },
+        "depth-2-missing-False": {
+          "correct": 21,
+          "total": 200
+        },
+        "depth-3-missing-False": {
+          "correct": 22,
+          "total": 200
+        },
+        "depth-1-missing-True": {
+          "correct": 196,
+          "total": 200
+        },
+        "missing-True": {
+          "correct": 375,
+          "total": 600
+        },
+        "depth-2-missing-True": {
+          "correct": 100,
+          "total": 200
+        },
+        "depth-3-missing-True": {
+          "correct": 79,
+          "total": 200
+        }
+      },
+      "r14": {
+        "all": {
+          "correct": 568,
+          "total": 1200
+        },
+        "depth-1-missing-False": {
+          "correct": 99,
+          "total": 200
+        },
+        "missing-False": {
+          "correct": 186,
+          "total": 600
+        },
+        "clean": {
+          "correct": 305,
+          "total": 600
+        },
+        "distracted": {
+          "correct": 263,
+          "total": 600
+        },
+        "depth-2-missing-False": {
+          "correct": 53,
+          "total": 200
+        },
+        "depth-3-missing-False": {
+          "correct": 34,
+          "total": 200
+        },
+        "depth-1-missing-True": {
+          "correct": 196,
+          "total": 200
+        },
+        "missing-True": {
+          "correct": 382,
+          "total": 600
+        },
+        "depth-2-missing-True": {
+          "correct": 95,
+          "total": 200
+        },
+        "depth-3-missing-True": {
+          "correct": 91,
+          "total": 200
+        }
+      },
+      "r15": {
+        "all": {
+          "correct": 821,
+          "total": 1200
+        },
+        "depth-1-missing-False": {
+          "correct": 184,
+          "total": 200
+        },
+        "missing-False": {
+          "correct": 361,
+          "total": 600
+        },
+        "clean": {
+          "correct": 417,
+          "total": 600
+        },
+        "distracted": {
+          "correct": 404,
+          "total": 600
+        },
+        "depth-2-missing-False": {
+          "correct": 116,
+          "total": 200
+        },
+        "depth-3-missing-False": {
+          "correct": 61,
+          "total": 200
+        },
+        "depth-1-missing-True": {
+          "correct": 195,
+          "total": 200
+        },
+        "missing-True": {
+          "correct": 460,
+          "total": 600
+        },
+        "depth-2-missing-True": {
+          "correct": 131,
+          "total": 200
+        },
+        "depth-3-missing-True": {
+          "correct": 134,
+          "total": 200
+        }
+      },
+      "shuffled": {
+        "all": {
+          "correct": 558,
+          "total": 1200
+        },
+        "depth-1-missing-False": {
+          "correct": 60,
+          "total": 200
+        },
+        "missing-False": {
+          "correct": 126,
+          "total": 600
+        },
+        "clean": {
+          "correct": 319,
+          "total": 600
+        },
+        "distracted": {
+          "correct": 239,
+          "total": 600
+        },
+        "depth-2-missing-False": {
+          "correct": 38,
+          "total": 200
+        },
+        "depth-3-missing-False": {
+          "correct": 28,
+          "total": 200
+        },
+        "depth-1-missing-True": {
+          "correct": 196,
+          "total": 200
+        },
+        "missing-True": {
+          "correct": 432,
+          "total": 600
+        },
+        "depth-2-missing-True": {
+          "correct": 115,
+          "total": 200
+        },
+        "depth-3-missing-True": {
+          "correct": 121,
+          "total": 200
+        }
+      },
+      "lexical": {
+        "all": {
+          "correct": 655,
+          "total": 1200
+        },
+        "depth-1-missing-False": {
+          "correct": 176,
+          "total": 200
+        },
+        "missing-False": {
+          "correct": 206,
+          "total": 600
+        },
+        "clean": {
+          "correct": 344,
+          "total": 600
+        },
+        "distracted": {
+          "correct": 311,
+          "total": 600
+        },
+        "depth-2-missing-False": {
+          "correct": 15,
+          "total": 200
+        },
+        "depth-3-missing-False": {
+          "correct": 15,
+          "total": 200
+        },
+        "depth-1-missing-True": {
+          "correct": 196,
+          "total": 200
+        },
+        "missing-True": {
+          "correct": 449,
+          "total": 600
+        },
+        "depth-2-missing-True": {
+          "correct": 130,
+          "total": 200
+        },
+        "depth-3-missing-True": {
+          "correct": 123,
+          "total": 200
+        }
+      },
+      "prompt": {
+        "all": {
+          "correct": 541,
+          "total": 1200
+        },
+        "depth-1-missing-False": {
+          "correct": 37,
+          "total": 200
+        },
+        "missing-False": {
+          "correct": 97,
+          "total": 600
+        },
+        "clean": {
+          "correct": 277,
+          "total": 600
+        },
+        "distracted": {
+          "correct": 264,
+          "total": 600
+        },
+        "depth-2-missing-False": {
+          "correct": 35,
+          "total": 200
+        },
+        "depth-3-missing-False": {
+          "correct": 25,
+          "total": 200
+        },
+        "depth-1-missing-True": {
+          "correct": 196,
+          "total": 200
+        },
+        "missing-True": {
+          "correct": 444,
+          "total": 600
+        },
+        "depth-2-missing-True": {
+          "correct": 157,
+          "total": 200
+        },
+        "depth-3-missing-True": {
+          "correct": 91,
+          "total": 200
+        }
+      },
+      "oracle": {
+        "all": {
+          "correct": 802,
+          "total": 1200
+        },
+        "depth-1-missing-False": {
+          "correct": 176,
+          "total": 200
+        },
+        "missing-False": {
+          "correct": 331,
+          "total": 600
+        },
+        "clean": {
+          "correct": 415,
+          "total": 600
+        },
+        "distracted": {
+          "correct": 387,
+          "total": 600
+        },
+        "depth-2-missing-False": {
+          "correct": 99,
+          "total": 200
+        },
+        "depth-3-missing-False": {
+          "correct": 56,
+          "total": 200
+        },
+        "depth-1-missing-True": {
+          "correct": 196,
+          "total": 200
+        },
+        "missing-True": {
+          "correct": 471,
+          "total": 600
+        },
+        "depth-2-missing-True": {
+          "correct": 130,
+          "total": 200
+        },
+        "depth-3-missing-True": {
+          "correct": 145,
+          "total": 200
+        }
+      },
+      "zero": {
+        "all": {
+          "correct": 457,
+          "total": 1200
+        },
+        "depth-1-missing-False": {
+          "correct": 39,
+          "total": 200
+        },
+        "missing-False": {
+          "correct": 82,
+          "total": 600
+        },
+        "clean": {
+          "correct": 251,
+          "total": 600
+        },
+        "distracted": {
+          "correct": 206,
+          "total": 600
+        },
+        "depth-2-missing-False": {
+          "correct": 21,
+          "total": 200
+        },
+        "depth-3-missing-False": {
+          "correct": 22,
+          "total": 200
+        },
+        "depth-1-missing-True": {
+          "correct": 196,
+          "total": 200
+        },
+        "missing-True": {
+          "correct": 375,
+          "total": 600
+        },
+        "depth-2-missing-True": {
+          "correct": 100,
+          "total": 200
+        },
+        "depth-3-missing-True": {
+          "correct": 79,
+          "total": 200
+        }
+      },
+      "mapping_only": {
+        "all": {
+          "correct": 681,
+          "total": 1200
+        },
+        "depth-1-missing-False": {
+          "correct": 161,
+          "total": 200
+        },
+        "missing-False": {
+          "correct": 293,
+          "total": 600
+        },
+        "clean": {
+          "correct": 357,
+          "total": 600
+        },
+        "distracted": {
+          "correct": 324,
+          "total": 600
+        },
+        "depth-2-missing-False": {
+          "correct": 81,
+          "total": 200
+        },
+        "depth-3-missing-False": {
+          "correct": 51,
+          "total": 200
+        },
+        "depth-1-missing-True": {
+          "correct": 195,
+          "total": 200
+        },
+        "missing-True": {
+          "correct": 388,
+          "total": 600
+        },
+        "depth-2-missing-True": {
+          "correct": 95,
+          "total": 200
+        },
+        "depth-3-missing-True": {
+          "correct": 98,
+          "total": 200
+        }
+      },
+      "heads_only": {
+        "all": {
+          "correct": 592,
+          "total": 1200
+        },
+        "depth-1-missing-False": {
+          "correct": 102,
+          "total": 200
+        },
+        "missing-False": {
+          "correct": 184,
+          "total": 600
+        },
+        "clean": {
+          "correct": 309,
+          "total": 600
+        },
+        "distracted": {
+          "correct": 283,
+          "total": 600
+        },
+        "depth-2-missing-False": {
+          "correct": 51,
+          "total": 200
+        },
+        "depth-3-missing-False": {
+          "correct": 31,
+          "total": 200
+        },
+        "depth-1-missing-True": {
+          "correct": 196,
+          "total": 200
+        },
+        "missing-True": {
+          "correct": 408,
+          "total": 600
+        },
+        "depth-2-missing-True": {
+          "correct": 106,
+          "total": 200
+        },
+        "depth-3-missing-True": {
+          "correct": 106,
+          "total": 200
+        }
+      },
+      "strength_only": {
+        "all": {
+          "correct": 661,
+          "total": 1200
+        },
+        "depth-1-missing-False": {
+          "correct": 137,
+          "total": 200
+        },
+        "missing-False": {
+          "correct": 267,
+          "total": 600
+        },
+        "clean": {
+          "correct": 359,
+          "total": 600
+        },
+        "distracted": {
+          "correct": 302,
+          "total": 600
+        },
+        "depth-2-missing-False": {
+          "correct": 88,
+          "total": 200
+        },
+        "depth-3-missing-False": {
+          "correct": 42,
+          "total": 200
+        },
+        "depth-1-missing-True": {
+          "correct": 196,
+          "total": 200
+        },
+        "missing-True": {
+          "correct": 394,
+          "total": 600
+        },
+        "depth-2-missing-True": {
+          "correct": 96,
+          "total": 200
+        },
+        "depth-3-missing-True": {
+          "correct": 102,
+          "total": 200
+        }
+      },
+      "scope_only": {
+        "all": {
+          "correct": 568,
+          "total": 1200
+        },
+        "depth-1-missing-False": {
+          "correct": 99,
+          "total": 200
+        },
+        "missing-False": {
+          "correct": 186,
+          "total": 600
+        },
+        "clean": {
+          "correct": 305,
+          "total": 600
+        },
+        "distracted": {
+          "correct": 263,
+          "total": 600
+        },
+        "depth-2-missing-False": {
+          "correct": 53,
+          "total": 200
+        },
+        "depth-3-missing-False": {
+          "correct": 34,
+          "total": 200
+        },
+        "depth-1-missing-True": {
+          "correct": 196,
+          "total": 200
+        },
+        "missing-True": {
+          "correct": 382,
+          "total": 600
+        },
+        "depth-2-missing-True": {
+          "correct": 95,
+          "total": 200
+        },
+        "depth-3-missing-True": {
+          "correct": 91,
+          "total": 200
+        }
+      }
+    },
+    "contrasts": {
+      "native": {
+        "fixes": 384,
+        "regressions": 20,
+        "wrong_to_wrong": 120,
+        "label_changes": 524
+      },
+      "r14": {
+        "fixes": 277,
+        "regressions": 24,
+        "wrong_to_wrong": 100,
+        "label_changes": 401
+      },
+      "lexical": {
+        "fixes": 182,
+        "regressions": 16,
+        "wrong_to_wrong": 62,
+        "label_changes": 260
+      },
+      "prompt": {
+        "fixes": 361,
+        "regressions": 81,
+        "wrong_to_wrong": 128,
+        "label_changes": 570
+      }
+    },
+    "score_confusion": {
+      "0.5": {
+        "tp": 1798,
+        "fp": 433,
+        "tn": 12149,
+        "fn": 0
+      },
+      "0.8": {
+        "tp": 1717,
+        "fp": 27,
+        "tn": 12555,
+        "fn": 81
+      }
+    },
+    "brier": 0.03998694019471685,
+    "score_questions": 14380,
+    "api_seconds": 446.86961863600845,
+    "api_usage": {
+      "input_tokens": 2950781,
+      "output_tokens": 298086
+    },
+    "successful_calls": 1199,
+    "failed_calls": 1,
+    "constant_unknown_accuracy": 0.5,
+    "work": {
+      "native": {
+        "model_seconds": 30.54744080800765,
+        "prefill_tokens": 321167,
+        "generated_tokens": 1200
+      },
+      "r14": {
+        "model_seconds": 32.88525526499825,
+        "prefill_tokens": 320790,
+        "generated_tokens": 1199
+      },
+      "r15": {
+        "model_seconds": 33.3981257070036,
+        "prefill_tokens": 320790,
+        "generated_tokens": 1199
+      },
+      "shuffled": {
+        "model_seconds": 33.44391097800917,
+        "prefill_tokens": 320790,
+        "generated_tokens": 1199
+      },
+      "lexical": {
+        "model_seconds": 33.60148153200021,
+        "prefill_tokens": 321167,
+        "generated_tokens": 1200
+      },
+      "prompt": {
+        "model_seconds": 30.59204990499029,
+        "prefill_tokens": 331945,
+        "generated_tokens": 1199
+      },
+      "oracle": {
+        "model_seconds": 33.31200000400054,
+        "prefill_tokens": 321167,
+        "generated_tokens": 1200
+      },
+      "zero": {
+        "model_seconds": 30.812685876998557,
+        "prefill_tokens": 321167,
+        "generated_tokens": 1200
+      },
+      "mapping_only": {
+        "model_seconds": 32.701272695003354,
+        "prefill_tokens": 320790,
+        "generated_tokens": 1199
+      },
+      "heads_only": {
+        "model_seconds": 33.370087293998495,
+        "prefill_tokens": 320790,
+        "generated_tokens": 1199
+      },
+      "strength_only": {
+        "model_seconds": 32.75561239199851,
+        "prefill_tokens": 320790,
+        "generated_tokens": 1199
+      },
+      "scope_only": {
+        "model_seconds": 32.753667651997375,
+        "prefill_tokens": 320790,
+        "generated_tokens": 1199
+      }
+    }
+  },
+  "challenge": {
+    "by_group": {
+      "native": {
+        "all": {
+          "correct": 60,
+          "total": 240
+        },
+        "depth-4-missing-False": {
+          "correct": 4,
+          "total": 40
+        },
+        "missing-False": {
+          "correct": 11,
+          "total": 120
+        },
+        "clean": {
+          "correct": 32,
+          "total": 120
+        },
+        "distracted": {
+          "correct": 28,
+          "total": 120
+        },
+        "depth-5-missing-False": {
+          "correct": 1,
+          "total": 40
+        },
+        "depth-6-missing-False": {
+          "correct": 6,
+          "total": 40
+        },
+        "depth-4-missing-True": {
+          "correct": 19,
+          "total": 40
+        },
+        "missing-True": {
+          "correct": 49,
+          "total": 120
+        },
+        "depth-5-missing-True": {
+          "correct": 10,
+          "total": 40
+        },
+        "depth-6-missing-True": {
+          "correct": 20,
+          "total": 40
+        }
+      },
+      "r14": {
+        "all": {
+          "correct": 68,
+          "total": 240
+        },
+        "depth-4-missing-False": {
+          "correct": 5,
+          "total": 40
+        },
+        "missing-False": {
+          "correct": 11,
+          "total": 120
+        },
+        "clean": {
+          "correct": 37,
+          "total": 120
+        },
+        "distracted": {
+          "correct": 31,
+          "total": 120
+        },
+        "depth-5-missing-False": {
+          "correct": 2,
+          "total": 40
+        },
+        "depth-6-missing-False": {
+          "correct": 4,
+          "total": 40
+        },
+        "depth-4-missing-True": {
+          "correct": 23,
+          "total": 40
+        },
+        "missing-True": {
+          "correct": 57,
+          "total": 120
+        },
+        "depth-5-missing-True": {
+          "correct": 11,
+          "total": 40
+        },
+        "depth-6-missing-True": {
+          "correct": 23,
+          "total": 40
+        }
+      },
+      "r15": {
+        "all": {
+          "correct": 100,
+          "total": 240
+        },
+        "depth-4-missing-False": {
+          "correct": 12,
+          "total": 40
+        },
+        "missing-False": {
+          "correct": 19,
+          "total": 120
+        },
+        "clean": {
+          "correct": 62,
+          "total": 120
+        },
+        "distracted": {
+          "correct": 38,
+          "total": 120
+        },
+        "depth-5-missing-False": {
+          "correct": 3,
+          "total": 40
+        },
+        "depth-6-missing-False": {
+          "correct": 4,
+          "total": 40
+        },
+        "depth-4-missing-True": {
+          "correct": 27,
+          "total": 40
+        },
+        "missing-True": {
+          "correct": 81,
+          "total": 120
+        },
+        "depth-5-missing-True": {
+          "correct": 26,
+          "total": 40
+        },
+        "depth-6-missing-True": {
+          "correct": 28,
+          "total": 40
+        }
+      },
+      "shuffled": {
+        "all": {
+          "correct": 92,
+          "total": 240
+        },
+        "depth-4-missing-False": {
+          "correct": 5,
+          "total": 40
+        },
+        "missing-False": {
+          "correct": 13,
+          "total": 120
+        },
+        "clean": {
+          "correct": 53,
+          "total": 120
+        },
+        "distracted": {
+          "correct": 39,
+          "total": 120
+        },
+        "depth-5-missing-False": {
+          "correct": 2,
+          "total": 40
+        },
+        "depth-6-missing-False": {
+          "correct": 6,
+          "total": 40
+        },
+        "depth-4-missing-True": {
+          "correct": 26,
+          "total": 40
+        },
+        "missing-True": {
+          "correct": 79,
+          "total": 120
+        },
+        "depth-5-missing-True": {
+          "correct": 27,
+          "total": 40
+        },
+        "depth-6-missing-True": {
+          "correct": 26,
+          "total": 40
+        }
+      },
+      "lexical": {
+        "all": {
+          "correct": 81,
+          "total": 240
+        },
+        "depth-4-missing-False": {
+          "correct": 3,
+          "total": 40
+        },
+        "missing-False": {
+          "correct": 8,
+          "total": 120
+        },
+        "clean": {
+          "correct": 48,
+          "total": 120
+        },
+        "distracted": {
+          "correct": 33,
+          "total": 120
+        },
+        "depth-5-missing-False": {
+          "correct": 1,
+          "total": 40
+        },
+        "depth-6-missing-False": {
+          "correct": 4,
+          "total": 40
+        },
+        "depth-4-missing-True": {
+          "correct": 25,
+          "total": 40
+        },
+        "missing-True": {
+          "correct": 73,
+          "total": 120
+        },
+        "depth-5-missing-True": {
+          "correct": 24,
+          "total": 40
+        },
+        "depth-6-missing-True": {
+          "correct": 24,
+          "total": 40
+        }
+      },
+      "prompt": {
+        "all": {
+          "correct": 75,
+          "total": 240
+        },
+        "depth-4-missing-False": {
+          "correct": 3,
+          "total": 40
+        },
+        "missing-False": {
+          "correct": 10,
+          "total": 120
+        },
+        "clean": {
+          "correct": 33,
+          "total": 120
+        },
+        "distracted": {
+          "correct": 42,
+          "total": 120
+        },
+        "depth-5-missing-False": {
+          "correct": 2,
+          "total": 40
+        },
+        "depth-6-missing-False": {
+          "correct": 5,
+          "total": 40
+        },
+        "depth-4-missing-True": {
+          "correct": 20,
+          "total": 40
+        },
+        "missing-True": {
+          "correct": 65,
+          "total": 120
+        },
+        "depth-5-missing-True": {
+          "correct": 23,
+          "total": 40
+        },
+        "depth-6-missing-True": {
+          "correct": 22,
+          "total": 40
+        }
+      },
+      "oracle": {
+        "all": {
+          "correct": 121,
+          "total": 240
+        },
+        "depth-4-missing-False": {
+          "correct": 11,
+          "total": 40
+        },
+        "missing-False": {
+          "correct": 21,
+          "total": 120
+        },
+        "clean": {
+          "correct": 66,
+          "total": 120
+        },
+        "distracted": {
+          "correct": 55,
+          "total": 120
+        },
+        "depth-5-missing-False": {
+          "correct": 5,
+          "total": 40
+        },
+        "depth-6-missing-False": {
+          "correct": 5,
+          "total": 40
+        },
+        "depth-4-missing-True": {
+          "correct": 34,
+          "total": 40
+        },
+        "missing-True": {
+          "correct": 100,
+          "total": 120
+        },
+        "depth-5-missing-True": {
+          "correct": 31,
+          "total": 40
+        },
+        "depth-6-missing-True": {
+          "correct": 35,
+          "total": 40
+        }
+      },
+      "zero": {
+        "all": {
+          "correct": 60,
+          "total": 240
+        },
+        "depth-4-missing-False": {
+          "correct": 4,
+          "total": 40
+        },
+        "missing-False": {
+          "correct": 11,
+          "total": 120
+        },
+        "clean": {
+          "correct": 32,
+          "total": 120
+        },
+        "distracted": {
+          "correct": 28,
+          "total": 120
+        },
+        "depth-5-missing-False": {
+          "correct": 1,
+          "total": 40
+        },
+        "depth-6-missing-False": {
+          "correct": 6,
+          "total": 40
+        },
+        "depth-4-missing-True": {
+          "correct": 19,
+          "total": 40
+        },
+        "missing-True": {
+          "correct": 49,
+          "total": 120
+        },
+        "depth-5-missing-True": {
+          "correct": 10,
+          "total": 40
+        },
+        "depth-6-missing-True": {
+          "correct": 20,
+          "total": 40
+        }
+      },
+      "mapping_only": {
+        "all": {
+          "correct": 87,
+          "total": 240
+        },
+        "depth-4-missing-False": {
+          "correct": 12,
+          "total": 40
+        },
+        "missing-False": {
+          "correct": 22,
+          "total": 120
+        },
+        "clean": {
+          "correct": 50,
+          "total": 120
+        },
+        "distracted": {
+          "correct": 37,
+          "total": 120
+        },
+        "depth-5-missing-False": {
+          "correct": 2,
+          "total": 40
+        },
+        "depth-6-missing-False": {
+          "correct": 8,
+          "total": 40
+        },
+        "depth-4-missing-True": {
+          "correct": 26,
+          "total": 40
+        },
+        "missing-True": {
+          "correct": 65,
+          "total": 120
+        },
+        "depth-5-missing-True": {
+          "correct": 18,
+          "total": 40
+        },
+        "depth-6-missing-True": {
+          "correct": 21,
+          "total": 40
+        }
+      },
+      "heads_only": {
+        "all": {
+          "correct": 73,
+          "total": 240
+        },
+        "depth-4-missing-False": {
+          "correct": 4,
+          "total": 40
+        },
+        "missing-False": {
+          "correct": 10,
+          "total": 120
+        },
+        "clean": {
+          "correct": 38,
+          "total": 120
+        },
+        "distracted": {
+          "correct": 35,
+          "total": 120
+        },
+        "depth-5-missing-False": {
+          "correct": 2,
+          "total": 40
+        },
+        "depth-6-missing-False": {
+          "correct": 4,
+          "total": 40
+        },
+        "depth-4-missing-True": {
+          "correct": 24,
+          "total": 40
+        },
+        "missing-True": {
+          "correct": 63,
+          "total": 120
+        },
+        "depth-5-missing-True": {
+          "correct": 15,
+          "total": 40
+        },
+        "depth-6-missing-True": {
+          "correct": 24,
+          "total": 40
+        }
+      },
+      "strength_only": {
+        "all": {
+          "correct": 78,
+          "total": 240
+        },
+        "depth-4-missing-False": {
+          "correct": 8,
+          "total": 40
+        },
+        "missing-False": {
+          "correct": 15,
+          "total": 120
+        },
+        "clean": {
+          "correct": 47,
+          "total": 120
+        },
+        "distracted": {
+          "correct": 31,
+          "total": 120
+        },
+        "depth-5-missing-False": {
+          "correct": 2,
+          "total": 40
+        },
+        "depth-6-missing-False": {
+          "correct": 5,
+          "total": 40
+        },
+        "depth-4-missing-True": {
+          "correct": 26,
+          "total": 40
+        },
+        "missing-True": {
+          "correct": 63,
+          "total": 120
+        },
+        "depth-5-missing-True": {
+          "correct": 15,
+          "total": 40
+        },
+        "depth-6-missing-True": {
+          "correct": 22,
+          "total": 40
+        }
+      },
+      "scope_only": {
+        "all": {
+          "correct": 68,
+          "total": 240
+        },
+        "depth-4-missing-False": {
+          "correct": 5,
+          "total": 40
+        },
+        "missing-False": {
+          "correct": 11,
+          "total": 120
+        },
+        "clean": {
+          "correct": 37,
+          "total": 120
+        },
+        "distracted": {
+          "correct": 31,
+          "total": 120
+        },
+        "depth-5-missing-False": {
+          "correct": 2,
+          "total": 40
+        },
+        "depth-6-missing-False": {
+          "correct": 4,
+          "total": 40
+        },
+        "depth-4-missing-True": {
+          "correct": 23,
+          "total": 40
+        },
+        "missing-True": {
+          "correct": 57,
+          "total": 120
+        },
+        "depth-5-missing-True": {
+          "correct": 11,
+          "total": 40
+        },
+        "depth-6-missing-True": {
+          "correct": 23,
+          "total": 40
+        }
+      }
+    },
+    "contrasts": {
+      "native": {
+        "fixes": 51,
+        "regressions": 11,
+        "wrong_to_wrong": 53,
+        "label_changes": 115
+      },
+      "r14": {
+        "fixes": 42,
+        "regressions": 10,
+        "wrong_to_wrong": 46,
+        "label_changes": 98
+      },
+      "lexical": {
+        "fixes": 29,
+        "regressions": 10,
+        "wrong_to_wrong": 29,
+        "label_changes": 68
+      },
+      "prompt": {
+        "fixes": 44,
+        "regressions": 19,
+        "wrong_to_wrong": 49,
+        "label_changes": 112
+      }
+    },
+    "score_confusion": {
+      "0.5": {
+        "tp": 804,
+        "fp": 94,
+        "tn": 2426,
+        "fn": 276
+      },
+      "0.8": {
+        "tp": 511,
+        "fp": 2,
+        "tn": 2518,
+        "fn": 569
+      }
+    },
+    "brier": 0.08506380555555558,
+    "score_questions": 3600,
+    "api_seconds": 91.18280823500118,
+    "api_usage": {
+      "input_tokens": 722211,
+      "output_tokens": 74460
+    },
+    "successful_calls": 240,
+    "failed_calls": 0,
+    "constant_unknown_accuracy": 0.5,
+    "work": {
+      "native": {
+        "model_seconds": 6.100907404001191,
+        "prefill_tokens": 74292,
+        "generated_tokens": 240
+      },
+      "r14": {
+        "model_seconds": 6.6214052700024695,
+        "prefill_tokens": 74292,
+        "generated_tokens": 240
+      },
+      "r15": {
+        "model_seconds": 6.741286869994383,
+        "prefill_tokens": 74292,
+        "generated_tokens": 240
+      },
+      "shuffled": {
+        "model_seconds": 6.766646697004489,
+        "prefill_tokens": 74292,
+        "generated_tokens": 240
+      },
+      "lexical": {
+        "model_seconds": 6.746254307999152,
+        "prefill_tokens": 74292,
+        "generated_tokens": 240
+      },
+      "prompt": {
+        "model_seconds": 6.158374898000147,
+        "prefill_tokens": 78782,
+        "generated_tokens": 240
+      },
+      "oracle": {
+        "model_seconds": 6.761647758997697,
+        "prefill_tokens": 74292,
+        "generated_tokens": 240
+      },
+      "zero": {
+        "model_seconds": 6.14797012499821,
+        "prefill_tokens": 74292,
+        "generated_tokens": 240
+      },
+      "mapping_only": {
+        "model_seconds": 6.615205452005284,
+        "prefill_tokens": 74292,
+        "generated_tokens": 240
+      },
+      "heads_only": {
+        "model_seconds": 6.76400513399858,
+        "prefill_tokens": 74292,
+        "generated_tokens": 240
+      },
+      "strength_only": {
+        "model_seconds": 6.6246224310007165,
+        "prefill_tokens": 74292,
+        "generated_tokens": 240
+      },
+      "scope_only": {
+        "model_seconds": 6.625951736004936,
+        "prefill_tokens": 74292,
+        "generated_tokens": 240
+      }
+    }
+  },
+  "provenance": {
+    "scope": "Post-hoc descriptive diagnostics; no new inference or hypothesis tests",
+    "source_sha256": "5927d5288e76af89932eb5436a5b367555a814843f27d26691c37c71ab046077",
+    "inputs": {
+      "research/protocols/evidence-attention-v2/test.json": "5849d22b840f02b7ecefdee9f9d4d0a02ea51ca897f51f95fdd77bb933aaa7a3",
+      "results/evidence-nebius-finished-20260922/evidence-attention-v2-finished/test.jsonl": "06a6680bb66a56b63eac1b07497426091a11f063e5ce9531a12ac71ca4e69bbe",
+      "results/evidence-nebius-finished-20260922/evidence-attention-v2-finished/test-scores.jsonl": "952c8c4a608cbda002b99689e3a3d2e543c2f9e438e8d1dbb456c54e8e28b0fa",
+      "research/protocols/evidence-attention-v2/challenge.json": "47194a3399a2446ca9d5d31e68313a8a773e0006ff89b18d5d8763dd1985fc3e",
+      "results/evidence-nebius-finished-20260922/evidence-attention-v2-finished/challenge.jsonl": "3608c608e327a49b89362780aceada564b024dcc7297513f387014a9d92b579b",
+      "results/evidence-nebius-finished-20260922/evidence-attention-v2-finished/challenge-scores.jsonl": "99f99af9b650189d4f6eae56df7dd08d7eaac413ccf0f8b1d53970be478e052d"
+    }
+  }
+}

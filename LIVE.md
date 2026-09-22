@@ -1,13 +1,20 @@
 # Verified implementation inventory
 
-R14 update: the internal attention hook and full study are completed on the
-research branch. All 5,760 held-out outputs completed without API/model failures;
-Granite scored 42.22%, Jev attention 51.25% (+9.03 pp, adjusted interval [5.83,12.50]).
-Lexical/prompt superiority is inconclusive and the all-controls criterion is unmet;
-always UNKNOWN scores 50% on this constrained task. See the [full report](reports/2026-09-21-evidence-attention/README.md)
-for all traces, 23,136 audited decisions, 732 receipts and unchanged weight hashes.
-All task resources are deleted; cumulative estimate $9.27/$50. This is research
-branch evidence, not a published package/model or general reasoning improvement.
+[R15 completed study](reports/2026-09-22-evidence-attention-refinement/README.md):
+R15's fresh 600-world comparison scores **38.08% native Granite**, **47.33%
+previous Jev attention**, and **68.42% refined Jev attention**. The paired primary
+gains are +30.33 pp [26.67,34.00] versus native and +21.08 pp [17.92,24.25] versus
+R14, using individual 97.5% intervals. The prespecified advancement criterion is
+met. Lexical/prompt/shuffled comparisons are exploratory and favorable on this
+primary cohort. Longer-chain challenge accuracy is only **41.67%**, below the
+50% constant-UNKNOWN reference, so broad reasoning utility remains unestablished.
+
+The complete schedule contains 34,777 records and 34,679 actual model forwards,
+with two provider failures retained and no paid/model replay. Operational amendments,
+including one after test start, are disclosed; the selected policy/test freeze and
+weights stayed unchanged. All task cloud resources are deleted. New cost is about
+**$1.90**, cumulative **$11.17/$50**. This is research
+branch evidence, not a published trained checkpoint or unrestricted chat result.
 
 Inventory introduced on 2026-09-20 by
 [PR #1](https://github.com/OVRLab/jev-guided-decoding/pull/1); its GitHub status

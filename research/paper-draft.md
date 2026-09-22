@@ -1,6 +1,6 @@
 # From Claim Verification to Evidence Attention: Jev Guidance in Frozen Granite
 
-Working title and manuscript scaffold, 2026-09-21. Not submitted, peer reviewed,
+Working title and manuscript scaffold, updated 2026-09-22. Not submitted, peer reviewed,
 or a report of a successful replacement architecture. Authors, affiliations,
 contributions and publication venue are intentionally unset pending owner decisions.
 
@@ -37,6 +37,16 @@ This is a narrow supported gain over native generation with limited absolute
 utility, not a general reasoning improvement. The combined studies distinguish
 local judgment accuracy, insertion mechanism and final-answer quality; changes
 in tasks and generation contracts prevent a direct ranking of insertion points.
+
+A finite refinement then calibrates ninety attention policies on 96 new development
+worlds and evaluates twelve arms on 600 fresh test worlds. Native, previous Jev
+and refined Jev attention score 38.08%, 47.33% and 68.42%; adjusted primary gains
+are +30.33 points [26.67,34.00] and +21.08 [17.92,24.25]. The selected policy uses
+twelve heads, ln(16) and binary relevance above 0.5. Two provider failures and all
+operational amendments are retained; selection and weights remain fixed. On 120
+longer-chain worlds, refined accuracy is only 41.67%, below the 50% constant-UNKNOWN
+reference. Thus targeted evidence attention shows a reproducible narrow gain,
+while longer-chain composition and general task utility remain unresolved.
 
 ## 1. Question and scope
 
@@ -395,6 +405,85 @@ not an invoice. The result supports a specific internal intervention on a narrow
 task but does not establish Jev-specific superiority over simpler relevance
 controls, broadly useful accuracy, or the best insertion point across tasks.
 
+### 7.4 R15: deployed-score calibration and fresh attention refinement
+
+The [prospective R15 protocol](evidence-attention-v2-protocol.md) searches 90
+configurations over top 1/2/4/8/12 previously ranked heads, ln(4)/ln(8)/ln(16),
+soft/hard50/hard80 relevance maps, and all post-evidence versus final query scope.
+Ninety-six new development worlds, each with two contexts, select once under
+predeclared class/context harm floors. The chosen twelve-head, ln(16), hard50
+configuration keeps the original query scope and acts across nine attention layers.
+Development accuracy is 127/192 (66.15%), versus 74 native and 86 previous Jev;
+these optimistic selection outcomes are separate from the test below.
+
+All new development/test/challenge aliases exclude exposed R14 and each other.
+Both new development and test use the containment wording previously reserved for
+R14 test; the original policy is rerun on the same new instances. Every final
+answer is one Granite-generated token from six colors plus UNKNOWN. Jev receives
+only the question and source records, and returns typed source relevance once
+before each forward set; no reference labels, hidden tensors or final choices
+are supplied to the judge. Model weights remain unchanged.
+
+| Primary arm | Correct / 1,200 | Accuracy |
+| --- | ---: | ---: |
+| Native Granite | 457 | 38.08% |
+| Frozen previous Jev attention | 568 | 47.33% |
+| Refined Jev attention | 821 | 68.42% |
+| Shuffled Jev | 558 | 46.50% |
+| Lexical attention | 655 | 54.58% |
+| Jev prompt highlighting | 541 | 45.08% |
+| Privileged oracle relevance | 802 | 66.83% |
+
+The two primary contrasts average paired contexts within 600 worlds and use
+10,000 world-bootstrap draws with individual 97.5% intervals: refined minus
+native +30.33 pp [26.67,34.00], refined minus previous +21.08 [17.92,24.25]. Both
+lower bounds are positive and improvement over previous exceeds two points, so
+the predeclared next-version advancement criterion is met. This does not replace
+R14's historical all-controls criterion. Exploratory unadjusted 95% intervals
+favor refined guidance over lexical (+13.83 [11.42,16.25]), prompt (+23.33
+[19.83,26.92]) and shuffled scores (+21.92 [18.92,25.00]) on this cohort.
+Oracle is an annotation policy under a fixed intervention, not a theoretical
+accuracy ceiling; the small exploratory refined-oracle difference does not prove
+that erroneous relevance judgments are beneficial.
+
+Single-factor point estimates versus R14 are +9.42 pp for mapping, +7.75 for
+strength, +2.00 for head count, and zero for the unchanged query scope. The full
++21.08-point change does not identify additive contributions or causal interactions.
+Answerable primary accuracy rises from 82/600 native to 361/600 refined; missing
+links rise from 375/600 to 460/600. There are 384 fixes and 20 regressions versus
+native, and 277 fixes and 24 regressions versus R14. These are descriptive counts.
+
+The frozen policy then scores 100/240 (41.67%) on 120 worlds at depths 4/5/6,
+versus 60/240 (25.00%) native and 68/240 (28.33%) previous. Although exploratory
+intervals favor refined over those baselines, it is below constant UNKNOWN (50%):
+only 19/120 answerable cases succeed. Its contrast to shuffled scores is inconclusive
+(+3.33 pp, unadjusted interval [−2.08,8.75]). Strong primary gains therefore do not
+establish reliable long-chain reasoning or a generally optimal insertion point.
+
+Execution required transparent operational amendments. An initial development
+transport timeout was retained as ninety failed guided policy outcomes; a
+checkpoint snapshot bug was repaired before selection. HTTP 503 at the 48th test
+context led to a registered **post-test-start** admission amendment, allowing
+bounded transient errors and retaining all eight dependent failures for that case.
+A list/tuple freeze-check error then stopped a prelaunch with zero new operations;
+its repair preserves the original freeze bytes. No held-out accuracy aggregate
+informed these repairs, no model/paid job was replayed, and scientific settings
+were held fixed. The original pristine protocol was not executed unchanged.
+
+All 34,777 planned output records are public: 34,679 actual model forwards and
+98 provider-dependent failures. There are 1,632 paid attempts, 1,630 valid receipts
+and two maximum-charged unknown calls. Independent code reconstructs graph grades,
+selection, exact final-token/bias provenance, all raw prefixes, per-request ledger
+settlements and paired intervals. Saved zero/native label-token equality holds
+for 1,465 pairs; twelve full-vocabulary checks have persisted runtime results.
+Earlier lost full-vocabulary snapshots are explicitly distinguished from retained
+seven-label evidence. Five loaded segments have identical weight digests.
+
+The [full R15 report](../reports/2026-09-22-evidence-attention-refinement/README.md)
+provides all controls, failure logs/registrations, traces, figures, diagnostics,
+timing, checksums and reproduction. One L40S was used; new estimated cost is $1.90,
+cumulative $11.17/$50 before tax/separate network. All task resources are deleted.
+
 ## 8. Limitations and threats to validity
 
 - R10 combines Jev ranking and rejection and lacks a direct-prompt control. R13
@@ -406,6 +495,11 @@ controls, broadly useful accuracy, or the best insertion point across tasks.
   reference is strong. Lexical/prompt superiority is unresolved. Its internal
   steering during the final phase cannot be pooled with R13's different task and
   unassisted final phase to identify a generally best insertion point.
+- R15 improves the authored short-chain task but selects the largest head count
+  and strength in its finite grid; no optimum beyond that grid is established.
+  The longer-chain challenge remains below constant UNKNOWN, with inconclusive
+  superiority over shuffled guidance. Its post-start service-admission amendment
+  limits pristine preregistration claims despite fixed selection and retained failures.
 - Equal configured limits did not produce equal actual compute. More search and
   different stopping are potential explanations independent of scorer knowledge.
 - Final correctness does not certify intermediate explanations. Most trace
@@ -415,7 +509,7 @@ controls, broadly useful accuracy, or the best insertion point across tasks.
   used cases in this project does not establish training-data noncontamination.
 - A small model, one checkpoint, limited task distributions and a hosted judge version limit
   generalization. Provider outputs can vary despite pinned requested identifiers.
-- Private external traces limit public per-example reproduction. R13/R14 authored
+- Private external traces limit public per-example reproduction. R13/R14/R15 authored
   fixtures improve public transparency but introduce template bias.
 - Post-hoc inspection informed the redesign. The old test is exposed and cannot
   test the new hypothesis independently. Smaller or negative effects are reportable.
@@ -426,7 +520,7 @@ Public reports include source revisions, model revisions, case IDs, hashes,
 aggregate outcomes, cost assumptions and reproduction commands. Authored fixture
 traces are public. Raw external benchmark text/full traces remain private under
 the stated dataset-rights policy; the repository license does not relicense them.
-All temporary infrastructure for R10, R13 and R14 was deleted after verified artifact retrieval.
+All temporary infrastructure for R10, R13, R14 and R15 was deleted after verified artifact retrieval.
 The estimated $3.29 cost covers the corrected study and its two pilots, not all
 development or a provider invoice.
 
@@ -440,7 +534,6 @@ Peer review and human scientific review have not occurred. The unavailable
 automated code reviewer is not evidence of scientific review or approval.
 
 The evidence supports a transparent report of negative step/logit-guidance studies
-and a qualified positive native-baseline result for source attention. It does not
-support a general model-improvement release or conclusive superiority over all
-simpler controls. This manuscript remains a draft; no scientific review or
+and improved short-chain source attention after finite calibration. It does not
+support a general model-improvement release or reliable longer-chain reasoning. This manuscript remains a draft; no scientific review or
 publication is implied by successful engineering checks.

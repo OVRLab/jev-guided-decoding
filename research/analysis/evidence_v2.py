@@ -105,6 +105,27 @@ def independent_statistics(records, cases, summary, draws, confirmatory):
     indices = np.array([rng.choices(range(len(groups)), k=len(groups)) for _ in range(draws)])
     result = {}
     for i, arm in enumerate(ARMS):
+        recorded = [r for r in records if r["mode"] == arm]
+        given_arm = summary["arms"][arm]
+        require(
+            given_arm["planned"] == len(cases) and given_arm["recorded"] == len(recorded),
+            "Summary denominator mismatch",
+        )
+        require(
+            given_arm["complete"] == sum(r["status"] == "complete" for r in recorded)
+            and given_arm["failed"] == sum(r["status"] != "complete" for r in recorded),
+            "Summary completion mismatch",
+        )
+        for condition in ("clean", "distracted"):
+            subset = [c for c in cases if c["condition"] == condition]
+            require(
+                math.isclose(
+                    sum(correct(c, arm) for c in subset) / len(subset),
+                    given_arm["by_condition"][condition],
+                    abs_tol=1e-12,
+                ),
+                "Condition accuracy mismatch",
+            )
         require(
             math.isclose(
                 float(values[:, i].mean()), summary["arms"][arm]["accuracy"], abs_tol=1e-12
@@ -219,9 +240,45 @@ def run(args):
         continuation = read(args.results / "continuation.json")
         require(args.service_prior is not None, "Service-interrupted segment required")
         require(
-            continuation == read(args.manifest / "continuation.json"),
+            continuation
+            == read(
+                args.manifest
+                / (
+                    "continuation2.json"
+                    if "prelaunch_files" in continuation
+                    else "continuation.json"
+                )
+            ),
             "Service continuation changed",
         )
+        if "prelaunch_files" in continuation:
+            require(args.freeze_prior is not None, "Freeze-check prelaunch artifact required")
+            for name, expected in continuation["prelaunch_files"].items():
+                raw = (args.freeze_prior / name).read_bytes()
+                require(
+                    len(raw) == expected["bytes"]
+                    and hashlib.sha256(raw).hexdigest() == expected["sha256"],
+                    "Freeze-check prelaunch changed",
+                )
+                if name.endswith(".jsonl"):
+                    require(
+                        raw == (args.service_prior / name).read_bytes(),
+                        "Failed prelaunch performed new operations",
+                    )
+            first_continuation = read(args.freeze_prior / "continuation.json")
+            require(
+                first_continuation == read(args.manifest / "continuation.json"),
+                "First service continuation changed",
+            )
+            for key, hash_key in (
+                ("helper_path", "helper_sha256"),
+                ("amendment_path", "amendment_sha256"),
+            ):
+                require(
+                    hashlib.sha256((ROOT / first_continuation[key]).read_bytes()).hexdigest()
+                    == first_continuation[hash_key],
+                    "First service continuation source changed",
+                )
         for name, expected in continuation["prior_files"].items():
             raw = (args.service_prior / name).read_bytes()
             require(
@@ -345,6 +402,18 @@ def run(args):
             "Recovery occurred after selection or test",
         )
         require(recovery["at"] < metadata["at"], "Recovery was not registered prospectively")
+    for segment in (args.original, args.prior, args.service_prior, args.freeze_prior, args.results):
+        if segment is None:
+            continue
+        sm, sc = read(segment / "metadata.json"), read(segment / "completion.json")
+        require(
+            sm["weights_before"]
+            == sc["weights_before"]
+            == sc["weights_after"]
+            == metadata["weights_before"]
+            and sc["weights_unchanged"],
+            "A loaded segment changed weights",
+        )
     previous = manifest["previous_policy"]
     ranking = read(ROOT / "reports/2026-09-21-evidence-attention/artifacts/head-ranking.json")
     original = read(ROOT / "reports/2026-09-21-evidence-attention/artifacts/selected-policy.json")
@@ -766,6 +835,25 @@ def run(args):
         require(
             {r["id"] for r in settlements + maximums} == set(reserves), "Unaccounted reservation"
         )
+        requests = [r for r in starts if r["kind"] == "jev"]
+        settled_by = {r["id"]: r["input_tokens"] for r in settlements}
+        maximum_by = {r["id"] for r in maximums}
+        for reservation, request in zip(reserves, requests, strict=True):
+            receipt = evaluations[request["stage"]][request["id"]]
+            if receipt["status"] == "complete":
+                require(
+                    settled_by.get(reservation) == receipt["evaluation"]["input_tokens"],
+                    "Per-request usage mismatch",
+                )
+            else:
+                require(
+                    reservation in maximum_by and reservation not in settled_by,
+                    "Failed request lost maximum charge",
+                )
+        require(
+            completion["ledger"]["charged_input_tokens"] * 0.05 / 1e6 <= manifest["api_cap_usd"],
+            "API cap exceeded",
+        )
         require(
             all(r["at"] > recovery["at"] for r in starts[len(rows(args.prior / "starts.jsonl")) :]),
             "New work before registration",
@@ -788,7 +876,13 @@ def run(args):
         persisted_full_vocabulary_zero_pairs=len(equivalence),
         source_segments=[
             read(path / "metadata.json")["source_revision"]
-            for path in (args.original, args.prior, args.service_prior, args.results)
+            for path in (
+                args.original,
+                args.prior,
+                args.service_prior,
+                args.freeze_prior,
+                args.results,
+            )
             if path is not None
         ],
         input_hashes={
@@ -815,5 +909,6 @@ if __name__ == "__main__":
     p.add_argument("--prior", type=Path)
     p.add_argument("--original", type=Path)
     p.add_argument("--service-prior", type=Path)
+    p.add_argument("--freeze-prior", type=Path)
     p.add_argument("--ledger", type=Path)
     run(p.parse_args())

@@ -4,6 +4,9 @@ The original [prospective protocol](../../research/evidence-attention-v2-protoco
 was frozen before inference. Operational changes are separately registered in the
 [transport recovery](../../research/evidence-attention-v2-recovery.md) and
 [checkpoint repair](../../research/evidence-attention-v2-checkpoint-repair.md).
+The later [service continuation](../../research/evidence-attention-v2-service-continuation.md)
+and [freeze-comparison repair](../../research/evidence-attention-v2-freeze-repair.md)
+were registered after testing began; that operational deviation is disclosed.
 All model weights, scientific candidate configurations and test cohorts remained
 unchanged. The selected configuration was frozen before held-out inference.
 

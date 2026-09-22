@@ -1,9 +1,14 @@
 # Feature: Jev-guided intermediate reasoning
 
-Current work: [R15 refinement](reports/2026-09-22-evidence-attention-refinement/README.md)
-implements a bounded search around R14's positive attention result, with fresh
-primary/challenge cohorts and separate improvement-versus-R14 criteria. All 343
-local tests pass; cloud execution and final quality results are pending.
+Current work completed: [R15 refinement](reports/2026-09-22-evidence-attention-refinement/README.md)
+selected 12 heads, ln(16) and hard relevance gating. Fresh primary accuracy is
+38.08% native, 47.33% previous Jev and 68.42% refined Jev, meeting the frozen
+advancement criterion. All 34,777 planned records are retained, including 98
+provider-dependent failures; 34,679 actual forwards and 1,632 scorer attempts
+pass independent audit. All resources are deleted; 355 local tests pass.
+Longer-chain challenge accuracy is only 41.67%, below always UNKNOWN (50%).
+Remaining research is independent real-task evaluation and stronger long-chain
+composition, using new development/test separation; the present test is now exposed.
 
 The [R13 full study](reports/2026-09-21-structured-study/README.md) is complete:
 6,300 planned jobs attempted, 6,299 completed and one provider failure retained.

@@ -1,0 +1,22 @@
+{
+  "test": {
+    "planned": 14400,
+    "recorded": 14400,
+    "complete": 14392
+  },
+  "advancement": true,
+  "challenge": {
+    "planned": 2880,
+    "recorded": 2880,
+    "complete": 2880
+  },
+  "ledger": {
+    "charged_input_tokens": 4276005,
+    "unresolved": 0
+  },
+  "weights_before": "311c1141187580dc0905c810e9d9e78853a0bf37b865bd5a5a511f6eed72f8c9",
+  "weights_after": "311c1141187580dc0905c810e9d9e78853a0bf37b865bd5a5a511f6eed72f8c9",
+  "elapsed_seconds": 1071.216906095,
+  "at": "2026-09-22T00:08:33.276420+00:00",
+  "weights_unchanged": true
+}

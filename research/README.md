@@ -5,13 +5,21 @@ Granite inference. It includes negative results, corrections, new analyses, and
 proposed experiments. It is a basis for a paper, not a claim of a successful model
 release. All dates below are report dates; source artifacts retain execution times.
 
-**Current conclusion:** [R14 internal evidence attention](../reports/2026-09-21-evidence-attention/README.md)
-completed all 5,760 held-out outputs with no errors: Granite 42.22%, Jev attention
-51.25% (+9.03 pp, adjusted interval [5.83, 12.50]). This supports a narrow gain
-over native and shuffled controls; superiority over lexical/prompt highlighting
-is inconclusive, so the all-four-control success criterion is unmet. Always
-UNKNOWN obtains 50% on this balanced task, limiting absolute utility. Weights
-remain unchanged; all task resources are deleted; cumulative estimate $9.27/$50.
+**Current conclusion:** [R15 refined evidence attention](../reports/2026-09-22-evidence-attention-refinement/README.md)
+R15's fresh 600-world comparison scores **38.08% native Granite**, **47.33%
+previous Jev attention**, and **68.42% refined Jev attention**. The paired primary
+gains are +30.33 pp [26.67,34.00] versus native and +21.08 pp [17.92,24.25] versus
+R14, using individual 97.5% intervals. The prespecified advancement criterion is
+met. Lexical/prompt/shuffled comparisons are exploratory and favorable on this
+primary cohort. Longer-chain challenge accuracy is only **41.67%**, below the
+50% constant-UNKNOWN reference, so broad reasoning utility remains unestablished.
+
+The complete schedule contains 34,777 records and 34,679 actual model forwards,
+with two provider failures retained and no paid/model replay. Operational amendments,
+including one after test start, are disclosed; the selected policy/test freeze and
+weights stayed unchanged. All task cloud resources are deleted. New cost is about
+**$1.90**, cumulative **$11.17/$50**. This is research
+branch evidence, not a published trained checkpoint or unrestricted chat result.
 
 The earlier step-selection and bounded output-logit policies did not demonstrate
 a useful final-answer gain on their different tasks.
@@ -27,7 +35,7 @@ weights are unchanged, and both temporary GPU deployments are deleted.
 | --- | --- |
 | [Study register](study-register.md) | Every recorded live study, failed pilot, correction, and offline follow-up |
 | [Architecture reassessment](architecture-reassessment.md) | Exact checkpoint, interface constraints, insertion-point decision and alternatives |
-| [Attention refinement](../reports/2026-09-22-evidence-attention-refinement/README.md) | R15 implemented and locally verified; [fresh evaluation plan](evidence-attention-v2-protocol.md), cloud results pending |
+| [Attention refinement](../reports/2026-09-22-evidence-attention-refinement/README.md) | R15 completed: 68.42% versus 38.08% native/47.33% prior; [frozen plan](evidence-attention-v2-protocol.md), full traces, amendments, challenge limits and audit |
 | [Evidence-attention study](../reports/2026-09-21-evidence-attention/README.md) | Completed R14: eight arms, narrow native-baseline gain with inconclusive simpler controls; [frozen plan](evidence-attention-protocol.md), all traces and audit |
 | [New diagnostic report](../reports/2026-09-21-architecture-reassessment/README.md) | Reproducible decomposition of 3,600 main and 48 development traces |
 | [Next experiment](next-experiment.md) | Staged evidence gates, controls, budgets, held-out evaluation and stop rules |

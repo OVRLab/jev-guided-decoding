@@ -87,7 +87,7 @@ The new analyzer records its own source hash, parser hash and exact private inpu
 file hash. Earlier reports saying “pending” describe their creation time; later
 rows supply the completion record without rewriting those historical files.
 
-## R15: planned refinement and complete fresh evaluation
+## R15: completed refinement and fresh evaluation
 
 The owner authorized iterating the positive R14 native-baseline result, then
 explicitly requested a full plan, implementation, cloud test and documentation.
@@ -96,9 +96,9 @@ bounded policies on 96 development worlds and freezes one before 600 primary-tes
 and 120 longer-chain challenge worlds. Twelve arms separate the previous R14
 version, native Granite, simpler controls and one-factor ablations. The new primary
 question is improvement over native and R14, with simpler controls secondary;
-R14's historical criterion/results are unchanged. Status: implementation verified
-with 343 local passing tests; [pre-execution report](../reports/2026-09-22-evidence-attention-refinement/README.md),
-fresh model evaluation pending.
+R14's historical criterion/results are unchanged. The initial checkpoint had 343
+local passing tests and inference pending; its [pre-execution record](../reports/2026-09-22-evidence-attention-refinement/pre-execution.md)
+is preserved. Final results follow the interruption history below.
 
 R15 execution interruption: the 103rd development Jev request timed out after 102
 complete contexts; original weights stayed unchanged and no held-out operation
@@ -131,3 +131,28 @@ prefixes verify zero new jobs. The [serialized-freeze repair](evidence-attention
 adds a regression that reproduces the false rejection, then confirms semantic
 JSON comparison while preserving the original freeze bytes and rejecting actual
 policy changes. Service admission and all scientific settings remain unchanged.
+
+### Final R15 result
+
+R15's fresh 600-world comparison scores **38.08% native Granite**, **47.33%
+previous Jev attention**, and **68.42% refined Jev attention**. The paired primary
+gains are +30.33 pp [26.67,34.00] versus native and +21.08 pp [17.92,24.25] versus
+R14, using individual 97.5% intervals. The prespecified advancement criterion is
+met. Lexical/prompt/shuffled comparisons are exploratory and favorable on this
+primary cohort. Longer-chain challenge accuracy is only **41.67%**, below the
+50% constant-UNKNOWN reference, so broad reasoning utility remains unestablished.
+
+The complete schedule contains 34,777 records and 34,679 actual model forwards,
+with two provider failures retained and no paid/model replay. Operational amendments,
+including one after test start, are disclosed; the selected policy/test freeze and
+weights stayed unchanged. All task cloud resources are deleted. New cost is about
+**$1.90**, cumulative **$11.17/$50**. This is research
+branch evidence, not a published trained checkpoint or unrestricted chat result.
+
+The [full report](../reports/2026-09-22-evidence-attention-refinement/README.md)
+contains five loaded segments, all four operational amendments, full exact public
+traces, independent reconstruction, 15 scientific figure exports and cost/cleanup
+records. The primary test has 14,392 complete outputs and eight failed dependent
+outputs; challenge has 2,880 complete outputs. Development retains ninety failed
+policy outputs for its single failed scorer context. All 1,465 saved zero/native
+label-token pairs match and twelve persisted full-vocabulary comparisons pass.

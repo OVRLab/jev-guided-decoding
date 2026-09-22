@@ -1,0 +1,315 @@
+{
+  "planned": 2880,
+  "recorded": 2880,
+  "worlds": 120,
+  "arms": {
+    "native": {
+      "planned": 240,
+      "recorded": 240,
+      "missing": 0,
+      "complete": 240,
+      "failed": 0,
+      "correct": 60,
+      "accuracy": 0.25,
+      "model_seconds": 6.100907404001191,
+      "by_condition": {
+        "clean": 0.26666666666666666,
+        "distracted": 0.23333333333333334
+      }
+    },
+    "r14": {
+      "planned": 240,
+      "recorded": 240,
+      "missing": 0,
+      "complete": 240,
+      "failed": 0,
+      "correct": 68,
+      "accuracy": 0.2833333333333333,
+      "model_seconds": 6.6214052700024695,
+      "by_condition": {
+        "clean": 0.30833333333333335,
+        "distracted": 0.25833333333333336
+      }
+    },
+    "r15": {
+      "planned": 240,
+      "recorded": 240,
+      "missing": 0,
+      "complete": 240,
+      "failed": 0,
+      "correct": 100,
+      "accuracy": 0.4166666666666667,
+      "model_seconds": 6.741286869994383,
+      "by_condition": {
+        "clean": 0.5166666666666667,
+        "distracted": 0.31666666666666665
+      }
+    },
+    "shuffled": {
+      "planned": 240,
+      "recorded": 240,
+      "missing": 0,
+      "complete": 240,
+      "failed": 0,
+      "correct": 92,
+      "accuracy": 0.38333333333333336,
+      "model_seconds": 6.766646697004489,
+      "by_condition": {
+        "clean": 0.44166666666666665,
+        "distracted": 0.325
+      }
+    },
+    "lexical": {
+      "planned": 240,
+      "recorded": 240,
+      "missing": 0,
+      "complete": 240,
+      "failed": 0,
+      "correct": 81,
+      "accuracy": 0.3375,
+      "model_seconds": 6.746254307999152,
+      "by_condition": {
+        "clean": 0.4,
+        "distracted": 0.275
+      }
+    },
+    "prompt": {
+      "planned": 240,
+      "recorded": 240,
+      "missing": 0,
+      "complete": 240,
+      "failed": 0,
+      "correct": 75,
+      "accuracy": 0.3125,
+      "model_seconds": 6.158374898000147,
+      "by_condition": {
+        "clean": 0.275,
+        "distracted": 0.35
+      }
+    },
+    "oracle": {
+      "planned": 240,
+      "recorded": 240,
+      "missing": 0,
+      "complete": 240,
+      "failed": 0,
+      "correct": 121,
+      "accuracy": 0.5041666666666667,
+      "model_seconds": 6.761647758997697,
+      "by_condition": {
+        "clean": 0.55,
+        "distracted": 0.4583333333333333
+      }
+    },
+    "zero": {
+      "planned": 240,
+      "recorded": 240,
+      "missing": 0,
+      "complete": 240,
+      "failed": 0,
+      "correct": 60,
+      "accuracy": 0.25,
+      "model_seconds": 6.14797012499821,
+      "by_condition": {
+        "clean": 0.26666666666666666,
+        "distracted": 0.23333333333333334
+      }
+    },
+    "mapping_only": {
+      "planned": 240,
+      "recorded": 240,
+      "missing": 0,
+      "complete": 240,
+      "failed": 0,
+      "correct": 87,
+      "accuracy": 0.3625,
+      "model_seconds": 6.615205452005284,
+      "by_condition": {
+        "clean": 0.4166666666666667,
+        "distracted": 0.30833333333333335
+      }
+    },
+    "heads_only": {
+      "planned": 240,
+      "recorded": 240,
+      "missing": 0,
+      "complete": 240,
+      "failed": 0,
+      "correct": 73,
+      "accuracy": 0.30416666666666664,
+      "model_seconds": 6.76400513399858,
+      "by_condition": {
+        "clean": 0.31666666666666665,
+        "distracted": 0.2916666666666667
+      }
+    },
+    "strength_only": {
+      "planned": 240,
+      "recorded": 240,
+      "missing": 0,
+      "complete": 240,
+      "failed": 0,
+      "correct": 78,
+      "accuracy": 0.325,
+      "model_seconds": 6.6246224310007165,
+      "by_condition": {
+        "clean": 0.39166666666666666,
+        "distracted": 0.25833333333333336
+      }
+    },
+    "scope_only": {
+      "planned": 240,
+      "recorded": 240,
+      "missing": 0,
+      "complete": 240,
+      "failed": 0,
+      "correct": 68,
+      "accuracy": 0.2833333333333333,
+      "model_seconds": 6.625951736004936,
+      "by_condition": {
+        "clean": 0.30833333333333335,
+        "distracted": 0.25833333333333336
+      }
+    }
+  },
+  "primary": {
+    "native": {
+      "difference": 0.16666666666666666,
+      "world_wins": 43,
+      "world_losses": 8,
+      "world_ties": 69,
+      "worlds": 120,
+      "interval": [
+        0.10416666666666667,
+        0.22916666666666666
+      ],
+      "interval_level": 0.95
+    },
+    "r14": {
+      "difference": 0.13333333333333333,
+      "world_wins": 37,
+      "world_losses": 7,
+      "world_ties": 76,
+      "worlds": 120,
+      "interval": [
+        0.07916666666666666,
+        0.19166666666666668
+      ],
+      "interval_level": 0.95
+    }
+  },
+  "secondary": {
+    "shuffled": {
+      "difference": 0.03333333333333333,
+      "world_wins": 24,
+      "world_losses": 17,
+      "world_ties": 79,
+      "worlds": 120,
+      "interval": [
+        -0.020833333333333332,
+        0.0875
+      ],
+      "interval_level": 0.95
+    },
+    "lexical": {
+      "difference": 0.07916666666666666,
+      "world_wins": 26,
+      "world_losses": 8,
+      "world_ties": 86,
+      "worlds": 120,
+      "interval": [
+        0.03333333333333333,
+        0.12916666666666668
+      ],
+      "interval_level": 0.95
+    },
+    "prompt": {
+      "difference": 0.10416666666666667,
+      "world_wins": 33,
+      "world_losses": 11,
+      "world_ties": 76,
+      "worlds": 120,
+      "interval": [
+        0.041666666666666664,
+        0.1625
+      ],
+      "interval_level": 0.95
+    },
+    "oracle": {
+      "difference": -0.0875,
+      "world_wins": 4,
+      "world_losses": 22,
+      "world_ties": 94,
+      "worlds": 120,
+      "interval": [
+        -0.13333333333333333,
+        -0.041666666666666664
+      ],
+      "interval_level": 0.95
+    },
+    "zero": {
+      "difference": 0.16666666666666666,
+      "world_wins": 43,
+      "world_losses": 8,
+      "world_ties": 69,
+      "worlds": 120,
+      "interval": [
+        0.10416666666666667,
+        0.22916666666666666
+      ],
+      "interval_level": 0.95
+    },
+    "mapping_only": {
+      "difference": 0.05416666666666667,
+      "world_wins": 19,
+      "world_losses": 7,
+      "world_ties": 94,
+      "worlds": 120,
+      "interval": [
+        0.008333333333333333,
+        0.1
+      ],
+      "interval_level": 0.95
+    },
+    "heads_only": {
+      "difference": 0.1125,
+      "world_wins": 32,
+      "world_losses": 7,
+      "world_ties": 81,
+      "worlds": 120,
+      "interval": [
+        0.0625,
+        0.16666666666666666
+      ],
+      "interval_level": 0.95
+    },
+    "strength_only": {
+      "difference": 0.09166666666666666,
+      "world_wins": 27,
+      "world_losses": 7,
+      "world_ties": 86,
+      "worlds": 120,
+      "interval": [
+        0.0375,
+        0.14583333333333334
+      ],
+      "interval_level": 0.95
+    },
+    "scope_only": {
+      "difference": 0.13333333333333333,
+      "world_wins": 37,
+      "world_losses": 7,
+      "world_ties": 76,
+      "worlds": 120,
+      "interval": [
+        0.07916666666666666,
+        0.19166666666666668
+      ],
+      "interval_level": 0.95
+    }
+  },
+  "advancement": null,
+  "confirmatory": false,
+  "provider_incidents_cumulative": 2,
+  "interpretation": "exploratory longer-chain challenge; no new confirmatory claim"
+}
