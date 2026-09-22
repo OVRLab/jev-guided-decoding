@@ -9,6 +9,8 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def load(name):
+    if name in ("study.py", "pipeline.py", "analyze.py"):
+        pytest.importorskip("torch")
     return runpy.run_path(str(ROOT / "research/iterations/semantic_evaluation" / name))
 
 

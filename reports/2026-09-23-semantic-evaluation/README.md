@@ -34,3 +34,9 @@ Original Granite and Jev weights remain unchanged. The evaluator is
 [Qwen3-14B](https://huggingface.co/Qwen/Qwen3-14B), Apache 2.0, pinned to revision
 `40c069824f4251a91eefaf281ebe4c544efd3e18`. External model, dataset and provider
 terms remain separate from the repository software license.
+
+The first core-only CI run exposed three new research tests importing the optional
+Torch runtime without declaring their dependency (394 passed, 43 skipped, three
+failed). Those tests now use the repository's existing optional-dependency skip
+convention. They still run in the full inference environment; judge packet/schema
+tests run in core CI. No scientific source, fixture, grading rule or limit changes.
