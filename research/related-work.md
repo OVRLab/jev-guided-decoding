@@ -17,6 +17,11 @@ are identified; reported gains in other work are not independently reproduced he
 
 A subsequent [targeted method comparison](decoding-method-comparison.md) reads FUDGE Section 3, Controlled Decoding Sections 2–3, and DeAL Section 3.2.2 against the frozen R13 implementation. It separates local claim support from future-answer value and records the exact KL reference distribution.
 
+The [R16 attention comparison](adaptive-attention-related-work.md), reviewed
+2026-09-22, adds primary-method readings of AutoPASTA, Spotlight and CAFE. It
+distinguishes automatic evidence selection, attention-mass-dependent strength
+and externally refreshed relevance without changing the running experiment.
+
 ## Actual hidden-state intervention and critic quality
 
 | Source | Relevant contribution | Boundary for our design |

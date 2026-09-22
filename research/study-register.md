@@ -201,3 +201,11 @@ registers six missing corners of that 2×2×2 combination, 3,600 constrained for
 using saved Jev receipts and no new API calls. It leaves the main 16,120-job study
 and primary contrasts unchanged. It diagnoses factor effects on reused contexts;
 it is not a fresh replication or permission to retune on test.
+
+### R16 targeted related-method review (no inference)
+
+On 2026-09-22, the [attention-method comparison](adaptive-attention-related-work.md)
+reads AutoPASTA, Spotlight and CAFE against the frozen R16 implementation, retaining
+primary-source retrieval hashes. It documents existing automatic/dynamic steering
+and untested comparators. It does not modify the live schedule or claim reproduced
+results or methodological novelty.
