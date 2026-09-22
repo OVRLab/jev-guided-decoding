@@ -15,6 +15,7 @@ contradictions. This is automated evaluator blinding, not independent human revi
 - [Frozen protocol and inputs](../../research/protocols/semantic-evaluation-v1/manifest.json)
 - [Evaluator and rubric](../../research/iterations/semantic_evaluation/judge.py)
 - [Regression and flow tests](../../tests/test_semantic_evaluation.py)
+- [Registered supplementary blind inspection](../../research/semantic-evaluation-blind-review.md)
 - [Previous R19 results and measurement artifacts](../2026-09-22-benefit-sufficiency/README.md)
 
 All 462 local tests passed in 8.01 seconds, including optional inference checks.
@@ -34,6 +35,8 @@ Original Granite and Jev weights remain unchanged. The evaluator is
 [Qwen3-14B](https://huggingface.co/Qwen/Qwen3-14B), Apache 2.0, pinned to revision
 `40c069824f4251a91eefaf281ebe4c544efd3e18`. External model, dataset and provider
 terms remain separate from the repository software license.
+See the [HotpotQA attribution](HotpotQA-NOTICE.md) and
+[SQuAD attribution](SQuAD-NOTICE.md) for incorporated dataset portions.
 
 The first core-only CI run exposed three new research tests importing the optional
 Torch runtime without declaring their dependency (394 passed, 43 skipped, three
