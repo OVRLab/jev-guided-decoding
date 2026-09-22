@@ -114,3 +114,10 @@ The [budget accounting repair](../../research/selective-budget-accounting-amendm
 retains the original freeze and binds the repaired script to selection-v2. A new
 provider-failure test failed before the repair and then passed; all development
 choices are byte-equivalent after excluding the script hash and timestamp.
+
+The [executed launcher](execution/run-study.sh) and
+[service unit](execution/study.service) were retrieved by hash comparison while
+the GPU worker was active; both match the public copies exactly. The
+[verification record](execution/launcher-verification.json) preserves their hashes.
+The launcher explicitly pins both CPU thread settings before starting the frozen
+source, and the service has a 7.5-hour runtime limit.
