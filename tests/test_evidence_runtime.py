@@ -106,6 +106,13 @@ def test_full_study_flow_retains_overload_and_continues_only_new_context(tmp_pat
     monkeypatch.setattr(asyncio, "sleep", sleep)
 
     async def exercise():
+        # This test exercises provider incident recovery, not CPU throughput.
+        # Scope its wall clock to this runpy module; keep asyncio and runtime clocks real.
+        from types import SimpleNamespace
+
+        monkeypatch.setitem(
+            S["Runner"].__init__.__globals__, "time", SimpleNamespace(monotonic=lambda: 0.0)
+        )
         r = S["Runner"](runtime(), tmp_path, {"max_seconds": 60, "bootstrap_draws": 100})
         cases = [D["context"](D["worlds"]("profile", 6)[0], c) for c in ("clean", "distracted")]
         with InputTokenBudget(tmp_path / "ledger.jsonl") as budget:
@@ -132,3 +139,17 @@ def test_full_study_flow_retains_overload_and_continues_only_new_context(tmp_pat
         assert sum(row["status"] == "failed" for row in rows) == 4
 
     asyncio.run(exercise())
+
+
+def test_study_deadline_still_stops_at_exact_limit(monkeypatch):
+    from types import SimpleNamespace
+
+    study = runpy.run_path(str(ROOT / "research/experiments/evidence_study.py"))
+    runner = object.__new__(study["Runner"])
+    runner.started = 0.0
+    runner.manifest = {"max_seconds": 60}
+    monkeypatch.setitem(
+        study["Runner"].__init__.__globals__, "time", SimpleNamespace(monotonic=lambda: 60.0)
+    )
+    with pytest.raises(TimeoutError, match="wall-time limit"):
+        runner.deadline()
