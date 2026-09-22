@@ -1,6 +1,19 @@
 # Feature: Jev-guided intermediate reasoning
 
-Latest completed work: [R18 single-prefill boundary study](reports/2026-09-22-boundary-attention/README.md).
+Latest completed work: [R19 benefit and sufficiency study](reports/2026-09-22-benefit-sufficiency/README.md).
+Internal source/instruction steering improves frozen benchmark scores, but answer
+inspection reveals material grading artifacts. Static instruction steering without
+Jev is not demonstrably worse overall. The benefit gate saves 54.44% of requests
+without a reliable matched-routing advantage. All 7,312 successful generations are
+audited and publicly replayable; both servers are deleted. New estimated cost is
+$3.00, cumulative $30.23/$50 before tax/network.
+
+Next proposed step: validate a blinded semantic grading rubric on fresh data,
+including equivalent abstentions, wrong partial matches and answer completeness,
+before further architecture tuning. Preserve R19's original scores and examples;
+do not regrade its test set to select a winning treatment.
+
+Previous completed work: [R18 single-prefill boundary study](reports/2026-09-22-boundary-attention/README.md).
 
 **R18 completed:** the single-prefill gate raises authored accuracy from
 **26.98% to 31.75%**, close to always Jev's **31.94%**, while saving **27.58%**
@@ -19,10 +32,6 @@ There are zero provider failures. All temporary resources are deleted after
 verified retrieval. New estimated cost is **$3.77**, cumulative **$27.23/$50**
 before tax/separate network. This is research-branch evidence, with mixed external
 quality, not a generally improved checkpoint or a serving-throughput benchmark.
-
-Current follow-up: [R19 expected benefit and evidence sufficiency](research/benefit-sufficiency-plan.md).
-The held-out study and separately registered static/shuffled controls are running;
-no new quality evidence is claimed before their independent audits.
 
 Previous completed work: [R17 selective attention](reports/2026-09-22-selective-attention/README.md).
 

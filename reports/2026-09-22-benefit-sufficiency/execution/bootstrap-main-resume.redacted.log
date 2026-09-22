@@ -1,0 +1,26 @@
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+active
+From https://github.com/OVRLab/jev-guided-decoding
+ * branch            research/jev-intermediate-steps -> FETCH_HEAD
+   73a26e0..8b0ab3f  research/jev-intermediate-steps -> origin/research/jev-intermediate-steps
+Previous HEAD position was 73a26e0 feat: test internal benefit and evidence sufficiency guidance
+HEAD is now at 8b0ab3f test: isolate recovery checks from host CPU speed
+Resolved 52 packages in 0.80ms
+Checked 50 packages in 0.52ms
+CPU thread pools pinned to one before offline validation
+........................................................................ [ 16%]
+........................................................................ [ 32%]
+........................................................................ [ 48%]
+........................................................................ [ 64%]
+........................................................................ [ 80%]
+........................................................................ [ 97%]
+.............                                                            [100%]
+445 passed in 14.31s
+
+Fetching 12 files:   0%|          | 0/12 [00:00<?, ?it/s]
+Fetching 12 files:  67%|██████▋   | 8/12 [00:00<00:00, 26.25it/s]
+Fetching 12 files:  92%|█████████▏| 11/12 [00:20<00:01,  1.82s/it]
+Fetching 12 files: 100%|██████████| 12/12 [01:17<00:00,  6.42s/it]
+Fetching 12 files: 100%|██████████| 12/12 [01:17<00:00,  6.42s/it]

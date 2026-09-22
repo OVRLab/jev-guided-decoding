@@ -1,11 +1,21 @@
 # Granite + Jev research record
 
-Current follow-up: [R19 expected benefit and evidence sufficiency](benefit-sufficiency-plan.md),
-registered before live inference; the held-out run is underway. A separately
-[registered supplement](benefit-sufficiency-controls.md) tests static instruction
-and shuffled sufficiency without new paid Jev calls. Quality remains pending.
+Latest completed work: [R19 expected benefit and evidence sufficiency](../reports/2026-09-22-benefit-sufficiency/README.md),
+with [all controls](../reports/2026-09-22-benefit-sufficiency/tables.md),
+[answer examples](../reports/2026-09-22-benefit-sufficiency/examples.md) and
+[public reconstruction](../reports/2026-09-22-benefit-sufficiency/reproduce.md).
+Native/dual scores are 26.74%/43.06% authored parser accuracy, 27.68%/32.95%
+Hotpot answer F1 and 25.44%/33.10% adapted SQuAD F1. Material phrase-matching and
+lexical-F1 artifacts prevent interpreting these as proven semantic improvements.
+Static instruction steering without Jev scores 46.53%/32.90%/34.49%; dual
+superiority is unestablished. A learned gate saves 54.44% of requests without
+demonstrating reliable within-domain call selection. Both schedules, the failed
+initial supplement, all corrections and 7,312 successful generations are retained.
+Both GPU servers are deleted; estimated new cost is $3.00, cumulative $30.23/$50
+before tax/network. The next proposed step is blinded semantic grading validation
+on fresh data before more architecture tuning.
 
-Latest completed work: [R18 single-prefill boundary study](../reports/2026-09-22-boundary-attention/README.md),
+Previous completed work: [R18 single-prefill boundary study](../reports/2026-09-22-boundary-attention/README.md),
 with [method](../reports/2026-09-22-boundary-attention/method.md),
 [all controls](../reports/2026-09-22-boundary-attention/tables.md) and
 [prior-method comparison](boundary-attention-related-work.md).

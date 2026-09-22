@@ -13,6 +13,7 @@ def main():
     parser.add_argument("--report", type=Path, required=True)
     parser.add_argument("--results", type=Path, required=True)
     parser.add_argument("--manifest", type=Path, required=True)
+    parser.add_argument("--controls-results", type=Path)
     args = parser.parse_args()
     report, raw, folder = args.report, args.results, args.manifest
     data = runpy.run_path(str(ROOT / "research/iterations/benefit_sufficiency/data.py"))
@@ -23,6 +24,14 @@ def main():
     rows = [json.loads(line) for line in (raw / "outputs.jsonl").read_text().splitlines()]
     cases = json.loads((folder / "test.json").read_text())
     lookup = {(r["case_id"], r["arm"]): r for r in rows if r["stage"] == "test"}
+    example_arms = ["native", "relevance", "sufficiency", "dual", "benefit_gate"]
+    if args.controls_results:
+        control_rows = [
+            json.loads(line)
+            for line in (args.controls_results / "outputs.jsonl").read_text().splitlines()
+        ]
+        lookup.update({(r["case_id"], r["arm"]): r for r in control_rows})
+        example_arms += ["instruction_always", "shuffled_sufficiency"]
 
     def pct(x):
         return f"{100 * x:.2f}"
@@ -139,6 +148,7 @@ def main():
         "Selected deterministically from frozen metric differences; unblinded qualitative",
         "inspection is supplementary, not independent semantic regrading. F1 improvement",
         "can reflect answer length or incidental word overlap. No grades or policies change.",
+        "Static control signals are canned; shuffled signals come from a recorded donor.",
         "",
     ]
     diagnostics = {}
@@ -200,15 +210,22 @@ def main():
                 f"Case `{c['id']}`. Question: {c['question']}",
                 f"Reference(s): {references}; missing evidence: {c['missing']}.",
                 "",
-                "| Arm | Frozen score | Jev sufficiency | Action | Output |",
+                "| Arm | Frozen score | Sufficiency signal | Action | Output |",
                 "| --- | ---: | ---: | --- | --- |",
             ]
-            for arm in ("native", "relevance", "sufficiency", "dual", "benefit_gate"):
+            for arm in example_arms:
                 r = lookup[c["id"], arm]
                 text = r["text"].replace("|", "\\|").replace("\n", "<br>")
+                signal = (
+                    "canned 0.0"
+                    if arm == "instruction_always"
+                    else f"donor {r['sufficient']}"
+                    if arm == "shuffled_sufficiency"
+                    else str(r["sufficient"])
+                )
                 examples.append(
                     f"| {arm} | {data['quality'](c, r['grade']):.4f} | "
-                    f"{r['sufficient']} | {r['intervention_action']} | {text} |"
+                    f"{signal} | {r['intervention_action']} | {text} |"
                 )
             examples += (
                 ["", "Evidence:", ""] + [f"- [{s['id']}] {s['text']}" for s in c["sources"]] + [""]

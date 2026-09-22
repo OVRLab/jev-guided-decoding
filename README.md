@@ -11,10 +11,21 @@ steps, plus a separate experimental hook that turns Jev source relevance into
 biases inside selected Granite attention heads. Granite and Jev weights remain
 unchanged; R19 fits a small regression controller. No vLLM serving extension is included.
 
-[R19 benefit/sufficiency study — running](reports/2026-09-22-benefit-sufficiency/README.md):
-new internal guidance and separately registered static/shuffled controls; quality results pending.
+[R19 benefit/sufficiency study — completed](reports/2026-09-22-benefit-sufficiency/README.md):
+Jev relevance/sufficiency steering raises frozen scores from **26.74% to 43.06%**
+authored parser accuracy, **27.68% to 32.95%** Hotpot answer F1 and **25.44% to
+33.10%** adapted SQuAD F1. Answer inspection exposes material parser and lexical
+grading artifacts, so these gains do **not yet establish better semantic answers**.
+Static instruction steering without Jev scores **46.53% / 32.90% / 34.49%**;
+Jev's superiority over that control is unestablished. The learned gate saves
+**54.44% of requests** but shows no reliable advantage over matched random routing.
+All **7,312 generations** pass artifact reconstruction; both GPU servers are
+deleted. Estimated new cost is **$3.00**, cumulative **$30.23/$50** before tax/network.
+See the [complete results](reports/2026-09-22-benefit-sufficiency/tables.md),
+[answer examples](reports/2026-09-22-benefit-sufficiency/examples.md) and
+[paper draft](research/paper-draft.md#78-r19-expected-treatment-benefit-and-evidence-sufficiency).
 
-[R18 single-prefill study](reports/2026-09-22-boundary-attention/README.md) ·
+[Previous R18 single-prefill study](reports/2026-09-22-boundary-attention/README.md) ·
 [Architecture](reports/2026-09-22-boundary-attention/method.md) ·
 [All results and controls](reports/2026-09-22-boundary-attention/tables.md).
 

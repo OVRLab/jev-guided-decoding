@@ -108,6 +108,15 @@ each control is reported separately with exploratory 95% intervals; the six main
 primary comparisons are unchanged. A single permutation and the dual-selected
 strength do not constitute a search for the strongest static control.
 
+The first supplemental attempt stopped before generation because an in-memory
+tuple/list comparison rejected JSON-equivalent character ranges. An
+[explicit correction](../../research/sufficiency-controls-canonicalization.md)
+preserves the original failed record and uses a separate v2 runner that compares
+serialized representations. All 608 prompts match, and the schedule, donors,
+settings and analysis remain unchanged. This correction preceded successful
+supplemental generation and any held-out quality inspection; it is disclosed as
+a post-start implementation amendment.
+
 The main and supplemental schedules contain 6,096 and 1,216 outcomes respectively.
 Both finish before held-out quality inspection. The scientific audit reconstructs
 the frozen prompts, source and instruction token maps, decisions, receipt bindings,

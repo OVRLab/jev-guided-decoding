@@ -30,7 +30,7 @@ def main():
     ]
     colors = ["#64748b", "#0284c7", "#d97706", "#059669", "#7c3aed", "#cbd5e1", "#e879a5"]
     domains = [
-        ("synthetic", "Authored accuracy"),
+        ("synthetic", "Authored parser accuracy"),
         ("hotpot", "HotpotQA answer F1"),
         ("squad2", "SQuAD2 adapted F1"),
     ]
@@ -109,7 +109,7 @@ def main():
         ax.legend(loc="upper right")
     fig.suptitle(
         "R19 • Descriptive answerability groups\n"
-        "No new subgroup significance tests; missing-evidence scores measure recognized abstention",
+        "No new subgroup significance tests; missing-evidence scores use a frozen phrase matcher",
         fontsize=13,
     )
     save(fig, "answerability")

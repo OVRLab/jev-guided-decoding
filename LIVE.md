@@ -1,10 +1,27 @@
 # Verified implementation inventory
 
-[R19 live study](reports/2026-09-22-benefit-sufficiency/README.md) is running on one
-L40S. Twelve real-checkpoint parity checks passed with zero logit/cache difference;
-448 current local tests pass, with the pre-inference 445-test suite also passing
-on the GPU host. New static/shuffled controls add three local tests and no API
-requests. Held-out quality, final cost and resource cleanup remain pending.
+[R19 completed study](reports/2026-09-22-benefit-sufficiency/README.md) tests a local
+benefit predictor and independent Jev sufficiency at the retained-prefill boundary.
+Native/dual scores are **26.74%/43.06%** authored parser accuracy,
+**27.68%/32.95%** Hotpot answer F1 and **25.44%/33.10%** adapted SQuAD F1.
+The primary authored dual-minus-relevance interval excludes zero; the other five
+primary intervals include zero. Material parser/F1 artifacts in saved answers
+prevent claiming semantic improvement. Static instruction steering scores
+**46.53%/32.90%/34.49%** without Jev; dual superiority is unestablished.
+The learned gate uses **277/608** test requests (**54.44% fewer**) but has no
+reliable advantage over random routing at matched within-domain call fractions.
+
+All **7,312 successful outcomes**, **139,811 final tokens**, **1,824 exact branch
+identities** and **1,068 successful Jev receipts** pass completed audits and public
+replay. Granite owns every final token, with unchanged weights, one retained
+prefill and no forced UNKNOWN spelling. A failed pre-generation supplement start
+is preserved alongside separate serialization and floating-point audit amendments.
+All **451 local tests** pass; the replacement GPU host passed its 449-test suite
+before inference. Twelve real-checkpoint parity checks had zero logit/cache
+difference. Both sequential L40S servers and their owned resources are verified
+deleted. Estimated R19 cost is **$3.00**, cumulative **$30.23/$50** before tax/network.
+This is completed research-branch evidence, not a released model or semantic
+replication. Blinded grading validation is the next proposed research step.
 
 [R18 completed study](reports/2026-09-22-boundary-attention/README.md).
 

@@ -1,8 +1,8 @@
 # Reconstructing R19
 
-The study is still running; the artifact-dependent commands below become usable
-after the completed archives and analyses are published. They reconstruct saved
-evidence rather than rerun model inference. Use the completed research commit:
+The completed archives include both successful schedules and the failed initial
+supplemental start. These commands reconstruct saved evidence without rerunning
+model inference. Use the completed research commit:
 the auditors require all frozen scientific source hashes to match.
 
 ## Environment and tokenizer
@@ -34,16 +34,16 @@ uv run --no-sync python research/diagnostics/unpack_selective_artifacts.py \
   --report reports/2026-09-22-benefit-sufficiency \
   --output results/r19-public-replay
 
-uv run --no-sync python research/iterations/benefit_sufficiency/analyze.py \
+uv run --no-sync python research/diagnostics/benefit_sufficiency_audit.py main \
   --manifest research/protocols/benefit-sufficiency-v1 \
   --results results/r19-public-replay/benefit-sufficiency-v1 \
   --output results/r19-public-replay/main-analysis.json
 
-uv run --no-sync python research/iterations/sufficiency_controls.py audit \
-  --manifest research/protocols/sufficiency-controls-v1 \
+uv run --no-sync python research/diagnostics/benefit_sufficiency_audit.py controls \
+  --manifest research/protocols/sufficiency-controls-v2 \
   --main-manifest research/protocols/benefit-sufficiency-v1 \
   --main-results results/r19-public-replay/benefit-sufficiency-v1 \
-  --results results/r19-public-replay/sufficiency-controls-v1 \
+  --results results/r19-public-replay/sufficiency-controls-v2 \
   --output results/r19-public-replay/controls-analysis.json
 
 uv run --no-sync python - <<'PY'
@@ -64,6 +64,9 @@ print("Both analyses reproduce all non-timestamp fields.")
 PY
 ```
 
+The [portable adapter](../../research/benefit-sufficiency-audit-portability.md)
+permits one adjacent float only in two logarithm features and retains every other
+original check. It writes a separate adapter metadata JSON next to each analysis.
 The checks reconstruct prompt/token maps, receipt provenance, frozen development
 selection, branch decisions, output-token records, work and grades. They verify
 the recorded weight hashes and do not rerun GPU forward passes. Agreement is not
@@ -79,7 +82,8 @@ editorial files only; the raw archives and protocol freezes remain unchanged.
 uv run --no-sync python research/diagnostics/benefit_sufficiency_report.py \
   --report reports/2026-09-22-benefit-sufficiency \
   --results results/r19-public-replay/benefit-sufficiency-v1 \
-  --manifest research/protocols/benefit-sufficiency-v1
+  --manifest research/protocols/benefit-sufficiency-v1 \
+  --controls-results results/r19-public-replay/sufficiency-controls-v2
 
 uv run --no-project --python 3.12.13 \
   --with matplotlib==3.11.2 --with numpy==2.5.3 --with pillow==12.3.0 \

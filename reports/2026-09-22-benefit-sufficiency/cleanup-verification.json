@@ -1,0 +1,23 @@
+{
+  "episodes": [
+    {
+      "created_at": "2026-09-22T20:39:33.675134+00:00",
+      "deletion_verified_at": "2026-09-22T22:05:59.915941+00:00",
+      "hours": 1.440622446388889,
+      "resources_deleted": true
+    },
+    {
+      "created_at": "2026-09-22T22:10:57.072215+00:00",
+      "deletion_verified_at": "2026-09-22T22:36:34.252771+00:00",
+      "hours": 0.4269945988888889,
+      "resources_deleted": true
+    }
+  ],
+  "result_bytes_verified_before_each_deletion": true,
+  "verified_unique_result_files": 28,
+  "both_instances_deleted": true,
+  "both_managed_disks_deleted": true,
+  "task_security_groups_and_rules_deleted": true,
+  "automatic_allocations_deleted": true,
+  "shared_network_preserved": true
+}
