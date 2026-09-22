@@ -56,13 +56,19 @@ Test conditional Jev dispatch, prefill/fading interventions and evidence-mass
 conservation on fresh unrestricted-answer tasks. Planned 2,028 development and
 6,336 test outcomes, plus mechanical admission. Granite owns final tokens; a
 development-fitted threshold controller may change but model weights do not.
-GPU numerical admission passed; development is running. No held-out quality result
+GPU numerical admission and development are complete; held-out evaluation is running. No held-out quality result
 is claimed at this stage.
 
 The [offline routing supplement](selective-routing-supplement.md) was registered
 after development began, before selection or held-out inference was inspected.
 It compares routing to expected random assignment at the same observed call count;
 it adds no live calls or generation and does not replace the original random arm.
+
+The [budget frontier](selective-budget-frontier.md) was registered after development
+selected always-calling guidance, while held-out inference was in progress and
+before held-out aggregate inspection. Rules for 25/50/75% development request
+ceilings were frozen at 12:22 UTC. It reconstructs quality and work from recorded
+branches; it does not measure actual API savings or new live gated latency.
 
 ## Corrections that the paper must retain
 

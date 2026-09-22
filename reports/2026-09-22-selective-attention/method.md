@@ -1,6 +1,7 @@
 # R17 method and prospective scope
 
-This study has passed numerical admission and is in development evaluation; no
+This study has passed numerical admission and development; held-out evaluation
+is running, and no
 held-out quality result is claimed at this stage. The [plan](../../research/selective-attention-plan.md)
 defines hypotheses, selection, controls, data counts, budgets and primary tests.
 The [related-work review](../../research/selective-attention-related-work.md)
@@ -54,6 +55,9 @@ its softmax mass and all outside probabilities are preserved for those Q/K.
 The within-evidence distribution and attention output can change. Conservation
 does not mean no downstream effect. Prefill-only guidance includes first-token
 prediction and can leave changed cached question representations for later tokens.
+The [mathematical note](../../research/selective-attention-math.md) derives the
+local conservation property and explains the distinction between uncertainty and
+expected treatment benefit.
 
 The benefit gate fits one threshold, direction and feature on development outcomes.
 It does not train the language model. Its features can fail to predict treatment
@@ -71,3 +75,8 @@ so realized call counts can differ on test. The separately registered
 [routing supplement](../../research/selective-routing-supplement.md) adds an
 offline expected random policy at the actual test call count. Its branch outcomes
 come from audited native/always traces; it is not an additional live experiment.
+
+The [budget-frontier supplement](../../research/selective-budget-frontier.md)
+freezes three additional development-selected rules under explicit request ceilings.
+Their offline branch replay describes the quality/call trade-off without claiming
+measured deployment savings or altering the main study.

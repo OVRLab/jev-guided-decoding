@@ -252,3 +252,17 @@ def test_uniform_source_judgments_are_an_exact_noop_with_unchanged_weights():
     assert native.result()["token_ids"] == equal.result()["token_ids"]
     assert equal.result()["hook_calls"] == 0
     assert all(torch.equal(v, before[k]) for k, v in runtime.base.model.state_dict().items())
+
+
+def test_additive_attention_matches_the_prior_r16_hook_exactly():
+    torch = pytest.importorskip("torch")
+    runtime, encoded, _, _ = tiny_runtime()
+    old = module("attention")["OLD"]["AdaptiveAttention"](runtime.base.model)
+    ids = encoded["input_ids"]
+    maps = {(0, 1): {0: 2.0}, (1, 2): {1: 4.0}}
+    with torch.inference_mode():
+        with old.apply(ids, query_start=3, maps=maps):
+            prior = runtime.base.model(torch.tensor([ids]), use_cache=False).logits
+        with runtime.hook.apply(ids, query_start=3, source_keys=[0, 1], maps=maps, mode="additive"):
+            current = runtime.base.model(torch.tensor([ids]), use_cache=False).logits
+    assert torch.equal(prior, current)

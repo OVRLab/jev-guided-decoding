@@ -8,7 +8,10 @@ release. All dates below are report dates; source artifacts retain execution tim
 **Current investigation:** [R17 selective attention](selective-attention-plan.md), with
 [architecture/method](../reports/2026-09-22-selective-attention/method.md) and
 [prior-art review](selective-attention-related-work.md). Implementation and offline
-validation are in progress; no live R17 quality result yet.
+validation are complete; held-out inference is running. The quality-first development
+gate selected calls on every case; the separately registered
+[budget frontier](selective-budget-frontier.md) will also examine explicit request
+ceilings. No held-out R17 quality result yet.
 
 **Latest completed study:** [R16 adaptive attention](../reports/2026-09-22-adaptive-attention/README.md).
 **R16 interpretation:** constrained-task improvement is established within this

@@ -17,7 +17,7 @@ Pre-run canonical checks pass: **396 tests**, Ruff lint and formatting, the AI
 guidance checker (49 Markdown files), and wheel/source builds. Inference tests use
 offline tiny models; the core-only CI environment skips optional dependencies.
 GPU numerical admission subsequently passed all nine real-checkpoint fixtures for
-both additive and mass-preserving cached/full-prefix computation. Development is
+both additive and mass-preserving cached/full-prefix computation. The held-out run is
 running; no held-out quality result is claimed at this stage.
 
 The first cloud bootstrap had 395 passing tests and one pre-existing test's
@@ -32,7 +32,8 @@ uniform-score no-op/weight identity. The separately registered
 [routing supplement](../../research/selective-routing-supplement.md) has three
 tests that first failed because its module was missing, then passed. Its offline
 counterfactual does not change the frozen cloud source or live schedule.
-With these additional checks, the full local suite passes **403 tests**; lint,
+With the additional output diagnostic, additive-hook equivalence and four budget
+frontier tests, the full local suite passes **409 tests**; lint,
 formatting, guidance checks and builds also pass. The cloud's frozen checkout
 remains `796873b`; later test/docs/offline-analysis commits do not alter its model run.
 
@@ -47,6 +48,12 @@ import the package. It was rerun successfully in the project environment before
 inference or cloud launch. The workflow now explicitly requires that interpreter
 for package-importing helpers. This was a local environment mistake, not a model
 or API result.
+
+The four budget-frontier tests first failed because the new module was missing,
+then passed. They check development-only selection under call ceilings, rejection
+of uniformly harmful guidance, exact pilot/prefill work accounting and frozen-rule
+tampering. The first lint check flagged a long line and the UTC alias; both were
+fixed before freezing the supplementary script and selection.
 
 The final report will record GPU admission, all executed counts, artifact audit,
 provider failures, source/runtime/weight hashes, actual cost and cleanup evidence.
