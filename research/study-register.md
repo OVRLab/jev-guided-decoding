@@ -322,3 +322,11 @@ examines the first four lexicographic unparsed tuned direct-answer cases. It
 documents citations and partial source restatements with natural EOS endings.
 The examples and deterministic selection are retained without regrading; they
 motivate an untested phase-specific guidance hypothesis, not a new causal finding.
+
+## R18: registered single-prefill boundary experiment
+
+The owner authorized implementation and testing of the pre-layer-19 boundary after
+R17 completion. The [prospective plan](boundary-attention-plan.md) registers one
+internal decision, new native attention features, 520 development and 8,856 held-out
+outcomes across fresh authored, Hotpot and SQuAD2.0 subsets. No new live result yet.
+Prior cumulative spend is $23.46/$50; up to $15 is reserved for this iteration.

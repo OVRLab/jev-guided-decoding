@@ -1,0 +1,291 @@
+[
+  {
+    "id": "r18/hotpot/5abe50b45542991f6610613f",
+    "world_id": "r18/hotpot/5abe50b45542991f6610613f",
+    "upstream_id": "5abe50b45542991f6610613f",
+    "family": "hotpot",
+    "question": "San Francisco National Cemetery is located at a park that is part of what National Recreation Area?",
+    "sources": [
+      {
+        "id": "D01",
+        "text": "Golden Gate National Cemetery: Golden Gate National Cemetery is a United States national cemetery in California, located in the city of San Bruno, 12 mi south of San Francisco. Because of the name and location, it is frequently confused with San Francisco National Cemetery, which dates to the 19th century and is in the Presidio of San Francisco, in view of the Golden Gate. Around 1937, San Francisco residents voted to bar the opening of new cemeteries within the city proper and, as a result, the site for the new national cemetery was selected south of the city limits in adjacent San Mateo County."
+      },
+      {
+        "id": "D02",
+        "text": "Candlestick Point State Recreation Area: Candlestick Point State Recreation Area (or simply Candlestick Point) is a state park unit of California, USA, providing an urban protected area on San Francisco Bay. The park is located at the southeastern tip of San Francisco immediately south of Hunters Point and 2 mi north of Sierra Point in Brisbane. This 170 acre landfilled area was intended to be used during World War II as a shipyard by the United States Navy. However it was abandoned as the war ended. Without government controls, the area was used by nearby residences as a garbage dump. In 1973 the California State Legislature purchased the land with $10 million and in 1977 voted to turn this area into a state recreation area. After the designation Candlestick became the first urban recreation area in the state. To this day Candlestick remains as a major recreation area in San Francisco, offering a wide view of the bay. The park features various picnic areas, two fishing piers, fitness courses as well as hiking trails. This park is also a popular area for windsurfing because of strong wind."
+      },
+      {
+        "id": "D03",
+        "text": "Presidio of San Francisco: The Presidio of San Francisco (originally, El Presidio Real de San Francisco or The Royal Fortress of Saint Francis) is a park and former U.S. Army military fort on the northern tip of the San Francisco Peninsula in San Francisco, California, and is part of the Golden Gate National Recreation Area."
+      },
+      {
+        "id": "D04",
+        "text": "Ed Jenkins National Recreation Area: Ed Jenkins National Recreation Area, formerly proposed as Springer Mountain National Recreation Area, is a National Recreation Area in Fannin and Union counties in the U.S. state of Georgia. Located in Chattahoochee-Oconee National Forest, the national recreation area was established in 1991 by Public Law 102-458. It is administered by the U.S. Forest Service and contains approximately 23330 acre . Prior to its establishment the area was known as the proposed Springer Mountain National Recreation Area. Springer Mountain, near the center of the recreation area, is the southern terminus of the Appalachian Trail."
+      },
+      {
+        "id": "D05",
+        "text": "Lake Roosevelt National Recreation Area: Lake Roosevelt National Recreation Area is a U.S. National Recreation Area under the supervision of the National Park Service. It encompasses the 130 mi long Franklin D. Roosevelt Lake between Grand Coulee Dam and Northport, Washington, in eastern Washington state. The Grand Coulee Dam was built on the Columbia River in 1941 as part of the Columbia River Basin project, named for President Franklin D. Roosevelt. Lake Roosevelt National Recreation Area provides opportunities for fishing, swimming, canoeing, boating, hunting, camping, and visiting historic Fort Spokane and St. Paul's Mission. Crescent Bay Lake in Grant County just southwest of Lake Roosevelt also falls under the jurisdiction of the National Recreation Area."
+      },
+      {
+        "id": "D06",
+        "text": "San Francisco National Cemetery: San Francisco National Cemetery is an United States national cemetery, located in the Presidio of San Francisco, California. Because of the name and location, it is frequently confused with Golden Gate National Cemetery, a few miles south of the city."
+      },
+      {
+        "id": "D07",
+        "text": "Golden Gate National Recreation Area: The Golden Gate National Recreation Area (GGNRA) is a U.S. National Recreation Area protecting 82,027 acre of ecologically and historically significant landscapes surrounding the San Francisco Bay Area. Much of the park is land formerly used by the United States Army. GGNRA is managed by the National Park Service and is one of the most visited units of the National Park system in the United States, with more than 15 million visitors a year. It is also one of the largest urban parks in the world, with a size two-and-a-half times that of the consolidated city and county of San Francisco."
+      },
+      {
+        "id": "D08",
+        "text": "Grand Island National Recreation Area: The Grand Island National Recreation Area is a National Recreation Area within the jurisdiction of the U.S. Forest Service. It is part of the Hiawatha National Forest. Located on Grand Island, Michigan offshore from Munising, Michigan, the Grand Island National Recreation Area covers approximately 13500 acre of Lake Superior woodland. Grand Island's glacier-cut lake shoreline measures approximately 35 mi in length. The island's maximum dimension is 8 mi from north to south. Grand Island was elevated to the status of a National Recreation Area by the U.S. Congress in 1990 after the U.S. Forest Service purchased the island from its former owner, Cleveland Cliffs Iron Co."
+      },
+      {
+        "id": "D09",
+        "text": "Jemez National Recreation Area: Jemez National Recreation Area is a National Recreation Area in the U.S. state of New Mexico. Located in Santa Fe National Forest, the U.S. Forest Service recreation area comprises 57650 acre and is administered by the U.S. Forest Service's Jemez Ranger District. The Forest Service administers the lands to promote the area for fishing, camping, rock climbing, hunting and hiking. Hunting is specifically permitted in the national recreation area. The government is required to consult with Jemez Pueblo on matters concerning cultural and religious sites and may close areas for traditional uses by the pueblo. Mining is prohibited, except on pre-existing claims."
+      },
+      {
+        "id": "D10",
+        "text": "Ross Lake National Recreation Area: Ross Lake National Recreation Area is a US National Recreation Area located in north central Washington just south of the Canada\u2013US border. It is the most accessible part of the North Cascades National Park Service Complex which also includes North Cascades National Park and Lake Chelan National Recreation Area. Ross Lake NRA follows the Skagit River corridor from the Canada\u2013US border to the western foothills of the Cascades. The NRA contains a portion of scenic Washington State Route 20, the North Cascades Highway, and includes three reservoirs: 12,000 acre Ross Lake, 910 acre Diablo Lake, and 210 acre Gorge Lake. These reservoirs make up the Skagit Hydroelectric Project operated by Seattle City Light. Nestled in the \"American Alps\" the Ross Lake NRA bisects the north and south units of North Cascades National Park. The Shape of the National Recreation area, was designed to prevent the proposed High ross dam from flooding the national park."
+      }
+    ],
+    "reference": "Golden Gate National Recreation Area",
+    "references": [
+      "Golden Gate National Recreation Area"
+    ],
+    "missing": false,
+    "condition": "distractor",
+    "question_type": "bridge",
+    "split": "admission"
+  },
+  {
+    "id": "r18/hotpot/5a8c9641554299585d9e36f5",
+    "world_id": "r18/hotpot/5a8c9641554299585d9e36f5",
+    "upstream_id": "5a8c9641554299585d9e36f5",
+    "family": "hotpot",
+    "question": "Which season of Alias does the English actor, who was born 25 June 1961, appear?",
+    "sources": [
+      {
+        "id": "D01",
+        "text": "\u00c1lvaro Solano: \u00c1lvaro Enrique Solano Artavia (born 25 June 1961 in Alajuela) is a retired Costa Rican football player, who used to play as a midfielder."
+      },
+      {
+        "id": "D02",
+        "text": "Jopie Nooren: Johanna Elisabeth Anna Maria \"Jopie\" Nooren (born 25 June 1961) is a Dutch occupational therapist, university professor, and politician. She is a member of the Labour Party and has been a member of the Senate in 9 June 2015."
+      },
+      {
+        "id": "D03",
+        "text": "Alias (season 3): The third season of the American drama/adventure television series Alias premiered September 28, 2003 on ABC and concluded May 23, 2004 and was released on DVD in region 1 on September 7, 2004. Guest stars in season three include Vivica A. Fox, Isabella Rossellini, Ricky Gervais, Griffin Dunne, Djimon Hounsou, Peggy Lipton, and Quentin Tarantino."
+      },
+      {
+        "id": "D04",
+        "text": "Peter Hudson (Royal Navy officer): Vice Admiral Peter Derek Hudson, {'1': \", '2': \", '3': \", '4': \"} (born 25 June 1961) is a Royal Navy officer who served as Commander Allied Maritime Command until October 2015."
+      },
+      {
+        "id": "D05",
+        "text": "Guillermo Hu\u00edzar: Guillermo Hu\u00edzar Carranza (born 25 June 1961) is a Mexican politician affiliated with the Party of the Democratic Revolution. As of 2014 he served as Deputy of the LIX Legislature of the Mexican Congress representing Zacatecas."
+      },
+      {
+        "id": "D06",
+        "text": "Massimo Ghirotto: Massimo Ghirotto (born 25 June 1961 in Boara Pisani) is an Italian former road bicycle racer."
+      },
+      {
+        "id": "D07",
+        "text": "Dave Smith (footballer, born 1961): David Alan \"Dave\" Smith (born 25 June 1961) is an English former professional footballer. His clubs included Gillingham, where he made over 100 Football League appearances, Bristol City, Plymouth Argyle and Notts County."
+      },
+      {
+        "id": "D08",
+        "text": "Yinka Durosinmi: Prince Yinka Mursiq Durosinmi (born 25 June 1961) is a Nigerian politician and former Chairman of Ojo local government area of Lagos State."
+      },
+      {
+        "id": "D09",
+        "text": "Ricky Gervais: Ricky Dene Gervais ( ; born 25 June 1961) is an English comedian, actor, writer, producer, director, singer, and musician."
+      },
+      {
+        "id": "D10",
+        "text": "Brian Coleman: Brian Coleman FRSA (born 25 June 1961) is an English Independent Conservative politician and a former councillor in the London Borough of Barnet. He was a Conservative Party member of the London Assembly for Barnet and Camden between 2000 and 2012, and in Barnet was Mayor for 2009\u20132010. He was also Chairman and Leader of the London Fire and Emergency Planning Authority (LFEPA) from May 2008 to 5 May 2012."
+      }
+    ],
+    "reference": "three",
+    "references": [
+      "three"
+    ],
+    "missing": false,
+    "condition": "distractor",
+    "question_type": "bridge",
+    "split": "admission"
+  },
+  {
+    "id": "r18/hotpot/5a776a7055429966f1a36d32",
+    "world_id": "r18/hotpot/5a776a7055429966f1a36d32",
+    "upstream_id": "5a776a7055429966f1a36d32",
+    "family": "hotpot",
+    "question": "What was the nationality and profession of the person responsible for the concept of a dimensionless number in physics and engineering?",
+    "sources": [
+      {
+        "id": "D01",
+        "text": "Kapitza number: The Kapitza number (Ka) is a dimensionless number named after the prominent Russian physicist Pyotr Kapitsa (Peter Kapitza). He provided the first extensive study of the ways in which a thin film of liquid flows down inclined surfaces. Expressed as the ratio of surface tension forces to inertial forces, the Kapitza number acts as an indicator of the hydrodynamic wave regime in falling liquid films. Liquid film behavior represents a subset of the more general class of free boundary problems. and is important in a wide range of engineering and technological applications such as evaporators, heat exchangers, absorbers, microreactors, small-scale electronics/microprocessor cooling schemes, air conditioning and gas turbine blade cooling."
+      },
+      {
+        "id": "D02",
+        "text": "Power factor: In electrical engineering, the power factor of an AC electrical power system is defined as the ratio of the real power flowing to the load to the apparent power in the circuit, and is a dimensionless number in the closed interval of \u22121 to 1. A power factor of less than one means that the voltage and current waveforms are not in phase, reducing the instantaneous product of the two waveforms (V \u00d7 I). Real power is the capacity of the circuit for performing work in a particular time. Apparent power is the product of the current and voltage of the circuit. Due to energy stored in the load and returned to the source, or due to a non-linear load that distorts the wave shape of the current drawn from the source, the apparent power will be greater than the real power. A negative power factor occurs when the device (which is normally the load) generates power, which then flows back towards the source, which is normally considered the generator."
+      },
+      {
+        "id": "D03",
+        "text": "Weissenberg number: The Weissenberg number (Wi) is a dimensionless number used in the study of viscoelastic flows. It is named after Karl Weissenberg. The dimensionless number compares the viscous forces to the elastic forces. It can be variously defined, but it is usually given by the relation of stress relaxation time of the fluid and a specific process time. For instance, in simple steady shear, the Weissenberg number, often abbreviated as Wi or We, is defined as the shear rate formula_1 times the relaxation time formula_2. Using the Maxwell Model and the Oldroyd Model, the elastic forces can be written as the first Normal force (N)."
+      },
+      {
+        "id": "D04",
+        "text": "Joseph Fourier: Jean-Baptiste Joseph Fourier - ( ; ] ; 21 March 1768 \u2013 16 May 1830) was a French mathematician and physicist born in Auxerre and best known for initiating the investigation of Fourier series and their applications to problems of heat transfer and vibrations. The Fourier transform and Fourier's law are also named in his honour. Fourier is also generally credited with the discovery of the greenhouse effect."
+      },
+      {
+        "id": "D05",
+        "text": "Morton number: In fluid dynamics, the Morton number (Mo) is a dimensionless number used together with the E\u00f6tv\u00f6s number or Bond number to characterize the shape of bubbles or drops moving in a surrounding fluid or continuous phase, \"c\". The Morton number is defined as"
+      },
+      {
+        "id": "D06",
+        "text": "Qualified Person for Pharmacovigilance: A Qualified Person Responsible for Pharmacovigilance, or QPPV, is an individual named by a pharmaceutical company as the main person responsible for ensuring that the company (the product's Marketing Authorisation Holder or MAH) meets its legal obligations for the monitoring of the safety of a medicinal product on the market."
+      },
+      {
+        "id": "D07",
+        "text": "Ericksen number: In the study of liquid crystals, the Ericksen number (\"Er\") is a dimensionless number used to describe the deformation of the director field under flow. It is defined as the ratio of the viscous to elastic forces. In the limit of low Ericksen number the elastic forces will exceed the viscous forces and so the director field will not be strongly affected by the flow field. The Ericksen number is named after American mathematics professor Jerald Ericksen of the University of Minnesota. The number is defined:"
+      },
+      {
+        "id": "D08",
+        "text": "F-number: The f-number of an optical system such as a camera lens is the ratio of the system's focal length to the diameter of the entrance pupil. It is a dimensionless number that is a quantitative measure of lens speed, and an important concept in photography. It is also known as the focal ratio, f-ratio, or f-stop. It is the reciprocal of the relative aperture. The f-number is commonly indicated using a hooked f with the format f/ N, where N is the f-number."
+      },
+      {
+        "id": "D09",
+        "text": "Fourier number: In physics and engineering, the Fourier number (Fo) or Fourier modulus, named after Joseph Fourier, is a dimensionless number that characterizes transient heat conduction. Conceptually, it is the ratio of diffusive or conductive transport rate to the quantity storage rate, where the quantity may be either heat (thermal energy) or matter (particles). The number derives from non-dimensionalization of the heat equation (also known as Fourier's Law) or Fick's second law and is used along with the Biot number to analyze time dependent transport phenomena."
+      },
+      {
+        "id": "D10",
+        "text": "Womersley number: The Womersley number (\u03b1) is a dimensionless number in biofluid mechanics. It is a dimensionless expression of the pulsatile flow frequency in relation to viscous effects. It is named after John R. Womersley (1907\u20131958) for his work with blood flow in arteries. The Womersley number is important in keeping dynamic similarity when scaling an experiment. An example of this is scaling up the vascular system for experimental study. The Womersley number is also important in determining the thickness of the boundary layer to see if entrance effects can be ignored."
+      }
+    ],
+    "reference": "French mathematician and physicist",
+    "references": [
+      "French mathematician and physicist"
+    ],
+    "missing": false,
+    "condition": "distractor",
+    "question_type": "bridge",
+    "split": "admission"
+  },
+  {
+    "id": "r18/squad2/5ad3e83e604f3c001a3ff63f",
+    "world_id": "r18/squad2/5ad3e83e604f3c001a3ff63f",
+    "cluster_id": "Steam_engine",
+    "upstream_id": "5ad3e83e604f3c001a3ff63f",
+    "paragraph_id": "Steam_engine/3",
+    "family": "squad2",
+    "article": "Steam_engine",
+    "question": "What are jet engines used to supply?",
+    "sources": [
+      {
+        "id": "S01",
+        "text": "The Rankine cycle and most practical steam engines have a water pump to recycle or top up the boiler water, so that they may be run continuously."
+      },
+      {
+        "id": "S02",
+        "text": " Utility and industrial boilers commonly use multi-stage centrifugal pumps; however, other types are used."
+      },
+      {
+        "id": "S03",
+        "text": " Another means of supplying lower-pressure boiler feed water is an injector, which uses a steam jet usually supplied from the boiler."
+      },
+      {
+        "id": "S04",
+        "text": " Injectors became popular in the 1850s but are no longer widely used, except in applications such as steam locomotives."
+      }
+    ],
+    "original_context_sha256": "777ba60932fa02fb3b72daca6f29f9c6c928a3a46a102597af53de301901e99b",
+    "reference": "",
+    "references": [],
+    "missing": true,
+    "condition": "original_passage",
+    "split": "admission"
+  },
+  {
+    "id": "r18/squad2/57115e532419e314009555b1",
+    "world_id": "r18/squad2/57115e532419e314009555b1",
+    "cluster_id": "Steam_engine",
+    "upstream_id": "57115e532419e314009555b1",
+    "paragraph_id": "Steam_engine/31",
+    "family": "squad2",
+    "article": "Steam_engine",
+    "question": "What was compounding seen as being in the locomotive construction industry?",
+    "sources": [
+      {
+        "id": "S01",
+        "text": "The adoption of compounding was common for industrial units, for road engines and almost universal for marine engines after 1880; it was not universally popular in railway locomotives where it was often perceived as complicated."
+      },
+      {
+        "id": "S02",
+        "text": " This is partly due to the harsh railway operating environment and limited space afforded by the loading gauge (particularly in Britain, where compounding was never common and not employed after 1930)."
+      },
+      {
+        "id": "S03",
+        "text": " However, although never in the majority, it was popular in many other countries."
+      }
+    ],
+    "original_context_sha256": "688a529e2d6116cd3c613a951e8d723a25f9e2f22082f3cd72c2f67050b6eb1d",
+    "reference": "complicated",
+    "references": [
+      "complicated"
+    ],
+    "missing": false,
+    "condition": "original_passage",
+    "split": "admission"
+  },
+  {
+    "id": "r18/squad2/572820512ca10214002d9e75",
+    "world_id": "r18/squad2/572820512ca10214002d9e75",
+    "cluster_id": "Jacksonville,_Florida",
+    "upstream_id": "572820512ca10214002d9e75",
+    "paragraph_id": "Jacksonville,_Florida/14",
+    "family": "squad2",
+    "article": "Jacksonville,_Florida",
+    "question": "How much of Jacksonville is made up of water?",
+    "sources": [
+      {
+        "id": "S01",
+        "text": "According to the United States Census Bureau, the city has a total area of 874.3 square miles (2,264 km2), making Jacksonville the largest city in land area in the contiguous United States; of this, 86.66% (757.7 sq mi or 1,962 km2) is land and ; 13.34% (116.7 sq mi or 302 km2) is water."
+      },
+      {
+        "id": "S02",
+        "text": " Jacksonville surrounds the town of Baldwin."
+      },
+      {
+        "id": "S03",
+        "text": " Nassau County lies to the north, Baker County lies to the west, and Clay and St."
+      },
+      {
+        "id": "S04",
+        "text": " Johns County lie to the south; the Atlantic Ocean lies to the east, along with the Jacksonville Beaches."
+      },
+      {
+        "id": "S05",
+        "text": " The St."
+      },
+      {
+        "id": "S06",
+        "text": " Johns River divides the city."
+      },
+      {
+        "id": "S07",
+        "text": " The Trout River, a major tributary of the St."
+      },
+      {
+        "id": "S08",
+        "text": " Johns River, is located entirely within Jacksonville."
+      }
+    ],
+    "original_context_sha256": "75cb5a3ffcb3fc0fc634b23eb3e6ae0e8c3365b15ad5892f4ea7a382f0495c6a",
+    "reference": "13.34%",
+    "references": [
+      "13.34%"
+    ],
+    "missing": false,
+    "condition": "original_passage",
+    "split": "admission"
+  }
+]

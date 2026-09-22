@@ -1,5 +1,8 @@
 # Granite + Jev research record
 
+Current work: [R18 single-prefill boundary study](boundary-attention-plan.md),
+with fresh authored, HotpotQA and SQuAD2.0 subsets; no R18 live quality result yet.
+
 This is the persistent research notebook for OVRLab's investigation of Jev during
 Granite inference. It includes negative results, corrections, new analyses, and
 proposed experiments. It is a basis for a paper, not a claim of a successful model

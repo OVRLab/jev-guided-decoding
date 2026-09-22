@@ -1,5 +1,8 @@
 # Feature: Jev-guided intermediate reasoning
 
+Current work: [R18 boundary attention](research/boundary-attention-plan.md),
+implemented with offline tests; real-model admission and held-out evaluation pending.
+
 Latest completed work: [R17 selective attention](reports/2026-09-22-selective-attention/README.md).
 
 **R17 completed:** Jev guidance raises authored free-text accuracy from
