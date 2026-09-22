@@ -192,3 +192,12 @@ BF16 discrepancies up to 0.5458984 versus FP32 0.00005913, with identical argmax
 in every comparison. The [prospective FP32 amendment](adaptive-attention-fp32-amendment.md)
 uses FP32 for every arm and a stricter 0.0001 cache tolerance. Original R16 source,
 protocol and stopped admission stay frozen. No Jev or benchmark job is replayed.
+
+### R16 supplementary factorial controls (registered during main evaluation)
+
+Development changed strength, one selected head and threshold together. Before
+consulting held-out aggregate quality, the [exploratory supplement](adaptive-attention-factorial.md)
+registers six missing corners of that 2×2×2 combination, 3,600 constrained forwards
+using saved Jev receipts and no new API calls. It leaves the main 16,120-job study
+and primary contrasts unchanged. It diagnoses factor effects on reused contexts;
+it is not a fresh replication or permission to retune on test.
