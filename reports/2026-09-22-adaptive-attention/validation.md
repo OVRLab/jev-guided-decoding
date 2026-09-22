@@ -13,8 +13,14 @@ Status: live study in progress; final artifact audit and completion are pending.
   tokens, isolated caches, framing attribution and unrestricted final-token ownership.
 - Relative-path FP32 entrypoint regression failed before the path-resolution fix;
   it now passes. This was fixed before FP32 execution or model/scorer study jobs.
-- Final implementation suite: **375 local tests passed**, including 20 R16 tests.
+- Main implementation suite: **375 local tests passed**, including 20 R16 tests.
   Ruff lint and formatting pass; guidance checker passes; wheel and sdist build.
+- Four supplementary factorial tests first failed because their modules did not
+  exist, then passed after implementation. The complete inference environment now
+  passes **379 tests**. The separate core-only environment passes **345**, with
+  **13 optional-dependency skips**. CI initially exposed two NumPy-dependent
+  statistics tests lacking the optional-dependency skip; this test-only fix does
+  not alter the frozen experiment, analysis formulas or runtime dependencies.
 
 ## Remote setup and admission
 
