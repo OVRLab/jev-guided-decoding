@@ -42,3 +42,31 @@ def test_offline_audit_rejects_missing_artifacts(tmp_path):
     a = runpy.run_path(str(ROOT / "research/iterations/gated_repair/analyze.py"))
     with pytest.raises((ValueError, FileNotFoundError)):
         a["analyze"](tmp_path, tmp_path)
+
+
+def test_full_precision_revision_preserves_runtime_and_uses_strict_admission():
+    import inspect
+
+    v2 = runpy.run_path(str(ROOT / "research/iterations/gated_repair_fp32/runtime.py"))
+    original = runpy.run_path(str(ROOT / "research/iterations/gated_repair/runtime.py"))
+    assert inspect.getsource(v2["generate"]) == inspect.getsource(original["generate"])
+    assert inspect.getsource(v2["loss_for"]) == inspect.getsource(original["loss_for"])
+    assert v2["ADMISSION_ATOL"] == 1e-4 and v2["ADMISSION_RTOL"] == 1e-4
+    c = runpy.run_path(str(ROOT / "research/iterations/gated_repair_fp32/common.py"))
+    paths = c["sources"]()
+    assert "research/gated-repair-fp32-amendment.md" in paths
+    assert "research/iterations/gated_repair/study.py" in paths
+
+
+def test_float32_fixture_compares_actual_greedy_cached_token_without_mutating_model():
+    torch = pytest.importorskip("torch")
+    r = runpy.run_path(str(ROOT / "research/iterations/gated_repair_fp32/runtime.py"))
+    model = runpy.run_path(str(ROOT / "tests/test_evidence_attention.py"))["tiny"]()
+    adapter = r["B"]["Repair"](16, 4)
+    with torch.no_grad():
+        adapter.up.weight.normal_(std=0.01)
+    before = r["weight_digest"](model)
+    result = r["comparison"](model, [1, 2, 3], adapter, layer=1)
+    assert result["allclose"] and result["argmax_equal"]
+    assert r["weight_digest"](model) == before
+    assert not model.model.layers[1]._forward_hooks
