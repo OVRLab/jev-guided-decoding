@@ -1,5 +1,7 @@
 # Granite + Jev research record
 
+[R21 — active staged experiment](semantic-feedback-plan.md): test focused Jev feedback on fresh Granite intermediate drafts; train a small internal residual adapter only if the feedback admission succeeds. This is authorized research, with original Granite/Jev weights frozen and any new adapter weights reported separately. No improvement or novelty is established.
+
 [R20 blinded evaluation — completed](../reports/2026-09-23-semantic-evaluation/README.md):
 native/Jev Qwen-judged scores are **30.21%/42.71% authored**, **74.17%/73.33%
 Hotpot** and **61.67%/67.50% SQuAD**. Only the authored primary contrast excludes

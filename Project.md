@@ -48,3 +48,7 @@ budgets. Measure total latency, throughput, prefill/decode work, and API usage.
 Optimize or add a serving integration when the measured trade-off justifies it.
 Use [LAUNCH.md](LAUNCH.md) for scope, [LIVE.md](LIVE.md) for verified status, and
 [FEATURE.md](FEATURE.md) for the next experiment; do not turn a roadmap into a claim.
+
+## R21 authorized research extension
+
+The owner authorized [local semantic feedback and a learned internal bridge](research/semantic-feedback-plan.md). This research extension may train new adapter parameters after feedback admission, while preserving original Granite and Jev weights. It is separate from the initial frozen-weight package prototype and does not imply a released checkpoint.
