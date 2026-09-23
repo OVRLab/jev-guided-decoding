@@ -1,10 +1,11 @@
 # Verified implementation inventory
 
-[R25 internal repair](research/gated-repair-plan.md) is running on one Nebius L40S:
- a Jev-controlled rank-64 residual branch, trained on natural public
-math/science drafts with two seeds and matched controls. Current cumulative cap
-is **$75**, starting estimated use **$36.77**, with **$14.40 reserved**. All 516
-local and server tests pass; quality is unmeasured. Earlier budget entries are historical.
+[R25 internal repair](reports/2026-09-23-gated-repair/README.md): BF16 v1 stopped
+at numerical admission before any training draft or Jev call; all artifacts are
+preserved and the worker deleted. A separately frozen float32 restart is registered,
+with the same cohort and controls. Current cumulative cap is **$75**, estimated
+use **$37.07**, and the **combined R25 reservation is $20**. All 518 local tests
+pass. Quality is unmeasured; earlier stage/budget entries are historical.
 
 The [north-star direction](research/north-star.md) was recorded on 2026-09-23.
 Its ten-benchmark/larger-model scorecard remains planned; the verified results

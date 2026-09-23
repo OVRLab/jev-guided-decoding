@@ -450,3 +450,10 @@ See the [complete inspection](../reports/2026-09-23-public-critic/disagreements.
   real/shuffled/inverted feedback; independent reference grading and paired effects.
 - Tiny-model identity/cache/gradient behavior and bounded API negative paths pass;
   source/data freeze and real-checkpoint admission precede quality evaluation.
+
+**R25 v1 failed admission:** [five preserved artifacts](../reports/2026-09-23-gated-repair/failed-v1/README.md),
+0.25 BF16 cached/full discrepancy, zero training drafts/API calls/optimizer steps.
+Resources deleted, $0.293387 estimated. [V2 amendment](gated-repair-fp32-amendment.md)
+registers float32 for every arm, unchanged data and training, strict cache checks,
+and a combined $20 R25 reserve inside $75. No unfavorable quality result was
+removed or tuned; v1 never reached quality evaluation.

@@ -1,0 +1,19 @@
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files:  89%|████████▉ | 8/9 [00:00<00:00, 25.20it/s]Fetching 9 files:  89%|████████▉ | 8/9 [00:20<00:02,  2.50s/it]Fetching 9 files: 100%|██████████| 9/9 [01:33<00:00, 10.36s/it]Fetching 9 files: 100%|██████████| 9/9 [01:33<00:00, 10.36s/it]
+Traceback (most recent call last):
+  File "/home/study/jev-guided-decoding/research/iterations/gated_repair/study.py", line 417, in <module>
+    asyncio.run(run(a.freeze, a.output, a.key_file))
+  File "/home/study/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/study/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/study/.local/share/uv/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/study/jev-guided-decoding/research/iterations/gated_repair/study.py", line 373, in run
+    C["dump"](output / "admission.json", runtime["admission"](model, tok, ids, eos, m["layer"]))
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/study/jev-guided-decoding/research/iterations/gated_repair/runtime.py", line 122, in admission
+    raise ValueError(f"Cached/full admission failure: {error}")
+ValueError: Cached/full admission failure: 0.25

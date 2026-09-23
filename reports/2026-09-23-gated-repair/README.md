@@ -1,6 +1,6 @@
 # R25: Jev-gated natural-draft repair
 
-**Status: running on one Nebius L40S; no quality result yet.**
+**Status: v1 failed numerical admission; full-precision v2 restart registered.**
 
 The owner increased the cumulative research cap to $75. R25 reserves $14.40 from
 $38.22647 remaining before tax/network. One L40S/16vCPU/64GiB with an 80GiB disk
@@ -30,3 +30,19 @@ and server tests. Automatic 45-second local backups and a separate cleanup
 supervisor are active. Initial test temporary-file writes were slow on network
 storage; the original complete suite passed in 159.20 seconds before any rerun,
 so no test configuration or scientific source was changed.
+
+## Preserved failure and full-precision restart
+
+The [v1 attempt](failed-v1/README.md) stopped before any training draft, Jev call
+or optimizer update: BF16 cached/full logit discrepancy was 0.25, above the fixed
+0.125 limit. All five artifacts are preserved and owned cloud resources deleted.
+Estimated cost $0.293387; cumulative $37.066922 before tax/network.
+
+The [registered v2 amendment](../../research/gated-repair-fp32-amendment.md) keeps
+identical data, architecture, seeds and controls, but uses float32 for every arm,
+strict 1e-4 cache checks and a separate native/intervened precision diagnostic.
+The combined R25 reservation is now $20 within the cumulative $75 cap, allowing
+for slower full-precision work. V1's original $14.40 limit above is historical.
+The [v2 manifest](../../research/protocols/gated-repair-fp32-v2/manifest.json)
+preserves every predecessor data hash. All 518 local tests pass. No quality
+measurement or Jev contribution has yet been established by R25.
