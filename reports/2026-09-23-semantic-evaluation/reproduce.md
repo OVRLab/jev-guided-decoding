@@ -41,6 +41,28 @@ not rerun either model or make hosted Jev requests.
 Compare all analysis fields except the `at` timestamp to the archived independent
 analysis. Mechanical agreement is not independent human semantic validation.
 
+The [registered blind inspection](../../research/semantic-evaluation-blind-review.md)
+was recorded before original treatment analysis. Its saved labels and packets are
+in `blind-review.json`; replay does not constitute a new blind inspection. Once
+that record and the audited public artifacts exist, regenerate descriptive tables,
+fixed score examples and the explicitly post-hoc citation-only syntax count:
+
+```bash
+uv run --no-sync python research/diagnostics/semantic_evaluation_report.py \
+  --report reports/2026-09-23-semantic-evaluation \
+  --results results/r20-public-replay/semantic-evaluation-v1
+
+uv run --no-project --python 3.12.13 \
+  --with matplotlib==3.11.2 --with numpy==2.5.3 --with pillow==12.3.0 \
+  python research/diagnostics/render_semantic_evaluation.py \
+  --report reports/2026-09-23-semantic-evaluation
+```
+
+Those editorial helpers preserve the frozen primary grades. The examples include
+evaluator mistakes, and the citation-only count does not estimate every error;
+see the [transfer diagnostics](transfer-diagnostics.md). Figures are saved as
+PNG, SVG and PDF. These commands overwrite derived presentation files only.
+
 ## Fresh inference
 
 Fresh inference requires both model checkpoints, a compatible GPU and hosted Jev

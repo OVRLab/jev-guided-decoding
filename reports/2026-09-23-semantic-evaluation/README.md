@@ -1,45 +1,115 @@
-# R20: blinded semantic evaluation
+# R20: blinded semantic evaluation — completed, evaluator transfer limited
 
-Implementation and prospective protocol are complete; live evaluator admission is
-pending. No new Granite quality result is claimed. This study directly supports
-the Granite + Jev inference-architecture objective by testing the semantic meaning
-of the score changes observed in R19.
+The full study completed on one Nebius L40S. Jev produces a positive **authored
+judge-score effect**, but the fresh comparison does not establish superiority over
+static attention steering. A registered blind inspection and deterministic examples
+expose substantive mistakes in the independent evaluator, so these results do
+**not establish reliable semantic improvement or a novel superior LLM architecture**.
 
-The fixed comparison is native Granite, static instruction attention without Jev,
-and R19 Jev dual guidance. An independent Qwen3-14B judge sees only anonymous
-question/evidence/reference/answer packets. It must first pass constructed semantic
-validation, including paraphrases, false refusals, wrong partial matches and
-contradictions. This is automated evaluator blinding, not independent human review.
+| Domain | Native Granite | Granite + Jev | Static instruction, no Jev |
+| --- | ---: | ---: | ---: |
+| Authored, 288 inputs | 30.21% | 42.71% | 44.79% |
+| HotpotQA, 120 inputs | 74.17% | 73.33% | 67.50% |
+| SQuAD2, 120 inputs | 61.67% | 67.50% | 70.00% |
 
-- [Prospective protocol](../../research/semantic-evaluation-plan.md)
-- [Frozen protocol and inputs](../../research/protocols/semantic-evaluation-v1/manifest.json)
-- [Evaluator and rubric](../../research/iterations/semantic_evaluation/judge.py)
-- [Regression and flow tests](../../tests/test_semantic_evaluation.py)
-- [Registered supplementary blind inspection](../../research/semantic-evaluation-blind-review.md)
-- [Previous R19 results and measurement artifacts](../2026-09-22-benefit-sufficiency/README.md)
+These percentages are **Qwen3-14B judgments**, not human-verified accuracy. Dual
+minus native is +12.50 pp [4.17, 21.18] authored, −0.83 pp [−10.28, 8.33] Hotpot
+and +5.83 pp [−1.70, 13.91] SQuAD, using the registered 99.1667% paired cluster
+intervals. Only the authored interval excludes zero. All three dual-minus-static
+intervals include zero. The six contrasts are separate; there is no all-controls
+conjunction or pooled success score. See [all tables](tables.md).
 
-All 462 local tests passed in 8.01 seconds, including optional inference checks.
-The eleven new tests include identity exclusion, strict/duplicate-key parsing,
-admission failure, duplicate-answer consistency, blind-map tampering, unresolved
-score bounds, no-provider native/static generation and capped judge output.
-Original missing-module capability failures and the cap regression failure are
-retained locally. Runtime token/cache mechanics and scientific R19 sources are
-unchanged. No cloud resource has been launched at this registration checkpoint.
+## What the blind evaluation discovered
 
-The new test cohort has 528 inputs and 1,584 planned generations. The evaluator
-first grades 24 development, 96 validation and twelve repeated validation packets.
-Source/data freeze and evaluator admission precede test generation. If validation
-fails, the pipeline stops before new Granite test answers or hosted Jev calls.
+Qwen passed **96/96 constructed validation cases**, **24/24 diagnostic development
+cases** and all **12 repeat consistency checks** before Granite test generation.
+It then graded 1,070 anonymous unique answer packets with no unresolved outputs.
 
-Original Granite and Jev weights remain unchanged. The evaluator is
-[Qwen3-14B](https://huggingface.co/Qwen/Qwen3-14B), Apache 2.0, pinned to revision
-`40c069824f4251a91eefaf281ebe4c544efd3e18`. External model, dataset and provider
-terms remain separate from the repository software license.
-See the [HotpotQA attribution](HotpotQA-NOTICE.md) and
-[SQuAD attribution](SQuAD-NOTICE.md) for incorporated dataset portions.
+The implementing coding assistant independently recorded labels for the first 24
+anonymous packets before seeing Qwen labels or treatment identities. Agreement
+was **21/24**. Two disagreements are clear completeness failures: Qwen credited
+an unfinished answer that omitted the requested network and a person's name
+instead of the requested nationality. It supplied the missing answer in its own
+reason. The third disagreement concerns ambiguous question/answerability labeling.
+A separate population-decline reference is inconsistent with its evidence even
+though both reviewers rejected the candidate answer. This is not human review.
 
-The first core-only CI run exposed three new research tests importing the optional
-Torch runtime without declaring their dependency (394 passed, 43 skipped, three
-failed). Those tests now use the repository's existing optional-dependency skip
-convention. They still run in the full inference environment; judge packet/schema
-tests run in core CI. No scientific source, fixture, grading rule or limit changes.
+The fixed illustrative sample also shows Qwen accepting a bare `[E02]` citation
+as a room answer. A subsequent descriptive syntax count finds **8/18 Jev authored
+citation-only outputs** credited, versus **1/14 native**; these are not valid
+full-text answers to the requested colour/room question. No primary grade has
+been changed or replaced. See [blind review](blind-review.md),
+[transfer diagnostics](transfer-diagnostics.md) and [score examples](examples.md).
+The audit's `quality_claims_admitted` flag checks unresolved coverage only; it is
+not evidence that these substantive evaluator failures are absent.
+
+## Meaning for Granite + Jev
+
+The strongest descriptive movement is on missing evidence: authored native/dual
+scores rise from **13.89% to 40.97%**, while answerable scores move from **46.53%
+to 44.44%**. Static steering gives **58.33% missing / 31.25% answerable**. Jev
+therefore changes the answer/abstention balance, with no demonstrated overall
+advantage over static steering and unresolved semantic measurement error. The
+corresponding SQuAD groups are in the tables. None is an additional primary test.
+
+The internal mechanism remains the R19 intervention: one Jev relevance/sufficiency
+request at the boundary before layer 19, with biases at the inherited eleven
+heads and the same retained prefill/cache. Granite generates every final token,
+with original weights, full vocabulary and no forced UNKNOWN spelling. Qwen is
+used only afterward for evaluation. R20 does not fit a new architecture or gate.
+The [method and ASCII architecture](method.md) make these boundaries explicit.
+
+The next measurement revision needs response-completeness tests and independently
+reviewed reference/answerability labels on new cases before more architectural
+optimization. These results and examples remain exposed evidence, not a fresh
+validation set for that revision. No further cloud run or model release is implied.
+
+## Completion, verification and cost
+
+- **1,584 generations**, **30,112 Granite final tokens**, **528 successful Jev
+  requests**, zero provider failures and unchanged weight hashes.
+- **1,202 Qwen outputs** across validation and test, with **45,159 generated judge
+  tokens**; all 1,070 test judgments parse, with no silent retries or dropped rows.
+- Full source/input/token/cache/attention/provider/budget/blinding audit passes.
+  All **25 raw files (63,104,571 bytes)** were verified before resource deletion.
+  Public archive reconstruction reproduces every analysis field except its timestamp.
+- The local and GPU environments each passed **462 tests** before live inference.
+  The core-only test declaration correction and all original capability/regression
+  failures are retained in [validation](validation.md) and execution logs.
+- Mean instrumented answer latency was **0.629 s native / 1.017 s Jev / 0.645 s
+  static**; Jev wait averaged **0.370 s**. These are serial study timings with
+  different answer lengths, not optimized serving or colocated Jev performance.
+- The VM, managed disk, task security rules/group and automatic allocations are
+  verified deleted; shared network resources are preserved. Estimated new cost
+  is **$2.32**, cumulative **$32.55/$50**, before taxes/separate networking.
+
+## Reproducible record
+
+[Prospective plan](../../research/semantic-evaluation-plan.md) ·
+[63-file source/data freeze](../../research/protocols/semantic-evaluation-v1/manifest.json) ·
+[Independent analysis](independent-analysis.json) · [Artifact hashes](raw-artifact-hashes.json) ·
+[Public replay](public-replay-verification.json) · [Reproduce](reproduce.md) ·
+[Cost](cost.json) · [Cleanup](cleanup-verification.json) ·
+[Paper draft](../../research/paper-draft.md#79-r20-blinded-semantic-evaluation-of-fixed-attention-interventions).
+
+The [blind inspection rule](../../research/semantic-evaluation-blind-review.md) was
+registered before live evaluator admission. The illustrative example rule was
+fixed in commit `a56a71b` while grading was running, before treatment-score
+inspection. The citation-only count is explicitly post hoc. Scientific inference
+uses `e1249c8`; later test/report changes preserve all 63 scientific hashes.
+[Previous R19 scores and limitations](../2026-09-22-benefit-sufficiency/README.md)
+remain unchanged. This is research-branch evidence; the PR remains unmerged.
+
+![Constructed judge validation; generated-answer transfer remains limited](figures/judge-validation.png)
+
+![Frozen Qwen scores, with documented evaluator mistakes](figures/semantic-scores.png)
+
+![Six primary comparisons conditional on the frozen judge](figures/semantic-contrasts.png)
+
+Figures are also available as standalone PDF and SVG files in `figures/`.
+[Granite](https://huggingface.co/ibm-granite/granite-4.0-1b) and
+[Qwen3-14B](https://huggingface.co/Qwen/Qwen3-14B) model terms, Jev service terms and
+[HotpotQA](HotpotQA-NOTICE.md)/[SQuAD](SQuAD-NOTICE.md) attribution remain separate
+from the repository software license. Training contamination is not ruled out by
+excluding prior project cases. Human scientific review and historical novelty
+validation remain outstanding.

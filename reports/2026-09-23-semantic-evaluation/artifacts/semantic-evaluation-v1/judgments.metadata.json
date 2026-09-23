@@ -1,0 +1,13 @@
+{
+  "model": "Qwen/Qwen3-14B",
+  "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+  "dtype": "bfloat16",
+  "device": "cuda",
+  "python": "3.12.13",
+  "torch": "2.8.0+cu128",
+  "rubric_sha256": "8c18269d446f2e7d84a852497bdedc356f55dbfd4da14a30555c8f7ed3005fd0",
+  "packets_sha256": "4f67d9b941696f58181c704f14d2f7e7a0b86d93cb2a4505ddc54f4c07bc5480",
+  "max_new_tokens": 128,
+  "greedy": true,
+  "enable_thinking": false
+}

@@ -1,0 +1,48 @@
+.....FF                                                                  [100%]
+=================================== FAILURES ===================================
+_________ test_judge_runner_hashes_prompt_and_preserves_invalid_output _________
+
+    def test_judge_runner_hashes_prompt_and_preserves_invalid_output():
+>       s = load('grade.py')
+            ^^^^^^^^^^^^^^^^
+
+tests/test_semantic_evaluation.py:109: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_semantic_evaluation.py:12: in load
+    return runpy.run_path(str(ROOT / "research/iterations/semantic_evaluation" / name))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '[repository]/research/iterations/semantic_evaluation/grade.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '[repository]/research/iterations/semantic_evaluation/grade.py'
+
+<frozen runpy>:254: FileNotFoundError
+____ test_generation_configuration_keeps_native_and_static_off_the_provider ____
+
+    def test_generation_configuration_keeps_native_and_static_off_the_provider():
+>       s = load('study.py')
+            ^^^^^^^^^^^^^^^^
+
+tests/test_semantic_evaluation.py:118: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_semantic_evaluation.py:12: in load
+    return runpy.run_path(str(ROOT / "research/iterations/semantic_evaluation" / name))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '[repository]/research/iterations/semantic_evaluation/study.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '[repository]/research/iterations/semantic_evaluation/study.py'
+
+<frozen runpy>:254: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_semantic_evaluation.py::test_judge_runner_hashes_prompt_and_preserves_invalid_output
+FAILED tests/test_semantic_evaluation.py::test_generation_configuration_keeps_native_and_static_off_the_provider
+2 failed, 5 passed in 0.05s

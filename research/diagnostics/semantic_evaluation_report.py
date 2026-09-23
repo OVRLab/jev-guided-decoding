@@ -3,6 +3,7 @@
 import argparse
 import collections
 import json
+import re
 import runpy
 import statistics
 from pathlib import Path
@@ -144,7 +145,11 @@ index = {(r["case_id"], r["arm"]): r for r in joined}
 raw = {(r["case_id"], r["arm"]): r for r in rows}
 selected = []
 md = [
-    "# R20 illustrative repairs and regressions\n",
+    "# R20 illustrative score repairs and regressions\n",
+    "These are Qwen-scored examples and include judge mistakes. A citation-only response "
+    "is incorrectly credited in the first authored score repair; an unfinished birth-date "
+    "response is also credited for the static control. See [transfer diagnostics]"
+    "(transfer-diagnostics.md). No grades have been changed.\n",
     "Selection rule fixed during grading, before treatment-level score "
     "inspection: within each domain and direction, take the first case by case "
     "ID where both grades are valid and dual changes native correctness. Show "
@@ -204,3 +209,43 @@ md.append(
     json.dumps(selected, indent=2, ensure_ascii=False) + "\n"
 )
 print(json.dumps({"tables_written": True, "illustrative_cases": len(selected)}))
+
+# Post-hoc syntax count prompted by the fixed examples; primary grades are unchanged.
+pattern = r"(?:\s*\[(?:E|D|S)\d+\][.,;:]?\s*)+"
+citation_rows = []
+for r in rows:
+    if re.fullmatch(pattern, r["text"]):
+        citation_rows.append(
+            dict(
+                case_id=r["case_id"],
+                arm=r["arm"],
+                domain=r["domain"],
+                response=r["text"],
+                qwen=index[r["case_id"], r["arm"]]["result"],
+            )
+        )
+citation_summary = []
+for domain in names:
+    for arm in arms:
+        group = [r for r in citation_rows if r["domain"] == domain and r["arm"] == arm]
+        citation_summary.append(
+            dict(
+                domain=domain,
+                arm=arm,
+                citation_only=len(group),
+                qwen_correct=sum(r["qwen"] is not None and r["qwen"]["correct"] for r in group),
+            )
+        )
+(REPORT / "citation-only-diagnostic.json").write_text(
+    json.dumps(
+        dict(
+            status="post_hoc_descriptive_syntax_count_after_primary_analysis",
+            regex_fullmatch=pattern,
+            main_grades_modified=False,
+            summary=citation_summary,
+            records=citation_rows,
+        ),
+        indent=2,
+    )
+    + "\n"
+)

@@ -1,0 +1,222 @@
+unit (3.11)	Run uv run --no-sync pytest -q	﻿2026-09-22T23:36:24.9769834Z ##[group]Run uv run --no-sync pytest -q
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:24.9770468Z [36;1muv run --no-sync pytest -q[0m
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:24.9794745Z shell: /usr/bin/bash -e {0}
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:24.9795054Z env:
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:24.9795267Z   UV_PYTHON: 3.11
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:24.9795547Z   UV_CACHE_DIR: /home/runner/work/_temp/setup-uv-cache
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:24.9795861Z ##[endgroup]
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:28.7835539Z ........ss...s....s.........................ssss..ssssssssss............ [ 16%]
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:29.4091893Z ...................................................................s...s [ 33%]
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:29.8461728Z s....................................................................... [ 49%]
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:29.9761810Z ........................................................................ [ 66%]
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:30.7853635Z ..................................sss..ssssssss......sss.........FFFs... [ 82%]
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7258404Z ........................................s............................... [ 99%]
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7934608Z ..                                                                       [100%]
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7935699Z =================================== FAILURES ===================================
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7943603Z ____ test_generation_configuration_keeps_native_and_static_off_the_provider ____
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7944089Z 
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7944395Z     def test_generation_configuration_keeps_native_and_static_off_the_provider():
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7945033Z >       s = load("study.py")
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7945480Z             ^^^^^^^^^^^^^^^^
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7945688Z 
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7945881Z tests/test_semantic_evaluation.py:118: 
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7946433Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7947002Z tests/test_semantic_evaluation.py:12: in load
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7947647Z     return runpy.run_path(str(ROOT / "research/iterations/semantic_evaluation" / name))
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7948304Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7948790Z <frozen runpy>:291: in run_path
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7949271Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7949624Z <frozen runpy>:98: in _run_module_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7950058Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7950376Z <frozen runpy>:88: in _run_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7950781Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7951246Z research/iterations/semantic_evaluation/study.py:15: in <module>
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7951806Z     D = runpy.run_path(str(HERE / "data.py"))
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7952378Z         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7953070Z <frozen runpy>:291: in run_path
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7953633Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7954214Z <frozen runpy>:98: in _run_module_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7954855Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7955564Z <frozen runpy>:88: in _run_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7956128Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7957000Z research/iterations/semantic_evaluation/data.py:13: in <module>
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7957950Z     R = runpy.run_path(str(HERE.parent / "benefit_sufficiency/runtime.py"))
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7958704Z         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7959791Z <frozen runpy>:291: in run_path
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7960541Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7961476Z <frozen runpy>:98: in _run_module_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7962054Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7962981Z <frozen runpy>:88: in _run_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7963732Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7964623Z research/iterations/benefit_sufficiency/runtime.py:11: in <module>
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7965624Z     BASE = runpy.run_path(str(HERE.parent / "boundary_attention/runtime.py"))
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7966481Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7967363Z <frozen runpy>:291: in run_path
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7967963Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7968753Z <frozen runpy>:98: in _run_module_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7969376Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7970284Z <frozen runpy>:88: in _run_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7970997Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7971702Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7972425Z 
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7972972Z     """Serial native prefill with a once-only, asynchronous Jev bridge before a layer."""
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7974030Z     
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7974490Z     import asyncio
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7974837Z     import math
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7975235Z     import runpy
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7975690Z     import threading
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7976062Z     import time
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7976446Z     from contextlib import contextmanager
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7976971Z     from pathlib import Path
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7977409Z     
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7977722Z >   import torch
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7978170Z E   ModuleNotFoundError: No module named 'torch'
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7978464Z 
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7978787Z research/iterations/boundary_attention/runtime.py:11: ModuleNotFoundError
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7979522Z __________ test_semantic_statistics_keep_unresolved_answers_in_bounds __________
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7979984Z 
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7980228Z     def test_semantic_statistics_keep_unresolved_answers_in_bounds():
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7980809Z >       s = load("analyze.py")
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7981216Z             ^^^^^^^^^^^^^^^^^^
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7981457Z 
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7981616Z tests/test_semantic_evaluation.py:127: 
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7982385Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7983015Z tests/test_semantic_evaluation.py:12: in load
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7983666Z     return runpy.run_path(str(ROOT / "research/iterations/semantic_evaluation" / name))
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7984369Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7984855Z <frozen runpy>:291: in run_path
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7985270Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7985630Z <frozen runpy>:98: in _run_module_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7986061Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7986432Z <frozen runpy>:88: in _run_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7986833Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7987302Z research/iterations/semantic_evaluation/analyze.py:10: in <module>
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7987912Z     S = runpy.run_path(str(HERE / "study.py"))
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7988340Z         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7988800Z <frozen runpy>:291: in run_path
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7989199Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7989591Z <frozen runpy>:98: in _run_module_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7990094Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7990410Z <frozen runpy>:88: in _run_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7990815Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7991304Z research/iterations/semantic_evaluation/study.py:15: in <module>
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7991881Z     D = runpy.run_path(str(HERE / "data.py"))
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7992495Z         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7992902Z <frozen runpy>:291: in run_path
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7993363Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7993722Z <frozen runpy>:98: in _run_module_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7994156Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7994474Z <frozen runpy>:88: in _run_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7995083Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7995561Z research/iterations/semantic_evaluation/data.py:13: in <module>
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7996206Z     R = runpy.run_path(str(HERE.parent / "benefit_sufficiency/runtime.py"))
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7996798Z         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7997289Z <frozen runpy>:291: in run_path
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7997664Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7998033Z <frozen runpy>:98: in _run_module_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7998424Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7998800Z <frozen runpy>:88: in _run_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7999167Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.7999609Z research/iterations/benefit_sufficiency/runtime.py:11: in <module>
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8000309Z     BASE = runpy.run_path(str(HERE.parent / "boundary_attention/runtime.py"))
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8001025Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8001524Z <frozen runpy>:291: in run_path
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8001897Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8002493Z <frozen runpy>:98: in _run_module_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8002949Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8003262Z <frozen runpy>:88: in _run_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8003667Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8004055Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8004361Z 
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8004721Z     """Serial native prefill with a once-only, asynchronous Jev bridge before a layer."""
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8005195Z     
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8005444Z     import asyncio
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8005768Z     import math
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8006080Z     import runpy
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8098884Z     import threading
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8099208Z     import time
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8099581Z     from contextlib import contextmanager
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8099998Z     from pathlib import Path
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8100262Z     
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8100468Z >   import torch
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8100736Z E   ModuleNotFoundError: No module named 'torch'
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8100979Z 
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8101236Z research/iterations/boundary_attention/runtime.py:11: ModuleNotFoundError
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8101802Z _____ test_failed_semantic_admission_prevents_generator_and_provider_work ______
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8102212Z 
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8102588Z tmp_path = PosixPath('/tmp/pytest-of-runner/pytest-0/test_failed_semantic_admission0')
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8103194Z monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7fbd92ad7cd0>
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8103487Z 
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8103774Z     def test_failed_semantic_admission_prevents_generator_and_provider_work(tmp_path, monkeypatch):
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8104254Z >       s = load("pipeline.py")
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8104515Z             ^^^^^^^^^^^^^^^^^^^
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8104662Z 
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8104793Z tests/test_semantic_evaluation.py:135: 
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8105135Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8105508Z tests/test_semantic_evaluation.py:12: in load
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8105950Z     return runpy.run_path(str(ROOT / "research/iterations/semantic_evaluation" / name))
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8106405Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8106741Z <frozen runpy>:291: in run_path
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8106979Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8107198Z <frozen runpy>:98: in _run_module_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8107461Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8107661Z <frozen runpy>:88: in _run_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8107900Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8108206Z research/iterations/semantic_evaluation/pipeline.py:11: in <module>
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8108601Z     S = runpy.run_path(str(HERE / "study.py"))
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8108901Z         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8109179Z <frozen runpy>:291: in run_path
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8109428Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8109638Z <frozen runpy>:98: in _run_module_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8110180Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8110380Z <frozen runpy>:88: in _run_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8110633Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8110930Z research/iterations/semantic_evaluation/study.py:15: in <module>
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8111304Z     D = runpy.run_path(str(HERE / "data.py"))
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8111601Z         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8111873Z <frozen runpy>:291: in run_path
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8112206Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8112494Z <frozen runpy>:98: in _run_module_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8112756Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8112949Z <frozen runpy>:88: in _run_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8113192Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8113457Z research/iterations/semantic_evaluation/data.py:13: in <module>
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8113905Z     R = runpy.run_path(str(HERE.parent / "benefit_sufficiency/runtime.py"))
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8114401Z         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8114712Z <frozen runpy>:291: in run_path
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8114951Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8115151Z <frozen runpy>:98: in _run_module_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8115414Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8115623Z <frozen runpy>:88: in _run_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8115850Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8116141Z research/iterations/benefit_sufficiency/runtime.py:11: in <module>
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8116606Z     BASE = runpy.run_path(str(HERE.parent / "boundary_attention/runtime.py"))
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8117046Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8117370Z <frozen runpy>:291: in run_path
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8117600Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8117802Z <frozen runpy>:98: in _run_module_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8118065Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8118263Z <frozen runpy>:88: in _run_code
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8118503Z     ???
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8118747Z _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8118993Z 
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8119237Z     """Serial native prefill with a once-only, asynchronous Jev bridge before a layer."""
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8119642Z     
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8119833Z     import asyncio
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8120047Z     import math
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8120258Z     import runpy
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8120480Z     import threading
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8120696Z     import time
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8120921Z     from contextlib import contextmanager
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8121223Z     from pathlib import Path
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8121478Z     
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8121669Z >   import torch
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8121924Z E   ModuleNotFoundError: No module named 'torch'
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8122225Z 
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8122436Z research/iterations/boundary_attention/runtime.py:11: ModuleNotFoundError
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8122916Z =========================== short test summary info ============================
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8123710Z FAILED tests/test_semantic_evaluation.py::test_generation_configuration_keeps_native_and_static_off_the_provider - ModuleNotFoundError: No module named 'torch'
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8124804Z FAILED tests/test_semantic_evaluation.py::test_semantic_statistics_keep_unresolved_answers_in_bounds - ModuleNotFoundError: No module named 'torch'
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8125827Z FAILED tests/test_semantic_evaluation.py::test_failed_semantic_admission_prevents_generator_and_provider_work - ModuleNotFoundError: No module named 'torch'
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8126482Z 3 failed, 394 passed, 43 skipped in 6.14s
+unit (3.11)	Run uv run --no-sync pytest -q	2026-09-22T23:36:31.8614112Z ##[error]Process completed with exit code 1.

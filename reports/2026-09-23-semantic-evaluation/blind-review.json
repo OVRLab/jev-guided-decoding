@@ -1,0 +1,1695 @@
+{
+  "selection": {
+    "selected_at": "2026-09-23T00:54:16.047258+00:00",
+    "rule": "First 24 unique packets in original random order after grading freeze, before treatment-level analysis.",
+    "grading_freeze_sha256": "035e0e005d607beba851bfc754dde2bd708b10a56868dbb2cb6334c74e1282e4",
+    "source_packet_file_sha256": "4f67d9b941696f58181c704f14d2f7e7a0b86d93cb2a4505ddc54f4c07bc5480",
+    "packets": [
+      {
+        "id": "9469edbffcba41f69b5f9fff937cae5a",
+        "packet_digest": "4decc573e4532f1e3b01455f5af4469b79a2ef2773654a15769696b315fd55a3",
+        "packet": {
+          "question": "Leo A. Harris was also known for his handshake deal with Walt Disney that permitted the University of Oregon to use the likeness of what cartoon character created in 1934 at Walt Disney Productions?",
+          "evidence": [
+            {
+              "id": "D01",
+              "text": "Mickey's House of Villains: Mickey's House of Villains (also known as House of Mouse: The Villains) is a 2002 direct-to-video animated film produced by The Walt Disney Company (Walt Disney Television Animation and Toon City Animation, with animation coordination by Walt Disney Feature Animation Florida. It is based on the Disney Channel animated television series \"Disney's House of Mouse\" and a sequel to the direct-to-video animated film \"\", starring Mickey Mouse, Donald Duck, Minnie Mouse, Goofy, Daisy Duck and Disney Villains that have appeared in past Disney productions. It was released on both VHS and DVD by Walt Disney Home Video on September 3, 2002. It was followed by a 2004 direct-to-video animated film, \"\", produced by DisneyToon Studios, on August 17, 2004."
+            },
+            {
+              "id": "D02",
+              "text": "Oswald the Lucky Rabbit: Oswald the Lucky Rabbit (also known as Oswald the Rabbit or Oswald Rabbit) is an anthropomorphic rabbit and animated cartoon character created by Ub Iwerks and Walt Disney for funny animal films distributed by Universal Studios in the 1920s and 1930s, serving as the Disney studio's first animated character to feature in their own series. 26 animated Oswald one-reelers were produced at Walt Disney Animation Studios (the Walt Disney Studio at the time). In 1928, Charles Mintz took the rights of Oswald from Walt Disney and claimed Oswald as an official Universal Studios character. In November of 1928, as a replacement to compete with Oswald the Lucky Rabbit, Walt Disney went on to create Mickey Mouse."
+            },
+            {
+              "id": "D03",
+              "text": "List of Disney animated shorts: This is a list of animated short films produced by Walt Disney and Walt Disney Animation Studios from 1921 to the present. This includes films produced at the Laugh-O-Gram Studio which Disney founded in 1921 as well as the animation studio now owned by The Walt Disney Company, previously called the Disney Brothers Cartoon Studio (1923), The Walt Disney Studio (1926), Walt Disney Productions (1929), and Walt Disney Feature Animation (1986)."
+            },
+            {
+              "id": "D04",
+              "text": "Pete (Disney): Pete (also called Peg-Leg Pete, Pistol Pete and Black Pete, among other names) is an anthropomorphic cartoon character created in 1925 by Walt Disney and Ub Iwerks. He is a character of The Walt Disney Company and often appears as a nemesis and the main antagonist in Mickey Mouse universe stories. He was originally an anthropomorphic bear but with the advent of Mickey Mouse in 1928, he was defined as a cat. Pete is the oldest continuing Disney character, having debuted three years before Mickey Mouse in the cartoon \"Alice Solves the Puzzle\" (1925)."
+            },
+            {
+              "id": "D05",
+              "text": "The Walt Disney Company: The Walt Disney Company, commonly known as Disney, is an American diversified multinational mass media and entertainment conglomerate, headquartered at the Walt Disney Studios in Burbank, California. It is the world's second largest media conglomerate in terms of revenue, after Comcast. Disney was founded on October 16, 1923 – by brothers Walt Disney and Roy O. Disney – as the Disney Brothers Cartoon Studio, and established itself as a leader in the American animation industry before diversifying into live-action film production, television, and theme parks. The company also operated under the names The Walt Disney Studio and then Walt Disney Productions. Taking on its current name in 1986, it expanded its existing operations and also started divisions focused upon theater, radio, music, publishing, and online media."
+            },
+            {
+              "id": "D06",
+              "text": "Leo Harris: Leo A. Harris (August 6, 1904 – April 22, 1990) was an American athlete, coach, and athletic director. He played college football at Stanford University, coached football and basketball at Fresno State College, and was the first athletic director for the University of Oregon, bringing success to a financially troubled system. He was also known for his handshake deal with Walt Disney that permitted the University of Oregon to use the likeness of Donald Duck as the basis for its mascot, the Oregon Duck."
+            },
+            {
+              "id": "D07",
+              "text": "Pluto (Disney): Pluto, also called Pluto the Pup, is a cartoon character created in 1930 at Walt Disney Productions. He is a yellow-orange color, medium-sized, short-haired dog with black ears. Unlike most Disney characters, Pluto is not anthropomorphic beyond some characteristics such as facial expression, though he did speak for a short portion of his history. He is Mickey Mouse's pet. Officially a mixed-breed dog, he made his debut as a bloodhound in the Mickey Mouse cartoon \"The Chain Gang\". Together with Mickey Mouse, Minnie Mouse, Donald Duck, Daisy Duck, and Goofy, Pluto is one of the \"Sensational Six\"—the biggest stars in the Disney universe. Though all six are non-human animals, Pluto alone is not dressed as a human."
+            },
+            {
+              "id": "D08",
+              "text": "Donald Duck: Donald Duck is a cartoon character created in 1934 at Walt Disney Productions. Donald is an anthropomorphic white duck with a yellow-orange bill, legs, and feet. He typically wears a sailor shirt and cap with a bow tie. Donald is most famous for his semi-intelligible speech and his mischievous and temperamental personality. Along with his friend Mickey Mouse, Donald is one of the most popular Disney characters and was included in TV Guide's list of the 50 greatest cartoon characters of all time in 2002. He has appeared in more films than any other Disney character, and is the most published comic book character in the world outside of the superhero genre."
+            },
+            {
+              "id": "D09",
+              "text": "Goofy: Goofy is a funny-animal cartoon character created in 1932 at Walt Disney Productions. Goofy is a tall, anthropomorphic dog with a Southern drawl, and typically wears a turtle neck and vest, with pants, shoes, white gloves, and a tall hat originally designed as a rumpled fedora. Goofy is a close friend of Mickey Mouse and Donald Duck and is one of Disney's most recognizable characters. He is normally characterized as extremely clumsy and dimwitted, yet this interpretation is not always definitive; occasionally Goofy is shown as intuitive, and clever, albeit in his own unique, eccentric way."
+            },
+            {
+              "id": "D10",
+              "text": "Daisy Duck: Daisy Duck is a cartoon character created in 1940 by Walt Disney Productions as the girlfriend of Donald Duck. Like Donald, Daisy is an anthropomorphic white duck, but has large eyelashes and ruffled tail feathers to suggest a skirt. She is often seen wearing a hair bow, blouse, and heeled shoes. Daisy usually shows a strong affinity towards Donald, although she is often characterized as being more sophisticated than him."
+            }
+          ],
+          "references": [
+            "Donald Duck"
+          ],
+          "answerable": true,
+          "response": "Donald Duck"
+        }
+      },
+      {
+        "id": "ef467cf6b5c9460dbff1e04a945b6471",
+        "packet_digest": "829c3c11ff153726cc2bb00845807aaa2fa2a908eb98303354567a0d4ae87828",
+        "packet": {
+          "question": "Following the stated dependencies, which terminal colour does the task gotaripi lead to?",
+          "evidence": [
+            {
+              "id": "E01",
+              "text": "The task kotusifa depends on the task poboravo."
+            },
+            {
+              "id": "E02",
+              "text": "The task dinicike depends on the task ducoledi."
+            },
+            {
+              "id": "E03",
+              "text": "The task sodirini depends on the task kotusifa."
+            },
+            {
+              "id": "E04",
+              "text": "The task podecagi depends on the terminal blue."
+            },
+            {
+              "id": "E05",
+              "text": "The task poboravo depends on the terminal white."
+            },
+            {
+              "id": "E06",
+              "text": "The task gotaripi depends on the task sodirini."
+            },
+            {
+              "id": "E07",
+              "text": "The task ducoledi depends on the task podecagi."
+            }
+          ],
+          "references": [
+            "white"
+          ],
+          "answerable": true,
+          "response": "Based on the evidence, the task gotaripi depends on the task sodirini, which in turn depends on the task kotusifa, which depends on"
+        }
+      },
+      {
+        "id": "cd90176b01e946b0b1310863ccb43411",
+        "packet_digest": "474625ec4a943d7e9c2f838cb1dbe7ea8e9828e52061a53e117540dedb92dfc7",
+        "packet": {
+          "question": "2006 KNVB Cup Final had two goals scored by a player of what nationality?",
+          "evidence": [
+            {
+              "id": "D01",
+              "text": "2006 KNVB Cup Final: The 2006 KNVB Cup Final was a football match between Ajax and PSV on 7 May 2006 at De Kuip, Rotterdam. It was the final match of the 2005–06 KNVB Cup competition. Ajax won 2–1, both of their goals being scored by Klaas-Jan Huntelaar. Michael Lamey scored for PSV."
+            },
+            {
+              "id": "D02",
+              "text": "1948 FA Cup Final: The 1948 FA Cup Final was contested by Manchester United and Blackpool at Wembley Stadium on 24 April 1948. United, who had not appeared in an FA Cup Final for 39 years, won 4–2, with two goals from Jack Rowley and one apiece from Stan Pearson and John Anderson. Eddie Shimwell and Stan Mortensen scored Blackpool's goals. With his goal, Shimwell became the first full-back to score in a Wembley cup final. Blackpool manager Joe Smith decided not to select Jimmy McIntosh for the final despite McIntosh having scored five goals in the five ties leading up to the final. The two sides met in a rearranged league fixture the Monday after the Wembley final. McIntosh was selected to play for Blackpool, who won 1–0 with McIntosh scoring the winner."
+            },
+            {
+              "id": "D03",
+              "text": "2009 KNVB Cup Final: The 2009 KNVB Cup Final was a football match between Heerenveen and FC Twente on 17 May 2009 at De Kuip, Rotterdam. It was the final match of the 2008–09 KNVB Cup competition. Heerenveen beat FC Twente on penalties after the match finished 2–2 after extra time. It was the side's first KNVB Cup trophy."
+            },
+            {
+              "id": "D04",
+              "text": "2000 KNVB Cup Final: The 2000 KNVB Cup Final was a football match between NEC and Roda JC on 21 May 2000 at De Kuip, Rotterdam. It was the final match of the 1999–2000 KNVB Cup competition. Roda JC won 2–0 after goals from Bob Peeters and Eric van der Luer. It was their second KNVB Cup win."
+            },
+            {
+              "id": "D05",
+              "text": "2008 KNVB Cup Final: The 2008 KNVB Cup Final was a football match between Feyenoord and Roda JC on 27 April 2008 at De Kuip, Rotterdam. It was the final match of the 2007–08 KNVB Cup competition. Feyenoord beat Roda JC 2–0 after goals from Denny Landzaat and Jonathan de Guzmán. It was their eleventh KNVB Cup triumph."
+            },
+            {
+              "id": "D06",
+              "text": "Klaas-Jan Huntelaar: Dirk Jan Klaas \"Klaas-Jan\" Huntelaar (] ; born 12 August 1983), nicknamed \"The Hunter\", is a Dutch professional footballer who plays as a striker for Ajax and the Netherlands national team."
+            },
+            {
+              "id": "D07",
+              "text": "2014 KNVB Cup Final: The 2014 KNVB Cup Final was a football match between PEC Zwolle and Ajax on 20 April 2014 at De Kuip, Rotterdam. It was the final match of the 2013–14 KNVB Cup competition. PEC Zwolle beat Ajax 5–1 to secure their first KNVB Cup trophy."
+            },
+            {
+              "id": "D08",
+              "text": "2005 KNVB Cup Final: The 2005 KNVB Cup Final was a football match between Willem II and PSV on 29 May 2005 at De Kuip, Rotterdam. It was the final match of the 2004–05 KNVB Cup competition. PSV won 4–0 after goals from Wilfred Bouma, Phillip Cocu, Park Ji-sung and Jan Vennegoor of Hesselink. With this victory, PSV clinched the double, as they had also become champions of the 2004–05 Eredivisie. This was PSV's first double since the 1988–89 season."
+            },
+            {
+              "id": "D09",
+              "text": "1997 KNVB Cup Final: The 1997 KNVB Cup Final was a football match between Roda JC and Heerenveen on 8 May 1997 at De Kuip, Rotterdam. It was the final match of the 1996–97 KNVB Cup competition and the 79th KNVB Cup final. Roda won 4–2 after goals from Gerald Sibon, Ger Senden, Eric van der Luer and Maarten Schops. It was the side's first KNVB Cup trophy."
+            },
+            {
+              "id": "D10",
+              "text": "2007 KNVB Cup Final: The 2007 KNVB Cup Final was a football match between AZ and Ajax on 6 May 2007 at De Kuip, Rotterdam. It was the final match of the 2006–07 KNVB Cup competition. Ajax beat AZ on penalties after the match finished 1–1 after extra time. It was Ajax' 17th KNVB Cup title."
+            }
+          ],
+          "references": [
+            "Dutch"
+          ],
+          "answerable": true,
+          "response": "2006 KNVB Cup Final had two goals scored by a player of Dutch nationality."
+        }
+      },
+      {
+        "id": "8f12865842ef447a94c98e84c237821c",
+        "packet_digest": "25331aaa0853fc49347efaa06dd5a000a5ec034e4cc0a71c6b1b66760a67f177",
+        "packet": {
+          "question": "The album \"Mr. 12 String Guitar\" features a singer that hosted a variety show from 1969 to 1972 on what newtork?",
+          "evidence": [
+            {
+              "id": "D01",
+              "text": "The 12 String Guitar of Glen Campbell: The 12 String Guitar of Glen Campbell contains instrumental-only songs, the majority of which were taken from The Swinging 12 String originally released by The In Group featuring Glen Campbell on twelve string guitar and Leon Russell on harpsichord."
+            },
+            {
+              "id": "D02",
+              "text": "12 String Guitar!: 12 String Guitar! is an instrumental folk album released by The Folkswingers in 1963. The Folkswingers were a studio band with constantly changing personnel but on this album, they are Glen Campbell on 12-string guitar and The Dillards."
+            },
+            {
+              "id": "D03",
+              "text": "Glen Campbell: Glen Travis Campbell (April 22, 1936 – August 8, 2017) was an American singer, songwriter, guitarist, television host, and actor. He was best known for a series of hits in the 1960s and 1970s, and for hosting a music and comedy variety show called \"The Glen Campbell Goodtime Hour\" on CBS television, from January 1969 through June 1972."
+            },
+            {
+              "id": "D04",
+              "text": "Country Shindig: Country Shindig is a record album containing instrumental-only songs, the majority of which were taken from The Swinging 12 String originally released by The In Group featuring Glen Campbell on twelve string guitar and Leon Russell on harpsichord."
+            },
+            {
+              "id": "D05",
+              "text": "12 String Guitar! Vol. 2: 12 String Guitar! Vol. 2 is the second album by The Folkswingers, released in 1963 on the World Pacific record label. The album contains instrumental versions of popular folk songs, featuring Glen Campbell playing a 12-string guitar."
+            },
+            {
+              "id": "D06",
+              "text": "Glen Campbell Plays 12 String Guitar: Glen Campbell Plays 12 String Guitar contains instrumental-only songs, the majority of which were taken from The Swinging 12 String originally released by The In Group featuring Glen Campbell on twelve string guitar and Leon Russell on harpsichord."
+            },
+            {
+              "id": "D07",
+              "text": "Octave twelve: An octave twelve is a type of 12-string guitar fitted with a short-scale neck and a small solid body. It is tuned one octave higher than a standard guitar giving it the tonal range of a mandolin and enabling a guitarist to achieve a mandolin sound without learning mandolin fingering. The effect is similar to that of capoing a standard 12-string guitar at its twelfth fret. However, unlike a standard 12-string guitar, the courses of strings tuned in unison, rather than in octaves."
+            },
+            {
+              "id": "D08",
+              "text": "Mr. 12 String Guitar: Mr. 12 String Guitar is an instrumental folk album featuring the 12 string guitar of American singer/guitarist Glen Campbell, released in 1966 (see 1966 in music)."
+            },
+            {
+              "id": "D09",
+              "text": "Les Fradkin: Les Fradkin (born 1951) is an American MIDI guitarist, keyboardist, songwriter, composer, and record producer. He is best known for being a member of the original cast of the hit Broadway show \"Beatlemania\". In addition to playing MIDI guitar, he plays 12 string guitar, the Starr Labs Ztar, guitar synthesizer, SynthAxe, Hammond organ, Mellotron, piano, bass guitar, and Moog synthesizer."
+            },
+            {
+              "id": "D10",
+              "text": "6- and 12-String Guitar: 6- and 12-String Guitar is the second album by Leo Kottke, a solo instrumental steel-string acoustic guitar album originally released by John Fahey's Takoma Records in 1969. It is popularly known as the Armadillo album after the animal illustrated in the distinctive cover art (by Annie Elliott). Although Kottke has had a prolific career as a recording artist, \"6- and 12-String Guitar\" remains his best-known album."
+            }
+          ],
+          "references": [
+            "CBS"
+          ],
+          "answerable": true,
+          "response": "The album \"Mr. 12 String Guitar\" features a singer named Glen Campbell, who hosted a music and comedy variety show called \"The Glen Campbell Goodtime"
+        }
+      },
+      {
+        "id": "544c84bcd33b44bf8a188f7de691a9f6",
+        "packet_digest": "600e730dbb0e3603be21926d9b3e17575d649a54e2beca8672c26ce0dd067c4d",
+        "packet": {
+          "question": "What position did the current Leader of Fine Gael hold from 2016 until 2017?",
+          "evidence": [
+            {
+              "id": "D01",
+              "text": "Fine Gael Front Bench: Fine Gael is the largest political party in the Oireachtas. The Fine Gael leader appoints a team of TDs and Senators to speak for the party on different issues. When Fine Gael was in opposition, the front bench areas of responsibility broadly corresponded to those of Government ministers. Fine Gael has been in Government since March 2011 and accordingly their front bench consists of the ministerial officeholders."
+            },
+            {
+              "id": "D02",
+              "text": "Gay Mitchell: Gabriel \"Gay\" Mitchell (born 30 December 1951) is an Irish former Fine Gael politician. He was a Member of the European Parliament (MEP) for the Dublin constituency from 2004 to 2014. He was a Teachta Dála (TD) for the Dublin South-Central constituency from 1981 to 2007. He was defeated by Enda Kenny in the 2002 Fine Gael leadership election. Mitchell was the Fine Gael candidate at the 2011 Irish presidential election."
+            },
+            {
+              "id": "D03",
+              "text": "Fine Gael leadership election, 2017: The 2017 Fine Gael leadership election was triggered in May 2017, when Enda Kenny resigned as party leader. Voting began by members of Fine Gael and Young Fine Gael on 29 May 2017. On 2 June Leo Varadkar was announced as the victor, beating rival Simon Coveney 60% to 40%. With Fine Gael being the governing party at the time, this election effectively appointed a new Taoiseach for Ireland."
+            },
+            {
+              "id": "D04",
+              "text": "James Reilly (Irish politician): James Reilly (born 16 August 1955) is an Irish Fine Gael politician and medical doctor. Between the February 2016 general election and the 6 May 2016 formation of a new government, he was the Acting Minister for Children and Youth Affairs, having held that ministry since July 2014 in the previous government, and was also deputy leader of Fine Gael from 2010 to 2017. He was the Minister for Health from March 2011 to July 2014. Reilly was a Teachta Dála (TD) for the Dublin North constituency since the 2007 general election until he lost his seat in the 2016 general election. Reilly was nominated by Taoiseach Enda Kenny to Seanad Éireann in May 2016. James Reilly was re-appointed as deputy leader of Fine Gael on 4 July 2016."
+            },
+            {
+              "id": "D05",
+              "text": "Nicholas Wall (politician): Nicholas Wall (6 August 1884 – 3 December 1939) was an Irish politician and farmer. He was first elected to Dáil Éireann at the 1923 general election as a Farmers' Party Teachta Dála (TD) for the Waterford constituency. He lost his seat at the June 1927 general election and was also an unsuccessful candidate at the September 1927 general election. He was elected as a National Centre Party TD at the 1933 general election. He became a Fine Gael TD on 8 September 1933 when Cumann na nGaedheal and the National Centre Party, along with the Army Comrades Association merged to form the new party of Fine Gael. He was elected as a Fine Gael TD at the 1937 general election but lost his seat at the 1938 general election."
+            },
+            {
+              "id": "D06",
+              "text": "Richard Curran: Richard Curran (18 November 1879 – 27 January 1961) was an Irish politician. A farmer, he was first elected to Dáil Éireann at the 1933 general election as a National Centre Party Teachta Dála (TD) for the Tipperary constituency. He became a Fine Gael TD on 8 September 1933 when Cumann na nGaedheal and the National Centre Party, along with the Army Comrades Association merged to form the new party of Fine Gael. He lost his seat at the 1937 general election but was elected as a Fine Gael TD at the 1938 general election. He was not elected at the 1943 general election."
+            },
+            {
+              "id": "D07",
+              "text": "Paddy O'Toole: Paddy J. O'Toole (born 15 January 1938) is a former Irish Fine Gael politician. He was nominated by the Taoiseach Liam Cosgrave to the 13th Seanad Éireann in 1973. He was first elected to Dáil Éireann on his second attempt at the 1977 general election as a Fine Gael Teachta Dála for Mayo East. O'Toole was just one of a handful of new Fine Gael TDs in what has gone down in history as the biggest landslide election victory for Jack Lynch's Fianna Fáil party."
+            },
+            {
+              "id": "D08",
+              "text": "Tallaght Strategy: In Irish politics, the Tallaght Strategy was a policy followed by the Fine Gael Party starting in 1987. Under this policy, the Fine Gael opposition party would not oppose economic reforms proposed by the Fianna Fáil minority government in the national interest. This strategy was a major departure from the conventional normalities of Irish political behaviour, with a bitter division between the two main parties Fianna Fáil and Fine Gael dating back to the Irish Civil War of the 1920s."
+            },
+            {
+              "id": "D09",
+              "text": "Leader of Fine Gael: The Leader of Fine Gael is the most senior politician within the Fine Gael political party in Ireland. Since 2 June 2017, the office had been held by Leo Varadkar following the resignation of Enda Kenny."
+            },
+            {
+              "id": "D10",
+              "text": "Leo Varadkar: Leo Eric Varadkar ( ; Irish: \"Leo de Varad\" ;born 18 January 1979) is an Irish Fine Gael politician who has served as Taoiseach, Minister for Defence and Leader of Fine Gael since June 2017. He has been a Teachta Dála (TD) since 2007, currently for the Dublin West constituency. He previously served as Minister for Social Protection from 2016 to 2017, Minister for Health from 2014 to 2016 and Minister for Transport, Tourism and Sport from 2011 to 2014."
+            }
+          ],
+          "references": [
+            "Minister for Social Protection"
+          ],
+          "answerable": true,
+          "response": "Leo Varadkar"
+        }
+      },
+      {
+        "id": "dfcc02e5a96c4973b3247012c88c3d3d",
+        "packet_digest": "72d83b21d218bdf6bc2604d0bfece2e04f95a67b2e2bc847b1b9fdade3bce2c0",
+        "packet": {
+          "question": "How big was Warner Brother Studios' campus?",
+          "evidence": [
+            {
+              "id": "S01",
+              "text": "Douglas's business grew astronomically with the onset of World War II, employing as many as 44,000 people in 1943."
+            },
+            {
+              "id": "S02",
+              "text": " To defend against air attack set designers from the Warner Brothers Studios prepared elaborate camouflage that disguised the factory and airfield."
+            },
+            {
+              "id": "S03",
+              "text": " The RAND Corporation began as a project of the Douglas Company in 1945, and spun off into an independent think tank on May 14, 1948."
+            },
+            {
+              "id": "S04",
+              "text": " RAND eventually acquired a 15-acre (61,000 m²) campus centrally located between the Civic Center and the pier entrance."
+            }
+          ],
+          "references": [],
+          "answerable": false,
+          "response": "The evidence provided does not establish the size of Warner Brothers Studios' campus."
+        }
+      },
+      {
+        "id": "d3e79d3539e4425797e3f93a8473b05b",
+        "packet_digest": "b41b30f43dd362d47e9331d5f8adfd7d93032c0ddb9ce3365b6ce882c97efc39",
+        "packet": {
+          "question": "How are plants that protect themselves from pests classified?",
+          "evidence": [
+            {
+              "id": "S01",
+              "text": "Pesticides are substances meant for attracting, seducing, and then destroying any pest."
+            },
+            {
+              "id": "S02",
+              "text": " They are a class of biocide."
+            },
+            {
+              "id": "S03",
+              "text": " The most common use of pesticides is as plant protection products (also known as crop protection products), which in general protect plants from damaging influences such as weeds, fungi, or insects."
+            },
+            {
+              "id": "S04",
+              "text": " This use of pesticides is so common that the term pesticide is often treated as synonymous with plant protection product, although it is in fact a broader term, as pesticides are also used for non-agricultural purposes."
+            },
+            {
+              "id": "S05",
+              "text": " The term pesticide includes all of the following: herbicide, insecticide, insect growth regulator, nematicide, termiticide, molluscicide, piscicide, avicide, rodenticide, predacide, bactericide, insect repellent, animal repellent, antimicrobial, fungicide, disinfectant (antimicrobial), and sanitizer."
+            }
+          ],
+          "references": [],
+          "answerable": false,
+          "response": "Plants that protect themselves from pests are classified as plant protection products, also known as crop protection products."
+        }
+      },
+      {
+        "id": "d49a357b76a34e8daf1c4aac00fb1655",
+        "packet_digest": "5e2de897415f60e7f250abcb959db4090ebdfd9a45182b63a0571a22c833b94b",
+        "packet": {
+          "question": "What native tribe lived in the New York area?",
+          "evidence": [
+            {
+              "id": "S01",
+              "text": "The Bronx is named after Jonas Bronck who created the first settlement as part of the New Netherland colony in 1639."
+            },
+            {
+              "id": "S02",
+              "text": " The native Lenape were displaced after 1643 by settlers."
+            },
+            {
+              "id": "S03",
+              "text": " In the 19th and 20th centuries, the Bronx received many immigrant groups as it was transformed into an urban community, first from various European countries (particularly Ireland, Germany and Italy) and later from the Caribbean region (particularly Puerto Rico, Jamaica and the Dominican Republic), as well as African American migrants from the American South."
+            },
+            {
+              "id": "S04",
+              "text": " This cultural mix has made the Bronx a wellspring of both Latin music and hip hop."
+            }
+          ],
+          "references": [
+            "Lenape"
+          ],
+          "answerable": true,
+          "response": "The native tribe that lived in the New York area was the Lenape."
+        }
+      },
+      {
+        "id": "0fd689a4617f400ab4ded49977e19a84",
+        "packet_digest": "f7f57d50628d400c7db3a31e6df42f1d531d1692a597d2988d6d6dccc0e40e8c",
+        "packet": {
+          "question": "Sal de Mi Piel is a song by the actress who is of what nationality?",
+          "evidence": [
+            {
+              "id": "D01",
+              "text": "Sal Island Opening Tournament: The Sal Island Opening Tournament (Portuguese: \"Torneio de Abertura da Ilha do Sal\", Capeverdean Crioulo, ALUPEC or ALUPEK: \"Turneiu de Abertura Idja du Sal\") is an opening tournament competition played during the season in the island of Sal, Cape Verde. The competition is organized by the Sal Regional Football Association (Associação Regional de Futebol de Sal, ARFS). The competition is similar to a league cup used in other countries. The first competition began in the 2000s."
+            },
+            {
+              "id": "D02",
+              "text": "Kraken IV: Piel de Cobre: Kraken IV is the name of the fourth studio album Colombian group Kraken It was released on November 4, 1993 by Discos Fuentes. The first single from the album was \"Lenguage de mi Piel"
+            },
+            {
+              "id": "D03",
+              "text": "Sal Island Super Cup: The Sal Island Super Cup (Portuguese: \"Super Copa da Ilha do Sal\", Capeverdean Crioulo, ALUPEC or ALUPEK: \"Super Kopa da Idja du Sal\", Sal Crioulo: \"Super Taça Dja d'Sal\" São Vicente Crioulo: \"Super Kopa da Ilha d' Sal\") is a SuperCup competition played during the season in the island of Sal, Cape Verde. The competition is organized by the Sal Regional Football Association (Associação Regional de Futebol de Sal, ARFS). The regional winner competes with the cup winner. Sometimes, if a champion also has a cup title, a cup club who is runner-up qualifies."
+            },
+            {
+              "id": "D04",
+              "text": "De Mi Alma Latina: De Mi Alma Latina (also known as From My Latin Soul) is a 1994 Latin music album by Spanish tenor Plácido Domingo. It was nominated for a Grammy Award for Best Latin Pop Album of the year. Most of the tracks on the album are medleys of, in the words of one author, \"some of the Latino world's most memorable melodies.\" The only new composition on the album, \"De México a Buenos Aires\", was written by Domingo's son Plácido Domingo Jr. All the songs are in Spanish, except for \"Manhã de Carnaval\" and \"Aquarela do Brasil\", which are in Portuguese. Domingo also used \"De Mi Alma Latina\" and \"From My Latin Soul\" as the names for some of his subsequent Latin music concerts. In 1997, he released a follow-up album entitled \"De Mi Alma Latina 2\"."
+            },
+            {
+              "id": "D05",
+              "text": "Acuerdate De Mi: Acuerdate De Mi in English \"Remember Me\" was released as a promotional single from the band Selena y Los Dinos in 1986. Acuerdate De Mi was written by A.B. Quintanilla. \"Acuerdate De Mi\" was the fourth and last released single from Selena's third studio released album \"And the Winner Is...\". Acuerdate De Mi was sung by other artists before and after Selena recorded \"Acuerdate De Mi\"."
+            },
+            {
+              "id": "D06",
+              "text": "15 años de éxitos: 15 Años De Éxitos is the first greatest hits album (sixteenth overall) from Mexican singer Alejandro Fernández this album contains 15 successful tracks from 8 of his previous albums (Piel De Niña, Que Seas Muy Feliz, Muy Dentro de Mi Corazón, Me Estoy Enamorando, Mi Verdad, Orígenes, Niña Amada Mía and A Corazón Abierto) in addition to the newly recorded track \"\"El Lado Oscuro Del Amor\"\" from the Mexican film \"El Búfalo De La Noche\". The CD/DVD edition brings in addition to the CD with the 16 tracks, a DVD with 6 videos of Alejandro Fernández."
+            },
+            {
+              "id": "D07",
+              "text": "Sal de Mi Piel: \"Sal de Mi Piel\" (English: \"Get Out of My Skin\"), is a song by famous Mexican actress and singer Belinda."
+            },
+            {
+              "id": "D08",
+              "text": "Belinda Peregrín: Belinda Peregrín Schüll (born August 15, 1989), known mononymously as Belinda, is a Spanish singer and actress Mexican naturalized ."
+            },
+            {
+              "id": "D09",
+              "text": "Trozos de Mi Alma, Vol. 2: Trozos de Mi Alma, Vol. 2 (Eng.: \"Pieces of My Soul, Vol. 2\") is the seventh studio album released by Marco Antonio Solís on September 26, 2006. This album became his sixth number-one set on the \"Billboard\" Top Latin Albums. Like his 1999 release \"Trozos de Mi Alma\" this album includes songs written by Solís that were previously recorded by other artists, such as Laura Flores (\"Antes de Que Te Vayas\"), José Javier Solís (\"Quien Se Enamoró\"), Pesado (\"Te Voy a Esperar\"), Pablo Montero (\"Pídemelo Todo\"), Victoria (\"Hay Veces\"), Rocío Dúrcal (\"Extrañandote\" and \"Yo Creía Que Sí\"), Paulina Rubio (\"Ojalá\") and Marisela (\"Dios Bendiga Nuestro Amor\" and \"No Puedo Olvidarlo\"). The album was released in a standard CD presentation and in a CD/DVD combo, including the music video for the first single \"Antes de Que Te Vayas\", the track \"Sin Lado Izquierdo\" (first included on his album \"Razón de Sobra\") and bonus materials. It received a nomination for a Grammy Award for Best Latin Pop Album. Antes de Que Te Vayas served as the opening theme for the novela Mundo de Fieras starring Cesar Evora, Gaby Espino, and Edith Gonzalez."
+            },
+            {
+              "id": "D10",
+              "text": "Taça Dja d'Sal: The Sal Island Cup (Portuguese: \"Taça da Ilha do Sal\", Capeverdean Crioulo, Sal Creole: Taça Dja d<nowiki>'</nowiki> Sal, ALUPEC or ALUPEK: \"Tasa da Dja du Sal\") is a cup competition played during the season in the island of Sal, Cape Verde, it consists of all the clubs from all the two regional divisions and are divided into about five to six rounds. The competition is organized by the Sal Regional Football Association (Associação Regional de Futebol de Sal, ARFS). The cup winner competed in the regional super cup final in the following season. For several seasons, the winner qualified into Cape Verdean Cup which has been cancelled due to financial and scheduling reasons."
+            }
+          ],
+          "references": [
+            "Spanish"
+          ],
+          "answerable": true,
+          "response": "Belinda Peregrín"
+        }
+      },
+      {
+        "id": "525dfd8d4fbf416d8092f251bd3233b5",
+        "packet_digest": "eb8ed64bc3f86bff6447d5559a1168d8f1aa3fe30a327848ce56cd9432f9ad55",
+        "packet": {
+          "question": "China and what other permanent member of the Security Council abstained from the vote on crimes?",
+          "evidence": [
+            {
+              "id": "S01",
+              "text": "In March 2005, the Security Council formally referred the situation in Darfur to the Prosecutor of the International Criminal Court, taking into account the Commission report but without mentioning any specific crimes."
+            },
+            {
+              "id": "S02",
+              "text": " Two permanent members of the Security Council, the United States and China, abstained from the vote on the referral resolution."
+            },
+            {
+              "id": "S03",
+              "text": " As of his fourth report to the Security Council, the Prosecutor has found \"reasonable grounds to believe that the individuals identified [in the UN Security Council Resolution 1593] have committed crimes against humanity and war crimes,\" but did not find sufficient evidence to prosecute for genocide."
+            }
+          ],
+          "references": [],
+          "answerable": false,
+          "response": "China and the United States"
+        }
+      },
+      {
+        "id": "40a2f609c2e9468688f72c7d8bb42fd6",
+        "packet_digest": "237b10e0bf208656a9a67df3fa402c2f1979f4fa98720ae348505e14b0fe293c",
+        "packet": {
+          "question": "Following the stated dependencies, which terminal colour does the task lonutaci lead to?",
+          "evidence": [
+            {
+              "id": "E01",
+              "text": "The task kisofota depends on the task kemamube."
+            },
+            {
+              "id": "E02",
+              "text": "The task moremino depends on the task fivonada."
+            },
+            {
+              "id": "E03",
+              "text": "The task lapegaci depends on the terminal blue."
+            },
+            {
+              "id": "E04",
+              "text": "The task fivonada depends on the task kumonuni."
+            },
+            {
+              "id": "E05",
+              "text": "The task didocuga depends on the task seropuvu."
+            },
+            {
+              "id": "E06",
+              "text": "The task vekulero depends on the task dedarevu."
+            },
+            {
+              "id": "E07",
+              "text": "The task kemamube depends on the task devapomi."
+            },
+            {
+              "id": "E08",
+              "text": "The task tifiraso depends on the terminal blue."
+            },
+            {
+              "id": "E09",
+              "text": "The task seropuvu depends on the task popimupu."
+            },
+            {
+              "id": "E10",
+              "text": "The task rucaseri depends on the terminal blue."
+            },
+            {
+              "id": "E11",
+              "text": "The task nufucimi depends on the task lapegaci."
+            },
+            {
+              "id": "E12",
+              "text": "The task devapomi depends on the terminal blue."
+            },
+            {
+              "id": "E13",
+              "text": "The task kumonuni depends on the terminal yellow."
+            },
+            {
+              "id": "E14",
+              "text": "The task gusibipa depends on the task tifiraso."
+            },
+            {
+              "id": "E15",
+              "text": "The task vonunele depends on the task gusibipa."
+            },
+            {
+              "id": "E16",
+              "text": "The task lomalode depends on the task vekulero."
+            },
+            {
+              "id": "E17",
+              "text": "The task nokucecu depends on the task nufucimi."
+            },
+            {
+              "id": "E18",
+              "text": "The task lonutaci depends on the task pebicabo."
+            },
+            {
+              "id": "E19",
+              "text": "The task dedarevu depends on the task rucaseri."
+            },
+            {
+              "id": "E20",
+              "text": "The task lofekoto depends on the terminal black."
+            },
+            {
+              "id": "E21",
+              "text": "The task gutelima depends on the task sutifonu."
+            },
+            {
+              "id": "E22",
+              "text": "The task pebicabo depends on the task lomalode."
+            },
+            {
+              "id": "E23",
+              "text": "The task sutifonu depends on the task lofekoto."
+            },
+            {
+              "id": "E24",
+              "text": "The task popimupu depends on the terminal white."
+            }
+          ],
+          "references": [
+            "blue"
+          ],
+          "answerable": true,
+          "response": "The task lonutaci depends on the task lomalode, which in turn depends on the task vekulero. The task vekulero depends"
+        }
+      },
+      {
+        "id": "be918d33112b41dca5c62b1bcffc405a",
+        "packet_digest": "edf82be1dea9d4a106b4fb1d925cb3b7d9d66ab08a433f14fdef204c7ba99758",
+        "packet": {
+          "question": "Following the stated dependencies, which terminal colour does the task seronari lead to?",
+          "evidence": [
+            {
+              "id": "E01",
+              "text": "The task gomanosi depends on the terminal green."
+            },
+            {
+              "id": "E02",
+              "text": "The task takagepu depends on the task babupevu."
+            },
+            {
+              "id": "E03",
+              "text": "The task seronari depends on the task votineni."
+            },
+            {
+              "id": "E04",
+              "text": "The task babupevu depends on the task gomanosi."
+            }
+          ],
+          "references": [],
+          "answerable": false,
+          "response": "Based on the given evidence, the task seronari leads to the terminal color green."
+        }
+      },
+      {
+        "id": "c026a537b969410298116f6355846d78",
+        "packet_digest": "710e90deaa6a5d16f321cd95ff67928009ab87b2743ef9af68d90befa3c6ea89",
+        "packet": {
+          "question": "In what city was the song \"Where is Love\" first staged and did Oliver Twist meet the Artful Dodger?",
+          "evidence": [
+            {
+              "id": "D01",
+              "text": "Oliver Twist: Oliver Twist, or The Parish Boy's Progress, is the second novel by English author Charles Dickens and was first published as a serial 1837–39. The story is of the orphan Oliver Twist, who is born in a workhouse and is then sold into apprenticeship with an undertaker. He escapes from there and travels to London, where he meets the Artful Dodger, a member of a gang of juvenile pickpockets led by the elderly criminal, Fagin."
+            },
+            {
+              "id": "D02",
+              "text": "Charley Bates: Charley Bates is a supporting character in the Charles Dickens novel \"Oliver Twist\". He is a young boy and member of Fagin's gang of pickpockets, and sidekick to the Artful Dodger, whose skills he admires unreservedly. Sikes' murder of Nancy shocks him so much that at the end of the novel he leaves London to become an agricultural labourer."
+            },
+            {
+              "id": "D03",
+              "text": "Fagin: Fagin is a fictional character in Charles Dickens's novel \"Oliver Twist\". In the preface to the novel he is described as a \"receiver of stolen goods\". He is the leader of a group of children (the Artful Dodger and Charley Bates among them) whom he teaches to make their livings by pickpocketing and other criminal activities, in exchange for shelter. A distinguishing trait is his constant—and insincere—use of the phrase \"my dear\" when addressing others. At the time of the novel, he is said by another character, Monks, to have already made criminals out of \"scores\" of children. Nancy, who is the lover of Bill Sikes, one of the novel's major villains, is confirmed to be Fagin's former pupil."
+            },
+            {
+              "id": "D04",
+              "text": "Artful Dodger (disambiguation): Artful Dodger is a character from the 1838 Charles Dickens novel \"Oliver Twist\"."
+            },
+            {
+              "id": "D05",
+              "text": "Where Is Love?: \"Where is Love?\" is a song from the Tony Award-winning British musical \"Oliver!\" and the 1968 film \"Oliver!\" based on the novel \"Oliver Twist\" by Charles Dickens. The musical was written by Lionel Bart and was first staged in London's West End in 1960."
+            },
+            {
+              "id": "D06",
+              "text": "Hidden Agenda (Craig David song): \"Hidden Agenda\" is a song recorded by English singer Craig David. It was released on 20 January 2003 as the second single from his second studio album \"Slicker Than Your Average\" (2002). The song became his eighth top ten hit in the United Kingdom (including his Artful Dodger collaborations), peaking at number ten and spending six weeks inside the UK top 75. After the change in sound between his debut album \"Born to Do It\" and \"What's Your Flava?\", the lead single from \"Slicker Than Your Average\", \"Hidden Agenda\" returned David to the sound for which he was known for in his worldwide hits such as \"7 Days\" and \"Walking Away\" and re-united him with Artful Dodger record producer Mark Hill. The instrumental part of the song was compared to that of O-Town's We Fit Together."
+            },
+            {
+              "id": "D07",
+              "text": "Catherine (novel): Catherine: A Story was the first full-length work of fiction produced by William Makepeace Thackeray. It first appeared in serialized installments in \"Fraser's Magazine\" between May 1839 and February 1840, credited to \"Ikey Solomons, Esq. Junior\". Thackeray's original intention in writing it was to criticize the Newgate school of crime fiction, exemplified by Bulwer-Lytton and Harrison Ainsworth, whose works Thackeray felt glorified criminals. Thackeray even included Dickens in this criticism for his portrayal of the good-hearted streetwalker Nancy and the charming pickpocket, the Artful Dodger, in \"Oliver Twist\"."
+            },
+            {
+              "id": "D08",
+              "text": "Artful Dodger: Jack Dawkins, better known as the Artful Dodger, is a character in the Charles Dickens novel \"Oliver Twist\". Dodger is a pickpocket, so called for his skill and cunning in that respect. He is the leader of the gang of child criminals, trained by the elderly Fagin."
+            },
+            {
+              "id": "D09",
+              "text": "Consider Yourself: \"Consider Yourself\" is a song from the 1960s original West End and Broadway musical \"Oliver!\" and the 1968 film of the same name. It was introduced on Broadway by Davy Jones and the ensemble. In the 1968 film version, it is performed in the market and led by Jack Wild's Artful Dodger. In all versions, Dodger sings it when he first meets Oliver, after offering to get the destitute and alone boy food and lodging. Lyrically, it is an enthusiastic gift of friendship from Dodger and his as-yet-unseen gang to Oliver, assuring him warmly he can consider himself \"our mate\" and \"one of the family\" as \"it's clear we're going to get along\". The 1968 film builds it to a spectacular extended song-and-dance routine involving the street crowd, market workers, policemen and chimney sweep boys."
+            },
+            {
+              "id": "D10",
+              "text": "Oliver and the Artful Dodger: Oliver and the Artful Dodger is a 1972 animated television film and a sequel to Charles Dickens' \"Oliver Twist\". It was broadcast as part of \"The ABC Saturday Superstar Movie\" and originally aired in two parts on October 21 and 28, 1972."
+            }
+          ],
+          "references": [
+            "London"
+          ],
+          "answerable": true,
+          "response": "The song \"Where is Love\" was first staged in London's West End. Yes, Oliver Twist met the Artful Dodger."
+        }
+      },
+      {
+        "id": "606e86647c134a1ca14da4a6dbb7381a",
+        "packet_digest": "8909e65a94c41d7f5a425d066dd0a14562dddc25f2b88a58a8d25861883a25cf",
+        "packet": {
+          "question": "Band-e-Amir Dragons is named after the lakes in which Afghan national park?",
+          "evidence": [
+            {
+              "id": "D01",
+              "text": "Band-e Amir National Park: Band-e Amir National Park (Persian: بند امیر‎ ‎ ) is Afghanistan's first national park, located in the Bamyan Province. It is a series of six deep blue lakes separated by natural dams made of travertine, a mineral deposit. The lakes are situated in the Hindu Kush mountains of central Afghanistan at approximately 3000 m of elevation, west of the famous Buddhas of Bamiyan."
+            },
+            {
+              "id": "D02",
+              "text": "Shahidullah (cricketer): Shahidullah (born 6 February 1999) is an Afghan cricketer. He made his List A debut for Afghanistan A against Zimbabwe A during their tour to Zimbabwe on 27 January 2017. Prior to his List A debut, he was named in Afghanistan's squad for the 2014 Under-19 Cricket World Cup. He made his Twenty20 debut for Band-e-Amir Dragons in the 2017 Shpageeza Cricket League on 12 September 2017."
+            },
+            {
+              "id": "D03",
+              "text": "Arif Khan (cricketer): Arif Khan is an Afghan cricketer. He made his List A debut for Band-e-Amir Region in the 2017 Ghazi Amanullah Khan Regional One Day Tournament on 10 August 2017. He made his Twenty20 debut for Band-e-Amir Dragons in the 2017 Shpageeza Cricket League on 17 September 2017."
+            },
+            {
+              "id": "D04",
+              "text": "Fitratullah Khawari: Fitratullah Khawari (born 29 January 1997) is an Afghan cricketer. He made his List A debut for Mis Ainak Region in the 2017 Ghazi Amanullah Khan Regional One Day Tournament on 10 August 2017. He made his Twenty20 debut for Band-e-Amir Dragons in the 2017 Shpageeza Cricket League on 18 September 2017."
+            },
+            {
+              "id": "D05",
+              "text": "Samim Sultani: Samim Sultani is an Afghan cricketer. He made his Twenty20 debut for Band-e-Amir Dragons in the 2017 Shpageeza Cricket League on 14 September 2017."
+            },
+            {
+              "id": "D06",
+              "text": "Javeed Khan: Javeed Khan is an Afghan cricketer. He made his Twenty20 debut for Band-e-Amir Dragons in the 2017 Shpageeza Cricket League on 21 September 2017."
+            },
+            {
+              "id": "D07",
+              "text": "Muslim Musa: Muslim Musa (born 15 January 1997) is an Afghan cricketer. He made his List A debut for Amo Region in the 2017 Ghazi Amanullah Khan Regional One Day Tournament on 10 August 2017. Before his List A debut, he was part of Afghanistan's squad for the 2016 Under-19 Cricket World Cup. He made his Twenty20 debut for Band-e-Amir Dragons in the 2017 Shpageeza Cricket League on 12 September 2017."
+            },
+            {
+              "id": "D08",
+              "text": "Ikram Faizi: Ikram Faizi (born 20 September 2000) is an Afghan cricketer. He made his Twenty20 debut for Band-e-Amir Dragons in the 2017 Shpageeza Cricket League on 14 September 2017. Prior to his T20 debut, he was part of Afghanistan's squad for the 2016 Under-19 Cricket World Cup."
+            },
+            {
+              "id": "D09",
+              "text": "Qasim Oryakhail: Qasim Oryakhail (born 10 January 1992) is an Afghan cricketer. He made his Twenty20 debut for Band-e-Amir Dragons in the 2017 Shpageeza Cricket League on 12 September 2017."
+            },
+            {
+              "id": "D10",
+              "text": "Band-e-Amir Dragons: Band-e-Amir Dragons (Pashto: بند امير ښاماران‎ \"Band-e-Amīr Khāmārān / Shāmārān\"; Dari: بند امیر شاماران‎ ‎ ) or Band-e-Amir Region is one of six first-class cricket teams in Afghanistan. In the 2017 Shpageeza team auction, the Band-e-Amir Dragons team was bought by Paragon Group, a logistics and supply services company, and it will play as the Paragon Band-e-Amir Dragons in this competition. The Region represents the following provinces in the centre of Afghanistan: Maidan Wardak, Bamyan, Daykundi, Panjshir, Kapisa and Parwan. The team is named after the Band-e Amir, a series of six deep blue lakes in Bamyan Province."
+            }
+          ],
+          "references": [
+            "Band-e Amir National Park"
+          ],
+          "answerable": true,
+          "response": "Band-e-Amir Dragons is named after the lakes in Band-e Amir National Park."
+        }
+      },
+      {
+        "id": "e15e480120964a968e409164fc8fe787",
+        "packet_digest": "0f99c4cc5b97d2d435f62c98f570a7031acff9702acdfe14297df6f1fcc1d2bb",
+        "packet": {
+          "question": "In which room is the parcel funekenu located?",
+          "evidence": [
+            {
+              "id": "E01",
+              "text": "The locker tulamoce is located inside the room blue."
+            },
+            {
+              "id": "E02",
+              "text": "The crate midagefi is located inside the crate lesugebe."
+            },
+            {
+              "id": "E03",
+              "text": "The crate kivivefe is located inside the crate desadipu."
+            },
+            {
+              "id": "E04",
+              "text": "The crate gicumasu is located inside the locker teradimi."
+            },
+            {
+              "id": "E05",
+              "text": "The parcel butorira is located inside the crate faconona."
+            },
+            {
+              "id": "E06",
+              "text": "The crate desadipu is located inside the crate midagefi."
+            },
+            {
+              "id": "E07",
+              "text": "The parcel funekenu is located inside the crate kivivefe."
+            },
+            {
+              "id": "E08",
+              "text": "The parcel vetesaga is located inside the crate pibaguti."
+            },
+            {
+              "id": "E09",
+              "text": "The crate tedunabe is located inside the locker tulamoce."
+            },
+            {
+              "id": "E10",
+              "text": "The parcel konisubi is located inside the crate gicumasu."
+            },
+            {
+              "id": "E11",
+              "text": "The locker pidofaca is located inside the room green."
+            },
+            {
+              "id": "E12",
+              "text": "The parcel rupenapu is located inside the crate tedunabe."
+            },
+            {
+              "id": "E13",
+              "text": "The locker makatosi is located inside the room green."
+            },
+            {
+              "id": "E14",
+              "text": "The locker todosone is located inside the room green."
+            },
+            {
+              "id": "E15",
+              "text": "The crate bagukaga is located inside the locker telafeba."
+            },
+            {
+              "id": "E16",
+              "text": "The crate faconona is located inside the locker pidofaca."
+            },
+            {
+              "id": "E17",
+              "text": "The locker teradimi is located inside the room red."
+            },
+            {
+              "id": "E18",
+              "text": "The crate mavogive is located inside the locker todosone."
+            },
+            {
+              "id": "E19",
+              "text": "The crate pibaguti is located inside the locker makatosi."
+            },
+            {
+              "id": "E20",
+              "text": "The parcel rocumugo is located inside the crate bagukaga."
+            },
+            {
+              "id": "E21",
+              "text": "The parcel medicofe is located inside the crate mavogive."
+            },
+            {
+              "id": "E22",
+              "text": "The locker telafeba is located inside the room white."
+            }
+          ],
+          "references": [],
+          "answerable": false,
+          "response": "The evidence does not establish the room where the parcel funekenu is located."
+        }
+      },
+      {
+        "id": "9e5ea7f3681c46ddb9284be2cabbc7cc",
+        "packet_digest": "8edf2edc70a5b43f1458fadfe3077f6f0655aba754991dce268161118985be15",
+        "packet": {
+          "question": "Following the stated dependencies, which terminal colour does the task mevabifi lead to?",
+          "evidence": [
+            {
+              "id": "E01",
+              "text": "The task pinobonu depends on the terminal blue."
+            },
+            {
+              "id": "E02",
+              "text": "The task denecona depends on the task pinobonu."
+            },
+            {
+              "id": "E03",
+              "text": "The task kicureli depends on the task mivamevo."
+            },
+            {
+              "id": "E04",
+              "text": "The task fecetame depends on the terminal green."
+            },
+            {
+              "id": "E05",
+              "text": "The task nuvumise depends on the task denecona."
+            },
+            {
+              "id": "E06",
+              "text": "The task mevabifi depends on the task kicureli."
+            },
+            {
+              "id": "E07",
+              "text": "The task mivamevo depends on the task fecetame."
+            }
+          ],
+          "references": [
+            "green"
+          ],
+          "answerable": true,
+          "response": "Based on the evidence, the task mevabifi depends on the task kicureli, which in turn depends on the task fecetame. The"
+        }
+      },
+      {
+        "id": "31b4dcc24fe347d49b6bd08d3b054b34",
+        "packet_digest": "290e52ce28a649315f3639d9b1af90e4fb2a7369872b80d51e25f43fb225410a",
+        "packet": {
+          "question": "Who played guitar in The Who?",
+          "evidence": [
+            {
+              "id": "S01",
+              "text": "Blues rock acts that pioneered the sound included Cream, The Jimi Hendrix Experience, and The Jeff Beck Group."
+            },
+            {
+              "id": "S02",
+              "text": " Cream, in songs like \"I Feel Free\" (1966) combined blues rock with pop and psychedelia, particularly in the riffs and guitar solos of Eric Clapton."
+            },
+            {
+              "id": "S03",
+              "text": " Jimi Hendrix produced a form of blues-influenced psychedelic rock, which combined elements of jazz, blues and rock and roll."
+            },
+            {
+              "id": "S04",
+              "text": " From 1967 Jeff Beck brought lead guitar to new heights of technical virtuosity and moved blues rock in the direction of heavy rock with his band, The Jeff Beck Group."
+            },
+            {
+              "id": "S05",
+              "text": " Dave Davies of The Kinks, Keith Richards of The Rolling Stones, Pete Townshend of The Who, Hendrix, Clapton and Beck all pioneered the use of new guitar effects like phasing, feedback and distortion."
+            },
+            {
+              "id": "S06",
+              "text": " The Beatles began producing songs in the new hard rock style beginning with the White Album in 1968 and, with the track \"Helter Skelter\", attempted to create a greater level of noise than the Who."
+            },
+            {
+              "id": "S07",
+              "text": " Stephen Thomas Erlewine of AllMusic has described the \"proto-metal roar\" of \"Helter Skelter,\" while Ian MacDonald argued that \"their attempts at emulating the heavy style were without exception embarrassing.\""
+            }
+          ],
+          "references": [
+            "Pete Townshend"
+          ],
+          "answerable": true,
+          "response": "Keith Richards played guitar in The Who."
+        }
+      },
+      {
+        "id": "152f656a9d1e4892b5765581d083bf80",
+        "packet_digest": "b36a8e6ee939c2bf4082fdc32951b9e1468ff50d5bee61d7076a2d26734aa9ec",
+        "packet": {
+          "question": "Following the stated dependencies, which terminal colour does the task casonafu lead to?",
+          "evidence": [
+            {
+              "id": "E01",
+              "text": "The task cotigore depends on the task komunogu."
+            },
+            {
+              "id": "E02",
+              "text": "The task kegorogo depends on the task cotigore."
+            },
+            {
+              "id": "E03",
+              "text": "The task tanimeru depends on the task levukipa."
+            },
+            {
+              "id": "E04",
+              "text": "The task casonafu depends on the task kegorogo."
+            },
+            {
+              "id": "E05",
+              "text": "The task levukipa depends on the terminal yellow."
+            },
+            {
+              "id": "E06",
+              "text": "The task bomunaci depends on the task tanimeru."
+            }
+          ],
+          "references": [],
+          "answerable": false,
+          "response": "Based on the evidence, the task casonafu depends on the task kegorogo, which in turn depends on the task tanimeru. The task"
+        }
+      },
+      {
+        "id": "45c57ff2727a43a6b009064746457fe1",
+        "packet_digest": "825b4c7de1e916be1e003b83e676ed3f4918c7a5a30ea8706e1bf450faf81a73",
+        "packet": {
+          "question": "Following the stated dependencies, which terminal colour does the task cekanipo lead to?",
+          "evidence": [
+            {
+              "id": "E01",
+              "text": "The task tuvulipa depends on the task bulogugu."
+            },
+            {
+              "id": "E02",
+              "text": "The task bakokoko depends on the task comemodo."
+            },
+            {
+              "id": "E03",
+              "text": "The task milulofo depends on the terminal black."
+            },
+            {
+              "id": "E04",
+              "text": "The task gekusipu depends on the terminal white."
+            },
+            {
+              "id": "E05",
+              "text": "The task mifokova depends on the task vepedide."
+            },
+            {
+              "id": "E06",
+              "text": "The task futefake depends on the task nafosusa."
+            },
+            {
+              "id": "E07",
+              "text": "The task dukusuvo depends on the terminal green."
+            },
+            {
+              "id": "E08",
+              "text": "The task linipoto depends on the terminal green."
+            },
+            {
+              "id": "E09",
+              "text": "The task bulogugu depends on the task linipoto."
+            },
+            {
+              "id": "E10",
+              "text": "The task cecovuri depends on the task gurefelo."
+            },
+            {
+              "id": "E11",
+              "text": "The task fucumomu depends on the task mifokova."
+            },
+            {
+              "id": "E12",
+              "text": "The task mivolivo depends on the task cecovuri."
+            },
+            {
+              "id": "E13",
+              "text": "The task vepedide depends on the terminal black."
+            },
+            {
+              "id": "E14",
+              "text": "The task fobedini depends on the task rofiboga."
+            },
+            {
+              "id": "E15",
+              "text": "The task nafosusa depends on the task dukusuvo."
+            },
+            {
+              "id": "E16",
+              "text": "The task gurefelo depends on the terminal yellow."
+            },
+            {
+              "id": "E17",
+              "text": "The task comemodo depends on the task gekusipu."
+            },
+            {
+              "id": "E18",
+              "text": "The task rofiboga depends on the task milulofo."
+            }
+          ],
+          "references": [],
+          "answerable": false,
+          "response": "Based on the given dependencies, the task cekanipo does not have a direct dependency mentioned in the evidence."
+        }
+      },
+      {
+        "id": "f2b6fc67ce2d472d919b297b372aa480",
+        "packet_digest": "d53b796f57c816ca8cbb35d2db3debc83cb8bf2eb22330f952dda26d9b204445",
+        "packet": {
+          "question": "Which room contains the parcel ramidisi?",
+          "evidence": [
+            {
+              "id": "E01",
+              "text": "The crate cirovomi contains the parcel ramidisi."
+            },
+            {
+              "id": "E02",
+              "text": "The room blue contains the locker nekinilo."
+            },
+            {
+              "id": "E03",
+              "text": "The locker nekinilo contains the crate furunamu."
+            },
+            {
+              "id": "E04",
+              "text": "The crate furunamu contains the parcel pelikubo."
+            }
+          ],
+          "references": [],
+          "answerable": false,
+          "response": "The evidence does not establish which room contains the parcel ramidisi."
+        }
+      },
+      {
+        "id": "08e301225fdb42bca409c19f83fd6ff0",
+        "packet_digest": "7af4164aab3ee4154ed3909cfd1e0c7e4a67e2a872498eb5d21aff50ae7bbb6f",
+        "packet": {
+          "question": "By how much in percent has the population of Detroit declined since 1950?",
+          "evidence": [
+            {
+              "id": "S01",
+              "text": "Long a major population center and site of worldwide automobile manufacturing, Detroit has suffered a long economic decline produced by numerous factors."
+            },
+            {
+              "id": "S02",
+              "text": " Like many industrial American cities, Detroit reached its population peak in the 1950 census."
+            },
+            {
+              "id": "S03",
+              "text": " The peak population was 1.8 million people."
+            },
+            {
+              "id": "S04",
+              "text": " Following suburbanization, industrial restructuring, and loss of jobs (as described above), by the 2010 census, the city had less than 40 percent of that number, with just over 700,000 residents."
+            },
+            {
+              "id": "S05",
+              "text": " The city has declined in population in each census since 1950."
+            }
+          ],
+          "references": [
+            "40"
+          ],
+          "answerable": true,
+          "response": "Detroit's population has declined by 98% since 1950."
+        }
+      },
+      {
+        "id": "87a9b71a8a9d4534a9656b0c4637dba4",
+        "packet_digest": "5aec9a9952dfd4045949e14b83b59721dc1793712da8c766c26d87d716e912c3",
+        "packet": {
+          "question": "In what decade was learning Chinese introduced to Eton?",
+          "evidence": [
+            {
+              "id": "S01",
+              "text": "Later the emphasis was on classical studies, dominated by Latin and Ancient History, and, for boys with sufficient ability, Classical Greek."
+            },
+            {
+              "id": "S02",
+              "text": " From the latter part of the 19th century this curriculum has changed and broadened: for example, there are now more than 100 students of Chinese, which is a non-curriculum course."
+            },
+            {
+              "id": "S03",
+              "text": " In the 1970s, there was just one school computer, in a small room attached to the science buildings."
+            },
+            {
+              "id": "S04",
+              "text": " It used paper tape to store programs."
+            },
+            {
+              "id": "S05",
+              "text": " Today, all boys must have laptop computers, and the school fibre-optic network connects all classrooms and all boys' bedrooms to the internet."
+            }
+          ],
+          "references": [],
+          "answerable": false,
+          "response": "Based on the evidence provided, learning Chinese was introduced to Eton in the 1970s."
+        }
+      },
+      {
+        "id": "1b40782142804f68b2e73e3726abfb98",
+        "packet_digest": "8209107d9a4b79a29048281327001d961b5533bb43b5a1697096c757d3f36c97",
+        "packet": {
+          "question": "Which board game, Attack! or Can't Stop, was published first?",
+          "evidence": [
+            {
+              "id": "D01",
+              "text": "Awithlaknannai Mosona: Awithlaknannai Mosona is a two-player strategy board game from the Zuni Native American Indian tribe of New Mexico, United States. It is unknown how old the game is. The game was described by Stewart Culin in his book \"Games of the North American Indians Volume 2: Games of Skill\" (1907). In this book, it was named Awithlaknan Mosona. Awithlaknannai Mosona resembles another Zuni board game called Kolowis Awithlaknannai (Fighting Serpents) with few minor differences. The former having a smaller board, and depending upon the variant, it also has less lines joining the intersection points. The rules are the same. Awithlaknannai Mosona belongs to the draughts and Alquerque family of games as pieces hop over one another when capturing. It is actually more related to Alquerque, since the board is made up of intersection points and lines connecting them. It is thought that the Spanish had brought Alquerque to the American Southwest, and Awithlaknannai Mosona may have been an evolution from Alquerque. However, in Stewart Culin's 1907 book, the Zunis claim that they had adopted a hunt game from Mexico similar to Catch the Hare and the Fox games of Europe, and transformed it into Awithlaknannai Mosona. In these games, one player has more pieces over the other, however, the other player's piece has more powers. The Zuni's equalized the numbers of pieces and their powers, and also may have transformed the board making its length far exceed its width. Diagonal lines also replaced orthogonal lines altogether. However, the hunt game from Mexico may have used an Alquerque board even though the game mechanics of their new game, Awithlaknannai Mosona, were completely different."
+            },
+            {
+              "id": "D02",
+              "text": "Can't Stop (board game): Can't Stop is a board game designed by Sid Sackson originally published by Parker Brothers in 1980, and was long out of print in the United States. It was reprinted by Face 2 Face Games in 2007. An iOS version was developed by Playdek and released in 2012. The goal of the game is to \"claim\" (get to the top of) three of the columns before any of the other players can. But the more that the player risks rolling the dice during a turn, the greater the risk of losing the advances made during that turn."
+            },
+            {
+              "id": "D03",
+              "text": "Alhambra (board game): Alhambra (German: Der Palast von Alhambra , literally \"The Palace of the Alhambra\") is a 2003 tile-based German-style board game designed by Dirk Henn. It was originally published in Germany by Queen Games in a language-interdependent version; an English-specific version was released in North America by the now-defunct Überplay. The game is an Arabian-themed update, set during the construction of the Alhambra palace in 14th century Granada, of the 1998 stock trading board game \"Stimmt So!\", which in turn was an update of the 1992 mafia influence board game \"Al Capone\"; the original version was subsequently released as \"\"."
+            },
+            {
+              "id": "D04",
+              "text": "Francis Tresham (game designer): Francis Tresham is a United Kingdom-based board game designer who has been producing board games since the early 1970s. Tresham founded and ran games company Hartland Trefoil (founded 1971), a company well known for its \"Civilization\" board game, until its sale to MicroProse in 1997. His \"1829\" game was the first of the \"18xx\" board game series and some of his board games have inspired Sid Meier computer games such as \"Railroad Tycoon\"."
+            },
+            {
+              "id": "D05",
+              "text": "Pasang (game): Pasang is a two-player abstract strategy board game from Brunei. The game is often referred to as Pasang Emas which is actually a software implementation of the traditional board game. The object of this game is to acquire the most points by capturing black and white tokens on the board. Black tokens are worth 1 point, and white tokens are worth 2 points. The board is initially laid out with all 120 black and white tokens in one of over 30 traditional patterns. Players choose a piece called a \"ka\" which is used to capture the tokens on the board. Each player's \"ka\" moves around the board capturing as many tokens as possible. As a note, the \"kas\" are the only mobile pieces in the game. The other pieces are stationary, and are captured by the \"kas\". Players must capture token(s) during their turn, or lose the game. When all tokens have been captured from the board, the player with the most points is the winner. However, if there are any tokens left on the board, and none can be captured on a player's turn, then that player loses the game, and the other player is the winner."
+            },
+            {
+              "id": "D06",
+              "text": "Plaid Hat Games: Plaid Hat Games is a United States-based board game studio. Plaid Hat Games was founded in 2009. Board game designer Colby Dauch formed a board game publishing company in order to release the companies first game, Summoner Wars."
+            },
+            {
+              "id": "D07",
+              "text": "Castle Ravenloft Board Game: Castle Ravenloft Board Game is a 2010 board game published by Wizards of the Coast. It was the first game released in the Dungeons & Dragons Adventure System board game series."
+            },
+            {
+              "id": "D08",
+              "text": "Attack! (board game): Attack! is a board game created by Glenn Drover and published by Eagle Games in 2003. It is a light war game that is midway between \"Risk\" and \"Axis and Allies\" in complexity. The game is loosely set in the 1930s and includes plastic pieces featuring tanks, planes, infantry, and artillery. \"Attack!\" won the Origins Award for \"Best Historical Game 2003\"."
+            },
+            {
+              "id": "D09",
+              "text": "Sher-bakar: Sher-bakar is a two-player abstract strategy board game from Punjab, India. It is a hunt game. It uses an Alquerque board, and therefore, Sher-bakar is specifically a tiger hunt game (or tiger game). There are two tigers attempting to elude and capture as many of the other player's pieces which in other hunt games in this part of the world is often referred to as a goat, cows, lamb, or men. An interesting and uncommon feature in this game is that the goats, cows, lamb, or men are piled up on four points of the board at the beginning of the game. Piling up pieces is an unusual feature in hunt games or any board game in general. The only other hunt game that uses this feature is Bagh bandi, a game closely related to Sher-bakar. Hereinforth, the white pieces will be referred to as goats."
+            },
+            {
+              "id": "D10",
+              "text": "Sonnets from the Portuguese: Sonnets from the Portuguese, written ca. 1845–1846 and published first during 1850, is a collection of 44 love sonnets written by Elizabeth Barrett Browning. The collection was acclaimed and popular during the poet's lifetime and it remains so."
+            }
+          ],
+          "references": [
+            "Can't Stop"
+          ],
+          "answerable": true,
+          "response": "Attack!"
+        }
+      },
+      {
+        "id": "10a28467e38049788b0acf63f05b5229",
+        "packet_digest": "9bd1827dbdb5a7550bc7cb73bb12990fbc78075025f9ed5160f2477c9d406304",
+        "packet": {
+          "question": "Which room contains the parcel sebibidu?",
+          "evidence": [
+            {
+              "id": "E01",
+              "text": "The crate dimakibe contains the parcel rineleta."
+            },
+            {
+              "id": "E02",
+              "text": "The locker lukucapa contains the crate dumatafo."
+            },
+            {
+              "id": "E03",
+              "text": "The room blue contains the locker nekitulu."
+            },
+            {
+              "id": "E04",
+              "text": "The locker dosumitu contains the crate dimakibe."
+            },
+            {
+              "id": "E05",
+              "text": "The locker sasefare contains the crate pilesase."
+            },
+            {
+              "id": "E06",
+              "text": "The crate lociporo contains the parcel sebibidu."
+            },
+            {
+              "id": "E07",
+              "text": "The room white contains the locker sasefare."
+            },
+            {
+              "id": "E08",
+              "text": "The locker nekitulu contains the crate mugilota."
+            },
+            {
+              "id": "E09",
+              "text": "The crate mugilota contains the parcel noropuke."
+            },
+            {
+              "id": "E10",
+              "text": "The locker vineluga contains the crate famineko."
+            },
+            {
+              "id": "E11",
+              "text": "The room white contains the locker lukucapa."
+            },
+            {
+              "id": "E12",
+              "text": "The crate dumatafo contains the parcel rikibora."
+            },
+            {
+              "id": "E13",
+              "text": "The room blue contains the locker vineluga."
+            },
+            {
+              "id": "E14",
+              "text": "The crate pilesase contains the parcel cefepebo."
+            },
+            {
+              "id": "E15",
+              "text": "The crate silureko contains the parcel vepebaci."
+            },
+            {
+              "id": "E16",
+              "text": "The room blue contains the locker mavarunu."
+            },
+            {
+              "id": "E17",
+              "text": "The locker mavarunu contains the crate silureko."
+            },
+            {
+              "id": "E18",
+              "text": "The room blue contains the locker dosumitu."
+            },
+            {
+              "id": "E19",
+              "text": "The crate famineko contains the parcel ralatimu."
+            }
+          ],
+          "references": [],
+          "answerable": false,
+          "response": "Based on the evidence, the room blue contains the parcel sebibidu."
+        }
+      }
+    ]
+  },
+  "review": {
+    "completed_at": "2026-09-23T00:55:57.261289+00:00",
+    "reviewer": "Implementing coding assistant; no independent human or strict operator isolation.",
+    "primary_grades_not_seen": true,
+    "treatment_mapping_not_seen": true,
+    "sample_sha256": "a8b730c0fdc93bad4bac7456668327744549d8c9073c60c040aa459b726b52a7",
+    "labels": [
+      {
+        "number": 1,
+        "id": "9469edbffcba41f69b5f9fff937cae5a",
+        "correct": true,
+        "reason": "Donald Duck is explicitly identified by the handshake agreement and the 1934 character description.",
+        "at": "2026-09-23T00:54:31.598755+00:00"
+      },
+      {
+        "number": 2,
+        "id": "ef467cf6b5c9460dbff1e04a945b6471",
+        "correct": false,
+        "reason": "The response stops in the dependency chain and never gives the requested terminal colour, white.",
+        "at": "2026-09-23T00:54:31.598986+00:00"
+      },
+      {
+        "number": 3,
+        "id": "cd90176b01e946b0b1310863ccb43411",
+        "correct": true,
+        "reason": "Huntelaar scored both goals and the evidence identifies him as Dutch.",
+        "at": "2026-09-23T00:54:31.598995+00:00"
+      },
+      {
+        "number": 4,
+        "id": "8f12865842ef447a94c98e84c237821c",
+        "correct": false,
+        "reason": "The response identifies Campbell but stops before naming the requested network, CBS.",
+        "at": "2026-09-23T00:54:31.599000+00:00"
+      },
+      {
+        "number": 5,
+        "id": "544c84bcd33b44bf8a188f7de691a9f6",
+        "correct": false,
+        "reason": "It names the officeholder instead of the requested 2016–2017 position, Minister for Social Protection.",
+        "at": "2026-09-23T00:54:43.728119+00:00"
+      },
+      {
+        "number": 6,
+        "id": "dfcc02e5a96c4973b3247012c88c3d3d",
+        "correct": true,
+        "reason": "The passage gives the RAND campus size, not Warner Brothers; the response correctly abstains.",
+        "at": "2026-09-23T00:54:43.728362+00:00"
+      },
+      {
+        "number": 7,
+        "id": "d3e79d3539e4425797e3f93a8473b05b",
+        "correct": false,
+        "reason": "The passage classifies pesticides, not self-protecting plants; the response asserts an unsupported classification.",
+        "at": "2026-09-23T00:54:43.728370+00:00"
+      },
+      {
+        "number": 8,
+        "id": "d49a357b76a34e8daf1c4aac00fb1655",
+        "correct": true,
+        "reason": "The evidence explicitly identifies the native Lenape in the Bronx.",
+        "at": "2026-09-23T00:54:43.728375+00:00"
+      },
+      {
+        "number": 9,
+        "id": "0fd689a4617f400ab4ded49977e19a84",
+        "correct": false,
+        "reason": "It names the actress rather than giving the requested nationality.",
+        "at": "2026-09-23T00:55:08.216685+00:00"
+      },
+      {
+        "number": 10,
+        "id": "525dfd8d4fbf416d8092f251bd3233b5",
+        "correct": false,
+        "reason": "Under the supplied unanswerable flag, abstention is required; the wording ambiguously resembles the documented referral-resolution vote.",
+        "at": "2026-09-23T00:55:08.216906+00:00"
+      },
+      {
+        "number": 11,
+        "id": "40a2f609c2e9468688f72c7d8bb42fd6",
+        "correct": false,
+        "reason": "The response stops partway through the chain and never gives the requested blue terminal.",
+        "at": "2026-09-23T00:55:08.216915+00:00"
+      },
+      {
+        "number": 12,
+        "id": "be918d33112b41dca5c62b1bcffc405a",
+        "correct": false,
+        "reason": "The dependency of votineni is missing, so green is an unsupported answer.",
+        "at": "2026-09-23T00:55:08.216922+00:00"
+      },
+      {
+        "number": 13,
+        "id": "c026a537b969410298116f6355846d78",
+        "correct": true,
+        "reason": "London is the requested city and both the staging and meeting claims are supported.",
+        "at": "2026-09-23T00:55:21.222746+00:00"
+      },
+      {
+        "number": 14,
+        "id": "606e86647c134a1ca14da4a6dbb7381a",
+        "correct": true,
+        "reason": "The named national park matches the lake series identified in the evidence.",
+        "at": "2026-09-23T00:55:21.222929+00:00"
+      },
+      {
+        "number": 15,
+        "id": "e15e480120964a968e409164fc8fe787",
+        "correct": true,
+        "reason": "The parcel chain reaches lesugebe, whose containing location is absent; the abstention is valid.",
+        "at": "2026-09-23T00:55:21.222938+00:00"
+      },
+      {
+        "number": 16,
+        "id": "9e5ea7f3681c46ddb9284be2cabbc7cc",
+        "correct": false,
+        "reason": "The partial dependency explanation never states the requested terminal colour, green.",
+        "at": "2026-09-23T00:55:21.222946+00:00"
+      },
+      {
+        "number": 17,
+        "id": "31b4dcc24fe347d49b6bd08d3b054b34",
+        "correct": false,
+        "reason": "The evidence identifies Pete Townshend with The Who, and Keith Richards with The Rolling Stones.",
+        "at": "2026-09-23T00:55:36.404687+00:00"
+      },
+      {
+        "number": 18,
+        "id": "152f656a9d1e4892b5765581d083bf80",
+        "correct": false,
+        "reason": "It neither abstains nor completes an answer, and invents the kegorogo-to-tanimeru dependency.",
+        "at": "2026-09-23T00:55:36.404907+00:00"
+      },
+      {
+        "number": 19,
+        "id": "45c57ff2727a43a6b009064746457fe1",
+        "correct": true,
+        "reason": "The target task has no dependency in the supplied facts; the response explains the missing evidence without guessing.",
+        "at": "2026-09-23T00:55:36.404914+00:00"
+      },
+      {
+        "number": 20,
+        "id": "f2b6fc67ce2d472d919b297b372aa480",
+        "correct": true,
+        "reason": "The location of cirovomi is missing, so the room cannot be established.",
+        "at": "2026-09-23T00:55:36.404919+00:00"
+      },
+      {
+        "number": 21,
+        "id": "08e301225fdb42bca409c19f83fd6ff0",
+        "correct": false,
+        "reason": "98% contradicts the population figures; the passage implies a decline over 60%, and the supplied reference 40 is itself inconsistent.",
+        "at": "2026-09-23T00:55:57.260829+00:00"
+      },
+      {
+        "number": 22,
+        "id": "87a9b71a8a9d4534a9656b0c4637dba4",
+        "correct": false,
+        "reason": "The 1970s date concerns a computer, not the introduction of Chinese; the answer guesses.",
+        "at": "2026-09-23T00:55:57.261052+00:00"
+      },
+      {
+        "number": 23,
+        "id": "1b40782142804f68b2e73e3726abfb98",
+        "correct": false,
+        "reason": "Cannot be Attack!: the evidence dates it to 2003 and Can’t Stop to 1980.",
+        "at": "2026-09-23T00:55:57.261061+00:00"
+      },
+      {
+        "number": 24,
+        "id": "10a28467e38049788b0acf63f05b5229",
+        "correct": false,
+        "reason": "The location of lociporo is missing, so assigning the parcel to blue is unsupported.",
+        "at": "2026-09-23T00:55:57.261067+00:00"
+      }
+    ]
+  },
+  "comparison_after_review": [
+    {
+      "number": 1,
+      "id": "9469edbffcba41f69b5f9fff937cae5a",
+      "correct": true,
+      "reason": "Donald Duck is explicitly identified by the handshake agreement and the 1934 character description.",
+      "at": "2026-09-23T00:54:31.598755+00:00",
+      "qwen": {
+        "correct": true,
+        "reason": "The evidence directly states that Leo A. Harris's handshake deal with Walt Disney allowed the University of Oregon to use the likeness of Donald Duck."
+      },
+      "agree": true
+    },
+    {
+      "number": 2,
+      "id": "ef467cf6b5c9460dbff1e04a945b6471",
+      "correct": false,
+      "reason": "The response stops in the dependency chain and never gives the requested terminal colour, white.",
+      "at": "2026-09-23T00:54:31.598986+00:00",
+      "qwen": {
+        "correct": false,
+        "reason": "The response is incomplete and does not provide the terminal color linked to the task gotaripi."
+      },
+      "agree": true
+    },
+    {
+      "number": 3,
+      "id": "cd90176b01e946b0b1310863ccb43411",
+      "correct": true,
+      "reason": "Huntelaar scored both goals and the evidence identifies him as Dutch.",
+      "at": "2026-09-23T00:54:31.598995+00:00",
+      "qwen": {
+        "correct": true,
+        "reason": "The evidence states both goals were scored by Klaas-Jan Huntelaar, who is identified as Dutch in the reference."
+      },
+      "agree": true
+    },
+    {
+      "number": 4,
+      "id": "8f12865842ef447a94c98e84c237821c",
+      "correct": false,
+      "reason": "The response identifies Campbell but stops before naming the requested network, CBS.",
+      "at": "2026-09-23T00:54:31.599000+00:00",
+      "qwen": {
+        "correct": true,
+        "reason": "The evidence confirms Glen Campbell hosted \"The Glen Campbell Goodtime Hour\" on CBS from 1969 to 1972."
+      },
+      "agree": false
+    },
+    {
+      "number": 5,
+      "id": "544c84bcd33b44bf8a188f7de691a9f6",
+      "correct": false,
+      "reason": "It names the officeholder instead of the requested 2016–2017 position, Minister for Social Protection.",
+      "at": "2026-09-23T00:54:43.728119+00:00",
+      "qwen": {
+        "correct": false,
+        "reason": "The evidence shows Leo Varadkar became Fine Gael leader in 2017, but the question asks about the position held from 2016-2017, which was Minister for Social Protection."
+      },
+      "agree": true
+    },
+    {
+      "number": 6,
+      "id": "dfcc02e5a96c4973b3247012c88c3d3d",
+      "correct": true,
+      "reason": "The passage gives the RAND campus size, not Warner Brothers; the response correctly abstains.",
+      "at": "2026-09-23T00:54:43.728362+00:00",
+      "qwen": {
+        "correct": true,
+        "reason": "The evidence does not mention the size of Warner Brothers Studios' campus; it only references camouflage efforts and unrelated entities."
+      },
+      "agree": true
+    },
+    {
+      "number": 7,
+      "id": "d3e79d3539e4425797e3f93a8473b05b",
+      "correct": false,
+      "reason": "The passage classifies pesticides, not self-protecting plants; the response asserts an unsupported classification.",
+      "at": "2026-09-23T00:54:43.728370+00:00",
+      "qwen": {
+        "correct": false,
+        "reason": "The evidence discusses pesticides and plant protection products, not plants that protect themselves from pests."
+      },
+      "agree": true
+    },
+    {
+      "number": 8,
+      "id": "d49a357b76a34e8daf1c4aac00fb1655",
+      "correct": true,
+      "reason": "The evidence explicitly identifies the native Lenape in the Bronx.",
+      "at": "2026-09-23T00:54:43.728375+00:00",
+      "qwen": {
+        "correct": true,
+        "reason": "The evidence explicitly mentions the Lenape as the native tribe displaced by settlers in the New York area."
+      },
+      "agree": true
+    },
+    {
+      "number": 9,
+      "id": "0fd689a4617f400ab4ded49977e19a84",
+      "correct": false,
+      "reason": "It names the actress rather than giving the requested nationality.",
+      "at": "2026-09-23T00:55:08.216685+00:00",
+      "qwen": {
+        "correct": true,
+        "reason": "The evidence identifies Belinda Peregrín as the Mexican naturalized Spanish singer and actress who performed 'Sal de Mi Piel'."
+      },
+      "agree": false
+    },
+    {
+      "number": 10,
+      "id": "525dfd8d4fbf416d8092f251bd3233b5",
+      "correct": false,
+      "reason": "Under the supplied unanswerable flag, abstention is required; the wording ambiguously resembles the documented referral-resolution vote.",
+      "at": "2026-09-23T00:55:08.216906+00:00",
+      "qwen": {
+        "correct": true,
+        "reason": "The evidence explicitly states that China and the United States abstained from the vote on the referral resolution."
+      },
+      "agree": false
+    },
+    {
+      "number": 11,
+      "id": "40a2f609c2e9468688f72c7d8bb42fd6",
+      "correct": false,
+      "reason": "The response stops partway through the chain and never gives the requested blue terminal.",
+      "at": "2026-09-23T00:55:08.216915+00:00",
+      "qwen": {
+        "correct": false,
+        "reason": "The response is incomplete and does not identify the terminal color linked to the task lonutaci."
+      },
+      "agree": true
+    },
+    {
+      "number": 12,
+      "id": "be918d33112b41dca5c62b1bcffc405a",
+      "correct": false,
+      "reason": "The dependency of votineni is missing, so green is an unsupported answer.",
+      "at": "2026-09-23T00:55:08.216922+00:00",
+      "qwen": {
+        "correct": false,
+        "reason": "The evidence does not link task seronari to any terminal color."
+      },
+      "agree": true
+    },
+    {
+      "number": 13,
+      "id": "c026a537b969410298116f6355846d78",
+      "correct": true,
+      "reason": "London is the requested city and both the staging and meeting claims are supported.",
+      "at": "2026-09-23T00:55:21.222746+00:00",
+      "qwen": {
+        "correct": true,
+        "reason": "The evidence confirms the song was first staged in London's West End and that Oliver met the Artful Dodger in London."
+      },
+      "agree": true
+    },
+    {
+      "number": 14,
+      "id": "606e86647c134a1ca14da4a6dbb7381a",
+      "correct": true,
+      "reason": "The named national park matches the lake series identified in the evidence.",
+      "at": "2026-09-23T00:55:21.222929+00:00",
+      "qwen": {
+        "correct": true,
+        "reason": "The evidence directly states the team is named after the Band-e Amir lakes in Bamyan Province, which is the Band-e Amir National Park."
+      },
+      "agree": true
+    },
+    {
+      "number": 15,
+      "id": "e15e480120964a968e409164fc8fe787",
+      "correct": true,
+      "reason": "The parcel chain reaches lesugebe, whose containing location is absent; the abstention is valid.",
+      "at": "2026-09-23T00:55:21.222938+00:00",
+      "qwen": {
+        "correct": true,
+        "reason": "The evidence does not provide enough information to determine the room of parcel funekenu."
+      },
+      "agree": true
+    },
+    {
+      "number": 16,
+      "id": "9e5ea7f3681c46ddb9284be2cabbc7cc",
+      "correct": false,
+      "reason": "The partial dependency explanation never states the requested terminal colour, green.",
+      "at": "2026-09-23T00:55:21.222946+00:00",
+      "qwen": {
+        "correct": false,
+        "reason": "The response is incomplete and does not provide the terminal color linked to mevabifi."
+      },
+      "agree": true
+    },
+    {
+      "number": 17,
+      "id": "31b4dcc24fe347d49b6bd08d3b054b34",
+      "correct": false,
+      "reason": "The evidence identifies Pete Townshend with The Who, and Keith Richards with The Rolling Stones.",
+      "at": "2026-09-23T00:55:36.404687+00:00",
+      "qwen": {
+        "correct": false,
+        "reason": "The evidence states Pete Townshend of The Who pioneered guitar effects, not Keith Richards, who is associated with The Rolling Stones."
+      },
+      "agree": true
+    },
+    {
+      "number": 18,
+      "id": "152f656a9d1e4892b5765581d083bf80",
+      "correct": false,
+      "reason": "It neither abstains nor completes an answer, and invents the kegorogo-to-tanimeru dependency.",
+      "at": "2026-09-23T00:55:36.404907+00:00",
+      "qwen": {
+        "correct": false,
+        "reason": "The evidence does not establish a terminal color for task casonafu; the chain ends at task tanimeru without color information."
+      },
+      "agree": true
+    },
+    {
+      "number": 19,
+      "id": "45c57ff2727a43a6b009064746457fe1",
+      "correct": true,
+      "reason": "The target task has no dependency in the supplied facts; the response explains the missing evidence without guessing.",
+      "at": "2026-09-23T00:55:36.404914+00:00",
+      "qwen": {
+        "correct": true,
+        "reason": "The evidence does not mention the task 'cekanipo' or its dependencies, making the question unanswerable."
+      },
+      "agree": true
+    },
+    {
+      "number": 20,
+      "id": "f2b6fc67ce2d472d919b297b372aa480",
+      "correct": true,
+      "reason": "The location of cirovomi is missing, so the room cannot be established.",
+      "at": "2026-09-23T00:55:36.404919+00:00",
+      "qwen": {
+        "correct": true,
+        "reason": "The evidence does not link the parcel ramidisi to any room."
+      },
+      "agree": true
+    },
+    {
+      "number": 21,
+      "id": "08e301225fdb42bca409c19f83fd6ff0",
+      "correct": false,
+      "reason": "98% contradicts the population figures; the passage implies a decline over 60%, and the supplied reference 40 is itself inconsistent.",
+      "at": "2026-09-23T00:55:57.260829+00:00",
+      "qwen": {
+        "correct": false,
+        "reason": "The evidence states a 40% remaining, not a 98% decline. The correct decline is 60%, not 98%."
+      },
+      "agree": true
+    },
+    {
+      "number": 22,
+      "id": "87a9b71a8a9d4534a9656b0c4637dba4",
+      "correct": false,
+      "reason": "The 1970s date concerns a computer, not the introduction of Chinese; the answer guesses.",
+      "at": "2026-09-23T00:55:57.261052+00:00",
+      "qwen": {
+        "correct": false,
+        "reason": "The evidence does not specify when Chinese was introduced, only that it exists as a non-curriculum course now."
+      },
+      "agree": true
+    },
+    {
+      "number": 23,
+      "id": "1b40782142804f68b2e73e3726abfb98",
+      "correct": false,
+      "reason": "Cannot be Attack!: the evidence dates it to 2003 and Can’t Stop to 1980.",
+      "at": "2026-09-23T00:55:57.261061+00:00",
+      "qwen": {
+        "correct": false,
+        "reason": "Evidence shows Attack! was published in 2003, while Can't Stop was published in 1980. The correct answer is Can't Stop."
+      },
+      "agree": true
+    },
+    {
+      "number": 24,
+      "id": "10a28467e38049788b0acf63f05b5229",
+      "correct": false,
+      "reason": "The location of lociporo is missing, so assigning the parcel to blue is unsupported.",
+      "at": "2026-09-23T00:55:57.261067+00:00",
+      "qwen": {
+        "correct": false,
+        "reason": "The evidence does not link the parcel sebibidu to any room; it is only linked to the crate lociporo."
+      },
+      "agree": true
+    }
+  ],
+  "compared_at": "2026-09-23T00:56:56.455780+00:00",
+  "agreement": 21,
+  "n": 24,
+  "original_label_file_sha256": "80027d7d55f5bf112a20df1c0589bc4c05627f53f0744af4a039011c8f45bae2",
+  "primary_grades_modified": false,
+  "independent_human_review": false
+}

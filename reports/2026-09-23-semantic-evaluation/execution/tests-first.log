@@ -1,0 +1,114 @@
+FFFFF                                                                    [100%]
+=================================== FAILURES ===================================
+_________ test_semantic_packets_hide_identity_and_bind_exact_response __________
+
+    def test_semantic_packets_hide_identity_and_bind_exact_response():
+>       s = load('judge.py')
+            ^^^^^^^^^^^^^^^^
+
+tests/test_semantic_evaluation.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_semantic_evaluation.py:12: in load
+    return runpy.run_path(str(ROOT / 'research/iterations/semantic_evaluation' / name))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '[repository]/research/iterations/semantic_evaluation/judge.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '[repository]/research/iterations/semantic_evaluation/judge.py'
+
+<frozen runpy>:254: FileNotFoundError
+____ test_strict_judge_parser_never_turns_malformed_output_into_correctness ____
+
+    def test_strict_judge_parser_never_turns_malformed_output_into_correctness():
+>       s = load('judge.py')
+            ^^^^^^^^^^^^^^^^
+
+tests/test_semantic_evaluation.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_semantic_evaluation.py:12: in load
+    return runpy.run_path(str(ROOT / 'research/iterations/semantic_evaluation' / name))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '[repository]/research/iterations/semantic_evaluation/judge.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '[repository]/research/iterations/semantic_evaluation/judge.py'
+
+<frozen runpy>:254: FileNotFoundError
+____ test_judge_admission_requires_both_classes_every_category_and_repeats _____
+
+    def test_judge_admission_requires_both_classes_every_category_and_repeats():
+>       s = load('judge.py'); f = load('fixtures.py')['fixtures']()
+            ^^^^^^^^^^^^^^^^
+
+tests/test_semantic_evaluation.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_semantic_evaluation.py:12: in load
+    return runpy.run_path(str(ROOT / 'research/iterations/semantic_evaluation' / name))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '[repository]/research/iterations/semantic_evaluation/judge.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '[repository]/research/iterations/semantic_evaluation/judge.py'
+
+<frozen runpy>:254: FileNotFoundError
+__ test_fixtures_are_disjoint_balanced_and_references_stay_out_of_candidates ___
+
+    def test_fixtures_are_disjoint_balanced_and_references_stay_out_of_candidates():
+>       f = load('fixtures.py')['fixtures']()
+            ^^^^^^^^^^^^^^^^^^^
+
+tests/test_semantic_evaluation.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_semantic_evaluation.py:12: in load
+    return runpy.run_path(str(ROOT / 'research/iterations/semantic_evaluation' / name))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '[repository]/research/iterations/semantic_evaluation/fixtures.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '[repository]/research/iterations/semantic_evaluation/fixtures.py'
+
+<frozen runpy>:254: FileNotFoundError
+_____ test_blind_deduplication_and_join_reject_missing_or_changed_evidence _____
+
+    def test_blind_deduplication_and_join_reject_missing_or_changed_evidence():
+>       s = load('judge.py')
+            ^^^^^^^^^^^^^^^^
+
+tests/test_semantic_evaluation.py:63: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_semantic_evaluation.py:12: in load
+    return runpy.run_path(str(ROOT / 'research/iterations/semantic_evaluation' / name))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '[repository]/research/iterations/semantic_evaluation/judge.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '[repository]/research/iterations/semantic_evaluation/judge.py'
+
+<frozen runpy>:254: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_semantic_evaluation.py::test_semantic_packets_hide_identity_and_bind_exact_response
+FAILED tests/test_semantic_evaluation.py::test_strict_judge_parser_never_turns_malformed_output_into_correctness
+FAILED tests/test_semantic_evaluation.py::test_judge_admission_requires_both_classes_every_category_and_repeats
+FAILED tests/test_semantic_evaluation.py::test_fixtures_are_disjoint_balanced_and_references_stay_out_of_candidates
+FAILED tests/test_semantic_evaluation.py::test_blind_deduplication_and_join_reject_missing_or_changed_evidence
+5 failed in 0.04s

@@ -1,0 +1,31 @@
+{
+  "analysis_sha256": "3a1632608956c7c55f7f96ba330036731d099e9f80f3a9078b43f09573732775",
+  "manifest_sha256": "8995be100a808a5d1adc7d4ea60d1eb8f87266e25db032af7a845cc2f1e5ddde",
+  "artifact_hashes": {
+    "semantic-exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "semantic-evaluation.log": "e5d2f60659155bd02f4bd6e859eafcccfe6c2b0847a6bc444b51f1343fc27d17",
+    "semantic-evaluation-v1/grading-freeze.json": "035e0e005d607beba851bfc754dde2bd708b10a56868dbb2cb6334c74e1282e4",
+    "semantic-evaluation-v1/judgments.complete.json": "4fca323cb151e2a28b98c1a2cc5cfb01e7773792fe4f3fae39f6c14633b8442a",
+    "semantic-evaluation-v1/judge-admission.json": "ce45464b8fb93909a9c1d1db7a94fd9fce473c28774b9d52c5e0a8f28b9835f4",
+    "semantic-evaluation-v1/judgments.metadata.json": "e5ca5b1f7d362943d0609dea6b1260fafdb0b4b2114372f0e260a1546add5b36",
+    "semantic-evaluation-v1/blind-mapping.json": "7ac24504acf047c14cd45e1a0bf9e2529b5155921d8dea9786b96863cfc6e3df",
+    "semantic-evaluation-v1/pipeline-completion.json": "d9ba8000e9866f9085450fa279bc08ac0bde076fb1e49d162045572271aeb62d",
+    "semantic-evaluation-v1/validation.starts.jsonl": "b5064b3ae9d6ddec41082aa248705fcab157741408c295ea51b53d0dc3e4801a",
+    "semantic-evaluation-v1/validation.complete.json": "d524399ccd9152c9810f6db746803731ac3f1785e99af04bd9e0db3eec528c99",
+    "semantic-evaluation-v1/judgments.starts.jsonl": "b08710531342284158010d0988b403495d50396e5f7beba9c82b6584367f7a25",
+    "semantic-evaluation-v1/validation.jsonl": "3d68caf0787b0b57d93eb514b4a7f12b6597ceaa68450b1bd449ac2b51724773",
+    "semantic-evaluation-v1/judgments.jsonl": "f657b6cf2ad4eda17e9a42eefd9b1707b68e98227c484a25cd40ec17983c2efc",
+    "semantic-evaluation-v1/validation.metadata.json": "e8090ecc77a42ee54ee48aa7ce06dcb55e787366f0a288102b1c19de3751d2bf",
+    "semantic-evaluation-v1/blind-packets.json": "4f67d9b941696f58181c704f14d2f7e7a0b86d93cb2a4505ddc54f4c07bc5480",
+    "semantic-evaluation-v1/generation/outputs.jsonl": "4e83d14b2103e7b7566fbd4b347946302e5730a0faecaa865f341a5753ba209e",
+    "semantic-evaluation-v1/generation/receipts.jsonl": "b30b16f2e8fdbb485ec06e879ff6e90bf876383c04627641ad2b691a7142a2a6",
+    "semantic-evaluation-v1/generation/completion.json": "72e417aea78ba112bc7af19f544137fdea34bcb8c0febffe1c365d7d866c31a4",
+    "semantic-evaluation-v1/generation/starts.jsonl": "c5c417d09a46d7e48ffed8886d5d56dea0ba769fb355dfd1006d6eaec6dd78a2",
+    "semantic-evaluation-v1/generation/ledger.jsonl": "f1006f864454848a19711099da067a50854c729b4d9d8b3ff3c1d9b4db7ef19c",
+    "semantic-evaluation-v1/generation/loads.jsonl": "1e333fbb52c7c34d037979adf5e0932cd39a7f5b72dde5b3f1e61b386dcce3a6",
+    "semantic-evaluation-v1/generation/freeze.json": "7ff7c29e54d056bcd8d90c8997f341302d8267cb41f2a95cab4372a3b4567fa8",
+    "semantic-evaluation-v1/generation/inputs.jsonl": "3ee5552c59ae19f12f419709d2fdc9b881ee64b4b50d0a6909ae2164558a730c",
+    "semantic-evaluation-v1/generation/admission-checks.jsonl": "d4177e606653060ee6b8d660911c972d9239b6493a989a720883cb6b23168db2",
+    "semantic-evaluation-v1/generation/admission.json": "344bf76d030e45aecbab3a5cc2708211dc065966dfdf32f78923b6ecc16aa31d"
+  }
+}

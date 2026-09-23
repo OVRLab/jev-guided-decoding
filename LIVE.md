@@ -1,9 +1,16 @@
 # Verified implementation inventory
 
-[R20 semantic evaluation](reports/2026-09-23-semantic-evaluation/README.md) is
-implemented and frozen for evaluator admission: 462 local tests pass, with exact
-blinding, failed-admission and native/static no-provider flows covered. The planned
-528-input architecture comparison has no generated quality result yet.
+[R20 blinded evaluation — completed](reports/2026-09-23-semantic-evaluation/README.md):
+native/Jev Qwen-judged scores are **30.21%/42.71% authored**, **74.17%/73.33%
+Hotpot** and **61.67%/67.50% SQuAD**. Only the authored primary contrast excludes
+zero; no domain establishes superiority over static instruction steering. The
+blind review agrees on 21/24 packets and exposes answer-completeness errors in the
+judge, so reliable semantic improvement and architectural superiority remain
+unproven. All 1,584 generations, 30,112 final tokens and 528 successful Jev requests
+pass reconstruction; public replay matches. All cloud resources are deleted.
+Estimated new cost is **$2.32**, cumulative **$32.55/$50** before tax/network.
+See the [evaluator failures](reports/2026-09-23-semantic-evaluation/transfer-diagnostics.md)
+and [paper draft](research/paper-draft.md#79-r20-blinded-semantic-evaluation-of-fixed-attention-interventions).
 
 [R19 completed study](reports/2026-09-22-benefit-sufficiency/README.md) tests a local
 benefit predictor and independent Jev sufficiency at the retained-prefill boundary.
@@ -26,7 +33,7 @@ before inference. Twelve real-checkpoint parity checks had zero logit/cache
 difference. Both sequential L40S servers and their owned resources are verified
 deleted. Estimated R19 cost is **$3.00**, cumulative **$30.23/$50** before tax/network.
 This is completed research-branch evidence, not a released model or semantic
-replication. Blinded grading validation is the next proposed research step.
+replication. R20, above, is the subsequent blinded evaluation.
 
 [R18 completed study](reports/2026-09-22-boundary-attention/README.md).
 

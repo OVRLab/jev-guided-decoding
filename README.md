@@ -11,7 +11,19 @@ steps, plus a separate experimental hook that turns Jev source relevance into
 biases inside selected Granite attention heads. Granite and Jev weights remain
 unchanged; R19 fits a small regression controller. No vLLM serving extension is included.
 
-[R19 benefit/sufficiency study — completed](reports/2026-09-22-benefit-sufficiency/README.md):
+[R20 blinded evaluation — completed](reports/2026-09-23-semantic-evaluation/README.md):
+native/Jev Qwen-judged scores are **30.21%/42.71% authored**, **74.17%/73.33%
+Hotpot** and **61.67%/67.50% SQuAD**. Only the authored primary contrast excludes
+zero; no domain establishes superiority over static instruction steering. The
+blind review agrees on 21/24 packets and exposes answer-completeness errors in the
+judge, so reliable semantic improvement and architectural superiority remain
+unproven. All 1,584 generations, 30,112 final tokens and 528 successful Jev requests
+pass reconstruction; public replay matches. All cloud resources are deleted.
+Estimated new cost is **$2.32**, cumulative **$32.55/$50** before tax/network.
+See the [evaluator failures](reports/2026-09-23-semantic-evaluation/transfer-diagnostics.md)
+and [paper draft](research/paper-draft.md#79-r20-blinded-semantic-evaluation-of-fixed-attention-interventions).
+
+[Previous R19 benefit/sufficiency study — completed](reports/2026-09-22-benefit-sufficiency/README.md):
 Jev relevance/sufficiency steering raises frozen scores from **26.74% to 43.06%**
 authored parser accuracy, **27.68% to 32.95%** Hotpot answer F1 and **25.44% to
 33.10%** adapted SQuAD F1. Answer inspection exposes material parser and lexical

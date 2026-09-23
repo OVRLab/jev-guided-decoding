@@ -1,17 +1,29 @@
 # Feature: Jev-guided intermediate reasoning
 
-Latest completed work: [R19 benefit and sufficiency study](reports/2026-09-22-benefit-sufficiency/README.md).
+[R20 blinded evaluation — completed](reports/2026-09-23-semantic-evaluation/README.md):
+native/Jev Qwen-judged scores are **30.21%/42.71% authored**, **74.17%/73.33%
+Hotpot** and **61.67%/67.50% SQuAD**. Only the authored primary contrast excludes
+zero; no domain establishes superiority over static instruction steering. The
+blind review agrees on 21/24 packets and exposes answer-completeness errors in the
+judge, so reliable semantic improvement and architectural superiority remain
+unproven. All 1,584 generations, 30,112 final tokens and 528 successful Jev requests
+pass reconstruction; public replay matches. All cloud resources are deleted.
+Estimated new cost is **$2.32**, cumulative **$32.55/$50** before tax/network.
+See the [evaluator failures](reports/2026-09-23-semantic-evaluation/transfer-diagnostics.md)
+and [paper draft](research/paper-draft.md#79-r20-blinded-semantic-evaluation-of-fixed-attention-interventions).
+
+Next measurement revision: independently reviewed question/reference/answerability
+labels and response-completeness validation on fresh cases. Preserve R20's frozen
+scores; no architecture is tuned on its exposed test answers. No new cloud run is
+pending or implied by this report.
+
+Previous completed work: [R19 benefit and sufficiency study](reports/2026-09-22-benefit-sufficiency/README.md).
 Internal source/instruction steering improves frozen benchmark scores, but answer
 inspection reveals material grading artifacts. Static instruction steering without
 Jev is not demonstrably worse overall. The benefit gate saves 54.44% of requests
 without a reliable matched-routing advantage. All 7,312 successful generations are
 audited and publicly replayable; both servers are deleted. New estimated cost is
 $3.00, cumulative $30.23/$50 before tax/network.
-
-Current follow-up: [R20 blinded semantic evaluation](research/semantic-evaluation-plan.md).
-The implemented protocol validates an independent automated judge before testing
-three fixed interventions on 528 fresh inputs. New quality results remain pending.
-Preserve R19's original scores; no architecture is tuned on the new test answers.
 
 Previous completed work: [R18 single-prefill boundary study](reports/2026-09-22-boundary-attention/README.md).
 

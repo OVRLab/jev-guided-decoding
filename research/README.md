@@ -1,11 +1,18 @@
 # Granite + Jev research record
 
-Current follow-up: [R20 blinded semantic evaluation](semantic-evaluation-plan.md),
-with [registration status](../reports/2026-09-23-semantic-evaluation/README.md).
-Validate the independent automated judge before generating fresh three-arm test
-answers; no new architecture or quality gain is claimed before that evaluation.
+[R20 blinded evaluation — completed](../reports/2026-09-23-semantic-evaluation/README.md):
+native/Jev Qwen-judged scores are **30.21%/42.71% authored**, **74.17%/73.33%
+Hotpot** and **61.67%/67.50% SQuAD**. Only the authored primary contrast excludes
+zero; no domain establishes superiority over static instruction steering. The
+blind review agrees on 21/24 packets and exposes answer-completeness errors in the
+judge, so reliable semantic improvement and architectural superiority remain
+unproven. All 1,584 generations, 30,112 final tokens and 528 successful Jev requests
+pass reconstruction; public replay matches. All cloud resources are deleted.
+Estimated new cost is **$2.32**, cumulative **$32.55/$50** before tax/network.
+See the [evaluator failures](../reports/2026-09-23-semantic-evaluation/transfer-diagnostics.md)
+and [paper draft](paper-draft.md#79-r20-blinded-semantic-evaluation-of-fixed-attention-interventions).
 
-Latest completed work: [R19 expected benefit and evidence sufficiency](../reports/2026-09-22-benefit-sufficiency/README.md),
+Previous completed work: [R19 expected benefit and evidence sufficiency](../reports/2026-09-22-benefit-sufficiency/README.md),
 with [all controls](../reports/2026-09-22-benefit-sufficiency/tables.md),
 [answer examples](../reports/2026-09-22-benefit-sufficiency/examples.md) and
 [public reconstruction](../reports/2026-09-22-benefit-sufficiency/reproduce.md).
@@ -17,8 +24,7 @@ superiority is unestablished. A learned gate saves 54.44% of requests without
 demonstrating reliable within-domain call selection. Both schedules, the failed
 initial supplement, all corrections and 7,312 successful generations are retained.
 Both GPU servers are deleted; estimated new cost is $3.00, cumulative $30.23/$50
-before tax/network. The next proposed step is blinded semantic grading validation
-on fresh data before more architecture tuning.
+before tax/network. R20, above, is the subsequent blinded evaluation.
 
 Previous completed work: [R18 single-prefill boundary study](../reports/2026-09-22-boundary-attention/README.md),
 with [method](../reports/2026-09-22-boundary-attention/method.md),

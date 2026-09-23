@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "complete": true,
+  "examples": 96,
+  "valid": 96,
+  "accuracy": 1.0,
+  "class_recall": {
+    "False": 1.0,
+    "True": 1.0
+  },
+  "categories": {
+    "partial": 1.0,
+    "verbose": 1.0,
+    "abstention_context": 1.0,
+    "false_refusal": 1.0,
+    "numeric": 1.0,
+    "injection": 1.0,
+    "contradiction": 1.0,
+    "abstention_direct": 1.0,
+    "complete": 1.0,
+    "guess": 1.0,
+    "overlap_wrong": 1.0,
+    "short": 1.0
+  },
+  "repeat_consistency": true,
+  "manifest_sha256": "8995be100a808a5d1adc7d4ea60d1eb8f87266e25db032af7a845cc2f1e5ddde",
+  "at": "2026-09-22T23:58:38.111793+00:00",
+  "validation_outputs_sha256": "3d68caf0787b0b57d93eb514b4a7f12b6597ceaa68450b1bd449ac2b51724773"
+}

@@ -1,0 +1,403 @@
+{
+  "status": "post_hoc_descriptive_syntax_count_after_primary_analysis",
+  "regex_fullmatch": "(?:\\s*\\[(?:E|D|S)\\d+\\][.,;:]?\\s*)+",
+  "main_grades_modified": false,
+  "summary": [
+    {
+      "domain": "synthetic",
+      "arm": "native",
+      "citation_only": 14,
+      "qwen_correct": 1
+    },
+    {
+      "domain": "synthetic",
+      "arm": "static",
+      "citation_only": 0,
+      "qwen_correct": 0
+    },
+    {
+      "domain": "synthetic",
+      "arm": "dual",
+      "citation_only": 18,
+      "qwen_correct": 8
+    },
+    {
+      "domain": "hotpot",
+      "arm": "native",
+      "citation_only": 0,
+      "qwen_correct": 0
+    },
+    {
+      "domain": "hotpot",
+      "arm": "static",
+      "citation_only": 0,
+      "qwen_correct": 0
+    },
+    {
+      "domain": "hotpot",
+      "arm": "dual",
+      "citation_only": 0,
+      "qwen_correct": 0
+    },
+    {
+      "domain": "squad2",
+      "arm": "native",
+      "citation_only": 1,
+      "qwen_correct": 1
+    },
+    {
+      "domain": "squad2",
+      "arm": "static",
+      "citation_only": 0,
+      "qwen_correct": 0
+    },
+    {
+      "domain": "squad2",
+      "arm": "dual",
+      "citation_only": 1,
+      "qwen_correct": 1
+    }
+  ],
+  "records": [
+    {
+      "case_id": "r20/test/0073/vevofeku/light",
+      "arm": "dual",
+      "domain": "synthetic",
+      "response": "[E03]",
+      "qwen": {
+        "correct": true,
+        "reason": "E03 states the room green contains crate meserovo, which contains parcel vevofeku per E01."
+      }
+    },
+    {
+      "case_id": "r20/test/0037/tefunare/light",
+      "arm": "dual",
+      "domain": "synthetic",
+      "response": "[E05]",
+      "qwen": {
+        "correct": false,
+        "reason": "The response [E05] only states the room white contains crate misenelo, not the parcel tefunare."
+      }
+    },
+    {
+      "case_id": "r20/test/0132/serigofo/light/dependency",
+      "arm": "dual",
+      "domain": "synthetic",
+      "response": "[E02]",
+      "qwen": {
+        "correct": true,
+        "reason": "E02 directly states that 'the task serigofo depends on the terminal green,' matching the reference."
+      }
+    },
+    {
+      "case_id": "r20/test/0024/petopuvu/light/dependency",
+      "arm": "dual",
+      "domain": "synthetic",
+      "response": "[E01]",
+      "qwen": {
+        "correct": false,
+        "reason": "The response [E01] only states the dependency, not the terminal color petopuvu leads to."
+      }
+    },
+    {
+      "case_id": "r20/test/0082/getivena/light",
+      "arm": "native",
+      "domain": "synthetic",
+      "response": "[E04]",
+      "qwen": {
+        "correct": false,
+        "reason": "The evidence does not link the parcel getivena to any room; it only connects it to a crate."
+      }
+    },
+    {
+      "case_id": "r20/test/0081/kekolasi/light",
+      "arm": "dual",
+      "domain": "synthetic",
+      "response": "[E06]",
+      "qwen": {
+        "correct": true,
+        "reason": "E06 directly states the crate topulepo contains the parcel kekolasi."
+      }
+    },
+    {
+      "case_id": "r20/test/0081/kekolasi/light",
+      "arm": "native",
+      "domain": "synthetic",
+      "response": "[E06]",
+      "qwen": {
+        "correct": true,
+        "reason": "E06 directly states the crate topulepo contains the parcel kekolasi."
+      }
+    },
+    {
+      "case_id": "r20/test/0080/bomosefa/light",
+      "arm": "native",
+      "domain": "synthetic",
+      "response": "[E05]",
+      "qwen": {
+        "correct": false,
+        "reason": "The evidence does not establish which room contains the parcel bomosefa."
+      }
+    },
+    {
+      "case_id": "r20/test/0008/rapibuta/light",
+      "arm": "dual",
+      "domain": "synthetic",
+      "response": "[E05]",
+      "qwen": {
+        "correct": false,
+        "reason": "The evidence does not establish which room contains the parcel rapibuta."
+      }
+    },
+    {
+      "case_id": "r20/test/0008/rapibuta/light",
+      "arm": "native",
+      "domain": "synthetic",
+      "response": "[E05]",
+      "qwen": {
+        "correct": false,
+        "reason": "The evidence does not establish which room contains the parcel rapibuta."
+      }
+    },
+    {
+      "case_id": "r20/test/0113/gerasidu/light",
+      "arm": "native",
+      "domain": "synthetic",
+      "response": "[E08]",
+      "qwen": {
+        "correct": false,
+        "reason": "The evidence does not link the parcel gerasidu to any room."
+      }
+    },
+    {
+      "case_id": "r20/test/0000/dicepege/light",
+      "arm": "dual",
+      "domain": "synthetic",
+      "response": "[E04]",
+      "qwen": {
+        "correct": true,
+        "reason": "E04 directly states the room black contains the parcel dicepege, matching the reference."
+      }
+    },
+    {
+      "case_id": "r20/test/0010/befolovi/light",
+      "arm": "native",
+      "domain": "synthetic",
+      "response": "[E06]",
+      "qwen": {
+        "correct": false,
+        "reason": "The evidence does not establish which room contains the parcel befolovi."
+      }
+    },
+    {
+      "case_id": "r20/test/0010/befolovi/light",
+      "arm": "dual",
+      "domain": "synthetic",
+      "response": "[E06]",
+      "qwen": {
+        "correct": false,
+        "reason": "The evidence does not establish which room contains the parcel befolovi."
+      }
+    },
+    {
+      "case_id": "r20/test/0111/mavenike/light",
+      "arm": "dual",
+      "domain": "synthetic",
+      "response": "[E05]",
+      "qwen": {
+        "correct": false,
+        "reason": "The response [E05] does not identify the room containing parcel mavenike. The evidence chain leads to room black via locker macegari."
+      }
+    },
+    {
+      "case_id": "r20/test/0079/keregofe/light",
+      "arm": "native",
+      "domain": "synthetic",
+      "response": "[E02]",
+      "qwen": {
+        "correct": false,
+        "reason": "The evidence does not state which room contains the parcel keregofe."
+      }
+    },
+    {
+      "case_id": "r20/squad2/56e75d7100c9c71400d77012",
+      "arm": "dual",
+      "domain": "squad2",
+      "response": "[S02]",
+      "qwen": {
+        "correct": true,
+        "reason": "The evidence states the wire mesh creates equal density along and across the grain, matching the reference 'density'."
+      }
+    },
+    {
+      "case_id": "r20/squad2/56e75d7100c9c71400d77012",
+      "arm": "native",
+      "domain": "squad2",
+      "response": "[S02]",
+      "qwen": {
+        "correct": true,
+        "reason": "The evidence states the wire mesh creates equal density along and across the grain, matching the reference 'density'."
+      }
+    },
+    {
+      "case_id": "r20/test/0002/pusosebu/light",
+      "arm": "dual",
+      "domain": "synthetic",
+      "response": "[E03]",
+      "qwen": {
+        "correct": false,
+        "reason": "The response [E03] only identifies the crate containing the parcel, not the room."
+      }
+    },
+    {
+      "case_id": "r20/test/0002/pusosebu/light",
+      "arm": "native",
+      "domain": "synthetic",
+      "response": "[E03]",
+      "qwen": {
+        "correct": false,
+        "reason": "The response [E03] only identifies the crate containing the parcel, not the room."
+      }
+    },
+    {
+      "case_id": "r20/test/0075/fulebadi/light",
+      "arm": "dual",
+      "domain": "synthetic",
+      "response": "[E02]",
+      "qwen": {
+        "correct": false,
+        "reason": "The response [E02] does not identify the room containing parcel fulebadi. The correct answer is room white via E01, E04, E06, and E07."
+      }
+    },
+    {
+      "case_id": "r20/test/0005/magupivo/light",
+      "arm": "dual",
+      "domain": "synthetic",
+      "response": "[E09]",
+      "qwen": {
+        "correct": false,
+        "reason": "The response [E09] refers to the room green, which does not contain the parcel magupivo."
+      }
+    },
+    {
+      "case_id": "r20/test/0005/magupivo/light",
+      "arm": "native",
+      "domain": "synthetic",
+      "response": "[E09]",
+      "qwen": {
+        "correct": false,
+        "reason": "The response [E09] refers to the room green, which does not contain the parcel magupivo."
+      }
+    },
+    {
+      "case_id": "r20/test/0001/titeteso/light",
+      "arm": "dual",
+      "domain": "synthetic",
+      "response": "[E02]",
+      "qwen": {
+        "correct": true,
+        "reason": "E02 states the crate giguvoca contains the parcel titeteso. E03 links the room black to the crate giguvoca."
+      }
+    },
+    {
+      "case_id": "r20/test/0108/dimukafa/light",
+      "arm": "dual",
+      "domain": "synthetic",
+      "response": "[E02]",
+      "qwen": {
+        "correct": true,
+        "reason": "E02 directly states the room green contains the parcel dimukafa, matching the question."
+      }
+    },
+    {
+      "case_id": "r20/test/0116/lelikadi/light",
+      "arm": "native",
+      "domain": "synthetic",
+      "response": "[E04]",
+      "qwen": {
+        "correct": false,
+        "reason": "The evidence does not establish which room contains the parcel lelikadi."
+      }
+    },
+    {
+      "case_id": "r20/test/0044/kameviri/light",
+      "arm": "native",
+      "domain": "synthetic",
+      "response": "[E01]",
+      "qwen": {
+        "correct": false,
+        "reason": "The evidence does not establish which room contains the parcel kameviri."
+      }
+    },
+    {
+      "case_id": "r20/test/0038/nicameca/light",
+      "arm": "dual",
+      "domain": "synthetic",
+      "response": "[E05]",
+      "qwen": {
+        "correct": false,
+        "reason": "The response [E05] points to the room red, but the parcel nicameca is in the crate petogana, not directly in the room red."
+      }
+    },
+    {
+      "case_id": "r20/test/0038/nicameca/light",
+      "arm": "native",
+      "domain": "synthetic",
+      "response": "[E03]",
+      "qwen": {
+        "correct": false,
+        "reason": "The response [E03] only mentions the crate petogana containing the parcel nicameca, not the room."
+      }
+    },
+    {
+      "case_id": "r20/test/0072/lipinabi/light",
+      "arm": "dual",
+      "domain": "synthetic",
+      "response": "[E04]",
+      "qwen": {
+        "correct": true,
+        "reason": "E04 directly states the room white contains the parcel lipinabi, matching the reference."
+      }
+    },
+    {
+      "case_id": "r20/test/0109/derakice/light",
+      "arm": "dual",
+      "domain": "synthetic",
+      "response": "[E01]",
+      "qwen": {
+        "correct": false,
+        "reason": "The evidence shows the parcel derakice is inside crate kagobaro, which is in room red."
+      }
+    },
+    {
+      "case_id": "r20/test/0007/cokibaku/light",
+      "arm": "native",
+      "domain": "synthetic",
+      "response": "[E02]",
+      "qwen": {
+        "correct": false,
+        "reason": "The evidence does not establish which room contains the parcel cokibaku."
+      }
+    },
+    {
+      "case_id": "r20/test/0118/dicipase/light",
+      "arm": "native",
+      "domain": "synthetic",
+      "response": "[E02]",
+      "qwen": {
+        "correct": false,
+        "reason": "The evidence does not establish which room contains the parcel dicipase."
+      }
+    },
+    {
+      "case_id": "r20/test/0036/birateli/light",
+      "arm": "dual",
+      "domain": "synthetic",
+      "response": "[E01]",
+      "qwen": {
+        "correct": true,
+        "reason": "E01 directly states the room black contains the parcel birateli, matching the question."
+      }
+    }
+  ]
+}
