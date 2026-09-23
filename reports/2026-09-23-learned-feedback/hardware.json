@@ -1,0 +1,14 @@
+{
+  "at": "2026-09-23T05:25:51.216308+00:00",
+  "python": "3.12.13",
+  "torch": "2.8.0+cu128",
+  "transformers": "4.57.1",
+  "device": "cuda:0",
+  "gpu": "NVIDIA L40S",
+  "original_weights_sha256": "daecf334babc598497ac30a451ce73d775fde71132cc91801b3bbb5615199715",
+  "original_parameters": 1631750144,
+  "adapter_parameters": 65568,
+  "eos_ids": [
+    100257
+  ]
+}

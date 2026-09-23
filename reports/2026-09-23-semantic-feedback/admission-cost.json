@@ -1,0 +1,9 @@
+{
+  "prior_cumulative_estimate_usd": 32.55153075054077,
+  "new_estimate_usd": 0.010642254,
+  "cumulative_estimate_usd": 32.56217300454077,
+  "cloud_cost_usd": 0,
+  "jev_input_tokens": 253387,
+  "jev_requests": 192,
+  "billing_note": "Hosted Jev estimate at $0.042/M input tokens; no cloud VM. Local electricity/depreciation not estimated."
+}

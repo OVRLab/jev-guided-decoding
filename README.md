@@ -9,7 +9,19 @@ protocols so other compatible models can be evaluated independently.
 **Status:** frozen-weight Transformers controllers for continuations and reasoning
 steps, plus a separate experimental hook that turns Jev source relevance into
 biases inside selected Granite attention heads. Granite and Jev weights remain
-unchanged; R19 fits a small regression controller. No vLLM serving extension is included.
+unchanged; R19 fits a small regression controller, and R22 trains a separate
+65,568-parameter internal residual adapter. No vLLM serving extension is included.
+
+[R22 learned internal bridge — completed](reports/2026-09-23-learned-feedback/README.md):
+native Granite scores **90.89%**, versus **92.19%** for both the Jev-conditioned
+adapter and its equally trained constant-feedback control, averaged over two seeds
+on 384 fresh synthetic worlds. Shuffled and oracle feedback change no final token
+sequences. This shows **no added Jev benefit**; the +1.30 pp native contrast is
+uncertain [−1.30, +4.04]. The [architecture](reports/2026-09-23-learned-feedback/method.md),
+12 adapter checkpoints, raw traces, costs and audits are preserved. All resources
+are deleted; new cost **$1.18**, cumulative **$33.76/$50** before tax/network.
+The preceding [R21 verification study](reports/2026-09-23-semantic-feedback/README.md)
+admitted local claim feedback, without claiming final-answer improvement.
 
 [R20 blinded evaluation — completed](reports/2026-09-23-semantic-evaluation/README.md):
 native/Jev Qwen-judged scores are **30.21%/42.71% authored**, **74.17%/73.33%

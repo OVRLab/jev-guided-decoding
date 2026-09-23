@@ -1,0 +1,159 @@
+{"completed": 12, "planned": 384, "elapsed_seconds": 27.6}
+{"completed": 24, "planned": 384, "elapsed_seconds": 41.1}
+{"completed": 36, "planned": 384, "elapsed_seconds": 54.0}
+{"completed": 48, "planned": 384, "elapsed_seconds": 67.0}
+{"completed": 60, "planned": 384, "elapsed_seconds": 79.9}
+{"completed": 72, "planned": 384, "elapsed_seconds": 93.2}
+{"completed": 84, "planned": 384, "elapsed_seconds": 106.3}
+{"completed": 96, "planned": 384, "elapsed_seconds": 119.3}
+{"completed": 108, "planned": 384, "elapsed_seconds": 132.2}
+{"completed": 120, "planned": 384, "elapsed_seconds": 145.0}
+{"completed": 132, "planned": 384, "elapsed_seconds": 158.1}
+{"completed": 144, "planned": 384, "elapsed_seconds": 171.4}
+{"completed": 156, "planned": 384, "elapsed_seconds": 184.0}
+{"completed": 168, "planned": 384, "elapsed_seconds": 197.5}
+{"completed": 180, "planned": 384, "elapsed_seconds": 210.4}
+{"completed": 192, "planned": 384, "elapsed_seconds": 223.0}
+{"completed": 204, "planned": 384, "elapsed_seconds": 235.6}
+{"completed": 216, "planned": 384, "elapsed_seconds": 249.6}
+{"completed": 228, "planned": 384, "elapsed_seconds": 262.4}
+{"completed": 240, "planned": 384, "elapsed_seconds": 275.6}
+{"completed": 252, "planned": 384, "elapsed_seconds": 288.4}
+{"completed": 264, "planned": 384, "elapsed_seconds": 302.4}
+{"completed": 276, "planned": 384, "elapsed_seconds": 315.7}
+{"completed": 288, "planned": 384, "elapsed_seconds": 329.2}
+{"completed": 300, "planned": 384, "elapsed_seconds": 342.4}
+{"completed": 312, "planned": 384, "elapsed_seconds": 355.2}
+{"completed": 324, "planned": 384, "elapsed_seconds": 367.8}
+{"completed": 336, "planned": 384, "elapsed_seconds": 380.4}
+{"completed": 348, "planned": 384, "elapsed_seconds": 393.1}
+{"completed": 360, "planned": 384, "elapsed_seconds": 406.1}
+{"completed": 372, "planned": 384, "elapsed_seconds": 419.3}
+{"completed": 384, "planned": 384, "elapsed_seconds": 432.2}
+{
+  "admitted": true,
+  "gates": {
+    "all_records_complete": true,
+    "constructed_balanced_accuracy": true,
+    "every_motif": true,
+    "natural_coverage": true,
+    "natural_error_exposure": true,
+    "natural_balanced_accuracy": true
+  },
+  "planned": 384,
+  "complete": 384,
+  "missing": 0,
+  "failed": 0,
+  "constructed": {
+    "count": 768,
+    "supported": 384,
+    "unsupported": 384,
+    "true_positive": 384,
+    "false_negative": 0,
+    "true_negative": 384,
+    "false_positive": 0,
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "balanced_accuracy": 1.0,
+    "brier": 0.0013403645833333342
+  },
+  "natural": {
+    "count": 383,
+    "supported": 347,
+    "unsupported": 36,
+    "true_positive": 347,
+    "false_negative": 0,
+    "true_negative": 36,
+    "false_positive": 0,
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "balanced_accuracy": 1.0,
+    "brier": 0.0017216710182767641
+  },
+  "natural_coverage": 0.9973958333333334,
+  "by_motif": {
+    "direct": {
+      "count": 128,
+      "supported": 64,
+      "unsupported": 64,
+      "true_positive": 64,
+      "false_negative": 0,
+      "true_negative": 64,
+      "false_positive": 0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "brier": 0.0008796875000000012
+    },
+    "distractors": {
+      "count": 128,
+      "supported": 64,
+      "unsupported": 64,
+      "true_positive": 64,
+      "false_negative": 0,
+      "true_negative": 64,
+      "false_positive": 0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "brier": 0.0006515625000000008
+    },
+    "negation": {
+      "count": 128,
+      "supported": 64,
+      "unsupported": 64,
+      "true_positive": 64,
+      "false_negative": 0,
+      "true_negative": 64,
+      "false_positive": 0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "brier": 0.001917968750000001
+    },
+    "passive": {
+      "count": 128,
+      "supported": 64,
+      "unsupported": 64,
+      "true_positive": 64,
+      "false_negative": 0,
+      "true_negative": 64,
+      "false_positive": 0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "brier": 0.0006218750000000008
+    },
+    "reassignment": {
+      "count": 128,
+      "supported": 64,
+      "unsupported": 64,
+      "true_positive": 64,
+      "false_negative": 0,
+      "true_negative": 64,
+      "false_positive": 0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "brier": 0.0030773437500000007
+    },
+    "rumor": {
+      "count": 128,
+      "supported": 64,
+      "unsupported": 64,
+      "true_positive": 64,
+      "false_negative": 0,
+      "true_negative": 64,
+      "false_positive": 0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "brier": 0.000893750000000001
+    }
+  },
+  "constructed_world_bootstrap_95": [
+    1.0,
+    1.0
+  ],
+  "interpretation": "Signal admission only; no final-answer or adapter-quality result."
+}

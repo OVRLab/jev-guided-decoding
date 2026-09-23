@@ -1,5 +1,14 @@
 # Verified implementation inventory
 
+[R22 — completed](reports/2026-09-23-learned-feedback/README.md): a trained
+65,568-parameter residual bridge after block 19 scores **92.19%**, identical to
+its equally trained constant-feedback control; native scores **90.89%** on 384
+fresh synthetic worlds. Shuffled/oracle feedback changes no final token sequences.
+The +1.30 pp native contrast has a 97.5% interval [−1.30, +4.04]; no added Jev
+benefit is observed. All artifacts/checkpoints are audited and public; original
+model weights stay frozen. Resources are deleted, new cost **$1.18**, cumulative
+**$33.76/$50** before tax/network. This is research, not a model release.
+
 [R20 blinded evaluation — completed](reports/2026-09-23-semantic-evaluation/README.md):
 native/Jev Qwen-judged scores are **30.21%/42.71% authored**, **74.17%/73.33%
 Hotpot** and **61.67%/67.50% SQuAD**. Only the authored primary contrast excludes

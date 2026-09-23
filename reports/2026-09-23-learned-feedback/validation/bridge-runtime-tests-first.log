@@ -1,0 +1,23 @@
+...F                                                                     [100%]
+=================================== FAILURES ===================================
+_ test_final_phase_preserves_exact_draft_and_rejects_incomplete_answer_credit __
+
+    def test_final_phase_preserves_exact_draft_and_rejects_incomplete_answer_credit():
+>       r = runpy.run_path(str(ROOT / "research/iterations/learned_feedback/runtime.py"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_learned_feedback_bridge.py:63:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+fname = '<REPOSITORY>/research/iterations/learned_feedback/runtime.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<REPOSITORY>/research/iterations/learned_feedback/runtime.py'
+
+<frozen runpy>:254: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_learned_feedback_bridge.py::test_final_phase_preserves_exact_draft_and_rejects_incomplete_answer_credit
+1 failed, 3 passed in 1.89s

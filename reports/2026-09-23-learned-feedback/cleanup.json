@@ -1,0 +1,17 @@
+{
+  "state": "deleted",
+  "verified_deleted_at": "2026-09-23T05:55:05.882566+00:00",
+  "verified_result_files": 28,
+  "instance_deleted": true,
+  "managed_boot_disk_deleted": true,
+  "security_group_and_two_rules_deleted": true,
+  "automatic_ip_allocations_deleted": true,
+  "worker_exit": 0,
+  "first_cleanup_attempt": "CLI sign-in expired; no resource stop occurred.",
+  "recovery": "Refreshed existing Google sign-in, repeated read-only backup/hash check, then verified deletion. No inference replay.",
+  "stale_local_backup_files": [
+    "learned-feedback-v1/run.lock",
+    "learned-feedback-v1/jev-budget.lock"
+  ],
+  "stale_file_note": "Rolling rsync retained two removed lock files locally. Public replay uses exactly the remote hash inventory, excluding these stale local copies."
+}

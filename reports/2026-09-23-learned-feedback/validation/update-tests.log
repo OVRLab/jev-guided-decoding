@@ -1,0 +1,10 @@
+........                                                                 [100%]
+8 passed in 2.99s
+active
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+From https://github.com/OVRLab/jev-guided-decoding
+   f981b8b..dffb8e4  research/jev-intermediate-steps -> origin/research/jev-intermediate-steps
+Previous HEAD position was f981b8b feat: add tested conditional residual bridge for frozen Granite
+HEAD is now at dffb8e4 docs: freeze R22 training and independent evaluation worlds

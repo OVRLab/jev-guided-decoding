@@ -1,0 +1,15 @@
+
+==================================== ERRORS ====================================
+____________ ERROR collecting tests/test_semantic_feedback_audit.py ____________
+tests/test_semantic_feedback_audit.py:8: in <module>
+    A = runpy.run_path(str(ROOT / "research/diagnostics/semantic_feedback_audit.py"))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+<frozen runpy>:254: in _get_code_from_file
+    ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '/Users/jubba/git/ovrlab/jev-guided-decoding/research/diagnostics/semantic_feedback_audit.py'
+=========================== short test summary info ============================
+ERROR tests/test_semantic_feedback_audit.py - FileNotFoundError: [Errno 2] No...
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.07s

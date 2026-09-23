@@ -1,0 +1,125 @@
+{
+  "worlds": 384,
+  "outputs": 3456,
+  "arms": {
+    "native/0": {
+      "correct": 349,
+      "n": 384,
+      "accuracy": 0.9088541666666666,
+      "generated_tokens": 768,
+      "forwards": 768,
+      "processed_tokens": 175279,
+      "mean_seconds": 0.09833576586198056
+    },
+    "constant/2201": {
+      "correct": 355,
+      "n": 384,
+      "accuracy": 0.9244791666666666,
+      "generated_tokens": 767,
+      "forwards": 767,
+      "processed_tokens": 175278,
+      "mean_seconds": 0.10004020029166405
+    },
+    "live/2201": {
+      "correct": 355,
+      "n": 384,
+      "accuracy": 0.9244791666666666,
+      "generated_tokens": 767,
+      "forwards": 767,
+      "processed_tokens": 175278,
+      "mean_seconds": 0.1002525883984351
+    },
+    "permuted/2201": {
+      "correct": 355,
+      "n": 384,
+      "accuracy": 0.9244791666666666,
+      "generated_tokens": 767,
+      "forwards": 767,
+      "processed_tokens": 175278,
+      "mean_seconds": 0.10001144329426559
+    },
+    "oracle/2201": {
+      "correct": 355,
+      "n": 384,
+      "accuracy": 0.9244791666666666,
+      "generated_tokens": 767,
+      "forwards": 767,
+      "processed_tokens": 175278,
+      "mean_seconds": 0.10003385756510437
+    },
+    "constant/2202": {
+      "correct": 353,
+      "n": 384,
+      "accuracy": 0.9192708333333334,
+      "generated_tokens": 767,
+      "forwards": 767,
+      "processed_tokens": 175278,
+      "mean_seconds": 0.09998452132812592
+    },
+    "live/2202": {
+      "correct": 353,
+      "n": 384,
+      "accuracy": 0.9192708333333334,
+      "generated_tokens": 767,
+      "forwards": 767,
+      "processed_tokens": 175278,
+      "mean_seconds": 0.09998593065624917
+    },
+    "permuted/2202": {
+      "correct": 353,
+      "n": 384,
+      "accuracy": 0.9192708333333334,
+      "generated_tokens": 767,
+      "forwards": 767,
+      "processed_tokens": 175278,
+      "mean_seconds": 0.0999694659427135
+    },
+    "oracle/2202": {
+      "correct": 353,
+      "n": 384,
+      "accuracy": 0.9192708333333334,
+      "generated_tokens": 767,
+      "forwards": 767,
+      "processed_tokens": 175278,
+      "mean_seconds": 0.09997245884635457
+    }
+  },
+  "contrasts": {
+    "live-native": {
+      "difference": 0.013020833333333334,
+      "interval": [
+        -0.013020833333333334,
+        0.040364583333333336
+      ],
+      "primary": true,
+      "interval_level": 0.975
+    },
+    "live-constant": {
+      "difference": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "primary": true,
+      "interval_level": 0.975
+    },
+    "live-permuted": {
+      "difference": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "primary": false,
+      "interval_level": 0.975
+    },
+    "live-oracle": {
+      "difference": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "primary": false,
+      "interval_level": 0.975
+    }
+  }
+}

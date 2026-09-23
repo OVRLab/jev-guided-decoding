@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "zero_logit_difference": 0,
+  "cached_full_max_logit_difference": 2.47955322265625e-05,
+  "original_gradients_absent": true,
+  "adapter_gradients_present": true
+}

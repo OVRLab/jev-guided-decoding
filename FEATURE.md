@@ -1,6 +1,15 @@
 # Feature: Jev-guided intermediate reasoning
 
-[R21 — active staged experiment](research/semantic-feedback-plan.md): test focused Jev feedback on fresh Granite intermediate drafts; train a small internal residual adapter only if the feedback admission succeeds. This is authorized research, with original Granite/Jev weights frozen and any new adapter weights reported separately. No improvement or novelty is established.
+[R22 — completed](reports/2026-09-23-learned-feedback/README.md): a trained
+65,568-parameter residual bridge after block 19 scores **92.19%**, identical to
+its equally trained constant-feedback control; native scores **90.89%** on 384
+fresh synthetic worlds. Shuffled/oracle feedback changes no final token sequences.
+The +1.30 pp native contrast has a 97.5% interval [−1.30, +4.04]; no added Jev
+benefit is observed. All artifacts/checkpoints are audited and public; original
+model weights stay frozen. Resources are deleted, new cost **$1.18**, cumulative
+**$33.76/$50** before tax/network. This is research, not a model release.
+
+[R21 — completed](reports/2026-09-23-semantic-feedback/README.md): focused local support judgments pass a fixed fresh replication, with 383/384 drafts assessed and all 36 assessed natural errors detected. One partial-name case remains unassessed despite high Jev support. This admits the adapter pilot, not a final-answer improvement claim.
 
 [R20 blinded evaluation — completed](reports/2026-09-23-semantic-evaluation/README.md):
 native/Jev Qwen-judged scores are **30.21%/42.71% authored**, **74.17%/73.33%
@@ -16,7 +25,10 @@ and [paper draft](research/paper-draft.md#79-r20-blinded-semantic-evaluation-of-
 
 Next measurement revision: independently reviewed question/reference/answerability
 labels and response-completeness validation on fresh cases. Preserve R20's frozen
-scores; no architecture is tuned on its exposed test answers. R21 now tests focused semantic feedback under its separate registered plan.
+scores; no architecture is tuned on its exposed test answers. R21's focused
+feedback admission and R22's learned bridge are complete. A future bridge study
+should establish feedback-dependent generation on development cases before
+fresh held-out transfer; no further paid run is active.
 
 Previous completed work: [R19 benefit and sufficiency study](reports/2026-09-22-benefit-sufficiency/README.md).
 Internal source/instruction steering improves frozen benchmark scores, but answer

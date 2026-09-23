@@ -6,5 +6,6 @@
   "original_protocol_sha256": "534be53479e49c45da5af495fb27226581723be5ca7e74447399a531f969154d",
   "corrected_protocol_sha256": "065039627f34635e498d7e6d828842bcb1da4466903f48798467a42ba2248c50",
   "grammar_unchanged": true,
-  "reason": "Backup progress lagged live worker; registration preceded final answers, not test draft preparation."
+  "reason": "Backup progress lagged live worker; registration preceded final answers, not test draft preparation.",
+  "original_protocol_snapshot": "semantic-readout-original-registration.txt"
 }

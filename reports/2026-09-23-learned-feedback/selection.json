@@ -1,0 +1,45 @@
+{
+  "at": "2026-09-23T05:41:34.305892+00:00",
+  "models": {
+    "constant/2201": {
+      "epoch": 1,
+      "development_scores": [
+        0.875,
+        0.8645833333333334
+      ],
+      "checkpoint": "constant-2201-epoch1.safetensors",
+      "sha256": "c22f47b8890837f54bb7db4f37b218ef497fc9daf01971987e4a64d572ba355d",
+      "updates": 192
+    },
+    "live/2201": {
+      "epoch": 1,
+      "development_scores": [
+        0.875,
+        0.875
+      ],
+      "checkpoint": "live-2201-epoch1.safetensors",
+      "sha256": "42e3059dc7967e2c0d7620c738e357ffdef5847e9dfce9fb4d2ec1d484ca564d",
+      "updates": 192
+    },
+    "constant/2202": {
+      "epoch": 1,
+      "development_scores": [
+        0.8854166666666666,
+        0.8854166666666666
+      ],
+      "checkpoint": "constant-2202-epoch1.safetensors",
+      "sha256": "4fd024a73143d8945243fab6148dea989d8310841377cb29886026e3ae107340",
+      "updates": 192
+    },
+    "live/2202": {
+      "epoch": 1,
+      "development_scores": [
+        0.8854166666666666,
+        0.8854166666666666
+      ],
+      "checkpoint": "live-2202-epoch1.safetensors",
+      "sha256": "db7d2e1d6b240b8d1f717425bb4742d2eee6eb321674a764a316e9d67152eb79",
+      "updates": 192
+    }
+  }
+}

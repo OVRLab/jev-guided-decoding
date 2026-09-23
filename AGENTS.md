@@ -52,6 +52,11 @@ guides must defer here rather than maintain conflicting copies.
   from the package path. These are not neural
   fusion, access to hidden reasoning, Granite/Jev weight training, a vLLM extension, or an improved
   model checkpoint. Claims need matching evidence.
+- R22 is a separately authorized learned representation bridge: new adapter
+  weights after block 19 receive local Jev probabilities, while original Granite
+  and Jev weights remain frozen. Distinguish this training from the earlier
+  attention hooks, the package controller and a released model. Equal-capacity
+  training and shuffled feedback determine whether gains depend on Jev.
 - Preserve the original model weights and exact accepted token IDs in this scope.
   Rejected branches must never enter the continuation prefix or another request's cache.
 - Cancelling an async await does not end an owned model thread. Drain that worker,

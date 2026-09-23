@@ -1,0 +1,19 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_________ test_training_admission_must_bind_to_audited_artifact_bytes __________
+
+tmp_path = PosixPath('/private/var/folders/q0/yrbrh__54_11208_rxgxhnkc0000gn/T/pytest-of-jubba/pytest-1504/test_training_admission_must_b0')
+
+    def test_training_admission_must_bind_to_audited_artifact_bytes(tmp_path):
+        admission = tmp_path / "admission"
+        (admission / "replication").mkdir(parents=True)
+        (admission / "replication/analysis.json").write_text(json.dumps({"admitted": True}))
+        (admission / "replication-audit.json").write_text(json.dumps({"passed": True, "admitted": True}))
+>       with pytest.raises(ValueError, match="admission"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_learned_feedback_study.py:54: Failed
+=========================== short test summary info ============================
+FAILED tests/test_learned_feedback_study.py::test_training_admission_must_bind_to_audited_artifact_bytes
+1 failed, 3 deselected in 0.18s

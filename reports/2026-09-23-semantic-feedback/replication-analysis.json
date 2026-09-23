@@ -1,0 +1,127 @@
+{
+  "admitted": true,
+  "gates": {
+    "all_records_complete": true,
+    "constructed_balanced_accuracy": true,
+    "every_motif": true,
+    "natural_coverage": true,
+    "natural_error_exposure": true,
+    "natural_balanced_accuracy": true
+  },
+  "planned": 384,
+  "complete": 384,
+  "missing": 0,
+  "failed": 0,
+  "constructed": {
+    "count": 768,
+    "supported": 384,
+    "unsupported": 384,
+    "true_positive": 384,
+    "false_negative": 0,
+    "true_negative": 384,
+    "false_positive": 0,
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "balanced_accuracy": 1.0,
+    "brier": 0.0013403645833333342
+  },
+  "natural": {
+    "count": 383,
+    "supported": 347,
+    "unsupported": 36,
+    "true_positive": 347,
+    "false_negative": 0,
+    "true_negative": 36,
+    "false_positive": 0,
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "balanced_accuracy": 1.0,
+    "brier": 0.0017216710182767641
+  },
+  "natural_coverage": 0.9973958333333334,
+  "by_motif": {
+    "direct": {
+      "count": 128,
+      "supported": 64,
+      "unsupported": 64,
+      "true_positive": 64,
+      "false_negative": 0,
+      "true_negative": 64,
+      "false_positive": 0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "brier": 0.0008796875000000012
+    },
+    "distractors": {
+      "count": 128,
+      "supported": 64,
+      "unsupported": 64,
+      "true_positive": 64,
+      "false_negative": 0,
+      "true_negative": 64,
+      "false_positive": 0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "brier": 0.0006515625000000008
+    },
+    "negation": {
+      "count": 128,
+      "supported": 64,
+      "unsupported": 64,
+      "true_positive": 64,
+      "false_negative": 0,
+      "true_negative": 64,
+      "false_positive": 0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "brier": 0.001917968750000001
+    },
+    "passive": {
+      "count": 128,
+      "supported": 64,
+      "unsupported": 64,
+      "true_positive": 64,
+      "false_negative": 0,
+      "true_negative": 64,
+      "false_positive": 0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "brier": 0.0006218750000000008
+    },
+    "reassignment": {
+      "count": 128,
+      "supported": 64,
+      "unsupported": 64,
+      "true_positive": 64,
+      "false_negative": 0,
+      "true_negative": 64,
+      "false_positive": 0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "brier": 0.0030773437500000007
+    },
+    "rumor": {
+      "count": 128,
+      "supported": 64,
+      "unsupported": 64,
+      "true_positive": 64,
+      "false_negative": 0,
+      "true_negative": 64,
+      "false_positive": 0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "brier": 0.000893750000000001
+    }
+  },
+  "constructed_world_bootstrap_95": [
+    1.0,
+    1.0
+  ],
+  "interpretation": "Signal admission only; no final-answer or adapter-quality result."
+}
