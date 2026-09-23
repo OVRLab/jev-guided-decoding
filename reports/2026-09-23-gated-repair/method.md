@@ -83,3 +83,12 @@ A read-only clock check at local 20:22:20–20:22:22 UTC found the worker report
 wall-clock ordering is therefore approximate. Within-worker selection/test order
 and recorded monotonic generation durations remain the timing evidence; backup
 timestamps are not model durations. No clock or scientific setting was changed.
+
+Primary bootstrap intervals resample problems, pairing the two adapter seeds
+inside each problem and stratifying by task. They describe uncertainty over
+problems conditional on these two fitted seeds; they do not estimate a population
+of training seeds. The registered 95% intervals are individual intervals, not a
+simultaneous family guarantee across all contrasts and domains. An isolated
+positive contrast remains visible even when the separate spending gate for a
+larger-model follow-up is unmet. The gate does not redefine every endpoint as a
+failure or erase partial gains.
