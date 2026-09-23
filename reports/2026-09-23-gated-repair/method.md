@@ -1,7 +1,8 @@
 # R25 mechanism and attribution
 
 This describes the registered design, not a positive result. The BF16 v1 attempt
-failed numerical admission; the separately frozen v2 uses float32 throughout.
+failed numerical admission; v2/v3 use float32 throughout. V3 explicitly records
+unavailable feedback as null with neutral effective 0.5, never as a Jev judgment.
 
 ```text
 Original question
@@ -69,3 +70,10 @@ Jev call in deployment. Equal token ceilings do not imply equal actual work.
 This is a serial Transformers research prototype. Multi-request isolation,
 production throughput, colocated Jev weights and vLLM serving integration are not
 implemented or benchmarked by this study.
+
+The read-only `research/diagnostics/gated_repair_report.py` summarizes the
+registered recovery/damage, format, cutoff and work measures after the primary
+tokenizer audit passes. Its tests were run red before implementation. It averages
+seeds inside each problem, retains unavailable-feedback cases and distinguishes
+all actually executed repair work from the retention replay's selected outputs.
+It changes no generation, checkpoint selection, threshold or grading rule.

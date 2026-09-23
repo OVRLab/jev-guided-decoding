@@ -81,7 +81,7 @@ The system uses original IBM Granite 4.0 1B, pinned revision
 Despite a hybrid-family implementation name, the configuration contains 40
 attention layers and no experts. Original Granite and Jev weights were not trained
 or changed. R19 fits a separate small regression controller from development outcomes;
-R22 trains new residual adapter weights inside Granite's computation.
+R22 and R25 train new residual adapter weights inside Granite's computation.
 See [architecture audit](architecture-reassessment.md) for exact source evidence.
 
 ## 2. Related work
@@ -1332,6 +1332,74 @@ matched no-informative-feedback controls, then test fresh validation. R22's
 feedback-insensitive bridge result remains intact. A textual repair control alone
 would not demonstrate novelty of an internal neural architecture.
 The [R24 report](../reports/2026-09-23-public-critic/README.md) and [all five disagreements](../reports/2026-09-23-public-critic/disagreements.md) retain the exact evidence.
+
+## 7.14. R25: gated repair learned from natural drafts
+
+R24 motivates conditioning repair on the answer the generator actually produced.
+R25 trains only a new rank-64 residual branch after zero-indexed block 19 of the
+frozen dense Granite checkpoint, with 262,144 trainable parameters. For hidden
+state h, scale s = RMS(h), and Jev final-correctness probability p, the branch is
+
+    h' = h + (1-p) * 0.5 * s * tanh(U * tanh(D * h/s)).
+
+U starts at zero. The intervention applies at the final prompt position predicting
+the first repair token and subsequent repair positions. Original draft IDs enter
+a fresh second-pass cache unchanged. A single hosted Jev judgment controls every
+repair position; Jev supplies no generated answer, rationale, hidden state or
+weights. This is conditional representation adaptation combined with a two-pass
+repair workflow; historical architectural novelty is not established.
+
+The public cohort contains 384 training cases, 64 development cases and 192 fresh
+pilot evaluation cases, equally split between GSM8K and ARC-Challenge. GSM8K
+training targets use source worked solutions with calculator markup removed;
+ARC targets contain the reference answer letter without a rationale. Natural
+native drafts are retained irrespective of correctness, format or length stop.
+Training and test references are separated, previous R23 math cases are excluded,
+and normalized exact duplicates are rejected. Pretraining contamination and
+semantic near-duplicates are not ruled out. These are auxiliary domains rather
+than the complete ten-task north-star scorecard.
+
+For each of two seeds, live-gated and constant-gated adapters share initialization,
+examples, order, rank and optimizer settings. Two epochs use AdamW learning rate
+0.001, accumulation eight and gradient clipping one; earliest best development
+accuracy selects each adapter before any test draft or Jev call. Test arms retain
+native, blind repair, text-feedback repair and both seeds' constant, live, shuffled
+and inverted gates. All final tokens come from Granite's full vocabulary. Primary
+seed means are paired within each problem; 10,000 task-stratified bootstrap draws
+produce individual 95% intervals. Reference grading uses the numeric/full-option
+readout fixed prospectively from the R23 diagnostic, identically in every arm.
+Recovery, damage, malformed output, cutoff behavior and actual work are retained.
+
+Operational failures are part of the record. BF16 v1 failed the frozen cached/full
+logit tolerance before training drafts or API calls. A separate three-prompt
+diagnostic finds comparable BF16 discrepancies in native Granite and the hook,
+with matching argmax. Float32 v2 passes strict 1e-4 checks and preserves the same
+cohort/settings across arms. It then stops after 113 natural training drafts and
+112 valid Jev receipts; request 113 has no usable receipt and retains the full
+65,536-input-token reservation. Its exact HTTP status was not persisted. No
+optimizer, development selection or test generation occurred. All raw artifacts
+are archived, and both owned workers are verified deleted.
+
+The prospective v3 continuation freezes all predecessor bytes, reuses completed
+jobs without dispatch replay and records actual missing feedback as null. A fixed
+neutral effective value 0.5 feeds the learned arms when feedback is missing; the
+text control omits the absent score. At most eight transient incidents including
+the original are admitted, with bounded cooldown; other failures stop. All cases
+remain in primary analysis. This operational amendment changes the missing-data
+contract explicitly and does not represent an uninterrupted execution of v1/v2.
+A single replacement L40S has a nine-hour worker limit and ten-hour poweroff.
+The cumulative authorization is $75; the combined R25 reservation is $20.
+
+A separately frozen retention replay keeps the exact native answer for valid
+p(correct) >= 0.5, and in v3 when feedback is unavailable; otherwise it uses each
+repair arm's already generated answer. The same routing applies to blind, text,
+constant and live controls. This supplements rather than replaces primary full
+repair, and measures no avoided execution or Jev calls. At this manuscript update,
+v3 has launched after 527 server tests; training, held-out scores, final audits and
+cleanup are pending. No R25 quality or larger-model superiority is claimed.
+See the [versioned report](../reports/2026-09-23-gated-repair/README.md),
+[method](../reports/2026-09-23-gated-repair/method.md) and
+[related-work note](gated-repair-related-work.md).
 
 ## 8. Limitations and threats to validity
 

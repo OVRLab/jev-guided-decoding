@@ -91,3 +91,8 @@ prospectively binds the replay to the continuation manifest. It preserves and
 hash-links the original registration, threshold, and missing-feedback policy;
 no test or training has run on v3 at this point. The original v1 registration
 binds v2 and therefore cannot serve directly as the v3 audit input.
+
+V3 launched at approximately 20:11 UTC after all **527 server tests passed in
+18.45 seconds**. The GPU's independent expiry timer is active. Local backup and
+cleanup supervision run every 45 seconds. New report-only recovery/damage tests
+bring the local suite to 529; the frozen worker remains unchanged.
