@@ -11,3 +11,12 @@ The local supervisor backs up the dedicated result directory every 45 seconds,
 verifies final remote/local SHA256 digests after the worker stops, and deletes
 only the experiment-owned instance, managed disk, address allocations and
 security rules/group. Resource deletion remains pending until the final report.
+
+V4 passed all **536 local tests in 10.19 seconds** and all **536 server tests in
+16.99 seconds**, with Ruff, source/wheel builds and the guidance checker passing.
+The new client/auditor tests initially failed because modules were absent. During
+implementation, fixture validation caught missing case metadata, and the delivery
+audit caught a string/decimal budget-term mismatch; these were corrected before
+freezing or dispatch. Simulated-clock tests exercise real cooldown validation.
+The last four GitHub CI jobs at data freeze `6bade56` also pass. External automated
+review remains unavailable due to its reported quota; no human review is recorded.

@@ -1,6 +1,6 @@
 # R25: Jev-gated natural-draft repair
 
-**Status: v1 failed admission; v2/v3 stopped on provider errors before training; v4 delivery recovery is being verified.**
+**Status: v1 failed admission; v2/v3 stopped on provider errors before training; v4 delivery recovery is frozen and running after local/server verification.**
 
 The owner increased the cumulative research cap to **$75**. R25 now reserves
 **$20 combined across all attempts**. Estimated cumulative use before v3 is
@@ -115,3 +115,11 @@ no timeout replay, a retained $0.25 API ledger and bounded missing/unknown count
 No additional GPU is launched before independent request/charge audits, local
 checks and a new source/data freeze. Combined R25 reserve $20 and total cap $75
 stay unchanged. No R25 quality result exists yet.
+
+V4 source `640987e`, data freeze `6bade56`: [manifest](../../research/protocols/gated-repair-retry-v4/manifest.json)
+and [retention binding](../../research/protocols/gated-repair-retention-retry-v4.json).
+It launched at approximately local 20:43 UTC after all **536 server tests** passed.
+Both predecessor snapshots and the private credential are present on the owned
+worker; credentials remain outside source/results. Nine-hour worker and ten-hour
+machine limits, regular backup and cleanup supervision are active. Quality and
+training remain pending until the actual run and independent audits complete.
