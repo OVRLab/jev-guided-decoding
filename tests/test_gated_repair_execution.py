@@ -45,6 +45,7 @@ def test_offline_audit_rejects_missing_artifacts(tmp_path):
 
 
 def test_full_precision_revision_preserves_runtime_and_uses_strict_admission():
+    pytest.importorskip("torch")
     import inspect
 
     v2 = runpy.run_path(str(ROOT / "research/iterations/gated_repair_fp32/runtime.py"))
