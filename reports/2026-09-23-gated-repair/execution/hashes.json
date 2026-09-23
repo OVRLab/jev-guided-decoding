@@ -82,5 +82,21 @@
   "public-replay-build.log": {
     "sha256": "27692f94503cde9840c972a63859570f8fe70e0577f4cc6f6174d06eac8a644e",
     "redacted_local_paths": true
+  },
+  "feedback-diagnostic-red.log": {
+    "sha256": "c6bc436f89e3be86f867ba40cffca4a34b9332d546e5f239363275ad844fabdd",
+    "redacted_local_paths": true
+  },
+  "feedback-diagnostic-four-red.log": {
+    "sha256": "49db59dc7eb7a3b4e5397c4c752d4433a1975e93f4762134f729454611d0fa39",
+    "redacted_local_paths": true
+  },
+  "feedback-diagnostic-preflight-tests.log": {
+    "sha256": "751e098282008ff93cbf1a464ef628abd79d3bab2eaad8a066bffb180862f157",
+    "redacted_local_paths": true
+  },
+  "feedback-diagnostic-build.log": {
+    "sha256": "27692f94503cde9840c972a63859570f8fe70e0577f4cc6f6174d06eac8a644e",
+    "redacted_local_paths": true
   }
 }

@@ -144,3 +144,25 @@ The helper reruns the exact token, receipt, charge, checkpoint, training-order,
 selection, primary-quality and retention/work audits. It compares complete JSON
 objects, using the verified public primary serialization for supplemental hash
 bindings. Archive replay is reproducibility, not an independent new-model run.
+
+## Descriptive feedback agreement
+
+The [post-start diagnostic plan](../../research/gated-repair-feedback-diagnostic.md)
+was specified during held-out repair generation, before aggregate quality
+inspection. It measures whether actual Jev judgments agree with the fixed native
+answer readout, at the existing p(correct) < 0.5 repair threshold. It reports
+confusion counts and descriptive AUROC for all available and parseable-native
+cases separately. It introduces no threshold search, new generation or change
+to the primary endpoint, and never compares Jev as an answer generator.
+
+Four tests failed on the absent helper, then passed; all **546 local tests pass
+in 10.62 seconds**, along with Ruff, builds and the guidance checker. The worker
+continues at its frozen source. After the completed primary audit:
+
+```sh
+uv run --no-sync python research/diagnostics/gated_repair_feedback.py \
+  --freeze research/protocols/gated-repair-retry-v4 \
+  --output results/r25-public-replay/gated-repair-retry-v4 \
+  --primary reports/2026-09-23-gated-repair/analysis.json \
+  --save results/r25-feedback-diagnostic.json
+```

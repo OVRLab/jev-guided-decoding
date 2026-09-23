@@ -1,0 +1,79 @@
+FFF                                                                      [100%]
+=================================== FAILURES ===================================
+________ test_feedback_diagnostic_preserves_missing_and_threshold_ties _________
+
+    def test_feedback_diagnostic_preserves_missing_and_threshold_ties():
+        rows = [
+            dict(id="e1", correct=False, parseable=True, probability=0.2),
+            dict(id="e2", correct=False, parseable=True, probability=0.5),
+            dict(id="c1", correct=True, parseable=True, probability=0.5),
+            dict(id="c2", correct=True, parseable=True, probability=0.8),
+            dict(id="e3", correct=False, parseable=False, probability=None),
+        ]
+>       result = module()["summarize"](rows)
+                 ^^^^^^^^
+
+tests/test_gated_repair_feedback_diagnostic.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_gated_repair_feedback_diagnostic.py:10: in module
+    return runpy.run_path(str(ROOT / "research/diagnostics/gated_repair_feedback.py"))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repository>/research/diagnostics/gated_repair_feedback.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repository>/research/diagnostics/gated_repair_feedback.py'
+
+<frozen runpy>:254: FileNotFoundError
+___ test_feedback_diagnostic_has_no_auroc_with_one_class_or_no_observations ____
+
+    def test_feedback_diagnostic_has_no_auroc_with_one_class_or_no_observations():
+>       summarize = module()["summarize"]
+                    ^^^^^^^^
+
+tests/test_gated_repair_feedback_diagnostic.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_gated_repair_feedback_diagnostic.py:10: in module
+    return runpy.run_path(str(ROOT / "research/diagnostics/gated_repair_feedback.py"))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repository>/research/diagnostics/gated_repair_feedback.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repository>/research/diagnostics/gated_repair_feedback.py'
+
+<frozen runpy>:254: FileNotFoundError
+_______________ test_feedback_diagnostic_rejects_duplicate_rows ________________
+
+    def test_feedback_diagnostic_rejects_duplicate_rows():
+        row = dict(id="same", correct=False, parseable=True, probability=0.2)
+        with pytest.raises(ValueError):
+>           module()["summarize"]([row, row])
+            ^^^^^^^^
+
+tests/test_gated_repair_feedback_diagnostic.py:44: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_gated_repair_feedback_diagnostic.py:10: in module
+    return runpy.run_path(str(ROOT / "research/diagnostics/gated_repair_feedback.py"))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repository>/research/diagnostics/gated_repair_feedback.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repository>/research/diagnostics/gated_repair_feedback.py'
+
+<frozen runpy>:254: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_gated_repair_feedback_diagnostic.py::test_feedback_diagnostic_preserves_missing_and_threshold_ties
+FAILED tests/test_gated_repair_feedback_diagnostic.py::test_feedback_diagnostic_has_no_auroc_with_one_class_or_no_observations
+FAILED tests/test_gated_repair_feedback_diagnostic.py::test_feedback_diagnostic_rejects_duplicate_rows
+3 failed in 0.04s
