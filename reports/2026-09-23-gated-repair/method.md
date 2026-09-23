@@ -77,3 +77,9 @@ tokenizer audit passes. Its tests were run red before implementation. It average
 seeds inside each problem, retains unavailable-feedback cases and distinguishes
 all actually executed repair work from the retention replay's selected outputs.
 It changes no generation, checkpoint selection, threshold or grading rule.
+
+A read-only clock check at local 20:22:20–20:22:22 UTC found the worker reporting
+20:21:41 UTC, approximately 40 seconds behind the workstation. Cross-machine
+wall-clock ordering is therefore approximate. Within-worker selection/test order
+and recorded monotonic generation durations remain the timing evidence; backup
+timestamps are not model durations. No clock or scientific setting was changed.
