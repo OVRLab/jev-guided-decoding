@@ -30,6 +30,7 @@ weaken their requirements in this entrypoint.
 | [R19 corrected controls](research/iterations/sufficiency_controls_v2.py) / [portable audit](research/diagnostics/benefit_sufficiency_audit.py) | Explicit JSON tuple/list correction and bounded logarithm roundoff adapter preserve frozen sources, raw records and all other audit checks; [completed report](reports/2026-09-22-benefit-sufficiency/README.md). |
 | [configs](configs/) / [data](data/) | Pinned experiments and fictional fixtures |
 | [Blinded semantic evaluation](research/iterations/semantic_evaluation/pipeline.py) | R20 validates a separate Qwen judge, then generates fixed native/static/Jev arms and freezes anonymous grading before analysis; [protocol](research/semantic-evaluation-plan.md). Constructed validation is not independent human annotation. |
+| [Local semantic-feedback admission](research/iterations/semantic_feedback/study.py) | R21 validates focused Jev judgments on exact Granite intermediate drafts before any conditional adapter training; [plan](research/semantic-feedback-plan.md), [reconstruction](research/diagnostics/semantic_feedback_audit.py). Admission does not measure final-answer improvement. |
 | [tests](tests/) / [reports](reports/) | Offline checks and immutable experimental evidence |
 
 The code is Python, with optional Transformers/PyTorch dependencies. The core
