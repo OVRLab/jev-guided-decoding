@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "requests": 60,
+  "receipts": 60,
+  "distinct_reservations": 60,
+  "per_receipt_settlement_matches": true,
+  "unknown_calls": 0,
+  "raw_usage_and_model_verified": true,
+  "known_input_tokens": 50475,
+  "output_tokens": 1200,
+  "sum_request_seconds": 17.33041095873341,
+  "api_usd": 0.0021199500000000002,
+  "granite_output_changes": 0,
+  "source_commit": "e5aa80b",
+  "completion_manifest_binding": true
+}

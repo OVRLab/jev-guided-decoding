@@ -200,3 +200,7 @@ It establishes native 1B/3B behavior before selecting another Jev mechanism.
 
 The [ten-benchmark contract v1](benchmark-suite-contract-v1.md) records primary
 metrics, source revisions, admission gaps and final-scorecard rules.
+
+[R24 public-answer critic diagnostic](../reports/2026-09-23-public-critic/README.md)
+is complete: 21/23 native errors flagged, with 3/37 correct answers falsely flagged.
+This supports a selective-repair hypothesis; it does not measure repaired outputs.

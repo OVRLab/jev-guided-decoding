@@ -1,0 +1,11 @@
+{
+  "method": "Marginal Wilson 95% descriptive intervals; no multiplicity or independent-holdout claim.",
+  "error_recall_21_of_23": [
+    0.7320401892425634,
+    0.9758199955157796
+  ],
+  "false_rejection_3_of_37": [
+    0.02796057410044797,
+    0.2130067934928839
+  ]
+}

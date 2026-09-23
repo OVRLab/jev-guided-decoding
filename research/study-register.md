@@ -412,3 +412,10 @@ also prevent development/partial cells from becoming a full-suite claim.
 - One fixed Noul question, threshold .5, no tuning/retries, $0.10 local API cap.
   This tests feedback detectability, not generated-answer improvement; no Granite
   output, weights, internal layer or reasoning trajectory is changed.
+
+**R24 completed:** [report](../reports/2026-09-23-public-critic/README.md).
+Jev flags 21/23 independently wrong eligible answers and falsely flags 3/37
+correct answers, threshold .5; AUROC .9753. It catches 2/2 math, 15/15 MMLU-Pro
+and 4/6 MuSR errors. Every one of 60 calls succeeds, 50,475 input tokens cost
+$0.002120. Raw receipt/individual settlement audit and byte-exact public replay
+pass. All Granite answers stay unchanged; selective repair remains untested.
