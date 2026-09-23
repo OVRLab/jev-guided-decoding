@@ -1,12 +1,12 @@
 {
   "protocol": "r23-public-baseline-v1",
-  "at": "2026-09-23T16:06:42.931096+00:00",
+  "at": "2026-09-23T16:12:15.531175+00:00",
   "sources": {
     "pyproject.toml": "4fbdb53f9dede3ba6f5937de70abde78a57063b68b5fea8122b34b748ccbc4b7",
-    "research/benchmark-baseline-plan.md": "182aab9da22a41b63b505d634199d3866ba6bad534fd869e80fd0806dfe6493b",
-    "research/iterations/benchmark_baseline/analyze.py": "bd6a42193ae7a05fd154087adb1f3848b04274e5533c400a934ed679157eef94",
+    "research/benchmark-baseline-plan.md": "2e4f25c4513acecc367541cb5f58ea2a3863888952c578678b6caaf668762bf1",
+    "research/iterations/benchmark_baseline/analyze.py": "27e0ce067ef3a66714e793341357b515b2c51c8c52e85dfe6fcb5c2b2825856a",
     "research/iterations/benchmark_baseline/audit.py": "056fe91091c04d294cfd7b3f1497ddb80e14fed4b2d6c85f9a172f01e00d1a12",
-    "research/iterations/benchmark_baseline/common.py": "678bc53f4e85e8ac6ab73195db04cd448b513847ae43f13005e7cd5fe800c05f",
+    "research/iterations/benchmark_baseline/common.py": "da590c2cb7229ac5b277b2742c0fa3875da9f5c6e31ed4965ebd6e1d3b30167e",
     "research/iterations/benchmark_baseline/prepare.py": "44c3fd8340be2d77516a7b177efca37195537c68fe0f31005ee143ce51496e6c",
     "research/iterations/benchmark_baseline/run.py": "e8ebdba90ef607f1875f2603d7a9bb8629749d4cfae181cc9ed89e8ee0f768ec",
     "uv.lock": "b581bd9cbb34bae515ecfdae8c1de58e222106ccb78e6186ac7e63ef47277137"
@@ -66,7 +66,7 @@
     "cases.json": "4733a99c65d3bee6a2bca92ea9266b6afc1945a16460cd1d40770ad0ab434bbe",
     "references.json": "03ee8cad22249ccb10216fe3e4fe3533297a1647a14dc42435ac2c0acf2f92ee"
   },
-  "source_revision": "d511c204614143ff84b00b04d2e4f3e9e57cb463",
+  "source_revision": "36ebac9938f8660c3abc89ba8884dd96cd36c014",
   "source_dirty": true,
   "seed": 2301,
   "dtype": "bfloat16",
@@ -77,5 +77,6 @@
   "prior_spend_usd": 33.76145561903811,
   "cumulative_cap_usd": 50,
   "stage_cap_usd": 7.1,
-  "use": "development only; selected MuSR and IFBench IDs excluded from future untouched holdout"
+  "use": "development only; selected MuSR and IFBench IDs excluded from future untouched holdout",
+  "pre_inference_amendment": "Normalize null IFBench kwargs for strict/loose upstream parity; unchanged cases and generation settings."
 }

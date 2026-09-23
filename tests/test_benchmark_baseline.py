@@ -89,3 +89,9 @@ def test_output_binding_rejects_rewritten_final_text():
         C.verify_readout(case, row, thinking=True)
     row["final"] = "Final: B"
     C.verify_readout(case, row, thinking=True)
+
+
+def test_ifbench_null_padding_removed_but_zero_and_false_preserved():
+    source = [{"unused": None, "count": 0, "enabled": False, "words": ["cat"]}]
+    assert C.ifbench_kwargs(source) == [{"count": 0, "enabled": False, "words": ["cat"]}]
+    assert "unused" in source[0]

@@ -43,7 +43,7 @@ def analyze(folder, output, evaluator):
                     key=ref["key"],
                     prompt=case["prompt"],
                     instruction_id_list=ref["instruction_id_list"],
-                    kwargs=copy.deepcopy(ref["kwargs"]),
+                    kwargs=C["ifbench_kwargs"](copy.deepcopy(ref["kwargs"])),
                 )
                 result = getattr(upstream, "test_instruction_following_" + mode)(
                     inp, {case["prompt"]: text}

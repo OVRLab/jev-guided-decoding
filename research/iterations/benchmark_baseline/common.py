@@ -120,3 +120,8 @@ def verify_readout(case, row, *, thinking):
             raise ValueError("Final readout mismatch")
     elif row["status"] not in ("input_limit", "generation_error"):
         raise ValueError("Missing raw generation")
+
+
+def ifbench_kwargs(kwargs):
+    """Official strict evaluator drops null padding; give loose the same input."""
+    return [{k: v for k, v in row.items() if v is not None} for row in kwargs]

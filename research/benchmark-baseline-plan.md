@@ -84,3 +84,12 @@ owned security rules after backup, verify deletion, record actual metered-time
 estimate. No provider inference fees or Jev credentials needed. No automatic
 extension, no more expensive hardware substitution. Incomplete run remains
 incomplete; any continuation gets a separately recorded decision and budget.
+
+### Pre-inference evaluator amendment
+
+Before any R23 generation, admission of all twelve selected IFBench verifier
+families exposed null-padded kwargs accepted by upstream strict (which removes
+nulls in place) but rejected by loose on a fresh copy. Normalize only null-valued
+kwargs for both calls, preserving zero/False and all meaningful arguments, to
+match the official strict-then-loose input behavior. No checker is rewritten.
+The initial manifest is archived; update source hashes before launching inference.
