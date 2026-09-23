@@ -1,0 +1,108 @@
+{
+  "protocol": "r22-learned-feedback-bridge-v1",
+  "at": "2026-09-23T05:25:17.862050+00:00",
+  "sources": {
+    "research/iterations/adaptive_attention/attention.py": "0ca7af39394a1134c172f4f739fe14b718bdedf7c154278ea072cf1c79b31014",
+    "research/iterations/adaptive_attention/journal.py": "5e9fbaf94abd4aea5cb53ef3e5f445efa0f301751f9328c6c04a326b9d8f3e6c",
+    "research/iterations/learned_feedback/bridge.py": "5f3ddc97a65d919103a96dd9916371a9e068e4fd88b58ec3db063bbe20209bf4",
+    "research/iterations/learned_feedback/runtime.py": "641c2491a0a7badc70d0b933e488d35051c811529d4bbb1bd51517695f3b34d0",
+    "research/iterations/learned_feedback/study.py": "89c184dcfa743f6ca5b6e8e2b71baec63c93e815ee6675d25ad714f53b145f8b",
+    "research/iterations/semantic_feedback/analyze.py": "52042cb129dc0483b1efd7ddfecf0de15a4cc937c5ea22d05211878a03cf95a6",
+    "research/iterations/semantic_feedback/data.py": "efe3488cb6561bdd40c419d1444daa7f8c6865bd6024934e816a631f0164d145",
+    "research/iterations/semantic_feedback/study.py": "b3ea22245c05a4be1ae13e492c51cdc3cc12a643edeefedb9f14df403afa998e",
+    "research/iterations/semantic_feedback_replication/data.py": "128f5fdc64a8fce707e3d8e3b5d21d74604d2ead777848fac50757490f3cc910",
+    "research/learned-feedback-bridge-plan.md": "bf9bae6b53fad9eed379879e043a7af13869d51f47f5036b7d0fa6a84800965b",
+    "research/semantic-feedback-plan.md": "1661e834e7244cdaa7606341fd03d72f60cf9cd309898d3ab5666420ffebc58a",
+    "src/jev_guided_decoding/__init__.py": "39c1d8706715ddc0aa94b1cb23aa3238034250643c3cbd012f81dcc1fdcbaf7c",
+    "src/jev_guided_decoding/backends/__init__.py": "46991b291f9d0f364d515733ab89c42103b51963899530c727b9f8a4638250ae",
+    "src/jev_guided_decoding/backends/transformers.py": "acb2c8ba0ec427593482cada06faf74f5072871260c2c86c276d70dbf98677d3",
+    "src/jev_guided_decoding/benchmark.py": "f25566805b88ff418e10a24d9f8b9017034fc06fede3420051fda7ec235bad43",
+    "src/jev_guided_decoding/cli.py": "1f344c891800e1969d66ded7dc79ff0cc7ff4043d9a2e47d2c5b3a32c7c993e8",
+    "src/jev_guided_decoding/controller.py": "e487360178cc45cb2ce044c2f766fabc64d3b582cc861aec0182163770e1cccc",
+    "src/jev_guided_decoding/experiment_budget.py": "67eae5b043cbb43b45b0a5c2ba74f51d9a4b5d0618c7f88644494d059a41b390",
+    "src/jev_guided_decoding/framing.py": "df5f1c0e09f497cf4bb296ddb12fb70851876a2b40ff2affb6c4084d2e812a0f",
+    "src/jev_guided_decoding/generated_answer.py": "8bca33972c42097b6a479978de2093f398b4e5c927e0ca74ab26eef8abab3d3e",
+    "src/jev_guided_decoding/jev.py": "c87bb0b5c5e202f67623b42d9a5a390bc87ca28ba48acc4b9a63362a70a4fe2a",
+    "src/jev_guided_decoding/local_claims.py": "205d117d2893d36915de5af12b6b544fac203673a1308c0e1d3264d79884a6a4",
+    "src/jev_guided_decoding/logit_bias.py": "4f12176f75b81e72e67e3c405f4c139cf9db18d033118f77b50db149ac1e4243",
+    "src/jev_guided_decoding/reasoning.py": "5d5dba688466e418f419cf89d48ba9acbc6e3fddbed249a455110d171c61d907",
+    "src/jev_guided_decoding/reasoning_scorer.py": "e880a0d7de6ec47e7a418c1d7fc6200a1b433fcc358defe23f9f5704d3edf706",
+    "src/jev_guided_decoding/types.py": "3591d0eef912255d3df2c5b2107da8cc44ee6b0507d40e72e09c2814f09c9151",
+    "src/jev_guided_decoding/verdict.py": "d381794c5872de0aa156a4736c075cde9a4083ebb28e030563036bd10e692d1d"
+  },
+  "datasets": {
+    "feedback-admission.json": "1259b551bcbf63aedbdafd22a1e9e18c460150494844bbba9b33876689687675",
+    "development.json": "27e80e4abf08f93f223954862de04841c374a16509cdd090d9336ffa3a72cdef",
+    "test.json": "8574400d8ba43981ed9e572f1724e5833dd9af2c0faabfdd1f380205bd6d8546",
+    "train.json": "3852dc6cd879281088d63c3294696c469b70c765928f9910bcee36840a609318",
+    "donors.json": "fbcef72a672581836a1900f626a5bbdd37aa5587c1424d9315eb029d6da6d916"
+  },
+  "source_revision": "499577f963abd139c9ddf3492da358b19f74b95f",
+  "source_dirty": true,
+  "model": "ibm-granite/granite-4.0-1b",
+  "revision": "6a7381ba1f54d684ff508d991aeb7dc580157103",
+  "precision": "float32",
+  "jev": "jev-1.13.0",
+  "rank": 16,
+  "layer": 19,
+  "seeds": [
+    2201,
+    2202
+  ],
+  "arms": [
+    [
+      "native",
+      0
+    ],
+    [
+      "constant",
+      2201
+    ],
+    [
+      "live",
+      2201
+    ],
+    [
+      "permuted",
+      2201
+    ],
+    [
+      "oracle",
+      2201
+    ],
+    [
+      "constant",
+      2202
+    ],
+    [
+      "live",
+      2202
+    ],
+    [
+      "permuted",
+      2202
+    ],
+    [
+      "oracle",
+      2202
+    ]
+  ],
+  "learning_rate": 0.003,
+  "epochs": 2,
+  "accumulate": 8,
+  "gradient_clip": 1.0,
+  "weight_decay": 0.0,
+  "draft_limit": 24,
+  "final_limit": 8,
+  "max_input_tokens": 2048,
+  "max_seconds": 14400,
+  "max_api_usd": 0.5,
+  "cloud_allowance_usd": 10,
+  "usd_per_million": 0.042,
+  "prior_spend_usd": 32.58346360254077,
+  "cumulative_budget_usd": 50,
+  "train_worlds": 384,
+  "development_worlds": 96,
+  "test_worlds": 384,
+  "test_outputs": 3456
+}
