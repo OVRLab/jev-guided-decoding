@@ -1,14 +1,12 @@
 # Study register
 
-**Current R25 status (20:27 UTC):** v3 stopped on HTTP 503 after 165 native
-training drafts and 157 valid Jev receipts; six new HTTP 529 responses and the
-original failure make eight unavailable cases. No optimizer, development selection
-or test generation ran. All 25 files are preserved and all owned resources deleted.
-Estimated cumulative cost is **$38.333750/$75** before tax/network. A prospective
-v4 delivery amendment adds independently reserved, bounded retries only for explicit
-429/503/529 responses on new cases; old cases are never redispatched. Training,
-architecture and quality rules stay fixed. Implementation/audits precede any restart.
-See [overload recovery plan](gated-repair-overload-recovery.md) and [preserved v3](../reports/2026-09-23-gated-repair/interrupted-v3/README.md).
+**Current R25 status (21:45 UTC):** v4 has recorded all 3,072 training-example
+passes and 512 development repairs; checkpoint selection is saved and held-out
+test generation has begun. Eight historical missing Jev scores remain explicit;
+no new provider failure is recorded. One L40S is running with backups and
+bounded expiry under the $75 cumulative cap. Final quality, artifact audits,
+cost reconciliation and resource deletion remain pending. Earlier interruption
+notes below are historical; see the [current report](../reports/2026-09-23-gated-repair/README.md).
 
 
 **Direction update, 2026-09-23 (no experiment):** the owner set broad ten-benchmark

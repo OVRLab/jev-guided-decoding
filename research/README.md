@@ -1,14 +1,12 @@
 # Granite + Jev research record
 
-**Current R25 status (20:27 UTC):** v3 stopped on HTTP 503 after 165 native
-training drafts and 157 valid Jev receipts; six new HTTP 529 responses and the
-original failure make eight unavailable cases. No optimizer, development selection
-or test generation ran. All 25 files are preserved and all owned resources deleted.
-Estimated cumulative cost is **$38.333750/$75** before tax/network. A prospective
-v4 delivery amendment adds independently reserved, bounded retries only for explicit
-429/503/529 responses on new cases; old cases are never redispatched. Training,
-architecture and quality rules stay fixed. Implementation/audits precede any restart.
-See [overload recovery plan](gated-repair-overload-recovery.md) and [preserved v3](../reports/2026-09-23-gated-repair/interrupted-v3/README.md).
+**Current R25 status (21:45 UTC):** v4 has recorded all 3,072 training-example
+passes and 512 development repairs; checkpoint selection is saved and held-out
+test generation has begun. Eight historical missing Jev scores remain explicit;
+no new provider failure is recorded. One L40S is running with backups and
+bounded expiry under the $75 cumulative cap. Final quality, artifact audits,
+cost reconciliation and resource deletion remain pending. Earlier interruption
+notes below are historical; see the [current report](../reports/2026-09-23-gated-repair/README.md).
 
 
 [Active north star](north-star.md), recorded 2026-09-23: substantial gains over
@@ -16,6 +14,9 @@ original Granite across ten leading benchmarks and outperformance of named large
 models. Candidate tasks/comparators and the research sequence are documented;
 the versioned contract and four-domain diagnostic are implemented, while the full
 ten-task suite remains unrun. Earlier experiments remain evidence for their scope.
+[Evaluator admission findings](benchmark-evaluator-admission-notes.md) document
+random fallback and reference-dependent retry behavior in pinned upstream scripts;
+no new full-task evaluator or score is admitted by that source review.
 
 [R23 public baseline — completed](../reports/2026-09-23-public-baseline/README.md):
 76 development problems per model, all 152 outputs audited and publicly replayed.

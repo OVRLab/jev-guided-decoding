@@ -1,6 +1,6 @@
 # R25: Jev-gated natural-draft repair
 
-**Status: v1 failed admission; v2/v3 stopped on provider errors before training; v4 delivery recovery is frozen and running after local/server verification.**
+**Status at 21:45 UTC: v4 training and development generation are complete, checkpoints are selected, and held-out test generation is running. Final quality and audits remain pending. V1–v3 interruptions are preserved below.**
 
 The owner increased the cumulative research cap to **$75**. R25 now reserves
 **$20 combined across all attempts**. Estimated cumulative use before v3 is
@@ -123,3 +123,8 @@ Both predecessor snapshots and the private credential are present on the owned
 worker; credentials remain outside source/results. Nine-hour worker and ten-hour
 machine limits, regular backup and cleanup supervision are active. Quality and
 training remain pending until the actual run and independent audits complete.
+
+At local 21:45 UTC, v4 has recorded all 3,072 teacher-forced example passes and
+512 development repairs, saved checkpoint selection and begun the held-out native
+drafts. No new provider failure has been recorded; eight legacy missing scores
+remain explicit. Independent final audits and quality interpretation are pending.
