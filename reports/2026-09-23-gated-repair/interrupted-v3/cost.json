@@ -1,0 +1,12 @@
+{
+  "instance_hours_upper_estimate": 0.35494410722222225,
+  "cloud_usd_upper_estimate": 0.6227781233848494,
+  "known_input_tokens_all_versions": 99591,
+  "unknown_charge_calls_all_versions": 8,
+  "api_usd_all_versions_upper_estimate": 0.026202918000000002,
+  "v3_additional_api_usd_upper_estimate": 0.020475378000000002,
+  "separate_local_probe_usd": 1.1634e-05,
+  "cumulative_usd_upper_estimate": 38.33374990195374,
+  "before_tax_separate_network": true,
+  "worker_clock_lag_seconds_approximate": 40
+}

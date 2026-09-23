@@ -1,5 +1,16 @@
 # Verified implementation inventory
 
+**Current R25 status (20:27 UTC):** v3 stopped on HTTP 503 after 165 native
+training drafts and 157 valid Jev receipts; six new HTTP 529 responses and the
+original failure make eight unavailable cases. No optimizer, development selection
+or test generation ran. All 25 files are preserved and all owned resources deleted.
+Estimated cumulative cost is **$38.333750/$75** before tax/network. A prospective
+v4 delivery amendment adds independently reserved, bounded retries only for explicit
+429/503/529 responses on new cases; old cases are never redispatched. Training,
+architecture and quality rules stay fixed. Implementation/audits precede any restart.
+See [overload recovery plan](research/gated-repair-overload-recovery.md) and [preserved v3](reports/2026-09-23-gated-repair/interrupted-v3/README.md).
+
+
 [R25 internal repair](reports/2026-09-23-gated-repair/README.md): v1 failed
 BF16 numerical admission; v2 passed FP32 checks but stopped after 113 training
 drafts and 112 Jev receipts because one request failed. No optimizer or test ran.

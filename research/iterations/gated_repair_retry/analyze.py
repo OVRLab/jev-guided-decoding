@@ -1,0 +1,350 @@
+"""R25 retry audit: physical attempts, real receipts and missing values stay distinct."""
+
+import argparse
+import hashlib
+import json
+import runpy
+from pathlib import Path
+
+C = runpy.run_path(str(Path(__file__).resolve().with_name("common.py")))
+
+
+def lines(path):
+    return [json.loads(x) for x in path.read_text().splitlines()]
+
+
+def unique(rows, key):
+    found = {}
+    for row in rows:
+        k = key(row)
+        if k in found:
+            raise ValueError("Duplicate record")
+        found[k] = row
+    return found
+
+
+def analyze(folder, output, tokenizer=None):
+    m = C["verify"](folder)
+    cases = json.loads((folder / "cases.json").read_text())
+    by_id = unique(cases, lambda r: r["id"])
+    refs = unique(
+        [
+            r
+            for part in ("train", "development", "test")
+            for r in json.loads((folder / f"{part}-references.json").read_text())
+        ],
+        lambda r: r["id"],
+    )
+    rows = lines(output / "outputs.jsonl")
+    indexed = unique(rows, lambda r: (r["id"], r["arm"]))
+    planned = {(c["id"], "native") for c in cases}
+    arms = ["blind", "text"] + [
+        f"{arm}/{seed}"
+        for seed in m["seeds"]
+        for arm in ("constant", "live", "shuffled", "inverted")
+    ]
+    for c in cases:
+        if c["split"] == "development":
+            planned.update(
+                (c["id"], f"dev/{mode}/{seed}/{epoch}")
+                for mode in ("constant", "live")
+                for seed in m["seeds"]
+                for epoch in (1, 2)
+            )
+        if c["split"] == "test":
+            planned.update((c["id"], arm) for arm in arms)
+    if set(indexed) != planned:
+        raise ValueError("Missing or unexpected planned generation")
+    jobs = lines(output / "jobs.jsonl")
+    for event in ("start", "finish"):
+        events = [(r["id"], r["arm"]) for r in jobs if r["event"] == event]
+        if len(events) != len(planned) or set(events) != planned:
+            raise ValueError("Job coverage mismatch")
+    hardware = json.loads((output / "hardware.json").read_text())
+    done = json.loads((output / "completion.json").read_text())
+    if (
+        done["original_weights_sha256"] != hardware["original_weights_sha256"]
+        or not done["original_weights_unchanged"]
+        or done["reserved_unknown_calls"]
+    ):
+        raise ValueError("Weight or API completion mismatch")
+    if json.loads((output / "start.json").read_text())["manifest_sha256"] != C["sha"](
+        folder / "manifest.json"
+    ):
+        raise ValueError("Run manifest mismatch")
+    prior = output.parent / "prior-v3"
+    C["C"]["verify_files"](prior, {n: v["sha256"] for n, v in m["prior_files"].items()})
+    for name in (
+        "outputs.jsonl",
+        "jobs.jsonl",
+        "api-requests.jsonl",
+        "api-responses.jsonl",
+        "api-failures.jsonl",
+        "budget.jsonl",
+    ):
+        binding = m["prior_files"][name]
+        content = (output / name).read_bytes()
+        if hashlib.sha256(content[: binding["bytes"]]).hexdigest() != binding["sha256"]:
+            raise ValueError("Predecessor prefix changed")
+        if name.startswith("api-") and len(content) != binding["bytes"]:
+            raise ValueError("Legacy API evidence was modified")
+    prior_runner = runpy.run_path(str(Path(__file__).with_name("study.py")))
+    prior_runner["prior_check"](prior, m, cases)
+    delivery = runpy.run_path(str(Path(__file__).with_name("delivery.py")))["audit"](
+        output, by_id, {c["id"]: indexed[c["id"], "native"] for c in cases}, m
+    )
+    requests, responses, failures, feedback = (
+        delivery[k] for k in ("requests", "responses", "missing", "feedback")
+    )
+    if (
+        done["known_input_tokens"] != delivery["known_input_tokens"]
+        or done["unknown_max_charged_calls"] != delivery["unknown_attempts"]
+        or abs(done["usd"] - delivery["usd"]) > 1e-12
+    ):
+        raise ValueError("Completion charge mismatch")
+    selection = json.loads((output / "selection.json").read_text())
+    epochs = lines(output / "epochs.jsonl")
+    for name, v in selection["models"].items():
+        mode, seed = name.split("/")
+        scores = []
+        for epoch in (1, 2):
+            dev = [c for c in cases if c["split"] == "development"]
+            score = sum(
+                C["R"]["readout"](
+                    c["prompt"],
+                    indexed[c["id"], f"dev/{mode}/{seed}/{epoch}"]["text"],
+                    refs[c["id"]],
+                )["correct"]
+                for c in dev
+            ) / len(dev)
+            scores.append(score)
+            record = [
+                r for r in epochs if (r["mode"], r["seed"], r["epoch"]) == (mode, int(seed), epoch)
+            ]
+            if (
+                len(record) != 1
+                or record[0]["accuracy"] != score
+                or record[0]["sha256"]
+                != C["sha"](output / f"{mode}-{seed}-epoch{epoch}.safetensors")
+            ):
+                raise ValueError("Epoch score/checkpoint mismatch")
+        if (
+            scores != v["scores"]
+            or C["choose_epoch"](scores) != v["epoch"]
+            or C["sha"](output / v["file"]) != v["sha256"]
+        ):
+            raise ValueError("Selection mismatch")
+    test = [c for c in cases if c["split"] == "test"]
+    donors = C["donors"](test)
+    if donors != json.loads((output / "donors.json").read_text()):
+        raise ValueError("Donor mismatch")
+    grades = []
+    for row in rows:
+        c = by_id[row["id"]]
+        ref = refs[c["id"]]
+        p = feedback[c["id"]]["effective_probability_correct"]
+        native = indexed[c["id"], "native"]
+        if (
+            row["prompt_sha256"] != C["digest"](c["prompt"])
+            or ref["prompt_sha256"] != row["prompt_sha256"]
+            or (row["split"], row["task"]) != (c["split"], c["task"])
+        ):
+            raise ValueError("Input binding mismatch")
+        ids = row["generated_token_ids"]
+        eos = hardware["eos_ids"]
+        cap = m["draft_limit"] if row["arm"] == "native" else m["repair_limit"]
+        if (
+            not ids
+            or len(ids) > cap
+            or any(i in eos for i in ids[:-1])
+            or (row["finish_reason"] == "eos") != (ids[-1] in eos)
+            or row["forwards"] != len(ids)
+            or row["processed_tokens"] != len(row["prompt_token_ids"]) + len(ids) - 1
+        ):
+            raise ValueError("Token/compute contract mismatch")
+        if (
+            row["arm"] != "native"
+            and row["prompt_token_ids"][
+                : len(native["prompt_token_ids"]) + len(native["generated_token_ids"])
+            ]
+            != native["prompt_token_ids"] + native["generated_token_ids"]
+        ):
+            raise ValueError("Exact draft prefix mismatch")
+        if c["split"] == "test" and row["at"] < selection["at"]:
+            raise ValueError("Test preceded frozen selection")
+        if tokenizer is not None:
+            prompt = (
+                tokenizer.apply_chat_template(
+                    [dict(role="user", content=c["prompt"])],
+                    tokenize=True,
+                    add_generation_prompt=True,
+                )
+                if row["arm"] == "native"
+                else C["repair_prefix"](
+                    tokenizer,
+                    native["prompt_token_ids"],
+                    native["generated_token_ids"],
+                    probability=p if row["arm"] == "text" and c["id"] in responses else None,
+                )
+            )
+            body = ids[:-1] if ids[-1] in eos else ids
+            if (
+                prompt != row["prompt_token_ids"]
+                or tokenizer.decode(body, skip_special_tokens=False) != row["text"]
+            ):
+                raise ValueError("Tokenizer replay mismatch")
+        if row["gate"] is None:
+            if row["events"] or row["arm"] not in ("native", "blind", "text"):
+                raise ValueError("Unexpected intervention")
+        else:
+            name = row["arm"].split("/")[1 if row["arm"].startswith("dev/") else 0]
+            expected = {"constant": 0.5, "live": 1 - p, "inverted": p}.get(name)
+            if name == "shuffled":
+                expected = 1 - feedback[donors[c["id"]]]["effective_probability_correct"]
+            if row["gate"] != expected or len(row["events"]) != len(ids):
+                raise ValueError("Gate/event count mismatch")
+            for i, event in enumerate(row["events"]):
+                if (
+                    event["layer"] != m["layer"]
+                    or event["positions"] != [len(row["prompt_token_ids"]) - 1 + i]
+                    or event["feedback"] != [expected, expected]
+                ):
+                    raise ValueError("Internal intervention provenance mismatch")
+        grades.append(
+            dict(
+                id=c["id"],
+                task=c["task"],
+                split=c["split"],
+                arm=row["arm"],
+                **C["R"]["readout"](c["prompt"], row["text"], ref),
+            )
+        )
+    train = json.loads((output / "training-examples.json").read_text())
+    targets = {
+        r["id"]: r["target"] for r in json.loads((folder / "training-targets.json").read_text())
+    }
+    if len(train) != 384 or {r["id"] for r in train} != set(targets):
+        raise ValueError("Training target coverage mismatch")
+    if tokenizer is not None:
+        for example in train:
+            native = indexed[example["id"], "native"]
+            if example["prompt_ids"] != C["repair_prefix"](
+                tokenizer, native["prompt_token_ids"], native["generated_token_ids"]
+            ) or example["target_ids"] != tokenizer.encode(
+                targets[example["id"]], add_special_tokens=False
+            ) + [tokenizer.convert_tokens_to_ids("<|end_of_text|>")]:
+                raise ValueError("Training token provenance mismatch")
+    steps = lines(output / "training-steps.jsonl")
+    if len(steps) != 384 * 2 * 2 * 2:
+        raise ValueError("Training step coverage mismatch")
+    test_grades = [g for g in grades if g["split"] == "test"]
+    for mode in ("constant", "live", "shuffled", "inverted"):
+        for c in test:
+            values = [
+                g["correct"]
+                for g in test_grades
+                if g["id"] == c["id"] and g["arm"] in [f"{mode}/{s}" for s in m["seeds"]]
+            ]
+            if len(values) != 2:
+                raise ValueError("Seed coverage mismatch")
+            test_grades.append(
+                dict(
+                    id=c["id"],
+                    task=c["task"],
+                    split="test",
+                    arm=mode + "_mean",
+                    correct=sum(values) / 2,
+                )
+            )
+    summaries = {}
+    effects = {}
+    for task in ["all", "gsm8k", "arc"]:
+        cohort = [c for c in test if task == "all" or c["task"] == task]
+        allowed = {c["id"] for c in cohort}
+        group = [g for g in test_grades if g["id"] in allowed]
+        summaries[task] = {
+            arm: dict(
+                n=len(cohort),
+                correct=sum(g["correct"] for g in group if g["arm"] == arm),
+                accuracy=sum(g["correct"] for g in group if g["arm"] == arm) / len(cohort),
+            )
+            for arm in [
+                "native",
+                *arms,
+                "constant_mean",
+                "live_mean",
+                "shuffled_mean",
+                "inverted_mean",
+            ]
+        }
+        effects[task] = {
+            f"{arm}-vs-{baseline}": C["paired"](cohort, group, arm, baseline)
+            for arm, baseline in [
+                ("live_mean", "native"),
+                ("live_mean", "constant_mean"),
+                ("live_mean", "blind"),
+                ("live_mean", "text"),
+                ("live_mean", "shuffled_mean"),
+                ("live_mean", "inverted_mean"),
+                ("blind", "native"),
+                ("text", "native"),
+            ]
+        }
+    sensitivity = {
+        str(seed): {
+            arm: sum(
+                indexed[c["id"], f"live/{seed}"]["generated_token_ids"]
+                != indexed[c["id"], f"{arm}/{seed}"]["generated_token_ids"]
+                for c in test
+            )
+            for arm in ("shuffled", "inverted")
+        }
+        for seed in m["seeds"]
+    }
+    return dict(
+        protocol=m["protocol"],
+        audited=True,
+        tokenizer_replayed=tokenizer is not None,
+        planned_outputs=len(planned),
+        completed_outputs=len(rows),
+        summaries=summaries,
+        effects=effects,
+        feedback_changed_tokens=sensitivity,
+        selection=selection,
+        api_calls=delivery["physical_attempts"],
+        scored_cases=len(requests),
+        retry_attempts=delivery["retries"],
+        unknown_charge_attempts=delivery["unknown_attempts"],
+        valid_api_receipts=len(responses),
+        missing_feedback_ids=sorted(failures),
+        api_usd=done["usd"],
+        training_steps=len(steps),
+        output_tokens=sum(len(r["generated_token_ids"]) for r in rows),
+        generation_seconds=sum(r["seconds"] for r in rows),
+        completion=done,
+        grades=test_grades,
+        larger_comparison_gate=all(
+            effects[t][e]["delta_pp"] > 0
+            for t in ("gsm8k", "arc")
+            for e in ("live_mean-vs-native", "live_mean-vs-constant_mean")
+        ),
+        files={p.name: C["sha"](p) for p in output.iterdir() if p.is_file()},
+    )
+
+
+if __name__ == "__main__":
+    p = argparse.ArgumentParser()
+    p.add_argument("--freeze", type=Path, required=True)
+    p.add_argument("--output", type=Path, required=True)
+    p.add_argument("--save", type=Path, required=True)
+    p.add_argument("--tokenizer", action="store_true")
+    a = p.parse_args()
+    tok = None
+    if a.tokenizer:
+        from transformers import AutoTokenizer
+
+        m = C["verify"](a.freeze)
+        tok = AutoTokenizer.from_pretrained(
+            m["model"], revision=m["revision"], trust_remote_code=False
+        )
+    C["dump"](a.save, analyze(a.freeze, a.output, tok))

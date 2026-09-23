@@ -1395,8 +1395,12 @@ p(correct) >= 0.5, and in v3 when feedback is unavailable; otherwise it uses eac
 repair arm's already generated answer. The same routing applies to blind, text,
 constant and live controls. This supplements rather than replaces primary full
 repair, and measures no avoided execution or Jev calls. At this manuscript update,
-v3 has launched after 527 server tests; training, held-out scores, final audits and
-cleanup are pending. No R25 quality or larger-model superiority is claimed.
+v3 passed 527 server tests but stopped on HTTP 503 after 165 drafts/157 receipts.
+Six new HTTP 529 responses and the original failure leave eight unavailable cases;
+all 25 artifacts are preserved and all owned resources deleted. No optimizer or
+test ran. A prospective v4 amendment adds paced, independently reserved retries
+only for explicit 429/503/529 on new cases, retaining all legacy evidence and
+scientific settings. No R25 quality or larger-model superiority is claimed.
 See the [versioned report](../reports/2026-09-23-gated-repair/README.md),
 [method](../reports/2026-09-23-gated-repair/method.md) and
 [related-work note](gated-repair-related-work.md).

@@ -1,6 +1,6 @@
 # R25: Jev-gated natural-draft repair
 
-**Status: v1 failed numerical admission; v2 passed FP32 checks then was interrupted; v3 continuation frozen before training/test.**
+**Status: v1 failed admission; v2/v3 stopped on provider errors before training; v4 delivery recovery is being verified.**
 
 The owner increased the cumulative research cap to **$75**. R25 now reserves
 **$20 combined across all attempts**. Estimated cumulative use before v3 is
@@ -96,3 +96,22 @@ V3 launched at approximately 20:11 UTC after all **527 server tests passed in
 18.45 seconds**. The GPU's independent expiry timer is active. Local backup and
 cleanup supervision run every 45 seconds. New report-only recovery/damage tests
 bring the local suite to 529; the frozen worker remains unchanged.
+
+## V3 interrupted; bounded delivery recovery
+
+The [complete v3 interruption archive](interrupted-v3/README.md) preserves all 25
+final files, including 165 natural training drafts, 157 valid Jev receipts and eight
+missing cases. Six explicit HTTP 529 responses were admitted with cooldown, then
+an HTTP 503 stopped the worker under its frozen rule. All resources were deleted
+at local 20:27:46 UTC after final hash verification. No training or test ran.
+V3 cloud estimate $0.622778, incremental conservative API $0.020475, local probe
+$0.000012; cumulative **$38.333750** before tax/network. Clock skew makes cross-host
+wall times approximate; this is an estimate, not an invoice.
+
+The [prospective v4 plan](../../research/gated-repair-overload-recovery.md) keeps
+all scientific settings and legacy results, but improves delivery for new cases:
+up to four separately reserved attempts after explicit 429/503/529, paced backoff,
+no timeout replay, a retained $0.25 API ledger and bounded missing/unknown counts.
+No additional GPU is launched before independent request/charge audits, local
+checks and a new source/data freeze. Combined R25 reserve $20 and total cap $75
+stay unchanged. No R25 quality result exists yet.
