@@ -1,10 +1,10 @@
 # Verified implementation inventory
 
-[R25 internal repair](research/gated-repair-plan.md) is implemented and pending live
-validation: a Jev-controlled rank-64 residual branch, trained on natural public
+[R25 internal repair](research/gated-repair-plan.md) is running on one Nebius L40S:
+ a Jev-controlled rank-64 residual branch, trained on natural public
 math/science drafts with two seeds and matched controls. Current cumulative cap
 is **$75**, starting estimated use **$36.77**, with **$14.40 reserved**. All 516
-offline tests pass; quality is unmeasured. Earlier budget entries are historical.
+local and server tests pass; quality is unmeasured. Earlier budget entries are historical.
 
 The [north-star direction](research/north-star.md) was recorded on 2026-09-23.
 Its ten-benchmark/larger-model scorecard remains planned; the verified results

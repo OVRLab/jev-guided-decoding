@@ -439,7 +439,8 @@ See the [complete inspection](../reports/2026-09-23-public-critic/disagreements.
 
 ## R25 — Jev-gated natural-draft repair (registered 2026-09-23)
 
-- **Status:** implemented; 516 offline tests pass; live inference not started.
+- **Status:** running on one Nebius L40S from approximately 19:14 UTC; 516 local
+  and server tests pass; no quality result yet. [Report](../reports/2026-09-23-gated-repair/README.md).
 - [Plan and $75 cumulative authorization](gated-repair-plan.md): reserve $14.40,
   eight-hour single-L40S hard expiry, seven-hour worker limit, $0.25 API cap.
 - New rank-64 branch after block 19, multiplicatively gated by Jev's draft-error
