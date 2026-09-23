@@ -193,3 +193,7 @@ rights policy. This limits public per-example auditing and must remain disclosed
 No credentials, private operational files, or vendor documentation snapshots belong
 in the research record. The earlier DeepSeek/KV-cache and concision work are separate
 projects; their outcomes are not pooled into this Granite/Jev study.
+
+The next broad-capability stage is [R23's public baseline diagnostic](benchmark-baseline-plan.md),
+with [pinned development inputs](protocols/public-baseline-v1/manifest.json).
+It establishes native 1B/3B behavior before selecting another Jev mechanism.

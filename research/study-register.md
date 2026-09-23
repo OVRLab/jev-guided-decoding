@@ -381,3 +381,15 @@ reporting metadata import used system Python without NumPy and was resumed in th
 project environment after public reanalysis had already passed. Both interruptions
 are retained in the validation record; neither caused a paid/model replay or a
 change to the frozen scientific source. Authentication delay is included in cost.
+
+## R23 — public cross-domain baseline diagnostic (registered 2026-09-23)
+
+- [Plan](benchmark-baseline-plan.md), [frozen inputs](protocols/public-baseline-v1/manifest.json).
+- 76 development cases: MMLU-Pro validation 28, GSM8K training 24, MuSR 12,
+  IFBench 12; original Granite 4.0-1B and native-thinking Granite 4.2-3B.
+- Native generation and independent grading only; no Jev intervention, training
+  or final ten-benchmark superiority claim. Selected source-test cases are now
+  project development, with exclusions recorded for future untouched holdouts.
+- Registered before cloud creation/inference. Initial capability tests failed on
+  missing module; subsequent readout-binding test failed on missing capability.
+  Both failures are preserved in the dated report's validation archive.
