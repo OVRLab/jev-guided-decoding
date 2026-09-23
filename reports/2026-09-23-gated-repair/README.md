@@ -85,3 +85,9 @@ an offline policy analysis, not measured avoided computation or API calls.
 
 See the [mechanism and token ownership](method.md). Quality is still unmeasured;
 no scientific settings were changed in response to held-out answer quality.
+
+The [v3 retention registration](../../research/protocols/gated-repair-retention-continuation-v3.json)
+prospectively binds the replay to the continuation manifest. It preserves and
+hash-links the original registration, threshold, and missing-feedback policy;
+no test or training has run on v3 at this point. The original v1 registration
+binds v2 and therefore cannot serve directly as the v3 audit input.

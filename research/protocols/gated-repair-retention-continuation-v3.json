@@ -1,0 +1,17 @@
+{
+  "at": "2026-09-23T20:09:54.524193+00:00",
+  "protocol": "r25-retention-replay-continuation-v3",
+  "threshold": 0.5,
+  "sources": {
+    "research/gated-repair-retention-supplement.md": "bc66f520f3d0b3324c8fd880a02910bfbc260a126930a67bf6da25cec32a68aa",
+    "research/diagnostics/gated_repair_retention.py": "3f7d4ab50b9de3b9da3e4b2465c4043b615c411dded84f94adc59f5a5fb7ba6f",
+    "research/gated-repair-continuation.md": "c5467472399e839c2180856b354bd7873478529cc4948934ba81c6074f39cf00",
+    "research/iterations/gated_repair_continue/retention.py": "c6dde6362c0e9b474922a59c270e59834bcb93e0663968750f6590d1eb1b3e91"
+  },
+  "baseline_manifest_sha256": "0c2c58bb1e08492b9428a27bc058e6730e55e39e6125bd5905adeb233afbdd89",
+  "source_revision": "42456ed41e2e28d4fb04b67377b6cd3b0abf645c",
+  "original_registration_sha256": "a79f7d2fb397dee081b3c862188b5545156e0ec930ac5f3704e93b634856c4c5",
+  "original_baseline_manifest_sha256": "ca7ecf9b770622fed4481fcdf32b8e57b078a8c9a0799200bc5d42309d0c18d8",
+  "missing_feedback_policy": "retain_native",
+  "note": "Prospective binding of unchanged threshold to v3 continuation manifest; original registration preserved."
+}
