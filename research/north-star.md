@@ -253,3 +253,23 @@ R25 tests a direct Jev gate on a newly trained residual branch using natural
 Granite drafts from public math/science data, with matched training, blind repair,
 text feedback and feedback ablations. The full ten-task comparison remains a
 later evidence-gated stage; budget authorization is not evidence of success.
+
+
+### R25 numerical restart and retention supplement
+
+The BF16 pilot stopped at its numerical admission gate before any training drafts,
+API calls or optimizer updates. Its $0.293387 cost and all five artifacts are
+preserved; the first worker and owned resources are deleted. A diagnostic confirms
+that the cached/full discrepancy also occurs in native Granite, while all six
+float32 native/intervened checks pass within 1e-4. The separately frozen
+[full-precision restart](gated-repair-fp32-amendment.md) now runs the same training
+and evaluation design. The combined R25 reserve is **$20**, replacing $14.40,
+within the owner-authorized cumulative **$75**. Prior estimated usage plus the
+failed attempt is $37.066922 before tax/network; the active worker adds metered
+use until verified deletion.
+
+A [retention-policy replay](gated-repair-retention-supplement.md), frozen before
+any test inference, separately checks preserving high-confidence native answers
+and repairing only Jev-flagged cases. It retains every original primary comparison
+and does not claim measured skipped execution or fewer Jev calls. Quality results
+remain pending; source and data revisions are in the [R25 report](../reports/2026-09-23-gated-repair/README.md).
