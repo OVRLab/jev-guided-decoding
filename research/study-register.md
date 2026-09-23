@@ -401,3 +401,14 @@ adds conservative whole-option matching equally to both models; it is not a
 preregistered correction or an official semantic benchmark. The
 [ten-task contract](benchmark-suite-contract-v1.md) and executable scorecard guard
 also prevent development/partial cells from becoming a full-suite claim.
+
+## R24 — public-answer critic diagnostic (registered 2026-09-23)
+
+- [Plan](public-critic-plan.md), [frozen inputs/labels](protocols/public-critic-v1/manifest.json).
+- Jev judges 60 unambiguous **existing native** answers from R23, without reference
+  answers: 21 math, 27 broad knowledge, 12 narratives. Four unresolved readouts and
+  12 exact-verifier instruction cases are excluded with reasons; 37 eligible
+  answers are correct and 23 wrong under the independent development readout.
+- One fixed Noul question, threshold .5, no tuning/retries, $0.10 local API cap.
+  This tests feedback detectability, not generated-answer improvement; no Granite
+  output, weights, internal layer or reasoning trajectory is changed.

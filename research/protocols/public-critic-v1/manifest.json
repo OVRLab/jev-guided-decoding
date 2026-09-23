@@ -1,0 +1,39 @@
+{
+  "at": "2026-09-23T16:39:11.952229+00:00",
+  "protocol": "r24-public-critic-v1",
+  "model": "jev-1.13.0",
+  "sources": {
+    "research/diagnostics/public_baseline_readout.py": "e389a2372cd62f4e5fc5e00efc562ac26881bc715e9aed3af754880a0a80bc6a",
+    "research/iterations/benchmark_baseline/common.py": "da590c2cb7229ac5b277b2742c0fa3875da9f5c6e31ed4965ebd6e1d3b30167e",
+    "research/iterations/public_critic.py": "fbe5755ff7e6c91e62b67786ce61833c9c9eee38c5401b866a1c94477f86549f",
+    "research/public-critic-plan.md": "d2d5bc1652ad5973ff01abb31bb7e965be63a14466836c48f8a1436e10ced759",
+    "src/jev_guided_decoding/__init__.py": "39c1d8706715ddc0aa94b1cb23aa3238034250643c3cbd012f81dcc1fdcbaf7c",
+    "src/jev_guided_decoding/backends/__init__.py": "46991b291f9d0f364d515733ab89c42103b51963899530c727b9f8a4638250ae",
+    "src/jev_guided_decoding/backends/transformers.py": "acb2c8ba0ec427593482cada06faf74f5072871260c2c86c276d70dbf98677d3",
+    "src/jev_guided_decoding/benchmark.py": "f25566805b88ff418e10a24d9f8b9017034fc06fede3420051fda7ec235bad43",
+    "src/jev_guided_decoding/cli.py": "1f344c891800e1969d66ded7dc79ff0cc7ff4043d9a2e47d2c5b3a32c7c993e8",
+    "src/jev_guided_decoding/controller.py": "e487360178cc45cb2ce044c2f766fabc64d3b582cc861aec0182163770e1cccc",
+    "src/jev_guided_decoding/experiment_budget.py": "67eae5b043cbb43b45b0a5c2ba74f51d9a4b5d0618c7f88644494d059a41b390",
+    "src/jev_guided_decoding/framing.py": "df5f1c0e09f497cf4bb296ddb12fb70851876a2b40ff2affb6c4084d2e812a0f",
+    "src/jev_guided_decoding/generated_answer.py": "8bca33972c42097b6a479978de2093f398b4e5c927e0ca74ab26eef8abab3d3e",
+    "src/jev_guided_decoding/jev.py": "c87bb0b5c5e202f67623b42d9a5a390bc87ca28ba48acc4b9a63362a70a4fe2a",
+    "src/jev_guided_decoding/local_claims.py": "205d117d2893d36915de5af12b6b544fac203673a1308c0e1d3264d79884a6a4",
+    "src/jev_guided_decoding/logit_bias.py": "4f12176f75b81e72e67e3c405f4c139cf9db18d033118f77b50db149ac1e4243",
+    "src/jev_guided_decoding/reasoning.py": "5d5dba688466e418f419cf89d48ba9acbc6e3fddbed249a455110d171c61d907",
+    "src/jev_guided_decoding/reasoning_scorer.py": "e880a0d7de6ec47e7a418c1d7fc6200a1b433fcc358defe23f9f5704d3edf706",
+    "src/jev_guided_decoding/types.py": "3591d0eef912255d3df2c5b2107da8cc44ee6b0507d40e72e09c2814f09c9151",
+    "src/jev_guided_decoding/verdict.py": "d381794c5872de0aa156a4736c075cde9a4083ebb28e030563036bd10e692d1d"
+  },
+  "datasets": {
+    "labels.json": "c82cf4a3b70e29f8978e82ed937b3af31dde454e88c0426791beb3db176c0f32",
+    "inputs.json": "e774542667702fc99f240c36789b2baf09374ec4c0e66344ac41f18620a91706",
+    "excluded.json": "b4d52a96ed63ee831cbf5f1f97f4f83785a0b7aba19eef597075f087f488e759"
+  },
+  "source_revision": "e5dbdaf30b2a0831f478b94607d40fc45a745546",
+  "source_dirty": true,
+  "max_usd": 0.1,
+  "usd_per_million": 0.042,
+  "threshold": 0.5,
+  "cases": 60,
+  "native_r23_rows_sha256": "8a49a7265c9646b0ac29480a40d1f090701986dc3f33e6bcd1fba9ba7f2a97b8"
+}
