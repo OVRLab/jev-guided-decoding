@@ -52,7 +52,13 @@ def index_rows(path, key):
 
 
 def audit(freeze, output, tokenizer):
-    m = S["verify"](freeze)
+    protocol = json.loads((freeze / "manifest.json").read_text())["protocol"]
+    verifier = S["verify"]
+    if protocol == "r21b-semantic-feedback-replication-v1":
+        verifier = runpy.run_path(
+            str(ROOT / "research/iterations/semantic_feedback_replication/study.py")
+        )["verify"]
+    m = verifier(freeze)
     require(json.loads((output / "freeze.json").read_text()) == m, "Run manifest mismatch")
     cases = {c["id"]: c for c in json.loads((freeze / "cases.json").read_text())}
     rows = index_rows(output / "outputs.jsonl", "id")
