@@ -3,8 +3,10 @@
 **Next research direction:** [the Granite–Jev north star](research/north-star.md)
 targets broad benchmark gains and named larger-model outperformance. First create
 a versioned ten-task evaluation contract and baseline path, then select the next
-architecture using bounded cross-domain development evidence. The candidate suite
-is planned, not implemented or run; no new paid study is active.
+architecture using bounded cross-domain development evidence. The [versioned suite contract](research/benchmark-suite-contract-v1.md) and
+[baseline diagnostic](research/benchmark-baseline-plan.md) are implemented; R23
+is running 76 public development problems on native Granite 1B and 3B. The full
+ten-task suite remains pending evaluator admission and is not a completed result.
 
 [R22 — completed](reports/2026-09-23-learned-feedback/README.md): a trained
 65,568-parameter residual bridge after block 19 scores **92.19%**, identical to

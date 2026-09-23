@@ -197,3 +197,6 @@ projects; their outcomes are not pooled into this Granite/Jev study.
 The next broad-capability stage is [R23's public baseline diagnostic](benchmark-baseline-plan.md),
 with [pinned development inputs](protocols/public-baseline-v1/manifest.json).
 It establishes native 1B/3B behavior before selecting another Jev mechanism.
+
+The [ten-benchmark contract v1](benchmark-suite-contract-v1.md) records primary
+metrics, source revisions, admission gaps and final-scorecard rules.

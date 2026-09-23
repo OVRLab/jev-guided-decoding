@@ -1,0 +1,66 @@
+{
+  "contract_version": "granite-jev-ten-v1",
+  "models": {
+    "granite_4_0_1b": {
+      "scores": {
+        "mmlu_pro": null,
+        "gpqa_diamond": null,
+        "aime_2026": null,
+        "livecodebench": null,
+        "ifbench": null,
+        "musr": null,
+        "longbench_v2": null,
+        "simpleqa_verified": null,
+        "bfcl_v4": null,
+        "swe_bench_verified": null
+      },
+      "missing": [
+        "mmlu_pro",
+        "gpqa_diamond",
+        "aime_2026",
+        "livecodebench",
+        "ifbench",
+        "musr",
+        "longbench_v2",
+        "simpleqa_verified",
+        "bfcl_v4",
+        "swe_bench_verified"
+      ],
+      "ten_task_mean": null,
+      "direct_task_mean": null,
+      "agent_task_mean": null
+    },
+    "granite_jev_candidate": {
+      "scores": {
+        "mmlu_pro": null,
+        "gpqa_diamond": null,
+        "aime_2026": null,
+        "livecodebench": null,
+        "ifbench": null,
+        "musr": null,
+        "longbench_v2": null,
+        "simpleqa_verified": null,
+        "bfcl_v4": null,
+        "swe_bench_verified": null
+      },
+      "missing": [
+        "mmlu_pro",
+        "gpqa_diamond",
+        "aime_2026",
+        "livecodebench",
+        "ifbench",
+        "musr",
+        "longbench_v2",
+        "simpleqa_verified",
+        "bfcl_v4",
+        "swe_bench_verified"
+      ],
+      "ten_task_mean": null,
+      "direct_task_mean": null,
+      "agent_task_mean": null
+    }
+  },
+  "paired_mean_difference": null,
+  "superiority_established": false,
+  "inference_note": "Descriptive aggregation only; paired clustered uncertainty, multiplicity and replication are separate requirements."
+}

@@ -3,7 +3,9 @@
 **Research objective:** build a Granite–Jev architecture that substantially improves
 Granite across ten leading, diverse benchmarks and outperforms named larger
 models. The [north-star strategy](research/north-star.md) records the candidate
-benchmark suite, comparator ladder and next steps. This objective is not yet met.
+benchmark suite, comparator ladder and next steps. The
+[versioned evaluation contract](research/benchmark-suite-contract-v1.md) distinguishes
+public development diagnostics from the final scorecard. This objective is not yet met.
 
 Experimental Python controllers that ask a language model for candidate answer
 continuations or explicit reasoning steps, use [TypeSafe Jev](https://docs.typesafe.ai/concepts/system-one) to

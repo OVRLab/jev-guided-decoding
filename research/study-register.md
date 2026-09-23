@@ -393,3 +393,11 @@ change to the frozen scientific source. Authentication delay is included in cost
 - Registered before cloud creation/inference. Initial capability tests failed on
   missing module; subsequent readout-binding test failed on missing capability.
   Both failures are preserved in the dated report's validation archive.
+
+R23's native readout inspection found format-only failures, including a correct
+MuSR full-option answer rejected for omitting `Final:`. The original primary
+is retained. A separately documented [post-hoc readout admission](public-baseline-readout-amendment.md)
+adds conservative whole-option matching equally to both models; it is not a
+preregistered correction or an official semantic benchmark. The
+[ten-task contract](benchmark-suite-contract-v1.md) and executable scorecard guard
+also prevent development/partial cells from becoming a full-suite claim.

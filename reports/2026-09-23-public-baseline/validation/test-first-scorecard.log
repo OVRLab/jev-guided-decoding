@@ -1,0 +1,15 @@
+
+==================================== ERRORS ====================================
+________________ ERROR collecting tests/test_suite_scorecard.py ________________
+tests/test_suite_scorecard.py:7: in <module>
+    S = runpy.run_path(str(Path(__file__).resolve().parents[1] / 'research/evaluation/scorecard.py'))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+<frozen runpy>:254: in _get_code_from_file
+    ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/evaluation/scorecard.py'
+=========================== short test summary info ============================
+ERROR tests/test_suite_scorecard.py - FileNotFoundError: [Errno 2] No such fi...
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.07s

@@ -1,0 +1,16 @@
+......F                                                                  [100%]
+=================================== FAILURES ===================================
+_______________ test_output_binding_rejects_rewritten_final_text _______________
+
+    def test_output_binding_rejects_rewritten_final_text():
+        case = {'id': 'x', 'prompt': 'question'}
+        row = {'id': 'x', 'prompt_sha256': C.digest_text('question'), 'raw': '</think>Final: B', 'final': 'Final: A', 'status': 'complete'}
+        with pytest.raises(ValueError):
+>           C.verify_readout(case, row, thinking=True)
+            ^^^^^^^^^^^^^^^^
+E           AttributeError: module 'baseline_common' has no attribute 'verify_readout'
+
+tests/test_benchmark_baseline.py:83: AttributeError
+=========================== short test summary info ============================
+FAILED tests/test_benchmark_baseline.py::test_output_binding_rejects_rewritten_final_text
+1 failed, 6 passed in 0.04s

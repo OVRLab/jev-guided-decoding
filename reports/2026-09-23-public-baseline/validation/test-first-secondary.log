@@ -1,0 +1,15 @@
+
+==================================== ERRORS ====================================
+____________ ERROR collecting tests/test_public_baseline_readout.py ____________
+tests/test_public_baseline_readout.py:4: in <module>
+    R = runpy.run_path(str(Path(__file__).resolve().parents[1] / 'research/diagnostics/public_baseline_readout.py'))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+<frozen runpy>:254: in _get_code_from_file
+    ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/diagnostics/public_baseline_readout.py'
+=========================== short test summary info ============================
+ERROR tests/test_public_baseline_readout.py - FileNotFoundError: [Errno 2] No...
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.07s
