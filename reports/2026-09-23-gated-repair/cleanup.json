@@ -1,0 +1,10 @@
+{
+  "resources_deleted": true,
+  "completed_at_local_utc": "2026-09-23T23:05:11.277769+00:00",
+  "verified_result_files": 57,
+  "owned_gpu_instances": 1,
+  "owned_managed_disks": 1,
+  "allocations_deleted": true,
+  "security_rules_and_group_deleted": true,
+  "unrelated_resources_untouched": true
+}

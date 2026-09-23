@@ -1,30 +1,33 @@
 # Feature: Jev-guided intermediate reasoning
 
-**Current R25 status (21:45 UTC):** v4 has recorded all 3,072 training-example
-passes and 512 development repairs; checkpoint selection is saved and held-out
-test generation has begun. Eight historical missing Jev scores remain explicit;
-no new provider failure is recorded. One L40S is running with backups and
-bounded expiry under the $75 cumulative cap. Final quality, artifact audits,
-cost reconciliation and resource deletion remain pending. Earlier interruption
-notes below are historical; see the [current report](reports/2026-09-23-gated-repair/README.md).
+**R25 completed and audited:** always repairing lowers the combined score from
+59.38% to 44.79%. The predeclared selective-retention replay instead reaches
+66.67%: science improves **71.88% → 86.46%**, while math stays **46.88%**.
+Formatting failures limit interpretation, especially for math. All 3,072 outputs
+and 12 adapter checkpoints are archived; public replay matches all four main
+analyses. All cloud resources are deleted. Cumulative estimate **$42.63/$75**
+before tax/separate network; **546 local tests pass**. The ten-benchmark and
+larger-model objectives remain unmet. See the [completed report](reports/2026-09-23-gated-repair/README.md).
 
 
-[R25 internal repair](reports/2026-09-23-gated-repair/README.md): v1 failed
-BF16 numerical admission; v2 passed FP32 checks but stopped after 113 training
-drafts and 112 Jev receipts because one request failed. No optimizer or test ran.
-Both workers are deleted and all artifacts preserved. V3 is frozen, reuses all
-completed work and explicitly accounts for unavailable feedback. All **527 local
-tests** pass; quality is unmeasured. Cumulative cap **$75**, estimated use **$37.69**,
-combined R25 reservation **$20**. Earlier stage/budget entries are historical.
+R25's internal branch has 262,144 trained parameters after block 19; original
+Granite weights remain frozen and Granite generates every final answer. Retained
+science gains correct 16/12 parseable wrong choices across two seeds with no
+correct-answer damage. This is offline retention, not measured skipped execution
+or fewer Jev calls. Full repair regresses and the larger-comparison spending gate
+is unmet. Previous numerical/service interruptions and their costs are preserved.
+Earlier stage/budget entries below are historical.
 
 **Next research direction:** [the Granite–Jev north star](research/north-star.md)
 targets broad benchmark gains and named larger-model outperformance. The
 [versioned suite contract](research/benchmark-suite-contract-v1.md) and
 [baseline diagnostic](research/benchmark-baseline-plan.md) are implemented and R23
-is complete. The next mechanism should train and test conditional error repair,
-with correct-answer preservation and informative-feedback controls, on separate
-development/validation data. R25 fixes its candidate branch after block 19; no optimal layer is established. The full
-ten-task suite remains pending evaluator admission and is not a completed result.
+is complete. R25 completes conditional error-repair training and evaluation,
+with correct-answer preservation visible in its registered retention replay.
+The next candidate is fresh validation of actually selective repair, with admitted
+task-specific output instructions and informative-feedback controls. No next run
+is frozen or executed yet. Block 19 was tested, not established as optimal. The
+full ten-task suite remains pending evaluator admission.
 
 [R23 public baseline — completed](reports/2026-09-23-public-baseline/README.md):
 76 development problems per model, all 152 outputs audited and publicly replayed.

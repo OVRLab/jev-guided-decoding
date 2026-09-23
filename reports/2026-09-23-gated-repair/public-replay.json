@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "raw_files": 57,
+  "checkpoints": 12,
+  "archive_index_sha256": "a7ff23d4462e75bf3eaa2a82c1d5b02df0e6d4f4c49a412b36dc8876fc281302",
+  "replay_source_sha256": "c223126f274f70543505f9daba55dee26ba402da6e8ea61afc7884f3cad3e6ba",
+  "inference_repeated": false,
+  "checks": {
+    "analysis.json": {
+      "matched": true,
+      "sha256": "ece56a062723fb003973725e9b38949a00f033f2bca4515819c2a02279934c2d"
+    },
+    "training-audit.json": {
+      "matched": true,
+      "sha256": "6dfda72ab87fbacf650851ce5e76c3717ddb8a31129aec5c5fc830405541059e"
+    },
+    "retention.json": {
+      "matched": true,
+      "sha256": "4560033b4dfbd260ce8e88e40556a05ecb833d7fdf43335f91e3f01f7b6ee59c"
+    },
+    "details.json": {
+      "matched": true,
+      "sha256": "68490a89243e9a36be989bcd627388dad0c659fb4995edd6c01c31ccab94e9fb"
+    }
+  },
+  "note": "Hashes and exact audit replay establish reproducibility, not independent replication."
+}

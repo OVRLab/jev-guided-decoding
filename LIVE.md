@@ -1,21 +1,22 @@
 # Verified implementation inventory
 
-**Current R25 status (21:45 UTC):** v4 has recorded all 3,072 training-example
-passes and 512 development repairs; checkpoint selection is saved and held-out
-test generation has begun. Eight historical missing Jev scores remain explicit;
-no new provider failure is recorded. One L40S is running with backups and
-bounded expiry under the $75 cumulative cap. Final quality, artifact audits,
-cost reconciliation and resource deletion remain pending. Earlier interruption
-notes below are historical; see the [current report](reports/2026-09-23-gated-repair/README.md).
+**R25 completed and audited:** always repairing lowers the combined score from
+59.38% to 44.79%. The predeclared selective-retention replay instead reaches
+66.67%: science improves **71.88% → 86.46%**, while math stays **46.88%**.
+Formatting failures limit interpretation, especially for math. All 3,072 outputs
+and 12 adapter checkpoints are archived; public replay matches all four main
+analyses. All cloud resources are deleted. Cumulative estimate **$42.63/$75**
+before tax/separate network; **546 local tests pass**. The ten-benchmark and
+larger-model objectives remain unmet. See the [completed report](reports/2026-09-23-gated-repair/README.md).
 
 
-[R25 internal repair](reports/2026-09-23-gated-repair/README.md): v1 failed
-BF16 numerical admission; v2 passed FP32 checks but stopped after 113 training
-drafts and 112 Jev receipts because one request failed. No optimizer or test ran.
-Both workers are deleted and all artifacts preserved. V3 is frozen, reuses all
-completed work and explicitly accounts for unavailable feedback. All **527 local
-tests** pass; quality is unmeasured. Cumulative cap **$75**, estimated use **$37.69**,
-combined R25 reservation **$20**. Earlier stage/budget entries are historical.
+R25's internal branch has 262,144 trained parameters after block 19; original
+Granite weights remain frozen and Granite generates every final answer. Retained
+science gains correct 16/12 parseable wrong choices across two seeds with no
+correct-answer damage. This is offline retention, not measured skipped execution
+or fewer Jev calls. Full repair regresses and the larger-comparison spending gate
+is unmet. Previous numerical/service interruptions and their costs are preserved.
+Earlier stage/budget entries below are historical.
 
 The [north-star direction](research/north-star.md) was recorded on 2026-09-23.
 Its ten-benchmark/larger-model scorecard remains planned; the verified results

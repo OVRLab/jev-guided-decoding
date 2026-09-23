@@ -1,0 +1,380 @@
+{
+  "offline_replay": true,
+  "measured_skipped_execution": false,
+  "jev_calls_saved": 0,
+  "missing_feedback_ids": [],
+  "continuation_manifest_sha256": "db7373f06a20d94c0c9bda1c678fe969a1baed11877040b1c49a4826544583d0",
+  "threshold": 0.5,
+  "summaries": {
+    "all": {
+      "cases": 192,
+      "repair_cases": 41,
+      "accuracies": {
+        "native": 0.59375,
+        "retained_blind": 0.59375,
+        "retained_text": 0.59375,
+        "retained_live_mean": 0.6666666666666666,
+        "retained_constant_mean": 0.6197916666666666,
+        "retained_live/2501": 0.6770833333333334,
+        "retained_live/2502": 0.65625,
+        "retained_constant/2501": 0.6145833333333334,
+        "retained_constant/2502": 0.625
+      }
+    },
+    "gsm8k": {
+      "cases": 96,
+      "repair_cases": 16,
+      "accuracies": {
+        "native": 0.46875,
+        "retained_blind": 0.46875,
+        "retained_text": 0.46875,
+        "retained_live_mean": 0.46875,
+        "retained_constant_mean": 0.4791666666666667,
+        "retained_live/2501": 0.46875,
+        "retained_live/2502": 0.46875,
+        "retained_constant/2501": 0.46875,
+        "retained_constant/2502": 0.4895833333333333
+      }
+    },
+    "arc": {
+      "cases": 96,
+      "repair_cases": 25,
+      "accuracies": {
+        "native": 0.71875,
+        "retained_blind": 0.71875,
+        "retained_text": 0.71875,
+        "retained_live_mean": 0.8645833333333334,
+        "retained_constant_mean": 0.7604166666666666,
+        "retained_live/2501": 0.8854166666666666,
+        "retained_live/2502": 0.84375,
+        "retained_constant/2501": 0.7604166666666666,
+        "retained_constant/2502": 0.7604166666666666
+      }
+    }
+  },
+  "effects": {
+    "all": {
+      "live-vs-native": {
+        "n": 192,
+        "delta_pp": 7.291666666666667,
+        "ci95_pp": [
+          4.166666666666667,
+          10.9375
+        ],
+        "recovered": 14.0,
+        "damaged": 0.0
+      },
+      "live-vs-retained_constant_mean": {
+        "n": 192,
+        "delta_pp": 4.6875,
+        "ci95_pp": [
+          1.8229166666666667,
+          7.8125
+        ],
+        "recovered": 10.0,
+        "damaged": 1.0
+      },
+      "live-vs-retained_blind": {
+        "n": 192,
+        "delta_pp": 7.291666666666667,
+        "ci95_pp": [
+          3.6458333333333335,
+          11.197916666666666
+        ],
+        "recovered": 15.0,
+        "damaged": 1.0
+      },
+      "live-vs-retained_text": {
+        "n": 192,
+        "delta_pp": 7.291666666666667,
+        "ci95_pp": [
+          3.6458333333333335,
+          11.197916666666666
+        ],
+        "recovered": 15.0,
+        "damaged": 1.0
+      }
+    },
+    "gsm8k": {
+      "live-vs-native": {
+        "n": 96,
+        "delta_pp": 0.0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "recovered": 0.0,
+        "damaged": 0.0
+      },
+      "live-vs-retained_constant_mean": {
+        "n": 96,
+        "delta_pp": -1.0416666666666667,
+        "ci95_pp": [
+          -2.6041666666666665,
+          0.0
+        ],
+        "recovered": 0.0,
+        "damaged": 1.0
+      },
+      "live-vs-retained_blind": {
+        "n": 96,
+        "delta_pp": 0.0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "recovered": 0.0,
+        "damaged": 0.0
+      },
+      "live-vs-retained_text": {
+        "n": 96,
+        "delta_pp": 0.0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "recovered": 0.0,
+        "damaged": 0.0
+      }
+    },
+    "arc": {
+      "live-vs-native": {
+        "n": 96,
+        "delta_pp": 14.583333333333334,
+        "ci95_pp": [
+          8.333333333333334,
+          21.875
+        ],
+        "recovered": 14.0,
+        "damaged": 0.0
+      },
+      "live-vs-retained_constant_mean": {
+        "n": 96,
+        "delta_pp": 10.416666666666666,
+        "ci95_pp": [
+          5.208333333333333,
+          16.666666666666668
+        ],
+        "recovered": 10.0,
+        "damaged": 0.0
+      },
+      "live-vs-retained_blind": {
+        "n": 96,
+        "delta_pp": 14.583333333333334,
+        "ci95_pp": [
+          7.291666666666667,
+          22.395833333333332
+        ],
+        "recovered": 15.0,
+        "damaged": 1.0
+      },
+      "live-vs-retained_text": {
+        "n": 96,
+        "delta_pp": 14.583333333333334,
+        "ci95_pp": [
+          7.291666666666667,
+          22.395833333333332
+        ],
+        "recovered": 15.0,
+        "damaged": 1.0
+      }
+    }
+  },
+  "branches": {
+    "arc/test/ACTAAP_2007_7_36": "native",
+    "arc/test/ACTAAP_2009_7_8": "repair",
+    "arc/test/ACTAAP_2014_5_8": "native",
+    "arc/test/ACTAAP_2015_7_9": "native",
+    "arc/test/LEAP_2005_8_10404": "native",
+    "arc/test/LEAP__7_10348": "native",
+    "arc/test/MCAS_1998_8_24": "native",
+    "arc/test/MCAS_2000_4_30": "native",
+    "arc/test/MCAS_2003_8_31": "native",
+    "arc/test/MCAS_2005_5_34": "native",
+    "arc/test/MCAS_2013_8_29435": "native",
+    "arc/test/MCAS_2014_8_16": "repair",
+    "arc/test/MDSA_2013_8_32": "repair",
+    "arc/test/MEAP_2005_5_14": "repair",
+    "arc/test/MEA_2016_8_15": "native",
+    "arc/test/MSA_2012_8_30": "native",
+    "arc/test/Mercury_180373": "native",
+    "arc/test/Mercury_189070": "native",
+    "arc/test/Mercury_400687": "native",
+    "arc/test/Mercury_401428": "native",
+    "arc/test/Mercury_402501": "native",
+    "arc/test/Mercury_402563": "native",
+    "arc/test/Mercury_403232": "native",
+    "arc/test/Mercury_403234": "native",
+    "arc/test/Mercury_404638": "native",
+    "arc/test/Mercury_405947": "native",
+    "arc/test/Mercury_408922": "native",
+    "arc/test/Mercury_409115": "repair",
+    "arc/test/Mercury_411224": "native",
+    "arc/test/Mercury_414352": "repair",
+    "arc/test/Mercury_415082": "native",
+    "arc/test/Mercury_417118": "native",
+    "arc/test/Mercury_7004743": "native",
+    "arc/test/Mercury_7009555": "repair",
+    "arc/test/Mercury_7041650": "native",
+    "arc/test/Mercury_7041668": "native",
+    "arc/test/Mercury_7042945": "native",
+    "arc/test/Mercury_7056525": "native",
+    "arc/test/Mercury_7071523": "repair",
+    "arc/test/Mercury_7082320": "repair",
+    "arc/test/Mercury_7085278": "repair",
+    "arc/test/Mercury_7085295": "native",
+    "arc/test/Mercury_7086608": "native",
+    "arc/test/Mercury_7103600": "native",
+    "arc/test/Mercury_7111178": "native",
+    "arc/test/Mercury_7116235": "native",
+    "arc/test/Mercury_7122640": "native",
+    "arc/test/Mercury_7128555": "repair",
+    "arc/test/Mercury_7129640": "native",
+    "arc/test/Mercury_7130778": "repair",
+    "arc/test/Mercury_7131845": "native",
+    "arc/test/Mercury_7132020": "native",
+    "arc/test/Mercury_7159303": "native",
+    "arc/test/Mercury_7182210": "repair",
+    "arc/test/Mercury_7191433": "native",
+    "arc/test/Mercury_7198468": "native",
+    "arc/test/Mercury_7203473": "native",
+    "arc/test/Mercury_7206395": "repair",
+    "arc/test/Mercury_7217298": "native",
+    "arc/test/Mercury_7218015": "repair",
+    "arc/test/Mercury_7218505": "native",
+    "arc/test/Mercury_7221043": "repair",
+    "arc/test/Mercury_7223143": "repair",
+    "arc/test/Mercury_7238945": "native",
+    "arc/test/Mercury_7239628": "repair",
+    "arc/test/Mercury_7247678": "native",
+    "arc/test/Mercury_7267523": "native",
+    "arc/test/Mercury_7268240": "repair",
+    "arc/test/Mercury_LBS10131": "native",
+    "arc/test/Mercury_LBS10302": "native",
+    "arc/test/Mercury_SC_400133": "native",
+    "arc/test/Mercury_SC_400134": "repair",
+    "arc/test/Mercury_SC_400582": "native",
+    "arc/test/Mercury_SC_401262": "repair",
+    "arc/test/Mercury_SC_401278": "native",
+    "arc/test/Mercury_SC_401361": "native",
+    "arc/test/Mercury_SC_401373": "native",
+    "arc/test/Mercury_SC_405827": "native",
+    "arc/test/Mercury_SC_408706": "native",
+    "arc/test/Mercury_SC_409666": "repair",
+    "arc/test/Mercury_SC_414041": "native",
+    "arc/test/Mercury_SC_415762": "native",
+    "arc/test/Mercury_SC_416169": "repair",
+    "arc/test/Mercury_SC_416177": "repair",
+    "arc/test/NCEOGA_2013_5_17": "native",
+    "arc/test/NCEOGA_2013_8_28": "native",
+    "arc/test/NYSEDREGENTS_2008_8_34": "native",
+    "arc/test/NYSEDREGENTS_2010_4_24": "native",
+    "arc/test/NYSEDREGENTS_2012_4_29": "native",
+    "arc/test/NYSEDREGENTS_2013_4_17": "native",
+    "arc/test/NYSEDREGENTS_2013_8_42": "native",
+    "arc/test/OHAT_2007_8_24": "native",
+    "arc/test/OHAT_2008_5_34": "native",
+    "arc/test/TAKS_2009_5_25": "native",
+    "arc/test/TAKS_2009_8_36": "repair",
+    "arc/test/TIMSS_2011_4_pg27": "native",
+    "gsm8k/test/1009": "native",
+    "gsm8k/test/1021": "native",
+    "gsm8k/test/1066": "native",
+    "gsm8k/test/1068": "native",
+    "gsm8k/test/1075": "repair",
+    "gsm8k/test/1090": "native",
+    "gsm8k/test/1096": "native",
+    "gsm8k/test/1114": "native",
+    "gsm8k/test/1123": "repair",
+    "gsm8k/test/1129": "repair",
+    "gsm8k/test/1136": "native",
+    "gsm8k/test/1157": "native",
+    "gsm8k/test/1176": "repair",
+    "gsm8k/test/1201": "native",
+    "gsm8k/test/1210": "native",
+    "gsm8k/test/1226": "native",
+    "gsm8k/test/1233": "native",
+    "gsm8k/test/1241": "native",
+    "gsm8k/test/1253": "native",
+    "gsm8k/test/1254": "native",
+    "gsm8k/test/1258": "repair",
+    "gsm8k/test/126": "native",
+    "gsm8k/test/1266": "native",
+    "gsm8k/test/1273": "native",
+    "gsm8k/test/1293": "native",
+    "gsm8k/test/1295": "native",
+    "gsm8k/test/14": "native",
+    "gsm8k/test/141": "native",
+    "gsm8k/test/180": "native",
+    "gsm8k/test/193": "native",
+    "gsm8k/test/195": "native",
+    "gsm8k/test/203": "native",
+    "gsm8k/test/205": "repair",
+    "gsm8k/test/229": "native",
+    "gsm8k/test/255": "native",
+    "gsm8k/test/293": "native",
+    "gsm8k/test/294": "native",
+    "gsm8k/test/313": "native",
+    "gsm8k/test/33": "native",
+    "gsm8k/test/330": "repair",
+    "gsm8k/test/360": "native",
+    "gsm8k/test/363": "repair",
+    "gsm8k/test/403": "native",
+    "gsm8k/test/405": "native",
+    "gsm8k/test/411": "native",
+    "gsm8k/test/418": "native",
+    "gsm8k/test/422": "repair",
+    "gsm8k/test/441": "native",
+    "gsm8k/test/442": "native",
+    "gsm8k/test/451": "native",
+    "gsm8k/test/47": "native",
+    "gsm8k/test/485": "native",
+    "gsm8k/test/511": "native",
+    "gsm8k/test/526": "native",
+    "gsm8k/test/53": "native",
+    "gsm8k/test/532": "native",
+    "gsm8k/test/546": "native",
+    "gsm8k/test/583": "native",
+    "gsm8k/test/594": "repair",
+    "gsm8k/test/6": "native",
+    "gsm8k/test/602": "native",
+    "gsm8k/test/616": "native",
+    "gsm8k/test/630": "native",
+    "gsm8k/test/652": "repair",
+    "gsm8k/test/658": "native",
+    "gsm8k/test/665": "native",
+    "gsm8k/test/672": "repair",
+    "gsm8k/test/682": "native",
+    "gsm8k/test/684": "native",
+    "gsm8k/test/687": "native",
+    "gsm8k/test/689": "repair",
+    "gsm8k/test/703": "native",
+    "gsm8k/test/724": "native",
+    "gsm8k/test/76": "native",
+    "gsm8k/test/79": "native",
+    "gsm8k/test/801": "native",
+    "gsm8k/test/804": "native",
+    "gsm8k/test/821": "native",
+    "gsm8k/test/830": "native",
+    "gsm8k/test/836": "native",
+    "gsm8k/test/85": "native",
+    "gsm8k/test/864": "repair",
+    "gsm8k/test/870": "native",
+    "gsm8k/test/871": "native",
+    "gsm8k/test/873": "native",
+    "gsm8k/test/894": "native",
+    "gsm8k/test/903": "native",
+    "gsm8k/test/928": "repair",
+    "gsm8k/test/931": "native",
+    "gsm8k/test/937": "native",
+    "gsm8k/test/945": "native",
+    "gsm8k/test/954": "native",
+    "gsm8k/test/960": "repair",
+    "gsm8k/test/977": "native",
+    "gsm8k/test/983": "native",
+    "gsm8k/test/984": "native"
+  },
+  "primary_sha256": "ece56a062723fb003973725e9b38949a00f033f2bca4515819c2a02279934c2d",
+  "registration_sha256": "e4ba05a0f53f1d77be86b326f694c9e86932618fb41b55758cc430a42bae213a",
+  "note": "Primary full-repair endpoints unchanged; no new model or API inference"
+}

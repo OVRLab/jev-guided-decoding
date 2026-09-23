@@ -1,12 +1,13 @@
 # Jev-guided decoding
 
-**Current R25 status (21:45 UTC):** v4 has recorded all 3,072 training-example
-passes and 512 development repairs; checkpoint selection is saved and held-out
-test generation has begun. Eight historical missing Jev scores remain explicit;
-no new provider failure is recorded. One L40S is running with backups and
-bounded expiry under the $75 cumulative cap. Final quality, artifact audits,
-cost reconciliation and resource deletion remain pending. Earlier interruption
-notes below are historical; see the [current report](reports/2026-09-23-gated-repair/README.md).
+**R25 completed and audited:** always repairing lowers the combined score from
+59.38% to 44.79%. The predeclared selective-retention replay instead reaches
+66.67%: science improves **71.88% → 86.46%**, while math stays **46.88%**.
+Formatting failures limit interpretation, especially for math. All 3,072 outputs
+and 12 adapter checkpoints are archived; public replay matches all four main
+analyses. All cloud resources are deleted. Cumulative estimate **$42.63/$75**
+before tax/separate network; **546 local tests pass**. The ten-benchmark and
+larger-model objectives remain unmet. See the [completed report](reports/2026-09-23-gated-repair/README.md).
 
 
 **Research objective:** build a Granite–Jev architecture that substantially improves
@@ -26,17 +27,18 @@ protocols so other compatible models can be evaluated independently.
 steps, plus a separate experimental hook that turns Jev source relevance into
 biases inside selected Granite attention heads. Granite and Jev weights remain
 unchanged; R19 fits a small regression controller, and R22 trains a separate
-65,568-parameter internal residual adapter. No vLLM serving extension is included.
+65,568-parameter internal residual adapter. R25 trains a separate 262,144-parameter
+repair branch. No vLLM serving extension is included.
 
-[R25 gated internal repair — continuation frozen](reports/2026-09-23-gated-repair/README.md):
-a 262,144-parameter branch learns from natural Granite drafts in math and science,
-with two seeds, matched training and feedback controls. BF16 numerical admission
-failed; FP32 passed, then a provider interruption stopped collection after 113
-training drafts and 112 valid Jev receipts, before training or held-out evaluation.
-The frozen continuation reuses that work with explicit neutral fallback on missing
-feedback. No quality improvement is claimed. The cumulative cap is **$75**, R25
-reserves **$20 across all attempts**, and estimated use is **$37.69** before the
-continuation. Earlier study/budget figures below are historical.
+[R25 gated internal repair — completed](reports/2026-09-23-gated-repair/README.md):
+a 262,144-parameter branch learns from natural Granite drafts, with matched
+constant training, blind/text repair and shuffled/inverted feedback controls.
+Selective science gains occur in both seeds and exceed the retained constant
+control; math does not improve. Full repair performs worse than native and constant.
+The [output inspection](reports/2026-09-23-gated-repair/output-inspection.md) separates
+wrong-choice corrections from format failures. No broad superiority or novel-model
+release is established. R25 costs an estimated **$5.85 across all attempts**;
+earlier study and budget figures below are historical.
 
 [R23 public baseline — completed](reports/2026-09-23-public-baseline/README.md):
 76 development problems per model, all 152 outputs audited and publicly replayed.

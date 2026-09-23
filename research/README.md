@@ -1,12 +1,13 @@
 # Granite + Jev research record
 
-**Current R25 status (21:45 UTC):** v4 has recorded all 3,072 training-example
-passes and 512 development repairs; checkpoint selection is saved and held-out
-test generation has begun. Eight historical missing Jev scores remain explicit;
-no new provider failure is recorded. One L40S is running with backups and
-bounded expiry under the $75 cumulative cap. Final quality, artifact audits,
-cost reconciliation and resource deletion remain pending. Earlier interruption
-notes below are historical; see the [current report](../reports/2026-09-23-gated-repair/README.md).
+**R25 completed and audited:** always repairing lowers the combined score from
+59.38% to 44.79%. The predeclared selective-retention replay instead reaches
+66.67%: science improves **71.88% → 86.46%**, while math stays **46.88%**.
+Formatting failures limit interpretation, especially for math. All 3,072 outputs
+and 12 adapter checkpoints are archived; public replay matches all four main
+analyses. All cloud resources are deleted. Cumulative estimate **$42.63/$75**
+before tax/separate network; **546 local tests pass**. The ten-benchmark and
+larger-model objectives remain unmet. See the [completed report](../reports/2026-09-23-gated-repair/README.md).
 
 
 [Active north star](north-star.md), recorded 2026-09-23: substantial gains over
@@ -233,10 +234,16 @@ metrics, source revisions, admission gaps and final-scorecard rules.
 is complete: 21/23 native errors flagged, with 3/37 correct answers falsely flagged.
 This supports a selective-repair hypothesis; it does not measure repaired outputs.
 
-[R25 gated natural-draft repair](gated-repair-plan.md) has a frozen
-[continuation](gated-repair-continuation.md): v1 failed BF16 admission; v2 passed
-FP32 admission, collected 113 training drafts/112 Jev receipts and then stopped
-on a provider failure before training. Both workers are deleted. V3 reuses all
-completed work without API replay and labels neutral missing-feedback fallbacks.
-The cumulative cap is $75, combined R25 reservation $20, estimated use $37.69
-before continuation. No quality result is claimed yet.
+[R25 gated natural-draft repair](../reports/2026-09-23-gated-repair/README.md) is
+complete: the internal live branch changes answers when feedback changes but
+always-repair regresses. Predeclared retained-live science rises from 71.88% to
+86.46%, with math unchanged; post-hoc inspection identifies real choice corrections
+and substantial format confounds. All attempts, checkpoints, raw evidence and
+public replays are preserved. The larger-model gate is false; that outline remains
+unexecuted. Combined R25 estimate $5.85; cumulative $42.63/$75, resources deleted.
+
+The separate [evaluator admission inspection](benchmark-evaluator-admission-notes.md)
+finds a pinned MMLU-Pro scoring path that can randomly credit failed answer parsing,
+and a separate gold-controlled retry option. These read-only findings are not
+R25 results and do not admit a full-suite evaluator; the recorded source revisions
+and synthetic probe preserve the evidence for correcting the future evaluation path.

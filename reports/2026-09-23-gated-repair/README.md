@@ -1,130 +1,158 @@
 # R25: Jev-gated natural-draft repair
 
-**Status at 21:45 UTC: v4 training and development generation are complete, checkpoints are selected, and held-out test generation is running. Final quality and audits remain pending. V1–v3 interruptions are preserved below.**
+**Completed and audited, 2026-09-23 UTC.** The always-repair architecture regresses;
+a predeclared selective-retention replay improves science answers, with no math
+gain. This is a two-domain pilot, not the ten-benchmark objective or a win over
+larger models. All temporary cloud resources are deleted.
 
-The owner increased the cumulative research cap to **$75**. R25 now reserves
-**$20 combined across all attempts**. Estimated cumulative use before v3 is
-**$37.690485** before tax/network. V3 uses one L40S/16vCPU/64GiB with an 80GiB
-disk, ten-hour poweroff and nine-hour worker limit. V1 limits below are historical.
+## What changed in Granite
 
-- [Frozen plan](../../research/gated-repair-plan.md)
-- [Source/data manifest](../../research/protocols/gated-repair-v1/manifest.json)
-- [Data attribution](../../research/protocols/gated-repair-v1/NOTICE.md)
-- [Prior art and limits](../../research/gated-repair-related-work.md)
+A new **262,144-parameter rank-64 branch after block 19** learns to repair natural
+Granite drafts. Jev supplies one probability that the draft is correct; its error
+probability scales the branch inside Granite's second generation pass. Original
+Granite and Jev weights remain frozen. **Granite generates every answer token.**
+See the [architecture and exact token ownership](method.md).
 
-Source commit `9246708`; data freeze commit `4197f8e`. A rank-64 residual branch
-has 262,144 new trainable parameters after block 19. Jev's error probability
-multiplicatively controls its strength during a second generation pass. Original
-Granite and Jev weights stay frozen. The native draft and blind/text repair,
-matched constant adapters and shuffled/inverted feedback are all retained.
+There are 384 training examples, 64 development examples and 192 fresh evaluation
+cases: 96 GSM8K math and 96 ARC-Challenge science questions. Two training seeds
+have equally trained constant-feedback controls; additional controls use blind
+repair, textual feedback, and shuffled/inverted feedback on the live weights.
+Checkpoint selection precedes all held-out generation.
 
-The dataset has 384 training, 64 development and 192 fresh pilot evaluation cases
-from GSM8K and ARC-Challenge. Two training seeds, two epochs, earliest best-dev
-checkpoint selection, and independent final-answer grading are registered. These
-two auxiliary tasks are not the project's full ten-benchmark scorecard.
+## Results
 
-V1 passed 516 local/server tests before failing numerical admission. V2 passed
-518 server tests and real-model FP32 admission. V3 passes 527 local tests; its
-server validation, training, quality evaluation and cleanup remain pending.
+Scores use the fixed independent answer readout, averaged across two seeds for
+learned branches. Formatting failures remain incorrect; math accuracy is therefore
+particularly format-sensitive. These are sampled task results, not official full
+benchmark scores.
 
-V1 launched 2026-09-23 at approximately 19:14 UTC, after source/data freeze
-and server tests, with 45-second local backups and a separate cleanup supervisor. Initial test temporary-file writes were slow on network
-storage; the original complete suite passed in 159.20 seconds before any rerun,
-so no test configuration or scientific source was changed.
+| Method | Math (96) | Science (96) | Combined (192) |
+| --- | ---: | ---: | ---: |
+| Original Granite | 46.88% | 71.88% | 59.38% |
+| Blind repair on every case | 45.83% | 32.29% | 39.06% |
+| Jev text repair on every case | 44.79% | 31.25% | 38.02% |
+| Matched constant branch, every case | 44.27% | 66.15% | 55.21% |
+| Internal Jev branch, every case | 46.88% | 42.71% | 44.79% |
+| Selective constant branch, offline replay | 47.92% | 76.04% | 61.98% |
+| **Selective internal Jev branch, offline replay** | **46.88%** | **86.46%** | **66.67%** |
 
-## Preserved failure and full-precision restart
+Primary full repair loses **14.58 percentage points versus native** (individual
+95% interval −21.61 to −7.29) and **10.42 points versus matched constant training**
+(−17.19 to −3.39). It beats blind and textual repair, but those controls also
+regress badly. The combined live-versus-shuffled interval includes zero.
+Changing feedback does change final tokens: shuffling changes 120/192 and 117/192
+outputs in the two seeds. Feedback dependence is demonstrated; broad benefit is not.
 
-The [v1 attempt](failed-v1/README.md) stopped before any training draft, Jev call
-or optimizer update: BF16 cached/full logit discrepancy was 0.25, above the fixed
-0.125 limit. All five artifacts are preserved and owned cloud resources deleted.
-Estimated cost $0.293387; cumulative $37.066922 before tax/network.
+The [retention policy](../../research/gated-repair-retention-supplement.md),
+registered before test inference, keeps the native answer when Jev p(correct)
+is at least 0.5 or feedback is unavailable; otherwise it uses a repair. It routes
+41/192 cases to repair, including 25 science questions. Retained live science
+accuracy rises **14.58 points** (8.33 to 21.88) versus native, and **10.42 points**
+(5.21 to 16.67) versus retained constant. Science gains appear in both seeds:
+85/96 and 81/96 correct, compared with native 69/96. Math has no recovery or damage
+under retained live. Combined retained live gains 7.29 points (4.17 to 10.94).
 
-The [registered v2 amendment](../../research/gated-repair-fp32-amendment.md) keeps
-identical data, architecture, seeds and controls, but uses float32 for every arm,
-strict 1e-4 cache checks and a separate native/intervened precision diagnostic.
-The combined R25 reservation is now $20 within the cumulative $75 cap, allowing
-for slower full-precision work. V1's original $14.40 limit above is historical.
-The [v2 manifest](../../research/protocols/gated-repair-fp32-v2/manifest.json)
-preserves every predecessor data hash. All 518 local tests pass. No quality
-measurement or Jev contribution has yet been established by R25.
+These intervals resample problems with paired seed means and task stratification;
+they are conditional on the two fitted seeds and are not simultaneous intervals.
+Every repair was actually generated, so the replay measures **neither skipped
+execution nor fewer Jev calls**. Even retained blind/constant policies use Jev
+for this routing decision. See [all arms, paired effects and actual work](tables.md).
 
-## Precision diagnostic completed
+![Registered retention replay](figures/retention-replay.png)
 
-The [six native/intervened comparisons](precision-diagnostic/summary.json) pass
-in float32: maximum absolute discrepancy is 0.0000267029, and all next-token
-argmax choices agree. BF16 native discrepancies are 0.25, 0.2890625 and 0.3125;
-BF16 intervened discrepancies are 0.25 on each fixture, with identical argmax
-choices in all six comparisons. Thus the earlier discrepancy also occurs without
-the intervention; it does not establish an adapter-specific cache error. These
-three training fixtures do not certify numerical equality for every sequence.
+## What output inspection adds
 
-V2 passed its own strict admission (max discrepancy 0.0000211000), then produced
-113 training drafts and 112 successful Jev receipts before request 113 failed.
-The exact HTTP status was not persisted and is not asserted. No optimizer,
-development selection or held-out generation ran. [All records](interrupted-v2/README.md)
-are preserved; all owned resources were deleted after verifying 20 final files.
-Known usage was 70,834 input tokens, plus a 65,536-token unknown-charge reservation.
-Cloud estimate $0.617835, conservative API $0.005728; cumulative $37.690485.
+[Complete post-hoc inspection](output-inspection.md) preserves every native
+unparseable answer and every live recovery/damage transition. It changes no grade.
+All 16/12 retained science recoveries were **parseable wrong choices becoming
+correct choices**, rather than merely fixing an unparseable answer. No native
+correct answer becomes wrong under the retained-live policy in either seed.
+Some native rationales already suggested the correct answer despite a wrong final
+letter, so these gains do not uniformly establish improved underlying reasoning.
 
-## Frozen continuation v3
+The full-repair regression has a substantial formatting component: each live seed
+damages 42 originally correct science answers, including 38 becoming unparseable.
+The common repair instruction mentions both math and choice formats; many science
+repairs emit the math marker. Separately, **34/96 native math answers are
+unparseable**, including examples with the correct number in an unsupported
+position. This limits the meaning of the absolute math score. It does not justify
+retrospectively changing the parser or prove that a cleaner prompt alone will fix
+performance. No semantic regrading or test-driven threshold tuning was performed.
 
-[Source/data manifest](../../research/protocols/gated-repair-continuation-v3/manifest.json),
-[prospective amendment](../../research/gated-repair-continuation.md), source
-`10c968a`, data freeze `05d130b`. All 113 drafts and 112 valid receipts are reused
-byte exactly, with no repeated provider request or completed model job. Missing
-feedback remains null; a neutral effective value 0.5 is explicitly labeled and
-is never counted as a Jev response. Every case remains in primary evaluation.
-At most eight transient incidents are admitted including the historical failure;
-authentication, schema, integrity, unexpected errors or excess incidents stop.
-The copied API ledger retains its original $0.25 cap and all previous charges.
+The [descriptive critic diagnostic](feedback-diagnostic.json) flags 40/78
+readout-wrong native answers and 1/114 readout-correct answers. Among parseable
+answers it flags 34/42 wrong answers with the same one false flag; formatting
+explains part of the critic/readout disagreement. Jev is a critic in this
+comparison, never an alternative answer generator.
 
-The [retention replay](../../research/gated-repair-retention-supplement.md) was
-registered before any test and keeps native answers when valid Jev p(correct)
-is at least 0.5; the v3 addition keeps native when feedback is missing. This is
-an offline policy analysis, not measured avoided computation or API calls.
+## Decision and limits
 
-See the [mechanism and token ownership](method.md). Quality is still unmeasured;
-no scientific settings were changed in response to held-out answer quality.
+R25's predeclared gate for spending on the [larger-model follow-up](../../research/gated-repair-larger-replication-outline.md)
+is **false**: full-repair live does not beat both native and constant in both
+domains. That outline remains unimplemented and unexecuted. The positive retention
+result stays visible as a promising, narrower finding; it does not replace the
+primary result or establish architectural novelty.
 
-The [v3 retention registration](../../research/protocols/gated-repair-retention-continuation-v3.json)
-prospectively binds the replay to the continuation manifest. It preserves and
-hash-links the original registration, threshold, and missing-feedback policy;
-no test or training has run on v3 at this point. The original v1 registration
-binds v2 and therefore cannot serve directly as the v3 audit input.
+The next candidate is fresh validation of actual selective repair, with task-specific
+output instructions admitted on development cases, fixed checkpoints, native and
+matched no-informative-feedback controls, and separately measured execution cost.
+The R25 test cohort is now exposed and cannot be reused as fresh evidence. No such
+follow-up or model release is claimed here. The full ten-task scorecard still
+requires evaluator admission and remains unrun.
 
-V3 launched at approximately 20:11 UTC after all **527 server tests passed in
-18.45 seconds**. The GPU's independent expiry timer is active. Local backup and
-cleanup supervision run every 45 seconds. New report-only recovery/damage tests
-bring the local suite to 529; the frozen worker remains unchanged.
+## Completed execution and reproducibility
 
-## V3 interrupted; bounded delivery recovery
+V4 source **640987e**, data freeze **6bade56**:
+[manifest](../../research/protocols/gated-repair-retry-v4/manifest.json),
+[operational amendment](../../research/gated-repair-overload-recovery.md),
+[retention binding](../../research/protocols/gated-repair-retention-retry-v4.json),
+[data attribution and terms](../../research/protocols/gated-repair-retry-v4/NOTICE.md).
+Original [plan](../../research/gated-repair-plan.md) and [prior-art review](../../research/gated-repair-related-work.md)
+remain unchanged. Original Granite is revision
+`6a7381ba1f54d684ff508d991aeb7dc580157103`; Jev is pinned to `jev-1.13.0`.
+All evaluated arms use float32 on one L40S with 16 vCPUs and 64 GiB RAM.
 
-The [complete v3 interruption archive](interrupted-v3/README.md) preserves all 25
-final files, including 165 natural training drafts, 157 valid Jev receipts and eight
-missing cases. Six explicit HTTP 529 responses were admitted with cooldown, then
-an HTTP 503 stopped the worker under its frozen rule. All resources were deleted
-at local 20:27:46 UTC after final hash verification. No training or test ran.
-V3 cloud estimate $0.622778, incremental conservative API $0.020475, local probe
-$0.000012; cumulative **$38.333750** before tax/network. Clock skew makes cross-host
-wall times approximate; this is an estimate, not an invoice.
+- **3,072/3,072 outputs**, 219,253 generated tokens, and 3,072 teacher-forced
+  example passes (384 optimizer updates across four fits) are recorded.
+- **640 physical API attempts**, 632 valid receipts and eight inherited missing
+  training scores are fully accounted for. V4 adds no failed or retried request;
+  every held-out case has valid feedback. Missing scores remain explicit nulls,
+  with neutral effective 0.5 used in training, never labeled a Jev response.
+- All **57 raw files**, including **12 adapter checkpoints**, are byte-verified
+  and distributed in [hashed archives](raw-artifact-hashes.json). References stay
+  out of inference prefixes and Jev inputs; original base-weight values are unchanged.
+- [Primary/tokenizer audit](analysis.json), [training audit](training-audit.json),
+  [retention audit](retention.json), and [work/details audit](details.json) pass.
+  [Fresh public-archive replay](public-replay.json) reproduces all four JSON objects
+  exactly without inference. [Feedback replay](feedback-replay.json) also matches.
+- The [source-data audit](data-audit.json) checks all 640 questions/references and
+  384 training targets against pinned upstream files, with zero exact normalized
+  split overlap and exclusion of the 24 R23 math questions. Near-duplicates and
+  pretraining contamination are not ruled out.
+- **536 tests** passed on the frozen worker. Later report-only helpers bring the
+  local suite to **546 passing tests**; Ruff, guidance checks and package build pass.
+  See [completion notes](completion-notes.md) and [replay commands](method.md).
 
-The [prospective v4 plan](../../research/gated-repair-overload-recovery.md) keeps
-all scientific settings and legacy results, but improves delivery for new cases:
-up to four separately reserved attempts after explicit 429/503/529, paced backoff,
-no timeout replay, a retained $0.25 API ledger and bounded missing/unknown counts.
-No additional GPU is launched before independent request/charge audits, local
-checks and a new source/data freeze. Combined R25 reserve $20 and total cap $75
-stay unchanged. No R25 quality result exists yet.
+The [cost estimate](cost.json) is **$5.85 for all R25 attempts**, bringing cumulative
+use to **$42.63 of the owner-authorized $75**, with approximately **$32.37 remaining**
+before tax/separate network charges. The inherited API ledger is counted once.
+These are estimates, not invoices. [Cleanup](cleanup.json) verifies deletion of
+the GPU, owned disk, allocations and security rules/group at 23:05 UTC; unrelated
+resources were untouched.
 
-V4 source `640987e`, data freeze `6bade56`: [manifest](../../research/protocols/gated-repair-retry-v4/manifest.json)
-and [retention binding](../../research/protocols/gated-repair-retention-retry-v4.json).
-It launched at approximately local 20:43 UTC after all **536 server tests** passed.
-Both predecessor snapshots and the private credential are present on the owned
-worker; credentials remain outside source/results. Nine-hour worker and ten-hour
-machine limits, regular backup and cleanup supervision are active. Quality and
-training remain pending until the actual run and independent audits complete.
+## Preserved attempt history
 
-At local 21:45 UTC, v4 has recorded all 3,072 teacher-forced example passes and
-512 development repairs, saved checkpoint selection and begun the held-out native
-drafts. No new provider failure has been recorded; eight legacy missing scores
-remain explicit. Independent final audits and quality interpretation are pending.
+| Attempt | Frozen source / data | Outcome before continuation |
+| --- | --- | --- |
+| V1 BF16 | 9246708 / 4197f8e | Numerical admission fails: max cached/full discrepancy 0.25 > 0.125; no drafts, API calls or training; five files archived; resources deleted. |
+| V2 FP32 | 0c015fd / 1b4dfd0 | Admission passes (max 0.0000211000); 113 training drafts and 112 receipts, then one unknown-status provider failure; no optimizer/test; 20 files archived; resources deleted. |
+| V3 continuation | 10c968a / 05d130b | Reuses V2 exactly; reaches 165 drafts and 157 receipts, with six HTTP 529 responses then HTTP 503; eight total missing scores; no optimizer/test; 25 files archived; resources deleted. |
+| V4 bounded overload recovery | 640987e / 6bade56 | Reuses V3 exactly; completes training, dev selection and all held-out outputs; no new provider failure; final audits and public replay pass; resources deleted. |
+
+[Failed V1](failed-v1/README.md), [interrupted V2](interrupted-v2/README.md),
+[interrupted V3](interrupted-v3/README.md), and the [precision diagnostic](precision-diagnostic/summary.json)
+preserve all failed work and costs. The diagnostic finds comparable BF16 numerical
+differences in native and intervened Granite with identical argmax choices; all six
+FP32 comparisons pass, max 0.0000267029. It does not establish an adapter-specific
+BF16 error or certify every sequence. Operational amendments preceded any held-out
+quality inspection; no unfavorable answer result was removed.

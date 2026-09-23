@@ -1,12 +1,13 @@
 # Study register
 
-**Current R25 status (21:45 UTC):** v4 has recorded all 3,072 training-example
-passes and 512 development repairs; checkpoint selection is saved and held-out
-test generation has begun. Eight historical missing Jev scores remain explicit;
-no new provider failure is recorded. One L40S is running with backups and
-bounded expiry under the $75 cumulative cap. Final quality, artifact audits,
-cost reconciliation and resource deletion remain pending. Earlier interruption
-notes below are historical; see the [current report](../reports/2026-09-23-gated-repair/README.md).
+**R25 completed and audited:** always repairing lowers the combined score from
+59.38% to 44.79%. The predeclared selective-retention replay instead reaches
+66.67%: science improves **71.88% → 86.46%**, while math stays **46.88%**.
+Formatting failures limit interpretation, especially for math. All 3,072 outputs
+and 12 adapter checkpoints are archived; public replay matches all four main
+analyses. All cloud resources are deleted. Cumulative estimate **$42.63/$75**
+before tax/separate network; **546 local tests pass**. The ten-benchmark and
+larger-model objectives remain unmet. See the [completed report](../reports/2026-09-23-gated-repair/README.md).
 
 
 **Direction update, 2026-09-23 (no experiment):** the owner set broad ten-benchmark
@@ -448,10 +449,13 @@ See the [complete inspection](../reports/2026-09-23-public-critic/disagreements.
 
 ## R25 — Jev-gated natural-draft repair (registered 2026-09-23)
 
-- **Status:** v1 failed BF16 admission; v2 passed FP32 checks then stopped after
-  113 training drafts/112 Jev receipts, before training. Both workers deleted.
-  V3 continuation frozen; 527 local tests pass, no quality result yet. [Report](../reports/2026-09-23-gated-repair/README.md).
-- [Plan and $75 cumulative authorization](gated-repair-plan.md): reserve $14.40,
+- **Status: completed.** V1 numerical failure and V2/V3 service interruptions are
+  preserved; V4 completes all training and evaluation with 632 valid receipts and
+  eight inherited missing training scores. [Report](../reports/2026-09-23-gated-repair/README.md).
+  Always-repair live 44.79% versus native 59.38%; retained live 66.67%, with science
+  71.88% → 86.46% and math unchanged. All four main public analyses replay exactly,
+  546 local tests pass, resources are deleted; cumulative estimate $42.63/$75.
+- Original [plan and $75 cumulative authorization](gated-repair-plan.md): reserve $14.40,
   eight-hour single-L40S hard expiry, seven-hour worker limit, $0.25 API cap.
 - New rank-64 branch after block 19, multiplicatively gated by Jev's draft-error
   probability; original Granite weights frozen and Granite owns all final tokens.
@@ -476,3 +480,28 @@ never replays a dispatched call, and distinguishes neutral fallback from Jev.
 At most eight transient incidents including the original; fatal errors stop.
 Single L40S, nine-hour worker/ten-hour VM limit; combined R25 $20/cumulative $75.
 Estimated cumulative use before v3: $37.690485 before tax/network.
+
+
+**R25 V3/V4 completion:** V3 reaches 165 training drafts and 157 valid receipts,
+then stops under its frozen HTTP 503 rule after six new HTTP 529 incidents. All
+25 files and charges are retained. V4 source `640987e`, data freeze `6bade56`,
+reuses those bytes and implements bounded separately reserved retries only for
+explicit overload on new cases. It needs no new retry/failure, completes 3,072
+outputs (219,253 generated tokens) and 3,072 teacher-forced example passes, and
+preserves all 12 checkpoints. Original base-weight values are unchanged.
+
+Primary live minus native is −14.58 pp [−21.61, −7.29]; minus matched constant
+is −10.42 [−17.19, −3.39]. The separately predeclared retention replay routes
+41/192 cases to repair: retained live science gains +14.58 [8.33, 21.88] versus
+native and +10.42 [5.21, 16.67] versus retained constant. Math does not improve.
+Intervals are individual 95% problem bootstraps conditional on two fitted seeds.
+Post-hoc inspection finds 16/12 parseable wrong science choices corrected without
+correct-answer damage under retention; full repair damages many answer formats.
+Thirty-four native math outputs are unparseable, limiting semantic interpretation.
+No primary grade changes; actual skipped execution and API savings are unmeasured.
+
+The larger-model spending gate is false and its prospective outline is unexecuted.
+Fresh selective-repair validation remains a next candidate, not a completed result.
+All 57 files are byte-verified and public replay reproduces all four main audits;
+feedback replay also matches. Resources are deleted. Combined R25 cost estimate
+$5.853546, cumulative $42.627081/$75, before tax/separate network.

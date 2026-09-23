@@ -1,12 +1,13 @@
 # Granite–Jev north star
 
-**Current R25 status (21:45 UTC):** v4 has recorded all 3,072 training-example
-passes and 512 development repairs; checkpoint selection is saved and held-out
-test generation has begun. Eight historical missing Jev scores remain explicit;
-no new provider failure is recorded. One L40S is running with backups and
-bounded expiry under the $75 cumulative cap. Final quality, artifact audits,
-cost reconciliation and resource deletion remain pending. Earlier interruption
-notes below are historical; see the [current report](../reports/2026-09-23-gated-repair/README.md).
+**R25 completed and audited:** always repairing lowers the combined score from
+59.38% to 44.79%. The predeclared selective-retention replay instead reaches
+66.67%: science improves **71.88% → 86.46%**, while math stays **46.88%**.
+Formatting failures limit interpretation, especially for math. All 3,072 outputs
+and 12 adapter checkpoints are archived; public replay matches all four main
+analyses. All cloud resources are deleted. Cumulative estimate **$42.63/$75**
+before tax/separate network; **546 local tests pass**. The ten-benchmark and
+larger-model objectives remain unmet. See the [completed report](../reports/2026-09-23-gated-repair/README.md).
 
 
 Owner direction recorded 2026-09-23, after R22. This is a research objective and
@@ -264,7 +265,7 @@ text feedback and feedback ablations. The full ten-task comparison remains a
 later evidence-gated stage; budget authorization is not evidence of success.
 
 
-### R25 numerical restart and retention supplement
+### Historical registration: R25 numerical restart and retention supplement
 
 The BF16 pilot stopped at its numerical admission gate before any training drafts,
 API calls or optimizer updates. Its $0.293387 cost and all five artifacts are
@@ -283,7 +284,7 @@ and repairing only Jev-flagged cases. It retains every original primary comparis
 and does not claim measured skipped execution or fewer Jev calls. Quality results
 remain pending; source and data revisions are in the [R25 report](../reports/2026-09-23-gated-repair/README.md).
 
-### R25 service continuation, registered 20:01 UTC
+### Historical registration: R25 service continuation, 20:01 UTC
 
 The full-precision worker passed admission but stopped after 113 training drafts,
 112 valid Jev receipts and one unknown-usage failure, before any optimizer/test.
@@ -294,3 +295,30 @@ labeled; all cases remain in primary grading. Training and held-out quality rema
 unmeasured. Estimated cumulative use is $37.690485 before v3/tax/network; the $75
 cap and combined $20 R25 reserve are unchanged. This is still a two-domain
 mechanism pilot, not the ten-benchmark/larger-model north-star result.
+
+
+## R25 completed: narrower positive signal, broad target still unproven
+
+The [completed pilot](../reports/2026-09-23-gated-repair/README.md) trains an internal
+feedback-dependent branch on natural math/science drafts. Always repairing reduces
+combined accuracy from 59.38% to 44.79%. A retention policy registered before test
+keeps answers Jev rates at least 0.5 and improves science from 71.88% to 86.46%,
+versus 76.04% for the retained constant branch. Math stays 46.88% and has substantial
+format-readout limitations. All retained science recoveries start from parseable
+wrong choices, though some native rationales already imply the right choice.
+This is a useful conditional-repair finding, not broad semantic improvement.
+
+All repairs were actually executed; retention is offline replay, with no measured
+saved work or fewer Jev calls. The larger-comparison spending gate is false and
+its [outline](gated-repair-larger-replication-outline.md) stays unexecuted. A separately
+registered fresh selective-repair validation should admit task-specific output
+instructions on development data, fix checkpoints and thresholds, isolate routing
+from feedback strength, and measure real execution. No such run is claimed yet.
+Do not skip evaluator admission or substitute this two-domain pilot for the
+versioned ten-task scorecard.
+
+All 3,072 outputs, 12 adapter checkpoints and all failed attempts are archived.
+Public replay reproduces all four main analyses exactly; original weights remain
+unchanged. All resources are deleted. R25 adds **$5.85**, reaching **$42.63/$75**
+with approximately **$32.37** remaining before tax/separate network. The budget
+increase is cumulative and has not been treated as $75 additional spending.

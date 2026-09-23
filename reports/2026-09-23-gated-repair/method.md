@@ -1,7 +1,7 @@
 # R25 mechanism and attribution
 
-This describes the registered design, not a positive result. The BF16 v1 attempt
-failed numerical admission; v2/v3/v4 use float32 throughout. V3/v4 explicitly record
+This describes the registered design; see the [completed results](README.md) for
+its mixed outcomes. The BF16 v1 attempt failed numerical admission; v2/v3/v4 use float32 throughout. V3/v4 explicitly record
 unavailable feedback as null with neutral effective 0.5, never as a Jev judgment.
 
 ```text
@@ -35,7 +35,7 @@ New repair pass and fresh cache        |
 
 Blocks are zero indexed. Only the final prompt position and subsequent repair
 positions receive the residual. Draft positions are never retroactively changed;
-each arm prefills the exact original token sequence into a fresh cache. Jev is
+each arm prefills the exact original token sequence into a fresh cache. Jev
 provides one judgment for each available case, not one per layer or token. V4
 may make up to four charged attempts after explicit service overload; unavailable
 feedback is null with a separately labeled neutral effective probability. Its judgment enters
@@ -122,16 +122,16 @@ python research/diagnostics/gated_repair_data_audit.py \
 
 ## Public replay procedure
 
-After completion and byte-verified retrieval, distribute all raw worker files,
-including adapter checkpoints and predecessor evidence, as independently hashed
-gzip files. The [replay helper](../../research/diagnostics/replay_gated_repair.py)
+After completion and byte-verified retrieval, all 57 raw worker files,
+including 12 adapter checkpoints and predecessor evidence, are distributed as
+independently hashed gzip files. The [replay helper](../../research/diagnostics/replay_gated_repair.py)
 rejects corrupt files, path escapes, duplicate destinations and reuse of an
 existing extraction directory. Its four tests failed first on the absent module,
-then passed; the local suite now passes 542 tests. These are artifact checks,
+then passed, bringing the local suite at that point to 542 tests. These are artifact checks,
 not additional GPU inference or evidence of improved quality.
 
-Once the completed report's archive and four analyses are present, reproduce
-them in a fresh directory using the inference extras:
+All four completed analyses match a fresh public replay exactly; reproduce them
+in a fresh directory using the inference extras:
 
 ```sh
 uv run --no-sync python research/diagnostics/replay_gated_repair.py \
@@ -156,8 +156,9 @@ cases separately. It introduces no threshold search, new generation or change
 to the primary endpoint, and never compares Jev as an answer generator.
 
 Four tests failed on the absent helper, then passed; all **546 local tests pass
-in 10.62 seconds**, along with Ruff, builds and the guidance checker. The worker
-continues at its frozen source. After the completed primary audit:
+in 10.62 seconds**, along with Ruff, builds and the guidance checker. The completed
+worker used its frozen source; these helpers changed no inference.
+The feedback diagnostic and public replay also match. Reproduce after the primary audit:
 
 ```sh
 uv run --no-sync python research/diagnostics/gated_repair_feedback.py \
@@ -166,3 +167,14 @@ uv run --no-sync python research/diagnostics/gated_repair_feedback.py \
   --primary reports/2026-09-23-gated-repair/analysis.json \
   --save results/r25-feedback-diagnostic.json
 ```
+
+## Completed outcome and interpretation
+
+The [report](README.md) and [all-arm tables](tables.md) retain both the negative
+full-repair result and the positive predeclared science-retention result. The
+latter is an offline output policy, not actually conditional model execution.
+[Post-hoc inspection](output-inspection.md) changes no grade and exposes a material
+format confound in the mixed math/choice repair instruction and the native math
+contract. The original parser and instructions remain frozen; no relaxed readout
+is substituted. All 192 held-out cases have valid Jev feedback, while eight
+inherited missing scores occur in training only.

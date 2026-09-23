@@ -1,0 +1,103 @@
+{
+  "post_start_descriptive_supplement": true,
+  "generator_comparison": false,
+  "primary_sha256": "ece56a062723fb003973725e9b38949a00f033f2bca4515819c2a02279934c2d",
+  "source_sha256": "a5a06c0ff473f363715d8c1b00502a1eddaf794dab9ceaec254817b3f97487b4",
+  "plan_sha256": "cdf7b707fa77728f8646bdfabe39de8812627adaf73ebcfeaa4ddd5c3953f54b",
+  "primary_changed": false,
+  "new_model_or_api_calls": 0,
+  "threshold": 0.5,
+  "summaries": {
+    "all": {
+      "all_available": {
+        "cases": 192,
+        "available": 192,
+        "missing_feedback": 0,
+        "native_errors": 78,
+        "native_correct": 114,
+        "errors_flagged": 40,
+        "errors_missed": 38,
+        "correct_flagged": 1,
+        "correct_retained": 113,
+        "error_recall": 0.5128205128205128,
+        "false_flag_rate": 0.008771929824561403,
+        "error_detection_auroc": 0.8187134502923976
+      },
+      "parseable_native": {
+        "cases": 156,
+        "available": 156,
+        "missing_feedback": 0,
+        "native_errors": 42,
+        "native_correct": 114,
+        "errors_flagged": 34,
+        "errors_missed": 8,
+        "correct_flagged": 1,
+        "correct_retained": 113,
+        "error_recall": 0.8095238095238095,
+        "false_flag_rate": 0.008771929824561403,
+        "error_detection_auroc": 0.9864243943191312
+      }
+    },
+    "gsm8k": {
+      "all_available": {
+        "cases": 96,
+        "available": 96,
+        "missing_feedback": 0,
+        "native_errors": 51,
+        "native_correct": 45,
+        "errors_flagged": 16,
+        "errors_missed": 35,
+        "correct_flagged": 0,
+        "correct_retained": 45,
+        "error_recall": 0.3137254901960784,
+        "false_flag_rate": 0.0,
+        "error_detection_auroc": 0.8104575163398693
+      },
+      "parseable_native": {
+        "cases": 62,
+        "available": 62,
+        "missing_feedback": 0,
+        "native_errors": 17,
+        "native_correct": 45,
+        "errors_flagged": 11,
+        "errors_missed": 6,
+        "correct_flagged": 0,
+        "correct_retained": 45,
+        "error_recall": 0.6470588235294118,
+        "false_flag_rate": 0.0,
+        "error_detection_auroc": 0.9915032679738562
+      }
+    },
+    "arc": {
+      "all_available": {
+        "cases": 96,
+        "available": 96,
+        "missing_feedback": 0,
+        "native_errors": 27,
+        "native_correct": 69,
+        "errors_flagged": 24,
+        "errors_missed": 3,
+        "correct_flagged": 1,
+        "correct_retained": 68,
+        "error_recall": 0.8888888888888888,
+        "false_flag_rate": 0.014492753623188406,
+        "error_detection_auroc": 0.9916800858829844
+      },
+      "parseable_native": {
+        "cases": 94,
+        "available": 94,
+        "missing_feedback": 0,
+        "native_errors": 25,
+        "native_correct": 69,
+        "errors_flagged": 23,
+        "errors_missed": 2,
+        "correct_flagged": 1,
+        "correct_retained": 68,
+        "error_recall": 0.92,
+        "false_flag_rate": 0.014492753623188406,
+        "error_detection_auroc": 0.9915942028985507
+      }
+    }
+  },
+  "note": "Feedback agreement with the registered native-answer readout, not semantic adjudication of unparseable outputs or a Jev generator score."
+}

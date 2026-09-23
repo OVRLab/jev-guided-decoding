@@ -1,0 +1,17 @@
+{
+  "cloud_instance_lifetime_hours": 2.4400870783333333,
+  "hourly_compute_and_80gib_disk_usd": 1.7545808219178083,
+  "v4_cloud_estimate_usd": 4.2813299914531235,
+  "v4_full_inherited_ledger_api_estimate_usd": 0.038203872,
+  "already_accounted_api_usd": 0.026202918,
+  "v4_additional_api_estimate_usd": 0.012000954000000001,
+  "v4_additional_estimate_usd": 4.293330945453124,
+  "cumulative_estimate_usd": 42.62708084740686,
+  "r25_combined_estimate_usd": 5.853545925386298,
+  "cumulative_cap_usd": 75,
+  "r25_reserve_usd": 20,
+  "estimate_not_invoice": true,
+  "excludes_tax_separate_network": true,
+  "prior_cumulative_includes_local_probe_usd": 1.1634e-05,
+  "prior_results_are_not_double_counted": true
+}
