@@ -46,3 +46,18 @@ for slower full-precision work. V1's original $14.40 limit above is historical.
 The [v2 manifest](../../research/protocols/gated-repair-fp32-v2/manifest.json)
 preserves every predecessor data hash. All 518 local tests pass. No quality
 measurement or Jev contribution has yet been established by R25.
+
+## Precision diagnostic completed
+
+The [six native/intervened comparisons](precision-diagnostic/summary.json) pass
+in float32: maximum absolute discrepancy is 0.0000267029, and all next-token
+argmax choices agree. BF16 native discrepancies are 0.25, 0.2890625 and 0.3125;
+BF16 intervened discrepancies are 0.25 on each fixture, with identical argmax
+choices in all six comparisons. Thus the earlier discrepancy also occurs without
+the intervention; it does not establish an adapter-specific cache error. These
+three training fixtures do not certify numerical equality for every sequence.
+
+V2 is running after passing this diagnostic and all 518 server tests. Its own
+admission, training and fresh quality evaluation remain in progress. See the
+[mechanism and token ownership](method.md). No scientific settings were changed
+in response to answer quality.

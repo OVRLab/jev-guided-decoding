@@ -1,0 +1,14 @@
+{
+  "id": "gsm8k/train/3380",
+  "precision": "float32",
+  "native": {
+    "max_abs": 1.52587890625e-05,
+    "argmax_equal": true,
+    "allclose": true
+  },
+  "intervened": {
+    "max_abs": 1.9073486328125e-05,
+    "argmax_equal": true,
+    "allclose": true
+  }
+}
