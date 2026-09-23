@@ -1,5 +1,11 @@
 # Feature: Jev-guided intermediate reasoning
 
+**Next research direction:** [the Granite–Jev north star](research/north-star.md)
+targets broad benchmark gains and named larger-model outperformance. First create
+a versioned ten-task evaluation contract and baseline path, then select the next
+architecture using bounded cross-domain development evidence. The candidate suite
+is planned, not implemented or run; no new paid study is active.
+
 [R22 — completed](reports/2026-09-23-learned-feedback/README.md): a trained
 65,568-parameter residual bridge after block 19 scores **92.19%**, identical to
 its equally trained constant-feedback control; native scores **90.89%** on 384
@@ -23,12 +29,12 @@ Estimated new cost is **$2.32**, cumulative **$32.55/$50** before tax/network.
 See the [evaluator failures](reports/2026-09-23-semantic-evaluation/transfer-diagnostics.md)
 and [paper draft](research/paper-draft.md#79-r20-blinded-semantic-evaluation-of-fixed-attention-interventions).
 
-Next measurement revision: independently reviewed question/reference/answerability
+Remaining measurement work: independently reviewed question/reference/answerability
 labels and response-completeness validation on fresh cases. Preserve R20's frozen
 scores; no architecture is tuned on its exposed test answers. R21's focused
 feedback admission and R22's learned bridge are complete. A future bridge study
 should establish feedback-dependent generation on development cases before
-fresh held-out transfer; no further paid run is active.
+fresh held-out transfer, within the broader north-star sequence above.
 
 Previous completed work: [R19 benefit and sufficiency study](reports/2026-09-22-benefit-sufficiency/README.md).
 Internal source/instruction steering improves frozen benchmark scores, but answer

@@ -36,6 +36,11 @@ guides must defer here rather than maintain conflicting copies.
 
 ## Keep the experiment honest
 
+- The active research objective is the [Granite–Jev north star](research/north-star.md):
+  substantial broad benchmark gains over original Granite and named larger models.
+  Treat authored fixtures as diagnostics, preserve negative results, and distinguish
+  measured suite progress from a working hook. Count hosted Jev when making system
+  cost/efficiency claims; Granite's parameter count alone is not total system size.
 - When testing whether Jev improves a generator's answers, that generator must
   produce the final answer in every compared arm. Keep Jev final classifiers as
   separately named experiments; their scores cannot stand in for generated-answer

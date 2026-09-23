@@ -1336,13 +1336,14 @@ R19 retains its own [Hotpot](../reports/2026-09-22-benefit-sufficiency/HotpotQA-
 and [SQuAD](../reports/2026-09-22-benefit-sufficiency/SQuAD-NOTICE.md) notices.
 R20 retains [Hotpot](../reports/2026-09-23-semantic-evaluation/HotpotQA-NOTICE.md)
 and [SQuAD](../reports/2026-09-23-semantic-evaluation/SQuAD-NOTICE.md) notices.
-All temporary infrastructure for R10, R13, R14, R15, R16, R17, R18, R19 and R20 was deleted after
+All temporary infrastructure for R10, R13, R14, R15, R16, R17, R18, R19, R20 and R22 was deleted after
 verified artifact retrieval.
 The earlier $3.29 estimate covers the corrected R10 study and its two pilots.
 R16 adds $8.52, bringing the recorded budget series to $19.69/$50; R17 then adds
 $3.77 for a cumulative $23.46/$50. R18 adds $3.77, reaching $27.23/$50; R19 adds $3.00 across two
 sequential L40S episodes and hosted judgments, reaching $30.23/$50. R20 adds
-$2.32 including its locally hosted judge, reaching $32.55/$50.
+$2.32 including its locally hosted judge, reaching $32.55/$50. R21 adds $0.03193
+in local-run API usage and R22 adds $1.17799, reaching $33.76146/$50.
 These estimates exclude tax/separate network
 charges and are not provider invoices. Implementation, code-based analysis, figure
 production and drafting were AI-assisted. Human scientific review and authorship
@@ -1368,6 +1369,19 @@ R19 adds sufficiency-dependent instruction steering and positive frozen-score ef
 while exposing strong static controls and consequential semantic measurement artifacts.
 R20 adds a completed blinded evaluation with positive authored judge scores,
 unestablished static superiority and documented evaluator transfer failures.
+R21 adds focused verifier admission; R22 adds a trained internal bridge whose
+final answers show no observed benefit from informative Jev feedback.
 This does not support a general model-improvement release or reliable
 longer-chain reasoning. This manuscript remains a draft; no scientific review or
 publication is implied by successful engineering checks.
+
+## 10. Prospective objective after R22
+
+The owner set a broader [north star](north-star.md) on 2026-09-23: substantial
+Granite–Jev gains over original Granite across ten leading, diverse benchmarks,
+and outperformance of named larger models from Granite and another family.
+Candidate tasks and model comparisons are a future research strategy, not part
+of the completed experiments or a ten-benchmark superiority result. The next
+architecture will be selected through separate cross-domain development evidence,
+then evaluated under a frozen scorecard with original-model, matched-training,
+feedback and resource controls. Authored task gains alone cannot meet that goal.

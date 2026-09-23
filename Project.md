@@ -1,9 +1,16 @@
 # Jev-guided decoding project
 
-Build a reusable, inspectable inference controller that tests whether TypeSafe
-Jev can improve language-model output by evaluating continuations **during**
-generation. The first model is original IBM Granite 4.0 1B; the controller should
-support additional backends/models through explicit interfaces and validation.
+Build a Granite–Jev inference architecture that substantially outperforms original
+Granite across ten leading, diverse LLM benchmarks and beats explicitly named
+larger models, including newer Granite and another model family. This is the
+owner's north star, recorded 2026-09-23; it is not an achieved result. The initial
+generator remains dense IBM Granite 4.0 1B.
+
+The [north-star strategy](research/north-star.md) defines the candidate scorecard,
+larger-model ladder, quality/resource comparisons and research sequence. Architecture
+choices serve that objective. The reusable Python controller is the initial
+experimental implementation; broader internal mechanisms and trained adapters are
+research paths with separate evidence. Granite must own the generated final answer.
 
 ## Users and promise
 
@@ -24,7 +31,7 @@ guided behavior with generation controls. A separate [R14 research path](reports
 maps Jev source relevance into selected internal attention heads during constrained
 answer generation. See [CLAUDE.md](CLAUDE.md) for paths.
 
-The current scope is frozen-weight inference, a Transformers adapter, Jev's hosted
+The initial package scope is frozen-weight inference, a Transformers adapter, Jev's hosted
 API, and document-grounded fixtures. It does not merge neural networks, access
 hidden reasoning, train weights, deploy a service, or publish an improved checkpoint.
 The R16 research path implements serial retained-cache generation and relevance
@@ -49,6 +56,12 @@ Optimize or add a serving integration when the measured trade-off justifies it.
 Use [LAUNCH.md](LAUNCH.md) for scope, [LIVE.md](LIVE.md) for verified status, and
 [FEATURE.md](FEATURE.md) for the next experiment; do not turn a roadmap into a claim.
 
-## R21 authorized research extension
+## Authorized research extensions
 
 The owner authorized [local semantic feedback and a learned internal bridge](research/semantic-feedback-plan.md). This research extension may train new adapter parameters after feedback admission, while preserving original Granite and Jev weights. It is separate from the initial frozen-weight package prototype and does not imply a released checkpoint.
+
+The subsequent north-star direction adds broad benchmark transfer and named
+larger-model comparisons as the main research outcome. R21/R22 are completed
+mechanism/verifier studies, not evidence of that outcome. Preserve original
+checkpoints and old protocols; register new training or architecture changes before
+evaluation. The existing spending ceiling remains in force until explicitly changed.

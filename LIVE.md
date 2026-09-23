@@ -1,5 +1,9 @@
 # Verified implementation inventory
 
+The [north-star direction](research/north-star.md) was recorded on 2026-09-23.
+Its ten-benchmark/larger-model scorecard remains planned; the verified results
+below do not establish that objective.
+
 [R22 — completed](reports/2026-09-23-learned-feedback/README.md): a trained
 65,568-parameter residual bridge after block 19 scores **92.19%**, identical to
 its equally trained constant-feedback control; native scores **90.89%** on 384

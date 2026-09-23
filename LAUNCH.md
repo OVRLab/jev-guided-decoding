@@ -1,8 +1,16 @@
-# Initial experimental release target
+# Initial prototype and subsequent research release targets
 
 This records the scope already agreed for the initial open-source prototype.
 It is a target, not a release announcement; implementation status lives in
 [LIVE.md](LIVE.md). Change this scope only when the project owner requests it.
+
+The owner expanded the research objective on 2026-09-23: substantial gains across
+ten leading LLM benchmarks and outperformance of named larger models. The
+[north-star strategy](research/north-star.md) governs that next research program.
+It requires a frozen broad scorecard, fair native/larger-model comparisons,
+demonstrated Jev contribution and reproducible evidence before a performance
+release. The completed prototype target below remains a historical milestone;
+meeting it does not meet the expanded objective or authorize a model publication.
 
 ## Required scope
 

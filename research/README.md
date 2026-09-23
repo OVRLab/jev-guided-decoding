@@ -1,5 +1,11 @@
 # Granite + Jev research record
 
+[Active north star](north-star.md), recorded 2026-09-23: substantial gains over
+original Granite across ten leading benchmarks and outperformance of named larger
+models. Candidate tasks/comparators and the research sequence are documented;
+the new suite has not been implemented or run. Earlier experiments remain evidence
+for their recorded scope.
+
 [R22 — completed](../reports/2026-09-23-learned-feedback/README.md): a trained
 65,568-parameter residual bridge after block 19 scores **92.19%**, identical to
 its equally trained constant-feedback control; native scores **90.89%** on 384

@@ -1,5 +1,10 @@
 # Jev-guided decoding
 
+**Research objective:** build a Granite–Jev architecture that substantially improves
+Granite across ten leading, diverse benchmarks and outperforms named larger
+models. The [north-star strategy](research/north-star.md) records the candidate
+benchmark suite, comparator ladder and next steps. This objective is not yet met.
+
 Experimental Python controllers that ask a language model for candidate answer
 continuations or explicit reasoning steps, use [TypeSafe Jev](https://docs.typesafe.ai/concepts/system-one) to
 evaluate those candidates, and continue generation from the selected tokens.

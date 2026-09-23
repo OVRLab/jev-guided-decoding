@@ -1,5 +1,10 @@
 # Study register
 
+**Direction update, 2026-09-23 (no experiment):** the owner set broad ten-benchmark
+improvement and named larger-model outperformance as the [north star](north-star.md).
+The strategy records a candidate suite and comparator ladder. No R23 result,
+new inference, training, cloud allocation or additional spend is implied.
+
 Registered retrospectively on 2026-09-21 from the existing reports and artifacts.
 This register does not turn historical development work into preregistration.
 Frozen source revisions, dates, raw availability, device, exact prompts and budgets
