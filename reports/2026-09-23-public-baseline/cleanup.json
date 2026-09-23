@@ -1,0 +1,10 @@
+{
+  "deleted": true,
+  "at": "2026-09-23T17:50:02.346974+00:00",
+  "instance_deleted": true,
+  "managed_boot_disk_deleted": true,
+  "owned_security_rules_and_group_deleted": true,
+  "allocations_deleted": true,
+  "verified_result_files": 8,
+  "note": "Provider identifiers retained privately; verified absence via NotFound responses."
+}

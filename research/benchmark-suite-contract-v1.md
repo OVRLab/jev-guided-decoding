@@ -77,6 +77,13 @@ from any future untouched holdout. Report a full-source rerun as partly exposed.
 No final AIME, GPQA, coding, LongBench, SimpleQA, BFCL or SWE problem was used in
 R23 generation. Merely seeing repository metadata is not task inference.
 
+**Split-admission clarification after R24 inspection, 2026-09-23:** MuSR murder
+cases 212 and 213 share a scenario but differ in evidence and reference answer.
+Future untouched splits must also exclude related scenario variants and use
+story clusters where appropriate. Exact ID/content deduplication alone is
+insufficient. This clarifies the pending split admission; it changes no recorded
+R23/R24 input, primary metric, threshold, score or final-suite result.
+
 Before architecture selection, freeze a separate validation cohort, ID/content
 hash exclusions, deduplication procedure and query budget. After selection, lock
 final inputs and run settings. Preserve task failures, all candidates searched,

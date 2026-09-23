@@ -4,6 +4,22 @@ The [north-star direction](research/north-star.md) was recorded on 2026-09-23.
 Its ten-benchmark/larger-model scorecard remains planned; the verified results
 below do not establish that objective.
 
+[R23 public baseline — completed](reports/2026-09-23-public-baseline/README.md):
+76 development problems per model, all 152 outputs audited and publicly replayed.
+Native 1B / newer thinking 3B score **19/24 / 21/24** math and **2/12 / 7/12**
+IFBench; the separately labeled post-hoc choice readout gives **12/28 / 18/28**
+MMLU-Pro and **6/12 / 4/12** MuSR. Original strict scores are preserved. Profiles
+and token budgets differ; 3B has 13 length stops. These are not official full-suite
+scores or a larger-model victory for Granite–Jev.
+
+[R24 critic diagnostic — completed](reports/2026-09-23-public-critic/README.md):
+Jev flags **21/23 wrong native answers**, with **3/37 false flags on correct answers**;
+all 60 requests and their original Granite inputs are audited. No answer is repaired
+and every eligible answer is queried. This supports testing a feedback-dependent
+repair mechanism, without establishing a beneficial insertion layer or call savings.
+All cloud resources are deleted. Combined new estimate **$3.01**, cumulative
+**$36.77/$50** before tax/separate network. All **507 local tests** pass.
+
 [R22 — completed](reports/2026-09-23-learned-feedback/README.md): a trained
 65,568-parameter residual bridge after block 19 scores **92.19%**, identical to
 its equally trained constant-feedback control; native scores **90.89%** on 384
@@ -229,7 +245,8 @@ network charges. Final-answer attribution is now an explicit invariant.
 - vLLM extension or concurrent serving. The package proposal path recomputes
   prefixes; the separate R16 research runner retains an isolated request cache.
 - Guaranteed semantic candidate diversity; deduplication currently uses exact token IDs.
-- Neural fusion, training, changed model weights, or a new Hugging Face checkpoint.
+- Joint Granite/Jev weight training, changed original Granite weights, or a new
+  Hugging Face model release. R22 trains separate adapter parameters, as recorded above.
 - General mathematical reasoning improvement or a colocated/serving-throughput
   speedup; narrow held-out attention results are described above.
 - Validated compatibility beyond the recorded Granite and tiny-model checks.

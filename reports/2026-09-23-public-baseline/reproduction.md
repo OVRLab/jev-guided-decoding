@@ -1,5 +1,46 @@
 # Reproduce R23
 
+## Offline reconstruction of the recorded run
+
+Restore the public compressed artifacts to a new ignored directory, checking
+both compressed and original byte hashes:
+
+```bash
+python3 - <<'PY'
+import gzip, hashlib, json
+from pathlib import Path
+report = Path("reports/2026-09-23-public-baseline")
+target = Path("results/r23-restored")
+target.mkdir(parents=True, exist_ok=False)
+hashes = json.loads((report / "artifact-hashes.json").read_text())
+for name, expected in hashes.items():
+    assert Path(name).name == name
+    packed = (report / "artifacts" / (name + ".gz")).read_bytes()
+    assert hashlib.sha256(packed).hexdigest() == expected["gzip_sha256"]
+    raw = gzip.decompress(packed)
+    assert hashlib.sha256(raw).hexdigest() == expected["raw_sha256"]
+    (target / name).write_bytes(raw)
+print(f"Verified {len(hashes)} files")
+PY
+```
+
+Use `results/r23-restored` as `--output` in the analysis/audit commands below.
+These commands download only evaluator/tokenizer files, perform no generation
+and make no Jev calls. After primary analysis, reconstruct the explicitly post-hoc
+choice readout:
+
+```bash
+uv run --no-sync python research/diagnostics/public_baseline_readout.py \
+  --freeze research/protocols/public-baseline-v1 \
+  --output results/r23-restored \
+  --primary results/r23-analysis.json --save results/r23-secondary.json
+```
+
+Compare primary analysis exactly; for the audit/secondary readout, compare every
+field except the newly generated `at` timestamp. Keep restored input files intact.
+
+## Environment and a separate inference rerun
+
 From the repository root, install the main pinned environment without changing
 historical lockfiles:
 

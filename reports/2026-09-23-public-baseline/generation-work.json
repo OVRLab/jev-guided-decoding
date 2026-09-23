@@ -1,0 +1,32 @@
+{
+  "granite_4_0_1b": {
+    "records": 76,
+    "parameters": 1631750144,
+    "output_tokens": 10657,
+    "generation_seconds": 263.77369048100013,
+    "mean_generation_seconds": 3.47070645369737,
+    "max_allocated_bytes": 3443428864,
+    "finish_reasons": {
+      "eos": 76
+    },
+    "statuses": {
+      "complete": 76
+    }
+  },
+  "granite_4_2_3b": {
+    "records": 76,
+    "parameters": 3659737600,
+    "output_tokens": 202211,
+    "generation_seconds": 5150.248369527001,
+    "mean_generation_seconds": 67.76642591482896,
+    "max_allocated_bytes": 8107877888,
+    "finish_reasons": {
+      "length": 13,
+      "eos": 63
+    },
+    "statuses": {
+      "complete": 64,
+      "unfinished_thinking": 12
+    }
+  }
+}

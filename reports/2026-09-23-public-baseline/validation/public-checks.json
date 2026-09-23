@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "files_scanned": 78,
+  "secret_private_path_or_cloud_ip_matches": 0,
+  "broken_local_links": 0,
+  "scope": "All current-stage tracked changes plus untracked public files; compressed artifacts decompressed for inspection."
+}

@@ -3,8 +3,24 @@
 [Active north star](north-star.md), recorded 2026-09-23: substantial gains over
 original Granite across ten leading benchmarks and outperformance of named larger
 models. Candidate tasks/comparators and the research sequence are documented;
-the new suite has not been implemented or run. Earlier experiments remain evidence
-for their recorded scope.
+the versioned contract and four-domain diagnostic are implemented, while the full
+ten-task suite remains unrun. Earlier experiments remain evidence for their scope.
+
+[R23 public baseline — completed](../reports/2026-09-23-public-baseline/README.md):
+76 development problems per model, all 152 outputs audited and publicly replayed.
+Native 1B / newer thinking 3B score **19/24 / 21/24** math and **2/12 / 7/12**
+IFBench; the separately labeled post-hoc choice readout gives **12/28 / 18/28**
+MMLU-Pro and **6/12 / 4/12** MuSR. Original strict scores are preserved. Profiles
+and token budgets differ; 3B has 13 length stops. These are not official full-suite
+scores or a larger-model victory for Granite–Jev.
+
+[R24 critic diagnostic — completed](../reports/2026-09-23-public-critic/README.md):
+Jev flags **21/23 wrong native answers**, with **3/37 false flags on correct answers**;
+all 60 requests and their original Granite inputs are audited. No answer is repaired
+and every eligible answer is queried. This supports testing a feedback-dependent
+repair mechanism, without establishing a beneficial insertion layer or call savings.
+All cloud resources are deleted. Combined new estimate **$3.01**, cumulative
+**$36.77/$50** before tax/separate network. All **507 local tests** pass.
 
 [R22 — completed](../reports/2026-09-23-learned-feedback/README.md): a trained
 65,568-parameter residual bridge after block 19 scores **92.19%**, identical to
@@ -194,7 +210,7 @@ No credentials, private operational files, or vendor documentation snapshots bel
 in the research record. The earlier DeepSeek/KV-cache and concision work are separate
 projects; their outcomes are not pooled into this Granite/Jev study.
 
-The next broad-capability stage is [R23's public baseline diagnostic](benchmark-baseline-plan.md),
+The first broad-capability stage is the completed [R23 public baseline diagnostic](../reports/2026-09-23-public-baseline/README.md),
 with [pinned development inputs](protocols/public-baseline-v1/manifest.json).
 It establishes native 1B/3B behavior before selecting another Jev mechanism.
 

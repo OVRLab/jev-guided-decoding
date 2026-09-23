@@ -69,6 +69,27 @@ print("Exact analysis and all 60 receipt settlements verified; no API calls")
 PY
 ```
 
+To independently reconstruct the critic cohort, first restore R23's archive as
+`results/r23-restored` using its [reproduction instructions](../2026-09-23-public-baseline/reproduction.md),
+then run:
+
+```bash
+uv run --no-sync python research/iterations/public_critic.py prepare \
+  --freeze results/r24-input-reconstruction --output results/r23-restored
+python3 - <<'PY'
+from pathlib import Path
+for name in ("inputs.json", "labels.json", "excluded.json"):
+    assert (Path("results/r24-input-reconstruction") / name).read_bytes() == (
+        Path("research/protocols/public-critic-v1") / name
+    ).read_bytes()
+print("Original Granite responses, independent labels and exclusions reproduced")
+PY
+```
+
+This preparation performs no inference or API requests. Its new manifest records
+the current time/Git checkout; those preparation metadata should differ from the
+historical manifest. The three reconstructed scientific data files must be exact.
+
 The frozen source manifest includes the request builder, independent readout,
 budget and client transport. Do not alter them and then call the old manifest a
 new run. Negative-path offline tests cover a failed/unknown request retaining its

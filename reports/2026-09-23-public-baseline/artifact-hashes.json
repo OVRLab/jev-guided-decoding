@@ -1,0 +1,32 @@
+{
+  "completion.json": {
+    "raw_sha256": "e91549fadda3821bbf2147936b3996d4b550ce22445f4fe73d11f7c9ce4b4b89",
+    "gzip_sha256": "99ee891f26ec8e6a3a2f0a292fcd029b5f507d8f5132709b0bba8f38a014ec9a",
+    "bytes": 127
+  },
+  "events.jsonl": {
+    "raw_sha256": "faac25208b27faac3c6b42e62f1218b5b07366f11d5ce006bdb1f7b945094125",
+    "gzip_sha256": "1994d4cae31333c3ab8f1a039247f31927c69addb681e22c83debcc8147e886e",
+    "bytes": 37460
+  },
+  "granite_4_0_1b-hardware.json": {
+    "raw_sha256": "67ce0cfc2e3b223e8ccc7a4cdf564b1a7d5745c8278e8d8147e596e0d6cdd176",
+    "gzip_sha256": "0f45062452c519325c95e14c3cc3b5957257bd6c95f0517ff6a847d615bf7f4f",
+    "bytes": 3346
+  },
+  "granite_4_2_3b-hardware.json": {
+    "raw_sha256": "2add258aed702a0b889b075598822aada80c864838c56dc10155860aea70f949",
+    "gzip_sha256": "61545d510b43e980790fd1790bb34b7bb352d31206ab3f9a525baf43efc39f30",
+    "bytes": 3630
+  },
+  "outputs.jsonl": {
+    "raw_sha256": "91c5acfc8fd37790298a24c8e1d706eb2608f8bc520cf6efd89d384fbd181d20",
+    "gzip_sha256": "8163271293facf6acda4a0c764765b6751a6c0fb794ddabbac00e65161b9350c",
+    "bytes": 2380702
+  },
+  "start.json": {
+    "raw_sha256": "0265dc23ffc65919adcc291e4e6c2c55a1aa362a33115d858082f85ec8816441",
+    "gzip_sha256": "c9971c1f171e42485f5a73e9ba9660359a91023047758cf2506f92390dca1ff0",
+    "bytes": 136
+  }
+}

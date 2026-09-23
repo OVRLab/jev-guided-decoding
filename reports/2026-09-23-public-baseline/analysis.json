@@ -1,0 +1,2724 @@
+{
+  "protocol": "r23-public-baseline-v1",
+  "summaries": {
+    "granite_4_0_1b": {
+      "gsm8k_train": {
+        "planned": 24,
+        "received": 24,
+        "missing": 0,
+        "correct": 19,
+        "accuracy": 0.7916666666666666,
+        "status": {
+          "complete": 24
+        },
+        "unparseable": 3,
+        "length_stops": 0,
+        "output_tokens": 3183,
+        "generation_seconds": 78.86081001899998
+      },
+      "ifbench": {
+        "planned": 12,
+        "received": 12,
+        "missing": 0,
+        "correct": 2,
+        "accuracy": 0.16666666666666666,
+        "status": {
+          "complete": 12
+        },
+        "unparseable": 0,
+        "length_stops": 0,
+        "output_tokens": 1914,
+        "generation_seconds": 47.16521756499998,
+        "loose_correct": 2
+      },
+      "mmlu_pro": {
+        "planned": 28,
+        "received": 28,
+        "missing": 0,
+        "correct": 10,
+        "accuracy": 0.35714285714285715,
+        "status": {
+          "complete": 28
+        },
+        "unparseable": 4,
+        "length_stops": 0,
+        "output_tokens": 4250,
+        "generation_seconds": 105.072587699
+      },
+      "musr": {
+        "planned": 12,
+        "received": 12,
+        "missing": 0,
+        "correct": 0,
+        "accuracy": 0.0,
+        "status": {
+          "complete": 12
+        },
+        "unparseable": 11,
+        "length_stops": 0,
+        "output_tokens": 1310,
+        "generation_seconds": 32.67507519800017
+      }
+    },
+    "granite_4_2_3b": {
+      "gsm8k_train": {
+        "planned": 24,
+        "received": 24,
+        "missing": 0,
+        "correct": 21,
+        "accuracy": 0.875,
+        "status": {
+          "complete": 24
+        },
+        "unparseable": 1,
+        "length_stops": 1,
+        "output_tokens": 24451,
+        "generation_seconds": 623.4442114169996
+      },
+      "ifbench": {
+        "planned": 12,
+        "received": 12,
+        "missing": 0,
+        "correct": 7,
+        "accuracy": 0.5833333333333334,
+        "status": {
+          "complete": 8,
+          "unfinished_thinking": 4
+        },
+        "unparseable": 4,
+        "length_stops": 4,
+        "output_tokens": 54819,
+        "generation_seconds": 1399.8034963940004,
+        "loose_correct": 7
+      },
+      "mmlu_pro": {
+        "planned": 28,
+        "received": 28,
+        "missing": 0,
+        "correct": 18,
+        "accuracy": 0.6428571428571429,
+        "status": {
+          "complete": 22,
+          "unfinished_thinking": 6
+        },
+        "unparseable": 6,
+        "length_stops": 6,
+        "output_tokens": 77363,
+        "generation_seconds": 1973.945448028002
+      },
+      "musr": {
+        "planned": 12,
+        "received": 12,
+        "missing": 0,
+        "correct": 4,
+        "accuracy": 0.3333333333333333,
+        "status": {
+          "complete": 10,
+          "unfinished_thinking": 2
+        },
+        "unparseable": 2,
+        "length_stops": 2,
+        "output_tokens": 45578,
+        "generation_seconds": 1153.0552136879996
+      }
+    }
+  },
+  "paired_differences": {
+    "gsm8k_train": {
+      "difference_3b_minus_1b": 0.08333333333333333,
+      "exploratory_95_interval": [
+        -0.125,
+        0.3333333333333333
+      ],
+      "problem_count": 24,
+      "complete_pairs": 24
+    },
+    "ifbench": {
+      "difference_3b_minus_1b": 0.4166666666666667,
+      "exploratory_95_interval": [
+        0.16666666666666666,
+        0.6666666666666666
+      ],
+      "problem_count": 12,
+      "complete_pairs": 12
+    },
+    "mmlu_pro": {
+      "difference_3b_minus_1b": 0.2857142857142857,
+      "exploratory_95_interval": [
+        0.14285714285714285,
+        0.4642857142857143
+      ],
+      "problem_count": 28,
+      "complete_pairs": 28
+    },
+    "musr": {
+      "difference_3b_minus_1b": 0.3333333333333333,
+      "exploratory_95_interval": [
+        0.08333333333333333,
+        0.5833333333333334
+      ],
+      "problem_count": 12,
+      "complete_pairs": 12
+    }
+  },
+  "grades": [
+    {
+      "id": "gsm8k_train/1393",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "1d11864be5f31eb4b1e7f0f6300e9e41e746f71615a8ee62044b0fa498345a41",
+      "answer": "80",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 117,
+      "input_tokens": 96,
+      "seconds": 3.2763294650000034
+    },
+    {
+      "id": "gsm8k_train/6198",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "6d115e1234e704e26e97354a88b99b797da3676808665138e7c23b2b36b477f6",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 102,
+      "input_tokens": 86,
+      "seconds": 2.492326212000023
+    },
+    {
+      "id": "gsm8k_train/1792",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "1303f6c0a64783b91ac323b856ed4868644d2fed0486f9135ef8eaa156a525a9",
+      "answer": "290",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 140,
+      "input_tokens": 108,
+      "seconds": 3.4792826509999486
+    },
+    {
+      "id": "gsm8k_train/2790",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "a463e2fa16bf118ad858449eadca8fea264d6656afb5eba8d514e95cfdd1d81d",
+      "answer": "2100",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 126,
+      "input_tokens": 88,
+      "seconds": 3.113330970999982
+    },
+    {
+      "id": "gsm8k_train/3626",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "5b9f63e9d0b53ca241bd8a2dd1f8a8b4f21a4072d5f5cdb3957bd8fe5bb1ef5c",
+      "answer": "3",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 172,
+      "input_tokens": 133,
+      "seconds": 4.258441819000041
+    },
+    {
+      "id": "gsm8k_train/5832",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "084def622cbf3a5b8de2733e1347ab3fd06cd0eaa0c73973ef2243a06c32662b",
+      "answer": "17",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 67,
+      "input_tokens": 94,
+      "seconds": 1.6637296510000397
+    },
+    {
+      "id": "gsm8k_train/2774",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "971a1d23aebd1c8a18cf4edcc2aa680685c1348fd763ee70c048a0c13888ad2b",
+      "answer": "5",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 185,
+      "input_tokens": 94,
+      "seconds": 4.512464220999959
+    },
+    {
+      "id": "gsm8k_train/5474",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "059e0521171f5cb59bcadcf985f3c573bf38f0197d5bb7b797cf201d2d526187",
+      "answer": "41",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 162,
+      "input_tokens": 96,
+      "seconds": 4.016826446000039
+    },
+    {
+      "id": "gsm8k_train/2562",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "d50434d273f9cd3efffe2443e1681daa4a6a264c7c1548a4f4ce99a0619ee91f",
+      "answer": "3",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 184,
+      "input_tokens": 78,
+      "seconds": 4.49792856900001
+    },
+    {
+      "id": "gsm8k_train/732",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "39183cc30aaccd10eed436654627490df3c804f7dc1b7cc816caaf1435466ddd",
+      "answer": "32000",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 166,
+      "input_tokens": 90,
+      "seconds": 4.048756123999965
+    },
+    {
+      "id": "gsm8k_train/1964",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "ab2801b0332a13613c3f51c5b11db97ac783e149fd0979a120c618262b4f2840",
+      "answer": "6",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 76,
+      "input_tokens": 86,
+      "seconds": 1.8785559729999477
+    },
+    {
+      "id": "gsm8k_train/1101",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "37365ecdb1e924d49656f14b59e02020e5d741a7562e6a402e436e99db94c06e",
+      "answer": "71",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 162,
+      "input_tokens": 100,
+      "seconds": 3.9608875049999597
+    },
+    {
+      "id": "gsm8k_train/5138",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "e22aea1264e8ef3ad8e690438b7d5cd3ee9ae61c32dfa2dfda5d89fa86b34604",
+      "answer": "60",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 125,
+      "input_tokens": 83,
+      "seconds": 3.109312487000011
+    },
+    {
+      "id": "gsm8k_train/7231",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "7a1631a0135951a13d2e69f2477f6ef799068918279c4f8670f6a214ae5345fe",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 101,
+      "input_tokens": 78,
+      "seconds": 2.4808736640000006
+    },
+    {
+      "id": "gsm8k_train/2581",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "85aca5ebb3d45e054c371cba74f76636b8091549b1de43d396891aebaf461504",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 87,
+      "input_tokens": 95,
+      "seconds": 2.1411025950000067
+    },
+    {
+      "id": "gsm8k_train/2008",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "ee898be54d7eba62f3270a3e11db7d8ac9a62527d53cd3ce255ab853353accb4",
+      "answer": "14",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 121,
+      "input_tokens": 81,
+      "seconds": 2.9907070159999876
+    },
+    {
+      "id": "gsm8k_train/3839",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "decd64228abcbee96b912af5fb112b29f9065470a72e6961e3ba3052d7eff913",
+      "answer": "6",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 76,
+      "input_tokens": 92,
+      "seconds": 1.8810954190000189
+    },
+    {
+      "id": "gsm8k_train/3231",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "509a6e23ef52c46c179ac05a0ddae3f854e73e528a5c2cc6896d6e0e0c497508",
+      "answer": "45",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 157,
+      "input_tokens": 108,
+      "seconds": 3.8912890039999866
+    },
+    {
+      "id": "gsm8k_train/515",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "13a35ef379ac970345c08937fa8e89120a1fc58c05a8115acea94c6f39df8761",
+      "answer": "60",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 167,
+      "input_tokens": 139,
+      "seconds": 4.096568176999995
+    },
+    {
+      "id": "gsm8k_train/5382",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "19b8bf6ffc5a6c61bdf1de462549496c7c6d82aebba6623d82b0e2ad2a5316fa",
+      "answer": "45",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 190,
+      "input_tokens": 138,
+      "seconds": 4.698642014000029
+    },
+    {
+      "id": "gsm8k_train/6323",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "2882d208c42c04d5f82efaf521b3aaea6c97ec7003ffe47332e3e03159b349cb",
+      "answer": "72",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 192,
+      "input_tokens": 112,
+      "seconds": 4.730415499999992
+    },
+    {
+      "id": "gsm8k_train/401",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "7a69de2ff2f74f6ce1a363aa080aa8650b402092991d8189a5bc655938dad419",
+      "answer": "13",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 91,
+      "input_tokens": 113,
+      "seconds": 2.256020380999985
+    },
+    {
+      "id": "gsm8k_train/7376",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "debd0e0533576deae480eee201495e31b7960a8718b18e453fa60586e10ec0a0",
+      "answer": "20",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 23,
+      "input_tokens": 131,
+      "seconds": 0.5735852640000303
+    },
+    {
+      "id": "gsm8k_train/5760",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "f4feba06f255db64485e4de8c3a3ed89c11f4a0fb20655abf52688f55619fb83",
+      "answer": "24",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 194,
+      "input_tokens": 104,
+      "seconds": 4.812338891000024
+    },
+    {
+      "id": "ifbench/57",
+      "task": "ifbench",
+      "family": "instruction_following",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "3c19e3b95beca0af4b6c2827b8a3e8b9c538a2b17373a77459e65fd1f63b5cea",
+      "correct": false,
+      "parseable": true,
+      "strict": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "loose": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "finish_reason": "eos",
+      "output_tokens": 432,
+      "input_tokens": 50,
+      "seconds": 10.540135778999968
+    },
+    {
+      "id": "ifbench/83",
+      "task": "ifbench",
+      "family": "instruction_following",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "66b17f3767ee91cc58ad3807a96f00477a157a191439b2be636e7970abeeab2c",
+      "correct": true,
+      "parseable": true,
+      "strict": {
+        "all": true,
+        "instructions": [
+          true
+        ]
+      },
+      "loose": {
+        "all": true,
+        "instructions": [
+          true
+        ]
+      },
+      "finish_reason": "eos",
+      "output_tokens": 260,
+      "input_tokens": 62,
+      "seconds": 6.44533421899996
+    },
+    {
+      "id": "ifbench/297",
+      "task": "ifbench",
+      "family": "instruction_following",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "f350135a350997ad8286112311fa7d285a408492d4e4542d9b0b49a21647500a",
+      "correct": false,
+      "parseable": true,
+      "strict": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "loose": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "finish_reason": "eos",
+      "output_tokens": 21,
+      "input_tokens": 48,
+      "seconds": 0.520467267000015
+    },
+    {
+      "id": "ifbench/207",
+      "task": "ifbench",
+      "family": "instruction_following",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "9caa31b90c2d25170ba3e8fc2ddb67218df7eca0cb44291d314537d39a4d7d4b",
+      "correct": false,
+      "parseable": true,
+      "strict": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "loose": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "finish_reason": "eos",
+      "output_tokens": 254,
+      "input_tokens": 92,
+      "seconds": 6.211614193000003
+    },
+    {
+      "id": "ifbench/296",
+      "task": "ifbench",
+      "family": "instruction_following",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "8762de5d83b223ff0e1a55f72d1dd64ea22ad7d565c79de5b786de7027452bd3",
+      "correct": true,
+      "parseable": true,
+      "strict": {
+        "all": true,
+        "instructions": [
+          true
+        ]
+      },
+      "loose": {
+        "all": true,
+        "instructions": [
+          true
+        ]
+      },
+      "finish_reason": "eos",
+      "output_tokens": 2,
+      "input_tokens": 47,
+      "seconds": 0.055043768000018645
+    },
+    {
+      "id": "ifbench/80",
+      "task": "ifbench",
+      "family": "instruction_following",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "1dd926ecb1a4b296b3f53b48a29c5cb5283630c43c25b6c88fa2fe25a7a25917",
+      "correct": false,
+      "parseable": true,
+      "strict": {
+        "all": false,
+        "instructions": [
+          true,
+          false
+        ]
+      },
+      "loose": {
+        "all": false,
+        "instructions": [
+          true,
+          false
+        ]
+      },
+      "finish_reason": "eos",
+      "output_tokens": 11,
+      "input_tokens": 69,
+      "seconds": 0.27473587999998017
+    },
+    {
+      "id": "ifbench/180",
+      "task": "ifbench",
+      "family": "instruction_following",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "2d288adfb02f9449c776d0074d62c55c5af3ed4b96e6b98e4f09496db7fde88b",
+      "correct": false,
+      "parseable": true,
+      "strict": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "loose": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "finish_reason": "eos",
+      "output_tokens": 613,
+      "input_tokens": 109,
+      "seconds": 15.154204972000002
+    },
+    {
+      "id": "ifbench/148",
+      "task": "ifbench",
+      "family": "instruction_following",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "ef0fc87ed6253cb7bf6455fb467e22e9af46db0b80f598d26dfd205909ea2ab8",
+      "correct": false,
+      "parseable": true,
+      "strict": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "loose": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "finish_reason": "eos",
+      "output_tokens": 4,
+      "input_tokens": 157,
+      "seconds": 0.10597721900001034
+    },
+    {
+      "id": "ifbench/43",
+      "task": "ifbench",
+      "family": "instruction_following",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "ba20afdf9785d345934b092d0f7c77c514a680bbacf45ea65bf2e611ab7def75",
+      "correct": false,
+      "parseable": true,
+      "strict": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "loose": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "finish_reason": "eos",
+      "output_tokens": 38,
+      "input_tokens": 128,
+      "seconds": 0.9479462070000295
+    },
+    {
+      "id": "ifbench/68",
+      "task": "ifbench",
+      "family": "instruction_following",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "48802750ad79c672a5ae4b9494ec9ecc6797d2dc264102c900e67210bb0d2560",
+      "correct": false,
+      "parseable": true,
+      "strict": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "loose": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "finish_reason": "eos",
+      "output_tokens": 170,
+      "input_tokens": 131,
+      "seconds": 4.207261475999985
+    },
+    {
+      "id": "ifbench/249",
+      "task": "ifbench",
+      "family": "instruction_following",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "4355ab81d1d67fa75415726cfe54ed19c435bee1d75795ed841f64fcfb208842",
+      "correct": false,
+      "parseable": true,
+      "strict": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "loose": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "finish_reason": "eos",
+      "output_tokens": 34,
+      "input_tokens": 99,
+      "seconds": 0.8417370430000233
+    },
+    {
+      "id": "ifbench/155",
+      "task": "ifbench",
+      "family": "instruction_following",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "75b0f52fafbd14401bad5599f840f9c092b059d10ce5bb7bd6001c4bd252a148",
+      "correct": false,
+      "parseable": true,
+      "strict": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "loose": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "finish_reason": "eos",
+      "output_tokens": 75,
+      "input_tokens": 64,
+      "seconds": 1.8607595419999825
+    },
+    {
+      "id": "mmlu_pro/20",
+      "task": "mmlu_pro",
+      "family": "biology",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "ee48cc8de2f5c05762bd84fe2aa6f1575a98c90345d1229033bba0c5f21ac333",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 117,
+      "input_tokens": 153,
+      "seconds": 2.884131453000009
+    },
+    {
+      "id": "mmlu_pro/22",
+      "task": "mmlu_pro",
+      "family": "biology",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "c3bfb3c9c8a02d30a3f81738ce14725f96499f06a013d6f6165bcf41bb04e50e",
+      "answer": "C",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 163,
+      "input_tokens": 216,
+      "seconds": 4.050915096999972
+    },
+    {
+      "id": "mmlu_pro/16",
+      "task": "mmlu_pro",
+      "family": "business",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "d7b2de3b53fd1b386cb2f4aef47e4a73d0f0ff4fca089082f7ebd95a5f18f411",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 46,
+      "input_tokens": 123,
+      "seconds": 1.1412386190000348
+    },
+    {
+      "id": "mmlu_pro/18",
+      "task": "mmlu_pro",
+      "family": "business",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "a982f96591ebe507b2be07b5773515c77b8d988305d25beece14b38cfe01c8bc",
+      "answer": "E",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 215,
+      "input_tokens": 134,
+      "seconds": 5.317144099000018
+    },
+    {
+      "id": "mmlu_pro/26",
+      "task": "mmlu_pro",
+      "family": "chemistry",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "9f70504ebda9f78fc9172a9fabcafc8dd3cef554b9657a9989d1b2b635a626d1",
+      "answer": "J",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 195,
+      "input_tokens": 281,
+      "seconds": 4.779951363000009
+    },
+    {
+      "id": "mmlu_pro/25",
+      "task": "mmlu_pro",
+      "family": "chemistry",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "d03e2a3fde7ee35b53fa76158e67b3ed3d69b086362651c140a121e5839d8e17",
+      "answer": "C",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 165,
+      "input_tokens": 129,
+      "seconds": 4.087615931000016
+    },
+    {
+      "id": "mmlu_pro/31",
+      "task": "mmlu_pro",
+      "family": "computer science",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "70c62a9e24f149493246135f3528cdbf3d1b8062a4bb70b4e281bf72b3b0162f",
+      "answer": "B",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 236,
+      "input_tokens": 184,
+      "seconds": 5.79962997399997
+    },
+    {
+      "id": "mmlu_pro/30",
+      "task": "mmlu_pro",
+      "family": "computer science",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "48e8e99ffa4e4ffc4036b1619f7c5f4627682a27b6b540123fe46680c8bc3125",
+      "answer": "F",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 133,
+      "input_tokens": 268,
+      "seconds": 3.2897245880000696
+    },
+    {
+      "id": "mmlu_pro/37",
+      "task": "mmlu_pro",
+      "family": "economics",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "823b3e07a170f625a65089586151d190252ed90a027dcb159583cccca43ffb7b",
+      "answer": "B",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 266,
+      "input_tokens": 279,
+      "seconds": 6.561832695000021
+    },
+    {
+      "id": "mmlu_pro/36",
+      "task": "mmlu_pro",
+      "family": "economics",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "1ac018549068b7a2a906edb1484a6b0eaa90e3bf45b787d354b2e1e2f37ea5d4",
+      "answer": "H",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 199,
+      "input_tokens": 164,
+      "seconds": 4.90100887199992
+    },
+    {
+      "id": "mmlu_pro/43",
+      "task": "mmlu_pro",
+      "family": "engineering",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "267753f68b232e84d1f93fd72437479ad82744d2395bc1041934020739af2fd1",
+      "answer": "J",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 264,
+      "input_tokens": 150,
+      "seconds": 6.5011359080000375
+    },
+    {
+      "id": "mmlu_pro/40",
+      "task": "mmlu_pro",
+      "family": "engineering",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "9de364667b0584fe5a8cb3f054646026c51dd275e34b279c340a777a0955c2b7",
+      "answer": "A",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 314,
+      "input_tokens": 166,
+      "seconds": 7.73408825599995
+    },
+    {
+      "id": "mmlu_pro/5",
+      "task": "mmlu_pro",
+      "family": "health",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "a826c5f80227653b795bf3473f93b459233375099bd8a4a5fae2015ffc6690af",
+      "answer": "J",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 80,
+      "input_tokens": 116,
+      "seconds": 1.9941375610000023
+    },
+    {
+      "id": "mmlu_pro/8",
+      "task": "mmlu_pro",
+      "family": "health",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "4e7a258c80c8801756675d9b0b10b80999f59cce8271aff7e5ca22c765479a72",
+      "answer": "C",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 136,
+      "input_tokens": 135,
+      "seconds": 3.3470185439999796
+    },
+    {
+      "id": "mmlu_pro/55",
+      "task": "mmlu_pro",
+      "family": "history",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "8a52ac61f29cbfdbaf6d8585c167117018058b8db940f84efb113e2a48276e42",
+      "answer": "A",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 27,
+      "input_tokens": 534,
+      "seconds": 0.6750894299999572
+    },
+    {
+      "id": "mmlu_pro/57",
+      "task": "mmlu_pro",
+      "family": "history",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "6b3cbda3764241c9c1095088fb8ff1ad1935d09c1c532895c5e47e6a0600816d",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 97,
+      "input_tokens": 320,
+      "seconds": 2.4072561230000247
+    },
+    {
+      "id": "mmlu_pro/68",
+      "task": "mmlu_pro",
+      "family": "law",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "a192e3713e7503ebee8f0408599260fe100f507e8dcfe7e76146a5b8c753d648",
+      "answer": "B",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 27,
+      "input_tokens": 112,
+      "seconds": 0.6739909709999665
+    },
+    {
+      "id": "mmlu_pro/67",
+      "task": "mmlu_pro",
+      "family": "law",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "5f5db457f4606841287cbc25fb4f8a1609efa619fe8d336ee1b1f9f48eca21fc",
+      "answer": "A",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 29,
+      "input_tokens": 121,
+      "seconds": 0.7246471079999992
+    },
+    {
+      "id": "mmlu_pro/2",
+      "task": "mmlu_pro",
+      "family": "math",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "9340be3ae1ea90034f4b5cbf982903c838d30c9c0fb1cd3c258e235b419fbb6b",
+      "answer": "A",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 271,
+      "input_tokens": 151,
+      "seconds": 6.657954601000029
+    },
+    {
+      "id": "mmlu_pro/4",
+      "task": "mmlu_pro",
+      "family": "math",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "e11e3cafbec55efa34afdf600966074b0dece5787799c9d451aa671576d9e13f",
+      "answer": "B",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 81,
+      "input_tokens": 197,
+      "seconds": 2.0285409090000712
+    },
+    {
+      "id": "mmlu_pro/51",
+      "task": "mmlu_pro",
+      "family": "other",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "3f15a049ec87861dca675ba163e011c3a41658f30f0773f0eaf674d257c6d538",
+      "answer": "B",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 201,
+      "input_tokens": 117,
+      "seconds": 4.980957538999974
+    },
+    {
+      "id": "mmlu_pro/52",
+      "task": "mmlu_pro",
+      "family": "other",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "1a00d72fa5f74fe4f396f84af0ea388691b7e471f168527e3a9e676f9dfd3ef1",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 95,
+      "input_tokens": 165,
+      "seconds": 2.3668285090000154
+    },
+    {
+      "id": "mmlu_pro/47",
+      "task": "mmlu_pro",
+      "family": "philosophy",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "f74e8ee2bc9c8d155927d5c28d5b9287b8441cb2f12170b6aa92097999f44c22",
+      "answer": "B",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 37,
+      "input_tokens": 126,
+      "seconds": 0.9202171949999638
+    },
+    {
+      "id": "mmlu_pro/45",
+      "task": "mmlu_pro",
+      "family": "philosophy",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "0d8a4eb264ee9978f7ee24ef945f815def861f46d2c3bc4d9a0684c90ca482ec",
+      "answer": "C",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 350,
+      "input_tokens": 150,
+      "seconds": 8.662646628999937
+    },
+    {
+      "id": "mmlu_pro/10",
+      "task": "mmlu_pro",
+      "family": "physics",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "6161a3620b32e9c4646fe7f65fccbc6160cf1318d4cadd3df0796f7df18cc9ce",
+      "answer": "C",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 260,
+      "input_tokens": 157,
+      "seconds": 6.452967348000016
+    },
+    {
+      "id": "mmlu_pro/13",
+      "task": "mmlu_pro",
+      "family": "physics",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "53e23e3f2729acdde72d2f3ea6f6b4d34f89230c2d7943362c0341927c810c77",
+      "answer": "E",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 72,
+      "input_tokens": 102,
+      "seconds": 1.7818346000000247
+    },
+    {
+      "id": "mmlu_pro/63",
+      "task": "mmlu_pro",
+      "family": "psychology",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "f7ab60816e8a3613b63b4772ec0ddf1b23641047250c25efd33bedad769d924e",
+      "answer": "J",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 37,
+      "input_tokens": 152,
+      "seconds": 0.923379647000047
+    },
+    {
+      "id": "mmlu_pro/62",
+      "task": "mmlu_pro",
+      "family": "psychology",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "94bb8d860c5d26e3b73009a66930f5c2e4b62f09eb47cc87ce80e9b28d1534a9",
+      "answer": "A",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 137,
+      "input_tokens": 167,
+      "seconds": 3.426704129999962
+    },
+    {
+      "id": "musr/murder_mystery/73",
+      "task": "musr",
+      "family": "murder_mystery",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "c72160ca96cfbce5bc5382fa467facfd5aef069493134dfb56feb01f149f67ca",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 104,
+      "input_tokens": 1164,
+      "seconds": 2.6009949809999853
+    },
+    {
+      "id": "musr/murder_mystery/212",
+      "task": "musr",
+      "family": "murder_mystery",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "37838a93fc04093bf6be107f74c3e921c50315e6aa6b0a1b340434dd547775b2",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 155,
+      "input_tokens": 1087,
+      "seconds": 3.860033577000081
+    },
+    {
+      "id": "musr/murder_mystery/134",
+      "task": "musr",
+      "family": "murder_mystery",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "ed1ee057bd555f4af85e50bd252d7a6ed5dfa350de5ef15bbd2cb1f39e835e6f",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 106,
+      "input_tokens": 1137,
+      "seconds": 2.634172150999916
+    },
+    {
+      "id": "musr/murder_mystery/213",
+      "task": "musr",
+      "family": "murder_mystery",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "c6366fcda7c728cc4ffe5b8cb0083e1fafd31cc9e7a140bced634145556d4b30",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 198,
+      "input_tokens": 1193,
+      "seconds": 4.899047650000057
+    },
+    {
+      "id": "musr/object_placements/85",
+      "task": "musr",
+      "family": "object_placements",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "e2d064c2b92e640e394f76bea5b1047d131e6d16f3947eae9332b4dd7d48dff8",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 46,
+      "input_tokens": 1244,
+      "seconds": 1.1558470639999996
+    },
+    {
+      "id": "musr/object_placements/255",
+      "task": "musr",
+      "family": "object_placements",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "f9528e9da8c81d81489ed4bb50d5ed8e1f3a40de2a21ac3de29eb2b95af89aff",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 7,
+      "input_tokens": 1183,
+      "seconds": 0.18664876700006516
+    },
+    {
+      "id": "musr/object_placements/179",
+      "task": "musr",
+      "family": "object_placements",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "68d8a2c39fba43138f89c9688577d23215e8397fddd28a101d4022e7f8e5c54d",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 92,
+      "input_tokens": 948,
+      "seconds": 2.3091349860000037
+    },
+    {
+      "id": "musr/object_placements/31",
+      "task": "musr",
+      "family": "object_placements",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "ae18e04366e4311dad1f161915e89053fe818d701b828d5f42887546e506722f",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 52,
+      "input_tokens": 879,
+      "seconds": 1.302674928999977
+    },
+    {
+      "id": "musr/team_allocation/74",
+      "task": "musr",
+      "family": "team_allocation",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "91866edeabb92d48264c8434d565f19565b740d77553502e85471577eafbd0ba",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 121,
+      "input_tokens": 760,
+      "seconds": 3.0376875110000583
+    },
+    {
+      "id": "musr/team_allocation/185",
+      "task": "musr",
+      "family": "team_allocation",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "3685eec397275ce4a768c1cfa7fa76a87af0976f02ec522ee29a650824c56cd9",
+      "answer": "B",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 176,
+      "input_tokens": 695,
+      "seconds": 4.403055522000045
+    },
+    {
+      "id": "musr/team_allocation/165",
+      "task": "musr",
+      "family": "team_allocation",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "7ba87c09e8b707aef86e3a49324883bb6b63566fdf51448709698526ba8418b9",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 152,
+      "input_tokens": 748,
+      "seconds": 3.758639842999969
+    },
+    {
+      "id": "musr/team_allocation/2",
+      "task": "musr",
+      "family": "team_allocation",
+      "model": "granite_4_0_1b",
+      "status": "complete",
+      "prompt_sha256": "49605a0529afd23c49f693ddac44395b1eedea514296d868b5b76764da446bb2",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 101,
+      "input_tokens": 665,
+      "seconds": 2.527138217000015
+    },
+    {
+      "id": "gsm8k_train/1393",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "1d11864be5f31eb4b1e7f0f6300e9e41e746f71615a8ee62044b0fa498345a41",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "length",
+      "output_tokens": 8192,
+      "input_tokens": 83,
+      "seconds": 208.50620580199995
+    },
+    {
+      "id": "gsm8k_train/6198",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "6d115e1234e704e26e97354a88b99b797da3676808665138e7c23b2b36b477f6",
+      "answer": "26",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 313,
+      "input_tokens": 73,
+      "seconds": 7.9398028279999835
+    },
+    {
+      "id": "gsm8k_train/1792",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "1303f6c0a64783b91ac323b856ed4868644d2fed0486f9135ef8eaa156a525a9",
+      "answer": "390",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 2819,
+      "input_tokens": 95,
+      "seconds": 72.18567881500007
+    },
+    {
+      "id": "gsm8k_train/2790",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "a463e2fa16bf118ad858449eadca8fea264d6656afb5eba8d514e95cfdd1d81d",
+      "answer": "455",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 1210,
+      "input_tokens": 75,
+      "seconds": 30.783318148000035
+    },
+    {
+      "id": "gsm8k_train/3626",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "5b9f63e9d0b53ca241bd8a2dd1f8a8b4f21a4072d5f5cdb3957bd8fe5bb1ef5c",
+      "answer": "3",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 819,
+      "input_tokens": 120,
+      "seconds": 20.854094885999984
+    },
+    {
+      "id": "gsm8k_train/5832",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "084def622cbf3a5b8de2733e1347ab3fd06cd0eaa0c73973ef2243a06c32662b",
+      "answer": "17",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 417,
+      "input_tokens": 81,
+      "seconds": 10.604055314999869
+    },
+    {
+      "id": "gsm8k_train/2774",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "971a1d23aebd1c8a18cf4edcc2aa680685c1348fd763ee70c048a0c13888ad2b",
+      "answer": "5",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 431,
+      "input_tokens": 81,
+      "seconds": 10.941581434
+    },
+    {
+      "id": "gsm8k_train/5474",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "059e0521171f5cb59bcadcf985f3c573bf38f0197d5bb7b797cf201d2d526187",
+      "answer": "41",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 439,
+      "input_tokens": 83,
+      "seconds": 11.187051196000084
+    },
+    {
+      "id": "gsm8k_train/2562",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "d50434d273f9cd3efffe2443e1681daa4a6a264c7c1548a4f4ce99a0619ee91f",
+      "answer": "3",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 647,
+      "input_tokens": 65,
+      "seconds": 16.467715322999993
+    },
+    {
+      "id": "gsm8k_train/732",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "39183cc30aaccd10eed436654627490df3c804f7dc1b7cc816caaf1435466ddd",
+      "answer": "32000",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 422,
+      "input_tokens": 77,
+      "seconds": 10.73465668300014
+    },
+    {
+      "id": "gsm8k_train/1964",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "ab2801b0332a13613c3f51c5b11db97ac783e149fd0979a120c618262b4f2840",
+      "answer": "6",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 253,
+      "input_tokens": 73,
+      "seconds": 6.437324776999958
+    },
+    {
+      "id": "gsm8k_train/1101",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "37365ecdb1e924d49656f14b59e02020e5d741a7562e6a402e436e99db94c06e",
+      "answer": "71",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 735,
+      "input_tokens": 87,
+      "seconds": 18.749079504999827
+    },
+    {
+      "id": "gsm8k_train/5138",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "e22aea1264e8ef3ad8e690438b7d5cd3ee9ae61c32dfa2dfda5d89fa86b34604",
+      "answer": "60",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 362,
+      "input_tokens": 70,
+      "seconds": 9.329105611999921
+    },
+    {
+      "id": "gsm8k_train/7231",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "7a1631a0135951a13d2e69f2477f6ef799068918279c4f8670f6a214ae5345fe",
+      "answer": "20",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 182,
+      "input_tokens": 65,
+      "seconds": 4.660066911000058
+    },
+    {
+      "id": "gsm8k_train/2581",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "85aca5ebb3d45e054c371cba74f76636b8091549b1de43d396891aebaf461504",
+      "answer": "44",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 273,
+      "input_tokens": 82,
+      "seconds": 6.933368508000058
+    },
+    {
+      "id": "gsm8k_train/2008",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "ee898be54d7eba62f3270a3e11db7d8ac9a62527d53cd3ce255ab853353accb4",
+      "answer": "14",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 475,
+      "input_tokens": 68,
+      "seconds": 12.128089759999966
+    },
+    {
+      "id": "gsm8k_train/3839",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "decd64228abcbee96b912af5fb112b29f9065470a72e6961e3ba3052d7eff913",
+      "answer": "6",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 1041,
+      "input_tokens": 79,
+      "seconds": 26.52651904000004
+    },
+    {
+      "id": "gsm8k_train/3231",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "509a6e23ef52c46c179ac05a0ddae3f854e73e528a5c2cc6896d6e0e0c497508",
+      "answer": "45",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 951,
+      "input_tokens": 95,
+      "seconds": 24.458910855999875
+    },
+    {
+      "id": "gsm8k_train/515",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "13a35ef379ac970345c08937fa8e89120a1fc58c05a8115acea94c6f39df8761",
+      "answer": "24",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 1382,
+      "input_tokens": 126,
+      "seconds": 35.15285401599999
+    },
+    {
+      "id": "gsm8k_train/5382",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "19b8bf6ffc5a6c61bdf1de462549496c7c6d82aebba6623d82b0e2ad2a5316fa",
+      "answer": "45",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 734,
+      "input_tokens": 125,
+      "seconds": 18.905723456000032
+    },
+    {
+      "id": "gsm8k_train/6323",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "2882d208c42c04d5f82efaf521b3aaea6c97ec7003ffe47332e3e03159b349cb",
+      "answer": "72",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 720,
+      "input_tokens": 99,
+      "seconds": 18.35405148199993
+    },
+    {
+      "id": "gsm8k_train/401",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "7a69de2ff2f74f6ce1a363aa080aa8650b402092991d8189a5bc655938dad419",
+      "answer": "13",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 317,
+      "input_tokens": 100,
+      "seconds": 8.071473231000027
+    },
+    {
+      "id": "gsm8k_train/7376",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "debd0e0533576deae480eee201495e31b7960a8718b18e453fa60586e10ec0a0",
+      "answer": "10",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 569,
+      "input_tokens": 118,
+      "seconds": 14.492647181999928
+    },
+    {
+      "id": "gsm8k_train/5760",
+      "task": "gsm8k_train",
+      "family": "arithmetic",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "f4feba06f255db64485e4de8c3a3ed89c11f4a0fb20655abf52688f55619fb83",
+      "answer": "24",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 748,
+      "input_tokens": 91,
+      "seconds": 19.040836650999836
+    },
+    {
+      "id": "ifbench/57",
+      "task": "ifbench",
+      "family": "instruction_following",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "3c19e3b95beca0af4b6c2827b8a3e8b9c538a2b17373a77459e65fd1f63b5cea",
+      "correct": true,
+      "parseable": true,
+      "strict": {
+        "all": true,
+        "instructions": [
+          true
+        ]
+      },
+      "loose": {
+        "all": true,
+        "instructions": [
+          true
+        ]
+      },
+      "finish_reason": "eos",
+      "output_tokens": 3955,
+      "input_tokens": 35,
+      "seconds": 101.10053885300022
+    },
+    {
+      "id": "ifbench/83",
+      "task": "ifbench",
+      "family": "instruction_following",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "66b17f3767ee91cc58ad3807a96f00477a157a191439b2be636e7970abeeab2c",
+      "correct": true,
+      "parseable": true,
+      "strict": {
+        "all": true,
+        "instructions": [
+          true
+        ]
+      },
+      "loose": {
+        "all": true,
+        "instructions": [
+          true
+        ]
+      },
+      "finish_reason": "eos",
+      "output_tokens": 815,
+      "input_tokens": 47,
+      "seconds": 20.817253757000117
+    },
+    {
+      "id": "ifbench/297",
+      "task": "ifbench",
+      "family": "instruction_following",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "f350135a350997ad8286112311fa7d285a408492d4e4542d9b0b49a21647500a",
+      "correct": true,
+      "parseable": true,
+      "strict": {
+        "all": true,
+        "instructions": [
+          true
+        ]
+      },
+      "loose": {
+        "all": true,
+        "instructions": [
+          true
+        ]
+      },
+      "finish_reason": "eos",
+      "output_tokens": 7601,
+      "input_tokens": 33,
+      "seconds": 194.2655886770001
+    },
+    {
+      "id": "ifbench/207",
+      "task": "ifbench",
+      "family": "instruction_following",
+      "model": "granite_4_2_3b",
+      "status": "unfinished_thinking",
+      "prompt_sha256": "9caa31b90c2d25170ba3e8fc2ddb67218df7eca0cb44291d314537d39a4d7d4b",
+      "correct": false,
+      "parseable": false,
+      "strict": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "loose": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "finish_reason": "length",
+      "output_tokens": 8192,
+      "input_tokens": 77,
+      "seconds": 208.7248018539999
+    },
+    {
+      "id": "ifbench/296",
+      "task": "ifbench",
+      "family": "instruction_following",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "8762de5d83b223ff0e1a55f72d1dd64ea22ad7d565c79de5b786de7027452bd3",
+      "correct": true,
+      "parseable": true,
+      "strict": {
+        "all": true,
+        "instructions": [
+          true
+        ]
+      },
+      "loose": {
+        "all": true,
+        "instructions": [
+          true
+        ]
+      },
+      "finish_reason": "eos",
+      "output_tokens": 633,
+      "input_tokens": 32,
+      "seconds": 16.18646856800001
+    },
+    {
+      "id": "ifbench/80",
+      "task": "ifbench",
+      "family": "instruction_following",
+      "model": "granite_4_2_3b",
+      "status": "unfinished_thinking",
+      "prompt_sha256": "1dd926ecb1a4b296b3f53b48a29c5cb5283630c43c25b6c88fa2fe25a7a25917",
+      "correct": false,
+      "parseable": false,
+      "strict": {
+        "all": false,
+        "instructions": [
+          false,
+          false
+        ]
+      },
+      "loose": {
+        "all": false,
+        "instructions": [
+          false,
+          false
+        ]
+      },
+      "finish_reason": "length",
+      "output_tokens": 8192,
+      "input_tokens": 54,
+      "seconds": 209.34364732300014
+    },
+    {
+      "id": "ifbench/180",
+      "task": "ifbench",
+      "family": "instruction_following",
+      "model": "granite_4_2_3b",
+      "status": "unfinished_thinking",
+      "prompt_sha256": "2d288adfb02f9449c776d0074d62c55c5af3ed4b96e6b98e4f09496db7fde88b",
+      "correct": false,
+      "parseable": false,
+      "strict": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "loose": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "finish_reason": "length",
+      "output_tokens": 8192,
+      "input_tokens": 95,
+      "seconds": 209.12273830899994
+    },
+    {
+      "id": "ifbench/148",
+      "task": "ifbench",
+      "family": "instruction_following",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "ef0fc87ed6253cb7bf6455fb467e22e9af46db0b80f598d26dfd205909ea2ab8",
+      "correct": false,
+      "parseable": true,
+      "strict": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "loose": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "finish_reason": "eos",
+      "output_tokens": 849,
+      "input_tokens": 143,
+      "seconds": 21.677238651000152
+    },
+    {
+      "id": "ifbench/43",
+      "task": "ifbench",
+      "family": "instruction_following",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "ba20afdf9785d345934b092d0f7c77c514a680bbacf45ea65bf2e611ab7def75",
+      "correct": true,
+      "parseable": true,
+      "strict": {
+        "all": true,
+        "instructions": [
+          true
+        ]
+      },
+      "loose": {
+        "all": true,
+        "instructions": [
+          true
+        ]
+      },
+      "finish_reason": "eos",
+      "output_tokens": 3245,
+      "input_tokens": 114,
+      "seconds": 83.2301410189998
+    },
+    {
+      "id": "ifbench/68",
+      "task": "ifbench",
+      "family": "instruction_following",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "48802750ad79c672a5ae4b9494ec9ecc6797d2dc264102c900e67210bb0d2560",
+      "correct": true,
+      "parseable": true,
+      "strict": {
+        "all": true,
+        "instructions": [
+          true
+        ]
+      },
+      "loose": {
+        "all": true,
+        "instructions": [
+          true
+        ]
+      },
+      "finish_reason": "eos",
+      "output_tokens": 2466,
+      "input_tokens": 117,
+      "seconds": 63.03740618799975
+    },
+    {
+      "id": "ifbench/249",
+      "task": "ifbench",
+      "family": "instruction_following",
+      "model": "granite_4_2_3b",
+      "status": "unfinished_thinking",
+      "prompt_sha256": "4355ab81d1d67fa75415726cfe54ed19c435bee1d75795ed841f64fcfb208842",
+      "correct": false,
+      "parseable": false,
+      "strict": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "loose": {
+        "all": false,
+        "instructions": [
+          false
+        ]
+      },
+      "finish_reason": "length",
+      "output_tokens": 8192,
+      "input_tokens": 85,
+      "seconds": 208.89621076499998
+    },
+    {
+      "id": "ifbench/155",
+      "task": "ifbench",
+      "family": "instruction_following",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "75b0f52fafbd14401bad5599f840f9c092b059d10ce5bb7bd6001c4bd252a148",
+      "correct": true,
+      "parseable": true,
+      "strict": {
+        "all": true,
+        "instructions": [
+          true
+        ]
+      },
+      "loose": {
+        "all": true,
+        "instructions": [
+          true
+        ]
+      },
+      "finish_reason": "eos",
+      "output_tokens": 2487,
+      "input_tokens": 49,
+      "seconds": 63.401462430000265
+    },
+    {
+      "id": "mmlu_pro/20",
+      "task": "mmlu_pro",
+      "family": "biology",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "ee48cc8de2f5c05762bd84fe2aa6f1575a98c90345d1229033bba0c5f21ac333",
+      "answer": "B",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 1554,
+      "input_tokens": 151,
+      "seconds": 39.7592259969997
+    },
+    {
+      "id": "mmlu_pro/22",
+      "task": "mmlu_pro",
+      "family": "biology",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "c3bfb3c9c8a02d30a3f81738ce14725f96499f06a013d6f6165bcf41bb04e50e",
+      "answer": "I",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 1307,
+      "input_tokens": 211,
+      "seconds": 33.289777247000075
+    },
+    {
+      "id": "mmlu_pro/16",
+      "task": "mmlu_pro",
+      "family": "business",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "d7b2de3b53fd1b386cb2f4aef47e4a73d0f0ff4fca089082f7ebd95a5f18f411",
+      "answer": "D",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 365,
+      "input_tokens": 113,
+      "seconds": 9.312698131000161
+    },
+    {
+      "id": "mmlu_pro/18",
+      "task": "mmlu_pro",
+      "family": "business",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "a982f96591ebe507b2be07b5773515c77b8d988305d25beece14b38cfe01c8bc",
+      "answer": "C",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 522,
+      "input_tokens": 132,
+      "seconds": 13.323911226000291
+    },
+    {
+      "id": "mmlu_pro/26",
+      "task": "mmlu_pro",
+      "family": "chemistry",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "9f70504ebda9f78fc9172a9fabcafc8dd3cef554b9657a9989d1b2b635a626d1",
+      "answer": "J",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 2650,
+      "input_tokens": 269,
+      "seconds": 67.51819104900005
+    },
+    {
+      "id": "mmlu_pro/25",
+      "task": "mmlu_pro",
+      "family": "chemistry",
+      "model": "granite_4_2_3b",
+      "status": "unfinished_thinking",
+      "prompt_sha256": "d03e2a3fde7ee35b53fa76158e67b3ed3d69b086362651c140a121e5839d8e17",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "length",
+      "output_tokens": 8192,
+      "input_tokens": 119,
+      "seconds": 208.9286234279998
+    },
+    {
+      "id": "mmlu_pro/31",
+      "task": "mmlu_pro",
+      "family": "computer science",
+      "model": "granite_4_2_3b",
+      "status": "unfinished_thinking",
+      "prompt_sha256": "70c62a9e24f149493246135f3528cdbf3d1b8062a4bb70b4e281bf72b3b0162f",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "length",
+      "output_tokens": 8192,
+      "input_tokens": 173,
+      "seconds": 209.70205691299998
+    },
+    {
+      "id": "mmlu_pro/30",
+      "task": "mmlu_pro",
+      "family": "computer science",
+      "model": "granite_4_2_3b",
+      "status": "unfinished_thinking",
+      "prompt_sha256": "48e8e99ffa4e4ffc4036b1619f7c5f4627682a27b6b540123fe46680c8bc3125",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "length",
+      "output_tokens": 8192,
+      "input_tokens": 263,
+      "seconds": 209.19478213000002
+    },
+    {
+      "id": "mmlu_pro/37",
+      "task": "mmlu_pro",
+      "family": "economics",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "823b3e07a170f625a65089586151d190252ed90a027dcb159583cccca43ffb7b",
+      "answer": "H",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 3156,
+      "input_tokens": 273,
+      "seconds": 80.65180936999968
+    },
+    {
+      "id": "mmlu_pro/36",
+      "task": "mmlu_pro",
+      "family": "economics",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "1ac018549068b7a2a906edb1484a6b0eaa90e3bf45b787d354b2e1e2f37ea5d4",
+      "answer": "H",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 1292,
+      "input_tokens": 151,
+      "seconds": 33.04989446500031
+    },
+    {
+      "id": "mmlu_pro/43",
+      "task": "mmlu_pro",
+      "family": "engineering",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "267753f68b232e84d1f93fd72437479ad82744d2395bc1041934020739af2fd1",
+      "answer": "I",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 3497,
+      "input_tokens": 147,
+      "seconds": 89.25748546700015
+    },
+    {
+      "id": "mmlu_pro/40",
+      "task": "mmlu_pro",
+      "family": "engineering",
+      "model": "granite_4_2_3b",
+      "status": "unfinished_thinking",
+      "prompt_sha256": "9de364667b0584fe5a8cb3f054646026c51dd275e34b279c340a777a0955c2b7",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "length",
+      "output_tokens": 8192,
+      "input_tokens": 163,
+      "seconds": 210.29686123600004
+    },
+    {
+      "id": "mmlu_pro/5",
+      "task": "mmlu_pro",
+      "family": "health",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "a826c5f80227653b795bf3473f93b459233375099bd8a4a5fae2015ffc6690af",
+      "answer": "J",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 410,
+      "input_tokens": 104,
+      "seconds": 10.539093477000279
+    },
+    {
+      "id": "mmlu_pro/8",
+      "task": "mmlu_pro",
+      "family": "health",
+      "model": "granite_4_2_3b",
+      "status": "unfinished_thinking",
+      "prompt_sha256": "4e7a258c80c8801756675d9b0b10b80999f59cce8271aff7e5ca22c765479a72",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "length",
+      "output_tokens": 8192,
+      "input_tokens": 123,
+      "seconds": 210.4885716179997
+    },
+    {
+      "id": "mmlu_pro/55",
+      "task": "mmlu_pro",
+      "family": "history",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "8a52ac61f29cbfdbaf6d8585c167117018058b8db940f84efb113e2a48276e42",
+      "answer": "A",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 874,
+      "input_tokens": 532,
+      "seconds": 22.46240356599992
+    },
+    {
+      "id": "mmlu_pro/57",
+      "task": "mmlu_pro",
+      "family": "history",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "6b3cbda3764241c9c1095088fb8ff1ad1935d09c1c532895c5e47e6a0600816d",
+      "answer": "E",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 1687,
+      "input_tokens": 314,
+      "seconds": 43.240458416000365
+    },
+    {
+      "id": "mmlu_pro/68",
+      "task": "mmlu_pro",
+      "family": "law",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "a192e3713e7503ebee8f0408599260fe100f507e8dcfe7e76146a5b8c753d648",
+      "answer": "C",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 1904,
+      "input_tokens": 111,
+      "seconds": 48.849699608000265
+    },
+    {
+      "id": "mmlu_pro/67",
+      "task": "mmlu_pro",
+      "family": "law",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "5f5db457f4606841287cbc25fb4f8a1609efa619fe8d336ee1b1f9f48eca21fc",
+      "answer": "J",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 1125,
+      "input_tokens": 109,
+      "seconds": 28.911086045000047
+    },
+    {
+      "id": "mmlu_pro/2",
+      "task": "mmlu_pro",
+      "family": "math",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "9340be3ae1ea90034f4b5cbf982903c838d30c9c0fb1cd3c258e235b419fbb6b",
+      "answer": "E",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 1374,
+      "input_tokens": 139,
+      "seconds": 35.30417353699977
+    },
+    {
+      "id": "mmlu_pro/4",
+      "task": "mmlu_pro",
+      "family": "math",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "e11e3cafbec55efa34afdf600966074b0dece5787799c9d451aa671576d9e13f",
+      "answer": "B",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 305,
+      "input_tokens": 195,
+      "seconds": 7.8378621470001235
+    },
+    {
+      "id": "mmlu_pro/51",
+      "task": "mmlu_pro",
+      "family": "other",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "3f15a049ec87861dca675ba163e011c3a41658f30f0773f0eaf674d257c6d538",
+      "answer": "B",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 950,
+      "input_tokens": 106,
+      "seconds": 24.507253587999912
+    },
+    {
+      "id": "mmlu_pro/52",
+      "task": "mmlu_pro",
+      "family": "other",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "1a00d72fa5f74fe4f396f84af0ea388691b7e471f168527e3a9e676f9dfd3ef1",
+      "answer": "B",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 259,
+      "input_tokens": 154,
+      "seconds": 6.498530142000163
+    },
+    {
+      "id": "mmlu_pro/47",
+      "task": "mmlu_pro",
+      "family": "philosophy",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "f74e8ee2bc9c8d155927d5c28d5b9287b8441cb2f12170b6aa92097999f44c22",
+      "answer": "B",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 676,
+      "input_tokens": 116,
+      "seconds": 16.96237123300034
+    },
+    {
+      "id": "mmlu_pro/45",
+      "task": "mmlu_pro",
+      "family": "philosophy",
+      "model": "granite_4_2_3b",
+      "status": "unfinished_thinking",
+      "prompt_sha256": "0d8a4eb264ee9978f7ee24ef945f815def861f46d2c3bc4d9a0684c90ca482ec",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "length",
+      "output_tokens": 8192,
+      "input_tokens": 147,
+      "seconds": 205.68577456000003
+    },
+    {
+      "id": "mmlu_pro/10",
+      "task": "mmlu_pro",
+      "family": "physics",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "6161a3620b32e9c4646fe7f65fccbc6160cf1318d4cadd3df0796f7df18cc9ce",
+      "answer": "E",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 1623,
+      "input_tokens": 146,
+      "seconds": 40.7717006390003
+    },
+    {
+      "id": "mmlu_pro/13",
+      "task": "mmlu_pro",
+      "family": "physics",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "53e23e3f2729acdde72d2f3ea6f6b4d34f89230c2d7943362c0341927c810c77",
+      "answer": "E",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 624,
+      "input_tokens": 89,
+      "seconds": 15.695463919999384
+    },
+    {
+      "id": "mmlu_pro/63",
+      "task": "mmlu_pro",
+      "family": "psychology",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "f7ab60816e8a3613b63b4772ec0ddf1b23641047250c25efd33bedad769d924e",
+      "answer": "J",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 743,
+      "input_tokens": 153,
+      "seconds": 18.80508467100026
+    },
+    {
+      "id": "mmlu_pro/62",
+      "task": "mmlu_pro",
+      "family": "psychology",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "94bb8d860c5d26e3b73009a66930f5c2e4b62f09eb47cc87ce80e9b28d1534a9",
+      "answer": "A",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 1314,
+      "input_tokens": 155,
+      "seconds": 33.100604202000795
+    },
+    {
+      "id": "musr/murder_mystery/73",
+      "task": "musr",
+      "family": "murder_mystery",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "c72160ca96cfbce5bc5382fa467facfd5aef069493134dfb56feb01f149f67ca",
+      "answer": "A",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 5305,
+      "input_tokens": 1202,
+      "seconds": 133.69990892900023
+    },
+    {
+      "id": "musr/murder_mystery/212",
+      "task": "musr",
+      "family": "murder_mystery",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "37838a93fc04093bf6be107f74c3e921c50315e6aa6b0a1b340434dd547775b2",
+      "answer": "B",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 5304,
+      "input_tokens": 1118,
+      "seconds": 133.54879852399972
+    },
+    {
+      "id": "musr/murder_mystery/134",
+      "task": "musr",
+      "family": "murder_mystery",
+      "model": "granite_4_2_3b",
+      "status": "unfinished_thinking",
+      "prompt_sha256": "ed1ee057bd555f4af85e50bd252d7a6ed5dfa350de5ef15bbd2cb1f39e835e6f",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "length",
+      "output_tokens": 8192,
+      "input_tokens": 1194,
+      "seconds": 206.03185179499997
+    },
+    {
+      "id": "musr/murder_mystery/213",
+      "task": "musr",
+      "family": "murder_mystery",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "c6366fcda7c728cc4ffe5b8cb0083e1fafd31cc9e7a140bced634145556d4b30",
+      "answer": "A",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 3031,
+      "input_tokens": 1240,
+      "seconds": 76.29728386099941
+    },
+    {
+      "id": "musr/object_placements/85",
+      "task": "musr",
+      "family": "object_placements",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "e2d064c2b92e640e394f76bea5b1047d131e6d16f3947eae9332b4dd7d48dff8",
+      "answer": "A",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 2132,
+      "input_tokens": 1247,
+      "seconds": 54.09948731800068
+    },
+    {
+      "id": "musr/object_placements/255",
+      "task": "musr",
+      "family": "object_placements",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "f9528e9da8c81d81489ed4bb50d5ed8e1f3a40de2a21ac3de29eb2b95af89aff",
+      "answer": "C",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 476,
+      "input_tokens": 1195,
+      "seconds": 12.040833471999576
+    },
+    {
+      "id": "musr/object_placements/179",
+      "task": "musr",
+      "family": "object_placements",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "68d8a2c39fba43138f89c9688577d23215e8397fddd28a101d4022e7f8e5c54d",
+      "answer": "C",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 1476,
+      "input_tokens": 959,
+      "seconds": 37.2661970829995
+    },
+    {
+      "id": "musr/object_placements/31",
+      "task": "musr",
+      "family": "object_placements",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "ae18e04366e4311dad1f161915e89053fe818d701b828d5f42887546e506722f",
+      "answer": "C",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 1492,
+      "input_tokens": 883,
+      "seconds": 37.663237282999944
+    },
+    {
+      "id": "musr/team_allocation/74",
+      "task": "musr",
+      "family": "team_allocation",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "91866edeabb92d48264c8434d565f19565b740d77553502e85471577eafbd0ba",
+      "answer": "B",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 2335,
+      "input_tokens": 758,
+      "seconds": 59.34324103600011
+    },
+    {
+      "id": "musr/team_allocation/185",
+      "task": "musr",
+      "family": "team_allocation",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "3685eec397275ce4a768c1cfa7fa76a87af0976f02ec522ee29a650824c56cd9",
+      "answer": "A",
+      "parseable": true,
+      "correct": true,
+      "finish_reason": "eos",
+      "output_tokens": 1993,
+      "input_tokens": 695,
+      "seconds": 50.58090849400014
+    },
+    {
+      "id": "musr/team_allocation/165",
+      "task": "musr",
+      "family": "team_allocation",
+      "model": "granite_4_2_3b",
+      "status": "unfinished_thinking",
+      "prompt_sha256": "7ba87c09e8b707aef86e3a49324883bb6b63566fdf51448709698526ba8418b9",
+      "answer": null,
+      "parseable": false,
+      "correct": false,
+      "finish_reason": "length",
+      "output_tokens": 8192,
+      "input_tokens": 752,
+      "seconds": 208.77448388500034
+    },
+    {
+      "id": "musr/team_allocation/2",
+      "task": "musr",
+      "family": "team_allocation",
+      "model": "granite_4_2_3b",
+      "status": "complete",
+      "prompt_sha256": "49605a0529afd23c49f693ddac44395b1eedea514296d868b5b76764da446bb2",
+      "answer": "B",
+      "parseable": true,
+      "correct": false,
+      "finish_reason": "eos",
+      "output_tokens": 5650,
+      "input_tokens": 667,
+      "seconds": 143.70898200800002
+    }
+  ],
+  "input_files": {
+    "completion.json": "e91549fadda3821bbf2147936b3996d4b550ce22445f4fe73d11f7c9ce4b4b89",
+    "events.jsonl": "faac25208b27faac3c6b42e62f1218b5b07366f11d5ce006bdb1f7b945094125",
+    "granite_4_0_1b-hardware.json": "67ce0cfc2e3b223e8ccc7a4cdf564b1a7d5745c8278e8d8147e596e0d6cdd176",
+    "granite_4_2_3b-hardware.json": "2add258aed702a0b889b075598822aada80c864838c56dc10155860aea70f949",
+    "outputs.jsonl": "91c5acfc8fd37790298a24c8e1d706eb2608f8bc520cf6efd89d384fbd181d20",
+    "start.json": "0265dc23ffc65919adcc291e4e6c2c55a1aa362a33115d858082f85ec8816441"
+  },
+  "ifbench_evaluator_sha256": "e681a4b03a6a9dfb540fbd9ef6b963de503a5ffac557ed611c326ee385850cf6",
+  "score_type": "development diagnostic; not official benchmark or Jev improvement"
+}

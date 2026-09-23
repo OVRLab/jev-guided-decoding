@@ -38,6 +38,15 @@ cache; all generated IDs, prompt IDs and EOS outcomes are retained.
 - Granite 4.2-3B: native thinking, temperature 1.0, top-p 0.95, top-k disabled,
   8,192 new-token ceiling, seed 2301 reset per question.
 
+The new-token ceilings count the complete generated stream, including thinking
+and final-answer tokens; they are not a separate allowance for each phase.
+
+The pinned [3B model card](https://huggingface.co/ibm-granite/granite-4.2-3b/blob/e459acceac81e5fe67c07d9cfc72329a332e7eb1/README.md)
+recommends temperature 1.0/top-p 0.95 and an 8,192-token thinking ceiling, with
+increases for complex reasoning. Top-k is explicitly disabled in our manifest;
+we do not claim numerical equivalence to every serving backend or a best-quality
+search over inference settings.
+
 These are **different native-oriented profiles**, not equal compute, multiple-seed
 best-quality comparisons or a causal estimate of parameter count. Version,
 training and reasoning capability differ alongside size. The 3B runtime accepts
@@ -77,6 +86,12 @@ only after generation. Missing attempts stay in planned task denominators.
 Paired 95% bootstrap intervals use 10,000 problem resamples with seed 2301 and
 are exploratory; 12-example tasks cannot support a robust broad-superiority
 claim. No ten-task aggregate is computed from these four diagnostic rows.
+
+Post-hoc R24 disagreement inspection identifies MuSR murder cases 212 and 213
+as variants sharing an opening, characters and setting. R23's frozen problem-level
+bootstrap does not account for that dependence; retain it as an exploratory
+description, not a story-clustered confidence claim. Future untouched splits
+must exclude related scenario variants in addition to exact IDs/content duplicates.
 
 A subsequent [post-hoc choice readout](../../research/public-baseline-readout-amendment.md)
 was specified after native-output inspection and before completing the 3B arm.

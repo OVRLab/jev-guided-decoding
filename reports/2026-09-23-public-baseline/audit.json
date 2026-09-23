@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "planned": 152,
+  "received": 152,
+  "generated": 152,
+  "missing": [],
+  "complete": true,
+  "manifest_sha256": "0839013ed9bb5de0df082386a7544b7333c4fc95a9edd2a94d442c9deb8f535a",
+  "output_sha256": "91c5acfc8fd37790298a24c8e1d706eb2608f8bc520cf6efd89d384fbd181d20"
+}

@@ -402,6 +402,17 @@ preregistered correction or an official semantic benchmark. The
 [ten-task contract](benchmark-suite-contract-v1.md) and executable scorecard guard
 also prevent development/partial cells from becoming a full-suite claim.
 
+**R23 completed:** [report](../reports/2026-09-23-public-baseline/README.md).
+All 152 scheduled generations, exact tokens and full public archive replay pass.
+1B/3B primary scores are 19/24 vs 21/24 math, 2/12 vs 7/12 IFBench,
+10/28 vs 18/28 MMLU-Pro, and 0/12 vs 4/12 MuSR. The preserved, post-hoc
+whole-option readout gives 12/28 vs 18/28 MMLU-Pro and 6/12 vs 4/12 MuSR.
+3B has 13 length stops (12 unfinished thinking, one partial final answer);
+1B has none. Different profiles, exposed development data and related story
+variants preclude general larger-model or ten-task claims. Resources are deleted;
+R23 cloud $3.009959 and R24 API $0.002120 bring the cumulative estimate to
+$36.773535/$50 before tax/separate network. Local suite: 507 tests pass.
+
 ## R24 — public-answer critic diagnostic (registered 2026-09-23)
 
 - [Plan](public-critic-plan.md), [frozen inputs/labels](protocols/public-critic-v1/manifest.json).
@@ -419,3 +430,9 @@ correct answers, threshold .5; AUROC .9753. It catches 2/2 math, 15/15 MMLU-Pro
 and 4/6 MuSR errors. Every one of 60 calls succeeds, 50,475 input tokens cost
 $0.002120. Raw receipt/individual settlement audit and byte-exact public replay
 pass. All Granite answers stay unchanged; selective repair remains untested.
+
+R24 post-hoc inspection covers all five critic/reference disagreements, with no
+relabeling or extra calls. It documents flawed explanations alongside correct
+final choices and related MuSR story variants 212/213. Small descriptive intervals
+are not story-cluster adjusted; future split admission includes scenario variants.
+See the [complete inspection](../reports/2026-09-23-public-critic/disagreements.md).

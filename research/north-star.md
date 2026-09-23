@@ -216,3 +216,29 @@ source/data hashes remain intact. PR #2 has no submitted reviews or review threa
 the automated review bot remains unavailable because its quota is exhausted.
 This update changes research direction and documentation only, with no new
 quality measurement, resource allocation, model training or release.
+
+
+## First stage completed: R23/R24, 2026-09-23
+
+The [versioned ten-task contract](benchmark-suite-contract-v1.md) now records
+source pins, evaluation/admission gaps and a composer that rejects partial or
+development scorecards. It does not imply all ten evaluators are ready.
+[R23](../reports/2026-09-23-public-baseline/README.md) completes 76 development
+problems on each of original 1B and newer thinking 3B, with all 152 outputs,
+cutoffs, primary/readout differences and public replay retained.
+
+The [R24 critic diagnostic](../reports/2026-09-23-public-critic/README.md) identifies
+21/23 wrong native answers with 3/37 false flags on reference-correct answers.
+It changes no Granite output. This is evidence to test conditional error repair,
+not a demonstrated architecture improvement. Correct final decisions with flawed
+explanations and related narrative variants constrain both the repair objective
+and future split construction. The next candidate should train on natural Granite
+errors and verified repairs, measure correct-answer regressions, and demonstrate
+feedback-dependent generation against matched training and additional reasoning.
+Its layer placement, selective-call policy and broad transfer remain hypotheses.
+
+All temporary resources are deleted. New R23/R24 estimated cost is $3.01208,
+cumulative $36.77353/$50, leaving about $13.23 before tax/separate network.
+This is not a quote for the unrun full suite or the complete architecture program.
+All 507 local tests and documented archive audits pass. The earlier R22 negative
+feedback-ablation result and every prior study remain preserved.

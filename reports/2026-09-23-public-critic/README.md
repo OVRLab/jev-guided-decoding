@@ -19,6 +19,9 @@ rejection is 8.11% (2.80–21.30%), and 21 of the 24 flags identify actual wrong
 answers (87.5% precision). AUROC is 0.9753 and Brier score 0.06438. Small domain
 counts matter: two detected math mistakes do not establish perfect verification;
 MuSR has two missed errors and two false alarms among only twelve cases.
+The [complete disagreement inspection](disagreements.md) also finds related
+scenario variants and correct final choices paired with flawed explanations;
+these descriptive intervals are not adjusted for shared stories.
 
 ## What ran
 
