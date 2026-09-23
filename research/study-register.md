@@ -436,3 +436,16 @@ relabeling or extra calls. It documents flawed explanations alongside correct
 final choices and related MuSR story variants 212/213. Small descriptive intervals
 are not story-cluster adjusted; future split admission includes scenario variants.
 See the [complete inspection](../reports/2026-09-23-public-critic/disagreements.md).
+
+## R25 — Jev-gated natural-draft repair (registered 2026-09-23)
+
+- **Status:** implemented; 516 offline tests pass; live inference not started.
+- [Plan and $75 cumulative authorization](gated-repair-plan.md): reserve $14.40,
+  eight-hour single-L40S hard expiry, seven-hour worker limit, $0.25 API cap.
+- New rank-64 branch after block 19, multiplicatively gated by Jev's draft-error
+  probability; original Granite weights frozen and Granite owns all final tokens.
+- 384 public math/science training examples, 64 development cases, 192 fresh
+  evaluation cases; two seeds, matched constant training and blind/text repair,
+  real/shuffled/inverted feedback; independent reference grading and paired effects.
+- Tiny-model identity/cache/gradient behavior and bounded API negative paths pass;
+  source/data freeze and real-checkpoint admission precede quality evaluation.

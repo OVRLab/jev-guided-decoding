@@ -242,3 +242,14 @@ cumulative $36.77353/$50, leaving about $13.23 before tax/separate network.
 This is not a quote for the unrun full suite or the complete architecture program.
 All 507 local tests and documented archive audits pass. The earlier R22 negative
 feedback-ablation result and every prior study remain preserved.
+
+## Budget extension and R25, 2026-09-23
+
+The owner explicitly increased the cumulative cap to **$75**. Starting estimate
+is $36.773534922020566, leaving approximately $38.23 before tax/network. Reserve
+$14.40 for the [registered internal repair experiment](gated-repair-plan.md),
+including its hard cloud expiry and API cap. Older $50 entries are historical.
+R25 tests a direct Jev gate on a newly trained residual branch using natural
+Granite drafts from public math/science data, with matched training, blind repair,
+text feedback and feedback ablations. The full ten-task comparison remains a
+later evidence-gated stage; budget authorization is not evidence of success.
