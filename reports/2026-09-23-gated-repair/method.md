@@ -119,3 +119,28 @@ python research/diagnostics/gated_repair_data_audit.py \
   --exposed research/protocols/public-baseline-v1/cases.json \
   --save <new-audit.json>
 ```
+
+## Public replay procedure
+
+After completion and byte-verified retrieval, distribute all raw worker files,
+including adapter checkpoints and predecessor evidence, as independently hashed
+gzip files. The [replay helper](../../research/diagnostics/replay_gated_repair.py)
+rejects corrupt files, path escapes, duplicate destinations and reuse of an
+existing extraction directory. Its four tests failed first on the absent module,
+then passed; the local suite now passes 542 tests. These are artifact checks,
+not additional GPU inference or evidence of improved quality.
+
+Once the completed report's archive and four analyses are present, reproduce
+them in a fresh directory using the inference extras:
+
+```sh
+uv run --no-sync python research/diagnostics/replay_gated_repair.py \
+  --report reports/2026-09-23-gated-repair \
+  --extract results/r25-public-replay \
+  --save results/r25-public-replay-check.json
+```
+
+The helper reruns the exact token, receipt, charge, checkpoint, training-order,
+selection, primary-quality and retention/work audits. It compares complete JSON
+objects, using the verified public primary serialization for supplemental hash
+bindings. Archive replay is reproducibility, not an independent new-model run.

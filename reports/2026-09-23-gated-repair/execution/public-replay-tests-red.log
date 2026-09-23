@@ -1,0 +1,94 @@
+FFFF                                                                     [100%]
+=================================== FAILURES ===================================
+_____ test_public_extraction_verifies_binary_bytes_and_rejects_corruption ______
+
+tmp_path = PosixPath('/private/var/folders/q0/yrbrh__54_11208_rxgxhnkc0000gn/T/pytest-of-jubba/pytest-1551/test_public_extraction_verifie0')
+
+    def test_public_extraction_verifies_binary_bytes_and_rejects_corruption(tmp_path):
+>       extract = runpy.run_path(str(ROOT / "research/diagnostics/replay_gated_repair.py"))["extract"]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_gated_repair_public_replay.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repository>/research/diagnostics/replay_gated_repair.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repository>/research/diagnostics/replay_gated_repair.py'
+
+<frozen runpy>:254: FileNotFoundError
+__ test_public_extraction_rejects_path_escape_and_duplicate_targets[archive] ___
+
+tmp_path = PosixPath('/private/var/folders/q0/yrbrh__54_11208_rxgxhnkc0000gn/T/pytest-of-jubba/pytest-1551/test_public_extraction_rejects0')
+field = 'archive'
+
+    @pytest.mark.parametrize("field", ["archive", "original", "duplicate"])
+    def test_public_extraction_rejects_path_escape_and_duplicate_targets(tmp_path, field):
+>       extract = runpy.run_path(str(ROOT / "research/diagnostics/replay_gated_repair.py"))["extract"]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_gated_repair_public_replay.py:45: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repository>/research/diagnostics/replay_gated_repair.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repository>/research/diagnostics/replay_gated_repair.py'
+
+<frozen runpy>:254: FileNotFoundError
+__ test_public_extraction_rejects_path_escape_and_duplicate_targets[original] __
+
+tmp_path = PosixPath('/private/var/folders/q0/yrbrh__54_11208_rxgxhnkc0000gn/T/pytest-of-jubba/pytest-1551/test_public_extraction_rejects1')
+field = 'original'
+
+    @pytest.mark.parametrize("field", ["archive", "original", "duplicate"])
+    def test_public_extraction_rejects_path_escape_and_duplicate_targets(tmp_path, field):
+>       extract = runpy.run_path(str(ROOT / "research/diagnostics/replay_gated_repair.py"))["extract"]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_gated_repair_public_replay.py:45: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repository>/research/diagnostics/replay_gated_repair.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repository>/research/diagnostics/replay_gated_repair.py'
+
+<frozen runpy>:254: FileNotFoundError
+_ test_public_extraction_rejects_path_escape_and_duplicate_targets[duplicate] __
+
+tmp_path = PosixPath('/private/var/folders/q0/yrbrh__54_11208_rxgxhnkc0000gn/T/pytest-of-jubba/pytest-1551/test_public_extraction_rejects2')
+field = 'duplicate'
+
+    @pytest.mark.parametrize("field", ["archive", "original", "duplicate"])
+    def test_public_extraction_rejects_path_escape_and_duplicate_targets(tmp_path, field):
+>       extract = runpy.run_path(str(ROOT / "research/diagnostics/replay_gated_repair.py"))["extract"]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_gated_repair_public_replay.py:45: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repository>/research/diagnostics/replay_gated_repair.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repository>/research/diagnostics/replay_gated_repair.py'
+
+<frozen runpy>:254: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_gated_repair_public_replay.py::test_public_extraction_verifies_binary_bytes_and_rejects_corruption
+FAILED tests/test_gated_repair_public_replay.py::test_public_extraction_rejects_path_escape_and_duplicate_targets[archive]
+FAILED tests/test_gated_repair_public_replay.py::test_public_extraction_rejects_path_escape_and_duplicate_targets[original]
+FAILED tests/test_gated_repair_public_replay.py::test_public_extraction_rejects_path_escape_and_duplicate_targets[duplicate]
+4 failed in 0.04s

@@ -70,5 +70,17 @@
   "data-audit-build.log": {
     "sha256": "27692f94503cde9840c972a63859570f8fe70e0577f4cc6f6174d06eac8a644e",
     "redacted_local_paths": true
+  },
+  "public-replay-tests-red.log": {
+    "sha256": "4078e69a04820c50587448e44ad65b502a6959cc477eb7cb0f46f1a3f031cc69",
+    "redacted_local_paths": true
+  },
+  "public-replay-preflight-tests.log": {
+    "sha256": "3ffae52897408b618fd604c7632c8ebb3c3da90de97e80e3695e1128d6dbb052",
+    "redacted_local_paths": true
+  },
+  "public-replay-build.log": {
+    "sha256": "27692f94503cde9840c972a63859570f8fe70e0577f4cc6f6174d06eac8a644e",
+    "redacted_local_paths": true
   }
 }
