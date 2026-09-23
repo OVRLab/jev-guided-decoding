@@ -1,0 +1,94 @@
+FFFF                                                                     [100%]
+=================================== FAILURES ===================================
+_____ test_gate_zero_preserves_and_feedback_changes_only_repair_positions ______
+
+    def test_gate_zero_preserves_and_feedback_changes_only_repair_positions():
+        torch = pytest.importorskip('torch')
+>       m = load('bridge')
+            ^^^^^^^^^^^^^^
+
+tests/test_gated_repair.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_gated_repair.py:11: in load
+    return runpy.run_path(str(HERE / (name + '.py')))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/gated_repair/bridge.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/gated_repair/bridge.py'
+
+<frozen runpy>:254: FileNotFoundError
+______________________ test_nonzero_cached_full_agreement ______________________
+
+    def test_nonzero_cached_full_agreement():
+        torch = pytest.importorskip('torch')
+>       m = load('bridge')
+            ^^^^^^^^^^^^^^
+
+tests/test_gated_repair.py:47: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_gated_repair.py:11: in load
+    return runpy.run_path(str(HERE / (name + '.py')))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/gated_repair/bridge.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/gated_repair/bridge.py'
+
+<frozen runpy>:254: FileNotFoundError
+_ test_contracts_reject_leakage_preserve_exact_draft_and_keep_donors_separate __
+
+    def test_contracts_reject_leakage_preserve_exact_draft_and_keep_donors_separate():
+>       c = load('common')
+            ^^^^^^^^^^^^^^
+
+tests/test_gated_repair.py:61: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_gated_repair.py:11: in load
+    return runpy.run_path(str(HERE / (name + '.py')))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/gated_repair/common.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/gated_repair/common.py'
+
+<frozen runpy>:254: FileNotFoundError
+___ test_analysis_keeps_paired_recovery_damage_and_rejects_missing_duplicate ___
+
+    def test_analysis_keeps_paired_recovery_damage_and_rejects_missing_duplicate():
+>       c = load('common')
+            ^^^^^^^^^^^^^^
+
+tests/test_gated_repair.py:83: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_gated_repair.py:11: in load
+    return runpy.run_path(str(HERE / (name + '.py')))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/gated_repair/common.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/gated_repair/common.py'
+
+<frozen runpy>:254: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_gated_repair.py::test_gate_zero_preserves_and_feedback_changes_only_repair_positions
+FAILED tests/test_gated_repair.py::test_nonzero_cached_full_agreement - FileN...
+FAILED tests/test_gated_repair.py::test_contracts_reject_leakage_preserve_exact_draft_and_keep_donors_separate
+FAILED tests/test_gated_repair.py::test_analysis_keeps_paired_recovery_damage_and_rejects_missing_duplicate
+4 failed in 0.84s

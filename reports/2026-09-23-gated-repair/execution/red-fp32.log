@@ -1,0 +1,24 @@
+...F                                                                     [100%]
+=================================== FAILURES ===================================
+___ test_full_precision_revision_preserves_runtime_and_uses_strict_admission ___
+
+    def test_full_precision_revision_preserves_runtime_and_uses_strict_admission():
+        import inspect
+>       v2=runpy.run_path(str(ROOT/'research/iterations/gated_repair_fp32/runtime.py'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_gated_repair_execution.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/gated_repair_fp32/runtime.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/gated_repair_fp32/runtime.py'
+
+<frozen runpy>:254: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_gated_repair_execution.py::test_full_precision_revision_preserves_runtime_and_uses_strict_admission
+1 failed, 3 passed in 0.11s

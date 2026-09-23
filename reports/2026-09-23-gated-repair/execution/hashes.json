@@ -1,0 +1,42 @@
+{
+  "continuation-preflight-tests.log": {
+    "sha256": "c929e97aae853ae569fcaae5b81a3f989c89392fb45b18dcc526011483d2e92c",
+    "redacted_local_paths": true
+  },
+  "continuation-preflight-build.log": {
+    "sha256": "27692f94503cde9840c972a63859570f8fe70e0577f4cc6f6174d06eac8a644e",
+    "redacted_local_paths": true
+  },
+  "report-tests-red.log": {
+    "sha256": "48eed79f8f381f3ef30e2e3ced947ec45f188fd231314e3b25350fc0b929d59a",
+    "redacted_local_paths": true
+  },
+  "v3-server-bootstrap.log": {
+    "sha256": "0342e62abcba932bac7b0f31a0f215b7ef17311542c4b278238e64fdb94066b7",
+    "redacted_local_paths": true
+  },
+  "red-execution.log": {
+    "sha256": "b395b167f033dd846e84188752e6eb48aef8a5027cc3a3ab072892e4f4656144",
+    "redacted_local_paths": true
+  },
+  "red-retention.log": {
+    "sha256": "c21b0f98ffd854a3537ba8b9a6da5dcda5ec67f48325a25ddf68dc2d64fb217e",
+    "redacted_local_paths": true
+  },
+  "red-record-audit.log": {
+    "sha256": "b04f407595a49841e9d991e579632a7fb2425bd3455e3987611e80bdd22c5102",
+    "redacted_local_paths": true
+  },
+  "red.log": {
+    "sha256": "4e70bb744937589bb863e78e6b00e1866a0d5dd9c424b64c6c6a9c40320fdb74",
+    "redacted_local_paths": true
+  },
+  "red-fp32.log": {
+    "sha256": "838787a3b799e9944e21e3a036fa2a9e521cfb241457e035d5425937e66d2eb3",
+    "redacted_local_paths": true
+  },
+  "red-continuation.log": {
+    "sha256": "c994712ff869217015349766619c7b23a54265d288ec83e4a54651789a8dbc8d",
+    "redacted_local_paths": true
+  }
+}
