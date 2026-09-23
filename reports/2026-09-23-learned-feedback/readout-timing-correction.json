@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-09-23T05:43:08.264138+00:00",
+  "first_test_preparation_at": "2026-09-23T05:41:34.307017+00:00",
+  "final_test_answers": 0,
+  "original_registration_commit": "780c17e",
+  "original_protocol_sha256": "534be53479e49c45da5af495fb27226581723be5ca7e74447399a531f969154d",
+  "corrected_protocol_sha256": "065039627f34635e498d7e6d828842bcb1da4466903f48798467a42ba2248c50",
+  "grammar_unchanged": true,
+  "reason": "Backup progress lagged live worker; registration preceded final answers, not test draft preparation."
+}

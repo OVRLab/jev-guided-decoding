@@ -1,10 +1,7 @@
 # R22 descriptive complete-color readout
 
-Registered at 05:42:52 UTC while test draft preparation was underway, before
-any final test answer or aggregate test inspection. The initial timing description
-incorrectly said training was still underway; the local progress copy lagged the
-remote worker. The [timing record](../reports/2026-09-23-learned-feedback/readout-timing-correction.json)
-preserves this correction; no readout pattern or primary metric changed. Keep the primary whole-color metric and all source freezes
+Registered during the final training epoch, before test generation or aggregate
+test inspection. Keep the primary whole-color metric and all source freezes
 unchanged. This is a secondary diagnostic of answer-format confounding, not an
 extra architecture selection endpoint or a general language judge.
 
