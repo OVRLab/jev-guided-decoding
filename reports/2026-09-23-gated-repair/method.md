@@ -1,7 +1,7 @@
 # R25 mechanism and attribution
 
 This describes the registered design, not a positive result. The BF16 v1 attempt
-failed numerical admission; v2/v3 use float32 throughout. V3 explicitly records
+failed numerical admission; v2/v3/v4 use float32 throughout. V3/v4 explicitly record
 unavailable feedback as null with neutral effective 0.5, never as a Jev judgment.
 
 ```text
@@ -36,7 +36,9 @@ New repair pass and fresh cache        |
 Blocks are zero indexed. Only the final prompt position and subsequent repair
 positions receive the residual. Draft positions are never retroactively changed;
 each arm prefills the exact original token sequence into a fresh cache. Jev is
-queried once for each case, not once per layer or token. Its judgment enters
+provides one judgment for each available case, not one per layer or token. V4
+may make up to four charged attempts after explicit service overload; unavailable
+feedback is null with a separately labeled neutral effective probability. Its judgment enters
 internal hidden states without becoming an answer token or vocabulary mask.
 The text-feedback control alone receives the probability in its user instruction,
 rounded to four decimal places. All learned arms share the identical blind prompt.
@@ -71,7 +73,7 @@ This is a serial Transformers research prototype. Multi-request isolation,
 production throughput, colocated Jev weights and vLLM serving integration are not
 implemented or benchmarked by this study.
 
-The read-only `research/diagnostics/gated_repair_report.py` summarizes the
+The read-only `research/iterations/gated_repair_retry/details.py` summarizes the
 registered recovery/damage, format, cutoff and work measures after the primary
 tokenizer audit passes. Its tests were run red before implementation. It averages
 seeds inside each problem, retains unavailable-feedback cases and distinguishes
@@ -92,3 +94,28 @@ simultaneous family guarantee across all contrasts and domains. An isolated
 positive contrast remains visible even when the separate spending gate for a
 larger-model follow-up is unmet. The gate does not redefine every endpoint as a
 failure or erase partial gains.
+
+## Independent source-data audit
+
+[The source audit](data-audit.json) independently checked all 640 questions and
+references, all 384 training targets, ARC choice relabeling, source splits and
+exact normalized question overlap against five pinned upstream Parquet files.
+All checks passed. The 24 GSM8K questions exposed in R23 are excluded. This does
+not establish freedom from pretraining contamination or near-duplicate questions,
+or certify the factual correctness of the upstream labels.
+
+The helper was added while v4 was collecting training drafts, before inspection
+of held-out performance. It neither changes the frozen worker nor recomputes
+targets through the original preparation routine. Its two tests failed first
+because the new module was absent; the resulting local suite passes 538 tests.
+Reproduce with Python and PyArrow 21.0.0, using the manifest's upstream files
+named `gsm8k-train.parquet`, `gsm8k-test.parquet`, `arc-train.parquet`,
+`arc-validation.parquet` and `arc-test.parquet` in `<upstream>`:
+
+```sh
+python research/diagnostics/gated_repair_data_audit.py \
+  --freeze research/protocols/gated-repair-retry-v4 \
+  --upstream <upstream> \
+  --exposed research/protocols/public-baseline-v1/cases.json \
+  --save <new-audit.json>
+```

@@ -58,5 +58,17 @@
   "v4-server-bootstrap.log": {
     "sha256": "48f23926d7691f7a54e46619ba98a2a91f7442046b41f812c53f85799968f452",
     "redacted_local_paths": true
+  },
+  "data-audit-tests-red.log": {
+    "sha256": "42170ab8487fcd3244a2c3c3942ac94666a3465a6db9d9650a8e5d86c4a52ef5",
+    "redacted_local_paths": true
+  },
+  "data-audit-preflight-tests.log": {
+    "sha256": "ac8b0b59c4281ce64deac01ad298e93484c3bb6597ae224053d85dd7f3241f5f",
+    "redacted_local_paths": true
+  },
+  "data-audit-build.log": {
+    "sha256": "27692f94503cde9840c972a63859570f8fe70e0577f4cc6f6174d06eac8a644e",
+    "redacted_local_paths": true
   }
 }

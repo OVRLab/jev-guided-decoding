@@ -1,0 +1,42 @@
+FF                                                                       [100%]
+=================================== FAILURES ===================================
+___________ test_source_audit_checks_relabeling_targets_and_exposure ___________
+
+    def test_source_audit_checks_relabeling_targets_and_exposure():
+>       mod = runpy.run_path(str(ROOT/'research/diagnostics/gated_repair_data_audit.py'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_gated_repair_data_audit.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repository>/research/diagnostics/gated_repair_data_audit.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repository>/research/diagnostics/gated_repair_data_audit.py'
+
+<frozen runpy>:254: FileNotFoundError
+__________ test_source_audit_rejects_duplicate_or_foreign_references ___________
+
+    def test_source_audit_rejects_duplicate_or_foreign_references():
+>       mod = runpy.run_path(str(ROOT/'research/diagnostics/gated_repair_data_audit.py'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_gated_repair_data_audit.py:33: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repository>/research/diagnostics/gated_repair_data_audit.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repository>/research/diagnostics/gated_repair_data_audit.py'
+
+<frozen runpy>:254: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_gated_repair_data_audit.py::test_source_audit_checks_relabeling_targets_and_exposure
+FAILED tests/test_gated_repair_data_audit.py::test_source_audit_rejects_duplicate_or_foreign_references
+2 failed in 0.03s

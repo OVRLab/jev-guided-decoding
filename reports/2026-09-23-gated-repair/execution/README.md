@@ -20,3 +20,8 @@ audit caught a string/decimal budget-term mismatch; these were corrected before
 freezing or dispatch. Simulated-clock tests exercise real cooldown validation.
 The last four GitHub CI jobs at data freeze `6bade56` also pass. External automated
 review remains unavailable due to its reported quota; no human review is recorded.
+
+The later read-only source-data audit adds two tests: both failed first because
+the module was absent, then all **538 local tests passed in 10.36 seconds**.
+Ruff and source/wheel builds pass. The GPU worker remains at its frozen 536-test
+revision; no inference was repeated for this reporting-only addition.
