@@ -1,10 +1,11 @@
 # R25: Jev-gated natural-draft repair
 
-**Status: v1 failed numerical admission; full-precision v2 restart registered.**
+**Status: v1 failed numerical admission; v2 passed FP32 checks then was interrupted; v3 continuation frozen before training/test.**
 
-The owner increased the cumulative research cap to $75. R25 reserves $14.40 from
-$38.22647 remaining before tax/network. One L40S/16vCPU/64GiB with an 80GiB disk
-has an eight-hour poweroff timer; worker runtime is capped at seven hours.
+The owner increased the cumulative research cap to **$75**. R25 now reserves
+**$20 combined across all attempts**. Estimated cumulative use before v3 is
+**$37.690485** before tax/network. V3 uses one L40S/16vCPU/64GiB with an 80GiB
+disk, ten-hour poweroff and nine-hour worker limit. V1 limits below are historical.
 
 - [Frozen plan](../../research/gated-repair-plan.md)
 - [Source/data manifest](../../research/protocols/gated-repair-v1/manifest.json)
@@ -22,12 +23,12 @@ from GSM8K and ARC-Challenge. Two training seeds, two epochs, earliest best-dev
 checkpoint selection, and independent final-answer grading are registered. These
 two auxiliary tasks are not the project's full ten-benchmark scorecard.
 
-All 516 local tests, 516 server tests and four current CI jobs pass. Cloud admission, training,
-quality results, artifact replay, actual cost and verified deletion are pending.
+V1 passed 516 local/server tests before failing numerical admission. V2 passed
+518 server tests and real-model FP32 admission. V3 passes 527 local tests; its
+server validation, training, quality evaluation and cleanup remain pending.
 
-Worker launched 2026-09-23 at approximately 19:14 UTC, after source/data freeze
-and server tests. Automatic 45-second local backups and a separate cleanup
-supervisor are active. Initial test temporary-file writes were slow on network
+V1 launched 2026-09-23 at approximately 19:14 UTC, after source/data freeze
+and server tests, with 45-second local backups and a separate cleanup supervisor. Initial test temporary-file writes were slow on network
 storage; the original complete suite passed in 159.20 seconds before any rerun,
 so no test configuration or scientific source was changed.
 
@@ -57,7 +58,30 @@ choices in all six comparisons. Thus the earlier discrepancy also occurs without
 the intervention; it does not establish an adapter-specific cache error. These
 three training fixtures do not certify numerical equality for every sequence.
 
-V2 is running after passing this diagnostic and all 518 server tests. Its own
-admission, training and fresh quality evaluation remain in progress. See the
-[mechanism and token ownership](method.md). No scientific settings were changed
-in response to answer quality.
+V2 passed its own strict admission (max discrepancy 0.0000211000), then produced
+113 training drafts and 112 successful Jev receipts before request 113 failed.
+The exact HTTP status was not persisted and is not asserted. No optimizer,
+development selection or held-out generation ran. [All records](interrupted-v2/README.md)
+are preserved; all owned resources were deleted after verifying 20 final files.
+Known usage was 70,834 input tokens, plus a 65,536-token unknown-charge reservation.
+Cloud estimate $0.617835, conservative API $0.005728; cumulative $37.690485.
+
+## Frozen continuation v3
+
+[Source/data manifest](../../research/protocols/gated-repair-continuation-v3/manifest.json),
+[prospective amendment](../../research/gated-repair-continuation.md), source
+`10c968a`, data freeze `05d130b`. All 113 drafts and 112 valid receipts are reused
+byte exactly, with no repeated provider request or completed model job. Missing
+feedback remains null; a neutral effective value 0.5 is explicitly labeled and
+is never counted as a Jev response. Every case remains in primary evaluation.
+At most eight transient incidents are admitted including the historical failure;
+authentication, schema, integrity, unexpected errors or excess incidents stop.
+The copied API ledger retains its original $0.25 cap and all previous charges.
+
+The [retention replay](../../research/gated-repair-retention-supplement.md) was
+registered before any test and keeps native answers when valid Jev p(correct)
+is at least 0.5; the v3 addition keeps native when feedback is missing. This is
+an offline policy analysis, not measured avoided computation or API calls.
+
+See the [mechanism and token ownership](method.md). Quality is still unmeasured;
+no scientific settings were changed in response to held-out answer quality.

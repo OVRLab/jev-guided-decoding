@@ -19,13 +19,15 @@ biases inside selected Granite attention heads. Granite and Jev weights remain
 unchanged; R19 fits a small regression controller, and R22 trains a separate
 65,568-parameter internal residual adapter. No vLLM serving extension is included.
 
-[R25 gated internal repair — running](reports/2026-09-23-gated-repair/README.md):
+[R25 gated internal repair — continuation frozen](reports/2026-09-23-gated-repair/README.md):
 a 262,144-parameter branch learns from natural Granite drafts in math and science,
-with two seeds, matched training and feedback controls. A failed BF16 numerical
-admission is preserved; the separately frozen float32 restart passed its numerical
-checks and is collecting training drafts. No quality improvement is claimed yet.
-The owner raised the cumulative budget cap to **$75**; R25 reserves **$20 total**
-across both attempts. Earlier study/budget figures below are historical.
+with two seeds, matched training and feedback controls. BF16 numerical admission
+failed; FP32 passed, then a provider interruption stopped collection after 113
+training drafts and 112 valid Jev receipts, before training or held-out evaluation.
+The frozen continuation reuses that work with explicit neutral fallback on missing
+feedback. No quality improvement is claimed. The cumulative cap is **$75**, R25
+reserves **$20 across all attempts**, and estimated use is **$37.69** before the
+continuation. Earlier study/budget figures below are historical.
 
 [R23 public baseline — completed](reports/2026-09-23-public-baseline/README.md):
 76 development problems per model, all 152 outputs audited and publicly replayed.

@@ -439,8 +439,9 @@ See the [complete inspection](../reports/2026-09-23-public-critic/disagreements.
 
 ## R25 — Jev-gated natural-draft repair (registered 2026-09-23)
 
-- **Status:** running on one Nebius L40S from approximately 19:14 UTC; 516 local
-  and server tests pass; no quality result yet. [Report](../reports/2026-09-23-gated-repair/README.md).
+- **Status:** v1 failed BF16 admission; v2 passed FP32 checks then stopped after
+  113 training drafts/112 Jev receipts, before training. Both workers deleted.
+  V3 continuation frozen; 527 local tests pass, no quality result yet. [Report](../reports/2026-09-23-gated-repair/README.md).
 - [Plan and $75 cumulative authorization](gated-repair-plan.md): reserve $14.40,
   eight-hour single-L40S hard expiry, seven-hour worker limit, $0.25 API cap.
 - New rank-64 branch after block 19, multiplicatively gated by Jev's draft-error
@@ -457,3 +458,12 @@ Resources deleted, $0.293387 estimated. [V2 amendment](gated-repair-fp32-amendme
 registers float32 for every arm, unchanged data and training, strict cache checks,
 and a combined $20 R25 reserve inside $75. No unfavorable quality result was
 removed or tuned; v1 never reached quality evaluation.
+
+**R25 v2 interrupted; v3 registered:** [preserved v2 artifacts](../reports/2026-09-23-gated-repair/interrupted-v2/README.md),
+113 training drafts, 112 valid receipts, one unknown-usage failure. No optimizer,
+development selection or test ran. V3 source `10c968a`, data freeze `05d130b`;
+[amendment](gated-repair-continuation.md) preserves all prefixes and charges,
+never replays a dispatched call, and distinguishes neutral fallback from Jev.
+At most eight transient incidents including the original; fatal errors stop.
+Single L40S, nine-hour worker/ten-hour VM limit; combined R25 $20/cumulative $75.
+Estimated cumulative use before v3: $37.690485 before tax/network.

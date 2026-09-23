@@ -221,6 +221,10 @@ metrics, source revisions, admission gaps and final-scorecard rules.
 is complete: 21/23 native errors flagged, with 3/37 correct answers falsely flagged.
 This supports a selective-repair hypothesis; it does not measure repaired outputs.
 
-[R25 gated natural-draft repair](gated-repair-plan.md) is running on one Nebius L40S
-under its frozen protocol. The owner increased the cumulative cap to $75; $14.40 is
-reserved for this controlled pilot. No new quality result is claimed yet.
+[R25 gated natural-draft repair](gated-repair-plan.md) has a frozen
+[continuation](gated-repair-continuation.md): v1 failed BF16 admission; v2 passed
+FP32 admission, collected 113 training drafts/112 Jev receipts and then stopped
+on a provider failure before training. Both workers are deleted. V3 reuses all
+completed work without API replay and labels neutral missing-feedback fallbacks.
+The cumulative cap is $75, combined R25 reservation $20, estimated use $37.69
+before continuation. No quality result is claimed yet.

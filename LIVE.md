@@ -1,11 +1,12 @@
 # Verified implementation inventory
 
-[R25 internal repair](reports/2026-09-23-gated-repair/README.md): BF16 v1 stopped
-at numerical admission before any training draft or Jev call; all artifacts are
-preserved and the worker deleted. A separately frozen float32 restart is registered,
-with the same cohort and controls. Current cumulative cap is **$75**, estimated
-use **$37.07**, and the **combined R25 reservation is $20**. All 518 local tests
-pass. Quality is unmeasured; earlier stage/budget entries are historical.
+[R25 internal repair](reports/2026-09-23-gated-repair/README.md): v1 failed
+BF16 numerical admission; v2 passed FP32 checks but stopped after 113 training
+drafts and 112 Jev receipts because one request failed. No optimizer or test ran.
+Both workers are deleted and all artifacts preserved. V3 is frozen, reuses all
+completed work and explicitly accounts for unavailable feedback. All **527 local
+tests** pass; quality is unmeasured. Cumulative cap **$75**, estimated use **$37.69**,
+combined R25 reservation **$20**. Earlier stage/budget entries are historical.
 
 The [north-star direction](research/north-star.md) was recorded on 2026-09-23.
 Its ten-benchmark/larger-model scorecard remains planned; the verified results

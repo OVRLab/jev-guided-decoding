@@ -273,3 +273,15 @@ any test inference, separately checks preserving high-confidence native answers
 and repairing only Jev-flagged cases. It retains every original primary comparison
 and does not claim measured skipped execution or fewer Jev calls. Quality results
 remain pending; source and data revisions are in the [R25 report](../reports/2026-09-23-gated-repair/README.md).
+
+### R25 service continuation, registered 20:01 UTC
+
+The full-precision worker passed admission but stopped after 113 training drafts,
+112 valid Jev receipts and one unknown-usage failure, before any optimizer/test.
+All owned resources were deleted. The [v3 continuation](gated-repair-continuation.md)
+reuses exact drafts/receipts and retains maximum unknown charges without replay.
+Missing scores stay null in evidence, with a neutral effective gate explicitly
+labeled; all cases remain in primary grading. Training and held-out quality remain
+unmeasured. Estimated cumulative use is $37.690485 before v3/tax/network; the $75
+cap and combined $20 R25 reserve are unchanged. This is still a two-domain
+mechanism pilot, not the ten-benchmark/larger-model north-star result.
