@@ -1,11 +1,12 @@
 # Verified implementation inventory
 
-**R27 full-task comparisons resumed after recovery:** [live tranche](reports/2026-09-24-full-benchmark-tranche/README.md)
-covers all 198 GPQA Diamond, 300 IFBench and 30 AIME 2026 cases with original
-Granite, the frozen Jev-conditioned repair architecture, controls, Granite 3B
-and Qwen 4B. The original L40S workers passed 606 offline tests each; recovery passes 619 local tests. No fresh
-quality result is available yet. Closed-stage cost plus both open reserves is
-$95.40 within the $110 cap; active resources have automatic shutdown timers.
+**R27 larger-model comparisons remain in progress:** [live tranche](reports/2026-09-24-full-benchmark-tranche/README.md)
+has saved all original-Granite, Jev-conditioned repair and control outputs across
+198 GPQA Diamond, 300 IFBench and 30 AIME 2026 cases. GPQA stopped a second time;
+its [bounded recovery](research/benchmark-interruption-recovery-v2.md) is prepared,
+while IFBench/AIME continues. No fresh quality result is available yet.
+The cumulative admission ceiling is $105.46 within the $110 cap, before tax/network;
+634 local tests pass.
 The [R27 engineering pilot](reports/2026-09-24-benchmark-execution-pilot/README.md)
 completed and passed integrity/replay checks, with no guided gain on 18 exposed
 cases. Earlier entries below describe historical stages and their cleanup.

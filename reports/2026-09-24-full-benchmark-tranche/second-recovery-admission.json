@@ -1,0 +1,16 @@
+{
+  "cap_usd": 110,
+  "prior_closed_usd": 47.39595151031136,
+  "cloud_deadline": "2026-09-25T02:30:00+00:00",
+  "worker_deadline": "2026-09-25T02:00:00+00:00",
+  "settled_jev_usd": 0.017775408,
+  "rate_usd_hour": 1.8245808219178083,
+  "manifests": [
+    "078dd7e7a95337077adff6878ae696e64186fa36af9dc6b7729f84360b0a7947",
+    "46fa4011cf34f25a36cae2eb904fe447efa2f140dc6338723973885349bf9c24"
+  ],
+  "stream_created_at": [
+    "2026-09-24T10:31:19.980682Z",
+    "2026-09-24T10:39:49.578265Z"
+  ]
+}

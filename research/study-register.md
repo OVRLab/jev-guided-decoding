@@ -703,3 +703,20 @@ The resumed original-model cache admission passes. CPU platform/preemptibility,
 interruption overhead, explicit incomplete-job retries and unchanged absolute
 limits are documented in the [live report](../reports/2026-09-24-full-benchmark-tranche/README.md).
 No fresh benchmark quality conclusion is available yet.
+
+### R27 second recovery registered — 2026-09-24 20:05 UTC
+
+GPQA stopped again at 16:24 UTC (cause unestablished); its stopped service was
+verified after restart, with 86 larger-Granite outputs saved. IFBench/AIME continues
+without interruption, with 201/330 larger-Granite outputs at 20:16 UTC. All original,
+self-refinement and routed arms and all 528 successful Jev requests are complete.
+No fresh quality grade was inspected.
+
+The [v2 recovery amendment](benchmark-interruption-recovery-v2.md) is registered
+before new continuation inference. It preserves the frozen kernels/parents, adds
+chained ancestry and a service handoff, and replaces the per-stage reserves with
+a global $110 admission: generation until 02:00 UTC and shutdown by 02:30 UTC on
+25 September. The conservative cumulative bound is $105.46, before tax/separate
+network; it charges stopped periods at regular GPU rates. State/handoff tests first
+failed for missing implementations, then passed. Dispatch and final results remain
+pending at this registration checkpoint.

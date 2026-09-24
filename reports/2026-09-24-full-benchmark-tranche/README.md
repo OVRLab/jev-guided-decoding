@@ -1,4 +1,4 @@
-# R27 full-benchmark tranche — resumed after recovery
+# R27 full-benchmark tranche — second recovery pending
 
 **No full-task quality result is available yet.** GPQA Diamond, IFBench and AIME 2026 were dispatched on
 2026-09-24 after the audited exposed-only pilot passed. The immutable source
@@ -100,3 +100,28 @@ the entire original-to-cleanup wall time, including downtime. The existing two
 $24 reserves and cumulative $110 cap remain; final billing may be lower. Cloud
 authentication renewal may be needed for final API cleanup; an independent VM
 shutdown and SSH shutdown fallback still bound running compute if it is unavailable.
+
+## Second interruption and new bounded admission — 20:05 UTC
+
+GPQA stopped at 16:24 UTC; the cloud operation confirms the stop, but not its
+cause. After restart, its service is inactive, with 86/198 larger-Granite native
+outputs saved. IFBench/AIME stays active, reaching 201/330 larger-Granite outputs
+at 20:16 UTC. All original/guided/control generations and all 528 Jev requests
+are complete; no additional Jev request is needed or permitted. No fresh quality
+grade was inspected.
+
+The [second recovery protocol](../../research/benchmark-interruption-recovery-v2.md)
+adds a chained state adapter around the unchanged worker, keeps the active short
+worker running, and resumes it only if it exits incomplete. Earlier source/parent
+files stay unchanged. The [new admission](second-recovery-admission.json) replaces
+the two per-stage $24 reserves: generation through 02:00 UTC, VM shutdown by
+02:30 UTC on 25 September. The conservative cumulative bound is **$105.46/$110**,
+including stopped time at the regular GPU rate, before tax/separate network.
+This does not guarantee that all comparators will finish.
+
+Fifteen new offline tests cover chained preservation, budget refusal, wrapper
+source inventories, active-worker handoff and false completion. State/handoff
+tests first failed because the implementation was absent, then passed. All
+**634 local tests**, lint/format, guidance checks and build pass. Actual private
+monitor/finalizer checks also reject false progress and changed source inventories.
+Dispatch of the new continuation remains pending at this checkpoint.

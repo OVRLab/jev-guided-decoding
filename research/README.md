@@ -1,9 +1,11 @@
 # Granite + Jev research record
 
 **Live execution update:** [R27 full-task tranche](../reports/2026-09-24-full-benchmark-tranche/README.md)
-has dispatched all 198 GPQA Diamond cases with the frozen architecture, controls
-and both larger comparators. Both stages resumed after a cloud stop under the [prospective recovery plan](benchmark-interruption-recovery-v1.md), preserving completed outputs and all 528 Jev judgments. Closed-stage spend plus both
-$24 reserves is $95.40 within the $110 cap. No fresh quality result is available yet.
+has completed original/guided/control generation and 528 Jev calls on GPQA, IFBench
+and AIME; larger-model comparison remains incomplete. GPQA stopped a second time;
+the [v2 recovery amendment](benchmark-interruption-recovery-v2.md) registers bounded
+continuation within the $110 cap ($105.46 conservative cumulative ceiling).
+No fresh quality result is available yet.
 
 **R27-A completed:** [18-case engineering report](../reports/2026-09-24-benchmark-execution-pilot/README.md). All 132 outputs and 18 Jev receipts pass independent audit; public replay matches and all owned resources are deleted. No live-guidance gain appears in these exposed pilot cases. Cumulative estimate **$47.40/$110**; **606 local tests pass**. [Full GPQA protocol](gpqa-diamond-execution-v1.md) is next; no fresh full-task result yet.
 

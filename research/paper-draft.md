@@ -1844,3 +1844,16 @@ The resumed original-model cache admission passes. CPU platform/preemptibility,
 interruption overhead, explicit incomplete-job retries and unchanged absolute
 limits are documented in the [live report](../reports/2026-09-24-full-benchmark-tranche/README.md).
 No fresh benchmark quality conclusion is available yet.
+
+### Second infrastructure interruption and prospective recovery
+
+A cloud stop at 16:24 UTC interrupted GPQA again after 86 larger-Granite answers;
+the cause is unestablished. IFBench/AIME continued, reaching 201/330 larger-Granite
+answers at 20:16 UTC. All original/guided/control outputs and 528 Jev receipts had
+completed; no fresh grading was inspected. The [second recovery amendment](benchmark-interruption-recovery-v2.md)
+preserves source, sampling and token records and registers chained continuation
+under a $105.46 conservative cumulative bound within the $110 cap. Generation is
+bounded by 02:00 UTC and independent shutdown by 02:30 UTC on 25 September. This
+changes execution time allocation, not model or evaluation settings. Incomplete
+comparators remain incomplete; unknown work in interrupted jobs is not counted
+as zero, and total elapsed time is not uninterrupted inference latency.
