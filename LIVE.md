@@ -1,5 +1,15 @@
 # Verified implementation inventory
 
+**R27 full-task comparisons are running:** [live tranche](reports/2026-09-24-full-benchmark-tranche/README.md)
+covers all 198 GPQA Diamond, 300 IFBench and 30 AIME 2026 cases with original
+Granite, the frozen Jev-conditioned repair architecture, controls, Granite 3B
+and Qwen 4B. Two bounded L40S workers passed 606 offline tests each. No fresh
+quality result is available yet. Closed-stage cost plus both open reserves is
+$95.40 within the $110 cap; active resources have automatic shutdown timers.
+The [R27 engineering pilot](reports/2026-09-24-benchmark-execution-pilot/README.md)
+completed and passed integrity/replay checks, with no guided gain on 18 exposed
+cases. Earlier entries below describe historical stages and their cleanup.
+
 **R26-A completed and audited:** the [50-case exposed-data cost pilot](reports/2026-09-24-selective-admission/README.md)
 measured actual selective repair: 20 cases repaired and 30 retained per arm, with
 50 successful Jev calls. All three native profiles finished, but output-format

@@ -1,5 +1,15 @@
 # Feature: Jev-guided intermediate reasoning
 
+**R27 full-task comparisons are running:** [live tranche](reports/2026-09-24-full-benchmark-tranche/README.md)
+covers all 198 GPQA Diamond, 300 IFBench and 30 AIME 2026 cases with original
+Granite, the frozen Jev-conditioned repair architecture, controls, Granite 3B
+and Qwen 4B. Two bounded L40S workers passed 606 offline tests each. No fresh
+quality result is available yet. Closed-stage cost plus both open reserves is
+$95.40 within the $110 cap; active resources have automatic shutdown timers.
+The [R27 engineering pilot](reports/2026-09-24-benchmark-execution-pilot/README.md)
+completed and passed integrity/replay checks, with no guided gain on 18 exposed
+cases. Earlier entries below describe historical stages and their cleanup.
+
 **R26-A completed and audited:** the [50-case exposed-data cost pilot](reports/2026-09-24-selective-admission/README.md)
 measured actual selective repair: 20 cases repaired and 30 retained per arm, with
 50 successful Jev calls. All three native profiles finished, but output-format
@@ -33,9 +43,9 @@ targets broad benchmark gains and named larger-model outperformance. The
 is complete. R25 completes conditional error-repair training and evaluation,
 with correct-answer preservation visible in its registered retention replay.
 The next candidate is fresh validation of actually selective repair, with admitted
-task-specific output instructions and informative-feedback controls. No next run
-is frozen or executed yet. Block 19 was tested, not established as optimal. The
-full ten-task suite remains pending evaluator admission.
+task-specific output instructions and informative-feedback controls. R27 now runs the frozen GPQA/IFBench/AIME tranche. Block 19 was tested, not
+established as optimal. The remaining full-task rows retain separate admission
+and budget requirements.
 
 [R23 public baseline — completed](reports/2026-09-23-public-baseline/README.md):
 76 development problems per model, all 152 outputs audited and publicly replayed.

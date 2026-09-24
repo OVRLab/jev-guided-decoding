@@ -1800,3 +1800,21 @@ Before fresh GPQA inference, the complete 198-question source is admitted with
 two public-demonstration overlaps separately labeled. A new prospective readout
 requires complete multiline options in 26 cases; no old primary grade is changed.
 The full-task comparisons remain prospective until their frozen runs finish.
+
+### Prospective full-source tranche (R27-B/C; execution in progress)
+
+The frozen architecture is now dispatched on GPQA Diamond (198 source cases,
+196 untouched), IFBench (300, 288 untouched) and AIME 2026 (30). Both independent
+L40S workers passed 606 offline tests before inference. All models receive the
+same task inputs; original Granite, Jev-free extra inference, six routed controls
+and the two larger generators retain their registered profiles. This is the
+OVRLab zero-shot task contract, with explicit differences from upstream prompt
+recipes; model-card scores do not enter the comparison. References stay off the
+inference hosts. GPQA and contest question/answer traces remain private.
+
+The two stages each reserve $24 within the $110 cumulative authorization, with
+$47.39595151031136 consumed by prior closed stages. Generation, independent
+quality grading and final cost/cleanup are still pending; no fresh gain or
+larger-model outperformance is claimed. The remaining seven task rows are not
+completed by this tranche. Allocation is based on evaluator readiness and exposed
+runtime measurements, not fresh test performance.

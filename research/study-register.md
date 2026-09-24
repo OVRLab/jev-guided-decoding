@@ -649,3 +649,27 @@ leaving $14.60 outside the two reserves. This allocation uses engineering timing
 and evaluator readiness, not fresh quality. Its final freeze/dispatch is pending.
 The [live report](../reports/2026-09-24-full-benchmark-tranche/README.md) preserves
 all other missing benchmark rows; there is no full-suite result or new novelty claim.
+
+R27-C dispatch update: the clean `3863edf` source freeze contains all 330 cases,
+318 untouched, with manifest SHA-256
+`46fa4011cf34f25a36cae2eb904fe447efa2f140dc6338723973885349bf9c24`. Its second L40S
+passed 606 offline tests. Prompt/checkpoint hashes matched after transfer;
+references stayed local. Both cloud workers and independent expiry timers are
+active, with backups every approximately 45 seconds. No fresh grades have been
+inspected. Preparation-only local helper errors (a missing environment import,
+and an operation-file copy ordering error) were resolved before this worker
+launched; no inference or provider request was replayed because of them.
+
+Reporting automation uses a separate aggregate exporter, leaving both frozen
+workers/auditors unchanged. Three capability tests first failed because the new
+module was absent, then passed: private-example exclusion and complete-system
+coverage, invalid/partial denominator rejection, and parallel-stage cost accounting
+with cleanup/duplicate/cap checks. The local watcher audits only completed,
+hash-backed runs after resource cleanup and creates an explicitly unpublished
+Markdown draft. A failed or incomplete stage cannot silently become a full result.
+
+Post-dispatch reporting checks: **609 local tests passed in 11.50 seconds**;
+Ruff, formatting, guidance validation, build and diff hygiene also pass. These
+three additional exporter/accounting tests run locally; both immutable inference
+workers retain the 606-test pre-dispatch checkpoint. No paid experiment was rerun
+for the reporting additions.

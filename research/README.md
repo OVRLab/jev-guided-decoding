@@ -2,8 +2,7 @@
 
 **Live execution update:** [R27 full-task tranche](../reports/2026-09-24-full-benchmark-tranche/README.md)
 has dispatched all 198 GPQA Diamond cases with the frozen architecture, controls
-and both larger comparators. A separate complete IFBench/AIME stage is admitted
-prospectively, pending its final freeze/dispatch. Closed-stage spend plus both
+and both larger comparators. A separate complete IFBench/AIME stage is also running on a bounded L40S. Closed-stage spend plus both
 $24 reserves is $95.40 within the $110 cap. No fresh quality result is available yet.
 
 **R27-A completed:** [18-case engineering report](../reports/2026-09-24-benchmark-execution-pilot/README.md). All 132 outputs and 18 Jev receipts pass independent audit; public replay matches and all owned resources are deleted. No live-guidance gain appears in these exposed pilot cases. Cumulative estimate **$47.40/$110**; **606 local tests pass**. [Full GPQA protocol](gpqa-diamond-execution-v1.md) is next; no fresh full-task result yet.
