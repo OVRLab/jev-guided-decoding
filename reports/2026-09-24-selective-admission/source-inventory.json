@@ -1,0 +1,302 @@
+{
+  "primary": {
+    "mmlu-test.parquet": {
+      "url": "https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro/resolve/b189ec765aa7ed75c8acfea42df31fdae71f97be/data/test-00000-of-00001.parquet",
+      "sha256": "0e24a191921c2f453518a537a8b2117bd137e7714d4ef1565e9ba06c1ecb9ad8",
+      "bytes": 4144185,
+      "rows": 12032,
+      "family_counts": {
+        "biology": 717,
+        "business": 789,
+        "chemistry": 1132,
+        "computer science": 410,
+        "economics": 844,
+        "engineering": 969,
+        "health": 818,
+        "history": 381,
+        "law": 1101,
+        "math": 1351,
+        "other": 924,
+        "philosophy": 499,
+        "physics": 1299,
+        "psychology": 798
+      }
+    },
+    "mmlu-validation.parquet": {
+      "url": "https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro/resolve/b189ec765aa7ed75c8acfea42df31fdae71f97be/data/validation-00000-of-00001.parquet",
+      "sha256": "139423c23722e480c807ac4a191409a710cfce4eba744c1d641cf88e730e2078",
+      "bytes": 42857,
+      "rows": 70
+    },
+    "aime.jsonl": {
+      "url": "https://huggingface.co/datasets/math-ai/aime26/resolve/79037aebdb6580008fb960d17cb21fd3099083e3/aime2026.jsonl",
+      "sha256": "52822957957a3f577d1e9706c36a66a8108a3f99b6aff424cfb72dff0094a9ee",
+      "bytes": 13101,
+      "rows": 30
+    },
+    "aime-README.md": {
+      "url": "https://huggingface.co/datasets/math-ai/aime26/resolve/79037aebdb6580008fb960d17cb21fd3099083e3/README.md",
+      "sha256": "128958c3dff1a082ba4d25b6e449ee8099f49edb969f52fa2ec19032c5d740b9",
+      "bytes": 883
+    },
+    "ifbench.jsonl": {
+      "url": "https://raw.githubusercontent.com/allenai/IFBench/1c40f0c10d9b5c5c2f10a175a28007ebb64f7f4d/data/IFBench_test.jsonl",
+      "sha256": "d2ada7da94a38cfe406351614c4e686846ed2da6d1b339db95fa5ead19554a4a",
+      "bytes": 421499,
+      "rows": 300
+    },
+    "lcb-README.md": {
+      "url": "https://huggingface.co/datasets/livecodebench/code_generation_lite/resolve/0fe84c3912ea0c4d4a78037083943e8f0c4dd505/README.md",
+      "sha256": "fbf0df23c9fb430778f037691bd191ece41d49373c0695151d87549b6f45d809",
+      "bytes": 3390
+    },
+    "lcb-source.py": {
+      "url": "https://huggingface.co/datasets/livecodebench/code_generation_lite/resolve/0fe84c3912ea0c4d4a78037083943e8f0c4dd505/code_generation_lite.py",
+      "sha256": "973e37989fed0f069c8246776e918d0d96600d64a3730cd6242dd76bccf2f7bb",
+      "bytes": 5013
+    },
+    "longbench.json": {
+      "url": "https://huggingface.co/datasets/THUDM/LongBench-v2/resolve/2b48e494f2c7a2f0af81aae178e05c7e1dde0fe9/data.json",
+      "sha256": "15d61c22d92c96900b3c4948b6aeea218d3214b676a65df48e7b8555604c7fe2",
+      "bytes": 465490535,
+      "rows": 503
+    },
+    "simpleqa.csv": {
+      "url": "https://huggingface.co/datasets/google/simpleqa-verified/resolve/0dc97e0d28d8233463e005cdc4475cc2a13ba2dc/simpleqa_verified.csv",
+      "sha256": "b5db21155444763543fe31b67e7cf28ce2bb225742a5b889421c5f182e2f92f5",
+      "bytes": 349184,
+      "rows": 1000
+    },
+    "musr-evaluator.py": {
+      "error": "HTTPError",
+      "url": "https://raw.githubusercontent.com/Zayne-sprague/MuSR/b1f4d4168a9cfc6760e8b74d728e4516023dfaa5/evaluate.py"
+    },
+    "musr-murder_mystery.csv": {
+      "url": "https://huggingface.co/datasets/TAUR-Lab/MuSR/resolve/7c365b439a222150f317764d4f16ae6c96d7d94a/murder_mystery.csv",
+      "sha256": "ce19b6dc0b953f698e79528c72705804bc97e772a4303734808971f63ce233a7",
+      "bytes": 1395681,
+      "rows": 250
+    },
+    "musr-object_placements.csv": {
+      "url": "https://huggingface.co/datasets/TAUR-Lab/MuSR/resolve/7c365b439a222150f317764d4f16ae6c96d7d94a/object_placements.csv",
+      "sha256": "98cd17d2c9ea53664e274365e901c90dfcaa40d17547dfbd369f1cd26fd2a81c",
+      "bytes": 1304234,
+      "rows": 256
+    },
+    "musr-team_allocation.csv": {
+      "url": "https://huggingface.co/datasets/TAUR-Lab/MuSR/resolve/7c365b439a222150f317764d4f16ae6c96d7d94a/team_allocation.csv",
+      "sha256": "ddbef3bb61857a7cc3b73db62fac4605679e1b7ff4357d57fdfcf91f7caaa1f8",
+      "bytes": 870660,
+      "rows": 250
+    }
+  },
+  "feasibility": [
+    {
+      "file": "longbench-pred.py",
+      "url": "https://raw.githubusercontent.com/THUDM/LongBench/2e00731f8d0bff23dc4325161044d0ed8af94c1e/pred.py",
+      "bytes": 7229,
+      "sha256": "ab63f77866a1c0dc770582bc3fe6b014c3b4be4667399b0ee267075780c6a138"
+    },
+    {
+      "file": "longbench-maxlen.json",
+      "url": "https://raw.githubusercontent.com/THUDM/LongBench/2e00731f8d0bff23dc4325161044d0ed8af94c1e/config/model2maxlen.json",
+      "bytes": 601,
+      "sha256": "c37ec6e5d77e68e4cf6280183c6e68e885852ced6904e049ed75d3e73fc61ebe"
+    },
+    {
+      "file": "bfcl-tree.json",
+      "url": "https://api.github.com/repos/ShishirPatil/gorilla/git/trees/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8?recursive=1",
+      "bytes": 169467,
+      "sha256": "a087feb5f46919107549c530b36d9a2cce4d004cd6a46623fe99f25ef4e14688"
+    },
+    {
+      "file": "swe-readme.md",
+      "url": "https://raw.githubusercontent.com/SWE-bench/SWE-bench/02e7a74ffd0b707aab73d203fe87bdc7c76afc8e/README.md",
+      "bytes": 13302,
+      "sha256": "06841624d7b5130dfe3cc6714642e9a8fd2a608c95c66ae0180e409f12b73aaa"
+    }
+  ],
+  "bfcl": [
+    {
+      "file": "bfcl-bfcl_eval--data--BFCL_v4_format_sensitivity.json",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_format_sensitivity.json",
+      "bytes": 4963,
+      "sha256": "1e7ebd0ec441198d3f7d3b60be73d0c9eba54094d2c3731b830f5da7a2c63c19",
+      "format": "object; non-scoring configuration",
+      "entries": 8
+    },
+    {
+      "file": "bfcl-bfcl_eval--data--BFCL_v4_irrelevance.json",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_irrelevance.json",
+      "bytes": 159940,
+      "sha256": "2b6ed4c2e992cdcf5f1678a701851f944bef7550ee026ed1ddb89efed5be01a6",
+      "records": 240
+    },
+    {
+      "file": "bfcl-bfcl_eval--data--BFCL_v4_live_irrelevance.json",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_live_irrelevance.json",
+      "bytes": 2209534,
+      "sha256": "6559fda2beaceb609a2cd2e504c65b4a56cb448e1ef88fddfd199e163d163349",
+      "records": 884
+    },
+    {
+      "file": "bfcl-bfcl_eval--data--BFCL_v4_live_multiple.json",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_live_multiple.json",
+      "bytes": 3891277,
+      "sha256": "fd8ccfad4d911420d0e3341dbe2fff77d1d341da934248b9bb2bda24ab3a10c8",
+      "records": 1053
+    },
+    {
+      "file": "bfcl-bfcl_eval--data--BFCL_v4_live_parallel.json",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_live_parallel.json",
+      "bytes": 15649,
+      "sha256": "6c26e9fdc3350cf596e6d1ea9c179cbff834761bccf562f4141ed29a839ca421",
+      "records": 16
+    },
+    {
+      "file": "bfcl-bfcl_eval--data--BFCL_v4_live_parallel_multiple.json",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_live_parallel_multiple.json",
+      "bytes": 82332,
+      "sha256": "21d4b9319c1faac431e22757b367ea28917fe467364c3a4b17f16ec06d4f6e79",
+      "records": 24
+    },
+    {
+      "file": "bfcl-bfcl_eval--data--BFCL_v4_live_relevance.json",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_live_relevance.json",
+      "bytes": 47327,
+      "sha256": "e03f9e241657a137cba48a89ee12f47bf3fcb7e4f6274263e9c699a0c974203a",
+      "records": 16
+    },
+    {
+      "file": "bfcl-bfcl_eval--data--BFCL_v4_live_simple.json",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_live_simple.json",
+      "bytes": 260140,
+      "sha256": "1af2ac87dca47556db7b7e37e51e28b459a38b594e3c7b3c792b4903598ca0c4",
+      "records": 258
+    },
+    {
+      "file": "bfcl-bfcl_eval--data--BFCL_v4_memory.json",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_memory.json",
+      "bytes": 33237,
+      "sha256": "40fc21d4528af53c6b44204def89e81515d0101654229e2c2e82bbf5f047b14f",
+      "records": 155
+    },
+    {
+      "file": "bfcl-bfcl_eval--data--BFCL_v4_multi_turn_base.json",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_multi_turn_base.json",
+      "bytes": 390425,
+      "sha256": "1a21a995d06fd6f20ba55de7bced30ef953ec35e998f502ec2ecf4d66ef1c43a",
+      "records": 200
+    },
+    {
+      "file": "bfcl-bfcl_eval--data--BFCL_v4_multi_turn_long_context.json",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_multi_turn_long_context.json",
+      "bytes": 392016,
+      "sha256": "78c3268c5cc8e97c0f4ec6c811b3b9a2bba14323b1830b7a874b06d822749324",
+      "records": 200
+    },
+    {
+      "file": "bfcl-bfcl_eval--data--BFCL_v4_multi_turn_miss_func.json",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_multi_turn_miss_func.json",
+      "bytes": 401159,
+      "sha256": "87d28ce10e37d864b72de85d5732eef2a867b241d6c1c99b4ae682c9e3ea921c",
+      "records": 200
+    },
+    {
+      "file": "bfcl-bfcl_eval--data--BFCL_v4_multi_turn_miss_param.json",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_multi_turn_miss_param.json",
+      "bytes": 402974,
+      "sha256": "f0c66dda3795f5f53e3e1c0cc8ba0246b6761c8f58bdba8317203bf451ab8838",
+      "records": 200
+    },
+    {
+      "file": "bfcl-bfcl_eval--data--BFCL_v4_multiple.json",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_multiple.json",
+      "bytes": 316583,
+      "sha256": "aef168155ebd74b7ac2401198b201343bc7d16d7a3d7e0d4e6d8ee82c6969b2a",
+      "records": 200
+    },
+    {
+      "file": "bfcl-bfcl_eval--data--BFCL_v4_parallel.json",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_parallel.json",
+      "bytes": 171896,
+      "sha256": "19f51a82eff42e5d62541aa500115a056eb78f437c2ba1f10415fd7c8e5dda84",
+      "records": 200
+    },
+    {
+      "file": "bfcl-bfcl_eval--data--BFCL_v4_parallel_multiple.json",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_parallel_multiple.json",
+      "bytes": 347080,
+      "sha256": "8863ea8433239f55c5f016154cf0830853c89f693c6ea270396a2fa121960579",
+      "records": 200
+    },
+    {
+      "file": "bfcl-bfcl_eval--data--BFCL_v4_simple_java.json",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_simple_java.json",
+      "bytes": 86619,
+      "sha256": "13d2303a125b08754f0e41995b9273b5005fa8ed8ebfaa24ef53b4d83c4b5c6e",
+      "records": 100
+    },
+    {
+      "file": "bfcl-bfcl_eval--data--BFCL_v4_simple_javascript.json",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_simple_javascript.json",
+      "bytes": 47063,
+      "sha256": "329e67fedf79a6243d93dbda4b388d12bd2d31f1f2163d92cb6ef676d1764f44",
+      "records": 50
+    },
+    {
+      "file": "bfcl-bfcl_eval--data--BFCL_v4_simple_python.json",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_simple_python.json",
+      "bytes": 283274,
+      "sha256": "82dd63ba502eb2520c6b5d1d9a5c4b590e03ff261565175561f6228a367d1991",
+      "records": 400
+    },
+    {
+      "file": "bfcl-bfcl_eval--data--BFCL_v4_web_search.json",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/BFCL_v4_web_search.json",
+      "bytes": 36984,
+      "sha256": "6fc41d96d003dc849028966a782923560d2fc127ed2088aa967f06daaafa4268",
+      "records": 100
+    },
+    {
+      "file": "bfcl-bfcl_eval--data--README.md",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/data/README.md",
+      "bytes": 20277,
+      "sha256": "93119d83df28fee0a9f3ea41b0c6a947aad9f7ba4334ae89fef41c74b67b208d"
+    },
+    {
+      "file": "bfcl-bfcl_eval--constants--category_mapping.py",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/constants/category_mapping.py",
+      "bytes": 2049,
+      "sha256": "ef31291f17c1ac0504b246345bd56e6bac44fec4239741e158f9fcf2c819cb35"
+    },
+    {
+      "file": "bfcl-bfcl_eval--constants--eval_config.py",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/constants/eval_config.py",
+      "bytes": 1648,
+      "sha256": "9048643628b150d53d59424365f8ca869b8aa39b503efe7a2d26b7ec93b4cb50"
+    },
+    {
+      "file": "bfcl-bfcl_eval--constants--executable_backend_config.py",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/constants/executable_backend_config.py",
+      "bytes": 1939,
+      "sha256": "1214b960de5d86840e379007c70bc9570203e0b5a926ea740ff00c605a531e57"
+    },
+    {
+      "file": "bfcl-bfcl_eval--eval_checker--multi_turn_eval--func_source_code--web_search.py",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/bfcl_eval/eval_checker/multi_turn_eval/func_source_code/web_search.py",
+      "bytes": 12578,
+      "sha256": "d39007b676640c560a65bcc0c4a9cff677a6a8da200a951d6d30bf7cac00037d"
+    },
+    {
+      "file": "bfcl-README.md",
+      "url": "https://raw.githubusercontent.com/ShishirPatil/gorilla/6ea57973c7a6097fd7c5915698c54c17c5b1b6c8/berkeley-function-call-leaderboard/README.md",
+      "bytes": 17311,
+      "sha256": "c6c95683cce9653788c8b3f3f5002d2f5c27b95a1288544fe82c2a2faf5e12d0"
+    },
+    {
+      "file": "bfcl-LICENSE",
+      "error": "HTTPError"
+    }
+  ]
+}

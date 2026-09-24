@@ -1,0 +1,15 @@
+.......F                                                                 [100%]
+=================================== FAILURES ===================================
+_____ test_full_cost_weights_actual_subject_counts_and_preserves_unknowns ______
+
+    def test_full_cost_weights_actual_subject_counts_and_preserves_unknowns():
+        m=module()
+        rows=[dict(task='mmlu_pro',family='a',seconds=1),dict(task='mmlu_pro',family='b',seconds=10)]
+>       out=m['project_stratified_cost'](rows,{'mmlu_pro':{'a':10,'b':100},'unseen':{'x':5}},1.8)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'project_stratified_cost'
+
+tests/test_selective_admission_audit.py:185: KeyError
+=========================== short test summary info ============================
+FAILED tests/test_selective_admission_audit.py::test_full_cost_weights_actual_subject_counts_and_preserves_unknowns
+1 failed, 7 passed in 0.20s

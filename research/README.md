@@ -1,10 +1,10 @@
 # Granite + Jev research record
 
-**R26 preparation:** the owner increased the cumulative cap to **$110** and requested
+**R26-A running:** the owner increased the cumulative cap to **$110** and requested
 full benchmark/larger-model evaluation of selective repair. A bounded exposed-case
-[admission and cost profile](../reports/2026-09-24-selective-admission/README.md) is implemented and being frozen before fresh
-benchmark inference; 572 local tests pass. R25 results below remain historical;
-no new benchmark quality result or full-suite completion is claimed.
+[admission and cost profile](../reports/2026-09-24-selective-admission/README.md) is frozen and running on one bounded L40S; 572 pre-dispatch tests pass.
+GPU cache/zero-gate checks passed, but native 1B output-format admission fails
+(14/40 parseable); no fresh benchmark score or full-suite completion is claimed.
 
 **R25 completed and audited:** always repairing lowers the combined score from
 59.38% to 44.79%. The predeclared selective-retention replay instead reaches

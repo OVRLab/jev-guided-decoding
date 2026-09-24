@@ -33,3 +33,9 @@ label to a different problem. Keep missing planned runs in the denominator.
 When a runner joins live encodings to persisted artifacts, test the actual JSON
 round trip as well as content tampering; equivalent tuple/list representations
 must not fail binding checks, and normalization must not accept changed tokens.
+
+Before replacing a readout, retain fixtures for known supported answer forms or
+record deliberate task-specific exclusions. Report format compliance separately
+from semantic correctness; do not turn an empty answer wrapper into evidence that
+an otherwise explicit choice is semantically wrong. A post-hoc parser fix belongs
+to a separately named analysis or future protocol, never a rewritten primary score.

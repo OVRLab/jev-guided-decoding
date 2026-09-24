@@ -1,10 +1,10 @@
 # Study register
 
-**R26 preparation:** the owner increased the cumulative cap to **$110** and requested
+**R26-A running:** the owner increased the cumulative cap to **$110** and requested
 full benchmark/larger-model evaluation of selective repair. A bounded exposed-case
-[admission and cost profile](../reports/2026-09-24-selective-admission/README.md) is implemented and being frozen before fresh
-benchmark inference; 572 local tests pass. R25 results below remain historical;
-no new benchmark quality result or full-suite completion is claimed.
+[admission and cost profile](../reports/2026-09-24-selective-admission/README.md) is frozen and running on one bounded L40S; 572 pre-dispatch tests pass.
+GPU cache/zero-gate checks passed, but native 1B output-format admission fails
+(14/40 parseable); no fresh benchmark score or full-suite completion is claimed.
 
 **R25 completed and audited:** always repairing lowers the combined score from
 59.38% to 44.79%. The predeclared selective-retention replay instead reaches
@@ -526,3 +526,20 @@ $5.853546, cumulative $42.627081/$75, before tax/separate network.
   not an additional reserve beyond it. Starting estimate $42.627081/$110.
 - Independent audits and measured workload projections remain pending. No fresh
   benchmark score, savings claim or new superiority result exists yet.
+
+
+**R26-A dispatch update:** clean source `66d1f01`, data `4e1316c`, attribution
+`39a5f7e`; 50 exposed cases and both checkpoint hashes verified. One bounded L40S
+launched 2026-09-24 05:23:26 UTC. Remote offline tests and all numerical/cache
+admission checks passed. Native 1B readout parses 14/40 eligible drafts, failing
+the predeclared 38/40 gate; many outputs name a choice but leave `Final:` empty.
+This is preserved as a format failure without retroactive regrading. The bounded
+cost/compatibility profile continues; fresh benchmark inference remains unstarted.
+
+
+**R26-A readout correction prepared separately:** the new parser omitted R23's
+supported labeled full-option form. A post-hoc, format-only diagnostic identifies
+19 additional recognizable native choices, without reporting new correctness.
+The [v2 amendment](selective-readout-amendment.md) and three offline regressions
+address that integration defect for a future protocol. R26-A source/readout,
+primary 14/40 format admission and all recorded evidence remain unchanged.

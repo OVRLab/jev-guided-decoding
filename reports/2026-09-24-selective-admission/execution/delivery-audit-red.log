@@ -1,0 +1,30 @@
+...F                                                                     [100%]
+=================================== FAILURES ===================================
+_____ test_delivery_audit_binds_receipt_probability_usage_and_exact_input ______
+
+tmp_path = PosixPath('/private/var/folders/q0/yrbrh__54_11208_rxgxhnkc0000gn/T/pytest-of-jubba/pytest-1565/test_delivery_audit_binds_rece0')
+
+    def test_delivery_audit_binds_receipt_probability_usage_and_exact_input(tmp_path):
+        import asyncio
+        import json
+    
+        from jev_guided_decoding.experiment_budget import InputTokenBudget
+    
+        f = runpy.run_path(str(PATH.parents[2] / 'tests/test_selective_benchmark_feedback.py'))
+        c = f['case']()
+    
+        async def sleep(_):
+            pass
+    
+        with InputTokenBudget(tmp_path/'budget.jsonl',max_usd=.15,usd_per_million=.042) as b:
+            worker=f['module']()['Feedback'](f['Provider']([.2]),b,tmp_path,sleep=sleep)
+            asyncio.run(worker.score(c,'#### 2'))
+        m=dict(jev_cap=.15,usd_per_million=.042,jev='jev-1.13.0')
+>       audit=module()['check_delivery']
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'check_delivery'
+
+tests/test_selective_admission_audit.py:91: KeyError
+=========================== short test summary info ============================
+FAILED tests/test_selective_admission_audit.py::test_delivery_audit_binds_receipt_probability_usage_and_exact_input
+1 failed, 3 passed in 0.12s

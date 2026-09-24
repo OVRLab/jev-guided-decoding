@@ -1,0 +1,7 @@
+{
+  "script": "execution/long-context-profile.py.txt",
+  "script_sha256": "b6312b844cd2f9e46fd1770afce70f318bd7e5d58482f1095b463cca5106d79c",
+  "output": "long-context-workload.json",
+  "output_sha256": "819c8edc517db119aa5b92ec0bc5941c6cd89ba33e1ec0b9b468506fb139b709",
+  "scope": "CPU-only full-source tokenization; no paid inference or test scoring"
+}
