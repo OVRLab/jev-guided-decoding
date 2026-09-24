@@ -56,3 +56,27 @@ def test_independent_grades_use_selected_outputs_and_preserve_missing_denominato
     assert result["paired_differences"]["guided-original"]["synthetic"]["losses"] == 1
     with pytest.raises(ValueError, match="coverage"):
         m["score_selected"](cases, refs, selected | {"guided": {"a": selected["guided"]["a"]}})
+
+
+def test_ifbench_language_judgment_has_a_fixed_reproducible_seed(monkeypatch):
+    import sys
+    from types import SimpleNamespace
+
+    factory = SimpleNamespace(seed=None)
+    monkeypatch.setitem(sys.modules, "langdetect", SimpleNamespace(DetectorFactory=factory))
+    observed = []
+
+    def score(*args):
+        observed.append(factory.seed)
+        return SimpleNamespace(follow_all_instructions=False)
+
+    evaluator = SimpleNamespace(
+        InputExample=lambda **kwargs: SimpleNamespace(**kwargs),
+        test_instruction_following_strict=score,
+        test_instruction_following_loose=score,
+    )
+    m = runpy.run_path(str(PATH))
+    cases = {"a": dict(id="a", task="ifbench", cluster="a", prompt="Only say red.")}
+    refs = {"a": dict(kind="ifbench", key=1, instruction_id_list=["synthetic"], kwargs=[{}])}
+    m["score_selected"](cases, refs, {"original": {"a": dict(final="blue")}}, ifbench=evaluator)
+    assert observed == [2701, 2701]

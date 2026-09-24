@@ -33,6 +33,11 @@ def score_selected(cases, refs, selected, *, ifbench=None):
             if ref["kind"] == "ifbench":
                 if ifbench is None:
                     raise ValueError("Independent IFBench evaluator required")
+                from langdetect import DetectorFactory
+
+                # Its default seed is None; fix stochastic language detection
+                # before any R27 IFBench grading, including the exposed pilot.
+                DetectorFactory.seed = 2701
                 common = runpy.run_path(
                     str(ROOT / "research/iterations/benchmark_baseline/common.py")
                 )

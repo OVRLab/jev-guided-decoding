@@ -29,6 +29,13 @@ all 300 source rows, with all 300 correctly failing strict and loose and no erro
 This structural check does not itself validate semantic usefulness; instruction
 compliance and useful reasoning remain distinct measurements.
 
+The nonempty fixture also exercises all 300 strict/loose paths without errors.
+A separate probe forbids implicit random parameter generation and passes every
+row. Before the first R27 output was graded, language detection's otherwise
+unset random seed was fixed to 2701; a regression first observed `[None, None]`
+for strict/loose calls and then passed with `[2701, 2701]`. This prospective
+reproducibility setting changes no R23/R26 recorded grade or evaluator file.
+
 ## MuSR
 
 Use all 756 rows at revision `7c365b439a222150f317764d4f16ae6c96d7d94a`:
