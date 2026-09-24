@@ -593,3 +593,17 @@ questions, SHA-256 `41d1213cd7a4998605a26c2798500652572007161b3a92817ba46b35befc
 Its schema/access is verified; examples and answer-bearing traces stay private.
 Full test execution still requires throughput/evaluator admission and a separate
 input/source freeze.
+
+
+**R27 engineering execution update:** the frozen 18-case pilot began on one
+L40S with an independent 150-minute VM expiry and $5 reserve. The original
+Granite portion and all 18 Jev calls completed; numerical checks and independent
+validation of all 94 original-model outputs pass. Larger models remain in
+progress. Before full GPQA dispatch, source inspection found two repeated
+distractors and two overlaps with public demonstrations viewed during preparation.
+A separate source-preserving adapter retains all 198 cases, reports 196 untouched,
+and keeps all question/answer-bearing traces private. The initial converter's
+rejection of duplicate distractors is preserved in its frozen pilot source; it
+was not used for fresh inference. [Full GPQA protocol](gpqa-diamond-execution-v1.md),
+[short-task preparation](full-short-tasks-admission-v1.md). No new held-out
+accuracy or superiority result yet.

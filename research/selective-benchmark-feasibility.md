@@ -173,3 +173,34 @@ Report absolute accuracy, paired improvement with uncertainty, failure modes,
 actual Jev contribution, latency and total system cost. Use development failures
 to choose the next architecture iteration and fresh evidence to test it; retain
 all primary results and document findings in the research record and manuscript.
+
+
+## R27 execution update — 2026-09-24
+
+The owner has authorized proceeding. The [new runtime plan](benchmark-execution-v2-plan.md)
+and [GPQA task protocol](gpqa-diamond-execution-v1.md) are recorded before fresh
+inference. An 18-case exposed engineering pilot is now running on one bounded
+L40S; this is not yet a new full-benchmark result. Local checks pass 597 tests.
+All 94 completed original-Granite records pass independent token/prefix checks;
+cache/zero-gate checks pass and all 18 Jev receipts are valid with no retries.
+Larger-model completion, final audit and pilot cost reconciliation remain pending.
+
+GPQA's complete private source has 198 unique questions. Preserve two repeated
+distractors, and report two manually exposed public-demonstration overlaps apart
+from the 196 untouched cases. All candidate inputs fit the 16,384-token runner
+ceiling across all three tokenizers: GPQA maxima 2,816/2,808/2,796; IFBench
+552/538/286; MuSR 1,556/1,630/1,534; AIME 396/395/381. These are input
+checks, not inference or performance measurements.
+
+[Short-task preparation](full-short-tasks-admission-v1.md) preserves all 300
+IFBench prompts and validates strict/loose evaluation on empty and nonempty
+fixtures without errors. Its untouched subset is 288. Narrative-only clustering
+finds 26 exposed/related MuSR cases, leaving 730 untouched among 756; the story
+heuristic and limitations are explicit. All 30 AIME inputs are prepared, pending
+final source/evaluator admission. No new quality score is implied.
+
+MMLU-Pro's full five-shot run, long-context admission, an independently validated
+SimpleQA judge, isolated LiveCodeBench execution, full BFCL tools and a fixed
+SWE-bench agent still have separate work/cost requirements. The ten-row contract
+remains intact; no missing task is substituted or averaged away. The original
+$110 cumulative authorization is unchanged.
