@@ -1871,3 +1871,33 @@ Output growth confirmed at 20:35 UTC: GPQA saved its first new answer at
 20:33:08, reaching 87/198 larger-Granite outputs; IFBench/AIME remains active
 at 209/330. Both backup monitors and the final audit watcher are alive. No fresh
 quality grade has been inspected.
+
+### Third GPQA stop and restart — 22:55 UTC
+
+GPQA stopped again at 22:14:13–22:14:33 UTC, after 128/198 larger-Granite answers;
+the cause is not established. The same VM restarted under the [third-interruption
+plan](benchmark-third-interruption.md). All recovered parent files match remote hashes. The unchanged v2
+runner now receives three explicit ancestors and writes a separate v3 output;
+completed tokens/receipts and the interrupted job are preserved. The new controller
+is active and reloading the model at this snapshot; new completed output growth
+has not yet been confirmed.
+
+IFBench/AIME's automatic v1-to-v2 handoff worked at its original deadline, without
+manual model intervention, and it reached 290/330 larger-Granite answers at
+22:52:22 UTC. Both original/guided/control schedules and all 528 Jev requests
+remain complete; Qwen and fresh quality grading are still pending.
+
+The existing 02:00 UTC generation deadline, 02:30 UTC independent shutdown and
+$105.46 conservative cumulative bound within $110 remain unchanged. Twenty-five
+focused recovery tests pass. Tests of the actual new private operation files
+first failed because those files were absent, then passed for four-folder ancestry,
+unowned-path refusal, completion handoff and current/retired network allocations.
+The GPQA monitor and full-ancestry finalizer were replaced; the active short-task
+model and monitor were left running. All prior raw and operation files remain.
+
+Live generation verified after reload: the third GPQA continuation passed the
+unchanged hardware/weight bindings and began its new native job at 22:57:17 UTC;
+GPU utilization is 72%, with no runtime traceback. All three GPQA ancestry steps
+pass exact-parent preservation checks. IFBench/AIME reached 292/330 at 22:56:31.
+Both backup monitors and the full-ancestry audit watcher remain active. This
+confirms resumed execution, not a new completed answer or a quality score.
