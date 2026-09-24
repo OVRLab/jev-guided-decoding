@@ -1,4 +1,4 @@
-# R27 full-benchmark tranche — second recovery pending
+# R27 full-benchmark tranche — second recovery active
 
 **No full-task quality result is available yet.** GPQA Diamond, IFBench and AIME 2026 were dispatched on
 2026-09-24 after the audited exposed-only pilot passed. The immutable source
@@ -10,8 +10,8 @@ question/answer text. All 606 offline tests also passed on the GPU worker.
 | Task | Planned source / untouched | State |
 | --- | ---: | --- |
 | GPQA Diamond | 198 / 196 | Resumed: original/guided/controls complete; larger Granite in progress, Qwen pending |
-| IFBench | 300 / 288 | Resumed: original/self-refinement/Jev complete; repairs in progress, larger comparators pending |
-| AIME 2026 | 30 / 30 | Resumed: original/self-refinement/Jev complete; repairs in progress, larger comparators pending |
+| IFBench | 300 / 288 | Original/guided/controls complete; larger Granite in progress, Qwen pending |
+| AIME 2026 | 30 / 30 | Original/guided/controls complete; larger Granite in progress, Qwen pending |
 | Other seven contracted tasks | See ten-task contract | Full comparisons not completed |
 
 [GPQA protocol](../../research/gpqa-diamond-execution-v1.md),
@@ -125,3 +125,33 @@ tests first failed because the implementation was absent, then passed. All
 **634 local tests**, lint/format, guidance checks and build pass. Actual private
 monitor/finalizer checks also reject false progress and changed source inventories.
 Dispatch of the new continuation remains pending at this checkpoint.
+
+### Second resumption verified — 20:32 UTC
+
+Both cloud instances are running, both GPUs are active, and the new GPQA native
+job started at 20:30:20 UTC after reloading the unchanged larger-Granite weights.
+Its 86 completed larger-model answers were preserved; the interrupted case is
+being regenerated from its original seed. IFBench/AIME continued without a model
+restart and reached 209/330 larger-Granite outputs. Qwen has not started.
+[Status snapshot](second-recovery-status.json) contains aggregate execution state.
+
+Both independent shutdown timers now point to 02:30 UTC on 25 September. The
+short-task controller waits for its original service to stop, then either accepts
+a complete run or starts the admitted continuation. Two local backup monitors
+and the final audit watcher are alive; GPQA's two-hop ancestry and the short
+worker's first-hop ancestry pass preservation checks. No Jev request was repeated.
+Source `680bab3` passed all four CI jobs and **631 tests on each frozen remote
+environment**, alongside the **634 local tests**. Runtime/hardware/weight bindings
+pass on the resumed model. The new network allocations assigned during restart
+are included in cleanup verification along with retired allocations; this path
+also passed an offline regression. No model service was restarted for that fix.
+
+The finalizer checks every ancestry/source envelope and complete coverage before
+the unchanged v3 audit. Monitoring and cleanup use the new global admission;
+earlier 11-hour/$24-per-stage limits above describe the superseded first attempt.
+No full-task accuracy result is available yet.
+
+Output growth confirmed at 20:35 UTC: GPQA saved its first new answer at
+20:33:08, reaching 87/198 larger-Granite outputs; IFBench/AIME remains active
+at 209/330. Both backup monitors and the final audit watcher are alive. No fresh
+quality grade has been inspected.

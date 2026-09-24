@@ -2,8 +2,8 @@
 
 **Live execution update:** [R27 full-task tranche](../reports/2026-09-24-full-benchmark-tranche/README.md)
 has completed original/guided/control generation and 528 Jev calls on GPQA, IFBench
-and AIME; larger-model comparison remains incomplete. GPQA stopped a second time;
-the [v2 recovery amendment](benchmark-interruption-recovery-v2.md) registers bounded
+and AIME; larger-model comparison remains incomplete. GPQA resumed after a second stop under
+the [v2 recovery amendment](benchmark-interruption-recovery-v2.md), with bounded
 continuation within the $110 cap ($105.46 conservative cumulative ceiling).
 No fresh quality result is available yet.
 

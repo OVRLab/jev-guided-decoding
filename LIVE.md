@@ -3,7 +3,7 @@
 **R27 larger-model comparisons remain in progress:** [live tranche](reports/2026-09-24-full-benchmark-tranche/README.md)
 has saved all original-Granite, Jev-conditioned repair and control outputs across
 198 GPQA Diamond, 300 IFBench and 30 AIME 2026 cases. GPQA stopped a second time;
-its [bounded recovery](research/benchmark-interruption-recovery-v2.md) is prepared,
+its [bounded recovery](research/benchmark-interruption-recovery-v2.md) is running,
 while IFBench/AIME continues. No fresh quality result is available yet.
 The cumulative admission ceiling is $105.46 within the $110 cap, before tax/network;
 634 local tests pass.

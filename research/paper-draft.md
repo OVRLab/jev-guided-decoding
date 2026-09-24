@@ -1857,3 +1857,17 @@ bounded by 02:00 UTC and independent shutdown by 02:30 UTC on 25 September. This
 changes execution time allocation, not model or evaluation settings. Incomplete
 comparators remain incomplete; unknown work in interrupted jobs is not counted
 as zero, and total elapsed time is not uninterrupted inference latency.
+
+Second recovery dispatch confirmed at 20:32 UTC: both GPU streams and independent
+02:30 UTC shutdown timers are active. GPQA resumed the interrupted larger-model
+case after preserving 86 answers; IFBench/AIME continued to 209/330 without model
+restart. The original/v1/v2 GPQA ancestry and original/v1 short-task ancestry pass.
+Source `680bab3` passed four CI jobs and 631 tests per frozen remote environment;
+634 local tests pass. Both backup monitors and the complete-run auditor watcher
+are active. New and retired network allocations are included in cleanup checks.
+Qwen and fresh quality grading remain pending; see the [live report](../reports/2026-09-24-full-benchmark-tranche/README.md).
+
+Output growth confirmed at 20:35 UTC: GPQA saved its first new answer at
+20:33:08, reaching 87/198 larger-Granite outputs; IFBench/AIME remains active
+at 209/330. Both backup monitors and the final audit watcher are alive. No fresh
+quality grade has been inspected.
