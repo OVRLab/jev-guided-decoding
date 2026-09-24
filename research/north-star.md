@@ -1,10 +1,12 @@
 # Granite–Jev north star
 
-**R26-A running:** the owner increased the cumulative cap to **$110** and requested
-full benchmark/larger-model evaluation of selective repair. A bounded exposed-case
-[admission and cost profile](../reports/2026-09-24-selective-admission/README.md) is frozen and running on one bounded L40S; 572 pre-dispatch tests pass.
-GPU cache/zero-gate checks passed, but native 1B output-format admission fails
-(14/40 parseable); no fresh benchmark score or full-suite completion is claimed.
+**R26-A completed and audited:** the [50-case exposed-data cost pilot](../reports/2026-09-24-selective-admission/README.md)
+measured actual selective repair: 20 cases repaired and 30 retained per arm, with
+50 successful Jev calls. All three native profiles finished, but output-format
+admission failed; a separately versioned readout correction is prepared. No fresh
+benchmark score or larger-model superiority is established. All owned resources
+are deleted; estimated cumulative spend **$46.17/$110**, leaving
+**$63.83** before tax/separate network. Local checks: **584 tests pass**.
 
 **R25 completed and audited:** always repairing lowers the combined score from
 59.38% to 44.79%. The predeclared selective-retention replay instead reaches

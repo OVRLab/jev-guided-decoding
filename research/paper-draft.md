@@ -1,6 +1,6 @@
 # From Claim Verification to Learned Representation Bridges: Jev Guidance in Granite
 
-Working title and manuscript scaffold, updated 2026-09-23. Not submitted, peer reviewed,
+Working title and manuscript scaffold, updated 2026-09-24. Not submitted, peer reviewed,
 or a report of a successful replacement architecture. Authors, affiliations,
 contributions and publication venue are intentionally unset pending owner decisions.
 
@@ -79,6 +79,13 @@ unparseable. The selective science result is promising but is offline replay,
 not measured execution savings or broad/larger-model superiority. All raw evidence,
 12 adapter checkpoints, numerical/service interruptions and exact public replay
 are retained; no primary score is retrospectively regraded.
+
+R26-A measures actual selective execution on 50 exposed development cases: 20
+repairs and 30 retained drafts per arm, with no reduction in Jev requests. Three
+native model profiles complete, but a failed output-readout contract prevents
+fresh benchmark admission. Exact-token audits and replay pass; measured runtime
+exposes substantial full-suite cost uncertainty. These results support further
+engineering and evaluation work, not broad model superiority.
 
 ## 1. Question and scope
 
@@ -1715,3 +1722,55 @@ output instructions and evaluator behavior on development data, fix checkpoints,
 isolate routing from feedback strength, and measure actual selective execution.
 R25's exposed test questions cannot serve as fresh confirmation. The conditional
 larger-model outline remains unexecuted because its registered spending gate failed.
+
+
+### R26-A: selective execution and cross-model runtime admission
+
+After the owner separately authorized selective benchmark development and raised
+the cumulative cap to $110, a [registered pilot](selective-benchmark-admission-plan.md)
+used 50 previously exposed cases across five development domains. It reused R25's
+fixed seed-2501 adapters and retained the original draft when Jev estimated
+p(correct) >= .5 or feedback was unavailable. Otherwise Granite generated a new
+repair with the conditional residual branch after zero-indexed block 19. No new
+training or fresh test evaluation took place. Every final token remained owned by
+the named generator. The six strength/adapter controls shared Jev-based routing,
+so they do not estimate fully Jev-free deployment performance.
+
+Unlike R25's offline retention replay, this run actually omitted 30/50 repairs in
+each arm: 120 repairs executed and 180 were skipped. All 50 native drafts still
+received a Jev request; this is not conditional Jev dispatch or a measured saving
+in provider calls. All requests succeeded without retry (34,885 input tokens,
+$0.00146517). No always-repair latency counterfactual was run.
+
+Original Granite 4.0-1B, thinking Granite 4.2-3B and Qwen3-4B-Instruct-2507 each
+completed 50 native drafts, one warmup and eight serial timing probes. Together
+with repairs, 297 output records across 186 batches were retained.
+Their frozen primary readouts accepted respectively 14/40, 34/40 and 39/40 eligible non-IFBench drafts; the
+predeclared gate required 38/40 for every model. The pilot therefore does not admit
+fresh benchmark comparisons. In particular, a new readout omitted R23's existing
+labeled-full-option fallback. A post-hoc diagnostic recognizes 19 additional
+original-Granite answer forms, without assigning new correctness. A separate v2
+amendment fixes this integration defect for future protocols; it does not revise
+the primary pilot counts. Format rejection is not itself semantic incorrectness.
+
+The [complete report](../reports/2026-09-24-selective-admission/README.md) separates
+runtime evidence from rough cost extrapolation. Weighting the 14 exposed MMLU-Pro
+subject timings to all 12,032 source test cases projects approximately $505
+for the 3B comparator alone in this runtime. Static batching wastes work after
+shorter outputs finish; official five-shot prompts, other serving engines and
+representative fresh workloads may change this estimate. Batches also mix tasks,
+so a long answer can inflate time allocated to neighboring questions from other tasks. Task-only scheduling requires its own profile. This
+is not an invoice or statistical upper bound. Long-context CPU tokenization covers
+all 503 LongBench records, but no long-context generation or repository-repair trajectory was run,
+so a complete ten-task price remains unestablished.
+
+Independent audits verify exact tokens/prefixes, cached/full numerical agreement,
+selected gates, work and API ledgers, and unchanged base weights. All public
+inference files reproduce the analysis exactly. Owned compute, boot disk and
+network resources were removed after verified backup. The conservative pilot
+estimate is $3.5464, bringing this budget series to
+$46.17/$110 before tax/separate network; 584 local tests pass.
+These execution results establish a working selective path, not broad quality
+gains, superiority to larger models, a released checkpoint or a novel-architecture
+claim. Further evaluation needs prospective readout admission and a more efficient,
+verified runtime before a large benchmark expenditure.

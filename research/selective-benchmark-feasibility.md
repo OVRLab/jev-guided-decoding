@@ -5,6 +5,19 @@ $42.627081 already consumed before R26. The $6 exposed-case profile is included
 in the parent's $60 reserve. A full ten-task quote is not yet established, and
 an increased spending cap does not itself admit a benchmark implementation.
 
+## Completed pilot and current funds
+
+The [completed R26-A report](../reports/2026-09-24-selective-admission/README.md)
+records 297 generated outputs, failed format admission, exact artifact
+replay and deletion of all owned resources. Pilot estimate $3.5464;
+cumulative $46.17/$110, leaving $63.83
+before tax/separate network. For the current prototype, full MMLU-Pro on thinking
+Granite 3B alone extrapolates to roughly $505.
+This exposed, zero-shot timing estimate is not a guaranteed quote or the cost of
+optimized serving. Resolve readout admission and runtime inefficiency before
+using the remaining budget on a fresh full benchmark; the ten-task total is still
+unpriced.
+
 ## Workload inventory
 
 Counts below describe source data, not model attempts, and are not scored results.
@@ -88,3 +101,33 @@ This is a CPU-only workload scan, not a memory/latency test or a benchmark score
 The final column uses the profile output reserves (2,048 / 8,192 / 16,384 tokens)
 and source model windows (131,072 / 131,072 / 262,144). Different declared context
 policies require new counts and a prospective protocol.
+
+
+## Next work before another paid benchmark
+
+1. Admit the separately versioned reader and official-compatible task prompts on
+   exposed development outputs, preserving R26-A's frozen primary result. Test
+   label/option conflicts, unfinished thinking, refusals, empty finals and each
+   task's own scoring semantics before selecting any fresh test records. Freeze
+   any stopping contract prospectively and apply it consistently: Qwen case 40
+   mechanically repeats the same final-answer line until its 16,384-token ceiling,
+   so that time is not all productive reasoning or an inherent benchmark cost.
+2. Improve inference scheduling, with attention to finished rows that currently
+   continue occupying padded decode slots. A new runtime needs cached/full and
+   token-provenance checks, unchanged-base-weight evidence and a bounded timing
+   comparison. Keep comparator generation profiles explicit; silently shortening
+   only a slower baseline's reasoning budget would change the comparison.
+3. Freeze a new protocol and quote from the admitted runtime. Include native
+   drafts, actual conditional repair, Jev latency/charges, controls, failures and
+   independent evaluation. Do not multiply the current tiny pilot into a firm
+   all-domain quote or claim an optimization speedup before measuring it.
+4. Admit long-context prefill/truncation and credential-free code/agent harnesses,
+   resolve required dataset/service access, then price each remaining workload.
+   Choose any affordable subset transparently under the existing $110 cumulative
+   cap; partial coverage cannot be reported as full completion of all ten.
+
+One candidate for testing is a fixed-size cache with compilation where the pinned
+model supports it. Hugging Face's [cache guidance](https://huggingface.co/docs/transformers/en/kv_cache)
+explains both the compilation benefit and the wasted masked work when sequence
+lengths vary. This is a hypothesis for measurement, not a measured speedup or a
+guarantee that Granite's model-specific cache and research hooks support it.

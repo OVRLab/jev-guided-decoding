@@ -1,0 +1,20 @@
+{
+  "prior_cumulative_usd": 42.62708084740686,
+  "cap_usd": 110,
+  "stage_reserve_usd": 6,
+  "created_at": "2026-09-24T05:23:26.409881Z",
+  "cleanup_completed_at": "2026-09-24T07:24:39.829610+00:00",
+  "inclusive_resource_seconds": 7273.419729,
+  "inclusive_rate_usd_hour": 1.7545808219178083,
+  "cloud_usd": 3.544945212850562,
+  "jev_usd": 0.00146517,
+  "stage_usd": 3.5464103828505618,
+  "cumulative_usd": 46.17349123025742,
+  "remaining_usd": 63.82650876974258,
+  "resource_state": "deleted",
+  "allocations_deleted": true,
+  "verified_backup_files": 21,
+  "public_inference_files": 19,
+  "public_replay_identical": true,
+  "qualifier": "Estimate before tax/separate network; whole created-to-cleanup interval conservatively charged at compute+disk rate, including deletion time after compute stopped"
+}

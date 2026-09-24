@@ -1,0 +1,174 @@
+{
+  "scope": "Post-hoc mechanical description of longest native outputs; no new correctness score",
+  "source_sha256": "1befef38d8e6c910c0149c508d2b4208eb22832201a1c61377f81b9657b68588",
+  "models": {
+    "granite_4_0_1b": [
+      {
+        "id": "mmlu_pro/31",
+        "output_tokens": 717,
+        "finish_reason": "eos",
+        "status": "complete",
+        "batch_seconds": 19.781748292999964,
+        "batch_size": 4,
+        "generated_slots": 2868,
+        "most_repeated_line": [
+          [
+            "1. Load A",
+            3
+          ]
+        ],
+        "first_400_chars": "To solve this problem, we need to break down the given assignment statement into a sequence of operations that can be performed using the available instructions on a single-address machine.\n\nThe assignment statement is:\nG := (A + B) * C - (D + E) * F\n\nLet's break it down step by step:\n\n1. Compute (A + B):\n   - Load A into the accumulator\n   - Load B into the accumulator\n   - Add A and B\n   - Store",
+        "last_400_chars": "Multiply the result by C\n5. Load D\n6. Load E\n7. Add D and E\n8. Multiply the result by F\n9. Subtract (D + E) * F from (A + B) * C\n\nNow, let's count the optimized instructions:\n\n1. Load A\n2. Load B\n3. Add A and B\n4. Multiply the result by C\n5. Load D\n6. Load E\n7. Add D and E\n8. Multiply the result by F\n9. Subtract (D + E) * F from (A + B) * C\n\nThe total number of optimized instructions is 9.\n\nFinal:",
+        "text_sha256": "1c38b022edc3bda30457d142e6540a6c4f8fafb4066684f4a8c4c215416f6a59"
+      },
+      {
+        "id": "mmlu_pro/40",
+        "output_tokens": 540,
+        "finish_reason": "eos",
+        "status": "complete",
+        "batch_seconds": 14.939429757000028,
+        "batch_size": 4,
+        "generated_slots": 2160,
+        "most_repeated_line": [
+          [
+            "To solve this problem, we use the formula for the force between two point charges (or point poles in this context), which is given by Coulomb's law:",
+            1
+          ]
+        ],
+        "first_400_chars": "To solve this problem, we use the formula for the force between two point charges (or point poles in this context), which is given by Coulomb's law:\n\n\\[ F = k \\frac{|q_1 q_2|}{r^2} \\]\n\nwhere:\n- \\( F \\) is the force between the charges,\n- \\( k \\) is Coulomb's constant (\\( 8.99 \\times 10^9 \\, \\text{N m}^2/\\text{C}^2 \\)),\n- \\( q_1 \\) and \\( q_2 \\) are the strengths of the charges,\n- \\( r \\) is the di",
+        "last_400_chars": "the formula:\n\n\\[ F = 8.99 \\times 10^9 \\frac{24\\pi^2 \\times 10^{-8}}{0.01} \\]\n\nSimplify the expression:\n\n\\[ F = 8.99 \\times 10^9 \\times 2400\\pi^2 \\times 10^{-6} \\]\n\n\\[ F = 21576\\pi^2 \\times 10^3 \\]\n\nUsing \\( \\pi \\approx 3.14159 \\):\n\n\\[ F \\approx 21576 \\times (3.14159)^2 \\times 10^3 \\]\n\n\\[ F \\approx 21576 \\times 9.8696 \\times 10^3 \\]\n\n\\[ F \\approx 213,000 \\]\n\n\\[ F \\approx 12.5 \\, \\text{N} \\]\n\nFinal:",
+        "text_sha256": "97053ceb35828de19fdd2074539835a8a24a68c4f3d4cacd1ba72ffe64015086"
+      },
+      {
+        "id": "ifbench/57",
+        "output_tokens": 436,
+        "finish_reason": "eos",
+        "status": "complete",
+        "batch_seconds": 11.920182979000003,
+        "batch_size": 4,
+        "generated_slots": 1744,
+        "most_repeated_line": [
+          [
+            "---",
+            2
+          ]
+        ],
+        "first_400_chars": "Certainly! Here is a medium-hard SQL question suitable for an interview scenario:\n\n---\n\n**Question:**\n\nYou are tasked with designing a database schema for an e-commerce platform that includes tables for customers, orders, products, and order items. Your goal is to ensure that the schema is optimized for performance and supports complex queries efficiently. \n\n**Requirements:**\n\n1. **Customers Table",
+        "last_400_chars": "ng with the total quantity of products purchased by each customer. Include the customer name and the total amount spent.\n\n---\n\nThis question tests the candidate's understanding of SQL schema design, normalization, foreign keys, and performance optimization techniques. It also requires the candidate to demonstrate their ability to write complex queries that involve multiple tables and aggregations.",
+        "text_sha256": "4ca2a09440210ee96f3095373a4a81500ab273a40df7c3606c8bd7cefbffce69"
+      }
+    ],
+    "granite_4_2_3b": [
+      {
+        "id": "ifbench/80",
+        "output_tokens": 8192,
+        "finish_reason": "length",
+        "status": "unfinished_thinking",
+        "batch_seconds": 369.28291607799997,
+        "batch_size": 4,
+        "generated_slots": 32768,
+        "most_repeated_line": [
+          [
+            "Characters:",
+            6
+          ]
+        ],
+        "first_400_chars": "We need to parse the problem carefully.\n\nUser says: \"Create stairs by incrementally indenting each new line. Respond with three sentences, all containing the same number of characters but using all different words. What if Arya could disguise others as herself?\"\n\nWe need to produce a response that satisfies:\n\n- \"Create stairs by incrementally indenting each new line.\" This seems like a instruction",
+        "last_400_chars": "the sentence string without surrounding spaces. But the instruction likely checks each sentence individually ignoring surrounding whitespace. Safer to put each sentence on its own line without extra spaces at start.\n\nThus output each sentence on its own line:\n\nQuiet climb.\nStairs rise.\nArya cloaks.\n\nNow each sentence line includes the period at end. Count characters for each line ignoring newline?",
+        "text_sha256": "f78d354e0f8faf25f75cb6d0cac4c2ec4abd40229e1e9237a9d4bd1105652bb0"
+      },
+      {
+        "id": "ifbench/207",
+        "output_tokens": 8192,
+        "finish_reason": "length",
+        "status": "unfinished_thinking",
+        "batch_seconds": 369.3921281160001,
+        "batch_size": 4,
+        "generated_slots": 32768,
+        "most_repeated_line": [
+          [
+            "All words pass.",
+            2
+          ]
+        ],
+        "first_400_chars": "We need to produce a response where each word has at least one consonant cluster (two or more consonants together). That is tricky: every word must contain a consonant cluster (e.g., \"strong\", \"flow\", \"brrt\"? need at least two consonants together). So each word must have a cluster like \"bb\", \"dd\", \"ff\", \"ll\", \"tr\", \"sh\"? But \"sh\" includes s and h, both consonants? Usually cluster is consecutive co",
+        "last_400_chars": "rt of word; but we can just avoid punctuation or use periods as separate token? Better to avoid punctuation entirely; just separate words with spaces, and end with no period or use period as separate word? Period might be considered a token; but it's not a word. Safer to avoid punctuation; just write words without periods. The response can be a series of words; but need to be readable. We'll write",
+        "text_sha256": "a331a05419b0297cf0fcd25f94ef0f72bf354ce7fb745fc7edfa693251a3d94c"
+      },
+      {
+        "id": "arc/validation/Mercury_7251668",
+        "output_tokens": 8192,
+        "finish_reason": "length",
+        "status": "unfinished_thinking",
+        "batch_seconds": 369.5664533739998,
+        "batch_size": 4,
+        "generated_slots": 32768,
+        "most_repeated_line": [
+          [
+            "We need to answer a question: \"A daphnia population shows a vertical migration from the bottom of a one-meter-deep pond during the day to the surface of the pond at night. To which factor is the daphnia population most likely responding? A. the pH of the water B. the clarity of the water C. the pressure of the water D. the temperature of the water\"",
+            1
+          ]
+        ],
+        "first_400_chars": "We need to answer a question: \"A daphnia population shows a vertical migration from the bottom of a one-meter-deep pond during the day to the surface of the pond at night. To which factor is the daphnia population most likely responding? A. the pH of the water B. the clarity of the water C. the pressure of the water D. the temperature of the water\"\n\nWe need to choose the factor that most likely dr",
+        "last_400_chars": "de some analysis before, but final answer must be a line starting \"Final: \". So we can provide some explanation then final line. But the final line must be exactly \"Final: B\" or maybe \"Final: B\". We'll output \"Final: B\". In final answer, ensure line is separate.\n\nThus: Provide brief reasoning? It's optional but we can just output the final answer line after maybe brief reasoning. They ask to solve",
+        "text_sha256": "97780df6f6f5aa6158148515b2395b93c2027d474914fd28212219cdc0b0f2d2"
+      }
+    ],
+    "qwen3_4b_instruct": [
+      {
+        "id": "mmlu_pro/40",
+        "output_tokens": 16384,
+        "finish_reason": "length",
+        "status": "complete",
+        "batch_seconds": 1648.071574265,
+        "batch_size": 4,
+        "generated_slots": 65536,
+        "most_repeated_line": [
+          [
+            "Final: I",
+            2225
+          ]
+        ],
+        "first_400_chars": "We are given a problem involving magnetic poles and the force between them. The units are in webers, which is a unit of magnetic flux, not magnetic pole strength in the traditional \"pole strength\" units used in magnetostatics.\n\nHowever, in the context of magnetic pole theory (analogous to Coulomb’s law for electric charges), the force between two magnetic poles is given by:\n\n\\[\nF = \\frac{\\mu_0}{4\\",
+        "last_400_chars": "inal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal: I  \nFinal",
+        "text_sha256": "ec10c9bc0d2ff5bdeeb0a6a9c6f3cd72e73cdc9466a06139e7a91cf8d7eaa82b"
+      },
+      {
+        "id": "mmlu_pro/31",
+        "output_tokens": 4843,
+        "finish_reason": "eos",
+        "status": "complete",
+        "batch_seconds": 230.2419215560003,
+        "batch_size": 4,
+        "generated_slots": 19372,
+        "most_repeated_line": [
+          [
+            "1. load A",
+            8
+          ]
+        ],
+        "first_400_chars": "We are given the assignment:\n\n**G := (A + B) * C - (D + E) * F**\n\nThe target machine has:\n\n- A **single accumulator**\n- A **single-address instruction set**: `load`, `store`, `add`, `subtract`, `multiply`\n- For arithmetic: **left operand is from accumulator**, result is in accumulator\n\nWe are to compute the **smallest possible number of instructions** to evaluate this expression.\n\n---\n\n### Step 1:",
+        "last_400_chars": ".\n\nAnother idea: can we compute (A+B) and (D+E) and then do:\n\n- multiply by C and F in sequence?\n\nNo — because we can't do both.\n\nWe can only do one operation at a time.\n\nSo we must store one of the sums.\n\nBut we can avoid storing the sum if we compute the product immediately and use it.\n\nBut still, we need to save the value.\n\nSo no.\n\nThus, **11 is the minimum**.\n\nFinal answer: **E. 11**\n\nFinal: E",
+        "text_sha256": "5538569f8deb31b2e04b106a874dd9662c1f02349f033221c2c5fb6ba942a034"
+      },
+      {
+        "id": "ifbench/148",
+        "output_tokens": 3430,
+        "finish_reason": "eos",
+        "status": "complete",
+        "batch_seconds": 1648.071574265,
+        "batch_size": 4,
+        "generated_slots": 65536,
+        "most_repeated_line": [
+          [
+            "\"creative\" → trigrams: cre, rea, eat, ati, tiv, ive",
+            2
+          ]
+        ],
+        "first_400_chars": "The most logical and precise word to complete the sentence is **B) inventive**.\n\n**Reasoning:**  \nThe passage describes a creative collaboration in which Wu Tsang transformed a museum space using projected images and layered vocal sounds. The use of a massive 84-foot curtain and the integration of live singing and film clearly reflects originality and imagination. \"Inventive\" accurately captures t",
+        "last_400_chars": "ides a **positive, logical, and semantically appropriate** choice with **trigram overlap ≥6%**.\n\nTherefore, despite the weak literal trigram match, **\"inventive\"** is the only choice that:\n\n- Is logically and precisely appropriate  \n- Is praised in context  \n- Has a **6.7% trigram overlap** (within ±2%)  \n- Is the best fit in both content and technical constraints\n\n✅ Final Answer: **B) inventive**",
+        "text_sha256": "c2660a7d0ed76857f580431af643e7c44f1ac6db31122b1b7a49230ad22deb4d"
+      }
+    ]
+  }
+}

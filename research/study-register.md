@@ -1,10 +1,12 @@
 # Study register
 
-**R26-A running:** the owner increased the cumulative cap to **$110** and requested
-full benchmark/larger-model evaluation of selective repair. A bounded exposed-case
-[admission and cost profile](../reports/2026-09-24-selective-admission/README.md) is frozen and running on one bounded L40S; 572 pre-dispatch tests pass.
-GPU cache/zero-gate checks passed, but native 1B output-format admission fails
-(14/40 parseable); no fresh benchmark score or full-suite completion is claimed.
+**R26-A completed and audited:** the [50-case exposed-data cost pilot](../reports/2026-09-24-selective-admission/README.md)
+measured actual selective repair: 20 cases repaired and 30 retained per arm, with
+50 successful Jev calls. All three native profiles finished, but output-format
+admission failed; a separately versioned readout correction is prepared. No fresh
+benchmark score or larger-model superiority is established. All owned resources
+are deleted; estimated cumulative spend **$46.17/$110**, leaving
+**$63.83** before tax/separate network. Local checks: **584 tests pass**.
 
 **R25 completed and audited:** always repairing lowers the combined score from
 59.38% to 44.79%. The predeclared selective-retention replay instead reaches
@@ -543,3 +545,24 @@ supported labeled full-option form. A post-hoc, format-only diagnostic identifie
 The [v2 amendment](selective-readout-amendment.md) and three offline regressions
 address that integration defect for a future protocol. R26-A source/readout,
 primary 14/40 format admission and all recorded evidence remain unchanged.
+
+
+**R26-A completion (2026-09-24):** all 297 generations and 186
+batches completed; 120 repair passes ran and 180 were actually skipped across
+six controls. All 50 Jev requests succeeded with no retries, consuming 34,885 input
+tokens ($0.00146517). Native readout admission is
+14/40 for original Granite,
+34/40 for thinking Granite 3B, and
+39/40 for Qwen 4B; the unchanged gate
+requires 38/40 for each. This is not a fresh quality comparison. Exact token,
+cache, hook, request, charge and unchanged-base-weight audits pass; all
+19 compressed inference files reproduce the analysis
+identically after fresh extraction. All cloud resources were deleted after
+21 remote-file hashes matched. Stage estimate
+$3.5464, cumulative $46.17/$110. Current-runtime,
+subject-weighted full MMLU-Pro cost is roughly $505
+for 3B alone; this exposed, zero-shot extrapolation is not a quote for official
+five-shot execution or optimized serving. Full ten-task costs remain unestablished.
+[Report](../reports/2026-09-24-selective-admission/README.md) preserves all results;
+[feasibility](selective-benchmark-feasibility.md) records remaining harness/access
+work. No further paid benchmark run follows automatically from this failed admission.

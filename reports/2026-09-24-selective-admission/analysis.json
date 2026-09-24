@@ -1,0 +1,861 @@
+{
+  "audited_records": true,
+  "tokenizers_checked": true,
+  "fresh_test_cases": 0,
+  "models": {
+    "granite_4_0_1b": {
+      "native_cases": 50,
+      "parseable": 14,
+      "graded_cases": 40,
+      "correct": 14,
+      "admission": false,
+      "cutoffs": 0,
+      "unfinished": 0,
+      "serial_vs_batch_exact_outputs": 8,
+      "parameters": 1631750144,
+      "load_seconds": 157.947938871
+    },
+    "granite_4_2_3b": {
+      "native_cases": 50,
+      "parseable": 34,
+      "graded_cases": 40,
+      "correct": 29,
+      "admission": false,
+      "cutoffs": 9,
+      "unfinished": 9,
+      "serial_vs_batch_exact_outputs": 0,
+      "parameters": 3659737600,
+      "load_seconds": 176.806862056
+    },
+    "qwen3_4b_instruct": {
+      "native_cases": 50,
+      "parseable": 39,
+      "graded_cases": 40,
+      "correct": 32,
+      "admission": true,
+      "cutoffs": 1,
+      "unfinished": 0,
+      "serial_vs_batch_exact_outputs": 0,
+      "parameters": 4022468096,
+      "load_seconds": 193.4777450040001
+    }
+  },
+  "admitted": false,
+  "delivery": {
+    "physical_attempts": 50,
+    "known_input_tokens": 34885,
+    "unknown_attempts": 0,
+    "missing_cases": 0,
+    "retries": 0,
+    "usd": 0.00146517
+  },
+  "actual_repairs": 120,
+  "actual_skipped_repairs": 180,
+  "outputs": 297,
+  "batches": 186,
+  "total_work": {
+    "actual_prompt_tokens": 94901,
+    "actual_generated_tokens": 211175,
+    "seconds": 6049.023518368001,
+    "padded_prompt_tokens": 100041,
+    "processed_token_slots": 537626,
+    "generated_token_slots": 437882,
+    "forwards": 128085
+  },
+  "native_cost_profiles": {
+    "granite_4_0_1b": {
+      "mmlu_pro": {
+        "measured": true,
+        "full_cases": 12032,
+        "profile_cases": 14,
+        "central_gpu_seconds": 33439.8996566994,
+        "upper_observed_gpu_seconds": 59503.49886534389,
+        "central_gpu_usd": 16.29805739569463,
+        "upper_observed_gpu_usd": 29.001027207261238,
+        "interpretation": "Exposed-case extrapolation; neither a confidence bound nor an invoice; overhead/API excluded"
+      },
+      "musr": {
+        "measured": true,
+        "full_cases": 756,
+        "profile_cases": 6,
+        "central_gpu_seconds": 186.95006958600266,
+        "upper_observed_gpu_seconds": 190.4262616620025,
+        "central_gpu_usd": 0.09111639076438889,
+        "upper_observed_gpu_usd": 0.09281062963934777,
+        "interpretation": "Exposed-case extrapolation; neither a confidence bound nor an invoice; overhead/API excluded"
+      },
+      "ifbench": {
+        "measured": true,
+        "full_cases": 300,
+        "profile_cases": 10,
+        "central_gpu_seconds": 639.3366716175003,
+        "upper_observed_gpu_seconds": 1120.4572317750021,
+        "central_gpu_usd": 0.31160218410245266,
+        "upper_observed_gpu_usd": 0.5460924362920933,
+        "interpretation": "Exposed-case extrapolation; neither a confidence bound nor an invoice; overhead/API excluded"
+      },
+      "aime2026": {
+        "measured": false,
+        "full_cases": 30
+      },
+      "gpqa_diamond": {
+        "measured": false,
+        "full_cases": 198
+      },
+      "longbench_v2": {
+        "measured": false,
+        "full_cases": 503
+      },
+      "simpleqa_verified": {
+        "measured": false,
+        "full_cases": 1000
+      },
+      "livecodebench": {
+        "measured": false,
+        "full_cases": null
+      },
+      "bfcl_v4": {
+        "measured": false,
+        "full_cases": null
+      },
+      "swe_bench": {
+        "measured": false,
+        "full_cases": 500
+      }
+    },
+    "granite_4_2_3b": {
+      "mmlu_pro": {
+        "measured": true,
+        "full_cases": 12032,
+        "profile_cases": 14,
+        "central_gpu_seconds": 1034531.7241279861,
+        "upper_observed_gpu_seconds": 1133292.065205503,
+        "central_gpu_usd": 504.2137563390359,
+        "upper_observed_gpu_usd": 552.3479231225562,
+        "interpretation": "Exposed-case extrapolation; neither a confidence bound nor an invoice; overhead/API excluded"
+      },
+      "musr": {
+        "measured": true,
+        "full_cases": 756,
+        "profile_cases": 6,
+        "central_gpu_seconds": 44080.816913783965,
+        "upper_observed_gpu_seconds": 45143.78942996995,
+        "central_gpu_usd": 21.48426554760986,
+        "upper_observed_gpu_usd": 22.00234087847809,
+        "interpretation": "Exposed-case extrapolation; neither a confidence bound nor an invoice; overhead/API excluded"
+      },
+      "ifbench": {
+        "measured": true,
+        "full_cases": 300,
+        "profile_cases": 10,
+        "central_gpu_seconds": 17683.760389237505,
+        "upper_observed_gpu_seconds": 27801.47509927499,
+        "central_gpu_usd": 8.618774121762755,
+        "upper_observed_gpu_usd": 13.549981952837054,
+        "interpretation": "Exposed-case extrapolation; neither a confidence bound nor an invoice; overhead/API excluded"
+      },
+      "aime2026": {
+        "measured": false,
+        "full_cases": 30
+      },
+      "gpqa_diamond": {
+        "measured": false,
+        "full_cases": 198
+      },
+      "longbench_v2": {
+        "measured": false,
+        "full_cases": 503
+      },
+      "simpleqa_verified": {
+        "measured": false,
+        "full_cases": 1000
+      },
+      "livecodebench": {
+        "measured": false,
+        "full_cases": null
+      },
+      "bfcl_v4": {
+        "measured": false,
+        "full_cases": null
+      },
+      "swe_bench": {
+        "measured": false,
+        "full_cases": 500
+      }
+    },
+    "qwen3_4b_instruct": {
+      "mmlu_pro": {
+        "measured": true,
+        "full_cases": 12032,
+        "profile_cases": 14,
+        "central_gpu_seconds": 1318333.2602501025,
+        "upper_observed_gpu_seconds": 4957399.29538912,
+        "central_gpu_usd": 642.5339598142247,
+        "upper_observed_gpu_usd": 2416.1549250773905,
+        "interpretation": "Exposed-case extrapolation; neither a confidence bound nor an invoice; overhead/API excluded"
+      },
+      "musr": {
+        "measured": true,
+        "full_cases": 756,
+        "profile_cases": 6,
+        "central_gpu_seconds": 25718.403380165986,
+        "upper_observed_gpu_seconds": 37692.00322007405,
+        "central_gpu_usd": 12.53472703921816,
+        "upper_observed_gpu_usd": 18.370462774890612,
+        "interpretation": "Exposed-case extrapolation; neither a confidence bound nor an invoice; overhead/API excluded"
+      },
+      "ifbench": {
+        "measured": true,
+        "full_cases": 300,
+        "profile_cases": 10,
+        "central_gpu_seconds": 13161.437396534997,
+        "upper_observed_gpu_seconds": 123605.368069875,
+        "central_gpu_usd": 6.414668234675599,
+        "upper_observed_gpu_usd": 60.24322452819292,
+        "interpretation": "Exposed-case extrapolation; neither a confidence bound nor an invoice; overhead/API excluded"
+      },
+      "aime2026": {
+        "measured": false,
+        "full_cases": 30
+      },
+      "gpqa_diamond": {
+        "measured": false,
+        "full_cases": 198
+      },
+      "longbench_v2": {
+        "measured": false,
+        "full_cases": 503
+      },
+      "simpleqa_verified": {
+        "measured": false,
+        "full_cases": 1000
+      },
+      "livecodebench": {
+        "measured": false,
+        "full_cases": null
+      },
+      "bfcl_v4": {
+        "measured": false,
+        "full_cases": null
+      },
+      "swe_bench": {
+        "measured": false,
+        "full_cases": 500
+      }
+    }
+  },
+  "subject_weighted_cost_profiles": {
+    "granite_4_0_1b": {
+      "mmlu_pro": {
+        "measured": true,
+        "full_cases": 12032,
+        "profile_cases": 14,
+        "gpu_seconds": 32702.085740614733,
+        "gpu_usd": 15.938459021442899,
+        "strata": {
+          "biology": {
+            "full_cases": 717,
+            "profile_cases": 1,
+            "mean_seconds": 3.734857439250007
+          },
+          "business": {
+            "full_cases": 789,
+            "profile_cases": 1,
+            "mean_seconds": 0.922463010499996
+          },
+          "chemistry": {
+            "full_cases": 1132,
+            "profile_cases": 1,
+            "mean_seconds": 0.922463010499996
+          },
+          "computer science": {
+            "full_cases": 410,
+            "profile_cases": 1,
+            "mean_seconds": 4.945437073249991
+          },
+          "economics": {
+            "full_cases": 844,
+            "profile_cases": 1,
+            "mean_seconds": 4.945437073249991
+          },
+          "engineering": {
+            "full_cases": 969,
+            "profile_cases": 1,
+            "mean_seconds": 3.734857439250007
+          },
+          "health": {
+            "full_cases": 818,
+            "profile_cases": 1,
+            "mean_seconds": 0.922463010499996
+          },
+          "history": {
+            "full_cases": 381,
+            "profile_cases": 1,
+            "mean_seconds": 4.945437073249991
+          },
+          "law": {
+            "full_cases": 1101,
+            "profile_cases": 1,
+            "mean_seconds": 1.5357402937500098
+          },
+          "math": {
+            "full_cases": 1351,
+            "profile_cases": 1,
+            "mean_seconds": 4.945437073249991
+          },
+          "other": {
+            "full_cases": 924,
+            "profile_cases": 1,
+            "mean_seconds": 1.1453755624999928
+          },
+          "philosophy": {
+            "full_cases": 499,
+            "profile_cases": 1,
+            "mean_seconds": 1.5521692032500027
+          },
+          "physics": {
+            "full_cases": 1299,
+            "profile_cases": 1,
+            "mean_seconds": 3.734857439250007
+          },
+          "psychology": {
+            "full_cases": 798,
+            "profile_cases": 1,
+            "mean_seconds": 0.922463010499996
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      },
+      "ifbench": {
+        "measured": true,
+        "full_cases": 300,
+        "profile_cases": 10,
+        "gpu_seconds": 639.3366716175003,
+        "gpu_usd": 0.31160218410245266,
+        "strata": {
+          "instruction_following": {
+            "full_cases": 300,
+            "profile_cases": 10,
+            "mean_seconds": 2.131122238725001
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      },
+      "musr": {
+        "measured": true,
+        "full_cases": 756,
+        "profile_cases": 6,
+        "gpu_seconds": 186.93627517300266,
+        "gpu_usd": 0.09110966759425015,
+        "strata": {
+          "murder_mystery": {
+            "full_cases": 250,
+            "profile_cases": 2,
+            "mean_seconds": 0.2449893830000036
+          },
+          "object_placements": {
+            "full_cases": 256,
+            "profile_cases": 2,
+            "mean_seconds": 0.2449893830000036
+          },
+          "team_allocation": {
+            "full_cases": 250,
+            "profile_cases": 2,
+            "mean_seconds": 0.2518865895000033
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      }
+    },
+    "granite_4_2_3b": {
+      "mmlu_pro": {
+        "measured": true,
+        "full_cases": 12032,
+        "profile_cases": 14,
+        "gpu_seconds": 1035989.0352575481,
+        "gpu_usd": 504.92402582778504,
+        "strata": {
+          "biology": {
+            "full_cases": 717,
+            "profile_cases": 1,
+            "mean_seconds": 92.87233017150004
+          },
+          "business": {
+            "full_cases": 789,
+            "profile_cases": 1,
+            "mean_seconds": 92.67158366424997
+          },
+          "chemistry": {
+            "full_cases": 1132,
+            "profile_cases": 1,
+            "mean_seconds": 92.67158366424997
+          },
+          "computer science": {
+            "full_cases": 410,
+            "profile_cases": 1,
+            "mean_seconds": 94.18983254699992
+          },
+          "economics": {
+            "full_cases": 844,
+            "profile_cases": 1,
+            "mean_seconds": 94.18983254699992
+          },
+          "engineering": {
+            "full_cases": 969,
+            "profile_cases": 1,
+            "mean_seconds": 92.87233017150004
+          },
+          "health": {
+            "full_cases": 818,
+            "profile_cases": 1,
+            "mean_seconds": 92.67158366424997
+          },
+          "history": {
+            "full_cases": 381,
+            "profile_cases": 1,
+            "mean_seconds": 94.18983254699992
+          },
+          "law": {
+            "full_cases": 1101,
+            "profile_cases": 1,
+            "mean_seconds": 92.39161334349996
+          },
+          "math": {
+            "full_cases": 1351,
+            "profile_cases": 1,
+            "mean_seconds": 94.18983254699992
+          },
+          "other": {
+            "full_cases": 924,
+            "profile_cases": 1,
+            "mean_seconds": 12.687729622000006
+          },
+          "philosophy": {
+            "full_cases": 499,
+            "profile_cases": 1,
+            "mean_seconds": 72.40095013050006
+          },
+          "physics": {
+            "full_cases": 1299,
+            "profile_cases": 1,
+            "mean_seconds": 92.87233017150004
+          },
+          "psychology": {
+            "full_cases": 798,
+            "profile_cases": 1,
+            "mean_seconds": 92.87233017150004
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      },
+      "ifbench": {
+        "measured": true,
+        "full_cases": 300,
+        "profile_cases": 10,
+        "gpu_seconds": 17683.760389237505,
+        "gpu_usd": 8.618774121762755,
+        "strata": {
+          "instruction_following": {
+            "full_cases": 300,
+            "profile_cases": 10,
+            "mean_seconds": 58.945867964125014
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      },
+      "musr": {
+        "measured": true,
+        "full_cases": 756,
+        "profile_cases": 6,
+        "gpu_seconds": 44082.92598623672,
+        "gpu_usd": 21.485293474853645,
+        "strata": {
+          "murder_mystery": {
+            "full_cases": 250,
+            "profile_cases": 2,
+            "mean_seconds": 58.65947095612495
+          },
+          "object_placements": {
+            "full_cases": 256,
+            "profile_cases": 2,
+            "mean_seconds": 58.65947095612495
+          },
+          "team_allocation": {
+            "full_cases": 250,
+            "profile_cases": 2,
+            "mean_seconds": 57.60493472974997
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      }
+    },
+    "qwen3_4b_instruct": {
+      "mmlu_pro": {
+        "measured": true,
+        "full_cases": 12032,
+        "profile_cases": 14,
+        "gpu_seconds": 1461139.114759792,
+        "gpu_usd": 712.1351858087486,
+        "strata": {
+          "biology": {
+            "full_cases": 717,
+            "profile_cases": 1,
+            "mean_seconds": 412.01789356625
+          },
+          "business": {
+            "full_cases": 789,
+            "profile_cases": 1,
+            "mean_seconds": 14.400268725249816
+          },
+          "chemistry": {
+            "full_cases": 1132,
+            "profile_cases": 1,
+            "mean_seconds": 14.400268725249816
+          },
+          "computer science": {
+            "full_cases": 410,
+            "profile_cases": 1,
+            "mean_seconds": 57.56048038900008
+          },
+          "economics": {
+            "full_cases": 844,
+            "profile_cases": 1,
+            "mean_seconds": 57.56048038900008
+          },
+          "engineering": {
+            "full_cases": 969,
+            "profile_cases": 1,
+            "mean_seconds": 412.01789356625
+          },
+          "health": {
+            "full_cases": 818,
+            "profile_cases": 1,
+            "mean_seconds": 14.400268725249816
+          },
+          "history": {
+            "full_cases": 381,
+            "profile_cases": 1,
+            "mean_seconds": 57.56048038900008
+          },
+          "law": {
+            "full_cases": 1101,
+            "profile_cases": 1,
+            "mean_seconds": 3.7471818905000873
+          },
+          "math": {
+            "full_cases": 1351,
+            "profile_cases": 1,
+            "mean_seconds": 57.56048038900008
+          },
+          "other": {
+            "full_cases": 924,
+            "profile_cases": 1,
+            "mean_seconds": 2.7682640597499812
+          },
+          "philosophy": {
+            "full_cases": 499,
+            "profile_cases": 1,
+            "mean_seconds": 3.552774126500026
+          },
+          "physics": {
+            "full_cases": 1299,
+            "profile_cases": 1,
+            "mean_seconds": 412.01789356625
+          },
+          "psychology": {
+            "full_cases": 798,
+            "profile_cases": 1,
+            "mean_seconds": 14.400268725249816
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      },
+      "ifbench": {
+        "measured": true,
+        "full_cases": 300,
+        "profile_cases": 10,
+        "gpu_seconds": 13161.437396534997,
+        "gpu_usd": 6.414668234675599,
+        "strata": {
+          "instruction_following": {
+            "full_cases": 300,
+            "profile_cases": 10,
+            "mean_seconds": 43.87145798844999
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      },
+      "musr": {
+        "measured": true,
+        "full_cases": 756,
+        "profile_cases": 6,
+        "gpu_seconds": 25742.160522705486,
+        "gpu_usd": 12.54630587996354,
+        "strata": {
+          "murder_mystery": {
+            "full_cases": 250,
+            "profile_cases": 2,
+            "mean_seconds": 37.978575846750005
+          },
+          "object_placements": {
+            "full_cases": 256,
+            "profile_cases": 2,
+            "mean_seconds": 37.978575846750005
+          },
+          "team_allocation": {
+            "full_cases": 250,
+            "profile_cases": 2,
+            "mean_seconds": 26.100004576999936
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      }
+    },
+    "granite_jev": {
+      "mmlu_pro": {
+        "measured": true,
+        "full_cases": 12032,
+        "profile_cases": 14,
+        "gpu_seconds": 33512.8007167668,
+        "gpu_usd": 16.33358817399789,
+        "strata": {
+          "biology": {
+            "full_cases": 717,
+            "profile_cases": 1,
+            "mean_seconds": 3.831321665250087
+          },
+          "business": {
+            "full_cases": 789,
+            "profile_cases": 1,
+            "mean_seconds": 1.0446436505000065
+          },
+          "chemistry": {
+            "full_cases": 1132,
+            "profile_cases": 1,
+            "mean_seconds": 1.0569284204999576
+          },
+          "computer science": {
+            "full_cases": 410,
+            "profile_cases": 1,
+            "mean_seconds": 5.180183680249911
+          },
+          "economics": {
+            "full_cases": 844,
+            "profile_cases": 1,
+            "mean_seconds": 5.05786202524996
+          },
+          "engineering": {
+            "full_cases": 969,
+            "profile_cases": 1,
+            "mean_seconds": 3.869908673250009
+          },
+          "health": {
+            "full_cases": 818,
+            "profile_cases": 1,
+            "mean_seconds": 0.9880253984999854
+          },
+          "history": {
+            "full_cases": 381,
+            "profile_cases": 1,
+            "mean_seconds": 4.945437073249991
+          },
+          "law": {
+            "full_cases": 1101,
+            "profile_cases": 1,
+            "mean_seconds": 1.5357402937500098
+          },
+          "math": {
+            "full_cases": 1351,
+            "profile_cases": 1,
+            "mean_seconds": 4.945437073249991
+          },
+          "other": {
+            "full_cases": 924,
+            "profile_cases": 1,
+            "mean_seconds": 1.1453755624999928
+          },
+          "philosophy": {
+            "full_cases": 499,
+            "profile_cases": 1,
+            "mean_seconds": 1.5521692032500027
+          },
+          "physics": {
+            "full_cases": 1299,
+            "profile_cases": 1,
+            "mean_seconds": 3.8251632972500857
+          },
+          "psychology": {
+            "full_cases": 798,
+            "profile_cases": 1,
+            "mean_seconds": 0.922463010499996
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      },
+      "ifbench": {
+        "measured": true,
+        "full_cases": 300,
+        "profile_cases": 10,
+        "gpu_seconds": 865.830268357502,
+        "gpu_usd": 0.4219914399711173,
+        "strata": {
+          "instruction_following": {
+            "full_cases": 300,
+            "profile_cases": 10,
+            "mean_seconds": 2.8861008945250064
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      },
+      "musr": {
+        "measured": true,
+        "full_cases": 756,
+        "profile_cases": 6,
+        "gpu_seconds": 309.440888839006,
+        "gpu_usd": 0.15081640252058895,
+        "strata": {
+          "murder_mystery": {
+            "full_cases": 250,
+            "profile_cases": 2,
+            "mean_seconds": 0.38831742149999116
+          },
+          "object_placements": {
+            "full_cases": 256,
+            "profile_cases": 2,
+            "mean_seconds": 0.4172805565000175
+          },
+          "team_allocation": {
+            "full_cases": 250,
+            "profile_cases": 2,
+            "mean_seconds": 0.422150844000015
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      }
+    },
+    "all_models_all_controls": {
+      "mmlu_pro": {
+        "measured": true,
+        "full_cases": 12032,
+        "profile_cases": 14,
+        "gpu_seconds": 2608005.5850092154,
+        "gpu_usd": 1271.0990508088066,
+        "strata": {
+          "biology": {
+            "full_cases": 717,
+            "profile_cases": 1,
+            "mean_seconds": 509.81961352000025
+          },
+          "business": {
+            "full_cases": 789,
+            "profile_cases": 1,
+            "mean_seconds": 108.8991454249998
+          },
+          "chemistry": {
+            "full_cases": 1132,
+            "profile_cases": 1,
+            "mean_seconds": 113.22703245199978
+          },
+          "computer science": {
+            "full_cases": 410,
+            "profile_cases": 1,
+            "mean_seconds": 177.68712547425002
+          },
+          "economics": {
+            "full_cases": 844,
+            "profile_cases": 1,
+            "mean_seconds": 160.86470367725008
+          },
+          "engineering": {
+            "full_cases": 969,
+            "profile_cases": 1,
+            "mean_seconds": 551.5409512409999
+          },
+          "health": {
+            "full_cases": 818,
+            "profile_cases": 1,
+            "mean_seconds": 108.63830994399984
+          },
+          "history": {
+            "full_cases": 381,
+            "profile_cases": 1,
+            "mean_seconds": 156.69575000925
+          },
+          "law": {
+            "full_cases": 1101,
+            "profile_cases": 1,
+            "mean_seconds": 97.67453552775005
+          },
+          "math": {
+            "full_cases": 1351,
+            "profile_cases": 1,
+            "mean_seconds": 156.69575000925
+          },
+          "other": {
+            "full_cases": 924,
+            "profile_cases": 1,
+            "mean_seconds": 16.60136924424998
+          },
+          "philosophy": {
+            "full_cases": 499,
+            "profile_cases": 1,
+            "mean_seconds": 77.50589346025009
+          },
+          "physics": {
+            "full_cases": 1299,
+            "profile_cases": 1,
+            "mean_seconds": 521.2842008870002
+          },
+          "psychology": {
+            "full_cases": 798,
+            "profile_cases": 1,
+            "mean_seconds": 108.19506190724985
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      },
+      "ifbench": {
+        "measured": true,
+        "full_cases": 300,
+        "profile_cases": 10,
+        "gpu_seconds": 33152.50684758,
+        "gpu_usd": 16.157986864795188,
+        "strata": {
+          "instruction_following": {
+            "full_cases": 300,
+            "profile_cases": 10,
+            "mean_seconds": 110.50835615860001
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      },
+      "musr": {
+        "measured": true,
+        "full_cases": 756,
+        "profile_cases": 6,
+        "gpu_seconds": 71197.0114636832,
+        "gpu_usd": 34.700253025566916,
+        "strata": {
+          "murder_mystery": {
+            "full_cases": 250,
+            "profile_cases": 2,
+            "mean_seconds": 98.66580256687494
+          },
+          "object_placements": {
+            "full_cases": 256,
+            "profile_cases": 2,
+            "mean_seconds": 97.91379123887496
+          },
+          "team_allocation": {
+            "full_cases": 250,
+            "profile_cases": 2,
+            "mean_seconds": 85.85852105924991
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      }
+    }
+  },
+  "cost_inventory_sha256": "b213ac7580d9129f2bd94c30e416bc1a91b09d7145919f6c948cd18ea77ae7de",
+  "seconds": 6769.617008126999
+}

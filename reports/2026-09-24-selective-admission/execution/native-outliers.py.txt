@@ -1,0 +1,21 @@
+"""Post-hoc format/runtime description; no new semantic correctness score."""
+from collections import Counter
+import hashlib,json
+from pathlib import Path
+
+raw=Path('results/selective-admission-nebius-20260924/selective-admission-v1')
+report=Path('reports/2026-09-24-selective-admission')
+rows=[json.loads(s) for s in (raw/'outputs.jsonl').read_text().splitlines()]
+batches={r['batch_id']:r for r in map(json.loads,(raw/'batches.jsonl').read_text().splitlines())}
+result={}
+for name in sorted({r['model'] for r in rows}):
+ items=[]
+ for r in sorted((r for r in rows if r['model']==name and r['arm']=='native'),key=lambda r:-len(r['generated_token_ids']))[:3]:
+  c=Counter(line.strip() for line in r['text'].splitlines() if line.strip())
+  b=batches[r['batch_id']]
+  items.append(dict(id=r['id'],output_tokens=len(r['generated_token_ids']),finish_reason=r['finish_reason'],status=r['status'],batch_seconds=b['seconds'],batch_size=b['batch_size'],generated_slots=b['generated_token_slots'],most_repeated_line=c.most_common(1),first_400_chars=r['text'][:400],last_400_chars=r['text'][-400:],text_sha256=hashlib.sha256(r['text'].encode()).hexdigest()))
+ result[name]=items
+out=dict(scope='Post-hoc mechanical description of longest native outputs; no new correctness score',source_sha256=hashlib.sha256((raw/'outputs.jsonl').read_bytes()).hexdigest(),models=result)
+with (report/'native-outliers.json').open('x') as f:json.dump(out,f,indent=2,ensure_ascii=False);f.write('\n')
+(report/'execution/native-outliers.py.txt').write_bytes(Path(__file__).read_bytes())
+print('Archived mechanical native-outlier diagnostic')
