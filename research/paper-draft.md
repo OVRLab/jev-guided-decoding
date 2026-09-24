@@ -1774,3 +1774,29 @@ These execution results establish a working selective path, not broad quality
 gains, superiority to larger models, a released checkpoint or a novel-architecture
 claim. Further evaluation needs prospective readout admission and a more efficient,
 verified runtime before a large benchmark expenditure.
+
+
+## R27-A: prospective runtime repair and engineering replication
+
+A separate 18-case exposed pilot integrates full-option readout v2, serial
+inference, an explicit terminal-line stop and a Jev-free self-refinement control.
+All 132 outputs complete. On ARC/GSM8K/MMLU-Pro/MuSR/IFBench strict, original and
+live-guided Granite both score 2/4, 2/3, 1/5, 1/3 and 2/3. The Jev-free extra
+pass and most routed controls have the same counts; inverted strength loses one
+MMLU answer. Larger thinking Granite scores 4/4, 3/3, 4/5, 3/3 and 3/3; Qwen 4B
+scores 4/4, 3/3, 4/5, 3/3 and 1/3. These small exposed sets diagnose the runner;
+they cannot establish a new architecture's superiority.
+
+All 18 Jev calls succeed, 54 repairs execute and 54 are skipped across the six
+routed arms, with another 18 always-self-refine passes. No provider-call savings
+are claimed. Numerical/cache, token/prefix, selected-gate, work, receipt and base-
+weight checks pass; 19 compressed inference files reproduce the analysis. All
+owned cloud resources are deleted after 21 remote hashes match. Stage estimate
+$1.2225, cumulative $47.40/$110 before tax/separate network.
+The first whole-run audit's obsolete probe-count assertion is corrected with a
+regression and without repeating inference. [Report](../reports/2026-09-24-benchmark-execution-pilot/README.md).
+
+Before fresh GPQA inference, the complete 198-question source is admitted with
+two public-demonstration overlaps separately labeled. A new prospective readout
+requires complete multiline options in 26 cases; no old primary grade is changed.
+The full-task comparisons remain prospective until their frozen runs finish.

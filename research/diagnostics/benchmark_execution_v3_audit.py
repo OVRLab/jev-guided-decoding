@@ -1,4 +1,4 @@
-"""Independent R27 token/work/selection audit; no model-generated content is executed."""
+"""R27 full-task audit with multiline readout v3; generated content is never executed."""
 
 import argparse
 import copy
@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[2]
 OLD = runpy.run_path(str(Path(__file__).with_name("selective_admission_audit.py")))
 A, C = OLD["A"], OLD["C"]
 K = runpy.run_path(str(ROOT / "research/iterations/benchmark_execution_v2/contract.py"))
-G = runpy.run_path(str(ROOT / "research/evaluation/choice_readout_v2.py"))
+G = runpy.run_path(str(ROOT / "research/evaluation/choice_readout_v3.py"))
 lines, unique = OLD["lines"], OLD["unique"]
 check_batch, check_selection = OLD["check_batch"], OLD["check_selection"]
 check_delivery, check_numerical = OLD["check_delivery"], OLD["check_numerical"]

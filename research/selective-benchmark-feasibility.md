@@ -204,3 +204,20 @@ SimpleQA judge, isolated LiveCodeBench execution, full BFCL tools and a fixed
 SWE-bench agent still have separate work/cost requirements. The ten-row contract
 remains intact; no missing task is substituted or averaged away. The original
 $110 cumulative authorization is unchanged.
+
+### R27-A completion and GPQA admission
+
+The [completed pilot](../reports/2026-09-24-benchmark-execution-pilot/README.md)
+contains all 132 outputs, passes the independent integrity audit and reproduces
+from its public archives. All owned resources were deleted after hash-verified
+backup. Its $1.2225 estimate brings cumulative spend to $47.40/$110, leaving
+$62.60 before tax/separate network. The local suite now passes 606 tests.
+
+Granite–Jev tied original Granite on these 18 exposed cases; engineering admission
+does not imply a quality gain. Full GPQA now has a prospective $24 stage reserve,
+11-hour worker limit and independent 12-hour VM shutdown. An exposed-MMLU timing
+proxy estimates $12.34 of compute, not a GPQA quote or confidence bound. Freeze
+the private 198-case manifest before dispatch, keep references off the worker,
+and publish only aggregate GPQA results and hashes. Full MuSR with both larger
+comparators may not fit the remaining funds; its dispatch still requires its own
+cost admission. No full fresh benchmark has completed at this point.

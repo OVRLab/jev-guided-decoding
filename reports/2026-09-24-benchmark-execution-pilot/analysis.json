@@ -1,0 +1,3093 @@
+{
+  "audited_records": true,
+  "tokenizers_checked": true,
+  "fresh_test_cases": 0,
+  "models": {
+    "granite_4_0_1b": {
+      "native_cases": 18,
+      "parseable": 13,
+      "graded_cases": 15,
+      "correct": 6,
+      "cutoffs": 0,
+      "unfinished": 0,
+      "greedy_repeat_exact_outputs": 3,
+      "parameters": 1631750144,
+      "load_seconds": 146.77081350000003
+    },
+    "granite_4_2_3b": {
+      "native_cases": 18,
+      "parseable": 14,
+      "graded_cases": 15,
+      "correct": 14,
+      "cutoffs": 1,
+      "unfinished": 1,
+      "greedy_repeat_exact_outputs": 0,
+      "parameters": 3659737600,
+      "load_seconds": 176.234118164
+    },
+    "qwen3_4b_instruct": {
+      "native_cases": 18,
+      "parseable": 15,
+      "graded_cases": 15,
+      "correct": 14,
+      "cutoffs": 0,
+      "unfinished": 0,
+      "greedy_repeat_exact_outputs": 0,
+      "parameters": 4022468096,
+      "load_seconds": 194.42557803600016
+    }
+  },
+  "admitted": true,
+  "quality": {
+    "summaries": {
+      "original": {
+        "arc": {
+          "correct": 2,
+          "total": 4,
+          "accuracy": 0.5,
+          "wilson_95": [
+            0.15003898915214947,
+            0.8499610108478506
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "gsm8k": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.6666666666666666,
+          "wilson_95": [
+            0.2076596008020477,
+            0.9385080552796037
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "ifbench": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.6666666666666666,
+          "wilson_95": [
+            0.2076596008020477,
+            0.9385080552796037
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0,
+          "loose_correct": 2
+        },
+        "mmlu_pro": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2,
+          "wilson_95": [
+            0.03622410863243014,
+            0.6244653702374747
+          ],
+          "unparseable": 2,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "musr": {
+          "correct": 1,
+          "total": 3,
+          "accuracy": 0.3333333333333333,
+          "wilson_95": [
+            0.06149194472039621,
+            0.7923403991979522
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        }
+      },
+      "self_refine": {
+        "arc": {
+          "correct": 2,
+          "total": 4,
+          "accuracy": 0.5,
+          "wilson_95": [
+            0.15003898915214947,
+            0.8499610108478506
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "gsm8k": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.6666666666666666,
+          "wilson_95": [
+            0.2076596008020477,
+            0.9385080552796037
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "ifbench": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.6666666666666666,
+          "wilson_95": [
+            0.2076596008020477,
+            0.9385080552796037
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0,
+          "loose_correct": 2
+        },
+        "mmlu_pro": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2,
+          "wilson_95": [
+            0.03622410863243014,
+            0.6244653702374747
+          ],
+          "unparseable": 2,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "musr": {
+          "correct": 1,
+          "total": 3,
+          "accuracy": 0.3333333333333333,
+          "wilson_95": [
+            0.06149194472039621,
+            0.7923403991979522
+          ],
+          "unparseable": 1,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        }
+      },
+      "granite_4_2_3b": {
+        "arc": {
+          "correct": 4,
+          "total": 4,
+          "accuracy": 1.0,
+          "wilson_95": [
+            0.5101091635454027,
+            1.0
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "gsm8k": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0,
+          "wilson_95": [
+            0.4385029682449546,
+            1.0
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "ifbench": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0,
+          "wilson_95": [
+            0.4385029682449546,
+            1.0
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0,
+          "loose_correct": 3
+        },
+        "mmlu_pro": {
+          "correct": 4,
+          "total": 5,
+          "accuracy": 0.8,
+          "wilson_95": [
+            0.37553462976252533,
+            0.9637758913675698
+          ],
+          "unparseable": 1,
+          "length_stops": 1,
+          "unfinished_thinking": 1
+        },
+        "musr": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0,
+          "wilson_95": [
+            0.4385029682449546,
+            1.0
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        }
+      },
+      "qwen3_4b_instruct": {
+        "arc": {
+          "correct": 4,
+          "total": 4,
+          "accuracy": 1.0,
+          "wilson_95": [
+            0.5101091635454027,
+            1.0
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "gsm8k": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0,
+          "wilson_95": [
+            0.4385029682449546,
+            1.0
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "ifbench": {
+          "correct": 1,
+          "total": 3,
+          "accuracy": 0.3333333333333333,
+          "wilson_95": [
+            0.06149194472039621,
+            0.7923403991979522
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0,
+          "loose_correct": 1
+        },
+        "mmlu_pro": {
+          "correct": 4,
+          "total": 5,
+          "accuracy": 0.8,
+          "wilson_95": [
+            0.37553462976252533,
+            0.9637758913675698
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "musr": {
+          "correct": 3,
+          "total": 3,
+          "accuracy": 1.0,
+          "wilson_95": [
+            0.4385029682449546,
+            1.0
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        }
+      },
+      "guided": {
+        "arc": {
+          "correct": 2,
+          "total": 4,
+          "accuracy": 0.5,
+          "wilson_95": [
+            0.15003898915214947,
+            0.8499610108478506
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "gsm8k": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.6666666666666666,
+          "wilson_95": [
+            0.2076596008020477,
+            0.9385080552796037
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "ifbench": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.6666666666666666,
+          "wilson_95": [
+            0.2076596008020477,
+            0.9385080552796037
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0,
+          "loose_correct": 2
+        },
+        "mmlu_pro": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2,
+          "wilson_95": [
+            0.03622410863243014,
+            0.6244653702374747
+          ],
+          "unparseable": 1,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "musr": {
+          "correct": 1,
+          "total": 3,
+          "accuracy": 0.3333333333333333,
+          "wilson_95": [
+            0.06149194472039621,
+            0.7923403991979522
+          ],
+          "unparseable": 1,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        }
+      },
+      "blind": {
+        "arc": {
+          "correct": 2,
+          "total": 4,
+          "accuracy": 0.5,
+          "wilson_95": [
+            0.15003898915214947,
+            0.8499610108478506
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "gsm8k": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.6666666666666666,
+          "wilson_95": [
+            0.2076596008020477,
+            0.9385080552796037
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "ifbench": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.6666666666666666,
+          "wilson_95": [
+            0.2076596008020477,
+            0.9385080552796037
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0,
+          "loose_correct": 2
+        },
+        "mmlu_pro": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2,
+          "wilson_95": [
+            0.03622410863243014,
+            0.6244653702374747
+          ],
+          "unparseable": 2,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "musr": {
+          "correct": 1,
+          "total": 3,
+          "accuracy": 0.3333333333333333,
+          "wilson_95": [
+            0.06149194472039621,
+            0.7923403991979522
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        }
+      },
+      "constant": {
+        "arc": {
+          "correct": 2,
+          "total": 4,
+          "accuracy": 0.5,
+          "wilson_95": [
+            0.15003898915214947,
+            0.8499610108478506
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "gsm8k": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.6666666666666666,
+          "wilson_95": [
+            0.2076596008020477,
+            0.9385080552796037
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "ifbench": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.6666666666666666,
+          "wilson_95": [
+            0.2076596008020477,
+            0.9385080552796037
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0,
+          "loose_correct": 2
+        },
+        "mmlu_pro": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2,
+          "wilson_95": [
+            0.03622410863243014,
+            0.6244653702374747
+          ],
+          "unparseable": 1,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "musr": {
+          "correct": 1,
+          "total": 3,
+          "accuracy": 0.3333333333333333,
+          "wilson_95": [
+            0.06149194472039621,
+            0.7923403991979522
+          ],
+          "unparseable": 1,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        }
+      },
+      "live_constant": {
+        "arc": {
+          "correct": 2,
+          "total": 4,
+          "accuracy": 0.5,
+          "wilson_95": [
+            0.15003898915214947,
+            0.8499610108478506
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "gsm8k": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.6666666666666666,
+          "wilson_95": [
+            0.2076596008020477,
+            0.9385080552796037
+          ],
+          "unparseable": 1,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "ifbench": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.6666666666666666,
+          "wilson_95": [
+            0.2076596008020477,
+            0.9385080552796037
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0,
+          "loose_correct": 2
+        },
+        "mmlu_pro": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2,
+          "wilson_95": [
+            0.03622410863243014,
+            0.6244653702374747
+          ],
+          "unparseable": 1,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "musr": {
+          "correct": 1,
+          "total": 3,
+          "accuracy": 0.3333333333333333,
+          "wilson_95": [
+            0.06149194472039621,
+            0.7923403991979522
+          ],
+          "unparseable": 1,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        }
+      },
+      "inverted": {
+        "arc": {
+          "correct": 2,
+          "total": 4,
+          "accuracy": 0.5,
+          "wilson_95": [
+            0.15003898915214947,
+            0.8499610108478506
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "gsm8k": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.6666666666666666,
+          "wilson_95": [
+            0.2076596008020477,
+            0.9385080552796037
+          ],
+          "unparseable": 1,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "ifbench": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.6666666666666666,
+          "wilson_95": [
+            0.2076596008020477,
+            0.9385080552796037
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0,
+          "loose_correct": 2
+        },
+        "mmlu_pro": {
+          "correct": 0,
+          "total": 5,
+          "accuracy": 0.0,
+          "wilson_95": [
+            0.0,
+            0.43448246478317476
+          ],
+          "unparseable": 3,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "musr": {
+          "correct": 1,
+          "total": 3,
+          "accuracy": 0.3333333333333333,
+          "wilson_95": [
+            0.06149194472039621,
+            0.7923403991979522
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        }
+      },
+      "shuffled": {
+        "arc": {
+          "correct": 2,
+          "total": 4,
+          "accuracy": 0.5,
+          "wilson_95": [
+            0.15003898915214947,
+            0.8499610108478506
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "gsm8k": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.6666666666666666,
+          "wilson_95": [
+            0.2076596008020477,
+            0.9385080552796037
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "ifbench": {
+          "correct": 2,
+          "total": 3,
+          "accuracy": 0.6666666666666666,
+          "wilson_95": [
+            0.2076596008020477,
+            0.9385080552796037
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0,
+          "loose_correct": 2
+        },
+        "mmlu_pro": {
+          "correct": 1,
+          "total": 5,
+          "accuracy": 0.2,
+          "wilson_95": [
+            0.03622410863243014,
+            0.6244653702374747
+          ],
+          "unparseable": 1,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        },
+        "musr": {
+          "correct": 1,
+          "total": 3,
+          "accuracy": 0.3333333333333333,
+          "wilson_95": [
+            0.06149194472039621,
+            0.7923403991979522
+          ],
+          "unparseable": 0,
+          "length_stops": 0,
+          "unfinished_thinking": 0
+        }
+      }
+    },
+    "paired_differences": {
+      "self_refine-original": {
+        "arc": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 4,
+          "clusters": 4,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "gsm8k": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "ifbench": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "mmlu_pro": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 5,
+          "clusters": 5,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "musr": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        }
+      },
+      "granite_4_2_3b-original": {
+        "arc": {
+          "difference": 0.5,
+          "wins": 2,
+          "losses": 0,
+          "pairs": 4,
+          "clusters": 4,
+          "descriptive_paired_95": [
+            0.0,
+            1.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "gsm8k": {
+          "difference": 0.3333333333333333,
+          "wins": 1,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            1.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "ifbench": {
+          "difference": 0.3333333333333333,
+          "wins": 1,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            1.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "mmlu_pro": {
+          "difference": 0.6,
+          "wins": 4,
+          "losses": 1,
+          "pairs": 5,
+          "clusters": 5,
+          "descriptive_paired_95": [
+            -0.2,
+            1.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "musr": {
+          "difference": 0.6666666666666666,
+          "wins": 2,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            1.0
+          ],
+          "confirmatory_superiority": false
+        }
+      },
+      "qwen3_4b_instruct-original": {
+        "arc": {
+          "difference": 0.5,
+          "wins": 2,
+          "losses": 0,
+          "pairs": 4,
+          "clusters": 4,
+          "descriptive_paired_95": [
+            0.0,
+            1.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "gsm8k": {
+          "difference": 0.3333333333333333,
+          "wins": 1,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            1.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "ifbench": {
+          "difference": -0.3333333333333333,
+          "wins": 0,
+          "losses": 1,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            -1.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "mmlu_pro": {
+          "difference": 0.6,
+          "wins": 3,
+          "losses": 0,
+          "pairs": 5,
+          "clusters": 5,
+          "descriptive_paired_95": [
+            0.2,
+            1.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "musr": {
+          "difference": 0.6666666666666666,
+          "wins": 2,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            1.0
+          ],
+          "confirmatory_superiority": false
+        }
+      },
+      "guided-original": {
+        "arc": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 4,
+          "clusters": 4,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "gsm8k": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "ifbench": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "mmlu_pro": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 5,
+          "clusters": 5,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "musr": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        }
+      },
+      "guided-self_refine": {
+        "arc": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 4,
+          "clusters": 4,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "gsm8k": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "ifbench": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "mmlu_pro": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 5,
+          "clusters": 5,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "musr": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        }
+      },
+      "guided-granite_4_2_3b": {
+        "arc": {
+          "difference": -0.5,
+          "wins": 0,
+          "losses": 2,
+          "pairs": 4,
+          "clusters": 4,
+          "descriptive_paired_95": [
+            -1.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "gsm8k": {
+          "difference": -0.3333333333333333,
+          "wins": 0,
+          "losses": 1,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            -1.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "ifbench": {
+          "difference": -0.3333333333333333,
+          "wins": 0,
+          "losses": 1,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            -1.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "mmlu_pro": {
+          "difference": -0.6,
+          "wins": 1,
+          "losses": 4,
+          "pairs": 5,
+          "clusters": 5,
+          "descriptive_paired_95": [
+            -1.0,
+            0.2
+          ],
+          "confirmatory_superiority": false
+        },
+        "musr": {
+          "difference": -0.6666666666666666,
+          "wins": 0,
+          "losses": 2,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            -1.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        }
+      },
+      "guided-qwen3_4b_instruct": {
+        "arc": {
+          "difference": -0.5,
+          "wins": 0,
+          "losses": 2,
+          "pairs": 4,
+          "clusters": 4,
+          "descriptive_paired_95": [
+            -1.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "gsm8k": {
+          "difference": -0.3333333333333333,
+          "wins": 0,
+          "losses": 1,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            -1.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "ifbench": {
+          "difference": 0.3333333333333333,
+          "wins": 1,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            1.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "mmlu_pro": {
+          "difference": -0.6,
+          "wins": 0,
+          "losses": 3,
+          "pairs": 5,
+          "clusters": 5,
+          "descriptive_paired_95": [
+            -1.0,
+            -0.2
+          ],
+          "confirmatory_superiority": false
+        },
+        "musr": {
+          "difference": -0.6666666666666666,
+          "wins": 0,
+          "losses": 2,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            -1.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        }
+      },
+      "guided-blind": {
+        "arc": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 4,
+          "clusters": 4,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "gsm8k": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "ifbench": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "mmlu_pro": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 5,
+          "clusters": 5,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "musr": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        }
+      },
+      "guided-constant": {
+        "arc": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 4,
+          "clusters": 4,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "gsm8k": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "ifbench": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "mmlu_pro": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 5,
+          "clusters": 5,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "musr": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        }
+      },
+      "guided-live_constant": {
+        "arc": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 4,
+          "clusters": 4,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "gsm8k": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "ifbench": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "mmlu_pro": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 5,
+          "clusters": 5,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "musr": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        }
+      },
+      "guided-inverted": {
+        "arc": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 4,
+          "clusters": 4,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "gsm8k": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "ifbench": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "mmlu_pro": {
+          "difference": 0.2,
+          "wins": 1,
+          "losses": 0,
+          "pairs": 5,
+          "clusters": 5,
+          "descriptive_paired_95": [
+            0.0,
+            0.6
+          ],
+          "confirmatory_superiority": false
+        },
+        "musr": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        }
+      },
+      "guided-shuffled": {
+        "arc": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 4,
+          "clusters": 4,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "gsm8k": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "ifbench": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "mmlu_pro": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 5,
+          "clusters": 5,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "musr": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        }
+      },
+      "blind-original": {
+        "arc": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 4,
+          "clusters": 4,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "gsm8k": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "ifbench": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "mmlu_pro": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 5,
+          "clusters": 5,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "musr": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        }
+      },
+      "constant-original": {
+        "arc": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 4,
+          "clusters": 4,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "gsm8k": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "ifbench": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "mmlu_pro": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 5,
+          "clusters": 5,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "musr": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        }
+      },
+      "live_constant-original": {
+        "arc": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 4,
+          "clusters": 4,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "gsm8k": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "ifbench": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "mmlu_pro": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 5,
+          "clusters": 5,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "musr": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        }
+      },
+      "inverted-original": {
+        "arc": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 4,
+          "clusters": 4,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "gsm8k": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "ifbench": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "mmlu_pro": {
+          "difference": -0.2,
+          "wins": 0,
+          "losses": 1,
+          "pairs": 5,
+          "clusters": 5,
+          "descriptive_paired_95": [
+            -0.6,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "musr": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        }
+      },
+      "shuffled-original": {
+        "arc": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 4,
+          "clusters": 4,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "gsm8k": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "ifbench": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "mmlu_pro": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 5,
+          "clusters": 5,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        },
+        "musr": {
+          "difference": 0.0,
+          "wins": 0,
+          "losses": 0,
+          "pairs": 3,
+          "clusters": 3,
+          "descriptive_paired_95": [
+            0.0,
+            0.0
+          ],
+          "confirmatory_superiority": false
+        }
+      }
+    },
+    "grades": {
+      "original": {
+        "ifbench/297": {
+          "correct": false,
+          "parseable": true,
+          "loose": false
+        },
+        "ifbench/83": {
+          "correct": true,
+          "parseable": true,
+          "loose": true
+        },
+        "gsm8k/train/2991": {
+          "correct": true,
+          "parseable": true
+        },
+        "arc/validation/Mercury_7246348": {
+          "correct": false,
+          "parseable": true
+        },
+        "gsm8k/train/780": {
+          "correct": true,
+          "parseable": true
+        },
+        "arc/validation/Mercury_415263": {
+          "correct": true,
+          "parseable": true
+        },
+        "gsm8k/train/3205": {
+          "correct": false,
+          "parseable": true
+        },
+        "arc/validation/Mercury_7005478": {
+          "correct": false,
+          "parseable": true
+        },
+        "arc/validation/Mercury_7187058": {
+          "correct": true,
+          "parseable": true
+        },
+        "ifbench/68": {
+          "correct": true,
+          "parseable": true,
+          "loose": true
+        },
+        "mmlu_pro/8": {
+          "correct": false,
+          "parseable": true
+        },
+        "mmlu_pro/63": {
+          "correct": false,
+          "parseable": false
+        },
+        "mmlu_pro/20": {
+          "correct": false,
+          "parseable": true
+        },
+        "mmlu_pro/10": {
+          "correct": false,
+          "parseable": false
+        },
+        "mmlu_pro/40": {
+          "correct": true,
+          "parseable": true
+        },
+        "musr/team_allocation/165": {
+          "correct": false,
+          "parseable": true
+        },
+        "musr/murder_mystery/134": {
+          "correct": false,
+          "parseable": true
+        },
+        "musr/object_placements/255": {
+          "correct": true,
+          "parseable": true
+        }
+      },
+      "self_refine": {
+        "arc/validation/Mercury_7187058": {
+          "correct": true,
+          "parseable": true
+        },
+        "arc/validation/Mercury_415263": {
+          "correct": true,
+          "parseable": true
+        },
+        "arc/validation/Mercury_7005478": {
+          "correct": false,
+          "parseable": true
+        },
+        "arc/validation/Mercury_7246348": {
+          "correct": false,
+          "parseable": true
+        },
+        "gsm8k/train/2991": {
+          "correct": true,
+          "parseable": true
+        },
+        "gsm8k/train/780": {
+          "correct": true,
+          "parseable": true
+        },
+        "gsm8k/train/3205": {
+          "correct": false,
+          "parseable": true
+        },
+        "mmlu_pro/40": {
+          "correct": true,
+          "parseable": true
+        },
+        "mmlu_pro/8": {
+          "correct": false,
+          "parseable": true
+        },
+        "mmlu_pro/20": {
+          "correct": false,
+          "parseable": true
+        },
+        "mmlu_pro/63": {
+          "correct": false,
+          "parseable": false
+        },
+        "mmlu_pro/10": {
+          "correct": false,
+          "parseable": false
+        },
+        "musr/murder_mystery/134": {
+          "correct": false,
+          "parseable": false
+        },
+        "musr/object_placements/255": {
+          "correct": true,
+          "parseable": true
+        },
+        "musr/team_allocation/165": {
+          "correct": false,
+          "parseable": true
+        },
+        "ifbench/297": {
+          "correct": false,
+          "parseable": true,
+          "loose": false
+        },
+        "ifbench/83": {
+          "correct": true,
+          "parseable": true,
+          "loose": true
+        },
+        "ifbench/68": {
+          "correct": true,
+          "parseable": true,
+          "loose": true
+        }
+      },
+      "granite_4_2_3b": {
+        "ifbench/297": {
+          "correct": true,
+          "parseable": true,
+          "loose": true
+        },
+        "ifbench/83": {
+          "correct": true,
+          "parseable": true,
+          "loose": true
+        },
+        "gsm8k/train/2991": {
+          "correct": true,
+          "parseable": true
+        },
+        "arc/validation/Mercury_7246348": {
+          "correct": true,
+          "parseable": true
+        },
+        "gsm8k/train/780": {
+          "correct": true,
+          "parseable": true
+        },
+        "arc/validation/Mercury_415263": {
+          "correct": true,
+          "parseable": true
+        },
+        "gsm8k/train/3205": {
+          "correct": true,
+          "parseable": true
+        },
+        "arc/validation/Mercury_7005478": {
+          "correct": true,
+          "parseable": true
+        },
+        "arc/validation/Mercury_7187058": {
+          "correct": true,
+          "parseable": true
+        },
+        "ifbench/68": {
+          "correct": true,
+          "parseable": true,
+          "loose": true
+        },
+        "mmlu_pro/8": {
+          "correct": true,
+          "parseable": true
+        },
+        "mmlu_pro/10": {
+          "correct": true,
+          "parseable": true
+        },
+        "mmlu_pro/20": {
+          "correct": true,
+          "parseable": true
+        },
+        "mmlu_pro/63": {
+          "correct": true,
+          "parseable": true
+        },
+        "mmlu_pro/40": {
+          "correct": false,
+          "parseable": false
+        },
+        "musr/team_allocation/165": {
+          "correct": true,
+          "parseable": true
+        },
+        "musr/murder_mystery/134": {
+          "correct": true,
+          "parseable": true
+        },
+        "musr/object_placements/255": {
+          "correct": true,
+          "parseable": true
+        }
+      },
+      "qwen3_4b_instruct": {
+        "ifbench/297": {
+          "correct": false,
+          "parseable": true,
+          "loose": false
+        },
+        "ifbench/83": {
+          "correct": false,
+          "parseable": true,
+          "loose": false
+        },
+        "arc/validation/Mercury_7246348": {
+          "correct": true,
+          "parseable": true
+        },
+        "gsm8k/train/2991": {
+          "correct": true,
+          "parseable": true
+        },
+        "gsm8k/train/780": {
+          "correct": true,
+          "parseable": true
+        },
+        "arc/validation/Mercury_415263": {
+          "correct": true,
+          "parseable": true
+        },
+        "gsm8k/train/3205": {
+          "correct": true,
+          "parseable": true
+        },
+        "arc/validation/Mercury_7005478": {
+          "correct": true,
+          "parseable": true
+        },
+        "arc/validation/Mercury_7187058": {
+          "correct": true,
+          "parseable": true
+        },
+        "ifbench/68": {
+          "correct": true,
+          "parseable": true,
+          "loose": true
+        },
+        "mmlu_pro/8": {
+          "correct": false,
+          "parseable": true
+        },
+        "mmlu_pro/63": {
+          "correct": true,
+          "parseable": true
+        },
+        "mmlu_pro/20": {
+          "correct": true,
+          "parseable": true
+        },
+        "mmlu_pro/40": {
+          "correct": true,
+          "parseable": true
+        },
+        "mmlu_pro/10": {
+          "correct": true,
+          "parseable": true
+        },
+        "musr/team_allocation/165": {
+          "correct": true,
+          "parseable": true
+        },
+        "musr/murder_mystery/134": {
+          "correct": true,
+          "parseable": true
+        },
+        "musr/object_placements/255": {
+          "correct": true,
+          "parseable": true
+        }
+      },
+      "guided": {
+        "arc/validation/Mercury_7187058": {
+          "correct": true,
+          "parseable": true
+        },
+        "arc/validation/Mercury_415263": {
+          "correct": true,
+          "parseable": true
+        },
+        "arc/validation/Mercury_7005478": {
+          "correct": false,
+          "parseable": true
+        },
+        "arc/validation/Mercury_7246348": {
+          "correct": false,
+          "parseable": true
+        },
+        "gsm8k/train/2991": {
+          "correct": true,
+          "parseable": true
+        },
+        "gsm8k/train/780": {
+          "correct": true,
+          "parseable": true
+        },
+        "gsm8k/train/3205": {
+          "correct": false,
+          "parseable": true
+        },
+        "mmlu_pro/40": {
+          "correct": true,
+          "parseable": true
+        },
+        "mmlu_pro/8": {
+          "correct": false,
+          "parseable": true
+        },
+        "mmlu_pro/20": {
+          "correct": false,
+          "parseable": true
+        },
+        "mmlu_pro/63": {
+          "correct": false,
+          "parseable": false
+        },
+        "mmlu_pro/10": {
+          "correct": false,
+          "parseable": true
+        },
+        "musr/murder_mystery/134": {
+          "correct": false,
+          "parseable": true
+        },
+        "musr/object_placements/255": {
+          "correct": true,
+          "parseable": true
+        },
+        "musr/team_allocation/165": {
+          "correct": false,
+          "parseable": false
+        },
+        "ifbench/297": {
+          "correct": false,
+          "parseable": true,
+          "loose": false
+        },
+        "ifbench/83": {
+          "correct": true,
+          "parseable": true,
+          "loose": true
+        },
+        "ifbench/68": {
+          "correct": true,
+          "parseable": true,
+          "loose": true
+        }
+      },
+      "blind": {
+        "arc/validation/Mercury_7187058": {
+          "correct": true,
+          "parseable": true
+        },
+        "arc/validation/Mercury_415263": {
+          "correct": true,
+          "parseable": true
+        },
+        "arc/validation/Mercury_7005478": {
+          "correct": false,
+          "parseable": true
+        },
+        "arc/validation/Mercury_7246348": {
+          "correct": false,
+          "parseable": true
+        },
+        "gsm8k/train/2991": {
+          "correct": true,
+          "parseable": true
+        },
+        "gsm8k/train/780": {
+          "correct": true,
+          "parseable": true
+        },
+        "gsm8k/train/3205": {
+          "correct": false,
+          "parseable": true
+        },
+        "mmlu_pro/40": {
+          "correct": true,
+          "parseable": true
+        },
+        "mmlu_pro/8": {
+          "correct": false,
+          "parseable": true
+        },
+        "mmlu_pro/20": {
+          "correct": false,
+          "parseable": true
+        },
+        "mmlu_pro/63": {
+          "correct": false,
+          "parseable": false
+        },
+        "mmlu_pro/10": {
+          "correct": false,
+          "parseable": false
+        },
+        "musr/murder_mystery/134": {
+          "correct": false,
+          "parseable": true
+        },
+        "musr/object_placements/255": {
+          "correct": true,
+          "parseable": true
+        },
+        "musr/team_allocation/165": {
+          "correct": false,
+          "parseable": true
+        },
+        "ifbench/297": {
+          "correct": false,
+          "parseable": true,
+          "loose": false
+        },
+        "ifbench/83": {
+          "correct": true,
+          "parseable": true,
+          "loose": true
+        },
+        "ifbench/68": {
+          "correct": true,
+          "parseable": true,
+          "loose": true
+        }
+      },
+      "constant": {
+        "arc/validation/Mercury_7187058": {
+          "correct": true,
+          "parseable": true
+        },
+        "arc/validation/Mercury_415263": {
+          "correct": true,
+          "parseable": true
+        },
+        "arc/validation/Mercury_7005478": {
+          "correct": false,
+          "parseable": true
+        },
+        "arc/validation/Mercury_7246348": {
+          "correct": false,
+          "parseable": true
+        },
+        "gsm8k/train/2991": {
+          "correct": true,
+          "parseable": true
+        },
+        "gsm8k/train/780": {
+          "correct": true,
+          "parseable": true
+        },
+        "gsm8k/train/3205": {
+          "correct": false,
+          "parseable": true
+        },
+        "mmlu_pro/40": {
+          "correct": true,
+          "parseable": true
+        },
+        "mmlu_pro/8": {
+          "correct": false,
+          "parseable": true
+        },
+        "mmlu_pro/20": {
+          "correct": false,
+          "parseable": true
+        },
+        "mmlu_pro/63": {
+          "correct": false,
+          "parseable": false
+        },
+        "mmlu_pro/10": {
+          "correct": false,
+          "parseable": true
+        },
+        "musr/murder_mystery/134": {
+          "correct": false,
+          "parseable": true
+        },
+        "musr/object_placements/255": {
+          "correct": true,
+          "parseable": true
+        },
+        "musr/team_allocation/165": {
+          "correct": false,
+          "parseable": false
+        },
+        "ifbench/297": {
+          "correct": false,
+          "parseable": true,
+          "loose": false
+        },
+        "ifbench/83": {
+          "correct": true,
+          "parseable": true,
+          "loose": true
+        },
+        "ifbench/68": {
+          "correct": true,
+          "parseable": true,
+          "loose": true
+        }
+      },
+      "live_constant": {
+        "arc/validation/Mercury_7187058": {
+          "correct": true,
+          "parseable": true
+        },
+        "arc/validation/Mercury_415263": {
+          "correct": true,
+          "parseable": true
+        },
+        "arc/validation/Mercury_7005478": {
+          "correct": false,
+          "parseable": true
+        },
+        "arc/validation/Mercury_7246348": {
+          "correct": false,
+          "parseable": true
+        },
+        "gsm8k/train/2991": {
+          "correct": true,
+          "parseable": true
+        },
+        "gsm8k/train/780": {
+          "correct": true,
+          "parseable": true
+        },
+        "gsm8k/train/3205": {
+          "correct": false,
+          "parseable": false
+        },
+        "mmlu_pro/40": {
+          "correct": true,
+          "parseable": true
+        },
+        "mmlu_pro/8": {
+          "correct": false,
+          "parseable": true
+        },
+        "mmlu_pro/20": {
+          "correct": false,
+          "parseable": true
+        },
+        "mmlu_pro/63": {
+          "correct": false,
+          "parseable": false
+        },
+        "mmlu_pro/10": {
+          "correct": false,
+          "parseable": true
+        },
+        "musr/murder_mystery/134": {
+          "correct": false,
+          "parseable": true
+        },
+        "musr/object_placements/255": {
+          "correct": true,
+          "parseable": true
+        },
+        "musr/team_allocation/165": {
+          "correct": false,
+          "parseable": false
+        },
+        "ifbench/297": {
+          "correct": false,
+          "parseable": true,
+          "loose": false
+        },
+        "ifbench/83": {
+          "correct": true,
+          "parseable": true,
+          "loose": true
+        },
+        "ifbench/68": {
+          "correct": true,
+          "parseable": true,
+          "loose": true
+        }
+      },
+      "inverted": {
+        "arc/validation/Mercury_7187058": {
+          "correct": true,
+          "parseable": true
+        },
+        "arc/validation/Mercury_415263": {
+          "correct": true,
+          "parseable": true
+        },
+        "arc/validation/Mercury_7005478": {
+          "correct": false,
+          "parseable": true
+        },
+        "arc/validation/Mercury_7246348": {
+          "correct": false,
+          "parseable": true
+        },
+        "gsm8k/train/2991": {
+          "correct": true,
+          "parseable": true
+        },
+        "gsm8k/train/780": {
+          "correct": true,
+          "parseable": true
+        },
+        "gsm8k/train/3205": {
+          "correct": false,
+          "parseable": false
+        },
+        "mmlu_pro/40": {
+          "correct": false,
+          "parseable": false
+        },
+        "mmlu_pro/8": {
+          "correct": false,
+          "parseable": true
+        },
+        "mmlu_pro/20": {
+          "correct": false,
+          "parseable": true
+        },
+        "mmlu_pro/63": {
+          "correct": false,
+          "parseable": false
+        },
+        "mmlu_pro/10": {
+          "correct": false,
+          "parseable": false
+        },
+        "musr/murder_mystery/134": {
+          "correct": false,
+          "parseable": true
+        },
+        "musr/object_placements/255": {
+          "correct": true,
+          "parseable": true
+        },
+        "musr/team_allocation/165": {
+          "correct": false,
+          "parseable": true
+        },
+        "ifbench/297": {
+          "correct": false,
+          "parseable": true,
+          "loose": false
+        },
+        "ifbench/83": {
+          "correct": true,
+          "parseable": true,
+          "loose": true
+        },
+        "ifbench/68": {
+          "correct": true,
+          "parseable": true,
+          "loose": true
+        }
+      },
+      "shuffled": {
+        "arc/validation/Mercury_7187058": {
+          "correct": true,
+          "parseable": true
+        },
+        "arc/validation/Mercury_415263": {
+          "correct": true,
+          "parseable": true
+        },
+        "arc/validation/Mercury_7005478": {
+          "correct": false,
+          "parseable": true
+        },
+        "arc/validation/Mercury_7246348": {
+          "correct": false,
+          "parseable": true
+        },
+        "gsm8k/train/2991": {
+          "correct": true,
+          "parseable": true
+        },
+        "gsm8k/train/780": {
+          "correct": true,
+          "parseable": true
+        },
+        "gsm8k/train/3205": {
+          "correct": false,
+          "parseable": true
+        },
+        "mmlu_pro/40": {
+          "correct": true,
+          "parseable": true
+        },
+        "mmlu_pro/8": {
+          "correct": false,
+          "parseable": true
+        },
+        "mmlu_pro/20": {
+          "correct": false,
+          "parseable": true
+        },
+        "mmlu_pro/63": {
+          "correct": false,
+          "parseable": false
+        },
+        "mmlu_pro/10": {
+          "correct": false,
+          "parseable": true
+        },
+        "musr/murder_mystery/134": {
+          "correct": false,
+          "parseable": true
+        },
+        "musr/object_placements/255": {
+          "correct": true,
+          "parseable": true
+        },
+        "musr/team_allocation/165": {
+          "correct": false,
+          "parseable": true
+        },
+        "ifbench/297": {
+          "correct": false,
+          "parseable": true,
+          "loose": false
+        },
+        "ifbench/83": {
+          "correct": true,
+          "parseable": true,
+          "loose": true
+        },
+        "ifbench/68": {
+          "correct": true,
+          "parseable": true,
+          "loose": true
+        }
+      }
+    },
+    "interpretation": "Frozen task-specific comparisons; no ten-task aggregate"
+  },
+  "untouched_quality": null,
+  "delivery": {
+    "physical_attempts": 18,
+    "known_input_tokens": 13172,
+    "unknown_attempts": 0,
+    "missing_cases": 0,
+    "retries": 0,
+    "usd": 0.0005532240000000001
+  },
+  "actual_repairs": 54,
+  "actual_skipped_repairs": 54,
+  "outputs": 132,
+  "batches": 132,
+  "total_work": {
+    "actual_prompt_tokens": 40726,
+    "actual_generated_tokens": 55959,
+    "seconds": 1526.9411872770013,
+    "padded_prompt_tokens": 40726,
+    "processed_token_slots": 96553,
+    "generated_token_slots": 55959,
+    "forwards": 55959
+  },
+  "native_cost_profiles": {
+    "granite_4_0_1b": {
+      "mmlu_pro": {
+        "measured": true,
+        "full_cases": 12032,
+        "profile_cases": 5,
+        "central_gpu_seconds": 51446.61221391343,
+        "upper_observed_gpu_seconds": 173572.74201702408,
+        "central_gpu_usd": 25.074233095326385,
+        "upper_observed_gpu_usd": 84.59650120854384,
+        "interpretation": "Exposed-case extrapolation; neither a confidence bound nor an invoice; overhead/API excluded"
+      },
+      "musr": {
+        "measured": true,
+        "full_cases": 756,
+        "profile_cases": 3,
+        "central_gpu_seconds": 316.33513606798715,
+        "upper_observed_gpu_seconds": 389.9011682159826,
+        "central_gpu_usd": 0.15417654528990296,
+        "upper_observed_gpu_usd": 0.19003142005419787,
+        "interpretation": "Exposed-case extrapolation; neither a confidence bound nor an invoice; overhead/API excluded"
+      },
+      "ifbench": {
+        "measured": true,
+        "full_cases": 300,
+        "profile_cases": 3,
+        "central_gpu_seconds": 1421.4162629999976,
+        "upper_observed_gpu_seconds": 2262.9607319999877,
+        "central_gpu_usd": 0.6927749208394098,
+        "upper_observed_gpu_usd": 1.1029298614222953,
+        "interpretation": "Exposed-case extrapolation; neither a confidence bound nor an invoice; overhead/API excluded"
+      },
+      "aime2026": {
+        "measured": false,
+        "full_cases": 30
+      },
+      "gpqa_diamond": {
+        "measured": false,
+        "full_cases": 198
+      },
+      "longbench_v2": {
+        "measured": false,
+        "full_cases": 503
+      },
+      "simpleqa_verified": {
+        "measured": false,
+        "full_cases": 1000
+      },
+      "livecodebench": {
+        "measured": false,
+        "full_cases": null
+      },
+      "bfcl_v4": {
+        "measured": false,
+        "full_cases": null
+      },
+      "swe_bench": {
+        "measured": false,
+        "full_cases": 500
+      }
+    },
+    "granite_4_2_3b": {
+      "mmlu_pro": {
+        "measured": true,
+        "full_cases": 12032,
+        "profile_cases": 5,
+        "central_gpu_seconds": 1097436.403938663,
+        "upper_observed_gpu_seconds": 2671946.0070845443,
+        "central_gpu_usd": 534.8724632292286,
+        "upper_observed_gpu_usd": 1302.2625614528906,
+        "interpretation": "Exposed-case extrapolation; neither a confidence bound nor an invoice; overhead/API excluded"
+      },
+      "musr": {
+        "measured": true,
+        "full_cases": 756,
+        "profile_cases": 3,
+        "central_gpu_seconds": 73592.11455498004,
+        "upper_observed_gpu_seconds": 137810.66992005613,
+        "central_gpu_usd": 35.86758690070733,
+        "upper_observed_gpu_usd": 67.16665513815997,
+        "interpretation": "Exposed-case extrapolation; neither a confidence bound nor an invoice; overhead/API excluded"
+      },
+      "ifbench": {
+        "measured": true,
+        "full_cases": 300,
+        "profile_cases": 3,
+        "central_gpu_seconds": 12888.086135599997,
+        "upper_observed_gpu_seconds": 16941.628396499993,
+        "central_gpu_usd": 6.281441323541264,
+        "upper_observed_gpu_usd": 8.257071187932512,
+        "interpretation": "Exposed-case extrapolation; neither a confidence bound nor an invoice; overhead/API excluded"
+      },
+      "aime2026": {
+        "measured": false,
+        "full_cases": 30
+      },
+      "gpqa_diamond": {
+        "measured": false,
+        "full_cases": 198
+      },
+      "longbench_v2": {
+        "measured": false,
+        "full_cases": 503
+      },
+      "simpleqa_verified": {
+        "measured": false,
+        "full_cases": 1000
+      },
+      "livecodebench": {
+        "measured": false,
+        "full_cases": null
+      },
+      "bfcl_v4": {
+        "measured": false,
+        "full_cases": null
+      },
+      "swe_bench": {
+        "measured": false,
+        "full_cases": 500
+      }
+    },
+    "qwen3_4b_instruct": {
+      "mmlu_pro": {
+        "measured": true,
+        "full_cases": 12032,
+        "profile_cases": 5,
+        "central_gpu_seconds": 260922.4436396545,
+        "upper_observed_gpu_seconds": 972679.2341928962,
+        "central_gpu_usd": 127.16930989390777,
+        "upper_observed_gpu_usd": 474.0678694979323,
+        "interpretation": "Exposed-case extrapolation; neither a confidence bound nor an invoice; overhead/API excluded"
+      },
+      "musr": {
+        "measured": true,
+        "full_cases": 756,
+        "profile_cases": 3,
+        "central_gpu_seconds": 41960.489406696084,
+        "upper_observed_gpu_seconds": 96396.91992126005,
+        "central_gpu_usd": 20.450852775353972,
+        "upper_observed_gpu_usd": 46.982274162719335,
+        "interpretation": "Exposed-case extrapolation; neither a confidence bound nor an invoice; overhead/API excluded"
+      },
+      "ifbench": {
+        "measured": true,
+        "full_cases": 300,
+        "profile_cases": 3,
+        "central_gpu_seconds": 1546.0686512000166,
+        "upper_observed_gpu_seconds": 2576.824111199994,
+        "central_gpu_usd": 0.7535284457677451,
+        "upper_observed_gpu_usd": 1.2559017130463643,
+        "interpretation": "Exposed-case extrapolation; neither a confidence bound nor an invoice; overhead/API excluded"
+      },
+      "aime2026": {
+        "measured": false,
+        "full_cases": 30
+      },
+      "gpqa_diamond": {
+        "measured": false,
+        "full_cases": 198
+      },
+      "longbench_v2": {
+        "measured": false,
+        "full_cases": 503
+      },
+      "simpleqa_verified": {
+        "measured": false,
+        "full_cases": 1000
+      },
+      "livecodebench": {
+        "measured": false,
+        "full_cases": null
+      },
+      "bfcl_v4": {
+        "measured": false,
+        "full_cases": null
+      },
+      "swe_bench": {
+        "measured": false,
+        "full_cases": 500
+      }
+    }
+  },
+  "subject_weighted_cost_profiles": {
+    "granite_4_0_1b": {
+      "mmlu_pro": {
+        "measured": false,
+        "full_cases": 12032
+      },
+      "ifbench": {
+        "measured": true,
+        "full_cases": 300,
+        "profile_cases": 3,
+        "gpu_seconds": 1421.4162629999976,
+        "gpu_usd": 0.6927749208394098,
+        "strata": {
+          "instruction_following": {
+            "full_cases": 300,
+            "profile_cases": 3,
+            "mean_seconds": 4.738054209999992
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      },
+      "musr": {
+        "measured": true,
+        "full_cases": 756,
+        "profile_cases": 3,
+        "gpu_seconds": 315.97415385198724,
+        "gpu_usd": 0.15400060849177882,
+        "strata": {
+          "murder_mystery": {
+            "full_cases": 250,
+            "profile_cases": 1,
+            "mean_seconds": 0.38128685599997425
+          },
+          "object_placements": {
+            "full_cases": 256,
+            "profile_cases": 1,
+            "mean_seconds": 0.3582690169999978
+          },
+          "team_allocation": {
+            "full_cases": 250,
+            "profile_cases": 1,
+            "mean_seconds": 0.515742285999977
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      }
+    },
+    "granite_4_2_3b": {
+      "mmlu_pro": {
+        "measured": false,
+        "full_cases": 12032
+      },
+      "ifbench": {
+        "measured": true,
+        "full_cases": 300,
+        "profile_cases": 3,
+        "gpu_seconds": 12888.086135599997,
+        "gpu_usd": 6.281441323541264,
+        "strata": {
+          "instruction_following": {
+            "full_cases": 300,
+            "profile_cases": 3,
+            "mean_seconds": 42.960287118666656
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      },
+      "musr": {
+        "measured": true,
+        "full_cases": 756,
+        "profile_cases": 3,
+        "gpu_seconds": 73057.55868543204,
+        "gpu_usd": 35.607053157109405,
+        "strata": {
+          "murder_mystery": {
+            "full_cases": 250,
+            "profile_cases": 1,
+            "mean_seconds": 182.28924592600015
+          },
+          "object_placements": {
+            "full_cases": 256,
+            "profile_cases": 1,
+            "mean_seconds": 8.251421947000154
+          },
+          "team_allocation": {
+            "full_cases": 250,
+            "profile_cases": 1,
+            "mean_seconds": 101.49153274199989
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      }
+    },
+    "qwen3_4b_instruct": {
+      "mmlu_pro": {
+        "measured": false,
+        "full_cases": 12032
+      },
+      "ifbench": {
+        "measured": true,
+        "full_cases": 300,
+        "profile_cases": 3,
+        "gpu_seconds": 1546.0686512000166,
+        "gpu_usd": 0.7535284457677451,
+        "strata": {
+          "instruction_following": {
+            "full_cases": 300,
+            "profile_cases": 3,
+            "mean_seconds": 5.153562170666722
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      },
+      "musr": {
+        "measured": true,
+        "full_cases": 756,
+        "profile_cases": 3,
+        "gpu_seconds": 41670.69047987409,
+        "gpu_usd": 20.309609542238906,
+        "strata": {
+          "murder_mystery": {
+            "full_cases": 250,
+            "profile_cases": 1,
+            "mean_seconds": 127.50915333500006
+          },
+          "object_placements": {
+            "full_cases": 256,
+            "profile_cases": 1,
+            "mean_seconds": 7.2034717290002845
+          },
+          "team_allocation": {
+            "full_cases": 250,
+            "profile_cases": 1,
+            "mean_seconds": 31.797253533999992
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      }
+    },
+    "granite_jev": {
+      "mmlu_pro": {
+        "measured": false,
+        "full_cases": 12032
+      },
+      "ifbench": {
+        "measured": true,
+        "full_cases": 300,
+        "profile_cases": 3,
+        "gpu_seconds": 1459.4952116999991,
+        "gpu_usd": 0.7113339744804694,
+        "strata": {
+          "instruction_following": {
+            "full_cases": 300,
+            "profile_cases": 3,
+            "mean_seconds": 4.864984038999997
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      },
+      "musr": {
+        "measured": true,
+        "full_cases": 756,
+        "profile_cases": 3,
+        "gpu_seconds": 359.3716371019914,
+        "gpu_usd": 0.17515182844454452,
+        "strata": {
+          "murder_mystery": {
+            "full_cases": 250,
+            "profile_cases": 1,
+            "mean_seconds": 0.38128685599997425
+          },
+          "object_placements": {
+            "full_cases": 256,
+            "profile_cases": 1,
+            "mean_seconds": 0.3582690169999978
+          },
+          "team_allocation": {
+            "full_cases": 250,
+            "profile_cases": 1,
+            "mean_seconds": 0.6893322189999935
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      }
+    },
+    "all_models_all_controls": {
+      "mmlu_pro": {
+        "measured": false,
+        "full_cases": 12032
+      },
+      "ifbench": {
+        "measured": true,
+        "full_cases": 300,
+        "profile_cases": 3,
+        "gpu_seconds": 17626.455507100014,
+        "gpu_usd": 8.590844664207006,
+        "strata": {
+          "instruction_following": {
+            "full_cases": 300,
+            "profile_cases": 3,
+            "mean_seconds": 58.754851690333375
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      },
+      "musr": {
+        "measured": true,
+        "full_cases": 756,
+        "profile_cases": 3,
+        "gpu_seconds": 116453.53270318815,
+        "gpu_usd": 56.75753753488673,
+        "strata": {
+          "murder_mystery": {
+            "full_cases": 250,
+            "profile_cases": 1,
+            "mean_seconds": 312.9390479450002
+          },
+          "object_placements": {
+            "full_cases": 256,
+            "profile_cases": 1,
+            "mean_seconds": 16.17436169800044
+          },
+          "team_allocation": {
+            "full_cases": 250,
+            "profile_cases": 1,
+            "mean_seconds": 136.31253648899997
+          }
+        },
+        "interpretation": "Subject-weighted exposed-case extrapolation, not a full run or guaranteed quote; loading/API/evaluator/network/tax excluded"
+      }
+    }
+  },
+  "cost_inventory_sha256": "b213ac7580d9129f2bd94c30e416bc1a91b09d7145919f6c948cd18ea77ae7de",
+  "seconds": 2153.6455306810003,
+  "profile_work": {
+    "granite_4_0_1b/blind": {
+      "actual_prompt_tokens": 3016,
+      "actual_generated_tokens": 732,
+      "seconds": 20.88932815100003,
+      "padded_prompt_tokens": 3016,
+      "processed_token_slots": 3739,
+      "generated_token_slots": 732,
+      "forwards": 732
+    },
+    "granite_4_0_1b/constant": {
+      "actual_prompt_tokens": 3016,
+      "actual_generated_tokens": 59,
+      "seconds": 1.9418040490001545,
+      "padded_prompt_tokens": 3016,
+      "processed_token_slots": 3066,
+      "generated_token_slots": 59,
+      "forwards": 59
+    },
+    "granite_4_0_1b/inverted": {
+      "actual_prompt_tokens": 3016,
+      "actual_generated_tokens": 157,
+      "seconds": 4.773902383000063,
+      "padded_prompt_tokens": 3016,
+      "processed_token_slots": 3164,
+      "generated_token_slots": 157,
+      "forwards": 157
+    },
+    "granite_4_0_1b/live": {
+      "actual_prompt_tokens": 3016,
+      "actual_generated_tokens": 44,
+      "seconds": 1.5253763729999719,
+      "padded_prompt_tokens": 3016,
+      "processed_token_slots": 3051,
+      "generated_token_slots": 44,
+      "forwards": 44
+    },
+    "granite_4_0_1b/live_constant": {
+      "actual_prompt_tokens": 3016,
+      "actual_generated_tokens": 55,
+      "seconds": 1.8289764809999838,
+      "padded_prompt_tokens": 3016,
+      "processed_token_slots": 3062,
+      "generated_token_slots": 55,
+      "forwards": 55
+    },
+    "granite_4_0_1b/native": {
+      "actual_prompt_tokens": 4819,
+      "actual_generated_tokens": 1530,
+      "seconds": 42.21737622099977,
+      "padded_prompt_tokens": 4819,
+      "processed_token_slots": 6331,
+      "generated_token_slots": 1530,
+      "forwards": 1530
+    },
+    "granite_4_0_1b/self_refine": {
+      "actual_prompt_tokens": 7165,
+      "actual_generated_tokens": 1438,
+      "seconds": 40.59016925400016,
+      "padded_prompt_tokens": 7165,
+      "processed_token_slots": 8585,
+      "generated_token_slots": 1438,
+      "forwards": 1438
+    },
+    "granite_4_0_1b/serial_probe": {
+      "actual_prompt_tokens": 1338,
+      "actual_generated_tokens": 336,
+      "seconds": 9.515140463000023,
+      "padded_prompt_tokens": 1338,
+      "processed_token_slots": 1671,
+      "generated_token_slots": 336,
+      "forwards": 336
+    },
+    "granite_4_0_1b/shuffled": {
+      "actual_prompt_tokens": 3016,
+      "actual_generated_tokens": 503,
+      "seconds": 14.707659351000075,
+      "padded_prompt_tokens": 3016,
+      "processed_token_slots": 3510,
+      "generated_token_slots": 503,
+      "forwards": 503
+    },
+    "granite_4_0_1b/warmup": {
+      "actual_prompt_tokens": 48,
+      "actual_generated_tokens": 8,
+      "seconds": 0.2263854920000199,
+      "padded_prompt_tokens": 48,
+      "processed_token_slots": 55,
+      "generated_token_slots": 8,
+      "forwards": 8
+    },
+    "granite_4_2_3b/native": {
+      "actual_prompt_tokens": 4743,
+      "actual_generated_tokens": 40041,
+      "seconds": 1062.7483997810004,
+      "padded_prompt_tokens": 4743,
+      "processed_token_slots": 44766,
+      "generated_token_slots": 40041,
+      "forwards": 40041
+    },
+    "granite_4_2_3b/warmup": {
+      "actual_prompt_tokens": 33,
+      "actual_generated_tokens": 8,
+      "seconds": 0.2880333770000334,
+      "padded_prompt_tokens": 33,
+      "processed_token_slots": 40,
+      "generated_token_slots": 8,
+      "forwards": 8
+    },
+    "qwen3_4b_instruct/native": {
+      "actual_prompt_tokens": 4458,
+      "actual_generated_tokens": 11040,
+      "seconds": 325.4330446410006,
+      "padded_prompt_tokens": 4458,
+      "processed_token_slots": 15480,
+      "generated_token_slots": 11040,
+      "forwards": 11040
+    },
+    "qwen3_4b_instruct/warmup": {
+      "actual_prompt_tokens": 26,
+      "actual_generated_tokens": 8,
+      "seconds": 0.25559125999984644,
+      "padded_prompt_tokens": 26,
+      "processed_token_slots": 33,
+      "generated_token_slots": 8,
+      "forwards": 8
+    }
+  },
+  "source_sha256": "8364014e269389f1b20f864b1f99665f6e3774e86b522a78838dfb6b8b562ad8",
+  "input_files": {
+    "granite_4_0_1b-complete.json": "c814bdeb5da9fc2fb602a14d828f1baf915c296510d2e220f2fce5bcf4d10ecd",
+    "qwen3_4b_instruct-hardware.json": "1d98e460244202dc4ad67d415e23916e2f1e9062321abfcc6226c7a2fd730c44",
+    "granite_4_2_3b-hardware.json": "e5f782ce700e99f6c01f67e779bb88aa28fa77ec766e7f2cffcb65aa992cf6d6",
+    "requests.jsonl": "0a6821fc3e4cbda3005adc0f491cf5d53dee37cc24420e293a7bfbb513691257",
+    "cache-admission.json": "45b15e247b86ce7e76513503e58583e7b0ba1e1d46db685d5e0e94e0ead036cb",
+    "decisions.jsonl": "ac263dd0da3bbdecd430bd176dff6234ba458c1c6f7d0af56965f65c0064f15d",
+    "responses.jsonl": "5a36e66055878fc757026a5a6bdf09e98019cf57678469a7d1cb5252f06ce9bc",
+    "batches.jsonl": "9da2b19fb8d0c5512af83d0d3ff99f2c36e4148f353f62660fb2a3b48181c0de",
+    "start.json": "9b7bbded931bafd9e0d2b83a282e3078f25fa3094af02f4919d2bf2b2da55520",
+    "granite_4_0_1b-hardware.json": "9948a8c8db6ae539f754a70f8cae2c86b8eb97598ea76d20788cc04214670590",
+    "budget.jsonl": "5495339b9e249f29bc2325a2d065e6975ee0fffa30587c1ab4267379c7c26175",
+    "qwen3_4b_instruct-complete.json": "d403983b102db92c53b8638108d5a9293908350fb150a4cea958c99ae80fe8c1",
+    "jobs.jsonl": "d64f486399b09dfa0ac1476867cd1fe4a1df17c225f0d4e1881cc70e28ba42ad",
+    "outputs.jsonl": "429db8a9d10f009cb003a4811fff8ab4253a98d11864f97e060f7ea3dd1d1430",
+    "donors.json": "f587a72886c5d9d8fe1037f467141453814cbc92697f92792977becd4618ffe4",
+    "api-summary.json": "5517aa4a105cc510ae88a43b679df9716d1161e87fda8c02d53006bd5f0a297b",
+    "granite_4_2_3b-complete.json": "1ad9269a99baa3678e78d3cb53ef5eb0abf0d72e98b6bb4792addcccd9769987",
+    "completion.json": "d5249938908b3d67b1b2aa3fb2336009414b4c84594171f6be70cbf02a8d1f3c",
+    "feedback.jsonl": "9bb13d7783fa09bf21b1c9517073b4f51367741f2115af414fdee1f1a460e287"
+  },
+  "ifbench_evaluator_sha256": "e681a4b03a6a9dfb540fbd9ef6b963de503a5ffac557ed611c326ee385850cf6"
+}

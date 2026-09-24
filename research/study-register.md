@@ -607,3 +607,22 @@ rejection of duplicate distractors is preserved in its frozen pilot source; it
 was not used for fresh inference. [Full GPQA protocol](gpqa-diamond-execution-v1.md),
 [short-task preparation](full-short-tasks-admission-v1.md). No new held-out
 accuracy or superiority result yet.
+
+
+**R27-A completed and audited:** all 132 serial generations completed on 18
+exposed development cases. All 18 Jev requests succeeded; 54 routed repairs ran
+and 54 were skipped across six controls. The separate Jev-free control ran 18
+self-refinement passes. Native and live-guided correctness tie in every pilot
+domain; this is no fresh improvement claim. Source/token/cache/gate/API/weight
+checks pass, and 19 public compressed inference files reproduce the analysis
+exactly. Twenty-one remote file hashes matched before all owned resources were
+deleted. Stage estimate $1.2225; cumulative $47.40/$110.
+[Report](../reports/2026-09-24-benchmark-execution-pilot/README.md).
+
+The first whole-run audit exposed an obsolete eight-probe assertion; its
+regression and correction apply only to the new auditor, with no paid rerun or
+raw-record change. A separate prospective multiline choice v3 readout addresses
+26 GPQA cases while preserving R27-A's v2 grading. Full GPQA's $24 reserve has
+a timing-only development proxy and independent 12-hour shutdown ceiling; its
+source/data manifest must be frozen before dispatch. Local checks now pass 606
+tests; Ruff, formatting, docs and build pass.

@@ -6,6 +6,12 @@ import pytest
 PATH = Path(__file__).parents[1] / "research/diagnostics/benchmark_execution_v2_audit.py"
 
 
+@pytest.fixture(autouse=True, params=[2, 3])
+def audit_version(request, monkeypatch):
+    path = PATH.with_name(f"benchmark_execution_v{request.param}_audit.py")
+    monkeypatch.setitem(globals(), "PATH", path)
+
+
 def test_terminal_audit_rejects_early_stops_and_changed_tokens():
     m = runpy.run_path(str(PATH))
 
@@ -80,3 +86,18 @@ def test_ifbench_language_judgment_has_a_fixed_reproducible_seed(monkeypatch):
     refs = {"a": dict(kind="ifbench", key=1, instruction_id_list=["synthetic"], kwargs=[{}])}
     m["score_selected"](cases, refs, {"original": {"a": dict(final="blue")}}, ifbench=evaluator)
     assert observed == [2701, 2701]
+
+
+def test_order_audit_uses_the_registered_three_original_only_probes():
+    m = runpy.run_path(str(PATH))
+    cases = {k: dict(id=k) for k in ("a", "b", "c", "d")}
+    native = [
+        dict(id=k, arm="native", prompt_token_ids=[1] * n, batch_id=k)
+        for n, k in enumerate(cases, 1)
+    ]
+    base = [dict(id="a", arm="warmup"), *native]
+    probes = [dict(id=k, arm="serial_probe") for k in ("a", "b", "c")]
+    m["check_profile_order"](cases, base + probes, 1, serial_ids={"a", "b", "c"})
+    m["check_profile_order"](cases, base, 1, serial_ids=set())
+    with pytest.raises(ValueError, match="probe"):
+        m["check_profile_order"](cases, base + probes[::-1], 1, serial_ids={"a", "b", "c"})

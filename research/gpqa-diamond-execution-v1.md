@@ -50,10 +50,18 @@ contract**, not an exact reproduction of an upstream leaderboard recipe. The
 upstream code at `56686c06f5e19865c153de0fdb11be3890014df7` offers several prompts,
 including few-shot demonstrations, zero-shot and multi-sample voting; our run uses
 no demonstrations and one native sample per model. It uses lettered options and
-`Final:` ending, choice readout v2 and matched prompts for all systems. Upstream's
+`Final:` ending, choice readout v3 and matched prompts for all systems. Upstream's
 first parenthesized-letter fallback is not used because an explanation can name
 several options. Never compare these results directly to different model-card
 protocols as if they were matched experiments.
+
+The CSV contains **26 cases with multiline options**. Before fresh inference, a
+new v3 extractor was registered to require the complete option body in its
+full-option fallback, preventing a first line from being treated as the whole
+answer option. Explicit final letters, all single-line-option cases and numeric
+readout retain their v2 behavior. Synthetic tests reject partial/ambiguous bodies
+and show reference-label changes do not change extraction. R27-A retains its
+original v2 grader and separate auditor; its primary scores are not rewritten.
 
 Independent local reference grading occurs only after generation. Unparseable,
 empty or unfinished-thinking responses are wrong; correct extraction never

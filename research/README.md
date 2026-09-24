@@ -1,6 +1,6 @@
 # Granite + Jev research record
 
-**R27 authorized and being prepared:** [repaired runtime and benchmark plan](benchmark-execution-v2-plan.md), followed by a bounded exposed-data pilot and affordable full-task comparisons; no new inference result yet.
+**R27-A completed:** [18-case engineering report](../reports/2026-09-24-benchmark-execution-pilot/README.md). All 132 outputs and 18 Jev receipts pass independent audit; public replay matches and all owned resources are deleted. No live-guidance gain appears in these exposed pilot cases. Cumulative estimate **$47.40/$110**; **606 local tests pass**. [Full GPQA protocol](gpqa-diamond-execution-v1.md) is next; no fresh full-task result yet.
 
 **R26-A completed and audited:** the [50-case exposed-data cost pilot](../reports/2026-09-24-selective-admission/README.md)
 measured actual selective repair: 20 cases repaired and 30 retained per arm, with
