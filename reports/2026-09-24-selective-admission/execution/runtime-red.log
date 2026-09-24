@@ -1,0 +1,114 @@
+FFFFF                                                                    [100%]
+=================================== FAILURES ===================================
+____ test_padded_batch_owns_exact_prefixes_and_counts_actual_forward_slots _____
+
+    def test_padded_batch_owns_exact_prefixes_and_counts_actual_forward_slots():
+>       r = runtime()
+            ^^^^^^^^^
+
+tests/test_selective_benchmark_runtime.py:26: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_benchmark_runtime.py:12: in runtime
+    return runpy.run_path(str(HERE / 'runtime.py'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/selective_benchmarks/runtime.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/selective_benchmarks/runtime.py'
+
+<frozen runpy>:254: FileNotFoundError
+___________ test_single_request_adapter_gate_zero_and_scope_cleanup ____________
+
+    def test_single_request_adapter_gate_zero_and_scope_cleanup():
+>       r = runtime()
+            ^^^^^^^^^
+
+tests/test_selective_benchmark_runtime.py:42: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_benchmark_runtime.py:12: in runtime
+    return runpy.run_path(str(HERE / 'runtime.py'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/selective_benchmarks/runtime.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/selective_benchmarks/runtime.py'
+
+<frozen runpy>:254: FileNotFoundError
+_____________ test_deadline_stops_before_forward_and_removes_hooks _____________
+
+    def test_deadline_stops_before_forward_and_removes_hooks():
+>       r = runtime()
+            ^^^^^^^^^
+
+tests/test_selective_benchmark_runtime.py:57: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_benchmark_runtime.py:12: in runtime
+    return runpy.run_path(str(HERE / 'runtime.py'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/selective_benchmarks/runtime.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/selective_benchmarks/runtime.py'
+
+<frozen runpy>:254: FileNotFoundError
+_________ test_model_final_readout_does_not_score_unfinished_thinking __________
+
+    def test_model_final_readout_does_not_score_unfinished_thinking():
+>       r = runtime()
+            ^^^^^^^^^
+
+tests/test_selective_benchmark_runtime.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_benchmark_runtime.py:12: in runtime
+    return runpy.run_path(str(HERE / 'runtime.py'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/selective_benchmarks/runtime.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/selective_benchmarks/runtime.py'
+
+<frozen runpy>:254: FileNotFoundError
+________________ test_native_batch_needs_no_provider_or_adapter ________________
+
+    def test_native_batch_needs_no_provider_or_adapter():
+>       r = runtime()
+            ^^^^^^^^^
+
+tests/test_selective_benchmark_runtime.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_benchmark_runtime.py:12: in runtime
+    return runpy.run_path(str(HERE / 'runtime.py'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/selective_benchmarks/runtime.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/selective_benchmarks/runtime.py'
+
+<frozen runpy>:254: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_selective_benchmark_runtime.py::test_padded_batch_owns_exact_prefixes_and_counts_actual_forward_slots
+FAILED tests/test_selective_benchmark_runtime.py::test_single_request_adapter_gate_zero_and_scope_cleanup
+FAILED tests/test_selective_benchmark_runtime.py::test_deadline_stops_before_forward_and_removes_hooks
+FAILED tests/test_selective_benchmark_runtime.py::test_model_final_readout_does_not_score_unfinished_thinking
+FAILED tests/test_selective_benchmark_runtime.py::test_native_batch_needs_no_provider_or_adapter
+5 failed in 0.90s

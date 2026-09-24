@@ -1,5 +1,11 @@
 # Feature: Jev-guided intermediate reasoning
 
+**R26 preparation:** the owner increased the cumulative cap to **$110** and requested
+full benchmark/larger-model evaluation of selective repair. A bounded exposed-case
+[admission and cost profile](reports/2026-09-24-selective-admission/README.md) is implemented and being frozen before fresh
+benchmark inference; 572 local tests pass. R25 results below remain historical;
+no new benchmark quality result or full-suite completion is claimed.
+
 **R25 completed and audited:** always repairing lowers the combined score from
 59.38% to 44.79%. The predeclared selective-retention replay instead reaches
 66.67%: science improves **71.88% → 86.46%**, while math stays **46.88%**.

@@ -1,0 +1,98 @@
+FFFF                                                                     [100%]
+=================================== FAILURES ===================================
+_______ test_feedback_payload_excludes_reference_and_keeps_native_answer _______
+
+    def test_feedback_payload_excludes_reference_and_keeps_native_answer():
+>       m = module()
+            ^^^^^^^^
+
+tests/test_selective_benchmark_feedback.py:26: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_benchmark_feedback.py:17: in module
+    return runpy.run_path(str(ROOT/'research/iterations/selective_benchmarks/feedback.py'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/selective_benchmarks/feedback.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/selective_benchmarks/feedback.py'
+
+<frozen runpy>:254: FileNotFoundError
+_____ test_retries_have_separate_charges_and_duplicate_input_is_not_resent _____
+
+tmp_path = PosixPath('/private/var/folders/q0/yrbrh__54_11208_rxgxhnkc0000gn/T/pytest-of-jubba/pytest-1557/test_retries_have_separate_cha0')
+
+    def test_retries_have_separate_charges_and_duplicate_input_is_not_resent(tmp_path):
+>       m = module(); delays = []
+            ^^^^^^^^
+
+tests/test_selective_benchmark_feedback.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_benchmark_feedback.py:17: in module
+    return runpy.run_path(str(ROOT/'research/iterations/selective_benchmarks/feedback.py'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/selective_benchmarks/feedback.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/selective_benchmarks/feedback.py'
+
+<frozen runpy>:254: FileNotFoundError
+__________ test_timeout_remains_missing_and_fatal_auth_is_not_retried __________
+
+tmp_path = PosixPath('/private/var/folders/q0/yrbrh__54_11208_rxgxhnkc0000gn/T/pytest-of-jubba/pytest-1557/test_timeout_remains_missing_a0')
+
+    def test_timeout_remains_missing_and_fatal_auth_is_not_retried(tmp_path):
+>       m = module()
+            ^^^^^^^^
+
+tests/test_selective_benchmark_feedback.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_benchmark_feedback.py:17: in module
+    return runpy.run_path(str(ROOT/'research/iterations/selective_benchmarks/feedback.py'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/selective_benchmarks/feedback.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/selective_benchmarks/feedback.py'
+
+<frozen runpy>:254: FileNotFoundError
+____ test_uncertain_charge_cap_stops_before_new_dispatch_and_resume_refused ____
+
+tmp_path = PosixPath('/private/var/folders/q0/yrbrh__54_11208_rxgxhnkc0000gn/T/pytest-of-jubba/pytest-1557/test_uncertain_charge_cap_stop0')
+
+    def test_uncertain_charge_cap_stops_before_new_dispatch_and_resume_refused(tmp_path):
+>       m = module()
+            ^^^^^^^^
+
+tests/test_selective_benchmark_feedback.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_benchmark_feedback.py:17: in module
+    return runpy.run_path(str(ROOT/'research/iterations/selective_benchmarks/feedback.py'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/selective_benchmarks/feedback.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/selective_benchmarks/feedback.py'
+
+<frozen runpy>:254: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_selective_benchmark_feedback.py::test_feedback_payload_excludes_reference_and_keeps_native_answer
+FAILED tests/test_selective_benchmark_feedback.py::test_retries_have_separate_charges_and_duplicate_input_is_not_resent
+FAILED tests/test_selective_benchmark_feedback.py::test_timeout_remains_missing_and_fatal_auth_is_not_retried
+FAILED tests/test_selective_benchmark_feedback.py::test_uncertain_charge_cap_stops_before_new_dispatch_and_resume_refused
+4 failed in 0.09s

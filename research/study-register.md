@@ -1,5 +1,11 @@
 # Study register
 
+**R26 preparation:** the owner increased the cumulative cap to **$110** and requested
+full benchmark/larger-model evaluation of selective repair. A bounded exposed-case
+[admission and cost profile](../reports/2026-09-24-selective-admission/README.md) is implemented and being frozen before fresh
+benchmark inference; 572 local tests pass. R25 results below remain historical;
+no new benchmark quality result or full-suite completion is claimed.
+
 **R25 completed and audited:** always repairing lowers the combined score from
 59.38% to 44.79%. The predeclared selective-retention replay instead reaches
 66.67%: science improves **71.88% → 86.46%**, while math stays **46.88%**.
@@ -505,3 +511,18 @@ Fresh selective-repair validation remains a next candidate, not a completed resu
 All 57 files are byte-verified and public replay reproduces all four main audits;
 feedback replay also matches. Resources are deleted. Combined R25 cost estimate
 $5.853546, cumulative $42.627081/$75, before tax/separate network.
+
+
+## R26-A — selective execution admission and cost profile (registered 2026-09-24)
+
+- Owner explicitly requests benchmark/larger-model comparisons after R25's selective
+  finding and raises the cumulative cap to $110. The old gated full-repair outline
+  stays unexecuted; this is a separately registered selective mechanism study.
+- [Protocol](selective-benchmark-admission-plan.md): 50 exposed R23/R25 development
+  cases, six selective repair arms and native original 1B / thinking 3B / Qwen 4B,
+  with real skipped repair execution, fixed checkpoints and task-specific readout.
+- Before GPU dispatch: freeze sources/data/checkpoint hashes, pass all checks and
+  verify owned-resource expiry/backup. Reserve $6 inside the parent's $60 reserve,
+  not an additional reserve beyond it. Starting estimate $42.627081/$110.
+- Independent audits and measured workload projections remain pending. No fresh
+  benchmark score, savings claim or new superiority result exists yet.
