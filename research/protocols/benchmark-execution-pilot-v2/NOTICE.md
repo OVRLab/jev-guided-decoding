@@ -1,18 +1,18 @@
-# R26-A exposed development data and checkpoint attribution
+# R27 exposed engineering pilot data and checkpoint attribution
 
-These 50 cases are drawn only from the already-exposed R23 development and R25
+These 18 cases are drawn only from the already-exposed R26-A subset of R23 and R25
 development cohorts. This is not a fresh benchmark evaluation. Source bindings
 and upstream origins remain in the linked immutable manifests:
 
 - [R23 sources, authors and data terms](../public-baseline-v1/NOTICE.md), covering
-  14 MMLU-Pro validation questions, six MuSR problems and ten IFBench prompts.
+  five MMLU-Pro validation questions, three MuSR problems and three IFBench prompts.
 - [R25 sources, authors and data terms](../gated-repair-retry-v4/NOTICE.md), covering
-  ten GSM8K development questions and ten ARC-Challenge development questions.
+  three GSM8K development questions and four ARC-Challenge development questions.
 
 GSM8K's MIT notice is retained in [GSM8K-LICENSE.txt](GSM8K-LICENSE.txt).
 ARC-derived content and adaptations remain CC BY-SA 4.0; MuSR remains CC BY 4.0;
 IFBench remains ODC-BY-1.0 with its source conditions. Repository software licensing
-does not replace these dataset terms. R26 changes only output instructions for
+does not replace these dataset terms. R27 changes only output instructions for
 choice/math cases; IFBench prompts remain unmodified. References stay separate
 and are never supplied to the generator or Jev.
 
