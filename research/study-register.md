@@ -575,3 +575,21 @@ authenticated one-byte GET to the pinned Diamond CSV succeeded with HTTP 206.
 contains no token or dataset example. This resolves access only; no schema
 admission, model generation, new score or cloud spending occurred. The earlier
 403 remains valid historical evidence of the R26-A preparation state.
+
+
+## R27 — repaired benchmark execution (prospective, 2026-09-24)
+
+The owner explicitly authorized proceeding after GPQA access was resolved. The
+[new protocol](benchmark-execution-v2-plan.md) fixes the runtime and integrates
+choice readout v2, then admits an exposed-only 18-case engineering pilot capped
+at $5. Newline-terminated final answers stop choice/numeric generation outside
+thinking; serial execution removes finished-row padding. Original model profiles
+and selected block-19 adapters remain fixed. A Jev-free always-self-refine arm
+joins the six routed controls and two larger models. No fresh quality result or
+new cloud spend is recorded by this registration. Seven new regressions first
+failed on missing modules, then passed after implementation (plus the three
+existing readout tests). GPQA's pinned CSV downloaded privately: 198 unique
+questions, SHA-256 `41d1213cd7a4998605a26c2798500652572007161b3a92817ba46b35befcd305`.
+Its schema/access is verified; examples and answer-bearing traces stay private.
+Full test execution still requires throughput/evaluator admission and a separate
+input/source freeze.

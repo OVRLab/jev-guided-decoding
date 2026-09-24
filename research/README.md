@@ -1,5 +1,7 @@
 # Granite + Jev research record
 
+**R27 authorized and being prepared:** [repaired runtime and benchmark plan](benchmark-execution-v2-plan.md), followed by a bounded exposed-data pilot and affordable full-task comparisons; no new inference result yet.
+
 **R26-A completed and audited:** the [50-case exposed-data cost pilot](../reports/2026-09-24-selective-admission/README.md)
 measured actual selective repair: 20 cases repaired and 30 retained per arm, with
 50 successful Jev calls. All three native profiles finished, but output-format
