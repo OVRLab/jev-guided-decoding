@@ -1,4 +1,4 @@
-# R27 full-benchmark tranche — recovering from interruption
+# R27 full-benchmark tranche — resumed after recovery
 
 **No full-task quality result is available yet.** GPQA Diamond, IFBench and AIME 2026 were dispatched on
 2026-09-24 after the audited exposed-only pilot passed. The immutable source
@@ -9,9 +9,9 @@ question/answer text. All 606 offline tests also passed on the GPU worker.
 
 | Task | Planned source / untouched | State |
 | --- | ---: | --- |
-| GPQA Diamond | 198 / 196 | Interrupted; original/guided/controls complete, larger comparators incomplete |
-| IFBench | 300 / 288 | Interrupted; original/self-refinement/Jev complete, repairs/comparators incomplete |
-| AIME 2026 | 30 / 30 | Interrupted; original/self-refinement/Jev complete, repairs/comparators incomplete |
+| GPQA Diamond | 198 / 196 | Resumed: original/guided/controls complete; larger Granite in progress, Qwen pending |
+| IFBench | 300 / 288 | Resumed: original/self-refinement/Jev complete; repairs in progress, larger comparators pending |
+| AIME 2026 | 30 / 30 | Resumed: original/self-refinement/Jev complete; repairs in progress, larger comparators pending |
 | Other seven contracted tasks | See ten-task contract | Full comparisons not completed |
 
 [GPQA protocol](../../research/gpqa-diamond-execution-v1.md),
@@ -69,3 +69,34 @@ completed output and all Jev judgments. No fresh grades have been inspected.
 Ten new tests first failed because recovery was absent, then passed; the complete
 local suite passes 619 tests, plus lint, formatting, guidance checks and build.
 The original per-stage deadlines, reserves and cumulative $110 cap remain.
+
+### Resumption verified at 14:15 UTC
+
+Both replacement L40S servers are running. GPQA resumed its larger Granite native
+stage from 30 completed questions; IFBench/AIME is producing new repair/control
+outputs. GPU activity and new job timestamps were checked directly. Full remote
+retrieval recovered 17 additional durable IFBench/AIME outputs, bringing its parent
+to 1,232; GPQA's parent remains 1,463. All original result files matched remote
+hashes (16 GPQA files, 14 short-task files). Both derived runs pass exact parent
+preservation checks; each records one interrupted job. No new Jev request occurred.
+
+Recovery source `7334521` passed all four CI jobs and 619 local tests; both frozen
+remote environments passed 616 tests. The resumed original-model cache admission
+also passes. The GPU stays L40S; the CPU platform changed from AMD to Intel and the
+replacement instances are preemptible. Their original absolute worker deadlines
+are 21:34:54 and 21:44:20 UTC, with independent VM shutdown at 22:31:19 and
+22:39:49 UTC. These limits do not guarantee completion of the remaining work.
+
+Detached supervisors back up every 45 seconds plus transfer time, retain stale
+status on connection failures, and retry; the actual supervisor scripts passed an
+offline transport-failure/recovery check. A restarted completion watcher verifies
+recovery lineage before the unchanged full-coverage/token/grade audit. Cleanup
+includes both original and replacement instances and the preserved disk, only
+after hash-verified retrieval. No full-task quality score is available yet.
+
+The attempted L40S bid policy was rejected by the provider; no policy was created.
+The replacement uses spot pricing, with a conservative regular-price estimate over
+the entire original-to-cleanup wall time, including downtime. The existing two
+$24 reserves and cumulative $110 cap remain; final billing may be lower. Cloud
+authentication renewal may be needed for final API cleanup; an independent VM
+shutdown and SSH shutdown fallback still bound running compute if it is unavailable.

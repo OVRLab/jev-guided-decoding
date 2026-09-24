@@ -1,6 +1,6 @@
 # Verified implementation inventory
 
-**R27 full-task comparisons are recovering from interruption:** [live tranche](reports/2026-09-24-full-benchmark-tranche/README.md)
+**R27 full-task comparisons resumed after recovery:** [live tranche](reports/2026-09-24-full-benchmark-tranche/README.md)
 covers all 198 GPQA Diamond, 300 IFBench and 30 AIME 2026 cases with original
 Granite, the frozen Jev-conditioned repair architecture, controls, Granite 3B
 and Qwen 4B. The original L40S workers passed 606 offline tests each; recovery passes 619 local tests. No fresh

@@ -1832,3 +1832,15 @@ cost deadlines remain frozen. A replacement CPU platform using the same L40S GPU
 is documented separately, as are cold loading, downtime and lost partial work;
 resumed elapsed time cannot be described as uninterrupted inference latency.
 See the [registered recovery protocol](benchmark-interruption-recovery-v1.md).
+
+
+R27 recovery execution confirmed at 14:15 UTC: both same-GPU replacement workers
+are active; GPQA continues larger Granite, short tasks produce new repair outputs.
+Remote retrieval preserved 1,463/1,232 original outputs and recovered 17 outputs
+beyond the last short-task backup. All original remote hashes match, exact parent
+lineage passes, all 528 Jev judgments/charges are reused, and no new provider call
+occurs. Recovery source `7334521` passes 619 local tests, 616 tests per remote worker, and all four CI jobs.
+The resumed original-model cache admission passes. CPU platform/preemptibility,
+interruption overhead, explicit incomplete-job retries and unchanged absolute
+limits are documented in the [live report](../reports/2026-09-24-full-benchmark-tranche/README.md).
+No fresh benchmark quality conclusion is available yet.
