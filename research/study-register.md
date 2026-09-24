@@ -673,3 +673,21 @@ Ruff, formatting, guidance validation, build and diff hygiene also pass. These
 three additional exporter/accounting tests run locally; both immutable inference
 workers retain the 606-test pre-dispatch checkpoint. No paid experiment was rerun
 for the reporting additions.
+
+
+### R27 recovery registered — 2026-09-24, before resumed inference
+
+The full GPQA and IFBench/AIME workers were stopped by an account interruption
+before their larger-comparator stages completed. Original restart attempts failed
+with capacity errors. [Recovery protocol](benchmark-interruption-recovery-v1.md)
+keeps frozen inference/grading sources and all prior raw data unchanged, forbids
+new Jev requests, validates complete delivery and durable journals, and derives a
+new continuation with explicit lost-job provenance. Same L40S GPU, possible CPU
+platform change disclosed; existing stage reserves/deadlines remain. Original
+boot disks were converted from managed to existing disks without deleting data,
+so replacement attachment preserves them. Actual resumed inference pending.
+
+Observed test-first failures: nine missing-state-module failures, followed by one
+missing-lineage-function failure. Ten recovery tests now pass; canonical suite
+619 passed (11.88 s), lint/format/guidance/build pass. Cached 528 receipts and 2,678
+saved batch/output records pass preflight. No fresh quality grades inspected.

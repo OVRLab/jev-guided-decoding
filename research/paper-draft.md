@@ -1818,3 +1818,17 @@ quality grading and final cost/cleanup are still pending; no fresh gain or
 larger-model outperformance is claimed. The remaining seven task rows are not
 completed by this tranche. Allocation is based on evaluator readiness and exposed
 runtime measurements, not fresh test performance.
+
+### R27 interruption handling (prospective, 24 September)
+
+The full-source tranche experienced an external cloud interruption before complete
+larger-model comparisons. Original restart requests failed with L40S capacity
+errors. A separately versioned recovery retains interrupted artifacts, validates
+every completed job and Jev receipt, and derives new journals that retain completed
+outputs exactly while explicitly recording the single unfinished job per stage.
+No fresh quality grade informed this recovery. All 528 Jev judgments are reused;
+no additional provider request is admitted. Model/runtime/seed/grading settings and
+cost deadlines remain frozen. A replacement CPU platform using the same L40S GPU
+is documented separately, as are cold loading, downtime and lost partial work;
+resumed elapsed time cannot be described as uninterrupted inference latency.
+See the [registered recovery protocol](benchmark-interruption-recovery-v1.md).

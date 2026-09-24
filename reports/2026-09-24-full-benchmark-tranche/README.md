@@ -1,4 +1,4 @@
-# R27 full-benchmark tranche — running
+# R27 full-benchmark tranche — recovering from interruption
 
 **No full-task quality result is available yet.** GPQA Diamond, IFBench and AIME 2026 were dispatched on
 2026-09-24 after the audited exposed-only pilot passed. The immutable source
@@ -9,9 +9,9 @@ question/answer text. All 606 offline tests also passed on the GPU worker.
 
 | Task | Planned source / untouched | State |
 | --- | ---: | --- |
-| GPQA Diamond | 198 / 196 | Running on one L40S; local references were not transferred |
-| IFBench | 300 / 288 | Running on a second bounded L40S |
-| AIME 2026 | 30 / 30 | Running on a second bounded L40S |
+| GPQA Diamond | 198 / 196 | Interrupted; original/guided/controls complete, larger comparators incomplete |
+| IFBench | 300 / 288 | Interrupted; original/self-refinement/Jev complete, repairs/comparators incomplete |
+| AIME 2026 | 30 / 30 | Interrupted; original/self-refinement/Jev complete, repairs/comparators incomplete |
 | Other seven contracted tasks | See ten-task contract | Full comparisons not completed |
 
 [GPQA protocol](../../research/gpqa-diamond-execution-v1.md),
@@ -49,3 +49,23 @@ and reconciles both stage costs once. It generates a local Markdown draft for
 review; it does not create missing benchmark results, alter grading or claim an
 unreviewed draft has been published. Operational errors stop this reporting path
 and preserve partial artifacts for inspection.
+
+## Interruption and recovery
+
+Both VMs stopped around 13:23 UTC on 24 September. Backup supervisors reported
+connection failures and stopped after their retry limit; the completion watcher
+correctly refused to publish incomplete results. The owner resolved the account
+issue and authorized resumption. Two restarts returned `NotEnoughResources`.
+Replacement single-L40S instances are being allocated with the original disks;
+no model has resumed yet at this documentation checkpoint.
+
+The last local backups contain 1,463 GPQA and 1,215 IFBench/AIME outputs, including
+warmups/probes and controls; these are not numbers of benchmark questions. All
+528 Jev receipts validate against their exact drafts and settled charges, with no
+provider failure or retry. One unfinished model job per stage is explicit. The
+[recovery protocol](../../research/benchmark-interruption-recovery-v1.md) preserves
+the interrupted raw folders and creates hash-bound continuations, reusing every
+completed output and all Jev judgments. No fresh grades have been inspected.
+Ten new tests first failed because recovery was absent, then passed; the complete
+local suite passes 619 tests, plus lint, formatting, guidance checks and build.
+The original per-stage deadlines, reserves and cumulative $110 cap remain.
