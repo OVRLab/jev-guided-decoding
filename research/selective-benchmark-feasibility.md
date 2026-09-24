@@ -18,6 +18,15 @@ optimized serving. Resolve readout admission and runtime inefficiency before
 using the remaining budget on a fresh full benchmark; the ten-task total is still
 unpriced.
 
+## GPQA access update
+
+The [access recheck](../reports/2026-09-24-selective-admission/gpqa-access-update.json)
+succeeded on 2026-09-24 at 09:16 UTC. This resolves the earlier access blocker; it
+is not a dataset-schema check, benchmark run or model result. Only one byte was
+read, no examples were displayed, and no inference was requested. GPQA examples
+must remain outside public reports; reproducibility should use source revisions,
+hashes, scripts and aggregate results consistent with the accepted access conditions.
+
 ## Workload inventory
 
 Counts below describe source data, not model attempts, and are not scored results.
@@ -26,7 +35,7 @@ Sources/revisions are pinned in the [ten-task contract](benchmark-suite-contract
 | Task | Complete-source workload | Remaining admission work |
 | --- | ---: | --- |
 | MMLU-Pro | 12,032 test questions | Official five-shot prompt/option mapping; independently bounded extraction without random fallback or gold-controlled retry. R26 zero-shot timings are only a rough cost proxy. |
-| GPQA Diamond | Gated dataset; access not admitted | Existing owner-token check returns HTTP 403. Owner access is required before loading/validating Diamond cases. |
+| GPQA Diamond | Access verified after R26-A; dataset/evaluator admission pending | Authenticated one-byte GET succeeded with HTTP 206 on the pinned Diamond CSV after the owner enabled token permission and accepted the access conditions; pin option shuffling, validate source/schema and grading before inference. |
 | AIME 2026 | 30 problems | Numeric pass@1 contract, sampling/repetition budget and problem-level uncertainty; GSM timing is not a reliable AIME estimate. |
 | LiveCodeBench | Release/window must be frozen | Official code README describes 1,055 cumulative `release_v6` problems, while `v6` selects only its new increment. No model run has started; isolated hidden-test execution and asset attribution remain pending. |
 | IFBench | 300 prompts | Pinned strict/loose evaluator environment and actual instruction-following outputs. Twelve prompts were already consumed for R23 development. |
@@ -131,3 +140,36 @@ model supports it. Hugging Face's [cache guidance](https://huggingface.co/docs/t
 explains both the compilation benefit and the wasted masked work when sequence
 lengths vary. This is a hypothesis for measurement, not a measured speedup or a
 guarantee that Granite's model-specific cache and research hooks support it.
+
+
+## Recommended sequence after GPQA access is resolved
+
+This is a planning recommendation, not a frozen new experiment or a dispatched
+worker. Estimated remaining funds are $63.83 before tax/separate network.
+
+First integrate and validate the new readout with task-appropriate prompts, then
+validate stopping behavior and improve batching/cache execution on already-exposed
+development cases. Reserve at most $5 from the remaining budget for a separately
+registered engineering profile after offline checks pass; require measured timing,
+output-contract and token/weight provenance evidence before fresh evaluation.
+
+Freeze the selected internal repair architecture, checkpoints, routing, generation
+profiles, scoring and analysis before new test outcomes. Compare original Granite,
+Granite-only additional inference, informative Jev repair and matched feedback
+controls; disclose that earlier selective controls all shared Jev-based routing.
+Include the pinned Granite 3B and Qwen 4B comparators on identical case sets, with
+sampling/thinking profiles explicit and costs recorded.
+
+Prioritize a complete GPQA Diamond comparison once its source and evaluator are
+validated and its measured quote fits the cap. Add complete IFBench and MuSR runs
+only where their evaluators and costs are admitted, disclosing previously exposed
+records separately. Preserve all ten target rows: this initial tranche does not
+replace the full-suite objective. Quote MMLU-Pro and the remaining math, coding,
+long-context, factuality, tool-use and repository-repair workloads from validated
+implementations before expansion. If a complete run does not fit, label any sample
+explicitly and do not launch an unbudgeted full run.
+
+Report absolute accuracy, paired improvement with uncertainty, failure modes,
+actual Jev contribution, latency and total system cost. Use development failures
+to choose the next architecture iteration and fresh evidence to test it; retain
+all primary results and document findings in the research record and manuscript.

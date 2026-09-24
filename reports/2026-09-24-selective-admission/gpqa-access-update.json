@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-09-24T09:16:05.283561+00:00",
+  "dataset": "Idavidrein/gpqa",
+  "revision": "83022cefff930aea54f654c0b282e74b9eeda5c6",
+  "file": "gpqa_diamond.csv",
+  "method": "GET",
+  "requested_range": "bytes=0-0",
+  "result": {
+    "status": 206,
+    "readable": true,
+    "bytes_read": 1,
+    "content_type": "text/plain; charset=utf-8"
+  },
+  "inference_requests": 0,
+  "dataset_examples_displayed": false
+}

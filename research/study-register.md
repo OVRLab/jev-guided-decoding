@@ -566,3 +566,12 @@ five-shot execution or optimized serving. Full ten-task costs remain unestablish
 [Report](../reports/2026-09-24-selective-admission/README.md) preserves all results;
 [feasibility](selective-benchmark-feasibility.md) records remaining harness/access
 work. No further paid benchmark run follows automatically from this failed admission.
+
+
+**Post-R26-A access update (2026-09-24, 09:16 UTC):** after the owner enabled the
+token's gated-data permission and accepted GPQA's access conditions, an
+authenticated one-byte GET to the pinned Diamond CSV succeeded with HTTP 206.
+[Probe metadata](../reports/2026-09-24-selective-admission/gpqa-access-update.json)
+contains no token or dataset example. This resolves access only; no schema
+admission, model generation, new score or cloud spending occurred. The earlier
+403 remains valid historical evidence of the R26-A preparation state.
