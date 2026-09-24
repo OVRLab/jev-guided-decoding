@@ -1,0 +1,23 @@
+{
+  "stage": "full IFBench 300 and AIME 2026 30",
+  "actual_prior_spend_usd": 47.39595151031136,
+  "other_open_stage_reserve_usd": 24,
+  "stage_reserve_usd": 24,
+  "encumbered_total_usd": 95.39595151031136,
+  "cumulative_cap_usd": 110,
+  "proxy": {
+    "ifbench": {
+      "exposed_cases": 3,
+      "projected_cases": 300,
+      "projected_gpu_seconds": 17626.455507100014,
+      "projected_gpu_usd": 8.590844664207006
+    },
+    "gsm8k": {
+      "exposed_cases": 3,
+      "projected_cases": 30,
+      "projected_gpu_seconds": 1244.5863441900008,
+      "projected_gpu_usd": 0.6065909252046032
+    }
+  },
+  "interpretation": "Exposed IFBench timing; GSM8K is only a weak proxy for AIME. Not a full-task quote or confidence bound. Independent 12-hour VM shutdown and 11-hour worker limit bound cost; incomplete tasks remain explicitly partial."
+}

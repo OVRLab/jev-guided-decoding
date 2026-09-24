@@ -1,0 +1,7 @@
+{
+  "fixtures": 9,
+  "passed": true,
+  "reference_independent_extraction": true,
+  "source_sha256": "254f4346b97d77b052e3b9ece3b14dd5a1022c064c7e5dbc399002db09d54690",
+  "exact_inspect_prompt_or_extractor_parity": false
+}

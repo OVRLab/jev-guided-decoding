@@ -626,3 +626,26 @@ raw-record change. A separate prospective multiline choice v3 readout addresses
 a timing-only development proxy and independent 12-hour shutdown ceiling; its
 source/data manifest must be frozen before dispatch. Local checks now pass 606
 tests; Ruff, formatting, docs and build pass.
+
+### R27-B/C — fresh full-task dispatch (2026-09-24)
+
+R27-B's 198-case GPQA manifest was frozen at clean source `984a9a9`, SHA-256
+`078dd7e7a95337077adff6878ae696e64186fa36af9dc6b7729f84360b0a7947`, after the
+completed pilot audit. The L40S worker passed 606 offline tests; the private input
+transfer matched local hashes and omitted references. Jev credentials were
+transferred privately. Generation is running with a $24 reserve and independent
+12-hour shutdown; no fresh grades have been inspected. An initial SSH connection
+timed out while the VM booted; a subsequent connection completed setup, with no
+model/API attempt replay.
+
+[R27-C](full-short-execution-v1.md) prospectively admits complete IFBench (300,
+288 untouched) and AIME 2026 (30). Pinned Inspect source review confirms dataset
+revision/field mapping and records the different R27 prompt/numeric readout.
+Nine synthetic numeric cases passed, including boxed answers with closing math
+delimiters and reference-independent extraction. Raw contest examples remain
+private and credited to MAA/Math-AI. The stage's additional $24 reserve plus
+GPQA's open $24 and $47.39595151031136 closed-stage spend encumbers $95.40,
+leaving $14.60 outside the two reserves. This allocation uses engineering timing
+and evaluator readiness, not fresh quality. Its final freeze/dispatch is pending.
+The [live report](../reports/2026-09-24-full-benchmark-tranche/README.md) preserves
+all other missing benchmark rows; there is no full-suite result or new novelty claim.
