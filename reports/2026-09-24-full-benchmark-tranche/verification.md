@@ -38,3 +38,19 @@ remain active. Final deletion/cost evidence is **pending**, not asserted here.
 The full PR review context has no human reviews or inline threads. The automated
 reviewer is unavailable because its quota is exhausted, not because it approved
 the change. The PR remains unmerged and no model/package release was published.
+
+## Deadline-closure status verification — 25 September
+
+Documentation-only update; no generation, protocol, grader or recovery source changed.
+Fresh verification matched all 83 GPQA and 60 short-task files to saved remote
+SHA-256 inventories, validated both recovery ancestry chains and all 528 Jev
+receipts, and checked complete selected-answer coverage with the existing
+selection helper. Both worker logs record admission-deadline timeouts; cleanup
+receipts record deletion at 02:03:10 UTC. The cost reconciler yields $103.82976781335556
+cumulative before tax/separate network. No fresh quality grade was inspected.
+The initial system-Python audit import failed because the project package was
+unavailable; rerunning the read-only check in the existing uv environment passed.
+The complete-run finalizer remains review_required; no completion claim was forced.
+Guidance links, aggregate consistency and diff checks are the validation for these
+documentation changes. Fresh canonical checks also pass: 49-file guidance checker,
+Ruff lint/format, all 634 tests and source/wheel builds. No model inference was rerun.

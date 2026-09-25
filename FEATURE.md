@@ -1,12 +1,15 @@
 # Feature: Jev-guided intermediate reasoning
 
-**R27 larger-model comparisons remain in progress:** [live tranche](reports/2026-09-24-full-benchmark-tranche/README.md)
-has saved all original-Granite, Jev-conditioned repair and control outputs across
-198 GPQA Diamond, 300 IFBench and 30 AIME 2026 cases. GPQA restarted after a third interruption under
-its [bounded recovery](research/benchmark-third-interruption.md),
-while IFBench/AIME continues. No fresh quality result is available yet.
-The cumulative admission ceiling is $105.46 within the $110 cap, before tax/network;
-634 local tests pass.
+**R27 stopped at its admitted deadline; quality audit pending:** the
+[tranche](reports/2026-09-24-full-benchmark-tranche/README.md) has complete original
+Granite, Jev-conditioned, control and Granite 4.2-3B answers on all 528 cases.
+Qwen remains incomplete: GPQA 4/198, IFBench 199/300 and AIME 4/30. Both workers
+stopped at 02:00 UTC on 25 September; all owned resources were deleted after
+verified backup at 02:03 UTC. All 143 files match their saved hashes and all
+528 Jev receipts validate. Conservative cumulative cost: **$103.83/$110**, before
+tax/separate network, including downtime at regular rates; not an invoice.
+The complete-run scorer refused incomplete Qwen coverage. No fresh quality result
+or full ten-task claim is established. Earlier entries retain historical status.
 The [R27 engineering pilot](reports/2026-09-24-benchmark-execution-pilot/README.md)
 completed and passed integrity/replay checks, with no guided gain on 18 exposed
 cases. Earlier entries below describe historical stages and their cleanup.
@@ -44,8 +47,9 @@ targets broad benchmark gains and named larger-model outperformance. The
 is complete. R25 completes conditional error-repair training and evaluation,
 with correct-answer preservation visible in its registered retention replay.
 The next candidate is fresh validation of actually selective repair, with admitted
-task-specific output instructions and informative-feedback controls. R27 now runs the frozen GPQA/IFBench/AIME tranche. Block 19 was tested, not
-established as optimal. The remaining full-task rows retain separate admission
+task-specific output instructions and informative-feedback controls. R27 has closed
+at its deadline with Qwen incomplete; offline quality auditing remains pending.
+Block 19 was tested, not established as optimal. The remaining full-task rows retain separate admission
 and budget requirements.
 
 [R23 public baseline — completed](reports/2026-09-23-public-baseline/README.md):

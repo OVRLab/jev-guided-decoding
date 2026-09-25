@@ -1,4 +1,4 @@
-# R27 full-benchmark tranche — third GPQA recovery active
+# R27 full-benchmark tranche — deadline closure; Qwen incomplete
 
 **No full-task quality result is available yet.** GPQA Diamond, IFBench and AIME 2026 were dispatched on
 2026-09-24 after the audited exposed-only pilot passed. The immutable source
@@ -9,10 +9,45 @@ question/answer text. All 606 offline tests also passed on the GPU worker.
 
 | Task | Planned source / untouched | State |
 | --- | ---: | --- |
-| GPQA Diamond | 198 / 196 | Resumed: original/guided/controls complete; larger Granite in progress, Qwen pending |
-| IFBench | 300 / 288 | Original/guided/controls complete; larger Granite in progress, Qwen pending |
-| AIME 2026 | 30 / 30 | Original/guided/controls complete; larger Granite in progress, Qwen pending |
+| GPQA Diamond | 198 / 196 | Nine Granite systems complete; Qwen 4/198; quality audit pending |
+| IFBench | 300 / 288 | Nine Granite systems complete; Qwen 199/300; quality audit pending |
+| AIME 2026 | 30 / 30 | Nine Granite systems complete; Qwen 4/30; quality audit pending |
 | Other seven contracted tasks | See ten-task contract | Full comparisons not completed |
+
+## Deadline closure — 25 September 2026
+
+Both workers stopped at the admitted **02:00 UTC** generation deadline, and both
+logs record an admission-deadline timeout. The original Granite, self-refinement,
+Jev-conditioned system, five routed controls and Granite 4.2-3B have complete
+selected-answer coverage across all **528 cases**. Qwen completed **4/198 GPQA**,
+**199/300 IFBench** and **4/30 AIME** cases; these are partial scheduled outputs,
+not a representative sample or a full benchmark result.
+
+Both stages' cleanup receipts verify deletion at **02:03:10 UTC** after remote
+hash verification. A fresh local check matches all **143 backed-up files**
+(83 GPQA, 60 IFBench/AIME); both recovery chains preserve their parents exactly.
+All **528 Jev receipts** validate, with no unknown attempt, retry or additional
+request. Complete Granite-system coverage and selective answer ownership pass the
+existing selection checks. This is operational validation; the final exact-token
+and quality audit has not run.
+
+The complete-run finalizer correctly stopped with `review_required`, because
+Qwen lacks full coverage. Its original status and all raw files remain preserved.
+A separate audit of the nine completed systems can use full task denominators and
+the unchanged grading rules; it must retain incomplete Qwen and the seven remaining
+tasks as incomplete, without manufacturing a completion marker or relaxing the
+original full-tranche auditor. No fresh quality grade has been inspected.
+
+The [closure evidence](closure-status.json) reconciles a conservative cumulative
+estimate of **$103.8298/$110**, leaving **$6.1702** before tax/separate network.
+This charges all original-creation-to-deletion time, including downtime, at the
+registered regular GPU and disk rate; it is not the provider invoice. All owned
+resources are deleted. Local 15-minute checks ran and unloaded after observing
+both verified cleanup receipts at 02:16 UTC. No new inference was launched.
+
+## Historical dispatch and recovery record
+
+Earlier snapshots below retain their contemporaneous status and spending estimates.
 
 [GPQA protocol](../../research/gpqa-diamond-execution-v1.md),
 [IFBench/AIME protocol](../../research/full-short-execution-v1.md),

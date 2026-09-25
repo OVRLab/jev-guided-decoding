@@ -1,11 +1,15 @@
 # Granite + Jev research record
 
-**Live execution update:** [R27 full-task tranche](../reports/2026-09-24-full-benchmark-tranche/README.md)
-has completed original/guided/control generation and 528 Jev calls on GPQA, IFBench
-and AIME; larger-model comparison remains incomplete. GPQA restarted after a third stop under
-the [registered continuation](benchmark-third-interruption.md), with bounded
-continuation within the $110 cap ($105.46 conservative cumulative ceiling).
-No fresh quality result is available yet.
+**R27 stopped at its admitted deadline; quality audit pending:** the
+[tranche](../reports/2026-09-24-full-benchmark-tranche/README.md) has complete original
+Granite, Jev-conditioned, control and Granite 4.2-3B answers on all 528 cases.
+Qwen remains incomplete: GPQA 4/198, IFBench 199/300 and AIME 4/30. Both workers
+stopped at 02:00 UTC on 25 September; all owned resources were deleted after
+verified backup at 02:03 UTC. All 143 files match their saved hashes and all
+528 Jev receipts validate. Conservative cumulative cost: **$103.83/$110**, before
+tax/separate network, including downtime at regular rates; not an invoice.
+The complete-run scorer refused incomplete Qwen coverage. No fresh quality result
+or full ten-task claim is established. Earlier entries retain historical status.
 
 **R27-A completed:** [18-case engineering report](../reports/2026-09-24-benchmark-execution-pilot/README.md). All 132 outputs and 18 Jev receipts pass independent audit; public replay matches and all owned resources are deleted. No live-guidance gain appears in these exposed pilot cases. Cumulative estimate **$47.40/$110**; **606 local tests pass**. [Full GPQA protocol](gpqa-diamond-execution-v1.md) is next; no fresh full-task result yet.
 

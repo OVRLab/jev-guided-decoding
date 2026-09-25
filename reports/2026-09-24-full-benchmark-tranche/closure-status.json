@@ -1,0 +1,85 @@
+{
+  "status": "stopped_at_admitted_deadline_incomplete_qwen",
+  "worker_deadline": "2026-09-25T02:00:00+00:00",
+  "quality_graded": false,
+  "full_tranche_admitted": false,
+  "ten_task_complete": false,
+  "stages": {
+    "gpqa": {
+      "coverage": {
+        "gpqa_diamond": {
+          "granite_4_0_1b": 198,
+          "granite_4_2_3b": 198,
+          "qwen3_4b_instruct": 4,
+          "planned": 198
+        }
+      },
+      "delivery": {
+        "physical_attempts": 198,
+        "known_input_tokens": 184855,
+        "unknown_attempts": 0,
+        "missing_cases": 0,
+        "retries": 0,
+        "usd": 0.007763910000000001
+      },
+      "cleanup_at": "2026-09-25T02:03:10.885900+00:00",
+      "verified_backup_files": 83,
+      "backup_hash_mismatches": 0,
+      "complete_granite_systems": 9
+    },
+    "short": {
+      "coverage": {
+        "aime2026": {
+          "granite_4_0_1b": 30,
+          "granite_4_2_3b": 30,
+          "qwen3_4b_instruct": 4,
+          "planned": 30
+        },
+        "ifbench": {
+          "granite_4_0_1b": 300,
+          "granite_4_2_3b": 300,
+          "qwen3_4b_instruct": 199,
+          "planned": 300
+        }
+      },
+      "delivery": {
+        "physical_attempts": 330,
+        "known_input_tokens": 238369,
+        "unknown_attempts": 0,
+        "missing_cases": 0,
+        "retries": 0,
+        "usd": 0.010011498
+      },
+      "cleanup_at": "2026-09-25T02:03:10.676759+00:00",
+      "verified_backup_files": 60,
+      "backup_hash_mismatches": 0,
+      "complete_granite_systems": 9
+    }
+  },
+  "cost": {
+    "prior_usd": 47.39595151031136,
+    "stages": [
+      {
+        "name": "gpqa",
+        "cloud_usd": 28.337212610229756,
+        "jev_usd": 0.007763910000000001
+      },
+      {
+        "name": "short",
+        "cloud_usd": 28.07882828481444,
+        "jev_usd": 0.010011498
+      }
+    ],
+    "cumulative_usd": 103.82976781335556,
+    "remaining_usd": 6.170232186644441,
+    "cap_usd": 110,
+    "estimate_before_tax_and_separate_network": true
+  },
+  "cost_method": "Conservative original-creation-to-deletion wall time, including downtime, at registered regular GPU plus disk rate; not an invoice. Before tax and separate network charges.",
+  "limitations": [
+    "Qwen coverage is incomplete and not a representative random sample.",
+    "Saved-token and scoring audit remains pending.",
+    "The full-tranche finalizer correctly refused incomplete coverage.",
+    "Other seven benchmark tasks remain incomplete."
+  ]
+}
