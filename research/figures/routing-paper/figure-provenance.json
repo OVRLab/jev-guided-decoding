@@ -1,0 +1,6 @@
+{
+  "matplotlib": "3.10.9",
+  "inputs": {
+    "reports/2026-09-25-completed-granite/short-analysis.json": "6ceb8dd11fb4bbff6eb911f2be49789a0b7ce022358a3a9db5d4c160fc9be761"
+  }
+}

@@ -1,9 +1,14 @@
 # Feature: Jev-guided intermediate reasoning
 
-**R28 authorized and in preparation (2026-09-25):** [routing versus internal feedback](research/routing-feedback-plan-v1.md)
-uses a fresh eligible IFEval cohort and matched repair counts. The owner raised
-the cumulative cap to **$125**; prior conservative spend is **$103.83**, leaving
-**$21.17** before unconfirmed taxes/network. No R28 quality result exists yet.
+**R28 running (2026-09-25):** [routing versus internal feedback](research/routing-feedback-plan-v1.md)
+compares seven policies on **539 eligible IFEval cases** with matched repair counts.
+The worker is frozen at `c418df6` on one AWS NVIDIA L4; the cumulative cap is
+**$125**. Prior conservative spend is **$103.83** and this stage reserves **$16.65**,
+including explicit operating headroom; final charges remain pending.
+The [execution record](reports/2026-09-25-routing-feedback/README.md),
+[focused manuscript](research/manuscript.md) and [reproduction guide](research/routing-feedback-reproduction.md)
+are available. **No R28 quality result exists yet.** All **652 tests** pass locally;
+upstream grader checks and input/checkpoint reconstruction also pass.
 Earlier budget and completion entries below are historical.
 
 **R27 completed-Granite comparison audited:** the

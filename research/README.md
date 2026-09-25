@@ -1,9 +1,14 @@
 # Granite + Jev research record
 
-**R28 authorized and in preparation (2026-09-25):** [routing versus internal feedback](routing-feedback-plan-v1.md)
-uses a fresh eligible IFEval cohort and matched repair counts. The owner raised
-the cumulative cap to **$125**; prior conservative spend is **$103.83**, leaving
-**$21.17** before unconfirmed taxes/network. No R28 quality result exists yet.
+**R28 running (2026-09-25):** [routing versus internal feedback](routing-feedback-plan-v1.md)
+compares seven policies on **539 eligible IFEval cases** with matched repair counts.
+The worker is frozen at `c418df6` on one AWS NVIDIA L4; the cumulative cap is
+**$125**. Prior conservative spend is **$103.83** and this stage reserves **$16.65**,
+including explicit operating headroom; final charges remain pending.
+The [execution record](../reports/2026-09-25-routing-feedback/README.md),
+[focused manuscript](manuscript.md) and [reproduction guide](routing-feedback-reproduction.md)
+are available. **No R28 quality result exists yet.** All **652 tests** pass locally;
+upstream grader checks and input/checkpoint reconstruction also pass.
 Earlier budget and completion entries below are historical.
 
 **R27 completed-Granite comparison audited:** the
@@ -225,7 +230,8 @@ weights are unchanged, and both temporary GPU deployments are deleted.
 | [Logit-guidance development](../reports/2026-09-21-logit-guidance/README.md) | Completed/interrupted pilots, full authored traces, mechanical controls and remaining limits |
 | [Completed seven-arm study](../reports/2026-09-21-structured-study/README.md) | Full public traces, controls, adjusted intervals, diagnostics, figures and cleanup/cost evidence |
 | [Related work](related-work.md) | Primary sources and what they do—and do not—support |
-| [Paper draft](paper-draft.md) | Evidence-grounded manuscript scaffold and publication requirements |
+| [Focused manuscript](manuscript.md) | R27 evidence and the R28 attribution study, methods and results status |
+| [Chronological manuscript notebook](paper-draft.md) | Earlier scaffold, complete exploration and publication requirements |
 | [Work plan](../docs/research-reassessment-plan.md) | Scope and validation for this reassessment |
 
 The owner subsequently authorized [R13 recovery and a complete controlled comparison](structured-study-protocol.md). Two fresh API diagnostics passed. The first GPU pilot failed final formatting; the corrected common-label-grammar pilot passed all operational gates, and the test then stopped after 3,015 complete jobs and one provider failure. A [bounded continuation](structured-study-continuation.md) completed all 3,284 never-started jobs without another failure, retaining the original failure in the combined denominator. New admission tests operational correctness rather than requiring a positive pilot gain; the earlier R12 critic gate remains unpassed. [All attempts](../reports/2026-09-21-structured-study/README.md) are retained.

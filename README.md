@@ -1,5 +1,13 @@
 # Jev-guided decoding
 
+**Current study:** [R28 routing versus internal feedback](reports/2026-09-25-routing-feedback/README.md)
+is running on 539 eligible IFEval cases within the newly authorized **$125 cumulative
+budget**. Results are pending. The [focused research manuscript](research/manuscript.md)
+combines the completed evidence with this registered follow-up; the
+[reproduction guide](research/routing-feedback-reproduction.md) separates offline
+replay from a new paid run. Historical completion and resource statements below
+refer to their named studies.
+
 **R27 completed-Granite comparison audited:** the
 [full-denominator analysis](reports/2026-09-25-completed-granite/README.md) scores
 original/Granite–Jev **18.69%/27.27% GPQA**, **18.33%/23.67% IFBench strict** and

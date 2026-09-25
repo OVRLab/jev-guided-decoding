@@ -1,5 +1,9 @@
 # From Claim Verification to Learned Representation Bridges: Jev Guidance in Granite
 
+The focused paper is now [Separating Repair Selection from Internal Feedback](manuscript.md).
+This file remains the chronological research notebook and preserves earlier
+abstracts, hypotheses, results and corrections as historical entries.
+
 Working title and manuscript scaffold, updated 2026-09-24. Not submitted, peer reviewed,
 or a report of a successful replacement architecture. Authors, affiliations,
 contributions and publication venue are intentionally unset pending owner decisions.
