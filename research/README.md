@@ -1,5 +1,11 @@
 # Granite + Jev research record
 
+**R28 authorized and in preparation (2026-09-25):** [routing versus internal feedback](routing-feedback-plan-v1.md)
+uses a fresh eligible IFEval cohort and matched repair counts. The owner raised
+the cumulative cap to **$125**; prior conservative spend is **$103.83**, leaving
+**$21.17** before unconfirmed taxes/network. No R28 quality result exists yet.
+Earlier budget and completion entries below are historical.
+
 **R27 completed-Granite comparison audited:** the
 [full-denominator analysis](../reports/2026-09-25-completed-granite/README.md) scores
 original/Granite–Jev **18.69%/27.27% GPQA**, **18.33%/23.67% IFBench strict** and

@@ -42,3 +42,11 @@ For future parallel scheduling, extend request ownership, lock/cache isolation,
 timeout, and late-result coverage before implementation. Do not claim the
 single-backend prototype validates concurrent serving. Run real inference only
 when the changed behavior needs it and scoped resources/data are available.
+
+## R28 repair selection and feedback
+
+Use the [registered protocol](research/routing-feedback-plan-v1.md) and
+[regressions](tests/test_routing_feedback.py): equal-count reference-free routing,
+selected-only donor derangement, likelihood parity, failed-provider charge retention,
+and exact prefix/hook/work admission before independent grading. Fresh shared
+potential outcomes support policy comparisons, not measured deployment savings.
