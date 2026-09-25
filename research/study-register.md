@@ -1,15 +1,17 @@
 # Study register
 
-**R27 stopped at its admitted deadline; quality audit pending:** the
-[tranche](../reports/2026-09-24-full-benchmark-tranche/README.md) has complete original
-Granite, Jev-conditioned, control and Granite 4.2-3B answers on all 528 cases.
-Qwen remains incomplete: GPQA 4/198, IFBench 199/300 and AIME 4/30. Both workers
-stopped at 02:00 UTC on 25 September; all owned resources were deleted after
-verified backup at 02:03 UTC. All 143 files match their saved hashes and all
-528 Jev receipts validate. Conservative cumulative cost: **$103.83/$110**, before
-tax/separate network, including downtime at regular rates; not an invoice.
-The complete-run scorer refused incomplete Qwen coverage. No fresh quality result
-or full ten-task claim is established. Earlier entries retain historical status.
+**R27 completed-Granite comparison audited:** the
+[full-denominator analysis](../reports/2026-09-25-completed-granite/README.md) scores
+original/Granite–Jev **18.69%/27.27% GPQA**, **18.33%/23.67% IFBench strict** and
+**0%/0% AIME**. Fixed and shuffled adapter feedback recover much of the gain;
+correctly paired Jev feedback has not established superiority over shuffled
+feedback. Larger Granite scores **21.21%/59.33%/26.67%**, with 140/198 GPQA
+responses cut off during thinking. GPQA also has a 35.35% retrospective
+always-B reference, exceeding guided accuracy. All nine completed systems pass exact-token,
+selection and receipt audits. Qwen and the other seven benchmark rows remain
+incomplete; no broad larger-model victory is established. All owned resources
+are deleted; conservative cumulative cost **$103.83/$110** before tax/network,
+not an invoice. All **640 tests** pass. Earlier snapshots remain historical.
 
 **R26-A completed and audited:** the [50-case exposed-data cost pilot](../reports/2026-09-24-selective-admission/README.md)
 measured actual selective repair: 20 cases repaired and 30 retained per arm, with
@@ -806,3 +808,57 @@ This charges all original-creation-to-deletion time, including downtime, at the
 registered regular GPU and disk rate; it is not the provider invoice. All owned
 resources are deleted. Local 15-minute checks ran and unloaded after observing
 both verified cleanup receipts at 02:16 UTC. No new inference was launched.
+
+### R27 nine-system offline audit — 25 September
+
+The [scope](completed-granite-audit-v1.md) was fixed before fresh grades were
+inspected, using the unchanged v3 readout and IFBench evaluator. The new auditor
+requires complete cases for all nine Granite systems, verifies saved tokens,
+source/weight/selection/receipt bindings and recovery ancestry, and explicitly
+retains partial Qwen without grading it. It does not manufacture a full-tranche
+completion marker. The [result report](../reports/2026-09-25-completed-granite/README.md)
+exports aggregate scores, paired comparisons, format failures, work and hashes;
+per-case text and grades remain private. No new inference or API call occurred.
+
+Original/guided full-source results are 37/198 versus 54/198 GPQA, 55/300 versus
+71/300 IFBench strict, and 0/30 versus 0/30 AIME. The first two differences are
++8.59 and +5.33 percentage points, with descriptive paired 95% intervals
+[2.02,15.15] and [2.00,8.67]; these are not confirmatory multi-task intervals.
+On project-untouched data the corresponding comparisons are 37/196 versus 53/196
+and 52/288 versus 67/288. Neither selection nor grading rules changed after
+viewing fresh scores. Project-untouched does not establish pretraining cleanliness.
+
+Constant-trained, live-trained fixed-strength and shuffled adapters score
+53/198, 52/198 and 51/198 GPQA, close to guided 54/198. On IFBench they score
+59/300, 60/300 and 68/300, versus guided 71/300. The guided-shuffled intervals
+include zero on both tasks; correctly paired Jev scores have not established
+superiority over shuffled scores. All routed controls still share Jev-based
+repair decisions, so they are not entirely Jev-free ablations. The independently
+measured Jev-free self-refinement baseline scores 33/198, 59/300 and 0/30.
+
+A post-hoc unchanged-grade partition finds GPQA's 32 wins include 16 unparseable
+native answers and 16 parseable wrong answers, against 15 parseable wrong losses.
+Unparseable finals fall 67→16; the gain cannot be equated with new scientific
+reasoning ability. IFBench gains 22 wins against 6 losses, but guided length stops
+rise 4→21. AIME has no observed gain and unparseable finals rise 11→21.
+
+Granite 4.2-3B scores 42/198, 178/300 and 8/30. Its 140 GPQA unfinished-thinking cutoffs
+at 8,192 tokens confound the apparent smaller-model advantage; the paired GPQA
+interval includes zero. It is substantially stronger on IFBench and AIME.
+Qwen coverage remains 4/198, 199/300 and 4/30; no representative score is asserted.
+Seven other tasks remain incomplete, with no ten-task aggregate or broad victory.
+
+All 4,551 saved output records and 3,902,358 generated tokens, including warmups,
+probes and partial Qwen, pass audits. There are 458 repairs among 528 Jev-called
+cases; 70 skipped repairs do not imply skipped API calls. Interrupted unfinished
+work remains unmeasured. New audit capabilities first failed tests before
+implementation; all 640 repository tests pass. Cloud resources remain deleted;
+the conservative cumulative estimate is unchanged at $103.83/$110 before tax and
+network. No generally superior checkpoint, architectural novelty or release is
+established by this result.
+
+The post-hoc GPQA label counts are A=35, B=70, C=52 and D=41. Uniform guessing has an
+expected 25% score; always B would score 70/198 (35.35%), exceeding guided 54/198.
+This is a retrospective class-balance reference, not a selected prospective
+policy or model run. It further limits absolute science-capability claims.
+No option permutation, score or case selection changed after this inspection.

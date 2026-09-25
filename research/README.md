@@ -1,15 +1,17 @@
 # Granite + Jev research record
 
-**R27 stopped at its admitted deadline; quality audit pending:** the
-[tranche](../reports/2026-09-24-full-benchmark-tranche/README.md) has complete original
-Granite, Jev-conditioned, control and Granite 4.2-3B answers on all 528 cases.
-Qwen remains incomplete: GPQA 4/198, IFBench 199/300 and AIME 4/30. Both workers
-stopped at 02:00 UTC on 25 September; all owned resources were deleted after
-verified backup at 02:03 UTC. All 143 files match their saved hashes and all
-528 Jev receipts validate. Conservative cumulative cost: **$103.83/$110**, before
-tax/separate network, including downtime at regular rates; not an invoice.
-The complete-run scorer refused incomplete Qwen coverage. No fresh quality result
-or full ten-task claim is established. Earlier entries retain historical status.
+**R27 completed-Granite comparison audited:** the
+[full-denominator analysis](../reports/2026-09-25-completed-granite/README.md) scores
+original/Granite–Jev **18.69%/27.27% GPQA**, **18.33%/23.67% IFBench strict** and
+**0%/0% AIME**. Fixed and shuffled adapter feedback recover much of the gain;
+correctly paired Jev feedback has not established superiority over shuffled
+feedback. Larger Granite scores **21.21%/59.33%/26.67%**, with 140/198 GPQA
+responses cut off during thinking. GPQA also has a 35.35% retrospective
+always-B reference, exceeding guided accuracy. All nine completed systems pass exact-token,
+selection and receipt audits. Qwen and the other seven benchmark rows remain
+incomplete; no broad larger-model victory is established. All owned resources
+are deleted; conservative cumulative cost **$103.83/$110** before tax/network,
+not an invoice. All **640 tests** pass. Earlier snapshots remain historical.
 
 **R27-A completed:** [18-case engineering report](../reports/2026-09-24-benchmark-execution-pilot/README.md). All 132 outputs and 18 Jev receipts pass independent audit; public replay matches and all owned resources are deleted. No live-guidance gain appears in these exposed pilot cases. Cumulative estimate **$47.40/$110**; **606 local tests pass**. [Full GPQA protocol](gpqa-diamond-execution-v1.md) is next; no fresh full-task result yet.
 

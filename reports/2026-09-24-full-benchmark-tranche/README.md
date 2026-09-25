@@ -1,6 +1,11 @@
 # R27 full-benchmark tranche — deadline closure; Qwen incomplete
 
-**No full-task quality result is available yet.** GPQA Diamond, IFBench and AIME 2026 were dispatched on
+**Nine completed Granite systems are now audited:** see the [completed-system
+results](../2026-09-25-completed-granite/README.md). Qwen and the full-tranche
+comparison remain incomplete. The dispatch and closure snapshots below are
+historical, before this separate offline audit.
+
+ GPQA Diamond, IFBench and AIME 2026 were dispatched on
 2026-09-24 after the audited exposed-only pilot passed. The immutable source
 revision is `984a9a9bbc3d33809c47efc5336fd96a47f5df46`; its private manifest SHA-256
 is `078dd7e7a95337077adff6878ae696e64186fa36af9dc6b7729f84360b0a7947`.
@@ -9,12 +14,12 @@ question/answer text. All 606 offline tests also passed on the GPU worker.
 
 | Task | Planned source / untouched | State |
 | --- | ---: | --- |
-| GPQA Diamond | 198 / 196 | Nine Granite systems complete; Qwen 4/198; quality audit pending |
-| IFBench | 300 / 288 | Nine Granite systems complete; Qwen 199/300; quality audit pending |
-| AIME 2026 | 30 / 30 | Nine Granite systems complete; Qwen 4/30; quality audit pending |
+| GPQA Diamond | 198 / 196 | Nine Granite systems complete; Qwen 4/198; completed-system audit passed |
+| IFBench | 300 / 288 | Nine Granite systems complete; Qwen 199/300; completed-system audit passed |
+| AIME 2026 | 30 / 30 | Nine Granite systems complete; Qwen 4/30; completed-system audit passed |
 | Other seven contracted tasks | See ten-task contract | Full comparisons not completed |
 
-## Deadline closure — 25 September 2026
+## Historical deadline closure — before offline quality scoring
 
 Both workers stopped at the admitted **02:00 UTC** generation deadline, and both
 logs record an admission-deadline timeout. The original Granite, self-refinement,

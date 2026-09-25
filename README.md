@@ -1,12 +1,17 @@
 # Jev-guided decoding
 
-**R27 larger-model comparisons remain in progress:** [live tranche](reports/2026-09-24-full-benchmark-tranche/README.md)
-has saved all original-Granite, Jev-conditioned repair and control outputs across
-198 GPQA Diamond, 300 IFBench and 30 AIME 2026 cases. GPQA restarted after a third interruption under
-its [bounded recovery](research/benchmark-third-interruption.md),
-while IFBench/AIME continues. No fresh quality result is available yet.
-The cumulative admission ceiling is $105.46 within the $110 cap, before tax/network;
-634 local tests pass.
+**R27 completed-Granite comparison audited:** the
+[full-denominator analysis](reports/2026-09-25-completed-granite/README.md) scores
+original/Granite–Jev **18.69%/27.27% GPQA**, **18.33%/23.67% IFBench strict** and
+**0%/0% AIME**. Fixed and shuffled adapter feedback recover much of the gain;
+correctly paired Jev feedback has not established superiority over shuffled
+feedback. Larger Granite scores **21.21%/59.33%/26.67%**, with 140/198 GPQA
+responses cut off during thinking. GPQA also has a 35.35% retrospective
+always-B reference, exceeding guided accuracy. All nine completed systems pass exact-token,
+selection and receipt audits. Qwen and the other seven benchmark rows remain
+incomplete; no broad larger-model victory is established. All owned resources
+are deleted; conservative cumulative cost **$103.83/$110** before tax/network,
+not an invoice. All **640 tests** pass. Earlier snapshots remain historical.
 The [R27 engineering pilot](reports/2026-09-24-benchmark-execution-pilot/README.md)
 completed and passed integrity/replay checks, with no guided gain on 18 exposed
 cases. Earlier entries below describe historical stages and their cleanup.
