@@ -1,12 +1,12 @@
 # Jev-guided decoding
 
 **Current study:** [R28 routing versus internal feedback](reports/2026-09-25-routing-feedback/README.md)
-is running on 539 eligible IFEval cases within the newly authorized **$125 cumulative
-budget**. Results are pending. The [focused research manuscript](research/manuscript.md)
-combines the completed evidence with this registered follow-up; the
-[reproduction guide](research/routing-feedback-reproduction.md) separates offline
-replay from a new paid run. Historical completion and resource statements below
-refer to their named studies.
+is complete and independently audited on 539 eligible IFEval cases. Original /
+Jev-selected live repair scores **75.70% / 70.32%**;
+selection does not meet its registered criterion and internal feedback does not meet
+its criterion. All controls, intervals and limitations are in the report and
+[focused manuscript](research/manuscript.md). The cumulative cap is **$125**;
+owned cloud resources are deleted. Historical entries below refer to their named studies.
 
 **R27 completed-Granite comparison audited:** the
 [full-denominator analysis](reports/2026-09-25-completed-granite/README.md) scores

@@ -1,15 +1,26 @@
 # Study register
 
-**R28 running (2026-09-25):** [routing versus internal feedback](routing-feedback-plan-v1.md)
-compares seven policies on **539 eligible IFEval cases** with matched repair counts.
-The worker is frozen at `c418df6` on one AWS NVIDIA L4; the cumulative cap is
-**$125**. Prior conservative spend is **$103.83** and this stage reserves **$16.65**,
-including explicit operating headroom; final charges remain pending.
-The [execution record](../reports/2026-09-25-routing-feedback/README.md),
-[focused manuscript](manuscript.md) and [reproduction guide](routing-feedback-reproduction.md)
-are available. **No R28 quality result exists yet.** All **652 tests** pass locally;
-upstream grader checks and input/checkpoint reconstruction also pass.
+**R28 completed and audited:** the [539-case IFEval report](../reports/2026-09-25-routing-feedback/README.md)
+scores original Granite **408/539 (75.70%)** and
+Jev-selected live repair **379/539 (70.32%)**.
+Selection does not meet its registered criterion; internal feedback does not meet
+its criterion. See all controls and intervals before interpreting attribution.
+All 1,616 outputs and 539 Jev judgments pass integrity admission; numeric replay
+matches. Owned cloud resources are verified deleted. Conservative cumulative
+estimate **$114.00/$125**, not an invoice; taxes/network remain unconfirmed.
+The [focused manuscript](manuscript.md) records these scoped results;
+the larger-model and ten-benchmark objective remains unachieved.
 Earlier budget and completion entries below are historical.
+
+
+**R28 post-result review (2026-09-26, no new inference):** paired transitions show
+11 repairs to native failures and 40 losses from native passes. Descriptive selection
+inspection finds 116/131 native failures in Jev's 269-case allocation; the fixed
+quota necessarily includes passing native answers. An unchanged-checker replay
+localizes one handled language warning to a secondary loose candidate and reproduces
+all 1,616 original strict/loose grades. Primary scores remain unchanged. The
+[diagnostic record](../reports/2026-09-25-routing-feedback/review-diagnostics.json)
+separates this inspection from the registered policy comparisons.
 
 **R27 completed-Granite comparison audited:** the
 [full-denominator analysis](../reports/2026-09-25-completed-granite/README.md) scores

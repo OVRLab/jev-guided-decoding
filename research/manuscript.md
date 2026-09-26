@@ -1,6 +1,6 @@
 # Separating Repair Selection from Internal Feedback in a Small Language Model
 
-Working research manuscript, 25 September 2026. Authors, affiliations and
+Working research manuscript, updated 26 September 2026. Authors, affiliations and
 contribution statements await owner/coauthor decisions. Not submitted or peer
 reviewed. The earlier [chronological manuscript notebook](paper-draft.md) and
 [study register](study-register.md) preserve the complete exploration, including
@@ -20,13 +20,15 @@ while all tested 1B variants solve zero of 30 AIME problems. Shuffled feedback
 recovers most of both gains. Those controls retain Jev's repair selection, so
 they do not isolate the value of routing. GPQA improvements also coincide with
 fewer unreadable final answers, and a retrospective constant-label reference
-outperforms the guided score. We therefore register a separate, fresh policy
+outperforms the guided score. We therefore registered a separate, fresh policy
 comparison on 539 eligible IFEval cases, holding repair counts fixed across Jev,
 model-confidence and random selectors and comparing live, constant and shuffled
-internal feedback. **That follow-up is running; its results are pending.** The
-completed evidence supports a bounded instruction-repair gain but does not yet
-establish the value of correctly paired scalar feedback or a broadly superior
-language-model architecture.
+internal feedback. Original Granite scores 408/539 (75.70%), while Jev-selected
+live repair scores 379/539 (70.32%). The repair fixes 11 native failures but damages
+40 native passes. Neither selection nor internal feedback meets its registered
+two-control criterion. These evaluations distinguish observed instruction
+compliance from verifier attribution and reveal failed transfer of this repair
+configuration; they do not establish a broadly superior language-model architecture.
 
 ## 1. Research question
 
@@ -269,13 +271,62 @@ incomplete instead of silently reducing its denominator.
 
 ### 5.4 Results
 
-**Pending.** The registered worker has started on one AWS NVIDIA L4 GPU. No R28
-quality score has been inspected. This paragraph and the abstract will be updated
-from admitted aggregate results; planned comparisons are not experimental findings.
+| Policy | Strict prompt success | Loose prompt success | Repairs |
+| --- | ---: | ---: | ---: |
+| Original Granite | 408/539 (75.70%) | 417/539 (77.37%) | 0 |
+| Always repair, constant signal | 360/539 (66.79%) | 369/539 (68.46%) | 539 |
+| Jev selection, constant signal | 392/539 (72.73%) | 402/539 (74.58%) | 269 |
+| Native confidence, constant signal | 381/539 (70.69%) | 391/539 (72.54%) | 269 |
+| Random selection, constant signal | 389/539 (72.17%) | 396/539 (73.47%) | 269 |
+| Jev selection, live signal | 379/539 (70.32%) | 387/539 (71.80%) | 269 |
+| Jev selection, shuffled signal | 375/539 (69.57%) | 383/539 (71.06%) | 269 |
+
+| Primary contrast | Difference (pp) | 98.75% interval | Wins / losses | Blocks (pp) |
+| --- | ---: | ---: | ---: | ---: |
+| Selection: Jev − random | +0.56 | [-2.23, +3.71] | 22 / 19 | +0.00, +1.12 |
+| Selection: Jev − native confidence | +2.04 | [-0.56, +4.64] | 21 / 10 | +1.85, +2.23 |
+| Feedback: live − constant | -2.41 | [-5.01, +0.19] | 10 / 23 | -2.22, -2.60 |
+| Feedback: live − shuffled | +0.74 | [-1.11, +2.60] | 10 / 6 | +1.48, +0.00 |
+
+Selection criterion: **not met**. Internal-feedback criterion: **not met**.
+Each component requires both relevant adjusted lower bounds above zero, both
+point estimates at least +2 pp, and a positive difference in each block.
+Failure to meet that criterion does not establish equivalence or rule out
+smaller benefits. All planned comparisons are retained.
+
+![R28 attribution contrasts](figures/routing-paper/r28-attribution.svg)
+
+Figure 2. Registered primary comparisons on the 539 eligible cases. All 1,616
+generated answers and 539 Jev receipts passed independent integrity admission
+before scoring. The [complete R28 report](../reports/2026-09-25-routing-feedback/README.md)
+contains token/work accounting, secondary readouts, numerical replay and costs.
 
 ## 6. Interpretation and limitations
 
-The completed IFBench result supports improved constraint compliance in the tested
+The fresh IFEval cohort reverses the earlier IFBench direction: all tested repair
+policies score below original Granite. Live repair loses 5.38 percentage points
+relative to native, with 11 wins, 40 losses and a descriptive 95% interval
+[-7.98, -2.78]. None of the four primary attribution intervals excludes zero at
+the registered 98.75% level. A positive point estimate for selection versus native
+confidence therefore does not establish an effective repair system.
+
+Post-result selection inspection finds 116 of the 131 native failures among Jev's
+269 selected cases, compared with 53 for native confidence and 67 for fixed random
+selection. Jev identifies many problematic drafts, but live repair fixes only 11
+of those 116 and damages 40 of 153 selected native passes. The fixed quota would
+require at least 138 native passes even under perfect error ranking. Correction
+ability and preservation are therefore central limitations under this allocation;
+we have not tested a policy that can choose very few repairs. These descriptive
+counts are not a newly substituted primary outcome or a validated threshold.
+
+The original checker also emitted one handled language-detection exception during
+a loose-check candidate evaluation. The pinned upstream fallback accepts that
+language constraint. Post-result rechecking reproduces all original booleans and
+finds no such exception during strict evaluation. This limits the secondary loose
+metric without changing the primary scores; details and hashes are in the
+[R28 diagnostic record](../reports/2026-09-25-routing-feedback/review-diagnostics.json).
+
+The earlier IFBench result supports improved constraint compliance in that tested
 system. It does not establish that correct scalar pairing is essential, nor that
 the generator has acquired broad reasoning ability. A scalar assessment also
 specifies neither which requirement failed nor how to repair it. Whether richer

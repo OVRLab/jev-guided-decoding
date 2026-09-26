@@ -1,0 +1,68 @@
+{
+  "post_result_descriptive_review": true,
+  "selection": {
+    "post_result_descriptive_inspection": true,
+    "unchanged_primary_scores": true,
+    "selection_composition": {
+      "native": {
+        "selected": 0,
+        "native_passes_selected": 0,
+        "native_failures_selected": 0
+      },
+      "always_constant": {
+        "selected": 539,
+        "native_passes_selected": 408,
+        "native_failures_selected": 131
+      },
+      "jev_constant": {
+        "selected": 269,
+        "native_passes_selected": 153,
+        "native_failures_selected": 116
+      },
+      "confidence_constant": {
+        "selected": 269,
+        "native_passes_selected": 216,
+        "native_failures_selected": 53
+      },
+      "random_constant": {
+        "selected": 269,
+        "native_passes_selected": 202,
+        "native_failures_selected": 67
+      },
+      "jev_live": {
+        "selected": 269,
+        "native_passes_selected": 153,
+        "native_failures_selected": 116
+      },
+      "jev_shuffled": {
+        "selected": 269,
+        "native_passes_selected": 153,
+        "native_failures_selected": 116
+      }
+    },
+    "mathematical_minimum_native_passes_in_any_269_case_selection": 138
+  },
+  "grader_warning": {
+    "post_result_diagnostic": true,
+    "outputs_regraded": 1616,
+    "original_boolean_grades_reproduced": true,
+    "warnings": [
+      {
+        "id": "ifeval/2596",
+        "arm": "native",
+        "metric": "loose",
+        "checker": "ResponseLanguageChecker",
+        "characters": 6,
+        "alphabetic_characters": 0
+      }
+    ],
+    "strict_warning_count": 0,
+    "raw_outputs_changed": false,
+    "primary_grades_changed": false,
+    "paid_calls": 0
+  },
+  "source_hashes": {
+    "reports/2026-09-25-routing-feedback/replay/grades.json": "4039bae433e766f6653ec92e063ab4fb77ef86e77fb4e59dadf506ebe3d560b9",
+    "reports/2026-09-25-routing-feedback/replay/selection.json": "4a0aff78c904f4de919e0bfb9c04f96c941be12227b964cfd2bae3ec936814fa"
+  }
+}

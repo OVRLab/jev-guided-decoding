@@ -19,7 +19,8 @@ The [manuscript](manuscript.md) distinguishes historical R27 evidence from R28.
 - An inference directory contains prompt-only cases, the selected adapter and
   manifest; a separate grading directory contains constraint metadata and the
   evaluator. Transfer only the inference directory to a worker.
-- Once complete, numerical case outcomes and fixed selection maps can support
+- The [public numerical replay](../reports/2026-09-25-routing-feedback/replay/) contains
+  case outcomes and fixed selection maps that support
   offline statistical replay without questions, generated answer text, token IDs,
   API payloads or credentials. This is distinct from reproducing the raw-token
   integrity audit or independently checking the grader against generated text.
@@ -133,6 +134,12 @@ are not retroactively part of the frozen worker. The combined local suite passes
 652 tests; complete reacquisition matches the frozen 539-case dataset and adapter.
 A separate synthetic grading/export/replay integration checks all seven policies
 and ten contrasts; those artificial fixtures are not study results.
+
+The completed real-data replay matches all seven policy scores and ten paired
+contrasts across 1,616 outcomes. All 652 tests pass after finalization. A separately
+labeled warning inspection reproduces every original strict/loose boolean; the
+[report](../reports/2026-09-25-routing-feedback/README.md) discloses the upstream
+loose-language fallback without changing the registered grades.
 
 Before publication, review authorship/contributions, cited related work, licenses,
 all claims against the final completed report, and the distinction between the
