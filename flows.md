@@ -75,5 +75,9 @@ removed on exceptions. This changes memory construction, not R30's running study
 Regression: `uv run --no-sync pytest -q tests/test_contextual_memory.py` covers
 Unicode alignment, original-token binding, reference rejection, world-context
 sensitivity, matched pooling, frozen weights, invalid state and hook cleanup.
-Four tests and all 256 historical pinned-tokenizer alignments pass. Actual Granite
-context extraction and any trained-quality comparison remain unrun.
+Nine focused memory/training tests and all 256 historical pinned-tokenizer
+alignments pass. Actual Granite MPS context extraction, initial/off identity and
+cached/full agreement pass on one historical training draft; trained-quality
+comparisons remain unrun. `tests/test_contextual_training.py` additionally checks
+matched initialization, memory ownership, native preservation targets, development
+selection and refusal to overwrite an earlier training attempt.

@@ -127,3 +127,21 @@ def test_context_memory_rejects_invalid_state_and_cleans_up_after_exception():
     assert not getattr(model, "_jev_feedback_active", False)
     model.forward = original
     assert torch.isfinite(m["memories"](model, [1, 2, 3], slots, layer=1)["contextual"]).all()
+
+
+def test_extraction_waits_for_and_validates_the_complete_forward():
+    pytest.importorskip("torch")
+    m = load()
+    model = runpy.run_path(str(ROOT / "tests/test_evidence_attention.py"))["tiny"]()
+    original = model.forward
+
+    def nonfinite(*args, **kwargs):
+        output = original(*args, **kwargs)
+        output.logits.fill_(float("nan"))
+        return output
+
+    model.forward = nonfinite
+    with pytest.raises(ValueError, match="logits"):
+        m["memories"](model, [1, 2, 3], [[0], [1], [2]], layer=1)
+    assert not model.model.layers[1]._forward_hooks
+    assert not getattr(model, "_jev_feedback_active", False)

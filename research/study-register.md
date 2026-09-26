@@ -1,5 +1,12 @@
 # Study register
 
+**Contextual memory engineering admission, 2026-09-26:** nine focused tests pass
+for exact token alignment, reference isolation, matched training, preservation,
+frozen-weight ownership and checkpoint selection. [Actual Granite MPS checks](diagnostics/contextual-memory-20260926/context-mps-admission.json)
+pass initial/off identity and cached/full agreement (maximum logit error 0.000145)
+on one historical training draft. No new trained-quality or public-benchmark
+result is claimed. R30 remains the active cloud experiment.
+
 **MuSR feasibility inspection, 2026-09-26:** [structural admission](musr-transfer-admission.md)
 checks all 756 public rows and finds they fit an illustrative direct-answer prompt.
 Object placement has 64 shared stories with four questions each, requiring

@@ -119,7 +119,11 @@ def memories(model, ids, slots, *, layer=19):
             tokens = torch.tensor([ids], device=device)
             embedding = pool(model.get_input_embeddings()(tokens)[0])
             handle = block.register_forward_hook(capture)
-            model(input_ids=tokens, use_cache=False, logits_to_keep=1)
+            output = model(input_ids=tokens, use_cache=False, logits_to_keep=1)
+            # Scalar validation also waits for the complete GPU forward, including
+            # blocks after the extraction point, before reporting elapsed time.
+            if not torch.isfinite(output.logits).all():
+                raise ValueError("Nonfinite extraction logits")
             if len(captured) != 1:
                 raise ValueError("Context extraction did not capture exactly one forward")
     finally:

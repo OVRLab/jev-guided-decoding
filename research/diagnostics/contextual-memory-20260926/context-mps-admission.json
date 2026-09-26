@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "scope": "Actual-model MPS mechanical admission using one historical R29 training draft; not task accuracy",
+  "device": "mps",
+  "api_calls": 0,
+  "parameters": 1631750144,
+  "case_id": "r29/train/temporal/000",
+  "frozen_original_weights": true,
+  "initial_identity": true,
+  "off_identity": true,
+  "backbone_gradients_absent": true,
+  "cache_max_logit_error": 0.00014495849609375,
+  "cache_argmax_equal": true,
+  "extraction_processed_tokens": 271,
+  "extraction_seconds": 0.580978499725461,
+  "positions": [
+    [
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      196,
+      197,
+      198,
+      199,
+      262
+    ],
+    [
+      202,
+      203,
+      204,
+      205,
+      206,
+      207,
+      208,
+      209,
+      210,
+      211,
+      266
+    ],
+    [
+      214,
+      215,
+      216,
+      217,
+      218,
+      219,
+      220,
+      221,
+      222,
+      223,
+      270
+    ]
+  ],
+  "contextual_memory_shape": [
+    3,
+    2048
+  ],
+  "source_sha256": "6b76a1ee7d55f31dbf1022f625ca4ee49188480dabab19f2e64bd14084055eaf"
+}

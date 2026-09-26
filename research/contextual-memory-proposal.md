@@ -39,6 +39,15 @@ and cleanup on exceptions. A scoped actual-model admission must precede training
 R30 source/protocol remains unchanged. Final architecture and evaluation choices
 require a separate prospective protocol informed by R30, not tuning on its cases.
 
+The preparatory training utility will compare explicitly named combinations of
+the two memory representations and structured, scalar or constant feedback. It
+will preserve R29's zero initialization, supervised targets, optimizer and
+earliest-best development checkpoint rule, keep original weights frozen, and
+record every optimizer step and selected file hash. This is reusable preparation;
+the exact condition set, sample sizes, seeds and spending remain unregistered
+until R30 closes. A tiny-model test must verify independent equal initialization,
+correct memory ownership and checkpoint selection before implementation.
+
 ## Related work and limits
 
 [ReFT](https://arxiv.org/abs/2404.03592) already studies learned interventions in

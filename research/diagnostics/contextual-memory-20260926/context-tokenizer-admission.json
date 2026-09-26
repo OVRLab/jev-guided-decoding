@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "native_records_checked": 256,
+  "model_inference": false,
+  "api_calls": 0,
+  "scope": "Exact pinned-tokenizer alignment on historical R29 drafts, not new quality evidence"
+}
