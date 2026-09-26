@@ -1,5 +1,10 @@
 # Granite–Jev north star
 
+**Budget update, 2026-09-26:** the owner authorized a **$175 cumulative ceiling**.
+The [continuation program](feedback-exploration-program.md) starts from the R29-A
+conservative estimate of $118.12; older budgets and proposed future stages below
+are historical. The broad objective remains unachieved.
+
 **R26-A completed and audited:** the [50-case exposed-data cost pilot](../reports/2026-09-24-selective-admission/README.md)
 measured actual selective repair: 20 cases repaired and 30 retained per arm, with
 50 successful Jev calls. All three native profiles finished, but output-format

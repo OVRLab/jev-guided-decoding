@@ -1,5 +1,12 @@
 # Jev-guided decoding
 
+**Active research continuation:** the owner raised the cumulative budget to **$175**.
+The [registered R30 replication](research/feedback-pairing-plan-v1.md) separates
+localized feedback from overall reliability using fixed checkpoints and 384 fresh
+authored cases. The [program](research/feedback-exploration-program.md) reserves
+funds for a subsequent architecture study and justified public transfer. R30 has
+no quality result yet; historical costs and caps below remain dated evidence.
+
 **R29-A completed and audited:** [localized correction study](reports/2026-09-26-structured-correction/README.md) on
 96 held-out authored worlds, with five matched training conditions and two seeds.
 Original Granite scores **25.00%**, structured Jev repair **29.69%**, scalar Jev

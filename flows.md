@@ -50,3 +50,14 @@ Use the [registered protocol](research/routing-feedback-plan-v1.md) and
 selected-only donor derangement, likelihood parity, failed-provider charge retention,
 and exact prefix/hook/work admission before independent grading. Fresh shared
 potential outcomes support policy comparisons, not measured deployment savings.
+
+## R29–R30 localized repair and feedback pairing
+
+The [R29 protocol](research/structured-correction-plan-v1.md) and
+[mechanism tests](tests/test_structured_correction.py) cover slot memory, scoped
+repair positions, cached/full agreement, preservation training and provider failure.
+The [R30 protocol](research/feedback-pairing-plan-v1.md) and
+[pairing tests](tests/test_feedback_pairing.py) additionally bind fixed checkpoints
+to their published lineage, retain fresh case denominators, preserve score multisets,
+reject changed prompts/tokens/charges and refuse manifests that relax the registered
+limits or omit checkpoints. Offline policy replay does not measure skipped calls.

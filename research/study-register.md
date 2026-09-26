@@ -1,5 +1,12 @@
 # Study register
 
+**R30 registered, 2026-09-26:** [fresh feedback-pairing replication](feedback-pairing-plan-v1.md)
+will compare fixed R29 checkpoints on 384 new authored worlds, separating score
+localization from overall reliability and cheap answer-type checking. The owner
+raised the cumulative cap to **$175**; the [continuation program](feedback-exploration-program.md)
+reserves at most $8.50 for this stage from the $118.12 prior estimate. No new
+quality result or cloud execution is claimed yet. Earlier budget entries are historical.
+
 **R29-A completed and audited:** [localized correction study](../reports/2026-09-26-structured-correction/README.md) on
 96 held-out authored worlds, with five matched training conditions and two seeds.
 Original Granite scores **25.00%**, structured Jev repair **29.69%**, scalar Jev
