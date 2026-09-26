@@ -88,3 +88,14 @@ also has a fresh-data capability check:
 `uv run --no-sync pytest -q tests/test_contextual_data.py`. It checks balanced
 splits, full independent graph replay and disjointness from R29/R30, and rejects
 a reused R30 seed before model/API work. This does not admit a paid study.
+
+The serial contextual candidate runner now records native drafts, exact-ID memory
+tensors, matched adapter training and all 38 test outputs per case for the full
+2-memory × 3-feedback × 2-seed design. Offline tiny-model end-to-end tests exercise
+both the full comparison and a smaller scalar-only contract. Independent checks
+reject substituted memory, feedback, weights, targets, update order and development
+selection; interrupted preparation cannot silently repeat a native draft.
+Regression: `uv run --no-sync pytest -q tests/test_contextual_runtime.py tests/test_contextual_bindings.py`.
+These are engineering tests with a fake scorer, not live Jev or task-quality results.
+A paid CLI, frozen protocol, actual CUDA admission and full recorded-run audit
+remain prerequisites for the next study.

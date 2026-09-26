@@ -14,17 +14,17 @@ at the same positions? [Engineering preparation](contextual-memory-proposal.md)
 is implemented; its actual-model checks are not quality evidence.
 
 Proposed finite conditions: two memory types (contextual versus position-matched
-input embeddings), each trained with either informative feedback or constant 0.5,
-with two seeds. That is eight adapters, each retaining the same 262,144-parameter
+input embeddings), each trained with structured, repeated-mean scalar or constant
+0.5 feedback, with two seeds. That is twelve adapters, each retaining the same 262,144-parameter
 rank-32 branch after zero-indexed block 19. No original Granite/Jev weights change.
 
-Choose **one** informative feedback form in the final protocol: structured if R30
-supports a local benefit over both repeated mean and within-draft rotations;
-otherwise repeated-mean feedback is the simpler candidate. Report unresolved
-intervals as unresolved; failure to reject a difference is not equivalence. This
-choice uses an earlier study, never the subsequent study's test outcomes. Mean
-feedback still uses three Jev questions unless a separate question-equivalence
-experiment establishes otherwise.
+Retain **both** informative feedback forms: whether detailed feedback helps could
+depend on memory quality, which R30 cannot settle using its older memory alone.
+An earlier draft proposed choosing one form after R30; this revision expands the
+finite factorial comparison before viewing R30 quality. R30 still informs study
+admission and interpretation. Report unresolved intervals as unresolved; failure
+to reject a difference is not equivalence. Mean feedback still uses three Jev
+questions unless a separate question-equivalence experiment establishes otherwise.
 
 ## Proposed data and training
 
@@ -52,27 +52,35 @@ threshold, learning rate, layer choice, checkpoint choice or extra epoch.
 ## Proposed test conditions and accounting
 
 For each test case generate native and untrained blind repair, plus both memory
-types under both trained feedback conditions for both seeds. For each informatively
+types under all three trained feedback conditions for both seeds. For each informatively
 trained adapter also record same-checkpoint constant 0.5, next-case same-family
 donor feedback, and a clearly nondeployable correctness oracle. For scalar
 conditioning, transform oracle flags to their repeated mean too. Every arm preserves
 the exact native draft prefix and owns a separate cache. Unrestricted greedy output
 keeps the existing 128-new-token / 2,048-input-token limits without truncation.
 
-This proposed design totals 22 outputs per test case: 5,632 test outputs, 576
-training/development native drafts and 1,024 development repairs, or **7,232 outputs**.
-There would be **832 Jev requests**, **832 contextual extractions**, **8,192 training
-examples processed** and **1,024 optimizer updates**. Count each separately, including
+This proposed design totals 38 outputs per test case: 9,728 test outputs, 576
+training/development native drafts and 1,536 development repairs, or **11,840 outputs**.
+There would be **832 Jev requests**, **832 contextual extractions**, **12,288 training
+examples processed** and **1,536 optimizer updates**. Count each separately, including
 work not used by a deployment condition; equal ceilings do not imply equal compute.
 
 ## Proposed analysis and decisions
 
-Primary paired case effects would compare contextual informative repair with
-(1) native, (2) matched embedding informative repair, (3) contextual constant-trained
-repair, and (4) its same-checkpoint donor control. Average the two fixed seeds per
+Primary paired case effects would compare contextual structured repair with
+(1) native, (2) matched embedding structured repair, (3) contextual scalar repair,
+and (4) its same-checkpoint donor control. Constant-trained controls and the
+memory-by-feedback interaction would be prespecified secondary analyses.
+Average the two fixed seeds per
 case, report per-seed results, and use a four-contrast adjusted interval family
 alongside descriptive 95% intervals. Exact confidence levels, bootstrap seed and
 all secondary analyses belong in the final frozen protocol.
+
+The implementation can prepare a serial runner independently of the feedback
+choice: exact native generation, one recorded judgment, reference-free memory
+extraction, matched training and the fixed control matrix. A tiny-model end-to-end
+test must precede that code. The runner alone will not expose a paid execution CLI;
+frozen preparation, admission and an independent auditor are still required.
 
 Report all-three correctness, per-field correctness, formatting, length stops,
 native failures fixed and native passes damaged, plus family breakdowns and token

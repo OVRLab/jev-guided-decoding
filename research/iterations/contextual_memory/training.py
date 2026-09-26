@@ -8,6 +8,7 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 C = runpy.run_path(str(HERE.parent / "structured_correction/common.py"))
 F = runpy.run_path(str(HERE.parent / "structured_correction/feedback.py"))
+D = runpy.run_path(str(HERE / "provenance.py"))
 
 
 def train(
@@ -129,6 +130,8 @@ def train(
                             condition=name,
                             memory=memory_kind,
                             feedback=feedback_kind,
+                            probabilities=values,
+                            memory_digest=D["tensor_digest"](item["memories"][memory_kind]),
                             seed=seed,
                             epoch=epoch,
                             step=step,
