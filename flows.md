@@ -81,3 +81,10 @@ cached/full agreement pass on one historical training draft; trained-quality
 comparisons remain unrun. `tests/test_contextual_training.py` additionally checks
 matched initialization, memory ownership, native preservation targets, development
 selection and refusal to overwrite an earlier training attempt.
+
+
+The conditional [next-study draft](research/contextual-memory-study-draft.md)
+also has a fresh-data capability check:
+`uv run --no-sync pytest -q tests/test_contextual_data.py`. It checks balanced
+splits, full independent graph replay and disjointness from R29/R30, and rejects
+a reused R30 seed before model/API work. This does not admit a paid study.

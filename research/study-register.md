@@ -1,5 +1,11 @@
 # Study register
 
+**Conditional next-study draft, 2026-09-26:** [matched contextual-memory design](contextual-memory-study-draft.md)
+specifies a finite eight-adapter comparison for review after R30. A tested generator
+provides balanced 512/64/256 worlds, disjoint from R29/R30 with independently
+replayed references. No next-stage manifest, paid run or trained-quality result
+exists; the informative feedback form remains conditional on R30 attribution.
+
 **MuSR exposure binding, 2026-09-26:** [author-metadata audit](musr-transfer-admission.md#exposure-and-scenario-binding-subsequent-structural-check)
 finds 125 paired murder scenarios, 64 object-placement stories and 250 team
 identity groups. The 12 previously used questions expand to 26 development-related
