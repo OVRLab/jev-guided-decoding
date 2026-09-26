@@ -1,0 +1,10 @@
+{
+  "scope": "Post-launch descriptive training-only diagnostic, no held-out inspection or configuration change",
+  "worlds": 128,
+  "slot_pairs": 384,
+  "minimum": 0.8816530108451843,
+  "median": 0.9131052494049072,
+  "maximum": 0.9630163311958313,
+  "mean": 0.9185731201432645,
+  "interpretation": "Cosine similarity measures representation overlap, not causal explanation of repair quality."
+}

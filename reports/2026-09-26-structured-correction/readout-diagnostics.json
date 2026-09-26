@@ -1,0 +1,124 @@
+{
+  "scope": "Post-result descriptive inspection of R29-A held-out records; no new inference or primary score changes",
+  "worlds": 96,
+  "slots": 288,
+  "judge_correctness_threshold": 0.5,
+  "verifier_slot_confusion": {
+    "all": {
+      "wrong_flagged": 125,
+      "correct_accepted": 130,
+      "wrong_accepted": 32,
+      "correct_flagged": 1
+    },
+    "temporal": {
+      "wrong_flagged": 29,
+      "correct_accepted": 115
+    },
+    "compositional": {
+      "wrong_flagged": 96,
+      "wrong_accepted": 32,
+      "correct_accepted": 15,
+      "correct_flagged": 1
+    }
+  },
+  "non_room_or_missing_field_forms": {
+    "blue crate": 73,
+    "yellow crate": 36,
+    "green": 77,
+    "red crate": 101,
+    "green crate": 52,
+    "blue": 63,
+    "yellow": 56,
+    "red": 96
+  },
+  "format_failures": {
+    "native": 0,
+    "blind": 0,
+    "constant/2901": 0,
+    "scalar/2901": 0,
+    "structured/2901": 0,
+    "text/2901": 0,
+    "oracle/2901": 0,
+    "shuffled/2901": 0,
+    "constant/2902": 0,
+    "scalar/2902": 0,
+    "structured/2902": 0,
+    "text/2902": 0,
+    "oracle/2902": 0,
+    "shuffled/2902": 0
+  },
+  "within_run_token_identity": {
+    "2901": {
+      "native": 58,
+      "blind": 60,
+      "scalar/2901": 65,
+      "oracle/2901": 44
+    },
+    "2902": {
+      "native": 48,
+      "blind": 50,
+      "scalar/2902": 70,
+      "oracle/2902": 64
+    }
+  },
+  "per_arm_slot_accuracy": {
+    "native": 0.4548611111111111,
+    "blind": 0.4652777777777778,
+    "constant/2901": 0.4305555555555556,
+    "scalar/2901": 0.5347222222222222,
+    "structured/2901": 0.5347222222222222,
+    "text/2901": 0.4722222222222222,
+    "oracle/2901": 0.5833333333333334,
+    "shuffled/2901": 0.4583333333333333,
+    "constant/2902": 0.4826388888888889,
+    "scalar/2902": 0.5034722222222222,
+    "structured/2902": 0.5138888888888888,
+    "text/2902": 0.4722222222222222,
+    "oracle/2902": 0.5520833333333334,
+    "shuffled/2902": 0.4895833333333333
+  },
+  "per_arm_finish_reasons": {
+    "native": {
+      "eos": 96
+    },
+    "blind": {
+      "eos": 96
+    },
+    "constant/2901": {
+      "eos": 96
+    },
+    "scalar/2901": {
+      "eos": 96
+    },
+    "structured/2901": {
+      "eos": 96
+    },
+    "text/2901": {
+      "eos": 96
+    },
+    "oracle/2901": {
+      "eos": 96
+    },
+    "shuffled/2901": {
+      "eos": 96
+    },
+    "constant/2902": {
+      "eos": 96
+    },
+    "scalar/2902": {
+      "eos": 96
+    },
+    "structured/2902": {
+      "eos": 96
+    },
+    "text/2902": {
+      "eos": 96
+    },
+    "oracle/2902": {
+      "eos": 96
+    },
+    "shuffled/2902": {
+      "eos": 96
+    }
+  }
+}

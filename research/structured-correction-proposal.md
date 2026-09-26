@@ -1,5 +1,10 @@
 # Proposed next design: localized Jev feedback with learned preservation
 
+**Subsequent status, 2026-09-26:** R29-A implemented and tested this direction;
+see the [completed result](../reports/2026-09-26-structured-correction/README.md).
+The proposal below records the pre-experiment reasoning; its original status
+statements are historical.
+
 Date: 2026-09-26. **Design proposal only: unimplemented, untrained and unrun.**
 This records the recommendation after R28. It is not a frozen R29 protocol, a new
 result, a novelty claim, or authorization to exceed the cumulative $125 ceiling.

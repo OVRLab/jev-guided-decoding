@@ -1990,3 +1990,21 @@ expected 25% score; always B would score 70/198 (35.35%), exceeding guided 54/19
 This is a retrospective class-balance reference, not a selected prospective
 policy or model run. It further limits absolute science-capability claims.
 No option permutation, score or case selection changed after this inspection.
+
+
+### R29-A localized correction study — 26 September
+
+A separate registered capacity study trains five equal-capacity internal branches
+with preservation targets and two seeds on 128 authored worlds, selects on 32,
+and evaluates on 96 new worlds sharing templates. Original Granite scores 25.00%,
+structured Jev repair 29.69%, scalar Jev 28.65% and shuffled feedback 22.92%.
+Structured repair corrects 5/4 of 72 native failing worlds across the seeds and
+damages none of 24 native passing worlds. Native and shuffled contrasts favor
+structured repair under exploratory 95% intervals, while the scalar contrast does
+not. Both development-frozen retention thresholds select no repairs. This is a
+scoped positive raw-repair finding, not public transfer, evidence of precise slot
+localization, or a larger-model victory. Full source, records, checkpoints,
+admission failures, audits and remaining limitations are in the
+[completed report](../reports/2026-09-26-structured-correction/README.md) and
+[focused manuscript appendix](manuscript.md#appendix-a-r29-a-localized-correction-with-preservation-training).
+All owned resources are deleted; conservative cumulative estimate $118.12/$125.

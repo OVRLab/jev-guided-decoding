@@ -1,6 +1,21 @@
 # Jev-guided decoding
 
-**Current study:** [R28 routing versus internal feedback](reports/2026-09-25-routing-feedback/README.md)
+**R29-A completed and audited:** [localized correction study](reports/2026-09-26-structured-correction/README.md) on
+96 held-out authored worlds, with five matched training conditions and two seeds.
+Original Granite scores **25.00%**, structured Jev repair **29.69%**, scalar Jev
+**28.65%**, and shuffled feedback **22.92%**. Structured repair fixes 5/4 failing
+worlds across the two seeds without damaging any of the 24 native passes.
+Its +4.69 pp native and +6.77 pp shuffled contrasts have exploratory 95% intervals
+above zero; its +1.04 pp scalar contrast does not. This supports further study of
+feedback-dependent preservation/repair, not established value from precise slot
+localization or broad benchmark superiority. Development selected no repairs in
+the secondary retention policy, which therefore stays at native accuracy.
+All 2,144 outputs and 256 Jev judgments pass audit and independent replay. Owned
+cloud resources are deleted; conservative cumulative estimate **$118.12/$125**,
+not an invoice. The [manuscript](research/manuscript.md) preserves this scoped positive result
+alongside earlier negative evidence. Earlier status/budget entries are historical.
+
+**Previous study:** [R28 routing versus internal feedback](reports/2026-09-25-routing-feedback/README.md)
 is complete and independently audited on 539 eligible IFEval cases. Original /
 Jev-selected live repair scores **75.70% / 70.32%**;
 selection does not meet its registered criterion and internal feedback does not meet

@@ -1,26 +1,19 @@
 # Study register
 
-**R29-A started, 2026-09-26:** [running report](../reports/2026-09-26-structured-correction/README.md).
-Frozen source `71bf964`; actual MPS/CUDA mechanical admission passed. Six API
-fixtures succeeded operationally but their all-correct judgment flag failed
-(16/18 slots); the unchanged protocol proceeds with disclosed verifier fallibility
-and its separate oracle diagnostic. One L4, five-hour maximum, $8.412 reserved.
-No test-quality result, cleanup completion or actual final spend is asserted yet.
-
-**R29-A planned, 2026-09-26:** [localized correction capacity study](structured-correction-plan-v1.md).
-128 train / 32 development / 96 test authored temporal and compositional worlds;
-natural Granite drafts, five matched training conditions, two seeds, shuffled
-feedback, independently replayed oracle, and development-frozen retention. Source
-and data freeze precede inference. Reserve <=$8.50 within the cumulative $125 cap.
-This is not fresh public-benchmark or larger-model evidence.
-
-**Design recommendation, 2026-09-26 (not a new live study):**
-[Localized feedback and learned preservation](structured-correction-proposal.md)
-records the proposed next architecture and controls. Its post-hoc saved-pair oracle
-calculation is `(408 + 11) / 539 = 77.74%`, using the published R28 transitions;
-this is not a deployable score or a bound on future architectures. No new training,
-inference, API call, cloud allocation or spend occurred. A prospective execution
-protocol, cost estimate and test freeze are still required.
+**R29-A completed and audited:** [localized correction study](../reports/2026-09-26-structured-correction/README.md) on
+96 held-out authored worlds, with five matched training conditions and two seeds.
+Original Granite scores **25.00%**, structured Jev repair **29.69%**, scalar Jev
+**28.65%**, and shuffled feedback **22.92%**. Structured repair fixes 5/4 failing
+worlds across the two seeds without damaging any of the 24 native passes.
+Its +4.69 pp native and +6.77 pp shuffled contrasts have exploratory 95% intervals
+above zero; its +1.04 pp scalar contrast does not. This supports further study of
+feedback-dependent preservation/repair, not established value from precise slot
+localization or broad benchmark superiority. Development selected no repairs in
+the secondary retention policy, which therefore stays at native accuracy.
+All 2,144 outputs and 256 Jev judgments pass audit and independent replay. Owned
+cloud resources are deleted; conservative cumulative estimate **$118.12/$125**,
+not an invoice. The [manuscript](manuscript.md) preserves this scoped positive result
+alongside earlier negative evidence. Earlier status/budget entries are historical.
 
 **R28 completed and audited:** the [539-case IFEval report](../reports/2026-09-25-routing-feedback/README.md)
 scores original Granite **408/539 (75.70%)** and
