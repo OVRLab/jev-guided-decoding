@@ -1,0 +1,114 @@
+[
+  {
+    "remote_result": "selective-attention-v1/admission.json",
+    "public_file": "artifacts/admission.json",
+    "raw_sha256": "f7ba258ce9b419db3a0f9c8032d4cb67f447d60f066c8907d54b45f84e6173b2",
+    "raw_bytes": 4551,
+    "stored_sha256": "f7ba258ce9b419db3a0f9c8032d4cb67f447d60f066c8907d54b45f84e6173b2",
+    "gzip": false
+  },
+  {
+    "remote_result": "selective-attention-v1/completion.json",
+    "public_file": "artifacts/completion.json",
+    "raw_sha256": "ff44452680b308d2e2c10ca3dcb158ab634c5d1cef919173a7303f71edb48158",
+    "raw_bytes": 340,
+    "stored_sha256": "ff44452680b308d2e2c10ca3dcb158ab634c5d1cef919173a7303f71edb48158",
+    "gzip": false
+  },
+  {
+    "remote_result": "selective-attention-v1/freeze.json",
+    "public_file": "artifacts/freeze.json",
+    "raw_sha256": "779624d375016e68a14ab20b069f74182cc5863dc3e4afad698abc1e2fcc0132",
+    "raw_bytes": 13834,
+    "stored_sha256": "779624d375016e68a14ab20b069f74182cc5863dc3e4afad698abc1e2fcc0132",
+    "gzip": false
+  },
+  {
+    "remote_result": "selective-attention-v1/inputs.jsonl",
+    "public_file": "artifacts/inputs.jsonl.gz",
+    "raw_sha256": "4c705f56d6622f0dd33e503a9277962993e487fe598d692e099cdc77eff83fd0",
+    "raw_bytes": 8471870,
+    "stored_sha256": "3617c0f2ca667ad94d16ab3d5ee089c657ead251e380483d7e7b8249c4d941c7",
+    "gzip": true
+  },
+  {
+    "remote_result": "selective-attention-v1/ledger.jsonl",
+    "public_file": "artifacts/ledger.jsonl.gz",
+    "raw_sha256": "c2542061c39f45689fc532c228f7c653b24d4c069b65b4150543a5681c04dc4b",
+    "raw_bytes": 126381,
+    "stored_sha256": "c0b70df57a1394f3c7a61bfe0c013596449179df0ab519c6d80af313406ee0d4",
+    "gzip": true
+  },
+  {
+    "remote_result": "selective-attention-v1/loads.jsonl",
+    "public_file": "artifacts/loads.jsonl.gz",
+    "raw_sha256": "a9cd0670bfa4200a01d69b5c408d785a2b9ffce55d86d4fb5a8f52b0ae099697",
+    "raw_bytes": 666,
+    "stored_sha256": "8812964dc482eaa6e278577bb394d97faf95a80b3ea649a864e3bb3e83a07c00",
+    "gzip": true
+  },
+  {
+    "remote_result": "selective-attention-v1/outputs.jsonl",
+    "public_file": "artifacts/outputs.jsonl.gz",
+    "raw_sha256": "7eaa31cb6f48603ad26b2c3d525cb8daf4cd6a8d314fd93d5c25d2b53c028941",
+    "raw_bytes": 107953056,
+    "stored_sha256": "4beeb52dee4c06841e1ef3d95b2230cdbf9622d66cb848e863b33945842f9dba",
+    "gzip": true
+  },
+  {
+    "remote_result": "selective-attention-v1/receipts.jsonl",
+    "public_file": "artifacts/receipts.jsonl.gz",
+    "raw_sha256": "984a9635d52998a07c69ffae6ca9d6659bc8abab21a731e8195fab3fffc21262",
+    "raw_bytes": 15580230,
+    "stored_sha256": "19cec23d62168a195f828438a5596a8597473162efc4a43d20afdaf95625c2d7",
+    "gzip": true
+  },
+  {
+    "remote_result": "selective-attention-v1/selected.json",
+    "public_file": "artifacts/selected.json",
+    "raw_sha256": "64738423a4c7043e79c7539594916c58ddc439a03e60cd02668f1644cdeb3f02",
+    "raw_bytes": 69090,
+    "stored_sha256": "64738423a4c7043e79c7539594916c58ddc439a03e60cd02668f1644cdeb3f02",
+    "gzip": false
+  },
+  {
+    "remote_result": "selective-attention-v1/starts.jsonl",
+    "public_file": "artifacts/starts.jsonl.gz",
+    "raw_sha256": "b41f6c710f87b413e917d3a08131284ae905aca289f108442c5a6dda5c0ec301",
+    "raw_bytes": 4564292,
+    "stored_sha256": "fcc74c2a50c2dafae2aee19d5cdeaa116e01b2df0e50a1a0f1198a8581d6220f",
+    "gzip": true
+  },
+  {
+    "remote_result": "selective-attention-v1/test-freeze.json",
+    "public_file": "artifacts/test-freeze.json",
+    "raw_sha256": "0cdd411e849ac8afab8417782ae90267d36ec244ad7cdc5fa0b08d7782c8fda0",
+    "raw_bytes": 4560,
+    "stored_sha256": "0cdd411e849ac8afab8417782ae90267d36ec244ad7cdc5fa0b08d7782c8fda0",
+    "gzip": false
+  },
+  {
+    "remote_result": "selective-execution.json",
+    "public_file": "execution/selective-execution.json",
+    "raw_sha256": "12fc0c39efa1641817969e18526a904392ebd20aaa74c764e9902df0e70cc0dd",
+    "raw_bytes": 105,
+    "stored_sha256": "12fc0c39efa1641817969e18526a904392ebd20aaa74c764e9902df0e70cc0dd",
+    "gzip": false
+  },
+  {
+    "remote_result": "selective-exit-code.txt",
+    "public_file": "execution/selective-exit-code.txt",
+    "raw_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "raw_bytes": 2,
+    "stored_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "gzip": false
+  },
+  {
+    "remote_result": "selective-study.log",
+    "public_file": "execution/selective-study.log",
+    "raw_sha256": "72700cd67b9b00e2845d01a8be0f113724dd4ed8bd99da6b6a869d8e06abbf32",
+    "raw_bytes": 26083,
+    "stored_sha256": "72700cd67b9b00e2845d01a8be0f113724dd4ed8bd99da6b6a869d8e06abbf32",
+    "gzip": false
+  }
+]

@@ -1,0 +1,315 @@
+{
+  "planned": 14400,
+  "recorded": 14400,
+  "worlds": 600,
+  "arms": {
+    "native": {
+      "planned": 1200,
+      "recorded": 1200,
+      "missing": 0,
+      "complete": 1200,
+      "failed": 0,
+      "correct": 457,
+      "accuracy": 0.38083333333333336,
+      "model_seconds": 30.54744080800765,
+      "by_condition": {
+        "clean": 0.41833333333333333,
+        "distracted": 0.3433333333333333
+      }
+    },
+    "r14": {
+      "planned": 1200,
+      "recorded": 1200,
+      "missing": 0,
+      "complete": 1199,
+      "failed": 1,
+      "correct": 568,
+      "accuracy": 0.47333333333333333,
+      "model_seconds": 32.88525526499825,
+      "by_condition": {
+        "clean": 0.5083333333333333,
+        "distracted": 0.43833333333333335
+      }
+    },
+    "r15": {
+      "planned": 1200,
+      "recorded": 1200,
+      "missing": 0,
+      "complete": 1199,
+      "failed": 1,
+      "correct": 821,
+      "accuracy": 0.6841666666666667,
+      "model_seconds": 33.3981257070036,
+      "by_condition": {
+        "clean": 0.695,
+        "distracted": 0.6733333333333333
+      }
+    },
+    "shuffled": {
+      "planned": 1200,
+      "recorded": 1200,
+      "missing": 0,
+      "complete": 1199,
+      "failed": 1,
+      "correct": 558,
+      "accuracy": 0.465,
+      "model_seconds": 33.44391097800917,
+      "by_condition": {
+        "clean": 0.5316666666666666,
+        "distracted": 0.3983333333333333
+      }
+    },
+    "lexical": {
+      "planned": 1200,
+      "recorded": 1200,
+      "missing": 0,
+      "complete": 1200,
+      "failed": 0,
+      "correct": 655,
+      "accuracy": 0.5458333333333333,
+      "model_seconds": 33.60148153200021,
+      "by_condition": {
+        "clean": 0.5733333333333334,
+        "distracted": 0.5183333333333333
+      }
+    },
+    "prompt": {
+      "planned": 1200,
+      "recorded": 1200,
+      "missing": 0,
+      "complete": 1199,
+      "failed": 1,
+      "correct": 541,
+      "accuracy": 0.4508333333333333,
+      "model_seconds": 30.59204990499029,
+      "by_condition": {
+        "clean": 0.46166666666666667,
+        "distracted": 0.44
+      }
+    },
+    "oracle": {
+      "planned": 1200,
+      "recorded": 1200,
+      "missing": 0,
+      "complete": 1200,
+      "failed": 0,
+      "correct": 802,
+      "accuracy": 0.6683333333333333,
+      "model_seconds": 33.31200000400054,
+      "by_condition": {
+        "clean": 0.6916666666666667,
+        "distracted": 0.645
+      }
+    },
+    "zero": {
+      "planned": 1200,
+      "recorded": 1200,
+      "missing": 0,
+      "complete": 1200,
+      "failed": 0,
+      "correct": 457,
+      "accuracy": 0.38083333333333336,
+      "model_seconds": 30.812685876998557,
+      "by_condition": {
+        "clean": 0.41833333333333333,
+        "distracted": 0.3433333333333333
+      }
+    },
+    "mapping_only": {
+      "planned": 1200,
+      "recorded": 1200,
+      "missing": 0,
+      "complete": 1199,
+      "failed": 1,
+      "correct": 681,
+      "accuracy": 0.5675,
+      "model_seconds": 32.701272695003354,
+      "by_condition": {
+        "clean": 0.595,
+        "distracted": 0.54
+      }
+    },
+    "heads_only": {
+      "planned": 1200,
+      "recorded": 1200,
+      "missing": 0,
+      "complete": 1199,
+      "failed": 1,
+      "correct": 592,
+      "accuracy": 0.49333333333333335,
+      "model_seconds": 33.370087293998495,
+      "by_condition": {
+        "clean": 0.515,
+        "distracted": 0.4716666666666667
+      }
+    },
+    "strength_only": {
+      "planned": 1200,
+      "recorded": 1200,
+      "missing": 0,
+      "complete": 1199,
+      "failed": 1,
+      "correct": 661,
+      "accuracy": 0.5508333333333333,
+      "model_seconds": 32.75561239199851,
+      "by_condition": {
+        "clean": 0.5983333333333334,
+        "distracted": 0.5033333333333333
+      }
+    },
+    "scope_only": {
+      "planned": 1200,
+      "recorded": 1200,
+      "missing": 0,
+      "complete": 1199,
+      "failed": 1,
+      "correct": 568,
+      "accuracy": 0.47333333333333333,
+      "model_seconds": 32.753667651997375,
+      "by_condition": {
+        "clean": 0.5083333333333333,
+        "distracted": 0.43833333333333335
+      }
+    }
+  },
+  "primary": {
+    "native": {
+      "difference": 0.30333333333333334,
+      "world_wins": 279,
+      "world_losses": 16,
+      "world_ties": 305,
+      "worlds": 600,
+      "interval": [
+        0.26666666666666666,
+        0.34
+      ],
+      "interval_level": 0.975
+    },
+    "r14": {
+      "difference": 0.21083333333333334,
+      "world_wins": 223,
+      "world_losses": 18,
+      "world_ties": 359,
+      "worlds": 600,
+      "interval": [
+        0.17916666666666667,
+        0.2425
+      ],
+      "interval_level": 0.975
+    }
+  },
+  "secondary": {
+    "shuffled": {
+      "difference": 0.21916666666666668,
+      "world_wins": 233,
+      "world_losses": 32,
+      "world_ties": 335,
+      "worlds": 600,
+      "interval": [
+        0.18916666666666668,
+        0.25
+      ],
+      "interval_level": 0.95
+    },
+    "lexical": {
+      "difference": 0.13833333333333334,
+      "world_wins": 146,
+      "world_losses": 12,
+      "world_ties": 442,
+      "worlds": 600,
+      "interval": [
+        0.11416666666666667,
+        0.1625
+      ],
+      "interval_level": 0.95
+    },
+    "prompt": {
+      "difference": 0.23333333333333334,
+      "world_wins": 246,
+      "world_losses": 51,
+      "world_ties": 303,
+      "worlds": 600,
+      "interval": [
+        0.19833333333333333,
+        0.26916666666666667
+      ],
+      "interval_level": 0.95
+    },
+    "oracle": {
+      "difference": 0.015833333333333335,
+      "world_wins": 40,
+      "world_losses": 21,
+      "world_ties": 539,
+      "worlds": 600,
+      "interval": [
+        0.0025,
+        0.029166666666666667
+      ],
+      "interval_level": 0.95
+    },
+    "zero": {
+      "difference": 0.30333333333333334,
+      "world_wins": 279,
+      "world_losses": 16,
+      "world_ties": 305,
+      "worlds": 600,
+      "interval": [
+        0.2708333333333333,
+        0.335
+      ],
+      "interval_level": 0.95
+    },
+    "mapping_only": {
+      "difference": 0.11666666666666667,
+      "world_wins": 147,
+      "world_losses": 21,
+      "world_ties": 432,
+      "worlds": 600,
+      "interval": [
+        0.095,
+        0.13833333333333334
+      ],
+      "interval_level": 0.95
+    },
+    "heads_only": {
+      "difference": 0.19083333333333333,
+      "world_wins": 200,
+      "world_losses": 16,
+      "world_ties": 384,
+      "worlds": 600,
+      "interval": [
+        0.16416666666666666,
+        0.21833333333333332
+      ],
+      "interval_level": 0.95
+    },
+    "strength_only": {
+      "difference": 0.13333333333333333,
+      "world_wins": 163,
+      "world_losses": 21,
+      "world_ties": 416,
+      "worlds": 600,
+      "interval": [
+        0.11083333333333334,
+        0.15583333333333332
+      ],
+      "interval_level": 0.95
+    },
+    "scope_only": {
+      "difference": 0.21083333333333334,
+      "world_wins": 223,
+      "world_losses": 18,
+      "world_ties": 359,
+      "worlds": 600,
+      "interval": [
+        0.18333333333333332,
+        0.23916666666666667
+      ],
+      "interval_level": 0.95
+    }
+  },
+  "advancement": true,
+  "confirmatory": true,
+  "provider_incidents_cumulative": 2,
+  "interpretation": "confirmatory primary cohort"
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "file": "run-study.sh",
+    "sha256": "a41614759be0eee031022df1757ff91024585f9a7ed3ab8b87fe4b89c1589827",
+    "matched_remote_source": true
+  },
+  {
+    "file": "study.service",
+    "sha256": "8c5a21e5f5bc242c9cd9d34681d40cd92d1d7c092ee1d62e516eb63667acbe73",
+    "matched_remote_source": true
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "detected_at": "2026-09-22T10:11:25.240527+00:00",
+  "issue": "Supervisor rejected systemctl is-active return code 4 after completed transient service was removed.",
+  "verified_factorial_exit_code": 0,
+  "verified_planned": 3600,
+  "verified_outputs": 3600,
+  "verified_paid_calls": 0,
+  "service_load_state": "not-found",
+  "service_active_state": "inactive",
+  "service_sub_state": "dead",
+  "inference_replayed": false,
+  "scientific_sources_changed": false,
+  "recovery": "Retrieve original completed artifacts, perform offline audits and delete temporary resources.",
+  "main_audit_passed": true,
+  "factorial_audit_passed": true,
+  "cleanup_verified": true,
+  "cleanup_verified_at": "2026-09-22T10:16:00.107197+00:00"
+}

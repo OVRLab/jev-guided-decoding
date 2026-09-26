@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "scope": "Fixed synthetic ANSWER: 1 spans on all MuSR rows; tokenizer only, no model/API inference, no accuracy grading",
+  "model": "ibm-granite/granite-4.0-1b",
+  "revision": "6a7381ba1f54d684ff508d991aeb7dc580157103",
+  "source_sha256": "2240857cb45425ad3fc56c26fae84f4c42489ea015e26669c5bbbae1c464f417",
+  "datasets": {
+    "murder_mystery": {
+      "rows": 250,
+      "prompt_tokens_min": 849,
+      "prompt_tokens_max": 1561,
+      "exact_alignment_passes": 250,
+      "source_sha256": "ce19b6dc0b953f698e79528c72705804bc97e772a4303734808971f63ce233a7"
+    },
+    "object_placements": {
+      "rows": 256,
+      "prompt_tokens_min": 798,
+      "prompt_tokens_max": 1503,
+      "exact_alignment_passes": 256,
+      "source_sha256": "98cd17d2c9ea53664e274365e901c90dfcaa40d17547dfbd369f1cd26fd2a81c"
+    },
+    "team_allocation": {
+      "rows": 250,
+      "prompt_tokens_min": 575,
+      "prompt_tokens_max": 871,
+      "exact_alignment_passes": 250,
+      "source_sha256": "ddbef3bb61857a7cc3b73db62fac4605679e1b7ff4357d57fdfcf91f7caaa1f8"
+    }
+  },
+  "seconds": 68.68610858405009
+}

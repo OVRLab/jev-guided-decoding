@@ -1,0 +1,54 @@
+{
+  "greedy": {
+    "proposal_batches": 48,
+    "candidates": 48,
+    "fully_parsed_frames": 44,
+    "batches_with_eligible_child": 44,
+    "recorded_invalid_reasons": {
+      "premature_eos": 4
+    },
+    "duplicates": 0,
+    "unique_processed_candidates": 48,
+    "candidates_left_unclassified_after_generation_deadline": 0,
+    "backtracks": 0
+  },
+  "likelihood": {
+    "proposal_batches": 63,
+    "candidates": 189,
+    "fully_parsed_frames": 177,
+    "batches_with_eligible_child": 51,
+    "recorded_invalid_reasons": {
+      "premature_eos": 7
+    },
+    "duplicates": 89,
+    "unique_processed_candidates": 100,
+    "candidates_left_unclassified_after_generation_deadline": 0,
+    "backtracks": 0
+  },
+  "final_jev": {
+    "proposal_batches": 86,
+    "candidates": 258,
+    "fully_parsed_frames": 216,
+    "batches_with_eligible_child": 51,
+    "recorded_invalid_reasons": {
+      "premature_eos": 15
+    },
+    "duplicates": 113,
+    "unique_processed_candidates": 136,
+    "candidates_left_unclassified_after_generation_deadline": 9,
+    "backtracks": 7
+  },
+  "jev": {
+    "proposal_batches": 47,
+    "candidates": 141,
+    "fully_parsed_frames": 136,
+    "batches_with_eligible_child": 27,
+    "recorded_invalid_reasons": {
+      "premature_eos": 3
+    },
+    "duplicates": 73,
+    "unique_processed_candidates": 68,
+    "candidates_left_unclassified_after_generation_deadline": 0,
+    "backtracks": 1
+  }
+}

@@ -1,0 +1,118 @@
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:00<00:00, 233.78it/s]
+{"graded": 1, "total": 132}
+{"graded": 21, "total": 132}
+{"graded": 41, "total": 132}
+{"graded": 61, "total": 132}
+{"graded": 81, "total": 132}
+{"graded": 101, "total": 132}
+{"graded": 121, "total": 132}
+{"stage": "judge_admission", "passed": true, "complete": true, "examples": 96, "valid": 96, "accuracy": 1.0, "class_recall": {"False": 1.0, "True": 1.0}, "categories": {"partial": 1.0, "verbose": 1.0, "abstention_context": 1.0, "false_refusal": 1.0, "numeric": 1.0, "injection": 1.0, "contradiction": 1.0, "abstention_direct": 1.0, "complete": 1.0, "guess": 1.0, "overlap_wrong": 1.0, "short": 1.0}, "repeat_consistency": true, "manifest_sha256": "8995be100a808a5d1adc7d4ea60d1eb8f87266e25db032af7a845cc2f1e5ddde", "at": "2026-09-22T23:58:38.111793+00:00", "validation_outputs_sha256": "3d68caf0787b0b57d93eb514b4a7f12b6597ceaa68450b1bd449ac2b51724773"}
+{"generated": 1, "total": 1584, "receipts": 1}
+{"generated": 31, "total": 1584, "receipts": 10}
+{"generated": 61, "total": 1584, "receipts": 20}
+{"generated": 91, "total": 1584, "receipts": 30}
+{"generated": 121, "total": 1584, "receipts": 40}
+{"generated": 151, "total": 1584, "receipts": 50}
+{"generated": 181, "total": 1584, "receipts": 60}
+{"generated": 211, "total": 1584, "receipts": 70}
+{"generated": 241, "total": 1584, "receipts": 80}
+{"generated": 271, "total": 1584, "receipts": 90}
+{"generated": 301, "total": 1584, "receipts": 101}
+{"generated": 331, "total": 1584, "receipts": 110}
+{"generated": 361, "total": 1584, "receipts": 120}
+{"generated": 391, "total": 1584, "receipts": 131}
+{"generated": 421, "total": 1584, "receipts": 140}
+{"generated": 451, "total": 1584, "receipts": 150}
+{"generated": 481, "total": 1584, "receipts": 160}
+{"generated": 511, "total": 1584, "receipts": 171}
+{"generated": 541, "total": 1584, "receipts": 181}
+{"generated": 571, "total": 1584, "receipts": 190}
+{"generated": 601, "total": 1584, "receipts": 200}
+{"generated": 631, "total": 1584, "receipts": 210}
+{"generated": 661, "total": 1584, "receipts": 221}
+{"generated": 691, "total": 1584, "receipts": 230}
+{"generated": 721, "total": 1584, "receipts": 241}
+{"generated": 751, "total": 1584, "receipts": 250}
+{"generated": 781, "total": 1584, "receipts": 260}
+{"generated": 811, "total": 1584, "receipts": 270}
+{"generated": 841, "total": 1584, "receipts": 280}
+{"generated": 871, "total": 1584, "receipts": 290}
+{"generated": 901, "total": 1584, "receipts": 300}
+{"generated": 931, "total": 1584, "receipts": 311}
+{"generated": 961, "total": 1584, "receipts": 321}
+{"generated": 991, "total": 1584, "receipts": 330}
+{"generated": 1021, "total": 1584, "receipts": 341}
+{"generated": 1051, "total": 1584, "receipts": 350}
+{"generated": 1081, "total": 1584, "receipts": 360}
+{"generated": 1111, "total": 1584, "receipts": 370}
+{"generated": 1141, "total": 1584, "receipts": 380}
+{"generated": 1171, "total": 1584, "receipts": 391}
+{"generated": 1201, "total": 1584, "receipts": 400}
+{"generated": 1231, "total": 1584, "receipts": 411}
+{"generated": 1261, "total": 1584, "receipts": 421}
+{"generated": 1291, "total": 1584, "receipts": 430}
+{"generated": 1321, "total": 1584, "receipts": 440}
+{"generated": 1351, "total": 1584, "receipts": 451}
+{"generated": 1381, "total": 1584, "receipts": 461}
+{"generated": 1411, "total": 1584, "receipts": 470}
+{"generated": 1441, "total": 1584, "receipts": 480}
+{"generated": 1471, "total": 1584, "receipts": 490}
+{"generated": 1501, "total": 1584, "receipts": 500}
+{"generated": 1531, "total": 1584, "receipts": 511}
+{"generated": 1561, "total": 1584, "receipts": 520}
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]Loading checkpoint shards: 100%|██████████| 8/8 [00:00<00:00, 231.61it/s]
+{"graded": 1, "total": 1070}
+{"graded": 21, "total": 1070}
+{"graded": 41, "total": 1070}
+{"graded": 61, "total": 1070}
+{"graded": 81, "total": 1070}
+{"graded": 101, "total": 1070}
+{"graded": 121, "total": 1070}
+{"graded": 141, "total": 1070}
+{"graded": 161, "total": 1070}
+{"graded": 181, "total": 1070}
+{"graded": 201, "total": 1070}
+{"graded": 221, "total": 1070}
+{"graded": 241, "total": 1070}
+{"graded": 261, "total": 1070}
+{"graded": 281, "total": 1070}
+{"graded": 301, "total": 1070}
+{"graded": 321, "total": 1070}
+{"graded": 341, "total": 1070}
+{"graded": 361, "total": 1070}
+{"graded": 381, "total": 1070}
+{"graded": 401, "total": 1070}
+{"graded": 421, "total": 1070}
+{"graded": 441, "total": 1070}
+{"graded": 461, "total": 1070}
+{"graded": 481, "total": 1070}
+{"graded": 501, "total": 1070}
+{"graded": 521, "total": 1070}
+{"graded": 541, "total": 1070}
+{"graded": 561, "total": 1070}
+{"graded": 581, "total": 1070}
+{"graded": 601, "total": 1070}
+{"graded": 621, "total": 1070}
+{"graded": 641, "total": 1070}
+{"graded": 661, "total": 1070}
+{"graded": 681, "total": 1070}
+{"graded": 701, "total": 1070}
+{"graded": 721, "total": 1070}
+{"graded": 741, "total": 1070}
+{"graded": 761, "total": 1070}
+{"graded": 781, "total": 1070}
+{"graded": 801, "total": 1070}
+{"graded": 821, "total": 1070}
+{"graded": 841, "total": 1070}
+{"graded": 861, "total": 1070}
+{"graded": 881, "total": 1070}
+{"graded": 901, "total": 1070}
+{"graded": 921, "total": 1070}
+{"graded": 941, "total": 1070}
+{"graded": 961, "total": 1070}
+{"graded": 981, "total": 1070}
+{"graded": 1001, "total": 1070}
+{"graded": 1021, "total": 1070}
+{"graded": 1041, "total": 1070}
+{"graded": 1061, "total": 1070}
+PIPELINE COMPLETE; GRADES FROZEN BEFORE TREATMENT ANALYSIS

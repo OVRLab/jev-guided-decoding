@@ -1,0 +1,13 @@
+{
+  "initial_cleanup_failure_at": "2026-09-22T17:43:49.634365+00:00",
+  "reason": "Nebius CLI authentication expired after inference and verified backup; stop request did not execute.",
+  "reauthenticated_read_succeeded": true,
+  "existing_browser_sign_in_refreshed": true,
+  "cleanup_resumed_without_inference": true,
+  "inference_or_provider_replays": 0,
+  "verified_deleted_at": "2026-09-22T17:48:05.113330+00:00",
+  "additional_vm_lifetime_included_in_cost": true,
+  "private_error_and_authorization_logs_retained": true,
+  "access_scope_expanded": false,
+  "new_service_accounts_or_long_lived_keys_created": false
+}

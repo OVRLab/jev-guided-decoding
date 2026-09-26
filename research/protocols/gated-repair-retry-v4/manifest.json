@@ -1,0 +1,180 @@
+{
+  "protocol": "r25-gated-repair-retry-v4",
+  "at": "2026-09-23T20:38:38.875058+00:00",
+  "sources": {
+    "pyproject.toml": "4fbdb53f9dede3ba6f5937de70abde78a57063b68b5fea8122b34b748ccbc4b7",
+    "research/diagnostics/public_baseline_readout.py": "e389a2372cd62f4e5fc5e00efc562ac26881bc715e9aed3af754880a0a80bc6a",
+    "research/gated-repair-plan.md": "25a7804ee7af3847572b033db810f1d7549b660b7ee4b9e6a4802725caf4004a",
+    "research/iterations/adaptive_attention/attention.py": "0ca7af39394a1134c172f4f739fe14b718bdedf7c154278ea072cf1c79b31014",
+    "research/iterations/benchmark_baseline/common.py": "da590c2cb7229ac5b277b2742c0fa3875da9f5c6e31ed4965ebd6e1d3b30167e",
+    "research/iterations/gated_repair/analyze.py": "1dabe326e69070badab54fe358c9ae9675b9a58aaa003d634ce1c08db3356f11",
+    "research/iterations/gated_repair/bridge.py": "889a5620ef315ea1bdb73ea72fca6abdb765955f2bfd9cd17085fed72a844c04",
+    "research/iterations/gated_repair/common.py": "2ebb25c941c4a28b520584c493992986afe865d917b526252c66ba1f2f5856e1",
+    "research/iterations/gated_repair/prepare.py": "0b0ba0cc151bdb5d50b664327be841d5b489545030986fb07148e0546e37e114",
+    "research/iterations/gated_repair/runtime.py": "7bb6ec80ef5350178338f1861e0088b0b1db927eaaaecdcc62c892874d26d89a",
+    "research/iterations/gated_repair/study.py": "9129d3707293810fb40f911294f51c54141cf0d34247b7f3a643a9f8d4f2d7de",
+    "research/iterations/learned_feedback/bridge.py": "5f3ddc97a65d919103a96dd9916371a9e068e4fd88b58ec3db063bbe20209bf4",
+    "research/iterations/public_critic.py": "fbe5755ff7e6c91e62b67786ce61833c9c9eee38c5401b866a1c94477f86549f",
+    "src/jev_guided_decoding/__init__.py": "39c1d8706715ddc0aa94b1cb23aa3238034250643c3cbd012f81dcc1fdcbaf7c",
+    "src/jev_guided_decoding/backends/__init__.py": "46991b291f9d0f364d515733ab89c42103b51963899530c727b9f8a4638250ae",
+    "src/jev_guided_decoding/backends/transformers.py": "acb2c8ba0ec427593482cada06faf74f5072871260c2c86c276d70dbf98677d3",
+    "src/jev_guided_decoding/benchmark.py": "f25566805b88ff418e10a24d9f8b9017034fc06fede3420051fda7ec235bad43",
+    "src/jev_guided_decoding/cli.py": "1f344c891800e1969d66ded7dc79ff0cc7ff4043d9a2e47d2c5b3a32c7c993e8",
+    "src/jev_guided_decoding/controller.py": "e487360178cc45cb2ce044c2f766fabc64d3b582cc861aec0182163770e1cccc",
+    "src/jev_guided_decoding/experiment_budget.py": "67eae5b043cbb43b45b0a5c2ba74f51d9a4b5d0618c7f88644494d059a41b390",
+    "src/jev_guided_decoding/framing.py": "df5f1c0e09f497cf4bb296ddb12fb70851876a2b40ff2affb6c4084d2e812a0f",
+    "src/jev_guided_decoding/generated_answer.py": "8bca33972c42097b6a479978de2093f398b4e5c927e0ca74ab26eef8abab3d3e",
+    "src/jev_guided_decoding/jev.py": "c87bb0b5c5e202f67623b42d9a5a390bc87ca28ba48acc4b9a63362a70a4fe2a",
+    "src/jev_guided_decoding/local_claims.py": "205d117d2893d36915de5af12b6b544fac203673a1308c0e1d3264d79884a6a4",
+    "src/jev_guided_decoding/logit_bias.py": "4f12176f75b81e72e67e3c405f4c139cf9db18d033118f77b50db149ac1e4243",
+    "src/jev_guided_decoding/reasoning.py": "5d5dba688466e418f419cf89d48ba9acbc6e3fddbed249a455110d171c61d907",
+    "src/jev_guided_decoding/reasoning_scorer.py": "e880a0d7de6ec47e7a418c1d7fc6200a1b433fcc358defe23f9f5704d3edf706",
+    "src/jev_guided_decoding/types.py": "3591d0eef912255d3df2c5b2107da8cc44ee6b0507d40e72e09c2814f09c9151",
+    "src/jev_guided_decoding/verdict.py": "d381794c5872de0aa156a4736c075cde9a4083ebb28e030563036bd10e692d1d",
+    "uv.lock": "b581bd9cbb34bae515ecfdae8c1de58e222106ccb78e6186ac7e63ef47277137",
+    "research/gated-repair-fp32-amendment.md": "da311485915c64facf9ad48d0b208dceef9c7dfc95764f9f96bd69aee6e5e06a",
+    "research/iterations/gated_repair_fp32/analyze.py": "c52cb1231501dd18a5a3db336b555d7dc623c939a8dd37ea691955b4459e12a4",
+    "research/iterations/gated_repair_fp32/common.py": "416ea2056474d555bd79e7104f863c164186a7fb8e2d593b1055e425364e9bdb",
+    "research/iterations/gated_repair_fp32/diagnostic.py": "666cf4e2ed55324a2debaefd8975b6411e0095e12e2d572a034a05df9eb032e0",
+    "research/iterations/gated_repair_fp32/runtime.py": "acd1a5dc0c3b576a8c2abeefb57f0ef6800b779601a5455b174f6ba0b3ce2bc2",
+    "research/iterations/gated_repair_fp32/study.py": "56069d121ce3c8112f0c47f9cb4afed6f97105e302b22818ae8c485486c1ea31",
+    "research/gated-repair-continuation.md": "c5467472399e839c2180856b354bd7873478529cc4948934ba81c6074f39cf00",
+    "research/iterations/gated_repair_continue/analyze.py": "6f77f85de441de1e2ec5f1a1fd2cced08608de12b8d305d6db2e9688d83baecd",
+    "research/iterations/gated_repair_continue/common.py": "c0251b895af7a57666a757d69e506964fe794a061dc0aa6abec8bfc2d4be2fb8",
+    "research/iterations/gated_repair_continue/feedback.py": "4270404cd21add5ed92c6c3ad8202a4af208fa7beab8115d7344cf5bca10809c",
+    "research/iterations/gated_repair_continue/records.py": "5f8cfc57e434523b8bc4b56f839c8f20faf5b53fbe7b7ffb71b6e682b08579a5",
+    "research/iterations/gated_repair_continue/retention.py": "c6dde6362c0e9b474922a59c270e59834bcb93e0663968750f6590d1eb1b3e91",
+    "research/iterations/gated_repair_continue/study.py": "e32e85c1622ff652c701d009e5d8d9488936f728c30d17aaadae8257b5dc712c",
+    "research/gated-repair-overload-recovery.md": "8279acbc8ea2f9362237e0d070d64b1e8054e6b2747dc7d6317fbc747b16fa2a",
+    "research/iterations/gated_repair_retry/analyze.py": "2c78168834cd4d561546fbf7ee610df24800dd54f554fe005fdba25dbc72a462",
+    "research/iterations/gated_repair_retry/common.py": "3bc93503bb5309a8a18bc1c4aada4edc515c1bf5358123ff912009ff5bd1c709",
+    "research/iterations/gated_repair_retry/delivery.py": "92e95acd25a662681258e85c2d0415ad4cba54a5010b2582b2e0ac5f3bbfb7fd",
+    "research/iterations/gated_repair_retry/details.py": "a2078d7353287df88329cc6c7c90012849aa720d6d336b74084cb4ab7c36f54e",
+    "research/iterations/gated_repair_retry/feedback.py": "76b839bbfe25f877b08189ecaf29dfbc7aa1a32865372c4cc715cfddd7ccffcd",
+    "research/iterations/gated_repair_retry/records.py": "34f2f72e88b02da3fa2cc981b417cea1970d9e7dc5213c89adee3c1bcce99a92",
+    "research/iterations/gated_repair_retry/retention.py": "6b37fdaa2315f7d3f69b287e6d4e148e1e0ebe56a47a6049c4d8717e4f59b80e",
+    "research/iterations/gated_repair_retry/study.py": "413c4a804f262243b93ab85266eb70072eeb4ad210d4f143f6ec96a9d1bb775d"
+  },
+  "datasets": {
+    "training-targets.json": "8ab7d2d6e95896aa681a4f3e63c32159364bb1c70965dd934d72b1470a21a3fc",
+    "test-references.json": "2bc7a19e3a0c62fe106adbf9c7cb4ddf1dca91b6236b4b7675690c8d81ec82bd",
+    "exclusions.json": "7ac99e821b3d64d5a38af7ee51391a3bd399f598bf044e081bf5bda25291deb1",
+    "cases.json": "3874710848df4db546237c410a7ca6bc64e1cfa6abe2827e6eb4569028e61fa6",
+    "train-references.json": "482e0d8591e021b1ae9aee53cee39831306855e3b3d02cc764d9d0a973b68307",
+    "development-references.json": "90c51f3c8f5c8a91b7d50edc3f09517eb3d2e3593a868c246c195d7153ffb8a1"
+  },
+  "upstream": {
+    "gsm8k/train": {
+      "url": "https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/main/train-00000-of-00001.parquet",
+      "sha256": "ea82612ea9582142387730c793eb67d3b12849002bc0b7fa6f8efafa7351419d"
+    },
+    "gsm8k/test": {
+      "url": "https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/main/test-00000-of-00001.parquet",
+      "sha256": "ee7b8da9e381df27b9e3f7758a159ab2bdaa4dbaa910546cbbc47e0cb44e4f59"
+    },
+    "arc/train": {
+      "url": "https://huggingface.co/datasets/allenai/ai2_arc/resolve/210d026faf9955653af8916fad021475a3f00453/ARC-Challenge/train-00000-of-00001.parquet",
+      "sha256": "e488c1587ffdcfc8443f916c53488a95cd471c5790e0746c6bfe4cecf20962cb"
+    },
+    "arc/validation": {
+      "url": "https://huggingface.co/datasets/allenai/ai2_arc/resolve/210d026faf9955653af8916fad021475a3f00453/ARC-Challenge/validation-00000-of-00001.parquet",
+      "sha256": "395a5c88d1580d69855fbaee9450270578df1ad5af6259771cd0a42c20e99f05"
+    },
+    "arc/test": {
+      "url": "https://huggingface.co/datasets/allenai/ai2_arc/resolve/210d026faf9955653af8916fad021475a3f00453/ARC-Challenge/test-00000-of-00001.parquet",
+      "sha256": "62f03257e737aed263f55c6abf87c7bb0028a44a6bdd2a26eb1279eb42c1d1e9"
+    }
+  },
+  "source_revision": "640987e89318bc8b6c28120634b7ea59e8a0b060",
+  "model": "ibm-granite/granite-4.0-1b",
+  "revision": "6a7381ba1f54d684ff508d991aeb7dc580157103",
+  "jev": "jev-1.13.0",
+  "seeds": [
+    2501,
+    2502
+  ],
+  "rank": 64,
+  "layer": 19,
+  "epochs": 2,
+  "lr": 0.001,
+  "accumulate": 8,
+  "clip": 1.0,
+  "draft_limit": 1024,
+  "repair_limit": 512,
+  "input_limit": 8192,
+  "target_limit": 768,
+  "max_seconds": 32400,
+  "jev_cap": 0.25,
+  "usd_per_million": 0.042,
+  "cumulative_cap": 75,
+  "prior_estimate": 36.773534922020566,
+  "reservation": 20,
+  "precision": "float32",
+  "predecessor_manifest_sha256": "0c2c58bb1e08492b9428a27bc058e6730e55e39e6125bd5905adeb233afbdd89",
+  "prior_files": {
+    "admission.json": {
+      "bytes": 281,
+      "sha256": "864597166076bf42bd9f465c9d0e9e0c26ec096883413ba1bacda686eb1870cf"
+    },
+    "api-failures.jsonl": {
+      "bytes": 3061,
+      "sha256": "27ddda378931bb3445603373016ee12d46ec6dfc7d1a67e6ee9a82dd1b1e8df5"
+    },
+    "api-requests.jsonl": {
+      "bytes": 277600,
+      "sha256": "d0ecb8faab53ce0635bf3f0f5bafa7ccc70a632c8aadb9dd9514121b1698580f"
+    },
+    "api-responses.jsonl": {
+      "bytes": 62900,
+      "sha256": "2101def998354578e1af0c9c332f3dd0e67f91a9c5b819e3fd47950e560b5f6c"
+    },
+    "budget.jsonl": {
+      "bytes": 25324,
+      "sha256": "0f09724d6d0aa5c18a0b576e4810bafc50049490e89b3541a70e452c2236f014"
+    },
+    "failure.jsonl": {
+      "bytes": 72,
+      "sha256": "3f904317ab5c0864229670bb3ec35c9f44526797cf0f4589182d70cd381ebda4"
+    },
+    "feedback-availability.jsonl": {
+      "bytes": 26439,
+      "sha256": "c3d8227ae13290d11d90ddd7fc2f6f57a917e714bb2d7fcaa42f8922a00c26ef"
+    },
+    "hardware.json": {
+      "bytes": 1184,
+      "sha256": "772ab3910a462ff99cce30c3d23a9c4ed5cc5dba317ae1bf59ed1acf68397f8f"
+    },
+    "jobs.jsonl": {
+      "bytes": 34413,
+      "sha256": "a6af9054a5b3773b8a9d7545c439ce84f79173ffbf02ca045bbfaaf518e58a94"
+    },
+    "outputs.jsonl": {
+      "bytes": 377251,
+      "sha256": "6e42d2de3b21a30b9d542f0cc278e26657482f08715ef4a2ed1fb91a13c8d9f4"
+    },
+    "predecessor.json": {
+      "bytes": 1590,
+      "sha256": "e97ccabb4acb375e5d69b69890dd31a4dad9c414e1149308f3936d194291e8ed"
+    },
+    "start.json": {
+      "bytes": 136,
+      "sha256": "ce90fe740d45e3878275e9e7c2f5d5ff4571550b69e84b152163477cfd0963de"
+    }
+  },
+  "legacy_cases": 165,
+  "legacy_missing_ids": [
+    "gsm8k/train/1703",
+    "gsm8k/train/2355",
+    "gsm8k/train/2713",
+    "gsm8k/train/2947",
+    "gsm8k/train/3794",
+    "gsm8k/train/4819",
+    "gsm8k/train/5927",
+    "gsm8k/train/5942"
+  ],
+  "max_missing_cases": 16,
+  "max_unknown_attempts": 64,
+  "attempts_per_case": 4,
+  "cumulative_estimate_before_v4": 38.33374990195374,
+  "r25_estimate_before_v4": 1.560214979933174
+}

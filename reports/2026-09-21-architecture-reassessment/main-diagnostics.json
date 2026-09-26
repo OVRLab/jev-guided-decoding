@@ -1,0 +1,304 @@
+{
+  "analyzer_sha256": "3e05bf05e3f8eb0cfc95d453e4ccb27a7dcea2593b2702fc6ee5e5ac94666c44",
+  "groups": {
+    "gsm8k/jev": {
+      "accepted_steps": 1373,
+      "candidate_finish_reasons": {
+        "eos": 548,
+        "frame": 5368,
+        "length": 3
+      },
+      "candidate_gates": {
+        "both": 223,
+        "eligible": 2593,
+        "progress_only": 835,
+        "support_only": 132
+      },
+      "initial_accepted_selection_differs_from_likelihood": 180,
+      "initial_batch_outcomes": {
+        "accepted": 450,
+        "all_rejected": 120,
+        "no_valid_step": 30
+      },
+      "initial_likelihood_winner_gate": {
+        "both": 28,
+        "eligible": 385,
+        "progress_only": 123,
+        "support_only": 34
+      },
+      "initial_scored_batches": 570,
+      "invalid_candidates": {
+        "duplicate_tokens": 1554,
+        "parse_failure": 564,
+        "repeated_accepted_body": 18
+      },
+      "output_stops": {
+        "complete": 600
+      },
+      "proposal_batches": 1973,
+      "reasoning_stops": {
+        "all_rejected": 499,
+        "no_valid_step": 101
+      },
+      "rejected_batches_with_support_passing_candidate": 435,
+      "runs": 600,
+      "scored_batches": 1872,
+      "step_count_histogram": {
+        "0": 150,
+        "1": 28,
+        "2": 141,
+        "3": 151,
+        "4": 65,
+        "5": 43,
+        "6": 19,
+        "7": 3
+      },
+      "zero_step_stops": {
+        "all_rejected": 120,
+        "no_valid_step": 30
+      }
+    },
+    "gsm8k/likelihood": {
+      "accepted_steps": 2751,
+      "candidate_finish_reasons": {
+        "eos": 1711,
+        "frame": 8156,
+        "length": 3
+      },
+      "candidate_gates": {},
+      "initial_accepted_selection_differs_from_likelihood": 0,
+      "initial_batch_outcomes": {
+        "accepted": 570,
+        "no_valid_step": 30
+      },
+      "initial_likelihood_winner_gate": {},
+      "initial_scored_batches": 0,
+      "invalid_candidates": {
+        "duplicate_tokens": 2404,
+        "parse_failure": 1815,
+        "repeated_accepted_body": 201
+      },
+      "output_stops": {
+        "complete": 600
+      },
+      "proposal_batches": 3290,
+      "reasoning_stops": {
+        "no_valid_step": 539,
+        "step_budget": 61
+      },
+      "rejected_batches_with_support_passing_candidate": 0,
+      "runs": 600,
+      "scored_batches": 0,
+      "step_count_histogram": {
+        "0": 30,
+        "1": 7,
+        "2": 35,
+        "3": 109,
+        "4": 114,
+        "5": 109,
+        "6": 87,
+        "7": 48,
+        "8": 61
+      },
+      "zero_step_stops": {
+        "no_valid_step": 30
+      }
+    },
+    "gsm8k/single": {
+      "accepted_steps": 2545,
+      "candidate_finish_reasons": {
+        "eos": 453,
+        "frame": 2637,
+        "length": 1
+      },
+      "candidate_gates": {},
+      "initial_accepted_selection_differs_from_likelihood": 0,
+      "initial_batch_outcomes": {
+        "accepted": 546,
+        "no_valid_step": 54
+      },
+      "initial_likelihood_winner_gate": {},
+      "initial_scored_batches": 0,
+      "invalid_candidates": {
+        "parse_failure": 483,
+        "repeated_accepted_body": 63
+      },
+      "output_stops": {
+        "complete": 598,
+        "incomplete_final": 2
+      },
+      "proposal_batches": 3091,
+      "reasoning_stops": {
+        "no_valid_step": 546,
+        "step_budget": 54
+      },
+      "rejected_batches_with_support_passing_candidate": 0,
+      "runs": 600,
+      "scored_batches": 0,
+      "step_count_histogram": {
+        "0": 54,
+        "1": 13,
+        "2": 50,
+        "3": 102,
+        "4": 105,
+        "5": 94,
+        "6": 92,
+        "7": 36,
+        "8": 54
+      },
+      "zero_step_stops": {
+        "no_valid_step": 54
+      }
+    },
+    "proofwriter/jev": {
+      "accepted_steps": 48,
+      "candidate_finish_reasons": {
+        "eos": 832,
+        "frame": 1111,
+        "length": 1
+      },
+      "candidate_gates": {
+        "both": 132,
+        "eligible": 61,
+        "progress_only": 614,
+        "support_only": 1
+      },
+      "initial_accepted_selection_differs_from_likelihood": 19,
+      "initial_batch_outcomes": {
+        "accepted": 28,
+        "all_rejected": 307,
+        "no_valid_step": 265
+      },
+      "initial_likelihood_winner_gate": {
+        "both": 33,
+        "eligible": 9,
+        "progress_only": 293
+      },
+      "initial_scored_batches": 335,
+      "invalid_candidates": {
+        "duplicate_tokens": 302,
+        "parse_failure": 834
+      },
+      "output_stops": {
+        "complete": 600
+      },
+      "proposal_batches": 648,
+      "reasoning_stops": {
+        "all_rejected": 334,
+        "no_valid_step": 266
+      },
+      "rejected_batches_with_support_passing_candidate": 313,
+      "runs": 600,
+      "scored_batches": 382,
+      "step_count_histogram": {
+        "0": 572,
+        "1": 14,
+        "2": 11,
+        "4": 3
+      },
+      "zero_step_stops": {
+        "all_rejected": 307,
+        "no_valid_step": 265
+      }
+    },
+    "proofwriter/likelihood": {
+      "accepted_steps": 1886,
+      "candidate_finish_reasons": {
+        "eos": 1339,
+        "frame": 5784,
+        "length": 2
+      },
+      "candidate_gates": {},
+      "initial_accepted_selection_differs_from_likelihood": 0,
+      "initial_batch_outcomes": {
+        "accepted": 335,
+        "no_valid_step": 265
+      },
+      "initial_likelihood_winner_gate": {},
+      "initial_scored_batches": 0,
+      "invalid_candidates": {
+        "duplicate_tokens": 1540,
+        "parse_failure": 1552,
+        "repeated_accepted_body": 398
+      },
+      "output_stops": {
+        "complete": 600
+      },
+      "proposal_batches": 2375,
+      "reasoning_stops": {
+        "no_valid_step": 489,
+        "step_budget": 111
+      },
+      "rejected_batches_with_support_passing_candidate": 0,
+      "runs": 600,
+      "scored_batches": 0,
+      "step_count_histogram": {
+        "0": 265,
+        "1": 11,
+        "2": 33,
+        "3": 29,
+        "4": 42,
+        "5": 26,
+        "6": 45,
+        "7": 38,
+        "8": 111
+      },
+      "zero_step_stops": {
+        "no_valid_step": 265
+      }
+    },
+    "proofwriter/single": {
+      "accepted_steps": 1513,
+      "candidate_finish_reasons": {
+        "eos": 390,
+        "frame": 1660,
+        "length": 1
+      },
+      "candidate_gates": {},
+      "initial_accepted_selection_differs_from_likelihood": 0,
+      "initial_batch_outcomes": {
+        "accepted": 329,
+        "no_valid_step": 271
+      },
+      "initial_likelihood_winner_gate": {},
+      "initial_scored_batches": 0,
+      "invalid_candidates": {
+        "parse_failure": 452,
+        "repeated_accepted_body": 86
+      },
+      "output_stops": {
+        "complete": 600
+      },
+      "proposal_batches": 2051,
+      "reasoning_stops": {
+        "no_valid_step": 538,
+        "step_budget": 62
+      },
+      "rejected_batches_with_support_passing_candidate": 0,
+      "runs": 600,
+      "scored_batches": 0,
+      "step_count_histogram": {
+        "0": 271,
+        "1": 26,
+        "2": 58,
+        "3": 39,
+        "4": 45,
+        "5": 35,
+        "6": 45,
+        "7": 19,
+        "8": 62
+      },
+      "zero_step_stops": {
+        "no_valid_step": 271
+      }
+    }
+  },
+  "input_sha256": "5fc6c5322d16ddd83256fd1692bf4014c9147141f42b4ba7b1077ffd767fbf0b",
+  "jobs": 3600,
+  "parser_sha256": "df5f1c0e09f497cf4bb296ddb12fb70851876a2b40ff2affb6c4084d2e812a0f",
+  "schema": "frozen-trace-diagnostics-v1",
+  "thresholds": {
+    "progress": 0.5,
+    "support": 0.5
+  }
+}

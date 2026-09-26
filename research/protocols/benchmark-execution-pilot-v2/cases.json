@@ -1,0 +1,182 @@
+[
+  {
+    "id": "arc/validation/Mercury_7187058",
+    "task": "arc",
+    "family": "arc",
+    "prompt": "Every night, Johnny reads next to a lamp that is lit by an incandescent light bulb. Which is the best indication that the transfer of electrical energy to the lamp is inefficient?\n\nA. The bulb gets hot.\nB. The bulb produces light.\nC. The lamp uses copper wires.\nD. The lamp can be turned off at a switch.\n\nSolve the problem. Finish with a separate line starting Final: followed by one selected letter, then stop.",
+    "format": "choice",
+    "origin_id": "validation/252",
+    "cluster": "arc/validation/Mercury_7187058",
+    "split": "development"
+  },
+  {
+    "id": "arc/validation/Mercury_415263",
+    "task": "arc",
+    "family": "arc",
+    "prompt": "Which of the following is found in a eukaryotic cell but not in a prokaryotic cell?\n\nA. DNA\nB. cytoplasm\nC. a nucleus\nD. a cell membrane\n\nSolve the problem. Finish with a separate line starting Final: followed by one selected letter, then stop.",
+    "format": "choice",
+    "origin_id": "validation/221",
+    "cluster": "arc/validation/Mercury_415263",
+    "split": "development"
+  },
+  {
+    "id": "arc/validation/Mercury_7005478",
+    "task": "arc",
+    "family": "arc",
+    "prompt": "The human body temperature is relatively constant. Which is a feedback mechanism that helps the human body maintain its normal temperature in a cold environment?\n\nA. Water is released from the skin.\nB. Muscles shake in small movements.\nC. The rate of heart beats slows.\nD. The lungs take in additional air.\n\nSolve the problem. Finish with a separate line starting Final: followed by one selected letter, then stop.",
+    "format": "choice",
+    "origin_id": "validation/207",
+    "cluster": "arc/validation/Mercury_7005478",
+    "split": "development"
+  },
+  {
+    "id": "arc/validation/Mercury_7246348",
+    "task": "arc",
+    "family": "arc",
+    "prompt": "Which feature does not form as a result of tectonic plates diverging?\n\nA. trench\nB. rift valley\nC. ocean basin\nD. mid-ocean ridge\n\nSolve the problem. Finish with a separate line starting Final: followed by one selected letter, then stop.",
+    "format": "choice",
+    "origin_id": "validation/125",
+    "cluster": "arc/validation/Mercury_7246348",
+    "split": "development"
+  },
+  {
+    "id": "gsm8k/train/2991",
+    "task": "gsm8k",
+    "family": "gsm8k",
+    "prompt": "A total of 107 oranges are picked by Del and Juan. Del picked 23 on each of 2 days and Juan picked the rest. How many oranges did Juan pick?\n\nSolve the problem. Finish with a separate line starting #### followed by your numeric answer, then stop.",
+    "format": "number",
+    "origin_id": "train/2991",
+    "cluster": "gsm8k/train/2991",
+    "split": "development"
+  },
+  {
+    "id": "gsm8k/train/780",
+    "task": "gsm8k",
+    "family": "gsm8k",
+    "prompt": "During one hour, Tom can read 12 pages of a book. How many pages would he be able to read during 2 hours if he could increase his reading speed by a factor of 3?\n\nSolve the problem. Finish with a separate line starting #### followed by your numeric answer, then stop.",
+    "format": "number",
+    "origin_id": "train/780",
+    "cluster": "gsm8k/train/780",
+    "split": "development"
+  },
+  {
+    "id": "gsm8k/train/3205",
+    "task": "gsm8k",
+    "family": "gsm8k",
+    "prompt": "Jason's dog has a tail that's half the length of its body, and a head that's 1/6 the length of its body. If the dog is 30 inches long overall, how long is its tail?\n\nSolve the problem. Finish with a separate line starting #### followed by your numeric answer, then stop.",
+    "format": "number",
+    "origin_id": "train/3205",
+    "cluster": "gsm8k/train/3205",
+    "split": "development"
+  },
+  {
+    "id": "mmlu_pro/40",
+    "task": "mmlu_pro",
+    "family": "engineering",
+    "prompt": "A point pole has a strength of 4π * 10^-4 weber. The force in newtons on a point pole of 4π * 1.5 * 10^-4 weber placed at a distance of 10 cm from it will be\n\nA. 25 N.\nB. 12.5 N.\nC. 15 N.\nD. 10 N.\nE. 7.5 N.\nF. 20 N.\nG. 5 N.\nH. 3.75 N.\nI. N/A\nJ. N/A\n\nSolve the problem. Finish with a separate line starting Final: followed by one selected letter, then stop.",
+    "format": "choice",
+    "origin_id": "40",
+    "cluster": "mmlu_pro/40",
+    "split": "development"
+  },
+  {
+    "id": "mmlu_pro/8",
+    "task": "mmlu_pro",
+    "family": "health",
+    "prompt": "How many attempts should you make to cannulate a patient before passing the job on to a senior colleague, according to the medical knowledge of 2020?\n\nA. 1\nB. Unlimited attempts\nC. 5\nD. 0, always pass on to a senior colleague\nE. 7\nF. 2\nG. 4\nH. 6\nI. 3\nJ. 8\n\nSolve the problem. Finish with a separate line starting Final: followed by one selected letter, then stop.",
+    "format": "choice",
+    "origin_id": "8",
+    "cluster": "mmlu_pro/8",
+    "split": "development"
+  },
+  {
+    "id": "mmlu_pro/20",
+    "task": "mmlu_pro",
+    "family": "biology",
+    "prompt": "Which of the following represents an accurate statement concerning arthropods?\n\nA. They possess an exoskeleton composed primarily of peptidoglycan.\nB. They possess an open circulatory system with a dorsal heart.\nC. They are members of a biologically unsuccessful phylum incapable of exploiting diverse habitats and nutrition sources.\nD. They lack paired, jointed appendages.\nE. N/A\nF. N/A\nG. N/A\nH. N/A\nI. N/A\nJ. N/A\n\nSolve the problem. Finish with a separate line starting Final: followed by one selected letter, then stop.",
+    "format": "choice",
+    "origin_id": "20",
+    "cluster": "mmlu_pro/20",
+    "split": "development"
+  },
+  {
+    "id": "mmlu_pro/63",
+    "task": "mmlu_pro",
+    "family": "psychology",
+    "prompt": "Ani believes that her attitudes and behavior play a central role in what happens to her. Such a belief is likely to be associated with\n\nA. low self-esteem.\nB. a strong id.\nC. a high level of anxiety.\nD. a strong superego.\nE. high levels of self-consciousness.\nF. an external locus of control.\nG. an inferiority complex.\nH. a low level of self-awareness.\nI. low self-efficacy.\nJ. an internal locus of control.\n\nSolve the problem. Finish with a separate line starting Final: followed by one selected letter, then stop.",
+    "format": "choice",
+    "origin_id": "63",
+    "cluster": "mmlu_pro/63",
+    "split": "development"
+  },
+  {
+    "id": "mmlu_pro/10",
+    "task": "mmlu_pro",
+    "family": "physics",
+    "prompt": "Say the pupil of your eye has a diameter of 5 mm and you have a telescope with an aperture of 50 cm. How much more light can the telescope gather than your eye?\n\nA. 1000 times more\nB. 50 times more\nC. 5000 times more\nD. 500 times more\nE. 10000 times more\nF. 20000 times more\nG. 2000 times more\nH. 100 times more\nI. 10 times more\nJ. N/A\n\nSolve the problem. Finish with a separate line starting Final: followed by one selected letter, then stop.",
+    "format": "choice",
+    "origin_id": "10",
+    "cluster": "mmlu_pro/10",
+    "split": "development"
+  },
+  {
+    "id": "musr/murder_mystery/134",
+    "task": "musr",
+    "family": "murder_mystery",
+    "prompt": "In the dense, dank heart of the rainforest, Skylar's life was brutally silenced with a lead pipe, leaving Detective Winston to navigate a labyrinth of lies, offered up by the two prime suspects - Albert and Mya.\n\nWinston entered the bustling atmosphere of a large family gathering, all clatter and congratulations on a reunion well-needed. His gaze shifted to a tall woman energetically engaging with her relatives, her vibrant energy palpable amongst the crowd. That would be Mya, the adventurous cousin of the unfortunate victim, Skylar.\n\nHe noticed the polished locket adorning her neck, catching the light beautifully, but a sombre contrast to its owner's lively charm.\n\nExuding friendly charm, Winston approached her, \"Mya, may I have a couple of moments?\"\n\n\"Of course, detective. How may I help you?\"\n\n\"I understand you and Skylar used to explore your adventurous side together,\" Winston mentioned casually, trying not to stir any emotional discomfort.\n\nMya's face softened, \"Yes. We both shared a love for the wilderness. Just last week, she invited me on a camping trip to the rainforest. It was harmonious escapades until…” she trailed off.\n\n“Aye, I’m sorry for your loss, Mya.”  \n \nWinston noticed the emphasis on her well-toned physique - a strong and agile body, built on a rigorous exercise routine and several hiking and mountain climbing expeditions successfully completed over the years.\n\nLater on, Winston got an opportunity to evaluate the surveillance video of the day Skylar went missing. A quiet scene it was, with only a single instance of incoming and no outgoing traffic - a four-wheel-drive carrying two adventurous souls - Skylar and Mya - into the depths of the rainforest.\n\nWinston’s keen eyes caught the glimpse of Mya’s camping gear. It sure was well stocked - ropes, food supplies, a lead pipe, tents, boots… A lead pipe. The very same, that had turned brutal enough to end a life in the tranquil rainforest.\n\nAt Mya’s, while she was away, Winston could only find her camping gear partially scattered in disarray. The lead pipe was blatantly missing.\n\nIn a cruiser parked down the street, Winston watched Mya jog up to the deadly rainforest, maybe a run to process her grief, or maybe it was part of her regular exercise routine. Winston watched Mya stoop suddenly and pick something up. A glint of gold. Later, at the reunion, the piece was identified as Skylar’s locket around Mya’s neck. A locket that mysteriously went missing after Skylar's demise and never returned to the rightful inheritors.\n\nWinston took a deep breath. There was so much more to untangle in the mysterious disappearance of Skylar. The case continued to thicken, deeper into the rainforest.\n\nCasual drizzle splattered against the umbrella of Winston as he stood by the yellow cab, its windows slick with rain and partially hiding the figure inside. He knocked twice against the window before it hesitantly slid down, revealing the rough and worn face of Albert, a cab driver who had been working these city streets for longer than most would care to remember. \n\n\"Albert,\" Winston began, pulling out his badge to cut off any question of his identity. \"Seems like you're having a quiet night.\"\n\n\"Just like every other night in this forsaken city,\" Albert responded bitterly, his hands, the hands of a man used to hard labor, tightening around the taxi steering wheel. \n\n\"I heard about your baseball career back in college. Must have been exciting times,\" Winston remarked, casually glancing at a lead pipe secured beneath the driver's seat. \"Got to make sure feelings of nostalgia don't lead to some baseball practice, especially not in a city like ours.\"\n\nAlbert hesitated for a moment, before answering, \"It's for safety. Different times…\"\n\nWinston nodded, turning towards the rainforest in the distance. Albert followed his gaze, \"Crazy what happened. I was just driving her, Skylar...that is, to the rainforest. The city loved her, I've even seen people switch cabs to ride with her.\"\n\n\"Must have been a challenge,\" Winston said, subtly hinting at the power dynamics at play.\n\n\"It was more than just a challenge,\" Albert growled. \"That woman was taking away everything I had.\"\n\n\"Do you know why she wanted to go to the rainforest?\" Winston asked, eager to shift the focus.\n\n\"Didn't ask,\" Albert responded briskly. \"She requested me as her driver and asked to go to the rainforest. Took a little detour, tried to show her some city charm...wouldn't say she really appreciated it though.\"\n\n\"Do you know if anyone else was with her there?\"\n\n\"Just her,\" Albert answered. \"As far as I knew, it was just going to be her in the rainforest. That was the last I saw.\"\n\nAs Winston walked away, leaving Albert with his rumbling taxi and burdensome thoughts, he pondered how volatile resentment could become if not managed properly — a flame which could engulf the careers and lives of even those most loved. The rain pattered against his umbrella, but beneath it, his mind was turning.\n\nWho is the most likely murderer?\n\nA. Albert\nB. Mya\n\nSolve the problem. Finish with a separate line starting Final: followed by one selected letter, then stop.",
+    "format": "choice",
+    "origin_id": "murder_mystery/134",
+    "cluster": "musr/murder_mystery/134",
+    "split": "development"
+  },
+  {
+    "id": "musr/object_placements/255",
+    "task": "musr",
+    "family": "object_placements",
+    "prompt": "Martha's roses, her pride and joy, had finally bloomed to their full, lush beauty. Today was the day for trimming. In the heart of this task is her beloved pair of pruning shears that patiently waited in the shed. Martha needed to sharpen these shears for the job, a job she was aching to start. Adam, who shared his mother's keen eye for tidiness, was dutifully organizing the same shed. He saw where the shears were and made a mental note of their location.\n\nIn the garage, a sturdy bucket waited, its solid presence unobtrusive yet comforting, knowing its role in holding the trimmed blossoms. This was part of a process that young, inquisitive Lily was keen to learn. The neighborhood kid, Lily, knew precisely where the bucket rested as she admired every tool in Martha's collection, fascinated by how each played an essential role in grooming the garden.\n\nThey were all aware of each item's location. Each piece warmed up for the process, ready to deliver their small but crucial part in nurturing Martha's garden. The scene was set for a day dedicated to the life cycle of beautiful roses, with every character involved playing their role knowingly.\n\nWith a determined stride, Martha carried the pruning shears towards the grinding stone. The essential step of sharpening the shears would ensure precision in her trimming, marking the beginning of a day filled with delightful gardening activity. Adam found himself dealing with a rebellious stack of old pots in a far corner of the garden shed. Their ages varied, much like their shapes and sizes, making the job of organizing them slightly more challenging than he had initially thought. Disregarding the need for the trash bin, he continued battling the uncooperative heap, his efforts focused only on creating a neat space.\n\nMeanwhile, Lily, the neighborhood kid with a face brimming with curiosity, closely observed Martha's every move. The older woman, more than willing to pass on her gardening knowledge, made sure her activities took place within Lily's line of sight. Lily's eyes diligently followed Martha, taking in everything - right from the way Martha's hands manipulated the shears on the ale-brown grindstone to the particular rhythm of her steps as she prepared for her favorite chore of the day.\n\nIn the bustling synergy of Adam's struggle with the pots and Lily's rapt attention, the anticipation of what was to come next hung in the air. Martha's workspace, distant from the chaotic stack of pots and yet comfortably close to Lily's eager gaze, resonated with the calming rhythm of diligent preparation.\n\nAs the tranquil garden resounded with subtle activity, Adam, noticing the stray bucket in the garage, repositions it in the shed, enhancing the collective tidiness. Within this peaceful process, an unexpected sound rippled through the calm atmosphere when Adam accidentally dropped one of the tools in his hand. The loud clatter drew Martha's attention towards the shed where Adam was diligently arranging. At the same moment, Lily's attention was captivated by the sight of a butterfly, gracing one of the nearby flowers with its ephemeral presence—a sight and direction opposite from the where the tool had fallen.\n\nGently lifting the freshly sharpened shears, Lily carefully carried them back to the shed, hoping to make Martha's task a little easier. As she settled them back into their designated spot, her eyes caught sight of the sturdy bucket, standing tall amid the organized chaos, ready for the day's gardening activities. Adam, lost in the labyrinth of the shed, discovered a rusted rake partially hidden beneath an old tarp. His curiosity was piqued by the unexpected relic as he held it under the sparse, filtered light entering through the shed window. Undeterred, his focus shifted entirely to the rake, its aged patina a stark contrast to the well-maintained tools around him. \n\nJust outside the shed, young Lily shadowed Martha intently, never missing an opportunity to assist. The youngster remained dedicatedly by Martha's side, eager to apply her newfound knowledge in treating and caring for the roses. Martha, ever alert, recognized her enthusiasm and appreciated the welcome assistance. A sincere nod of approval acknowledged as such, further enhancing Lily's excitement.\n\nThe rusty rake had now fully captured Adam's interest. Its primordial aura firmly gripped him, drawing his thoughts from the ongoing activities. On the side, however, the essential shears, still cradled in Lily’s careful hands, were a stark reminder of the task at hand – the trimming of roses. \n\nYet, the morning was progressing, and the anticipation of the central activity grew with every passing minute. As Adam examined the rusted rake, Lily's careful watch over Martha, and the newly sharpened shears created a fascinating harmony of readiness and intrigue. The roses waited, blooming beautifully in Martha's well-tended garden, heralding the trimming that was soon to begin.\n\nAnd so the day unfolded in mundane splendour, the roses basking in the diligent love of Martha, the mysterious allure of the rusted rake captivating Adam, and Lily's conservation with the entire arrangement shaping her understanding of the world. The garden buzzed with tradition and camaraderie, each person and object playing a part in the significant task at hand. And while she continued to prepare her shears with measured care, Martha couldn't help but appreciate the unique unfolding of yet another day in her beloved garden. \n\nWhich location is the most likely place Martha would look to find the pruning shears given the story?\n\nA. garage\nB. grinding stone\nC. shed\n\nSolve the problem. Finish with a separate line starting Final: followed by one selected letter, then stop.",
+    "format": "choice",
+    "origin_id": "object_placements/255",
+    "cluster": "musr/object_placements/255",
+    "split": "development"
+  },
+  {
+    "id": "musr/team_allocation/165",
+    "task": "musr",
+    "family": "team_allocation",
+    "prompt": "Beneath the vast azure sky, the arid landscape stretched out, a blank canvas awaiting the touch of the geological survey team I was spearheading. Each pebble, every grain of earth held a story, a secret yearning to be discovered. Our journey was one of comprehension; deciphering the earth and the gritty, ivory-hued mysteries she harbored. Our jeep, heavy with equipment, carried not just our tools but also our aspirations, our anticipation, and the indomitable trio: Claire, Max, and Olivia. The tasks at hand were clear - Sampling and Data Analysis - and it was up to me to assign these crucial roles to our team members.\n\nTurbid glasses perched on her nose, Claire was a living, breathing testament to ambition and dedication. Into the wilderness, she had ventured countless times, the soil and the rocks her silent companions. A veteran of several field studies, Claire's relationship with stratigraphy and sedimentology was as profound as it was meticulous, deepened by the degree she held in geology. Yet, her keenness for soil and rock sampling was often undermined by her propensity to overanalyze sizeable data sets - an understandable foible, but one which often caused delays in our process.\n\nThe sharp contrasts of Claire's personality were vividly on display in her relationships with Max and Olivia. For Claire, Olivia's casual disregard for safety measures was unprofessional, to say the least, while Max's animated disposition and throbbing enthusiasm often perturbed her peace. Despite the conflicts, Claire's expertise remained unparalleled, and she had once even assisted in completing an intricate research project that required comprehensive data interpretation.\n\nIn stark contrast to Claire stood Max - jovial, boisterous, and relentlessly passionate. His skills lay in his instinctive recognition of rock formations, honed through years of exposure to the field and employment in labs. His affinity for GIS tools and quantitative methodologies was impressive, as was his knack for interpreting data - a skill that had once been instrumental in cracking a particularly convoluted geological puzzle. Yet, despite his extensive abilities, his stubbornness often led him to disregard Claire's input, heating up discords and disputes.\n\nIn the middle of these two vibrant, disparate personalities, was Olivia. Her admiration for Max's inventive solutions was evident, and so was her dislike for Claire's austere approach towards fieldwork. In her university days, she had majored in geology, focusing on sedimentary rocks - a specialization that had equipped her with an uncanny ability to swiftly identify rock types and structures in the field. Although hand-in-hand with these strengths came a novice’s grasp of statistical software and difficulty in dealing with complex data sets - often necessitating help.\n\nWith this eclectic mix of abilities and temperaments, I had to assign the tasks of sampling, mapping and data analysis. Each had their own strengths and weaknesses, their unique skills and shortcomings. The quiet expanse of the field waited, ready for us to decipher its enigmas. And amid the rustling winds and the hushed whispers of the earth, I made my decisions, hoping the teamwork would uncover the secrets that the earth held deep within her bosom.\n\nGiven the story, how would you uniquely allocate each person to make sure both tasks are accomplished efficiently?\n\nA. Sampling: Claire, Data Analysis: Max and Olivia\nB. Sampling: Max, Data Analysis: Claire and Olivia\nC. Sampling: Olivia, Data Analysis: Claire and Max\n\nSolve the problem. Finish with a separate line starting Final: followed by one selected letter, then stop.",
+    "format": "choice",
+    "origin_id": "team_allocation/165",
+    "cluster": "musr/team_allocation/165",
+    "split": "development"
+  },
+  {
+    "id": "ifbench/297",
+    "task": "ifbench",
+    "family": "instruction_following",
+    "prompt": "what concentration of particles is bad for biosensors. The output should not contain any whitespace.",
+    "format": "instruction",
+    "origin_id": "297",
+    "cluster": "ifbench/297",
+    "split": "development"
+  },
+  {
+    "id": "ifbench/83",
+    "task": "ifbench",
+    "family": "instruction_following",
+    "prompt": "Answer with a list of items, instead of bullet points use !?!?. Defination of: preludes, caprichos, romances and ballads",
+    "format": "instruction",
+    "origin_id": "83",
+    "cluster": "ifbench/83",
+    "split": "development"
+  },
+  {
+    "id": "ifbench/68",
+    "task": "ifbench",
+    "family": "instruction_following",
+    "prompt": "Please use an emoji at the end of every sentence.  write a paragraph personal and in first person about the following. Scenes might include solitary birthdays that morph into insights on self-reliance, quiet dinners that offer space for deep parental bonds, and the mature realization of the weight of carrying family expectations alone.  how the only child experience shapes an individual's outlook on solitude, independence, and family dynamics. In what ways does being an only child influence one's approach to life's challenges and relationships?",
+    "format": "instruction",
+    "origin_id": "68",
+    "cluster": "ifbench/68",
+    "split": "development"
+  }
+]

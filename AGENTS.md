@@ -36,11 +36,37 @@ guides must defer here rather than maintain conflicting copies.
 
 ## Keep the experiment honest
 
-- Jev guidance currently selects **text continuations during inference**. Do not
-  describe it as fused attention, access to hidden reasoning, training, a vLLM
-  extension, or an improved model checkpoint unless that work is implemented and verified.
+- The active research objective is the [Granite–Jev north star](research/north-star.md):
+  substantial broad benchmark gains over original Granite and named larger models.
+  Treat authored fixtures as diagnostics, preserve negative results, and distinguish
+  measured suite progress from a working hook. Count hosted Jev when making system
+  cost/efficiency claims; Granite's parameter count alone is not total system size.
+- When testing whether Jev improves a generator's answers, that generator must
+  produce the final answer in every compared arm. Keep Jev final classifiers as
+  separately named experiments; their scores cannot stand in for generated-answer
+  quality. Verify final-token provenance and a consistent prompt/grading contract.
+- The package controllers select **text continuations during inference**. The
+  separate R14–R19 research hooks apply Jev source-relevance biases inside selected
+  Granite attention heads. R14 is static constrained QA; R16 adds serial cached
+  generation, optional relevance refresh and full-vocabulary output contracts.
+  R17 tests conditional dispatch, timing envelopes and local evidence-mass
+  conservation. R18 places a conditional callback before layer 19 inside a single
+  native prefill. R19 adds a fitted benefit controller and separate evidence-sufficiency
+  judgments, including attention to an existing abstention instruction. Its canned
+  and shuffled controls are distinct from live Jev dispatch. Distinguish each study
+  from the package path. These are not neural
+  fusion, access to hidden reasoning, Granite/Jev weight training, a vLLM extension, or an improved
+  model checkpoint. Claims need matching evidence.
+- R22 is a separately authorized learned representation bridge: new adapter
+  weights after block 19 receive local Jev probabilities, while original Granite
+  and Jev weights remain frozen. Distinguish this training from the earlier
+  attention hooks, the package controller and a released model. Equal-capacity
+  training and shuffled feedback determine whether gains depend on Jev.
 - Preserve the original model weights and exact accepted token IDs in this scope.
   Rejected branches must never enter the continuation prefix or another request's cache.
+- Cancelling an async await does not end an owned model thread. Drain that worker,
+  including through repeated cancellation, before releasing shared hooks or making
+  the runtime reusable. Reject nested attention scopes across old and new runtimes.
 - Retain explicit EOS, rejection, timeout, and budget outcomes. Empty EOS is a
   completion decision, not a demand to add another fact.
 - Code owns limits, retries, selection, and external actions. Jev scores are fallible
@@ -48,6 +74,15 @@ guides must defer here rather than maintain conflicting copies.
 - Compare the same prompts, model revisions, sampling settings, and candidate
   budgets; disclose **actual** generated tokens, padded slots, repeated prefill,
   latency, and API use. Equal ceilings do not prove equal computation.
+- Separate a charged request from a successful intervention. A failed request can
+  retain the native cache without restarting; its charge still belongs in cost
+  accounting. Offline branch replay is not measured deployment savings.
+- If syntax constraints are used, disclose their action-space restriction in every
+  arm. Keep reference truth out of the grammar, preserve generator ownership of
+  semantic choices, and treat guaranteed formatting as a controller property.
+  A constrained-label baseline is not unrestricted default model generation.
+  Report class balance and a trivial constant-label reference alongside absolute
+  accuracy; a gain over a weak native baseline does not establish deployment utility.
 - Separate calibration from held-out evaluation. Keep reference answers out of
   model inputs and Jev questions. Retain negative results and all incomplete runs.
 - Lexical exact match/F1 are not general accuracy or grounding measures. Distinguish
@@ -55,6 +90,11 @@ guides must defer here rather than maintain conflicting copies.
 - Record seeds, versions, dataset hashes, hardware, warm-up, model-loading treatment,
   source revision, dirty state, and returned Jev version. Do not edit old raw results
   to match new code; write a new report and link the earlier one.
+- Maintain the [research notebook](research/README.md) and
+  [study register](research/study-register.md) for every subsequent experiment,
+  including failed, interrupted and offline analyses. Register the protocol before
+  new live inference; distinguish proposed mechanisms from implemented hooks and
+  independently evaluated quality. Preserve corrections and negative evidence.
 
 ## Security and public content
 

@@ -1,0 +1,3170 @@
+[
+  {
+    "id": "r20/test/0000/dicepege/light",
+    "tokens": 130,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0000/dicepege/heavy",
+    "tokens": 355,
+    "sources": 19,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0001/titeteso/light",
+    "tokens": 143,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0001/titeteso/heavy",
+    "tokens": 366,
+    "sources": 20,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0002/pusosebu/light",
+    "tokens": 163,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0002/pusosebu/heavy",
+    "tokens": 386,
+    "sources": 21,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0003/femepuve/light",
+    "tokens": 177,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0003/femepuve/heavy",
+    "tokens": 398,
+    "sources": 22,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0004/betibaca/light",
+    "tokens": 193,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0004/betibaca/heavy",
+    "tokens": 419,
+    "sources": 23,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0005/magupivo/light",
+    "tokens": 205,
+    "sources": 9,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0005/magupivo/heavy",
+    "tokens": 423,
+    "sources": 24,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0006/fenakino/light",
+    "tokens": 118,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0006/fenakino/heavy",
+    "tokens": 339,
+    "sources": 18,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0007/cokibaku/light",
+    "tokens": 134,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0007/cokibaku/heavy",
+    "tokens": 356,
+    "sources": 19,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0008/rapibuta/light",
+    "tokens": 145,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0008/rapibuta/heavy",
+    "tokens": 371,
+    "sources": 20,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0009/cenineme/light",
+    "tokens": 165,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0009/cenineme/heavy",
+    "tokens": 390,
+    "sources": 21,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0010/befolovi/light",
+    "tokens": 180,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0010/befolovi/heavy",
+    "tokens": 404,
+    "sources": 22,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0011/lubogaca/light",
+    "tokens": 194,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0011/lubogaca/heavy",
+    "tokens": 414,
+    "sources": 23,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0012/tivubaci/light/paraphrase",
+    "tokens": 140,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0012/tivubaci/heavy/paraphrase",
+    "tokens": 393,
+    "sources": 19,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0013/rubivegi/light/paraphrase",
+    "tokens": 157,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0013/rubivegi/heavy/paraphrase",
+    "tokens": 411,
+    "sources": 20,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0014/sisutuke/light/paraphrase",
+    "tokens": 174,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0014/sisutuke/heavy/paraphrase",
+    "tokens": 424,
+    "sources": 21,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0015/batifesi/light/paraphrase",
+    "tokens": 189,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0015/batifesi/heavy/paraphrase",
+    "tokens": 442,
+    "sources": 22,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0016/vacicimu/light/paraphrase",
+    "tokens": 212,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0016/vacicimu/heavy/paraphrase",
+    "tokens": 467,
+    "sources": 23,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0017/kelafotu/light/paraphrase",
+    "tokens": 233,
+    "sources": 9,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0017/kelafotu/heavy/paraphrase",
+    "tokens": 486,
+    "sources": 24,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0018/ruboremu/light/paraphrase",
+    "tokens": 123,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0018/ruboremu/heavy/paraphrase",
+    "tokens": 375,
+    "sources": 18,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0019/rurupere/light/paraphrase",
+    "tokens": 144,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0019/rurupere/heavy/paraphrase",
+    "tokens": 398,
+    "sources": 19,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0020/fositopo/light/paraphrase",
+    "tokens": 161,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0020/fositopo/heavy/paraphrase",
+    "tokens": 413,
+    "sources": 20,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0021/cenumeco/light/paraphrase",
+    "tokens": 180,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0021/cenumeco/heavy/paraphrase",
+    "tokens": 436,
+    "sources": 21,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0022/nuguropu/light/paraphrase",
+    "tokens": 193,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0022/nuguropu/heavy/paraphrase",
+    "tokens": 449,
+    "sources": 22,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0023/petenivo/light/paraphrase",
+    "tokens": 210,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0023/petenivo/heavy/paraphrase",
+    "tokens": 466,
+    "sources": 23,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0024/petopuvu/light/dependency",
+    "tokens": 144,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0024/petopuvu/heavy/dependency",
+    "tokens": 381,
+    "sources": 19,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0025/sotarafa/light/dependency",
+    "tokens": 161,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0025/sotarafa/heavy/dependency",
+    "tokens": 399,
+    "sources": 20,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0026/ripofila/light/dependency",
+    "tokens": 172,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0026/ripofila/heavy/dependency",
+    "tokens": 413,
+    "sources": 21,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0027/gotaripi/light/dependency",
+    "tokens": 190,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0027/gotaripi/heavy/dependency",
+    "tokens": 429,
+    "sources": 22,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0028/nekavuko/light/dependency",
+    "tokens": 210,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0028/nekavuko/heavy/dependency",
+    "tokens": 450,
+    "sources": 23,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0029/sebarasi/light/dependency",
+    "tokens": 228,
+    "sources": 9,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0029/sebarasi/heavy/dependency",
+    "tokens": 464,
+    "sources": 24,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0030/teraluca/light/dependency",
+    "tokens": 127,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0030/teraluca/heavy/dependency",
+    "tokens": 367,
+    "sources": 18,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0031/bifumade/light/dependency",
+    "tokens": 145,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0031/bifumade/heavy/dependency",
+    "tokens": 380,
+    "sources": 19,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0032/fikevesa/light/dependency",
+    "tokens": 166,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0032/fikevesa/heavy/dependency",
+    "tokens": 403,
+    "sources": 20,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0033/donakeku/light/dependency",
+    "tokens": 178,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0033/donakeku/heavy/dependency",
+    "tokens": 404,
+    "sources": 21,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0034/tukonovu/light/dependency",
+    "tokens": 197,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0034/tukonovu/heavy/dependency",
+    "tokens": 436,
+    "sources": 22,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0035/fidivaki/light/dependency",
+    "tokens": 212,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0035/fidivaki/heavy/dependency",
+    "tokens": 447,
+    "sources": 23,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0036/birateli/light",
+    "tokens": 131,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0036/birateli/heavy",
+    "tokens": 358,
+    "sources": 19,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0037/tefunare/light",
+    "tokens": 148,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0037/tefunare/heavy",
+    "tokens": 371,
+    "sources": 20,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0038/nicameca/light",
+    "tokens": 165,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0038/nicameca/heavy",
+    "tokens": 393,
+    "sources": 21,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0039/talibuma/light",
+    "tokens": 177,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0039/talibuma/heavy",
+    "tokens": 398,
+    "sources": 22,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0040/dovirera/light",
+    "tokens": 195,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0040/dovirera/heavy",
+    "tokens": 417,
+    "sources": 23,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0041/vatudare/light",
+    "tokens": 208,
+    "sources": 9,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0041/vatudare/heavy",
+    "tokens": 423,
+    "sources": 24,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0042/rorariga/light",
+    "tokens": 120,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0042/rorariga/heavy",
+    "tokens": 354,
+    "sources": 18,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0043/sebibidu/light",
+    "tokens": 133,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0043/sebibidu/heavy",
+    "tokens": 347,
+    "sources": 19,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0044/kameviri/light",
+    "tokens": 151,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0044/kameviri/heavy",
+    "tokens": 374,
+    "sources": 20,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0045/tecanavu/light",
+    "tokens": 168,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0045/tecanavu/heavy",
+    "tokens": 394,
+    "sources": 21,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0046/delevilu/light",
+    "tokens": 179,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0046/delevilu/heavy",
+    "tokens": 403,
+    "sources": 22,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0047/desosasu/light",
+    "tokens": 196,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0047/desosasu/heavy",
+    "tokens": 423,
+    "sources": 23,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0048/barocuku/light/paraphrase",
+    "tokens": 142,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0048/barocuku/heavy/paraphrase",
+    "tokens": 393,
+    "sources": 19,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0049/mekabesa/light/paraphrase",
+    "tokens": 161,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0049/mekabesa/heavy/paraphrase",
+    "tokens": 415,
+    "sources": 20,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0050/cidefidu/light/paraphrase",
+    "tokens": 177,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0050/cidefidu/heavy/paraphrase",
+    "tokens": 435,
+    "sources": 21,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0051/degamoli/light/paraphrase",
+    "tokens": 191,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0051/degamoli/heavy/paraphrase",
+    "tokens": 443,
+    "sources": 22,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0052/mumamido/light/paraphrase",
+    "tokens": 212,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0052/mumamido/heavy/paraphrase",
+    "tokens": 465,
+    "sources": 23,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0053/menivebe/light/paraphrase",
+    "tokens": 231,
+    "sources": 9,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0053/menivebe/heavy/paraphrase",
+    "tokens": 478,
+    "sources": 24,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0054/limolosa/light/paraphrase",
+    "tokens": 128,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0054/limolosa/heavy/paraphrase",
+    "tokens": 377,
+    "sources": 18,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0055/semepafo/light/paraphrase",
+    "tokens": 147,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0055/semepafo/heavy/paraphrase",
+    "tokens": 403,
+    "sources": 19,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0056/manebili/light/paraphrase",
+    "tokens": 159,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0056/manebili/heavy/paraphrase",
+    "tokens": 416,
+    "sources": 20,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0057/tagasado/light/paraphrase",
+    "tokens": 175,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0057/tagasado/heavy/paraphrase",
+    "tokens": 425,
+    "sources": 21,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0058/befakobi/light/paraphrase",
+    "tokens": 200,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0058/befakobi/heavy/paraphrase",
+    "tokens": 452,
+    "sources": 22,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0059/civenobu/light/paraphrase",
+    "tokens": 216,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0059/civenobu/heavy/paraphrase",
+    "tokens": 470,
+    "sources": 23,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0060/pogakici/light/dependency",
+    "tokens": 140,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0060/pogakici/heavy/dependency",
+    "tokens": 377,
+    "sources": 19,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0061/rusagasu/light/dependency",
+    "tokens": 156,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0061/rusagasu/heavy/dependency",
+    "tokens": 392,
+    "sources": 20,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0062/mafevetu/light/dependency",
+    "tokens": 182,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0062/mafevetu/heavy/dependency",
+    "tokens": 424,
+    "sources": 21,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0063/bucakibo/light/dependency",
+    "tokens": 190,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0063/bucakibo/heavy/dependency",
+    "tokens": 436,
+    "sources": 22,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0064/vunidotu/light/dependency",
+    "tokens": 214,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0064/vunidotu/heavy/dependency",
+    "tokens": 450,
+    "sources": 23,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0065/mubufoma/light/dependency",
+    "tokens": 224,
+    "sources": 9,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0065/mubufoma/heavy/dependency",
+    "tokens": 464,
+    "sources": 24,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0066/kobapamu/light/dependency",
+    "tokens": 126,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0066/kobapamu/heavy/dependency",
+    "tokens": 364,
+    "sources": 18,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0067/seronari/light/dependency",
+    "tokens": 142,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0067/seronari/heavy/dependency",
+    "tokens": 382,
+    "sources": 19,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0068/livuvoca/light/dependency",
+    "tokens": 162,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0068/livuvoca/heavy/dependency",
+    "tokens": 399,
+    "sources": 20,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0069/segusuga/light/dependency",
+    "tokens": 177,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0069/segusuga/heavy/dependency",
+    "tokens": 420,
+    "sources": 21,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0070/nituvake/light/dependency",
+    "tokens": 202,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0070/nituvake/heavy/dependency",
+    "tokens": 440,
+    "sources": 22,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0071/vepicava/light/dependency",
+    "tokens": 219,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0071/vepicava/heavy/dependency",
+    "tokens": 457,
+    "sources": 23,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0072/lipinabi/light",
+    "tokens": 128,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0072/lipinabi/heavy",
+    "tokens": 348,
+    "sources": 19,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0073/vevofeku/light",
+    "tokens": 151,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0073/vevofeku/heavy",
+    "tokens": 374,
+    "sources": 20,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0074/satorati/light",
+    "tokens": 158,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0074/satorati/heavy",
+    "tokens": 380,
+    "sources": 21,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0075/fulebadi/light",
+    "tokens": 177,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0075/fulebadi/heavy",
+    "tokens": 397,
+    "sources": 22,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0076/vitacave/light",
+    "tokens": 195,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0076/vitacave/heavy",
+    "tokens": 418,
+    "sources": 23,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0077/nicanebe/light",
+    "tokens": 205,
+    "sources": 9,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0077/nicanebe/heavy",
+    "tokens": 427,
+    "sources": 24,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0078/vecepilu/light",
+    "tokens": 114,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0078/vecepilu/heavy",
+    "tokens": 336,
+    "sources": 18,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0079/keregofe/light",
+    "tokens": 134,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0079/keregofe/heavy",
+    "tokens": 354,
+    "sources": 19,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0080/bomosefa/light",
+    "tokens": 150,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0080/bomosefa/heavy",
+    "tokens": 372,
+    "sources": 20,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0081/kekolasi/light",
+    "tokens": 168,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0081/kekolasi/heavy",
+    "tokens": 397,
+    "sources": 21,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0082/getivena/light",
+    "tokens": 174,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0082/getivena/heavy",
+    "tokens": 399,
+    "sources": 22,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0083/pafavele/light",
+    "tokens": 200,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0083/pafavele/heavy",
+    "tokens": 424,
+    "sources": 23,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0084/ketoselu/light/paraphrase",
+    "tokens": 139,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0084/ketoselu/heavy/paraphrase",
+    "tokens": 391,
+    "sources": 19,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0085/taloruse/light/paraphrase",
+    "tokens": 159,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0085/taloruse/heavy/paraphrase",
+    "tokens": 416,
+    "sources": 20,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0086/vikafoga/light/paraphrase",
+    "tokens": 181,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0086/vikafoga/heavy/paraphrase",
+    "tokens": 431,
+    "sources": 21,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0087/cekomona/light/paraphrase",
+    "tokens": 194,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0087/cekomona/heavy/paraphrase",
+    "tokens": 443,
+    "sources": 22,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0088/bididuce/light/paraphrase",
+    "tokens": 206,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0088/bididuce/heavy/paraphrase",
+    "tokens": 453,
+    "sources": 23,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0089/gutosufo/light/paraphrase",
+    "tokens": 233,
+    "sources": 9,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0089/gutosufo/heavy/paraphrase",
+    "tokens": 494,
+    "sources": 24,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0090/kavikosu/light/paraphrase",
+    "tokens": 127,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0090/kavikosu/heavy/paraphrase",
+    "tokens": 376,
+    "sources": 18,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0091/begifita/light/paraphrase",
+    "tokens": 143,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0091/begifita/heavy/paraphrase",
+    "tokens": 388,
+    "sources": 19,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0092/repureke/light/paraphrase",
+    "tokens": 162,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0092/repureke/heavy/paraphrase",
+    "tokens": 430,
+    "sources": 20,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0093/fodagiri/light/paraphrase",
+    "tokens": 175,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0093/fodagiri/heavy/paraphrase",
+    "tokens": 435,
+    "sources": 21,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0094/patafovi/light/paraphrase",
+    "tokens": 195,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0094/patafovi/heavy/paraphrase",
+    "tokens": 451,
+    "sources": 22,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0095/kovaromu/light/paraphrase",
+    "tokens": 214,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0095/kovaromu/heavy/paraphrase",
+    "tokens": 468,
+    "sources": 23,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0096/bonovuru/light/dependency",
+    "tokens": 141,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0096/bonovuru/heavy/dependency",
+    "tokens": 384,
+    "sources": 19,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0097/sesokuso/light/dependency",
+    "tokens": 156,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0097/sesokuso/heavy/dependency",
+    "tokens": 395,
+    "sources": 20,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0098/nigasane/light/dependency",
+    "tokens": 174,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0098/nigasane/heavy/dependency",
+    "tokens": 410,
+    "sources": 21,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0099/lovabipe/light/dependency",
+    "tokens": 190,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0099/lovabipe/heavy/dependency",
+    "tokens": 426,
+    "sources": 22,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0100/lekofimi/light/dependency",
+    "tokens": 210,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0100/lekofimi/heavy/dependency",
+    "tokens": 451,
+    "sources": 23,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0101/vumusola/light/dependency",
+    "tokens": 226,
+    "sources": 9,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0101/vumusola/heavy/dependency",
+    "tokens": 471,
+    "sources": 24,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0102/tafileco/light/dependency",
+    "tokens": 125,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0102/tafileco/heavy/dependency",
+    "tokens": 362,
+    "sources": 18,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0103/tigobago/light/dependency",
+    "tokens": 147,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0103/tigobago/heavy/dependency",
+    "tokens": 388,
+    "sources": 19,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0104/buvalavu/light/dependency",
+    "tokens": 161,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0104/buvalavu/heavy/dependency",
+    "tokens": 401,
+    "sources": 20,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0105/casonafu/light/dependency",
+    "tokens": 177,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0105/casonafu/heavy/dependency",
+    "tokens": 414,
+    "sources": 21,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0106/pacicami/light/dependency",
+    "tokens": 195,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0106/pacicami/heavy/dependency",
+    "tokens": 432,
+    "sources": 22,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0107/togimoca/light/dependency",
+    "tokens": 207,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0107/togimoca/heavy/dependency",
+    "tokens": 437,
+    "sources": 23,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0108/dimukafa/light",
+    "tokens": 130,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0108/dimukafa/heavy",
+    "tokens": 350,
+    "sources": 19,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0109/derakice/light",
+    "tokens": 147,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0109/derakice/heavy",
+    "tokens": 369,
+    "sources": 20,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0110/bamimupo/light",
+    "tokens": 161,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0110/bamimupo/heavy",
+    "tokens": 383,
+    "sources": 21,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0111/mavenike/light",
+    "tokens": 178,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0111/mavenike/heavy",
+    "tokens": 403,
+    "sources": 22,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0112/tatubolu/light",
+    "tokens": 188,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0112/tatubolu/heavy",
+    "tokens": 411,
+    "sources": 23,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0113/gerasidu/light",
+    "tokens": 219,
+    "sources": 9,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0113/gerasidu/heavy",
+    "tokens": 440,
+    "sources": 24,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0114/kivupuma/light",
+    "tokens": 116,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0114/kivupuma/heavy",
+    "tokens": 339,
+    "sources": 18,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0115/ramidisi/light",
+    "tokens": 131,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0115/ramidisi/heavy",
+    "tokens": 353,
+    "sources": 19,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0116/lelikadi/light",
+    "tokens": 147,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0116/lelikadi/heavy",
+    "tokens": 367,
+    "sources": 20,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0117/rikocosu/light",
+    "tokens": 163,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0117/rikocosu/heavy",
+    "tokens": 393,
+    "sources": 21,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0118/dicipase/light",
+    "tokens": 175,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0118/dicipase/heavy",
+    "tokens": 403,
+    "sources": 22,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0119/raripegu/light",
+    "tokens": 201,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0119/raripegu/heavy",
+    "tokens": 428,
+    "sources": 23,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0120/rinukunu/light/paraphrase",
+    "tokens": 142,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0120/rinukunu/heavy/paraphrase",
+    "tokens": 397,
+    "sources": 19,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0121/pagugeno/light/paraphrase",
+    "tokens": 160,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0121/pagugeno/heavy/paraphrase",
+    "tokens": 413,
+    "sources": 20,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0122/ridaniri/light/paraphrase",
+    "tokens": 173,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0122/ridaniri/heavy/paraphrase",
+    "tokens": 428,
+    "sources": 21,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0123/lakosulo/light/paraphrase",
+    "tokens": 191,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0123/lakosulo/heavy/paraphrase",
+    "tokens": 445,
+    "sources": 22,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0124/bunicemi/light/paraphrase",
+    "tokens": 211,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0124/bunicemi/heavy/paraphrase",
+    "tokens": 465,
+    "sources": 23,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0125/fadebune/light/paraphrase",
+    "tokens": 233,
+    "sources": 9,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0125/fadebune/heavy/paraphrase",
+    "tokens": 485,
+    "sources": 24,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0126/nacidoco/light/paraphrase",
+    "tokens": 123,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0126/nacidoco/heavy/paraphrase",
+    "tokens": 382,
+    "sources": 18,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0127/kabadori/light/paraphrase",
+    "tokens": 143,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0127/kabadori/heavy/paraphrase",
+    "tokens": 404,
+    "sources": 19,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0128/vumacopu/light/paraphrase",
+    "tokens": 163,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0128/vumacopu/heavy/paraphrase",
+    "tokens": 416,
+    "sources": 20,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0129/bagapuka/light/paraphrase",
+    "tokens": 176,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0129/bagapuka/heavy/paraphrase",
+    "tokens": 437,
+    "sources": 21,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0130/funekenu/light/paraphrase",
+    "tokens": 197,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0130/funekenu/heavy/paraphrase",
+    "tokens": 444,
+    "sources": 22,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0131/tukekedu/light/paraphrase",
+    "tokens": 217,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0131/tukekedu/heavy/paraphrase",
+    "tokens": 470,
+    "sources": 23,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0132/serigofo/light/dependency",
+    "tokens": 142,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0132/serigofo/heavy/dependency",
+    "tokens": 381,
+    "sources": 19,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0133/ninagenu/light/dependency",
+    "tokens": 158,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0133/ninagenu/heavy/dependency",
+    "tokens": 399,
+    "sources": 20,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0134/lagidusu/light/dependency",
+    "tokens": 174,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0134/lagidusu/heavy/dependency",
+    "tokens": 413,
+    "sources": 21,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0135/mevabifi/light/dependency",
+    "tokens": 197,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0135/mevabifi/heavy/dependency",
+    "tokens": 438,
+    "sources": 22,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0136/lateralo/light/dependency",
+    "tokens": 207,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0136/lateralo/heavy/dependency",
+    "tokens": 447,
+    "sources": 23,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0137/lonutaci/light/dependency",
+    "tokens": 226,
+    "sources": 9,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0137/lonutaci/heavy/dependency",
+    "tokens": 472,
+    "sources": 24,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0138/cekanipo/light/dependency",
+    "tokens": 128,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0138/cekanipo/heavy/dependency",
+    "tokens": 373,
+    "sources": 18,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0139/nilekali/light/dependency",
+    "tokens": 146,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0139/nilekali/heavy/dependency",
+    "tokens": 388,
+    "sources": 19,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0140/ralocase/light/dependency",
+    "tokens": 160,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0140/ralocase/heavy/dependency",
+    "tokens": 400,
+    "sources": 20,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0141/nisasuba/light/dependency",
+    "tokens": 181,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0141/nisasuba/heavy/dependency",
+    "tokens": 418,
+    "sources": 21,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0142/sadakafa/light/dependency",
+    "tokens": 196,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0142/sadakafa/heavy/dependency",
+    "tokens": 434,
+    "sources": 22,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0143/bacegibo/light/dependency",
+    "tokens": 211,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/test/0143/bacegibo/heavy/dependency",
+    "tokens": 450,
+    "sources": 23,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ac39bd8554299657fa290fe",
+    "tokens": 1420,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a74bdce55429929fddd84e1",
+    "tokens": 1347,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ade982f554299728e26c753",
+    "tokens": 951,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a89e0ec5542992e4fca8427",
+    "tokens": 1627,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ab2d15e554299545a2cfaa6",
+    "tokens": 1493,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ac2ae4155429921a00ab030",
+    "tokens": 1097,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ae4ca6355429913cc204507",
+    "tokens": 1211,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a8b027e55429950cd6afc45",
+    "tokens": 1619,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a72634d5542997f82783994",
+    "tokens": 1738,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ae057fd55429945ae959328",
+    "tokens": 1013,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ac11139554299294b219083",
+    "tokens": 1639,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5abd01205542992ac4f3819b",
+    "tokens": 1035,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ab9fe1255429939ce03dc40",
+    "tokens": 1350,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a90503755429916514e7470",
+    "tokens": 1965,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ae2c2c05542996483e64a4a",
+    "tokens": 1243,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a89d26b5542992e4fca83d1",
+    "tokens": 1471,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ae47cab5542996836b02cb9",
+    "tokens": 1162,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ac3b40a554299741d48a2e5",
+    "tokens": 1375,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ac1d4ad5542994d76dccef7",
+    "tokens": 2233,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5abea9a35542990832d3a07e",
+    "tokens": 1681,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a807b44554299485f59860a",
+    "tokens": 1497,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a8ec3205542995a26add506",
+    "tokens": 1312,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ae7316e554299572ea5477e",
+    "tokens": 1032,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a771e3255429966f1a36c78",
+    "tokens": 1065,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a73d4385542992d56e7e3b1",
+    "tokens": 1152,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a8f9c3f554299458435d69a",
+    "tokens": 865,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5abafb6d5542992ccd8e7e92",
+    "tokens": 1382,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5adfe0de55429925eb1afae9",
+    "tokens": 1558,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a79bed05542994bb9457053",
+    "tokens": 1081,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a7c3178554299683c1c62e1",
+    "tokens": 1709,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a7625e8554299109176e66a",
+    "tokens": 1139,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ab3c18b55429969a97a81b0",
+    "tokens": 1216,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a8c2d23554299240d9c20b7",
+    "tokens": 1181,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5abb30755542996cc5e49fd8",
+    "tokens": 1356,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ab278745542997061209617",
+    "tokens": 1117,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ac42a64554299076e296d7b",
+    "tokens": 1510,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ae5f1a8554299546bf82fd9",
+    "tokens": 1262,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ae61351554299546bf83066",
+    "tokens": 1087,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5abc0ac455429959677d6a01",
+    "tokens": 1228,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ab3c53955429969a97a81b9",
+    "tokens": 1223,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a82ebb855429966c78a6a9c",
+    "tokens": 1289,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ac3bff15542995ef918c213",
+    "tokens": 1725,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ab66a3555429954757d3290",
+    "tokens": 1121,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a89d3e15542992e4fca83d4",
+    "tokens": 1390,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ac5391e5542994611c8b439",
+    "tokens": 1473,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ab9188c5542991b5579f0f5",
+    "tokens": 1159,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a7e035d5542997cc2c474f6",
+    "tokens": 985,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5adf8d275542993344016cfb",
+    "tokens": 1281,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ae0b2f25542993d6555ec1c",
+    "tokens": 1474,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5aba454855429901930fa794",
+    "tokens": 1344,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a88696b554299206df2b25b",
+    "tokens": 1462,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a78c235554299078472775d",
+    "tokens": 1957,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ae733dc5542991e8301cbd1",
+    "tokens": 1344,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ac375495542995ef918c1a3",
+    "tokens": 1489,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a8b63fa55429950cd6afcd7",
+    "tokens": 1764,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a88bd1d554299206df2b357",
+    "tokens": 1207,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a8a59c955429930ff3c0da6",
+    "tokens": 1480,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ae608715542992663a4f244",
+    "tokens": 1176,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a7b76225542997c3ec9719c",
+    "tokens": 1065,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ae6f2a7554299572ea5464a",
+    "tokens": 1734,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5adf490a5542993a75d26488",
+    "tokens": 1690,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ae604ec5542996de7b71af9",
+    "tokens": 1502,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a8eaa74554299068b959e88",
+    "tokens": 1330,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5abb2f245542996cc5e49fd2",
+    "tokens": 1251,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5adf9dc3554299025d62a2e6",
+    "tokens": 1655,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a88451655429938390d3f12",
+    "tokens": 1682,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ac2ba4855429921a00ab048",
+    "tokens": 993,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a7345ed5542992359bc32ce",
+    "tokens": 1363,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a73c958554299623ed4ac5c",
+    "tokens": 770,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a7ec90055429934daa2fc66",
+    "tokens": 1069,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ac258cc554299636651998e",
+    "tokens": 1183,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a7e59c855429934daa2fc0f",
+    "tokens": 934,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a89e8035542992e4fca846d",
+    "tokens": 949,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5abbc58455429931dba14502",
+    "tokens": 1205,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a7f010955429934daa2fc8b",
+    "tokens": 1062,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a78b386554299148911f949",
+    "tokens": 2325,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a721dfd55429971e9dc928b",
+    "tokens": 1134,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a8747915542994775f607bb",
+    "tokens": 1133,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a8d7edc55429941ae14dfdc",
+    "tokens": 1088,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a7a96b055429941d65f26d7",
+    "tokens": 1440,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ade653f55429975fa854ebb",
+    "tokens": 1191,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ab64285554299637185c67c",
+    "tokens": 1486,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ae4cda05542990ba0bbb148",
+    "tokens": 1205,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ae6196d5542995703ce8afd",
+    "tokens": 1958,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a7f354b5542992e7d278c8c",
+    "tokens": 1222,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a8463545542990548d0b2a3",
+    "tokens": 1207,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a7c290c5542990527d55468",
+    "tokens": 1530,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ae00a27554299025d62a3bb",
+    "tokens": 1299,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a8a40015542996c9b8d5e72",
+    "tokens": 1452,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ab8903555429916710eb08e",
+    "tokens": 923,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ade618e554299728e26c700",
+    "tokens": 830,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a81a2705542990a1d231e30",
+    "tokens": 1570,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5adfa6c7554299025d62a326",
+    "tokens": 1055,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a710bb15542994082a3e50d",
+    "tokens": 1163,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a716a9b5542994082a3e821",
+    "tokens": 1335,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a86681c5542991e77181644",
+    "tokens": 1443,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5aba74ad55429955dce3ee35",
+    "tokens": 1451,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a8a58f355429930ff3c0da3",
+    "tokens": 1414,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a811152554299260e20a22e",
+    "tokens": 1637,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a878d795542993e715abf9d",
+    "tokens": 2097,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a85f8665542994775f606ce",
+    "tokens": 1760,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ade04a65542997545bbbe20",
+    "tokens": 1529,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a8066d15542992097ad2fe8",
+    "tokens": 1706,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a74ab6055429916b01641b9",
+    "tokens": 1593,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ae0156455429942ec259c15",
+    "tokens": 1324,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a7d3cbb5542995f4f402243",
+    "tokens": 1398,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ab56b3a554299637185c585",
+    "tokens": 1914,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a87556d5542994846c1cd65",
+    "tokens": 1745,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a73984355429908901be307",
+    "tokens": 1514,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ae80d25554299540e5a5709",
+    "tokens": 1105,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ab6a261554299710c8d1f07",
+    "tokens": 1394,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5abfcdb55542993fe9a41e7b",
+    "tokens": 841,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a75e16055429976ec32bc6a",
+    "tokens": 1181,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ab30ebf554299753aec592c",
+    "tokens": 891,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a7a59d15542996c55b2dd67",
+    "tokens": 1799,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5abbe40555429931dba145cd",
+    "tokens": 1919,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ae7525f5542991e8301cc60",
+    "tokens": 1375,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ae5b25d5542990ba0bbb2bb",
+    "tokens": 1424,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5a8c7623554299653c1aa07a",
+    "tokens": 1679,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/hotpot/5ae13e205542997b2ef7d157",
+    "tokens": 1139,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/56dfb7187aa994140058e061",
+    "tokens": 311,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/56e17753cd28a01900c6798f",
+    "tokens": 220,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5726aec3f1498d1400e8e71e",
+    "tokens": 322,
+    "sources": 9,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a7fd4e18f0597001ac000dd",
+    "tokens": 152,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5ad24351d7d075001a4289e3",
+    "tokens": 242,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/56de7567cffd8e1900b4b942",
+    "tokens": 162,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a5fa27aeae51e001ab14b69",
+    "tokens": 189,
+    "sources": 1,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5728e91a4b864d1900165077",
+    "tokens": 220,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/56d9e3e8dc89441400fdb8ac",
+    "tokens": 190,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5727a1a43acd2414000de85b",
+    "tokens": 224,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5706bb542eaba6190074acae",
+    "tokens": 294,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a62963af8d794001af1c124",
+    "tokens": 265,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5ace73cf32bba1001ae4a71e",
+    "tokens": 200,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/570d1264b3d812140066d3d5",
+    "tokens": 293,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5728ca372ca10214002da7e2",
+    "tokens": 207,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a71056c0efcfe001a8afd00",
+    "tokens": 249,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/570db07b16d0071400510cef",
+    "tokens": 270,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a7222ad0efcfe001a8afe3d",
+    "tokens": 600,
+    "sources": 16,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/56d9b69cdc89441400fdb727",
+    "tokens": 209,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5ace995332bba1001ae4ac34",
+    "tokens": 252,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5727fc802ca10214002d9ac0",
+    "tokens": 233,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a7d1cfd70df9f001a874fac",
+    "tokens": 292,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/57278046708984140094df43",
+    "tokens": 250,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5726e7135951b619008f81e3",
+    "tokens": 253,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/56de83744396321400ee29c1",
+    "tokens": 221,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5ad23e52d7d075001a4288be",
+    "tokens": 242,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a0cdd8ff5590b0018dab5e8",
+    "tokens": 201,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a4860a984b8a4001a7e7858",
+    "tokens": 258,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/573610e1012e2f140011a181",
+    "tokens": 194,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5727aad82ca10214002d933e",
+    "tokens": 253,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/57265bcbdd62a815002e8294",
+    "tokens": 271,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/57271f22dd62a815002e993b",
+    "tokens": 292,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5acecd5132bba1001ae4b493",
+    "tokens": 235,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5ad21856d7d075001a4283ff",
+    "tokens": 219,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/57324f0de99e3014001e669a",
+    "tokens": 272,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5ad14301645df0001a2d1441",
+    "tokens": 262,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/57303dae947a6a140053d303",
+    "tokens": 418,
+    "sources": 12,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/56f96f929b226e1400dd144b",
+    "tokens": 215,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/572785035951b619008f8c28",
+    "tokens": 298,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/570b5b516b8089140040f8bc",
+    "tokens": 281,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5acd269407355d001abf36e3",
+    "tokens": 117,
+    "sources": 2,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5730b4618ab72b1400f9c6be",
+    "tokens": 243,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/57323efae17f3d140042278f",
+    "tokens": 229,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/570a5ced4103511400d5966f",
+    "tokens": 185,
+    "sources": 2,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5727c4424b864d1900163cce",
+    "tokens": 209,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/57321029e99e3014001e64bd",
+    "tokens": 250,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5728fed41d04691400778f3f",
+    "tokens": 255,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/570b6d046b8089140040f94e",
+    "tokens": 352,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5726c394f1498d1400e8ea90",
+    "tokens": 239,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/56f8c15c9e9bad19000a0426",
+    "tokens": 406,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5acfdc6777cf76001a686320",
+    "tokens": 214,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/56f86ea1a6d7ea1400e1761a",
+    "tokens": 119,
+    "sources": 2,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/570d3c44b3d812140066d5bc",
+    "tokens": 207,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/570dc90a0b85d914000d7b5e",
+    "tokens": 304,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a69154f8476ee001a58aa90",
+    "tokens": 235,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/57267b7edd62a815002e86b2",
+    "tokens": 330,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/57313a17497a881900248c91",
+    "tokens": 528,
+    "sources": 12,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/572eb90bcb0c0d14000f14c5",
+    "tokens": 214,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/573115ade6313a140071cc10",
+    "tokens": 214,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/57269184f1498d1400e8e40a",
+    "tokens": 303,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a6501b4c2b11c001a425b97",
+    "tokens": 585,
+    "sources": 16,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a74f91a97ca42001a521d94",
+    "tokens": 228,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/56e75d7100c9c71400d77012",
+    "tokens": 178,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/572a3b61af94a219006aa8e3",
+    "tokens": 261,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/57062dc675f01819005e7a2a",
+    "tokens": 283,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/572e8209dfa6aa1500f8d068",
+    "tokens": 255,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5729681d6aef051400154e2c",
+    "tokens": 438,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a36159d788daf001a5f870b",
+    "tokens": 369,
+    "sources": 12,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/57292d756aef051400154b42",
+    "tokens": 251,
+    "sources": 2,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5731b71e0fdd8d15006c6484",
+    "tokens": 193,
+    "sources": 2,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a6b0e56a9e0c9001a4e9ea0",
+    "tokens": 171,
+    "sources": 2,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/56dfa4514a1a83140091ec06",
+    "tokens": 171,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/570a82334103511400d597b6",
+    "tokens": 213,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5734415c879d6814001ca410",
+    "tokens": 325,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a8006548f0597001ac00146",
+    "tokens": 394,
+    "sources": 9,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5709eb696d058f1900182c25",
+    "tokens": 258,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/56e149c7cd28a01900c67745",
+    "tokens": 219,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/571b212d9499d21900609c2a",
+    "tokens": 232,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/57324f89e99e3014001e66a3",
+    "tokens": 213,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/570d7b4db3d812140066d9cb",
+    "tokens": 268,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5727b7c74b864d1900163b4a",
+    "tokens": 216,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/570da87816d0071400510c5d",
+    "tokens": 217,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/570e815b0dc6ce19002050de",
+    "tokens": 256,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a1dd7ee4ea40d0018b06fc3",
+    "tokens": 228,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5ad4d7b65b96ef001a10a316",
+    "tokens": 230,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a2d5d6df28ef0001a5264e7",
+    "tokens": 285,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5ace809232bba1001ae4a88e",
+    "tokens": 707,
+    "sources": 15,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a53d803bdaabd001a386778",
+    "tokens": 200,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5acff24a77cf76001a6865dc",
+    "tokens": 284,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a53e21dbdaabd001a3867b2",
+    "tokens": 200,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a6bb3444eec6b001a80a4eb",
+    "tokens": 299,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a73c9d742eae6001a3899e2",
+    "tokens": 312,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a66faa1f038b7001ab0c146",
+    "tokens": 254,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a69ba4d5ce1a5001a9696c8",
+    "tokens": 208,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5ad0c764645df0001a2d02ef",
+    "tokens": 261,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5ad09ee7645df0001a2cff76",
+    "tokens": 332,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a82053031013a001a3350df",
+    "tokens": 277,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5ad394ee604f3c001a3fe729",
+    "tokens": 192,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a57da08770dc0001aeefe10",
+    "tokens": 200,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5ad3a0f0604f3c001a3fe9ca",
+    "tokens": 278,
+    "sources": 7,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a8a4c4d3b2508001a72aa0b",
+    "tokens": 213,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a82325a31013a001a3352c4",
+    "tokens": 215,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5acf57ff77cf76001a684bc8",
+    "tokens": 242,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a3aa4d33ff257001ab841da",
+    "tokens": 210,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5ad2aaf2d7d075001a429e4d",
+    "tokens": 409,
+    "sources": 10,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a10eb6d06e79900185c3475",
+    "tokens": 247,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5acfed0477cf76001a68651b",
+    "tokens": 349,
+    "sources": 8,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5ace4be532bba1001ae4a200",
+    "tokens": 205,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a6231bef8d794001af1bec7",
+    "tokens": 273,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5ad152f1645df0001a2d1772",
+    "tokens": 275,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5acfafd677cf76001a68586a",
+    "tokens": 139,
+    "sources": 2,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5ad41708604f3c001a400365",
+    "tokens": 187,
+    "sources": 3,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a70dbb38abb0b001a6761c6",
+    "tokens": 269,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5acd469e07355d001abf3bbb",
+    "tokens": 132,
+    "sources": 2,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a2f423ca83784001a7d2693",
+    "tokens": 277,
+    "sources": 5,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5ad0278877cf76001a686bf2",
+    "tokens": 224,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5ad24cbcd7d075001a428c04",
+    "tokens": 229,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5acd4a2507355d001abf3c1e",
+    "tokens": 378,
+    "sources": 6,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a2d54d8f28ef0001a526498",
+    "tokens": 197,
+    "sources": 4,
+    "eligible": true
+  },
+  {
+    "id": "r20/squad2/5a7a6eb521c2de001afe9c3c",
+    "tokens": 193,
+    "sources": 4,
+    "eligible": true
+  }
+]

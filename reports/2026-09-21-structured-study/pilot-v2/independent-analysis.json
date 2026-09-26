@@ -1,0 +1,750 @@
+{
+  "planned": 168,
+  "recorded": 168,
+  "missing": 0,
+  "arms": {
+    "native": {
+      "planned": 24,
+      "recorded": 24,
+      "complete": 24,
+      "correct": 11,
+      "valid_format": 24,
+      "seconds": 2.5332840750005516,
+      "accuracy": 0.4583333333333333
+    },
+    "staged": {
+      "planned": 24,
+      "recorded": 24,
+      "complete": 24,
+      "correct": 8,
+      "valid_format": 24,
+      "seconds": 18.745349066000017,
+      "accuracy": 0.3333333333333333
+    },
+    "likelihood": {
+      "planned": 24,
+      "recorded": 24,
+      "complete": 24,
+      "correct": 7,
+      "valid_format": 24,
+      "seconds": 33.600740409000196,
+      "accuracy": 0.2916666666666667
+    },
+    "jev": {
+      "planned": 24,
+      "recorded": 24,
+      "complete": 24,
+      "correct": 8,
+      "valid_format": 24,
+      "seconds": 49.83821862299965,
+      "accuracy": 0.3333333333333333
+    },
+    "shuffled": {
+      "planned": 24,
+      "recorded": 24,
+      "complete": 24,
+      "correct": 8,
+      "valid_format": 24,
+      "seconds": 48.27737148300071,
+      "accuracy": 0.3333333333333333
+    },
+    "zero": {
+      "planned": 24,
+      "recorded": 24,
+      "complete": 24,
+      "correct": 8,
+      "valid_format": 24,
+      "seconds": 46.99807910199968,
+      "accuracy": 0.3333333333333333
+    },
+    "soft_step": {
+      "planned": 24,
+      "recorded": 24,
+      "complete": 24,
+      "correct": 8,
+      "valid_format": 24,
+      "seconds": 43.53681051399997,
+      "accuracy": 0.3333333333333333
+    }
+  },
+  "zero_identity": {
+    "matched": 24,
+    "pairs": 24
+  },
+  "claim_grades": {
+    "graded": 960,
+    "total": 960
+  },
+  "checkpoints": {
+    "observed": 240,
+    "possible": 240
+  },
+  "audits": 168,
+  "gates": {
+    "all_complete": true,
+    "per_arm_format": true,
+    "overall_format": true,
+    "provenance": true,
+    "zero_identity": true,
+    "grading": true,
+    "checkpoints": true
+  },
+  "admitted": true,
+  "jev": {
+    "calls": 192,
+    "input_tokens": 270264,
+    "output_tokens": 29952,
+    "receipt_cost_usd": 0.011351088000000002
+  },
+  "biased_checkpoints": 142,
+  "max_kl": 0.01999999999999999,
+  "contrasts": {},
+  "independent_token_audits": 168,
+  "diagnostics": {
+    "arms": {
+      "staged": {
+        "jobs": 24.0,
+        "seconds": 18.745349066000017,
+        "reasoning_forwards": 565.0,
+        "reasoning_prefill": 154588.0,
+        "forced_root_tokens": 0.0,
+        "final_forwards": 96.0,
+        "final_prefill": 27920.0,
+        "final_generated_tokens": 96.0,
+        "final_decode_token_slots": 96.0,
+        "final_prefill_tokens": 27920.0,
+        "accepted_claims": 48.0,
+        "supported_accepted_claims": 30.0,
+        "mean_seconds": 0.781056211083334,
+        "graded_scores": 0.0,
+        "brier": null,
+        "true_claims": 0.0,
+        "mean_true_support": null,
+        "false_claims": 0.0,
+        "mean_false_support": null
+      },
+      "jev": {
+        "jobs": 24.0,
+        "seconds": 49.83821862299965,
+        "reasoning_forwards": 1150.0,
+        "reasoning_prefill": 316476.0,
+        "forced_root_tokens": 192.0,
+        "final_forwards": 96.0,
+        "final_prefill": 27920.0,
+        "final_generated_tokens": 96.0,
+        "final_decode_token_slots": 96.0,
+        "final_prefill_tokens": 27920.0,
+        "accepted_claims": 48.0,
+        "supported_accepted_claims": 31.0,
+        "checkpoints": 48.0,
+        "nonzero_bias": 48.0,
+        "max_kl": 0.01999999999999999,
+        "api_calls": 48.0,
+        "api_seconds": 13.663256578999835,
+        "api_input_tokens": 67566.0,
+        "graded_scores": 192.0,
+        "brier_sum": 2.899499999999999,
+        "false_claims": 113.0,
+        "false_support_sum": 5.499999999999996,
+        "true_claims": 79.0,
+        "true_support_sum": 75.11,
+        "mixed_batches": 36.0,
+        "mixed_jev_top_correct": 36.0,
+        "mixed_likelihood_top_correct": 27.0,
+        "mean_seconds": 2.0765924426249853,
+        "brier": 0.015101562499999993,
+        "mean_true_support": 0.9507594936708861,
+        "mean_false_support": 0.048672566371681374
+      },
+      "zero": {
+        "jobs": 24.0,
+        "seconds": 46.99807910199968,
+        "reasoning_forwards": 1150.0,
+        "reasoning_prefill": 316476.0,
+        "forced_root_tokens": 192.0,
+        "final_forwards": 96.0,
+        "final_prefill": 27920.0,
+        "final_generated_tokens": 96.0,
+        "final_decode_token_slots": 96.0,
+        "final_prefill_tokens": 27920.0,
+        "accepted_claims": 48.0,
+        "supported_accepted_claims": 30.0,
+        "checkpoints": 48.0,
+        "nonzero_bias": 0.0,
+        "max_kl": 0.0,
+        "api_calls": 48.0,
+        "api_seconds": 13.044182252000155,
+        "api_input_tokens": 67566.0,
+        "graded_scores": 192.0,
+        "brier_sum": 3.4309999999999996,
+        "false_claims": 113.0,
+        "false_support_sum": 5.499999999999995,
+        "true_claims": 79.0,
+        "true_support_sum": 74.66,
+        "mixed_batches": 36.0,
+        "mixed_jev_top_correct": 36.0,
+        "mixed_likelihood_top_correct": 27.0,
+        "mean_seconds": 1.9582532959166532,
+        "brier": 0.017869791666666666,
+        "mean_true_support": 0.9450632911392405,
+        "mean_false_support": 0.04867256637168137
+      },
+      "native": {
+        "jobs": 24.0,
+        "seconds": 2.5332840750005516,
+        "reasoning_forwards": 0.0,
+        "reasoning_prefill": 0.0,
+        "forced_root_tokens": 0.0,
+        "final_forwards": 96.0,
+        "final_prefill": 25084.0,
+        "final_generated_tokens": 96.0,
+        "final_decode_token_slots": 96.0,
+        "final_prefill_tokens": 25084.0,
+        "mean_seconds": 0.10555350312502298,
+        "graded_scores": 0.0,
+        "brier": null,
+        "true_claims": 0.0,
+        "mean_true_support": null,
+        "false_claims": 0.0,
+        "mean_false_support": null
+      },
+      "soft_step": {
+        "jobs": 24.0,
+        "seconds": 43.53681051399997,
+        "reasoning_forwards": 1009.0,
+        "reasoning_prefill": 277497.0,
+        "forced_root_tokens": 192.0,
+        "final_forwards": 96.0,
+        "final_prefill": 27920.0,
+        "final_generated_tokens": 96.0,
+        "final_decode_token_slots": 96.0,
+        "final_prefill_tokens": 27920.0,
+        "accepted_claims": 48.0,
+        "supported_accepted_claims": 31.0,
+        "checkpoints": 48.0,
+        "nonzero_bias": 48.0,
+        "max_kl": 0.01999999999999999,
+        "api_calls": 48.0,
+        "api_seconds": 13.432381231999216,
+        "api_input_tokens": 67566.0,
+        "graded_scores": 192.0,
+        "brier_sum": 3.0865000000000005,
+        "false_claims": 113.0,
+        "false_support_sum": 5.559999999999995,
+        "true_claims": 79.0,
+        "true_support_sum": 75.04999999999997,
+        "mixed_batches": 36.0,
+        "mixed_jev_top_correct": 36.0,
+        "mixed_likelihood_top_correct": 27.0,
+        "mean_seconds": 1.8140337714166652,
+        "brier": 0.016075520833333336,
+        "mean_true_support": 0.9499999999999996,
+        "mean_false_support": 0.049203539823008804
+      },
+      "shuffled": {
+        "jobs": 24.0,
+        "seconds": 48.27737148300071,
+        "reasoning_forwards": 1150.0,
+        "reasoning_prefill": 316476.0,
+        "forced_root_tokens": 192.0,
+        "final_forwards": 96.0,
+        "final_prefill": 27920.0,
+        "final_generated_tokens": 96.0,
+        "final_decode_token_slots": 96.0,
+        "final_prefill_tokens": 27920.0,
+        "accepted_claims": 48.0,
+        "supported_accepted_claims": 30.0,
+        "checkpoints": 48.0,
+        "nonzero_bias": 46.0,
+        "max_kl": 0.01999999999999999,
+        "api_calls": 48.0,
+        "api_seconds": 12.895622911000032,
+        "api_input_tokens": 67566.0,
+        "graded_scores": 192.0,
+        "brier_sum": 2.621399999999999,
+        "false_claims": 113.0,
+        "false_support_sum": 5.409999999999995,
+        "true_claims": 79.0,
+        "true_support_sum": 75.30999999999999,
+        "mixed_batches": 36.0,
+        "mixed_jev_top_correct": 36.0,
+        "mixed_likelihood_top_correct": 27.0,
+        "mean_seconds": 2.0115571451250296,
+        "brier": 0.013653124999999995,
+        "mean_true_support": 0.9532911392405061,
+        "mean_false_support": 0.04787610619469022
+      },
+      "likelihood": {
+        "jobs": 24.0,
+        "seconds": 33.600740409000196,
+        "reasoning_forwards": 1150.0,
+        "reasoning_prefill": 316476.0,
+        "forced_root_tokens": 192.0,
+        "final_forwards": 96.0,
+        "final_prefill": 27920.0,
+        "final_generated_tokens": 96.0,
+        "final_decode_token_slots": 96.0,
+        "final_prefill_tokens": 27920.0,
+        "accepted_claims": 48.0,
+        "supported_accepted_claims": 30.0,
+        "checkpoints": 48.0,
+        "nonzero_bias": 0.0,
+        "max_kl": 0.0,
+        "mean_seconds": 1.400030850375008,
+        "graded_scores": 0.0,
+        "brier": null,
+        "true_claims": 0.0,
+        "mean_true_support": null,
+        "false_claims": 0.0,
+        "mean_false_support": null
+      }
+    },
+    "first_branch_pool_identity": {
+      "pairs": 96,
+      "identical": 96
+    },
+    "confusion": {
+      "staged": {
+        "TRUE": {
+          "TRUE": 4,
+          "FALSE": 1,
+          "UNKNOWN": 3
+        },
+        "FALSE": {
+          "FALSE": 1,
+          "TRUE": 4,
+          "UNKNOWN": 3
+        },
+        "UNKNOWN": {
+          "UNKNOWN": 3,
+          "FALSE": 2,
+          "TRUE": 3
+        }
+      },
+      "jev": {
+        "TRUE": {
+          "TRUE": 4,
+          "FALSE": 1,
+          "UNKNOWN": 3
+        },
+        "FALSE": {
+          "FALSE": 1,
+          "TRUE": 4,
+          "UNKNOWN": 3
+        },
+        "UNKNOWN": {
+          "UNKNOWN": 3,
+          "FALSE": 2,
+          "TRUE": 3
+        }
+      },
+      "zero": {
+        "TRUE": {
+          "TRUE": 4,
+          "FALSE": 1,
+          "UNKNOWN": 3
+        },
+        "FALSE": {
+          "FALSE": 1,
+          "TRUE": 4,
+          "UNKNOWN": 3
+        },
+        "UNKNOWN": {
+          "UNKNOWN": 3,
+          "FALSE": 2,
+          "TRUE": 3
+        }
+      },
+      "native": {
+        "TRUE": {
+          "TRUE": 8
+        },
+        "FALSE": {
+          "FALSE": 2,
+          "UNKNOWN": 6
+        },
+        "UNKNOWN": {
+          "TRUE": 7,
+          "UNKNOWN": 1
+        }
+      },
+      "soft_step": {
+        "TRUE": {
+          "TRUE": 4,
+          "FALSE": 1,
+          "UNKNOWN": 3
+        },
+        "FALSE": {
+          "FALSE": 1,
+          "TRUE": 4,
+          "UNKNOWN": 3
+        },
+        "UNKNOWN": {
+          "UNKNOWN": 3,
+          "FALSE": 2,
+          "TRUE": 3
+        }
+      },
+      "shuffled": {
+        "TRUE": {
+          "TRUE": 4,
+          "FALSE": 1,
+          "UNKNOWN": 3
+        },
+        "FALSE": {
+          "FALSE": 1,
+          "TRUE": 4,
+          "UNKNOWN": 3
+        },
+        "UNKNOWN": {
+          "UNKNOWN": 3,
+          "FALSE": 2,
+          "TRUE": 3
+        }
+      },
+      "likelihood": {
+        "TRUE": {
+          "TRUE": 3,
+          "FALSE": 2,
+          "UNKNOWN": 3
+        },
+        "FALSE": {
+          "FALSE": 1,
+          "TRUE": 4,
+          "UNKNOWN": 3
+        },
+        "UNKNOWN": {
+          "UNKNOWN": 3,
+          "TRUE": 4,
+          "FALSE": 1
+        }
+      }
+    },
+    "strata": {
+      "staged": {
+        "depth:2": {
+          "jobs": 12,
+          "correct": 6
+        },
+        "motif:forward": {
+          "jobs": 4,
+          "correct": 2
+        },
+        "reference_label:TRUE": {
+          "jobs": 8,
+          "correct": 4
+        },
+        "motif:conjunction": {
+          "jobs": 4,
+          "correct": 2
+        },
+        "motif:negative": {
+          "jobs": 4,
+          "correct": 1
+        },
+        "reference_label:FALSE": {
+          "jobs": 8,
+          "correct": 1
+        },
+        "motif:negative_conjunction": {
+          "jobs": 4,
+          "correct": 0
+        },
+        "motif:missing": {
+          "jobs": 4,
+          "correct": 2
+        },
+        "reference_label:UNKNOWN": {
+          "jobs": 8,
+          "correct": 3
+        },
+        "motif:reverse": {
+          "jobs": 4,
+          "correct": 1
+        },
+        "depth:4": {
+          "jobs": 12,
+          "correct": 2
+        }
+      },
+      "jev": {
+        "depth:2": {
+          "jobs": 12,
+          "correct": 6
+        },
+        "motif:forward": {
+          "jobs": 4,
+          "correct": 2
+        },
+        "reference_label:TRUE": {
+          "jobs": 8,
+          "correct": 4
+        },
+        "motif:conjunction": {
+          "jobs": 4,
+          "correct": 2
+        },
+        "motif:negative": {
+          "jobs": 4,
+          "correct": 1
+        },
+        "reference_label:FALSE": {
+          "jobs": 8,
+          "correct": 1
+        },
+        "motif:negative_conjunction": {
+          "jobs": 4,
+          "correct": 0
+        },
+        "motif:missing": {
+          "jobs": 4,
+          "correct": 2
+        },
+        "reference_label:UNKNOWN": {
+          "jobs": 8,
+          "correct": 3
+        },
+        "motif:reverse": {
+          "jobs": 4,
+          "correct": 1
+        },
+        "depth:4": {
+          "jobs": 12,
+          "correct": 2
+        }
+      },
+      "zero": {
+        "depth:2": {
+          "jobs": 12,
+          "correct": 6
+        },
+        "motif:forward": {
+          "jobs": 4,
+          "correct": 2
+        },
+        "reference_label:TRUE": {
+          "jobs": 8,
+          "correct": 4
+        },
+        "motif:conjunction": {
+          "jobs": 4,
+          "correct": 2
+        },
+        "motif:negative": {
+          "jobs": 4,
+          "correct": 1
+        },
+        "reference_label:FALSE": {
+          "jobs": 8,
+          "correct": 1
+        },
+        "motif:negative_conjunction": {
+          "jobs": 4,
+          "correct": 0
+        },
+        "motif:missing": {
+          "jobs": 4,
+          "correct": 2
+        },
+        "reference_label:UNKNOWN": {
+          "jobs": 8,
+          "correct": 3
+        },
+        "motif:reverse": {
+          "jobs": 4,
+          "correct": 1
+        },
+        "depth:4": {
+          "jobs": 12,
+          "correct": 2
+        }
+      },
+      "native": {
+        "depth:2": {
+          "jobs": 12,
+          "correct": 7
+        },
+        "motif:forward": {
+          "jobs": 4,
+          "correct": 4
+        },
+        "reference_label:TRUE": {
+          "jobs": 8,
+          "correct": 8
+        },
+        "motif:conjunction": {
+          "jobs": 4,
+          "correct": 4
+        },
+        "motif:negative": {
+          "jobs": 4,
+          "correct": 1
+        },
+        "reference_label:FALSE": {
+          "jobs": 8,
+          "correct": 2
+        },
+        "motif:negative_conjunction": {
+          "jobs": 4,
+          "correct": 1
+        },
+        "motif:missing": {
+          "jobs": 4,
+          "correct": 0
+        },
+        "reference_label:UNKNOWN": {
+          "jobs": 8,
+          "correct": 1
+        },
+        "motif:reverse": {
+          "jobs": 4,
+          "correct": 1
+        },
+        "depth:4": {
+          "jobs": 12,
+          "correct": 4
+        }
+      },
+      "soft_step": {
+        "depth:2": {
+          "jobs": 12,
+          "correct": 6
+        },
+        "motif:forward": {
+          "jobs": 4,
+          "correct": 2
+        },
+        "reference_label:TRUE": {
+          "jobs": 8,
+          "correct": 4
+        },
+        "motif:conjunction": {
+          "jobs": 4,
+          "correct": 2
+        },
+        "motif:negative": {
+          "jobs": 4,
+          "correct": 1
+        },
+        "reference_label:FALSE": {
+          "jobs": 8,
+          "correct": 1
+        },
+        "motif:negative_conjunction": {
+          "jobs": 4,
+          "correct": 0
+        },
+        "motif:missing": {
+          "jobs": 4,
+          "correct": 2
+        },
+        "reference_label:UNKNOWN": {
+          "jobs": 8,
+          "correct": 3
+        },
+        "motif:reverse": {
+          "jobs": 4,
+          "correct": 1
+        },
+        "depth:4": {
+          "jobs": 12,
+          "correct": 2
+        }
+      },
+      "shuffled": {
+        "depth:2": {
+          "jobs": 12,
+          "correct": 6
+        },
+        "motif:forward": {
+          "jobs": 4,
+          "correct": 2
+        },
+        "reference_label:TRUE": {
+          "jobs": 8,
+          "correct": 4
+        },
+        "motif:conjunction": {
+          "jobs": 4,
+          "correct": 2
+        },
+        "motif:negative": {
+          "jobs": 4,
+          "correct": 1
+        },
+        "reference_label:FALSE": {
+          "jobs": 8,
+          "correct": 1
+        },
+        "motif:negative_conjunction": {
+          "jobs": 4,
+          "correct": 0
+        },
+        "motif:missing": {
+          "jobs": 4,
+          "correct": 2
+        },
+        "reference_label:UNKNOWN": {
+          "jobs": 8,
+          "correct": 3
+        },
+        "motif:reverse": {
+          "jobs": 4,
+          "correct": 1
+        },
+        "depth:4": {
+          "jobs": 12,
+          "correct": 2
+        }
+      },
+      "likelihood": {
+        "depth:2": {
+          "jobs": 12,
+          "correct": 7
+        },
+        "motif:forward": {
+          "jobs": 4,
+          "correct": 1
+        },
+        "reference_label:TRUE": {
+          "jobs": 8,
+          "correct": 3
+        },
+        "motif:conjunction": {
+          "jobs": 4,
+          "correct": 2
+        },
+        "motif:negative": {
+          "jobs": 4,
+          "correct": 1
+        },
+        "reference_label:FALSE": {
+          "jobs": 8,
+          "correct": 1
+        },
+        "motif:negative_conjunction": {
+          "jobs": 4,
+          "correct": 0
+        },
+        "motif:missing": {
+          "jobs": 4,
+          "correct": 1
+        },
+        "reference_label:UNKNOWN": {
+          "jobs": 8,
+          "correct": 3
+        },
+        "motif:reverse": {
+          "jobs": 4,
+          "correct": 2
+        },
+        "depth:4": {
+          "jobs": 12,
+          "correct": 0
+        }
+      }
+    }
+  },
+  "raw_sha256": "d3cc1e2b9b695db93b088ed0ff92ca6832f5af53eb8bdead3fd8472dcc5b2805",
+  "analysis_sha256": "34de21fc8081411732031410b41e3de3e330943a1e49b32867a7a57bbf142371"
+}

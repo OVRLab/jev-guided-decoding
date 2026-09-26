@@ -1,0 +1,19 @@
+......F                                                                  [100%]
+=================================== FAILURES ===================================
+____ test_numerical_admission_audit_rejects_failed_cache_or_gradient_checks ____
+
+    def test_numerical_admission_audit_rejects_failed_cache_or_gradient_checks():
+        import copy
+        m=module()
+        comparison=dict(max_abs=3e-5,argmax_equal=True,allclose=True)
+        value=dict(initial=dict(passed=True,zero_gate_exact=True,zero_initial_exact=True,
+                                base_gradients_absent=True,precision='float32',atol=1e-4,rtol=1e-4,
+                                comparison=comparison),selected=[comparison]*3)
+>       m['check_numerical'](value)
+        ^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'check_numerical'
+
+tests/test_selective_admission_audit.py:160: KeyError
+=========================== short test summary info ============================
+FAILED tests/test_selective_admission_audit.py::test_numerical_admission_audit_rejects_failed_cache_or_gradient_checks
+1 failed, 6 passed in 0.16s

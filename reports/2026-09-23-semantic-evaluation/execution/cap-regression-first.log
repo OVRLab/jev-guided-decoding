@@ -1,0 +1,15 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___ test_capped_judge_output_remains_unresolved_even_with_a_parseable_prefix ___
+
+    def test_capped_judge_output_remains_unresolved_even_with_a_parseable_prefix():
+        s=load('grade.py')
+        r=s['record'](dict(id='x',packet_digest='y'),[1],[2]*128,
+                      '{"correct":true,"reason":"x"}',0.1)
+>       assert r['result'] is None and r['budget_exhausted']
+E       AssertionError: assert ({'correct': True, 'reason': 'x'} is None)
+
+tests/test_semantic_evaluation.py:184: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_semantic_evaluation.py::test_capped_judge_output_remains_unresolved_even_with_a_parseable_prefix
+1 failed, 10 deselected in 0.04s

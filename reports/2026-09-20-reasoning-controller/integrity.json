@@ -1,0 +1,167 @@
+{
+  "method": "Offline reconstruction from all proposal/node events, independently decoded with the pinned tokenizer; summaries recomputed from raw rows. No semantic grading or provider requests.",
+  "dataset_sha256_matches": true,
+  "summary_matches": true,
+  "exit_code": 3,
+  "returned_jev_models": [
+    "jev-1.13.0"
+  ],
+  "httpx": "0.28.1",
+  "cpu": "Apple M1 Pro",
+  "totals": {
+    "proposal_batches": 85,
+    "generated_tokens": 3579,
+    "decode_token_slots": 4022,
+    "prefill_tokens": 58556,
+    "unique_candidates": 130,
+    "duplicate_candidates": 93,
+    "api_calls": 10,
+    "backtracks": 5
+  },
+  "runs": [
+    {
+      "case_id": "two_hop",
+      "mode": "greedy",
+      "exact_prefixes": true,
+      "selected_path_matches_trace": true,
+      "accounting_matches_trace": true,
+      "configured_work_limits_respected": true,
+      "stop_reason": "premature_eos"
+    },
+    {
+      "case_id": "two_hop",
+      "mode": "likelihood",
+      "exact_prefixes": true,
+      "selected_path_matches_trace": true,
+      "accounting_matches_trace": true,
+      "configured_work_limits_respected": true,
+      "stop_reason": "complete"
+    },
+    {
+      "case_id": "two_hop",
+      "mode": "final_jev",
+      "exact_prefixes": true,
+      "selected_path_matches_trace": true,
+      "accounting_matches_trace": true,
+      "configured_work_limits_respected": true,
+      "stop_reason": "complete"
+    },
+    {
+      "case_id": "two_hop",
+      "mode": "jev",
+      "exact_prefixes": true,
+      "selected_path_matches_trace": true,
+      "accounting_matches_trace": true,
+      "configured_work_limits_respected": true,
+      "stop_reason": "no_eligible_branch"
+    },
+    {
+      "case_id": "missing_conjunct",
+      "mode": "likelihood",
+      "exact_prefixes": true,
+      "selected_path_matches_trace": true,
+      "accounting_matches_trace": true,
+      "configured_work_limits_respected": true,
+      "stop_reason": "complete"
+    },
+    {
+      "case_id": "missing_conjunct",
+      "mode": "final_jev",
+      "exact_prefixes": true,
+      "selected_path_matches_trace": true,
+      "accounting_matches_trace": true,
+      "configured_work_limits_respected": true,
+      "stop_reason": "complete"
+    },
+    {
+      "case_id": "missing_conjunct",
+      "mode": "jev",
+      "exact_prefixes": true,
+      "selected_path_matches_trace": true,
+      "accounting_matches_trace": true,
+      "configured_work_limits_respected": true,
+      "stop_reason": "no_eligible_branch"
+    },
+    {
+      "case_id": "missing_conjunct",
+      "mode": "greedy",
+      "exact_prefixes": true,
+      "selected_path_matches_trace": true,
+      "accounting_matches_trace": true,
+      "configured_work_limits_respected": true,
+      "stop_reason": "complete"
+    },
+    {
+      "case_id": "reverse_rule",
+      "mode": "final_jev",
+      "exact_prefixes": true,
+      "selected_path_matches_trace": true,
+      "accounting_matches_trace": true,
+      "configured_work_limits_respected": true,
+      "stop_reason": "complete"
+    },
+    {
+      "case_id": "reverse_rule",
+      "mode": "jev",
+      "exact_prefixes": true,
+      "selected_path_matches_trace": true,
+      "accounting_matches_trace": true,
+      "configured_work_limits_respected": true,
+      "stop_reason": "no_eligible_branch"
+    },
+    {
+      "case_id": "reverse_rule",
+      "mode": "greedy",
+      "exact_prefixes": true,
+      "selected_path_matches_trace": true,
+      "accounting_matches_trace": true,
+      "configured_work_limits_respected": true,
+      "stop_reason": "premature_eos"
+    },
+    {
+      "case_id": "reverse_rule",
+      "mode": "likelihood",
+      "exact_prefixes": true,
+      "selected_path_matches_trace": true,
+      "accounting_matches_trace": true,
+      "configured_work_limits_respected": true,
+      "stop_reason": "complete"
+    },
+    {
+      "case_id": "distractor_chain",
+      "mode": "jev",
+      "exact_prefixes": true,
+      "selected_path_matches_trace": true,
+      "accounting_matches_trace": true,
+      "configured_work_limits_respected": true,
+      "stop_reason": "no_eligible_branch"
+    },
+    {
+      "case_id": "distractor_chain",
+      "mode": "greedy",
+      "exact_prefixes": true,
+      "selected_path_matches_trace": true,
+      "accounting_matches_trace": true,
+      "configured_work_limits_respected": true,
+      "stop_reason": "complete"
+    },
+    {
+      "case_id": "distractor_chain",
+      "mode": "likelihood",
+      "exact_prefixes": true,
+      "selected_path_matches_trace": true,
+      "accounting_matches_trace": true,
+      "configured_work_limits_respected": true,
+      "stop_reason": "expansion_budget"
+    },
+    {
+      "case_id": "distractor_chain",
+      "mode": "final_jev",
+      "exact_prefixes": true,
+      "selected_path_matches_trace": true,
+      "accounting_matches_trace": true,
+      "configured_work_limits_respected": true,
+      "stop_reason": "expansion_budget"
+    }
+  ]
+}

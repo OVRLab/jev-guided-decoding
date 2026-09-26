@@ -1,0 +1,111 @@
+{
+  "classes": {
+    "shuffled": {
+      "False": {
+        "correct": 85,
+        "total": 360
+      },
+      "True": {
+        "correct": 230,
+        "total": 360
+      }
+    },
+    "oracle": {
+      "False": {
+        "correct": 170,
+        "total": 360
+      },
+      "True": {
+        "correct": 238,
+        "total": 360
+      }
+    },
+    "zero": {
+      "False": {
+        "correct": 74,
+        "total": 360
+      },
+      "True": {
+        "correct": 230,
+        "total": 360
+      }
+    },
+    "random_heads": {
+      "False": {
+        "correct": 74,
+        "total": 360
+      },
+      "True": {
+        "correct": 224,
+        "total": 360
+      }
+    },
+    "lexical": {
+      "False": {
+        "correct": 127,
+        "total": 360
+      },
+      "True": {
+        "correct": 225,
+        "total": 360
+      }
+    },
+    "native": {
+      "False": {
+        "correct": 74,
+        "total": 360
+      },
+      "True": {
+        "correct": 230,
+        "total": 360
+      }
+    },
+    "jev": {
+      "False": {
+        "correct": 136,
+        "total": 360
+      },
+      "True": {
+        "correct": 233,
+        "total": 360
+      }
+    },
+    "prompt": {
+      "False": {
+        "correct": 73,
+        "total": 360
+      },
+      "True": {
+        "correct": 264,
+        "total": 360
+      }
+    }
+  },
+  "test_api_seconds": 267.10142027199913,
+  "test_api_usage": {
+    "input_tokens": 1772748,
+    "output_tokens": 179100
+  },
+  "jev_native_fixes": 74,
+  "jev_native_regressions": 9,
+  "label_changes": 110,
+  "noul_questions": 8640,
+  "brier": 0.040335578703704716,
+  "span_confusion": {
+    "tp": 1080,
+    "fp": 243,
+    "tn": 7317,
+    "fn": 0
+  },
+  "constant_unknown_accuracy": 0.5,
+  "provenance": {
+    "analysis": "post-hoc descriptive; no new inference or hypothesis test",
+    "source_sha256": "c6190e595500647f9cb0e681d10762c6dd1da4738da7537d9de4d179017f8cdc",
+    "input_hashes": {
+      "test.json": "ae16fcce116f1871ec58287244f74ae1e4a5f70476f92be2b90144b66175183f",
+      "test.jsonl": "9846f58a4457c3a2b095a84f503cc274377d8f480b824ba53bb539db07fe96df",
+      "test-scores.jsonl": "0b7c16443f40bad98d0e4746c3f008259f657e9a5f9a933815d186af18e0ada1"
+    },
+    "class_key": "False = answerable; True = missing final containment link"
+  }
+}

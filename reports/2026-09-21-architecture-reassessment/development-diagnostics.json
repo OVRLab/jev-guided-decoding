@@ -1,0 +1,264 @@
+{
+  "analyzer_sha256": "3e05bf05e3f8eb0cfc95d453e4ccb27a7dcea2593b2702fc6ee5e5ac94666c44",
+  "groups": {
+    "gsm8k/jev": {
+      "accepted_steps": 14,
+      "candidate_finish_reasons": {
+        "eos": 10,
+        "frame": 56
+      },
+      "candidate_gates": {
+        "both": 1,
+        "eligible": 28,
+        "progress_only": 10,
+        "support_only": 1
+      },
+      "initial_accepted_selection_differs_from_likelihood": 2,
+      "initial_batch_outcomes": {
+        "accepted": 5,
+        "all_rejected": 2,
+        "no_valid_step": 1
+      },
+      "initial_likelihood_winner_gate": {
+        "eligible": 4,
+        "progress_only": 3
+      },
+      "initial_scored_batches": 7,
+      "invalid_candidates": {
+        "duplicate_tokens": 16,
+        "parse_failure": 10
+      },
+      "output_stops": {
+        "complete": 8
+      },
+      "proposal_batches": 22,
+      "reasoning_stops": {
+        "all_rejected": 6,
+        "no_valid_step": 2
+      },
+      "rejected_batches_with_support_passing_candidate": 6,
+      "runs": 8,
+      "scored_batches": 20,
+      "step_count_histogram": {
+        "0": 3,
+        "2": 1,
+        "3": 4
+      },
+      "zero_step_stops": {
+        "all_rejected": 2,
+        "no_valid_step": 1
+      }
+    },
+    "gsm8k/likelihood": {
+      "accepted_steps": 30,
+      "candidate_finish_reasons": {
+        "eos": 22,
+        "frame": 92
+      },
+      "candidate_gates": {},
+      "initial_accepted_selection_differs_from_likelihood": 0,
+      "initial_batch_outcomes": {
+        "accepted": 7,
+        "no_valid_step": 1
+      },
+      "initial_likelihood_winner_gate": {},
+      "initial_scored_batches": 0,
+      "invalid_candidates": {
+        "duplicate_tokens": 25,
+        "parse_failure": 26,
+        "repeated_accepted_body": 3
+      },
+      "output_stops": {
+        "complete": 8
+      },
+      "proposal_batches": 38,
+      "reasoning_stops": {
+        "no_valid_step": 8
+      },
+      "rejected_batches_with_support_passing_candidate": 0,
+      "runs": 8,
+      "scored_batches": 0,
+      "step_count_histogram": {
+        "0": 1,
+        "1": 1,
+        "4": 3,
+        "5": 2,
+        "7": 1
+      },
+      "zero_step_stops": {
+        "no_valid_step": 1
+      }
+    },
+    "gsm8k/single": {
+      "accepted_steps": 31,
+      "candidate_finish_reasons": {
+        "eos": 6,
+        "frame": 32
+      },
+      "candidate_gates": {},
+      "initial_accepted_selection_differs_from_likelihood": 0,
+      "initial_batch_outcomes": {
+        "accepted": 7,
+        "no_valid_step": 1
+      },
+      "initial_likelihood_winner_gate": {},
+      "initial_scored_batches": 0,
+      "invalid_candidates": {
+        "parse_failure": 7
+      },
+      "output_stops": {
+        "complete": 7,
+        "incomplete_final": 1
+      },
+      "proposal_batches": 38,
+      "reasoning_stops": {
+        "no_valid_step": 7,
+        "step_budget": 1
+      },
+      "rejected_batches_with_support_passing_candidate": 0,
+      "runs": 8,
+      "scored_batches": 0,
+      "step_count_histogram": {
+        "0": 1,
+        "2": 2,
+        "4": 2,
+        "5": 1,
+        "6": 1,
+        "8": 1
+      },
+      "zero_step_stops": {
+        "no_valid_step": 1
+      }
+    },
+    "proofwriter/jev": {
+      "accepted_steps": 5,
+      "candidate_finish_reasons": {
+        "eos": 15,
+        "frame": 24
+      },
+      "candidate_gates": {
+        "both": 2,
+        "eligible": 10,
+        "progress_only": 7
+      },
+      "initial_accepted_selection_differs_from_likelihood": 0,
+      "initial_batch_outcomes": {
+        "accepted": 1,
+        "all_rejected": 2,
+        "no_valid_step": 5
+      },
+      "initial_likelihood_winner_gate": {
+        "eligible": 1,
+        "progress_only": 2
+      },
+      "initial_scored_batches": 3,
+      "invalid_candidates": {
+        "duplicate_tokens": 5,
+        "parse_failure": 15
+      },
+      "output_stops": {
+        "complete": 8
+      },
+      "proposal_batches": 13,
+      "reasoning_stops": {
+        "all_rejected": 3,
+        "no_valid_step": 5
+      },
+      "rejected_batches_with_support_passing_candidate": 3,
+      "runs": 8,
+      "scored_batches": 8,
+      "step_count_histogram": {
+        "0": 7,
+        "5": 1
+      },
+      "zero_step_stops": {
+        "all_rejected": 2,
+        "no_valid_step": 5
+      }
+    },
+    "proofwriter/likelihood": {
+      "accepted_steps": 14,
+      "candidate_finish_reasons": {
+        "eos": 21,
+        "frame": 42
+      },
+      "candidate_gates": {},
+      "initial_accepted_selection_differs_from_likelihood": 0,
+      "initial_batch_outcomes": {
+        "accepted": 3,
+        "no_valid_step": 5
+      },
+      "initial_likelihood_winner_gate": {},
+      "initial_scored_batches": 0,
+      "invalid_candidates": {
+        "duplicate_tokens": 13,
+        "parse_failure": 22,
+        "repeated_accepted_body": 1
+      },
+      "output_stops": {
+        "complete": 8
+      },
+      "proposal_batches": 21,
+      "reasoning_stops": {
+        "no_valid_step": 7,
+        "step_budget": 1
+      },
+      "rejected_batches_with_support_passing_candidate": 0,
+      "runs": 8,
+      "scored_batches": 0,
+      "step_count_histogram": {
+        "0": 5,
+        "3": 2,
+        "8": 1
+      },
+      "zero_step_stops": {
+        "no_valid_step": 5
+      }
+    },
+    "proofwriter/single": {
+      "accepted_steps": 10,
+      "candidate_finish_reasons": {
+        "eos": 8,
+        "frame": 10
+      },
+      "candidate_gates": {},
+      "initial_accepted_selection_differs_from_likelihood": 0,
+      "initial_batch_outcomes": {
+        "accepted": 3,
+        "no_valid_step": 5
+      },
+      "initial_likelihood_winner_gate": {},
+      "initial_scored_batches": 0,
+      "invalid_candidates": {
+        "parse_failure": 8
+      },
+      "output_stops": {
+        "complete": 8
+      },
+      "proposal_batches": 18,
+      "reasoning_stops": {
+        "no_valid_step": 8
+      },
+      "rejected_batches_with_support_passing_candidate": 0,
+      "runs": 8,
+      "scored_batches": 0,
+      "step_count_histogram": {
+        "0": 5,
+        "2": 1,
+        "3": 1,
+        "5": 1
+      },
+      "zero_step_stops": {
+        "no_valid_step": 5
+      }
+    }
+  },
+  "input_sha256": "91cac6d00edaabd62f09398cdbceb17eefbf923d0811ffa87ee6e952f66cbe98",
+  "jobs": 48,
+  "parser_sha256": "df5f1c0e09f497cf4bb296ddb12fb70851876a2b40ff2affb6c4084d2e812a0f",
+  "schema": "frozen-trace-diagnostics-v1",
+  "thresholds": {
+    "progress": 0.5,
+    "support": 0.5
+  }
+}

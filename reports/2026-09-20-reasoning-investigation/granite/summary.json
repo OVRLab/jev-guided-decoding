@@ -1,0 +1,91 @@
+[
+  {
+    "case_id": "useful-incomplete-step",
+    "mode": "likelihood",
+    "text": "Step: Mira completed orientation.\nStep: According to the rule, if Mira completed orientation, then Mira has a valid badge.\nStep: The rule states that if Mira has a valid badge, then Mira may enter the archive.\nFinal: Based on the given facts and rules, the evidence establishes that Mira may enter the archive.",
+    "stop_reason": "step_budget",
+    "generated_tokens": 187,
+    "decode_token_slots": 213,
+    "prefill_tokens": 2847,
+    "generation_seconds": 13.556064832955599,
+    "jev_seconds": 0.0,
+    "elapsed_seconds": 13.558138999622315,
+    "api_calls": 0,
+    "jev_input_tokens": 0,
+    "jev_output_tokens": 0,
+    "usage_unknown": false,
+    "unique_candidate_token_sequences_per_batch": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "accepted_prefix_continuity_verified": true
+  },
+  {
+    "case_id": "useful-incomplete-step",
+    "mode": "jev",
+    "text": "Step: Mira completed orientation.\nStep: According to the rule, if Mira completed orientation, then Mira has a valid badge.\nStep: The rule states that if Mira has a valid badge, then Mira may enter the archive.\nFinal: The evidence establishes that Mira may enter the archive.",
+    "stop_reason": "step_budget",
+    "generated_tokens": 187,
+    "decode_token_slots": 213,
+    "prefill_tokens": 2847,
+    "generation_seconds": 11.428933416027576,
+    "jev_seconds": 1.8143144161440432,
+    "elapsed_seconds": 13.2451291247271,
+    "api_calls": 4,
+    "jev_input_tokens": 5872,
+    "jev_output_tokens": 472,
+    "usage_unknown": false,
+    "unique_candidate_token_sequences_per_batch": [
+      1,
+      1,
+      2,
+      3
+    ],
+    "accepted_prefix_continuity_verified": true
+  },
+  {
+    "case_id": "missing-conjunct",
+    "mode": "jev",
+    "text": "",
+    "stop_reason": "all_rejected",
+    "generated_tokens": 21,
+    "decode_token_slots": 21,
+    "prefill_tokens": 642,
+    "generation_seconds": 1.750311499927193,
+    "jev_seconds": 0.35800354182720184,
+    "elapsed_seconds": 2.109249500092119,
+    "api_calls": 1,
+    "jev_input_tokens": 1227,
+    "jev_output_tokens": 118,
+    "usage_unknown": false,
+    "unique_candidate_token_sequences_per_batch": [
+      1
+    ],
+    "accepted_prefix_continuity_verified": true
+  },
+  {
+    "case_id": "missing-conjunct",
+    "mode": "likelihood",
+    "text": "Step: Mira completed orientation.\nStep: Mira has manager approval.\nStep: Mira has a valid badge.\nStep: Mira may enter the archive.",
+    "stop_reason": "step_budget",
+    "generated_tokens": 105,
+    "decode_token_slots": 111,
+    "prefill_tokens": 2706,
+    "generation_seconds": 8.33021670859307,
+    "jev_seconds": 0.0,
+    "elapsed_seconds": 8.33176187472418,
+    "api_calls": 0,
+    "jev_input_tokens": 0,
+    "jev_output_tokens": 0,
+    "usage_unknown": false,
+    "unique_candidate_token_sequences_per_batch": [
+      1,
+      1,
+      3,
+      2
+    ],
+    "accepted_prefix_continuity_verified": true
+  }
+]

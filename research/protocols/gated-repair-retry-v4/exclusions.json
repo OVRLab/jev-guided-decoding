@@ -1,0 +1,778 @@
+[
+  {
+    "id": "gsm8k/train/6198",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/650",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2289",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/3380",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/307",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/6008",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4877",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2054",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2481",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1607",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2050",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/3115",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/237",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/3465",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/3515",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4391",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/5148",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/406",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2406",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/7026",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/5345",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/462",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1632",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4054",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/795",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/5973",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/6198",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/6405",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/146",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1239",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4242",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1751",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/408",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/7345",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/6079",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/7019",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/6670",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/5012",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1533",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1560",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/205",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4899",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/5069",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/5851",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/131",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2945",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/6992",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/475",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4569",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2537",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1404",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2858",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/5824",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4889",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/5202",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/280",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/326",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/56",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/916",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/3104",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1725",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/5349",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/5591",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2413",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2946",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2102",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/5447",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/7087",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2923",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/3060",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/7457",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/3989",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1625",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4055",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1913",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2397",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4168",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/6840",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4118",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4103",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/6915",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/5976",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/7006",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/494",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1956",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1814",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/6997",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/677",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2254",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2044",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4404",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1718",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1650",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1474",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/3614",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1217",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1775",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2267",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1425",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/7",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/5304",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/271",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/7229",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4562",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4502",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/5652",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/5461",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/3779",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2614",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/5285",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/3099",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/6948",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4117",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2355",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4819",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1703",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/6512",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1501",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1984",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2204",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/631",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/3621",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/3373",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/3794",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/951",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/5927",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/7036",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/31",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1716",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4063",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/3510",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2001",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/3192",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/7419",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/5074",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4616",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2131",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/6605",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/3970",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/6669",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1979",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/7002",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2947",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/6027",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2091",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4324",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4904",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/749",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/356",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/870",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1253",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1578",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/5837",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2777",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4669",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/3559",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/5706",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/5512",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1230",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/5206",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/81",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/5942",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2349",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4530",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/86",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2713",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/5429",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/6728",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2292",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4037",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/3501",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/6219",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/6419",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/246",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/6616",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2930",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1911",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2152",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/3671",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2127",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2382",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/3723",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/6195",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2583",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4600",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/6671",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4966",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/313",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4566",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4373",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/1490",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/4153",
+    "reason": "normalized question duplicate or exposed"
+  },
+  {
+    "id": "gsm8k/train/2664",
+    "reason": "normalized question duplicate or exposed"
+  }
+]

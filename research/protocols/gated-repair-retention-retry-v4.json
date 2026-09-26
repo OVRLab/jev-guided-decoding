@@ -1,0 +1,20 @@
+{
+  "at": "2026-09-23T20:38:39.041694+00:00",
+  "protocol": "r25-retention-replay-retry-v4",
+  "threshold": 0.5,
+  "sources": {
+    "research/gated-repair-retention-supplement.md": "bc66f520f3d0b3324c8fd880a02910bfbc260a126930a67bf6da25cec32a68aa",
+    "research/diagnostics/gated_repair_retention.py": "3f7d4ab50b9de3b9da3e4b2465c4043b615c411dded84f94adc59f5a5fb7ba6f",
+    "research/gated-repair-continuation.md": "c5467472399e839c2180856b354bd7873478529cc4948934ba81c6074f39cf00",
+    "research/iterations/gated_repair_continue/retention.py": "c6dde6362c0e9b474922a59c270e59834bcb93e0663968750f6590d1eb1b3e91",
+    "research/gated-repair-overload-recovery.md": "8279acbc8ea2f9362237e0d070d64b1e8054e6b2747dc7d6317fbc747b16fa2a",
+    "research/iterations/gated_repair_retry/retention.py": "6b37fdaa2315f7d3f69b287e6d4e148e1e0ebe56a47a6049c4d8717e4f59b80e"
+  },
+  "baseline_manifest_sha256": "db7373f06a20d94c0c9bda1c678fe969a1baed11877040b1c49a4826544583d0",
+  "source_revision": "640987e89318bc8b6c28120634b7ea59e8a0b060",
+  "original_registration_sha256": "a79f7d2fb397dee081b3c862188b5545156e0ec930ac5f3704e93b634856c4c5",
+  "original_baseline_manifest_sha256": "ca7ecf9b770622fed4481fcdf32b8e57b078a8c9a0799200bc5d42309d0c18d8",
+  "missing_feedback_policy": "retain_native",
+  "note": "Same prospective retention policy bound to v4 delivery continuation; no training/test has run.",
+  "predecessor_registration_sha256": "976a6ed061875a5fa3a1ea6f831f57f88786229ed755c5bfe4b662982dc804c9"
+}

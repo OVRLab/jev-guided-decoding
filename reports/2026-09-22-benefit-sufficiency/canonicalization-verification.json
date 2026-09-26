@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-22T22:13:31.139128+00:00",
+  "checked_test_prompts": 608,
+  "direct_python_equality_mismatches": 608,
+  "serialized_prompt_differences": 0,
+  "v2_prompt_checks_passed": 608,
+  "failed_v1_starts": 1,
+  "failed_v1_generated_answers": 0,
+  "failed_v1_paid_api_attempts": 0,
+  "failed_v1_outputs_sha256": "f1f11140cf79891967af212f30147d4e841f2899890c32ea3e96c445d87e10dd",
+  "heldout_quality_inspected": false,
+  "original_donor_and_schedule_hashes_preserved": true
+}

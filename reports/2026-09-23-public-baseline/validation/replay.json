@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "byte_exact_artifacts": 6,
+  "token_audit_identical": true,
+  "primary_analysis_identical": true,
+  "secondary_readout_identical_except_timestamp": true,
+  "r24_cohort_reconstruction_identical": true,
+  "inference_or_jev_calls": 0
+}

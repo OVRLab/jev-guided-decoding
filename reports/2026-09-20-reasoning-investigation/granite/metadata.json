@@ -1,0 +1,45 @@
+{
+  "started_utc": "2026-09-20T11:11:45.331358+00:00",
+  "source_commit": "478e610b3386b08cb27ed6922dde232c4d7d2056",
+  "source_dirty": false,
+  "fixture_sha256": "164c08abc8ad08b708767fde8b9d933b52e73c626c038472337d02da088aee93",
+  "decoding": {
+    "candidates": 3,
+    "chunk_tokens": 48,
+    "max_answer_tokens": 160,
+    "max_decode_tokens": 576,
+    "max_steps": 4,
+    "max_retries": 0,
+    "max_api_calls": 4,
+    "max_seconds": 120.0,
+    "support_threshold": 0.75,
+    "relevance_threshold": 0.6,
+    "completion_threshold": 0.75,
+    "seed": 42
+  },
+  "python": "3.12.13",
+  "hardware": "arm64",
+  "jev_model": "jev-1.13.0",
+  "purpose": "Two generated-derivation diagnostics using the existing controller/scorer",
+  "timing": "Excludes model loading and warm-up; includes generation, HTTP and orchestration",
+  "backend": {
+    "backend": "transformers",
+    "model": "ibm-granite/granite-4.0-1b",
+    "requested_revision": "6a7381ba1f54d684ff508d991aeb7dc580157103",
+    "resolved_revision": "6a7381ba1f54d684ff508d991aeb7dc580157103",
+    "device": "mps:0",
+    "dtype": "torch.bfloat16",
+    "parameters": 1631750144,
+    "trainable_parameters": 0,
+    "torch": "2.8.0",
+    "transformers": "4.57.1",
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "cache_between_chunks": "recompute accepted prefix"
+  },
+  "warmup": {
+    "candidate_count": 3,
+    "max_tokens": 8,
+    "seed": 0
+  }
+}

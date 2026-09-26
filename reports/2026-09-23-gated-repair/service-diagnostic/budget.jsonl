@@ -1,0 +1,3 @@
+{"event": "terms", "max_usd": "0.005", "usd_per_million": "0.042", "request_token_ceiling": 65536}
+{"event": "reserve", "id": "102cb16290914e44a4166cef35e5e427"}
+{"event": "settle", "id": "102cb16290914e44a4166cef35e5e427", "input_tokens": 277}

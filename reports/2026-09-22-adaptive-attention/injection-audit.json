@@ -1,0 +1,711 @@
+{
+  "audit_passed": true,
+  "outcomes": 22840,
+  "selection_preceded_testing": true,
+  "selected_at": "2026-09-22T05:29:44.114289+00:00",
+  "first_test_started_at": "2026-09-22T05:29:44.169140+00:00",
+  "all_test_policies_match_freeze": true,
+  "open_vocab_answer_menus": 0,
+  "framing_matches_fixed_controller_text": true,
+  "attention_hook_calls": 3143923,
+  "groups": {
+    "development/original/constrained/e872ecb62fc8cb7b": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/5a3d0351303609f8": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 704,
+      "active_phases": 88
+    },
+    "development/original/constrained/809459ae624a5b90": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 704,
+      "active_phases": 88
+    },
+    "development/original/constrained/8635c39b5754215d": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 704,
+      "active_phases": 88
+    },
+    "development/original/constrained/0812b6afad8ebf77": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 704,
+      "active_phases": 88
+    },
+    "development/original/constrained/381286c462a36728": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 704,
+      "active_phases": 88
+    },
+    "development/original/constrained/0cdbb2e618d981d3": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/a2451bab77184d32": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/ee0bf3da4cb84c10": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/2a2a908beb10bffb": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/d1157b404173d212": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/62434a2e749740a0": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 704,
+      "active_phases": 88
+    },
+    "development/original/constrained/48868fc0413b4549": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 704,
+      "active_phases": 88
+    },
+    "development/original/constrained/c480763f7f1bfd4b": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 704,
+      "active_phases": 88
+    },
+    "development/original/constrained/de1e93fad251753e": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 704,
+      "active_phases": 88
+    },
+    "development/original/constrained/b0b5fe555ae97d1a": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/7ef51c2f2e87158b": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/59cea662038bed72": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/595fdf56a3f6bc1d": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 704,
+      "active_phases": 88
+    },
+    "development/original/constrained/96361ce86f1890d0": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/99fbb818b99fc04d": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/8e0920e136170035": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/6198a8337156d6d1": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 704,
+      "active_phases": 88
+    },
+    "development/original/constrained/84246693b4859fd8": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/ddb2eecf8d52a628": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/e71a7a0e3489d913": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/8dc85ac05d68d53f": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 704,
+      "active_phases": 88
+    },
+    "development/original/constrained/4f095b6d8f5291e1": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/85e0e3d421fc2ab7": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/a471668ed8e8ee98": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/90f5fbebafefff5f": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 704,
+      "active_phases": 88
+    },
+    "development/original/constrained/87c01c6afccd6e21": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/3d5905b272249ae6": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/8e2ababdcb244a7e": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/a87c4f94aa66982b": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 704,
+      "active_phases": 88
+    },
+    "development/original/constrained/a621331c246f62d9": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/8c7cee1f175297ff": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/6558618964d70270": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/c88cd91909141d0f": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/f5311a84c8d01f7e": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/5566b1419f98f4ba": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/e8f15b310f59c11c": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/380d0f715237d9b8": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/4f500fa3702aed3d": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/0ada5cba31748cb6": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/db138dacd1104820": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/6430e050d5eab34d": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/8fc41a5808a364cd": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/edd4e297a7b64d46": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/1cf17a62b5d206d9": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/62fa332758aa92e2": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/4e9c9853c9af5e55": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/d48c64dc5ffb778e": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/cb379006a5e8ea3d": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/14211e121cdc92b5": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 704,
+      "active_phases": 88
+    },
+    "development/original/constrained/ed8530faecacfb48": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/8b9799c60bd3a78d": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/8a0227ca745e6e20": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/bc3186aad0acb4cc": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 704,
+      "active_phases": 88
+    },
+    "development/original/constrained/da7a0245728aa022": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/f5bd1eabcd60b693": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/89037e4ddb67226b": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/8c05a71b0b6bcc94": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 704,
+      "active_phases": 88
+    },
+    "development/original/constrained/e0fb081c952f9988": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/e21842153d280785": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/5f167ca9608a4838": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/8d7259ba49d6f5f4": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 91,
+      "hook_calls": 819,
+      "active_phases": 91
+    },
+    "development/original/constrained/9d95f9c8fcd07adc": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "development/original/constrained/2d9ba0de56bf1568": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 87,
+      "hook_calls": 783,
+      "active_phases": 87
+    },
+    "development/original/constrained/535d931b36cb5b10": {
+      "outcomes": 96,
+      "outcomes_with_active_attention": 88,
+      "hook_calls": 792,
+      "active_phases": 88
+    },
+    "test/original/constrained/r15": {
+      "outcomes": 600,
+      "outcomes_with_active_attention": 549,
+      "hook_calls": 4941,
+      "active_phases": 549
+    },
+    "test/original/constrained/shuffled": {
+      "outcomes": 600,
+      "outcomes_with_active_attention": 550,
+      "hook_calls": 4950,
+      "active_phases": 550
+    },
+    "test/original/constrained/native": {
+      "outcomes": 600,
+      "outcomes_with_active_attention": 0,
+      "hook_calls": 0,
+      "active_phases": 0
+    },
+    "test/original/constrained/lexical": {
+      "outcomes": 600,
+      "outcomes_with_active_attention": 550,
+      "hook_calls": 4950,
+      "active_phases": 550
+    },
+    "test/original/constrained/zero": {
+      "outcomes": 600,
+      "outcomes_with_active_attention": 0,
+      "hook_calls": 0,
+      "active_phases": 0
+    },
+    "test/original/constrained/tuned": {
+      "outcomes": 600,
+      "outcomes_with_active_attention": 550,
+      "hook_calls": 4950,
+      "active_phases": 550
+    },
+    "test/original/open_explicit/tuned": {
+      "outcomes": 600,
+      "outcomes_with_active_attention": 550,
+      "hook_calls": 70974,
+      "active_phases": 550
+    },
+    "test/original/open_explicit/shuffled": {
+      "outcomes": 600,
+      "outcomes_with_active_attention": 550,
+      "hook_calls": 86994,
+      "active_phases": 550
+    },
+    "test/original/open_explicit/lexical": {
+      "outcomes": 600,
+      "outcomes_with_active_attention": 550,
+      "hook_calls": 84267,
+      "active_phases": 550
+    },
+    "test/original/open_explicit/r15": {
+      "outcomes": 600,
+      "outcomes_with_active_attention": 549,
+      "hook_calls": 68805,
+      "active_phases": 549
+    },
+    "test/original/open_explicit/native": {
+      "outcomes": 600,
+      "outcomes_with_active_attention": 0,
+      "hook_calls": 0,
+      "active_phases": 0
+    },
+    "test/original/open_neutral/lexical": {
+      "outcomes": 600,
+      "outcomes_with_active_attention": 550,
+      "hook_calls": 81234,
+      "active_phases": 550
+    },
+    "test/original/open_neutral/r15": {
+      "outcomes": 600,
+      "outcomes_with_active_attention": 549,
+      "hook_calls": 77382,
+      "active_phases": 549
+    },
+    "test/original/open_neutral/native": {
+      "outcomes": 600,
+      "outcomes_with_active_attention": 0,
+      "hook_calls": 0,
+      "active_phases": 0
+    },
+    "test/original/open_neutral/shuffled": {
+      "outcomes": 600,
+      "outcomes_with_active_attention": 550,
+      "hook_calls": 92520,
+      "active_phases": 550
+    },
+    "test/original/open_neutral/tuned": {
+      "outcomes": 600,
+      "outcomes_with_active_attention": 550,
+      "hook_calls": 78462,
+      "active_phases": 550
+    },
+    "test/original/staged/dynamic": {
+      "outcomes": 240,
+      "outcomes_with_active_attention": 226,
+      "hook_calls": 115308,
+      "active_phases": 866
+    },
+    "test/original/staged/r15": {
+      "outcomes": 240,
+      "outcomes_with_active_attention": 221,
+      "hook_calls": 104571,
+      "active_phases": 847
+    },
+    "test/original/staged/native": {
+      "outcomes": 240,
+      "outcomes_with_active_attention": 0,
+      "hook_calls": 0,
+      "active_phases": 0
+    },
+    "test/original/staged/shuffled_dynamic": {
+      "outcomes": 240,
+      "outcomes_with_active_attention": 226,
+      "hook_calls": 120537,
+      "active_phases": 863
+    },
+    "test/original/staged/lexical_dynamic": {
+      "outcomes": 240,
+      "outcomes_with_active_attention": 232,
+      "hook_calls": 118017,
+      "active_phases": 888
+    },
+    "test/original/staged/tuned": {
+      "outcomes": 240,
+      "outcomes_with_active_attention": 220,
+      "hook_calls": 114759,
+      "active_phases": 858
+    },
+    "test/paraphrase/staged/native": {
+      "outcomes": 240,
+      "outcomes_with_active_attention": 0,
+      "hook_calls": 0,
+      "active_phases": 0
+    },
+    "test/paraphrase/staged/shuffled_dynamic": {
+      "outcomes": 240,
+      "outcomes_with_active_attention": 232,
+      "hook_calls": 131652,
+      "active_phases": 880
+    },
+    "test/paraphrase/staged/dynamic": {
+      "outcomes": 240,
+      "outcomes_with_active_attention": 232,
+      "hook_calls": 130770,
+      "active_phases": 874
+    },
+    "test/paraphrase/staged/lexical_dynamic": {
+      "outcomes": 240,
+      "outcomes_with_active_attention": 234,
+      "hook_calls": 132462,
+      "active_phases": 888
+    },
+    "test/paraphrase/staged/tuned": {
+      "outcomes": 240,
+      "outcomes_with_active_attention": 227,
+      "hook_calls": 132147,
+      "active_phases": 896
+    },
+    "test/paraphrase/staged/r15": {
+      "outcomes": 240,
+      "outcomes_with_active_attention": 227,
+      "hook_calls": 122391,
+      "active_phases": 885
+    },
+    "test/dependency/staged/tuned": {
+      "outcomes": 240,
+      "outcomes_with_active_attention": 218,
+      "hook_calls": 104562,
+      "active_phases": 854
+    },
+    "test/dependency/staged/dynamic": {
+      "outcomes": 240,
+      "outcomes_with_active_attention": 226,
+      "hook_calls": 103077,
+      "active_phases": 825
+    },
+    "test/dependency/staged/lexical_dynamic": {
+      "outcomes": 240,
+      "outcomes_with_active_attention": 225,
+      "hook_calls": 104400,
+      "active_phases": 853
+    },
+    "test/dependency/staged/native": {
+      "outcomes": 240,
+      "outcomes_with_active_attention": 0,
+      "hook_calls": 0,
+      "active_phases": 0
+    },
+    "test/dependency/staged/r15": {
+      "outcomes": 240,
+      "outcomes_with_active_attention": 224,
+      "hook_calls": 107649,
+      "active_phases": 879
+    },
+    "test/dependency/staged/shuffled_dynamic": {
+      "outcomes": 240,
+      "outcomes_with_active_attention": 226,
+      "hook_calls": 105039,
+      "active_phases": 844
+    },
+    "test/hotpot/open_explicit/shuffled": {
+      "outcomes": 200,
+      "outcomes_with_active_attention": 196,
+      "hook_calls": 28476,
+      "active_phases": 196
+    },
+    "test/hotpot/open_explicit/r15": {
+      "outcomes": 200,
+      "outcomes_with_active_attention": 198,
+      "hook_calls": 28908,
+      "active_phases": 198
+    },
+    "test/hotpot/open_explicit/tuned": {
+      "outcomes": 200,
+      "outcomes_with_active_attention": 196,
+      "hook_calls": 27657,
+      "active_phases": 196
+    },
+    "test/hotpot/open_explicit/lexical": {
+      "outcomes": 200,
+      "outcomes_with_active_attention": 171,
+      "hook_calls": 27486,
+      "active_phases": 171
+    },
+    "test/hotpot/open_explicit/native": {
+      "outcomes": 200,
+      "outcomes_with_active_attention": 0,
+      "hook_calls": 0,
+      "active_phases": 0
+    },
+    "test/hotpot/staged/r15": {
+      "outcomes": 200,
+      "outcomes_with_active_attention": 198,
+      "hook_calls": 116208,
+      "active_phases": 767
+    },
+    "test/hotpot/staged/tuned": {
+      "outcomes": 200,
+      "outcomes_with_active_attention": 196,
+      "hook_calls": 111915,
+      "active_phases": 739
+    },
+    "test/hotpot/staged/dynamic": {
+      "outcomes": 200,
+      "outcomes_with_active_attention": 199,
+      "hook_calls": 111654,
+      "active_phases": 744
+    },
+    "test/hotpot/staged/lexical_dynamic": {
+      "outcomes": 200,
+      "outcomes_with_active_attention": 197,
+      "hook_calls": 111069,
+      "active_phases": 713
+    },
+    "test/hotpot/staged/native": {
+      "outcomes": 200,
+      "outcomes_with_active_attention": 0,
+      "hook_calls": 0,
+      "active_phases": 0
+    },
+    "test/hotpot/staged/shuffled_dynamic": {
+      "outcomes": 200,
+      "outcomes_with_active_attention": 199,
+      "hook_calls": 118818,
+      "active_phases": 752
+    }
+  },
+  "artifact_hashes": {
+    "completion.json": "f2d5e6cca05ad15f4de06a9770b4293d7ec95a32538a2a5c7149f6e6218b7513",
+    "selected.json": "e6ecce3e34d9abfd6ad576423eb53a96737bf84af751cf778302e5f7ddb9c8d9",
+    "test-freeze.json": "65bd2deb4af6111a7ab84dde8b4d535458bc2f2ad1bfe0f67b1005962e6ded79",
+    "outputs.jsonl": "33b5e187b25206106d6fb9bd21ad45e988b2a1c33988a825b9e7cefe47166030",
+    "starts.jsonl": "ec4a9aeae3507e09b72236fca5a55c52f163dc01bcec37318355ef246b0d59f2"
+  },
+  "auditor_sha256": "56762bcfc4808b3b0247e8d94ae53d1b298b5a689c017bc4371c785abe63c66c"
+}

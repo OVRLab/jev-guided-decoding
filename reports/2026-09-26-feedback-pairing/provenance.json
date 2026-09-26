@@ -1,0 +1,24 @@
+{
+  "frozen_manifest_sha256": "793153d5b963a4265296ce6fd351dbd973763a62bd049acc636d66f59f8466f9",
+  "worker_source": "d2ed7b898a044d75bc672ab20aa3c2a125ac23a0",
+  "original_backup_inventory": {
+    "adapter-bindings.json": "a8cf3afffb32661bff9118d62ef5b38c4b6fc373f1c4cdb7586a71426828cf97",
+    "donors.json": "363d198aea7317c912cae3ffdd30edf7588dc4f815f0ff45223e67f61d4672c2",
+    "hardware.json": "34a627a2d1a873a0c933f5e97da8348d6ca7558f32c78884996b3c34e74cfd7c",
+    "requests.jsonl": "4d2936e8b223b3ad679bffef2d75a0837c381d64c49642067a883eaf42bae9ae",
+    "budget.jsonl": "b5f35ec2835b8e3ce0ba0501f515751ea273b5239e9e2b5889a71b5f3f04a14e",
+    "execution.json": "9697422397b263c5c9221df22f4f0f05c87f35b1a1bf7721c70b33434ab1a823",
+    "jobs.jsonl": "f5530315f25012c7760b4ad45d8bf2f757a692ee5ac14dd3055fc219045b6522",
+    "responses.jsonl": "0d44cd2a43dbc3bc87fb83a26d079ee92cb97c58bc07021aac3f7dd66426d890",
+    "mechanical-admission.json": "7e24e5920cd2ec725cdc785fd5c2bc983d5b29b2d6de15ce42b8362fa0fdd948",
+    "complete.json": "c06176962e3dd1c90bc0ab678711719f10cc0ae8dc596c6edce59d91d1eca0bb",
+    "outputs.jsonl": "25d8fba87bbfbaa236154b051dda743f90eabe7bb6736da17b87b9664fbec445"
+  },
+  "public_archives": {
+    "inputs.tar.gz": "bf543cbe336dc9fe5683f828b26355bf88bbf936aee2541ab642ae97b5a30b48",
+    "recorded-run.tar.gz": "caa686ed3e5d1b7bb49d25c8dc4996d77a8846074a8ea6d1516de1295923a967"
+  },
+  "credential_scan_passed": true,
+  "authored_data": true,
+  "not_a_model_release": true
+}

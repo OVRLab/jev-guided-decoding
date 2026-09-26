@@ -1,0 +1,12 @@
+{
+  "prior_cumulative_estimate_usd": 32.55153075054077,
+  "admission_estimate_usd": 0.010642254,
+  "replication_estimate_usd": 0.021290598,
+  "new_estimate_usd": 0.031932852,
+  "cumulative_estimate_usd": 32.58346360254077,
+  "cloud_cost_usd": 0,
+  "jev_attempts": 576,
+  "jev_input_tokens": 760306,
+  "unknown_calls": 0,
+  "billing_note": "API estimate at $0.042/M input tokens. No cloud used for R21. Local electricity/depreciation excluded. R22 is separate."
+}

@@ -1,0 +1,6 @@
+{
+  "all_non_timestamp_analysis_fields_match": true,
+  "all_non_timestamp_supplement_fields_match": true,
+  "no_model_inference_or_api_calls": true,
+  "verified_at": "2026-09-22T22:43:57.676070+00:00"
+}

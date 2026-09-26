@@ -1,23 +1,403 @@
-# Next feature: evaluate the verifier's decisions
+# Feature: Jev-guided intermediate reasoning
 
-This is a proposed next experiment, not work already implemented or automatically
-authorized by this document. See [LAUNCH.md](LAUNCH.md) and [LIVE.md](LIVE.md).
+**R31 completed and audited, 2026-09-26:** [matched-memory study](reports/2026-09-26-contextual-memory/README.md)
+records **30.08% original Granite, 46.29% scalar Jev repair and 47.85% separately
+constant-trained repair** on 256 fresh authored worlds. The scalar gain is
++16.21 pp (registered 98.75% interval [+10.94,+21.68]); contextual memory adds no
+complete-world accuracy over matched embeddings, and structured feedback performs
+worse. Scalar repair fixes 44/39 failures with zero native-pass damage; the stronger
+constant-trained control fixes 55/47 but damages 7/4. Thus useful feedback within a
+Jev-trained checkpoint does not establish superiority over a Jev-free recipe.
+All 11,840 outputs, 832 judgments and twelve trained adapters pass independent
+reconstruction. Owned resources are deleted; conservative cumulative estimate
+**$129.42/$175**, not an invoice. Public transfer and larger-model superiority
+remain unestablished. The follow-up MuSR admission will include the stronger
+constant-trained controls before fresh evaluation.
+
+**R30 completed and audited, 2026-09-26:** [fresh feedback-pairing replication](reports/2026-09-26-feedback-pairing/README.md)
+records **28.65% original Granite, 32.16% structured Jev repair, 34.11% repeated mean
+and 34.77% separately trained scalar repair** on 384 authored worlds. Structured
+repair's +3.52 pp native gain has a registered adjusted interval [+1.69,+5.73] pp;
+both seeds preserve all 110 native passes. Precise field-score placement shows no
+clear advantage over within-draft permutations. All 7,680 outputs and 384 judgments
+pass audit; public archives reproduce the identical analysis. Owned resources are
+deleted; conservative cumulative estimate **$122.90/$175**, not an invoice.
+The broad benchmark/larger-model objective remains unachieved.
+
+Earlier status entries below are historical.
+
+**R30 running, 2026-09-26:** [execution record](reports/2026-09-26-feedback-pairing/README.md).
+Frozen source `d2ed7b8`, all 670 local tests and four CI jobs passed; 18 relevant
+checks passed on the AWS L4 worker. The real inference study started at 11:00 UTC
+with 384 new worlds and frozen checkpoints. No quality result exists yet.
+
+**R30 registered, 2026-09-26:** [fresh feedback-pairing replication](research/feedback-pairing-plan-v1.md)
+will compare fixed R29 checkpoints on 384 new authored worlds, separating score
+localization from overall reliability and cheap answer-type checking. The owner
+raised the cumulative cap to **$175**; the [continuation program](research/feedback-exploration-program.md)
+reserves at most $8.50 for this stage from the $118.12 prior estimate. No new
+quality result or cloud execution is claimed yet. Earlier budget entries are historical.
+
+**R29-A completed and audited:** [localized correction study](reports/2026-09-26-structured-correction/README.md) on
+96 held-out authored worlds, with five matched training conditions and two seeds.
+Original Granite scores **25.00%**, structured Jev repair **29.69%**, scalar Jev
+**28.65%**, and shuffled feedback **22.92%**. Structured repair fixes 5/4 failing
+worlds across the two seeds without damaging any of the 24 native passes.
+Its +4.69 pp native and +6.77 pp shuffled contrasts have exploratory 95% intervals
+above zero; its +1.04 pp scalar contrast does not. This supports further study of
+feedback-dependent preservation/repair, not established value from precise slot
+localization or broad benchmark superiority. Development selected no repairs in
+the secondary retention policy, which therefore stays at native accuracy.
+All 2,144 outputs and 256 Jev judgments pass audit and independent replay. Owned
+cloud resources are deleted; conservative cumulative estimate **$118.12/$125**,
+not an invoice. The [manuscript](research/manuscript.md) preserves this scoped positive result
+alongside earlier negative evidence. Earlier status/budget entries are historical.
+
+**R28 completed and audited:** the [539-case IFEval report](reports/2026-09-25-routing-feedback/README.md)
+scores original Granite **408/539 (75.70%)** and
+Jev-selected live repair **379/539 (70.32%)**.
+Selection does not meet its registered criterion; internal feedback does not meet
+its criterion. See all controls and intervals before interpreting attribution.
+All 1,616 outputs and 539 Jev judgments pass integrity admission; numeric replay
+matches. Owned cloud resources are verified deleted. Conservative cumulative
+estimate **$114.00/$125**, not an invoice; taxes/network remain unconfirmed.
+The [focused manuscript](research/manuscript.md) records these scoped results;
+the larger-model and ten-benchmark objective remains unachieved.
+Earlier budget and completion entries below are historical.
+
+**R27 completed-Granite comparison audited:** the
+[full-denominator analysis](reports/2026-09-25-completed-granite/README.md) scores
+original/Granite–Jev **18.69%/27.27% GPQA**, **18.33%/23.67% IFBench strict** and
+**0%/0% AIME**. Fixed and shuffled adapter feedback recover much of the gain;
+correctly paired Jev feedback has not established superiority over shuffled
+feedback. Larger Granite scores **21.21%/59.33%/26.67%**, with 140/198 GPQA
+responses cut off during thinking. GPQA also has a 35.35% retrospective
+always-B reference, exceeding guided accuracy. All nine completed systems pass exact-token,
+selection and receipt audits. Qwen and the other seven benchmark rows remain
+incomplete; no broad larger-model victory is established. All owned resources
+are deleted; conservative cumulative cost **$103.83/$110** before tax/network,
+not an invoice. All **640 tests** pass. Earlier snapshots remain historical.
+The [R27 engineering pilot](reports/2026-09-24-benchmark-execution-pilot/README.md)
+completed and passed integrity/replay checks, with no guided gain on 18 exposed
+cases. Earlier entries below describe historical stages and their cleanup.
+
+**R26-A completed and audited:** the [50-case exposed-data cost pilot](reports/2026-09-24-selective-admission/README.md)
+measured actual selective repair: 20 cases repaired and 30 retained per arm, with
+50 successful Jev calls. All three native profiles finished, but output-format
+admission failed; a separately versioned readout correction is prepared. No fresh
+benchmark score or larger-model superiority is established. All owned resources
+are deleted; estimated cumulative spend **$46.17/$110**, leaving
+**$63.83** before tax/separate network. Local checks: **584 tests pass**.
+
+**R25 completed and audited:** always repairing lowers the combined score from
+59.38% to 44.79%. The predeclared selective-retention replay instead reaches
+66.67%: science improves **71.88% → 86.46%**, while math stays **46.88%**.
+Formatting failures limit interpretation, especially for math. All 3,072 outputs
+and 12 adapter checkpoints are archived; public replay matches all four main
+analyses. All cloud resources are deleted. Cumulative estimate **$42.63/$75**
+before tax/separate network; **546 local tests pass**. The ten-benchmark and
+larger-model objectives remain unmet. See the [completed report](reports/2026-09-23-gated-repair/README.md).
+
+
+R25's internal branch has 262,144 trained parameters after block 19; original
+Granite weights remain frozen and Granite generates every final answer. Retained
+science gains correct 16/12 parseable wrong choices across two seeds with no
+correct-answer damage. This is offline retention, not measured skipped execution
+or fewer Jev calls. Full repair regresses and the larger-comparison spending gate
+is unmet. Previous numerical/service interruptions and their costs are preserved.
+Earlier stage/budget entries below are historical.
+
+**Next research direction:** [the Granite–Jev north star](research/north-star.md)
+targets broad benchmark gains and named larger-model outperformance. The
+[versioned suite contract](research/benchmark-suite-contract-v1.md) and
+[baseline diagnostic](research/benchmark-baseline-plan.md) are implemented and R23
+is complete. R25 completes conditional error-repair training and evaluation,
+with correct-answer preservation visible in its registered retention replay.
+The next candidate is fresh validation of actually selective repair, with admitted
+task-specific output instructions and informative-feedback controls. R27 has closed
+at its deadline with Qwen incomplete; its nine complete Granite systems are now audited.
+Block 19 was tested, not established as optimal. The remaining full-task rows retain separate admission
+and budget requirements.
+
+[R23 public baseline — completed](reports/2026-09-23-public-baseline/README.md):
+76 development problems per model, all 152 outputs audited and publicly replayed.
+Native 1B / newer thinking 3B score **19/24 / 21/24** math and **2/12 / 7/12**
+IFBench; the separately labeled post-hoc choice readout gives **12/28 / 18/28**
+MMLU-Pro and **6/12 / 4/12** MuSR. Original strict scores are preserved. Profiles
+and token budgets differ; 3B has 13 length stops. These are not official full-suite
+scores or a larger-model victory for Granite–Jev.
+
+[R24 critic diagnostic — completed](reports/2026-09-23-public-critic/README.md):
+Jev flags **21/23 wrong native answers**, with **3/37 false flags on correct answers**;
+all 60 requests and their original Granite inputs are audited. No answer is repaired
+and every eligible answer is queried. This supports testing a feedback-dependent
+repair mechanism, without establishing a beneficial insertion layer or call savings.
+All cloud resources are deleted. Combined new estimate **$3.01**, cumulative
+**$36.77/$50** before tax/separate network. All **507 local tests** pass.
+
+[R22 — completed](reports/2026-09-23-learned-feedback/README.md): a trained
+65,568-parameter residual bridge after block 19 scores **92.19%**, identical to
+its equally trained constant-feedback control; native scores **90.89%** on 384
+fresh synthetic worlds. Shuffled/oracle feedback changes no final token sequences.
+The +1.30 pp native contrast has a 97.5% interval [−1.30, +4.04]; no added Jev
+benefit is observed. All artifacts/checkpoints are audited and public; original
+model weights stay frozen. Resources are deleted, new cost **$1.18**, cumulative
+**$33.76/$50** before tax/network. This is research, not a model release.
+
+[R21 — completed](reports/2026-09-23-semantic-feedback/README.md): focused local support judgments pass a fixed fresh replication, with 383/384 drafts assessed and all 36 assessed natural errors detected. One partial-name case remains unassessed despite high Jev support. This admits the adapter pilot, not a final-answer improvement claim.
+
+[R20 blinded evaluation — completed](reports/2026-09-23-semantic-evaluation/README.md):
+native/Jev Qwen-judged scores are **30.21%/42.71% authored**, **74.17%/73.33%
+Hotpot** and **61.67%/67.50% SQuAD**. Only the authored primary contrast excludes
+zero; no domain establishes superiority over static instruction steering. The
+blind review agrees on 21/24 packets and exposes answer-completeness errors in the
+judge, so reliable semantic improvement and architectural superiority remain
+unproven. All 1,584 generations, 30,112 final tokens and 528 successful Jev requests
+pass reconstruction; public replay matches. All cloud resources are deleted.
+Estimated new cost is **$2.32**, cumulative **$32.55/$50** before tax/network.
+See the [evaluator failures](reports/2026-09-23-semantic-evaluation/transfer-diagnostics.md)
+and [paper draft](research/paper-draft.md#79-r20-blinded-semantic-evaluation-of-fixed-attention-interventions).
+
+Remaining measurement work: independently reviewed question/reference/answerability
+labels and response-completeness validation on fresh cases. Preserve R20's frozen
+scores; no architecture is tuned on its exposed test answers. R21's focused
+feedback admission and R22's learned bridge are complete. A future bridge study
+should establish feedback-dependent generation on development cases before
+fresh held-out transfer, within the broader north-star sequence above.
+
+Previous completed work: [R19 benefit and sufficiency study](reports/2026-09-22-benefit-sufficiency/README.md).
+Internal source/instruction steering improves frozen benchmark scores, but answer
+inspection reveals material grading artifacts. Static instruction steering without
+Jev is not demonstrably worse overall. The benefit gate saves 54.44% of requests
+without a reliable matched-routing advantage. All 7,312 successful generations are
+audited and publicly replayable; both servers are deleted. New estimated cost is
+$3.00, cumulative $30.23/$50 before tax/network.
+
+Previous completed work: [R18 single-prefill boundary study](reports/2026-09-22-boundary-attention/README.md).
+
+**R18 completed:** the single-prefill gate raises authored accuracy from
+**26.98% to 31.75%**, close to always Jev's **31.94%**, while saving **27.58%**
+of requests. The exploratory selective-minus-native interval is **+4.76 pp
+[1.79, 7.94]**. Hotpot native/always/selective F1 is **27.96% / 29.40% / 27.08%**;
+SQuAD adapted F1 is **26.49% / 26.72% / 26.55%**. Primary routing intervals
+include zero in all three domains, so reliable call selection is unestablished.
+
+The gate uses **425/984 test requests**, saving **56.81% overall**, with one
+prefill and zero discarded pilot tokens. Its domain call fractions are
+72.42% / 18.33% / 6.67%; missing-evidence handling remains weak. Granite generates
+every final token with unchanged weights and no required UNKNOWN spelling.
+All **9,376 outcomes**, **184,889 final tokens** and **1,244 successful Jev
+receipts** pass reconstruction; public archive replay reproduces the analysis.
+There are zero provider failures. All temporary resources are deleted after
+verified retrieval. New estimated cost is **$3.77**, cumulative **$27.23/$50**
+before tax/separate network. This is research-branch evidence, with mixed external
+quality, not a generally improved checkpoint or a serving-throughput benchmark.
+
+Previous completed work: [R17 selective attention](reports/2026-09-22-selective-attention/README.md).
+
+**R17 completed:** Jev guidance raises authored free-text accuracy from
+**28.77% to 33.13%**, and HotpotQA answer F1 from **25.23% to 28.76%**.
+The primary 98.75% intervals include zero: **+4.37 pp [0.00, 8.93]** and
+**+3.53 pp [−1.47, 8.58]**. Development selected the existing R16 policy;
+new timing/conservation variants did not win that selection.
+
+The live gates called on **every input**, saving no requests and adding pilot work.
+In a separately registered **offline replay**, a development-frozen budget rule
+uses 21.43% of calls on authored tasks for 31.55% accuracy, but only 25.00% Hotpot F1
+at 18.50% calls. This is a limited routing signal, not measured deployment savings
+or reliable transfer. All three replay budgets and negative findings are retained.
+Natural abstention remains poor, and overall authored scores stay below the 50%
+constant-abstention reference. Granite owns every final token; weights are unchanged.
+
+All **8,364 development/test outcomes** pass token/input/source/weight and public
+archive replay audits. **860 Jev attempts succeeded, with no provider failures**.
+New estimated cost is **$3.77**, cumulative **$23.46/$50** before tax/separate
+network; all temporary GPU, disk and network resources are deleted. No generally
+superior architecture or trained model release is established.
+
+At R17 completion, the [single-prefill boundary design](research/selective-attention-next-design.md)
+was an unimplemented follow-up hypothesis. R18 implements and evaluates it with
+new features, real-model parity admission and fresh held-out inputs; its mixed
+quality and measured work results are reported above.
+
+Previous completed work: [R16 adaptive/free-text study](reports/2026-09-22-adaptive-attention/README.md).
+**R16 interpretation:** constrained-task improvement is established within this
+study; direct free-text performance regressed against matched R15, while dynamic
+refresh and the primary HotpotQA contrast remain inconclusive.
+
+All **16,120 main test outcomes** and **3,600 exploratory factorial outcomes**
+are retained. On the new depth 1–6 constrained task, native Granite scores
+**30.83%**, matched R15 **59.00%**,
+and tuned Jev attention **72.00%**. The primary
+tuned-minus-R15 contrast is **+13.00 pp [+8.67, +17.61]**.
+
+Without an answer menu or required UNKNOWN token, open-explicit accuracy is
+**27.33% native / 27.17% tuned**;
+open-neutral accuracy is **26.17% / 21.50%**.
+Refreshed versus static staged guidance changes accuracy by
+**+0.42 pp [-3.33, +4.17]**. On 200 length-filtered HotpotQA questions,
+direct answer F1 is **26.85% native /
+29.67% tuned**, with primary contrast
+**+2.82 pp [-1.35, +6.91]**. Primary intervals are 98.333%;
+other comparisons are exploratory. These tasks and output contracts have separate
+interpretations; historical R15 scores are from a different cohort and precision.
+
+Granite generates every semantic token with unchanged weights; all arms use FP32.
+The full report includes natural abstentions, answerable/missing breakdowns,
+regressions, factor interactions, API failures, exact traces and three independent
+audits. All temporary resources are deleted. New estimated cost is
+**$8.52**, cumulative **$19.69/$50**
+before tax/separate network charges. This is research-branch evidence, not a trained
+checkpoint release or a general reasoning guarantee.
+
+Previous work completed: [R15 refinement](reports/2026-09-22-evidence-attention-refinement/README.md)
+selected 12 heads, ln(16) and hard relevance gating. Fresh primary accuracy is
+38.08% native, 47.33% previous Jev and 68.42% refined Jev, meeting the frozen
+advancement criterion. All 34,777 planned records are retained, including 98
+provider-dependent failures; 34,679 actual forwards and 1,632 scorer attempts
+pass independent audit. All resources are deleted; 355 local tests pass.
+Longer-chain challenge accuracy is only 41.67%, below always UNKNOWN (50%).
+Remaining research is independent real-task evaluation and stronger long-chain
+composition, using new development/test separation; the present test is now exposed.
+
+The [R13 full study](reports/2026-09-21-structured-study/README.md) is complete:
+6,300 planned jobs attempted, 6,299 completed and one provider failure retained.
+Direct Granite scored 42.67%, staged 37.00%, likelihood 35.44% and Jev token
+guidance 36.00%; all three adjusted primary intervals include zero. No useful
+accuracy gain is established. Both temporary GPU deployments are deleted.
+All 6,300 prompts and 6,299 completed token paths passed independent reconstruction;
+weights are unchanged. All failed pilots and interrupted results remain available.
+
+**Earlier external-benchmark comparison:** the [corrected 3,600-job generated-answer study](reports/2026-09-20-generated-answer-study/README.md)
+is complete. Granite generated every final answer; Jev did not demonstrate an
+accuracy gain over either control. Source, grading and data stayed frozen, and
+the temporary cloud resources were deleted after verified backup retrieval.
+The earlier experiments below provide historical context for the current contract.
+
+The owner's subsequent request for a fresh architecture assessment and a durable
+research record is covered by the [research notebook](research/README.md).
+The [offline audit](reports/2026-09-21-architecture-reassessment/README.md) separates
+first-batch rejection from absent valid proposals without changing prior results.
+The [critic development and bounded logit prototype](reports/2026-09-21-logit-guidance/README.md)
+have now run. Jev scoring was interrupted by HTTP 400; all development proposals
+were subsequently collected without further paid calls. The real-Granite replay
+check verifies probability control, unchanged weights and zero-bias identity, but
+does not establish quality: grader coverage is 67% and all 20 final continuations
+omit the requested closing frame. The held-out gate remains unexecuted.
+
+The owner requested investigating Jev as an active helper during inference. The
+[investigation](docs/reasoning-step-investigation.md) and
+[diagnostic report](reports/2026-09-20-reasoning-investigation/README.md) are complete;
+the owner then authorized implementing the reasoning-search controller.
+The [implementation](docs/reasoning-controller.md) has offline coverage and a
+[16-run live mechanism check](reports/2026-09-20-reasoning-controller/README.md).
+That initial run completed 0/4 step-guided tasks because the generator supplied
+repeated premises. The authorized [proposal follow-up](reports/2026-09-20-proposal-generation/README.md)
+adds opt-in worked examples: eligible development batches rose from 0/8 to 6/8.
+On six separate worlds with two seeds, step Jev, greedy, and likelihood each
+matched 6/12 oracle verdicts; final-only Jev matched 5/12. All 48 attempts are
+retained, including one ambiguous timeout and the declared continuation stage.
+Early guidance avoided an invalid derivation in one controlled trace, but all
+modes failed both UNKNOWN worlds. Broader quality improvement remains unproven.
+The subsequent [fixed-choice check](reports/2026-09-20-fixed-verdict/README.md)
+supplies all three final labels in code: existing step guidance matched 2/6 fresh
+verdicts, fixed mode 6/6, and direct Jev 6/6. Both UNKNOWN cases were classified
+correctly, while the paired Granite reasoning paths remained unchanged. This
+demonstrates a final-classification improvement in the sample, not added accuracy
+from Granite's reasoning or repaired intermediate derivations.
+See [LAUNCH.md](LAUNCH.md) and [LIVE.md](LIVE.md) for the initial prototype scope.
 
 ## Problem
 
-The smoke test proves generation-time intervention but does not establish a quality
-gain. It contains both an incorrect EOS rejection and accepted misleading wording.
-Changing thresholds on those same examples would not establish generalization.
+The fixed step diagnostic gave correct decisions for both scorer rubrics, but the
+Granite check exposed duplicate candidates, repeated premises, a missing-premise
+hallucination in likelihood selection, and empty rejection in Jev mode. In the earlier engine, correct
+final text could also end with `step_budget` because it lacked a final phase.
+The experiments establish neither improved quality nor general verifier accuracy.
 
-## Candidate work and acceptance evidence
+## Implemented behavior and remaining evidence
 
-1. Define a separate validation/test split, answer rubric, and independent grader.
-2. Measure candidate quality before selection, selected-answer quality, incorrect
-   acceptance, incorrect rejection, completion rate, and budget/error outcomes.
-3. Compare baseline, equal-candidate likelihood selection, and Jev guidance using
-   multiple seeds and actual compute/call counts; separate retries from selection gains.
-4. Record prompt/rubric changes and calibrated thresholds before held-out testing.
-5. Publish all scoped results, including regressions, with licensing and provenance.
+1. Explicit reasoning/final states and reliable step boundaries with exact tokens.
+2. Deduplicated candidates and bounded diversification before concluding no path exists.
+3. Saved alternate branches and tested backtracking under global resource limits.
+4. Separate judgments for grounded validity, progress, and final completion.
+5. Opt-in proposal examples, a separate six-world/two-seed comparison, and an
+   independent symbolic verdict oracle with all unfinished runs in the denominator.
+6. Code-defined final Choices with separate reasoning provenance, reserved time/API
+   budgets, explicit uncertainty/error states, and a direct-Jev control.
+7. Remaining: useful reasoning recovery and justified explanations when premises
+   are missing; larger fresh evaluation and independent checking of steps; evidence
+   that Granite's intermediate reasoning adds value beyond direct classification.
 
-This experiment should determine whether and where a serving optimization is worth
-building. A vLLM implementation or weight training should not be bundled into it.
+Jev remains the live evaluator; no surrogate critic or weight training is part of
+this direction. Serving integration and colocated runtime performance need separate
+evidence. Do not tune on the published diagnostic fixtures or treat empty rejection
+as a corrected answer. The investigation specifies implementation tests and controls.
+
+The owner authorized the [controlled ProofWriter study](docs/proofwriter-experiment.md):
+add unguided and final-only-filtered Granite reasoning with the same fixed final
+Jev Choice, retain direct Jev and Granite-alone outcomes, and compare 200 theories across three seeds before
+making a broader improvement claim. A separate development pilot precedes the
+frozen test run. All attempted outcomes remain in the denominator.
+The owner authorized a small cloud GPU for this study. The twelve-job CUDA pilot
+completed on one L40S, followed by all 2,400 main jobs and 96 stress jobs across
+24 new worlds. The [final report](reports/2026-09-20-controlled-study/README.md)
+records 84.5% guided accuracy versus 84.7% direct Jev; all adjusted main comparison
+intervals include zero. In 542/600 guided runs no step survived before the Choice.
+The generated-answer controls have conflicting label-only versus label-and-reason
+instructions, documented without changing their frozen scores. A future experiment
+should reconcile this contract and improve useful proposal acceptance on development
+data, then freeze a new evaluation on fresh problems. No follow-up tuning or reruns
+of held-out cases are part of the completed study. Temporary cloud resources were
+deleted after all result files were backed up and verified.
+
+## Corrected owner objective: Granite supplies the final answer
+
+The owner identified that the fixed-choice workaround had changed the research
+question. The recorded 84.5% is a pipeline ending in Jev classification, not a
+measurement of Granite's own improved answer. The owner authorized rebuilding the
+experiment and spending up to $50 total on a small Nebius GPU and Jev.
+
+The [replacement protocol](docs/generated-answer-experiment.md) compares single-path
+Granite, multiple-candidate likelihood selection, and intermediate-only Jev selection.
+All three retain Granite's accepted token continuation and use the same Granite
+final-generation rule, including when no reasoning step is usable. Jev cannot choose
+the final answer. Independent grading uses fresh logic cases and numerical word
+problems. Development validation and a new test freeze must precede any new claim.
+
+The first replacement pilot failed the shared format gate and remains recorded.
+The [second 48-job development pilot](reports/2026-09-20-generated-answer-pilot-v2/README.md)
+passed, using explicit EOS termination and a versioned TRUE/FALSE/UNKNOWN contract.
+The admitted main study completed all 400 fresh test problems across three seeds
+and three arms (3,600 jobs), with source, settings, grading, and exclusions frozen.
+Math accuracy was 61.5% single, 67.8% likelihood selection, and 56.5% Jev; logic
+was 52.7%, 52.8%, and 52.5%. Jev changed 484 intermediate selections but retained
+no step in 572/600 logic runs. The math difference versus likelihood was negative
+throughout the adjusted confidence interval; the other intervals included zero.
+All 3,600 final generations passed the independent token audit, reproduced locally.
+The [report](reports/2026-09-20-generated-answer-study/README.md) includes actual
+latency/work, both incomplete outputs, all invalid formats, and the $3.29 estimated
+compute/disk/Jev cost before tax and separate network charges.
+
+Useful retained reasoning remains unproven. A next development investigation
+should distinguish weak proposals from incorrect rejection before proposing a
+fresh test; there is no authority here to tune on or rerun the completed test set.
+No model training, changed weights, vLLM integration, merge, or release is claimed.
+
+
+## R14 completed: internal attention to source evidence
+
+The [frozen plan](research/evidence-attention-protocol.md) and [completed report](reports/2026-09-21-evidence-attention/README.md)
+implement and evaluate a static Jev source-relevance map inside selected Granite
+attention heads. All 5,760 held-out outputs completed, with a +9.03 pp native-baseline
+gain (42.22% to 51.25%; adjusted interval [5.83,12.50]). The stricter all-controls
+criterion failed because lexical/prompt comparisons remain inconclusive; always
+UNKNOWN scores 50% on these constrained authored cases. All model decisions,
+receipts, unchanged weights, costs and cleanup are audited and documented.
+
+At R14 completion, no further cloud run was pending and open-ended transfer
+remained untested. R15 and R16 subsequently evaluated their separately frozen
+protocols. R16 adds full-vocabulary and external QA evidence above. Any next tuning
+study must treat all completed cohorts as exposed and reserve fresh evaluation
+cases. Concurrent serving and colocated Jev remain untested; no model training or
+release is implied.

@@ -1,0 +1,353 @@
+[
+  {
+    "id": "r19/fit/0000/sagisusu/heavy",
+    "world_id": "r19/fit/0000/sagisusu",
+    "split": "fit",
+    "index": 0,
+    "condition": "heavy",
+    "depth": 1,
+    "missing": false,
+    "family": "original",
+    "target": "parcel sagisusu",
+    "question": "Which room contains the parcel sagisusu?",
+    "sources": [
+      {
+        "id": "E01",
+        "text": "The room green contains the locker beronaga."
+      },
+      {
+        "id": "E02",
+        "text": "The crate betudefu contains the parcel lisipolo."
+      },
+      {
+        "id": "E03",
+        "text": "The locker capuveno contains the crate nisokima."
+      },
+      {
+        "id": "E04",
+        "text": "The crate sacudiro contains the parcel cavafoli."
+      },
+      {
+        "id": "E05",
+        "text": "The crate valobipu contains the parcel bumuvefa."
+      },
+      {
+        "id": "E06",
+        "text": "The locker gefafovo contains the crate valobipu."
+      },
+      {
+        "id": "E07",
+        "text": "The room green contains the parcel sagisusu."
+      },
+      {
+        "id": "E08",
+        "text": "The room black contains the locker pumidosu."
+      },
+      {
+        "id": "E09",
+        "text": "The room white contains the locker mutikomu."
+      },
+      {
+        "id": "E10",
+        "text": "The locker pumidosu contains the crate kivubebe."
+      },
+      {
+        "id": "E11",
+        "text": "The locker mutikomu contains the crate sacudiro."
+      },
+      {
+        "id": "E12",
+        "text": "The room green contains the locker capuveno."
+      },
+      {
+        "id": "E13",
+        "text": "The room blue contains the locker gefafovo."
+      },
+      {
+        "id": "E14",
+        "text": "The crate nisokima contains the parcel doridifi."
+      },
+      {
+        "id": "E15",
+        "text": "The locker besitulo contains the crate gununuro."
+      },
+      {
+        "id": "E16",
+        "text": "The room white contains the locker besitulo."
+      },
+      {
+        "id": "E17",
+        "text": "The crate gununuro contains the parcel buducuke."
+      },
+      {
+        "id": "E18",
+        "text": "The locker beronaga contains the crate betudefu."
+      },
+      {
+        "id": "E19",
+        "text": "The crate kivubebe contains the parcel dogivira."
+      }
+    ],
+    "reference": "green",
+    "oracle_scores": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "r19/fit/0001/pusucodu/heavy",
+    "world_id": "r19/fit/0001/pusucodu",
+    "split": "fit",
+    "index": 1,
+    "condition": "heavy",
+    "depth": 2,
+    "missing": false,
+    "family": "original",
+    "target": "parcel pusucodu",
+    "question": "Which room contains the parcel pusucodu?",
+    "sources": [
+      {
+        "id": "E01",
+        "text": "The locker gadalomi contains the crate gukidole."
+      },
+      {
+        "id": "E02",
+        "text": "The crate boreguta contains the parcel kologeci."
+      },
+      {
+        "id": "E03",
+        "text": "The locker getidepa contains the crate boreguta."
+      },
+      {
+        "id": "E04",
+        "text": "The room yellow contains the crate dikesecu."
+      },
+      {
+        "id": "E05",
+        "text": "The crate lukutapu contains the parcel samarupu."
+      },
+      {
+        "id": "E06",
+        "text": "The room blue contains the locker dorigeve."
+      },
+      {
+        "id": "E07",
+        "text": "The crate kosogasu contains the parcel taricunu."
+      },
+      {
+        "id": "E08",
+        "text": "The locker ruroremo contains the crate lukutapu."
+      },
+      {
+        "id": "E09",
+        "text": "The crate gukidole contains the parcel favelelo."
+      },
+      {
+        "id": "E10",
+        "text": "The crate losopepi contains the parcel gikemigi."
+      },
+      {
+        "id": "E11",
+        "text": "The crate dikesecu contains the parcel pusucodu."
+      },
+      {
+        "id": "E12",
+        "text": "The room black contains the locker getidepa."
+      },
+      {
+        "id": "E13",
+        "text": "The locker dorigeve contains the crate losopepi."
+      },
+      {
+        "id": "E14",
+        "text": "The room white contains the locker litaguvu."
+      },
+      {
+        "id": "E15",
+        "text": "The crate rovileri contains the parcel foporasa."
+      },
+      {
+        "id": "E16",
+        "text": "The locker litaguvu contains the crate rovileri."
+      },
+      {
+        "id": "E17",
+        "text": "The room white contains the locker cimuluge."
+      },
+      {
+        "id": "E18",
+        "text": "The room red contains the locker gadalomi."
+      },
+      {
+        "id": "E19",
+        "text": "The room black contains the locker ruroremo."
+      },
+      {
+        "id": "E20",
+        "text": "The locker cimuluge contains the crate kosogasu."
+      }
+    ],
+    "reference": "yellow",
+    "oracle_scores": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "id": "r19/fit/0002/fogefame/heavy",
+    "world_id": "r19/fit/0002/fogefame",
+    "split": "fit",
+    "index": 2,
+    "condition": "heavy",
+    "depth": 3,
+    "missing": false,
+    "family": "original",
+    "target": "parcel fogefame",
+    "question": "Which room contains the parcel fogefame?",
+    "sources": [
+      {
+        "id": "E01",
+        "text": "The crate selotadi contains the parcel fogefame."
+      },
+      {
+        "id": "E02",
+        "text": "The crate copusidu contains the parcel lafadoni."
+      },
+      {
+        "id": "E03",
+        "text": "The room yellow contains the locker sogosusu."
+      },
+      {
+        "id": "E04",
+        "text": "The room blue contains the locker fivarimu."
+      },
+      {
+        "id": "E05",
+        "text": "The crate negodibi contains the parcel tematebo."
+      },
+      {
+        "id": "E06",
+        "text": "The locker vodecofi contains the crate putecuni."
+      },
+      {
+        "id": "E07",
+        "text": "The crate lodavono contains the parcel demolema."
+      },
+      {
+        "id": "E08",
+        "text": "The locker cuvakavi contains the crate copusidu."
+      },
+      {
+        "id": "E09",
+        "text": "The room red contains the locker losokupo."
+      },
+      {
+        "id": "E10",
+        "text": "The crate dubicibo contains the parcel gacameno."
+      },
+      {
+        "id": "E11",
+        "text": "The locker losokupo contains the crate dubicibo."
+      },
+      {
+        "id": "E12",
+        "text": "The room green contains the locker vodecofi."
+      },
+      {
+        "id": "E13",
+        "text": "The room green contains the locker kanorepe."
+      },
+      {
+        "id": "E14",
+        "text": "The locker fivarimu contains the crate lodavono."
+      },
+      {
+        "id": "E15",
+        "text": "The room red contains the locker cuvakavi."
+      },
+      {
+        "id": "E16",
+        "text": "The locker sogosusu contains the crate negodibi."
+      },
+      {
+        "id": "E17",
+        "text": "The crate sumiraba contains the crate selotadi."
+      },
+      {
+        "id": "E18",
+        "text": "The room white contains the crate sumiraba."
+      },
+      {
+        "id": "E19",
+        "text": "The crate nolikalu contains the parcel binibotu."
+      },
+      {
+        "id": "E20",
+        "text": "The locker kanorepe contains the crate nolikalu."
+      },
+      {
+        "id": "E21",
+        "text": "The crate putecuni contains the parcel betokake."
+      }
+    ],
+    "reference": "white",
+    "oracle_scores": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ]
+  }
+]

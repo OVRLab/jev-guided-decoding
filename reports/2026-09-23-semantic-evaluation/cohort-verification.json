@@ -1,0 +1,11 @@
+{
+  "cases": 528,
+  "domains": {
+    "synthetic": 288,
+    "hotpot": 120,
+    "squad2": 120
+  },
+  "max_judge_prompt_tokens_with_long_placeholder": 2969,
+  "cohort_matches_preflight": true,
+  "source_hashes": 63
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "name": "adaptive-retrieval-review",
+    "url": "https://aclanthology.org/2025.acl-long.319/",
+    "sha256": "9c56f9f5c16219cfd44d26324577197df9b0362c6191aeb5620595e6a876145d",
+    "retrieved_at": "2026-09-22T12:27:02.944262+00:00",
+    "review_depth": "primary abstract; method text for two 2026 papers"
+  },
+  {
+    "name": "interpretable-uncertainty",
+    "url": "https://arxiv.org/html/2607.07380v1",
+    "sha256": "a72d10c60657e6f4f8ce8747b008d833ddad7de839558e7e3aa5ab24bab12b21",
+    "retrieved_at": "2026-09-22T12:27:03.087763+00:00",
+    "review_depth": "primary abstract; method text for two 2026 papers"
+  },
+  {
+    "name": "v-steer",
+    "url": "https://arxiv.org/html/2607.26228v1",
+    "sha256": "74f53038f28b9e872abe0a8571ad58aebd8788eee75a6f4f03a039f1dab200a9",
+    "retrieved_at": "2026-09-22T12:27:03.357464+00:00",
+    "review_depth": "primary abstract; method text for two 2026 papers"
+  }
+]

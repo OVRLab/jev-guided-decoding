@@ -1,0 +1,41 @@
+{
+  "planned": 6300,
+  "recorded": 6300,
+  "statuses": {
+    "complete": 6299,
+    "failed": 1
+  },
+  "missing": 0,
+  "unique_started_keys": 6300,
+  "segments_disjoint": true,
+  "combined_bytes_exactly_equal_original_plus_continuation": true,
+  "independent_input_audits": 6300,
+  "independent_completed_token_audits": 6299,
+  "independent_claim_grade_audits": {
+    "branches": 35996,
+    "accepted": 10798
+  },
+  "zero_identity": {
+    "matched": 900,
+    "pairs": 900
+  },
+  "first_branch_pool_identity": {
+    "pairs": 3600,
+    "identical": 3600
+  },
+  "source_and_data_hashes_match": true,
+  "original_source_freeze": "97fc05c",
+  "continuation_source_freeze": "34ef382",
+  "weight_digest": "311c1141187580dc0905c810e9d9e78853a0bf37b865bd5a5a511f6eed72f8c9",
+  "weights_unchanged_both_segments": true,
+  "returned_jev_versions": [
+    "jev-1.13.0"
+  ],
+  "remote_result_files_verified_by_segment": [
+    19,
+    21
+  ],
+  "both_instances_disks_task_security_rules_and_ephemeral_allocations_deleted": true,
+  "original_full_operational_gates_passed": false,
+  "note": "The failed soft_step job has no final answer. All completed token paths pass; no missing/failed outcome is excluded."
+}

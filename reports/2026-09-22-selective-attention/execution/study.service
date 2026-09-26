@@ -1,0 +1,12 @@
+[Unit]
+Description=Bounded R17 selective Jev attention study
+After=network-online.target
+[Service]
+Type=simple
+User=study
+WorkingDirectory=/home/study/jev-guided-decoding
+ExecStart=/bin/bash /home/study/run-selective.sh
+RuntimeMaxSec=7h30m
+TimeoutStopSec=30s
+StandardOutput=append:/home/study/jev-guided-decoding/results/selective-study.log
+StandardError=append:/home/study/jev-guided-decoding/results/selective-study.log

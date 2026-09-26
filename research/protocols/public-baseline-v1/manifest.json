@@ -1,0 +1,82 @@
+{
+  "protocol": "r23-public-baseline-v1",
+  "at": "2026-09-23T16:12:15.531175+00:00",
+  "sources": {
+    "pyproject.toml": "4fbdb53f9dede3ba6f5937de70abde78a57063b68b5fea8122b34b748ccbc4b7",
+    "research/benchmark-baseline-plan.md": "2e4f25c4513acecc367541cb5f58ea2a3863888952c578678b6caaf668762bf1",
+    "research/iterations/benchmark_baseline/analyze.py": "27e0ce067ef3a66714e793341357b515b2c51c8c52e85dfe6fcb5c2b2825856a",
+    "research/iterations/benchmark_baseline/audit.py": "056fe91091c04d294cfd7b3f1497ddb80e14fed4b2d6c85f9a172f01e00d1a12",
+    "research/iterations/benchmark_baseline/common.py": "da590c2cb7229ac5b277b2742c0fa3875da9f5c6e31ed4965ebd6e1d3b30167e",
+    "research/iterations/benchmark_baseline/prepare.py": "44c3fd8340be2d77516a7b177efca37195537c68fe0f31005ee143ce51496e6c",
+    "research/iterations/benchmark_baseline/run.py": "e8ebdba90ef607f1875f2603d7a9bb8629749d4cfae181cc9ed89e8ee0f768ec",
+    "uv.lock": "b581bd9cbb34bae515ecfdae8c1de58e222106ccb78e6186ac7e63ef47277137"
+  },
+  "upstream": {
+    "mmlu": {
+      "url": "https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro/resolve/b189ec765aa7ed75c8acfea42df31fdae71f97be/data/validation-00000-of-00001.parquet",
+      "sha256": "139423c23722e480c807ac4a191409a710cfce4eba744c1d641cf88e730e2078",
+      "digest_encoding": "sha256 of original bytes"
+    },
+    "gsm": {
+      "url": "https://huggingface.co/datasets/openai/gsm8k/resolve/740312add88f781978c0658806c59bc2815b9866/main/train-00000-of-00001.parquet",
+      "sha256": "ea82612ea9582142387730c793eb67d3b12849002bc0b7fa6f8efafa7351419d",
+      "digest_encoding": "sha256 of original bytes"
+    },
+    "murder_mystery": {
+      "url": "https://huggingface.co/datasets/TAUR-Lab/MuSR/resolve/7c365b439a222150f317764d4f16ae6c96d7d94a/murder_mystery.csv",
+      "sha256": "ce19b6dc0b953f698e79528c72705804bc97e772a4303734808971f63ce233a7",
+      "digest_encoding": "sha256 of original bytes"
+    },
+    "object_placements": {
+      "url": "https://huggingface.co/datasets/TAUR-Lab/MuSR/resolve/7c365b439a222150f317764d4f16ae6c96d7d94a/object_placements.csv",
+      "sha256": "98cd17d2c9ea53664e274365e901c90dfcaa40d17547dfbd369f1cd26fd2a81c",
+      "digest_encoding": "sha256 of original bytes"
+    },
+    "team_allocation": {
+      "url": "https://huggingface.co/datasets/TAUR-Lab/MuSR/resolve/7c365b439a222150f317764d4f16ae6c96d7d94a/team_allocation.csv",
+      "sha256": "ddbef3bb61857a7cc3b73db62fac4605679e1b7ff4357d57fdfcf91f7caaa1f8",
+      "digest_encoding": "sha256 of original bytes"
+    },
+    "ifbench": {
+      "url": "https://raw.githubusercontent.com/allenai/IFBench/1c40f0c10d9b5c5c2f10a175a28007ebb64f7f4d/data/IFBench_test.jsonl",
+      "sha256": "d2ada7da94a38cfe406351614c4e686846ed2da6d1b339db95fa5ead19554a4a",
+      "digest_encoding": "sha256 of original bytes"
+    }
+  },
+  "models": {
+    "granite_4_0_1b": {
+      "id": "ibm-granite/granite-4.0-1b",
+      "revision": "6a7381ba1f54d684ff508d991aeb7dc580157103",
+      "thinking": false,
+      "do_sample": false,
+      "max_new_tokens": 2048
+    },
+    "granite_4_2_3b": {
+      "id": "ibm-granite/granite-4.2-3b",
+      "revision": "e459acceac81e5fe67c07d9cfc72329a332e7eb1",
+      "thinking": true,
+      "do_sample": true,
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 0,
+      "max_new_tokens": 8192
+    }
+  },
+  "datasets": {
+    "cases.json": "4733a99c65d3bee6a2bca92ea9266b6afc1945a16460cd1d40770ad0ab434bbe",
+    "references.json": "03ee8cad22249ccb10216fe3e4fe3533297a1647a14dc42435ac2c0acf2f92ee"
+  },
+  "source_revision": "36ebac9938f8660c3abc89ba8884dd96cd36c014",
+  "source_dirty": true,
+  "seed": 2301,
+  "dtype": "bfloat16",
+  "attention": "sdpa",
+  "max_input_tokens": 16384,
+  "max_seconds": 10800,
+  "ifbench_revision": "1c40f0c10d9b5c5c2f10a175a28007ebb64f7f4d",
+  "prior_spend_usd": 33.76145561903811,
+  "cumulative_cap_usd": 50,
+  "stage_cap_usd": 7.1,
+  "use": "development only; selected MuSR and IFBench IDs excluded from future untouched holdout",
+  "pre_inference_amendment": "Normalize null IFBench kwargs for strict/loose upstream parity; unchanged cases and generation settings."
+}

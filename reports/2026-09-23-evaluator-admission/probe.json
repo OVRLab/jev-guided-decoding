@@ -1,0 +1,32 @@
+{
+  "source_files": {
+    "evaluate_from_local.py": {
+      "url": "https://raw.githubusercontent.com/TIGER-AI-Lab/MMLU-Pro/f418b116db00b065c2aea046518d8fcf74d39872/evaluate_from_local.py",
+      "sha256": "d0a4ae51b80efa8f99713a21253ad5542913ef2ac9915e95d40c8a62174e9401"
+    },
+    "evaluate_from_api.py": {
+      "url": "https://raw.githubusercontent.com/TIGER-AI-Lab/MMLU-Pro/f418b116db00b065c2aea046518d8fcf74d39872/evaluate_from_api.py",
+      "sha256": "6e00c0d57ed307b9e707b712ea796fbd2286c6d21889cd63bb58090fa72c5a99"
+    },
+    "evaluate_from_apiX.py": {
+      "url": "https://raw.githubusercontent.com/TIGER-AI-Lab/MMLU-Pro/f418b116db00b065c2aea046518d8fcf74d39872/evaluate_from_apiX.py",
+      "sha256": "5096db110db0bc2a52a0e1cf5415b7ed0a5f8a330d4576c50442d93121aff65b"
+    },
+    "compute_accuracy.py": {
+      "url": "https://raw.githubusercontent.com/TIGER-AI-Lab/MMLU-Pro/f418b116db00b065c2aea046518d8fcf74d39872/compute_accuracy.py",
+      "sha256": "c0052d10d0d8ada49f796a4a73fcf36c3a9348a0017f8fe46f41cede5457a599"
+    },
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/TIGER-AI-Lab/MMLU-Pro/f418b116db00b065c2aea046518d8fcf74d39872/README.md",
+      "sha256": "dfbab62320e644f3682d4697e206160bbb59baafa324c59a17e4424328e3e5a5"
+    }
+  },
+  "fixture": "Ten synthetic unparseable outputs, ten choices each, all references A; no model inference",
+  "random_seed": 12345,
+  "upstream_local_score": 0.1,
+  "randomly_credited": 1.0,
+  "wrong": 9.0,
+  "model_selected_answers": 0,
+  "method": "Execute only inspected save_res function AST with json and an isolated seeded RNG; temporary output file",
+  "r25_changed": false
+}

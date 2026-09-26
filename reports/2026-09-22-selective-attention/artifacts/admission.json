@@ -1,0 +1,203 @@
+{
+  "at": "2026-09-22T11:43:47.834735+00:00",
+  "checks": [
+    {
+      "case_id": "r17/development/0000/begaselo/heavy",
+      "prompt_tokens": 356,
+      "native_token_ids": [
+        29815,
+        389,
+        279,
+        6029
+      ],
+      "modes": [
+        {
+          "mode": "additive",
+          "cache_full_max_difference": 2.86102294921875e-05,
+          "same_argmax": true
+        },
+        {
+          "mode": "conserve",
+          "cache_full_max_difference": 3.147125244140625e-05,
+          "same_argmax": true
+        }
+      ]
+    },
+    {
+      "case_id": "r17/development/0001/sebitaca/heavy",
+      "prompt_tokens": 373,
+      "native_token_ids": [
+        791,
+        3130,
+        4251,
+        5727
+      ],
+      "modes": [
+        {
+          "mode": "additive",
+          "cache_full_max_difference": 2.2172927856445312e-05,
+          "same_argmax": true
+        },
+        {
+          "mode": "conserve",
+          "cache_full_max_difference": 3.0517578125e-05,
+          "same_argmax": true
+        }
+      ]
+    },
+    {
+      "case_id": "r17/development/0002/kapakumu/heavy",
+      "prompt_tokens": 384,
+      "native_token_ids": [
+        791,
+        3130,
+        2579,
+        5727
+      ],
+      "modes": [
+        {
+          "mode": "additive",
+          "cache_full_max_difference": 3.159046173095703e-05,
+          "same_argmax": true
+        },
+        {
+          "mode": "conserve",
+          "cache_full_max_difference": 2.7179718017578125e-05,
+          "same_argmax": true
+        }
+      ]
+    },
+    {
+      "case_id": "r17/hotpot/5ab5052a5542990594ba9ccf",
+      "prompt_tokens": 1338,
+      "native_token_ids": [
+        46324,
+        26577,
+        94005,
+        59405
+      ],
+      "modes": [
+        {
+          "mode": "additive",
+          "cache_full_max_difference": 1.9073486328125e-05,
+          "same_argmax": true
+        },
+        {
+          "mode": "conserve",
+          "cache_full_max_difference": 2.6702880859375e-05,
+          "same_argmax": true
+        }
+      ]
+    },
+    {
+      "case_id": "r17/hotpot/5a7cde68554299683c1c63ac",
+      "prompt_tokens": 1840,
+      "native_token_ids": [
+        791,
+        35766,
+        596,
+        9417
+      ],
+      "modes": [
+        {
+          "mode": "additive",
+          "cache_full_max_difference": 2.4080276489257812e-05,
+          "same_argmax": true
+        },
+        {
+          "mode": "conserve",
+          "cache_full_max_difference": 2.8848648071289062e-05,
+          "same_argmax": true
+        }
+      ]
+    },
+    {
+      "case_id": "r17/hotpot/5abdd08d5542991f6610604c",
+      "prompt_tokens": 1438,
+      "native_token_ids": [
+        21471,
+        5493,
+        315,
+        279
+      ],
+      "modes": [
+        {
+          "mode": "additive",
+          "cache_full_max_difference": 1.9550323486328125e-05,
+          "same_argmax": true
+        },
+        {
+          "mode": "conserve",
+          "cache_full_max_difference": 2.6226043701171875e-05,
+          "same_argmax": true
+        }
+      ]
+    },
+    {
+      "case_id": "r17/hotpot/5a877dd65542993e715abf79",
+      "prompt_tokens": 1160,
+      "native_token_ids": [
+        2822,
+        11,
+        20442,
+        509
+      ],
+      "modes": [
+        {
+          "mode": "additive",
+          "cache_full_max_difference": 1.52587890625e-05,
+          "same_argmax": true
+        },
+        {
+          "mode": "conserve",
+          "cache_full_max_difference": 1.800060272216797e-05,
+          "same_argmax": true
+        }
+      ]
+    },
+    {
+      "case_id": "r17/hotpot/5a74f3f55542993748c8974b",
+      "prompt_tokens": 1241,
+      "native_token_ids": [
+        36,
+        29554,
+        362,
+        1609
+      ],
+      "modes": [
+        {
+          "mode": "additive",
+          "cache_full_max_difference": 2.8133392333984375e-05,
+          "same_argmax": true
+        },
+        {
+          "mode": "conserve",
+          "cache_full_max_difference": 2.86102294921875e-05,
+          "same_argmax": true
+        }
+      ]
+    },
+    {
+      "case_id": "r17/hotpot/5a7d3470554299452d57bb56",
+      "prompt_tokens": 1638,
+      "native_token_ids": [
+        1110,
+        32712,
+        100257
+      ],
+      "modes": [
+        {
+          "mode": "additive",
+          "cache_full_max_difference": 3.4332275390625e-05,
+          "same_argmax": true
+        },
+        {
+          "mode": "conserve",
+          "cache_full_max_difference": 5.340576171875e-05,
+          "same_argmax": true
+        }
+      ]
+    }
+  ],
+  "passed": true
+}

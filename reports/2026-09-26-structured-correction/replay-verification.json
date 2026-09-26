@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "public_archive_file_counts": {
+    "recorded-run.tar.gz": 45,
+    "inputs.tar.gz": 3,
+    "api-admission.tar.gz": 4
+  },
+  "analysis_sha256": "df171416dd681e253c44dfa3c84482d7e224d6c4a00869a6a1a55d492ae6ebac",
+  "separate_copied_artifact_replay_exact": true,
+  "frozen_source_bindings_unchanged": true,
+  "original_backup_unchanged": true,
+  "figure_visually_inspected": true
+}

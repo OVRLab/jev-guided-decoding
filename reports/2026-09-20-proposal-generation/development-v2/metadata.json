@@ -1,0 +1,57 @@
+{
+  "started_utc": "2026-09-20T12:15:46.064980+00:00",
+  "backend": {
+    "backend": "transformers",
+    "model": "ibm-granite/granite-4.0-1b",
+    "requested_revision": "6a7381ba1f54d684ff508d991aeb7dc580157103",
+    "resolved_revision": "6a7381ba1f54d684ff508d991aeb7dc580157103",
+    "device": "mps:0",
+    "dtype": "torch.bfloat16",
+    "parameters": 1631750144,
+    "trainable_parameters": 0,
+    "torch": "2.8.0",
+    "transformers": "4.57.1",
+    "temperature": 0.8,
+    "top_p": 0.95,
+    "cache_between_chunks": "recompute accepted prefix"
+  },
+  "python": "3.12.13",
+  "platform": "macOS-26.3.1-arm64-arm-64bit",
+  "source_commit": "20aa8454d3beaf26d6d635c729b93acbd06260d7",
+  "source_dirty": false,
+  "fixture_sha256": "3a05fc85aee33f9e87bad8c0dd091f4da2eda52372cbd59c0e4b06588f71685a",
+  "config": {
+    "candidates": 3,
+    "keep_branches": 2,
+    "chunk_tokens": 96,
+    "max_steps": 1,
+    "max_expansions": 1,
+    "max_pending": 6,
+    "max_resamples": 0,
+    "max_path_tokens": 384,
+    "max_decode_tokens": 1536,
+    "max_prefill_tokens": 30000,
+    "max_context_tokens": 4096,
+    "max_api_calls": 1,
+    "max_seconds": 30.0,
+    "support_threshold": 0.75,
+    "progress_threshold": 0.6,
+    "completion_threshold": 0.75,
+    "seed": 42,
+    "prompt_style": "instructions"
+  },
+  "seeds": [
+    42,
+    43
+  ],
+  "styles": [
+    "instructions",
+    "examples"
+  ],
+  "load_seconds": 3.605142291635275,
+  "warmup": "Excluded: examples prompt, 3 rows, 2 tokens, seed 42",
+  "max_stage_seconds": 600,
+  "max_stage_api_attempts": 16,
+  "max_stage_batches": 16,
+  "scoring": "Unchanged Jev 1.13.0, no HTTP retries; root eligibility only"
+}

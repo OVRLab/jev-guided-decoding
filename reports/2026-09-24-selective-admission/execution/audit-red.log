@@ -1,0 +1,70 @@
+FFF                                                                      [100%]
+=================================== FAILURES ===================================
+______ test_batch_audit_counts_padding_and_rejects_missing_or_forged_work ______
+
+    def test_batch_audit_counts_padding_and_rejects_missing_or_forged_work():
+>       m = module()
+            ^^^^^^^^
+
+tests/test_selective_admission_audit.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_admission_audit.py:11: in module
+    return runpy.run_path(str(PATH))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/diagnostics/selective_admission_audit.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/diagnostics/selective_admission_audit.py'
+
+<frozen runpy>:254: FileNotFoundError
+____ test_selection_audit_catches_fabricated_skips_and_wrong_control_gates _____
+
+    def test_selection_audit_catches_fabricated_skips_and_wrong_control_gates():
+>       m = module()
+            ^^^^^^^^
+
+tests/test_selective_admission_audit.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_admission_audit.py:11: in module
+    return runpy.run_path(str(PATH))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/diagnostics/selective_admission_audit.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/diagnostics/selective_admission_audit.py'
+
+<frozen runpy>:254: FileNotFoundError
+_____ test_cost_profile_distinguishes_fixed_overhead_and_unmeasured_tasks ______
+
+    def test_cost_profile_distinguishes_fixed_overhead_and_unmeasured_tasks():
+>       m = module()
+            ^^^^^^^^
+
+tests/test_selective_admission_audit.py:47: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_admission_audit.py:11: in module
+    return runpy.run_path(str(PATH))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/diagnostics/selective_admission_audit.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/diagnostics/selective_admission_audit.py'
+
+<frozen runpy>:254: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_selective_admission_audit.py::test_batch_audit_counts_padding_and_rejects_missing_or_forged_work
+FAILED tests/test_selective_admission_audit.py::test_selection_audit_catches_fabricated_skips_and_wrong_control_gates
+FAILED tests/test_selective_admission_audit.py::test_cost_profile_distinguishes_fixed_overhead_and_unmeasured_tasks
+3 failed in 0.03s

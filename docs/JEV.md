@@ -34,8 +34,22 @@ all be low. Do not treat confidence or a high probability as proof of correctnes
 
 The default scorer uses independent Nouls for support/relevance and completion for
 EOS. Empty EOS asks only support/completion and records relevance as `None`.
+The [reasoning scorer](../src/jev_guided_decoding/reasoning_scorer.py) instead asks
+about the validity of the entire tentative derivation, plus new progress for a
+step or completion for a final frame. It never treats the prefix as independent
+evidence. Final summaries may repeat prior deductions; progress is unasked for
+final frames. The `final_jev` control leaves intermediate steps unjudged.
 Thresholds and selection stay in Python. This API does not expose a hidden-state
 interface to Granite.
+
+The opt-in [fixed-verdict scorer](../src/jev_guided_decoding/verdict.py) uses a Choice
+with code-defined ENTAILED/CONTRADICTED/UNKNOWN options. It validates all option
+probabilities, the selected maximum, and provider confidence. It allows the small
+sum discrepancy from rounding three probabilities to two decimal places; it does
+not renormalize them. The controller requires a unique winner at its configured
+probability threshold and records uncertainty separately from semantic UNKNOWN.
+Original evidence is authoritative and supplied steps are untrusted suggestions.
+Direct-Jev mode omits those steps. Both share the existing transport/error rules.
 
 ## Prepare an evaluation
 

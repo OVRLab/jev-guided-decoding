@@ -1,0 +1,7 @@
+{
+  "python": "3.12.13",
+  "matplotlib": "3.11.2",
+  "numpy": "2.5.3",
+  "pillow": "12.3.0",
+  "scope": "Standalone report figures; inference and statistical analysis use the project lockfile."
+}

@@ -1,0 +1,79 @@
+{
+  "synthetic": {
+    "routing": {
+      "called_benefit": 50,
+      "called_harm": 14,
+      "called_tie": 158,
+      "skipped_benefit": 19,
+      "skipped_harm": 8,
+      "skipped_tie": 39
+    },
+    "sufficiency_bands": {
+      "answerable_low": 2,
+      "answerable_middle": 10,
+      "answerable_high": 132,
+      "missing_low": 89,
+      "missing_middle": 37,
+      "missing_high": 18
+    },
+    "example_ids": {
+      "dual_metric_benefit": "r19/test/0003/felanodi/heavy",
+      "dual_metric_harm": "r19/test/0005/divibigi/heavy",
+      "sufficiency_improves_missing": "r19/test/0006/mupugara/heavy",
+      "gate_missed_benefit": "r19/test/0006/mupugara/light",
+      "gate_avoided_harm": "r19/test/0024/covenola/light/dependency",
+      "sufficiency_harms_answerable": "r19/test/0065/sudasate/heavy/dependency"
+    }
+  },
+  "hotpot": {
+    "routing": {
+      "called_benefit": 5,
+      "called_harm": 5,
+      "called_tie": 10,
+      "skipped_benefit": 31,
+      "skipped_harm": 20,
+      "skipped_tie": 89
+    },
+    "sufficiency_bands": {
+      "answerable_low": 9,
+      "answerable_middle": 19,
+      "answerable_high": 132,
+      "missing_low": 0,
+      "missing_middle": 0,
+      "missing_high": 0
+    },
+    "example_ids": {
+      "dual_metric_benefit": "r19/hotpot/5a70f6425542994082a3e44c",
+      "gate_missed_benefit": "r19/hotpot/5a710d155542994082a3e520",
+      "dual_metric_harm": "r19/hotpot/5a732aaa5542992359bc325a",
+      "gate_avoided_harm": "r19/hotpot/5a732aaa5542992359bc325a",
+      "sufficiency_harms_answerable": "r19/hotpot/5a764c0b55429976ec32bd89"
+    }
+  },
+  "squad2": {
+    "routing": {
+      "called_benefit": 9,
+      "called_harm": 4,
+      "called_tie": 22,
+      "skipped_benefit": 29,
+      "skipped_harm": 11,
+      "skipped_tie": 85
+    },
+    "sufficiency_bands": {
+      "answerable_low": 3,
+      "answerable_middle": 5,
+      "answerable_high": 72,
+      "missing_low": 57,
+      "missing_middle": 14,
+      "missing_high": 9
+    },
+    "example_ids": {
+      "dual_metric_benefit": "r19/squad2/56be8c8a3aeaaa14008c90ab",
+      "dual_metric_harm": "r19/squad2/56cf9d81234ae51400d9be1d",
+      "sufficiency_harms_answerable": "r19/squad2/56cf9d81234ae51400d9be1d",
+      "gate_missed_benefit": "r19/squad2/56cfdc7f234ae51400d9bf8e",
+      "gate_avoided_harm": "r19/squad2/56f97d8a9e9bad19000a09b0",
+      "sufficiency_improves_missing": "r19/squad2/5a3b04c43ff257001ab84395"
+    }
+  }
+}

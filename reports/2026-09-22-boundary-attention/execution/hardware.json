@@ -1,0 +1,17 @@
+{
+  "cpu_model": "Intel(R) Xeon(R) Gold 6338 CPU @ 2.00GHz",
+  "visible_logical_cpus": 8,
+  "kernel": "6.11.0-1016-nvidia",
+  "gpu_query": "NVIDIA L40S, 46068 MiB, 580.173.02",
+  "provider": "Nebius",
+  "platform": "gpu-l40s-a",
+  "preset": "1gpu-8vcpu-32gb",
+  "allocated_vcpus": 8,
+  "allocated_ram_gib": 32,
+  "managed_ssd_gib": 80,
+  "gpu_count": 1,
+  "precision": "float32",
+  "serial": true,
+  "provider_platform_name": "NVIDIA\u00ae L40S PCIe with Intel Ice Lake",
+  "provider_platform_verified": true
+}

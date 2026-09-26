@@ -1,0 +1,147 @@
+{
+  "scope": "Unpaid exposed-case native readability, no accuracy grading",
+  "source_revision": "7e5601619eed8f11e353fc2a882cd8d01c7a8544",
+  "manifest_sha256": "ab3b653c3b25b25a2af77d4b2d0c7662f16d8806e57590157ff1107cd61f84e5",
+  "archive_sha256": "6a1a226c8a916308e59c635dec2de4207eb929e49a1ccf3f38437b0ff260e9c5",
+  "inventory": {
+    "hardware.json": "cb8efa9110a098a8fed789c7056acc4c21da2aa6f79ddf99499bff2a4eb1bdf5",
+    "complete.json": "5aab7e0759ee56bcf23d765316e72ed22327c5d8d790762c379e3d2355ea7c05",
+    "cases.json": "9ca803226c956356a73bac52e747ea3259424da372eb831b7d24673d919f8135",
+    "manifest.json": "ab3b653c3b25b25a2af77d4b2d0c7662f16d8806e57590157ff1107cd61f84e5",
+    "jobs.jsonl": "2f8eb3766108bc98a6596f754056bda99d981653f11f56f6401460554e17df7a",
+    "outputs.jsonl": "60ab75da648c7e2501ec3c8e1d0624fd4e657508e5b5e7abb78e3f28948b46a2",
+    "readability.json": "d16974ed9fee9435406f8060c675b452be7c39f2edae46809bee160a01912342"
+  },
+  "original_readout": {
+    "scope": "Output contract only; no references, accuracy or API",
+    "cases": 12,
+    "readable": 11,
+    "format_passes": 2,
+    "length_stops": 0,
+    "records": [
+      {
+        "id": "musr/murder_mystery/134",
+        "task": "murder_mystery",
+        "readable": true,
+        "format": false,
+        "finish_reason": "eos",
+        "generated_tokens": 3,
+        "seconds": 2.2166178338229656
+      },
+      {
+        "id": "musr/murder_mystery/212",
+        "task": "murder_mystery",
+        "readable": true,
+        "format": false,
+        "finish_reason": "eos",
+        "generated_tokens": 4,
+        "seconds": 2.2799103748984635
+      },
+      {
+        "id": "musr/murder_mystery/213",
+        "task": "murder_mystery",
+        "readable": true,
+        "format": false,
+        "finish_reason": "eos",
+        "generated_tokens": 4,
+        "seconds": 1.9330973331816494
+      },
+      {
+        "id": "musr/murder_mystery/73",
+        "task": "murder_mystery",
+        "readable": true,
+        "format": false,
+        "finish_reason": "eos",
+        "generated_tokens": 4,
+        "seconds": 2.0890656248666346
+      },
+      {
+        "id": "musr/object_placements/179",
+        "task": "object_placements",
+        "readable": true,
+        "format": false,
+        "finish_reason": "eos",
+        "generated_tokens": 4,
+        "seconds": 1.5318754580803216
+      },
+      {
+        "id": "musr/object_placements/255",
+        "task": "object_placements",
+        "readable": true,
+        "format": false,
+        "finish_reason": "eos",
+        "generated_tokens": 4,
+        "seconds": 2.02252637501806
+      },
+      {
+        "id": "musr/object_placements/31",
+        "task": "object_placements",
+        "readable": true,
+        "format": false,
+        "finish_reason": "eos",
+        "generated_tokens": 5,
+        "seconds": 1.5261650830507278
+      },
+      {
+        "id": "musr/object_placements/85",
+        "task": "object_placements",
+        "readable": true,
+        "format": true,
+        "finish_reason": "eos",
+        "generated_tokens": 85,
+        "seconds": 11.289691500365734
+      },
+      {
+        "id": "musr/team_allocation/165",
+        "task": "team_allocation",
+        "readable": true,
+        "format": false,
+        "finish_reason": "eos",
+        "generated_tokens": 13,
+        "seconds": 2.1088855830021203
+      },
+      {
+        "id": "musr/team_allocation/185",
+        "task": "team_allocation",
+        "readable": true,
+        "format": true,
+        "finish_reason": "eos",
+        "generated_tokens": 39,
+        "seconds": 4.434803083073348
+      },
+      {
+        "id": "musr/team_allocation/2",
+        "task": "team_allocation",
+        "readable": false,
+        "format": false,
+        "finish_reason": "eos",
+        "generated_tokens": 35,
+        "seconds": 3.957862500101328
+      },
+      {
+        "id": "musr/team_allocation/74",
+        "task": "team_allocation",
+        "readable": true,
+        "format": false,
+        "finish_reason": "eos",
+        "generated_tokens": 20,
+        "seconds": 2.836064082570374
+      }
+    ]
+  },
+  "completion": {
+    "passed": true,
+    "outputs": 12,
+    "api_calls": 0,
+    "backbone_before": "efa5edd16939c3996fe63734e8cc88146091d066ceed023837d7833f6225e27c",
+    "backbone_after": "efa5edd16939c3996fe63734e8cc88146091d066ceed023837d7833f6225e27c",
+    "generation_seconds": 45.0052512078546,
+    "total_seconds": 70.70360054075718
+  },
+  "dataset": {
+    "name": "TAUR-Lab/MuSR",
+    "revision": "7c365b439a222150f317764d4f16ae6c96d7d94a",
+    "license": "CC-BY-4.0",
+    "attribution": "Zayne Sprague, Xi Ye, Kaj Bostrom, Swarat Chaudhuri and Greg Durrett; MuSR (2023)"
+  }
+}

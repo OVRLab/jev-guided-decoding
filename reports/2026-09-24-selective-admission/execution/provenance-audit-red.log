@@ -1,0 +1,41 @@
+....FF                                                                   [100%]
+=================================== FAILURES ===================================
+__________ test_selected_record_cannot_hide_a_different_executed_gate __________
+
+    def test_selected_record_cannot_hide_a_different_executed_gate():
+        m=module()
+        native=dict(arm='native',generated_token_ids=[4,9])
+        repaired=dict(arm='constant',generated_token_ids=[5,9],gate=.9)
+        d=dict(arm='constant',selected_arm='constant',repair_executed=True,decision='repair',
+               probability_correct=.1,gate=.5,selected_tokens_sha256=m['C']['digest']('[5, 9]'))
+>       with pytest.raises(ValueError,match='[Ss]election'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_selective_admission_audit.py:111: Failed
+__ test_output_audit_reconstructs_exact_prefix_and_rejects_unregistered_arms ___
+
+    def test_output_audit_reconstructs_exact_prefix_and_rejects_unregistered_arms():
+        class Tokenizer:
+            def apply_chat_template(self,*args,**kwargs):
+                return [1,2]
+            def decode(self,tokens,**kwargs):
+                return 'Final: A' if tokens==[4] else 'changed'
+        m=module()
+        c=dict(id='a',prompt='Q?')
+        config=dict(thinking=False,max_new_tokens=4)
+        row=dict(id='a',prompt_sha256=m['C']['digest']('Q?'),prompt_token_ids=[1,2],
+                 generated_token_ids=[4,9],arm='native',finish_reason='eos',text='Final: A',
+                 final='Final: A',status='complete',events=[],gate=None)
+        m['check_output'](c,row,Tokenizer(),config,[9])
+        with pytest.raises(ValueError,match='prefix'):
+            m['check_output'](c,row|{'prompt_token_ids':[1,3]},Tokenizer(),config,[9])
+>       with pytest.raises(ValueError,match='arm'):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE <class 'ValueError'>
+
+tests/test_selective_admission_audit.py:130: Failed
+=========================== short test summary info ============================
+FAILED tests/test_selective_admission_audit.py::test_selected_record_cannot_hide_a_different_executed_gate
+FAILED tests/test_selective_admission_audit.py::test_output_audit_reconstructs_exact_prefix_and_rejects_unregistered_arms
+2 failed, 4 passed in 0.14s

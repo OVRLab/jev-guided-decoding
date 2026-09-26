@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-22T22:02:42.627134+00:00",
+  "outputs": 6096,
+  "receipts": 1068,
+  "charged_tokens": 2189099,
+  "weights_before": "efa5edd16939c3996fe63734e8cc88146091d066ceed023837d7833f6225e27c",
+  "weights_after": "efa5edd16939c3996fe63734e8cc88146091d066ceed023837d7833f6225e27c",
+  "completed_schedule": true,
+  "test_jobs": 4256
+}

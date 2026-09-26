@@ -1,0 +1,4866 @@
+[
+  {
+    "case_id": "r19/test/0092/sanuvufu/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0092/sanuvufu/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0110/barevara/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0110/barevara/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0047/tetevuco/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0047/tetevuco/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0132/bicefidu/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0132/bicefidu/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a7789195542995d831811a2",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a7789195542995d831811a2",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0113/tufinate/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0113/tufinate/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0117/gemuluso/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0117/gemuluso/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ace9e5b32bba1001ae4ad46",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ace9e5b32bba1001ae4ad46",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0024/covenola/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0024/covenola/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a8b82a05542995d1e6f13d0",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a8b82a05542995d1e6f13d0",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5733c6d84776f41900661208",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5733c6d84776f41900661208",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0025/sidomogu/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0025/sidomogu/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0067/pesavima/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0067/pesavima/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0091/pekunovo/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0091/pekunovo/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0001/racevese/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0001/racevese/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ac3b9c5554299657fa2911b",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ac3b9c5554299657fa2911b",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0006/mupugara/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0006/mupugara/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae0247955429925eb1afc22",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae0247955429925eb1afc22",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad2780cd7d075001a429550",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad2780cd7d075001a429550",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0031/verupagi/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0031/verupagi/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5722d2050dadf01500fa1f0e",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5722d2050dadf01500fa1f0e",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5abea98d5542990832d3a07d",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5abea98d5542990832d3a07d",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0052/gefotuki/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0052/gefotuki/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5adc51375542996e68525300",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5adc51375542996e68525300",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0123/cecokone/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0123/cecokone/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5adfc8cf554299603e4183ad",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5adfc8cf554299603e4183ad",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/572616bfec44d21400f3d8a8",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/572616bfec44d21400f3d8a8",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0070/furopele/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0070/furopele/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a83d7535542993344746093",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a83d7535542993344746093",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae0120155429925eb1afbfb",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae0120155429925eb1afbfb",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0068/ceticedu/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0068/ceticedu/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0065/sudasate/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0065/sudasate/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0132/bicefidu/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0132/bicefidu/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0048/fogutipe/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0048/fogutipe/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0055/cakopimo/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0055/cakopimo/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0077/lagagumi/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0077/lagagumi/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae0ba9055429924de1b715c",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae0ba9055429924de1b715c",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad5493b5b96ef001a10ac42",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad5493b5b96ef001a10ac42",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/57318e94497a88190024902f",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/57318e94497a88190024902f",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a79caad5542994f819ef09f",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a79caad5542994f819ef09f",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0056/sakifemi/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0056/sakifemi/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0081/dusotamo/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0081/dusotamo/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0049/pinibeti/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0049/pinibeti/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/572a8395111d821400f38b93",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/572a8395111d821400f38b93",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0017/rusibovu/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0017/rusibovu/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0094/linududi/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0094/linududi/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0093/tulupuru/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0093/tulupuru/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0091/pekunovo/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0091/pekunovo/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ac46bb05542991943173983",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ac46bb05542991943173983",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/572e89ce03f9891900756757",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/572e89ce03f9891900756757",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad418a2604f3c001a400415",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad418a2604f3c001a400415",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0088/cilotuto/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0088/cilotuto/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/56dfa8ab231d4119001abc52",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/56dfa8ab231d4119001abc52",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae455d45542996836b02c7b",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae455d45542996836b02c7b",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad3fd32604f3c001a3ffbd5",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad3fd32604f3c001a3ffbd5",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae178a155429901ffe4ae92",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae178a155429901ffe4ae92",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/572951d81d0469140077928e",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/572951d81d0469140077928e",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/570a77f96d058f1900182e84",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/570a77f96d058f1900182e84",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5abe91895542993f32c2a168",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5abe91895542993f32c2a168",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0124/dibibabu/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0124/dibibabu/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0112/kulekuni/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0112/kulekuni/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0000/lofogora/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0000/lofogora/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad3ebe9604f3c001a3ff745",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad3ebe9604f3c001a3ff745",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0086/toforode/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0086/toforode/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5acd1c9c07355d001abf3580",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5acd1c9c07355d001abf3580",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0026/nageravo/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0026/nageravo/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a77152355429966f1a36c2e",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a77152355429966f1a36c2e",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0084/dubiravo/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0084/dubiravo/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0137/nepunili/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0137/nepunili/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0044/pufadotu/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0044/pufadotu/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ac3295d5542995ef918c14d",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ac3295d5542995ef918c14d",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0069/nocedeci/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0069/nocedeci/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ace6d0932bba1001ae4a674",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ace6d0932bba1001ae4a674",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0103/balelomi/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0103/balelomi/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a75f0bf5542994ccc91866b",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a75f0bf5542994ccc91866b",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/570aa3634103511400d598b0",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/570aa3634103511400d598b0",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0050/kuleripe/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0050/kuleripe/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a86113355429960ec39b618",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a86113355429960ec39b618",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a8bc29a5542995d1e6f1446",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a8bc29a5542995d1e6f1446",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/572879b54b864d1900164a1e",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/572879b54b864d1900164a1e",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0013/tubusibo/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0013/tubusibo/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0004/damemeci/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0004/damemeci/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0031/verupagi/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0031/verupagi/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/56cf9d81234ae51400d9be1d",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/56cf9d81234ae51400d9be1d",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a8abcab5542996c9b8d5f67",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a8abcab5542996c9b8d5f67",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0121/kifageme/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0121/kifageme/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a7b60ef21c2de001afe9fa0",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a7b60ef21c2de001afe9fa0",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/570602f875f01819005e7870",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/570602f875f01819005e7870",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0124/dibibabu/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0124/dibibabu/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0087/moripeki/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0087/moripeki/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0021/capanero/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0021/capanero/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/56fae5418f12f3190063025d",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/56fae5418f12f3190063025d",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae7a9765542994a481bbdbc",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae7a9765542994a481bbdbc",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ab614e5554299488d4d9a9c",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ab614e5554299488d4d9a9c",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad138e0645df0001a2d124f",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad138e0645df0001a2d124f",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a79eef75542996c55b2dca6",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a79eef75542996c55b2dca6",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5abd44d955429933744ab760",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5abd44d955429933744ab760",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0075/beladema/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0075/beladema/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5730b4be8ab72b1400f9c6cb",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5730b4be8ab72b1400f9c6cb",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0113/tufinate/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0113/tufinate/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a87defa5542993e715abfec",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a87defa5542993e715abfec",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0114/bumatitu/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0114/bumatitu/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0101/lukuvobe/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0101/lukuvobe/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5acda5cd07355d001abf48ba",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5acda5cd07355d001abf48ba",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5735a06de853931400426a91",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5735a06de853931400426a91",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0084/dubiravo/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0084/dubiravo/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a7228f655429971e9dc9312",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a7228f655429971e9dc9312",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0087/moripeki/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0087/moripeki/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae71bee554299572ea546ea",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae71bee554299572ea546ea",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5728c6dbff5b5019007da67e",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5728c6dbff5b5019007da67e",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5acf95ab77cf76001a68538c",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5acf95ab77cf76001a68538c",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a8a265b5542992d82986ecc",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a8a265b5542992d82986ecc",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0047/tetevuco/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0047/tetevuco/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ab56555554299494045ef97",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ab56555554299494045ef97",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0043/valumali/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0043/valumali/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0106/nelefuso/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0106/nelefuso/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0082/nirekumo/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0082/nirekumo/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0077/lagagumi/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0077/lagagumi/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0027/kemugebe/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0027/kemugebe/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0044/pufadotu/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0044/pufadotu/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0040/sukupufa/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0040/sukupufa/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5733c29c4776f419006611bc",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5733c29c4776f419006611bc",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a7b503621c2de001afe9eab",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a7b503621c2de001afe9eab",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0121/kifageme/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0121/kifageme/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5adcc9f35542990d50227d20",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5adcc9f35542990d50227d20",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0134/ficubufa/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0134/ficubufa/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a1c8751b4fb5d001871465e",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a1c8751b4fb5d001871465e",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0032/vusitula/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0032/vusitula/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a71095e5542994082a3e4f3",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a71095e5542994082a3e4f3",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/56fb80258ddada1400cd6495",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/56fb80258ddada1400cd6495",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0020/vatecodi/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0020/vatecodi/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0054/fugakuba/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0054/fugakuba/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/57273572dd62a815002e998f",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/57273572dd62a815002e998f",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0130/cifocosi/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0130/cifocosi/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0019/noponebi/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0019/noponebi/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5adf34955542993a75d26423",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5adf34955542993a75d26423",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/572765695951b619008f895b",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/572765695951b619008f895b",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a8adc935542992d82986fb0",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a8adc935542992d82986fb0",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a7513c097ca42001a521e6c",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a7513c097ca42001a521e6c",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0135/sosafugi/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0135/sosafugi/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a7704962d6d7f001a4a9f16",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a7704962d6d7f001a4a9f16",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0099/riricica/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0099/riricica/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0024/covenola/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0024/covenola/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/571af11632177014007e9ff9",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/571af11632177014007e9ff9",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0138/vagimoto/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0138/vagimoto/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0038/sagenevo/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0038/sagenevo/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a70c1378abb0b001a676171",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a70c1378abb0b001a676171",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a74639a55429929fddd8404",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a74639a55429929fddd8404",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0004/damemeci/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0004/damemeci/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0066/vutomuve/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0066/vutomuve/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad35342604f3c001a3fdd47",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad35342604f3c001a3fdd47",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ade64c7554299728e26c710",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ade64c7554299728e26c710",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a73735353a187001ae631d2",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a73735353a187001ae631d2",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0133/letibegi/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0133/letibegi/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0057/gedosoga/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0057/gedosoga/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0041/nurakoki/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0041/nurakoki/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5729fcffaf94a219006aa728",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5729fcffaf94a219006aa728",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a807f6a5542992bc0c4a737",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a807f6a5542992bc0c4a737",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae759b25542991e8301cc6b",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae759b25542991e8301cc6b",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/56f97d8a9e9bad19000a09b0",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/56f97d8a9e9bad19000a09b0",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a8518a75542994c784ddaf7",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a8518a75542994c784ddaf7",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5adf58f15542993a75d264d2",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5adf58f15542993a75d264d2",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0112/kulekuni/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0112/kulekuni/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae6b6065542991bbc976168",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae6b6065542991bbc976168",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0119/rolukofa/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0119/rolukofa/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0122/tusocepo/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0122/tusocepo/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5acfb49677cf76001a685995",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5acfb49677cf76001a685995",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0131/mefovivi/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0131/mefovivi/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a3c9a2fcc5d22001a521e2a",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a3c9a2fcc5d22001a521e2a",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0083/teroreca/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0083/teroreca/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0142/kugovebi/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0142/kugovebi/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/573363194776f4190066098a",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/573363194776f4190066098a",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0099/riricica/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0099/riricica/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a72f1cf5542994cef4bc414",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a72f1cf5542994cef4bc414",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0038/sagenevo/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0038/sagenevo/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0089/lobeposu/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0089/lobeposu/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0078/gakasice/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0078/gakasice/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ade286e5542997c77aded81",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ade286e5542997c77aded81",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0062/curagabu/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0062/curagabu/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0123/cecokone/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0123/cecokone/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad298c5d7d075001a429b58",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad298c5d7d075001a429b58",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0116/sidotule/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0116/sidotule/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a848b5c5542997175ce1ef2",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a848b5c5542997175ce1ef2",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0037/pififami/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0037/pififami/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a8ea03e5542990e94052b81",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a8ea03e5542990e94052b81",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0050/kuleripe/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0050/kuleripe/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad34c0b604f3c001a3fdca8",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad34c0b604f3c001a3fdca8",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0088/cilotuto/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0088/cilotuto/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a8f84505542992414482aef",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a8f84505542992414482aef",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/570a03776d058f1900182c6a",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/570a03776d058f1900182c6a",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0042/tapebifi/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0042/tapebifi/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a77101d5542994aec3b71d7",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a77101d5542994aec3b71d7",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/56d3726559d6e414001463eb",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/56d3726559d6e414001463eb",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0118/micacuco/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0118/micacuco/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae0d7315542990adbacf678",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae0d7315542990adbacf678",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad199b4645df0001a2d2104",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad199b4645df0001a2d2104",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae60484554299546bf8301a",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae60484554299546bf8301a",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0073/funeciki/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0073/funeciki/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0108/tugipocu/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0108/tugipocu/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0127/pifiregi/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0127/pifiregi/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ab587ad5542992aa134a34b",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ab587ad5542992aa134a34b",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae7ba7a5542993210983f12",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae7ba7a5542993210983f12",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5726ebec708984140094d610",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5726ebec708984140094d610",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/56e7960900c9c71400d7730d",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/56e7960900c9c71400d7730d",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0053/kabirala/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0053/kabirala/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5abe3e545542993f32c2a0c7",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5abe3e545542993f32c2a0c7",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/57266ac25951b619008f7213",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/57266ac25951b619008f7213",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a7949d45542994bb9456fdd",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a7949d45542994bb9456fdd",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a90970d5542995651fb51a5",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a90970d5542995651fb51a5",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0018/vopocoga/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0018/vopocoga/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0082/nirekumo/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0082/nirekumo/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0135/sosafugi/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0135/sosafugi/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae30d4b55429928c42395cc",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae30d4b55429928c42395cc",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0051/vobatiku/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0051/vobatiku/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad3ee4a604f3c001a3ff7ea",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad3ee4a604f3c001a3ff7ea",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a738b855542992d56e7e363",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a738b855542992d56e7e363",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0055/cakopimo/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0055/cakopimo/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0125/kinicocu/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0125/kinicocu/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0128/ralatasi/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0128/ralatasi/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0051/vobatiku/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0051/vobatiku/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5adc985e5542990d50227cb7",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5adc985e5542990d50227cb7",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae7e1fc55429952e35ea9cc",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae7e1fc55429952e35ea9cc",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0045/loracuda/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0045/loracuda/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0039/puvaruda/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0039/puvaruda/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0083/teroreca/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0083/teroreca/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a8cc7af554299653c1aa11e",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a8cc7af554299653c1aa11e",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5abe18e055429976d4830a74",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5abe18e055429976d4830a74",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/572bf16ef182dd1900d7c798",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/572bf16ef182dd1900d7c798",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad41ff9604f3c001a4006d1",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad41ff9604f3c001a4006d1",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0097/niludogu/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0097/niludogu/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0106/nelefuso/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0106/nelefuso/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a7b6e1d5542997c3ec9716e",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a7b6e1d5542997c3ec9716e",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/56fdeb6419033b140034cdd7",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/56fdeb6419033b140034cdd7",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5abd8ee05542993062266cc8",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5abd8ee05542993062266cc8",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0061/porokiro/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0061/porokiro/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a3173c3e4dcb1001abb2314",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a3173c3e4dcb1001abb2314",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5725c61489a1e219009abe73",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5725c61489a1e219009abe73",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0143/popobuto/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0143/popobuto/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ac119335542992a796dede4",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ac119335542992a796dede4",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a77d31c55429967ab1052c0",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a77d31c55429967ab1052c0",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a7c17c95542990527d5544d",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a7c17c95542990527d5544d",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/572519280a492a19004356f3",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/572519280a492a19004356f3",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a81bf4631013a001a334e38",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a81bf4631013a001a334e38",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0060/kabageto/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0060/kabageto/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0025/sidomogu/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0025/sidomogu/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a3b04c43ff257001ab84395",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a3b04c43ff257001ab84395",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad303da604f3c001a3fdac4",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad303da604f3c001a3fdac4",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a399a072f14dd001ac72464",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a399a072f14dd001ac72464",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a5cd39b5e8782001a9d5dcb",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a5cd39b5e8782001a9d5dcb",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0023/tapefilu/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0023/tapefilu/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0064/gucugudo/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0064/gucugudo/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0035/sugitogi/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0035/sugitogi/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a7e087170df9f001a875446",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a7e087170df9f001a875446",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ac2768d5542990b17b153a8",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ac2768d5542990b17b153a8",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0015/fupakoci/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0015/fupakoci/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0103/balelomi/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0103/balelomi/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0012/cisisara/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0012/cisisara/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a21b2758a6e4f001aa08e71",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a21b2758a6e4f001aa08e71",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0040/sukupufa/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0040/sukupufa/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a26f814c93d92001a40039a",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a26f814c93d92001a40039a",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0076/sofucivu/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0076/sofucivu/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0085/minutami/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0085/minutami/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0063/lobevege/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0063/lobevege/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a5d6b095e8782001a9d5efb",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a5d6b095e8782001a9d5efb",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a8f5a185542992414482a71",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a8f5a185542992414482a71",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0030/tipabolo/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0030/tipabolo/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0070/furopele/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0070/furopele/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a8f2ba155429918e830d1b9",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a8f2ba155429918e830d1b9",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a75e7b255429976ec32bc95",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a75e7b255429976ec32bc95",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0109/licudipa/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0109/licudipa/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0069/nocedeci/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0069/nocedeci/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0066/vutomuve/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0066/vutomuve/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a80e468554299260e20a1a9",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a80e468554299260e20a1a9",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5adc983c5542990d50227cb6",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5adc983c5542990d50227cb6",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0098/sukevabo/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0098/sukevabo/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad0193b77cf76001a6869da",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad0193b77cf76001a6869da",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0022/tivikobo/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0022/tivikobo/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0008/sotemeri/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0008/sotemeri/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a710d155542994082a3e520",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a710d155542994082a3e520",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0105/rirenofi/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0105/rirenofi/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0115/divulede/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0115/divulede/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a3b5a503ff257001ab84423",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a3b5a503ff257001ab84423",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a8cc4e3fd22b3001a8d8e2c",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a8cc4e3fd22b3001a8d8e2c",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/570f90975ab6b81900390f17",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/570f90975ab6b81900390f17",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/57300ba704bcaa1900d77075",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/57300ba704bcaa1900d77075",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0136/luloboki/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0136/luloboki/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a84c0765542991dd0999dd9",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a84c0765542991dd0999dd9",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a77510b5542994aec3b728b",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a77510b5542994aec3b728b",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0073/funeciki/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0073/funeciki/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0000/lofogora/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0000/lofogora/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae1dac95542997283cd229b",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae1dac95542997283cd229b",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0026/nageravo/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0026/nageravo/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0072/deculuta/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0072/deculuta/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae7793c554299540e5a55c2",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae7793c554299540e5a55c2",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a8ec4875542995a26add508",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a8ec4875542995a26add508",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0033/fipefugi/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0033/fipefugi/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ade0cc85542990dbb2f7f37",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ade0cc85542990dbb2f7f37",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0133/letibegi/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0133/letibegi/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0090/dupofode/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0090/dupofode/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0119/rolukofa/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0119/rolukofa/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/572811cc2ca10214002d9d24",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/572811cc2ca10214002d9d24",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0036/tubiveve/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0036/tubiveve/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a77c15f5542997042120b1c",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a77c15f5542997042120b1c",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae5b971554299546bf82f3a",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae5b971554299546bf82f3a",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0057/gedosoga/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0057/gedosoga/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad1362b645df0001a2d1191",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad1362b645df0001a2d1191",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0023/tapefilu/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0023/tapefilu/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0018/vopocoga/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0018/vopocoga/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0036/tubiveve/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0036/tubiveve/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0107/dumugale/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0107/dumugale/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0058/tatefano/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0058/tatefano/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5727b0ccff5b5019007d92aa",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5727b0ccff5b5019007d92aa",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0016/ritodabi/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0016/ritodabi/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0002/ratafora/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0002/ratafora/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0098/sukevabo/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0098/sukevabo/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a7148d25542994082a3e766",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a7148d25542994082a3e766",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae8096f5542994a481bbe99",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae8096f5542994a481bbe99",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/56fae79e8f12f31900630290",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/56fae79e8f12f31900630290",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/573422a84776f4190066191e",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/573422a84776f4190066191e",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0011/norumuma/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0011/norumuma/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a875b755542996e4f308796",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a875b755542996e4f308796",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/56f75e42aef2371900625b5d",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/56f75e42aef2371900625b5d",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae1389655429901ffe4ae05",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae1389655429901ffe4ae05",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0117/gemuluso/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0117/gemuluso/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0010/dapotunu/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0010/dapotunu/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ab38cdd5542992ade7c6de2",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ab38cdd5542992ade7c6de2",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae123875542997b2ef7d0fa",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae123875542997b2ef7d0fa",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0014/kibutusa/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0014/kibutusa/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5acf825f77cf76001a685051",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5acf825f77cf76001a685051",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a8c06bb5542995e66a47530",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a8c06bb5542995e66a47530",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0037/pififami/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0037/pififami/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5adbf34955429947ff173862",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5adbf34955429947ff173862",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0006/mupugara/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0006/mupugara/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0020/vatecodi/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0020/vatecodi/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0041/nurakoki/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0041/nurakoki/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0078/gakasice/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0078/gakasice/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0086/toforode/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0086/toforode/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0125/kinicocu/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0125/kinicocu/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0142/kugovebi/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0142/kugovebi/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0061/porokiro/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0061/porokiro/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/570c7c46b3d812140066d20d",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/570c7c46b3d812140066d20d",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a72bb045542994cef4bc3e4",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a72bb045542994cef4bc3e4",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a877fa45542993e715abf84",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a877fa45542993e715abf84",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae0c1be5542993d6555ec42",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae0c1be5542993d6555ec42",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a8ce55f554299441c6b9f62",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a8ce55f554299441c6b9f62",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0072/deculuta/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0072/deculuta/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0039/puvaruda/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0039/puvaruda/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0079/semivare/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0079/semivare/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a20a8b08a6e4f001aa08e18",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a20a8b08a6e4f001aa08e18",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0115/divulede/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0115/divulede/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0134/ficubufa/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0134/ficubufa/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a732aaa5542992359bc325a",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a732aaa5542992359bc325a",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/56e824c637bdd419002c4469",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/56e824c637bdd419002c4469",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0128/ralatasi/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0128/ralatasi/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/57278281708984140094df9a",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/57278281708984140094df9a",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a57c4a8770dc0001aeefd5d",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a57c4a8770dc0001aeefd5d",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0127/pifiregi/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0127/pifiregi/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0005/divibigi/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0005/divibigi/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5adfe37c554299025d62a377",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5adfe37c554299025d62a377",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0067/pesavima/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0067/pesavima/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a85a812b4e223001a8e715f",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a85a812b4e223001a8e715f",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0062/curagabu/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0062/curagabu/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5726767edd62a815002e85d8",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5726767edd62a815002e85d8",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0104/donirupa/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0104/donirupa/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5709880eed30961900e842a4",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5709880eed30961900e842a4",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5728f26aaf94a219006a9e2a",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5728f26aaf94a219006a9e2a",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae6f1675542991bbc9761a1",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae6f1675542991bbc9761a1",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a77ddb855429967ab1052d8",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a77ddb855429967ab1052d8",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0071/tucoliso/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0071/tucoliso/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0109/licudipa/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0109/licudipa/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ab8848d55429916710eb07b",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ab8848d55429916710eb07b",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad28619d7d075001a4298cc",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad28619d7d075001a4298cc",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a79c8fa5542994bb94570a1",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a79c8fa5542994bb94570a1",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0017/rusibovu/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0017/rusibovu/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae2e06d55429928c4239521",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae2e06d55429928c4239521",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad211f9d7d075001a4282ea",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad211f9d7d075001a4282ea",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0032/vusitula/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0032/vusitula/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/57295c1d6aef051400154d73",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/57295c1d6aef051400154d73",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0058/tatefano/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0058/tatefano/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0090/dupofode/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0090/dupofode/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5727707df1498d1400e8f823",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5727707df1498d1400e8f823",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5adf1c3f5542993a75d263ec",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5adf1c3f5542993a75d263ec",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0002/ratafora/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0002/ratafora/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0074/vacukolu/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0074/vacukolu/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/56cffbdd234ae51400d9c1f4",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/56cffbdd234ae51400d9c1f4",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0075/beladema/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0075/beladema/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a75495a5542996c70cfaed8",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a75495a5542996c70cfaed8",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/572fe81ab2c2fd14005685a9",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/572fe81ab2c2fd14005685a9",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0012/cisisara/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0012/cisisara/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0095/goseraru/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0095/goseraru/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0007/lipumene/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0007/lipumene/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0120/roliluke/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0120/roliluke/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a8483b45542992a431d1a40",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a8483b45542992a431d1a40",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5acd31c707355d001abf38c2",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5acd31c707355d001abf38c2",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae560155542990ba0bbb293",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae560155542990ba0bbb293",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a806aca5542996402f6a503",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a806aca5542996402f6a503",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a4ea43a755ab9001a10f56d",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a4ea43a755ab9001a10f56d",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a78c11bb73996001af5b08f",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a78c11bb73996001af5b08f",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0030/tipabolo/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0030/tipabolo/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/57282fa44b864d1900164697",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/57282fa44b864d1900164697",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ac275f155429921a00aaf82",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ac275f155429921a00aaf82",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a7c25895542997c3ec972e6",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a7c25895542997c3ec972e6",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad3b4db604f3c001a3fed85",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad3b4db604f3c001a3fed85",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/57327d1a0fdd8d15006c6b14",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/57327d1a0fdd8d15006c6b14",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a8f08c2554299458435d531",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a8f08c2554299458435d531",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a7a4b5117ab25001a8a0488",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a7a4b5117ab25001a8a0488",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a70f6425542994082a3e44c",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a70f6425542994082a3e44c",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0126/tudolege/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0126/tudolege/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5abac27855429966062415ff",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5abac27855429966062415ff",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0027/kemugebe/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0027/kemugebe/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a862b0b554299211dda2a98",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a862b0b554299211dda2a98",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0052/gefotuki/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0052/gefotuki/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0093/tulupuru/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0093/tulupuru/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0081/dusotamo/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0081/dusotamo/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0089/lobeposu/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0089/lobeposu/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5adc872b5542994d58a2f62f",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5adc872b5542994d58a2f62f",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0139/gutitomi/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0139/gutitomi/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0033/fipefugi/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0033/fipefugi/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/56e8f8170b45c0140094cda7",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/56e8f8170b45c0140094cda7",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5abe3c7555429965af743ea5",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5abe3c7555429965af743ea5",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0122/tusocepo/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0122/tusocepo/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0003/felanodi/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0003/felanodi/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0014/kibutusa/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0014/kibutusa/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0096/tokumife/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0096/tokumife/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a778a8e5542992a6e59deca",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a778a8e5542992a6e59deca",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5abb8afe5542993f40c73b1e",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5abb8afe5542993f40c73b1e",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/56daedd8e7c41114004b4b37",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/56daedd8e7c41114004b4b37",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad4c2e25b96ef001a109fa2",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad4c2e25b96ef001a109fa2",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ac39d22554299391541381f",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ac39d22554299391541381f",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5727728e708984140094ddbd",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5727728e708984140094ddbd",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0118/micacuco/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0118/micacuco/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/570c13f96b8089140040fb1d",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/570c13f96b8089140040fb1d",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0046/lamavali/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0046/lamavali/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae13bca55429901ffe4ae17",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae13bca55429901ffe4ae17",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/571df27ab64a571400c71e1a",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/571df27ab64a571400c71e1a",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae0d4c9554299603e418468",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae0d4c9554299603e418468",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0009/vidobufe/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0009/vidobufe/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/572847174b864d19001648a1",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/572847174b864d19001648a1",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5733d91e4776f4190066134a",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5733d91e4776f4190066134a",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0015/fupakoci/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0015/fupakoci/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/56cfdc7f234ae51400d9bf8e",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/56cfdc7f234ae51400d9bf8e",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a716c415542994082a3e827",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a716c415542994082a3e827",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/56dd337966d3e219004dac5c",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/56dd337966d3e219004dac5c",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae7ed17554299540e5a56a3",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae7ed17554299540e5a56a3",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0100/fatabimi/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0100/fatabimi/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a8df72055429917b4a5bcf2",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a8df72055429917b4a5bcf2",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad29069d7d075001a429a96",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad29069d7d075001a429a96",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5abfca465542993fe9a41e65",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5abfca465542993fe9a41e65",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a7a7dc15542994f819ef1f2",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a7a7dc15542994f819ef1f2",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0059/femoberi/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0059/femoberi/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ac55ea55542993e66e82377",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ac55ea55542993e66e82377",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5acfbf1677cf76001a685c2c",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5acfbf1677cf76001a685c2c",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0034/ronekibu/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0034/ronekibu/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/57325526e17f3d140042288e",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/57325526e17f3d140042288e",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5705e3cd52bb891400689663",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5705e3cd52bb891400689663",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad3dec0604f3c001a3ff475",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad3dec0604f3c001a3ff475",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0059/femoberi/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0059/femoberi/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0035/sugitogi/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0035/sugitogi/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/56be8c8a3aeaaa14008c90ab",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/56be8c8a3aeaaa14008c90ab",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0010/dapotunu/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0010/dapotunu/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0104/donirupa/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0104/donirupa/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0102/leducafo/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0102/leducafo/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5727a11d4b864d19001638d9",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5727a11d4b864d19001638d9",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0143/popobuto/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0143/popobuto/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0129/tubaficu/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0129/tubaficu/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ade66e1554299728e26c713",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ade66e1554299728e26c713",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0080/pokicama/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0080/pokicama/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0141/nutemabu/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0141/nutemabu/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0137/nepunili/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0137/nepunili/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae0038655429925eb1afbe0",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae0038655429925eb1afbe0",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a8c5c6f554299653c1aa04d",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a8c5c6f554299653c1aa04d",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0111/viduvoso/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0111/viduvoso/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5731d33de17f3d1400422456",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5731d33de17f3d1400422456",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad36867604f3c001a3fe0b9",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad36867604f3c001a3fe0b9",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a74f5155542993748c89750",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a74f5155542993748c89750",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0028/gomotusa/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0028/gomotusa/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ac0060f554299012d1db578",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ac0060f554299012d1db578",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0092/sanuvufu/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0092/sanuvufu/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a83143fe60761001a2eb37f",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a83143fe60761001a2eb37f",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0029/keticiti/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0029/keticiti/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ab33ef955429969a97a810e",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ab33ef955429969a97a810e",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5adf72d35542992d7e9f9369",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5adf72d35542992d7e9f9369",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae0a59a55429945ae9593e2",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae0a59a55429945ae9593e2",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a103c85decec900184755e6",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a103c85decec900184755e6",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ab43b8a5542991779162c22",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ab43b8a5542991779162c22",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/57265a65708984140094c370",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/57265a65708984140094c370",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a836761e60761001a2eb677",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a836761e60761001a2eb677",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a775bab5542994aec3b72a8",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a775bab5542994aec3b72a8",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0080/pokicama/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0080/pokicama/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0097/niludogu/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0097/niludogu/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0102/leducafo/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0102/leducafo/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0140/gidupelo/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0140/gidupelo/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a871d531d3cee001a6a10dc",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a871d531d3cee001a6a10dc",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0063/lobevege/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0063/lobevege/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a7f10e2554299306751360b",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a7f10e2554299306751360b",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a84cf175542992a431d1aa2",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a84cf175542992a431d1aa2",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a8e07b25542995085b3738d",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a8e07b25542995085b3738d",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5732868bb3a91d1900202e0f",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5732868bb3a91d1900202e0f",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0136/luloboki/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0136/luloboki/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5733e3164776f41900661429",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5733e3164776f41900661429",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5acd4cb207355d001abf3c63",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5acd4cb207355d001abf3c63",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a8febb555429916514e73e4",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a8febb555429916514e73e4",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0094/linududi/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0094/linududi/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad1a38a645df0001a2d2160",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad1a38a645df0001a2d2160",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a8f0986554299458435d535",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a8f0986554299458435d535",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a0367eeaf157d001818f3b6",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a0367eeaf157d001818f3b6",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0101/lukuvobe/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0101/lukuvobe/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0034/ronekibu/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0034/ronekibu/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a80ad7c5542992097ad3018",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a80ad7c5542992097ad3018",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a764c0b55429976ec32bd89",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a764c0b55429976ec32bd89",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ac532335542994611c8b41c",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ac532335542994611c8b41c",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0008/sotemeri/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0008/sotemeri/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a8c9c14fd22b3001a8d8bcf",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a8c9c14fd22b3001a8d8bcf",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0071/tucoliso/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0071/tucoliso/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0129/tubaficu/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0129/tubaficu/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad40f32604f3c001a400154",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad40f32604f3c001a400154",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a73235c5542994cef4bc475",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a73235c5542994cef4bc475",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0120/roliluke/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0120/roliluke/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ac248fd55429951e9e68525",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ac248fd55429951e9e68525",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0064/gucugudo/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0064/gucugudo/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0021/capanero/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0021/capanero/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0107/dumugale/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0107/dumugale/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a157d21a54d42001852945c",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a157d21a54d42001852945c",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0074/vacukolu/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0074/vacukolu/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0046/lamavali/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0046/lamavali/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0105/rirenofi/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0105/rirenofi/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5abdb5b455429965af743dfa",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5abdb5b455429965af743dfa",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0116/sidotule/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0116/sidotule/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/57060b8875f01819005e78ec",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/57060b8875f01819005e78ec",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0005/divibigi/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0005/divibigi/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0138/vagimoto/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0138/vagimoto/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/56ddef9d9a695914005b96eb",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/56ddef9d9a695914005b96eb",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad1668c645df0001a2d19cc",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad1668c645df0001a2d19cc",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/570fd8fd80d9841400ab36d3",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/570fd8fd80d9841400ab36d3",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0007/lipumene/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0007/lipumene/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0045/loracuda/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0045/loracuda/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ab8f53355429916710eb0d1",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ab8f53355429916710eb0d1",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0085/minutami/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0085/minutami/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0110/barevara/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0110/barevara/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5725f69138643c19005acf11",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5725f69138643c19005acf11",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad29e36d7d075001a429c45",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad29e36d7d075001a429c45",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0068/ceticedu/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0068/ceticedu/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/571d0e925efbb31900334e8f",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/571d0e925efbb31900334e8f",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0048/fogutipe/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0048/fogutipe/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a7f8b8c5542995d8a8ddea1",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a7f8b8c5542995d8a8ddea1",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad14b3b645df0001a2d15f7",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad14b3b645df0001a2d15f7",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a7fb1e55542995d8a8ddef7",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a7fb1e55542995d8a8ddef7",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ab2b95c5542991669774072",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ab2b95c5542991669774072",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ace3b7d32bba1001ae49fb3",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ace3b7d32bba1001ae49fb3",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0100/fatabimi/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0100/fatabimi/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0140/gidupelo/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0140/gidupelo/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0003/felanodi/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0003/felanodi/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a835a265542992ef85e2281",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a835a265542992ef85e2281",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0029/keticiti/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0029/keticiti/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ab4378f5542991751b4d6f3",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ab4378f5542991751b4d6f3",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5adf5fa65542993a75d264db",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5adf5fa65542993a75d264db",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ae2b770554299495565db0f",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae2b770554299495565db0f",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5a876f785542993e715abf42",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5a876f785542993e715abf42",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0076/sofucivu/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0076/sofucivu/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a1492c8a54d42001852925b",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a1492c8a54d42001852925b",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a149fa3a54d4200185292bf",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a149fa3a54d4200185292bf",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0022/tivikobo/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0022/tivikobo/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0095/goseraru/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0095/goseraru/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a7e5cf148f7d9001a063559",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a7e5cf148f7d9001a063559",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0053/kabirala/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0053/kabirala/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0028/gomotusa/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0028/gomotusa/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0079/semivare/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0079/semivare/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0065/sudasate/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0065/sudasate/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0139/gutitomi/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0139/gutitomi/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0114/bumatitu/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0114/bumatitu/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0108/tugipocu/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0108/tugipocu/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae5fb55554299546bf82ff6",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ae5fb55554299546bf82ff6",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0001/racevese/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0001/racevese/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0054/fugakuba/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0054/fugakuba/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0042/tapebifi/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0042/tapebifi/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0060/kabageto/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0060/kabageto/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0096/tokumife/light/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0096/tokumife/light/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0011/norumuma/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0011/norumuma/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0131/mefovivi/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0131/mefovivi/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad4243b604f3c001a40088d",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad4243b604f3c001a40088d",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad3f29f604f3c001a3ff8c3",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5ad3f29f604f3c001a3ff8c3",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0016/ritodabi/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0016/ritodabi/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/572791e9dd62a815002ea0a8",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/572791e9dd62a815002ea0a8",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0009/vidobufe/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0009/vidobufe/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a8dc46bdf8bba001a0f9be9",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a8dc46bdf8bba001a0f9be9",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ac3dfb15542995c82c4ac71",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ac3dfb15542995c82c4ac71",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0043/valumali/light",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0043/valumali/light",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0126/tudolege/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0126/tudolege/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0019/noponebi/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0019/noponebi/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5727a1eeff5b5019007d9160",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5727a1eeff5b5019007d9160",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0013/tubusibo/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0013/tubusibo/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0049/pinibeti/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0049/pinibeti/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/56e19cebe3433e1400423028",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/56e19cebe3433e1400423028",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0111/viduvoso/heavy",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0111/viduvoso/heavy",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0130/cifocosi/light/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0130/cifocosi/light/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0141/nutemabu/heavy/dependency",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0141/nutemabu/heavy/dependency",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/test/0056/sakifemi/heavy/paraphrase",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/test/0056/sakifemi/heavy/paraphrase",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a6a60c0a9e0c9001a4e9dc0",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a6a60c0a9e0c9001a4e9dc0",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ac0dcf25542996f0d89cc2c",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ac0dcf25542996f0d89cc2c",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ac173295542994ab5c67d45",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ac173295542994ab5c67d45",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5abac35055429901930fa8ae",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5abac35055429901930fa8ae",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad0e131645df0001a2d0798",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad0e131645df0001a2d0798",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5adc411f5542994650320cbc",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5adc411f5542994650320cbc",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad28d34d7d075001a429a20",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5ad28d34d7d075001a429a20",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/hotpot/5ac3c1805542995ef918c21f",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/hotpot/5ac3c1805542995ef918c21f",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/5a7c7516e8bc7e001a9e1e25",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5a7c7516e8bc7e001a9e1e25",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/572abec0be1ee31400cb8202",
+    "arm": "shuffled_sufficiency"
+  },
+  {
+    "case_id": "r19/squad2/572abec0be1ee31400cb8202",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5725c70dec44d21400f3d543",
+    "arm": "instruction_always"
+  },
+  {
+    "case_id": "r19/squad2/5725c70dec44d21400f3d543",
+    "arm": "shuffled_sufficiency"
+  }
+]

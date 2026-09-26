@@ -1,0 +1,202 @@
+[
+  {
+    "remote_result": "semantic-evaluation-v1/blind-mapping.json",
+    "public_file": "artifacts/semantic-evaluation-v1/blind-mapping.json.gz",
+    "raw_sha256": "7ac24504acf047c14cd45e1a0bf9e2529b5155921d8dea9786b96863cfc6e3df",
+    "raw_bytes": 344547,
+    "stored_sha256": "96ee42ef9ab009700919041e2c7fbf04ab930bbc6b9b0b5b12fa6e24f5acad7a",
+    "gzip": true
+  },
+  {
+    "remote_result": "semantic-evaluation-v1/blind-packets.json",
+    "public_file": "artifacts/semantic-evaluation-v1/blind-packets.json.gz",
+    "raw_sha256": "4f67d9b941696f58181c704f14d2f7e7a0b86d93cb2a4505ddc54f4c07bc5480",
+    "raw_bytes": 3065256,
+    "stored_sha256": "fe19cf402de8d1dde6580ff289a8ddf85ab408abf259358ac139cce75548613a",
+    "gzip": true
+  },
+  {
+    "remote_result": "semantic-evaluation-v1/generation/admission-checks.jsonl",
+    "public_file": "artifacts/semantic-evaluation-v1/generation/admission-checks.jsonl.gz",
+    "raw_sha256": "d4177e606653060ee6b8d660911c972d9239b6493a989a720883cb6b23168db2",
+    "raw_bytes": 68321,
+    "stored_sha256": "6cbd1d5fdd50bc48aab07e45873872ea8f026b4aca8f68847e3e6d6974c42178",
+    "gzip": true
+  },
+  {
+    "remote_result": "semantic-evaluation-v1/generation/admission.json",
+    "public_file": "artifacts/semantic-evaluation-v1/generation/admission.json",
+    "raw_sha256": "344bf76d030e45aecbab3a5cc2708211dc065966dfdf32f78923b6ecc16aa31d",
+    "raw_bytes": 139495,
+    "stored_sha256": "344bf76d030e45aecbab3a5cc2708211dc065966dfdf32f78923b6ecc16aa31d",
+    "gzip": false
+  },
+  {
+    "remote_result": "semantic-evaluation-v1/generation/completion.json",
+    "public_file": "artifacts/semantic-evaluation-v1/generation/completion.json",
+    "raw_sha256": "72e417aea78ba112bc7af19f544137fdea34bcb8c0febffe1c365d7d866c31a4",
+    "raw_bytes": 319,
+    "stored_sha256": "72e417aea78ba112bc7af19f544137fdea34bcb8c0febffe1c365d7d866c31a4",
+    "gzip": false
+  },
+  {
+    "remote_result": "semantic-evaluation-v1/generation/freeze.json",
+    "public_file": "artifacts/semantic-evaluation-v1/generation/freeze.json",
+    "raw_sha256": "7ff7c29e54d056bcd8d90c8997f341302d8267cb41f2a95cab4372a3b4567fa8",
+    "raw_bytes": 9636,
+    "stored_sha256": "7ff7c29e54d056bcd8d90c8997f341302d8267cb41f2a95cab4372a3b4567fa8",
+    "gzip": false
+  },
+  {
+    "remote_result": "semantic-evaluation-v1/generation/inputs.jsonl",
+    "public_file": "artifacts/semantic-evaluation-v1/generation/inputs.jsonl.gz",
+    "raw_sha256": "3ee5552c59ae19f12f419709d2fdc9b881ee64b4b50d0a6909ae2164558a730c",
+    "raw_bytes": 4320081,
+    "stored_sha256": "ff7a5837467156026c0cc4dff641da4d03c1ce97861dfd9d849020b7ddd2130b",
+    "gzip": true
+  },
+  {
+    "remote_result": "semantic-evaluation-v1/generation/ledger.jsonl",
+    "public_file": "artifacts/semantic-evaluation-v1/generation/ledger.jsonl.gz",
+    "raw_sha256": "f1006f864454848a19711099da067a50854c729b4d9d8b3ff3c1d9b4db7ef19c",
+    "raw_bytes": 77583,
+    "stored_sha256": "247b8d3de896987cfdc9d90033f7965494befa20c984e7e81c712d93a5465e89",
+    "gzip": true
+  },
+  {
+    "remote_result": "semantic-evaluation-v1/generation/loads.jsonl",
+    "public_file": "artifacts/semantic-evaluation-v1/generation/loads.jsonl.gz",
+    "raw_sha256": "1e333fbb52c7c34d037979adf5e0932cd39a7f5b72dde5b3f1e61b386dcce3a6",
+    "raw_bytes": 666,
+    "stored_sha256": "dcd189e63a96806ec13c7b40eb91af98b8faf506985fe2f4d4d8dcbcabb5e036",
+    "gzip": true
+  },
+  {
+    "remote_result": "semantic-evaluation-v1/generation/outputs.jsonl",
+    "public_file": "artifacts/semantic-evaluation-v1/generation/outputs.jsonl.gz",
+    "raw_sha256": "4e83d14b2103e7b7566fbd4b347946302e5730a0faecaa865f341a5753ba209e",
+    "raw_bytes": 39330922,
+    "stored_sha256": "8838d3b397b9c25ffb45f8e781dae02ff2e5bc398fb25168098ac5fa34ffd14d",
+    "gzip": true
+  },
+  {
+    "remote_result": "semantic-evaluation-v1/generation/receipts.jsonl",
+    "public_file": "artifacts/semantic-evaluation-v1/generation/receipts.jsonl.gz",
+    "raw_sha256": "b30b16f2e8fdbb485ec06e879ff6e90bf876383c04627641ad2b691a7142a2a6",
+    "raw_bytes": 8298468,
+    "stored_sha256": "7988f4ad135c1e7cffd1c83246902da60a11e28edfe2986935a5e0825eb166f3",
+    "gzip": true
+  },
+  {
+    "remote_result": "semantic-evaluation-v1/generation/starts.jsonl",
+    "public_file": "artifacts/semantic-evaluation-v1/generation/starts.jsonl.gz",
+    "raw_sha256": "c5c417d09a46d7e48ffed8886d5d56dea0ba769fb355dfd1006d6eaec6dd78a2",
+    "raw_bytes": 876048,
+    "stored_sha256": "c4cb19cf9abb1d047d3b398fd20dd0ff3b200579279f09378ec9680735af8b5a",
+    "gzip": true
+  },
+  {
+    "remote_result": "semantic-evaluation-v1/grading-freeze.json",
+    "public_file": "artifacts/semantic-evaluation-v1/grading-freeze.json",
+    "raw_sha256": "035e0e005d607beba851bfc754dde2bd708b10a56868dbb2cb6334c74e1282e4",
+    "raw_bytes": 7996,
+    "stored_sha256": "035e0e005d607beba851bfc754dde2bd708b10a56868dbb2cb6334c74e1282e4",
+    "gzip": false
+  },
+  {
+    "remote_result": "semantic-evaluation-v1/judge-admission.json",
+    "public_file": "artifacts/semantic-evaluation-v1/judge-admission.json",
+    "raw_sha256": "ce45464b8fb93909a9c1d1db7a94fd9fce473c28774b9d52c5e0a8f28b9835f4",
+    "raw_bytes": 714,
+    "stored_sha256": "ce45464b8fb93909a9c1d1db7a94fd9fce473c28774b9d52c5e0a8f28b9835f4",
+    "gzip": false
+  },
+  {
+    "remote_result": "semantic-evaluation-v1/judgments.complete.json",
+    "public_file": "artifacts/semantic-evaluation-v1/judgments.complete.json",
+    "raw_sha256": "4fca323cb151e2a28b98c1a2cc5cfb01e7773792fe4f3fae39f6c14633b8442a",
+    "raw_bytes": 156,
+    "stored_sha256": "4fca323cb151e2a28b98c1a2cc5cfb01e7773792fe4f3fae39f6c14633b8442a",
+    "gzip": false
+  },
+  {
+    "remote_result": "semantic-evaluation-v1/judgments.jsonl",
+    "public_file": "artifacts/semantic-evaluation-v1/judgments.jsonl.gz",
+    "raw_sha256": "f657b6cf2ad4eda17e9a42eefd9b1707b68e98227c484a25cd40ec17983c2efc",
+    "raw_bytes": 6052018,
+    "stored_sha256": "2d31b9c57c94fae9a5af34aacb2f003ace887c27b2b9bf315fee2b9f4bfdcf42",
+    "gzip": true
+  },
+  {
+    "remote_result": "semantic-evaluation-v1/judgments.metadata.json",
+    "public_file": "artifacts/semantic-evaluation-v1/judgments.metadata.json",
+    "raw_sha256": "e5ca5b1f7d362943d0609dea6b1260fafdb0b4b2114372f0e260a1546add5b36",
+    "raw_bytes": 428,
+    "stored_sha256": "e5ca5b1f7d362943d0609dea6b1260fafdb0b4b2114372f0e260a1546add5b36",
+    "gzip": false
+  },
+  {
+    "remote_result": "semantic-evaluation-v1/judgments.starts.jsonl",
+    "public_file": "artifacts/semantic-evaluation-v1/judgments.starts.jsonl.gz",
+    "raw_sha256": "b08710531342284158010d0988b403495d50396e5f7beba9c82b6584367f7a25",
+    "raw_bytes": 136960,
+    "stored_sha256": "159e85c2d0a2ae7546b11be3fc461291fcd373af001c9bc7d3f98aa0161a120f",
+    "gzip": true
+  },
+  {
+    "remote_result": "semantic-evaluation-v1/pipeline-completion.json",
+    "public_file": "artifacts/semantic-evaluation-v1/pipeline-completion.json",
+    "raw_sha256": "d9ba8000e9866f9085450fa279bc08ac0bde076fb1e49d162045572271aeb62d",
+    "raw_bytes": 137,
+    "stored_sha256": "d9ba8000e9866f9085450fa279bc08ac0bde076fb1e49d162045572271aeb62d",
+    "gzip": false
+  },
+  {
+    "remote_result": "semantic-evaluation-v1/validation.complete.json",
+    "public_file": "artifacts/semantic-evaluation-v1/validation.complete.json",
+    "raw_sha256": "d524399ccd9152c9810f6db746803731ac3f1785e99af04bd9e0db3eec528c99",
+    "raw_bytes": 155,
+    "stored_sha256": "d524399ccd9152c9810f6db746803731ac3f1785e99af04bd9e0db3eec528c99",
+    "gzip": false
+  },
+  {
+    "remote_result": "semantic-evaluation-v1/validation.jsonl",
+    "public_file": "artifacts/semantic-evaluation-v1/validation.jsonl.gz",
+    "raw_sha256": "3d68caf0787b0b57d93eb514b4a7f12b6597ceaa68450b1bd449ac2b51724773",
+    "raw_bytes": 352767,
+    "stored_sha256": "ec3409030ee18eaee859c50b212ce4ded553fbdb6057b84f5bdd3764b995b5aa",
+    "gzip": true
+  },
+  {
+    "remote_result": "semantic-evaluation-v1/validation.metadata.json",
+    "public_file": "artifacts/semantic-evaluation-v1/validation.metadata.json",
+    "raw_sha256": "e8090ecc77a42ee54ee48aa7ce06dcb55e787366f0a288102b1c19de3751d2bf",
+    "raw_bytes": 428,
+    "stored_sha256": "e8090ecc77a42ee54ee48aa7ce06dcb55e787366f0a288102b1c19de3751d2bf",
+    "gzip": false
+  },
+  {
+    "remote_result": "semantic-evaluation-v1/validation.starts.jsonl",
+    "public_file": "artifacts/semantic-evaluation-v1/validation.starts.jsonl.gz",
+    "raw_sha256": "b5064b3ae9d6ddec41082aa248705fcab157741408c295ea51b53d0dc3e4801a",
+    "raw_bytes": 15853,
+    "stored_sha256": "bc4b7b884bef93cd9f71492c4357b14182e27af3c37d5be274ad7e57559e9811",
+    "gzip": true
+  },
+  {
+    "remote_result": "semantic-evaluation.log",
+    "public_file": "artifacts/semantic-evaluation.log",
+    "raw_sha256": "e5d2f60659155bd02f4bd6e859eafcccfe6c2b0847a6bc444b51f1343fc27d17",
+    "raw_bytes": 5615,
+    "stored_sha256": "e5d2f60659155bd02f4bd6e859eafcccfe6c2b0847a6bc444b51f1343fc27d17",
+    "gzip": false
+  },
+  {
+    "remote_result": "semantic-exit-code.txt",
+    "public_file": "artifacts/semantic-exit-code.txt",
+    "raw_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "raw_bytes": 2,
+    "stored_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "gzip": false
+  }
+]

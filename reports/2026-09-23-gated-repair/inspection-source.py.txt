@@ -1,0 +1,38 @@
+from pathlib import Path
+import json,hashlib,re
+root=Path.cwd();report=root/'reports/2026-09-23-gated-repair';run=root/'results/r25-public-replay/gated-repair-retry-v4';freeze=root/'research/protocols/gated-repair-retry-v4'
+a=json.loads((report/'analysis.json').read_text());assert a['audited'] and json.loads((report/'public-replay.json').read_text())['passed']
+cases={r['id']:r for r in json.loads((freeze/'cases.json').read_text()) if r['split']=='test'}
+refs={r['id']:r for r in json.loads((freeze/'test-references.json').read_text())}
+raw={(r['id'],r['arm']):r for r in map(json.loads,(run/'outputs.jsonl').read_text().splitlines()) if r['split']=='test'}
+grade={(g['id'],g['arm']):g for g in a['grades']}
+p={r['id']:r['actual_probability_correct'] for r in map(json.loads,(run/'feedback-availability.jsonl').read_text().splitlines()) if r['id'] in cases}
+counts={};changes=[]
+for task in ['gsm8k','arc']:
+ ids=[i for i,c in cases.items() if c['task']==task]
+ counts[task]={}
+ for seed in [2501,2502]:
+  arm=f'live/{seed}'
+  for retained in [False,True]:
+   name=('retained_' if retained else '')+arm
+   z={'recovered_from_parseable_wrong':0,'recovered_from_unparseable':0,'damaged_to_parseable_wrong':0,'damaged_to_unparseable':0,'arc_numeric_marker':0,'unparseable':0}
+   for i in sorted(ids):
+    selected='native' if retained and (p[i] is None or p[i]>=.5) else arm
+    n=grade[i,'native'];g=grade[i,selected];text=raw[i,selected]['text']
+    z['unparseable']+=not g['parseable'];z['arc_numeric_marker']+=task=='arc' and '####' in text
+    kind=None
+    if not n['correct'] and g['correct']:
+     kind='recovered_from_parseable_wrong' if n['parseable'] else 'recovered_from_unparseable'
+    if n['correct'] and not g['correct']:
+     kind='damaged_to_parseable_wrong' if g['parseable'] else 'damaged_to_unparseable'
+    if kind:
+     z[kind]+=1;changes.append({'id':i,'task':task,'policy':name,'category':kind,'probability_correct':p[i],'reference':refs[i],'question':cases[i]['prompt'],'native':raw[i,'native']['text'],'selected':text,'native_grade':n,'selected_grade':g})
+   counts[task][name]=z
+native_unparseable=[{'id':i,'task':c['task'],'reference':refs[i],'question':c['prompt'],'text':raw[i,'native']['text']} for i,c in sorted(cases.items()) if not grade[i,'native']['parseable']]
+result={'post_hoc_unblinded_inspection':True,'primary_grades_changed':False,'new_model_or_api_calls':0,'counts':counts,'all_live_recovery_damage_records':changes,'all_native_unparseable_records':native_unparseable,'primary_sha256':hashlib.sha256((report/'analysis.json').read_bytes()).hexdigest(),'inspection_source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'selection':'All native unparseable outputs and all live full-repair/retention correctness transitions in both seeds; no qualitative aggregate relabeling.'}
+(report/'output-inspection.json').write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n')
+print(json.dumps(counts,indent=2))
+for seed in [2501,2502]:
+ rs=[r for r in changes if r['task']=='arc' and r['policy']==f'retained_live/{seed}' and r['category'].startswith('recovered')]
+ for row in rs[:3]:
+  print(json.dumps({k:row[k] for k in ['id','policy','category','probability_correct','question','native','selected','reference']},ensure_ascii=False))

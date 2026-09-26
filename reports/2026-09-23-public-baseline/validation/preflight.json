@@ -1,0 +1,14 @@
+{
+  "source_commit": "36d55ce",
+  "initial_registration_commit": "36ebac9",
+  "cloud_full_suite_before_amendment": {
+    "passed": 492,
+    "seconds": 159.31
+  },
+  "cloud_amended_focused_tests": 8,
+  "local_final_tests": 507,
+  "local_final_test_seconds": 8.6,
+  "external_evaluator_environment": "evaluator-requirements.txt",
+  "historical_source_freezes_preserved": true,
+  "test_logs_redaction": "Local absolute repository paths replaced with <repo>; originals retained in ignored results."
+}

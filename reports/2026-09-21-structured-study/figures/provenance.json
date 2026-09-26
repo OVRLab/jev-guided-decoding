@@ -1,0 +1,17 @@
+{
+  "summary_sha256": "06c65841b58ccb1088a90fd34d66a4fb5680c5869f32f610345a2d54fa0e067c",
+  "script_sha256": "8156b98cbb9fe16ce5a37573ba4b59e448b7984cd55346ddc4b4efa9c205d3f1",
+  "versions": {
+    "matplotlib": "3.10.8",
+    "numpy": "2.5.3",
+    "pillow": "12.3.0"
+  },
+  "files": {
+    "accuracy-latency.png": "a5fea1b6de2cfaca9adfa2a0f2621e22de6b8a4f935922ff00408cddb3399be3",
+    "accuracy-latency.pdf": "af6b2ce7a2d4e3087618bfd762b49cb09e9f6a53f16dfda0ed72ba35388b08ba",
+    "accuracy-latency.svg": "45c33e270117d96cf288a6af9abc57600ec6dd43c584cd3781557034b73160b2",
+    "primary-contrasts.svg": "c9a07b0ac1e34817f90b63b2013e38f30f85606f1a7d574a472c436d6f7ece46",
+    "primary-contrasts.pdf": "d34e47db365f0d951bdbdc6c86b7d7c890ef65dd0100a66e01b42bc9baf3ae89",
+    "primary-contrasts.png": "f1c34ced0236616d63d32e26692aa2f9bd78284f67890a48f13f9d3928e616a0"
+  }
+}

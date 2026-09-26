@@ -1,0 +1,12 @@
+{
+  "pilot_admitted": false,
+  "conservative_main_seconds": 15498.438706406247,
+  "projected_new_cloud_usd": 7.650246503844738,
+  "ledger": {
+    "charged_input_tokens": 2948494,
+    "unresolved": 0
+  },
+  "weights_after": "311c1141187580dc0905c810e9d9e78853a0bf37b865bd5a5a511f6eed72f8c9",
+  "weights_before": "311c1141187580dc0905c810e9d9e78853a0bf37b865bd5a5a511f6eed72f8c9",
+  "weights_unchanged": true
+}

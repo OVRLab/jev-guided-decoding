@@ -1,0 +1,14 @@
+{
+  "id": "gsm8k/train/650",
+  "precision": "bfloat16",
+  "native": {
+    "max_abs": 0.25,
+    "argmax_equal": true,
+    "allclose": false
+  },
+  "intervened": {
+    "max_abs": 0.25,
+    "argmax_equal": true,
+    "allclose": false
+  }
+}

@@ -1,0 +1,15 @@
+
+==================================== ERRORS ====================================
+____________ ERROR collecting tests/test_learned_feedback_study.py _____________
+tests/test_learned_feedback_study.py:7: in <module>
+    S = runpy.run_path(str(ROOT / "research/iterations/learned_feedback/study.py"))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+<frozen runpy>:254: in _get_code_from_file
+    ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<REPOSITORY>/research/iterations/learned_feedback/study.py'
+=========================== short test summary info ============================
+ERROR tests/test_learned_feedback_study.py - FileNotFoundError: [Errno 2] No ...
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.06s

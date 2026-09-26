@@ -66,7 +66,7 @@ class Candidate:
     token_ids: tuple[int, ...]
     text: str
     mean_logprob: float
-    finish_reason: Literal["sentence", "eos", "length", "time"]
+    finish_reason: Literal["sentence", "frame", "eos", "length", "time", "cancelled"]
     full_text: str | None = None
 
     @property
@@ -110,10 +110,18 @@ class Evaluation:
 
 
 class ScorerError(RuntimeError):
-    def __init__(self, message: str, *, attempts: int = 0, usage_unknown: bool = False):
+    def __init__(
+        self,
+        message: str,
+        *,
+        attempts: int = 0,
+        usage_unknown: bool = False,
+        diagnostics: dict[str, Any] | None = None,
+    ):
         super().__init__(message)
         self.attempts = attempts
         self.usage_unknown = usage_unknown
+        self.diagnostics = diagnostics
 
 
 class Backend(Protocol):

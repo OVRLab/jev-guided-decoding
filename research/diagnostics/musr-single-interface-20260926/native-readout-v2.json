@@ -1,0 +1,130 @@
+{
+  "scope": "Offline readout v2 of twelve exposed native responses; no accuracy or new inference",
+  "readout_version": "musr-exact-selection-v2",
+  "source_sha256": "ddabf9f56815748e5df07538f96de3a2405668d071d4a789a8bb424edf302e73",
+  "cases": 12,
+  "readable": 12,
+  "format_passes": 2,
+  "records": [
+    {
+      "id": "musr/murder_mystery/134",
+      "readable": true,
+      "format": false,
+      "span": [
+        0,
+        3
+      ],
+      "memory_positions": 19
+    },
+    {
+      "id": "musr/murder_mystery/212",
+      "readable": true,
+      "format": false,
+      "span": [
+        0,
+        8
+      ],
+      "memory_positions": 19
+    },
+    {
+      "id": "musr/murder_mystery/213",
+      "readable": true,
+      "format": false,
+      "span": [
+        0,
+        8
+      ],
+      "memory_positions": 19
+    },
+    {
+      "id": "musr/murder_mystery/73",
+      "readable": true,
+      "format": false,
+      "span": [
+        0,
+        8
+      ],
+      "memory_positions": 19
+    },
+    {
+      "id": "musr/object_placements/179",
+      "readable": true,
+      "format": false,
+      "span": [
+        0,
+        8
+      ],
+      "memory_positions": 35
+    },
+    {
+      "id": "musr/object_placements/255",
+      "readable": true,
+      "format": false,
+      "span": [
+        0,
+        7
+      ],
+      "memory_positions": 37
+    },
+    {
+      "id": "musr/object_placements/31",
+      "readable": true,
+      "format": false,
+      "span": [
+        0,
+        14
+      ],
+      "memory_positions": 37
+    },
+    {
+      "id": "musr/object_placements/85",
+      "readable": true,
+      "format": true,
+      "span": [
+        392,
+        393
+      ],
+      "memory_positions": 46
+    },
+    {
+      "id": "musr/team_allocation/165",
+      "readable": true,
+      "format": false,
+      "span": [
+        0,
+        50
+      ],
+      "memory_positions": 72
+    },
+    {
+      "id": "musr/team_allocation/185",
+      "readable": true,
+      "format": true,
+      "span": [
+        175,
+        176
+      ],
+      "memory_positions": 61
+    },
+    {
+      "id": "musr/team_allocation/2",
+      "readable": true,
+      "format": false,
+      "span": [
+        116,
+        183
+      ],
+      "memory_positions": 80
+    },
+    {
+      "id": "musr/team_allocation/74",
+      "readable": true,
+      "format": false,
+      "span": [
+        0,
+        69
+      ],
+      "memory_positions": 100
+    }
+  ]
+}

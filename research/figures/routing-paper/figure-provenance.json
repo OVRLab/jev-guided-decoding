@@ -1,0 +1,7 @@
+{
+  "matplotlib": "3.10.9",
+  "inputs": {
+    "reports/2026-09-25-completed-granite/short-analysis.json": "6ceb8dd11fb4bbff6eb911f2be49789a0b7ce022358a3a9db5d4c160fc9be761",
+    "reports/2026-09-25-routing-feedback/replay/analysis.json": "19cd197d4b79779043b41c1e541bcb2b7990fbf2ef1e4a3eeaf173fafcb1d1da"
+  }
+}

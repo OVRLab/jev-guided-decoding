@@ -1,0 +1,9 @@
+{
+  "failed_stage": "analysis-environment metadata export after successful public reanalysis",
+  "error": "System Python did not have NumPy installed.",
+  "resolution": "Resume remaining editorial stages through the existing project environment using uv run --no-sync python.",
+  "frozen_scientific_source_changed": false,
+  "original_artifacts_or_audits_replaced": false,
+  "model_or_provider_calls": 0,
+  "original_private_error_preserved": true
+}

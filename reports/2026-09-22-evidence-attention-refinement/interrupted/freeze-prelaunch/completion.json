@@ -1,0 +1,9 @@
+{
+  "failed": true,
+  "error_type": "ValueError",
+  "weights_before": "311c1141187580dc0905c810e9d9e78853a0bf37b865bd5a5a511f6eed72f8c9",
+  "weights_after": "311c1141187580dc0905c810e9d9e78853a0bf37b865bd5a5a511f6eed72f8c9",
+  "elapsed_seconds": 9.974763744000029,
+  "at": "2026-09-21T23:47:00.850080+00:00",
+  "weights_unchanged": true
+}

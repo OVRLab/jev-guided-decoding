@@ -1,0 +1,42 @@
+FF                                                                       [100%]
+=================================== FAILURES ===================================
+_____ test_recovery_damage_pair_seeds_within_case_and_keep_missing_native ______
+
+    def test_recovery_damage_pair_seeds_within_case_and_keep_missing_native():
+>       mod = runpy.run_path(str(ROOT / 'research/diagnostics/gated_repair_report.py'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_gated_repair_report.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/diagnostics/gated_repair_report.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/diagnostics/gated_repair_report.py'
+
+<frozen runpy>:254: FileNotFoundError
+________ test_report_rejects_incomplete_or_duplicate_component_coverage ________
+
+    def test_report_rejects_incomplete_or_duplicate_component_coverage():
+>       mod = runpy.run_path(str(ROOT / 'research/diagnostics/gated_repair_report.py'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_gated_repair_report.py:41: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/diagnostics/gated_repair_report.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/diagnostics/gated_repair_report.py'
+
+<frozen runpy>:254: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_gated_repair_report.py::test_recovery_damage_pair_seeds_within_case_and_keep_missing_native
+FAILED tests/test_gated_repair_report.py::test_report_rejects_incomplete_or_duplicate_component_coverage
+2 failed in 0.03s

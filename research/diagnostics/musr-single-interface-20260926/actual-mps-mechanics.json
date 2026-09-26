@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "device": "mps:0",
+  "api_calls": 0,
+  "initial_identity": true,
+  "off_identity": true,
+  "cache_max_logit_error": 7.581710815429688e-05,
+  "cache_argmax_equal": true,
+  "backbone_gradients_absent": true,
+  "backbone_before": "efa5edd16939c3996fe63734e8cc88146091d066ceed023837d7833f6225e27c",
+  "backbone_after": "efa5edd16939c3996fe63734e8cc88146091d066ceed023837d7833f6225e27c",
+  "memory_shape": [
+    2048
+  ],
+  "extraction_processed_tokens": 1153,
+  "extraction_seconds": 1.9537884998135269,
+  "seconds": 16.988187791779637,
+  "dummy_adapter_parameters": 262144,
+  "case_id": "musr/murder_mystery/134",
+  "synthetic_draft": true,
+  "source_revision": "b954f97620569d699328784efb0e5aa920aaae4a",
+  "model": "ibm-granite/granite-4.0-1b",
+  "revision": "6a7381ba1f54d684ff508d991aeb7dc580157103",
+  "total_seconds": 43.248414624948055,
+  "source_hashes": {
+    "research/iterations/musr_transfer/feedback.py": "2e983947e446f5646b22657e1bbb6e483a04f6a1b835a4104942aad139baa65f",
+    "research/iterations/musr_transfer/single.py": "23b6e756b0d30c0d6517c1843b353652e06154ea094369d762ce6ad0e3ee07eb",
+    "research/iterations/musr_transfer/runtime.py": "149209bfde61bb394ad4f1761c8a6b1a556cdae831d52233f7c443a0dc648588",
+    "research/iterations/musr_transfer/admission.py": "ab6ecd3f7a96055a68ce0037a59aff0962b0de9c4751b6a4205e94589b05031e",
+    "research/iterations/musr_transfer/data.py": "2a0349e32d2ef519fe32953039dfcb38157886408fd918e72a74008137a71ab8",
+    "research/musr-mechanical-admission.md": "5cfb322ff0832c13ae7a928b2ec6dcc3c5a92597fc89f80e45baff68d3577797"
+  }
+}

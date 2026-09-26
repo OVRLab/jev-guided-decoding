@@ -1,0 +1,13 @@
+{
+  "basis": "Five exposed MMLU questions; timing-only proxy, not a GPQA confidence bound",
+  "native_all_three_seconds": 23199.923623575603,
+  "original_extra_controls_seconds": 2117.1674228364077,
+  "estimated_compute_usd": 12.339134004661547,
+  "stage_cap_usd": 24,
+  "worker_seconds_ceiling": 39600,
+  "independent_vm_expiry_hours": 12,
+  "maximum_vm_interval_usd": 21.0549698630137,
+  "jev_cap_usd": 0.25,
+  "bootstrap_cleanup_margin_usd": 2.6950301369863006,
+  "cumulative_before_stage_usd": 47.39595151031136
+}

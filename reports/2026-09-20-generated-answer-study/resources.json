@@ -1,0 +1,107 @@
+{
+  "single": {
+    "jobs": 1200,
+    "mean_latency_seconds": 1.415701057724171,
+    "median_latency_seconds": 1.2968156125000405,
+    "p95_latency_seconds": 3.5102630000001227,
+    "peak_cuda_allocated_bytes": 3390255616,
+    "accepted_model_tokens": 64050,
+    "final_generated_tokens": 4904,
+    "final_stop_reasons": {
+      "frame": 1157,
+      "eos": 43
+    },
+    "by_task": {
+      "gsm8k": {
+        "jobs": 600,
+        "mean_latency_seconds": 1.9703928110516704,
+        "accepted_steps": 2545,
+        "zero_step_runs": 54,
+        "reasoning_stop_reasons": {
+          "no_valid_step": 546,
+          "step_budget": 54
+        }
+      },
+      "proofwriter": {
+        "jobs": 600,
+        "mean_latency_seconds": 0.861009304396672,
+        "accepted_steps": 1513,
+        "zero_step_runs": 271,
+        "reasoning_stop_reasons": {
+          "no_valid_step": 538,
+          "step_budget": 62
+        }
+      }
+    }
+  },
+  "likelihood": {
+    "jobs": 1200,
+    "mean_latency_seconds": 1.8747940575075042,
+    "median_latency_seconds": 1.8058592509996743,
+    "p95_latency_seconds": 4.447723207999843,
+    "peak_cuda_allocated_bytes": 3614528000,
+    "accepted_model_tokens": 71909,
+    "final_generated_tokens": 4873,
+    "final_stop_reasons": {
+      "frame": 1160,
+      "eos": 40
+    },
+    "by_task": {
+      "gsm8k": {
+        "jobs": 600,
+        "mean_latency_seconds": 2.4735304508966682,
+        "accepted_steps": 2751,
+        "zero_step_runs": 30,
+        "reasoning_stop_reasons": {
+          "no_valid_step": 539,
+          "step_budget": 61
+        }
+      },
+      "proofwriter": {
+        "jobs": 600,
+        "mean_latency_seconds": 1.2760576641183403,
+        "accepted_steps": 1886,
+        "zero_step_runs": 265,
+        "reasoning_stop_reasons": {
+          "step_budget": 111,
+          "no_valid_step": 489
+        }
+      }
+    }
+  },
+  "jev": {
+    "jobs": 1200,
+    "mean_latency_seconds": 1.7452838565516644,
+    "median_latency_seconds": 1.0731571369999529,
+    "p95_latency_seconds": 5.242040861999158,
+    "peak_cuda_allocated_bytes": 3595470336,
+    "accepted_model_tokens": 34820,
+    "final_generated_tokens": 4886,
+    "final_stop_reasons": {
+      "frame": 1169,
+      "eos": 31
+    },
+    "by_task": {
+      "gsm8k": {
+        "jobs": 600,
+        "mean_latency_seconds": 2.8708033828499953,
+        "accepted_steps": 1373,
+        "zero_step_runs": 150,
+        "reasoning_stop_reasons": {
+          "no_valid_step": 101,
+          "all_rejected": 499
+        }
+      },
+      "proofwriter": {
+        "jobs": 600,
+        "mean_latency_seconds": 0.6197643302533338,
+        "accepted_steps": 48,
+        "zero_step_runs": 572,
+        "reasoning_stop_reasons": {
+          "all_rejected": 334,
+          "no_valid_step": 266
+        }
+      }
+    }
+  }
+}

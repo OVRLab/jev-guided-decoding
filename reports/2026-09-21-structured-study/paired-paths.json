@@ -1,0 +1,20 @@
+{
+  "raw_sha256": "f389175e67de6f8935e90b1b61ed6063610f6f30f303273adda68b22c2d7f095",
+  "definition": "Group by world ID and seed; compare Jev with each control where both jobs completed. Compare exact accepted IDs, final labels, and correctness against recorded independently verified reference. Exploratory descriptive counts; not a new primary test.",
+  "controls": {
+    "staged": {
+      "complete_pairs": 900,
+      "identical_accepted_paths": 844,
+      "identical_final_labels": 876,
+      "jev_correct_control_incorrect": 5,
+      "jev_incorrect_control_correct": 14
+    },
+    "soft_step": {
+      "complete_pairs": 899,
+      "identical_accepted_paths": 898,
+      "identical_final_labels": 899,
+      "jev_correct_control_incorrect": 0,
+      "jev_incorrect_control_correct": 0
+    }
+  }
+}

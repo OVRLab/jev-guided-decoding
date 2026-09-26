@@ -1,0 +1,62 @@
+[
+  {
+    "id": "evidence-v2/development/b18fac1aec7ea698/distracted",
+    "max_logit_delta": 0.0,
+    "equal": true
+  },
+  {
+    "id": "evidence-v2/development/a4655777054c6aed/distracted",
+    "max_logit_delta": 0.0,
+    "equal": true
+  },
+  {
+    "id": "evidence-v2/development/63cc06d132c1e078/clean",
+    "max_logit_delta": 0.0,
+    "equal": true
+  },
+  {
+    "id": "evidence-v2/development/63cc06d132c1e078/distracted",
+    "max_logit_delta": 0.0,
+    "equal": true
+  },
+  {
+    "id": "evidence-v2/development/c9e8c86d402472c1/clean",
+    "max_logit_delta": 0.0,
+    "equal": true
+  },
+  {
+    "id": "evidence-v2/development/c9e8c86d402472c1/distracted",
+    "max_logit_delta": 0.0,
+    "equal": true
+  },
+  {
+    "id": "evidence-v2/development/7b20303083f44e93/clean",
+    "max_logit_delta": 0.0,
+    "equal": true
+  },
+  {
+    "id": "evidence-v2/development/7b20303083f44e93/distracted",
+    "max_logit_delta": 0.0,
+    "equal": true
+  },
+  {
+    "id": "evidence-v2/development/d1484bdef151f501/clean",
+    "max_logit_delta": 0.0,
+    "equal": true
+  },
+  {
+    "id": "evidence-v2/development/d1484bdef151f501/distracted",
+    "max_logit_delta": 0.0,
+    "equal": true
+  },
+  {
+    "id": "evidence-v2/development/d4253fbb12a6a316/clean",
+    "max_logit_delta": 0.0,
+    "equal": true
+  },
+  {
+    "id": "evidence-v2/development/d4253fbb12a6a316/distracted",
+    "max_logit_delta": 0.0,
+    "equal": true
+  }
+]

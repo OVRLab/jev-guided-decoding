@@ -1,0 +1,10 @@
+{
+  "upstream_unit_tests_passed": 48,
+  "fully_specified_eligible_cases": 539,
+  "excluded_keys": [
+    1122,
+    1129
+  ],
+  "constructed_strict_checks": 12,
+  "language_seed": 2800
+}

@@ -5,6 +5,9 @@ development lessons. Follow [AGENTS.md](../../AGENTS.md) and [FEATURE.md](../../
 
 Before experimenting, define the hypothesis, baseline/control modes, datasets and
 rights, validation/test split, independent rubric, seeds, budgets, and stop criteria.
+Check which component actually supplies the scored output. For generator-quality
+claims, test that the generator owns the final tokens in all arms and that system
+instructions, examples, task instructions, and grading require the same format.
 Keep target/reference answers out of generation and scorer inputs. Preserve failed,
 empty, incomplete, and rejected runs in the denominator or explicitly disclose
 any exclusions and their reasons.
@@ -22,3 +25,17 @@ Keep raw public-safe inputs, candidates, decisions, returned model versions, and
 summary provenance together. Write a new dated report for a new experiment;
 never rewrite historical evidence to match a desired conclusion. Negative results
 and differences from a hypothesis are findings, not reasons to hide a run.
+
+
+When joining generated outputs to an oracle, verify the recorded question and
+source evidence as well as the case ID. A reused ID can otherwise attach a valid
+label to a different problem. Keep missing planned runs in the denominator.
+When a runner joins live encodings to persisted artifacts, test the actual JSON
+round trip as well as content tampering; equivalent tuple/list representations
+must not fail binding checks, and normalization must not accept changed tokens.
+
+Before replacing a readout, retain fixtures for known supported answer forms or
+record deliberate task-specific exclusions. Report format compliance separately
+from semantic correctness; do not turn an empty answer wrapper into evidence that
+an otherwise explicit choice is semantically wrong. A post-hoc parser fix belongs
+to a separately named analysis or future protocol, never a rewritten primary score.

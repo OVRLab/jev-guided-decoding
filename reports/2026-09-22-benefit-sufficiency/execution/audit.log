@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "[repository]/research/iterations/benefit_sufficiency/analyze.py", line 471, in <module>
+    main()
+  File "[repository]/research/iterations/benefit_sufficiency/analyze.py", line 463, in main
+    result = audit(args.manifest, args.results)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "[repository]/research/iterations/benefit_sufficiency/analyze.py", line 234, in audit
+    check_output(row, encoded[c["id"]], D["public_view"](c), tokenizer, manifest)
+  File "[repository]/research/iterations/benefit_sufficiency/analyze.py", line 23, in check_output
+    require(
+  File "[repository]/research/iterations/boundary_attention/analyze.py", line 23, in require
+    raise ValueError(message)
+ValueError: Benefit feature mismatch

@@ -1,0 +1,22 @@
+{
+  "at": "2026-09-23T20:16:43.682344+00:00",
+  "successful": true,
+  "probability": 0.97,
+  "model": "jev-1.13.0",
+  "attempts": 1,
+  "seconds": 4.634801665786654,
+  "raw": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "correct": {
+        "type": "noul",
+        "noul": 0.97
+      }
+    },
+    "usage": {
+      "input_tokens": 277,
+      "output_tokens": 20
+    }
+  },
+  "charged_usd": 1.1634e-05
+}

@@ -1,0 +1,42 @@
+{
+  "answer": {
+    "planned_cases": 8,
+    "completed_cases": 8,
+    "unscored_cases": 0,
+    "correct_selection_or_abstention": 8,
+    "eligibility_confusion_on_completed_cases": {
+      "true_accept": 5,
+      "false_accept": 0,
+      "true_reject": 19,
+      "false_reject": 0
+    },
+    "attempts": 8,
+    "total_seconds": 2.724629166070372,
+    "input_tokens": 10048,
+    "output_tokens": 944,
+    "returned_models": [
+      "jev-1.13.0"
+    ],
+    "usage_unknown": false
+  },
+  "step": {
+    "planned_cases": 8,
+    "completed_cases": 8,
+    "unscored_cases": 0,
+    "correct_selection_or_abstention": 8,
+    "eligibility_confusion_on_completed_cases": {
+      "true_accept": 5,
+      "false_accept": 0,
+      "true_reject": 19,
+      "false_reject": 0
+    },
+    "attempts": 8,
+    "total_seconds": 2.143785876221955,
+    "input_tokens": 11124,
+    "output_tokens": 944,
+    "returned_models": [
+      "jev-1.13.0"
+    ],
+    "usage_unknown": false
+  }
+}

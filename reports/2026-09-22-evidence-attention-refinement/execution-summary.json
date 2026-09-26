@@ -1,0 +1,68 @@
+{
+  "segments": [
+    {
+      "segment": "transport interruption",
+      "source_revision": "be58b7236acce6c5ac6a9cb74c1b0405bb35d978",
+      "started_at": "2026-09-21T23:13:23.998980+00:00",
+      "completed_at": "2026-09-21T23:19:20.329484+00:00",
+      "elapsed_seconds": 361.7500904,
+      "initial_setup_seconds": 5.429475750999984,
+      "new_model_forwards": 9294,
+      "new_scorer_attempts": 103,
+      "status": "failed",
+      "error_type": "ScorerError"
+    },
+    {
+      "segment": "checkpoint interruption",
+      "source_revision": "91a637b26eb84deebbbd4bc648d513cbf3af6669",
+      "started_at": "2026-09-21T23:30:11.145223+00:00",
+      "completed_at": "2026-09-21T23:30:20.766633+00:00",
+      "elapsed_seconds": 15.003524225000092,
+      "initial_setup_seconds": 5.393114928000159,
+      "new_model_forwards": 95,
+      "new_scorer_attempts": 2,
+      "status": "failed",
+      "error_type": "FileExistsError"
+    },
+    {
+      "segment": "service interruption",
+      "source_revision": "e9f16c516c02404a8087b89fbb895e2d6fd51e74",
+      "started_at": "2026-09-21T23:35:37.379687+00:00",
+      "completed_at": "2026-09-21T23:40:53.127548+00:00",
+      "elapsed_seconds": 321.1443261510001,
+      "initial_setup_seconds": 5.406706520999933,
+      "new_model_forwards": 8582,
+      "new_scorer_attempts": 135,
+      "status": "failed",
+      "error_type": "ScorerError"
+    },
+    {
+      "segment": "freeze prelaunch",
+      "source_revision": "d1fd5fe52e0476c469c9255c3fe1e76c457e996f",
+      "started_at": "2026-09-21T23:46:56.255380+00:00",
+      "completed_at": "2026-09-21T23:47:00.850080+00:00",
+      "elapsed_seconds": 9.974763744000029,
+      "initial_setup_seconds": 5.390679483999975,
+      "new_model_forwards": 0,
+      "new_scorer_attempts": 0,
+      "status": "failed",
+      "error_type": "ValueError"
+    },
+    {
+      "segment": "completed continuation",
+      "source_revision": "46f3175b8bc751fa865771ee5cfd07c48b7f56fe",
+      "started_at": "2026-09-21T23:50:47.438930+00:00",
+      "completed_at": "2026-09-22T00:08:33.276420+00:00",
+      "elapsed_seconds": 1071.216906095,
+      "initial_setup_seconds": 5.390206552000109,
+      "new_model_forwards": 16708,
+      "new_scorer_attempts": 1392,
+      "status": "complete",
+      "error_type": null
+    }
+  ],
+  "total_loaded_run_seconds": 1779.0896106150003,
+  "actual_model_forwards": 34679,
+  "scorer_attempts": 1632,
+  "note": "Segments append to immutable prefixes. Delta counts avoid counting copied raw records twice. Elapsed sum excludes gaps for local fixes; cloud lifetime includes them. Initial setup is included in each elapsed value."
+}

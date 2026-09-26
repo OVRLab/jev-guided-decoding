@@ -1,0 +1,1538 @@
+[
+  {
+    "id": "gsm8k/train/650",
+    "target": "Josh gave a total of 3 x 10 = 30 candies to his siblings.\nHe was then left with 100 - 30 = 70 candies.\nHe gave 70/2 = 35 candies to his best friend.\nSo he had 70 - 35 = 35 candies left.\nSince he only wants to eat 16 candies, there are still 35 - 16 = 19 candies left to be shared with others.\n#### 19"
+  },
+  {
+    "id": "gsm8k/train/2289",
+    "target": "Book 1 was $12.50 and book 2 was $15.00 so 13.00 +15.00 = $28.00\nHe was buying 4 books, so these 2 were 25% off so 28.00 * .25 = $7.00\nThese two books came out to 28-7 = $21.00\nBooks 3 & 4 were both $10 each so 2*10 = $20.00\nWhen you add all 4 books together, 21+20 = $41.00\nTo get free shipping he would need to spend 50-41 = $9.00 more on books\n#### 9"
+  },
+  {
+    "id": "gsm8k/train/3380",
+    "target": "The original price of the bag was reduced by $500 x 5/100 = $25.\nSo its selling price after a week was $500 - $25 = $475.\nThe price of the bag was again reduced by $475 x 4/100 = $19.\nSo, its selling price now is $475 - $19 = $456.\nTherefore, the total reduction from the selling price is $500 - $456 = $44.\n#### 44"
+  },
+  {
+    "id": "gsm8k/train/307",
+    "target": "The block has 16 servings and he has eaten 5 servings leaving 16-5 = 11 servings of cheese\nThere are 11 servings of cheese left and each serving is 110 calories for a total of 11*110 = 1,210 calories\n#### 1210"
+  },
+  {
+    "id": "gsm8k/train/6008",
+    "target": "He catches 8*12=96 crabs a day\nSo he makes 96*5=$480 per day\nThat means he makes 7*480=$3360 a day\n#### 3360"
+  },
+  {
+    "id": "gsm8k/train/4877",
+    "target": "Brianna needs 12 * 2 = 24 books to get her through the year.\nShe will borrow 8 - 2 = 6 new books from the library.\nWith the books she was given, the books she bought, and the library books, she will have 6 + 8 + 6 = 20 new books to read this year.\nThus, she will need to reread 24 - 20 = 4 of her old books this year.\n#### 4"
+  },
+  {
+    "id": "gsm8k/train/2054",
+    "target": "On Thursday 15*3=45 books were sold.\nOn Friday 45/5=9 books were sold\nAdding up all three days 15+45+9=69 books were sold by Friday\n#### 69"
+  },
+  {
+    "id": "gsm8k/train/2481",
+    "target": "Mr. Wong had 560/2 = 280 mangoes left\nEach of his neighbors received 280/8 = 35 mangoes\n#### 35"
+  },
+  {
+    "id": "gsm8k/train/1607",
+    "target": "Let's assume the total amount of money that Jane has is m.\nSince Jean has 3 times as much money as Jane, he has 3*m=3m\nCombined, Jean and Jane have a total of m+3m = $76\nThis evaluates to 4m=$76\nThe total amount of money that Jane has, represented by m, is m=$76/4\nJane has m=$19\nSince Jean has three times as much money as Jane, Jean has 3*$19=$57\n#### 57"
+  },
+  {
+    "id": "gsm8k/train/2050",
+    "target": "The second protest was 4*.25=1 day longer than the first.\nSo the second protest was 4+1=5 days.\nThus he spent 4+5=9 days protesting.\n#### 9"
+  },
+  {
+    "id": "gsm8k/train/3115",
+    "target": "Susie has 572 x 1/4 = 143 red beans.\nThere were 572 - 143 = 429 beans that are not red.\nThere are 429 x 1/3 = 143 white beans.\nSo, there were 429 - 143 = 286 beans left.\nTherefore, 286/2 = 143 beans are green.\n#### 143"
+  },
+  {
+    "id": "gsm8k/train/237",
+    "target": "Tank's total number of eggs in the second round was 60/2=30 since Emma gathered twice as many eggs as Tank in their second round of egg hunt.\nThe total number of eggs that Emma and Tank gathered in the second round was 60+30=90\nTank's total number of eggs in the second round was 20 less than the number she had gathered in the first round, meaning she had gathered 30+20=50 eggs in the first round of egg hunt.\nTank gathered 10 more Easter eggs than Emma in their first round of egg hunt, meaning Emma collected 50-10=40 eggs\nThe total number of eggs Emma and Tank collected in the first round was 40+50=90\nIn the two rounds, Emma and Tank gathered 90+90=180 eggs\nIf the total number of eggs in the pile they were collecting with 6 other people was 400 eggs, the six other people gathered 400-180=220 eggs\n#### 220"
+  },
+  {
+    "id": "gsm8k/train/3465",
+    "target": "The loaves of bread cost 5 * $5 = $25.\nThe orange juice cost 4 * $2 = $8.\nWyatt\u2019s total cost is $25 + $8 = $33.\nWyatt is left with the initial $74 - $33 = $41.\n#### 41"
+  },
+  {
+    "id": "gsm8k/train/3515",
+    "target": "If it takes Hugo twice the amount of time to fold a medium box than a small box, then he needs 2*3 = 6 seconds for the medium box\nIf Tom can fold either the small or medium box in 4 seconds, then he's faster at folding the medium box than Hugo because 4s < 6s\nIf Hugo can fold the small box in 3 seconds, then he's faster at folding the small boxes than Tom because 3s < 4s\nTherefore Hugo should fold all small boxes and Tom should fold all the medium ones before doing the other size where they are slower\nIf there are 2400 small boxes and Hugo can fold 1 box in 3 seconds, then it would take him 2400*3 = 7200 seconds to fold all boxes\nIf there are 1800 medium boxes and Tom can fold 1 box in 4 seconds, then it would take him 1800*4 = 7200 seconds to fold all medium boxes\nGiven that they need the same amount of time to fold all boxes, and are doing it simultaneously they will need 7200 seconds to fold all the boxes\n#### 7200"
+  },
+  {
+    "id": "gsm8k/train/4391",
+    "target": "There are 4 quarters in every dollar, so $35 x 4 = 140 quarters.\nLibby has 160 quarters \u2013 140 quarters to repay her sister = 20 quarters left.\n#### 20"
+  },
+  {
+    "id": "gsm8k/train/5148",
+    "target": "Monica has 20+25+25+28+28=126 in 5 of her classes.\nIn the fourth class, she has 20/2=10 students.\nIn total, she has 126+10=136 students per day.\n#### 136"
+  },
+  {
+    "id": "gsm8k/train/406",
+    "target": "The first movie was 60 + 30 = 90 minutes long since an hour has 60 minutes.\nThe second movie was 90 + 30 = 120 minutes long.\nIt took them a total of 90 + 120 = 210 minutes to watch the two movies.\nIt took them 10 x 2 = 20 minutes to cook the fries.\nThus, it took them a total of 10 + 20 = 30 minutes to cook.\nSo, they spent 210 + 30 = 240 minutes watching the movies and cooking.\nIn hours, this is equal to 240/60 = 4 hours.\n#### 4"
+  },
+  {
+    "id": "gsm8k/train/2406",
+    "target": "If there are 3 identical cylindrical structures, with a combined total of 72 rooms, then each individual cylindrical structure contains 72/3=24 rooms.\nIn each 24-room cylindrical structure, there are 24-12-7=5 kitchens.\nThus, the entire, three-cylinder space station contains a total of 3*5=15 kitchens.\n#### 15"
+  },
+  {
+    "id": "gsm8k/train/7026",
+    "target": "Alton earns $8 x 7 = $56 per week.\nTherefore, his weekly profit after paying the rent is $56 - $20 = $36.\n#### 36"
+  },
+  {
+    "id": "gsm8k/train/4",
+    "target": "He writes each friend 3*2=6 pages a week\nSo he writes 6*2=12 pages every week\nThat means he writes 12*52=624 pages a year\n#### 624"
+  },
+  {
+    "id": "gsm8k/train/5345",
+    "target": "Lee currently earns $60,000 / 12 months = $5,000 per month.\nThe engagement ring will cost him 2 * $5,000 = $10,000.\nThis means that it will take Lee $10,000 / $1,000 = 10 months to save enough money before he can propose.\n#### 10"
+  },
+  {
+    "id": "gsm8k/train/462",
+    "target": "Roberto skips 70 times per minute because 4,200 / 60 = 70.\nTogether they skip 150 times a minute.\nThey will skip 2,250 times because 150 x 15 = 2,250\n#### 2,250"
+  },
+  {
+    "id": "gsm8k/train/1632",
+    "target": "The length of the rectangle is 4 * 7 inches = 28 inches.\nThe area of the rectangle is 7 inches * 28 inches = 196 square inches.\n#### 196"
+  },
+  {
+    "id": "gsm8k/train/4054",
+    "target": "The lawyer worked 50*2=100 hours out of court\nSo he worked 100+50=150 hours total\nThat means the hourly time cost 150*100=$15000\nAdding the upfront cost it was 15000+1000=$16000\nHis brother paid half so he paid 16000/2=$8000\n#### 8000"
+  },
+  {
+    "id": "gsm8k/train/795",
+    "target": "Samson ate 3 sandwiches x 2 = 6 sandwiches at dinner on Monday\nHe ate 3 sandwiches + 6 sandwiches = 9 sandwiches total on Monday\nTherefore, he ate 9 sandwiches - 1 sandwich = 8 more sandwiches on Monday than Tuesday\n#### 8"
+  },
+  {
+    "id": "gsm8k/train/5973",
+    "target": "Nathaniel gave away 11-3 = 8 tickets to his best friends.\nNathaniel has 8/2 = 4 best friends.\n#### 4"
+  },
+  {
+    "id": "gsm8k/train/6405",
+    "target": "We need to count the sequences that Tobias made, which consist of 25 minutes of swimming and a 5-minute pause, so one sequence lasts for 25 minutes + 5 minutes = 30 minutes/sequence.\nThree hours is 3 hours * 60 minutes/hour = 180 minutes, so he is able to make 180 minutes / 30 minutes/sequence = 6 sequences.\nTherefore Tobias needs to make 6 pauses within these 6 sequences, which will last for 6 pauses * 5 minutes/pause = 30 minutes.\nDuring three hours, he is going to swim for 180 minutes - 30 minutes = 150 minutes.\nTherefore Tobias can make 100 meters for 150 minutes / 5 minutes/100 meters = 3 times.\nSo he was able to swim 30 times * 100 meters/time = 3000 meters in total.\n#### 3000"
+  },
+  {
+    "id": "gsm8k/train/146",
+    "target": "Cory takes 22 + 3 = 25 minutes to clean her room.\nBlake takes 25 - 4 = 21 minutes to clean his room.\nThe three of them can clean their room in 22 + 25 + 21 = 68 minutes in all.\nIn a week, they spend 68 x 2 = 136 minutes cleaning their rooms.\n#### 136"
+  },
+  {
+    "id": "gsm8k/train/1239",
+    "target": "The room is 8*7=56 square feet\nSo the new carpet cost 56*1.25=$70\nSo the total cost was 50+70=$120\n#### 120"
+  },
+  {
+    "id": "gsm8k/train/4242",
+    "target": "Aston had torn and has now fixed a total of 150 pages on the floor / 25 pages per comic = 6 comics.\nAdding this to the comics that were never torn means there are 6 fixed comics + 5 untorn comics = 11 comics in the box of comics.\n#### 11"
+  },
+  {
+    "id": "gsm8k/train/1751",
+    "target": "First find how many hours of runoff the sewers can handle: 240,000 / 1000 gallons/hour = 240 hours\nThen divide that time by the number of hours per day to find how many days of rain the sewers can handle: 240 hours / 24 hours/day = 10 days\n#### 10"
+  },
+  {
+    "id": "gsm8k/train/408",
+    "target": "The sum of the weights of the three adults is 140 x 3 = 420 pounds.\nThe sum of the weight of the two children is 64 x 2 = 128 pounds.\nSo the total weight of the 5 people who are in the elevator is 420 + 128 = 548 pounds.\nThis would mean that the next person's weight must not exceed 600 - 548 = 52 pounds.\n#### 52"
+  },
+  {
+    "id": "gsm8k/train/7345",
+    "target": "At night, the cat catches 8 birds * 2 = 16 birds.\nCombined with the birds caught during the day, the cat caught a total of 8 birds + 16 birds = 24 birds.\n#### 24"
+  },
+  {
+    "id": "gsm8k/train/6079",
+    "target": "There are 16 curlers in all and \u00bc of them are pink or 16 curlers / 4 = 4 pink curlers.\nThere are twice as many blue curlers as there are pink ones, so there are 4 pink x 2 = 8 blue curlers.\nTogether, there are 4 pink curlers + 8 blue curlers = 12 pink and blue curlers in Erin\u2019s hair.\nThe remaining curlers are green, so of the 16 total curlers \u2013 12 pink and blue curlers = 4 green curlers are in Erin\u2019s hair.\n#### 4"
+  },
+  {
+    "id": "gsm8k/train/7019",
+    "target": "The increase in productivity of the Albaszu machine was one and a half, which is 1 1/2 or 3/2.\nThis means there was an increase of 3/2*10=15 trees that the machine was cutting after it was repaired.\nCurrently, the Albaszu machine is cutting 15+10=25 trees each day.\n#### 25"
+  },
+  {
+    "id": "gsm8k/train/6670",
+    "target": "10% + 50% = 60% of the chips in the jar are not green.\nSo, 100% - 60% = 40% of the chips are green.\nThere are 40%/10% = 4 sets of 10% to make 40%.\nHence, there are 3 chips x 4 sets = 12 green chips.\n#### 12"
+  },
+  {
+    "id": "gsm8k/train/5012",
+    "target": "Carlton has 2 * 3 = 6 sweater vests.\nHe can wear each sweater vest with different 3 button-up shirts, so Carlton has 3 * 6 = 18 outfits.\n#### 18"
+  },
+  {
+    "id": "gsm8k/train/1533",
+    "target": "On the third day, Jen had half of the second day\u2019s cookies left, so on the second day, she had 8 * 2 = 16 cookies.\nOn the second day, she had 1/4 of the first day\u2019s cookies left, so she started with 16 * 4 = 64 cookies in the bag.\n#### 64"
+  },
+  {
+    "id": "gsm8k/train/1560",
+    "target": "The frame she initially intended to buy was 20/100*$60=$12 more expensive than she had thought.\nThis means the frame was being sold at $60+$12 = $72\nIf she paid for a smaller frame at 3/4 the price of the frame she initially intended to buy, she paid 3/4*$72 = $54\nYvette remained with $60-$54 = $6\n#### 6"
+  },
+  {
+    "id": "gsm8k/train/205",
+    "target": "The number of guests that bring a plus one is 30 / 2 = 15 guests\nThe total number of guests at the party, including the plus ones, is 30 + 15 = 45 guests\nSince there are 3 courses, Wickham will need 45 * 3 = 135 plates\n#### 135"
+  },
+  {
+    "id": "gsm8k/train/4899",
+    "target": "There are 7 letters in Jessica.\nThere are 4 letters in Tori.\nThere are 4 letters in Lily.\nThere are 7 letters in Patrice.\nIn all this is, 7 + 4 + 4 + 7 = 22 letters and thus 22 bracelets.\nThe total cost is 22 bracelets * $2 = $44\n#### 44"
+  },
+  {
+    "id": "gsm8k/train/5069",
+    "target": "He bought 2*3=6 pounds of sausage\nSo they cost 6*$4=$24\n#### 24"
+  },
+  {
+    "id": "gsm8k/train/5851",
+    "target": "It will be 90 degrees for 80% of the 15 weeks, for a total of 0.8*15=12 weeks.\nIt will be 100 degrees F for the remainder of the 15 weeks, or 15-12=3 weeks.\nDuring the 12 weeks when it averages 90 degrees F, he will eat 4 crickets per week for a total of 12*4=48 crickets.\nWhen it averages 100 degrees F, he eats twice as many crickets per week as when it averages 90 degrees F per week, for a total of 2*4=8 crickets per week.\nDuring these 3 weeks, he will eat 8*3=24 crickets.\nTherefore, over the 15 weeks, he will eat a total of 48+24=72 crickets.\n#### 72"
+  },
+  {
+    "id": "gsm8k/train/131",
+    "target": "Since each chapter of the book has 40 pages, Mitchell had read 10*40 = 400 pages from the first ten chapters.\nAfter reading 20 pages of the eleventh chapter, the total number of pages that Mitchell had read is 400+20 = 420\nThe next two chapters that she read had 2*40 = 80 pages.\nIn total, Mitchell read 420+80 = 500 pages of the book that day.\n#### 500"
+  },
+  {
+    "id": "gsm8k/train/2945",
+    "target": "Both Polly and Peter played 30 / 2 =15 moves each one\nWith an average of 28 seconds per move, Polly's moves lasted a total of 15 * 28 = 420 seconds.\nWith an average of 40 seconds per move, Peter's moves lasted a total of 15*40=600 seconds.\nIn total, the match lasted 420 + 600 = 1020 seconds.\nIn minutes, the match lasted 1020 / 60 = 17 minutes\n#### 17"
+  },
+  {
+    "id": "gsm8k/train/6992",
+    "target": "She has 8 points from red buckets because 4 x 2 = 8\nShe has 15 points from green buckets because 5 x 3 = 15\nShe has spent $2 on games because 2 x 1 = 2\nShe has $1 left to spend because 3 - 2 = 1\nShe can play one more game because 1 / 1 = 1\nThe best bucket gives three points because 3 > 2\nThe most she can earn in the final game is 15 because 5 x 3 = 15\nThe most she can score overall is 38 because 8 + 15 + 15 = 38\n#### 38"
+  },
+  {
+    "id": "gsm8k/train/475",
+    "target": "Together, they picked 30*3=90.\nThere are 40+28=68 accounted for.\nThen Layla picked 90-68=22.\n#### 22"
+  },
+  {
+    "id": "gsm8k/train/4569",
+    "target": "First, the 144 acres of grass will be eaten according to the equation 5*2*T + 8*1*T = 144.\nSolving this equation for T, we find 18*T = 144, or T = 8 months of food are covered by the animals grazing on the rancher's pasture.\nThis means the farmer must buy feed corn for the remaining 12 - 8 = 4 months.\nNext, the rancher's 8 sheep will require 4/2 = 2 bags of feed corn each, or 8*2 = 16 bags of feed corn in total for the 4 month period.\nThe rancher's 5 cows will require 4/1 = 4 bags of feed corn each, or 5*4 = 20 bags of feed corn in total for the month.\nTherefore, the rancher needs 16+20 = 36 bags of feed corn for all of his animals.\nSo, the rancher will need to spend 36*10 = $360 per year on feed corn.\n#### 360"
+  },
+  {
+    "id": "gsm8k/train/2537",
+    "target": "A quart is 32 ounces so this jar is 32-2=30 ounces\nJames uses 3*.5=1.5 ounces a day\nSo it last 30/1.5=20 day\n#### 20"
+  },
+  {
+    "id": "gsm8k/train/1404",
+    "target": "First find the total number of times the wombats claw him: 9 wombats * 4 claws/wombat = 36 claws\nThen add the number of times the rheas claw him to find the total: 36 claws + 3 claws = 39 claws\n#### 39"
+  },
+  {
+    "id": "gsm8k/train/2858",
+    "target": "There were 60 guests / 2 = 30 women at my mother's birthday celebration.\nThere were 30 women + 15 men = 45 men and women.\nSo, 60 people - 45 men and women = 15 were children.\nThen, 15 men / 3 = 5 men left.\nThus, 5 men + 5 children = 10 people left.\nTherefore, 60 people - 10 people = 50 people stayed and enjoyed the birthday celebration.\n#### 50"
+  },
+  {
+    "id": "gsm8k/train/5824",
+    "target": "Dimes are worth $0.10 and Barry has $10.00 worth of dimes so he has 10/.10 = 100 dimes\nDan has half the amount of dimes as Barry so Dan has 100/2 = 50 dimes\nDan finds 2 more dimes on his way home so he now has 50+2 = 52 dimes\n#### 52"
+  },
+  {
+    "id": "gsm8k/train/4889",
+    "target": "2/3 of the birds are chickens because 1 -(1/3)=2/3\nHe has 10 chickens because 15 x (2/3) =10\nIt will cost $20 to feed them because 10 x 2=20\n#### 20"
+  },
+  {
+    "id": "gsm8k/train/5202",
+    "target": "The students buy 2*5=10 bags of chips.\n10 bags of chips cost 10*0.5=5 dollars.\n5 candy bars cost 5*2=10 dollars.\nThey will need 10+5=15 dollars.\n#### 15"
+  },
+  {
+    "id": "gsm8k/train/280",
+    "target": "The cost of one card from each box in total is 1.25+1.75=3 dollars.\nThe total cost of cards the boy bought is 3*6=18 dollars.\n#### 18"
+  },
+  {
+    "id": "gsm8k/train/326",
+    "target": "Fred spent $236 - $14 = $222 on books.\nThe cost per book is $222 / 6 books = $37.\n#### 37"
+  },
+  {
+    "id": "gsm8k/train/56",
+    "target": "It took Leo 25 x 2 = 50 minutes to finish the second part of the assignment.\nLeo finished the first and second parts of the assignment in 25 + 50 = 75 minutes.\nHe finished the entire assignment in 60 x 2 = 120 minutes.\nTherefore, it took Leo 120 - 75 = 45 minutes to finish the third part of the assignment.\n#### 45"
+  },
+  {
+    "id": "gsm8k/train/916",
+    "target": "If the sum of their ages is 140, and Asaf is 50 years old, Alexander is 140-50 = 90 years old.\nThe age difference between Asaf and Alexander's age is 90-50 = 40\nSince the age difference between Asaf and Alexander's age is half the total number of pencils Asaf has, Asaf has 2*40 = 80 pencils.\nIf Alexander has 60 more pencils than Asaf, Alexander has 80+60= 140 pencils.\nTogether, they have 140 + 80 = 220 pencils\n#### 220"
+  },
+  {
+    "id": "gsm8k/train/3104",
+    "target": "First find the total tip amount: 20% * $200 = $40\nThen subtract the friend's contribution: $40 - $10 = $30\n#### 30"
+  },
+  {
+    "id": "gsm8k/train/1725",
+    "target": "The MRI cost 250*3=$750\nSo between the two things he pays 250+750=$1000\nInsurance covered 1000*.8=$800\nSo he had to pay 1000-800=$200\n#### 200"
+  },
+  {
+    "id": "gsm8k/train/5349",
+    "target": "At first at 50 miles/hour he travels 50 miles/hours*3 hours=150 miles.\nAfter that, he speeds up, traveling 80 miles/hours*4 hours= 320 miles.\nHe travels a total of 150 miles+320 miles=470 miles.\nHe is 600\u2013470=130miles from the hotel.\n#### 130"
+  },
+  {
+    "id": "gsm8k/train/5591",
+    "target": "He still has to improve by 60 more seconds because 90 - 30 = 60\nThis will take 6 days because 60 / 10 = 6\n#### 6"
+  },
+  {
+    "id": "gsm8k/train/2413",
+    "target": "If Val currently has 20 nickels and finds twice as many nickels as she has in her older brother's treasure box, she will have 2*20=40 more nickels.\nThe total number of nickels she'll have is 40+20=60\nSince nickel is worth $0.05, the value of the nickels Val is having is 60*0.05=$3\nVal had three times as many dimes as nickels before she found the 40 new nickels, a total of 3*20=60 dimes\nSince a dime has a value of $0.10, the value of the dimes that Val has is 60*$0.10=$6\nTogether, the value of the dimes and nickels Val has is worth $6+$3=$9\n#### 9"
+  },
+  {
+    "id": "gsm8k/train/2946",
+    "target": "Movie tickets cost for two people is $8 x 2 = $16.\nThe sisters will receive change of $25 - $16 = $9.\n#### 9"
+  },
+  {
+    "id": "gsm8k/train/2102",
+    "target": "Maria's deduction for tax is 2000 x 20% = $400.\nHer deduction for insurance is 2000 x 5% = $100.\nMaria's total deductions is $400 + $100 = $500.\nAfter the deductions, Maria has only $2000 - $500 = $1500 left from her salary.\nThen, Maria pays $1500/4 = $375 for the utility bills.\nSo, Maria has $1500 - $375 = $1125 after the deductions and utility bills payment.\n#### 1125"
+  },
+  {
+    "id": "gsm8k/train/5447",
+    "target": "First find how many degrees the temperature of the water needs to increase: 212 degrees - 41 degrees = 171 degrees\nThen divide that amount by the number of degrees the water temperature increases each minute to find how long it takes the water to boil: 171 degrees / 3 degrees/minute = 57 minutes\nNow figure out how long it takes to mix the pasta and make salad by dividing the pasta cook time by 3: 12 minutes / 3 = 4 minutes\nNow add the boiling time, cook time, and mixing time to find the total time it takes to make dinner: 57 minutes + 4 minutes + 12 minutes = 73 minutes\n#### 73"
+  },
+  {
+    "id": "gsm8k/train/7087",
+    "target": "Sangita has already flown for a total of 50 hours + 9 hours + 121 hours = 180 hours\nThe flight time she has remaining is 1500 hours - 180 hours = 1320 hours\nSangita's monthly target must therefore be 1320 hours / 6 months = 220 hours/month\n#### 220"
+  },
+  {
+    "id": "gsm8k/train/2923",
+    "target": "Ruel has a total of 4 x 10 = 40 stamps from the four books.\nHe also has 6 x 15 = 90 stamps from the six books.\nTherefore, he has a total of 40 + 90 = 130 stamps.\n#### 130"
+  },
+  {
+    "id": "gsm8k/train/3060",
+    "target": "The 10 people shovel 10,000 pounds per 10 days, or 10,000/10=1000 pounds per day per 10 people.\nAnd 1000 pounds per day per 10 people is 1000/10=100 pounds per day per person.\nHalf of ten people is 10/2=5 people.\nAt 100 pounds per day per person, 5 people can shovel 5*100=500 pounds per day.\nTherefore, for 5 people to shovel 40,000 pounds, it will take 40,000/500=80 days.\n#### 80"
+  },
+  {
+    "id": "gsm8k/train/7457",
+    "target": "Five times the amount Mark deposited is $88 x 5 = $440.\nSo, Mark deposited $440 - $40 = $400.\n#### 400"
+  },
+  {
+    "id": "gsm8k/train/3989",
+    "target": "She got 5 gift cards because 50 / 10 = 5\nShe got 15 thank you cards because 5 / (1/3) = 15\nShe has 50 students because 15 / .3 = 50\n#### 50"
+  },
+  {
+    "id": "gsm8k/train/1625",
+    "target": "The price of the book is down by: 100*0.2 = $20.\nSo the new price of the movie ticket is: 100 - 20 = $80.\n#### 80"
+  },
+  {
+    "id": "gsm8k/train/4055",
+    "target": "Since there are four clowns at the carousel this year, the candy seller sold 20*4 = 80 candies to all the clowns.\nThe thirty children also bought 20*30 = 600 candies in total.\nAltogether, the candy seller sold 600+80 = 680 candies to the clowns and children at the carousel.\nThe number of candies the candy seller has left is 700-680= 20\n#### 20"
+  },
+  {
+    "id": "gsm8k/train/1913",
+    "target": "At a rate of 10 acres per day, he can plow his 55 acres of farmland in 55/10=5.5 days.\nAt a rate of 12 acres per day, he can mow his 30 acres of grassland in 30/12=2.5 days.\nAltogether, it would take him 5.5+2.5=8 days to completely mow and plow his land.\n#### 8"
+  },
+  {
+    "id": "gsm8k/train/2397",
+    "target": "Two weeks are 14 days, so Nathan played for 3 * 14 = 42 hours.\nTobias played for 7 days, so he played a total of 5 * 7 = 35 hours.\nNathan and Tobias played together for 42 + 35 = 77 hours.\n#### 77"
+  },
+  {
+    "id": "gsm8k/train/4168",
+    "target": "Jimmy weighs 75+6 = 81 pounds.\nAdam's weight is 75-15= 60 pounds.\nIn total, the three weigh 75 + 81 + 60 = 216 pounds.\nThe average weight of the three is 216/3 = 72 pounds\n#### 72"
+  },
+  {
+    "id": "gsm8k/train/6840",
+    "target": "On Monday, he spent half of $80 leaving him with $80-(1/2)*$80 = $40\nOn Tuesday, he spent 1/5th of $40 leaving $40-(1/5)*40 = $32\nOn Wednesday, he spent 3/8ths of $32 leaving $32-(3/8)*$32 = $20\n#### 20"
+  },
+  {
+    "id": "gsm8k/train/4118",
+    "target": "She is making 24 servings because 3 x 8 = 24\nEach guest has 2 servings because 24 / 12 = 2\nEach guest has 3 apples because 2 x 1.5 = 3\n#### 3"
+  },
+  {
+    "id": "gsm8k/train/4103",
+    "target": "Shower gel costs Abraham 4 shower gels * $4 = $16.\nSo the shower gel and toothpaste combined have cost him $16 + $3 = $19.\nHe had money remaining in his budget so the total cost of his shopping must have been $60 \u2013 $30 = $30.\nThe box of laundry detergent therefore cost him $30 \u2013 $19 = $11.\n#### 11"
+  },
+  {
+    "id": "gsm8k/train/6915",
+    "target": "Two-fifths of 1000 players is (2/5)*1000 = 400 players\nThree eights of 1000 players is (3/8)*1000 = 375 players\nThe total number of players 25 or older is 400+375 = 775\nThe number of players younger than 25 years is 1000-775 = 225 players\n#### 225"
+  },
+  {
+    "id": "gsm8k/train/5976",
+    "target": "The two 8 inch subs total 16 inches because 2 x 8 = 16\nShe still needs 65 inches of sub because 81-16 = 65\nShe needs to buy 13 five inch subs because 65 / 5 = 13\n#### 13"
+  },
+  {
+    "id": "gsm8k/train/7006",
+    "target": "He will need to bring 30 yards of floss because 20 x 1.5 = 30\nOne packet of floss is enough because 35 > 30\nHe has 5 yards left over because 35 - 30 = 5\n#### 5"
+  },
+  {
+    "id": "gsm8k/train/494",
+    "target": "Originally, the houses are 7300+5200=12500 sq. ft. in total.\nThe smaller house will be expanded by 16000-12500=3500 sq. ft.\n#### 3500"
+  },
+  {
+    "id": "gsm8k/train/1956",
+    "target": "First find the time difference per problem: 5 minutes/problem - 2 minutes/problem = 3 minutes/problem\nThen multiply that number by the number of problems to find the total time difference: 3 minutes/problem * 20 problems = 60 minutes\n#### 60"
+  },
+  {
+    "id": "gsm8k/train/1814",
+    "target": "First find the total number of children: 6 kids + 9 kids + 5 kids = 20 kids\nThen divide the number of kids who prefer corn by the total number of kids and multiply by 100% to express as a percentage: 5 kids / 20 kids * 100% = 25%\n#### 25"
+  },
+  {
+    "id": "gsm8k/train/6997",
+    "target": "Kim sold 1200*2 = 2400 boxes of cupcakes on Wednesday.\nKim sold 2400*2 = 4800 boxes of cupcakes on Tuesday.\n#### 4800"
+  },
+  {
+    "id": "gsm8k/train/677",
+    "target": "The supplier brought 300 ft - 250 ft = 50 fewer feet of metal roofing.\nTherefore the total amount of money Mr. Caiden has to pay for the remaining metal roofings is 50 feet * $8/foot = $400\n#### 400"
+  },
+  {
+    "id": "gsm8k/train/2254",
+    "target": "The deck has 54 cards because 52 + 2 = 54\nThere are three players because 1 + 2 = 3\nEach player gets 18 cards because 54 / 3 = 18\n#### 18"
+  },
+  {
+    "id": "gsm8k/train/2044",
+    "target": "Twenty years ago, Shane was 12 * 2 = 24 years old\nShane is currently 24 + 20 = 44 years old\n#### 44"
+  },
+  {
+    "id": "gsm8k/train/4404",
+    "target": "He sells the woodburning for 20*15=$300\nSo he makes a profit of 300-100=$200\n#### 200"
+  },
+  {
+    "id": "gsm8k/train/1718",
+    "target": "The kingfisher caught 13 + 7 = 20 fish.\nThe pelican and kingfisher caught 13 + 20 = 33 fish\nThe fisherman caught 3 x 33 = 99 fish\nThe fisherman caught 99 - 13 = 86 more fish than the pelican.\n#### 86"
+  },
+  {
+    "id": "gsm8k/train/1650",
+    "target": "Sarah and the final neighbor took the wrong amount, which means that 15 neighbors \u2013 1 Sarah \u2013 1 final neighbor = 13 neighbors took 10 cookies each.\nThis is a total of 13 neighbors * 10 cookies = 130 cookies taken by the first 13 neighbors.\nThere were only 8 cookies left, so that means the first 13 neighbors and Sarah took a total of 150 \u2013 8 = 142 cookies.\nSo Sarah must have taken 142 \u2013 130 = 12 cookies.\n#### 12"
+  },
+  {
+    "id": "gsm8k/train/1474",
+    "target": "Over the three weeks, they will have watched a total of 10 + 8 + 12 = 30 hours of television.\nThe average number of hours per week is 30 hours / 3 = 10 hours of television.\n#### 10"
+  },
+  {
+    "id": "gsm8k/train/3614",
+    "target": "He walks 200 meters first then he returns to the house. So it makes 200 m + 200 m = 400 m\nThe city center is 500 meters away from his house so the total distance is 400 m + 500 m = 900 m\n#### 900"
+  },
+  {
+    "id": "gsm8k/train/1217",
+    "target": "If Justin has 14 dogs, Rico, who has 10 more dogs than Justin, has 14+10=24 dogs.\nSince Camden just bought 3/4 times as many dogs as Rico, he bought 3/4*24=18 dogs.\nA dog has four legs, so Camden's 18 dogs have 18*4=72 legs.\n#### 72"
+  },
+  {
+    "id": "gsm8k/train/1775",
+    "target": "The second student counted 12/3 = 4 more squirrels than the first student.\nThe second student counted 12+4 = 16 squirrels.\nTogether, the first and second student counted 12+16 = 28 squirrels combined.\n#### 28"
+  },
+  {
+    "id": "gsm8k/train/2267",
+    "target": "From the children, there are a total of 11 children * 4 items of clothing each = 44 items of clothing on the clotheslines.\nFrom the adults, there are a total of 20 adults * 3 items of clothing each = 60 items of clothing on the clotheslines.\nSo there are a total of 44 + 60 = 104 items of clothing on the clotheslines.\nThis means that there are 104 items of clothing / 2 items of clothing per clothesline = 52 clotheslines.\nThere are 2 clotheslines per house so there must be 52 clotheslines / 2 = 26 houses on the street.\n#### 26"
+  },
+  {
+    "id": "gsm8k/train/1425",
+    "target": "Dora made 8 cupcakes per hour for 5 hours for a total of 8*5 = 40 cupcakes\nBetty took a 2-hour break so she spent 5-2 = 3 hours making cupcakes\nBetty made 10 cupcakes per hour for 3 hours for a total of 10*3 = 30 cupcakes\nThe difference between the number of cupcakes they made is 40-30 = 10 cupcakes\n#### 10"
+  },
+  {
+    "id": "gsm8k/train/7",
+    "target": "To the initial 2 pounds of jelly beans, he added enough brownies to cause the weight to triple, bringing the weight to 2*3=6 pounds.\nNext, he added another 2 pounds of jelly beans, bringing the weight to 6+2=8 pounds.\nAnd finally, he added enough gummy worms to double the weight once again, to a final weight of 8*2=16 pounds.\n#### 16"
+  },
+  {
+    "id": "gsm8k/train/5304",
+    "target": "Gumball's total water intake on Monday, Thursday, and Saturday is 9 x 3 = 27 liters.\nAnd his total water intake on Tuesday, Friday, and Sunday is 8 x 3 = 24 liters.\nSo his total water intake for 6 days is 24 + 27 = 51 liters.\nTherefore Gumball's water intake on Wednesday is 60 - 51 = 9 liters.\n#### 9"
+  },
+  {
+    "id": "gsm8k/train/271",
+    "target": "The total cost for roses is 20*5 = $100\nNadia bought 3/4*20 = 15 lilies.\nEach lily costs 5*2 = $10\nShe used 10*15 = $150 in total to buy lilies.\nTo buy all the flowers, Nadia used 150+100 = $250\n#### 250"
+  },
+  {
+    "id": "gsm8k/train/7229",
+    "target": "Joe has 15-8=7 new shirts.\nAlex has 7-3=4 new shirts.\n#### 4"
+  },
+  {
+    "id": "gsm8k/train/4562",
+    "target": "75% of the 8 holes in Maynard's lawn, or (75/100) * 8 = 6 holes, were filled in with dirt.\nOf the original 8 holes, 8-6=2 holes remain unfilled.\n#### 2"
+  },
+  {
+    "id": "gsm8k/train/4502",
+    "target": "Arman's sister is 4 + 2 = 6 years old now.\nSo, Arman is 6 x 6 = 36 years old.\nHence, Arman will be 40 in 40 - 36 = 4 years.\n#### 4"
+  },
+  {
+    "id": "gsm8k/train/5652",
+    "target": "The writer is going to write 518 questions + 476 questions = 994 questions in 7 days.\nHe should aim to do 994 questions \u00f7 7 days = 142 questions/day.\n#### 142"
+  },
+  {
+    "id": "gsm8k/train/5461",
+    "target": "There are 150 clovers with 3 leaves because 200 times .75 equals 150.\nThere are 48 clovers with 2 leaves because 200 times .24 equals 48.\nThere are 2 clovers with 4 leaves because 200 times .01 equals 2.\nThe four-leaf clovers are worth 450 cents because 150 times 3 equals 450\nThe two leafed clovers are worth 96 cents because 48 times two equals 96\nThe four-leaf clovers are worth 8 cents because 4 times 2 equals 8.\nThe clovers are worth 554 cents because 450 plus 96 plus 8 equals 554\n#### 554"
+  },
+  {
+    "id": "gsm8k/train/3779",
+    "target": "First find the number of red beads per repeat: 3 green * 2 red/green = 6 red\nThen add the number of beads of each color to find the total number of bead per repeat: 6 beads + 3 beads + 5 beads = 14 beads\nThen multiply the number of beads per repeat by the number of repeats per bracelet to find the number of beads per bracelet: 14 beads/repeat * 3 repeats/bracelet = 42 beads/bracelet\nThen multiply the number of beads per repeat by the number of repeats per necklace to find the number of beads per necklace: 14 beads/repeat * 5 repeats/necklace = 70 beads/necklace\nThen multiply the number of beads per necklace by the number of necklaces to find the total number of beads used in the necklaces: 70 beads/necklace * 10 necklaces = 700 beads\nThen add the number of beads used in a bracelet to the number of beads in the necklaces to find the total number of beads used: 700 beads + 42 beads = 742 beads\n#### 742"
+  },
+  {
+    "id": "gsm8k/train/2614",
+    "target": "Megan has 12 + 12 = 24 eggs\nAfter making her omelet and cake, she was left with 24 - 2 - 4 = 18 eggs\nAfter giving half to her aunt, she was left with 18/2 = 9\nMegan would have 9/3 = 3 eggs per meal for the next three meals.\n#### 3"
+  },
+  {
+    "id": "gsm8k/train/5285",
+    "target": "The number of trees is three times more than the number of rocks, meaning there are 3*40 = 120 more trees than rocks in the courtyard.\nThe total number of trees in the yard is 120+40 = 160\nCombined, there are 160+40 = 200 trees and stones in the courtyard.\nSince the number of birds is twice the combined number of trees and stones in the courtyard, there are 2*200 =400 birds on the trees.\n#### 400"
+  },
+  {
+    "id": "gsm8k/train/3099",
+    "target": "Natasha = 30 * 7 = 210 minutes\nEsteban = 10 * 9 = 90 minutes\nTotal = 210 + 90 = 300 minutes\n300 minutes = 5 hours\nNatasha and Esteban exercised for a total of 5 hours.\n#### 5"
+  },
+  {
+    "id": "gsm8k/train/6948",
+    "target": "First find the number of saplings that sprout: 80 pits * 25% = 20 saplings\nThen subtract the number she sold to find the number she has left: 20 saplings - 6 saplings = 14 saplings\n#### 14"
+  },
+  {
+    "id": "gsm8k/train/4117",
+    "target": "Let X be the number of years before Fouad's age doubles Ahmed's age.\nSo (X+11)*2 = X+26.\nSo X*2 + 22 = X + 26.\nSo X = 26 - 22 = 4 years.\n#### 4"
+  },
+  {
+    "id": "gsm8k/train/2355",
+    "target": "Debbie used 4 * 2 = 8 feet of tape for the large boxes.\nShe used 2 * 8 = 16 feet of tape for the medium boxes.\nShe used 1 * 5 = 5 feet of tape for the small boxes.\nThere were 2 + 8 + 5 = 15 boxes in all.\nShe used 1 * 15 = 15 feet of tape for the address labels.\nThus, she used 8 + 16 + 5 + 15 = 44 feet of tape in all.\n#### 44"
+  },
+  {
+    "id": "gsm8k/train/4819",
+    "target": "First find Todd's contribution by doubling the boss's contribution: $15 * 2 = $30\nNow subtract Todd and the boss's contributions to find out how much still needs to be paid: $100 - $30 - $15 = $55\nNow divide the remaining cost by the number of employees to find the cost per employee: $55 / 5 employees = $11/employee\n#### 11"
+  },
+  {
+    "id": "gsm8k/train/1703",
+    "target": "Coach A spent $29x 10=$290 for the 10 basketballs.\nCoach B spent $2.50x14=$35 for the 14 baseballs.\nSo, Coach B spent a total of $35+$18=$53 for the baseballs and a bat.\nThus, Coach A spent $290-$53=$237 more than coach B\n#### 237"
+  },
+  {
+    "id": "gsm8k/train/6512",
+    "target": "Clara sells 600 cookies of the first type because 12*50 = 600.\nShe sells 1600 cookies of the second type because 20*80=1600.\nShe sells 1120 cookies of the third type because 16*70 = 1120.\nThus, Clara sells 3300 cookies total because 600+1600+1120=3320 cookies.\n#### 3320"
+  },
+  {
+    "id": "gsm8k/train/1501",
+    "target": "First Store:50000(.10)=5000\n50000-5000=45000 pounds\nSecond Store:45000(.20)=9000\n45000-9000=36000 pounds\n#### 36000"
+  },
+  {
+    "id": "gsm8k/train/1984",
+    "target": "First add up the calories from all three meals: 900 + 400 + 1100 = 2400\nThen subtract Jacob's goal from the number of calories he actually ate: 2400 - 1800 = 600\n#### 600"
+  },
+  {
+    "id": "gsm8k/train/2204",
+    "target": "The bag is now sold for $150 - $135 = $15 less.\nThe discount is 15/150 = 1/10.\nThus, the percent discount is 1/10 x 100% = 10%.\n#### 10"
+  },
+  {
+    "id": "gsm8k/train/631",
+    "target": "Two pairs of sunglasses costs 2 x $50 = $100.\nSo, Mary spent $100 + $100 = $200.\nThus, two decks of basketball cards costs $200 - $150 = $50.\nTherefore, one deck of basketball cards costs $50/2 = $25.\n#### 25"
+  },
+  {
+    "id": "gsm8k/train/3621",
+    "target": "Fiona earns 40 hours/week * $20/hour = $800/week\nSo she earns $800/week * 4 weeks/month = $3200/month\nJohn earns 30 hours/week * $20/hour = $600/week\nSo he earns $600/week * 4 weeks/month = $2400/month\nJeremy earns 25 hours * $20/hour = $500/week\nSo he earns $500/week * 4 weeks/month = $2000/month\nOverall their boss has to spend $3200/month + $2400/month + $2000/month = $7600/month\n#### 7600"
+  },
+  {
+    "id": "gsm8k/train/3373",
+    "target": "There are 15 Easter egg baskets with 12 Easter eggs in them, 15 x 12 = 180 Easter eggs.\nThere are 7 adults + Shonda (1) + 2 of Shonda's kids + 10 of their friends = 20 people at the Easter egg hunt.\nThere are 180 Easter eggs for 20 people, 180 / 20 = 9 Easter eggs each for everyone.\n#### 9"
+  },
+  {
+    "id": "gsm8k/train/3794",
+    "target": "Kendra made 4+5*8=44.\nSue made 44/2=22.\n#### 22"
+  },
+  {
+    "id": "gsm8k/train/951",
+    "target": "Michonne has invited 6 + 12 = 18 friends.\nThese friends have invited another 18 friends * 2 = 36 people.\nSo in total, there are 18 friends + 36 people = 54 people going to Michonne\u2019s party.\n#### 54"
+  },
+  {
+    "id": "gsm8k/train/5927",
+    "target": "First find how many minutes Kim spends on each employee: 2 minutes/employee + 3 minutes/employee = 5 minutes/employee\nThen multiply that time by the number of employees to find the total time spent on status and payroll updates: 5 minutes/employee * 9 employees = 45 minutes\nFinally, add that time to the time spent making coffee to find the total time: 45 minutes + 5 minutes = 50 minutes\n#### 50"
+  },
+  {
+    "id": "gsm8k/train/7036",
+    "target": "Melissa has 16 / 2 = 8 dresses.\nDebora has 8 + 12 = 20 dresses.\nIn total, they have 16 + 8 + 20 = 44 dresses.\n#### 44"
+  },
+  {
+    "id": "gsm8k/train/31",
+    "target": "Noah earned $60/large painting x 8 large paintings = $480 for the large paintings.\nHe also earned $30/small painting x 4 small paintings = $120 for the small paintings.\nHis total sales last month were $480 + $120 = $600.\nSo, his sales this month are $600 x 2 = $1200.\n#### 1200"
+  },
+  {
+    "id": "gsm8k/train/1716",
+    "target": "Toby gets 400 full rotations because 5 x 80 = 400\nHis friend get 404 rotations because 4 x 101 = 404\nThe winner rotated 404 objects because 404 > 400\n#### 404"
+  },
+  {
+    "id": "gsm8k/train/4063",
+    "target": "For the short stack orders, Hank needs to make 3 x 9 = 27 pancakes.\nFor the big stack orders, he needs to make 5 x 6 = 30 pancakes.\nAltogether, Hank needs to make 27 + 30 = 57 pancakes.\n#### 57"
+  },
+  {
+    "id": "gsm8k/train/3510",
+    "target": "He wants to save $1,000.00 and he has $100.00 left over so he still needs to save 1000-100= $900.00\nHe wants to save $900.00 over 12 months so that means he needs to save 900/12 = $75.00 per month\n#### 75"
+  },
+  {
+    "id": "gsm8k/train/2001",
+    "target": "First she drives 2 hours * 60 mph = 120 miles\nThen she drives 3 hours * 50 mph = 150 miles\nThe total miles driven is 120 + 150 = 270 miles\nJenna uses 270 / 30 = 9 gallons of gas.\nThe cost of gas is 9 * $2 = $18\n#### 18"
+  },
+  {
+    "id": "gsm8k/train/3192",
+    "target": "Clara climbed past 96 / 3 = 32 steps made up of 3 blocks of stone each.\nAt 8 steps per level, there are 32 / 8 = 4 levels in the tower.\n#### 4"
+  },
+  {
+    "id": "gsm8k/train/7419",
+    "target": "Let x = the total number of candies Corey has.\nx + 8 = the total number of candies Tapanga has.\nThe equation for the total number of candies is x + (x + 8) = 66\nCombining like terms, we get 2x + 8 = 66\nSubtracting 8 from both sides, we get 2x = 58\nDividing both sides by 2, we get x = 29, so Corey has 29 candies.\n#### 29"
+  },
+  {
+    "id": "gsm8k/train/5074",
+    "target": "First find how much more Jerry charges to pierce one person's ears than their nose: $20 * 50% = $10\nThen add that amount to the cost of nose piercing to find the total cost: $10 + $20 = $30\nThen multiply that price by the number of ears he pierces to find his total earnings from ear-piercing: $30/ear * 9 ears = $270\nThen multiply the price of nose-piercing by the number of noses pierced: $20/nose * 6 noses = $120\nThen add the money from nose-piercing to the money from ear-piercing to find Jerry's total income: $120 + $270 = $390\n#### 390"
+  },
+  {
+    "id": "gsm8k/train/4616",
+    "target": "The first bakery needs 2 x 4 = 8 sacks of strawberries per month.\nThe second bakery needs 4 x 4 = 16 sacks of strawberries per month.\nThe third bakery needs 12 x 4 = 48 sacks of strawberries per month.\nTherefore, Antoine needs 48 + 16 + 8 = 72 sacks of strawberries to supply all the bakeries for a month.\n#### 72"
+  },
+  {
+    "id": "gsm8k/train/2131",
+    "target": "A triangle with a height of 2 inches and width of 2 inches has an area of 2 square inches because (1/2) x 2 x 2 = 2\nThe square has an area of 4 square inches because 2 x 2 = 4\n2 triangles would fit because 4 / 2 = 2\n#### 2"
+  },
+  {
+    "id": "gsm8k/train/6605",
+    "target": "So far, time spent practicing backstroke, breaststroke, and butterfly is 50 + 9 + 121 = 180 hours\nSince Rita\u2019s must swim 1500 hours, the freestyle and sidestroke practice sessions will take 1500 - 180 = 1320 hours\nRita will practice for 220 hours/month, meaning she will meet her coach\u2019s target in 1320/220 = 6 months.\n#### 6"
+  },
+  {
+    "id": "gsm8k/train/3970",
+    "target": "First find the number of cans of tomatoes in a normal batch of chili: 2 cans * 150% = 3 cans\nThen add the number of cans of each type of food to find the total number of cans per batch: 3 cans + 2 cans + 1 can = 6 cans\nThen multiply the number of cans per batch by the number of batches to find the total number of cans: 6 cans/batch * 4 batches = 24 cans\n#### 24"
+  },
+  {
+    "id": "gsm8k/train/6669",
+    "target": "First calculate the cost of the pens for one student by multiplying the number of pens by the cost per pen: 5 pens * $0.50/pen = $2.50\nThen calculate the cost of the notebooks for one student by multiplying the number of notebooks by the cost per notebook: 3 notebooks * $1.25/notebook = $3.75\nThen calculate the cost of the highlighters for one student by multiplying the number of highlighters by the cost per highlighters: 2 highlighters * $0.75/highlighter = $1.50\nNow add the cost of all the different supplies to find the total cost for one student: $2.50 + $3.75 + $1.50 + $4.25 = $12.00\nNow multiply the cost per student by the number of students to find the total cost before the discount: 30 students * $12.00/student = $360.00\nNow subtract the teacher discount to find the final cost: $360.00 - $100.00 = $260.00\n#### 260"
+  },
+  {
+    "id": "gsm8k/train/1979",
+    "target": "40 slices per watermelon and each slice having 20 black seeds means each watermelon has 20*40=800 black seeds.\n40 slices per watermelon and each slice having 20 white seeds means each watermelon has 20*40=800 white seeds.\nIn total, each watermelon has 800+800=1600 seeds.\nWhat is the total number of seeds in a watermelon?\n#### 1,600"
+  },
+  {
+    "id": "gsm8k/train/7002",
+    "target": "She bakes a turkey for 15 minutes a pound and the turkey is 16 pounds so it takes 15*16 = 240 minutes\nShe has 2 turkeys to roast and one turkey takes 240 minutes to cook so 2 turkeys will take 2*240 = 480 minutes\nThere are 60 minutes in an hour and these turkeys will take 480 minutes to cook so that's 480/60 = 8 hours\nIn military time, 6:00 pm is 18:00 hours (12 hours +6 hours) and it takes 8 hours to cook the turkeys so the latest she can start is 18- 8 = 10:00 am\n#### 10"
+  },
+  {
+    "id": "gsm8k/train/2947",
+    "target": "White rabbit + brown rabbit = 15 + 12 = 27\n5 minutes * 27 = 135 meters\nThe two rabbits will hop 135 meters in 5 minutes.\n#### 135"
+  },
+  {
+    "id": "gsm8k/train/6027",
+    "target": "There were 10 eggs but 5 of them were used so, there are 10 - 5 = 5 eggs.\nThen the two chickens laid 2 * 3 = 6 eggs in total.\nThus, the family has 5 + 6 = 11 eggs now.\n#### 11"
+  },
+  {
+    "id": "gsm8k/train/2091",
+    "target": "The price that Shara paid is only 100% - 8% = 92% of the original price.\nSo, every 1% is equal to $184/92 = $2.\nTherefore, Shara saved $2 x 8 = $16.\n#### 16"
+  },
+  {
+    "id": "gsm8k/train/4324",
+    "target": "Carmela's four cousins have a total of $2 x 4 = $8.\nThe total money they all have is $7 + $8 = $15.\nThere will be 1 (Carmela) + 4 (cousins) = 5 people who will be sharing equally the money.\nSo each of them should get $15/5 = $3.\nHence, Carmela has to give a total of $7 - $3 = $4 to her 4 cousins.\nTherefore, each of her cousins will get $4/4 = $1.\n#### 1"
+  },
+  {
+    "id": "gsm8k/train/4904",
+    "target": "The Lion King made 190 million in profit because 200 - 10 = 190\nStar Wars made 380 in profit because 190 x 2 = 380\nStar Wars earned 405 million because 25 + 380 = 405\n#### 405"
+  },
+  {
+    "id": "gsm8k/train/749",
+    "target": "Anya has 4 x 4 = 16 erasers.\nThus, Anya has 16 - 4 = 12 more erasers than Andrea.\n#### 12"
+  },
+  {
+    "id": "gsm8k/train/356",
+    "target": "If James only missed one question in all five rounds of five questions, he correctly answered 5 * 5 - 1 = 24 questions\nBefore the bonus, James earned 24 correct answers * 2 points/answer = 48 points.\nSince missing one question would only disqualify him from receiving a bonus in one round, he would earn a bonus for 5-1=4 rounds.\nHe should expect a bonus of 4 rounds* 4 points/round= 16 points.\nIncluding his bonus, James scored a total of 48 + 16 = 64 points.\n#### 66"
+  },
+  {
+    "id": "gsm8k/train/870",
+    "target": "Twice 1.5 hours is 2*1.5=3 hours.\nThus, on that day, it took Matthew 1+3+1=5 hours to make the cakes.\n#### 5"
+  },
+  {
+    "id": "gsm8k/train/1253",
+    "target": "Danai places 12 skulls + 4 broomsticks + 12 spiderwebs + 1 cauldron = 29 decorations.\nShe also puts up twice as many pumpkins around the house as she put spiderwebs, 12 x 2 = 24 pumpkins.\nDanai will also add 20 + 10 decorations to the 29 + 24 decorations already up = 83 total decorations Danai will put up.\n#### 83"
+  },
+  {
+    "id": "gsm8k/train/1578",
+    "target": "Each plastic chair costs $55/5 = $11.\nTwo chairs cost $11 x 2 = $22.\nA portable table costs $11 x 3 = $33.\nManny has to pay a total of $22 + $33 = $55.\nThus, Manny will be left with $100 - $55 = $45.\n#### 45"
+  },
+  {
+    "id": "gsm8k/train/5837",
+    "target": "1 roll can wrap 5 shirt boxes and he has 20 shirts boxes to wrap so he needs 20/5 = 4 rolls of wrap\n1 roll can wrap 3 XL boxes and he has 12 XL boxes to wrap so he needs 12/3 = 4 rolls or wrap\nAll total he needs 4+4 = 8 rolls of wrap\nEach roll costs $4.00 and he needs 8 rolls so it will cost him 4*8 = $32.00 in wrapping paper\n#### 32"
+  },
+  {
+    "id": "gsm8k/train/2777",
+    "target": "If Brayan drinks 4 cups of coffee in an hour, twice what Ivory drinks, then Ivory drinks 4/2 = 2 cups of coffee in an hour.\nTogether, they drink 4+2 = 6 cups of coffee in an hour.\nAfter 5 hours, they will drink 5*6 = 30 cups of coffee together.\n#### 30"
+  },
+  {
+    "id": "gsm8k/train/4669",
+    "target": "The rares cost 19*1=$19\nThe uncommon cards cost 11*.5=$5.5\nThe commons cost 30*.25=$7.5\nSo the total cost 19+5.5+7.5=$32\n#### 32"
+  },
+  {
+    "id": "gsm8k/train/3559",
+    "target": "He gave 2*20=$40.\nSo the total cost was 40-16=$24.\nThat means each slice costs 24/3=$8.\nThat means it costs 8*100=800 cents.\nSo each slice is 800/20=40 cents.\n#### 40"
+  },
+  {
+    "id": "gsm8k/train/5706",
+    "target": "For the red folder, 10 sheets of paper get 3 stickers each, for a total of 10*3=30 stickers.\nFor the green folder, 10 sheets of paper get 2 stickers each, for a total of 10*2=20 stickers.\nFor the blue folder, 10 sheets of paper get 1 sticker each, for a total of 10*1=10 stickers.\nIn total, she uses 30+20+10=60 stickers.\n#### 60"
+  },
+  {
+    "id": "gsm8k/train/5512",
+    "target": "Kris has 12/4 = 3 turtles.\nTrey has 3*5 = 15 turtles.\nAltogether they have 12+3+15 = 30 turtles.\n#### 30"
+  },
+  {
+    "id": "gsm8k/train/1230",
+    "target": "Casey wants to paint her 10 toenails + 10 fingernails = 20 nails in total.\nFirst she wants to do a base coat which takes 20 minutes to apply + 20 minutes to dry = 40 minutes total for the first coat.\nIt will take the same amount of time to do a coat of paint and let it dry and to do a coat of glitter and let it dry, 40 minutes x 3 different coats = 120 minutes total to paint her toenails and fingernails.\n#### 120"
+  },
+  {
+    "id": "gsm8k/train/5206",
+    "target": "First find the height of the bone meal plant: 36 inches * 125% = 45 inches\nThen find the height of the cow manure plant: 45 inches * 200% = 90 inches\n#### 90"
+  },
+  {
+    "id": "gsm8k/train/81",
+    "target": "In round one, Jeff completed 16 - 1 = 15.\nIn round two, Jeff completed 16 - 3 = 13.\nIn round three, Jeff completed 16 + 4 = 20.\nIn round four, Jeff completed 16 / 2 = 8.\nJeff completed 15 + 13 + 20 + 8 = 56 skips in total.\nJeff skipped an average of 56 / 4 = 14 skips per round.\n#### 14"
+  },
+  {
+    "id": "gsm8k/train/5942",
+    "target": "Sarah has 12/6=2 pencils\nTim has 8*2=16 pencils\n#### 16"
+  },
+  {
+    "id": "gsm8k/train/2349",
+    "target": "They are to order a total of 3 burger meals and 3 sodas for Paulo and Jeremy.\nThe cost of a soda is $6/3 = $2.\nSo, the 3 sodas will amount to $2/soda x 3 sodas = $6.\nThe 3 burger meals will amount to $6/burger x 3 burgers = $18.\nHence, the total cost for their orders is $6 + $18 = $24.\n#### 24"
+  },
+  {
+    "id": "gsm8k/train/4530",
+    "target": "Ella's score is 40 items - 4 items = 36 items.\nHalf of Ella's score is 36 items / 2 = 18 items.\nSo, Marion's score is 18 items + 6 items = 24 items.\n#### 24"
+  },
+  {
+    "id": "gsm8k/train/86",
+    "target": "He spend $1.5 on soda because 2 - .5 = 1.5\nHe bought 6 ounces of soda because 1.5 / .25 = 6\n#### 6"
+  },
+  {
+    "id": "gsm8k/train/2713",
+    "target": "Both apple trees will be 10 feet wide at maturity so they will be 2*10 = 20 feet wide\nQuinton will need to leave 12 feet between these 2 trees so the apple trees will take up 20+12 = 32 feet\nBoth peach trees will be 12 feet wide at maturity so they will be 2*12 = 24 feet wide\nQuinton will need to leave 15 feet between these 2 trees so the peach trees will take up 24+15 = 39 feet\nTogether, the apple trees will take up 32 feet and the peach trees will take up 39 feet so they will take 32+39 = 71 feet\n#### 71"
+  },
+  {
+    "id": "gsm8k/train/5429",
+    "target": "Miss Davis gave a total of 15 x 10 = 150 popsicle sticks to the 10 groups in her class.\nSo, she is left with 170 - 150 = 20 sticks.\n#### 20"
+  },
+  {
+    "id": "gsm8k/train/6728",
+    "target": "Michael gives away 42/2=21 dollars.\nHis brother then has 21+17=38 dollars.\nIn the end, his brother has 38-3=35 dollars.\n#### 35"
+  },
+  {
+    "id": "gsm8k/train/2292",
+    "target": "One quarter of $4 is (1/4)*$4 = $1\n$1 is equivalent to 100 cents\n20 cents will buy 1 candy so 100 cents will buy 100/20 = 5 candies\n#### 5"
+  },
+  {
+    "id": "gsm8k/train/4037",
+    "target": "After giving away four of her cats, Susan has 21 - 4 = 17.\nSusan has 17 - 3 = 14 more cats than Bob\n#### 14"
+  },
+  {
+    "id": "gsm8k/train/3501",
+    "target": "The cost of 9 plates is $2 x 9 = $18.\nSo, Chenny paid $24 - $18 = $6 for the spoons.\nTherefore, she bought $6/$1.50 = 4 spoons.\n#### 4"
+  },
+  {
+    "id": "gsm8k/train/6219",
+    "target": "The sandwiches are $5 x 4 = $20.\nThe fruit salads are $3 x 4 = $12.\nThe sodas are $2 x 4 x 2 = $16.\nThe snacks are $4 x 3 = $12.\nFor all the food, they spend $20 + $12 + $16 + $12 = $60.\n#### 60"
+  },
+  {
+    "id": "gsm8k/train/6419",
+    "target": "She can buy 7 bags of candy because 7 / 1 = 7\nShe can buy 5 bags of chips because 7 / 1.4 = 5.\nShe gets 84 ounces of candy because 7 x 12 = 84\nShe gets 85 ounces of chips because 5 x 17 = 85\nThe gets 85 ounces in food because 85 > 84\n#### 85"
+  },
+  {
+    "id": "gsm8k/train/246",
+    "target": "The total ratio representing the number of children in the family is 5+7 = 12\nFrom the total ratio of children in the family, 5/12 represent the number of boys, meaning that the number of boys in the family is 5/12*180 = 75\nIf the boys are given $3900 to share, each boy receives $3900/75 = $52\n#### 52"
+  },
+  {
+    "id": "gsm8k/train/6616",
+    "target": "There are 50/2 = 25 students in each section now.\nSo, there were 25 - 2 = 23 students in section Diligence before 2 students were transferred in their section.\n#### 23"
+  },
+  {
+    "id": "gsm8k/train/2930",
+    "target": "A group of 10 people is charged $12 + $6 = $18 each.\nSo, 10 people pay $18 x 10 = $180.\nA group of 5 people pays $12 x 5 = $60 for the admission.\nThus, the aqua park earns a total of $180 + $60 = $240.\n#### 240"
+  },
+  {
+    "id": "gsm8k/train/1911",
+    "target": "When Brooke gets twelve more balloons, his total becomes 12+8 = 20\nWhen Tracy adds 24 more balloons to her 6, her total number of balloons becomes 24+6 = 30\nWhen half of Tracy's balloons pop, she remains with 1/2*30 =15\nThe combined total balloons for the two is 15+20 = 35 balloons\n#### 35"
+  },
+  {
+    "id": "gsm8k/train/2152",
+    "target": "Aunt Angela has a total of 3 + 2 = 5 nephews and nieces.\nShe gave each nephew or niece 70 / 5 = 14 jellybeans.\n#### 14"
+  },
+  {
+    "id": "gsm8k/train/3671",
+    "target": "In the first part of her trip, Diana will cover 2 hours * 3 mph = 6 miles.\nIn the second part of her trip, Diana will need to cover an additional 10 miles - 6 miles = 4 miles.\nTo cover 4 miles * 1 mph = will take Diana 4 hours.\nTotal biking time to get home for Diana will be 2 hours + 4 hours = 6 hours.\n#### 6"
+  },
+  {
+    "id": "gsm8k/train/2127",
+    "target": "Store A has a $125 x 8/100 = $10 discount.\nSo the smartphone from store A will only cost $125 - $10 = $115.\nStore B has a $130 x 10/100 = $13 discount.\nSo the smartphone from store B will only cost $130 - $13 = $117.\nThus, store A's smartphone is $117 - $115 = $2 cheaper than that of store B.\n#### 2"
+  },
+  {
+    "id": "gsm8k/train/2382",
+    "target": "The total amount Tanya spent on face moisturizers is 50*2 = $100\nIf she bought four body lotions, the total cost is 4*60 = $240\nTanya spent a total of 240+100 = $340 in the store.\nIf Christy spent twice this amount, the total was 2*340 = $ 680\nThe total amount of money they both spent is 680+340 = 1020$\n#### 1020"
+  },
+  {
+    "id": "gsm8k/train/3723",
+    "target": "If Danielle drives at three times the speed of Cameron, it will take Cameron 30*3=90 minutes for Cameron to travel the same distance.\nAnd since Cameron drives at twice the speed of his brother, Chase, it will take Chase 90*2=180 minutes to travel from Granville to Salisbury.\n#### 180"
+  },
+  {
+    "id": "gsm8k/train/6195",
+    "target": "Mara has 40 x (10 / 100) = 4 pink crayons.\nLuna has 50 x (20 / 100) = 10 pink crayons.\nTogether they have 4 + 10 = 14 pink crayons\n#### 14"
+  },
+  {
+    "id": "gsm8k/train/2583",
+    "target": "In a week, Cindy spends an average of 48 hours/week / 4 courses = 12 hours/week for 1 math course.\nIn a month, 1 math course is 12 hours/week x 4 weeks/month = 48 hours.\nTherefore, she earns $25/hour x 48 hours/week = $1200 a month for 1 math course.\n#### 1,200"
+  },
+  {
+    "id": "gsm8k/train/4600",
+    "target": "Nick has made 20 * $10 = $200 from the chocolate oranges.\nThis means he needs to raise another $1000 - $200 = $800.\nHe needs to sell a total of $800 / $5 = 160 candy bars to reach his goal.\n#### 160"
+  },
+  {
+    "id": "gsm8k/train/6671",
+    "target": "Out of 100 attendees, 100 x 50/100 = 50 are women.\nWhile 100 x 35/100 = 35 are men.\nSo there were a total of 50 + 35 = 85 men and women who attended the party.\nThus, 100 - 85 = 15 children attended the party.\n#### 15"
+  },
+  {
+    "id": "gsm8k/train/4966",
+    "target": "2% of $90 is (2/100)*$90 = $1.8\n2% of $60 is (2/100)*$60 = $1.2\nThe second transaction was reversed without the service charge so only a total of $90+$1.8+$1.2 = $93 was deducted from his account\nHe will have a balance of $400-$93 = $307\n#### 307"
+  },
+  {
+    "id": "gsm8k/train/313",
+    "target": "First we need to know what half of Bills toys are, 60 toys / 2 = 30 toys.\nHash has 9 toys + 30 toys = 39 toys.\nTogether the boys have 60 toys + 39 toys = 99 toys.\n#### 99"
+  },
+  {
+    "id": "gsm8k/train/4566",
+    "target": "Four times Zion's age is 8 x 4 = 32.\nSo Zion's dad is 32 + 3 = 35 years old.\nIn 10 years, Zion will be 8 + 10 = 18 years old.\nIn 10 years, Zion's dad will be 35 + 10 = 45 years old.\nHence, in 10 years, Zion's dad will be 45 - 18 = 27 years older than Zion.\n#### 27"
+  },
+  {
+    "id": "gsm8k/train/4373",
+    "target": "Lucille weeded half the grass, so she pulled 32 / 2 = 16 weeds around the fruit frees.\nShe pulled 11 + 14 + 16 = 41 weeds before her break.\nFrom that, she earned 41 * 6 = 246 cents.\nAfter buying her soda, Lucille has 246 - 99 = 147 cents left.\n#### 147"
+  },
+  {
+    "id": "gsm8k/train/1490",
+    "target": "Tommy ordered 3 + 3 + 1 = 7 kilograms of apples, oranges and grapes altogether.\nTherefore, Tommy ordered 10 - 7 = 3 kilograms of strawberries.\n#### 3"
+  },
+  {
+    "id": "gsm8k/train/4153",
+    "target": "July was 6 / 2 = 3 years old when Hannah was 6.\nNow, July is 3 + 20 = 23 years old\nJuly's husband is 23 + 2 = 25 years old\n#### 25"
+  },
+  {
+    "id": "gsm8k/train/2664",
+    "target": "There\u2019s a total of 4 x 12 = 48 slices.\nAfter the guests eat, there are 48 - 39 = 9 pieces.\n#### 9"
+  },
+  {
+    "id": "arc/train/Mercury_SC_401153",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_7027020",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/ACTAAP_2008_5_6",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/MEA_2014_5_14",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_7268188",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/Mercury_7205153",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_7204260",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/MCAS_2008_8_5719",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_411029",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/NYSEDREGENTS_2005_4_20",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/Mercury_SC_LBS10900",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_7219345",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_SC_405170",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/ACTAAP_2008_7_15",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7139580",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_SC_408759",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/LEAP__7_10344",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/MCAS_1998_4_17",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/TIMSS_2011_4_pg67",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/MCAS_2007_8_5172",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_SC_401197",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/TIMSS_2003_8_pg27",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/Mercury_7017133",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/MEA_2016_5_12",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7180758",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_7069458",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7230300",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7097388",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_LBS10252",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_7056175",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/Mercury_7171920",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/MCAS_2006_9_30-v1",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7181965",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_7094010",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_7017168",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/LEAP_2009_4_10293",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_SC_415697",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_SC_401157",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/TIMSS_2007_8_pg128",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/NCEOGA_2013_5_57",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_7215740",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_183750",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/NYSEDREGENTS_2004_4_10",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_402062",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_SC_408784",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/NYSEDREGENTS_2007_8_21",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_7168560",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_401030",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7122010",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/MCAS_2006_9_20",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/NCEOGA_2013_8_10",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/NAEP_2005_4_S12+12",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/NYSEDREGENTS_2009_8_12",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/MCAS_2016_5_15",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_SC_408402",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7187040",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_SC_405207",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_SC_400113",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/TIMSS_2011_4_pg92",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7090825",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7269203",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/MCAS_2002_8_9",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_407023",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_SC_401220",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/NCEOGA_2013_5_1",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_SC_402170",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/NYSEDREGENTS_2007_8_23",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7106330",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_7013283",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_7013545",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/VASoL_2008_3_22",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_SC_415706",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/MSA_2015_8_31",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_7193935",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_SC_413558",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/MDSA_2011_8_25",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7027038",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/AKDE&ED_2008_4_37",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_SC_415364",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_404903",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_SC_401812",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/LEAP__7_10338",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/MSA_2015_8_38",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7188703",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/MDSA_2007_8_29",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_188563",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/MCAS_2010_5_11983",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7128380",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/Mercury_SC_401596",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_7007910",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_SC_415410",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/MCAS_2002_8_15",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_SC_415465",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/VASoL_2007_3_13",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/TIMSS_2007_8_pg101",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_7001523",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/Mercury_SC_414080",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_416466",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_SC_LBS10030",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_416582",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_SC_407691",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_SC_406088",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_SC_400698",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_412642",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7247975",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_7027178",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_SC_401354",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_7268013",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/ACTAAP_2014_7_7",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7283413",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/Mercury_7159530",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_SC_LBS10907",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/NYSEDREGENTS_2011_4_24",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7086293",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/Mercury_182718",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/NCEOGA_2013_8_14",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7081095",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/Mercury_SC_LBS10184",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/MDSA_2009_8_44",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7084000",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7120803",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_7092260",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_184345",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_7009538",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/Mercury_7142713",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_417136",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/MCAS_2005_5_15",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_LBS10257",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/TIMSS_2007_4_pg18",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_SC_LBS10951",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7037240",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_400893",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_416635",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_7114870",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_7185395",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_7007508",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_7027143",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/MDSA_2007_8_54",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_412782",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_7090353",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/Mercury_7211663",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7041615",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7082810",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/Mercury_7168455",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_7252735",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/MDSA_2008_5_40",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7013405",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_SC_406042",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/NYSEDREGENTS_2009_8_7",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7191153",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/NYSEDREGENTS_2004_8_31",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_SC_401591",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/AIMS_2009_8_9",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_SC_402625",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/NYSEDREGENTS_2005_8_28",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/VASoL_2007_5_39",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_SC_405635",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/LEAP_2008_4_10288",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/MCAS_2011_5_17",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_7094693",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_7187775",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/MCAS_2007_8_5179",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_SC_415477",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/MCAS_2001_8_5",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/MEA_2012_5_8",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/MCAS_2004_8_36",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/NCEOGA_2013_5_29",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_7038150",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_417463",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_7016835",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_7189070",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_412649",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/Mercury_7064243",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7168630",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/Mercury_7085243",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/Mercury_SC_414245",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7093993",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_415546",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/MCAS_2006_9_22-v1",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_SC_408743",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/NCEOGA_2013_5_38",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/Mercury_7210578",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/NYSEDREGENTS_2004_4_12",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7233905",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_SC_416112",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/NCEOGA_2013_8_19",
+    "target": "Final: C"
+  },
+  {
+    "id": "arc/train/MCAS_2016_8_2",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/Mercury_SC_401133",
+    "target": "Final: A"
+  },
+  {
+    "id": "arc/train/Mercury_7220220",
+    "target": "Final: B"
+  },
+  {
+    "id": "arc/train/CSZ30564",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/Mercury_7115360",
+    "target": "Final: D"
+  },
+  {
+    "id": "arc/train/MSA_2012_5_14",
+    "target": "Final: D"
+  }
+]

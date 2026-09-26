@@ -1,0 +1,18 @@
+{
+  "main_analysis_sha256": "86b00ce0f9cd46cfbafb8bb0416012e73c73e06e58df8e71c88c96881ece79c2",
+  "test_cohort_sha256": "9339f263b48cd8ab7f72f540b972a67e5b2fd2aa9ce09cb95865b9e8bda763f6",
+  "artifact_hashes": {
+    "outputs.jsonl": "c58ded0d223ed7180817198653ff71634403a6617a05af55ea5049894e2ab02c",
+    "test-freeze.json": "b8a2bc91bdf4e7780ea314845a8d56f5b8cef091deba150671019a418f0bcefd",
+    "receipts.jsonl": "530454fca7a62fe9c7f36733b1b386935db303e4c08e39afc05628ea98f6fccf",
+    "selected.json": "8ac150968bb7ba3275581e7640cf0d811006b45985b50aec97c0dfd4d786a5ae",
+    "completion.json": "b53970d7c896858877fb0a6dbf9a8be51f41ecec2a23d2b0a374d5bb8d496bbd",
+    "starts.jsonl": "c4061f892c0b548bdd7afad03d85344901ad02f25ca4f32e7f2a119b61e36265",
+    "ledger.jsonl": "e3fb80c27ba1d2598e9d99947297eb85900950079d19770bb61485253f35e7da",
+    "loads.jsonl": "f94b4ce5a046f4d480190e65a41514f2622d6bbe4e2451aec599087e7073fb67",
+    "freeze.json": "aa8d8f26e675b4fbcfb878adbe68213060e2d216edc1e3b3db160dd30e99d7b5",
+    "inputs.jsonl": "3ad032608f1b385eab14f78b96d36aea758e2d412ec5dbec8d5268466ae669b8",
+    "admission-checks.jsonl": "124a4831bf3a3183e45c90dd21a629266e537455d9efef0da4edd196a80cae50",
+    "admission.json": "f466a0076b05fd1c135da973b90d0f9467c2d13424925ad20e668a639e31a0d4"
+  }
+}

@@ -1,0 +1,1104 @@
+{
+  "protocol": "r17-development-frozen-budget-frontier",
+  "development_selection_sha256": "64738423a4c7043e79c7539594916c58ddc439a03e60cd02668f1644cdeb3f02",
+  "plan_sha256": "aa466249722b5e0c0d4ee76224db59590fcb74f5a80cd18f826b0b256f8accc1",
+  "script_sha256": "32cd47970154a923880729a80f7c6a9937aea9097c4b06cd50637d08a693e64b",
+  "policy": {
+    "mode": "additive",
+    "envelope": "all",
+    "strength": 5.0,
+    "heads": [
+      [
+        34,
+        4
+      ],
+      [
+        38,
+        11
+      ],
+      [
+        37,
+        14
+      ],
+      [
+        30,
+        4
+      ],
+      [
+        23,
+        8
+      ],
+      [
+        19,
+        6
+      ],
+      [
+        19,
+        11
+      ],
+      [
+        19,
+        15
+      ],
+      [
+        21,
+        14
+      ],
+      [
+        29,
+        10
+      ],
+      [
+        20,
+        11
+      ]
+    ],
+    "threshold": 0.65,
+    "id": "42e1896dba6c5ee8"
+  },
+  "development_inputs": 156,
+  "budgets": [
+    {
+      "ceiling": 0.25,
+      "selected": {
+        "gate": {
+          "kind": "threshold",
+          "feature": "min_probability",
+          "threshold": 0.7718728184700012,
+          "direction": "gt"
+        },
+        "quality": 0.27670576965951654,
+        "calls": 38,
+        "call_fraction": 0.24358974358974358,
+        "balanced_call_fraction": 0.20486111111111113
+      },
+      "candidates": [
+        {
+          "gate": {
+            "kind": "never"
+          },
+          "quality": 0.23503910299284986,
+          "calls": 0,
+          "call_fraction": 0.0,
+          "balanced_call_fraction": 0.0
+        },
+        {
+          "gate": {
+            "kind": "always"
+          },
+          "quality": 0.32664863417087947,
+          "calls": 156,
+          "call_fraction": 1.0,
+          "balanced_call_fraction": 1.0
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.4389708340167999,
+            "direction": "le"
+          },
+          "quality": 0.24510016801715015,
+          "calls": 16,
+          "call_fraction": 0.10256410256410256,
+          "balanced_call_fraction": 0.1087962962962963
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.4389708340167999,
+            "direction": "gt"
+          },
+          "quality": 0.31658756914657915,
+          "calls": 140,
+          "call_fraction": 0.8974358974358975,
+          "balanced_call_fraction": 0.8912037037037037
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.5249033570289612,
+            "direction": "le"
+          },
+          "quality": 0.24831409378542374,
+          "calls": 40,
+          "call_fraction": 0.2564102564102564,
+          "balanced_call_fraction": 0.2835648148148148
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.5249033570289612,
+            "direction": "gt"
+          },
+          "quality": 0.3133736433783056,
+          "calls": 116,
+          "call_fraction": 0.7435897435897436,
+          "balanced_call_fraction": 0.7164351851851852
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.6373283863067627,
+            "direction": "le"
+          },
+          "quality": 0.27301379223512223,
+          "calls": 79,
+          "call_fraction": 0.5064102564102564,
+          "balanced_call_fraction": 0.5162037037037037
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.6373283863067627,
+            "direction": "gt"
+          },
+          "quality": 0.2886739449286071,
+          "calls": 77,
+          "call_fraction": 0.4935897435897436,
+          "balanced_call_fraction": 0.4837962962962963
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.7718728184700012,
+            "direction": "le"
+          },
+          "quality": 0.2849819675042128,
+          "calls": 118,
+          "call_fraction": 0.7564102564102564,
+          "balanced_call_fraction": 0.7951388888888888
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.7718728184700012,
+            "direction": "gt"
+          },
+          "quality": 0.27670576965951654,
+          "calls": 38,
+          "call_fraction": 0.24358974358974358,
+          "balanced_call_fraction": 0.20486111111111113
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.8765307068824768,
+            "direction": "le"
+          },
+          "quality": 0.3081301156523609,
+          "calls": 141,
+          "call_fraction": 0.9038461538461539,
+          "balanced_call_fraction": 0.9131944444444444
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.8765307068824768,
+            "direction": "gt"
+          },
+          "quality": 0.2535576215113684,
+          "calls": 15,
+          "call_fraction": 0.09615384615384616,
+          "balanced_call_fraction": 0.08680555555555555
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.07659993568880452,
+            "direction": "le"
+          },
+          "quality": 0.2535576215113684,
+          "calls": 16,
+          "call_fraction": 0.10256410256410256,
+          "balanced_call_fraction": 0.09143518518518517
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.07659993568880452,
+            "direction": "gt"
+          },
+          "quality": 0.3081301156523609,
+          "calls": 140,
+          "call_fraction": 0.8974358974358975,
+          "balanced_call_fraction": 0.9085648148148149
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.1333202607520505,
+            "direction": "le"
+          },
+          "quality": 0.2776549261793252,
+          "calls": 40,
+          "call_fraction": 0.2564102564102564,
+          "balanced_call_fraction": 0.24884259259259262
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.1333202607520505,
+            "direction": "gt"
+          },
+          "quality": 0.28403281098440414,
+          "calls": 116,
+          "call_fraction": 0.7435897435897436,
+          "balanced_call_fraction": 0.7511574074074074
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.20198896882266126,
+            "direction": "le"
+          },
+          "quality": 0.2868921618968241,
+          "calls": 79,
+          "call_fraction": 0.5064102564102564,
+          "balanced_call_fraction": 0.4930555555555556
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.20198896882266126,
+            "direction": "gt"
+          },
+          "quality": 0.27479557526690523,
+          "calls": 77,
+          "call_fraction": 0.4935897435897436,
+          "balanced_call_fraction": 0.5069444444444444
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.3073845604824328,
+            "direction": "le"
+          },
+          "quality": 0.3018648049944672,
+          "calls": 118,
+          "call_fraction": 0.7564102564102564,
+          "balanced_call_fraction": 0.7199074074074074
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.3073845604824328,
+            "direction": "gt"
+          },
+          "quality": 0.25982293216926217,
+          "calls": 38,
+          "call_fraction": 0.24358974358974358,
+          "balanced_call_fraction": 0.28009259259259256
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.41917352018037946,
+            "direction": "le"
+          },
+          "quality": 0.3203389308023526,
+          "calls": 141,
+          "call_fraction": 0.9038461538461539,
+          "balanced_call_fraction": 0.8842592592592593
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.41917352018037946,
+            "direction": "gt"
+          },
+          "quality": 0.24134880636137673,
+          "calls": 15,
+          "call_fraction": 0.09615384615384616,
+          "balanced_call_fraction": 0.11574074074074073
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "copy_fraction",
+            "threshold": 0.5714285714285714,
+            "direction": "le"
+          },
+          "quality": 0.24605460218769687,
+          "calls": 21,
+          "call_fraction": 0.1346153846153846,
+          "balanced_call_fraction": 0.11458333333333333
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "copy_fraction",
+            "threshold": 0.5714285714285714,
+            "direction": "gt"
+          },
+          "quality": 0.31563313497603246,
+          "calls": 135,
+          "call_fraction": 0.8653846153846154,
+          "balanced_call_fraction": 0.8854166666666667
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "copy_fraction",
+            "threshold": 0.8571428571428571,
+            "direction": "le"
+          },
+          "quality": 0.26695494331830116,
+          "calls": 53,
+          "call_fraction": 0.33974358974358976,
+          "balanced_call_fraction": 0.3090277777777778
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "copy_fraction",
+            "threshold": 0.8571428571428571,
+            "direction": "gt"
+          },
+          "quality": 0.29473279384542816,
+          "calls": 103,
+          "call_fraction": 0.6602564102564102,
+          "balanced_call_fraction": 0.6909722222222223
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "copy_fraction",
+            "threshold": 1.0,
+            "direction": "le"
+          },
+          "quality": 0.32664863417087947,
+          "calls": 156,
+          "call_fraction": 1.0,
+          "balanced_call_fraction": 1.0
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "copy_fraction",
+            "threshold": 1.0,
+            "direction": "gt"
+          },
+          "quality": 0.23503910299284986,
+          "calls": 0,
+          "call_fraction": 0.0,
+          "balanced_call_fraction": 0.0
+        }
+      ]
+    },
+    {
+      "ceiling": 0.5,
+      "selected": {
+        "gate": {
+          "kind": "threshold",
+          "feature": "min_probability",
+          "threshold": 0.6373283863067627,
+          "direction": "gt"
+        },
+        "quality": 0.2886739449286071,
+        "calls": 77,
+        "call_fraction": 0.4935897435897436,
+        "balanced_call_fraction": 0.4837962962962963
+      },
+      "candidates": [
+        {
+          "gate": {
+            "kind": "never"
+          },
+          "quality": 0.23503910299284986,
+          "calls": 0,
+          "call_fraction": 0.0,
+          "balanced_call_fraction": 0.0
+        },
+        {
+          "gate": {
+            "kind": "always"
+          },
+          "quality": 0.32664863417087947,
+          "calls": 156,
+          "call_fraction": 1.0,
+          "balanced_call_fraction": 1.0
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.4389708340167999,
+            "direction": "le"
+          },
+          "quality": 0.24510016801715015,
+          "calls": 16,
+          "call_fraction": 0.10256410256410256,
+          "balanced_call_fraction": 0.1087962962962963
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.4389708340167999,
+            "direction": "gt"
+          },
+          "quality": 0.31658756914657915,
+          "calls": 140,
+          "call_fraction": 0.8974358974358975,
+          "balanced_call_fraction": 0.8912037037037037
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.5249033570289612,
+            "direction": "le"
+          },
+          "quality": 0.24831409378542374,
+          "calls": 40,
+          "call_fraction": 0.2564102564102564,
+          "balanced_call_fraction": 0.2835648148148148
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.5249033570289612,
+            "direction": "gt"
+          },
+          "quality": 0.3133736433783056,
+          "calls": 116,
+          "call_fraction": 0.7435897435897436,
+          "balanced_call_fraction": 0.7164351851851852
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.6373283863067627,
+            "direction": "le"
+          },
+          "quality": 0.27301379223512223,
+          "calls": 79,
+          "call_fraction": 0.5064102564102564,
+          "balanced_call_fraction": 0.5162037037037037
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.6373283863067627,
+            "direction": "gt"
+          },
+          "quality": 0.2886739449286071,
+          "calls": 77,
+          "call_fraction": 0.4935897435897436,
+          "balanced_call_fraction": 0.4837962962962963
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.7718728184700012,
+            "direction": "le"
+          },
+          "quality": 0.2849819675042128,
+          "calls": 118,
+          "call_fraction": 0.7564102564102564,
+          "balanced_call_fraction": 0.7951388888888888
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.7718728184700012,
+            "direction": "gt"
+          },
+          "quality": 0.27670576965951654,
+          "calls": 38,
+          "call_fraction": 0.24358974358974358,
+          "balanced_call_fraction": 0.20486111111111113
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.8765307068824768,
+            "direction": "le"
+          },
+          "quality": 0.3081301156523609,
+          "calls": 141,
+          "call_fraction": 0.9038461538461539,
+          "balanced_call_fraction": 0.9131944444444444
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.8765307068824768,
+            "direction": "gt"
+          },
+          "quality": 0.2535576215113684,
+          "calls": 15,
+          "call_fraction": 0.09615384615384616,
+          "balanced_call_fraction": 0.08680555555555555
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.07659993568880452,
+            "direction": "le"
+          },
+          "quality": 0.2535576215113684,
+          "calls": 16,
+          "call_fraction": 0.10256410256410256,
+          "balanced_call_fraction": 0.09143518518518517
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.07659993568880452,
+            "direction": "gt"
+          },
+          "quality": 0.3081301156523609,
+          "calls": 140,
+          "call_fraction": 0.8974358974358975,
+          "balanced_call_fraction": 0.9085648148148149
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.1333202607520505,
+            "direction": "le"
+          },
+          "quality": 0.2776549261793252,
+          "calls": 40,
+          "call_fraction": 0.2564102564102564,
+          "balanced_call_fraction": 0.24884259259259262
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.1333202607520505,
+            "direction": "gt"
+          },
+          "quality": 0.28403281098440414,
+          "calls": 116,
+          "call_fraction": 0.7435897435897436,
+          "balanced_call_fraction": 0.7511574074074074
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.20198896882266126,
+            "direction": "le"
+          },
+          "quality": 0.2868921618968241,
+          "calls": 79,
+          "call_fraction": 0.5064102564102564,
+          "balanced_call_fraction": 0.4930555555555556
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.20198896882266126,
+            "direction": "gt"
+          },
+          "quality": 0.27479557526690523,
+          "calls": 77,
+          "call_fraction": 0.4935897435897436,
+          "balanced_call_fraction": 0.5069444444444444
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.3073845604824328,
+            "direction": "le"
+          },
+          "quality": 0.3018648049944672,
+          "calls": 118,
+          "call_fraction": 0.7564102564102564,
+          "balanced_call_fraction": 0.7199074074074074
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.3073845604824328,
+            "direction": "gt"
+          },
+          "quality": 0.25982293216926217,
+          "calls": 38,
+          "call_fraction": 0.24358974358974358,
+          "balanced_call_fraction": 0.28009259259259256
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.41917352018037946,
+            "direction": "le"
+          },
+          "quality": 0.3203389308023526,
+          "calls": 141,
+          "call_fraction": 0.9038461538461539,
+          "balanced_call_fraction": 0.8842592592592593
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.41917352018037946,
+            "direction": "gt"
+          },
+          "quality": 0.24134880636137673,
+          "calls": 15,
+          "call_fraction": 0.09615384615384616,
+          "balanced_call_fraction": 0.11574074074074073
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "copy_fraction",
+            "threshold": 0.5714285714285714,
+            "direction": "le"
+          },
+          "quality": 0.24605460218769687,
+          "calls": 21,
+          "call_fraction": 0.1346153846153846,
+          "balanced_call_fraction": 0.11458333333333333
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "copy_fraction",
+            "threshold": 0.5714285714285714,
+            "direction": "gt"
+          },
+          "quality": 0.31563313497603246,
+          "calls": 135,
+          "call_fraction": 0.8653846153846154,
+          "balanced_call_fraction": 0.8854166666666667
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "copy_fraction",
+            "threshold": 0.8571428571428571,
+            "direction": "le"
+          },
+          "quality": 0.26695494331830116,
+          "calls": 53,
+          "call_fraction": 0.33974358974358976,
+          "balanced_call_fraction": 0.3090277777777778
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "copy_fraction",
+            "threshold": 0.8571428571428571,
+            "direction": "gt"
+          },
+          "quality": 0.29473279384542816,
+          "calls": 103,
+          "call_fraction": 0.6602564102564102,
+          "balanced_call_fraction": 0.6909722222222223
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "copy_fraction",
+            "threshold": 1.0,
+            "direction": "le"
+          },
+          "quality": 0.32664863417087947,
+          "calls": 156,
+          "call_fraction": 1.0,
+          "balanced_call_fraction": 1.0
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "copy_fraction",
+            "threshold": 1.0,
+            "direction": "gt"
+          },
+          "quality": 0.23503910299284986,
+          "calls": 0,
+          "call_fraction": 0.0,
+          "balanced_call_fraction": 0.0
+        }
+      ]
+    },
+    {
+      "ceiling": 0.75,
+      "selected": {
+        "gate": {
+          "kind": "threshold",
+          "feature": "min_probability",
+          "threshold": 0.5249033570289612,
+          "direction": "gt"
+        },
+        "quality": 0.3133736433783056,
+        "calls": 116,
+        "call_fraction": 0.7435897435897436,
+        "balanced_call_fraction": 0.7164351851851852
+      },
+      "candidates": [
+        {
+          "gate": {
+            "kind": "never"
+          },
+          "quality": 0.23503910299284986,
+          "calls": 0,
+          "call_fraction": 0.0,
+          "balanced_call_fraction": 0.0
+        },
+        {
+          "gate": {
+            "kind": "always"
+          },
+          "quality": 0.32664863417087947,
+          "calls": 156,
+          "call_fraction": 1.0,
+          "balanced_call_fraction": 1.0
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.4389708340167999,
+            "direction": "le"
+          },
+          "quality": 0.24510016801715015,
+          "calls": 16,
+          "call_fraction": 0.10256410256410256,
+          "balanced_call_fraction": 0.1087962962962963
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.4389708340167999,
+            "direction": "gt"
+          },
+          "quality": 0.31658756914657915,
+          "calls": 140,
+          "call_fraction": 0.8974358974358975,
+          "balanced_call_fraction": 0.8912037037037037
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.5249033570289612,
+            "direction": "le"
+          },
+          "quality": 0.24831409378542374,
+          "calls": 40,
+          "call_fraction": 0.2564102564102564,
+          "balanced_call_fraction": 0.2835648148148148
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.5249033570289612,
+            "direction": "gt"
+          },
+          "quality": 0.3133736433783056,
+          "calls": 116,
+          "call_fraction": 0.7435897435897436,
+          "balanced_call_fraction": 0.7164351851851852
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.6373283863067627,
+            "direction": "le"
+          },
+          "quality": 0.27301379223512223,
+          "calls": 79,
+          "call_fraction": 0.5064102564102564,
+          "balanced_call_fraction": 0.5162037037037037
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.6373283863067627,
+            "direction": "gt"
+          },
+          "quality": 0.2886739449286071,
+          "calls": 77,
+          "call_fraction": 0.4935897435897436,
+          "balanced_call_fraction": 0.4837962962962963
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.7718728184700012,
+            "direction": "le"
+          },
+          "quality": 0.2849819675042128,
+          "calls": 118,
+          "call_fraction": 0.7564102564102564,
+          "balanced_call_fraction": 0.7951388888888888
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.7718728184700012,
+            "direction": "gt"
+          },
+          "quality": 0.27670576965951654,
+          "calls": 38,
+          "call_fraction": 0.24358974358974358,
+          "balanced_call_fraction": 0.20486111111111113
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.8765307068824768,
+            "direction": "le"
+          },
+          "quality": 0.3081301156523609,
+          "calls": 141,
+          "call_fraction": 0.9038461538461539,
+          "balanced_call_fraction": 0.9131944444444444
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.8765307068824768,
+            "direction": "gt"
+          },
+          "quality": 0.2535576215113684,
+          "calls": 15,
+          "call_fraction": 0.09615384615384616,
+          "balanced_call_fraction": 0.08680555555555555
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.07659993568880452,
+            "direction": "le"
+          },
+          "quality": 0.2535576215113684,
+          "calls": 16,
+          "call_fraction": 0.10256410256410256,
+          "balanced_call_fraction": 0.09143518518518517
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.07659993568880452,
+            "direction": "gt"
+          },
+          "quality": 0.3081301156523609,
+          "calls": 140,
+          "call_fraction": 0.8974358974358975,
+          "balanced_call_fraction": 0.9085648148148149
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.1333202607520505,
+            "direction": "le"
+          },
+          "quality": 0.2776549261793252,
+          "calls": 40,
+          "call_fraction": 0.2564102564102564,
+          "balanced_call_fraction": 0.24884259259259262
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.1333202607520505,
+            "direction": "gt"
+          },
+          "quality": 0.28403281098440414,
+          "calls": 116,
+          "call_fraction": 0.7435897435897436,
+          "balanced_call_fraction": 0.7511574074074074
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.20198896882266126,
+            "direction": "le"
+          },
+          "quality": 0.2868921618968241,
+          "calls": 79,
+          "call_fraction": 0.5064102564102564,
+          "balanced_call_fraction": 0.4930555555555556
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.20198896882266126,
+            "direction": "gt"
+          },
+          "quality": 0.27479557526690523,
+          "calls": 77,
+          "call_fraction": 0.4935897435897436,
+          "balanced_call_fraction": 0.5069444444444444
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.3073845604824328,
+            "direction": "le"
+          },
+          "quality": 0.3018648049944672,
+          "calls": 118,
+          "call_fraction": 0.7564102564102564,
+          "balanced_call_fraction": 0.7199074074074074
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.3073845604824328,
+            "direction": "gt"
+          },
+          "quality": 0.25982293216926217,
+          "calls": 38,
+          "call_fraction": 0.24358974358974358,
+          "balanced_call_fraction": 0.28009259259259256
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.41917352018037946,
+            "direction": "le"
+          },
+          "quality": 0.3203389308023526,
+          "calls": 141,
+          "call_fraction": 0.9038461538461539,
+          "balanced_call_fraction": 0.8842592592592593
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.41917352018037946,
+            "direction": "gt"
+          },
+          "quality": 0.24134880636137673,
+          "calls": 15,
+          "call_fraction": 0.09615384615384616,
+          "balanced_call_fraction": 0.11574074074074073
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "copy_fraction",
+            "threshold": 0.5714285714285714,
+            "direction": "le"
+          },
+          "quality": 0.24605460218769687,
+          "calls": 21,
+          "call_fraction": 0.1346153846153846,
+          "balanced_call_fraction": 0.11458333333333333
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "copy_fraction",
+            "threshold": 0.5714285714285714,
+            "direction": "gt"
+          },
+          "quality": 0.31563313497603246,
+          "calls": 135,
+          "call_fraction": 0.8653846153846154,
+          "balanced_call_fraction": 0.8854166666666667
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "copy_fraction",
+            "threshold": 0.8571428571428571,
+            "direction": "le"
+          },
+          "quality": 0.26695494331830116,
+          "calls": 53,
+          "call_fraction": 0.33974358974358976,
+          "balanced_call_fraction": 0.3090277777777778
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "copy_fraction",
+            "threshold": 0.8571428571428571,
+            "direction": "gt"
+          },
+          "quality": 0.29473279384542816,
+          "calls": 103,
+          "call_fraction": 0.6602564102564102,
+          "balanced_call_fraction": 0.6909722222222223
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "copy_fraction",
+            "threshold": 1.0,
+            "direction": "le"
+          },
+          "quality": 0.32664863417087947,
+          "calls": 156,
+          "call_fraction": 1.0,
+          "balanced_call_fraction": 1.0
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "copy_fraction",
+            "threshold": 1.0,
+            "direction": "gt"
+          },
+          "quality": 0.23503910299284986,
+          "calls": 0,
+          "call_fraction": 0.0,
+          "balanced_call_fraction": 0.0
+        }
+      ]
+    }
+  ],
+  "at": "2026-09-22T12:48:51.240532+00:00"
+}

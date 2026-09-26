@@ -1,0 +1,139 @@
+{
+  "planned": 96,
+  "recorded": 96,
+  "worlds": 6,
+  "arms": {
+    "native": {
+      "planned": 12,
+      "recorded": 12,
+      "missing": 0,
+      "complete": 12,
+      "correct": 4,
+      "accuracy": 0.3333333333333333,
+      "seconds": 0.30876430600005733,
+      "by_condition": {
+        "clean": 0.3333333333333333,
+        "distracted": 0.3333333333333333
+      }
+    },
+    "zero": {
+      "planned": 12,
+      "recorded": 12,
+      "missing": 0,
+      "complete": 12,
+      "correct": 4,
+      "accuracy": 0.3333333333333333,
+      "seconds": 0.3136141919999318,
+      "by_condition": {
+        "clean": 0.3333333333333333,
+        "distracted": 0.3333333333333333
+      }
+    },
+    "oracle": {
+      "planned": 12,
+      "recorded": 12,
+      "missing": 0,
+      "complete": 12,
+      "correct": 7,
+      "accuracy": 0.5833333333333334,
+      "seconds": 0.33087732000012693,
+      "by_condition": {
+        "clean": 0.6666666666666666,
+        "distracted": 0.5
+      }
+    },
+    "jev": {
+      "planned": 12,
+      "recorded": 12,
+      "missing": 0,
+      "complete": 12,
+      "correct": 6,
+      "accuracy": 0.5,
+      "seconds": 0.3274858049996965,
+      "by_condition": {
+        "clean": 0.5,
+        "distracted": 0.5
+      }
+    },
+    "shuffled": {
+      "planned": 12,
+      "recorded": 12,
+      "missing": 0,
+      "complete": 12,
+      "correct": 3,
+      "accuracy": 0.25,
+      "seconds": 0.3307452940001667,
+      "by_condition": {
+        "clean": 0.3333333333333333,
+        "distracted": 0.16666666666666666
+      }
+    },
+    "lexical": {
+      "planned": 12,
+      "recorded": 12,
+      "missing": 0,
+      "complete": 12,
+      "correct": 6,
+      "accuracy": 0.5,
+      "seconds": 0.336444995999841,
+      "by_condition": {
+        "clean": 0.5,
+        "distracted": 0.5
+      }
+    },
+    "random_heads": {
+      "planned": 12,
+      "recorded": 12,
+      "missing": 0,
+      "complete": 12,
+      "correct": 4,
+      "accuracy": 0.3333333333333333,
+      "seconds": 0.32780836400002045,
+      "by_condition": {
+        "clean": 0.3333333333333333,
+        "distracted": 0.3333333333333333
+      }
+    },
+    "prompt": {
+      "planned": 12,
+      "recorded": 12,
+      "missing": 0,
+      "complete": 12,
+      "correct": 6,
+      "accuracy": 0.5,
+      "seconds": 0.30916313600005196,
+      "by_condition": {
+        "clean": 0.5,
+        "distracted": 0.5
+      }
+    }
+  },
+  "comparisons": {
+    "native": {
+      "difference": 0.16666666666666666,
+      "wins": 2,
+      "losses": 0,
+      "ties": 4
+    },
+    "shuffled": {
+      "difference": 0.25,
+      "wins": 2,
+      "losses": 0,
+      "ties": 4
+    },
+    "lexical": {
+      "difference": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 6
+    },
+    "prompt": {
+      "difference": 0.0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 6
+    }
+  },
+  "useful_gain": false,
+  "provider_incidents": 0
+}

@@ -1,0 +1,29 @@
+{
+  "versions": {
+    "matplotlib": "3.10.8",
+    "numpy": "2.5.3"
+  },
+  "source_hashes": {
+    "selected-policy.json": "673016821263ff12076bbc37fab4d23a348c6d4d10b968efaaa913b4934cd182",
+    "test-summary.json": "7a78d2e1f15609299c612a87e845f2685964b4d092374e315b6a080e1cdc3e67",
+    "diagnostics.json": "0c2adfed26eb2155bfa5392f03b78e71f797c0a8ea41bdf8b43073ab33773958"
+  },
+  "renderer_sha256": "bd15c2d0699be5bf36ad2633d855bbf9cc1e6569f39e22f83c00429778ca5188",
+  "artifacts": {
+    "development-grid.png": "d54eb678bd5f12049fd40a383878f4d8d8c41123962deead66dadcdc90802a09",
+    "development-grid.svg": "69ab7f900cc4f76c151be907b50e7221921d3faf8ff4bf3a4561a6510812ad20",
+    "development-grid.pdf": "e359723980f51f600a8dda775cfb28b40a40f5768b7cafc055de131ff8e4e47b",
+    "primary-accuracy.png": "b63816b804e7490ad6f20ed405aa752025693323b9aa592dece258ba5e2ad9d0",
+    "primary-accuracy.svg": "cf6aeb8dfcaba7345798e37fc0f61d52704484292cb873423ad26104e9e0c6e4",
+    "primary-accuracy.pdf": "cc3850aa573cbc1523cf21bfa01a90751f447b0d3395a82c6a0add6eacef1c2b",
+    "primary-contrasts.png": "846669f8db07be2502f0fa817cf4ee94c303ba3fccf9d0654d383de1435eb921",
+    "primary-contrasts.svg": "76b784bdb22d4ddba58d5aa280974ae3ee01d60ab1a811bd7a47f05ad3e00f96",
+    "primary-contrasts.pdf": "c75add556c3f17d11554547f57b600a1c26edafdad54e6cb195efc2ff12dacb7",
+    "depth-breakdown.png": "e74db784245cef4be77b5f70af3bdd3fc932c016a0f8aa5ed501333647a95845",
+    "depth-breakdown.svg": "cb8c5b02eaa2dfa953dceda1d0cd2be95a0358be878ba39c605fca083c49ae2a",
+    "depth-breakdown.pdf": "f3fe06aa048526f878fe019d4b232276979327180a8bf3ff87c2cc251a724a34",
+    "factor-ablations.png": "888fb882bf8ee8886ae9c48341b33f25a9f0644335d2ffeda4d06ad0b5e9928d",
+    "factor-ablations.svg": "839a712854656998c091836390abd1a7299a1b342a92902ee9b054a83777b992",
+    "factor-ablations.pdf": "1905af6e3bfa81f60b1c2f5d29b395b08701a2239612e28e83ee89d3fdc06b88"
+  }
+}

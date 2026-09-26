@@ -1,0 +1,18 @@
+........F                                                                [100%]
+=================================== FAILURES ===================================
+________ test_native_batch_order_and_warmup_are_bound_to_input_lengths _________
+
+    def test_native_batch_order_and_warmup_are_bound_to_input_lengths():
+        m=module()
+        cases={k:dict(id=k) for k in ['a','b','c','d']}
+        ids=['b','a','c','d']
+        native=[dict(id=k,arm='native',prompt_token_ids=[1]*n,batch_id='batch') for n,k in enumerate(ids,1)]
+        rows=[dict(id='b',arm='warmup'),*native,*[dict(id=k,arm='serial_probe') for k in cases]]
+>       m['check_profile_order'](cases,rows,4)
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'check_profile_order'
+
+tests/test_selective_admission_audit.py:202: KeyError
+=========================== short test summary info ============================
+FAILED tests/test_selective_admission_audit.py::test_native_batch_order_and_warmup_are_bound_to_input_lengths
+1 failed, 8 passed in 0.20s

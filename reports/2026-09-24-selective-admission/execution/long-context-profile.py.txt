@@ -1,0 +1,25 @@
+from pathlib import Path
+import json,runpy,urllib.request,hashlib,time
+from transformers import AutoTokenizer
+root=Path.cwd();p=root/'results/selective-benchmarks-20260924/upstream'
+a=runpy.run_path(str(root/'research/iterations/selective_benchmarks/admission.py'))
+url='https://raw.githubusercontent.com/THUDM/LongBench/2e00731f8d0bff23dc4325161044d0ed8af94c1e/prompts/0shot.txt'
+raw=urllib.request.urlopen(url,timeout=30).read();(p/'longbench-0shot.txt').write_bytes(raw)
+template=raw.decode();cases=json.loads((p/'longbench.json').read_text())
+result=dict(dataset_sha256=hashlib.sha256((p/'longbench.json').read_bytes()).hexdigest(),template=dict(url=url,sha256=hashlib.sha256(raw).hexdigest()),generation_calls=0,models={})
+for name,c in a['MODELS'].items():
+ tick=time.monotonic();tok=AutoTokenizer.from_pretrained(c['id'],revision=c['revision'],trust_remote_code=False)
+ url=f"https://huggingface.co/{c['id']}/resolve/{c['revision']}/config.json"
+ config=json.loads(urllib.request.urlopen(url,timeout=30).read())
+ lengths=[]
+ for i,r in enumerate(cases):
+  prompt=template
+  for tag,key in [('$DOC$','context'),('$Q$','question'),('$C_A$','choice_A'),('$C_B$','choice_B'),('$C_C$','choice_C'),('$C_D$','choice_D')]:prompt=prompt.replace(tag,r[key].strip())
+  ids=tok.apply_chat_template([dict(role='user',content=prompt)],tokenize=True,add_generation_prompt=True,**({'enable_thinking':True} if c['thinking'] else {}))
+  lengths.append(dict(id=r['_id'],tokens=len(ids),length=r['length']))
+  if (i+1)%50==0:print(json.dumps(dict(model=name,tokenized=i+1)),flush=True)
+ v=sorted(r['tokens'] for r in lengths)
+ max_context=config['max_position_embeddings']
+ result['models'][name]=dict(revision=c['revision'],max_position_embeddings=max_context,output_reserve=c['max_new_tokens'],count=len(v),total_input_tokens=sum(v),min=min(v),median=v[len(v)//2],max=max(v),over_admission_input_limit=sum(n>16384 for n in v),over_native_remaining_window=sum(n>max_context-c['max_new_tokens'] for n in v),seconds=time.monotonic()-tick,rows=lengths)
+ (p.parent/'long-context-profile.json').write_text(json.dumps(result,indent=2)+'\n')
+ print(json.dumps({k:r for k,r in result['models'][name].items() if k!='rows'}),flush=True)

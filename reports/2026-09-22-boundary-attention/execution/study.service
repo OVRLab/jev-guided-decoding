@@ -1,0 +1,14 @@
+[Unit]
+Description=Frozen R18 single-prefill Jev boundary study
+After=network-online.target
+Wants=network-online.target
+[Service]
+Type=simple
+User=study
+WorkingDirectory=/home/study/jev-guided-decoding
+ExecStart=/bin/bash /home/study/run-boundary-study.sh
+RuntimeMaxSec=23400
+TimeoutStopSec=120
+Restart=no
+[Install]
+WantedBy=multi-user.target

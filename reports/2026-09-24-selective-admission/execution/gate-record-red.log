@@ -1,0 +1,14 @@
+....F                                                                    [100%]
+=================================== FAILURES ===================================
+_______ test_recorded_gate_is_actual_control_strength_not_routing_score ________
+
+    def test_recorded_gate_is_actual_control_strength_not_routing_score():
+        m=module()
+        out=dict(m['repair_case']({},.1,.8,lambda arm,gate: {'text':arm}))
+>       assert out['constant']['gate']==.5
+E       assert 0.9 == 0.5
+
+tests/test_selective_benchmark_admission.py:88: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_selective_benchmark_admission.py::test_recorded_gate_is_actual_control_strength_not_routing_score
+1 failed, 4 passed in 0.12s

@@ -1,0 +1,159 @@
+{
+  "at": "2026-09-22T22:41:27.684460+00:00",
+  "outcomes": 1216,
+  "paid_api_attempts": 0,
+  "weights_unchanged": true,
+  "domains": {
+    "synthetic": {
+      "instruction_always": {
+        "quality": 0.4652777777777778,
+        "dual_minus_control": {
+          "difference": -0.034722222222222224,
+          "interval": [
+            -0.10416666666666667,
+            0.03819444444444445
+          ],
+          "interval_level": 0.95,
+          "clusters": 144
+        },
+        "mean_model_seconds": 0.6620868705242925,
+        "tokens": 5821,
+        "subgroups": {
+          "answerable": {
+            "count": 144,
+            "quality": 0.3680555555555556
+          },
+          "missing": {
+            "count": 144,
+            "quality": 0.5625
+          }
+        }
+      },
+      "shuffled_sufficiency": {
+        "quality": 0.3298611111111111,
+        "dual_minus_control": {
+          "difference": 0.10069444444444445,
+          "interval": [
+            0.04513888888888889,
+            0.1597222222222222
+          ],
+          "interval_level": 0.95,
+          "clusters": 144
+        },
+        "mean_model_seconds": 0.6649133293020708,
+        "tokens": 5970,
+        "subgroups": {
+          "answerable": {
+            "count": 144,
+            "quality": 0.4583333333333333
+          },
+          "missing": {
+            "count": 144,
+            "quality": 0.2013888888888889
+          }
+        }
+      }
+    },
+    "hotpot": {
+      "instruction_always": {
+        "quality": 0.3289573267230842,
+        "dual_minus_control": {
+          "difference": 0.0005171529666196939,
+          "interval": [
+            -0.05036063957344456,
+            0.04975425951104391
+          ],
+          "interval_level": 0.95,
+          "clusters": 160
+        },
+        "mean_model_seconds": 0.6887092312061995,
+        "tokens": 2437,
+        "subgroups": {
+          "answerable": {
+            "count": 160,
+            "quality": 0.3289573267230842
+          },
+          "missing": {
+            "count": 0,
+            "quality": null
+          }
+        }
+      },
+      "shuffled_sufficiency": {
+        "quality": 0.32596870201925066,
+        "dual_minus_control": {
+          "difference": 0.003505777670453236,
+          "interval": [
+            -0.023478396243751014,
+            0.030743949617890627
+          ],
+          "interval_level": 0.95,
+          "clusters": 160
+        },
+        "mean_model_seconds": 0.7009027323187468,
+        "tokens": 2522,
+        "subgroups": {
+          "answerable": {
+            "count": 160,
+            "quality": 0.32596870201925066
+          },
+          "missing": {
+            "count": 0,
+            "quality": null
+          }
+        }
+      }
+    },
+    "squad2": {
+      "instruction_always": {
+        "quality": 0.3449210606476711,
+        "dual_minus_control": {
+          "difference": -0.013893243155606427,
+          "interval": [
+            -0.06016752673211704,
+            0.030444184565043643
+          ],
+          "interval_level": 0.95,
+          "clusters": 125
+        },
+        "mean_model_seconds": 0.5809471457124651,
+        "tokens": 2851,
+        "subgroups": {
+          "answerable": {
+            "count": 80,
+            "quality": 0.37734212129534217
+          },
+          "missing": {
+            "count": 80,
+            "quality": 0.3125
+          }
+        }
+      },
+      "shuffled_sufficiency": {
+        "quality": 0.29831024430438274,
+        "dual_minus_control": {
+          "difference": 0.03271757318768191,
+          "interval": [
+            -0.0197499070487961,
+            0.08272319579613235
+          ],
+          "interval_level": 0.95,
+          "clusters": 125
+        },
+        "mean_model_seconds": 0.5477609675374865,
+        "tokens": 2768,
+        "subgroups": {
+          "answerable": {
+            "count": 80,
+            "quality": 0.39662048860876553
+          },
+          "missing": {
+            "count": 80,
+            "quality": 0.2
+          }
+        }
+      }
+    }
+  },
+  "main_completion_sha256": "279474f3854fe7008c9fc178f9bb46493d7f3d1c7a77c6fe8be1d581a6a6c4ec"
+}

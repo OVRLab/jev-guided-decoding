@@ -1,0 +1,1131 @@
+[
+  {
+    "id": "gsm8k_train/1393",
+    "prompt_sha256": "1d11864be5f31eb4b1e7f0f6300e9e41e746f71615a8ee62044b0fa498345a41",
+    "kind": "number",
+    "answer": "80"
+  },
+  {
+    "id": "gsm8k_train/6198",
+    "prompt_sha256": "6d115e1234e704e26e97354a88b99b797da3676808665138e7c23b2b36b477f6",
+    "kind": "number",
+    "answer": "26"
+  },
+  {
+    "id": "gsm8k_train/1792",
+    "prompt_sha256": "1303f6c0a64783b91ac323b856ed4868644d2fed0486f9135ef8eaa156a525a9",
+    "kind": "number",
+    "answer": "290"
+  },
+  {
+    "id": "gsm8k_train/2790",
+    "prompt_sha256": "a463e2fa16bf118ad858449eadca8fea264d6656afb5eba8d514e95cfdd1d81d",
+    "kind": "number",
+    "answer": "2100"
+  },
+  {
+    "id": "gsm8k_train/3626",
+    "prompt_sha256": "5b9f63e9d0b53ca241bd8a2dd1f8a8b4f21a4072d5f5cdb3957bd8fe5bb1ef5c",
+    "kind": "number",
+    "answer": "3"
+  },
+  {
+    "id": "gsm8k_train/5832",
+    "prompt_sha256": "084def622cbf3a5b8de2733e1347ab3fd06cd0eaa0c73973ef2243a06c32662b",
+    "kind": "number",
+    "answer": "17"
+  },
+  {
+    "id": "gsm8k_train/2774",
+    "prompt_sha256": "971a1d23aebd1c8a18cf4edcc2aa680685c1348fd763ee70c048a0c13888ad2b",
+    "kind": "number",
+    "answer": "5"
+  },
+  {
+    "id": "gsm8k_train/5474",
+    "prompt_sha256": "059e0521171f5cb59bcadcf985f3c573bf38f0197d5bb7b797cf201d2d526187",
+    "kind": "number",
+    "answer": "41"
+  },
+  {
+    "id": "gsm8k_train/2562",
+    "prompt_sha256": "d50434d273f9cd3efffe2443e1681daa4a6a264c7c1548a4f4ce99a0619ee91f",
+    "kind": "number",
+    "answer": "3"
+  },
+  {
+    "id": "gsm8k_train/732",
+    "prompt_sha256": "39183cc30aaccd10eed436654627490df3c804f7dc1b7cc816caaf1435466ddd",
+    "kind": "number",
+    "answer": "32000"
+  },
+  {
+    "id": "gsm8k_train/1964",
+    "prompt_sha256": "ab2801b0332a13613c3f51c5b11db97ac783e149fd0979a120c618262b4f2840",
+    "kind": "number",
+    "answer": "6"
+  },
+  {
+    "id": "gsm8k_train/1101",
+    "prompt_sha256": "37365ecdb1e924d49656f14b59e02020e5d741a7562e6a402e436e99db94c06e",
+    "kind": "number",
+    "answer": "71"
+  },
+  {
+    "id": "gsm8k_train/5138",
+    "prompt_sha256": "e22aea1264e8ef3ad8e690438b7d5cd3ee9ae61c32dfa2dfda5d89fa86b34604",
+    "kind": "number",
+    "answer": "60"
+  },
+  {
+    "id": "gsm8k_train/7231",
+    "prompt_sha256": "7a1631a0135951a13d2e69f2477f6ef799068918279c4f8670f6a214ae5345fe",
+    "kind": "number",
+    "answer": "20"
+  },
+  {
+    "id": "gsm8k_train/2581",
+    "prompt_sha256": "85aca5ebb3d45e054c371cba74f76636b8091549b1de43d396891aebaf461504",
+    "kind": "number",
+    "answer": "44"
+  },
+  {
+    "id": "gsm8k_train/2008",
+    "prompt_sha256": "ee898be54d7eba62f3270a3e11db7d8ac9a62527d53cd3ce255ab853353accb4",
+    "kind": "number",
+    "answer": "14"
+  },
+  {
+    "id": "gsm8k_train/3839",
+    "prompt_sha256": "decd64228abcbee96b912af5fb112b29f9065470a72e6961e3ba3052d7eff913",
+    "kind": "number",
+    "answer": "6"
+  },
+  {
+    "id": "gsm8k_train/3231",
+    "prompt_sha256": "509a6e23ef52c46c179ac05a0ddae3f854e73e528a5c2cc6896d6e0e0c497508",
+    "kind": "number",
+    "answer": "45"
+  },
+  {
+    "id": "gsm8k_train/515",
+    "prompt_sha256": "13a35ef379ac970345c08937fa8e89120a1fc58c05a8115acea94c6f39df8761",
+    "kind": "number",
+    "answer": "24"
+  },
+  {
+    "id": "gsm8k_train/5382",
+    "prompt_sha256": "19b8bf6ffc5a6c61bdf1de462549496c7c6d82aebba6623d82b0e2ad2a5316fa",
+    "kind": "number",
+    "answer": "45"
+  },
+  {
+    "id": "gsm8k_train/6323",
+    "prompt_sha256": "2882d208c42c04d5f82efaf521b3aaea6c97ec7003ffe47332e3e03159b349cb",
+    "kind": "number",
+    "answer": "72"
+  },
+  {
+    "id": "gsm8k_train/401",
+    "prompt_sha256": "7a69de2ff2f74f6ce1a363aa080aa8650b402092991d8189a5bc655938dad419",
+    "kind": "number",
+    "answer": "13"
+  },
+  {
+    "id": "gsm8k_train/7376",
+    "prompt_sha256": "debd0e0533576deae480eee201495e31b7960a8718b18e453fa60586e10ec0a0",
+    "kind": "number",
+    "answer": "10"
+  },
+  {
+    "id": "gsm8k_train/5760",
+    "prompt_sha256": "f4feba06f255db64485e4de8c3a3ed89c11f4a0fb20655abf52688f55619fb83",
+    "kind": "number",
+    "answer": "24"
+  },
+  {
+    "id": "ifbench/57",
+    "prompt_sha256": "3c19e3b95beca0af4b6c2827b8a3e8b9c538a2b17373a77459e65fd1f63b5cea",
+    "kind": "ifbench",
+    "key": "57",
+    "instruction_id_list": [
+      "count:unique_word_count"
+    ],
+    "kwargs": [
+      {
+        "N": 160.0,
+        "capital_frequency": null,
+        "capital_relation": null,
+        "end_phrase": null,
+        "first_word": null,
+        "forbidden_words": null,
+        "frequency": null,
+        "keyword": null,
+        "keyword1": null,
+        "keyword2": null,
+        "keyword3": null,
+        "keyword4": null,
+        "keyword5": null,
+        "keywords": null,
+        "language": null,
+        "let_frequency": null,
+        "let_relation": null,
+        "letter": null,
+        "m": null,
+        "max_words": null,
+        "min_words": null,
+        "n": null,
+        "n_end": null,
+        "n_start": null,
+        "nth_paragraph": null,
+        "num_bullets": null,
+        "num_highlights": null,
+        "num_paragraphs": null,
+        "num_placeholders": null,
+        "num_sections": null,
+        "num_sentences": null,
+        "num_words": null,
+        "options": null,
+        "percentage": null,
+        "postscript_marker": null,
+        "prompt_to_repeat": null,
+        "reference_text": null,
+        "relation": null,
+        "section_spliter": null,
+        "sep": null,
+        "small_n": null,
+        "word": null
+      }
+    ]
+  },
+  {
+    "id": "ifbench/83",
+    "prompt_sha256": "66b17f3767ee91cc58ad3807a96f00477a157a191439b2be636e7970abeeab2c",
+    "kind": "ifbench",
+    "key": "83",
+    "instruction_id_list": [
+      "format:list"
+    ],
+    "kwargs": [
+      {
+        "N": null,
+        "capital_frequency": null,
+        "capital_relation": null,
+        "end_phrase": null,
+        "first_word": null,
+        "forbidden_words": null,
+        "frequency": null,
+        "keyword": null,
+        "keyword1": null,
+        "keyword2": null,
+        "keyword3": null,
+        "keyword4": null,
+        "keyword5": null,
+        "keywords": null,
+        "language": null,
+        "let_frequency": null,
+        "let_relation": null,
+        "letter": null,
+        "m": null,
+        "max_words": null,
+        "min_words": null,
+        "n": null,
+        "n_end": null,
+        "n_start": null,
+        "nth_paragraph": null,
+        "num_bullets": null,
+        "num_highlights": null,
+        "num_paragraphs": null,
+        "num_placeholders": null,
+        "num_sections": null,
+        "num_sentences": null,
+        "num_words": null,
+        "options": null,
+        "percentage": null,
+        "postscript_marker": null,
+        "prompt_to_repeat": null,
+        "reference_text": null,
+        "relation": null,
+        "section_spliter": null,
+        "sep": "!?!?",
+        "small_n": null,
+        "word": null
+      }
+    ]
+  },
+  {
+    "id": "ifbench/297",
+    "prompt_sha256": "f350135a350997ad8286112311fa7d285a408492d4e4542d9b0b49a21647500a",
+    "kind": "ifbench",
+    "key": "297",
+    "instruction_id_list": [
+      "format:no_whitespace"
+    ],
+    "kwargs": [
+      {
+        "N": null,
+        "capital_frequency": null,
+        "capital_relation": null,
+        "end_phrase": null,
+        "first_word": null,
+        "forbidden_words": null,
+        "frequency": null,
+        "keyword": null,
+        "keyword1": null,
+        "keyword2": null,
+        "keyword3": null,
+        "keyword4": null,
+        "keyword5": null,
+        "keywords": null,
+        "language": null,
+        "let_frequency": null,
+        "let_relation": null,
+        "letter": null,
+        "m": null,
+        "max_words": null,
+        "min_words": null,
+        "n": null,
+        "n_end": null,
+        "n_start": null,
+        "nth_paragraph": null,
+        "num_bullets": null,
+        "num_highlights": null,
+        "num_paragraphs": null,
+        "num_placeholders": null,
+        "num_sections": null,
+        "num_sentences": null,
+        "num_words": null,
+        "options": null,
+        "percentage": null,
+        "postscript_marker": null,
+        "prompt_to_repeat": null,
+        "reference_text": null,
+        "relation": null,
+        "section_spliter": null,
+        "sep": null,
+        "small_n": null,
+        "word": null
+      }
+    ]
+  },
+  {
+    "id": "ifbench/207",
+    "prompt_sha256": "9caa31b90c2d25170ba3e8fc2ddb67218df7eca0cb44291d314537d39a4d7d4b",
+    "kind": "ifbench",
+    "key": "207",
+    "instruction_id_list": [
+      "words:consonants"
+    ],
+    "kwargs": [
+      {
+        "N": null,
+        "capital_frequency": null,
+        "capital_relation": null,
+        "end_phrase": null,
+        "first_word": null,
+        "forbidden_words": null,
+        "frequency": null,
+        "keyword": null,
+        "keyword1": null,
+        "keyword2": null,
+        "keyword3": null,
+        "keyword4": null,
+        "keyword5": null,
+        "keywords": null,
+        "language": null,
+        "let_frequency": null,
+        "let_relation": null,
+        "letter": null,
+        "m": null,
+        "max_words": null,
+        "min_words": null,
+        "n": null,
+        "n_end": null,
+        "n_start": null,
+        "nth_paragraph": null,
+        "num_bullets": null,
+        "num_highlights": null,
+        "num_paragraphs": null,
+        "num_placeholders": null,
+        "num_sections": null,
+        "num_sentences": null,
+        "num_words": null,
+        "options": null,
+        "percentage": null,
+        "postscript_marker": null,
+        "prompt_to_repeat": null,
+        "reference_text": null,
+        "relation": null,
+        "section_spliter": null,
+        "sep": null,
+        "small_n": null,
+        "word": null
+      }
+    ]
+  },
+  {
+    "id": "ifbench/296",
+    "prompt_sha256": "8762de5d83b223ff0e1a55f72d1dd64ea22ad7d565c79de5b786de7027452bd3",
+    "kind": "ifbench",
+    "key": "296",
+    "instruction_id_list": [
+      "format:no_whitespace"
+    ],
+    "kwargs": [
+      {
+        "N": null,
+        "capital_frequency": null,
+        "capital_relation": null,
+        "end_phrase": null,
+        "first_word": null,
+        "forbidden_words": null,
+        "frequency": null,
+        "keyword": null,
+        "keyword1": null,
+        "keyword2": null,
+        "keyword3": null,
+        "keyword4": null,
+        "keyword5": null,
+        "keywords": null,
+        "language": null,
+        "let_frequency": null,
+        "let_relation": null,
+        "letter": null,
+        "m": null,
+        "max_words": null,
+        "min_words": null,
+        "n": null,
+        "n_end": null,
+        "n_start": null,
+        "nth_paragraph": null,
+        "num_bullets": null,
+        "num_highlights": null,
+        "num_paragraphs": null,
+        "num_placeholders": null,
+        "num_sections": null,
+        "num_sentences": null,
+        "num_words": null,
+        "options": null,
+        "percentage": null,
+        "postscript_marker": null,
+        "prompt_to_repeat": null,
+        "reference_text": null,
+        "relation": null,
+        "section_spliter": null,
+        "sep": null,
+        "small_n": null,
+        "word": null
+      }
+    ]
+  },
+  {
+    "id": "ifbench/80",
+    "prompt_sha256": "1dd926ecb1a4b296b3f53b48a29c5cb5283630c43c25b6c88fa2fe25a7a25917",
+    "kind": "ifbench",
+    "key": "80",
+    "instruction_id_list": [
+      "format:line_indent",
+      "ratio:sentence_words"
+    ],
+    "kwargs": [
+      {
+        "N": null,
+        "capital_frequency": null,
+        "capital_relation": null,
+        "end_phrase": null,
+        "first_word": null,
+        "forbidden_words": null,
+        "frequency": null,
+        "keyword": null,
+        "keyword1": null,
+        "keyword2": null,
+        "keyword3": null,
+        "keyword4": null,
+        "keyword5": null,
+        "keywords": null,
+        "language": null,
+        "let_frequency": null,
+        "let_relation": null,
+        "letter": null,
+        "m": null,
+        "max_words": null,
+        "min_words": null,
+        "n": null,
+        "n_end": null,
+        "n_start": null,
+        "nth_paragraph": null,
+        "num_bullets": null,
+        "num_highlights": null,
+        "num_paragraphs": null,
+        "num_placeholders": null,
+        "num_sections": null,
+        "num_sentences": null,
+        "num_words": null,
+        "options": null,
+        "percentage": null,
+        "postscript_marker": null,
+        "prompt_to_repeat": null,
+        "reference_text": null,
+        "relation": null,
+        "section_spliter": null,
+        "sep": null,
+        "small_n": null,
+        "word": null
+      },
+      {
+        "N": null,
+        "capital_frequency": null,
+        "capital_relation": null,
+        "end_phrase": null,
+        "first_word": null,
+        "forbidden_words": null,
+        "frequency": null,
+        "keyword": null,
+        "keyword1": null,
+        "keyword2": null,
+        "keyword3": null,
+        "keyword4": null,
+        "keyword5": null,
+        "keywords": null,
+        "language": null,
+        "let_frequency": null,
+        "let_relation": null,
+        "letter": null,
+        "m": null,
+        "max_words": null,
+        "min_words": null,
+        "n": null,
+        "n_end": null,
+        "n_start": null,
+        "nth_paragraph": null,
+        "num_bullets": null,
+        "num_highlights": null,
+        "num_paragraphs": null,
+        "num_placeholders": null,
+        "num_sections": null,
+        "num_sentences": null,
+        "num_words": null,
+        "options": null,
+        "percentage": null,
+        "postscript_marker": null,
+        "prompt_to_repeat": null,
+        "reference_text": null,
+        "relation": null,
+        "section_spliter": null,
+        "sep": null,
+        "small_n": null,
+        "word": null
+      }
+    ]
+  },
+  {
+    "id": "ifbench/180",
+    "prompt_sha256": "2d288adfb02f9449c776d0074d62c55c5af3ed4b96e6b98e4f09496db7fde88b",
+    "kind": "ifbench",
+    "key": "180",
+    "instruction_id_list": [
+      "sentence:alliteration_increment"
+    ],
+    "kwargs": [
+      {
+        "N": null,
+        "capital_frequency": null,
+        "capital_relation": null,
+        "end_phrase": null,
+        "first_word": null,
+        "forbidden_words": null,
+        "frequency": null,
+        "keyword": null,
+        "keyword1": null,
+        "keyword2": null,
+        "keyword3": null,
+        "keyword4": null,
+        "keyword5": null,
+        "keywords": null,
+        "language": null,
+        "let_frequency": null,
+        "let_relation": null,
+        "letter": null,
+        "m": null,
+        "max_words": null,
+        "min_words": null,
+        "n": null,
+        "n_end": null,
+        "n_start": null,
+        "nth_paragraph": null,
+        "num_bullets": null,
+        "num_highlights": null,
+        "num_paragraphs": null,
+        "num_placeholders": null,
+        "num_sections": null,
+        "num_sentences": null,
+        "num_words": null,
+        "options": null,
+        "percentage": null,
+        "postscript_marker": null,
+        "prompt_to_repeat": null,
+        "reference_text": null,
+        "relation": null,
+        "section_spliter": null,
+        "sep": null,
+        "small_n": null,
+        "word": null
+      }
+    ]
+  },
+  {
+    "id": "ifbench/148",
+    "prompt_sha256": "ef0fc87ed6253cb7bf6455fb467e22e9af46db0b80f598d26dfd205909ea2ab8",
+    "kind": "ifbench",
+    "key": "148",
+    "instruction_id_list": [
+      "ratio:overlap"
+    ],
+    "kwargs": [
+      {
+        "N": null,
+        "capital_frequency": null,
+        "capital_relation": null,
+        "end_phrase": null,
+        "first_word": null,
+        "forbidden_words": null,
+        "frequency": null,
+        "keyword": null,
+        "keyword1": null,
+        "keyword2": null,
+        "keyword3": null,
+        "keyword4": null,
+        "keyword5": null,
+        "keywords": null,
+        "language": null,
+        "let_frequency": null,
+        "let_relation": null,
+        "letter": null,
+        "m": null,
+        "max_words": null,
+        "min_words": null,
+        "n": null,
+        "n_end": null,
+        "n_start": null,
+        "nth_paragraph": null,
+        "num_bullets": null,
+        "num_highlights": null,
+        "num_paragraphs": null,
+        "num_placeholders": null,
+        "num_sections": null,
+        "num_sentences": null,
+        "num_words": null,
+        "options": null,
+        "percentage": 6.0,
+        "postscript_marker": null,
+        "prompt_to_repeat": null,
+        "reference_text": "For her 2021 art installation Anthem, Wu Tsang\njoined forces with singer and composer Beverly\nGlenn-Copeland to produce a piece that critics\nfound truly ______: they praised Tsang for\ncreatively transforming a museum rotunda into a\ndynamic exhibit by projecting filmed images of\nGlenn-Copeland onto a massive 84-foot curtain and\nfilling the space with the sounds of his and other\nvoices singing.\nWhich choice completes the text with the most\nlogical and precise word or phrase?\nA) restrained\nB) inventive\nC) inexplicable\nD) mystifying \n",
+        "relation": null,
+        "section_spliter": null,
+        "sep": null,
+        "small_n": null,
+        "word": null
+      }
+    ]
+  },
+  {
+    "id": "ifbench/43",
+    "prompt_sha256": "ba20afdf9785d345934b092d0f7c77c514a680bbacf45ea65bf2e611ab7def75",
+    "kind": "ifbench",
+    "key": "43",
+    "instruction_id_list": [
+      "count:word_count_range"
+    ],
+    "kwargs": [
+      {
+        "N": null,
+        "capital_frequency": null,
+        "capital_relation": null,
+        "end_phrase": null,
+        "first_word": null,
+        "forbidden_words": null,
+        "frequency": null,
+        "keyword": null,
+        "keyword1": null,
+        "keyword2": null,
+        "keyword3": null,
+        "keyword4": null,
+        "keyword5": null,
+        "keywords": null,
+        "language": null,
+        "let_frequency": null,
+        "let_relation": null,
+        "letter": null,
+        "m": null,
+        "max_words": 28.0,
+        "min_words": 24.0,
+        "n": null,
+        "n_end": null,
+        "n_start": null,
+        "nth_paragraph": null,
+        "num_bullets": null,
+        "num_highlights": null,
+        "num_paragraphs": null,
+        "num_placeholders": null,
+        "num_sections": null,
+        "num_sentences": null,
+        "num_words": null,
+        "options": null,
+        "percentage": null,
+        "postscript_marker": null,
+        "prompt_to_repeat": null,
+        "reference_text": null,
+        "relation": null,
+        "section_spliter": null,
+        "sep": null,
+        "small_n": null,
+        "word": null
+      }
+    ]
+  },
+  {
+    "id": "ifbench/68",
+    "prompt_sha256": "48802750ad79c672a5ae4b9494ec9ecc6797d2dc264102c900e67210bb0d2560",
+    "kind": "ifbench",
+    "key": "68",
+    "instruction_id_list": [
+      "format:emoji"
+    ],
+    "kwargs": [
+      {
+        "N": null,
+        "capital_frequency": null,
+        "capital_relation": null,
+        "end_phrase": null,
+        "first_word": null,
+        "forbidden_words": null,
+        "frequency": null,
+        "keyword": null,
+        "keyword1": null,
+        "keyword2": null,
+        "keyword3": null,
+        "keyword4": null,
+        "keyword5": null,
+        "keywords": null,
+        "language": null,
+        "let_frequency": null,
+        "let_relation": null,
+        "letter": null,
+        "m": null,
+        "max_words": null,
+        "min_words": null,
+        "n": null,
+        "n_end": null,
+        "n_start": null,
+        "nth_paragraph": null,
+        "num_bullets": null,
+        "num_highlights": null,
+        "num_paragraphs": null,
+        "num_placeholders": null,
+        "num_sections": null,
+        "num_sentences": null,
+        "num_words": null,
+        "options": null,
+        "percentage": null,
+        "postscript_marker": null,
+        "prompt_to_repeat": null,
+        "reference_text": null,
+        "relation": null,
+        "section_spliter": null,
+        "sep": null,
+        "small_n": null,
+        "word": null
+      }
+    ]
+  },
+  {
+    "id": "ifbench/249",
+    "prompt_sha256": "4355ab81d1d67fa75415726cfe54ed19c435bee1d75795ed841f64fcfb208842",
+    "kind": "ifbench",
+    "key": "249",
+    "instruction_id_list": [
+      "words:prime_lengths"
+    ],
+    "kwargs": [
+      {
+        "N": null,
+        "capital_frequency": null,
+        "capital_relation": null,
+        "end_phrase": null,
+        "first_word": null,
+        "forbidden_words": null,
+        "frequency": null,
+        "keyword": null,
+        "keyword1": null,
+        "keyword2": null,
+        "keyword3": null,
+        "keyword4": null,
+        "keyword5": null,
+        "keywords": null,
+        "language": null,
+        "let_frequency": null,
+        "let_relation": null,
+        "letter": null,
+        "m": null,
+        "max_words": null,
+        "min_words": null,
+        "n": null,
+        "n_end": null,
+        "n_start": null,
+        "nth_paragraph": null,
+        "num_bullets": null,
+        "num_highlights": null,
+        "num_paragraphs": null,
+        "num_placeholders": null,
+        "num_sections": null,
+        "num_sentences": null,
+        "num_words": null,
+        "options": null,
+        "percentage": null,
+        "postscript_marker": null,
+        "prompt_to_repeat": null,
+        "reference_text": null,
+        "relation": null,
+        "section_spliter": null,
+        "sep": null,
+        "small_n": null,
+        "word": null
+      }
+    ]
+  },
+  {
+    "id": "ifbench/155",
+    "prompt_sha256": "75b0f52fafbd14401bad5599f840f9c092b059d10ce5bb7bd6001c4bd252a148",
+    "kind": "ifbench",
+    "key": "155",
+    "instruction_id_list": [
+      "ratio:sentence_balance"
+    ],
+    "kwargs": [
+      {
+        "N": null,
+        "capital_frequency": null,
+        "capital_relation": null,
+        "end_phrase": null,
+        "first_word": null,
+        "forbidden_words": null,
+        "frequency": null,
+        "keyword": null,
+        "keyword1": null,
+        "keyword2": null,
+        "keyword3": null,
+        "keyword4": null,
+        "keyword5": null,
+        "keywords": null,
+        "language": null,
+        "let_frequency": null,
+        "let_relation": null,
+        "letter": null,
+        "m": null,
+        "max_words": null,
+        "min_words": null,
+        "n": null,
+        "n_end": null,
+        "n_start": null,
+        "nth_paragraph": null,
+        "num_bullets": null,
+        "num_highlights": null,
+        "num_paragraphs": null,
+        "num_placeholders": null,
+        "num_sections": null,
+        "num_sentences": null,
+        "num_words": null,
+        "options": null,
+        "percentage": null,
+        "postscript_marker": null,
+        "prompt_to_repeat": null,
+        "reference_text": null,
+        "relation": null,
+        "section_spliter": null,
+        "sep": null,
+        "small_n": null,
+        "word": null
+      }
+    ]
+  },
+  {
+    "id": "mmlu_pro/20",
+    "prompt_sha256": "ee48cc8de2f5c05762bd84fe2aa6f1575a98c90345d1229033bba0c5f21ac333",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/22",
+    "prompt_sha256": "c3bfb3c9c8a02d30a3f81738ce14725f96499f06a013d6f6165bcf41bb04e50e",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/16",
+    "prompt_sha256": "d7b2de3b53fd1b386cb2f4aef47e4a73d0f0ff4fca089082f7ebd95a5f18f411",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/18",
+    "prompt_sha256": "a982f96591ebe507b2be07b5773515c77b8d988305d25beece14b38cfe01c8bc",
+    "kind": "choice",
+    "answer": "G",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/26",
+    "prompt_sha256": "9f70504ebda9f78fc9172a9fabcafc8dd3cef554b9657a9989d1b2b635a626d1",
+    "kind": "choice",
+    "answer": "J",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/25",
+    "prompt_sha256": "d03e2a3fde7ee35b53fa76158e67b3ed3d69b086362651c140a121e5839d8e17",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/31",
+    "prompt_sha256": "70c62a9e24f149493246135f3528cdbf3d1b8062a4bb70b4e281bf72b3b0162f",
+    "kind": "choice",
+    "answer": "I",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/30",
+    "prompt_sha256": "48e8e99ffa4e4ffc4036b1619f7c5f4627682a27b6b540123fe46680c8bc3125",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/37",
+    "prompt_sha256": "823b3e07a170f625a65089586151d190252ed90a027dcb159583cccca43ffb7b",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/36",
+    "prompt_sha256": "1ac018549068b7a2a906edb1484a6b0eaa90e3bf45b787d354b2e1e2f37ea5d4",
+    "kind": "choice",
+    "answer": "H",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/43",
+    "prompt_sha256": "267753f68b232e84d1f93fd72437479ad82744d2395bc1041934020739af2fd1",
+    "kind": "choice",
+    "answer": "I",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/40",
+    "prompt_sha256": "9de364667b0584fe5a8cb3f054646026c51dd275e34b279c340a777a0955c2b7",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/5",
+    "prompt_sha256": "a826c5f80227653b795bf3473f93b459233375099bd8a4a5fae2015ffc6690af",
+    "kind": "choice",
+    "answer": "J",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/8",
+    "prompt_sha256": "4e7a258c80c8801756675d9b0b10b80999f59cce8271aff7e5ca22c765479a72",
+    "kind": "choice",
+    "answer": "F",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/55",
+    "prompt_sha256": "8a52ac61f29cbfdbaf6d8585c167117018058b8db940f84efb113e2a48276e42",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/57",
+    "prompt_sha256": "6b3cbda3764241c9c1095088fb8ff1ad1935d09c1c532895c5e47e6a0600816d",
+    "kind": "choice",
+    "answer": "E",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/68",
+    "prompt_sha256": "a192e3713e7503ebee8f0408599260fe100f507e8dcfe7e76146a5b8c753d648",
+    "kind": "choice",
+    "answer": "G",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/67",
+    "prompt_sha256": "5f5db457f4606841287cbc25fb4f8a1609efa619fe8d336ee1b1f9f48eca21fc",
+    "kind": "choice",
+    "answer": "J",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/2",
+    "prompt_sha256": "9340be3ae1ea90034f4b5cbf982903c838d30c9c0fb1cd3c258e235b419fbb6b",
+    "kind": "choice",
+    "answer": "E",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/4",
+    "prompt_sha256": "e11e3cafbec55efa34afdf600966074b0dece5787799c9d451aa671576d9e13f",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/51",
+    "prompt_sha256": "3f15a049ec87861dca675ba163e011c3a41658f30f0773f0eaf674d257c6d538",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/52",
+    "prompt_sha256": "1a00d72fa5f74fe4f396f84af0ea388691b7e471f168527e3a9e676f9dfd3ef1",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/47",
+    "prompt_sha256": "f74e8ee2bc9c8d155927d5c28d5b9287b8441cb2f12170b6aa92097999f44c22",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/45",
+    "prompt_sha256": "0d8a4eb264ee9978f7ee24ef945f815def861f46d2c3bc4d9a0684c90ca482ec",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/10",
+    "prompt_sha256": "6161a3620b32e9c4646fe7f65fccbc6160cf1318d4cadd3df0796f7df18cc9ce",
+    "kind": "choice",
+    "answer": "E",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/13",
+    "prompt_sha256": "53e23e3f2729acdde72d2f3ea6f6b4d34f89230c2d7943362c0341927c810c77",
+    "kind": "choice",
+    "answer": "E",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/63",
+    "prompt_sha256": "f7ab60816e8a3613b63b4772ec0ddf1b23641047250c25efd33bedad769d924e",
+    "kind": "choice",
+    "answer": "J",
+    "choices": 10
+  },
+  {
+    "id": "mmlu_pro/62",
+    "prompt_sha256": "94bb8d860c5d26e3b73009a66930f5c2e4b62f09eb47cc87ce80e9b28d1534a9",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 10
+  },
+  {
+    "id": "musr/murder_mystery/73",
+    "prompt_sha256": "c72160ca96cfbce5bc5382fa467facfd5aef069493134dfb56feb01f149f67ca",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 2
+  },
+  {
+    "id": "musr/murder_mystery/212",
+    "prompt_sha256": "37838a93fc04093bf6be107f74c3e921c50315e6aa6b0a1b340434dd547775b2",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 2
+  },
+  {
+    "id": "musr/murder_mystery/134",
+    "prompt_sha256": "ed1ee057bd555f4af85e50bd252d7a6ed5dfa350de5ef15bbd2cb1f39e835e6f",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 2
+  },
+  {
+    "id": "musr/murder_mystery/213",
+    "prompt_sha256": "c6366fcda7c728cc4ffe5b8cb0083e1fafd31cc9e7a140bced634145556d4b30",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 2
+  },
+  {
+    "id": "musr/object_placements/85",
+    "prompt_sha256": "e2d064c2b92e640e394f76bea5b1047d131e6d16f3947eae9332b4dd7d48dff8",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 5
+  },
+  {
+    "id": "musr/object_placements/255",
+    "prompt_sha256": "f9528e9da8c81d81489ed4bb50d5ed8e1f3a40de2a21ac3de29eb2b95af89aff",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 3
+  },
+  {
+    "id": "musr/object_placements/179",
+    "prompt_sha256": "68d8a2c39fba43138f89c9688577d23215e8397fddd28a101d4022e7f8e5c54d",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 3
+  },
+  {
+    "id": "musr/object_placements/31",
+    "prompt_sha256": "ae18e04366e4311dad1f161915e89053fe818d701b828d5f42887546e506722f",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 3
+  },
+  {
+    "id": "musr/team_allocation/74",
+    "prompt_sha256": "91866edeabb92d48264c8434d565f19565b740d77553502e85471577eafbd0ba",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 3
+  },
+  {
+    "id": "musr/team_allocation/185",
+    "prompt_sha256": "3685eec397275ce4a768c1cfa7fa76a87af0976f02ec522ee29a650824c56cd9",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 3
+  },
+  {
+    "id": "musr/team_allocation/165",
+    "prompt_sha256": "7ba87c09e8b707aef86e3a49324883bb6b63566fdf51448709698526ba8418b9",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 3
+  },
+  {
+    "id": "musr/team_allocation/2",
+    "prompt_sha256": "49605a0529afd23c49f693ddac44395b1eedea514296d868b5b76764da446bb2",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 3
+  }
+]

@@ -1,0 +1,2564 @@
+{
+  "audit_passed": true,
+  "reconstructed_inputs": 3016,
+  "verified_generated_tokens": 447371,
+  "outputs": 22840,
+  "statuses": {
+    "complete": 22839,
+    "provider_failed": 1
+  },
+  "model_forwards": 447386,
+  "zero_pairs": 600,
+  "paid_attempts": 4506,
+  "unknown_calls": 1,
+  "known_input_tokens": 10641225,
+  "charged_tokens": 10706761,
+  "development_policies": 70,
+  "selected": {
+    "policy": {
+      "heads": [
+        [
+          34,
+          4
+        ],
+        [
+          38,
+          11
+        ],
+        [
+          37,
+          14
+        ],
+        [
+          30,
+          4
+        ],
+        [
+          23,
+          8
+        ],
+        [
+          19,
+          6
+        ],
+        [
+          21,
+          13
+        ],
+        [
+          19,
+          11
+        ],
+        [
+          19,
+          15
+        ],
+        [
+          21,
+          14
+        ],
+        [
+          29,
+          10
+        ],
+        [
+          20,
+          11
+        ]
+      ],
+      "weights": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        0.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "mapping": "threshold",
+      "threshold": 0.65,
+      "id": "9d95f9c8fcd07adc"
+    },
+    "accuracy": 0.7291666666666666,
+    "mean_logprob": -2.072609194630559,
+    "completed": 96,
+    "cases": 96
+  },
+  "panels": {
+    "original/constrained": {
+      "arms": {
+        "lexical": {
+          "n": 600,
+          "complete": 600,
+          "accuracy": 0.545,
+          "em": 0.545,
+          "f1": 0.545,
+          "parsed": 600,
+          "groups": {
+            "answerable": {
+              "n": 300,
+              "accuracy": 0.18
+            },
+            "missing": {
+              "n": 300,
+              "accuracy": 0.91
+            }
+          },
+          "model_seconds": 30.756270453997104,
+          "model_forwards": 600,
+          "generated_tokens": 600,
+          "deployed_jev_seconds": 0,
+          "per_depth": {
+            "1": {
+              "n": 100,
+              "accuracy": 0.97
+            },
+            "2": {
+              "n": 100,
+              "accuracy": 0.48
+            },
+            "3": {
+              "n": 100,
+              "accuracy": 0.46
+            },
+            "4": {
+              "n": 100,
+              "accuracy": 0.48
+            },
+            "5": {
+              "n": 100,
+              "accuracy": 0.45
+            },
+            "6": {
+              "n": 100,
+              "accuracy": 0.43
+            }
+          }
+        },
+        "native": {
+          "n": 600,
+          "complete": 600,
+          "accuracy": 0.30833333333333335,
+          "em": 0.30833333333333335,
+          "f1": 0.30833333333333335,
+          "parsed": 600,
+          "groups": {
+            "answerable": {
+              "n": 300,
+              "accuracy": 0.1
+            },
+            "missing": {
+              "n": 300,
+              "accuracy": 0.5166666666666667
+            }
+          },
+          "model_seconds": 28.52535543800468,
+          "model_forwards": 600,
+          "generated_tokens": 600,
+          "deployed_jev_seconds": 0,
+          "per_depth": {
+            "1": {
+              "n": 100,
+              "accuracy": 0.56
+            },
+            "2": {
+              "n": 100,
+              "accuracy": 0.34
+            },
+            "3": {
+              "n": 100,
+              "accuracy": 0.2
+            },
+            "4": {
+              "n": 100,
+              "accuracy": 0.28
+            },
+            "5": {
+              "n": 100,
+              "accuracy": 0.22
+            },
+            "6": {
+              "n": 100,
+              "accuracy": 0.25
+            }
+          }
+        },
+        "r15": {
+          "n": 600,
+          "complete": 600,
+          "accuracy": 0.59,
+          "em": 0.59,
+          "f1": 0.59,
+          "parsed": 600,
+          "groups": {
+            "answerable": {
+              "n": 300,
+              "accuracy": 0.4166666666666667
+            },
+            "missing": {
+              "n": 300,
+              "accuracy": 0.7633333333333333
+            }
+          },
+          "model_seconds": 31.257816185993534,
+          "model_forwards": 600,
+          "generated_tokens": 600,
+          "deployed_jev_seconds": 348.9200278410035,
+          "per_depth": {
+            "1": {
+              "n": 100,
+              "accuracy": 0.97
+            },
+            "2": {
+              "n": 100,
+              "accuracy": 0.67
+            },
+            "3": {
+              "n": 100,
+              "accuracy": 0.5
+            },
+            "4": {
+              "n": 100,
+              "accuracy": 0.47
+            },
+            "5": {
+              "n": 100,
+              "accuracy": 0.43
+            },
+            "6": {
+              "n": 100,
+              "accuracy": 0.5
+            }
+          }
+        },
+        "shuffled": {
+          "n": 600,
+          "complete": 600,
+          "accuracy": 0.43333333333333335,
+          "em": 0.43333333333333335,
+          "f1": 0.43333333333333335,
+          "parsed": 600,
+          "groups": {
+            "answerable": {
+              "n": 300,
+              "accuracy": 0.19
+            },
+            "missing": {
+              "n": 300,
+              "accuracy": 0.6766666666666666
+            }
+          },
+          "model_seconds": 30.71918660599954,
+          "model_forwards": 600,
+          "generated_tokens": 600,
+          "deployed_jev_seconds": 348.9200278410035,
+          "per_depth": {
+            "1": {
+              "n": 100,
+              "accuracy": 0.61
+            },
+            "2": {
+              "n": 100,
+              "accuracy": 0.44
+            },
+            "3": {
+              "n": 100,
+              "accuracy": 0.35
+            },
+            "4": {
+              "n": 100,
+              "accuracy": 0.36
+            },
+            "5": {
+              "n": 100,
+              "accuracy": 0.39
+            },
+            "6": {
+              "n": 100,
+              "accuracy": 0.45
+            }
+          }
+        },
+        "tuned": {
+          "n": 600,
+          "complete": 600,
+          "accuracy": 0.72,
+          "em": 0.72,
+          "f1": 0.72,
+          "parsed": 600,
+          "groups": {
+            "answerable": {
+              "n": 300,
+              "accuracy": 0.5433333333333333
+            },
+            "missing": {
+              "n": 300,
+              "accuracy": 0.8966666666666666
+            }
+          },
+          "model_seconds": 30.726646784994273,
+          "model_forwards": 600,
+          "generated_tokens": 600,
+          "deployed_jev_seconds": 348.9200278410035,
+          "per_depth": {
+            "1": {
+              "n": 100,
+              "accuracy": 0.97
+            },
+            "2": {
+              "n": 100,
+              "accuracy": 0.87
+            },
+            "3": {
+              "n": 100,
+              "accuracy": 0.74
+            },
+            "4": {
+              "n": 100,
+              "accuracy": 0.67
+            },
+            "5": {
+              "n": 100,
+              "accuracy": 0.54
+            },
+            "6": {
+              "n": 100,
+              "accuracy": 0.53
+            }
+          }
+        },
+        "zero": {
+          "n": 600,
+          "complete": 600,
+          "accuracy": 0.30833333333333335,
+          "em": 0.30833333333333335,
+          "f1": 0.30833333333333335,
+          "parsed": 600,
+          "groups": {
+            "answerable": {
+              "n": 300,
+              "accuracy": 0.1
+            },
+            "missing": {
+              "n": 300,
+              "accuracy": 0.5166666666666667
+            }
+          },
+          "model_seconds": 28.53410692399052,
+          "model_forwards": 600,
+          "generated_tokens": 600,
+          "deployed_jev_seconds": 0,
+          "per_depth": {
+            "1": {
+              "n": 100,
+              "accuracy": 0.56
+            },
+            "2": {
+              "n": 100,
+              "accuracy": 0.34
+            },
+            "3": {
+              "n": 100,
+              "accuracy": 0.2
+            },
+            "4": {
+              "n": 100,
+              "accuracy": 0.28
+            },
+            "5": {
+              "n": 100,
+              "accuracy": 0.22
+            },
+            "6": {
+              "n": 100,
+              "accuracy": 0.25
+            }
+          }
+        }
+      },
+      "main": "tuned",
+      "contrasts": {
+        "lexical": {
+          "difference": 0.175,
+          "interval": [
+            0.13333333333333333,
+            0.21666666666666667
+          ],
+          "level": 0.95,
+          "units": 300,
+          "wins": 83,
+          "losses": 12,
+          "ties": 205,
+          "metric": "correct",
+          "confirmatory": false
+        },
+        "native": {
+          "difference": 0.4116666666666667,
+          "interval": [
+            0.365,
+            0.4583333333333333
+          ],
+          "level": 0.95,
+          "units": 300,
+          "wins": 183,
+          "losses": 8,
+          "ties": 109,
+          "metric": "correct",
+          "confirmatory": false
+        },
+        "r15": {
+          "difference": 0.13,
+          "interval": [
+            0.08666666666666667,
+            0.1761250000000018
+          ],
+          "level": 0.9833333333333333,
+          "units": 300,
+          "wins": 82,
+          "losses": 18,
+          "ties": 200,
+          "metric": "correct",
+          "confirmatory": true
+        },
+        "shuffled": {
+          "difference": 0.2866666666666667,
+          "interval": [
+            0.24,
+            0.33166666666666667
+          ],
+          "level": 0.95,
+          "units": 300,
+          "wins": 141,
+          "losses": 12,
+          "ties": 147,
+          "metric": "correct",
+          "confirmatory": false
+        },
+        "zero": {
+          "difference": 0.4116666666666667,
+          "interval": [
+            0.365,
+            0.4583333333333333
+          ],
+          "level": 0.95,
+          "units": 300,
+          "wins": 183,
+          "losses": 8,
+          "ties": 109,
+          "metric": "correct",
+          "confirmatory": false
+        }
+      }
+    },
+    "original/open_explicit": {
+      "arms": {
+        "lexical": {
+          "n": 600,
+          "complete": 600,
+          "accuracy": 0.17166666666666666,
+          "em": 0.0,
+          "f1": 0.030669300671235654,
+          "parsed": 237,
+          "groups": {
+            "answerable": {
+              "n": 300,
+              "accuracy": 0.25
+            },
+            "missing": {
+              "n": 300,
+              "accuracy": 0.09333333333333334
+            }
+          },
+          "model_seconds": 321.65633278799714,
+          "model_forwards": 10131,
+          "generated_tokens": 10131,
+          "deployed_jev_seconds": 0,
+          "per_depth": {
+            "1": {
+              "n": 100,
+              "accuracy": 0.61
+            },
+            "2": {
+              "n": 100,
+              "accuracy": 0.15
+            },
+            "3": {
+              "n": 100,
+              "accuracy": 0.06
+            },
+            "4": {
+              "n": 100,
+              "accuracy": 0.09
+            },
+            "5": {
+              "n": 100,
+              "accuracy": 0.07
+            },
+            "6": {
+              "n": 100,
+              "accuracy": 0.05
+            }
+          }
+        },
+        "native": {
+          "n": 600,
+          "complete": 600,
+          "accuracy": 0.2733333333333333,
+          "em": 0.0,
+          "f1": 0.0677701654926887,
+          "parsed": 462,
+          "groups": {
+            "answerable": {
+              "n": 300,
+              "accuracy": 0.4533333333333333
+            },
+            "missing": {
+              "n": 300,
+              "accuracy": 0.09333333333333334
+            }
+          },
+          "model_seconds": 238.89499980497703,
+          "model_forwards": 8364,
+          "generated_tokens": 8364,
+          "deployed_jev_seconds": 0,
+          "per_depth": {
+            "1": {
+              "n": 100,
+              "accuracy": 0.64
+            },
+            "2": {
+              "n": 100,
+              "accuracy": 0.25
+            },
+            "3": {
+              "n": 100,
+              "accuracy": 0.19
+            },
+            "4": {
+              "n": 100,
+              "accuracy": 0.22
+            },
+            "5": {
+              "n": 100,
+              "accuracy": 0.2
+            },
+            "6": {
+              "n": 100,
+              "accuracy": 0.14
+            }
+          }
+        },
+        "r15": {
+          "n": 600,
+          "complete": 600,
+          "accuracy": 0.33666666666666667,
+          "em": 0.0,
+          "f1": 0.08537706288093284,
+          "parsed": 355,
+          "groups": {
+            "answerable": {
+              "n": 300,
+              "accuracy": 0.58
+            },
+            "missing": {
+              "n": 300,
+              "accuracy": 0.09333333333333334
+            }
+          },
+          "model_seconds": 271.23098350500095,
+          "model_forwards": 8458,
+          "generated_tokens": 8458,
+          "deployed_jev_seconds": 348.9200278410035,
+          "per_depth": {
+            "1": {
+              "n": 100,
+              "accuracy": 0.59
+            },
+            "2": {
+              "n": 100,
+              "accuracy": 0.35
+            },
+            "3": {
+              "n": 100,
+              "accuracy": 0.36
+            },
+            "4": {
+              "n": 100,
+              "accuracy": 0.28
+            },
+            "5": {
+              "n": 100,
+              "accuracy": 0.25
+            },
+            "6": {
+              "n": 100,
+              "accuracy": 0.19
+            }
+          }
+        },
+        "shuffled": {
+          "n": 600,
+          "complete": 600,
+          "accuracy": 0.15666666666666668,
+          "em": 0.0,
+          "f1": 0.02834973305561541,
+          "parsed": 321,
+          "groups": {
+            "answerable": {
+              "n": 300,
+              "accuracy": 0.22
+            },
+            "missing": {
+              "n": 300,
+              "accuracy": 0.09333333333333334
+            }
+          },
+          "model_seconds": 331.81097445802584,
+          "model_forwards": 10434,
+          "generated_tokens": 10434,
+          "deployed_jev_seconds": 348.9200278410035,
+          "per_depth": {
+            "1": {
+              "n": 100,
+              "accuracy": 0.39
+            },
+            "2": {
+              "n": 100,
+              "accuracy": 0.07
+            },
+            "3": {
+              "n": 100,
+              "accuracy": 0.11
+            },
+            "4": {
+              "n": 100,
+              "accuracy": 0.15
+            },
+            "5": {
+              "n": 100,
+              "accuracy": 0.12
+            },
+            "6": {
+              "n": 100,
+              "accuracy": 0.1
+            }
+          }
+        },
+        "tuned": {
+          "n": 600,
+          "complete": 600,
+          "accuracy": 0.27166666666666667,
+          "em": 0.0,
+          "f1": 0.06390940350499173,
+          "parsed": 224,
+          "groups": {
+            "answerable": {
+              "n": 300,
+              "accuracy": 0.45
+            },
+            "missing": {
+              "n": 300,
+              "accuracy": 0.09333333333333334
+            }
+          },
+          "model_seconds": 276.4797632059731,
+          "model_forwards": 8654,
+          "generated_tokens": 8654,
+          "deployed_jev_seconds": 348.9200278410035,
+          "per_depth": {
+            "1": {
+              "n": 100,
+              "accuracy": 0.6
+            },
+            "2": {
+              "n": 100,
+              "accuracy": 0.27
+            },
+            "3": {
+              "n": 100,
+              "accuracy": 0.31
+            },
+            "4": {
+              "n": 100,
+              "accuracy": 0.22
+            },
+            "5": {
+              "n": 100,
+              "accuracy": 0.14
+            },
+            "6": {
+              "n": 100,
+              "accuracy": 0.09
+            }
+          }
+        }
+      },
+      "main": "tuned",
+      "contrasts": {
+        "lexical": {
+          "difference": 0.1,
+          "interval": [
+            0.07,
+            0.13166666666666665
+          ],
+          "level": 0.95,
+          "units": 300,
+          "wins": 60,
+          "losses": 11,
+          "ties": 229,
+          "metric": "correct",
+          "confirmatory": false
+        },
+        "native": {
+          "difference": -0.0016666666666666668,
+          "interval": [
+            -0.03666666666666667,
+            0.03333333333333333
+          ],
+          "level": 0.95,
+          "units": 300,
+          "wins": 43,
+          "losses": 43,
+          "ties": 214,
+          "metric": "correct",
+          "confirmatory": false
+        },
+        "r15": {
+          "difference": -0.065,
+          "interval": [
+            -0.09333333333333334,
+            -0.03666666666666667
+          ],
+          "level": 0.95,
+          "units": 300,
+          "wins": 12,
+          "losses": 46,
+          "ties": 242,
+          "metric": "correct",
+          "confirmatory": false
+        },
+        "shuffled": {
+          "difference": 0.115,
+          "interval": [
+            0.07833333333333334,
+            0.15166666666666667
+          ],
+          "level": 0.95,
+          "units": 300,
+          "wins": 73,
+          "losses": 19,
+          "ties": 208,
+          "metric": "correct",
+          "confirmatory": false
+        }
+      }
+    },
+    "original/open_neutral": {
+      "arms": {
+        "lexical": {
+          "n": 600,
+          "complete": 600,
+          "accuracy": 0.11333333333333333,
+          "em": 0.0,
+          "f1": 0.023970439146909734,
+          "parsed": 190,
+          "groups": {
+            "answerable": {
+              "n": 300,
+              "accuracy": 0.2
+            },
+            "missing": {
+              "n": 300,
+              "accuracy": 0.02666666666666667
+            }
+          },
+          "model_seconds": 311.221304749012,
+          "model_forwards": 9865,
+          "generated_tokens": 9865,
+          "deployed_jev_seconds": 0,
+          "per_depth": {
+            "1": {
+              "n": 100,
+              "accuracy": 0.41
+            },
+            "2": {
+              "n": 100,
+              "accuracy": 0.11
+            },
+            "3": {
+              "n": 100,
+              "accuracy": 0.04
+            },
+            "4": {
+              "n": 100,
+              "accuracy": 0.03
+            },
+            "5": {
+              "n": 100,
+              "accuracy": 0.05
+            },
+            "6": {
+              "n": 100,
+              "accuracy": 0.04
+            }
+          }
+        },
+        "native": {
+          "n": 600,
+          "complete": 600,
+          "accuracy": 0.26166666666666666,
+          "em": 0.0,
+          "f1": 0.05922397441166791,
+          "parsed": 490,
+          "groups": {
+            "answerable": {
+              "n": 300,
+              "accuracy": 0.49666666666666665
+            },
+            "missing": {
+              "n": 300,
+              "accuracy": 0.02666666666666667
+            }
+          },
+          "model_seconds": 282.2172498650227,
+          "model_forwards": 9986,
+          "generated_tokens": 9986,
+          "deployed_jev_seconds": 0,
+          "per_depth": {
+            "1": {
+              "n": 100,
+              "accuracy": 0.46
+            },
+            "2": {
+              "n": 100,
+              "accuracy": 0.29
+            },
+            "3": {
+              "n": 100,
+              "accuracy": 0.22
+            },
+            "4": {
+              "n": 100,
+              "accuracy": 0.2
+            },
+            "5": {
+              "n": 100,
+              "accuracy": 0.2
+            },
+            "6": {
+              "n": 100,
+              "accuracy": 0.2
+            }
+          }
+        },
+        "r15": {
+          "n": 600,
+          "complete": 600,
+          "accuracy": 0.2816666666666667,
+          "em": 0.0,
+          "f1": 0.0660676523195873,
+          "parsed": 327,
+          "groups": {
+            "answerable": {
+              "n": 300,
+              "accuracy": 0.54
+            },
+            "missing": {
+              "n": 300,
+              "accuracy": 0.023333333333333334
+            }
+          },
+          "model_seconds": 301.3448476889739,
+          "model_forwards": 9458,
+          "generated_tokens": 9458,
+          "deployed_jev_seconds": 348.9200278410035,
+          "per_depth": {
+            "1": {
+              "n": 100,
+              "accuracy": 0.41
+            },
+            "2": {
+              "n": 100,
+              "accuracy": 0.29
+            },
+            "3": {
+              "n": 100,
+              "accuracy": 0.3
+            },
+            "4": {
+              "n": 100,
+              "accuracy": 0.26
+            },
+            "5": {
+              "n": 100,
+              "accuracy": 0.22
+            },
+            "6": {
+              "n": 100,
+              "accuracy": 0.21
+            }
+          }
+        },
+        "shuffled": {
+          "n": 600,
+          "complete": 600,
+          "accuracy": 0.115,
+          "em": 0.0,
+          "f1": 0.020809132717414452,
+          "parsed": 287,
+          "groups": {
+            "answerable": {
+              "n": 300,
+              "accuracy": 0.20333333333333334
+            },
+            "missing": {
+              "n": 300,
+              "accuracy": 0.02666666666666667
+            }
+          },
+          "model_seconds": 351.54794985498756,
+          "model_forwards": 11119,
+          "generated_tokens": 11119,
+          "deployed_jev_seconds": 348.9200278410035,
+          "per_depth": {
+            "1": {
+              "n": 100,
+              "accuracy": 0.21
+            },
+            "2": {
+              "n": 100,
+              "accuracy": 0.06
+            },
+            "3": {
+              "n": 100,
+              "accuracy": 0.08
+            },
+            "4": {
+              "n": 100,
+              "accuracy": 0.15
+            },
+            "5": {
+              "n": 100,
+              "accuracy": 0.1
+            },
+            "6": {
+              "n": 100,
+              "accuracy": 0.09
+            }
+          }
+        },
+        "tuned": {
+          "n": 600,
+          "complete": 600,
+          "accuracy": 0.215,
+          "em": 0.0,
+          "f1": 0.04781947484346865,
+          "parsed": 202,
+          "groups": {
+            "answerable": {
+              "n": 300,
+              "accuracy": 0.4033333333333333
+            },
+            "missing": {
+              "n": 300,
+              "accuracy": 0.02666666666666667
+            }
+          },
+          "model_seconds": 302.70513307101896,
+          "model_forwards": 9557,
+          "generated_tokens": 9557,
+          "deployed_jev_seconds": 348.9200278410035,
+          "per_depth": {
+            "1": {
+              "n": 100,
+              "accuracy": 0.41
+            },
+            "2": {
+              "n": 100,
+              "accuracy": 0.23
+            },
+            "3": {
+              "n": 100,
+              "accuracy": 0.26
+            },
+            "4": {
+              "n": 100,
+              "accuracy": 0.19
+            },
+            "5": {
+              "n": 100,
+              "accuracy": 0.11
+            },
+            "6": {
+              "n": 100,
+              "accuracy": 0.09
+            }
+          }
+        }
+      },
+      "main": "tuned",
+      "contrasts": {
+        "lexical": {
+          "difference": 0.10166666666666667,
+          "interval": [
+            0.07333333333333333,
+            0.13
+          ],
+          "level": 0.95,
+          "units": 300,
+          "wins": 58,
+          "losses": 6,
+          "ties": 236,
+          "metric": "correct",
+          "confirmatory": false
+        },
+        "native": {
+          "difference": -0.04666666666666667,
+          "interval": [
+            -0.08166666666666667,
+            -0.011666666666666667
+          ],
+          "level": 0.95,
+          "units": 300,
+          "wins": 30,
+          "losses": 55,
+          "ties": 215,
+          "metric": "correct",
+          "confirmatory": false
+        },
+        "r15": {
+          "difference": -0.06666666666666667,
+          "interval": [
+            -0.09333333333333334,
+            -0.04
+          ],
+          "level": 0.95,
+          "units": 300,
+          "wins": 13,
+          "losses": 49,
+          "ties": 238,
+          "metric": "correct",
+          "confirmatory": false
+        },
+        "shuffled": {
+          "difference": 0.1,
+          "interval": [
+            0.06666666666666667,
+            0.135
+          ],
+          "level": 0.95,
+          "units": 300,
+          "wins": 67,
+          "losses": 18,
+          "ties": 215,
+          "metric": "correct",
+          "confirmatory": false
+        }
+      }
+    },
+    "original/staged": {
+      "arms": {
+        "dynamic": {
+          "n": 240,
+          "complete": 239,
+          "accuracy": 0.3458333333333333,
+          "em": 0.016666666666666666,
+          "f1": 0.10903264083411142,
+          "parsed": 125,
+          "groups": {
+            "answerable": {
+              "n": 120,
+              "accuracy": 0.6666666666666666
+            },
+            "missing": {
+              "n": 120,
+              "accuracy": 0.025
+            }
+          },
+          "model_seconds": 428.8883455960208,
+          "model_forwards": 13709,
+          "generated_tokens": 13709,
+          "deployed_jev_seconds": 337.1289619739898,
+          "per_depth": {
+            "1": {
+              "n": 40,
+              "accuracy": 0.425
+            },
+            "2": {
+              "n": 40,
+              "accuracy": 0.5
+            },
+            "3": {
+              "n": 40,
+              "accuracy": 0.425
+            },
+            "4": {
+              "n": 40,
+              "accuracy": 0.3
+            },
+            "5": {
+              "n": 40,
+              "accuracy": 0.25
+            },
+            "6": {
+              "n": 40,
+              "accuracy": 0.175
+            }
+          }
+        },
+        "lexical_dynamic": {
+          "n": 240,
+          "complete": 240,
+          "accuracy": 0.1875,
+          "em": 0.016666666666666666,
+          "f1": 0.07172453703703703,
+          "parsed": 110,
+          "groups": {
+            "answerable": {
+              "n": 120,
+              "accuracy": 0.36666666666666664
+            },
+            "missing": {
+              "n": 120,
+              "accuracy": 0.008333333333333333
+            }
+          },
+          "model_seconds": 429.32102856400957,
+          "model_forwards": 13770,
+          "generated_tokens": 13770,
+          "deployed_jev_seconds": 0,
+          "per_depth": {
+            "1": {
+              "n": 40,
+              "accuracy": 0.375
+            },
+            "2": {
+              "n": 40,
+              "accuracy": 0.4
+            },
+            "3": {
+              "n": 40,
+              "accuracy": 0.125
+            },
+            "4": {
+              "n": 40,
+              "accuracy": 0.0
+            },
+            "5": {
+              "n": 40,
+              "accuracy": 0.125
+            },
+            "6": {
+              "n": 40,
+              "accuracy": 0.1
+            }
+          }
+        },
+        "native": {
+          "n": 240,
+          "complete": 240,
+          "accuracy": 0.24166666666666667,
+          "em": 0.0,
+          "f1": 0.08159722222222222,
+          "parsed": 165,
+          "groups": {
+            "answerable": {
+              "n": 120,
+              "accuracy": 0.45
+            },
+            "missing": {
+              "n": 120,
+              "accuracy": 0.03333333333333333
+            }
+          },
+          "model_seconds": 346.48752150000246,
+          "model_forwards": 12482,
+          "generated_tokens": 12482,
+          "deployed_jev_seconds": 0,
+          "per_depth": {
+            "1": {
+              "n": 40,
+              "accuracy": 0.45
+            },
+            "2": {
+              "n": 40,
+              "accuracy": 0.275
+            },
+            "3": {
+              "n": 40,
+              "accuracy": 0.2
+            },
+            "4": {
+              "n": 40,
+              "accuracy": 0.125
+            },
+            "5": {
+              "n": 40,
+              "accuracy": 0.225
+            },
+            "6": {
+              "n": 40,
+              "accuracy": 0.175
+            }
+          }
+        },
+        "r15": {
+          "n": 240,
+          "complete": 240,
+          "accuracy": 0.3625,
+          "em": 0.004166666666666667,
+          "f1": 0.11693364845938374,
+          "parsed": 166,
+          "groups": {
+            "answerable": {
+              "n": 120,
+              "accuracy": 0.6916666666666667
+            },
+            "missing": {
+              "n": 120,
+              "accuracy": 0.03333333333333333
+            }
+          },
+          "model_seconds": 396.1263061299767,
+          "model_forwards": 12640,
+          "generated_tokens": 12640,
+          "deployed_jev_seconds": 121.00376481899548,
+          "per_depth": {
+            "1": {
+              "n": 40,
+              "accuracy": 0.4
+            },
+            "2": {
+              "n": 40,
+              "accuracy": 0.45
+            },
+            "3": {
+              "n": 40,
+              "accuracy": 0.4
+            },
+            "4": {
+              "n": 40,
+              "accuracy": 0.325
+            },
+            "5": {
+              "n": 40,
+              "accuracy": 0.35
+            },
+            "6": {
+              "n": 40,
+              "accuracy": 0.25
+            }
+          }
+        },
+        "shuffled_dynamic": {
+          "n": 240,
+          "complete": 240,
+          "accuracy": 0.17916666666666667,
+          "em": 0.004166666666666667,
+          "f1": 0.04829365079365079,
+          "parsed": 142,
+          "groups": {
+            "answerable": {
+              "n": 120,
+              "accuracy": 0.3333333333333333
+            },
+            "missing": {
+              "n": 120,
+              "accuracy": 0.025
+            }
+          },
+          "model_seconds": 448.63833595296046,
+          "model_forwards": 14351,
+          "generated_tokens": 14351,
+          "deployed_jev_seconds": 335.76446560698514,
+          "per_depth": {
+            "1": {
+              "n": 40,
+              "accuracy": 0.2
+            },
+            "2": {
+              "n": 40,
+              "accuracy": 0.25
+            },
+            "3": {
+              "n": 40,
+              "accuracy": 0.2
+            },
+            "4": {
+              "n": 40,
+              "accuracy": 0.125
+            },
+            "5": {
+              "n": 40,
+              "accuracy": 0.1
+            },
+            "6": {
+              "n": 40,
+              "accuracy": 0.2
+            }
+          }
+        },
+        "tuned": {
+          "n": 240,
+          "complete": 240,
+          "accuracy": 0.3416666666666667,
+          "em": 0.016666666666666666,
+          "f1": 0.10761564347961407,
+          "parsed": 125,
+          "groups": {
+            "answerable": {
+              "n": 120,
+              "accuracy": 0.6583333333333333
+            },
+            "missing": {
+              "n": 120,
+              "accuracy": 0.025
+            }
+          },
+          "model_seconds": 429.86276623301546,
+          "model_forwards": 13798,
+          "generated_tokens": 13798,
+          "deployed_jev_seconds": 121.00376481899548,
+          "per_depth": {
+            "1": {
+              "n": 40,
+              "accuracy": 0.425
+            },
+            "2": {
+              "n": 40,
+              "accuracy": 0.5
+            },
+            "3": {
+              "n": 40,
+              "accuracy": 0.45
+            },
+            "4": {
+              "n": 40,
+              "accuracy": 0.25
+            },
+            "5": {
+              "n": 40,
+              "accuracy": 0.25
+            },
+            "6": {
+              "n": 40,
+              "accuracy": 0.175
+            }
+          }
+        }
+      },
+      "main": "dynamic",
+      "contrasts": {
+        "lexical_dynamic": {
+          "difference": 0.15833333333333333,
+          "interval": [
+            0.1,
+            0.22083333333333333
+          ],
+          "level": 0.95,
+          "units": 120,
+          "wins": 28,
+          "losses": 2,
+          "ties": 90,
+          "metric": "correct",
+          "confirmatory": false
+        },
+        "native": {
+          "difference": 0.10416666666666667,
+          "interval": [
+            0.04583333333333333,
+            0.16666666666666666
+          ],
+          "level": 0.95,
+          "units": 120,
+          "wins": 31,
+          "losses": 9,
+          "ties": 80,
+          "metric": "correct",
+          "confirmatory": false
+        },
+        "r15": {
+          "difference": -0.016666666666666666,
+          "interval": [
+            -0.06666666666666667,
+            0.03333333333333333
+          ],
+          "level": 0.95,
+          "units": 120,
+          "wins": 13,
+          "losses": 17,
+          "ties": 90,
+          "metric": "correct",
+          "confirmatory": false
+        },
+        "shuffled_dynamic": {
+          "difference": 0.16666666666666666,
+          "interval": [
+            0.10416666666666667,
+            0.23333333333333334
+          ],
+          "level": 0.95,
+          "units": 120,
+          "wins": 33,
+          "losses": 5,
+          "ties": 82,
+          "metric": "correct",
+          "confirmatory": false
+        },
+        "tuned": {
+          "difference": 0.004166666666666667,
+          "interval": [
+            -0.03333333333333333,
+            0.041666666666666664
+          ],
+          "level": 0.9833333333333333,
+          "units": 120,
+          "wins": 7,
+          "losses": 6,
+          "ties": 107,
+          "metric": "correct",
+          "confirmatory": true
+        }
+      }
+    },
+    "paraphrase/staged": {
+      "arms": {
+        "dynamic": {
+          "n": 240,
+          "complete": 240,
+          "accuracy": 0.4166666666666667,
+          "em": 0.0,
+          "f1": 0.10041632457580733,
+          "parsed": 150,
+          "groups": {
+            "answerable": {
+              "n": 120,
+              "accuracy": 0.7916666666666666
+            },
+            "missing": {
+              "n": 120,
+              "accuracy": 0.041666666666666664
+            }
+          },
+          "model_seconds": 490.5184066169604,
+          "model_forwards": 15593,
+          "generated_tokens": 15593,
+          "deployed_jev_seconds": 292.7040711779691,
+          "per_depth": {
+            "1": {
+              "n": 40,
+              "accuracy": 0.5
+            },
+            "2": {
+              "n": 40,
+              "accuracy": 0.5
+            },
+            "3": {
+              "n": 40,
+              "accuracy": 0.45
+            },
+            "4": {
+              "n": 40,
+              "accuracy": 0.45
+            },
+            "5": {
+              "n": 40,
+              "accuracy": 0.325
+            },
+            "6": {
+              "n": 40,
+              "accuracy": 0.275
+            }
+          }
+        },
+        "lexical_dynamic": {
+          "n": 240,
+          "complete": 240,
+          "accuracy": 0.25833333333333336,
+          "em": 0.004166666666666667,
+          "f1": 0.06269145685093962,
+          "parsed": 118,
+          "groups": {
+            "answerable": {
+              "n": 120,
+              "accuracy": 0.475
+            },
+            "missing": {
+              "n": 120,
+              "accuracy": 0.041666666666666664
+            }
+          },
+          "model_seconds": 481.6090628931088,
+          "model_forwards": 15377,
+          "generated_tokens": 15377,
+          "deployed_jev_seconds": 0,
+          "per_depth": {
+            "1": {
+              "n": 40,
+              "accuracy": 0.525
+            },
+            "2": {
+              "n": 40,
+              "accuracy": 0.425
+            },
+            "3": {
+              "n": 40,
+              "accuracy": 0.325
+            },
+            "4": {
+              "n": 40,
+              "accuracy": 0.125
+            },
+            "5": {
+              "n": 40,
+              "accuracy": 0.05
+            },
+            "6": {
+              "n": 40,
+              "accuracy": 0.1
+            }
+          }
+        },
+        "native": {
+          "n": 240,
+          "complete": 240,
+          "accuracy": 0.2625,
+          "em": 0.008333333333333333,
+          "f1": 0.06458333333333334,
+          "parsed": 175,
+          "groups": {
+            "answerable": {
+              "n": 120,
+              "accuracy": 0.4666666666666667
+            },
+            "missing": {
+              "n": 120,
+              "accuracy": 0.058333333333333334
+            }
+          },
+          "model_seconds": 396.54012339596375,
+          "model_forwards": 14226,
+          "generated_tokens": 14226,
+          "deployed_jev_seconds": 0,
+          "per_depth": {
+            "1": {
+              "n": 40,
+              "accuracy": 0.225
+            },
+            "2": {
+              "n": 40,
+              "accuracy": 0.25
+            },
+            "3": {
+              "n": 40,
+              "accuracy": 0.35
+            },
+            "4": {
+              "n": 40,
+              "accuracy": 0.275
+            },
+            "5": {
+              "n": 40,
+              "accuracy": 0.25
+            },
+            "6": {
+              "n": 40,
+              "accuracy": 0.225
+            }
+          }
+        },
+        "r15": {
+          "n": 240,
+          "complete": 240,
+          "accuracy": 0.37083333333333335,
+          "em": 0.016666666666666666,
+          "f1": 0.10418650793650792,
+          "parsed": 178,
+          "groups": {
+            "answerable": {
+              "n": 120,
+              "accuracy": 0.7166666666666667
+            },
+            "missing": {
+              "n": 120,
+              "accuracy": 0.025
+            }
+          },
+          "model_seconds": 457.09171973312186,
+          "model_forwards": 14418,
+          "generated_tokens": 14418,
+          "deployed_jev_seconds": 105.52359053900364,
+          "per_depth": {
+            "1": {
+              "n": 40,
+              "accuracy": 0.3
+            },
+            "2": {
+              "n": 40,
+              "accuracy": 0.425
+            },
+            "3": {
+              "n": 40,
+              "accuracy": 0.5
+            },
+            "4": {
+              "n": 40,
+              "accuracy": 0.4
+            },
+            "5": {
+              "n": 40,
+              "accuracy": 0.325
+            },
+            "6": {
+              "n": 40,
+              "accuracy": 0.275
+            }
+          }
+        },
+        "shuffled_dynamic": {
+          "n": 240,
+          "complete": 240,
+          "accuracy": 0.2,
+          "em": 0.004166666666666667,
+          "f1": 0.056842801448064605,
+          "parsed": 172,
+          "groups": {
+            "answerable": {
+              "n": 120,
+              "accuracy": 0.36666666666666664
+            },
+            "missing": {
+              "n": 120,
+              "accuracy": 0.03333333333333333
+            }
+          },
+          "model_seconds": 491.9191903168603,
+          "model_forwards": 15619,
+          "generated_tokens": 15619,
+          "deployed_jev_seconds": 293.68325752698183,
+          "per_depth": {
+            "1": {
+              "n": 40,
+              "accuracy": 0.25
+            },
+            "2": {
+              "n": 40,
+              "accuracy": 0.225
+            },
+            "3": {
+              "n": 40,
+              "accuracy": 0.175
+            },
+            "4": {
+              "n": 40,
+              "accuracy": 0.15
+            },
+            "5": {
+              "n": 40,
+              "accuracy": 0.175
+            },
+            "6": {
+              "n": 40,
+              "accuracy": 0.225
+            }
+          }
+        },
+        "tuned": {
+          "n": 240,
+          "complete": 240,
+          "accuracy": 0.4166666666666667,
+          "em": 0.0,
+          "f1": 0.11098214285714286,
+          "parsed": 159,
+          "groups": {
+            "answerable": {
+              "n": 120,
+              "accuracy": 0.8
+            },
+            "missing": {
+              "n": 120,
+              "accuracy": 0.03333333333333333
+            }
+          },
+          "model_seconds": 486.03931557593296,
+          "model_forwards": 15424,
+          "generated_tokens": 15424,
+          "deployed_jev_seconds": 105.52359053900364,
+          "per_depth": {
+            "1": {
+              "n": 40,
+              "accuracy": 0.475
+            },
+            "2": {
+              "n": 40,
+              "accuracy": 0.475
+            },
+            "3": {
+              "n": 40,
+              "accuracy": 0.45
+            },
+            "4": {
+              "n": 40,
+              "accuracy": 0.475
+            },
+            "5": {
+              "n": 40,
+              "accuracy": 0.35
+            },
+            "6": {
+              "n": 40,
+              "accuracy": 0.275
+            }
+          }
+        }
+      },
+      "main": "dynamic",
+      "contrasts": {
+        "lexical_dynamic": {
+          "difference": 0.15833333333333333,
+          "interval": [
+            0.1,
+            0.21666666666666667
+          ],
+          "level": 0.95,
+          "units": 120,
+          "wins": 33,
+          "losses": 4,
+          "ties": 83,
+          "metric": "correct",
+          "confirmatory": false
+        },
+        "native": {
+          "difference": 0.15416666666666667,
+          "interval": [
+            0.09166666666666666,
+            0.21666666666666667
+          ],
+          "level": 0.95,
+          "units": 120,
+          "wins": 33,
+          "losses": 6,
+          "ties": 81,
+          "metric": "correct",
+          "confirmatory": false
+        },
+        "r15": {
+          "difference": 0.04583333333333333,
+          "interval": [
+            0.0,
+            0.09166666666666666
+          ],
+          "level": 0.95,
+          "units": 120,
+          "wins": 19,
+          "losses": 10,
+          "ties": 91,
+          "metric": "correct",
+          "confirmatory": false
+        },
+        "shuffled_dynamic": {
+          "difference": 0.21666666666666667,
+          "interval": [
+            0.15,
+            0.2833333333333333
+          ],
+          "level": 0.95,
+          "units": 120,
+          "wins": 42,
+          "losses": 5,
+          "ties": 73,
+          "metric": "correct",
+          "confirmatory": false
+        },
+        "tuned": {
+          "difference": 0.0,
+          "interval": [
+            -0.025,
+            0.025
+          ],
+          "level": 0.95,
+          "units": 120,
+          "wins": 4,
+          "losses": 4,
+          "ties": 112,
+          "metric": "correct",
+          "confirmatory": false
+        }
+      }
+    },
+    "dependency/staged": {
+      "arms": {
+        "dynamic": {
+          "n": 240,
+          "complete": 240,
+          "accuracy": 0.37916666666666665,
+          "em": 0.04583333333333333,
+          "f1": 0.1706655844155844,
+          "parsed": 136,
+          "groups": {
+            "answerable": {
+              "n": 120,
+              "accuracy": 0.7416666666666667
+            },
+            "missing": {
+              "n": 120,
+              "accuracy": 0.016666666666666666
+            }
+          },
+          "model_seconds": 402.8114446260515,
+          "model_forwards": 12811,
+          "generated_tokens": 12811,
+          "deployed_jev_seconds": 282.91737082701,
+          "per_depth": {
+            "1": {
+              "n": 40,
+              "accuracy": 0.425
+            },
+            "2": {
+              "n": 40,
+              "accuracy": 0.45
+            },
+            "3": {
+              "n": 40,
+              "accuracy": 0.425
+            },
+            "4": {
+              "n": 40,
+              "accuracy": 0.45
+            },
+            "5": {
+              "n": 40,
+              "accuracy": 0.35
+            },
+            "6": {
+              "n": 40,
+              "accuracy": 0.175
+            }
+          }
+        },
+        "lexical_dynamic": {
+          "n": 240,
+          "complete": 240,
+          "accuracy": 0.25833333333333336,
+          "em": 0.05416666666666667,
+          "f1": 0.1286643217893218,
+          "parsed": 102,
+          "groups": {
+            "answerable": {
+              "n": 120,
+              "accuracy": 0.48333333333333334
+            },
+            "missing": {
+              "n": 120,
+              "accuracy": 0.03333333333333333
+            }
+          },
+          "model_seconds": 391.10086113103443,
+          "model_forwards": 12479,
+          "generated_tokens": 12479,
+          "deployed_jev_seconds": 0,
+          "per_depth": {
+            "1": {
+              "n": 40,
+              "accuracy": 0.5
+            },
+            "2": {
+              "n": 40,
+              "accuracy": 0.45
+            },
+            "3": {
+              "n": 40,
+              "accuracy": 0.375
+            },
+            "4": {
+              "n": 40,
+              "accuracy": 0.075
+            },
+            "5": {
+              "n": 40,
+              "accuracy": 0.075
+            },
+            "6": {
+              "n": 40,
+              "accuracy": 0.075
+            }
+          }
+        },
+        "native": {
+          "n": 240,
+          "complete": 240,
+          "accuracy": 0.30833333333333335,
+          "em": 0.05416666666666667,
+          "f1": 0.12912397787397786,
+          "parsed": 150,
+          "groups": {
+            "answerable": {
+              "n": 120,
+              "accuracy": 0.575
+            },
+            "missing": {
+              "n": 120,
+              "accuracy": 0.041666666666666664
+            }
+          },
+          "model_seconds": 328.72037116499905,
+          "model_forwards": 11759,
+          "generated_tokens": 11759,
+          "deployed_jev_seconds": 0,
+          "per_depth": {
+            "1": {
+              "n": 40,
+              "accuracy": 0.45
+            },
+            "2": {
+              "n": 40,
+              "accuracy": 0.425
+            },
+            "3": {
+              "n": 40,
+              "accuracy": 0.425
+            },
+            "4": {
+              "n": 40,
+              "accuracy": 0.225
+            },
+            "5": {
+              "n": 40,
+              "accuracy": 0.225
+            },
+            "6": {
+              "n": 40,
+              "accuracy": 0.1
+            }
+          }
+        },
+        "r15": {
+          "n": 240,
+          "complete": 240,
+          "accuracy": 0.4,
+          "em": 0.05416666666666667,
+          "f1": 0.18042658730158728,
+          "parsed": 176,
+          "groups": {
+            "answerable": {
+              "n": 120,
+              "accuracy": 0.7833333333333333
+            },
+            "missing": {
+              "n": 120,
+              "accuracy": 0.016666666666666666
+            }
+          },
+          "model_seconds": 404.3568897579571,
+          "model_forwards": 12768,
+          "generated_tokens": 12768,
+          "deployed_jev_seconds": 111.38144578299034,
+          "per_depth": {
+            "1": {
+              "n": 40,
+              "accuracy": 0.45
+            },
+            "2": {
+              "n": 40,
+              "accuracy": 0.475
+            },
+            "3": {
+              "n": 40,
+              "accuracy": 0.45
+            },
+            "4": {
+              "n": 40,
+              "accuracy": 0.425
+            },
+            "5": {
+              "n": 40,
+              "accuracy": 0.35
+            },
+            "6": {
+              "n": 40,
+              "accuracy": 0.25
+            }
+          }
+        },
+        "shuffled_dynamic": {
+          "n": 240,
+          "complete": 240,
+          "accuracy": 0.17916666666666667,
+          "em": 0.004166666666666667,
+          "f1": 0.0648611111111111,
+          "parsed": 168,
+          "groups": {
+            "answerable": {
+              "n": 120,
+              "accuracy": 0.3416666666666667
+            },
+            "missing": {
+              "n": 120,
+              "accuracy": 0.016666666666666666
+            }
+          },
+          "model_seconds": 405.0182976479018,
+          "model_forwards": 12887,
+          "generated_tokens": 12887,
+          "deployed_jev_seconds": 290.408635717009,
+          "per_depth": {
+            "1": {
+              "n": 40,
+              "accuracy": 0.2
+            },
+            "2": {
+              "n": 40,
+              "accuracy": 0.225
+            },
+            "3": {
+              "n": 40,
+              "accuracy": 0.225
+            },
+            "4": {
+              "n": 40,
+              "accuracy": 0.1
+            },
+            "5": {
+              "n": 40,
+              "accuracy": 0.15
+            },
+            "6": {
+              "n": 40,
+              "accuracy": 0.175
+            }
+          }
+        },
+        "tuned": {
+          "n": 240,
+          "complete": 240,
+          "accuracy": 0.3958333333333333,
+          "em": 0.04583333333333333,
+          "f1": 0.17903499278499277,
+          "parsed": 154,
+          "groups": {
+            "answerable": {
+              "n": 120,
+              "accuracy": 0.775
+            },
+            "missing": {
+              "n": 120,
+              "accuracy": 0.016666666666666666
+            }
+          },
+          "model_seconds": 396.82097853402774,
+          "model_forwards": 12618,
+          "generated_tokens": 12618,
+          "deployed_jev_seconds": 111.38144578299034,
+          "per_depth": {
+            "1": {
+              "n": 40,
+              "accuracy": 0.425
+            },
+            "2": {
+              "n": 40,
+              "accuracy": 0.475
+            },
+            "3": {
+              "n": 40,
+              "accuracy": 0.425
+            },
+            "4": {
+              "n": 40,
+              "accuracy": 0.425
+            },
+            "5": {
+              "n": 40,
+              "accuracy": 0.325
+            },
+            "6": {
+              "n": 40,
+              "accuracy": 0.3
+            }
+          }
+        }
+      },
+      "main": "dynamic",
+      "contrasts": {
+        "lexical_dynamic": {
+          "difference": 0.12083333333333333,
+          "interval": [
+            0.0625,
+            0.18333333333333332
+          ],
+          "level": 0.95,
+          "units": 120,
+          "wins": 27,
+          "losses": 8,
+          "ties": 85,
+          "metric": "correct",
+          "confirmatory": false
+        },
+        "native": {
+          "difference": 0.07083333333333333,
+          "interval": [
+            0.004166666666666667,
+            0.13333333333333333
+          ],
+          "level": 0.95,
+          "units": 120,
+          "wins": 31,
+          "losses": 15,
+          "ties": 74,
+          "metric": "correct",
+          "confirmatory": false
+        },
+        "r15": {
+          "difference": -0.020833333333333332,
+          "interval": [
+            -0.06666666666666667,
+            0.025
+          ],
+          "level": 0.95,
+          "units": 120,
+          "wins": 9,
+          "losses": 13,
+          "ties": 98,
+          "metric": "correct",
+          "confirmatory": false
+        },
+        "shuffled_dynamic": {
+          "difference": 0.2,
+          "interval": [
+            0.13333333333333333,
+            0.2708333333333333
+          ],
+          "level": 0.95,
+          "units": 120,
+          "wins": 40,
+          "losses": 7,
+          "ties": 73,
+          "metric": "correct",
+          "confirmatory": false
+        },
+        "tuned": {
+          "difference": -0.016666666666666666,
+          "interval": [
+            -0.05416666666666667,
+            0.016666666666666666
+          ],
+          "level": 0.95,
+          "units": 120,
+          "wins": 4,
+          "losses": 7,
+          "ties": 109,
+          "metric": "correct",
+          "confirmatory": false
+        }
+      }
+    },
+    "hotpot/open_explicit": {
+      "arms": {
+        "lexical": {
+          "n": 200,
+          "complete": 200,
+          "accuracy": 0.1,
+          "em": 0.1,
+          "f1": 0.23832939209576712,
+          "parsed": 0,
+          "groups": {
+            "answerable": {
+              "n": 200,
+              "accuracy": 0.1
+            }
+          },
+          "model_seconds": 156.16468184197947,
+          "model_forwards": 3494,
+          "generated_tokens": 3494,
+          "deployed_jev_seconds": 0,
+          "per_depth": {
+            "2": {
+              "n": 200,
+              "accuracy": 0.1
+            }
+          }
+        },
+        "native": {
+          "n": 200,
+          "complete": 200,
+          "accuracy": 0.11,
+          "em": 0.11,
+          "f1": 0.2684635067630427,
+          "parsed": 0,
+          "groups": {
+            "answerable": {
+              "n": 200,
+              "accuracy": 0.11
+            }
+          },
+          "model_seconds": 144.7762039739864,
+          "model_forwards": 3718,
+          "generated_tokens": 3718,
+          "deployed_jev_seconds": 0,
+          "per_depth": {
+            "2": {
+              "n": 200,
+              "accuracy": 0.11
+            }
+          }
+        },
+        "r15": {
+          "n": 200,
+          "complete": 200,
+          "accuracy": 0.13,
+          "em": 0.13,
+          "f1": 0.2888960072685574,
+          "parsed": 0,
+          "groups": {
+            "answerable": {
+              "n": 200,
+              "accuracy": 0.13
+            }
+          },
+          "model_seconds": 147.03114367204216,
+          "model_forwards": 3236,
+          "generated_tokens": 3236,
+          "deployed_jev_seconds": 88.442668814012,
+          "per_depth": {
+            "2": {
+              "n": 200,
+              "accuracy": 0.13
+            }
+          }
+        },
+        "shuffled": {
+          "n": 200,
+          "complete": 200,
+          "accuracy": 0.06,
+          "em": 0.06,
+          "f1": 0.17580572077056325,
+          "parsed": 0,
+          "groups": {
+            "answerable": {
+              "n": 200,
+              "accuracy": 0.06
+            }
+          },
+          "model_seconds": 145.78670630590932,
+          "model_forwards": 3229,
+          "generated_tokens": 3229,
+          "deployed_jev_seconds": 88.442668814012,
+          "per_depth": {
+            "2": {
+              "n": 200,
+              "accuracy": 0.06
+            }
+          }
+        },
+        "tuned": {
+          "n": 200,
+          "complete": 200,
+          "accuracy": 0.13,
+          "em": 0.13,
+          "f1": 0.296702187498193,
+          "parsed": 0,
+          "groups": {
+            "answerable": {
+              "n": 200,
+              "accuracy": 0.13
+            }
+          },
+          "model_seconds": 142.4675342389819,
+          "model_forwards": 3138,
+          "generated_tokens": 3138,
+          "deployed_jev_seconds": 88.442668814012,
+          "per_depth": {
+            "2": {
+              "n": 200,
+              "accuracy": 0.13
+            }
+          }
+        }
+      },
+      "main": "tuned",
+      "contrasts": {
+        "lexical": {
+          "difference": 0.05837279540242591,
+          "interval": [
+            0.025401646033714198,
+            0.09267035580341122
+          ],
+          "level": 0.95,
+          "units": 200,
+          "wins": 53,
+          "losses": 18,
+          "ties": 129,
+          "metric": "f1",
+          "confirmatory": false
+        },
+        "native": {
+          "difference": 0.028238680735150304,
+          "interval": [
+            -0.0135088758354235,
+            0.06910739525197918
+          ],
+          "level": 0.9833333333333333,
+          "units": 200,
+          "wins": 55,
+          "losses": 27,
+          "ties": 118,
+          "metric": "f1",
+          "confirmatory": true
+        },
+        "r15": {
+          "difference": 0.007806180229635605,
+          "interval": [
+            -0.01600173344526504,
+            0.030615443028698074
+          ],
+          "level": 0.95,
+          "units": 200,
+          "wins": 28,
+          "losses": 19,
+          "ties": 153,
+          "metric": "f1",
+          "confirmatory": false
+        },
+        "shuffled": {
+          "difference": 0.12089646672762978,
+          "interval": [
+            0.07734434682184145,
+            0.1677502109018174
+          ],
+          "level": 0.95,
+          "units": 200,
+          "wins": 71,
+          "losses": 24,
+          "ties": 105,
+          "metric": "f1",
+          "confirmatory": false
+        }
+      }
+    },
+    "hotpot/staged": {
+      "arms": {
+        "dynamic": {
+          "n": 200,
+          "complete": 200,
+          "accuracy": 0.2,
+          "em": 0.2,
+          "f1": 0.36487935534674665,
+          "parsed": 0,
+          "groups": {
+            "answerable": {
+              "n": 200,
+              "accuracy": 0.2
+            }
+          },
+          "model_seconds": 449.859295943932,
+          "model_forwards": 12622,
+          "generated_tokens": 12622,
+          "deployed_jev_seconds": 259.84958437002206,
+          "per_depth": {
+            "2": {
+              "n": 200,
+              "accuracy": 0.2
+            }
+          }
+        },
+        "lexical_dynamic": {
+          "n": 200,
+          "complete": 200,
+          "accuracy": 0.13,
+          "em": 0.13,
+          "f1": 0.28317824789178603,
+          "parsed": 0,
+          "groups": {
+            "answerable": {
+              "n": 200,
+              "accuracy": 0.13
+            }
+          },
+          "model_seconds": 476.223591049009,
+          "model_forwards": 13224,
+          "generated_tokens": 13224,
+          "deployed_jev_seconds": 0,
+          "per_depth": {
+            "2": {
+              "n": 200,
+              "accuracy": 0.13
+            }
+          }
+        },
+        "native": {
+          "n": 200,
+          "complete": 200,
+          "accuracy": 0.215,
+          "em": 0.215,
+          "f1": 0.38107929149142633,
+          "parsed": 0,
+          "groups": {
+            "answerable": {
+              "n": 200,
+              "accuracy": 0.215
+            }
+          },
+          "model_seconds": 387.2628559671066,
+          "model_forwards": 12490,
+          "generated_tokens": 12490,
+          "deployed_jev_seconds": 0,
+          "per_depth": {
+            "2": {
+              "n": 200,
+              "accuracy": 0.215
+            }
+          }
+        },
+        "r15": {
+          "n": 200,
+          "complete": 200,
+          "accuracy": 0.2,
+          "em": 0.2,
+          "f1": 0.379553013206525,
+          "parsed": 0,
+          "groups": {
+            "answerable": {
+              "n": 200,
+              "accuracy": 0.2
+            }
+          },
+          "model_seconds": 469.31041527005436,
+          "model_forwards": 13042,
+          "generated_tokens": 13042,
+          "deployed_jev_seconds": 88.442668814012,
+          "per_depth": {
+            "2": {
+              "n": 200,
+              "accuracy": 0.2
+            }
+          }
+        },
+        "shuffled_dynamic": {
+          "n": 200,
+          "complete": 200,
+          "accuracy": 0.1,
+          "em": 0.1,
+          "f1": 0.19431238718419025,
+          "parsed": 0,
+          "groups": {
+            "answerable": {
+              "n": 200,
+              "accuracy": 0.1
+            }
+          },
+          "model_seconds": 479.58732124179005,
+          "model_forwards": 13482,
+          "generated_tokens": 13482,
+          "deployed_jev_seconds": 268.84649522399195,
+          "per_depth": {
+            "2": {
+              "n": 200,
+              "accuracy": 0.1
+            }
+          }
+        },
+        "tuned": {
+          "n": 200,
+          "complete": 200,
+          "accuracy": 0.2,
+          "em": 0.2,
+          "f1": 0.35206498344413945,
+          "parsed": 0,
+          "groups": {
+            "answerable": {
+              "n": 200,
+              "accuracy": 0.2
+            }
+          },
+          "model_seconds": 450.9655734821754,
+          "model_forwards": 12636,
+          "generated_tokens": 12636,
+          "deployed_jev_seconds": 88.442668814012,
+          "per_depth": {
+            "2": {
+              "n": 200,
+              "accuracy": 0.2
+            }
+          }
+        }
+      },
+      "main": "dynamic",
+      "contrasts": {
+        "lexical_dynamic": {
+          "difference": 0.0817011074549606,
+          "interval": [
+            0.030513402282978854,
+            0.13398846089323946
+          ],
+          "level": 0.95,
+          "units": 200,
+          "wins": 58,
+          "losses": 36,
+          "ties": 106,
+          "metric": "f1",
+          "confirmatory": false
+        },
+        "native": {
+          "difference": -0.016199936144679728,
+          "interval": [
+            -0.07289323178233277,
+            0.04039152750960651
+          ],
+          "level": 0.95,
+          "units": 200,
+          "wins": 51,
+          "losses": 53,
+          "ties": 96,
+          "metric": "f1",
+          "confirmatory": false
+        },
+        "r15": {
+          "difference": -0.014673657859778397,
+          "interval": [
+            -0.06300980151443905,
+            0.03405616544496693
+          ],
+          "level": 0.95,
+          "units": 200,
+          "wins": 35,
+          "losses": 48,
+          "ties": 117,
+          "metric": "f1",
+          "confirmatory": false
+        },
+        "shuffled_dynamic": {
+          "difference": 0.17056696816255637,
+          "interval": [
+            0.11245825771243771,
+            0.2303466405025069
+          ],
+          "level": 0.95,
+          "units": 200,
+          "wins": 86,
+          "losses": 32,
+          "ties": 82,
+          "metric": "f1",
+          "confirmatory": false
+        },
+        "tuned": {
+          "difference": 0.012814371902607195,
+          "interval": [
+            -0.010646395189777542,
+            0.03724045709192767
+          ],
+          "level": 0.95,
+          "units": 200,
+          "wins": 14,
+          "losses": 9,
+          "ties": 177,
+          "metric": "f1",
+          "confirmatory": false
+        }
+      }
+    }
+  }
+}

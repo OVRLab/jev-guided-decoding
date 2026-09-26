@@ -1,0 +1,534 @@
+[
+  {
+    "id": "gsm8k_train/1393",
+    "task": "gsm8k_train",
+    "family": "arithmetic",
+    "origin_id": "1393",
+    "prompt": "Cassy packs 12 jars of jam in 10 boxes while she packs 10 jars of jam in 30 boxes. If she has 500 jars of jams, how many jars of jam will she have left when all the boxes are full?\n\nReason through the problem and finish with a separate line: #### <numeric answer>."
+  },
+  {
+    "id": "gsm8k_train/6198",
+    "task": "gsm8k_train",
+    "family": "arithmetic",
+    "origin_id": "6198",
+    "prompt": "Keith scored 3 points on the math test. Larry scored 3 times as many marks. Danny scored 5 more marks than Larry. Find the total amount of marks scored by the three students.\n\nReason through the problem and finish with a separate line: #### <numeric answer>."
+  },
+  {
+    "id": "gsm8k_train/1792",
+    "task": "gsm8k_train",
+    "family": "arithmetic",
+    "origin_id": "1792",
+    "prompt": "Marta is arranging floral centerpieces for a reception party.  Each arrangement needs to have 8 roses,12 daisies, 3 snapdragons and twice as many lilies.  The reception will have 10 tables.  How many flowers will she need in total to fill this order?\n\nReason through the problem and finish with a separate line: #### <numeric answer>."
+  },
+  {
+    "id": "gsm8k_train/2790",
+    "task": "gsm8k_train",
+    "family": "arithmetic",
+    "origin_id": "2790",
+    "prompt": "Four small panda bears and five bigger panda bears eat 25 pounds and 40 pounds of fresh bamboo sprouts every day, respectively. How many pounds of bamboo do the 9 pandas eat in a week?\n\nReason through the problem and finish with a separate line: #### <numeric answer>."
+  },
+  {
+    "id": "gsm8k_train/3626",
+    "task": "gsm8k_train",
+    "family": "arithmetic",
+    "origin_id": "3626",
+    "prompt": "Erin runs her own launderette and needs to cash in the change from the machines. There are 80 quarters and 100 dimes in every machine in the launderette. When Erin empties all of the machines and cashes in the change, she has a total of $90. She had no money before she emptied the machines and each machine held the same amount of money. How many machines are in the launderette?\n\nReason through the problem and finish with a separate line: #### <numeric answer>."
+  },
+  {
+    "id": "gsm8k_train/5832",
+    "task": "gsm8k_train",
+    "family": "arithmetic",
+    "origin_id": "5832",
+    "prompt": "Harvey's started out with 25 steaks. Then he sold some, and only had 12 steaks left. He sold 4 more steaks, at 10 dollars. How many steaks did he sell in all?\n\nReason through the problem and finish with a separate line: #### <numeric answer>."
+  },
+  {
+    "id": "gsm8k_train/2774",
+    "task": "gsm8k_train",
+    "family": "arithmetic",
+    "origin_id": "2774",
+    "prompt": "Officer Hopps has to give out 200 tickets in May. The first 15 days he averages 8 tickets a day. How many does he have to average each day for the rest of the month to reach his required goal?\n\nReason through the problem and finish with a separate line: #### <numeric answer>."
+  },
+  {
+    "id": "gsm8k_train/5474",
+    "task": "gsm8k_train",
+    "family": "arithmetic",
+    "origin_id": "5474",
+    "prompt": "Carla is dividing up insurance claims among 3 agents. Missy can handle 15 more claims than John, who can handle 30% more claims than Jan. If Jan can handle 20 claims, how many claims can Missy handle?\n\nReason through the problem and finish with a separate line: #### <numeric answer>."
+  },
+  {
+    "id": "gsm8k_train/2562",
+    "task": "gsm8k_train",
+    "family": "arithmetic",
+    "origin_id": "2562",
+    "prompt": "If Jason eats three potatoes in 20 minutes, how long, in hours, would it take for him to eat all 27 potatoes cooked by his wife?\n\nReason through the problem and finish with a separate line: #### <numeric answer>."
+  },
+  {
+    "id": "gsm8k_train/732",
+    "task": "gsm8k_train",
+    "family": "arithmetic",
+    "origin_id": "732",
+    "prompt": "If a tarantula has eight legs, and one tarantula egg sac can contain 1000 tarantulas, how many baby tarantula legs would be in one less than 5 egg sacs?\n\nReason through the problem and finish with a separate line: #### <numeric answer>."
+  },
+  {
+    "id": "gsm8k_train/1964",
+    "task": "gsm8k_train",
+    "family": "arithmetic",
+    "origin_id": "1964",
+    "prompt": "Maria goes to the coffee shop 2 times a day. Every time she goes to the coffee shop, she orders 3 cups of coffee. How many cups of coffee does she order per day?\n\nReason through the problem and finish with a separate line: #### <numeric answer>."
+  },
+  {
+    "id": "gsm8k_train/1101",
+    "task": "gsm8k_train",
+    "family": "arithmetic",
+    "origin_id": "1101",
+    "prompt": "Beckett is 12 and is three years younger than Olaf, while Shannen is two years younger than Olaf.  If Jack is five more than twice as old as Shannen, what is the sum of the ages of all 4 people?\n\nReason through the problem and finish with a separate line: #### <numeric answer>."
+  },
+  {
+    "id": "gsm8k_train/5138",
+    "task": "gsm8k_train",
+    "family": "arithmetic",
+    "origin_id": "5138",
+    "prompt": "A hotel has 10 rooms and is currently full. Each room holds a family of 3. If each person receives 2 towels, how many towels does the hotel hand out?\n\nReason through the problem and finish with a separate line: #### <numeric answer>."
+  },
+  {
+    "id": "gsm8k_train/7231",
+    "task": "gsm8k_train",
+    "family": "arithmetic",
+    "origin_id": "7231",
+    "prompt": "Tyler has $100. If he buys 8 scissors for $5 each and 10 erasers for $4 each, how much of his money remains?\n\nReason through the problem and finish with a separate line: #### <numeric answer>."
+  },
+  {
+    "id": "gsm8k_train/2581",
+    "task": "gsm8k_train",
+    "family": "arithmetic",
+    "origin_id": "2581",
+    "prompt": "Kenneth has $50 to go to the store. Kenneth bought 2 baguettes and 2 bottles of water. Each baguette cost $2 and each bottle of water cost $1. How much money does Kenneth have left?\n\nReason through the problem and finish with a separate line: #### <numeric answer>."
+  },
+  {
+    "id": "gsm8k_train/2008",
+    "task": "gsm8k_train",
+    "family": "arithmetic",
+    "origin_id": "2008",
+    "prompt": "25% of oysters have pearls in them. Jamie can collect 16 oysters during each dive. How many dives does he have to make to collect 56 pearls?\n\nReason through the problem and finish with a separate line: #### <numeric answer>."
+  },
+  {
+    "id": "gsm8k_train/3839",
+    "task": "gsm8k_train",
+    "family": "arithmetic",
+    "origin_id": "3839",
+    "prompt": "Quentavious has 5 nickels. His friend offers him some gum and will give him two pieces per nickel. If Quentavious leaves with 2 nickels, how many pieces of gum did he get?\n\nReason through the problem and finish with a separate line: #### <numeric answer>."
+  },
+  {
+    "id": "gsm8k_train/3231",
+    "task": "gsm8k_train",
+    "family": "arithmetic",
+    "origin_id": "3231",
+    "prompt": "Lucca bought 200 pieces of bread. Lucca ate 1/4 of the pieces of bread in one day, and 2/5 of the remaining pieces the next day. If he ate half of the remaining pieces on the third day, calculate how many pieces of bread are remaining.\n\nReason through the problem and finish with a separate line: #### <numeric answer>."
+  },
+  {
+    "id": "gsm8k_train/515",
+    "task": "gsm8k_train",
+    "family": "arithmetic",
+    "origin_id": "515",
+    "prompt": "Annie is trying to figure out whether it's safe to drive her truck. For every 3 degrees the temperature drops below 32 degrees, Annie's chances of skidding on ice increase 5%. If she goes into a skid, she has a 40% of regaining control. Otherwise, she'll have a serious accident. If the temperature is 8 degrees, what is the percentage chance of Annie getting into a serious accident if she drives?\n\nReason through the problem and finish with a separate line: #### <numeric answer>."
+  },
+  {
+    "id": "gsm8k_train/5382",
+    "task": "gsm8k_train",
+    "family": "arithmetic",
+    "origin_id": "5382",
+    "prompt": "Emily is on a flight from New York to Hawaii that is 10 hours long. To kill time, she watches 3 TV episodes that are each 25 minutes long. Then she sleeps for 4 and a half hours. Then she watches 2 movies that are each an hour and 45 minutes long. After doing all these things, assuming there is no break time between activities, how many more minutes are left in the flight before Emily reaches Hawaii.\n\nReason through the problem and finish with a separate line: #### <numeric answer>."
+  },
+  {
+    "id": "gsm8k_train/6323",
+    "task": "gsm8k_train",
+    "family": "arithmetic",
+    "origin_id": "6323",
+    "prompt": "There were 90 jellybeans in a jar. Samantha snuck 24 jellybeans out of the jar, without being seen. Shelby ate 12 jellybeans from the jar. Their mom, Shannon, refilled the jar with half as much as Samantha and Shelby took out. How many jellybeans are in the jar now?\n\nReason through the problem and finish with a separate line: #### <numeric answer>."
+  },
+  {
+    "id": "gsm8k_train/401",
+    "task": "gsm8k_train",
+    "family": "arithmetic",
+    "origin_id": "401",
+    "prompt": "Kimberley, Ela, and Houston all are sent to collect firewood by their grammy. Kimberley collects ten pounds of firewood, and Houston collects 12 pounds of firewood. If the three of them managed to collect a total of 35 pounds of firewood, how many pounds were collected by Ela?\n\nReason through the problem and finish with a separate line: #### <numeric answer>."
+  },
+  {
+    "id": "gsm8k_train/7376",
+    "task": "gsm8k_train",
+    "family": "arithmetic",
+    "origin_id": "7376",
+    "prompt": "Janette went camping for 5 days. She brought along 40 pieces of beef jerky. She wants to ration it out so that she can eat 1 for breakfast, 1 for lunch, and 2 for dinner each day. When she returns from the trip, she plans on giving half of the remaining pieces to her brother. How many pieces of beef jerky will she have left once she does this?\n\nReason through the problem and finish with a separate line: #### <numeric answer>."
+  },
+  {
+    "id": "gsm8k_train/5760",
+    "task": "gsm8k_train",
+    "family": "arithmetic",
+    "origin_id": "5760",
+    "prompt": "A store is having an anniversary sale. A tub of ice cream costs $2 less than its original price of $12 and the juice is sold at $2 for 5 cans. How much will you pay if you buy two tubs of ice cream and 10 cans of juice?\n\nReason through the problem and finish with a separate line: #### <numeric answer>."
+  },
+  {
+    "id": "ifbench/57",
+    "task": "ifbench",
+    "family": "instruction_following",
+    "origin_id": "57",
+    "prompt": "Use at least 160 unique words in the response. generate a medium hard sql question for an interview"
+  },
+  {
+    "id": "ifbench/83",
+    "task": "ifbench",
+    "family": "instruction_following",
+    "origin_id": "83",
+    "prompt": "Answer with a list of items, instead of bullet points use !?!?. Defination of: preludes, caprichos, romances and ballads"
+  },
+  {
+    "id": "ifbench/297",
+    "task": "ifbench",
+    "family": "instruction_following",
+    "origin_id": "297",
+    "prompt": "what concentration of particles is bad for biosensors. The output should not contain any whitespace."
+  },
+  {
+    "id": "ifbench/207",
+    "task": "ifbench",
+    "family": "instruction_following",
+    "origin_id": "207",
+    "prompt": "Ensure each word in your response has at least one consonant cluster (two or more consonants together). Write a descriptive, fictional, imaginative timeline of an alternate universe where the aesthetics are \"flipped\" with classical civilizations such as Egypt and Greece having modern aesthetics and conventions, while the modern civilizations have ancient aesthetics"
+  },
+  {
+    "id": "ifbench/296",
+    "task": "ifbench",
+    "family": "instruction_following",
+    "origin_id": "296",
+    "prompt": "In set theory, are all sets classes? The output should not contain any whitespace."
+  },
+  {
+    "id": "ifbench/80",
+    "task": "ifbench",
+    "family": "instruction_following",
+    "origin_id": "80",
+    "prompt": "Create stairs by incrementally indenting each new line. Respond with three sentences, all containing the same number of characters but using all different words. What if Arya could disguise others as herself?"
+  },
+  {
+    "id": "ifbench/180",
+    "task": "ifbench",
+    "family": "instruction_following",
+    "origin_id": "180",
+    "prompt": "Each sentence must have a longer sequence of consecutive alliterative words than the previous one. State individually the mathematical equation with a description of Boyle's Law, Charles' Law, Gay-Lussac Law, Avogadro's Law, Combined Gas Law, Ideal Gas Law, and Dalton's Law of Partial Pressures, written in prose format. Use LaTex for the mathematical equations and symbols."
+  },
+  {
+    "id": "ifbench/148",
+    "task": "ifbench",
+    "family": "instruction_following",
+    "origin_id": "148",
+    "prompt": "For her 2021 art installation Anthem, Wu Tsang joined forces with singer and composer Beverly Glenn-Copeland to produce a piece that critics found truly ______: they praised Tsang for creatively transforming a museum rotunda into a dynamic exhibit by projecting filmed images of Glenn-Copeland onto a massive 84-foot curtain and filling the space with the sounds of his and other voices singing. Which choice completes the text with the most logical and precise word or phrase? A) restrained B) inventive C) inexplicable D) mystifying  Maintain a trigram overlap of 6% (\u00b12%) with the provided reference text."
+  },
+  {
+    "id": "ifbench/43",
+    "task": "ifbench",
+    "family": "instruction_following",
+    "origin_id": "43",
+    "prompt": "The response must contain between 24 and 28 words. give me an array of other ways of saying the following whilst being professional, eloquent, grammatically impressive, demonstrating astonishing linguistic prowess, and maintaining a tone one would use in writing an important assessment: \"The propagation of crypto-ransomware, particularly one predicated upon the robust Feistel cipher structure, necessitates a sophisticated distribution scheme that ensures both a widespread diffusion and a surreptitious installation on the victims' systems.\""
+  },
+  {
+    "id": "ifbench/68",
+    "task": "ifbench",
+    "family": "instruction_following",
+    "origin_id": "68",
+    "prompt": "Please use an emoji at the end of every sentence.  write a paragraph personal and in first person about the following. Scenes might include solitary birthdays that morph into insights on self-reliance, quiet dinners that offer space for deep parental bonds, and the mature realization of the weight of carrying family expectations alone.  how the only child experience shapes an individual's outlook on solitude, independence, and family dynamics. In what ways does being an only child influence one's approach to life's challenges and relationships?"
+  },
+  {
+    "id": "ifbench/249",
+    "task": "ifbench",
+    "family": "instruction_following",
+    "origin_id": "249",
+    "prompt": "Help me write a post-apocalypse RPG adventure around this idea: The player characters are scavenging a corporate complex, and they encounter a pair of deactivated android replicants. These are machines programmed to act as CEOs, but only they can open up a stash of pre-War technologies.  Use only words with lengths that are prime numbers."
+  },
+  {
+    "id": "ifbench/155",
+    "task": "ifbench",
+    "family": "instruction_following",
+    "origin_id": "155",
+    "prompt": "who were critics of nicolaus copernicus Ensure that the ratio of sentence types (declarative, interrogative, exclamatory) in your response is balanced."
+  },
+  {
+    "id": "mmlu_pro/20",
+    "task": "mmlu_pro",
+    "family": "biology",
+    "origin_id": "20",
+    "prompt": "Which of the following represents an accurate statement concerning arthropods?\n\nA. They possess an exoskeleton composed primarily of peptidoglycan.\nB. They possess an open circulatory system with a dorsal heart.\nC. They are members of a biologically unsuccessful phylum incapable of exploiting diverse habitats and nutrition sources.\nD. They lack paired, jointed appendages.\nE. N/A\nF. N/A\nG. N/A\nH. N/A\nI. N/A\nJ. N/A\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/22",
+    "task": "mmlu_pro",
+    "family": "biology",
+    "origin_id": "22",
+    "prompt": "A mutation in a bacterial enzyme changed a previously polar amino acid into a nonpolar amino acid. This amino acid was located at a site distant from the enzyme\u2019s active site. How might this mutation alter the enzyme\u2019s substrate specificity?\n\nA. By changing the enzyme\u2019s pH optimum\nB. By changing the enzyme's molecular weight\nC. An amino acid change away from the active site increases the enzyme's substrate specificity.\nD. By changing the shape of the protein\nE. By changing the enzyme's temperature optimum\nF. By altering the enzyme's ability to be denatured\nG. By changing the enzyme\u2019s location in the cell\nH. By changing the enzyme's color\nI. An amino acid change away from the active site cannot alter the enzyme\u2019s substrate specificity.\nJ. By altering the enzyme's rate of reaction\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/16",
+    "task": "mmlu_pro",
+    "family": "business",
+    "origin_id": "16",
+    "prompt": "_______ is the direct attempt to formally or informally manage ethical issues or problems, through specific policies, practices and programmes.\n\nA. Operational management\nB. Corporate governance\nC. Environmental management\nD. Business ethics management\nE. Sustainability\nF. Stakeholder management\nG. Social marketing\nH. Human resource management\nI. N/A\nJ. N/A\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/18",
+    "task": "mmlu_pro",
+    "family": "business",
+    "origin_id": "18",
+    "prompt": "Although the content and quality can be as controlled as direct mail, response rates of this medium are lower because of the lack of a personal address mechanism. This media format is known as:\n\nA. Online banners.\nB. Television advertising.\nC. Email marketing.\nD. Care lines.\nE. Direct mail.\nF. Inserts.\nG. Door to door.\nH. Radio advertising.\nI. Billboards.\nJ. Social media advertising.\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/26",
+    "task": "mmlu_pro",
+    "family": "chemistry",
+    "origin_id": "26",
+    "prompt": "Which of the following lists the hydrides of group-14 elements in order of thermal stability, from lowest to highest?\n\nA. GeH4 < SnH4 < PbH4 < SiH4 < CH4\nB. SiH4 < GeH4 < SnH4 < PbH4 < CH4\nC. PbH4 < CH4 < SnH4 < GeH4 < SiH4\nD. PbH4 < SnH4 < CH4 < GeH4 < SiH4\nE. SnH4 < GeH4 < SiH4 < PbH4 < CH4\nF. CH4 < GeH4 < SnH4 < PbH4 < SiH4\nG. SiH4 < SnH4 < PbH4 < GeH4 < CH4\nH. CH4 < SiH4 < GeH4 < SnH4 < PbH4\nI. CH4 < PbH4 < GeH4 < SnH4 < SiH4\nJ. PbH4 < SnH4 < GeH4 < SiH4 < CH4\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/25",
+    "task": "mmlu_pro",
+    "family": "chemistry",
+    "origin_id": "25",
+    "prompt": "Predict the number of lines in the EPR spectrum of a solution of 13C-labelled methyl radical (13CH3\u2022), assuming the lines do not overlap.\n\nA. 10\nB. 8\nC. 4\nD. 20\nE. 12\nF. 3\nG. 16\nH. 5\nI. 24\nJ. 6\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/31",
+    "task": "mmlu_pro",
+    "family": "computer science",
+    "origin_id": "31",
+    "prompt": "A compiler generates code for the following assignment statement.\nG := (A + B) * C - (D + E) * F\nThe target machine has a single accumulator and a single-address instruction set consisting of instructions load, store, add, subtract, and multiply. For the arithmetic operations, the left operand is taken from the accumulator and the result appears in the accumulator. The smallest possible number of instructions in the resulting code is\n\nA. 7\nB. 5\nC. 12\nD. 4\nE. 11\nF. 6\nG. 8\nH. 10\nI. 9\nJ. 3\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/30",
+    "task": "mmlu_pro",
+    "family": "computer science",
+    "origin_id": "30",
+    "prompt": "A certain pipelined RISC machine has 8 general-purpose registers R0, R1, . . . , R7 and supports the following operations:\nADD Rs1, Rs2, Rd (Add Rs1 to Rs2 and put the sum in Rd)\nMUL Rs1, Rs2, Rd (Multiply Rs1 by Rs2 and put the product in Rd)\nAn operation normally takes one cycle; however, an operation takes two cycles if it produces a result required by the immediately following operation in an operation sequence.\nConsider the expression AB + ABC + BC, where variables A, B, C are located in registers R0, R1, R2. If the contents of these three registers must not be modified, what is the minimum number of clock cycles required for an operation sequence that computes the value of AB + ABC + BC?\n\nA. 10\nB. 6\nC. 9\nD. 5\nE. 12\nF. 4\nG. 7\nH. 8\nI. N/A\nJ. N/A\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/37",
+    "task": "mmlu_pro",
+    "family": "economics",
+    "origin_id": "37",
+    "prompt": "Suppose that a test statistic has associated with it a p-value of 0.08. Which one of the following statements is true?\n(i) If the size of the test were exactly 8%, we would be indifferent between rejecting and not rejecting the null hypothesis\n(ii) The null would be rejected if a 10% size of test were used\n(iii) The null would not be rejected if a 1% size of test were used\n(iv) The null would be rejected if a 5% size of test were used.\n\nA. (iii) and (iv) only\nB. (i) and (iv) only\nC. (i), (ii), and (iii) only\nD. (i) and (ii) only\nE. (i) and (iii) only\nF. (i), (ii), (iii), and (iv).\nG. (ii), (iii), and (iv) only\nH. (ii) and (iii) only\nI. (ii) and (iv) only\nJ. (i), (iii), and (iv) only\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/36",
+    "task": "mmlu_pro",
+    "family": "economics",
+    "origin_id": "36",
+    "prompt": "Consider the following AR(1) model with the disturbances having zero mean and unit variance\nyt = 0.2 + 0.4 yt-1 + ut\nThe (unconditional) mean of y will be given by\n\nA. 0.45\nB. 0.2\nC. 0.4\nD. 0.1\nE. 0.3\nF. 0.55\nG. 0.25\nH. 0.33\nI. 0.6\nJ. 0.5\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/43",
+    "task": "mmlu_pro",
+    "family": "engineering",
+    "origin_id": "43",
+    "prompt": "Two long parallel conductors carry 100 A. If the conductors are separated by 20 mm, the force per meter of length of each conductor will be\n\nA. 100 N.\nB. 0.01 N.\nC. 10 N.\nD. 0.5 N.\nE. 0.001 N.\nF. 5 N.\nG. 1 N.\nH. 50 N.\nI. 0.1 N.\nJ. 0.0001 N.\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/40",
+    "task": "mmlu_pro",
+    "family": "engineering",
+    "origin_id": "40",
+    "prompt": "A point pole has a strength of 4\u03c0 * 10^-4 weber. The force in newtons on a point pole of 4\u03c0 * 1.5 * 10^-4 weber placed at a distance of 10 cm from it will be\n\nA. 25 N.\nB. 12.5 N.\nC. 15 N.\nD. 10 N.\nE. 7.5 N.\nF. 20 N.\nG. 5 N.\nH. 3.75 N.\nI. N/A\nJ. N/A\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/5",
+    "task": "mmlu_pro",
+    "family": "health",
+    "origin_id": "5",
+    "prompt": "Which of the following is the body cavity that contains the pituitary gland?\n\nA. Ventral\nB. Dorsal\nC. Buccal\nD. Thoracic\nE. Pericardial\nF. Abdominal\nG. Spinal\nH. Pelvic\nI. Pleural\nJ. Cranial\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/8",
+    "task": "mmlu_pro",
+    "family": "health",
+    "origin_id": "8",
+    "prompt": "How many attempts should you make to cannulate a patient before passing the job on to a senior colleague, according to the medical knowledge of 2020?\n\nA. 1\nB. Unlimited attempts\nC. 5\nD. 0, always pass on to a senior colleague\nE. 7\nF. 2\nG. 4\nH. 6\nI. 3\nJ. 8\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/55",
+    "task": "mmlu_pro",
+    "family": "history",
+    "origin_id": "55",
+    "prompt": "This question refers to the following information.\nIn Russia there was nothing going on well, and [Souvarine] was in despair over the news he had received. His old companions were all turning to the politicians; the famous Nihilists who made Europe tremble-sons of village priests, of the lower middle class, of tradesmen-could not rise above the idea of national liberation, and seemed to believe that the world would be delivered-when they had killed their despot&\u2026\n\"Foolery! They'll never get out of it with their foolery.\"\nThen, lowering his voice still more, in a few bitter words he described his old dream of fraternity. He had renounced his rank and his fortune; he had gone among workmen, only in the hope of seeing at last the foundation of a new society of labour in common. All the sous in his pockets had long gone to the urchins of the settlement; he had been as tender as a brother with the colliers, smiling at their suspicion, winning them over by his quiet workmanlike ways and his dislike of chattering. But decidedly the fusion had not taken place.\nHis voice changed, his eyes grew bright, he fixed them on \u00e9tienne, directly addressing him:\n\"Now, do you understand that? These hatworkers at Marseilles who have won the great lottery prize of a hundred thousand francs have gone off at once and invested it, declaring that they are going to live without doing anything! Yes, that is your idea, all of you French workmen; you want to unearth a treasure in order to devour it alone afterwards in some lazy, selfish corner. You may cry out as much as you like against the rich, you haven't got courage enough to give back to the poor the money that luck brings you. You will never be worthy of happiness as long as you own anything, and your hatred of the bourgeois proceeds solely from an angry desire to be bourgeois yourselves in their place.\"\n\u00e9mile Zola, French writer, Germinal, 1885\nThe passage displays the direct concern for the welfare of the working classes that was typically a part of which movement?\n\nA. Communist\nB. Anarchist\nC. Feminist\nD. Fascist\nE. Imperialist\nF. Nationalist\nG. Enlightenment\nH. Existentialist\nI. N/A\nJ. N/A\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/57",
+    "task": "mmlu_pro",
+    "family": "history",
+    "origin_id": "57",
+    "prompt": "This question refers to the following information.\n\"The struggle against neo-colonialism is not aimed at excluding the capital of the developed world from operating in less developed countries. It is aimed at preventing the financial power of the developed countries being used in such a way as to impoverish the less developed.\nNon-alignment, as practiced by Ghana and many other countries, is based on co-operation with all States whether they be capitalist, socialist or have a mixed economy. Such a policy, therefore, involves foreign investment from capitalist countries, but it must be invested in accordance with a national plan drawn up by the government of the non-aligned State with its own interests in mind. The issue is not what return the foreign investor receives on his investments\u2026The question is one of power. A State in the grip of neo-colonialism is not master of its own destiny.\"\nKwame Nkrumah, Neo-Colonialism, 1965\nWhich of the following provides the best context for Nkrumah's writings?\n\nA. The spread of communism\nB. The Industrial Revolution\nC. The French Revolution\nD. The Cold War\nE. Decolonization\nF. World War II\nG. Autarky\nH. The rise of multinational corporations\nI. The American Civil Rights Movement\nJ. Regional Free Trade Associations\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/68",
+    "task": "mmlu_pro",
+    "family": "law",
+    "origin_id": "68",
+    "prompt": "Which word best summarizes Weber's explanation of the development of formally rational law?\n\nA. Socialism.\nB. Legitimacy.\nC. Authority.\nD. Democracy.\nE. Bureaucracy.\nF. Conflict.\nG. Capitalism.\nH. Charisma.\nI. Co-operation.\nJ. Tradition.\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/67",
+    "task": "mmlu_pro",
+    "family": "law",
+    "origin_id": "67",
+    "prompt": "The ________ School of jurisprudence postulates that the law is based on what is \"correct.\"\n\nA. Legal Pragmatism\nB. Legal Formalism\nC. Comparative\nD. Analytical\nE. Sociological\nF. Historical\nG. Critical Legal Studies\nH. Realist\nI. Positivist\nJ. Natural Law\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/2",
+    "task": "mmlu_pro",
+    "family": "math",
+    "origin_id": "2",
+    "prompt": "Let A be the set of all ordered pairs of integers (m, n) such that 7m + 12n = 22. What is the greatest negative number in the set B = {m + n : (m, n) \\in A}?\n\nA. -5\nB. 0\nC. -3\nD. -7\nE. -4\nF. -6\nG. -1\nH. -2\nI. -9\nJ. N/A\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/4",
+    "task": "mmlu_pro",
+    "family": "math",
+    "origin_id": "4",
+    "prompt": "A total of 30 players will play basketball at a park. There will be exactly 5 players on each team. Which statement correctly explains how to find the number of teams needed?\n\nA. Multiply 5 by 5 to find 25 teams.\nB. Divide 30 by 5 to find 6 teams.\nC. Add 5 to 30 to find 35 teams.\nD. Subtract 30 from 5 to find -25 teams.\nE. Divide 5 by 30 to find 0.1667 teams.\nF. Add 5 to 30 then divide by 2 to find 17.5 teams.\nG. N/A\nH. N/A\nI. N/A\nJ. N/A\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/51",
+    "task": "mmlu_pro",
+    "family": "other",
+    "origin_id": "51",
+    "prompt": "Which one of the following items is an example of nonmaterial culture?\n\nA. A dove feather\nB. Dove symbol\nC. Dove body lotion\nD. Dove deodorant\nE. Dove soap\nF. Dove candy bar\nG. Dove conditioner\nH. A dove (bird).\nI. Dove chocolate\nJ. Dove shampoo\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/52",
+    "task": "mmlu_pro",
+    "family": "other",
+    "origin_id": "52",
+    "prompt": "Which of the following cases established the precedent that a defendant must be informed of the right to remain silent, the right to a lawyer, and protection from self-incrimination?\n\nA. Brown v. Board of Education\nB. Miranda v. Arizona\nC. Roe v. Wade\nD. Betts v. Brady\nE. Plessy v. Ferguson\nF. Dred Scott v. Sandford\nG. Weeks v. United States\nH. Gideon v. Wainwright\nI. Marbury v. Madison\nJ. Mapp v. Ohio\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/47",
+    "task": "mmlu_pro",
+    "family": "philosophy",
+    "origin_id": "47",
+    "prompt": "The study of reality in the broadest sense, an inquiry into the elemental nature of the universe and the things in it, is known as _____.\n\nA. quantum physics\nB. metaphysics\nC. ontology\nD. phenomenology\nE. cosmology\nF. teleology\nG. epistemology\nH. axiology\nI. N/A\nJ. N/A\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/45",
+    "task": "mmlu_pro",
+    "family": "philosophy",
+    "origin_id": "45",
+    "prompt": "Which of the given formulas of PL is the best symbolization of the following sentence?\nTurtles live long lives and are happy creatures, unless they are injured.\n\nA. (L \u2022 H) \u2261 I\nB. (L \u2022 H) \u2228 I\nC. L \u2022 (H \u2228 I)\nD. L \u2022 (H \u2283 R).\nE. N/A\nF. N/A\nG. N/A\nH. N/A\nI. N/A\nJ. N/A\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/10",
+    "task": "mmlu_pro",
+    "family": "physics",
+    "origin_id": "10",
+    "prompt": "Say the pupil of your eye has a diameter of 5 mm and you have a telescope with an aperture of 50 cm. How much more light can the telescope gather than your eye?\n\nA. 1000 times more\nB. 50 times more\nC. 5000 times more\nD. 500 times more\nE. 10000 times more\nF. 20000 times more\nG. 2000 times more\nH. 100 times more\nI. 10 times more\nJ. N/A\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/13",
+    "task": "mmlu_pro",
+    "family": "physics",
+    "origin_id": "13",
+    "prompt": "Colors in a soap bubble result from light\n\nA. dispersion\nB. deflection\nC. refraction\nD. reflection\nE. interference\nF. converted to a different frequency\nG. polarization\nH. absorption\nI. diffraction\nJ. transmission\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/63",
+    "task": "mmlu_pro",
+    "family": "psychology",
+    "origin_id": "63",
+    "prompt": "Ani believes that her attitudes and behavior play a central role in what happens to her. Such a belief is likely to be associated with\n\nA. low self-esteem.\nB. a strong id.\nC. a high level of anxiety.\nD. a strong superego.\nE. high levels of self-consciousness.\nF. an external locus of control.\nG. an inferiority complex.\nH. a low level of self-awareness.\nI. low self-efficacy.\nJ. an internal locus of control.\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "mmlu_pro/62",
+    "task": "mmlu_pro",
+    "family": "psychology",
+    "origin_id": "62",
+    "prompt": "According to the Individuals with Disabilities Education Improvement Act, which of the following must an educational agency do before it changes the educational placement of a student with a disability?\n\nA. Notify the parents in writing\nB. Obtain the child's consent\nC. Obtain a court order\nD. Conduct a new evaluation of the child's disability\nE. Discuss with the child's psychologist\nF. Give the child a trial period in the new environment\nG. Obtain parental consent\nH. Notify the local education authority\nI. Arrange a meeting with all teachers and administrators\nJ. Obtain school board approval\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "musr/murder_mystery/73",
+    "task": "musr",
+    "family": "murder_mystery",
+    "origin_id": "murder_mystery/73",
+    "prompt": "In the deafening silence of an unexpectedly deserted fitness center, Detective Winston finds himself staring at a chilling scene - Isaac's lifeless body riddled with shotgun pellets, leaving Milton and Alice as his primary suspects.\n\nIt was one of those sweltering afternoons, the humidity thick and relentless, as Detective Winston walked into the buzzing energy of the local fitness center. Remnants of police tape lingered in corners, while somber-touches reminders of what had happened to Isaac still hung in the air.\n\nHe was here to interview Milton, a well-known landlord in the vicinity and interestingly enough, an aficionado of funeral practices. As a testament to the latter, he often locked himself away to watch documentaries about funeral practices, a behavior reported by several tenants. Milton's fascination was no secret.\n\nWinston stepped into Milton's office, spotting a wall lined with framed contents. Among them was a gun license, recently issued by the local authorities - a fitting addition, given that Milton had passed all mandatory firearms training courses.\n\nOddly enough, Milton was seated behind his desk clad in a sharp, well-cut black suit. This wasn't out of character though; this was a man known for appearing overdressed for simple occasions. In fact, a tenant had once mentioned that Milton regularly shops for coats and ties at funeral shops.\n\nWinston spotted a shotgun in a corner, a disturbing sight considering it was the same type specified in the coroner's report for Isaac's death. It was an intriguing piece of evidence, considering Milton owns the shotgun.\n\nTheir conversation veered into various topics, with Milton highlighting his passion for reading. His bookshelf was lined with an extensive collection of books on death rituals from around the world - yet another proof of his peculiar interests. \n\nIn the midst of their conversation, Isaac's name came up. Following reliable sources, Winston knew something crucial - Isaac had stumbled upon evidence directly implicating Milton in a tax evasion scheme. Isaac, the ever-vigilant whistleblower, was preparing to expose Milton's scandalous scheme - a revelation that could land Milton in prison.\n\nAs Winston left the fitness center, he pondered on his findings. Milton's tax evasion scheme, his interest in funeral practices, the shotgun license, the matching murder weapon... it all seemed to connect. He was confident that the tax evasion evidence would be enough to send Milton to jail, but for now, only time would tell. It was just another day on the job for Winston. As for Milton, his fate hung in the balance.\n\nDetective Winston studied the scene: shattered glass, blood splatter, and scattered workout equipment telling a silent story. The fitness center wasn't the usual type of crime scene he found himself in. He sighed deeply and headed over to his prime suspect: Alice.\n\nAlice was just a stone's throw away from the crime scene. Staring blankly with pale, emotionless eyes. In her hand, a shotgun; paperwork indicating a fresh purchase tucked within its case, valid purchase documents all checked out at the base.\n\nWinston approached Alice cautiously and asked, \"You know Isaac's workout routine, correct? The list of Isaac's routines you've given us earlier... it matches the information we gathered. You both were here all the time.\" \n\nShocked by the sudden personal query, Alice confessed, \"We workout together, Winston. At least... we used to.\"\n\nWinston's eyes flickered to the shotgun slackly rested in Alice's lap. \"Been a while since I've seen a lady with a new piece like this.\"\n\nAlice was quick to correct him, \"Not to boast, Winston, but I've been handling such arms ever since my military days.\"\n\nDespite the grim predicament, Winston could tell Alice was trying to be cooperative. She was calm, composed; despite the whole flare-up. He moved on to the next line of questioning, \"Your son... he interacted often with Isaac?\"\n\nAlice appeared apprehensive before finally admitting, \"Recently, yes... He told me Isaac threatened him. Isaac... he acted aggressively towards my boy often.\"\n\n\"Interesting,\" Winston stammered, not wanting to press Alice too hard. He asked a softer question to lighten the mood, \"You often workout together then?\"\n\nAlice looked surprised and retorted mockingly, \"Is it that weird? We were the members of the same fitness center after all.\"\n\nBefore Winston could continue his questioning, he was handed a document by one of his officers. It read Isaac\u2019s name and the note of a restraining order filed against him by a previous ex-partner. It seemed complicating factors always came in multiples in cases such as this.\n\nWithout keeping Alice in the dark, he disclosed the information with her, \u201cA restraining order, and a school expulsion due to fighting incidents... Isaac seemed to have some rough patches in the past, huh?\u201d\n\nAlice turned her head and acknowledged Winston's statement with a slight nod, her lips sealed shut.\n\nWinston wasn't sure why, but he felt the need to reassure her and said, \"We're in this together, Alice. We'll figure it out. If Isaac was threatening your son, then we can't overlook any facet of the situation.\"\n\nSeeing Alice with a newly purchased shotgun in her possession and catching onto bits of their relationship, Winston tried to figure out the puzzle, leaving no stone unturned. The interview with Alice wasn't offering any easy solutions, but Winston knew the case was anything but such.\n\nWho is the most likely murderer?\n\nA. Milton\nB. Alice\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "musr/murder_mystery/212",
+    "task": "musr",
+    "family": "murder_mystery",
+    "origin_id": "murder_mystery/212",
+    "prompt": "In the wake of a gruesome flamethrower murder at a local soccer field, seasoned detective Winston steps up to investigate, with suspects Sophia and Larry under his watchful eye.\n\n\n\"Detective Winston,\" Sophia greeted as she shuffled her cardboard coffee cup in her hands nervously. They were standing on the edge of the football field where the murder had taken place.\n\n\"Sophia,\" Winston nodded, looking out at the half-time huddle of sweaty, tired players - the same scene where Savannah had taken her last breath. \n\nSophia was a journalist. She'd been covering the match when Savannah was killed, following her usual line of reportage. Today, she'd been on the field, right where it all happened. Savannah's murder had occurred right at halftime and yet, nobody seemed to know anything. \n\n\"So, it's been a while since your reports on the military exhibition, correct?\" Winston asked, keeping his face calm but watchful to catch any change in her expression.\n\n\"Yeah,  it was a couple of months ago. I still have the flamethrower I'd managed to keep, for research and, you know... reminders,\" Sophia said, her gaze flickering toward the field. \n\nWinston nodded. He knew that keeping memorabilia wasn't uncommon in her trade. Did it provide Sophia with a flamethrower when she needed one?\n\n\"Savannah, were you two friends?\" Winston asked, keeping an eye on the middle of the field where everything had happened.\n\n\"We knew each other... She threatened to reveal my source, ruin my credibility,\" Sophia sighed, staring at her untouched coffee. \n\nSophia's job was at stake, Winston knew; in a field like journalism, credibility mattered.\n\n\"Why didn't you tell anyone about the threat?\" \n\nSophia shifted uncomfortably, \"I had heavily invested time and energy in this article. I was protecting my...trust in the field. My source was my lifeline.\" \n\nWinston didn't reply but noted her skittishness in revealing her source even now.\n\n\"Look, the match is starting!\" Sophia pointed out to the field as the whistle blew.\n\nWinston just nodded, eyeing the field where the murder had taken place. If he was to solve this case, he had to sift through the evidence slowly and carefully. Even when it came from a journalist faced with the threat of losing her job and credibility. Even when it was wrapped up in the middle of a football game.\n\nWinston crunched on a stale coffee flavoured donut while wiping away the grim remnants from the computer monitor in his rundown office. He had been staring at the sport section of the local newspaper that spoke about the location of the unfortunate demise of Savannah, a keen enthusiast and promoter of sports in the city, especially soccer who also happened to be a strong opponent of Larry in politics. \n\nThe photograph of the soccer field was chilling, almost like a badly done modern graffiti that had charcoalled the grass in obscene patterns. A flamethrower had been the murder weapon and such a trait of weaponry could point to only a certain group of people who had the experience to operate such a complicated tool of destruction, typically war veterans, like Larry.\n\nLarry lived in a secluded house surrounded by woods, and held his position as head of a local survivalist group. Very often, his colleagues complained of Larry turning off his phone and avoiding them after work. This lack of response to text messages, calls, or any other means of digital communication could only be explained by Larry's choice to retreat in solidarity and bare minimal social contact. \n\nWinston sighed, pushed away the paper, and prepared to visit Larry. As usual, in unsociable fashion, Larry declined Winston's invitation to join his colleagues. \n\nWinston knocked on the rustic door of Larry's eerie looking cabin. When Larry opened the door, he looked like he had just finished a drill. He was sweating, hair a disheveled mess, his posture was rigid and alert. His eyes darted to his wristwatch, hinting towards a habit that he exhibited during various events, checking time frequently. \"Larry,\" Winston said.\n\nLarry recognised him and invited him in albeit reluctantly. A quick glance around the room was enough to see survivalist instincts visible in every corner. In amongst the survival gear was a flamethrower, a common item found in survivalists tool kits. But Winston ignored it and tried to talk politics. \n\nLarry seemed keen to steer the conversation towards Savannah - his fiery political rival. Winston learned Larry had a habit of attending all the political rallies personally. Savannah's recent rally was public, held downtown at the center square, and as always, Larry had been present. \n\nTrying to make Larry more comfortable, Winston asked Larry about his social life and why he declined invitations to join others. Larry just shrugged, avoided Winston's gaze, and said he wasn't interested in what others were doing.\n\nHis answers lacked conviction, but Winston held his professionalism and didn't push any further. He thanked Larry for his time and left.\n\nWho is the most likely murderer?\n\nA. Sophia\nB. Larry\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "musr/murder_mystery/134",
+    "task": "musr",
+    "family": "murder_mystery",
+    "origin_id": "murder_mystery/134",
+    "prompt": "In the dense, dank heart of the rainforest, Skylar's life was brutally silenced with a lead pipe, leaving Detective Winston to navigate a labyrinth of lies, offered up by the two prime suspects - Albert and Mya.\n\nWinston entered the bustling atmosphere of a large family gathering, all clatter and congratulations on a reunion well-needed. His gaze shifted to a tall woman energetically engaging with her relatives, her vibrant energy palpable amongst the crowd. That would be Mya, the adventurous cousin of the unfortunate victim, Skylar.\n\nHe noticed the polished locket adorning her neck, catching the light beautifully, but a sombre contrast to its owner's lively charm.\n\nExuding friendly charm, Winston approached her, \"Mya, may I have a couple of moments?\"\n\n\"Of course, detective. How may I help you?\"\n\n\"I understand you and Skylar used to explore your adventurous side together,\" Winston mentioned casually, trying not to stir any emotional discomfort.\n\nMya's face softened, \"Yes. We both shared a love for the wilderness. Just last week, she invited me on a camping trip to the rainforest. It was harmonious escapades until\u2026\u201d she trailed off.\n\n\u201cAye, I\u2019m sorry for your loss, Mya.\u201d  \n \nWinston noticed the emphasis on her well-toned physique - a strong and agile body, built on a rigorous exercise routine and several hiking and mountain climbing expeditions successfully completed over the years.\n\nLater on, Winston got an opportunity to evaluate the surveillance video of the day Skylar went missing. A quiet scene it was, with only a single instance of incoming and no outgoing traffic - a four-wheel-drive carrying two adventurous souls - Skylar and Mya - into the depths of the rainforest.\n\nWinston\u2019s keen eyes caught the glimpse of Mya\u2019s camping gear. It sure was well stocked - ropes, food supplies, a lead pipe, tents, boots\u2026 A lead pipe. The very same, that had turned brutal enough to end a life in the tranquil rainforest.\n\nAt Mya\u2019s, while she was away, Winston could only find her camping gear partially scattered in disarray. The lead pipe was blatantly missing.\n\nIn a cruiser parked down the street, Winston watched Mya jog up to the deadly rainforest, maybe a run to process her grief, or maybe it was part of her regular exercise routine. Winston watched Mya stoop suddenly and pick something up. A glint of gold. Later, at the reunion, the piece was identified as Skylar\u2019s locket around Mya\u2019s neck. A locket that mysteriously went missing after Skylar's demise and never returned to the rightful inheritors.\n\nWinston took a deep breath. There was so much more to untangle in the mysterious disappearance of Skylar. The case continued to thicken, deeper into the rainforest.\n\nCasual drizzle splattered against the umbrella of Winston as he stood by the yellow cab, its windows slick with rain and partially hiding the figure inside. He knocked twice against the window before it hesitantly slid down, revealing the rough and worn face of Albert, a cab driver who had been working these city streets for longer than most would care to remember. \n\n\"Albert,\" Winston began, pulling out his badge to cut off any question of his identity. \"Seems like you're having a quiet night.\"\n\n\"Just like every other night in this forsaken city,\" Albert responded bitterly, his hands, the hands of a man used to hard labor, tightening around the taxi steering wheel. \n\n\"I heard about your baseball career back in college. Must have been exciting times,\" Winston remarked, casually glancing at a lead pipe secured beneath the driver's seat. \"Got to make sure feelings of nostalgia don't lead to some baseball practice, especially not in a city like ours.\"\n\nAlbert hesitated for a moment, before answering, \"It's for safety. Different times\u2026\"\n\nWinston nodded, turning towards the rainforest in the distance. Albert followed his gaze, \"Crazy what happened. I was just driving her, Skylar...that is, to the rainforest. The city loved her, I've even seen people switch cabs to ride with her.\"\n\n\"Must have been a challenge,\" Winston said, subtly hinting at the power dynamics at play.\n\n\"It was more than just a challenge,\" Albert growled. \"That woman was taking away everything I had.\"\n\n\"Do you know why she wanted to go to the rainforest?\" Winston asked, eager to shift the focus.\n\n\"Didn't ask,\" Albert responded briskly. \"She requested me as her driver and asked to go to the rainforest. Took a little detour, tried to show her some city charm...wouldn't say she really appreciated it though.\"\n\n\"Do you know if anyone else was with her there?\"\n\n\"Just her,\" Albert answered. \"As far as I knew, it was just going to be her in the rainforest. That was the last I saw.\"\n\nAs Winston walked away, leaving Albert with his rumbling taxi and burdensome thoughts, he pondered how volatile resentment could become if not managed properly \u2014 a flame which could engulf the careers and lives of even those most loved. The rain pattered against his umbrella, but beneath it, his mind was turning.\n\nWho is the most likely murderer?\n\nA. Albert\nB. Mya\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "musr/murder_mystery/213",
+    "task": "musr",
+    "family": "murder_mystery",
+    "origin_id": "murder_mystery/213",
+    "prompt": "In the wake of a gruesome flamethrower murder at a local soccer field, seasoned detective Winston steps up to investigate, with suspects Sophia and Larry under his watchful eye.\n\n\nWinston was staring at Savannah's campaign poster \u2014 the one with her promising smile and eyes full of assurance. Savannah, who was leading in the polls, was clearly the people's choice for the election. The upcoming political rally had been plastered about town for weeks, making it an inevitability known to all.\n\nWinston scratched at an internal itch and trudged onto another stakeout. Larry, the man he was looking to question, was apparently active in a local survivalist group. Flipping open his notebook, Winston noted that Larry was a war veteran who had gone to significant lengths campaigning himself. Posters of Larry bearing the tagline \"Whatever it takes\" dotted the town too.\n\nWinston watched as Larry scrutinized each one with such intensity that it seemed like his entire identity was tied to the outcome of this election. The survivalist meetings took place in Larry's private property, which he had converted into a fortified camp after pumping his entire fortune into his campaign.\n\nWinston decided to pay a visit to Larry to know more about him and his involvement in the race. They met at Larry's camp, a spit-and-polish place that reflected Larry's military background. Crisp flags snapped in the wind and the entire setting was punctuated by the distinct scent of gun oil.\n\n\"Thank you for your service,\" Winston began, extending a handshake to Larry who returned it with an iron grip. It's well-known that war veterans like Larry are experienced with various forms of weaponry, including flamethrowers. True to this, an errant flamethrower was left out in the open at his camp, catching Winston's eye. A flame thrower, not entirely strange for a survivalist's camp, was an interesting detail, considering the bizarre circumstances of Savannah's death.\n\nAs they chatted, Winston learned that Larry and Savannah were political rivals. Larry preferred to attend every rally personally. In fact, even though they stood on opposing political platforms, Larry never missed any of Savannah's rallies.\n\n\"I respect my opponent,\" said Larry, his gaze distant. \"It's her policies I have a problem with.\"\n\nWinston wrapped up the brief visit with a polite nod. As he left Larry's camp, the veteran-turned-politician watched with a grim smile that left Winston looking back at Savannah's campaign poster with a different perspective.\n\nUnder the harsh whiteness of the police station lights, Winston eyed the smartly dressed woman with a critical gaze. Sophia, they called her. A journalist. She was a fine-boned woman, older, maybe late forties, with a reputation for relentless pursuit of stories. And not just that, she had a remarkable reputation of not lying or hiding truths, even under the most severe pressures.\n\n\"Sophia, you worked on coverage of the military exhibition last month, right?\" he started, watching her eyes carefully for subtle reactions.\n\n\"Yes, I did,\" she said coolly. She looked him directly in the eyes, without a hint of evasion. \"I am entrusted with sometimes sensitive information. I don't lie or hide truths, detective. I take my job quite seriously.\"\n\nSeeing her intensity, Winston was not surprised. She was invested in her career, in truth-seeking, more than most. But her career, it seemed to Winston, was teetering on the edge. His notes said something about job stability issues.\n\n\"I heard from various sources that your job as a journalist could be at risk, Sophia.\"\n\nA flicker of annoyance crossed Sophia's eyes. \"Every job carries elements of risk and taking risks is crucial for growth, detective,\" she replied firmly.\n\nWinston took note of that and moved on to another point. \"Is it true that you managed to keep a flamethrower from the exhibition?\"\n\nA pause. Then a nod. \"I did keep a flamethrower... to study it further for my report. Is that a crime?\" she asked pointedly, her reputation for truthfulness evident. A defiant posture, not backing down easily, but then that's what made her good at her job, the detective reasoned.\n\n\"Well... does the name Savannah ring a bell?\" Winston asked, trying not to flinch at the sudden stiffness that came over Sophia's features. \"She knew you had a secret source, didn't she, Sophia?\"\n\nAgain, a pause, then a pointed glance before she finally said, \"Yes, she did... and she threatened to jeopardize the whole thing by revealing it publicly.\" The bitterness in her voice betrayed the gravity of that threat.\n\nJust as he was about to dive into that area further, he was reminded of a peculiar bit of information he'd acquired. \"Sophia, you were asked about some... scars? At a dinner party?\"\n\nSuddenly, all of Sophia's poise seemed to wither away. \"If you\u2019re referring to the dinner at the mayor's house, yes, I was asked about them,\" she answered evasively. Then she stood up in alarm, eyes flashing with a mix of fear, defiance and something Winston couldn't quite place.\n\n\"I think this conversation is over, detective. Thank you for your time,\" were her words before she exited the room hastily.\n\nWinston sighed, shoving his hands in his pockets. The chapter with Sophia wasn't over yet. Not by a long shot. He admired her relentless pursuit of the truth, of not dodging or lying.\n\nWho is the most likely murderer?\n\nA. Sophia\nB. Larry\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "musr/object_placements/85",
+    "task": "musr",
+    "family": "object_placements",
+    "origin_id": "object_placements/85",
+    "prompt": "As bars of music pulsated in the background, the air was filled with intense anticipation. The curtain was about to rise, and John, the consummate musician, was seen wandering nervously, the absence of his violin bow causing palpable anxiety. Marie, congenial and meticulous, was making her careful rounds, ensuring everything was in place for the grand orchestral performance that was about to begin. Meanwhile, nestled securely in the pocket of Fred, the seasoned conductor, was the baton. Fred, though focused on studying his musical notes, still radiated a cool confidence. Each of them was aware of the locations, the misplaced violin bow resting in the green room and the baton in Fred's pocket. This was the start of another riveting concert, and they all knew their roles within it. They also shared a mutual understanding of the importance of remembering where everything was. The stage was set, the actors were ready, and the performance was ripe to begin.\n\n\nFinding the discarded bow left in the green room, Marie carefully relocated it to the safe familiarity of the storage room, ensuring it would stay protected in the midst of the impending chaos of the concert. John, running high on nerves, was sight-seeing frenetically around the green room with hope and unease governing his heartbeat. His crucial item had gone missing and the imminent concert was not helping his cause. In the midst of all this, Marie, the vigilant aide, was rigorously at work. Despite the brewing frenzy, her attention to detail always stood out. Every nook and corner had to be in order, every piece of equipment in its rightful place. In another chamber, far from the crescendo, Fred was in his zone. With a clockwork rhythm, his gaze roved over his musical notations, his preparation sheltered from the outside world. Marie's habit of repositioning items just as John was looking for them was in full practice. This routine had taken shape over years of working together, familiar yet unconsciously executed.\n\nIn a flurry of adrenaline, John managed to locate his precious bow in the storage room, hastily making his way to the stage with it. His heart pounded in sync with the preparatory beats of the orchestra as he focused himself for the performance. Professionally trained, John was navigating his way through the labyrinth of rooms backstage, grappling with a sense of urgency that heightened his every sense. He moved like a man on a quest, oblivious to the hustle around him. Marie, ever the attentive stagehand, casually performed her routine checks across the shared space, ensuring everything was in order for the imminent performance. Frequencies of anticipated excitement were resonating in the air and she was a part of this energy, contributing to its vibrancy. Amidst it all, stood Fred, an old hand at conducting symphonies. Ensconced in his realm of sheet music and a flurry of scribbled notes, his focus was unwavering, preoccupied with the matter of fine tuning the performance. Concurrently, his eyes bordered on being stringent, tracking John's movements in between the re-adjustments he made to his accessory kept safely in his pocket. They were each caught up in their worlds, their adrenaline mingling in the shared space, contributing towards the symphony of production that was breathing life into the concert hall. John, finally, grasped what he came looking for, clearing his path towards the stage.\n\nGazing into his sheet music one last time, Fred carefully places his baton on the stand, ready for the grandeur of the opening note, marking his final preparation for the concert ahead. Lost in his rhythm, John's fingers moved effortlessly over the violin strings, tweaking them to ensure the sound was just right, despite the pivotal piece of equipment that wasn't in its place. The hustle and tension that swirled around him seemed not to waver his steady concentration. Meanwhile, on another end of the spectrum was Fred, a figure of grace and seriousness, who moved quietly, deep in thought, practicing his steps to perfection on the grand stage. His gaze fixed on the task in hand yet his movements subtle and unnoticeable, a testament to his years of commanding orchestras.\n\nBetween these two focal points operated Marie, the diligent stagehand. Her sharp glance was at constant motion, surveying the entire area and its occupants. Her eyes were keenly adapted to absorb the movements of the artists in preparation, a key aspect of her profession. She maintained a careful watch, her gaze often meeting Fred's footsteps as he masterfully navigated through the stage. Her intensive focus completed the silhouettes of the chaos that brewed below the surface.\n\nIn the grand scheme of the concert, with John's delicate touch on his instrument's strings, Fred's studied rhythm across the performance space, and Marie's conscious observation, the evening only held promise for the wave of harmonious music that was to come. And as the clock neared the start time with every tick, the stage buzzed with intense musical potential held under careful guidance. A hum of harmonious synchronization filled the hall, setting the stage for the grand performance to bewitch the audience.\n\nAs the dim lights dazzled, the hushed whispers faded, and the heartening applause echoed through the hall. A beautiful portrayal of poignant and intense music unveiled itself, notwithstanding the bouts of pre-concert jitters, evident amity, and sheer resilience of everyone involved. Their individual stories of preparation, struggle, courage, and dedication seamlessly wove into a singular unfolding saga of unrelenting passion for their art. Undoubtedly, the performance reached its pinnacle of perfection, garnering a showstopping closure to a night dedicated to the love of music.\n\n\nWhich location is the most likely place John would look to find the baton given the story?\n\nA. Fred's pocket\nB. green room\nC. stage\nD. storage room\nE. the stand\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "musr/object_placements/255",
+    "task": "musr",
+    "family": "object_placements",
+    "origin_id": "object_placements/255",
+    "prompt": "Martha's roses, her pride and joy, had finally bloomed to their full, lush beauty. Today was the day for trimming. In the heart of this task is her beloved pair of pruning shears that patiently waited in the shed. Martha needed to sharpen these shears for the job, a job she was aching to start. Adam, who shared his mother's keen eye for tidiness, was dutifully organizing the same shed. He saw where the shears were and made a mental note of their location.\n\nIn the garage, a sturdy bucket waited, its solid presence unobtrusive yet comforting, knowing its role in holding the trimmed blossoms. This was part of a process that young, inquisitive Lily was keen to learn. The neighborhood kid, Lily, knew precisely where the bucket rested as she admired every tool in Martha's collection, fascinated by how each played an essential role in grooming the garden.\n\nThey were all aware of each item's location. Each piece warmed up for the process, ready to deliver their small but crucial part in nurturing Martha's garden. The scene was set for a day dedicated to the life cycle of beautiful roses, with every character involved playing their role knowingly.\n\nWith a determined stride, Martha carried the pruning shears towards the grinding stone. The essential step of sharpening the shears would ensure precision in her trimming, marking the beginning of a day filled with delightful gardening activity. Adam found himself dealing with a rebellious stack of old pots in a far corner of the garden shed. Their ages varied, much like their shapes and sizes, making the job of organizing them slightly more challenging than he had initially thought. Disregarding the need for the trash bin, he continued battling the uncooperative heap, his efforts focused only on creating a neat space.\n\nMeanwhile, Lily, the neighborhood kid with a face brimming with curiosity, closely observed Martha's every move. The older woman, more than willing to pass on her gardening knowledge, made sure her activities took place within Lily's line of sight. Lily's eyes diligently followed Martha, taking in everything - right from the way Martha's hands manipulated the shears on the ale-brown grindstone to the particular rhythm of her steps as she prepared for her favorite chore of the day.\n\nIn the bustling synergy of Adam's struggle with the pots and Lily's rapt attention, the anticipation of what was to come next hung in the air. Martha's workspace, distant from the chaotic stack of pots and yet comfortably close to Lily's eager gaze, resonated with the calming rhythm of diligent preparation.\n\nAs the tranquil garden resounded with subtle activity, Adam, noticing the stray bucket in the garage, repositions it in the shed, enhancing the collective tidiness. Within this peaceful process, an unexpected sound rippled through the calm atmosphere when Adam accidentally dropped one of the tools in his hand. The loud clatter drew Martha's attention towards the shed where Adam was diligently arranging. At the same moment, Lily's attention was captivated by the sight of a butterfly, gracing one of the nearby flowers with its ephemeral presence\u2014a sight and direction opposite from the where the tool had fallen.\n\nGently lifting the freshly sharpened shears, Lily carefully carried them back to the shed, hoping to make Martha's task a little easier. As she settled them back into their designated spot, her eyes caught sight of the sturdy bucket, standing tall amid the organized chaos, ready for the day's gardening activities. Adam, lost in the labyrinth of the shed, discovered a rusted rake partially hidden beneath an old tarp. His curiosity was piqued by the unexpected relic as he held it under the sparse, filtered light entering through the shed window. Undeterred, his focus shifted entirely to the rake, its aged patina a stark contrast to the well-maintained tools around him. \n\nJust outside the shed, young Lily shadowed Martha intently, never missing an opportunity to assist. The youngster remained dedicatedly by Martha's side, eager to apply her newfound knowledge in treating and caring for the roses. Martha, ever alert, recognized her enthusiasm and appreciated the welcome assistance. A sincere nod of approval acknowledged as such, further enhancing Lily's excitement.\n\nThe rusty rake had now fully captured Adam's interest. Its primordial aura firmly gripped him, drawing his thoughts from the ongoing activities. On the side, however, the essential shears, still cradled in Lily\u2019s careful hands, were a stark reminder of the task at hand \u2013 the trimming of roses. \n\nYet, the morning was progressing, and the anticipation of the central activity grew with every passing minute. As Adam examined the rusted rake, Lily's careful watch over Martha, and the newly sharpened shears created a fascinating harmony of readiness and intrigue. The roses waited, blooming beautifully in Martha's well-tended garden, heralding the trimming that was soon to begin.\n\nAnd so the day unfolded in mundane splendour, the roses basking in the diligent love of Martha, the mysterious allure of the rusted rake captivating Adam, and Lily's conservation with the entire arrangement shaping her understanding of the world. The garden buzzed with tradition and camaraderie, each person and object playing a part in the significant task at hand. And while she continued to prepare her shears with measured care, Martha couldn't help but appreciate the unique unfolding of yet another day in her beloved garden. \n\nWhich location is the most likely place Martha would look to find the pruning shears given the story?\n\nA. garage\nB. grinding stone\nC. shed\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "musr/object_placements/179",
+    "task": "musr",
+    "family": "object_placements",
+    "origin_id": "object_placements/179",
+    "prompt": "At the bustling office, famous journalist Kate and intern Henry were focused intently on their work. Kate, working on an influential and important article, relied on crucial information from interviews saved on a micro recorder. The device was placed strategically on the desk by her side, along with a notepad full of bullet points and scribbles. Each knew the placement of these items and accessed them as required; such was the synergy of their work.\n\nHenry, the aspiring intern, willingly took up the task of organizing Kate's chaotic workspace. His aim was to prove his value in this bustling journalism office, and he did so by ensuring every item had a place and was easily accessible, especially the micro recorder and notepad, which were on the desk ready for Kate's use.\n\nIn the same room, Nancy, Kate's meticulous and hawk-eyed editor, carefully watched the productivity of the room. Her sole aim was to guarantee a smooth process for the impending deadline, so every second and every object's placement mattered. She knew, just like Kate and Henry, exactly where the essential tools for this operation, namely the micro recorder and the notepad, placed at the desk under their watchful gaze.\n\nThey were all aware of each of these essentials' exact location, a testament to the systematic efficiency of the office and their collective dedication to this significant project.\n\nSeeing the scattered mess on the desk, Henry decided to tidy up. Having collected up the micro recorder, he secured it safely in the drawer wanting nothing more than to support Kate in creating a clear workspace. Working to prove himself, Henry was very considerate. He respected Kate's possessions and sought her permission before moving anything. Meanwhile, a conversation ensued between Kate and Henry about the need for organization in the workspace, shedding more light on the organized chaos that was Kate's desk.\n\nParallel to this, Nancy was engaged in a phone conversation with an author, who increasingly sought Nancy's expert editorial advice. Interactions such as these, accumulated over time, had led to the intricate web of relationships forming the essence of this journalistic setting.\n\n\nFueled by her desire to produce a groundbreaking piece, Kate placed the micro recorder, her key to the stories she was set to tell, prominently on her desk. As her fingers brushed over its cold surface, the anticipated hum of productivity filled the room. Simultaneously, Henry found himself in a different room, deep in discussion with Nancy about a potential article idea. The intensity of their deliberations hit a high note, the rising crescendo choreographing the pulse of the office. Nancy, of course, multitasked with razor-sharp focus, her eyes never wavering from the crucial document she was editing on her computer. The importance of the task was palpable, the dance of her fingers on the keyboard mirroring the thoughts ticking in her mind. Indeed, there was more to this day than met the eye; the multitude of events happening at once painted a vivid picture of the behind-the-scenes frenzy at the busy journalism office.\n\nUpon finishing up with the latest piece of information extracted from the interviews recorded on her invaluable micro recorder, Kate, with a satisfied nod, pushed the notepad filled with densely written bullet points and insights onto the shelf, clearing space on the cluttered desk for her laptop. Henry found himself waiting at the entrance to Kate's room, intending to query her about a matter he had been grappling with. The timing was as such that as Kate was pushing herself from the desk, having filled it with ample important content. Meanwhile, ensconced within a fortress of papers bearing the early inklings of Kate's hard work, Nancy diligently skims through the preliminary prints. Fresh off the press, they served to signal the culmination of their hard work.\n\nIn their own way, every individual in the room added to the intricate tapestry of invaluable work. Under the persistent ticking of the deadline looming over them, everyone's focus remained razor-sharp. Equipped with a relentless strive for perfection acting in concert with shared dedication, the office was set aglow with a hum of productivity.\n\nIn this symphony of urgent tasks and looming deadlines, a moment of unified satisfaction fell upon the room. Each individual - writer, intern, editor - played a key role in a journalistic feat, touching myriad lives with the fruit of their shared labors.\n\nWhich location is the most likely place Nancy would look to find the notepad given the story?\n\nA. desk\nB. drawer\nC. shelf\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "musr/object_placements/31",
+    "task": "musr",
+    "family": "object_placements",
+    "origin_id": "object_placements/31",
+    "prompt": "In the bustle of pre-show excitement, the concert hall resonated with a sense of urgent dedication. Francesca, the star violinist for the night, was meticulously preparing her precious antique violin which was carefully stowed in its case, waiting for its moment to shine. Martin, the sound technician, was deeply engrossed in ensuring the perfect tuning for the microphone residing in the sound booth, his keen ears picking up every nuance. Sarah, always vigilant as the stage manager, was superintendently overseeing the course of events for the show, her eyes darting around the room making sure everything was in order for Francesca's concert. Everyone involved was quite familiar with their surroundings, the locations of the essential instruments and tools for the night's success were already well known by each.\n\nGently cradling her antique violin, Francesca made her way across the room to the stage. The luminous draw of the stage lights filled her with a surge of anticipation as the beautiful wooden instrument found its temporary home on the stage in preparation for the concert. Without missing a beat, Francesca moved past Sarah who was fully engaged in a radio conversation with Martin. The sound technician was busy running the sound checks at this instance, letting the timbre fill the room as he strived for the optimum balance required for Francesca's violin notes to perfectly resonate across the hall. Sarah was there on the radio with him, making sure that the audio setup was perfect for the concert. Francesca's pathway to the stage was clearly visible to Martin who, despite being engrossed in his technical adjustments, didn't miss her moving figure on his line of sight.\n\nIn the midst of the prepping hustle, Martin carefully maneuvered the microphone onto the stage for the crucial sound check. His focus was undeterred from ensuring that tonight, the hall would reverberate with the melodious strings of the Italian violin flawlessly. Ensuring that all operations ran like clockwork, Sarah juggled multiple tasks at once, her mobile phone pressed to her ear as she orchestrated her vendors from a distance. Francesca, her natural affinity for music shining through, was found tuning her instrument, the air vibrating with the passionate notes that would soon echo throughout the concert hall. Martin was at the heart of the symphony, adjusting the technology at hand, making sure that Francesca's harmonious notes spread across the hall unhindered. All the while, Sarah, still on the call, walked away from the scene, navigating towards the exterior of the building.\n\nUnder the bright stage lights, Sarah carefully placed Francesca's antique violin back into its designated case. With the violin nestled safely within, the concert could proceed without a hitch, allowing Francesca's music to ring out in all its stunning harmony. Diligently seated in a nearby dressing room, Francesca was engrossed in reviewing footage of past performances, seeking for areas of improvement. Behind the closed doors, she had no view of the bustling activity outside in the concert hall. \n\nAt the same time, Martin, the ever-focused sound technician, was seen knee-deep in a cluster of cables. His calculated movements carried him closer to Sarah. The woman's animated actions caught Martin's attention mid-task, her managerial role evident in her brisk pace and keen eye.\n\nSimultaneously across the room, stage manager Sarah busied herself overseeing the final arrangements. The whirlpool of activity swirled around her, yet she remained the calm eye of the storm. Her movements were precise and assured, inspiring trust in those around her.\n\nAmid the humming chaos and energy, Francesca, Martin, and Sarah each dedicated their hearts to the imminent concert. Their collective efforts were orchestrated in harmony, just like the sounds that would soon fill the hall. As the echoes of their hard work began to softy fade, a hush enveloped the arena, signifying the anticipation of a performance reverberating with harmony, dedication, and passion.\n\nWhich location is the most likely place Sarah would look to find the microphone given the story?\n\nA. instrument case\nB. sound booth\nC. stage\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "musr/team_allocation/74",
+    "task": "musr",
+    "family": "team_allocation",
+    "origin_id": "team_allocation/74",
+    "prompt": "In the mystical heart of an elven kingdom, cradled within the enchanting whispers of a magical forest, a distinct challenge awaited me. As the chosen leader, I was entrusted with the responsibility of assigning two pivotal tasks to my faithful allies - Thalion, Celebrian, and Galadriel. Our kingdom was on the brink of war; one of us was destined to master the art of weapon forging, crafting arms of unparalleled quality, while another would be tasked with soldier training, instilling the ancestral fighting spirit into our vibrant elf warriors.\n\nThalion was our seasoned smith. For years, the glow of his furnace illuminated our night while the harmony of his hammer striking metal accompanied our songs. His knowledge was unmatched when it came to understanding the strength and weaknesses of various metals, expertly tailoring weapons to the individual needs of our warriors. He could transform a chunk of crude metal into a waltzing blade, light as an autumn leaf yet firm in its purpose. However, his impatience for slow learners and a stubborn unwillingness to adapt his teaching methods were known to all. Once, he even blamed Galadriel when a significant weapon didn't meet his stringent standards. Thalion's prejudice against Celebrian's humble background further tarnished his relations, further igniting the flame of tension that flickered between them.\n\nCelebrian, radiant with resolution, was often seen mediating trivial disputes amongst our ranks. Her spirit knew not of the hierarchies of birth, and this humility endeared her to all. Though having never set foot on a battlefield herself, she nurtured a deep understanding of our ancient military strategies. Her tenure as an auxiliary trainer in the elf militia stood testament to her proficiency in training and honing the skills of our warriors. Celebrian was a marvel with precious metals. Throughout the years, she had honed her craftsmanship in sharpening and polishing weapon edges, rendering them a formidable force on the battlefield. Nevertheless, Thalion's dismissive attitude made her feel unappreciated and alienated.\n\nLastly, there was Galadriel, an elf of many virtues. Her time spent practicing drills and formations with young elf warriors, coupled with extensive studies of battle strategy and tactics, indeed made her a respectable influence amongst our fighters. She had a soft spot for artistic pursuits and despised the brute strength often required in weapon forging. Her lack of physical prowess was evident when she sought help to lift the heavy blacksmithing tools. Yet, Thalion's unjust accusation in the past still stung her heart, putting a strain on their equation. But, Galadriel respected and listened to Celebrian's diplomatic advice, soothing the discord Thalion often incited.\n\nAs I pondered, it became clear that the task was not just about assignments; it was a rite of drawing strength out of weaknesses, creating harmony out of discord, and proving to all that in unity, we stand unbreakable. Whoever toils with the anvil, whosoever polishes the warriors' determination, all of us would serve our kingdom with a spirit as unyielding as our enchanted forest.\n\nGiven the story, how would you uniquely allocate each person to make sure both tasks are accomplished efficiently?\n\nA. Weapon Forging: Celebrian, Soldier Training: Galadriel and Thalion\nB. Weapon Forging: Thalion, Soldier Training: Celebrian and Galadriel\nC. Weapon Forging: Galadriel, Soldier Training: Celebrian and Thalion\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "musr/team_allocation/185",
+    "task": "musr",
+    "family": "team_allocation",
+    "origin_id": "team_allocation/185",
+    "prompt": "As the city woke to the dawn's early light, I found myself in contemplation at my office window. The upcoming product launch had turned our marketing department into a complex puzzle, akin to a maestro orchestrating a multifaceted symphony. The key pieces of this puzzle were my team members: Michael, Patricia, and Connor, each with their own unique strengths. The challenge lay in assigning them to the tasks of PR and Social Media, all while ensuring the success of our product launch.\n\nConnor, the youngest member of my team, had a youthful energy that was infectious. His passion had led him to attend a social media marketing training. His insightful contributions received praise, indicating a substantial understanding of the field. In fact, I had observed his personal social media platforms amass a significant following, a testament to his knack for engaging with the audience.\n\nHowever, a noticeable stutter and a clear trepidation crept over him whenever he tried to communicate with individuals outside the company. It was hard to forget the time Connor mishandled conversations with journalists, causing noticeable embarrassment. Conflict also tended to arise between him and Michael. If both shared a workspace, Connor somehow became defensive, less productive. Yet when it came to Patricia, they had open, constructive discussions about marketing which flowed harmoniously.\n\nMichael was a seasoned campaigner with a dominant personality and a knack for leadership. Despite his shortcomings in understanding the nuances of SEO and utilising hashtags effectively on social platforms, he had done an acceptable job with press releases in the past, albeit with a few minor errors. His personal accounts reflected his infrequent posts and bland, hence the low engagement. But, when it came to networking events, Michael possessed an uncanny ability to effectively articulate the company's vision and had a knack for PR. However, his domineering nature often led him to criticize Connor's ideas, leaving very little room for others to contribute.\n\nMeanwhile, Patricia, our team's harmonizing force, was an insightful although sometimes a reluctant player. She had difficulty in front of cameras during TV interviews and lacked the understanding of social media algorithms to boost content visibility. Patricia's replies to journalists had received complaints for being unclear and late, yet her collaborative approach made her an invaluable team player. Her respect for Connor's insights and advocacy for implementing new social media strategies was proof. Her personal social media, however, often displayed irrelevant content.\n\nAs I sifted through these facts, I could see the gears of assignments turning and fitting into their proper places. Assigning Patricia, Michael, and Connor to their roles was a task that involved understanding their strengths, weaknesses, and interpersonal dynamics. I took a moment, smiled, and made my choices, knowing that by playing to each of their strengths, we would have a successful product launch. The final decision, of course, is left to the reader. It was surely the beginning of another exhilarating symphony at the marketing department.\n\nGiven the story, how would you uniquely allocate each person to make sure both tasks are accomplished efficiently?\n\nA. PR: Michael, Social Media: Connor and Patricia\nB. PR: Connor, Social Media: Michael and Patricia\nC. PR: Patricia, Social Media: Connor and Michael\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "musr/team_allocation/165",
+    "task": "musr",
+    "family": "team_allocation",
+    "origin_id": "team_allocation/165",
+    "prompt": "Beneath the vast azure sky, the arid landscape stretched out, a blank canvas awaiting the touch of the geological survey team I was spearheading. Each pebble, every grain of earth held a story, a secret yearning to be discovered. Our journey was one of comprehension; deciphering the earth and the gritty, ivory-hued mysteries she harbored. Our jeep, heavy with equipment, carried not just our tools but also our aspirations, our anticipation, and the indomitable trio: Claire, Max, and Olivia. The tasks at hand were clear - Sampling and Data Analysis - and it was up to me to assign these crucial roles to our team members.\n\nTurbid glasses perched on her nose, Claire was a living, breathing testament to ambition and dedication. Into the wilderness, she had ventured countless times, the soil and the rocks her silent companions. A veteran of several field studies, Claire's relationship with stratigraphy and sedimentology was as profound as it was meticulous, deepened by the degree she held in geology. Yet, her keenness for soil and rock sampling was often undermined by her propensity to overanalyze sizeable data sets - an understandable foible, but one which often caused delays in our process.\n\nThe sharp contrasts of Claire's personality were vividly on display in her relationships with Max and Olivia. For Claire, Olivia's casual disregard for safety measures was unprofessional, to say the least, while Max's animated disposition and throbbing enthusiasm often perturbed her peace. Despite the conflicts, Claire's expertise remained unparalleled, and she had once even assisted in completing an intricate research project that required comprehensive data interpretation.\n\nIn stark contrast to Claire stood Max - jovial, boisterous, and relentlessly passionate. His skills lay in his instinctive recognition of rock formations, honed through years of exposure to the field and employment in labs. His affinity for GIS tools and quantitative methodologies was impressive, as was his knack for interpreting data - a skill that had once been instrumental in cracking a particularly convoluted geological puzzle. Yet, despite his extensive abilities, his stubbornness often led him to disregard Claire's input, heating up discords and disputes.\n\nIn the middle of these two vibrant, disparate personalities, was Olivia. Her admiration for Max's inventive solutions was evident, and so was her dislike for Claire's austere approach towards fieldwork. In her university days, she had majored in geology, focusing on sedimentary rocks - a specialization that had equipped her with an uncanny ability to swiftly identify rock types and structures in the field. Although hand-in-hand with these strengths came a novice\u2019s grasp of statistical software and difficulty in dealing with complex data sets - often necessitating help.\n\nWith this eclectic mix of abilities and temperaments, I had to assign the tasks of sampling, mapping and data analysis. Each had their own strengths and weaknesses, their unique skills and shortcomings. The quiet expanse of the field waited, ready for us to decipher its enigmas. And amid the rustling winds and the hushed whispers of the earth, I made my decisions, hoping the teamwork would uncover the secrets that the earth held deep within her bosom.\n\nGiven the story, how would you uniquely allocate each person to make sure both tasks are accomplished efficiently?\n\nA. Sampling: Claire, Data Analysis: Max and Olivia\nB. Sampling: Max, Data Analysis: Claire and Olivia\nC. Sampling: Olivia, Data Analysis: Claire and Max\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  },
+  {
+    "id": "musr/team_allocation/2",
+    "task": "musr",
+    "family": "team_allocation",
+    "origin_id": "team_allocation/2",
+    "prompt": "Amid the serene setting of WonderKids Daycare Center, a palpable sense of anticipation filled the air. The new management team was faced with a crucial task: assigning roles to Betty, Andrea, and Helen. The roles in question were Classroom Teaching and Outdoor Supervision. The decision was not to be taken lightly, as it required careful consideration of each individual's past experiences and unique skill sets.\n\nAndrea and Helen had a mutual understanding - a shared admiration that stemmed from each other\u2019s unparalleled dedication to their work, that was evident in their joint effort that resulted in a successful local charity event. People spoke of their harmony. But, at the same time, Andrea held some bias against Betty for a disaster at the annual teacher's softball game, blaming her for their team\u2019s loss. A major point of contention arose during a staff meeting with Betty and Andrea disagreeing over teaching techniques; progress was counterproductive as they battled out their perspectives. \n\nThen there was the hiccup about Andrea's discomfort with outdoor activities. With a low physical stamina, she found it difficult to keep up with the energetic children when they would excitedly rush outdoors for play-time. However, in the indoor setting of a classroom, Andrea was in her element. A former elementary school teacher for 10 years, she'd seen her students consistently surpass average scores on standardized tests. She had the experience, the know-how, and the excellent reputation. \n\nBetty, on the other hand, stood out with multiple awards for her teaching methods under her belt. Parents praised her for the significant improvement in their children, testament of Betty's devotion. But Betty also had quirks, she had a notorious sense of direction, something that was evident when the daycare center visited the local parks. More alarmingly, she often forgot to apply sunscreen to the innocent kids, raising concerns about her outdoor supervision abilities. \n\nAnd then there was Helen \u2013 esteemed among peers, despite her public criticism over the treatment of a child incident by Betty. She was a lady who had never birthed or raised her children. But she often got lost in managing outdoor interactions among them, perhaps a residue of a scarred past where she once forgot to put Betty's classroom supplies back and losing her nephew at a fair while he was under her watch. Moreover, she would get sunburned very quickly during outdoor activities, and the kids didn\u2019t respect her family gathering stories where she usually struggled to maintain order.\n\nAs the leader looked at the list, the pieces of jigsaw puzzle were beginning to come together. Their tasks were clear: Drawing strengths from their own past experiences, Andrea, Betty, and Helen all had unique skills and challenges that would shape the future of the kids at the daycare center in unpredictable but incredible ways.\n\nGiven the story, how would you uniquely allocate each person to make sure both tasks are accomplished efficiently?\n\nA. Classroom Teaching: Helen, Outdoor Supervision: Andrea and Betty\nB. Classroom Teaching: Andrea, Outdoor Supervision: Betty and Helen\nC. Classroom Teaching: Betty, Outdoor Supervision: Andrea and Helen\n\nReason through the problem and finish with a separate line: Final: <letter>."
+  }
+]

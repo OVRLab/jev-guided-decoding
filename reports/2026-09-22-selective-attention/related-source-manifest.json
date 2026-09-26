@@ -1,0 +1,47 @@
+{
+  "retrieved_at": "2026-09-22T11:12:40.720492+00:00",
+  "sources": [
+    {
+      "name": "typesafe-index",
+      "url": "https://docs.typesafe.ai/llms.txt",
+      "sha256": "486685db6fec679ca3c7149f15b19c1ab069adbbc7a4b2369e80e5fc0f8caf64",
+      "bytes": 16019
+    },
+    {
+      "name": "typesafe-api",
+      "url": "https://docs.typesafe.ai/api.md",
+      "sha256": "7ea1c82d9d16bd06e3d38885a5292548293f91e6d1ade4682c27398ced51a9e5",
+      "bytes": 11772
+    },
+    {
+      "name": "typesafe-noul",
+      "url": "https://docs.typesafe.ai/primitives/noul.md",
+      "sha256": "aa7bff0d04bd42614e0e851a9ad4917ccc6287c882bc5dece7689b085ef789e6",
+      "bytes": 27363
+    },
+    {
+      "name": "typesafe-citation",
+      "url": "https://docs.typesafe.ai/cookbooks/citation_check.md",
+      "sha256": "2497e2c62a4c5fb2d1aca1c4031fb7bd39948d27b13f18e1db07d8c5777cd529",
+      "bytes": 15254
+    },
+    {
+      "name": "flare",
+      "url": "https://aclanthology.org/2023.emnlp-main.495/",
+      "sha256": "29286a69337a28f8e38c4a93f7726f841de294575bbff8372a45bc127b2ac683",
+      "bytes": 45358
+    },
+    {
+      "name": "dragin",
+      "url": "https://aclanthology.org/2024.acl-long.702/",
+      "sha256": "8f6daed168b4e4227c6a979289af14e5fcb184e587e388941cc26f67bd315439",
+      "bytes": 43899
+    },
+    {
+      "name": "spotlight",
+      "url": "https://arxiv.org/html/2505.12025v2",
+      "sha256": "44861b09432ddcc7210bfe2cfb40470d0c9e4ab3a9c675b6ff961cf8231d095c",
+      "bytes": 277804
+    }
+  ]
+}

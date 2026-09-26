@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "RelNoneg-OWA-D5-897/Q22",
+    "theory_id": "RelNoneg-OWA-D5-897",
+    "question_id": "Q22",
+    "world_sha256": "b243e40eab3c92b4936fb61d96927f7b742fbc3484635fb36ce5b3322cafa471"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-824/Q10",
+    "theory_id": "RelNoneg-OWA-D5-824",
+    "question_id": "Q10",
+    "world_sha256": "cbfe15ebe254f9a1d13d6f6a0f1d94cf53d7f0a7d44d0cffcb82bd7b8780abb8"
+  },
+  {
+    "id": "RelNeg-OWA-D5-326/Q13",
+    "theory_id": "RelNeg-OWA-D5-326",
+    "question_id": "Q13",
+    "world_sha256": "42b5cd9c44ed5c9f561f86f391b08209779d43755c72d8411e161d99e0826983"
+  },
+  {
+    "id": "RelNeg-OWA-D5-848/Q2",
+    "theory_id": "RelNeg-OWA-D5-848",
+    "question_id": "Q2",
+    "world_sha256": "58f95dae772b5c086cec6734b410b1e5939d22e2589cd560d26a916c16ec5932"
+  },
+  {
+    "id": "RelNeg-OWA-D5-318/Q6",
+    "theory_id": "RelNeg-OWA-D5-318",
+    "question_id": "Q6",
+    "world_sha256": "7db5903089d15f9e1af757b325522d31fb5793e16ab55d25a950c3e43cb7b06c"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-680/Q22",
+    "theory_id": "RelNoneg-OWA-D5-680",
+    "question_id": "Q22",
+    "world_sha256": "368c16e6e4f88b0152f36a04c86a765d31933c93aa7fd1d3e7de36d052341288"
+  },
+  {
+    "id": "AttNeg-OWA-D5-410/Q14",
+    "theory_id": "AttNeg-OWA-D5-410",
+    "question_id": "Q14",
+    "world_sha256": "b3ce9c3c91b8f5584f8983d2634b9025ddbf46f699f4b9c8d7ef587745f47ed1"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-54/Q2",
+    "theory_id": "AttNoneg-OWA-D5-54",
+    "question_id": "Q2",
+    "world_sha256": "10925b562784518886a214bb2d48676b8241785f13b1df7e33913442ec9ef449"
+  },
+  {
+    "id": "RelNeg-OWA-D5-877/Q14",
+    "theory_id": "RelNeg-OWA-D5-877",
+    "question_id": "Q14",
+    "world_sha256": "c345208610310ebb7c0d216230fa435b6a69dc22ea941bdb9001d1348c5134a9"
+  },
+  {
+    "id": "AttNeg-OWA-D5-73/Q20",
+    "theory_id": "AttNeg-OWA-D5-73",
+    "question_id": "Q20",
+    "world_sha256": "0adef0df9e6cf037f7fcbc7a08e168a66221f3007cf18b2131807e93b918d645"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-855/Q13",
+    "theory_id": "RelNoneg-OWA-D5-855",
+    "question_id": "Q13",
+    "world_sha256": "b7618f4e1660b394339665f02700e1dc043e038fc562ae59c75e1ac7e5fe3d2d"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-602/Q24",
+    "theory_id": "RelNoneg-OWA-D5-602",
+    "question_id": "Q24",
+    "world_sha256": "9f12ecbb15c4e001d484ab002d6812ab5e3eb8f793ae00c42f1caefcb8b01bbc"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-1029/Q2",
+    "theory_id": "AttNoneg-OWA-D5-1029",
+    "question_id": "Q2",
+    "world_sha256": "6ba79f45112161ee20a32c8dc158c6b250614e3737a3d0628fafc10aa721ef8d"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-882/Q2",
+    "theory_id": "RelNoneg-OWA-D5-882",
+    "question_id": "Q2",
+    "world_sha256": "1a6c5f67fd810d1f45d948585c14823eaa42b81ab36afd9dbc3f8e8c3c75bd94"
+  },
+  {
+    "id": "AttNeg-OWA-D5-199/Q14",
+    "theory_id": "AttNeg-OWA-D5-199",
+    "question_id": "Q14",
+    "world_sha256": "749348a88ff34e56b52649ef469ea6532e20f17d054c13898589a36a62d8425b"
+  },
+  {
+    "id": "RelNeg-OWA-D5-370/Q22",
+    "theory_id": "RelNeg-OWA-D5-370",
+    "question_id": "Q22",
+    "world_sha256": "6cd3972ff2d4f19e20408a69f7318fd822616540abd53ade5b2bedf23d9be31d"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-690/Q3",
+    "theory_id": "RelNoneg-OWA-D5-690",
+    "question_id": "Q3",
+    "world_sha256": "04f70755d434eb5e932e58dcffe952e1970ca19fec58d7eeeb20db312eb52efb"
+  },
+  {
+    "id": "RelNeg-OWA-D5-738/Q16",
+    "theory_id": "RelNeg-OWA-D5-738",
+    "question_id": "Q16",
+    "world_sha256": "583b15552b464be28829e7b3ff1db1b5d01393c1c14dac0dd6a9e9ffc33bec0e"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-455/Q4",
+    "theory_id": "RelNoneg-OWA-D5-455",
+    "question_id": "Q4",
+    "world_sha256": "801243d6078b8e6e5d37c7e47c67322c60aad6f1b71e079cb6580ac0870a284b"
+  },
+  {
+    "id": "RelNeg-OWA-D5-201/Q13",
+    "theory_id": "RelNeg-OWA-D5-201",
+    "question_id": "Q13",
+    "world_sha256": "091ec9bd69209873a18f097078874ed23e8e7f18e4c72c0c9f1e17710ac38774"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-313/Q24",
+    "theory_id": "RelNoneg-OWA-D5-313",
+    "question_id": "Q24",
+    "world_sha256": "c436a45b7ce35d3656e0bbf10b9ed36e3b9c6f098f165cf80c656570ba9a3f5e"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-295/Q21",
+    "theory_id": "RelNoneg-OWA-D5-295",
+    "question_id": "Q21",
+    "world_sha256": "8bb5618457de99da6f5d6d673acd7c4688c5dbfd6409d8ed629cce15ecae5acc"
+  },
+  {
+    "id": "RelNeg-OWA-D5-918/Q6",
+    "theory_id": "RelNeg-OWA-D5-918",
+    "question_id": "Q6",
+    "world_sha256": "63b853cfa562f468d1c8adc958e59bb9eba5185130c9916a23fc5e17c3de4407"
+  },
+  {
+    "id": "AttNeg-OWA-D5-607/Q6",
+    "theory_id": "AttNeg-OWA-D5-607",
+    "question_id": "Q6",
+    "world_sha256": "6461be32ec0d330badfa7e6c95622c6339ef9652d7da00e5c8f2a5f28e9222ac"
+  },
+  {
+    "id": "RelNeg-OWA-D5-968/Q1",
+    "theory_id": "RelNeg-OWA-D5-968",
+    "question_id": "Q1",
+    "world_sha256": "45dfb4be1f0535ce2902511670ffe5444e39abcdae423b383afb7c051ae33d2c"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-763/Q7",
+    "theory_id": "RelNoneg-OWA-D5-763",
+    "question_id": "Q7",
+    "world_sha256": "6ae324de5195dbc8b732d0fe13096a865fbe52634dbea1ae97a577990448cd19"
+  },
+  {
+    "id": "RelNeg-OWA-D5-117/Q11",
+    "theory_id": "RelNeg-OWA-D5-117",
+    "question_id": "Q11",
+    "world_sha256": "8aae28f6114b24725dfbd1a5bd655dd2c728db4218e44b886479cb7d2a4598f5"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-654/Q15",
+    "theory_id": "RelNoneg-OWA-D5-654",
+    "question_id": "Q15",
+    "world_sha256": "96af77bd1073101892da8e302d270a9a0ebd64611857b8ac248a7564cbc7d2c3"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-91/Q14",
+    "theory_id": "AttNoneg-OWA-D5-91",
+    "question_id": "Q14",
+    "world_sha256": "9bb8322de91c975ba8753211ca0f06d7a0c621faadb961b176cfa12bc58e2bfc"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-537/Q8",
+    "theory_id": "AttNoneg-OWA-D5-537",
+    "question_id": "Q8",
+    "world_sha256": "a7142a2d1565b8721d04c284efa8ebe914c56bf8b1e42d0472a3410bb19ea183"
+  },
+  {
+    "id": "RelNeg-OWA-D5-397/Q9",
+    "theory_id": "RelNeg-OWA-D5-397",
+    "question_id": "Q9",
+    "world_sha256": "e3dad609f256161cf67ba36394d1a5ca55b5f8f67282cf6f7cf06e914348041a"
+  },
+  {
+    "id": "RelNeg-OWA-D5-759/Q11",
+    "theory_id": "RelNeg-OWA-D5-759",
+    "question_id": "Q11",
+    "world_sha256": "fcac71b49be727c62576dc4d9df447d5b615db6710249214b000c6b5e779a890"
+  },
+  {
+    "id": "AttNeg-OWA-D5-470/Q10",
+    "theory_id": "AttNeg-OWA-D5-470",
+    "question_id": "Q10",
+    "world_sha256": "3f2373c22979c9de4bfb348d84d99ef45920b41814740a382fc4755111476872"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-1243/Q3",
+    "theory_id": "AttNoneg-OWA-D5-1243",
+    "question_id": "Q3",
+    "world_sha256": "5d178ebf9c1c7fa76e3b0019de55511d9499f60176d18c72858bde4628d94a5f"
+  },
+  {
+    "id": "AttNeg-OWA-D5-1087/Q12",
+    "theory_id": "AttNeg-OWA-D5-1087",
+    "question_id": "Q12",
+    "world_sha256": "efc9638366d9f55e2a22ce5dc24a52354ec8a633a87029a005d3806c381d9498"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-899/Q4",
+    "theory_id": "RelNoneg-OWA-D5-899",
+    "question_id": "Q4",
+    "world_sha256": "a185aa7869036f24f96d723318e6b83e6ca1f717c548e0d81eff4025be2b5f08"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-805/Q4",
+    "theory_id": "RelNoneg-OWA-D5-805",
+    "question_id": "Q4",
+    "world_sha256": "5d0f997ea82e658fe659c42925926defbac0e0903dd6875ac002de4f85d9ddf9"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-1090/Q5",
+    "theory_id": "AttNoneg-OWA-D5-1090",
+    "question_id": "Q5",
+    "world_sha256": "eb8eb8e517020f3b4309c5a81b8ce35f892a62dfdb27d01fd66a05c0b389d23b"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-513/Q5",
+    "theory_id": "AttNoneg-OWA-D5-513",
+    "question_id": "Q5",
+    "world_sha256": "f9c4995eaea118fe5bc6a9aeeb4ade97f2cc0beef3161ce8f6cc0c005e5ac84f"
+  },
+  {
+    "id": "RelNeg-OWA-D5-779/Q12",
+    "theory_id": "RelNeg-OWA-D5-779",
+    "question_id": "Q12",
+    "world_sha256": "818985ed43aaa86c20fa7ca7a0deadaf31cc56b04482aa40e36f942276931448"
+  },
+  {
+    "id": "RelNeg-OWA-D5-476/Q21",
+    "theory_id": "RelNeg-OWA-D5-476",
+    "question_id": "Q21",
+    "world_sha256": "1ff8e1762e07424161314cc9a09ce6d11183cf077fc51299eb3bfaaaf5fecc42"
+  },
+  {
+    "id": "AttNeg-OWA-D5-471/Q2",
+    "theory_id": "AttNeg-OWA-D5-471",
+    "question_id": "Q2",
+    "world_sha256": "c3b20d3e2142f426c3da76c232c03f97010d6b628fe8f839a1b584f48138852d"
+  },
+  {
+    "id": "RelNeg-OWA-D5-669/Q8",
+    "theory_id": "RelNeg-OWA-D5-669",
+    "question_id": "Q8",
+    "world_sha256": "fc147b0f1d8448a0a0c28ccda54262e7ae68e70df52a76eeea68f5f5cb88141e"
+  },
+  {
+    "id": "AttNeg-OWA-D5-1067/Q7",
+    "theory_id": "AttNeg-OWA-D5-1067",
+    "question_id": "Q7",
+    "world_sha256": "1595188b4116c642d22b2cade89777fe655570a7415a49f2f8b06ee3eeb694b2"
+  },
+  {
+    "id": "AttNeg-OWA-D5-1088/Q13",
+    "theory_id": "AttNeg-OWA-D5-1088",
+    "question_id": "Q13",
+    "world_sha256": "3860a603d9075e266de28b372c66993fde7cf768c632444dbc69b82931e72402"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-657/Q2",
+    "theory_id": "RelNoneg-OWA-D5-657",
+    "question_id": "Q2",
+    "world_sha256": "b58fae8b963413b3449f53745148fd3357f74511debdccc3bb3fc627f1d31697"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-510/Q12",
+    "theory_id": "AttNoneg-OWA-D5-510",
+    "question_id": "Q12",
+    "world_sha256": "7f4d54c4ebfe149b7717783dc10a54d5658af3f12a1ccfd9a1b8787cdc18d291"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-1105/Q8",
+    "theory_id": "AttNoneg-OWA-D5-1105",
+    "question_id": "Q8",
+    "world_sha256": "eaae82b43c8839999abfcb9cb826c28210cef75b629edfcad399f14b116bee2d"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-55/Q1",
+    "theory_id": "RelNoneg-OWA-D5-55",
+    "question_id": "Q1",
+    "world_sha256": "6ac3f11baa15be2a52a04df9af0d720f58e1da557568e3939951a1d680febc36"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-939/Q16",
+    "theory_id": "RelNoneg-OWA-D5-939",
+    "question_id": "Q16",
+    "world_sha256": "3b110e00404d9ce2fea3f8802bd71b1558d75eb8b23e6397bad8b2572cfefb9e"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-1349/Q12",
+    "theory_id": "AttNoneg-OWA-D5-1349",
+    "question_id": "Q12",
+    "world_sha256": "a47b5380daadfc87986df1869fe223d179ac11122a38208b224aa4f65bd258e6"
+  },
+  {
+    "id": "AttNeg-OWA-D5-963/Q16",
+    "theory_id": "AttNeg-OWA-D5-963",
+    "question_id": "Q16",
+    "world_sha256": "72c0e060cd7ceba674e6538dd49d892800b6d767789eebb76a807744a514caa2"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-1112/Q1",
+    "theory_id": "AttNoneg-OWA-D5-1112",
+    "question_id": "Q1",
+    "world_sha256": "25f8d6e1246e36044badd1368379426858929ac4c114f05fa3b45f468e3e7720"
+  },
+  {
+    "id": "AttNeg-OWA-D5-799/Q2",
+    "theory_id": "AttNeg-OWA-D5-799",
+    "question_id": "Q2",
+    "world_sha256": "3499e3305d03bebdc1e6e50e700de6319e9964367223d0caceeb346a2cacd816"
+  },
+  {
+    "id": "AttNeg-OWA-D5-288/Q18",
+    "theory_id": "AttNeg-OWA-D5-288",
+    "question_id": "Q18",
+    "world_sha256": "3eba8082fee318ab4a34aeae50a0fd8504a77036ec2f8db9d5a12e4d8faf3ec4"
+  },
+  {
+    "id": "RelNeg-OWA-D5-1002/Q10",
+    "theory_id": "RelNeg-OWA-D5-1002",
+    "question_id": "Q10",
+    "world_sha256": "c55edee2a7e2bb67657aba9659c670f69a3d301f3b34435fd2e1a32962172b96"
+  },
+  {
+    "id": "RelNeg-OWA-D5-837/Q17",
+    "theory_id": "RelNeg-OWA-D5-837",
+    "question_id": "Q17",
+    "world_sha256": "c13f399e9db73d9dc5bbca67d423060cd7b4ea8e7371476804115d2f4d0fb9c9"
+  },
+  {
+    "id": "AttNeg-OWA-D5-521/Q3",
+    "theory_id": "AttNeg-OWA-D5-521",
+    "question_id": "Q3",
+    "world_sha256": "1a0254a841ed154d2326e7353e3bc6746b89d43be2fabf1db8210451a185942d"
+  },
+  {
+    "id": "AttNeg-OWA-D5-897/Q16",
+    "theory_id": "AttNeg-OWA-D5-897",
+    "question_id": "Q16",
+    "world_sha256": "5af3fe98b7c5d6c5e8ec508e0ffd7d5b3b8b1c177813a3b50140f04cdb5f5310"
+  },
+  {
+    "id": "RelNeg-OWA-D5-566/Q3",
+    "theory_id": "RelNeg-OWA-D5-566",
+    "question_id": "Q3",
+    "world_sha256": "6b73bd03c5dccdca19a568ac46dcc1ee923af7b80837492134312250c53f562c"
+  },
+  {
+    "id": "AttNeg-OWA-D5-232/Q9",
+    "theory_id": "AttNeg-OWA-D5-232",
+    "question_id": "Q9",
+    "world_sha256": "a63d628194f2c1ca41b5e441b65f08a8b353dc6fdb90d40e6fa9b10db71ea43e"
+  },
+  {
+    "id": "AttNeg-OWA-D5-1206/Q18",
+    "theory_id": "AttNeg-OWA-D5-1206",
+    "question_id": "Q18",
+    "world_sha256": "e1b8dacaafed107a7a37ad4a4de2fa38e37cbb7532cea4dfd51f16efb27628ed"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-1035/Q1",
+    "theory_id": "RelNoneg-OWA-D5-1035",
+    "question_id": "Q1",
+    "world_sha256": "eabbfde28ec4e042062dcf7eacf985065db6fdec2044efb72ad9604e6257ca38"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-558/Q1",
+    "theory_id": "RelNoneg-OWA-D5-558",
+    "question_id": "Q1",
+    "world_sha256": "3659d68c1219d1d32484a310e34b70f11456b4dc69ba5cf13bf9acef83817f97"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-585/Q20",
+    "theory_id": "RelNoneg-OWA-D5-585",
+    "question_id": "Q20",
+    "world_sha256": "3aebe2cefc0330cd89ff29d4d67e2cc76705bddbc6546dcb1e2c366b56dd7743"
+  },
+  {
+    "id": "RelNeg-OWA-D5-88/Q8",
+    "theory_id": "RelNeg-OWA-D5-88",
+    "question_id": "Q8",
+    "world_sha256": "a9579361e40a82940a781671024fc5aac6637bdc50ca5cfd6545e93e49424cb5"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-16/Q1",
+    "theory_id": "AttNoneg-OWA-D5-16",
+    "question_id": "Q1",
+    "world_sha256": "dba0ce3f1000fba5a74abfc55eb4440f8323e3132282466d74d46689ac090316"
+  },
+  {
+    "id": "AttNeg-OWA-D5-490/Q13",
+    "theory_id": "AttNeg-OWA-D5-490",
+    "question_id": "Q13",
+    "world_sha256": "8093804bfef1c66491920ad6eb381189ea7134e384562d96b6d77d5b5cd7dc3e"
+  },
+  {
+    "id": "RelNeg-OWA-D5-985/Q6",
+    "theory_id": "RelNeg-OWA-D5-985",
+    "question_id": "Q6",
+    "world_sha256": "99c816168191872fb63fc1b624b7b2c4c304e1f5007b0488cdd94e6eae4d1c94"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-787/Q1",
+    "theory_id": "AttNoneg-OWA-D5-787",
+    "question_id": "Q1",
+    "world_sha256": "8d27069e3bbb439f47749e5079f8d67dc3d345f48f923f2d82675054a6867b0a"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-388/Q7",
+    "theory_id": "RelNoneg-OWA-D5-388",
+    "question_id": "Q7",
+    "world_sha256": "f4ba8058276cd859f89596e87f72be7f4292f452f286df7ede2ef6c66b6366e5"
+  },
+  {
+    "id": "RelNeg-OWA-D5-296/Q17",
+    "theory_id": "RelNeg-OWA-D5-296",
+    "question_id": "Q17",
+    "world_sha256": "59fd901e441329de42af3eb6418d433bb8a23c176e4ebbda1eb01633be03a284"
+  },
+  {
+    "id": "AttNeg-OWA-D5-201/Q11",
+    "theory_id": "AttNeg-OWA-D5-201",
+    "question_id": "Q11",
+    "world_sha256": "50eb817c6edf4e48a467128fbaf6a24e84f8c227c609d0354d8f5e1ec806bdaf"
+  },
+  {
+    "id": "RelNeg-OWA-D5-1021/Q13",
+    "theory_id": "RelNeg-OWA-D5-1021",
+    "question_id": "Q13",
+    "world_sha256": "a3d434c6b507a671f7dfcb3f50e91d48c9b21afe005e449b842b478f21bcfff0"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-784/Q14",
+    "theory_id": "AttNoneg-OWA-D5-784",
+    "question_id": "Q14",
+    "world_sha256": "1733a7e2a6f6a3b79c3b4c3c266935d84b52bef195669318ee914d21c2d86f71"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-279/Q8",
+    "theory_id": "RelNoneg-OWA-D5-279",
+    "question_id": "Q8",
+    "world_sha256": "5a5849f23ef3ca60c93c64de7c5488c6c3a61f55decf8467a11b29695a7bc16e"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-344/Q5",
+    "theory_id": "RelNoneg-OWA-D5-344",
+    "question_id": "Q5",
+    "world_sha256": "ffe795f74b12712f8853c990c96f50db1b0730518fb54df627532de35b9aa546"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-826/Q3",
+    "theory_id": "AttNoneg-OWA-D5-826",
+    "question_id": "Q3",
+    "world_sha256": "6f36b09ac219b1bf30aa0853cdf56982f776a914961d082b4759a01c667eafe9"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-87/Q9",
+    "theory_id": "RelNoneg-OWA-D5-87",
+    "question_id": "Q9",
+    "world_sha256": "a08c55b7b5ca3071c4d925cd8fab26f8bf0240d37ae56a4a152a80bf9b93e5f5"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-883/Q5",
+    "theory_id": "AttNoneg-OWA-D5-883",
+    "question_id": "Q5",
+    "world_sha256": "3c1f72ae967f1f277f67396df61386dcf40f8f81b0772b5f272af8daa9af0e39"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-1015/Q1",
+    "theory_id": "RelNoneg-OWA-D5-1015",
+    "question_id": "Q1",
+    "world_sha256": "ec278d5b2ba686dcda01367d160cf9e1c1c2b548c40e3cd7752ff8cf66d319ab"
+  },
+  {
+    "id": "AttNeg-OWA-D5-169/Q12",
+    "theory_id": "AttNeg-OWA-D5-169",
+    "question_id": "Q12",
+    "world_sha256": "f0f804f053f77e65fcbd048229fbe645fe12103b8f05d92f8b97c750e99d5bb8"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-822/Q8",
+    "theory_id": "AttNoneg-OWA-D5-822",
+    "question_id": "Q8",
+    "world_sha256": "a5f4bd5d8d48b837acaf02dc81355800435fc031aec3085778dfcde74f1e6e85"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-205/Q10",
+    "theory_id": "AttNoneg-OWA-D5-205",
+    "question_id": "Q10",
+    "world_sha256": "81be05f9261b97d76a9a9936a85cd4b78c00a194df33bcbd6a0f305f7c2c524d"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-533/Q20",
+    "theory_id": "RelNoneg-OWA-D5-533",
+    "question_id": "Q20",
+    "world_sha256": "8cd05bf4c99c069afe9cf0e1a6a46dd915cacf3330d402f69672883ae5b6a5a0"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-902/Q4",
+    "theory_id": "AttNoneg-OWA-D5-902",
+    "question_id": "Q4",
+    "world_sha256": "7c00558513f06d5583a1bded187d5d510b717401999f293594e109b221be1904"
+  },
+  {
+    "id": "RelNeg-OWA-D5-889/Q10",
+    "theory_id": "RelNeg-OWA-D5-889",
+    "question_id": "Q10",
+    "world_sha256": "6fd5d80082cc5d2e423f9aadfa6c380dc6cc9436f2b63053abbf6e8ae24542cb"
+  },
+  {
+    "id": "RelNeg-OWA-D5-25/Q19",
+    "theory_id": "RelNeg-OWA-D5-25",
+    "question_id": "Q19",
+    "world_sha256": "5889349f28b42266e6adb621c224c9173dcb53f29b603d4d5f360f0d1a36cfde"
+  },
+  {
+    "id": "AttNeg-OWA-D5-1010/Q18",
+    "theory_id": "AttNeg-OWA-D5-1010",
+    "question_id": "Q18",
+    "world_sha256": "bbae4466b992a2cec94c667662f1090b0396f37ec507d6794f5a0beacddc3c05"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-271/Q21",
+    "theory_id": "RelNoneg-OWA-D5-271",
+    "question_id": "Q21",
+    "world_sha256": "c1054c8ab0852c234e9fb3d6889f87349e0dda81298586c9e16c4c015debb5c3"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-586/Q12",
+    "theory_id": "RelNoneg-OWA-D5-586",
+    "question_id": "Q12",
+    "world_sha256": "169a53aecda88c109d067ad536184336f3ef619dd9c61170e6ab4cb8cf86aa7a"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-354/Q11",
+    "theory_id": "RelNoneg-OWA-D5-354",
+    "question_id": "Q11",
+    "world_sha256": "4d7abb5d1c2684894152ff2707ea1e21378d710aa6046ce54a5d3451a7acb8b1"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-22/Q3",
+    "theory_id": "AttNoneg-OWA-D5-22",
+    "question_id": "Q3",
+    "world_sha256": "3406629f85ebad8dff23adf404517c2ba090c0a7b96e4121c7e8eff6766c7dcf"
+  },
+  {
+    "id": "RelNeg-OWA-D5-755/Q3",
+    "theory_id": "RelNeg-OWA-D5-755",
+    "question_id": "Q3",
+    "world_sha256": "76659ce905d114dd227b5814e0ba8cc64ab692678efc6453110fb338ff3aaa93"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-452/Q7",
+    "theory_id": "AttNoneg-OWA-D5-452",
+    "question_id": "Q7",
+    "world_sha256": "3d4e27e3836fbd849b4f03d85db5b951a724c0354e00dbbfa54793b68438a0d8"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-77/Q3",
+    "theory_id": "RelNoneg-OWA-D5-77",
+    "question_id": "Q3",
+    "world_sha256": "a51241274865ca65c402be93c06fe1d6caf5006898922e98edee34d69e1d66e1"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-1405/Q6",
+    "theory_id": "AttNoneg-OWA-D5-1405",
+    "question_id": "Q6",
+    "world_sha256": "0310c3a8b9f4992e4d119099cbaf16b96c0ea8865087f31bd19ce454c1eb9ee0"
+  },
+  {
+    "id": "AttNeg-OWA-D5-861/Q5",
+    "theory_id": "AttNeg-OWA-D5-861",
+    "question_id": "Q5",
+    "world_sha256": "78078a8c731d03b3be3a7896d5aa2892fb13610e018a61f5141bae2ff4374b01"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-472/Q7",
+    "theory_id": "RelNoneg-OWA-D5-472",
+    "question_id": "Q7",
+    "world_sha256": "bfb940bff1699614af72fd5ff462ab88c496ae7e4da437fd96135f83582896e1"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-204/Q9",
+    "theory_id": "RelNoneg-OWA-D5-204",
+    "question_id": "Q9",
+    "world_sha256": "6ede7d3202bdc229f34e0a29a1f660c65fbf88f5b9f393d8b7be300154a4af87"
+  },
+  {
+    "id": "RelNeg-OWA-D5-488/Q18",
+    "theory_id": "RelNeg-OWA-D5-488",
+    "question_id": "Q18",
+    "world_sha256": "7dbb0782a7214262ec4336d1fc2166bab4cfd3a87f8a1af189166a9df3bb2ed9"
+  },
+  {
+    "id": "AttNeg-OWA-D5-101/Q14",
+    "theory_id": "AttNeg-OWA-D5-101",
+    "question_id": "Q14",
+    "world_sha256": "dd230f13b57af1c1793ab212fdc15410efe51d3744b076614ec3b1b42db849d3"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-1198/Q4",
+    "theory_id": "AttNoneg-OWA-D5-1198",
+    "question_id": "Q4",
+    "world_sha256": "b8f5d3c3fb171da16e8ff66fd062ea6c98d49cb995a4d7b10d04badda6b85a8c"
+  },
+  {
+    "id": "RelNeg-OWA-D5-351/Q8",
+    "theory_id": "RelNeg-OWA-D5-351",
+    "question_id": "Q8",
+    "world_sha256": "3865c74be373ed67589f9cbc5c03abe2422334db9fc68f46969ff8dfeb85faf7"
+  },
+  {
+    "id": "AttNeg-OWA-D5-283/Q24",
+    "theory_id": "AttNeg-OWA-D5-283",
+    "question_id": "Q24",
+    "world_sha256": "2ad754a97e17b73ffe27a3a4d68c8b98893f8e03cce109e027aa4bcd37d5b832"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-664/Q12",
+    "theory_id": "RelNoneg-OWA-D5-664",
+    "question_id": "Q12",
+    "world_sha256": "c758a59e46a534a9e38876f98d3e3cdf008c6d1332371290138f9d37f29c6d34"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-938/Q12",
+    "theory_id": "RelNoneg-OWA-D5-938",
+    "question_id": "Q12",
+    "world_sha256": "31fd9c18a6e439d866636a022b2cb33042f61c1947f72b01ef3bfbe5e5e9ca1c"
+  },
+  {
+    "id": "RelNeg-OWA-D5-943/Q22",
+    "theory_id": "RelNeg-OWA-D5-943",
+    "question_id": "Q22",
+    "world_sha256": "5b3e4996e578bd2a156c0fe3ccc6ff08ccd16833870c2bcce0df224d948a2dfa"
+  },
+  {
+    "id": "RelNeg-OWA-D5-205/Q8",
+    "theory_id": "RelNeg-OWA-D5-205",
+    "question_id": "Q8",
+    "world_sha256": "37b4614920e3fdc633a8abd6eaf6f2bc7025262ba6c8c09f7cb19584bbb4cfd6"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-537/Q17",
+    "theory_id": "RelNoneg-OWA-D5-537",
+    "question_id": "Q17",
+    "world_sha256": "43e109fd59e18c496f1fb1041d7b678b7fb4fdb603c0df32954f552b00a1df91"
+  },
+  {
+    "id": "RelNeg-OWA-D5-182/Q18",
+    "theory_id": "RelNeg-OWA-D5-182",
+    "question_id": "Q18",
+    "world_sha256": "b229b12d2376a5ccdb4f24aca5de68de677d4325b122e640d2ba5d66b19befab"
+  },
+  {
+    "id": "AttNeg-OWA-D5-382/Q10",
+    "theory_id": "AttNeg-OWA-D5-382",
+    "question_id": "Q10",
+    "world_sha256": "c23693d4a03cd75fd228b6ee54ea5150e0c5b30838a69729af0f9eab71674248"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-644/Q10",
+    "theory_id": "AttNoneg-OWA-D5-644",
+    "question_id": "Q10",
+    "world_sha256": "db93ea97d55d307ac9a8f0ae0ba81fc0ca5ca38e832b7d8a8a861b8e35575e5f"
+  },
+  {
+    "id": "RelNeg-OWA-D5-806/Q18",
+    "theory_id": "RelNeg-OWA-D5-806",
+    "question_id": "Q18",
+    "world_sha256": "c6774b9af23939fe4a0b9d330ff71454b44b37a30497d24c2c2d744c00adb0e6"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-158/Q2",
+    "theory_id": "RelNoneg-OWA-D5-158",
+    "question_id": "Q2",
+    "world_sha256": "823dce5df01d19363753740befe46ac63dfd332c427d19237af0961a95745a7f"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-372/Q16",
+    "theory_id": "RelNoneg-OWA-D5-372",
+    "question_id": "Q16",
+    "world_sha256": "c1e68a14ca5aeb53ce4b5e81052bd4701bd2b38e9f0c3b1a32b71ba56652c3e5"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-607/Q11",
+    "theory_id": "AttNoneg-OWA-D5-607",
+    "question_id": "Q11",
+    "world_sha256": "1e066e92cd5923f107a68e6b09fa011a57bfe36d6789e9fefe801391a39576fa"
+  },
+  {
+    "id": "AttNeg-OWA-D5-793/Q8",
+    "theory_id": "AttNeg-OWA-D5-793",
+    "question_id": "Q8",
+    "world_sha256": "09153959fcb984c8b9c1620294c18b37dad7bed6d3e4b6bb3372601f85d6297d"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-522/Q19",
+    "theory_id": "RelNoneg-OWA-D5-522",
+    "question_id": "Q19",
+    "world_sha256": "7c5f55a358b3e52b2983997e61ed89a199f8a56901eaab81b5393f4c07c15ffb"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-184/Q9",
+    "theory_id": "RelNoneg-OWA-D5-184",
+    "question_id": "Q9",
+    "world_sha256": "899b5320f5b87dd7c10e8b326b18970c9d0d0da285cdf5d3a3d174fab27d6bc1"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-941/Q5",
+    "theory_id": "RelNoneg-OWA-D5-941",
+    "question_id": "Q5",
+    "world_sha256": "a52c9479bfb8811148a28584d5f0123eef1ccd0270b1e7ab4185e75f1c683ca7"
+  },
+  {
+    "id": "AttNeg-OWA-D5-355/Q22",
+    "theory_id": "AttNeg-OWA-D5-355",
+    "question_id": "Q22",
+    "world_sha256": "c08ecdfbe3dfa91652c28bf115c8d1cec6b2088cd920f701fc5f4992cee77670"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-374/Q14",
+    "theory_id": "AttNoneg-OWA-D5-374",
+    "question_id": "Q14",
+    "world_sha256": "2bcc16a592d5a6d61060bfe597d80124aa6955d376a5188be2196b681a59896f"
+  },
+  {
+    "id": "AttNeg-OWA-D5-1135/Q10",
+    "theory_id": "AttNeg-OWA-D5-1135",
+    "question_id": "Q10",
+    "world_sha256": "ca2de4b9462c472e6855f441c38e2fa19829a1a6633fc6d8b9504236d33be459"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-655/Q1",
+    "theory_id": "AttNoneg-OWA-D5-655",
+    "question_id": "Q1",
+    "world_sha256": "fc617cd9cdbbeea9677e789b7ae1210c64891c05fa2b8a9509a1ef0b8ae408b9"
+  },
+  {
+    "id": "RelNeg-OWA-D5-908/Q11",
+    "theory_id": "RelNeg-OWA-D5-908",
+    "question_id": "Q11",
+    "world_sha256": "e4feb7c903ced14b87b78185e6f935a77dbff46eee40c47621e463b7f2d92928"
+  },
+  {
+    "id": "AttNeg-OWA-D5-1025/Q16",
+    "theory_id": "AttNeg-OWA-D5-1025",
+    "question_id": "Q16",
+    "world_sha256": "9dd6e3901ea71c10c0de61e1b26777804a19a32db9842bb8340b99dd294c68c2"
+  },
+  {
+    "id": "AttNeg-OWA-D5-718/Q9",
+    "theory_id": "AttNeg-OWA-D5-718",
+    "question_id": "Q9",
+    "world_sha256": "435448a8ddcb603c1abe85c236a182b0d45adcdf386e7d90730157c0f30fe811"
+  },
+  {
+    "id": "AttNeg-OWA-D5-307/Q12",
+    "theory_id": "AttNeg-OWA-D5-307",
+    "question_id": "Q12",
+    "world_sha256": "bc7c54dc856bb0cda27f40ebf6b8b1b0c988a71a489777ae0ff8aea468ac4a0c"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-810/Q17",
+    "theory_id": "RelNoneg-OWA-D5-810",
+    "question_id": "Q17",
+    "world_sha256": "77d7147b9ad24178b5d664b3b2b341dc8d1ddc461f5c2b1531e3518189b75746"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-395/Q11",
+    "theory_id": "AttNoneg-OWA-D5-395",
+    "question_id": "Q11",
+    "world_sha256": "778233df532d727e290858b537fb09a99dc2ddada2499a9def0d0e9b6556cc92"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-669/Q5",
+    "theory_id": "RelNoneg-OWA-D5-669",
+    "question_id": "Q5",
+    "world_sha256": "a7feb504c83b556e228afc5d1cba51e52086ebd6d975c42972ec03ec13ae3442"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-545/Q3",
+    "theory_id": "RelNoneg-OWA-D5-545",
+    "question_id": "Q3",
+    "world_sha256": "44d39854482a3aeb3bbaa0fc1939c7e785858c6521e3180cd20355dbac5a0622"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-824/Q12",
+    "theory_id": "AttNoneg-OWA-D5-824",
+    "question_id": "Q12",
+    "world_sha256": "db10967ef1fba99662331c068c422892dd39690eda2fdbf0ff520cc4cdfbb130"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-558/Q5",
+    "theory_id": "AttNoneg-OWA-D5-558",
+    "question_id": "Q5",
+    "world_sha256": "e84a7962a0c73daa141f07eab790bc453198c3f66198c8899cfb854be5f8003e"
+  },
+  {
+    "id": "AttNeg-OWA-D5-461/Q11",
+    "theory_id": "AttNeg-OWA-D5-461",
+    "question_id": "Q11",
+    "world_sha256": "04d13cf14085bc5ecc7623e5c98f876939175b1f0c95aa98f3161085a003fe71"
+  },
+  {
+    "id": "AttNeg-OWA-D5-708/Q23",
+    "theory_id": "AttNeg-OWA-D5-708",
+    "question_id": "Q23",
+    "world_sha256": "f313928b868a82cd22ffbcdb131a05559f4097f60d9c6e05b39fece9b320641d"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-763/Q7",
+    "theory_id": "AttNoneg-OWA-D5-763",
+    "question_id": "Q7",
+    "world_sha256": "81ac33d6d457242b6fd5ca60e20b7fc907d98095ab5a5229faa7076fe1da2fe7"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-1190/Q6",
+    "theory_id": "AttNoneg-OWA-D5-1190",
+    "question_id": "Q6",
+    "world_sha256": "2708b3a41abe87684491d923f5922a51fdc31ad6ea4414cf20275e2bf4ecfb9b"
+  },
+  {
+    "id": "RelNeg-OWA-D5-513/Q22",
+    "theory_id": "RelNeg-OWA-D5-513",
+    "question_id": "Q22",
+    "world_sha256": "b3155cf27cdf2c92b546f0d51034e89742809326a1f599d27181541763a7de15"
+  },
+  {
+    "id": "AttNeg-OWA-D5-1126/Q24",
+    "theory_id": "AttNeg-OWA-D5-1126",
+    "question_id": "Q24",
+    "world_sha256": "3fad0291bb8b102c0d956f5c472bb1f50eed25936e8f460e602e6a3c0f6790bd"
+  },
+  {
+    "id": "AttNeg-OWA-D5-710/Q4",
+    "theory_id": "AttNeg-OWA-D5-710",
+    "question_id": "Q4",
+    "world_sha256": "6c014fc7c0ed51fe99b60af4501c27646d8e8e8417bec610934f09815f848bdb"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-1350/Q10",
+    "theory_id": "AttNoneg-OWA-D5-1350",
+    "question_id": "Q10",
+    "world_sha256": "065c42d132d59001264c414746fb13fbf9bc679647d67c20f32efe50e6df0484"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-134/Q12",
+    "theory_id": "RelNoneg-OWA-D5-134",
+    "question_id": "Q12",
+    "world_sha256": "c8b4994b4e73e3971195b0cf511a2c1dc561a954b96fbe43723ac8bf65e85235"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-88/Q5",
+    "theory_id": "AttNoneg-OWA-D5-88",
+    "question_id": "Q5",
+    "world_sha256": "fcf234d15b2279e2762b49a775b9b6d5c1faeca52fe1d2cbc4d99d703dc586c6"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-138/Q11",
+    "theory_id": "RelNoneg-OWA-D5-138",
+    "question_id": "Q11",
+    "world_sha256": "42c5a881caf43226c423311244bfbbb31536fb1bcab9da9cd52da84b7fbfdb10"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-472/Q4",
+    "theory_id": "AttNoneg-OWA-D5-472",
+    "question_id": "Q4",
+    "world_sha256": "c1b7286c355b4b578539cc30484439f6c6421ccaab1bdae4b1bee9e3cc9a6024"
+  },
+  {
+    "id": "RelNeg-OWA-D5-1017/Q1",
+    "theory_id": "RelNeg-OWA-D5-1017",
+    "question_id": "Q1",
+    "world_sha256": "10adcda98d207a70ff5dbadb41731ce77e2809b593e7b0cb6443b6c6e1adb267"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-526/Q8",
+    "theory_id": "RelNoneg-OWA-D5-526",
+    "question_id": "Q8",
+    "world_sha256": "80021d3a9ecd601ec14a8dcbc797715a27fc2cd1d954a3ed6af98c79b7625434"
+  },
+  {
+    "id": "RelNeg-OWA-D5-718/Q17",
+    "theory_id": "RelNeg-OWA-D5-718",
+    "question_id": "Q17",
+    "world_sha256": "65005715647b0780a56247c627eeb52cb37d9c9fb304698a82bb931a5bab3fe6"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-876/Q4",
+    "theory_id": "AttNoneg-OWA-D5-876",
+    "question_id": "Q4",
+    "world_sha256": "805be0648cf74336eaab68f9997b4b05feb344aec36194378b9d682e2cb818b8"
+  },
+  {
+    "id": "RelNeg-OWA-D5-358/Q7",
+    "theory_id": "RelNeg-OWA-D5-358",
+    "question_id": "Q7",
+    "world_sha256": "919596e6fff54f0f4e543dd9a42137bdf52bef82e515e538b2bed90d9d939531"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-304/Q11",
+    "theory_id": "RelNoneg-OWA-D5-304",
+    "question_id": "Q11",
+    "world_sha256": "0c242bf16c92954510a7ff9884c0ce7d0b7430d2e9b4842fbd4b2667425e9d97"
+  },
+  {
+    "id": "AttNeg-OWA-D5-206/Q8",
+    "theory_id": "AttNeg-OWA-D5-206",
+    "question_id": "Q8",
+    "world_sha256": "b3cd3eed8fc867f0b0e170f20c9dffa783716ae8faca9b493b02764b5951307d"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-1305/Q20",
+    "theory_id": "AttNoneg-OWA-D5-1305",
+    "question_id": "Q20",
+    "world_sha256": "88a5d592488bb31126815af95c80c5f37152cf6642e04c01eafa37832bf08ed6"
+  },
+  {
+    "id": "RelNeg-OWA-D5-956/Q19",
+    "theory_id": "RelNeg-OWA-D5-956",
+    "question_id": "Q19",
+    "world_sha256": "4d8777aa91c6d939a0845f3b0b01528193550d710aebe3f82503a5d79397e629"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-1025/Q7",
+    "theory_id": "AttNoneg-OWA-D5-1025",
+    "question_id": "Q7",
+    "world_sha256": "b38566de4059142435aea41c974eced51aa563d3cf242b5516c88d214ce53d37"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-126/Q7",
+    "theory_id": "AttNoneg-OWA-D5-126",
+    "question_id": "Q7",
+    "world_sha256": "67d22d00df76619b2cae76e81c0740978e66239697e07858a4a018f5f6542752"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-406/Q2",
+    "theory_id": "RelNoneg-OWA-D5-406",
+    "question_id": "Q2",
+    "world_sha256": "6266144a04a59fa3637b61a32882174304cd082c421bf72bef691931c1722b4f"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-1003/Q3",
+    "theory_id": "RelNoneg-OWA-D5-1003",
+    "question_id": "Q3",
+    "world_sha256": "6ed0334a525cf8efd818ee5e1da55e5928d2573e4fe6ff6dc2046235c8238541"
+  },
+  {
+    "id": "AttNeg-OWA-D5-12/Q9",
+    "theory_id": "AttNeg-OWA-D5-12",
+    "question_id": "Q9",
+    "world_sha256": "c600c2de71d6ea046a534c015f7c1a0433e7ecd5479b45ed1c3e4ce9f472530a"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-536/Q12",
+    "theory_id": "AttNoneg-OWA-D5-536",
+    "question_id": "Q12",
+    "world_sha256": "ec69b0199103b8aa119bd22b104a98a01df3a41b29cb4d0820a9fcd7f29d5e39"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-971/Q17",
+    "theory_id": "RelNoneg-OWA-D5-971",
+    "question_id": "Q17",
+    "world_sha256": "aecb3c54f1e9d2bcbe2a32e88bd08f13822459b3539a62c7576586fa4554e426"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-578/Q6",
+    "theory_id": "AttNoneg-OWA-D5-578",
+    "question_id": "Q6",
+    "world_sha256": "69d508ff290bfa18a8897c8f0485bc1b053fb968cdf563ff6c52f75b30ec7138"
+  },
+  {
+    "id": "AttNeg-OWA-D5-1006/Q13",
+    "theory_id": "AttNeg-OWA-D5-1006",
+    "question_id": "Q13",
+    "world_sha256": "bbb0dc719c4e917574defdb26b0e60980c8c1eb05c13276b9488a3adb6f9acb9"
+  },
+  {
+    "id": "RelNeg-OWA-D5-620/Q21",
+    "theory_id": "RelNeg-OWA-D5-620",
+    "question_id": "Q21",
+    "world_sha256": "c3b2f21b2bd457fa3e098e41b0ad8824baf9dee0c5292dfb753235f5ee998f13"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-602/Q9",
+    "theory_id": "AttNoneg-OWA-D5-602",
+    "question_id": "Q9",
+    "world_sha256": "2ba72229ebe4912b31784c673b591fc4f61f0eeac0f60455faeeea62b41b5723"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-1245/Q17",
+    "theory_id": "AttNoneg-OWA-D5-1245",
+    "question_id": "Q17",
+    "world_sha256": "b74aa6e6386fd691020419cc0e7bb3583aeb29ba14290ce7826c0ec7f5405a63"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-260/Q6",
+    "theory_id": "RelNoneg-OWA-D5-260",
+    "question_id": "Q6",
+    "world_sha256": "8fed06e9a89084038d4f747f14216003462e2d8e6789b2002d288aa36140e4a0"
+  },
+  {
+    "id": "RelNeg-OWA-D5-819/Q19",
+    "theory_id": "RelNeg-OWA-D5-819",
+    "question_id": "Q19",
+    "world_sha256": "414eefa88424bce565a6c8476ffae6e956bb2d0682de1a6879a342ef871f9daa"
+  },
+  {
+    "id": "AttNeg-OWA-D5-924/Q10",
+    "theory_id": "AttNeg-OWA-D5-924",
+    "question_id": "Q10",
+    "world_sha256": "1234292299bb2eb554262ee665d53e69c7e16c16f83bcb8ff327e52ed71539b9"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-712/Q7",
+    "theory_id": "RelNoneg-OWA-D5-712",
+    "question_id": "Q7",
+    "world_sha256": "6403e8144b033a7dd883e25fbd8c879cf12c490e3c1cbb98d380e05142cc6c67"
+  },
+  {
+    "id": "RelNeg-OWA-D5-191/Q23",
+    "theory_id": "RelNeg-OWA-D5-191",
+    "question_id": "Q23",
+    "world_sha256": "b6592912e59947876a6d5cfedc853a4fb4971fe306a9be8f6fba074c536d2307"
+  },
+  {
+    "id": "RelNeg-OWA-D5-118/Q18",
+    "theory_id": "RelNeg-OWA-D5-118",
+    "question_id": "Q18",
+    "world_sha256": "97df90f909f17c8b0b4c25d25ba2175f08c6fb2eeb3d649e86e1540159eb8cef"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-439/Q9",
+    "theory_id": "AttNoneg-OWA-D5-439",
+    "question_id": "Q9",
+    "world_sha256": "2ad28a4577cf10cb74b4fdb8379f940f072f9213efd1ef0525d934f1f3e29ffd"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-948/Q23",
+    "theory_id": "RelNoneg-OWA-D5-948",
+    "question_id": "Q23",
+    "world_sha256": "143918e1105877124898621b5e65622727986065806371ada61e15c2a4f57bd6"
+  },
+  {
+    "id": "AttNeg-OWA-D5-91/Q18",
+    "theory_id": "AttNeg-OWA-D5-91",
+    "question_id": "Q18",
+    "world_sha256": "650a8e1a5f45960fb484beb494bc4f366b053179fe834336cbb8ff30c8c677dd"
+  },
+  {
+    "id": "RelNeg-OWA-D5-752/Q6",
+    "theory_id": "RelNeg-OWA-D5-752",
+    "question_id": "Q6",
+    "world_sha256": "4deec3f5b61e2017ce406effe3507714be5dfe7bb34d5b70c9ffadbfc71b31d9"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-701/Q3",
+    "theory_id": "RelNoneg-OWA-D5-701",
+    "question_id": "Q3",
+    "world_sha256": "5cd92cd29e17ccab09c1425cd051c15789f03d455b4541ee0d798d3ec1c98bec"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-955/Q11",
+    "theory_id": "AttNoneg-OWA-D5-955",
+    "question_id": "Q11",
+    "world_sha256": "0633bb44726557247e69c912b6dd45b48e4d7f73536accf4adeaea8db8a65191"
+  },
+  {
+    "id": "AttNeg-OWA-D5-427/Q7",
+    "theory_id": "AttNeg-OWA-D5-427",
+    "question_id": "Q7",
+    "world_sha256": "84db6d82613a54098cc2380aa59f68b114aef0e871313b11a92b4f0b968e6208"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-651/Q13",
+    "theory_id": "AttNoneg-OWA-D5-651",
+    "question_id": "Q13",
+    "world_sha256": "c7765840c7548bd32b00510f6756ae3eac2cf3dc80da5cdae593d9f99809620e"
+  },
+  {
+    "id": "RelNeg-OWA-D5-486/Q6",
+    "theory_id": "RelNeg-OWA-D5-486",
+    "question_id": "Q6",
+    "world_sha256": "d4d64334c53a102282233db1f4d6a1a148add1419262ca2ce714e0957102324b"
+  },
+  {
+    "id": "RelNeg-OWA-D5-596/Q4",
+    "theory_id": "RelNeg-OWA-D5-596",
+    "question_id": "Q4",
+    "world_sha256": "754f7cfcfdfff514648cbc62f0f9862411c422bbe4864bea77182a25775cb964"
+  },
+  {
+    "id": "AttNeg-OWA-D5-1129/Q2",
+    "theory_id": "AttNeg-OWA-D5-1129",
+    "question_id": "Q2",
+    "world_sha256": "c04b34dbe22b773ea0933c1d121a790a7e2a05102c948f9be7a4b32066eccfcb"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-314/Q20",
+    "theory_id": "AttNoneg-OWA-D5-314",
+    "question_id": "Q20",
+    "world_sha256": "83d9ba88e8d1b7c0962ef5f90eeb515ee2d1f1ef6937e734848c4175ecdcd2d5"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-913/Q17",
+    "theory_id": "RelNoneg-OWA-D5-913",
+    "question_id": "Q17",
+    "world_sha256": "df4d887cf4ef311524ad21208da158cee1effc4f68f60344d13a9f3c31a489ab"
+  },
+  {
+    "id": "AttNeg-OWA-D5-209/Q15",
+    "theory_id": "AttNeg-OWA-D5-209",
+    "question_id": "Q15",
+    "world_sha256": "2de686264d91972a9cbfbc888e74cab4b80a49e6fb07e1a0542e7003575fb679"
+  },
+  {
+    "id": "RelNeg-OWA-D5-638/Q4",
+    "theory_id": "RelNeg-OWA-D5-638",
+    "question_id": "Q4",
+    "world_sha256": "6b4fb049953004f84aa0a598bfb29fe92475195935f98542b72e49758a9eea79"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-491/Q5",
+    "theory_id": "RelNoneg-OWA-D5-491",
+    "question_id": "Q5",
+    "world_sha256": "f3c52a01c26556f1524ee3f86865227afd3f30522bb13d00810c230dfc9d83c8"
+  },
+  {
+    "id": "AttNeg-OWA-D5-644/Q4",
+    "theory_id": "AttNeg-OWA-D5-644",
+    "question_id": "Q4",
+    "world_sha256": "540f430bd7c12dac078b93e25185b52a9662c0f4701d3de95ff919cfdb6e7bc7"
+  },
+  {
+    "id": "AttNeg-OWA-D5-1137/Q11",
+    "theory_id": "AttNeg-OWA-D5-1137",
+    "question_id": "Q11",
+    "world_sha256": "7fcbc02275d1cdfd9ef8be63b0d2a89d5b3a837ffe7e33aebe821c4a1b3e5990"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-642/Q5",
+    "theory_id": "RelNoneg-OWA-D5-642",
+    "question_id": "Q5",
+    "world_sha256": "d852270b0326a07351dd9816330a18be73b562f1bf6da505272144ec441b769a"
+  },
+  {
+    "id": "AttNeg-OWA-D5-649/Q1",
+    "theory_id": "AttNeg-OWA-D5-649",
+    "question_id": "Q1",
+    "world_sha256": "6815066c1e3001901f3ac19fb53d34968702b8839e98c2cf496579d58cde80db"
+  },
+  {
+    "id": "AttNeg-OWA-D5-250/Q9",
+    "theory_id": "AttNeg-OWA-D5-250",
+    "question_id": "Q9",
+    "world_sha256": "22aa26ac6fb77b7b4e8e25de9e481b4289b08944f07c8d252e84121fb2b6d1b8"
+  },
+  {
+    "id": "RelNoneg-OWA-D5-513/Q10",
+    "theory_id": "RelNoneg-OWA-D5-513",
+    "question_id": "Q10",
+    "world_sha256": "aee00813a805144a4c1a4cb7e030896c66a329bc816c5178ab869648985f608b"
+  },
+  {
+    "id": "AttNeg-OWA-D5-619/Q9",
+    "theory_id": "AttNeg-OWA-D5-619",
+    "question_id": "Q9",
+    "world_sha256": "44525bdb50b362a74e0985803bb33d6a2a832efed868c5982ab616048eabd748"
+  },
+  {
+    "id": "AttNeg-OWA-D5-1052/Q2",
+    "theory_id": "AttNeg-OWA-D5-1052",
+    "question_id": "Q2",
+    "world_sha256": "41b59741856cafe4ae816a4001af11cfb66e61acc728cad35a7efe376a13c6e0"
+  },
+  {
+    "id": "AttNoneg-OWA-D5-373/Q6",
+    "theory_id": "AttNoneg-OWA-D5-373",
+    "question_id": "Q6",
+    "world_sha256": "3f13474c8956db79b518dc63684955eef8887eb99090ca84204c660413954fd4"
+  },
+  {
+    "id": "RelNeg-OWA-D5-1003/Q22",
+    "theory_id": "RelNeg-OWA-D5-1003",
+    "question_id": "Q22",
+    "world_sha256": "c982c531acd21710d713527d3f542609fb335a1d7757c0811ccc8fc7b37e335b"
+  }
+]

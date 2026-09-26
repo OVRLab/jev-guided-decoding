@@ -1,0 +1,15 @@
+
+==================================== ERRORS ====================================
+_________________ ERROR collecting tests/test_public_critic.py _________________
+tests/test_public_critic.py:6: in <module>
+    P = runpy.run_path(str(Path(__file__).resolve().parents[1] / 'research/iterations/public_critic.py'))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+<frozen runpy>:254: in _get_code_from_file
+    ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/public_critic.py'
+=========================== short test summary info ============================
+ERROR tests/test_public_critic.py - FileNotFoundError: [Errno 2] No such file...
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.07s

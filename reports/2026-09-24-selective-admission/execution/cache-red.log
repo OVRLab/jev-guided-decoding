@@ -1,0 +1,154 @@
+F....F                                                                   [100%]
+=================================== FAILURES ===================================
+____ test_padded_batch_owns_exact_prefixes_and_counts_actual_forward_slots _____
+
+    def test_padded_batch_owns_exact_prefixes_and_counts_actual_forward_slots():
+        r = runtime()
+        m = tiny()
+        prompts = [[1, 2, 3], [4, 5]]
+>       rows, work = r["generate_batch"](m, Tokenizer(), prompts, limit=3, eos=[31], seed=2601)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_selective_benchmark_runtime.py:30: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+research/iterations/selective_benchmarks/runtime.py:110: in generate_batch
+    output = model.generate(
+.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py:120: in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/generation/utils.py:2564: in generate
+    result = decoding_method(
+.venv/lib/python3.12/site-packages/transformers/generation/utils.py:2784: in _sample
+    outputs = self(**model_inputs, return_dict=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/torch/nn/modules/module.py:1773: in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/torch/nn/modules/module.py:1879: in _call_impl
+    return inner()
+           ^^^^^^^
+.venv/lib/python3.12/site-packages/torch/nn/modules/module.py:1827: in inner
+    result = forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/models/granitemoehybrid/modeling_granitemoehybrid.py:1717: in forward
+    outputs = self.model(
+.venv/lib/python3.12/site-packages/torch/nn/modules/module.py:1773: in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/torch/nn/modules/module.py:1784: in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/utils/generic.py:918: in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/models/granitemoehybrid/modeling_granitemoehybrid.py:1389: in forward
+    layer_outputs = decoder_layer(
+.venv/lib/python3.12/site-packages/transformers/modeling_layers.py:94: in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/torch/nn/modules/module.py:1773: in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/torch/nn/modules/module.py:1784: in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/utils/deprecation.py:172: in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/models/granitemoehybrid/modeling_granitemoehybrid.py:1186: in forward
+    hidden_states, self_attn_weights = self.self_attn(
+.venv/lib/python3.12/site-packages/torch/nn/modules/module.py:1773: in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/torch/nn/modules/module.py:1784: in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/utils/deprecation.py:172: in wrapped_func
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.12/site-packages/transformers/models/granitemoehybrid/modeling_granitemoehybrid.py:204: in forward
+    key_states, value_states = past_key_values.update(key_states, value_states, self.layer_idx, cache_kwargs)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <transformers.models.granitemoehybrid.modeling_granitemoehybrid.HybridMambaAttentionDynamicCache object at 0x10f924470>
+key_states = tensor([[[[ 0.0497,  0.0428,  0.0533,  0.1936],
+          [ 0.1110, -0.0120, -0.0940, -0.2154],
+          [-0.0551, -0...,  0.0795, -0.0315],
+          [ 0.0089,  0.0412, -0.0134, -0.0886],
+          [ 0.0370,  0.0254,  0.0250, -0.0308]]]])
+value_states = tensor([[[[-0.0024, -0.0531,  0.1015, -0.0078],
+          [ 0.0032, -0.0389,  0.0946, -0.0431],
+          [-0.0258,  0..., -0.0794, -0.0361],
+          [-0.0294,  0.0486, -0.0111, -0.1314],
+          [ 0.0744,  0.0621,  0.1582,  0.0938]]]])
+layer_idx = 0
+cache_kwargs = {'cache_position': tensor([0, 1, 2]), 'cos': None, 'sin': None}
+
+    def update(
+        self,
+        key_states: torch.Tensor,
+        value_states: torch.Tensor,
+        layer_idx: int,
+        cache_kwargs: Optional[dict[str, Any]] = None,
+    ) -> tuple[torch.Tensor, torch.Tensor]:
+        # Update the cache
+        if self.key_cache[layer_idx].shape[-1] == 0:
+            self.key_cache[layer_idx] = key_states
+            self.value_cache[layer_idx] = value_states
+        else:
+>           self.key_cache[layer_idx] = torch.cat([self.key_cache[layer_idx], key_states], dim=2)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           RuntimeError: Sizes of tensors must match except in dimension 2. Expected size 1 but got size 2 for tensor number 1 in the list.
+
+.venv/lib/python3.12/site-packages/transformers/models/granitemoehybrid/modeling_granitemoehybrid.py:293: RuntimeError
+______ test_standard_qwen_cache_path_works_without_granite_config_fields _______
+
+    def test_standard_qwen_cache_path_works_without_granite_config_fields():
+        torch = pytest.importorskip('torch')
+        from transformers import Qwen3Config, Qwen3ForCausalLM
+        r = runtime()
+        torch.manual_seed(7)
+        m = Qwen3ForCausalLM(Qwen3Config(vocab_size=32, hidden_size=16, intermediate_size=32,
+            num_hidden_layers=2, num_attention_heads=4, num_key_value_heads=2, head_dim=4)).eval()
+>       rows, _ = r['generate_batch'](m, Tokenizer(), [[1, 2], [4]], limit=2, eos=[31], seed=2601)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_selective_benchmark_runtime.py:97: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+research/iterations/selective_benchmarks/runtime.py:114: in generate_batch
+    past_key_values=B["new_cache"](model),
+                    ^^^^^^^^^^^^^^^^^^^^^
+research/iterations/adaptive_attention/attention.py:16: in new_cache
+    cache = HybridMambaAttentionDynamicCache(
+.venv/lib/python3.12/site-packages/transformers/models/granitemoehybrid/modeling_granitemoehybrid.py:244: in __init__
+    self.layers_block_type = config.layers_block_type
+                             ^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = Qwen3Config {
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "head_dim": 4,
+  "hidden_act": "silu",
+  "hidde...": false,
+  "transformers_version": "4.57.1",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "vocab_size": 32
+}
+
+key = 'layers_block_type'
+
+    def __getattribute__(self, key):
+        if key != "attribute_map" and key in super().__getattribute__("attribute_map"):
+            key = super().__getattribute__("attribute_map")[key]
+>       return super().__getattribute__(key)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'Qwen3Config' object has no attribute 'layers_block_type'
+
+.venv/lib/python3.12/site-packages/transformers/configuration_utils.py:207: AttributeError
+=========================== short test summary info ============================
+FAILED tests/test_selective_benchmark_runtime.py::test_padded_batch_owns_exact_prefixes_and_counts_actual_forward_slots
+FAILED tests/test_selective_benchmark_runtime.py::test_standard_qwen_cache_path_works_without_granite_config_fields
+2 failed, 4 passed in 2.70s

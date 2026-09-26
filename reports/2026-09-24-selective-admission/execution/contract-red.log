@@ -1,0 +1,285 @@
+FFFFFFFFFFF                                                              [100%]
+=================================== FAILURES ===================================
+____________ test_retention_preserves_native_without_running_repair ____________
+
+    def test_retention_preserves_native_without_running_repair():
+        calls = []
+        native = {'generated_token_ids': [8, 9], 'text': 'Final: B'}
+        for probability in (None, 0.5, 1.0):
+>           row = module()['select'](native, probability, lambda gate: calls.append(gate))
+                  ^^^^^^^^
+
+tests/test_selective_benchmark_contract.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_benchmark_contract.py:10: in module
+    return runpy.run_path(str(PATH))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/selective_benchmarks/common.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/selective_benchmarks/common.py'
+
+<frozen runpy>:254: FileNotFoundError
+_______________ test_low_probability_executes_bound_repair_once ________________
+
+    def test_low_probability_executes_bound_repair_once():
+        calls = []
+        def repair(gate):
+            calls.append(gate)
+            return {'generated_token_ids': [4, 9], 'text': 'Final: D'}
+>       row = module()['select']({'text': 'Final: B'}, 0.02, repair)
+              ^^^^^^^^
+
+tests/test_selective_benchmark_contract.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_benchmark_contract.py:10: in module
+    return runpy.run_path(str(PATH))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/selective_benchmarks/common.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/selective_benchmarks/common.py'
+
+<frozen runpy>:254: FileNotFoundError
+_______________ test_invalid_probability_does_not_dispatch[True] _______________
+
+value = True
+
+    @pytest.mark.parametrize('value', [True, -0.1, 1.1, float('nan'), '0.2'])
+    def test_invalid_probability_does_not_dispatch(value):
+        with pytest.raises(ValueError, match='probability'):
+>           module()['select']({}, value, lambda _: pytest.fail('dispatched'))
+            ^^^^^^^^
+
+tests/test_selective_benchmark_contract.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_benchmark_contract.py:10: in module
+    return runpy.run_path(str(PATH))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/selective_benchmarks/common.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/selective_benchmarks/common.py'
+
+<frozen runpy>:254: FileNotFoundError
+_______________ test_invalid_probability_does_not_dispatch[-0.1] _______________
+
+value = -0.1
+
+    @pytest.mark.parametrize('value', [True, -0.1, 1.1, float('nan'), '0.2'])
+    def test_invalid_probability_does_not_dispatch(value):
+        with pytest.raises(ValueError, match='probability'):
+>           module()['select']({}, value, lambda _: pytest.fail('dispatched'))
+            ^^^^^^^^
+
+tests/test_selective_benchmark_contract.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_benchmark_contract.py:10: in module
+    return runpy.run_path(str(PATH))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/selective_benchmarks/common.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/selective_benchmarks/common.py'
+
+<frozen runpy>:254: FileNotFoundError
+_______________ test_invalid_probability_does_not_dispatch[1.1] ________________
+
+value = 1.1
+
+    @pytest.mark.parametrize('value', [True, -0.1, 1.1, float('nan'), '0.2'])
+    def test_invalid_probability_does_not_dispatch(value):
+        with pytest.raises(ValueError, match='probability'):
+>           module()['select']({}, value, lambda _: pytest.fail('dispatched'))
+            ^^^^^^^^
+
+tests/test_selective_benchmark_contract.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_benchmark_contract.py:10: in module
+    return runpy.run_path(str(PATH))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/selective_benchmarks/common.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/selective_benchmarks/common.py'
+
+<frozen runpy>:254: FileNotFoundError
+_______________ test_invalid_probability_does_not_dispatch[nan] ________________
+
+value = nan
+
+    @pytest.mark.parametrize('value', [True, -0.1, 1.1, float('nan'), '0.2'])
+    def test_invalid_probability_does_not_dispatch(value):
+        with pytest.raises(ValueError, match='probability'):
+>           module()['select']({}, value, lambda _: pytest.fail('dispatched'))
+            ^^^^^^^^
+
+tests/test_selective_benchmark_contract.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_benchmark_contract.py:10: in module
+    return runpy.run_path(str(PATH))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/selective_benchmarks/common.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/selective_benchmarks/common.py'
+
+<frozen runpy>:254: FileNotFoundError
+_______________ test_invalid_probability_does_not_dispatch[0.2] ________________
+
+value = '0.2'
+
+    @pytest.mark.parametrize('value', [True, -0.1, 1.1, float('nan'), '0.2'])
+    def test_invalid_probability_does_not_dispatch(value):
+        with pytest.raises(ValueError, match='probability'):
+>           module()['select']({}, value, lambda _: pytest.fail('dispatched'))
+            ^^^^^^^^
+
+tests/test_selective_benchmark_contract.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_benchmark_contract.py:10: in module
+    return runpy.run_path(str(PATH))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/selective_benchmarks/common.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/selective_benchmarks/common.py'
+
+<frozen runpy>:254: FileNotFoundError
+____________ test_task_specific_repair_preserves_exact_draft_tokens ____________
+
+    def test_task_specific_repair_preserves_exact_draft_tokens():
+        class Tokenizer:
+            def convert_tokens_to_ids(self, value):
+                assert value == '<|end_of_text|>'
+                return 999
+            def encode(self, text, add_special_tokens):
+                assert not add_special_tokens
+                self.suffix = text
+                return [len(text), 777]
+        tok = Tokenizer()
+        prompt, draft = [1, 2], [4, 5, 999]
+>       ids = module()['repair_prefix'](tok, prompt, draft, 'choice')
+              ^^^^^^^^
+
+tests/test_selective_benchmark_contract.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_benchmark_contract.py:10: in module
+    return runpy.run_path(str(PATH))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/selective_benchmarks/common.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/selective_benchmarks/common.py'
+
+<frozen runpy>:254: FileNotFoundError
+_________ test_choice_readout_does_not_randomly_credit_missing_answers _________
+
+    def test_choice_readout_does_not_randomly_credit_missing_answers():
+>       grade = module()['grade']
+                ^^^^^^^^
+
+tests/test_selective_benchmark_contract.py:65: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_benchmark_contract.py:10: in module
+    return runpy.run_path(str(PATH))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/selective_benchmarks/common.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/selective_benchmarks/common.py'
+
+<frozen runpy>:254: FileNotFoundError
+______ test_numeric_readout_accepts_final_marker_and_rejects_placeholder _______
+
+    def test_numeric_readout_accepts_final_marker_and_rejects_placeholder():
+>       grade = module()['grade']
+                ^^^^^^^^
+
+tests/test_selective_benchmark_contract.py:75: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_benchmark_contract.py:10: in module
+    return runpy.run_path(str(PATH))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/selective_benchmarks/common.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/selective_benchmarks/common.py'
+
+<frozen runpy>:254: FileNotFoundError
+____________________ test_schema_rejects_reference_leakage _____________________
+
+    def test_schema_rejects_reference_leakage():
+        case = {'id': 'fixture/1', 'task': 'math', 'family': 'math', 'prompt': '2 + 2?',
+                'format': 'number', 'origin_id': '1', 'cluster': '1', 'split': 'test'}
+>       module()['validate_case'](case)
+        ^^^^^^^^
+
+tests/test_selective_benchmark_contract.py:86: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_benchmark_contract.py:10: in module
+    return runpy.run_path(str(PATH))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/selective_benchmarks/common.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/selective_benchmarks/common.py'
+
+<frozen runpy>:254: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_selective_benchmark_contract.py::test_retention_preserves_native_without_running_repair
+FAILED tests/test_selective_benchmark_contract.py::test_low_probability_executes_bound_repair_once
+FAILED tests/test_selective_benchmark_contract.py::test_invalid_probability_does_not_dispatch[True]
+FAILED tests/test_selective_benchmark_contract.py::test_invalid_probability_does_not_dispatch[-0.1]
+FAILED tests/test_selective_benchmark_contract.py::test_invalid_probability_does_not_dispatch[1.1]
+FAILED tests/test_selective_benchmark_contract.py::test_invalid_probability_does_not_dispatch[nan]
+FAILED tests/test_selective_benchmark_contract.py::test_invalid_probability_does_not_dispatch[0.2]
+FAILED tests/test_selective_benchmark_contract.py::test_task_specific_repair_preserves_exact_draft_tokens
+FAILED tests/test_selective_benchmark_contract.py::test_choice_readout_does_not_randomly_credit_missing_answers
+FAILED tests/test_selective_benchmark_contract.py::test_numeric_readout_accepts_final_marker_and_rejects_placeholder
+FAILED tests/test_selective_benchmark_contract.py::test_schema_rejects_reference_leakage
+11 failed in 0.06s

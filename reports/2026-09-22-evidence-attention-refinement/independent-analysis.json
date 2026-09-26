@@ -1,0 +1,281 @@
+{
+  "status": "passed",
+  "counters": {
+    "inputs": 2879,
+    "decisions": 34679,
+    "receipts": 1630,
+    "zero_pairs": 1465,
+    "failed_receipts": 2,
+    "failed_outputs": 98
+  },
+  "recorded_outputs": 34777,
+  "scorer_attempts": 1632,
+  "persisted_full_vocabulary_zero_pairs": 12,
+  "source_segments": [
+    "be58b7236acce6c5ac6a9cb74c1b0405bb35d978",
+    "91a637b26eb84deebbbd4bc648d513cbf3af6669",
+    "e9f16c516c02404a8087b89fbb895e2d6fd51e74",
+    "d1fd5fe52e0476c469c9255c3fe1e76c457e996f",
+    "46f3175b8bc751fa865771ee5cfd07c48b7f56fe"
+  ],
+  "input_hashes": {
+    "results/evidence-nebius-finished-20260922/evidence-attention-v2-finished/challenge-scores.jsonl": "99f99af9b650189d4f6eae56df7dd08d7eaac413ccf0f8b1d53970be478e052d",
+    "results/evidence-nebius-finished-20260922/evidence-attention-v2-finished/challenge-summary.json": "0a3b1346fda845828ce894a541e30fd629dc7676485328a592e8b4cbf1920766",
+    "results/evidence-nebius-finished-20260922/evidence-attention-v2-finished/challenge.jsonl": "3608c608e327a49b89362780aceada564b024dcc7297513f387014a9d92b579b",
+    "results/evidence-nebius-finished-20260922/evidence-attention-v2-finished/completion.json": "1b266ea497f57aa3c80f1b2f9674703f0cb06f3c4ae03a9ddb62d4ac23c5327a",
+    "results/evidence-nebius-finished-20260922/evidence-attention-v2-finished/continuation.json": "3409fc3dabff72d5d5a46270716375e59e24ab21501b68e9ba73a178eeb1b386",
+    "results/evidence-nebius-finished-20260922/evidence-attention-v2-finished/development-scores.jsonl": "bab1b620e44ddb059770563b094cf90ec8a579e1c140af516a53da484ea9b2df",
+    "results/evidence-nebius-finished-20260922/evidence-attention-v2-finished/development.jsonl": "610758c6c9ee65f2f149b99d87b9ab565de52a02feb5ed7028cae437a158e755",
+    "results/evidence-nebius-finished-20260922/evidence-attention-v2-finished/inputs.jsonl": "9bea61722489de6e03e74cc93b62c974e1351088797784d0ffe4f8057c3104c3",
+    "results/evidence-nebius-finished-20260922/evidence-attention-v2-finished/metadata.json": "eb9b05286f3db51d174d03b7f312ef0f52b38b283c32f7a66dd14cfb4e26839c",
+    "results/evidence-nebius-finished-20260922/evidence-attention-v2-finished/recovery.json": "436e6ad61dbbedef0f4733eede9182baea1626747c74761bce810a46867a8bd9",
+    "results/evidence-nebius-finished-20260922/evidence-attention-v2-finished/selected-policy.json": "673016821263ff12076bbc37fab4d23a348c6d4d10b968efaaa913b4934cd182",
+    "results/evidence-nebius-finished-20260922/evidence-attention-v2-finished/starts.jsonl": "67a185ca1cbd4ea852d0ba66f0efd77b7ab95ad3e24f675ae794ca8b5bffdfa7",
+    "results/evidence-nebius-finished-20260922/evidence-attention-v2-finished/test-freeze.json": "230fc27fbc33e68ecc4143194c844f0b86db838af1c0f96dc073fad0c12ff102",
+    "results/evidence-nebius-finished-20260922/evidence-attention-v2-finished/test-scores.jsonl": "952c8c4a608cbda002b99689e3a3d2e543c2f9e438e8d1dbb456c54e8e28b0fa",
+    "results/evidence-nebius-finished-20260922/evidence-attention-v2-finished/test-summary.json": "7a78d2e1f15609299c612a87e845f2685964b4d092374e315b6a080e1cdc3e67",
+    "results/evidence-nebius-finished-20260922/evidence-attention-v2-finished/test.jsonl": "06a6680bb66a56b63eac1b07497426091a11f063e5ce9531a12ac71ca4e69bbe",
+    "results/evidence-nebius-finished-20260922/evidence-attention-v2-finished/zero-equivalence.json": "3cd1ed9ae3bb67fe1e8efd3dc7842ffcbad3a102fc7217606b2756f99252ace3"
+  },
+  "selected_policy": {
+    "id": "h12-ln16-hard50-question",
+    "count": 12,
+    "strength": 2.772588722239781,
+    "mapping": "hard50",
+    "scope": "question",
+    "heads": [
+      [
+        34,
+        4
+      ],
+      [
+        38,
+        11
+      ],
+      [
+        37,
+        14
+      ],
+      [
+        30,
+        4
+      ],
+      [
+        23,
+        8
+      ],
+      [
+        19,
+        6
+      ],
+      [
+        21,
+        13
+      ],
+      [
+        19,
+        11
+      ],
+      [
+        19,
+        15
+      ],
+      [
+        21,
+        14
+      ],
+      [
+        29,
+        10
+      ],
+      [
+        20,
+        11
+      ]
+    ]
+  },
+  "weights_unchanged": true,
+  "statistics": {
+    "test": {
+      "native": {
+        "difference": 0.30333333333333334,
+        "interval": [
+          0.26666666666666666,
+          0.34
+        ],
+        "interval_level": 0.975
+      },
+      "r14": {
+        "difference": 0.21083333333333334,
+        "interval": [
+          0.17916666666666667,
+          0.2425
+        ],
+        "interval_level": 0.975
+      },
+      "shuffled": {
+        "difference": 0.21916666666666668,
+        "interval": [
+          0.18916666666666668,
+          0.25
+        ],
+        "interval_level": 0.95
+      },
+      "lexical": {
+        "difference": 0.13833333333333334,
+        "interval": [
+          0.11416666666666667,
+          0.1625
+        ],
+        "interval_level": 0.95
+      },
+      "prompt": {
+        "difference": 0.23333333333333334,
+        "interval": [
+          0.19833333333333333,
+          0.26916666666666667
+        ],
+        "interval_level": 0.95
+      },
+      "oracle": {
+        "difference": 0.015833333333333335,
+        "interval": [
+          0.0025,
+          0.029166666666666667
+        ],
+        "interval_level": 0.95
+      },
+      "zero": {
+        "difference": 0.30333333333333334,
+        "interval": [
+          0.2708333333333333,
+          0.335
+        ],
+        "interval_level": 0.95
+      },
+      "mapping_only": {
+        "difference": 0.11666666666666667,
+        "interval": [
+          0.095,
+          0.13833333333333334
+        ],
+        "interval_level": 0.95
+      },
+      "heads_only": {
+        "difference": 0.19083333333333333,
+        "interval": [
+          0.16416666666666666,
+          0.21833333333333332
+        ],
+        "interval_level": 0.95
+      },
+      "strength_only": {
+        "difference": 0.13333333333333333,
+        "interval": [
+          0.11083333333333334,
+          0.15583333333333332
+        ],
+        "interval_level": 0.95
+      },
+      "scope_only": {
+        "difference": 0.21083333333333334,
+        "interval": [
+          0.18333333333333332,
+          0.23916666666666667
+        ],
+        "interval_level": 0.95
+      }
+    },
+    "challenge": {
+      "native": {
+        "difference": 0.16666666666666666,
+        "interval": [
+          0.10416666666666667,
+          0.22916666666666666
+        ],
+        "interval_level": 0.95
+      },
+      "r14": {
+        "difference": 0.13333333333333333,
+        "interval": [
+          0.07916666666666666,
+          0.19166666666666668
+        ],
+        "interval_level": 0.95
+      },
+      "shuffled": {
+        "difference": 0.03333333333333333,
+        "interval": [
+          -0.020833333333333332,
+          0.0875
+        ],
+        "interval_level": 0.95
+      },
+      "lexical": {
+        "difference": 0.07916666666666666,
+        "interval": [
+          0.03333333333333333,
+          0.12916666666666668
+        ],
+        "interval_level": 0.95
+      },
+      "prompt": {
+        "difference": 0.10416666666666667,
+        "interval": [
+          0.041666666666666664,
+          0.1625
+        ],
+        "interval_level": 0.95
+      },
+      "oracle": {
+        "difference": -0.0875,
+        "interval": [
+          -0.13333333333333333,
+          -0.041666666666666664
+        ],
+        "interval_level": 0.95
+      },
+      "zero": {
+        "difference": 0.16666666666666666,
+        "interval": [
+          0.10416666666666667,
+          0.22916666666666666
+        ],
+        "interval_level": 0.95
+      },
+      "mapping_only": {
+        "difference": 0.05416666666666667,
+        "interval": [
+          0.008333333333333333,
+          0.1
+        ],
+        "interval_level": 0.95
+      },
+      "heads_only": {
+        "difference": 0.1125,
+        "interval": [
+          0.0625,
+          0.16666666666666666
+        ],
+        "interval_level": 0.95
+      },
+      "strength_only": {
+        "difference": 0.09166666666666666,
+        "interval": [
+          0.0375,
+          0.14583333333333334
+        ],
+        "interval_level": 0.95
+      },
+      "scope_only": {
+        "difference": 0.13333333333333333,
+        "interval": [
+          0.07916666666666666,
+          0.19166666666666668
+        ],
+        "interval_level": 0.95
+      }
+    }
+  },
+  "analysis_source_sha256": "09ce0bfada7b8ac702a3e601d6006423e89ebad81ca0f4d9eaba1b8c4a276815"
+}

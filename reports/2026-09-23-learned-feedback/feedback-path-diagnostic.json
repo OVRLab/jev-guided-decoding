@@ -1,0 +1,19 @@
+{
+  "label": "Post-result tensor/trace diagnostic; no new model calls or causal quality claim",
+  "seeds": {
+    "2201": {
+      "condition_weight_change_l2": 0.1116672232747078,
+      "condition_weight_final_l2": 2.3690221309661865,
+      "changed_feedback_vectors": 301,
+      "changed_first_step_delta_norm": 28,
+      "max_first_step_delta_norm_difference": 7.450580596923828e-09
+    },
+    "2202": {
+      "condition_weight_change_l2": 0.1108858585357666,
+      "condition_weight_final_l2": 2.204435348510742,
+      "changed_feedback_vectors": 301,
+      "changed_first_step_delta_norm": 0,
+      "max_first_step_delta_norm_difference": 0.0
+    }
+  }
+}

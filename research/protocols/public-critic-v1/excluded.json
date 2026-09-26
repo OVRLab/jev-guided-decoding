@@ -1,0 +1,66 @@
+[
+  {
+    "id": "gsm8k_train/6198",
+    "reason": "ambiguous or malformed answer under recorded readout"
+  },
+  {
+    "id": "gsm8k_train/7231",
+    "reason": "ambiguous or malformed answer under recorded readout"
+  },
+  {
+    "id": "gsm8k_train/2581",
+    "reason": "ambiguous or malformed answer under recorded readout"
+  },
+  {
+    "id": "ifbench/57",
+    "reason": "exact constraint verifier; outside semantic critic pilot"
+  },
+  {
+    "id": "ifbench/83",
+    "reason": "exact constraint verifier; outside semantic critic pilot"
+  },
+  {
+    "id": "ifbench/297",
+    "reason": "exact constraint verifier; outside semantic critic pilot"
+  },
+  {
+    "id": "ifbench/207",
+    "reason": "exact constraint verifier; outside semantic critic pilot"
+  },
+  {
+    "id": "ifbench/296",
+    "reason": "exact constraint verifier; outside semantic critic pilot"
+  },
+  {
+    "id": "ifbench/80",
+    "reason": "exact constraint verifier; outside semantic critic pilot"
+  },
+  {
+    "id": "ifbench/180",
+    "reason": "exact constraint verifier; outside semantic critic pilot"
+  },
+  {
+    "id": "ifbench/148",
+    "reason": "exact constraint verifier; outside semantic critic pilot"
+  },
+  {
+    "id": "ifbench/43",
+    "reason": "exact constraint verifier; outside semantic critic pilot"
+  },
+  {
+    "id": "ifbench/68",
+    "reason": "exact constraint verifier; outside semantic critic pilot"
+  },
+  {
+    "id": "ifbench/249",
+    "reason": "exact constraint verifier; outside semantic critic pilot"
+  },
+  {
+    "id": "ifbench/155",
+    "reason": "exact constraint verifier; outside semantic critic pilot"
+  },
+  {
+    "id": "mmlu_pro/57",
+    "reason": "ambiguous or malformed answer under recorded readout"
+  }
+]

@@ -1,0 +1,74 @@
+FFF                                                                      [100%]
+=================================== FAILURES ===================================
+____ test_missing_is_neutral_not_a_receipt_and_only_transients_are_admitted ____
+
+    def test_missing_is_neutral_not_a_receipt_and_only_transients_are_admitted():
+>       m=module()
+          ^^^^^^^^
+
+tests/test_gated_repair_continuation.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_gated_repair_continuation.py:14: in module
+    return runpy.run_path(str(ROOT/'research/iterations/gated_repair_continue/feedback.py'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/gated_repair_continue/feedback.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/gated_repair_continue/feedback.py'
+
+<frozen runpy>:254: FileNotFoundError
+___________ test_failed_request_is_never_replayed_and_charge_remains ___________
+
+tmp_path = PosixPath('/private/var/folders/q0/yrbrh__54_11208_rxgxhnkc0000gn/T/pytest-of-jubba/pytest-1533/test_failed_request_is_never_r0')
+
+    def test_failed_request_is_never_replayed_and_charge_remains(tmp_path):
+>       m=module();waits=[]
+          ^^^^^^^^
+
+tests/test_gated_repair_continuation.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_gated_repair_continuation.py:14: in module
+    return runpy.run_path(str(ROOT/'research/iterations/gated_repair_continue/feedback.py'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/gated_repair_continue/feedback.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/gated_repair_continue/feedback.py'
+
+<frozen runpy>:254: FileNotFoundError
+__________ test_authentication_failure_stops_without_neutral_fallback __________
+
+tmp_path = PosixPath('/private/var/folders/q0/yrbrh__54_11208_rxgxhnkc0000gn/T/pytest-of-jubba/pytest-1533/test_authentication_failure_st0')
+
+    def test_authentication_failure_stops_without_neutral_fallback(tmp_path):
+>       m=module()
+          ^^^^^^^^
+
+tests/test_gated_repair_continuation.py:52: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_gated_repair_continuation.py:14: in module
+    return runpy.run_path(str(ROOT/'research/iterations/gated_repair_continue/feedback.py'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/gated_repair_continue/feedback.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/gated_repair_continue/feedback.py'
+
+<frozen runpy>:254: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_gated_repair_continuation.py::test_missing_is_neutral_not_a_receipt_and_only_transients_are_admitted
+FAILED tests/test_gated_repair_continuation.py::test_failed_request_is_never_replayed_and_charge_remains
+FAILED tests/test_gated_repair_continuation.py::test_authentication_failure_stops_without_neutral_fallback
+3 failed in 0.07s

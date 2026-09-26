@@ -1,0 +1,523 @@
+{
+  "label": "Post-result descriptive analysis; no new inference or changed grades",
+  "pairs": {
+    "native/0->live/2201": {
+      "n": 384,
+      "same_tokens": 360,
+      "same_correctness": 362,
+      "repairs": 14,
+      "regressions": 8
+    },
+    "constant/2201->live/2201": {
+      "n": 384,
+      "same_tokens": 383,
+      "same_correctness": 384,
+      "repairs": 0,
+      "regressions": 0
+    },
+    "permuted/2201->live/2201": {
+      "n": 384,
+      "same_tokens": 384,
+      "same_correctness": 384,
+      "repairs": 0,
+      "regressions": 0
+    },
+    "oracle/2201->live/2201": {
+      "n": 384,
+      "same_tokens": 384,
+      "same_correctness": 384,
+      "repairs": 0,
+      "regressions": 0
+    },
+    "native/0->live/2202": {
+      "n": 384,
+      "same_tokens": 360,
+      "same_correctness": 362,
+      "repairs": 13,
+      "regressions": 9
+    },
+    "constant/2202->live/2202": {
+      "n": 384,
+      "same_tokens": 384,
+      "same_correctness": 384,
+      "repairs": 0,
+      "regressions": 0
+    },
+    "permuted/2202->live/2202": {
+      "n": 384,
+      "same_tokens": 384,
+      "same_correctness": 384,
+      "repairs": 0,
+      "regressions": 0
+    },
+    "oracle/2202->live/2202": {
+      "n": 384,
+      "same_tokens": 384,
+      "same_correctness": 384,
+      "repairs": 0,
+      "regressions": 0
+    }
+  },
+  "counts": {
+    "constant/2201": {
+      "supported": {
+        "n": 345,
+        "correct": 332
+      },
+      "unsupported": {
+        "n": 39,
+        "correct": 23
+      },
+      "unassessed": {
+        "n": 0,
+        "correct": 0
+      },
+      "direct": {
+        "n": 64,
+        "correct": 64
+      },
+      "distractors": {
+        "n": 64,
+        "correct": 56
+      },
+      "negation": {
+        "n": 64,
+        "correct": 62
+      },
+      "passive": {
+        "n": 64,
+        "correct": 64
+      },
+      "reassignment": {
+        "n": 64,
+        "correct": 48
+      },
+      "rumor": {
+        "n": 64,
+        "correct": 61
+      }
+    },
+    "constant/2202": {
+      "supported": {
+        "n": 345,
+        "correct": 331
+      },
+      "unsupported": {
+        "n": 39,
+        "correct": 22
+      },
+      "unassessed": {
+        "n": 0,
+        "correct": 0
+      },
+      "direct": {
+        "n": 64,
+        "correct": 64
+      },
+      "distractors": {
+        "n": 64,
+        "correct": 56
+      },
+      "negation": {
+        "n": 64,
+        "correct": 62
+      },
+      "passive": {
+        "n": 64,
+        "correct": 64
+      },
+      "reassignment": {
+        "n": 64,
+        "correct": 46
+      },
+      "rumor": {
+        "n": 64,
+        "correct": 61
+      }
+    },
+    "live/2201": {
+      "supported": {
+        "n": 345,
+        "correct": 332
+      },
+      "unsupported": {
+        "n": 39,
+        "correct": 23
+      },
+      "unassessed": {
+        "n": 0,
+        "correct": 0
+      },
+      "direct": {
+        "n": 64,
+        "correct": 64
+      },
+      "distractors": {
+        "n": 64,
+        "correct": 56
+      },
+      "negation": {
+        "n": 64,
+        "correct": 62
+      },
+      "passive": {
+        "n": 64,
+        "correct": 64
+      },
+      "reassignment": {
+        "n": 64,
+        "correct": 48
+      },
+      "rumor": {
+        "n": 64,
+        "correct": 61
+      }
+    },
+    "live/2202": {
+      "supported": {
+        "n": 345,
+        "correct": 331
+      },
+      "unsupported": {
+        "n": 39,
+        "correct": 22
+      },
+      "unassessed": {
+        "n": 0,
+        "correct": 0
+      },
+      "direct": {
+        "n": 64,
+        "correct": 64
+      },
+      "distractors": {
+        "n": 64,
+        "correct": 56
+      },
+      "negation": {
+        "n": 64,
+        "correct": 62
+      },
+      "passive": {
+        "n": 64,
+        "correct": 64
+      },
+      "reassignment": {
+        "n": 64,
+        "correct": 46
+      },
+      "rumor": {
+        "n": 64,
+        "correct": 61
+      }
+    },
+    "native/0": {
+      "supported": {
+        "n": 345,
+        "correct": 340
+      },
+      "unsupported": {
+        "n": 39,
+        "correct": 9
+      },
+      "unassessed": {
+        "n": 0,
+        "correct": 0
+      },
+      "direct": {
+        "n": 64,
+        "correct": 63
+      },
+      "distractors": {
+        "n": 64,
+        "correct": 57
+      },
+      "negation": {
+        "n": 64,
+        "correct": 59
+      },
+      "passive": {
+        "n": 64,
+        "correct": 64
+      },
+      "reassignment": {
+        "n": 64,
+        "correct": 45
+      },
+      "rumor": {
+        "n": 64,
+        "correct": 61
+      }
+    },
+    "oracle/2201": {
+      "supported": {
+        "n": 345,
+        "correct": 332
+      },
+      "unsupported": {
+        "n": 39,
+        "correct": 23
+      },
+      "unassessed": {
+        "n": 0,
+        "correct": 0
+      },
+      "direct": {
+        "n": 64,
+        "correct": 64
+      },
+      "distractors": {
+        "n": 64,
+        "correct": 56
+      },
+      "negation": {
+        "n": 64,
+        "correct": 62
+      },
+      "passive": {
+        "n": 64,
+        "correct": 64
+      },
+      "reassignment": {
+        "n": 64,
+        "correct": 48
+      },
+      "rumor": {
+        "n": 64,
+        "correct": 61
+      }
+    },
+    "oracle/2202": {
+      "supported": {
+        "n": 345,
+        "correct": 331
+      },
+      "unsupported": {
+        "n": 39,
+        "correct": 22
+      },
+      "unassessed": {
+        "n": 0,
+        "correct": 0
+      },
+      "direct": {
+        "n": 64,
+        "correct": 64
+      },
+      "distractors": {
+        "n": 64,
+        "correct": 56
+      },
+      "negation": {
+        "n": 64,
+        "correct": 62
+      },
+      "passive": {
+        "n": 64,
+        "correct": 64
+      },
+      "reassignment": {
+        "n": 64,
+        "correct": 46
+      },
+      "rumor": {
+        "n": 64,
+        "correct": 61
+      }
+    },
+    "permuted/2201": {
+      "supported": {
+        "n": 345,
+        "correct": 332
+      },
+      "unsupported": {
+        "n": 39,
+        "correct": 23
+      },
+      "unassessed": {
+        "n": 0,
+        "correct": 0
+      },
+      "direct": {
+        "n": 64,
+        "correct": 64
+      },
+      "distractors": {
+        "n": 64,
+        "correct": 56
+      },
+      "negation": {
+        "n": 64,
+        "correct": 62
+      },
+      "passive": {
+        "n": 64,
+        "correct": 64
+      },
+      "reassignment": {
+        "n": 64,
+        "correct": 48
+      },
+      "rumor": {
+        "n": 64,
+        "correct": 61
+      }
+    },
+    "permuted/2202": {
+      "supported": {
+        "n": 345,
+        "correct": 331
+      },
+      "unsupported": {
+        "n": 39,
+        "correct": 22
+      },
+      "unassessed": {
+        "n": 0,
+        "correct": 0
+      },
+      "direct": {
+        "n": 64,
+        "correct": 64
+      },
+      "distractors": {
+        "n": 64,
+        "correct": 56
+      },
+      "negation": {
+        "n": 64,
+        "correct": 62
+      },
+      "passive": {
+        "n": 64,
+        "correct": 64
+      },
+      "reassignment": {
+        "n": 64,
+        "correct": 46
+      },
+      "rumor": {
+        "n": 64,
+        "correct": 61
+      }
+    }
+  },
+  "color_balance": {
+    "orange": 44,
+    "blue": 47,
+    "red": 53,
+    "black": 46,
+    "green": 48,
+    "yellow": 49,
+    "white": 47,
+    "purple": 50
+  },
+  "feedback_accuracy": {
+    "supported": {
+      "n": 345,
+      "support_decisions_correct": 345
+    },
+    "unsupported": {
+      "n": 39,
+      "support_decisions_correct": 39
+    }
+  },
+  "draft_groups": {
+    "supported": 345,
+    "unsupported": 39,
+    "unassessed": 0
+  },
+  "mean_draft_seconds": 0.17268369778906253,
+  "mean_api_seconds": 0.2753972353385385,
+  "first_test_preparation_completed": "2026-09-23T05:41:35.210507+00:00",
+  "first_final_answer": "2026-09-23T05:44:31.065771+00:00",
+  "examples": [
+    {
+      "category": "repair",
+      "case_id": "r21b/21c4c886509657931d68",
+      "motif": "reassignment",
+      "reference": "yellow",
+      "draft": "Pekeliti",
+      "draft_oracle": {
+        "entity": "Pekeliti",
+        "supported": false
+      },
+      "feedback": [
+        0.03,
+        0.93
+      ],
+      "native": "blue",
+      "live": "yellow"
+    },
+    {
+      "category": "repair",
+      "case_id": "r21b/4235e6a6d2c60c3dd141",
+      "motif": "reassignment",
+      "reference": "white",
+      "draft": "Tojabufe",
+      "draft_oracle": {
+        "entity": "Tojabufe",
+        "supported": false
+      },
+      "feedback": [
+        0.07,
+        0.93
+      ],
+      "native": "red",
+      "live": "white"
+    },
+    {
+      "category": "regression",
+      "case_id": "r21b/0764646b7ae9439bbb0c",
+      "motif": "distractors",
+      "reference": "black",
+      "draft": "Biponipe",
+      "draft_oracle": {
+        "entity": "Biponipe",
+        "supported": true
+      },
+      "feedback": [
+        0.97,
+        0.97
+      ],
+      "native": "black",
+      "live": "yellow"
+    },
+    {
+      "category": "regression",
+      "case_id": "r21b/5a70eff9555ccb946765",
+      "motif": "distractors",
+      "reference": "black",
+      "draft": "Behajuka",
+      "draft_oracle": {
+        "entity": "Behajuka",
+        "supported": true
+      },
+      "feedback": [
+        0.97,
+        0.98
+      ],
+      "native": "black",
+      "live": "blue"
+    },
+    {
+      "category": "invalid",
+      "case_id": "r21b/eee161dbbc945055fa05",
+      "motif": "distractors",
+      "reference": "white",
+      "draft": "Tijanise",
+      "draft_oracle": {
+        "entity": "Tijanise",
+        "supported": true
+      },
+      "feedback": [
+        0.98,
+        0.98
+      ],
+      "native": "white",
+      "live": ""
+    }
+  ],
+  "training_input_tokens": 2804952,
+  "training_target_tokens": 12288
+}

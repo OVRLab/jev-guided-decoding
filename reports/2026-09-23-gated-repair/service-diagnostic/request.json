@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-23T20:16:39.006216+00:00",
+  "payload": {
+    "model": "jev-1.13.0",
+    "state": "One plus one equals two.",
+    "questions": {
+      "correct": {
+        "type": "noul",
+        "instructions": "Is the statement true?"
+      }
+    }
+  }
+}

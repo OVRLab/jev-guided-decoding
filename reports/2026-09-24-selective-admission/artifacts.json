@@ -1,0 +1,121 @@
+{
+  "scope": "Exact unmodified inference records; no credentials or operational identity",
+  "files": {
+    "api-summary.json": {
+      "sha256": "9292464a31940e6a070a1329bf0a6270732c1fbbf0ebcc606a1f975c2628f23a",
+      "bytes": 90,
+      "compressed_file": "artifacts/selective-admission-v1/api-summary.json.gz",
+      "compressed_sha256": "411b6fa5b1767a7f0655e2bb12fb42fc5b6af777173bd089945f074ff974b796"
+    },
+    "batches.jsonl": {
+      "sha256": "92c9a0031782dd1156188dce97b3e4abcc8fa1ffab0488c1b8fd608a32d15587",
+      "bytes": 54758,
+      "compressed_file": "artifacts/selective-admission-v1/batches.jsonl.gz",
+      "compressed_sha256": "7857052a70b35fd308679afd33201d9cb1d0222494ff04715894de00bec5f835"
+    },
+    "budget.jsonl": {
+      "sha256": "240d2fddb76572ca88303a4fb2d39f987aaa9bb61813360c7c424842bf943b2c",
+      "bytes": 7406,
+      "compressed_file": "artifacts/selective-admission-v1/budget.jsonl.gz",
+      "compressed_sha256": "4cec7a83ad77c125b6899c8d7cbb445af68d3e6a22d36a4cf8b3110d461d1d57"
+    },
+    "cache-admission.json": {
+      "sha256": "68bf1b05d2cb50a86f923431359e0dae5d8a2e8e3cb41ddc658caf2be79face3",
+      "bytes": 658,
+      "compressed_file": "artifacts/selective-admission-v1/cache-admission.json.gz",
+      "compressed_sha256": "6c0dcf5bdfe99acbbf1c336b8804a4ccf740b00d7585a5a77254ac23c269aec7"
+    },
+    "completion.json": {
+      "sha256": "1802b493550a7fc4a73195d1e670143a3b6737a34f26d66b6b94d7b5fc64fedc",
+      "bytes": 206,
+      "compressed_file": "artifacts/selective-admission-v1/completion.json.gz",
+      "compressed_sha256": "56ec720deba7a59bc311b412afb98d70785cd67cbab97ce8cd18db89d0f8985a"
+    },
+    "decisions.jsonl": {
+      "sha256": "47d1a65cf6eedaea90118f5d98e66ea0167c03b86b8386eae03d8c453e94741d",
+      "bytes": 101321,
+      "compressed_file": "artifacts/selective-admission-v1/decisions.jsonl.gz",
+      "compressed_sha256": "03a9f8559302cf74aff40a4855c2229e4d8e03296d86ff02e362bd8e4ca7f859"
+    },
+    "donors.json": {
+      "sha256": "9d58c77bd0e4e644a3bd9cde18b7af9a911d396aa0bd0d0aa1eadf135bb94df8",
+      "bytes": 2213,
+      "compressed_file": "artifacts/selective-admission-v1/donors.json.gz",
+      "compressed_sha256": "acd0e254c28fafc0c0bcdb8530d274731dbe9e526aa19ab4f0bb01b17f28c964"
+    },
+    "feedback.jsonl": {
+      "sha256": "d1688123a33138f3843b2f5d1baea0fcbbc0e78324183049b8cbf139854a5fb6",
+      "bytes": 6952,
+      "compressed_file": "artifacts/selective-admission-v1/feedback.jsonl.gz",
+      "compressed_sha256": "ec33e616df11d7f908f28c77d5e348d67f955b35dbe5e2aad176356df93c0d3d"
+    },
+    "granite_4_0_1b-complete.json": {
+      "sha256": "6830b5f7b7fd09c879fc2e365297c373697059a357a79235d1d8946c437e89b1",
+      "bytes": 164,
+      "compressed_file": "artifacts/selective-admission-v1/granite_4_0_1b-complete.json.gz",
+      "compressed_sha256": "83de9840b0c0ab3b0298fddf8738df1519970b633b3721bc899b7c29a257af65"
+    },
+    "granite_4_0_1b-hardware.json": {
+      "sha256": "ac0fae36b1a5de2b98db1675639052055abe7d725a8220d39220cb632ea2d32c",
+      "bytes": 1428,
+      "compressed_file": "artifacts/selective-admission-v1/granite_4_0_1b-hardware.json.gz",
+      "compressed_sha256": "d1debe1113ca134eb0a95aca548fc503fd2e4cbd5c36ab121953f552139551cc"
+    },
+    "granite_4_2_3b-complete.json": {
+      "sha256": "dc3dae44a5430aa499df2590ea5315a0a8aaa421ad29e59eeeab5c42d696f88e",
+      "bytes": 164,
+      "compressed_file": "artifacts/selective-admission-v1/granite_4_2_3b-complete.json.gz",
+      "compressed_sha256": "b212689df5af0b04342aae99731a78a16855e0420502274c1eb4e6843f4c3f16"
+    },
+    "granite_4_2_3b-hardware.json": {
+      "sha256": "bd7bc9204e0fd390bf30c0fc9a67d1582b1fa956da6b7ce499029a6c5bed5d68",
+      "bytes": 1719,
+      "compressed_file": "artifacts/selective-admission-v1/granite_4_2_3b-hardware.json.gz",
+      "compressed_sha256": "98881fd8744c57a6098a42078f236eb54ed6ae7007d77618214eabbafd9668f4"
+    },
+    "jobs.jsonl": {
+      "sha256": "93a325539b75f7abf8dede617dff2ae1265486b8351fa5d982608095a89d442e",
+      "bytes": 75342,
+      "compressed_file": "artifacts/selective-admission-v1/jobs.jsonl.gz",
+      "compressed_sha256": "bc6f9b30a28d7151f969fb05f91e5e051941dae648cbaeabe066330bc17aea7d"
+    },
+    "outputs.jsonl": {
+      "sha256": "1befef38d8e6c910c0149c508d2b4208eb22832201a1c61377f81b9657b68588",
+      "bytes": 3300451,
+      "compressed_file": "artifacts/selective-admission-v1/outputs.jsonl.gz",
+      "compressed_sha256": "f2b8f96db8fd5afb2364384af4eb0e15d075e12a0a0f5a04ab648e07bb43955d"
+    },
+    "qwen3_4b_instruct-complete.json": {
+      "sha256": "080725c951ee4c37ba8ec3bf5fa02fefcca166e69d01b7647cb7f2d952187ba2",
+      "bytes": 164,
+      "compressed_file": "artifacts/selective-admission-v1/qwen3_4b_instruct-complete.json.gz",
+      "compressed_sha256": "673970fad4b4d483aa30264448818fd0c7e652b2a9af620c477b1c224f00c0d9"
+    },
+    "qwen3_4b_instruct-hardware.json": {
+      "sha256": "d4231500eb7c3170b3dc16a30c48906166e95f30f2167b57a6719d6e61797b7c",
+      "bytes": 1672,
+      "compressed_file": "artifacts/selective-admission-v1/qwen3_4b_instruct-hardware.json.gz",
+      "compressed_sha256": "1a478a9aa155f88f4d57ec2b0518840766f64b9c6540737a389c3253d3466757"
+    },
+    "requests.jsonl": {
+      "sha256": "3c5161511e41864f5f30836ac10e3354622d33ed8208d4a0017e93cee894c969",
+      "bytes": 104982,
+      "compressed_file": "artifacts/selective-admission-v1/requests.jsonl.gz",
+      "compressed_sha256": "7b33619cfb8740e0e61b34d1dba781f02e2460e56ac42f19850623ae1b8acbef"
+    },
+    "responses.jsonl": {
+      "sha256": "da8879dbae46221ea164fa08a7079d7d235f7a158e619ca15d9911c4861cdb90",
+      "bytes": 20820,
+      "compressed_file": "artifacts/selective-admission-v1/responses.jsonl.gz",
+      "compressed_sha256": "7ae493579dd975130df6dc23e443843025a730c06488f80f76afef7fd43fdf7c"
+    },
+    "start.json": {
+      "sha256": "464a917f1c95be456fcab2534ab7323d7f462aeb9581c130efa60586ef7a3c78",
+      "bytes": 136,
+      "compressed_file": "artifacts/selective-admission-v1/start.json.gz",
+      "compressed_sha256": "2de81092f7720a8fa66a9dbbdefd1cc6ef1c8eb410f65c77736c375ec64a7dbf"
+    }
+  },
+  "auditor_sha256": "b0deaee44a9bca13e4500e02bbe274c18b88738ef913e21f34cd6fb6fa47baf3",
+  "protocol_sha256": "5ce1b03a01c5658cfc173bc76259af7e0843beed66c504893bd86aaccdac6cd4"
+}

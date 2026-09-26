@@ -1,0 +1,41 @@
+[model]
+model_id = "ibm-granite/granite-4.0-1b"
+revision = "6a7381ba1f54d684ff508d991aeb7dc580157103"
+device = "auto"
+dtype = "auto"
+temperature = 0.8
+top_p = 0.95
+
+[reasoning]
+# Experimental demonstrations selected/evaluated separately from the original prompt.
+prompt_style = "examples"
+candidates = 3
+keep_branches = 2
+chunk_tokens = 96
+max_steps = 6
+max_expansions = 8
+max_pending = 6
+max_resamples = 1
+max_path_tokens = 384
+max_decode_tokens = 1536
+max_prefill_tokens = 30000
+max_context_tokens = 4096
+max_api_calls = 12
+max_seconds = 90.0
+support_threshold = 0.75
+progress_threshold = 0.60
+completion_threshold = 0.75
+seed = 42
+
+[jev]
+model = "jev-1.13.0"
+request_timeout = 30.0
+max_retries = 2
+# Historical documented rate; estimates exclude local compute and unknown usage.
+input_usd_per_million = 0.042
+
+[verdict]
+# Reserve within the existing total request time and API-call budget.
+reserve_seconds = 10.0
+# Experimental policy; not calibrated accuracy. Low values do not mean UNKNOWN.
+min_probability = 0.75

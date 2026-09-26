@@ -1,0 +1,288 @@
+[
+  {
+    "id": "fixed_ent_join",
+    "split": "evaluation",
+    "structure": "conjunction after two derivations then release",
+    "label_only": true,
+    "atoms": {
+      "tag": "Parcel Niva has a green tag",
+      "signed": "Parcel Niva has a signed handoff",
+      "logged": "Parcel Niva is logged",
+      "handoff": "Parcel Niva has a verified handoff",
+      "staged": "Parcel Niva is staged",
+      "g": "Parcel Niva may be released",
+      "not_g": "Parcel Niva may not be released"
+    },
+    "facts": [
+      "tag",
+      "signed"
+    ],
+    "rules": [
+      [
+        [
+          "tag"
+        ],
+        "logged"
+      ],
+      [
+        [
+          "signed"
+        ],
+        "handoff"
+      ],
+      [
+        [
+          "logged",
+          "handoff"
+        ],
+        "staged"
+      ],
+      [
+        [
+          "staged"
+        ],
+        "g"
+      ]
+    ],
+    "goal": "g",
+    "opposite": "not_g"
+  },
+  {
+    "id": "fixed_ent_seeded_cycle",
+    "split": "evaluation",
+    "structure": "seeded equivalence plus conjunction",
+    "label_only": true,
+    "atoms": {
+      "clearance": "Toma has clearance",
+      "badge": "Toma has a badge",
+      "training": "Toma completed safety training",
+      "gate": "Toma has gate approval",
+      "g": "Toma may enter",
+      "not_g": "Toma may not enter"
+    },
+    "facts": [
+      "badge",
+      "training"
+    ],
+    "rules": [
+      [
+        [
+          "clearance"
+        ],
+        "badge"
+      ],
+      [
+        [
+          "badge"
+        ],
+        "clearance"
+      ],
+      [
+        [
+          "clearance",
+          "training"
+        ],
+        "gate"
+      ],
+      [
+        [
+          "gate"
+        ],
+        "g"
+      ]
+    ],
+    "goal": "g",
+    "opposite": "not_g"
+  },
+  {
+    "id": "fixed_contra_join",
+    "split": "evaluation",
+    "structure": "conjunctive fault through two implications",
+    "label_only": true,
+    "atoms": {
+      "sealed": "Valve Suri is sealed",
+      "pressure": "Valve Suri has a red pressure indicator",
+      "fault": "Valve Suri has a confirmed fault",
+      "unsafe": "Valve Suri is unsafe",
+      "override": "Valve Suri has an override",
+      "g": "Valve Suri may operate",
+      "not_g": "Valve Suri may not operate"
+    },
+    "facts": [
+      "sealed",
+      "pressure"
+    ],
+    "rules": [
+      [
+        [
+          "sealed",
+          "pressure"
+        ],
+        "fault"
+      ],
+      [
+        [
+          "fault"
+        ],
+        "unsafe"
+      ],
+      [
+        [
+          "unsafe"
+        ],
+        "not_g"
+      ],
+      [
+        [
+          "override"
+        ],
+        "g"
+      ]
+    ],
+    "goal": "g",
+    "opposite": "not_g"
+  },
+  {
+    "id": "fixed_contra_routes",
+    "split": "evaluation",
+    "structure": "independent negative route alongside blocked positive route",
+    "label_only": true,
+    "atoms": {
+      "expired": "Arin has an expired certificate",
+      "renewal": "Arin needs renewal",
+      "permit": "Arin has a permit",
+      "revoked": "Arin has a revoked key",
+      "blocked": "Arin is blocked at the gate",
+      "g": "Arin may enter",
+      "not_g": "Arin may not enter"
+    },
+    "facts": [
+      "expired",
+      "revoked"
+    ],
+    "rules": [
+      [
+        [
+          "expired"
+        ],
+        "renewal"
+      ],
+      [
+        [
+          "renewal",
+          "permit"
+        ],
+        "g"
+      ],
+      [
+        [
+          "revoked"
+        ],
+        "blocked"
+      ],
+      [
+        [
+          "blocked"
+        ],
+        "not_g"
+      ]
+    ],
+    "goal": "g",
+    "opposite": "not_g"
+  },
+  {
+    "id": "fixed_unknown_join",
+    "split": "evaluation",
+    "structure": "missing prerequisite beyond a derived document fact",
+    "label_only": true,
+    "atoms": {
+      "verified": "Order Lumo has verified documents",
+      "met": "Order Lumo meets document requirements",
+      "signature": "Order Lumo has a manager signature",
+      "approved": "Order Lumo is approved",
+      "blue": "Order Lumo has a blue label",
+      "sorted": "Order Lumo is sorted",
+      "g": "Order Lumo may be shipped",
+      "not_g": "Order Lumo may not be shipped"
+    },
+    "facts": [
+      "verified",
+      "blue"
+    ],
+    "rules": [
+      [
+        [
+          "verified"
+        ],
+        "met"
+      ],
+      [
+        [
+          "met",
+          "signature"
+        ],
+        "approved"
+      ],
+      [
+        [
+          "approved"
+        ],
+        "g"
+      ],
+      [
+        [
+          "blue"
+        ],
+        "sorted"
+      ]
+    ],
+    "goal": "g",
+    "opposite": "not_g"
+  },
+  {
+    "id": "fixed_unknown_cycle",
+    "split": "evaluation",
+    "structure": "unseeded cycle required by a conjunction",
+    "label_only": true,
+    "atoms": {
+      "noted": "Package Zeno is noted in the log",
+      "visible": "Package Zeno is visible in the system",
+      "signed": "Package Zeno is signed",
+      "registered": "Package Zeno is registered",
+      "g": "Package Zeno is ready",
+      "not_g": "Package Zeno is not ready"
+    },
+    "facts": [
+      "noted"
+    ],
+    "rules": [
+      [
+        [
+          "noted"
+        ],
+        "visible"
+      ],
+      [
+        [
+          "signed"
+        ],
+        "registered"
+      ],
+      [
+        [
+          "registered"
+        ],
+        "signed"
+      ],
+      [
+        [
+          "signed",
+          "visible"
+        ],
+        "g"
+      ]
+    ],
+    "goal": "g",
+    "opposite": "not_g"
+  }
+]

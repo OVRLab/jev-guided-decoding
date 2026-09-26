@@ -1,0 +1,355 @@
+[
+  {
+    "id": "arc/validation/Mercury_7187058",
+    "prompt_sha256": "1471f04ea0ef2edf46da9b0bc6b325bb2fa9fbf99a5fa36455dfe49d419b01f2",
+    "kind": "choice",
+    "answer": "A",
+    "options": [
+      "The bulb gets hot.",
+      "The bulb produces light.",
+      "The lamp uses copper wires.",
+      "The lamp can be turned off at a switch."
+    ]
+  },
+  {
+    "id": "arc/validation/Mercury_415263",
+    "prompt_sha256": "eb6c84fdcb432493083a4cb174bfce20d020e54145420c1b99fcac5aafe0ee40",
+    "kind": "choice",
+    "answer": "C",
+    "options": [
+      "DNA",
+      "cytoplasm",
+      "a nucleus",
+      "a cell membrane"
+    ]
+  },
+  {
+    "id": "arc/validation/Mercury_7005478",
+    "prompt_sha256": "047f4c8c3ba52ef19af68915e2bad858d611c2937ad83ce274d3f16a776a0061",
+    "kind": "choice",
+    "answer": "B",
+    "options": [
+      "Water is released from the skin.",
+      "Muscles shake in small movements.",
+      "The rate of heart beats slows.",
+      "The lungs take in additional air."
+    ]
+  },
+  {
+    "id": "arc/validation/Mercury_7246348",
+    "prompt_sha256": "7c0331bd670c1bca2f95d3679b92363077d2320084a320233d15db485be5b0ca",
+    "kind": "choice",
+    "answer": "A",
+    "options": [
+      "trench",
+      "rift valley",
+      "ocean basin",
+      "mid-ocean ridge"
+    ]
+  },
+  {
+    "id": "gsm8k/train/2991",
+    "prompt_sha256": "361fd11e0e1241e61878e8f958b4747ecf868a934a602a520c9f64285e6146f3",
+    "kind": "number",
+    "answer": "61"
+  },
+  {
+    "id": "gsm8k/train/780",
+    "prompt_sha256": "e0bdd02f02ed01866e51b9212baa068910538da2a795c66f341da644b789638a",
+    "kind": "number",
+    "answer": "72"
+  },
+  {
+    "id": "gsm8k/train/3205",
+    "prompt_sha256": "aed64fd500a7fcd00bde3150ba40718856f1e8d2aab9da6ce635b0c068f1c831",
+    "kind": "number",
+    "answer": "9"
+  },
+  {
+    "id": "mmlu_pro/40",
+    "prompt_sha256": "c09b45a944405bce6ca07517a2f65456e9f68d262cbda4ca1c325bdfc1d2ffdb",
+    "kind": "choice",
+    "answer": "C",
+    "options": [
+      "25 N.",
+      "12.5 N.",
+      "15 N.",
+      "10 N.",
+      "7.5 N.",
+      "20 N.",
+      "5 N.",
+      "3.75 N.",
+      "N/A",
+      "N/A"
+    ]
+  },
+  {
+    "id": "mmlu_pro/8",
+    "prompt_sha256": "b4321164139b2434564e4c0e74efaa223190489eae61d333271fe75bf507e0d7",
+    "kind": "choice",
+    "answer": "F",
+    "options": [
+      "1",
+      "Unlimited attempts",
+      "5",
+      "0, always pass on to a senior colleague",
+      "7",
+      "2",
+      "4",
+      "6",
+      "3",
+      "8"
+    ]
+  },
+  {
+    "id": "mmlu_pro/20",
+    "prompt_sha256": "57f322a5167ace78e2b31b5c1458f46c4fd8a500660739b5b93fbce2a9e56f04",
+    "kind": "choice",
+    "answer": "B",
+    "options": [
+      "They possess an exoskeleton composed primarily of peptidoglycan.",
+      "They possess an open circulatory system with a dorsal heart.",
+      "They are members of a biologically unsuccessful phylum incapable of exploiting diverse habitats and nutrition sources.",
+      "They lack paired, jointed appendages.",
+      "N/A",
+      "N/A",
+      "N/A",
+      "N/A",
+      "N/A",
+      "N/A"
+    ]
+  },
+  {
+    "id": "mmlu_pro/63",
+    "prompt_sha256": "9893f0ad027e80d0a91afdbff2660e67568cecda5892df3c0e70398a099aeadf",
+    "kind": "choice",
+    "answer": "J",
+    "options": [
+      "low self-esteem.",
+      "a strong id.",
+      "a high level of anxiety.",
+      "a strong superego.",
+      "high levels of self-consciousness.",
+      "an external locus of control.",
+      "an inferiority complex.",
+      "a low level of self-awareness.",
+      "low self-efficacy.",
+      "an internal locus of control."
+    ]
+  },
+  {
+    "id": "mmlu_pro/10",
+    "prompt_sha256": "145cb038474cb60c00bf744052a0a4de93137598de23cb15abab7fe7d6fc75ac",
+    "kind": "choice",
+    "answer": "E",
+    "options": [
+      "1000 times more",
+      "50 times more",
+      "5000 times more",
+      "500 times more",
+      "10000 times more",
+      "20000 times more",
+      "2000 times more",
+      "100 times more",
+      "10 times more",
+      "N/A"
+    ]
+  },
+  {
+    "id": "musr/murder_mystery/134",
+    "prompt_sha256": "40b6068c71eaf57e841fa8c97e1b701236e3271c57190418fba33b42291b1dbd",
+    "kind": "choice",
+    "answer": "A",
+    "options": [
+      "Albert",
+      "Mya"
+    ]
+  },
+  {
+    "id": "musr/object_placements/255",
+    "prompt_sha256": "908808d7c14a94f3c9770ebcc138cfbbee852e6654cebc5e89228dd78fd54ccc",
+    "kind": "choice",
+    "answer": "C",
+    "options": [
+      "garage",
+      "grinding stone",
+      "shed"
+    ]
+  },
+  {
+    "id": "musr/team_allocation/165",
+    "prompt_sha256": "1f7d64416aeb659d7805bd5f64b29ac573d06add5ed5ecd505b62b8e13c86f9a",
+    "kind": "choice",
+    "answer": "A",
+    "options": [
+      "Sampling: Claire, Data Analysis: Max and Olivia",
+      "Sampling: Max, Data Analysis: Claire and Olivia",
+      "Sampling: Olivia, Data Analysis: Claire and Max"
+    ]
+  },
+  {
+    "id": "ifbench/297",
+    "prompt_sha256": "f350135a350997ad8286112311fa7d285a408492d4e4542d9b0b49a21647500a",
+    "kind": "ifbench",
+    "key": "297",
+    "instruction_id_list": [
+      "format:no_whitespace"
+    ],
+    "kwargs": [
+      {
+        "N": null,
+        "capital_frequency": null,
+        "capital_relation": null,
+        "end_phrase": null,
+        "first_word": null,
+        "forbidden_words": null,
+        "frequency": null,
+        "keyword": null,
+        "keyword1": null,
+        "keyword2": null,
+        "keyword3": null,
+        "keyword4": null,
+        "keyword5": null,
+        "keywords": null,
+        "language": null,
+        "let_frequency": null,
+        "let_relation": null,
+        "letter": null,
+        "m": null,
+        "max_words": null,
+        "min_words": null,
+        "n": null,
+        "n_end": null,
+        "n_start": null,
+        "nth_paragraph": null,
+        "num_bullets": null,
+        "num_highlights": null,
+        "num_paragraphs": null,
+        "num_placeholders": null,
+        "num_sections": null,
+        "num_sentences": null,
+        "num_words": null,
+        "options": null,
+        "percentage": null,
+        "postscript_marker": null,
+        "prompt_to_repeat": null,
+        "reference_text": null,
+        "relation": null,
+        "section_spliter": null,
+        "sep": null,
+        "small_n": null,
+        "word": null
+      }
+    ]
+  },
+  {
+    "id": "ifbench/83",
+    "prompt_sha256": "66b17f3767ee91cc58ad3807a96f00477a157a191439b2be636e7970abeeab2c",
+    "kind": "ifbench",
+    "key": "83",
+    "instruction_id_list": [
+      "format:list"
+    ],
+    "kwargs": [
+      {
+        "N": null,
+        "capital_frequency": null,
+        "capital_relation": null,
+        "end_phrase": null,
+        "first_word": null,
+        "forbidden_words": null,
+        "frequency": null,
+        "keyword": null,
+        "keyword1": null,
+        "keyword2": null,
+        "keyword3": null,
+        "keyword4": null,
+        "keyword5": null,
+        "keywords": null,
+        "language": null,
+        "let_frequency": null,
+        "let_relation": null,
+        "letter": null,
+        "m": null,
+        "max_words": null,
+        "min_words": null,
+        "n": null,
+        "n_end": null,
+        "n_start": null,
+        "nth_paragraph": null,
+        "num_bullets": null,
+        "num_highlights": null,
+        "num_paragraphs": null,
+        "num_placeholders": null,
+        "num_sections": null,
+        "num_sentences": null,
+        "num_words": null,
+        "options": null,
+        "percentage": null,
+        "postscript_marker": null,
+        "prompt_to_repeat": null,
+        "reference_text": null,
+        "relation": null,
+        "section_spliter": null,
+        "sep": "!?!?",
+        "small_n": null,
+        "word": null
+      }
+    ]
+  },
+  {
+    "id": "ifbench/68",
+    "prompt_sha256": "48802750ad79c672a5ae4b9494ec9ecc6797d2dc264102c900e67210bb0d2560",
+    "kind": "ifbench",
+    "key": "68",
+    "instruction_id_list": [
+      "format:emoji"
+    ],
+    "kwargs": [
+      {
+        "N": null,
+        "capital_frequency": null,
+        "capital_relation": null,
+        "end_phrase": null,
+        "first_word": null,
+        "forbidden_words": null,
+        "frequency": null,
+        "keyword": null,
+        "keyword1": null,
+        "keyword2": null,
+        "keyword3": null,
+        "keyword4": null,
+        "keyword5": null,
+        "keywords": null,
+        "language": null,
+        "let_frequency": null,
+        "let_relation": null,
+        "letter": null,
+        "m": null,
+        "max_words": null,
+        "min_words": null,
+        "n": null,
+        "n_end": null,
+        "n_start": null,
+        "nth_paragraph": null,
+        "num_bullets": null,
+        "num_highlights": null,
+        "num_paragraphs": null,
+        "num_placeholders": null,
+        "num_sections": null,
+        "num_sentences": null,
+        "num_words": null,
+        "options": null,
+        "percentage": null,
+        "postscript_marker": null,
+        "prompt_to_repeat": null,
+        "reference_text": null,
+        "relation": null,
+        "section_spliter": null,
+        "sep": null,
+        "small_n": null,
+        "word": null
+      }
+    ]
+  }
+]

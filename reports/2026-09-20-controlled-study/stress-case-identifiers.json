@@ -1,0 +1,146 @@
+[
+  {
+    "id": "stress-006/Q1",
+    "theory_id": "stress-006",
+    "question_id": "Q1",
+    "world_sha256": "384a40efd01e595053f1079f2b47df087f4f26f6753c4d2dc3fc009734c20200"
+  },
+  {
+    "id": "stress-020/Q1",
+    "theory_id": "stress-020",
+    "question_id": "Q1",
+    "world_sha256": "b8ff5c311481b7e527ab814c0e25b11c212d0d3a58119c197fa572500002a2a1"
+  },
+  {
+    "id": "stress-010/Q1",
+    "theory_id": "stress-010",
+    "question_id": "Q1",
+    "world_sha256": "35393a1a8c24390b03e59accab3fd6378fed4048053d80bab7daf9aac739e0a8"
+  },
+  {
+    "id": "stress-021/Q1",
+    "theory_id": "stress-021",
+    "question_id": "Q1",
+    "world_sha256": "3a48fa6598e0fa8041459a027ea862e18aa862b1a9d805b9ef504ad020adb62a"
+  },
+  {
+    "id": "stress-022/Q1",
+    "theory_id": "stress-022",
+    "question_id": "Q1",
+    "world_sha256": "82819a1db502718ca88bb6b4a8ae8be6741e76fc43fffae77a4efda46572bc3f"
+  },
+  {
+    "id": "stress-007/Q1",
+    "theory_id": "stress-007",
+    "question_id": "Q1",
+    "world_sha256": "a991bbf533dece5c82dce4edc78227dc3848afd40c8d7db27f8ba764b11149dc"
+  },
+  {
+    "id": "stress-017/Q1",
+    "theory_id": "stress-017",
+    "question_id": "Q1",
+    "world_sha256": "1e00b86b4ccc053fb5e4ab2bfe39b8a65d0bdaccd5fe5380addc18b181956963"
+  },
+  {
+    "id": "stress-002/Q1",
+    "theory_id": "stress-002",
+    "question_id": "Q1",
+    "world_sha256": "cfe069d34d6eb6711288726dde159a20ae1665074b282defe65bfb0ff2060c7e"
+  },
+  {
+    "id": "stress-001/Q1",
+    "theory_id": "stress-001",
+    "question_id": "Q1",
+    "world_sha256": "397e9c0ab7c33f785073df526d504b9fd07db7f95889a39a7e002d84e24b8690"
+  },
+  {
+    "id": "stress-015/Q1",
+    "theory_id": "stress-015",
+    "question_id": "Q1",
+    "world_sha256": "12b2d4827f8797b10ad6895eb99efd417b61eee5fdcb356bcd138eb3d516a477"
+  },
+  {
+    "id": "stress-016/Q1",
+    "theory_id": "stress-016",
+    "question_id": "Q1",
+    "world_sha256": "c29d6be153f7166df86c3c78d7c13d318fc9e4fa6a776b9a757caa11d88222f1"
+  },
+  {
+    "id": "stress-013/Q1",
+    "theory_id": "stress-013",
+    "question_id": "Q1",
+    "world_sha256": "0babea9108520fd4cc04a953b827d948c678d37c8352e8bb9f616eec1b4303c2"
+  },
+  {
+    "id": "stress-023/Q1",
+    "theory_id": "stress-023",
+    "question_id": "Q1",
+    "world_sha256": "18ee1426dd1937bce3181f549a7fba4a80b6685c4ad3af6b051cf16f24d7f0fc"
+  },
+  {
+    "id": "stress-011/Q1",
+    "theory_id": "stress-011",
+    "question_id": "Q1",
+    "world_sha256": "a67d863682d424de10c0ad0d568cc6b3747d085518c204c1deec2ece62deabfd"
+  },
+  {
+    "id": "stress-003/Q1",
+    "theory_id": "stress-003",
+    "question_id": "Q1",
+    "world_sha256": "39d80fbfa8539de67bad09118d860eb16242e72d4bf30bcc78af79cad8ce6c39"
+  },
+  {
+    "id": "stress-004/Q1",
+    "theory_id": "stress-004",
+    "question_id": "Q1",
+    "world_sha256": "7f5b26b21cfdfdb8b8f533febd47ececde939c07d9d1a445944ff7d7b41aabad"
+  },
+  {
+    "id": "stress-012/Q1",
+    "theory_id": "stress-012",
+    "question_id": "Q1",
+    "world_sha256": "45dff1d34ace7d03d57889c25f9299eb98e3a9022652334ec84a678b5d287d36"
+  },
+  {
+    "id": "stress-018/Q1",
+    "theory_id": "stress-018",
+    "question_id": "Q1",
+    "world_sha256": "fdcb8df3ed9033d9dace46437bd3c90890e89d4343fd068dc1f5ccbb5efb9db1"
+  },
+  {
+    "id": "stress-009/Q1",
+    "theory_id": "stress-009",
+    "question_id": "Q1",
+    "world_sha256": "f554d7f559cb2db06c97433427d8ffe2e8c1eaecd30d6cc0f0590ba5e8c66b76"
+  },
+  {
+    "id": "stress-005/Q1",
+    "theory_id": "stress-005",
+    "question_id": "Q1",
+    "world_sha256": "5618a9b8daa80db91ab11966f9f13c454b0f0f1913fc01592364fc027a2c38bd"
+  },
+  {
+    "id": "stress-000/Q1",
+    "theory_id": "stress-000",
+    "question_id": "Q1",
+    "world_sha256": "5027d79ba73a334d845e45df4dce107a9b9c3ab20c5665039ef5afb646fc81e7"
+  },
+  {
+    "id": "stress-014/Q1",
+    "theory_id": "stress-014",
+    "question_id": "Q1",
+    "world_sha256": "b5faa4da4cd8d8e6f1c623b5afeeacf482ed98dd79629c8268d7f9e8239e3d24"
+  },
+  {
+    "id": "stress-008/Q1",
+    "theory_id": "stress-008",
+    "question_id": "Q1",
+    "world_sha256": "2665a0a6975ff5f6dfd44fda8eba85a266b457aee8824a24aa5050a7c9e1a7a0"
+  },
+  {
+    "id": "stress-019/Q1",
+    "theory_id": "stress-019",
+    "question_id": "Q1",
+    "world_sha256": "50873a8938c1f5d5572c9873edb81d61b829dfbdfed72005eeb97bba5b8669cb"
+  }
+]

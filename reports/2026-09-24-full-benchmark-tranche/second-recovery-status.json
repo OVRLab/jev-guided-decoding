@@ -1,0 +1,77 @@
+{
+  "checked_at": "2026-09-24T20:34:51.604152+00:00",
+  "fresh_quality_grades_inspected": false,
+  "additional_jev_requests": 0,
+  "source_commit": "680bab3",
+  "generation_deadline": "2026-09-25T02:00:00+00:00",
+  "cloud_shutdown": "2026-09-25T02:30:00+00:00",
+  "cumulative_admission_ceiling_usd": 105.46096199361466,
+  "authorized_cap_usd": 110,
+  "stages": {
+    "gpqa": {
+      "service_states": {
+        "gpqa-full.service": "inactive",
+        "gpqa-chain-controller.service": "active"
+      },
+      "gpu": "71 %, 8513 MiB",
+      "shutdown": "Fri 2026-09-25 02:30:00 UTC",
+      "runs": {
+        "gpqa-full-recovery-v1": {
+          "outcomes": 1519,
+          "native_counts": {
+            "granite_4_0_1b": 198,
+            "granite_4_2_3b": 86
+          },
+          "last_output_at": "2026-09-24T16:17:36.383666+00:00",
+          "latest_job": {
+            "event": "start",
+            "model": "granite_4_2_3b",
+            "arm": "native",
+            "at": "2026-09-24T16:17:36.386511+00:00"
+          },
+          "complete": false
+        },
+        "gpqa-full-recovery-v2": {
+          "outcomes": 1520,
+          "native_counts": {
+            "granite_4_0_1b": 198,
+            "granite_4_2_3b": 87
+          },
+          "last_output_at": "2026-09-24T20:33:08.368182+00:00",
+          "latest_job": {
+            "event": "start",
+            "model": "granite_4_2_3b",
+            "arm": "native",
+            "at": "2026-09-24T20:33:08.376177+00:00"
+          },
+          "complete": false
+        }
+      }
+    },
+    "short": {
+      "service_states": {
+        "short-full.service": "active",
+        "short-chain-controller.service": "active"
+      },
+      "gpu": "72 %, 8549 MiB",
+      "shutdown": "Fri 2026-09-25 02:30:00 UTC",
+      "runs": {
+        "short-full-recovery-v1": {
+          "outcomes": 2590,
+          "native_counts": {
+            "granite_4_0_1b": 330,
+            "granite_4_2_3b": 209
+          },
+          "last_output_at": "2026-09-24T20:31:35.797898+00:00",
+          "latest_job": {
+            "event": "start",
+            "model": "granite_4_2_3b",
+            "arm": "native",
+            "at": "2026-09-24T20:31:35.801014+00:00"
+          },
+          "complete": false
+        }
+      }
+    }
+  }
+}

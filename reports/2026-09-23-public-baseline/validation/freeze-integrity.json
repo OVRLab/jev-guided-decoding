@@ -1,0 +1,38 @@
+[
+  {
+    "protocol": "semantic-evaluation-v1",
+    "sources": 63,
+    "data": 6,
+    "mismatches": []
+  },
+  {
+    "protocol": "semantic-feedback-v1",
+    "sources": 21,
+    "data": 1,
+    "mismatches": []
+  },
+  {
+    "protocol": "semantic-feedback-replication-v1",
+    "sources": 24,
+    "data": 1,
+    "mismatches": []
+  },
+  {
+    "protocol": "learned-feedback-v1",
+    "sources": 27,
+    "data": 5,
+    "mismatches": []
+  },
+  {
+    "protocol": "public-baseline-v1",
+    "sources": 8,
+    "data": 2,
+    "mismatches": []
+  },
+  {
+    "protocol": "public-critic-v1",
+    "sources": 20,
+    "data": 3,
+    "mismatches": []
+  }
+]

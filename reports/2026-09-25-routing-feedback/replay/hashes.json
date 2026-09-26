@@ -1,0 +1,9 @@
+{
+  "files": {
+    "grades.json": "4039bae433e766f6653ec92e063ab4fb77ef86e77fb4e59dadf506ebe3d560b9",
+    "selection.json": "4a0aff78c904f4de919e0bfb9c04f96c941be12227b964cfd2bae3ec936814fa",
+    "analysis.json": "19cd197d4b79779043b41c1e541bcb2b7990fbf2ef1e4a3eeaf173fafcb1d1da"
+  },
+  "private_grade_source_sha256": "4039bae433e766f6653ec92e063ab4fb77ef86e77fb4e59dadf506ebe3d560b9",
+  "scope": "Numerical outcome/policy replay only; no questions, answer text, tokens or API payloads"
+}

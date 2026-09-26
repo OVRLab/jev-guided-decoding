@@ -1,0 +1,18 @@
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+Initial thread configuration 1 4
+Pinned thread configuration 1 1
+........................................................................ [ 18%]
+........................................................................ [ 36%]
+........................................................................ [ 54%]
+........................................................................ [ 72%]
+........................................................................ [ 90%]
+....................................                                     [100%]
+396 passed in 11.96s
+
+Fetching 12 files:   0%|          | 0/12 [00:00<?, ?it/s]
+Fetching 12 files:  67%|██████▋   | 8/12 [00:00<00:00, 25.42it/s]
+Fetching 12 files:  92%|█████████▏| 11/12 [00:20<00:01,  1.82s/it]
+Fetching 12 files: 100%|██████████| 12/12 [01:24<00:00,  7.01s/it]
+Fetching 12 files: 100%|██████████| 12/12 [01:24<00:00,  7.01s/it]

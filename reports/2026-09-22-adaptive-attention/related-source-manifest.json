@@ -1,0 +1,23 @@
+[
+  {
+    "name": "autopasta.html",
+    "url": "https://arxiv.org/html/2409.10790v1",
+    "sha256": "f496ef4640af2899b0acbffd162bac0ab22847b62d829c47d4181fae1312ceb6",
+    "bytes": 208131,
+    "retrieved_at": "2026-09-22T06:11:19.450578+00:00"
+  },
+  {
+    "name": "spotlight.html",
+    "url": "https://arxiv.org/html/2505.12025v2",
+    "sha256": "44861b09432ddcc7210bfe2cfb40470d0c9e4ab3a9c675b6ff961cf8231d095c",
+    "bytes": 277804,
+    "retrieved_at": "2026-09-22T06:11:19.371685+00:00"
+  },
+  {
+    "name": "cafe.pdf",
+    "url": "https://aclanthology.org/2025.emnlp-main.655.pdf",
+    "sha256": "83266433f8cdac39b99a499c3a4a4b0a48fc20e4a820ce93f18b92b8e2c83ba1",
+    "bytes": 1066777,
+    "retrieved_at": "2026-09-22T06:11:20.023370+00:00"
+  }
+]

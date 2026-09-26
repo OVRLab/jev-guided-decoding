@@ -1,0 +1,9 @@
+{
+  "scope": "Unpaid preparation; no MuSR inference",
+  "sources": {
+    "research/iterations/musr_transfer/data.py": "2a0349e32d2ef519fe32953039dfcb38157886408fd918e72a74008137a71ab8",
+    "research/iterations/musr_transfer/feedback.py": "2e983947e446f5646b22657e1bbb6e483a04f6a1b835a4104942aad139baa65f",
+    "research/iterations/musr_transfer/runtime.py": "442380b6eb840c94e4e68e4df312d93306e8a23481e075a76f3446b54504135a",
+    "research/iterations/musr_transfer/single.py": "2240857cb45425ad3fc56c26fae84f4c42489ea015e26669c5bbbae1c464f417"
+  }
+}

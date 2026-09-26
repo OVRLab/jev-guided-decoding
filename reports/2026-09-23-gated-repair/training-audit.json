@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "steps": 3072,
+  "train_cases": 384,
+  "test_cases_used": 0,
+  "losses": {
+    "constant/2501/1": 0.8558220232444,
+    "constant/2501/2": 0.5053916237642019,
+    "live/2501/1": 1.9530867174228963,
+    "live/2501/2": 1.8015987005249674,
+    "constant/2502/1": 0.8839884023012322,
+    "constant/2502/2": 0.5060908799556879,
+    "live/2502/1": 1.970863504820348,
+    "live/2502/2": 1.8066455137353234
+  },
+  "missing_feedback_ids": [
+    "gsm8k/train/2355",
+    "gsm8k/train/4819",
+    "gsm8k/train/1703",
+    "gsm8k/train/3794",
+    "gsm8k/train/5927",
+    "gsm8k/train/2947",
+    "gsm8k/train/5942",
+    "gsm8k/train/2713"
+  ],
+  "checkpoints": {
+    "constant-2501-epoch1.safetensors": {
+      "parameters": 262144,
+      "l2_change": 7.042495212302783
+    },
+    "constant-2501-epoch2.safetensors": {
+      "parameters": 262144,
+      "l2_change": 8.07585918001059
+    },
+    "live-2501-epoch1.safetensors": {
+      "parameters": 262144,
+      "l2_change": 6.405205618232784
+    },
+    "live-2501-epoch2.safetensors": {
+      "parameters": 262144,
+      "l2_change": 8.16825766214365
+    },
+    "constant-2502-epoch1.safetensors": {
+      "parameters": 262144,
+      "l2_change": 7.065286879819731
+    },
+    "constant-2502-epoch2.safetensors": {
+      "parameters": 262144,
+      "l2_change": 8.127969287288641
+    },
+    "live-2502-epoch1.safetensors": {
+      "parameters": 262144,
+      "l2_change": 6.519565333053884
+    },
+    "live-2502-epoch2.safetensors": {
+      "parameters": 262144,
+      "l2_change": 8.215921009371169
+    }
+  },
+  "matched_initialization": true,
+  "selection_before_test_api": true
+}

@@ -1,0 +1,131 @@
+{
+  "protocol": "r18-boundary-attention-v1",
+  "at": "2026-09-22T15:25:56.985680+00:00",
+  "model": "ibm-granite/granite-4.0-1b",
+  "revision": "6a7381ba1f54d684ff508d991aeb7dc580157103",
+  "jev_model": "jev-1.13.0",
+  "precision": "float32",
+  "boundary": 19,
+  "num_layers": 40,
+  "eos_ids": [
+    100257
+  ],
+  "generation_mode": "greedy_full_vocabulary",
+  "treatment": {
+    "mode": "additive",
+    "envelope": "all",
+    "strength": 5.0,
+    "heads": [
+      [
+        34,
+        4
+      ],
+      [
+        38,
+        11
+      ],
+      [
+        37,
+        14
+      ],
+      [
+        30,
+        4
+      ],
+      [
+        23,
+        8
+      ],
+      [
+        19,
+        6
+      ],
+      [
+        19,
+        11
+      ],
+      [
+        19,
+        15
+      ],
+      [
+        21,
+        14
+      ],
+      [
+        29,
+        10
+      ],
+      [
+        20,
+        11
+      ]
+    ],
+    "threshold": 0.65,
+    "id": "42e1896dba6c5ee8"
+  },
+  "max_seconds": 21600,
+  "max_api_usd": 2,
+  "source_hotpot_sha256": "4fc80df8f109537af8d6ff4736ad2e658bcc9e038da3a23a96bff6482f66a5f1",
+  "source_squad_sha256": "80a5225e94905956a6446d296ca1093975c4d3b3260f1d6c8f68bc2ab77182d8",
+  "sources": {
+    "research/boundary-attention-plan.md": "9757435b6747e796e6002e29d6a73d5747e372c402ca1fcaef2ebdbbc3557d71",
+    "research/experiments/evidence_attention.py": "950ee6c7dcd54ea46e7ae0b77311a6672bf03637e351eca6cc24a92fb1f31729",
+    "research/experiments/evidence_runtime.py": "8018892394c8fe2aec8b49b54b21a4a6804aa83c2d973d969e57779278318b35",
+    "research/experiments/evidence_scorer.py": "9f3a679a25b0d65e64ed71a8de74f41461ee4406933a91fc2641981e4d554820",
+    "research/iterations/adaptive_attention/analyze.py": "5900694a11e3d8e4c2fedacde588319b2fc6e83f167d74482591cbd005a8346b",
+    "research/iterations/adaptive_attention/attention.py": "0ca7af39394a1134c172f4f739fe14b718bdedf7c154278ea072cf1c79b31014",
+    "research/iterations/adaptive_attention/data.py": "8c61096d0f63b9342b4cc07cd73fdb04b3331fb61f1e8b91528675dcf061706f",
+    "research/iterations/adaptive_attention/journal.py": "5e9fbaf94abd4aea5cb53ef3e5f445efa0f301751f9328c6c04a326b9d8f3e6c",
+    "research/iterations/adaptive_attention/policies.py": "e0dbd9e8136610cd91ec3f0e1671747bd53fba732c35d75a74f0d504160e0ceb",
+    "research/iterations/adaptive_attention/runtime.py": "09e78771a7c7d658a19a7c24c37f9c95672e713d2622e2fc9eb9850f850f2177",
+    "research/iterations/adaptive_attention/scorer.py": "9a105008b92ad053e1e759b5d60f653a6924f476d99f12f05e0cf11fb77e9a9a",
+    "research/iterations/adaptive_attention/study.py": "6dd345d542f5be83f9fe3c774595f49ee19ab4681d6c3ab79d58fe35a1d19df2",
+    "research/iterations/adaptive_attention_fp32.py": "929e9038647ca37b53626b0984635f75e3a5874a9b8c7a4d4fd7a6a5dc768533",
+    "research/iterations/boundary_attention/admission.py": "a2d678d28837452b1e1e52e0c7c8b76f24de03cf49865af0dac6dc173f0f36f6",
+    "research/iterations/boundary_attention/analyze.py": "8336983e51f574d6474ebbeae1f91116d324459fdc3472db32cb8e0d8aaa10af",
+    "research/iterations/boundary_attention/data.py": "e1dce02176c31a2a701c5bf41ef604ceddb8cba5f5b9636f7554500ca4fb55b5",
+    "research/iterations/boundary_attention/features.py": "675014ede445846a251646bc3bf53713edfcdb187407a7bdfbff1a1b29abe985",
+    "research/iterations/boundary_attention/policies.py": "86d842a28eca9c525066404ec21f78386fb78e08eb1f6737b3a11bc1b67b571e",
+    "research/iterations/boundary_attention/runtime.py": "6fa974ad784969f6791abb88b7763e8c2b97477e01185d35fc6b847c043278ac",
+    "research/iterations/boundary_attention/study.py": "9680be0986750e705c638d03c52e1b22f1a8d81e31f60904ebcbaccd44735826",
+    "research/iterations/selective_attention/analyze.py": "f1876eb9119a5865fba19471a3b9eb74ef3cdd21f0bbee74d68ede0266913bc8",
+    "research/iterations/selective_attention/attention.py": "60cbee888b233d061f6a70f4c43178fb62752318aa55aa9b576e470c687e7035",
+    "research/iterations/selective_attention/data.py": "ece76500a6d6264765018a74389a9d504a8e6233e96f7fc5a09539ca4185e776",
+    "research/iterations/selective_attention/policies.py": "719c75a4769038f45a6652764ac474b513b5891a6f9cf46d8b2a2da24044e0be",
+    "research/iterations/selective_attention/runtime.py": "64e93c676d96a8ce810ae800d35d90fa8e50f99a280d6aa4359fd7c9c3acb218",
+    "research/iterations/selective_attention/scorer.py": "8bae5f6573f11014a5470ca7cfd2f3f2e4a3ea4e0560b54665b8c5f7bb642821",
+    "research/iterations/selective_attention/study.py": "4e19163fb6cb8c2cdd632a8cb3a39f8fd06f3ffa87e06983032fa997a3f7c5c4",
+    "research/selective-attention-plan.md": "153839d8117e25a60eaf2291481554d0ecf4482b1d2bbe45ec79488b876096ca",
+    "src/jev_guided_decoding/__init__.py": "39c1d8706715ddc0aa94b1cb23aa3238034250643c3cbd012f81dcc1fdcbaf7c",
+    "src/jev_guided_decoding/backends/__init__.py": "46991b291f9d0f364d515733ab89c42103b51963899530c727b9f8a4638250ae",
+    "src/jev_guided_decoding/backends/transformers.py": "acb2c8ba0ec427593482cada06faf74f5072871260c2c86c276d70dbf98677d3",
+    "src/jev_guided_decoding/benchmark.py": "f25566805b88ff418e10a24d9f8b9017034fc06fede3420051fda7ec235bad43",
+    "src/jev_guided_decoding/cli.py": "1f344c891800e1969d66ded7dc79ff0cc7ff4043d9a2e47d2c5b3a32c7c993e8",
+    "src/jev_guided_decoding/controller.py": "e487360178cc45cb2ce044c2f766fabc64d3b582cc861aec0182163770e1cccc",
+    "src/jev_guided_decoding/experiment_budget.py": "67eae5b043cbb43b45b0a5c2ba74f51d9a4b5d0618c7f88644494d059a41b390",
+    "src/jev_guided_decoding/framing.py": "df5f1c0e09f497cf4bb296ddb12fb70851876a2b40ff2affb6c4084d2e812a0f",
+    "src/jev_guided_decoding/generated_answer.py": "8bca33972c42097b6a479978de2093f398b4e5c927e0ca74ab26eef8abab3d3e",
+    "src/jev_guided_decoding/jev.py": "c87bb0b5c5e202f67623b42d9a5a390bc87ca28ba48acc4b9a63362a70a4fe2a",
+    "src/jev_guided_decoding/local_claims.py": "205d117d2893d36915de5af12b6b544fac203673a1308c0e1d3264d79884a6a4",
+    "src/jev_guided_decoding/logit_bias.py": "4f12176f75b81e72e67e3c405f4c139cf9db18d033118f77b50db149ac1e4243",
+    "src/jev_guided_decoding/reasoning.py": "5d5dba688466e418f419cf89d48ba9acbc6e3fddbed249a455110d171c61d907",
+    "src/jev_guided_decoding/reasoning_scorer.py": "e880a0d7de6ec47e7a418c1d7fc6200a1b433fcc358defe23f9f5704d3edf706",
+    "src/jev_guided_decoding/types.py": "3591d0eef912255d3df2c5b2107da8cc44ee6b0507d40e72e09c2814f09c9151",
+    "src/jev_guided_decoding/verdict.py": "d381794c5872de0aa156a4736c075cde9a4083ebb28e030563036bd10e692d1d",
+    "uv.lock": "b581bd9cbb34bae515ecfdae8c1de58e222106ccb78e6186ac7e63ef47277137"
+  },
+  "datasets": {
+    "admission.json": "ae64bca053936394b51af5adec9325ee05b9c21bcad5a170e8f96925d1104ea3",
+    "development.json": "d7dc9c29256a98d8dd0182876e66203bf7324a04267fe8a25db725f3971b919c",
+    "eligibility.json": "2254902c9519ab2d05d1e0c3f311b7f9dac8270827d6b8320b1beb481d6ee219",
+    "schedule.json": "a12a4185690e11c9a9abeb7ef88611bcbf19059af09739ba67a147dd3451ab9c",
+    "squad-article-split.json": "d8a115f47f294ff1c01c41c3102c2344f9a9b1974abd780c151f2d9a427054a2",
+    "test.json": "9339f263b48cd8ab7f72f540b972a67e5b2fd2aa9ce09cb95865b9e8bda763f6"
+  },
+  "prior_spend_usd": 23.456365263925505,
+  "cloud_allowance_usd": 13,
+  "cumulative_budget_usd": 50,
+  "gate_development_ceiling": 0.5,
+  "primary_interval": 0.9833333333333333
+}

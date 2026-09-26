@@ -1,0 +1,10 @@
+{
+  "test_questions": 12032,
+  "validation_questions": 70,
+  "removed_na_options": 51,
+  "invalid_answer_bindings": [],
+  "answers_shifted_by_na_removal": [],
+  "source_id_overlap": 0,
+  "question_option_hash_overlap": 0,
+  "note": "Source-only checks; no inference or score. Namespace future IDs by dataset split and bind by content."
+}

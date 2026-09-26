@@ -1,0 +1,43 @@
+{
+  "prior_cumulative_estimate_usd": 27.22974113467281,
+  "cloud_episodes": [
+    {
+      "created_at": "2026-09-22T20:39:33.675134+00:00",
+      "deletion_verified_at": "2026-09-22T22:05:59.915941+00:00",
+      "hours": 1.440622446388889,
+      "resources_deleted": true
+    },
+    {
+      "created_at": "2026-09-22T22:10:57.072215+00:00",
+      "deletion_verified_at": "2026-09-22T22:36:34.252771+00:00",
+      "hours": 0.4269945988888889,
+      "resources_deleted": true
+    }
+  ],
+  "compute_disk_hours": 1.867617045277778,
+  "compute_usd_hour": 1.5484,
+  "gpu_usd_hour": 1.35,
+  "vcpu_usd_hour": 0.012,
+  "ram_gib_usd_hour": 0.0032,
+  "allocated_vcpus": 8,
+  "allocated_ram_gib": 32,
+  "cpu_platform": "Intel Ice Lake",
+  "disk_usd_hour": 0.007780821917808219,
+  "cloud_estimate_usd": 2.906349828548081,
+  "jev_actual_attempts": 1068,
+  "jev_known_input_tokens": 2189099,
+  "jev_unknown_calls": 0,
+  "jev_receipt_and_reserved_estimate_usd": 0.09194215800000001,
+  "supplemental_new_api_attempts": 0,
+  "new_total_estimate_usd": 2.998291986548081,
+  "cumulative_estimate_usd": 30.22803312122089,
+  "authorized_cumulative_usd": 50,
+  "cloud_allowance_usd": 10,
+  "api_cap_usd": 2,
+  "resources_deleted": true,
+  "allocations_deleted": true,
+  "verified_unique_result_files": 28,
+  "billing_note": "Estimate before tax/separate network, not invoice; includes both full VM lifetimes through verified deletion, bootstrap, loading, failed supplemental attempt, inference, audits and retrieval. Unknown requests reserved at 65536 tokens and $0.05/M.",
+  "cloud_source": "https://docs.nebius.com/compute/resources/pricing",
+  "jev_source": "https://docs.typesafe.ai/models"
+}

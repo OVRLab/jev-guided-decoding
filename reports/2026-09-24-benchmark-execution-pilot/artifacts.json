@@ -1,0 +1,121 @@
+{
+  "scope": "Exact unmodified inference records; no credentials or operational identity",
+  "files": {
+    "api-summary.json": {
+      "sha256": "5517aa4a105cc510ae88a43b679df9716d1161e87fda8c02d53006bd5f0a297b",
+      "bytes": 101,
+      "compressed_file": "artifacts/benchmark-execution-pilot-v2/api-summary.json.gz",
+      "compressed_sha256": "7e2eb8faf1f02792e853eba2d80d51db8ddb4d2100c0d28094fa6667f49ca515"
+    },
+    "batches.jsonl": {
+      "sha256": "9da2b19fb8d0c5512af83d0d3ff99f2c36e4148f353f62660fb2a3b48181c0de",
+      "bytes": 38710,
+      "compressed_file": "artifacts/benchmark-execution-pilot-v2/batches.jsonl.gz",
+      "compressed_sha256": "a8aa268c93ec7b83a03c0c5f8d7ade76cfbf1c0e67fef877337132c44ea5fa64"
+    },
+    "budget.jsonl": {
+      "sha256": "5495339b9e249f29bc2325a2d065e6975ee0fffa30587c1ab4267379c7c26175",
+      "bytes": 2730,
+      "compressed_file": "artifacts/benchmark-execution-pilot-v2/budget.jsonl.gz",
+      "compressed_sha256": "6f7525c1daf8ee82d871e24dc4bcd0f074e42306934633a80a4ff548ec614396"
+    },
+    "cache-admission.json": {
+      "sha256": "45b15e247b86ce7e76513503e58583e7b0ba1e1d46db685d5e0e94e0ead036cb",
+      "bytes": 649,
+      "compressed_file": "artifacts/benchmark-execution-pilot-v2/cache-admission.json.gz",
+      "compressed_sha256": "1b4695df14819952200273c87eaf59b135a5073839f3dbc4e3f1004bd11da7e6"
+    },
+    "completion.json": {
+      "sha256": "d5249938908b3d67b1b2aa3fb2336009414b4c84594171f6be70cbf02a8d1f3c",
+      "bytes": 207,
+      "compressed_file": "artifacts/benchmark-execution-pilot-v2/completion.json.gz",
+      "compressed_sha256": "a872df4e8975af602e4e4f65649bff7286f00c943986add011483f6bec1fc947"
+    },
+    "decisions.jsonl": {
+      "sha256": "ac263dd0da3bbdecd430bd176dff6234ba458c1c6f7d0af56965f65c0064f15d",
+      "bytes": 36618,
+      "compressed_file": "artifacts/benchmark-execution-pilot-v2/decisions.jsonl.gz",
+      "compressed_sha256": "92f6484f905cfa91aa4d300390b3b0f37b4b76ec0ec454c4a0c4f606b9671baf"
+    },
+    "donors.json": {
+      "sha256": "f587a72886c5d9d8fe1037f467141453814cbc92697f92792977becd4618ffe4",
+      "bytes": 831,
+      "compressed_file": "artifacts/benchmark-execution-pilot-v2/donors.json.gz",
+      "compressed_sha256": "e61e463109e402f9048393dadd6245c6f3e640efcda417e33e2c597581bb35bf"
+    },
+    "feedback.jsonl": {
+      "sha256": "9bb13d7783fa09bf21b1c9517073b4f51367741f2115af414fdee1f1a460e287",
+      "bytes": 2520,
+      "compressed_file": "artifacts/benchmark-execution-pilot-v2/feedback.jsonl.gz",
+      "compressed_sha256": "dd9575b42cbd1f6f45208fe4fe0f44425953d587bd2153e9ca6ac77747c47574"
+    },
+    "granite_4_0_1b-complete.json": {
+      "sha256": "c814bdeb5da9fc2fb602a14d828f1baf915c296510d2e220f2fce5bcf4d10ecd",
+      "bytes": 164,
+      "compressed_file": "artifacts/benchmark-execution-pilot-v2/granite_4_0_1b-complete.json.gz",
+      "compressed_sha256": "929e75ff8fe88f8ac8208a9c45128ea94933a1f4518807fd4de312671267ac03"
+    },
+    "granite_4_0_1b-hardware.json": {
+      "sha256": "9948a8c8db6ae539f754a70f8cae2c86b8eb97598ea76d20788cc04214670590",
+      "bytes": 1433,
+      "compressed_file": "artifacts/benchmark-execution-pilot-v2/granite_4_0_1b-hardware.json.gz",
+      "compressed_sha256": "057da43b02bfed989004f0180356801b938c2ad68c96447be867292c339c3b61"
+    },
+    "granite_4_2_3b-complete.json": {
+      "sha256": "1ad9269a99baa3678e78d3cb53ef5eb0abf0d72e98b6bb4792addcccd9769987",
+      "bytes": 164,
+      "compressed_file": "artifacts/benchmark-execution-pilot-v2/granite_4_2_3b-complete.json.gz",
+      "compressed_sha256": "7ba2bac56721000c70e5b460050fe6d53883d10ca24b66a0187a9ef126769dc7"
+    },
+    "granite_4_2_3b-hardware.json": {
+      "sha256": "e5f782ce700e99f6c01f67e779bb88aa28fa77ec766e7f2cffcb65aa992cf6d6",
+      "bytes": 1719,
+      "compressed_file": "artifacts/benchmark-execution-pilot-v2/granite_4_2_3b-hardware.json.gz",
+      "compressed_sha256": "0a72827feec070ea8261af4375e4bddc1d8ee8419d2c51b073fdc5fc838f41dc"
+    },
+    "jobs.jsonl": {
+      "sha256": "d64f486399b09dfa0ac1476867cd1fe4a1df17c225f0d4e1881cc70e28ba42ad",
+      "bytes": 50168,
+      "compressed_file": "artifacts/benchmark-execution-pilot-v2/jobs.jsonl.gz",
+      "compressed_sha256": "0d3668441478f678d6fd9f1e2109a4f33092c1c9e58965179616396faea63780"
+    },
+    "outputs.jsonl": {
+      "sha256": "429db8a9d10f009cb003a4811fff8ab4253a98d11864f97e060f7ea3dd1d1430",
+      "bytes": 969228,
+      "compressed_file": "artifacts/benchmark-execution-pilot-v2/outputs.jsonl.gz",
+      "compressed_sha256": "259dbc9aa333ea877210d347a82990ee91d69945810d98a2237c7fd346c0eb03"
+    },
+    "qwen3_4b_instruct-complete.json": {
+      "sha256": "d403983b102db92c53b8638108d5a9293908350fb150a4cea958c99ae80fe8c1",
+      "bytes": 164,
+      "compressed_file": "artifacts/benchmark-execution-pilot-v2/qwen3_4b_instruct-complete.json.gz",
+      "compressed_sha256": "bfdbf924eb8200f08efd2531a498cdbae6700d028f55a24ae1b1de4a8c2aedc7"
+    },
+    "qwen3_4b_instruct-hardware.json": {
+      "sha256": "1d98e460244202dc4ad67d415e23916e2f1e9062321abfcc6226c7a2fd730c44",
+      "bytes": 1673,
+      "compressed_file": "artifacts/benchmark-execution-pilot-v2/qwen3_4b_instruct-hardware.json.gz",
+      "compressed_sha256": "2e6e08738dcb2633fb3c1fef8c13db8c053225604145a8cc68cb10e111811ea5"
+    },
+    "requests.jsonl": {
+      "sha256": "0a6821fc3e4cbda3005adc0f491cf5d53dee37cc24420e293a7bfbb513691257",
+      "bytes": 40319,
+      "compressed_file": "artifacts/benchmark-execution-pilot-v2/requests.jsonl.gz",
+      "compressed_sha256": "aa34eac73b2da51ee020baac08d1ea6816754a64dc9aec98dea090743604ef89"
+    },
+    "responses.jsonl": {
+      "sha256": "5a36e66055878fc757026a5a6bdf09e98019cf57678469a7d1cb5252f06ce9bc",
+      "bytes": 7522,
+      "compressed_file": "artifacts/benchmark-execution-pilot-v2/responses.jsonl.gz",
+      "compressed_sha256": "ee4e5089a1033764d7fed1177a7b49224e50c4c2654ad18503e59b0eaaf1024e"
+    },
+    "start.json": {
+      "sha256": "9b7bbded931bafd9e0d2b83a282e3078f25fa3094af02f4919d2bf2b2da55520",
+      "bytes": 136,
+      "compressed_file": "artifacts/benchmark-execution-pilot-v2/start.json.gz",
+      "compressed_sha256": "068c8458fe00693f8c3f8ab4a4d51cd51eac7cf5b6e6037667f6d4d88fe758e8"
+    }
+  },
+  "auditor_sha256": "8364014e269389f1b20f864b1f99665f6e3774e86b522a78838dfb6b8b562ad8",
+  "protocol_sha256": "ceb8c30b67b042eb53d57f964da1258ea28a451c588004d65d56e593737e658d"
+}

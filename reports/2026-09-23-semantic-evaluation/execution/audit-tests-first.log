@@ -1,0 +1,26 @@
+.......F                                                                 [100%]
+=================================== FAILURES ===================================
+__________ test_semantic_statistics_keep_unresolved_answers_in_bounds __________
+
+    def test_semantic_statistics_keep_unresolved_answers_in_bounds():
+>       s = load('analyze.py')
+            ^^^^^^^^^^^^^^^^^^
+
+tests/test_semantic_evaluation.py:127: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_semantic_evaluation.py:12: in load
+    return runpy.run_path(str(ROOT / "research/iterations/semantic_evaluation" / name))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '[repository]/research/iterations/semantic_evaluation/analyze.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '[repository]/research/iterations/semantic_evaluation/analyze.py'
+
+<frozen runpy>:254: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_semantic_evaluation.py::test_semantic_statistics_keep_unresolved_answers_in_bounds
+1 failed, 7 passed in 2.59s

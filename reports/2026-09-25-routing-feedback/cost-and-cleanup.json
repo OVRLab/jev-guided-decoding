@@ -1,0 +1,20 @@
+{
+  "instance_terminated": true,
+  "owned_disk_deleted": true,
+  "owned_security_group_deleted": true,
+  "owned_subnet_deleted": true,
+  "prior_conservative_usd": 103.82976781335556,
+  "cumulative_cap_usd": 125,
+  "compute_usd": 5.843355483019511,
+  "api_usd": 0.015721524,
+  "preflight_usd": 1.5204e-05,
+  "operating_allowance_usd": 4.3100000000000005,
+  "launch_time": "2026-09-25T17:46:21+00:00",
+  "cleanup_verified_at": "2026-09-25T23:34:43.304952+00:00",
+  "elapsed_hours": 5.806195829444461,
+  "backup_inventory_sha256": "0c7a286a1143078a7b929a8b6d9d232aa011d85dc2bccadff5645d9b0d942c82",
+  "estimate_only": true,
+  "tax_network_unconfirmed": true,
+  "stage_conservative_usd": 10.169092211019512,
+  "cumulative_conservative_usd": 113.99886002437508
+}

@@ -1,0 +1,118 @@
+{
+  "checked_at": "2026-09-24T22:55:23.435812+00:00",
+  "fresh_quality_grades_inspected": false,
+  "additional_jev_requests": 0,
+  "source_commit": "680bab3",
+  "generation_deadline": "2026-09-25T02:00:00+00:00",
+  "cloud_shutdown": "2026-09-25T02:30:00+00:00",
+  "cumulative_admission_ceiling_usd": 105.46096199361466,
+  "authorized_cap_usd": 110,
+  "stages": {
+    "gpqa": {
+      "service_states": {
+        "gpqa-full.service": "inactive",
+        "gpqa-chain-controller.service": "active"
+      },
+      "gpu": "0 %, 1611 MiB",
+      "shutdown": "Fri 2026-09-25 02:30:00 UTC",
+      "runs": {
+        "gpqa-full-recovery-v1": {
+          "outcomes": 1519,
+          "native_counts": {
+            "granite_4_0_1b": 198,
+            "granite_4_2_3b": 86
+          },
+          "last_output_at": "2026-09-24T16:17:36.383666+00:00",
+          "latest_job": {
+            "event": "start",
+            "model": "granite_4_2_3b",
+            "arm": "native",
+            "at": "2026-09-24T16:17:36.386511+00:00"
+          },
+          "complete": false
+        },
+        "gpqa-full-recovery-v2": {
+          "outcomes": 1561,
+          "native_counts": {
+            "granite_4_0_1b": 198,
+            "granite_4_2_3b": 128
+          },
+          "last_output_at": "2026-09-24T22:08:30.230898+00:00",
+          "latest_job": {
+            "event": "start",
+            "model": "granite_4_2_3b",
+            "arm": "native",
+            "at": "2026-09-24T22:08:30.234807+00:00"
+          },
+          "complete": false
+        },
+        "gpqa-full-recovery-v3": {
+          "outcomes": 1561,
+          "native_counts": {
+            "granite_4_0_1b": 198,
+            "granite_4_2_3b": 128
+          },
+          "last_output_at": "2026-09-24T22:08:30.230898+00:00",
+          "latest_job": {
+            "event": "finish",
+            "model": "granite_4_2_3b",
+            "arm": "native",
+            "at": "2026-09-24T22:08:30.233058+00:00"
+          },
+          "complete": false
+        }
+      }
+    },
+    "short": {
+      "service_states": {
+        "short-full.service": "failed",
+        "short-chain-controller.service": "active"
+      },
+      "gpu": "73 %, 8515 MiB",
+      "shutdown": "Fri 2026-09-25 02:30:00 UTC",
+      "runs": {
+        "short-full-recovery-v1": {
+          "outcomes": 2634,
+          "native_counts": {
+            "granite_4_0_1b": 330,
+            "granite_4_2_3b": 253
+          },
+          "last_output_at": "2026-09-24T21:43:21.364426+00:00",
+          "latest_job": {
+            "event": "start",
+            "model": "granite_4_2_3b",
+            "arm": "native",
+            "at": "2026-09-24T21:43:21.372939+00:00"
+          },
+          "complete": false
+        },
+        "short-full-recovery-v2": {
+          "outcomes": 2671,
+          "native_counts": {
+            "granite_4_0_1b": 330,
+            "granite_4_2_3b": 290
+          },
+          "last_output_at": "2026-09-24T22:52:22.501235+00:00",
+          "latest_job": {
+            "event": "start",
+            "model": "granite_4_2_3b",
+            "arm": "native",
+            "at": "2026-09-24T22:52:22.503780+00:00"
+          },
+          "complete": false
+        }
+      }
+    }
+  },
+  "reload_verification": {
+    "reload_binding_passed": true,
+    "traceback": false,
+    "gpu": "72 %, 8013 MiB",
+    "latest_job": {
+      "event": "start",
+      "model": "granite_4_2_3b",
+      "arm": "native",
+      "at": "2026-09-24T22:57:17.792998+00:00"
+    }
+  }
+}

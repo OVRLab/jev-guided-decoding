@@ -1,0 +1,662 @@
+[
+  {
+    "id": "gsm8k_train/1393",
+    "correct": true,
+    "input_sha256": "56aafacb369c04b173076ed8b219079138d4a14e38758309c04540181fc12165",
+    "readout": {
+      "answer": "80",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "gsm8k_train/1792",
+    "correct": true,
+    "input_sha256": "7baf0756190404998b94a69a6dbac1c0a80db557ba369bedc0b984aa05b588e7",
+    "readout": {
+      "answer": "290",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "gsm8k_train/2790",
+    "correct": true,
+    "input_sha256": "544fb9e4d11b99e51fe176b70fa555b986537ca1530caafd9d9f76ded1705da6",
+    "readout": {
+      "answer": "2100",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "gsm8k_train/3626",
+    "correct": true,
+    "input_sha256": "1feec863a88bb5faef87fa2c0d85092ade603162330ff29fe89d17d5f512c9ec",
+    "readout": {
+      "answer": "3",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "gsm8k_train/5832",
+    "correct": true,
+    "input_sha256": "41a3dc08eab59977559f2cb1253aa02f1254a35f6f6509967eb27e2528a1a5a5",
+    "readout": {
+      "answer": "17",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "gsm8k_train/2774",
+    "correct": true,
+    "input_sha256": "ff50fce73cfa98d5f3b73908b1632d9f3adaac2a833630141a17a93c13c217d0",
+    "readout": {
+      "answer": "5",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "gsm8k_train/5474",
+    "correct": true,
+    "input_sha256": "4400db59a81008502f69af5beef5daccf1ffb1a20f64a1c44e6ed2d7856ffaa7",
+    "readout": {
+      "answer": "41",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "gsm8k_train/2562",
+    "correct": true,
+    "input_sha256": "12239a80cb92fc3c865d1ddf3ea6868521d1180735418ae905406a6139c824e4",
+    "readout": {
+      "answer": "3",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "gsm8k_train/732",
+    "correct": true,
+    "input_sha256": "8e59f9c92d600aba60acc596aec6c02ac5b7044912206b5bd6a477a2ebd88400",
+    "readout": {
+      "answer": "32000",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "gsm8k_train/1964",
+    "correct": true,
+    "input_sha256": "efadc88fbf0bc23446ac31d028392e06d5e301e85479c8167e79ee365e86be94",
+    "readout": {
+      "answer": "6",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "gsm8k_train/1101",
+    "correct": true,
+    "input_sha256": "84231891621442fe0a02f64e8f9a43d74d1223eef3aabe403fc9864dce8038aa",
+    "readout": {
+      "answer": "71",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "gsm8k_train/5138",
+    "correct": true,
+    "input_sha256": "9d36186d2c268893130217935d374e0975d90d940ae1ac102217b3064ec68cee",
+    "readout": {
+      "answer": "60",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "gsm8k_train/2008",
+    "correct": true,
+    "input_sha256": "deb7b3db9036a66a1be22831652908c1f9c6d7490e3438fe0bb187b8c0da6041",
+    "readout": {
+      "answer": "14",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "gsm8k_train/3839",
+    "correct": true,
+    "input_sha256": "5da34010cfa579a6a50ed16c08bb0b193ae16a8339b2f12bbd76786cd3f4db53",
+    "readout": {
+      "answer": "6",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "gsm8k_train/3231",
+    "correct": true,
+    "input_sha256": "9f39f0deb3cae34202c9f7d7cc5895b739ffe6bc7d975b434e6da38295f5446a",
+    "readout": {
+      "answer": "45",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "gsm8k_train/515",
+    "correct": false,
+    "input_sha256": "974fef3d2364b86a0f99cafb88f988ea01b87dc60bd4c2a2f6d51c8bf764a434",
+    "readout": {
+      "answer": "60",
+      "parseable": true,
+      "correct": false,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "gsm8k_train/5382",
+    "correct": true,
+    "input_sha256": "63b852a41986939bdcdae75303ca82ff38b46f035713660cc02a259c6c92d82d",
+    "readout": {
+      "answer": "45",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "gsm8k_train/6323",
+    "correct": true,
+    "input_sha256": "d34cfa2f82772aceb6064da084f184f5b446f29fdee78b533b1dc24ed5c04c34",
+    "readout": {
+      "answer": "72",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "gsm8k_train/401",
+    "correct": true,
+    "input_sha256": "ae73322077f23b27e4dbd2d888d311a36236eb7b63c7cc717b3c64714216405f",
+    "readout": {
+      "answer": "13",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "gsm8k_train/7376",
+    "correct": false,
+    "input_sha256": "30e5095864ac67b8ec6689698582310e03b4e10f514f401986e7578b69cdc632",
+    "readout": {
+      "answer": "20",
+      "parseable": true,
+      "correct": false,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "gsm8k_train/5760",
+    "correct": true,
+    "input_sha256": "e59455ed29b55f1dd6a0600b20bf680cfd1769bb3bb46e5612be6bc19afd1f77",
+    "readout": {
+      "answer": "24",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "mmlu_pro/20",
+    "correct": true,
+    "input_sha256": "8f157d7d9729e6a36899b84748def3b61eeb311866e9489f35c3ef5587f743a9",
+    "readout": {
+      "answer": "B",
+      "parseable": true,
+      "correct": true,
+      "method": "full_option"
+    }
+  },
+  {
+    "id": "mmlu_pro/22",
+    "correct": false,
+    "input_sha256": "d8e7f26987bdccc7dc3ccba4e308c06d62df8f6f28188deed3849c57671bcd55",
+    "readout": {
+      "answer": "C",
+      "parseable": true,
+      "correct": false,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "mmlu_pro/16",
+    "correct": false,
+    "input_sha256": "16bbfd31db02cef1556348e0d23167c74d55b01489448aea699267b158813995",
+    "readout": {
+      "answer": "B",
+      "parseable": true,
+      "correct": false,
+      "method": "full_option"
+    }
+  },
+  {
+    "id": "mmlu_pro/18",
+    "correct": false,
+    "input_sha256": "42b165d0440728557c7839f33f691a6b69d173f42280217009d75bf4005de242",
+    "readout": {
+      "answer": "E",
+      "parseable": true,
+      "correct": false,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "mmlu_pro/26",
+    "correct": true,
+    "input_sha256": "c6ff43d02cee82116f5427db3f06596df57700385c38ecedba74528de2e4aa56",
+    "readout": {
+      "answer": "J",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "mmlu_pro/25",
+    "correct": false,
+    "input_sha256": "e7f647ab7205151f981c736673955de6ee1f0987411d533b7e19f87ad83b331a",
+    "readout": {
+      "answer": "C",
+      "parseable": true,
+      "correct": false,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "mmlu_pro/31",
+    "correct": false,
+    "input_sha256": "b13f19cb8f9fc930c19710ee6253d9222f94106343ad6055ef797b746f56f7ff",
+    "readout": {
+      "answer": "B",
+      "parseable": true,
+      "correct": false,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "mmlu_pro/30",
+    "correct": false,
+    "input_sha256": "6e2c89aab40ef438af5cb6dc1066e63b6f50abb0a2ac6476d83b1e4dba30c031",
+    "readout": {
+      "answer": "F",
+      "parseable": true,
+      "correct": false,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "mmlu_pro/37",
+    "correct": false,
+    "input_sha256": "5b2227b7e259ea4c097126d7f8bd0aca5303503012090333c280eab11b0bcdcb",
+    "readout": {
+      "answer": "B",
+      "parseable": true,
+      "correct": false,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "mmlu_pro/36",
+    "correct": true,
+    "input_sha256": "9ebc2137d88d127fd2bb8c4b731ccb8062c254aee2c13e55f0218f37461e53c4",
+    "readout": {
+      "answer": "H",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "mmlu_pro/43",
+    "correct": false,
+    "input_sha256": "fb35bbf460c6ca733f87dcbd80f8bcaa6d97406c612688bfbb61b83805702273",
+    "readout": {
+      "answer": "J",
+      "parseable": true,
+      "correct": false,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "mmlu_pro/40",
+    "correct": false,
+    "input_sha256": "1da83c0a68c92ad85aa1157d9cabda7334e0e520a711eaebfac5914cab5d94fe",
+    "readout": {
+      "answer": "A",
+      "parseable": true,
+      "correct": false,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "mmlu_pro/5",
+    "correct": true,
+    "input_sha256": "ecec5e2f570cd5746c9b3fb1d63198d290a59ea0508f75df34040238b568e3ec",
+    "readout": {
+      "answer": "J",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "mmlu_pro/8",
+    "correct": false,
+    "input_sha256": "92c1e1f6164df1ef56c69cf1774b21e74a7bcd732f87dbb138eb405dfa9b05fa",
+    "readout": {
+      "answer": "C",
+      "parseable": true,
+      "correct": false,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "mmlu_pro/55",
+    "correct": true,
+    "input_sha256": "1737cac4b4d10f1e1306c863c43d1b08d95281ee5433009d3d1fa91d1dbf34c9",
+    "readout": {
+      "answer": "A",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "mmlu_pro/68",
+    "correct": false,
+    "input_sha256": "b1072c628f82da1831a7c6de798f27807b6dfd5bf8a5f68793782295aafcde68",
+    "readout": {
+      "answer": "B",
+      "parseable": true,
+      "correct": false,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "mmlu_pro/67",
+    "correct": false,
+    "input_sha256": "d2cebc46e219d0e84dfa7e7a8c6c185385b168322852a684476e742da1eee06c",
+    "readout": {
+      "answer": "A",
+      "parseable": true,
+      "correct": false,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "mmlu_pro/2",
+    "correct": false,
+    "input_sha256": "dbbc71fa31990936592e4ed879092c684107bdbb808b69c48110bf28458fa117",
+    "readout": {
+      "answer": "A",
+      "parseable": true,
+      "correct": false,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "mmlu_pro/4",
+    "correct": true,
+    "input_sha256": "0551cfe9952fcceb1b08bc88f4ac733df9e4c71fc344a1f1a2a0ab2c5f155ad3",
+    "readout": {
+      "answer": "B",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "mmlu_pro/51",
+    "correct": true,
+    "input_sha256": "d83abc5c147a795fe6905c6b49d60af8a1bd0e68aafae1ac5cd46eeb8aa3f99e",
+    "readout": {
+      "answer": "B",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "mmlu_pro/52",
+    "correct": true,
+    "input_sha256": "b46892d0792217282a639272563138333086e89b701dc3f363b8419519dbf47c",
+    "readout": {
+      "answer": "B",
+      "parseable": true,
+      "correct": true,
+      "method": "full_option"
+    }
+  },
+  {
+    "id": "mmlu_pro/47",
+    "correct": true,
+    "input_sha256": "b08da50d7ded7d6174ebaaa5050adedf0c1d53862af2b16a40afc1dfc0009e8e",
+    "readout": {
+      "answer": "B",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "mmlu_pro/45",
+    "correct": false,
+    "input_sha256": "55d66dcd9f96d1456a8a77ad3a96a762dc36c8c016bf0c644fc5503aaa75b355",
+    "readout": {
+      "answer": "C",
+      "parseable": true,
+      "correct": false,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "mmlu_pro/10",
+    "correct": false,
+    "input_sha256": "e543cc097f8b74edb8557720c7b652685009414b1f1ff2c192e91ba1686dabc4",
+    "readout": {
+      "answer": "C",
+      "parseable": true,
+      "correct": false,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "mmlu_pro/13",
+    "correct": true,
+    "input_sha256": "9ee667914e148e84c1baf765b1e0daf4b4dd538467637a7992c533a7cf069dd3",
+    "readout": {
+      "answer": "E",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "mmlu_pro/63",
+    "correct": true,
+    "input_sha256": "e53c1b20229c7f4f1ff70d476b0bd5b75e559aa841a15a2db206552bcf987750",
+    "readout": {
+      "answer": "J",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "mmlu_pro/62",
+    "correct": true,
+    "input_sha256": "2e2bac8121e1e5e6773d88fbea6d1504e3848ae1835477844b3855ba666b9215",
+    "readout": {
+      "answer": "A",
+      "parseable": true,
+      "correct": true,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "musr/murder_mystery/73",
+    "correct": true,
+    "input_sha256": "bb83d90ad61fa0c2c2e69cb1c3696e50ef85fff1c0be9b5610e3209eff7020f0",
+    "readout": {
+      "answer": "B",
+      "parseable": true,
+      "correct": true,
+      "method": "full_option"
+    }
+  },
+  {
+    "id": "musr/murder_mystery/212",
+    "correct": false,
+    "input_sha256": "dd8364c1a0d1d8bb8d18d6d20e91cf7c52f3971cfe4303eef7590872ebb3ba93",
+    "readout": {
+      "answer": "B",
+      "parseable": true,
+      "correct": false,
+      "method": "full_option"
+    }
+  },
+  {
+    "id": "musr/murder_mystery/134",
+    "correct": false,
+    "input_sha256": "b6a334221adaee7585596cf4788aacb80515dc15a7b26a60bb0ae158f48cb07e",
+    "readout": {
+      "answer": "B",
+      "parseable": true,
+      "correct": false,
+      "method": "full_option"
+    }
+  },
+  {
+    "id": "musr/murder_mystery/213",
+    "correct": true,
+    "input_sha256": "f6460b6ae3f401841ebe65c5c7b46b73f9848893c272e3ad3f554a7edbd49081",
+    "readout": {
+      "answer": "B",
+      "parseable": true,
+      "correct": true,
+      "method": "full_option"
+    }
+  },
+  {
+    "id": "musr/object_placements/85",
+    "correct": true,
+    "input_sha256": "5bffd752377b439cfaa21605215b71d1e5bdcff67e5bca8aaf7c89601f0e8a92",
+    "readout": {
+      "answer": "A",
+      "parseable": true,
+      "correct": true,
+      "method": "full_option"
+    }
+  },
+  {
+    "id": "musr/object_placements/255",
+    "correct": true,
+    "input_sha256": "27b3a50a4262e1cc35919350d730face2a0b8245a255955c9c39b3432b0b3f9a",
+    "readout": {
+      "answer": "C",
+      "parseable": true,
+      "correct": true,
+      "method": "full_option"
+    }
+  },
+  {
+    "id": "musr/object_placements/179",
+    "correct": false,
+    "input_sha256": "60f1e4f1218d77333f5b3656e45233fa5f376d3d0769e181e669e7422b7d9e1a",
+    "readout": {
+      "answer": "B",
+      "parseable": true,
+      "correct": false,
+      "method": "full_option"
+    }
+  },
+  {
+    "id": "musr/object_placements/31",
+    "correct": true,
+    "input_sha256": "9edc37ba8ce953e8149fc2fa68f0ccb91a3af5e3409f9c83f11ad17fe8d1e1dd",
+    "readout": {
+      "answer": "B",
+      "parseable": true,
+      "correct": true,
+      "method": "full_option"
+    }
+  },
+  {
+    "id": "musr/team_allocation/74",
+    "correct": true,
+    "input_sha256": "d11dde8a0a087ede62cd7b1f56e519a31d03e1533a967525e487dc733615060c",
+    "readout": {
+      "answer": "B",
+      "parseable": true,
+      "correct": true,
+      "method": "full_option"
+    }
+  },
+  {
+    "id": "musr/team_allocation/185",
+    "correct": false,
+    "input_sha256": "72ab9fc10249808b577a62ee6e6f26036a154027e85477ed58bff183658a0bd6",
+    "readout": {
+      "answer": "B",
+      "parseable": true,
+      "correct": false,
+      "method": "primary"
+    }
+  },
+  {
+    "id": "musr/team_allocation/165",
+    "correct": false,
+    "input_sha256": "066aab37bf6467e3ac6798409eb52a820b5285cb666db0c3cf43135fe6e1e1bf",
+    "readout": {
+      "answer": "B",
+      "parseable": true,
+      "correct": false,
+      "method": "full_option"
+    }
+  },
+  {
+    "id": "musr/team_allocation/2",
+    "correct": false,
+    "input_sha256": "5a0a0a8437fb3ac40b1585117bf01cead155073653b179ad7e88e99d0a026352",
+    "readout": {
+      "answer": "B",
+      "parseable": true,
+      "correct": false,
+      "method": "full_option"
+    }
+  }
+]

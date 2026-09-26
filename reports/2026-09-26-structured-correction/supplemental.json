@@ -1,0 +1,24 @@
+{
+  "constant_room_all_three_correct_counts": {
+    "kitchen": 0,
+    "office": 3,
+    "garage": 1,
+    "bedroom": 1,
+    "attic": 0,
+    "cellar": 1,
+    "hall": 3,
+    "lounge": 2
+  },
+  "denominator": 96,
+  "scope": "Retrospective class-balance diagnostic, not model runs",
+  "reference_room_counts": {
+    "garage": 36,
+    "kitchen": 30,
+    "cellar": 35,
+    "attic": 33,
+    "lounge": 32,
+    "hall": 51,
+    "office": 39,
+    "bedroom": 32
+  }
+}

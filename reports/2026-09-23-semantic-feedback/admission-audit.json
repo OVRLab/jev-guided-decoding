@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "cases": 192,
+  "draft_tokens": 926,
+  "provider_requests": 192,
+  "provider_input_tokens": 253387,
+  "provider_output_tokens": 22656,
+  "unchanged_weights": true,
+  "source_files": 21,
+  "constructed_claims": 384,
+  "admitted": false,
+  "mean_generation_seconds": 0.8037887424240276,
+  "mean_jev_seconds": 0.2838614524662262,
+  "output_files": {
+    "analysis.json": "75941e98e7a10a3fc18c650fba522fe735e6577139cd7c4260a6245617371b84",
+    "completion.json": "c59b1d6d5ff6e5cd2a639ebd4862318b6c78b104aea5dd796671ee85be757283",
+    "drafts.jsonl": "762b513c70ba1de1aab5b3283be714678e112442d1a3b64b90943815c761704f",
+    "freeze.json": "44f39307ef6804620c55d53e3900ea61519a19aa63a4ce386c11c4dd6926a730",
+    "hardware.json": "a3741ae15c3db1d9f960b655a851a95b68a0a6f6289fb3d2bfd16defa3c305c9",
+    "jev-budget.jsonl": "8641cbf5fb573d9d49a65d124a7d5e5a7c53c8ac74557c8cb7426877dd68da4b",
+    "outputs.jsonl": "65a0a3bcbfdb5d516719db14a1a54f4b60514874d3222fe35aab200d989cab1e",
+    "requests.jsonl": "b47d2587b0ce42033ba3ad40b42e070e78f23f37e7690c2354bbb57161edd339",
+    "starts.jsonl": "0a2e3893e2f1322d7640be217364f591c18d27584bc9cd3ac8a168b51ff0287b"
+  }
+}

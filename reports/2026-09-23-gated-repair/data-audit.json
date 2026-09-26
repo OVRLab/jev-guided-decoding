@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "cases": 640,
+  "references": 640,
+  "training_targets": 384,
+  "counts": {
+    "gsm8k/train": 192,
+    "gsm8k/development": 32,
+    "gsm8k/test": 96,
+    "arc/train": 192,
+    "arc/development": 32,
+    "arc/test": 96
+  },
+  "normalized_duplicates": 0,
+  "previously_exposed_matches": 0,
+  "note": "Exact pinned source and project-split consistency; not proof of factual label correctness or freedom from model pretraining exposure.",
+  "previously_exposed_questions": 24,
+  "upstream_hashes": {
+    "gsm8k/train": "ea82612ea9582142387730c793eb67d3b12849002bc0b7fa6f8efafa7351419d",
+    "gsm8k/test": "ee7b8da9e381df27b9e3f7758a159ab2bdaa4dbaa910546cbbc47e0cb44e4f59",
+    "arc/train": "e488c1587ffdcfc8443f916c53488a95cd471c5790e0746c6bfe4cecf20962cb",
+    "arc/validation": "395a5c88d1580d69855fbaee9450270578df1ad5af6259771cd0a42c20e99f05",
+    "arc/test": "62f03257e737aed263f55c6abf87c7bb0028a44a6bdd2a26eb1279eb42c1d1e9"
+  },
+  "manifest_sha256": "db7373f06a20d94c0c9bda1c678fe969a1baed11877040b1c49a4826544583d0",
+  "exposed_cases_sha256": "4733a99c65d3bee6a2bca92ea9266b6afc1945a16460cd1d40770ad0ab434bbe",
+  "auditor_sha256": "eaae96ca02deea5df692ea14bb968c689c24d32e6d56c4e9ab9f72c9a02be599"
+}

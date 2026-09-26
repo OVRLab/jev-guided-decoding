@@ -1,0 +1,14 @@
+{
+  "created_at": "2026-09-23T05:16:27.180752Z",
+  "verified_deleted_at": "2026-09-23T05:55:05.882566+00:00",
+  "charged_upper_bound_hours": 0.6440838372222222,
+  "compute_usd_per_hour": 1.7468,
+  "disk_usd_per_hour": 0.007780821917808219,
+  "cloud_estimate_usd": 1.1300971484973423,
+  "jev_estimate_usd": 0.047894868,
+  "new_estimate_usd": 1.1779920164973423,
+  "prior_cumulative_estimate_usd": 32.58346360254077,
+  "cumulative_estimate_usd": 33.76145561903811,
+  "budget_usd": 50,
+  "note": "Conservative creation-to-verified-cleanup estimate including bootstrap, authentication delay and cleanup. Actual invoice may differ; excludes tax/separate network and local energy."
+}

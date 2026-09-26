@@ -1,0 +1,11 @@
+{
+  "at": "2026-09-23T19:37:01.330707+00:00",
+  "protocol": "r25-retention-replay-v1",
+  "threshold": 0.5,
+  "sources": {
+    "research/gated-repair-retention-supplement.md": "bc66f520f3d0b3324c8fd880a02910bfbc260a126930a67bf6da25cec32a68aa",
+    "research/diagnostics/gated_repair_retention.py": "3f7d4ab50b9de3b9da3e4b2465c4043b615c411dded84f94adc59f5a5fb7ba6f"
+  },
+  "baseline_manifest_sha256": "ca7ecf9b770622fed4481fcdf32b8e57b078a8c9a0799200bc5d42309d0c18d8",
+  "source_revision": "ee86ecaae7adda6be55ff28ddc92aa2e07f03eb1"
+}

@@ -1,0 +1,104 @@
+{
+  "planned": 168,
+  "recorded": 168,
+  "missing": 0,
+  "arms": {
+    "native": {
+      "planned": 24,
+      "recorded": 24,
+      "complete": 24,
+      "correct": 11,
+      "valid_format": 24,
+      "seconds": 2.5332840750005516,
+      "accuracy": 0.4583333333333333
+    },
+    "staged": {
+      "planned": 24,
+      "recorded": 24,
+      "complete": 24,
+      "correct": 8,
+      "valid_format": 24,
+      "seconds": 18.745349066000017,
+      "accuracy": 0.3333333333333333
+    },
+    "likelihood": {
+      "planned": 24,
+      "recorded": 24,
+      "complete": 24,
+      "correct": 7,
+      "valid_format": 24,
+      "seconds": 33.600740409000196,
+      "accuracy": 0.2916666666666667
+    },
+    "jev": {
+      "planned": 24,
+      "recorded": 24,
+      "complete": 24,
+      "correct": 8,
+      "valid_format": 24,
+      "seconds": 49.83821862299965,
+      "accuracy": 0.3333333333333333
+    },
+    "shuffled": {
+      "planned": 24,
+      "recorded": 24,
+      "complete": 24,
+      "correct": 8,
+      "valid_format": 24,
+      "seconds": 48.27737148300071,
+      "accuracy": 0.3333333333333333
+    },
+    "zero": {
+      "planned": 24,
+      "recorded": 24,
+      "complete": 24,
+      "correct": 8,
+      "valid_format": 24,
+      "seconds": 46.99807910199968,
+      "accuracy": 0.3333333333333333
+    },
+    "soft_step": {
+      "planned": 24,
+      "recorded": 24,
+      "complete": 24,
+      "correct": 8,
+      "valid_format": 24,
+      "seconds": 43.53681051399997,
+      "accuracy": 0.3333333333333333
+    }
+  },
+  "zero_identity": {
+    "matched": 24,
+    "pairs": 24
+  },
+  "claim_grades": {
+    "graded": 960,
+    "total": 960
+  },
+  "checkpoints": {
+    "observed": 240,
+    "possible": 240
+  },
+  "audits": 168,
+  "gates": {
+    "all_complete": true,
+    "per_arm_format": true,
+    "overall_format": true,
+    "provenance": true,
+    "zero_identity": true,
+    "grading": true,
+    "checkpoints": true
+  },
+  "admitted": true,
+  "jev": {
+    "calls": 192,
+    "input_tokens": 270264,
+    "output_tokens": 29952,
+    "receipt_cost_usd": 0.011351088000000002
+  },
+  "biased_checkpoints": 142,
+  "max_kl": 0.01999999999999999,
+  "contrasts": {},
+  "elapsed_seconds": 244.38713575200006,
+  "stopped_reason": null
+}

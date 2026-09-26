@@ -1,0 +1,1250 @@
+[
+  {
+    "id": "gsm8k/test/977",
+    "prompt_sha256": "43983d688809d1c82b171c36315b8e5f51b0dc19820662cd16c0e5a102d07e2f",
+    "kind": "number",
+    "answer": "4"
+  },
+  {
+    "id": "gsm8k/test/871",
+    "prompt_sha256": "ab3cbdc24736d3ab851d9cd40d7e70c6e92718fcd512e8daac9fcb0e01377afd",
+    "kind": "number",
+    "answer": "48"
+  },
+  {
+    "id": "gsm8k/test/203",
+    "prompt_sha256": "b50e9d714dae48fde4879ef29d691f1b6d8445803a02bb7256253dbbd3b9f37a",
+    "kind": "number",
+    "answer": "31"
+  },
+  {
+    "id": "gsm8k/test/703",
+    "prompt_sha256": "fbba36fc7ab388c6a068e0a5e68e6c954c3256a71b87b2f005f26cbe11898ca5",
+    "kind": "number",
+    "answer": "50"
+  },
+  {
+    "id": "gsm8k/test/47",
+    "prompt_sha256": "0c915e79027c24c114ded2c8196f88a7d1ee5716dfeff83e9a4391ddc61cf288",
+    "kind": "number",
+    "answer": "800"
+  },
+  {
+    "id": "gsm8k/test/360",
+    "prompt_sha256": "219fd8d54c4d0a31f716722b86ffb767d095d4c0a2de39b5df9d7c5f4aa160b5",
+    "kind": "number",
+    "answer": "25"
+  },
+  {
+    "id": "gsm8k/test/689",
+    "prompt_sha256": "239a9be343f967b96c2213bcb9c86f4d6e562219d1c47eff4f031c6288fd742a",
+    "kind": "number",
+    "answer": "7"
+  },
+  {
+    "id": "gsm8k/test/830",
+    "prompt_sha256": "5b1852e56a327a319fbd15b4b31806430c9809155d0989b743e31e6f1da4a048",
+    "kind": "number",
+    "answer": "1128"
+  },
+  {
+    "id": "gsm8k/test/583",
+    "prompt_sha256": "b1f89c492ba42f1dd7350a1556f6bdc38bdfbc0f3f16e6961c0564b247326a98",
+    "kind": "number",
+    "answer": "120"
+  },
+  {
+    "id": "gsm8k/test/141",
+    "prompt_sha256": "6e732139aedc5a7ff8ef2f85bfab315be1eabd6e254a46677495b4030d2df7f7",
+    "kind": "number",
+    "answer": "400"
+  },
+  {
+    "id": "gsm8k/test/870",
+    "prompt_sha256": "7b8ff8793397bfd747f893e99adea4299954f2a9b6501309e86eb3f024311393",
+    "kind": "number",
+    "answer": "40"
+  },
+  {
+    "id": "gsm8k/test/672",
+    "prompt_sha256": "d32e77230b615e957d0438d46ccdc581a8b044523ab11c6a5e7f388f9adace03",
+    "kind": "number",
+    "answer": "2"
+  },
+  {
+    "id": "gsm8k/test/1096",
+    "prompt_sha256": "0e81cc1281a36f9736ed0339398843aa8e9f9cd1728be6e48bbc3db10795afb8",
+    "kind": "number",
+    "answer": "240"
+  },
+  {
+    "id": "gsm8k/test/205",
+    "prompt_sha256": "eea76cd09e5d91d197c29efa3827042f5c1ffb9f5f362007049b139749439b47",
+    "kind": "number",
+    "answer": "98"
+  },
+  {
+    "id": "gsm8k/test/1066",
+    "prompt_sha256": "a43a8a685bea052f5d953409a1e6cccf89c06b1ae4447c4d2ce8d0eb4030152c",
+    "kind": "number",
+    "answer": "14"
+  },
+  {
+    "id": "gsm8k/test/658",
+    "prompt_sha256": "40956efcff3f3e6fccac466174515e56b7a36fefb7f2734f5f2861b2d10babfd",
+    "kind": "number",
+    "answer": "120"
+  },
+  {
+    "id": "gsm8k/test/363",
+    "prompt_sha256": "979576bfe4b69436a98700a2dda2cdb9b5eb3c4aa68a2205c84e1d04803052b4",
+    "kind": "number",
+    "answer": "6"
+  },
+  {
+    "id": "gsm8k/test/313",
+    "prompt_sha256": "df3e38bbab21239b644ead78888fd969f997e36205ea00172e16a3ae09bae4f7",
+    "kind": "number",
+    "answer": "120000"
+  },
+  {
+    "id": "gsm8k/test/1090",
+    "prompt_sha256": "60fe95df1da63a6f55cb1a701aa814abbe68f480473fc8335109cd4f824310dc",
+    "kind": "number",
+    "answer": "72"
+  },
+  {
+    "id": "gsm8k/test/821",
+    "prompt_sha256": "1893f8aa0b186bc400918ae0c380af88b479465fc70a361b9138687045144a85",
+    "kind": "number",
+    "answer": "35"
+  },
+  {
+    "id": "gsm8k/test/665",
+    "prompt_sha256": "a90365abc9d716b5b8d151c509a3b0d33988a31d6a29dbbf3393d94a39fc5249",
+    "kind": "number",
+    "answer": "360"
+  },
+  {
+    "id": "gsm8k/test/294",
+    "prompt_sha256": "4f958f3f77ca2745ac99858be86e936abc7a6681e8e83297aeaf45f67a5a6d99",
+    "kind": "number",
+    "answer": "3"
+  },
+  {
+    "id": "gsm8k/test/960",
+    "prompt_sha256": "c95b51fe2aab2ef26a6870aaec1d4ac1f689950b379a1b838d065faca555abdd",
+    "kind": "number",
+    "answer": "11"
+  },
+  {
+    "id": "gsm8k/test/1295",
+    "prompt_sha256": "b26f08ac4423e032f555a3316097f3b0f7da43c39c6b83c39532e79a81eff717",
+    "kind": "number",
+    "answer": "2"
+  },
+  {
+    "id": "gsm8k/test/682",
+    "prompt_sha256": "835d20e753f32947d54afe4a46846ce369e5cf16266f7f6ee8e902e1f7daf898",
+    "kind": "number",
+    "answer": "80"
+  },
+  {
+    "id": "gsm8k/test/937",
+    "prompt_sha256": "13998de136d4141cdf3bc6d877f364dc70ee8940fefde0ada52942d0092e47b3",
+    "kind": "number",
+    "answer": "159"
+  },
+  {
+    "id": "gsm8k/test/1258",
+    "prompt_sha256": "b913b69b63d0d07b9c011fb4e19baec43c921f83c4d9d135101c35b6c81c2b98",
+    "kind": "number",
+    "answer": "60"
+  },
+  {
+    "id": "gsm8k/test/894",
+    "prompt_sha256": "1b891632c5d8cd22c167e77fa13ffbf3831f6602ae4d37b0018bc7a0c53d16c2",
+    "kind": "number",
+    "answer": "26"
+  },
+  {
+    "id": "gsm8k/test/1176",
+    "prompt_sha256": "9f243e84b8162fa97644fa48514f88d045d0e05a308fadea8b99e7ebba67319e",
+    "kind": "number",
+    "answer": "2"
+  },
+  {
+    "id": "gsm8k/test/1136",
+    "prompt_sha256": "d23866bc89f93a344d49a0b95ed6738ef6ce58fe28c045b569c01d07a244b52d",
+    "kind": "number",
+    "answer": "26"
+  },
+  {
+    "id": "gsm8k/test/594",
+    "prompt_sha256": "8b1b859127d50ccb90b86dace4649e3fa26da2af58e9a41aabaee8c9593fedb5",
+    "kind": "number",
+    "answer": "42"
+  },
+  {
+    "id": "gsm8k/test/485",
+    "prompt_sha256": "725627c50fb8656ceddfa8b1d4bee9977053ca69207c2eb055b6e14b75b7c219",
+    "kind": "number",
+    "answer": "220"
+  },
+  {
+    "id": "gsm8k/test/804",
+    "prompt_sha256": "160c5e99f3bf34ea527712e71744e201f1b1d619861518d3efa1d4505789832a",
+    "kind": "number",
+    "answer": "20"
+  },
+  {
+    "id": "gsm8k/test/180",
+    "prompt_sha256": "d073e1d5bab2f6c8943d6094ae8fa636d1455fa547df329d9c3814730b3d72d7",
+    "kind": "number",
+    "answer": "20"
+  },
+  {
+    "id": "gsm8k/test/1114",
+    "prompt_sha256": "fb7853b50e1ac73b732969578bd1f4350a1eb8d60df514eb55a095218f8ecb21",
+    "kind": "number",
+    "answer": "8"
+  },
+  {
+    "id": "gsm8k/test/546",
+    "prompt_sha256": "99981ade31bf03e633c82eca62c249cc17a88888168d5b8e2ac31fcf43122916",
+    "kind": "number",
+    "answer": "130"
+  },
+  {
+    "id": "gsm8k/test/1123",
+    "prompt_sha256": "51c28f1b2af3778330e293954378ddc9bea24cee78423c525efd74a6a39aaf87",
+    "kind": "number",
+    "answer": "105"
+  },
+  {
+    "id": "gsm8k/test/405",
+    "prompt_sha256": "db99ca6ec16b777a1191d86fce70707be4965b3d788131c48d1445f89e614267",
+    "kind": "number",
+    "answer": "50"
+  },
+  {
+    "id": "gsm8k/test/616",
+    "prompt_sha256": "40f9e5a414d6d4252807f613492968bed869bc1a4a716835b8e87af1c1b40832",
+    "kind": "number",
+    "answer": "10"
+  },
+  {
+    "id": "gsm8k/test/928",
+    "prompt_sha256": "f086b1fb2c93dc876328b593e8818718d1a605ca0f35a6784aba912ad55bc9f9",
+    "kind": "number",
+    "answer": "60"
+  },
+  {
+    "id": "gsm8k/test/1273",
+    "prompt_sha256": "99a54d19333a4326f4c6a966207ed6ae08c4400a4d6eb34bea8336b3e3c54a19",
+    "kind": "number",
+    "answer": "27"
+  },
+  {
+    "id": "gsm8k/test/403",
+    "prompt_sha256": "884e096d0c4b58297cbb6c86ef5bd25e7c1e93ead1cc6b7df1f91c6b99ff2546",
+    "kind": "number",
+    "answer": "81"
+  },
+  {
+    "id": "gsm8k/test/836",
+    "prompt_sha256": "9b59fdd4c3dcdb21864782f5a26773a6e2eb66823c4529ba181257cdfb9057b4",
+    "kind": "number",
+    "answer": "140"
+  },
+  {
+    "id": "gsm8k/test/983",
+    "prompt_sha256": "5f18dd9c467bd108632d5eeebe294de3ecfab8d59e6ef721fcc8feade0a7a948",
+    "kind": "number",
+    "answer": "15"
+  },
+  {
+    "id": "gsm8k/test/195",
+    "prompt_sha256": "12e51f4100d81e0ad97b4342fbd5f77dbc4a9645b3e85db40fd95ea53c754caf",
+    "kind": "number",
+    "answer": "12"
+  },
+  {
+    "id": "gsm8k/test/441",
+    "prompt_sha256": "abd89a4dcdc606ee045d37118843361c0837a3a2a38f8922a02dba53e8805a2b",
+    "kind": "number",
+    "answer": "80"
+  },
+  {
+    "id": "gsm8k/test/532",
+    "prompt_sha256": "0d0c83918172737815895ab9eb97b337456c965056a4860ce92dfc6115bc361f",
+    "kind": "number",
+    "answer": "25"
+  },
+  {
+    "id": "gsm8k/test/418",
+    "prompt_sha256": "1947b1aba0de4e61459728dbce0175d5b6dc48bc9be7caaf9904d282a5748a6f",
+    "kind": "number",
+    "answer": "40"
+  },
+  {
+    "id": "gsm8k/test/954",
+    "prompt_sha256": "4dd00a64c26c7ff7824365c99d2440cdfafeed2b12a8092b5a082a497be36a22",
+    "kind": "number",
+    "answer": "34"
+  },
+  {
+    "id": "gsm8k/test/1254",
+    "prompt_sha256": "7af3fbdc4725e70d7c80aa7128cec89fcf3722f5e0fc9f6459580ae02a5f9280",
+    "kind": "number",
+    "answer": "30"
+  },
+  {
+    "id": "gsm8k/test/630",
+    "prompt_sha256": "8114c2b3cc1a99474ba39af564a63d1c4aab0e896568a7782e28dd99eed8a8c6",
+    "kind": "number",
+    "answer": "10"
+  },
+  {
+    "id": "gsm8k/test/33",
+    "prompt_sha256": "907b361b74b5313402e77169172234d4a33c389f935ac49667f65d650fd3d458",
+    "kind": "number",
+    "answer": "70"
+  },
+  {
+    "id": "gsm8k/test/687",
+    "prompt_sha256": "2c5daea7cc7bdf817f2580aca766b2b0e219ea8458d2287f842f893de5b9e70f",
+    "kind": "number",
+    "answer": "13"
+  },
+  {
+    "id": "gsm8k/test/1201",
+    "prompt_sha256": "3419ed0d932825242ba47ae4767d14909d552a7740d9b5f2781400fad7eb686d",
+    "kind": "number",
+    "answer": "42"
+  },
+  {
+    "id": "gsm8k/test/1021",
+    "prompt_sha256": "3c4187d734c8e66198dd70e0e57a15e1066a911546ec93e3d6fb3f822da715ed",
+    "kind": "number",
+    "answer": "36"
+  },
+  {
+    "id": "gsm8k/test/229",
+    "prompt_sha256": "94bb0eff162f09474ac00e53ae7e6d346e0e48e859576c7c6a8f61730c8696f9",
+    "kind": "number",
+    "answer": "21"
+  },
+  {
+    "id": "gsm8k/test/1075",
+    "prompt_sha256": "9bb48eb707349b6fc706e5587aa3617c7666e276486c38e50b1fc485471db9f6",
+    "kind": "number",
+    "answer": "16"
+  },
+  {
+    "id": "gsm8k/test/903",
+    "prompt_sha256": "201e2123048b4f5d1e7849c9a88e80e87f74d63110fb6937881b2cbfa3f42c23",
+    "kind": "number",
+    "answer": "16"
+  },
+  {
+    "id": "gsm8k/test/193",
+    "prompt_sha256": "d8c9c72121e6da6c4a2faad851bb88d5490262be018b89f259187698b0219605",
+    "kind": "number",
+    "answer": "24"
+  },
+  {
+    "id": "gsm8k/test/1266",
+    "prompt_sha256": "10f27eb0c405a0cae4004b1ab17f92849cf32d9fc3928fb4a174d6af593609bd",
+    "kind": "number",
+    "answer": "147"
+  },
+  {
+    "id": "gsm8k/test/255",
+    "prompt_sha256": "835e6cc1bfb9eda677327e3656c97aee9ded9a2b9684cfdf6e4eb3dc12bc3316",
+    "kind": "number",
+    "answer": "192"
+  },
+  {
+    "id": "gsm8k/test/1157",
+    "prompt_sha256": "2b61207597ca3c4316be80767651c73c778c71b6c294c6f5dbaab64caedb07ad",
+    "kind": "number",
+    "answer": "3"
+  },
+  {
+    "id": "gsm8k/test/931",
+    "prompt_sha256": "130f0157d9f100e8f51d71216792384aec7d1f7d568f3e1c5fc87ba006238e95",
+    "kind": "number",
+    "answer": "50"
+  },
+  {
+    "id": "gsm8k/test/293",
+    "prompt_sha256": "f6cc474fef25a50a9dd827798681d9f81ceec0d89f991fe409adbb05ac78460f",
+    "kind": "number",
+    "answer": "83"
+  },
+  {
+    "id": "gsm8k/test/53",
+    "prompt_sha256": "9bd5a294db1db8ba698f365ba3ce6e4e27e834c7a34cfa9cfe68822c8531dea4",
+    "kind": "number",
+    "answer": "40"
+  },
+  {
+    "id": "gsm8k/test/602",
+    "prompt_sha256": "b4861f7edb9a731f4d52bb7584154aca462fc928956c2f4e4d37f753353031bf",
+    "kind": "number",
+    "answer": "5"
+  },
+  {
+    "id": "gsm8k/test/1253",
+    "prompt_sha256": "0c6710f6481edc4bf955219bef6b9116877b70799a0e66cb7138ccb34c6217fb",
+    "kind": "number",
+    "answer": "120"
+  },
+  {
+    "id": "gsm8k/test/1293",
+    "prompt_sha256": "167f36f6b62d61d69369df2928a2811290ffe0d957a32ca2f538689c9a065bd4",
+    "kind": "number",
+    "answer": "140000"
+  },
+  {
+    "id": "gsm8k/test/330",
+    "prompt_sha256": "2b16169f22e78d8b269164d0026654d27fd23d6ee5a1a55bb5468f9b28a54d49",
+    "kind": "number",
+    "answer": "31"
+  },
+  {
+    "id": "gsm8k/test/451",
+    "prompt_sha256": "88c259034c8854ab81ac5d6f06d0a225e427056f70bf92a2a6319f89813d89f7",
+    "kind": "number",
+    "answer": "11050"
+  },
+  {
+    "id": "gsm8k/test/126",
+    "prompt_sha256": "a6200b96b2a1d0b9d57c2fe201262589c268339b49fdc626989e6dfbb4b49c68",
+    "kind": "number",
+    "answer": "82"
+  },
+  {
+    "id": "gsm8k/test/422",
+    "prompt_sha256": "d4a1c8cb4b0a7b8160aa4d77c1c11041b3cde4c21e69d4b476cfeb02e98f6a00",
+    "kind": "number",
+    "answer": "284"
+  },
+  {
+    "id": "gsm8k/test/801",
+    "prompt_sha256": "5d4c1256d59be70a00d02aea9af9f8aa80fa47c3233903e16a242f09716afc45",
+    "kind": "number",
+    "answer": "1240"
+  },
+  {
+    "id": "gsm8k/test/511",
+    "prompt_sha256": "c0cfe3a29db158952b83441ab1e74321a6046e97b14a2487a88637fdfb05dbe5",
+    "kind": "number",
+    "answer": "110"
+  },
+  {
+    "id": "gsm8k/test/442",
+    "prompt_sha256": "171d92a3ed460410aeb668309f1d2332774cc3ff9c55c97588f2f9499933fd29",
+    "kind": "number",
+    "answer": "49"
+  },
+  {
+    "id": "gsm8k/test/1129",
+    "prompt_sha256": "9f2334506c61e58343d046b34d09850eb8540fc1e17730d28ee95e6108010ab8",
+    "kind": "number",
+    "answer": "8"
+  },
+  {
+    "id": "gsm8k/test/864",
+    "prompt_sha256": "cda87d4dc27ad9563c2a710bf1620a5e02e0c9ccbdd5173694d3183eeb541fa0",
+    "kind": "number",
+    "answer": "80"
+  },
+  {
+    "id": "gsm8k/test/1009",
+    "prompt_sha256": "f6b60880df2698ebd0c795d60e33934d3f222af516f3776b617b4d57aa6aa4a5",
+    "kind": "number",
+    "answer": "1875"
+  },
+  {
+    "id": "gsm8k/test/1233",
+    "prompt_sha256": "f556aa14ba2c1c81a596c1318f9080e5495f0d5e4c8d084de6f2b5bb29d8c88f",
+    "kind": "number",
+    "answer": "81"
+  },
+  {
+    "id": "gsm8k/test/945",
+    "prompt_sha256": "f8a5637db77c254e24fc1a1d7f54e24be9abfee40e7a9dee36041fb724df5ec9",
+    "kind": "number",
+    "answer": "17"
+  },
+  {
+    "id": "gsm8k/test/14",
+    "prompt_sha256": "7ce92493cdfbf8014115b4250b9b05ab9a816729b7e1b615ee76761ad9a26329",
+    "kind": "number",
+    "answer": "60"
+  },
+  {
+    "id": "gsm8k/test/79",
+    "prompt_sha256": "df108b50f8b42e9c58023957953e6b2503440c37a5cfd6a9bffb2fd47d372c15",
+    "kind": "number",
+    "answer": "70"
+  },
+  {
+    "id": "gsm8k/test/526",
+    "prompt_sha256": "ca22f6ae04ac0a508670768067a3a6b1ebf72a86ddadfe250bf7e90768bd6b9c",
+    "kind": "number",
+    "answer": "21"
+  },
+  {
+    "id": "gsm8k/test/984",
+    "prompt_sha256": "fab2276db3fe77d9f84a5535f376252c43e22e91157b37e6ed6e4615a9bfa078",
+    "kind": "number",
+    "answer": "342"
+  },
+  {
+    "id": "gsm8k/test/724",
+    "prompt_sha256": "ef0b0228d7136caf40293534f1de4870ed83b1f9af4fa400ab03aa933eddfbdf",
+    "kind": "number",
+    "answer": "18"
+  },
+  {
+    "id": "gsm8k/test/85",
+    "prompt_sha256": "4bb15ba08a9de156ef09e0a29382ff216646791a0cd3abd55a2e58a41dcc7a7e",
+    "kind": "number",
+    "answer": "44"
+  },
+  {
+    "id": "gsm8k/test/1210",
+    "prompt_sha256": "044749debac51265d05504ea7d3b9ba332f22f0dc5069320a4e04f5c4f1461fc",
+    "kind": "number",
+    "answer": "288"
+  },
+  {
+    "id": "gsm8k/test/873",
+    "prompt_sha256": "8a1bf033fdb6f8379a55ccdb99df90ab2bf955d582e969bdc43d854570af98c7",
+    "kind": "number",
+    "answer": "12"
+  },
+  {
+    "id": "gsm8k/test/6",
+    "prompt_sha256": "ef54b67eb216ecf5c3b773fc9f16429ffaf7dd15e6a2822fe44e33ccb01a5cfe",
+    "kind": "number",
+    "answer": "260"
+  },
+  {
+    "id": "gsm8k/test/76",
+    "prompt_sha256": "d5c36e81421f39ca09c824357acdf09d299e675483f2dad4ccb8da133d076c88",
+    "kind": "number",
+    "answer": "5"
+  },
+  {
+    "id": "gsm8k/test/1068",
+    "prompt_sha256": "5bbfc306daa15de0aa0b94f16554db2d41618d1367982000bef2ac727c86e84f",
+    "kind": "number",
+    "answer": "24"
+  },
+  {
+    "id": "gsm8k/test/652",
+    "prompt_sha256": "e93f2e0120343184aca550f093d1b101e1059e7ab833567a856135c1c86a21a9",
+    "kind": "number",
+    "answer": "75"
+  },
+  {
+    "id": "gsm8k/test/1241",
+    "prompt_sha256": "470a7fd1458710987ef0919b77c0f05d40e387a0e9e132fd2e0f0210bf19c024",
+    "kind": "number",
+    "answer": "8"
+  },
+  {
+    "id": "gsm8k/test/411",
+    "prompt_sha256": "5f83708824a04b3161693e9c8963e6b4134c46b5569a8b24a9422dd271710432",
+    "kind": "number",
+    "answer": "1110"
+  },
+  {
+    "id": "gsm8k/test/684",
+    "prompt_sha256": "80ca92e5ff9d7176066a58954e3312fcfbcf13fb5ade2f7575cb5d731967353e",
+    "kind": "number",
+    "answer": "11"
+  },
+  {
+    "id": "gsm8k/test/1226",
+    "prompt_sha256": "75c19d132912a4fdd25295dbbdac33b1512e5c24074595ec7e04f0955b1ff001",
+    "kind": "number",
+    "answer": "90"
+  },
+  {
+    "id": "arc/test/Mercury_400687",
+    "prompt_sha256": "914d035c2297c0b76fafbe346171a149d8fbf86d95765cec03173909a28778f4",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_411224",
+    "prompt_sha256": "db9c0a7e9e448c6fa985711d2b243f9e2ed3604b15d0abdd92a3dd5abecd35ea",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7182210",
+    "prompt_sha256": "6f6c0fbe3592a5bf99cd98ff83d3de81152e54a62706e27c7164399ea9cceb26",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/NCEOGA_2013_8_28",
+    "prompt_sha256": "61dc9c7cc507dff63a6a609b8f367d955230a72422e0e3167df891d3f31775cd",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/MEAP_2005_5_14",
+    "prompt_sha256": "c701cca72a0dd25921ffde87511273401e58ec33ceef4db14711eae8cfb574d3",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/MCAS_1998_8_24",
+    "prompt_sha256": "77581a3dbd77bdbc3cb8f960a280d6bd9fa7fa7ddb6c23c6e22be36462640a25",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7130778",
+    "prompt_sha256": "1862e8cacd1d76243256f1d8774f866bba0e75e36934c6039fb6584eb5fea886",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7041650",
+    "prompt_sha256": "b59bf2057462e3762a05c64e9e350a58f6885499d4026a9db34193097e9c0e9d",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/ACTAAP_2014_5_8",
+    "prompt_sha256": "1a50ef9091e29dc13c5dc03ba8cd97eaa55ea0170c842155eac1adc9e39c1b36",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/NYSEDREGENTS_2013_8_42",
+    "prompt_sha256": "98627587df3ac299c885e49b5fa9b5f9389d2c73e01a04cd7c4a42f9826224f6",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/TAKS_2009_8_36",
+    "prompt_sha256": "63bb2802a771de0a14425b5cf6c22562542389c1e9a7785263e1a601f3f11270",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7004743",
+    "prompt_sha256": "45bb5517b48b830ea91ba0c5c064bf6e84e817c25cbe5ef5bb7871fc220b9ef8",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7122640",
+    "prompt_sha256": "6c677520e9a6d83951a9bd44b2ae1e78f2ee6f29d9aba07cf149f40be759c8e2",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7268240",
+    "prompt_sha256": "e5d3048f03cf81fc7b68634b0cdf4aac2f9e420ec87ad28610d2f7ed8bec7a3b",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_SC_416169",
+    "prompt_sha256": "98655b2a54833544ac8a9b01f6a89b90e6d5bc80a8f3ff27d6f5b3766679d159",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_403232",
+    "prompt_sha256": "9ab24db0b4fdf8e0c5f87a5c06ac4f7a02e4fab457ec44b4ac72a6d874558f2d",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7221043",
+    "prompt_sha256": "2acd267997bac3178703f1e71249142dddad3e932dbda434350e9082b5948ff1",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_402563",
+    "prompt_sha256": "644e2cc831a8c4d5908728cfa51891921968b19a2b57bf0227b243098fbfe90f",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7103600",
+    "prompt_sha256": "a78a30daae99c7ccf0c5b06399ba16f078cd3292a45ff86ccda709e4e5a0edda",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/NYSEDREGENTS_2010_4_24",
+    "prompt_sha256": "fb2f884514420a30d1c25936d64dae3ed57e0212ec351d46bcbed7114f3b32c8",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7218015",
+    "prompt_sha256": "de70cff99622d8c220afbe289ad8c874303471d72c47ffe6f9289264868a41bf",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7247678",
+    "prompt_sha256": "05a0f84ca6d098c1c0f7857c5d86c45a1a597aea6aed0f2a9513d689e6369d0a",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_401428",
+    "prompt_sha256": "639aa862ac450bd6233bfe943bb73de1a13b6bbd28dec43abe3fd0677fe4bdbd",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7159303",
+    "prompt_sha256": "0cd39708d965ebea469700fa99b56117d7b2fa82c5189c68d9c2a5601319052a",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_SC_401373",
+    "prompt_sha256": "0b202746aa63f81019edaa2763ce40ea597cb8c847af75998862c991bf375a89",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7267523",
+    "prompt_sha256": "19e80f681ffc1586cdb069cf186829d2183e410de2468edf59eb076b267871ec",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_SC_405827",
+    "prompt_sha256": "f2de21d3dd156a5bcbd5adb7f0ecdf45956e4e456ec3f4968109889926b4d9ac",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_SC_400134",
+    "prompt_sha256": "bd61c3264260be0dbd06eaaf6bef76721b30530449c1be656543318780084835",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_414352",
+    "prompt_sha256": "85eda5143a32a9547fda519b2fe41dd3a22ebdc35639d6130d7ee0180cc25b2d",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7131845",
+    "prompt_sha256": "ff8a2ca282db8d8618dd9aaaed9730258244c1d272034065dcc26211eb202512",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_LBS10302",
+    "prompt_sha256": "3fbaf42a4b550a02df2ba6f335100f54337191c69478cd468297c55fc5c33663",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_405947",
+    "prompt_sha256": "b6e4b9298943bcbf70b3146d20f23c902fe4b6d5477c5e48fd4aaabcdc79e402",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/NCEOGA_2013_5_17",
+    "prompt_sha256": "bf66ba7cbf7c593e1d8c7cd418ee8478032ab17a2605f77e3bd818b3e2d0a72e",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_SC_416177",
+    "prompt_sha256": "6f0b0a29dce836e13beeb7d6a819251f0db6f8d1eba4b18f1e3f574bcd424e78",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_409115",
+    "prompt_sha256": "0c879509d7c38d873bc3c9e6637904dcb7747e8f1a8c8d80ffbbe94e048e702f",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/NYSEDREGENTS_2012_4_29",
+    "prompt_sha256": "898e06947e48d89afa942abbdc4f22abd63a758cb07a57e2b9bf6bcc9ce4e3b1",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/OHAT_2007_8_24",
+    "prompt_sha256": "d5be08f77a3f3d4f226aad92f62a4dc9f461ce4b89db23b0a7a8669362c8d299",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7223143",
+    "prompt_sha256": "50a914f25eb9267361b299da5762417ffc0595fee41577557bc4ee609a870803",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_415082",
+    "prompt_sha256": "6caf05d41118c166f6e697434e6c0c14cd51fdd16f29e8be83345458c4d59c77",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/NYSEDREGENTS_2008_8_34",
+    "prompt_sha256": "4214c53e7ec3a042f9b256768ce461cc846ffc193bb94c69f710606eb7278be6",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_SC_400582",
+    "prompt_sha256": "fc28ad7cc4a510bce11d30de92d2b342f7b1401c346eb8db7f3cf89f1c5d30e9",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_189070",
+    "prompt_sha256": "ddb2dc85978d16ffa912ecb54b8a8d52d271cb2903758d70b361b7831dc74d54",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7198468",
+    "prompt_sha256": "d84f3e3f7a7ef57f8ce32861878e5bae737943af427700f5bc9db4e523939835",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_404638",
+    "prompt_sha256": "309df2d78398a4d85f3e0809f461881fa0cc487fe7306df5b8142e80783723d6",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_402501",
+    "prompt_sha256": "bad8d42785f8fddff3dfa361f549fd18707d2f92970ccbc89cbf89780d0113f1",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_SC_401361",
+    "prompt_sha256": "1bfa7ed061c80500dd88309bd1022bac22ce06a0646b05d17a8b140c25a71442",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7009555",
+    "prompt_sha256": "5dafe0d75132b35ad0686dd3f0b4867219c213a646e3fe106e47d4bd5ae7fa88",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_SC_401262",
+    "prompt_sha256": "72ca41de014c2c9c9665a7d2bd1d8cbae999bba9db8ea5347fd274fab9dd2d0c",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/ACTAAP_2009_7_8",
+    "prompt_sha256": "63e4df978809c22ecd1b04d4a8c04a14e93ec6aca86c91123d7cda81847cad64",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/MCAS_2014_8_16",
+    "prompt_sha256": "44b5d21d2da53e4753bdd4015cf597414c9be4977e435d1d8e7a3a4e3b68084b",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/LEAP_2005_8_10404",
+    "prompt_sha256": "02a2c3b3eaab11eeac7154a0c2e3e3ed9a4010faa03e6863cf304df090540dc2",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_SC_408706",
+    "prompt_sha256": "cf26e49cac795cae64f2ed9082d91c57504b53d6f43992f48d59cef80dac4041",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_SC_415762",
+    "prompt_sha256": "8d2ead3faf3f043b783979ff2cb00144495f4fa35345a1bf37a4b870672c3a0f",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7129640",
+    "prompt_sha256": "2b81559f1bdb22da2d5a592776b0048b8e38c775573ab65f90910f889e1f0f77",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_LBS10131",
+    "prompt_sha256": "79a2b1751c7d7760d28af760e8ae44156cb855ba24d49d980ce4b6e173243597",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7128555",
+    "prompt_sha256": "6d839a6a54906348b4fce1fdf86a78ecae60b0c47846d7001a80d42ab233c383",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_403234",
+    "prompt_sha256": "84fbc5e9263a229f1c7c14a2ef04f53efaacaf396c57eebd5f8bdce5a3761bbd",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/LEAP__7_10348",
+    "prompt_sha256": "206b0caccd8e03402415c46fd59aae765081a39eef654a058e7abb1f5f4a1a90",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_417118",
+    "prompt_sha256": "92cb910e1f7ad74153b73ef4965e8692cf1f2117a69c50f54e1d9f71c51adb5f",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/ACTAAP_2007_7_36",
+    "prompt_sha256": "09e754b42b9e74f2e99292d357e0011c9dd28cf4caa46807ea1442680d239aae",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7086608",
+    "prompt_sha256": "3a4649ad750b9f4392e9c6958044580cfd0cffc72aef1adf606b13cb0cce1cac",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7238945",
+    "prompt_sha256": "9cfa0059608c6621fc360188e8a6403db431253b11f8ad3a80a64c9f2f267249",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7041668",
+    "prompt_sha256": "aeb5e03dd9f604a8f699a839d2bb334d32be58cd5cefcc6332ec509b5b76c457",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7191433",
+    "prompt_sha256": "b552f0169c6cb5381888015755b20b84112843a18cc756584cfded992fea164c",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/TIMSS_2011_4_pg27",
+    "prompt_sha256": "47f25babb8d0be98d6654d6bd02a85a17f91becd0b2f717ef048f1ace189ddb9",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/MCAS_2013_8_29435",
+    "prompt_sha256": "58918ea2e079b22f70337b35efc24412d83ddcbd0153a73095fcd734a3679ca1",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7071523",
+    "prompt_sha256": "56d4688020273b36efb6ee840968bbbca5f222e1b2c66832421d19377c1e70b6",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7203473",
+    "prompt_sha256": "a88379a4b18e5039d3363d5223a1d3d0010cd5f8036cee7ce4eb49c1edfec035",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/MCAS_2000_4_30",
+    "prompt_sha256": "7f1aaacee945f267fedf341031d2029a89a85db00835329e55f362427b55054d",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/MDSA_2013_8_32",
+    "prompt_sha256": "32d6555b511bf4fab6b970d2edd11216c344699bcb66ed217b15d0bbfc1870e3",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/MCAS_2005_5_34",
+    "prompt_sha256": "3dd209d04e75336ffbf688a37dc75015f110271ce6fe681a41fea33179d1099e",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7042945",
+    "prompt_sha256": "a2b00f7d585612fc4f1d460eac04c8b3bb4e2c60379499146a5456e4fcc1dcab",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/MEA_2016_8_15",
+    "prompt_sha256": "d86b74fe019d2eb3032c91d8b34f7b201ee3df0ff7efd3d4caddf02de0e67e38",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/MSA_2012_8_30",
+    "prompt_sha256": "23aec99a669611fb13bf52922179a6f42e70027b13ae9c558def010e98456582",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/ACTAAP_2015_7_9",
+    "prompt_sha256": "51fd170388607359f70636149556b165fdad613f912d6dabc01ed44e89d145c7",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7116235",
+    "prompt_sha256": "440e017d5809c3fc788d9fc1ddb4404389bdd478a708cc66faa2a904a37dc4ee",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7111178",
+    "prompt_sha256": "d9ab9278a5375ced6cf845182d92cc669612624b97bc76e314bcb69c93bbb537",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_SC_401278",
+    "prompt_sha256": "64bf67bb683f14d410ab3a7e4dab4a069293f6df550e4b9527adc73d02efcc05",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7217298",
+    "prompt_sha256": "ba6c047bfafa994736439b65890a46918632f4ab0be52d145e139deb9d8cf087",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/TAKS_2009_5_25",
+    "prompt_sha256": "ef835349a47cb7c64666e0b2893f5ecc1b9c1c4391541182806c2e36461eb58e",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_180373",
+    "prompt_sha256": "516cfd8092e5be4c9ebea819f0bb585d883f54416cb84d90d6c08c664cea82fe",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7056525",
+    "prompt_sha256": "942205592d1c240bbd9ac389bca0489218a57ab97192eeb943f81e6f3bfab76c",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7085295",
+    "prompt_sha256": "90479e5d190ff90d72355be490409e30c7af77549ffabadeed987accb89c21a8",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_SC_400133",
+    "prompt_sha256": "74e15d94ea0e6bfcc8ef79c2f2360ccbd97dbc604fa8e884f0bee3780e3e96c1",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7239628",
+    "prompt_sha256": "df4fa868cf6d3c9e09767048e19ec26fb02c190a6bd19dccf76f7a6209c58dc0",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7218505",
+    "prompt_sha256": "0e2db301e7bbb51711f69b707b8533f9815847ca277a776861d50cd922ec2969",
+    "kind": "choice",
+    "answer": "B",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_SC_414041",
+    "prompt_sha256": "6fad5a8282bcf5285554aba3d0da0b824dcbe35f1b335b9d6416bb6da9e84a00",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7132020",
+    "prompt_sha256": "2c28c8c077abb2aabbdc89703bc971d680ee8bba071c4ff038c6f0ed73ee54d7",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7085278",
+    "prompt_sha256": "6042acf74e076d5b99737e46f1875a3a7ec0d92d7c2a0b7246212fee4096e701",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/OHAT_2008_5_34",
+    "prompt_sha256": "24034ca8c028eed011ffae49154fbdaabffaf3cdc2d8f2c83d465a504a773c85",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_408922",
+    "prompt_sha256": "7cc4c9bad64f100a9273c5c19eb2bde4c2625882d9d938ac246b06ce162aa654",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_SC_409666",
+    "prompt_sha256": "1e4b8250532a30c610574839a55fdfd24c511aaf84b23e7bb613fd732b9e32e7",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/MCAS_2003_8_31",
+    "prompt_sha256": "457c524402e778cbf327f00ec9de2ff328adad67c74469265c1343289b6fdd67",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/NYSEDREGENTS_2013_4_17",
+    "prompt_sha256": "d9bff27863bb927b6d4c7405b6def89f6034bc005eb129044cfa2a9b54ca79ae",
+    "kind": "choice",
+    "answer": "D",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7082320",
+    "prompt_sha256": "9ff87f7f4269acd353cb764fb7afe5fdfff213a62a4c25e4dde16f59304bbf3e",
+    "kind": "choice",
+    "answer": "A",
+    "choices": 4
+  },
+  {
+    "id": "arc/test/Mercury_7206395",
+    "prompt_sha256": "e50d4effd9f305c7a2e75cbb3efea2f4511c1a8c3981b88304ffe8d184b27955",
+    "kind": "choice",
+    "answer": "C",
+    "choices": 4
+  }
+]

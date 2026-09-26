@@ -1,0 +1,74 @@
+FFF                                                                      [100%]
+=================================== FAILURES ===================================
+_____ test_recognizes_an_explicit_complete_option_before_an_empty_wrapper ______
+
+    def test_recognizes_an_explicit_complete_option_before_an_empty_wrapper():
+        ref=dict(kind='choice',options=['cell wall','cytoplasm','a nucleus'],answer='C')
+>       row=grade(ref,'C. a nucleus\n\nFinal:')
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_choice_readout_v2.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_choice_readout_v2.py:10: in grade
+    return runpy.run_path(str(PATH))['grade'](ref,text)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/evaluation/choice_readout_v2.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/evaluation/choice_readout_v2.py'
+
+<frozen runpy>:254: FileNotFoundError
+___ test_never_picks_an_answer_from_ambiguous_options_or_a_conflicting_final ___
+
+    def test_never_picks_an_answer_from_ambiguous_options_or_a_conflicting_final():
+        ref=dict(kind='choice',options=['red','green','blue'],answer='C')
+        for text in ['A. red\nC. blue','C. something else','C. blue\nFinal: A or C', 'C. blue\nFinal: Z']:
+>           assert not grade(ref,text)['parseable']
+                       ^^^^^^^^^^^^^^^
+
+tests/test_choice_readout_v2.py:23: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_choice_readout_v2.py:10: in grade
+    return runpy.run_path(str(PATH))['grade'](ref,text)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/evaluation/choice_readout_v2.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/evaluation/choice_readout_v2.py'
+
+<frozen runpy>:254: FileNotFoundError
+____ test_existing_explicit_answers_stay_unchanged_and_bad_references_fail _____
+
+    def test_existing_explicit_answers_stay_unchanged_and_bad_references_fail():
+        ref=dict(kind='choice',options=['red','green','blue'],answer='C')
+>       assert grade(ref,'Final: C')==dict(answer='C',parseable=True,correct=True,method='v1')
+               ^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_choice_readout_v2.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_choice_readout_v2.py:10: in grade
+    return runpy.run_path(str(PATH))['grade'](ref,text)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/evaluation/choice_readout_v2.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/evaluation/choice_readout_v2.py'
+
+<frozen runpy>:254: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_choice_readout_v2.py::test_recognizes_an_explicit_complete_option_before_an_empty_wrapper
+FAILED tests/test_choice_readout_v2.py::test_never_picks_an_answer_from_ambiguous_options_or_a_conflicting_final
+FAILED tests/test_choice_readout_v2.py::test_existing_explicit_answers_stay_unchanged_and_bad_references_fail
+3 failed in 0.03s

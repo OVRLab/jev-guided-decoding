@@ -1,0 +1,97 @@
+FFFF                                                                     [100%]
+=================================== FAILURES ===================================
+_ test_conversion_preserves_problem_and_binds_reference_before_changing_format _
+
+    def test_conversion_preserves_problem_and_binds_reference_before_changing_format():
+        prompt = 'Which color?\n\nA. red\nB. blue\n\nReason through the problem and finish with a separate line: Final: <letter>.'
+        case = dict(id='fixture/1',task='arc',prompt=prompt,split='development',origin='validation/1')
+        ref = dict(id='fixture/1',prompt_sha256=hashlib.sha256(prompt.encode()).hexdigest(),kind='choice',answer='B',choices=2)
+>       c,r = module()['convert'](case,ref)
+              ^^^^^^^^
+
+tests/test_selective_benchmark_admission.py:19: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_benchmark_admission.py:12: in module
+    return runpy.run_path(str(PATH))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/selective_benchmarks/admission.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/selective_benchmarks/admission.py'
+
+<frozen runpy>:254: FileNotFoundError
+________ test_source_verification_rejects_checkpoint_and_case_tampering ________
+
+tmp_path = PosixPath('/private/var/folders/q0/yrbrh__54_11208_rxgxhnkc0000gn/T/pytest-of-jubba/pytest-1560/test_source_verification_rejec0')
+
+    def test_source_verification_rejects_checkpoint_and_case_tampering(tmp_path):
+>       m = module()
+            ^^^^^^^^
+
+tests/test_selective_benchmark_admission.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_benchmark_admission.py:12: in module
+    return runpy.run_path(str(PATH))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/selective_benchmarks/admission.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/selective_benchmarks/admission.py'
+
+<frozen runpy>:254: FileNotFoundError
+____________ test_feedback_strength_controls_do_not_change_routing _____________
+
+    def test_feedback_strength_controls_do_not_change_routing():
+>       m = module()
+            ^^^^^^^^
+
+tests/test_selective_benchmark_admission.py:40: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_benchmark_admission.py:12: in module
+    return runpy.run_path(str(PATH))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/selective_benchmarks/admission.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/selective_benchmarks/admission.py'
+
+<frozen runpy>:254: FileNotFoundError
+_______ test_all_selective_arms_skip_or_repair_using_same_native_binding _______
+
+    def test_all_selective_arms_skip_or_repair_using_same_native_binding():
+>       m = module()
+            ^^^^^^^^
+
+tests/test_selective_benchmark_admission.py:50: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_selective_benchmark_admission.py:12: in module
+    return runpy.run_path(str(PATH))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/selective_benchmarks/admission.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/selective_benchmarks/admission.py'
+
+<frozen runpy>:254: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_selective_benchmark_admission.py::test_conversion_preserves_problem_and_binds_reference_before_changing_format
+FAILED tests/test_selective_benchmark_admission.py::test_source_verification_rejects_checkpoint_and_case_tampering
+FAILED tests/test_selective_benchmark_admission.py::test_feedback_strength_controls_do_not_change_routing
+FAILED tests/test_selective_benchmark_admission.py::test_all_selective_arms_skip_or_repair_using_same_native_binding
+4 failed in 0.04s

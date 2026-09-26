@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import asyncio
+import hashlib
+import json
 import math
 import os
 import time
@@ -8,6 +10,7 @@ from datetime import UTC, datetime
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote
 
 import httpx
 
@@ -155,6 +158,38 @@ class JevScorer:
     async def __aexit__(self, *args: Any) -> None:
         await self._client.aclose()
 
+    def _error_diagnostics(self, response):
+        # Error bodies can echo credentials. Redact before exposing any excerpt,
+        # and never include request headers in a diagnostic or exception message.
+        key = self._client.headers.get("Authorization", "").removeprefix("Bearer ")
+        sensitive = {key, quote(key, safe=""), json.dumps(key)[1:-1]} - {""}
+        body = response.text
+        request_id = response.headers.get("x-request-id", response.headers.get("request-id", ""))
+        for value in sensitive:
+            body = body.replace(value, "[REDACTED]")
+            request_id = request_id.replace(value, "[REDACTED]")
+        return {
+            "status_code": response.status_code,
+            "request_id": request_id[:128],
+            "body_excerpt": body[:4096],
+            "body_truncated": len(body) > 4096,
+            "response_bytes": len(response.content),
+            "response_sha256": hashlib.sha256(response.content).hexdigest(),
+        }
+
+    def _build_payload(self, request, prefix, candidates):
+        return build_payload(request, prefix, candidates, self.model)
+
+    def _parse_judgments(self, answers, candidates):
+        return tuple(
+            Judgment(
+                _probability(answers, f"support_{i}"),
+                _probability(answers, f"relevance_{i}") if not c.empty_eos else None,
+                _probability(answers, f"completion_{i}") if c.finish_reason == "eos" else None,
+            )
+            for i, c in enumerate(candidates)
+        )
+
     async def score(
         self,
         request: Request,
@@ -166,10 +201,21 @@ class JevScorer:
     ) -> Evaluation:
         if not candidates:
             raise ValueError("Cannot evaluate an empty candidate batch")
-        payload = build_payload(request, prefix, candidates, self.model)
+        payload = self._build_payload(request, prefix, candidates)
+        values = await self._evaluate(
+            payload,
+            lambda answers: self._parse_judgments(answers, candidates),
+            timeout=timeout,
+            max_attempts=max_attempts,
+        )
+        return Evaluation(*values)
+
+    async def _evaluate(self, payload, parse_answers, *, timeout, max_attempts):
+        """Shared bounded transport; the caller validates its primitive's answer."""
         started = time.monotonic()
         deadline = started + timeout
         attempts = 0
+        last_diagnostics = None
         while attempts < min(max_attempts, self.max_retries + 1):
             remaining = deadline - time.monotonic()
             if remaining <= 0:
@@ -190,6 +236,10 @@ class JevScorer:
                 ) from None
             if response.status_code in (429, 529):
                 delay = _retry_delay(response.headers.get("retry-after"), attempts)
+                last_diagnostics = {
+                    **self._error_diagnostics(response),
+                    "retry_after_seconds": delay,
+                }
                 if attempts >= min(max_attempts, self.max_retries + 1):
                     break
                 if delay >= deadline - time.monotonic():
@@ -201,20 +251,12 @@ class JevScorer:
                     f"Jev returned HTTP {response.status_code}",
                     attempts=attempts,
                     usage_unknown=True,
+                    diagnostics=self._error_diagnostics(response),
                 )
             try:
                 raw = response.json()
                 answers = raw["answers"]
-                judgments = tuple(
-                    Judgment(
-                        _probability(answers, f"support_{i}"),
-                        _probability(answers, f"relevance_{i}") if not c.empty_eos else None,
-                        _probability(answers, f"completion_{i}")
-                        if c.finish_reason == "eos"
-                        else None,
-                    )
-                    for i, c in enumerate(candidates)
-                )
+                judgments = parse_answers(answers)
                 actual_model = raw["model"]
                 usage = raw["usage"]
                 if not isinstance(actual_model, str) or not actual_model:
@@ -227,8 +269,9 @@ class JevScorer:
                     "Jev returned an invalid response",
                     attempts=attempts,
                     usage_unknown=True,
+                    diagnostics=self._error_diagnostics(response),
                 ) from None
-            return Evaluation(
+            return (
                 judgments,
                 actual_model,
                 usage["input_tokens"],
@@ -237,4 +280,9 @@ class JevScorer:
                 time.monotonic() - started,
                 raw,
             )
-        raise ScorerError("Jev retry or request budget exhausted", attempts=attempts)
+        raise ScorerError(
+            "Jev retry or request budget exhausted",
+            attempts=attempts,
+            usage_unknown=attempts > 0,
+            diagnostics=last_diagnostics,
+        )

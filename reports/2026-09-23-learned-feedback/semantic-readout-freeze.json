@@ -1,0 +1,9 @@
+{
+  "at": "2026-09-23T05:42:52.534677+00:00",
+  "kind": "secondary descriptive readout; primary unchanged",
+  "sources": {
+    "research/learned-feedback-semantic-readout.md": "534be53479e49c45da5af495fb27226581723be5ca7e74447399a531f969154d",
+    "research/diagnostics/learned_feedback_semantics.py": "bf95b8d37eba3b773e712ec0d123f2c90af2df67d4070920f6af77f6a4009185",
+    "tests/test_learned_feedback_semantics.py": "a173d2cb447fa484a64220590a9abc9fe7f5296ae349de3b3d5ac1efd4ed5b64"
+  }
+}

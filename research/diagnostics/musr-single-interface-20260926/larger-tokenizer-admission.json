@@ -1,0 +1,31 @@
+{
+  "scope": "Tokenizer/config admission only; no model/API inference",
+  "model": "ibm-granite/granite-4.2-3b",
+  "revision": "e459acceac81e5fe67c07d9cfc72329a332e7eb1",
+  "profiles": {
+    "False": {
+      "rows": 742,
+      "prompt_tokens_min": 579,
+      "prompt_tokens_max": 1638,
+      "synthetic_template_suffix": "\n1. hall\n2. pantry\nEnd with ANSWER: <choice number>.<|im_end|>\n<|im_start|>assistant\n<think></think>"
+    },
+    "True": {
+      "rows": 742,
+      "prompt_tokens_min": 579,
+      "prompt_tokens_max": 1638,
+      "synthetic_template_suffix": "hoices:\n1. hall\n2. pantry\nEnd with ANSWER: <choice number>.<|im_end|>\n<|im_start|>assistant\n<think>\n"
+    }
+  },
+  "generation_config": {
+    "do_sample": true,
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 50,
+    "eos_token_id": 100257
+  },
+  "source_files": {
+    "larger-generation_config.json": "1b9baf0a7959d31d7fb58ff6b506c27d09a73d395cadccc7e6dd1d4b7e43fd9d",
+    "larger-README.md": "8f22ddce440f0c15ecb58fc9f8501b882baf5f2b7ab0d13872fe77d88c1ad792",
+    "larger-config.json": "e4f44b9c6924a283f1d1d36057a89f1a04404bf1561fc2c0b64cf98180e72915"
+  }
+}

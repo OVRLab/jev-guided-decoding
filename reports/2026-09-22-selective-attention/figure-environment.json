@@ -1,0 +1,7 @@
+{
+  "python": "3.12.13",
+  "matplotlib": "3.11.2",
+  "numpy": "2.5.3",
+  "pillow": "12.3.0",
+  "command": "uv run --no-project --python 3.12.13 --with matplotlib==3.11.2 --with numpy==2.5.3 --with pillow==12.3.0 python research/diagnostics/render_selective_attention.py"
+}

@@ -1,0 +1,68 @@
+FFF                                                                      [100%]
+=================================== FAILURES ===================================
+_____ test_reference_never_enters_feedback_and_unknown_charge_is_retained ______
+
+tmp_path = PosixPath('/private/var/folders/q0/yrbrh__54_11208_rxgxhnkc0000gn/T/pytest-of-jubba/pytest-1524/test_reference_never_enters_fe0')
+
+    def test_reference_never_enters_feedback_and_unknown_charge_is_retained(tmp_path):
+        c=runpy.run_path(str(ROOT/'research/iterations/gated_repair/common.py'))
+>       s=runpy.run_path(str(ROOT/'research/iterations/gated_repair/study.py'))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_gated_repair_execution.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/gated_repair/study.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/gated_repair/study.py'
+
+<frozen runpy>:254: FileNotFoundError
+______ test_training_targets_and_selection_do_not_accept_leaked_test_case ______
+
+tmp_path = PosixPath('/private/var/folders/q0/yrbrh__54_11208_rxgxhnkc0000gn/T/pytest-of-jubba/pytest-1524/test_training_targets_and_sele0')
+
+    def test_training_targets_and_selection_do_not_accept_leaked_test_case(tmp_path):
+>       s=runpy.run_path(str(ROOT/'research/iterations/gated_repair/study.py'))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_gated_repair_execution.py:33: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/gated_repair/study.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/gated_repair/study.py'
+
+<frozen runpy>:254: FileNotFoundError
+_________________ test_offline_audit_rejects_missing_artifacts _________________
+
+tmp_path = PosixPath('/private/var/folders/q0/yrbrh__54_11208_rxgxhnkc0000gn/T/pytest-of-jubba/pytest-1524/test_offline_audit_rejects_mis0')
+
+    def test_offline_audit_rejects_missing_artifacts(tmp_path):
+>       a=runpy.run_path(str(ROOT/'research/iterations/gated_repair/analyze.py'))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_gated_repair_execution.py:41: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+<frozen runpy>:286: in run_path
+    ???
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+fname = '<repo>/research/iterations/gated_repair/analyze.py'
+
+>   ???
+E   FileNotFoundError: [Errno 2] No such file or directory: '<repo>/research/iterations/gated_repair/analyze.py'
+
+<frozen runpy>:254: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_gated_repair_execution.py::test_reference_never_enters_feedback_and_unknown_charge_is_retained
+FAILED tests/test_gated_repair_execution.py::test_training_targets_and_selection_do_not_accept_leaked_test_case
+FAILED tests/test_gated_repair_execution.py::test_offline_audit_rejects_missing_artifacts
+3 failed in 0.08s

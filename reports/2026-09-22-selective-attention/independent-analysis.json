@@ -1,0 +1,3557 @@
+{
+  "at": "2026-09-22T13:56:51.864154+00:00",
+  "protocol": "r17-selective-attention-v1",
+  "audit_passed": true,
+  "outcomes": 8364,
+  "test_outcomes": 6336,
+  "development_outcomes": 2028,
+  "complete_outcomes": 8364,
+  "verified_inputs": 860,
+  "verified_final_tokens": 169773,
+  "model_forwards": 185793,
+  "native_identity_pairs": 704,
+  "pilot_identity_pairs": 2112,
+  "actual_api_attempts": 860,
+  "successful_receipts": 860,
+  "unknown_calls": 0,
+  "known_input_tokens": 1944119,
+  "charged_input_tokens": 1944119,
+  "selected": {
+    "at": "2026-09-22T12:12:05.145699+00:00",
+    "selected": {
+      "policy": {
+        "mode": "additive",
+        "envelope": "all",
+        "strength": 5.0,
+        "heads": [
+          [
+            34,
+            4
+          ],
+          [
+            38,
+            11
+          ],
+          [
+            37,
+            14
+          ],
+          [
+            30,
+            4
+          ],
+          [
+            23,
+            8
+          ],
+          [
+            19,
+            6
+          ],
+          [
+            19,
+            11
+          ],
+          [
+            19,
+            15
+          ],
+          [
+            21,
+            14
+          ],
+          [
+            29,
+            10
+          ],
+          [
+            20,
+            11
+          ]
+        ],
+        "threshold": 0.65,
+        "id": "42e1896dba6c5ee8"
+      },
+      "quality": 0.32664863417087947
+    },
+    "all_policies": [
+      {
+        "policy": {
+          "mode": "additive",
+          "envelope": "all",
+          "strength": 2.772588722239781,
+          "heads": [
+            [
+              34,
+              4
+            ],
+            [
+              38,
+              11
+            ],
+            [
+              37,
+              14
+            ],
+            [
+              30,
+              4
+            ],
+            [
+              23,
+              8
+            ],
+            [
+              19,
+              6
+            ],
+            [
+              19,
+              11
+            ],
+            [
+              19,
+              15
+            ],
+            [
+              21,
+              14
+            ],
+            [
+              29,
+              10
+            ],
+            [
+              20,
+              11
+            ]
+          ],
+          "threshold": 0.65,
+          "id": "8126d92704fc8ed6"
+        },
+        "quality": 0.3140536450956273
+      },
+      {
+        "policy": {
+          "mode": "additive",
+          "envelope": "all",
+          "strength": 5.0,
+          "heads": [
+            [
+              34,
+              4
+            ],
+            [
+              38,
+              11
+            ],
+            [
+              37,
+              14
+            ],
+            [
+              30,
+              4
+            ],
+            [
+              23,
+              8
+            ],
+            [
+              19,
+              6
+            ],
+            [
+              19,
+              11
+            ],
+            [
+              19,
+              15
+            ],
+            [
+              21,
+              14
+            ],
+            [
+              29,
+              10
+            ],
+            [
+              20,
+              11
+            ]
+          ],
+          "threshold": 0.65,
+          "id": "42e1896dba6c5ee8"
+        },
+        "quality": 0.32664863417087947
+      },
+      {
+        "policy": {
+          "mode": "additive",
+          "envelope": "prefill",
+          "strength": 2.772588722239781,
+          "heads": [
+            [
+              34,
+              4
+            ],
+            [
+              38,
+              11
+            ],
+            [
+              37,
+              14
+            ],
+            [
+              30,
+              4
+            ],
+            [
+              23,
+              8
+            ],
+            [
+              19,
+              6
+            ],
+            [
+              19,
+              11
+            ],
+            [
+              19,
+              15
+            ],
+            [
+              21,
+              14
+            ],
+            [
+              29,
+              10
+            ],
+            [
+              20,
+              11
+            ]
+          ],
+          "threshold": 0.65,
+          "id": "af83a1d9dbcfe819"
+        },
+        "quality": 0.24635988444199228
+      },
+      {
+        "policy": {
+          "mode": "additive",
+          "envelope": "prefill",
+          "strength": 5.0,
+          "heads": [
+            [
+              34,
+              4
+            ],
+            [
+              38,
+              11
+            ],
+            [
+              37,
+              14
+            ],
+            [
+              30,
+              4
+            ],
+            [
+              23,
+              8
+            ],
+            [
+              19,
+              6
+            ],
+            [
+              19,
+              11
+            ],
+            [
+              19,
+              15
+            ],
+            [
+              21,
+              14
+            ],
+            [
+              29,
+              10
+            ],
+            [
+              20,
+              11
+            ]
+          ],
+          "threshold": 0.65,
+          "id": "5c1898c82a67ec87"
+        },
+        "quality": 0.2728068494459426
+      },
+      {
+        "policy": {
+          "mode": "additive",
+          "envelope": "fade8",
+          "strength": 2.772588722239781,
+          "heads": [
+            [
+              34,
+              4
+            ],
+            [
+              38,
+              11
+            ],
+            [
+              37,
+              14
+            ],
+            [
+              30,
+              4
+            ],
+            [
+              23,
+              8
+            ],
+            [
+              19,
+              6
+            ],
+            [
+              19,
+              11
+            ],
+            [
+              19,
+              15
+            ],
+            [
+              21,
+              14
+            ],
+            [
+              29,
+              10
+            ],
+            [
+              20,
+              11
+            ]
+          ],
+          "threshold": 0.65,
+          "id": "5a17aee6ba4f353c"
+        },
+        "quality": 0.28934178679889466
+      },
+      {
+        "policy": {
+          "mode": "additive",
+          "envelope": "fade8",
+          "strength": 5.0,
+          "heads": [
+            [
+              34,
+              4
+            ],
+            [
+              38,
+              11
+            ],
+            [
+              37,
+              14
+            ],
+            [
+              30,
+              4
+            ],
+            [
+              23,
+              8
+            ],
+            [
+              19,
+              6
+            ],
+            [
+              19,
+              11
+            ],
+            [
+              19,
+              15
+            ],
+            [
+              21,
+              14
+            ],
+            [
+              29,
+              10
+            ],
+            [
+              20,
+              11
+            ]
+          ],
+          "threshold": 0.65,
+          "id": "6931d5d9795a6b79"
+        },
+        "quality": 0.304947162836256
+      },
+      {
+        "policy": {
+          "mode": "conserve",
+          "envelope": "all",
+          "strength": 2.772588722239781,
+          "heads": [
+            [
+              34,
+              4
+            ],
+            [
+              38,
+              11
+            ],
+            [
+              37,
+              14
+            ],
+            [
+              30,
+              4
+            ],
+            [
+              23,
+              8
+            ],
+            [
+              19,
+              6
+            ],
+            [
+              19,
+              11
+            ],
+            [
+              19,
+              15
+            ],
+            [
+              21,
+              14
+            ],
+            [
+              29,
+              10
+            ],
+            [
+              20,
+              11
+            ]
+          ],
+          "threshold": 0.65,
+          "id": "f88408b61e9b1368"
+        },
+        "quality": 0.27765712425106076
+      },
+      {
+        "policy": {
+          "mode": "conserve",
+          "envelope": "all",
+          "strength": 5.0,
+          "heads": [
+            [
+              34,
+              4
+            ],
+            [
+              38,
+              11
+            ],
+            [
+              37,
+              14
+            ],
+            [
+              30,
+              4
+            ],
+            [
+              23,
+              8
+            ],
+            [
+              19,
+              6
+            ],
+            [
+              19,
+              11
+            ],
+            [
+              19,
+              15
+            ],
+            [
+              21,
+              14
+            ],
+            [
+              29,
+              10
+            ],
+            [
+              20,
+              11
+            ]
+          ],
+          "threshold": 0.65,
+          "id": "7dcb4ec822475188"
+        },
+        "quality": 0.2796825872140237
+      },
+      {
+        "policy": {
+          "mode": "conserve",
+          "envelope": "prefill",
+          "strength": 2.772588722239781,
+          "heads": [
+            [
+              34,
+              4
+            ],
+            [
+              38,
+              11
+            ],
+            [
+              37,
+              14
+            ],
+            [
+              30,
+              4
+            ],
+            [
+              23,
+              8
+            ],
+            [
+              19,
+              6
+            ],
+            [
+              19,
+              11
+            ],
+            [
+              19,
+              15
+            ],
+            [
+              21,
+              14
+            ],
+            [
+              29,
+              10
+            ],
+            [
+              20,
+              11
+            ]
+          ],
+          "threshold": 0.65,
+          "id": "25e9417a60176615"
+        },
+        "quality": 0.23717071712782498
+      },
+      {
+        "policy": {
+          "mode": "conserve",
+          "envelope": "prefill",
+          "strength": 5.0,
+          "heads": [
+            [
+              34,
+              4
+            ],
+            [
+              38,
+              11
+            ],
+            [
+              37,
+              14
+            ],
+            [
+              30,
+              4
+            ],
+            [
+              23,
+              8
+            ],
+            [
+              19,
+              6
+            ],
+            [
+              19,
+              11
+            ],
+            [
+              19,
+              15
+            ],
+            [
+              21,
+              14
+            ],
+            [
+              29,
+              10
+            ],
+            [
+              20,
+              11
+            ]
+          ],
+          "threshold": 0.65,
+          "id": "ab6ba00ca16d7b19"
+        },
+        "quality": 0.2418003467574546
+      },
+      {
+        "policy": {
+          "mode": "conserve",
+          "envelope": "fade8",
+          "strength": 2.772588722239781,
+          "heads": [
+            [
+              34,
+              4
+            ],
+            [
+              38,
+              11
+            ],
+            [
+              37,
+              14
+            ],
+            [
+              30,
+              4
+            ],
+            [
+              23,
+              8
+            ],
+            [
+              19,
+              6
+            ],
+            [
+              19,
+              11
+            ],
+            [
+              19,
+              15
+            ],
+            [
+              21,
+              14
+            ],
+            [
+              29,
+              10
+            ],
+            [
+              20,
+              11
+            ]
+          ],
+          "threshold": 0.65,
+          "id": "1edf2833bf84c873"
+        },
+        "quality": 0.27029299381627814
+      },
+      {
+        "policy": {
+          "mode": "conserve",
+          "envelope": "fade8",
+          "strength": 5.0,
+          "heads": [
+            [
+              34,
+              4
+            ],
+            [
+              38,
+              11
+            ],
+            [
+              37,
+              14
+            ],
+            [
+              30,
+              4
+            ],
+            [
+              23,
+              8
+            ],
+            [
+              19,
+              6
+            ],
+            [
+              19,
+              11
+            ],
+            [
+              19,
+              15
+            ],
+            [
+              21,
+              14
+            ],
+            [
+              29,
+              10
+            ],
+            [
+              20,
+              11
+            ]
+          ],
+          "threshold": 0.65,
+          "id": "a2e0ec513f0f53ed"
+        },
+        "quality": 0.26595271603850035
+      }
+    ],
+    "gates": {
+      "benefit": {
+        "gate": {
+          "kind": "threshold",
+          "feature": "copy_fraction",
+          "threshold": 1.0,
+          "direction": "le"
+        },
+        "quality": 0.32664863417087947,
+        "call_fraction": 1.0,
+        "utility": 0.30664863417087945
+      },
+      "uncertainty": {
+        "gate": {
+          "kind": "always"
+        },
+        "quality": 0.32664863417087947,
+        "call_fraction": 1.0,
+        "utility": 0.30664863417087945
+      },
+      "candidates": [
+        {
+          "gate": {
+            "kind": "never"
+          },
+          "quality": 0.23503910299284986,
+          "call_fraction": 0.0,
+          "utility": 0.23503910299284986
+        },
+        {
+          "gate": {
+            "kind": "always"
+          },
+          "quality": 0.32664863417087947,
+          "call_fraction": 1.0,
+          "utility": 0.30664863417087945
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.4389708340167999,
+            "direction": "le"
+          },
+          "quality": 0.24510016801715015,
+          "call_fraction": 0.1087962962962963,
+          "utility": 0.24292424209122424
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.4389708340167999,
+            "direction": "gt"
+          },
+          "quality": 0.31658756914657915,
+          "call_fraction": 0.8912037037037037,
+          "utility": 0.2987634950725051
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.5249033570289612,
+            "direction": "le"
+          },
+          "quality": 0.24831409378542374,
+          "call_fraction": 0.2835648148148148,
+          "utility": 0.24264279748912745
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.5249033570289612,
+            "direction": "gt"
+          },
+          "quality": 0.3133736433783056,
+          "call_fraction": 0.7164351851851852,
+          "utility": 0.2990449396746019
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.6373283863067627,
+            "direction": "le"
+          },
+          "quality": 0.27301379223512223,
+          "call_fraction": 0.5162037037037037,
+          "utility": 0.26268971816104814
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.6373283863067627,
+            "direction": "gt"
+          },
+          "quality": 0.2886739449286071,
+          "call_fraction": 0.4837962962962963,
+          "utility": 0.2789980190026812
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.7718728184700012,
+            "direction": "le"
+          },
+          "quality": 0.2849819675042128,
+          "call_fraction": 0.7951388888888888,
+          "utility": 0.269079189726435
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.7718728184700012,
+            "direction": "gt"
+          },
+          "quality": 0.27670576965951654,
+          "call_fraction": 0.20486111111111113,
+          "utility": 0.27260854743729435
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.8765307068824768,
+            "direction": "le"
+          },
+          "quality": 0.3081301156523609,
+          "call_fraction": 0.9131944444444444,
+          "utility": 0.289866226763472
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "min_probability",
+            "threshold": 0.8765307068824768,
+            "direction": "gt"
+          },
+          "quality": 0.2535576215113684,
+          "call_fraction": 0.08680555555555555,
+          "utility": 0.2518215104002573
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.07659993568880452,
+            "direction": "le"
+          },
+          "quality": 0.2535576215113684,
+          "call_fraction": 0.09143518518518517,
+          "utility": 0.2517289178076647
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.07659993568880452,
+            "direction": "gt"
+          },
+          "quality": 0.3081301156523609,
+          "call_fraction": 0.9085648148148149,
+          "utility": 0.2899588193560646
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.1333202607520505,
+            "direction": "le"
+          },
+          "quality": 0.2776549261793252,
+          "call_fraction": 0.24884259259259262,
+          "utility": 0.2726780743274733
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.1333202607520505,
+            "direction": "gt"
+          },
+          "quality": 0.28403281098440414,
+          "call_fraction": 0.7511574074074074,
+          "utility": 0.269009662836256
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.20198896882266126,
+            "direction": "le"
+          },
+          "quality": 0.2868921618968241,
+          "call_fraction": 0.4930555555555556,
+          "utility": 0.277031050785713
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.20198896882266126,
+            "direction": "gt"
+          },
+          "quality": 0.27479557526690523,
+          "call_fraction": 0.5069444444444444,
+          "utility": 0.26465668637801637
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.3073845604824328,
+            "direction": "le"
+          },
+          "quality": 0.3018648049944672,
+          "call_fraction": 0.7199074074074074,
+          "utility": 0.28746665684631906
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.3073845604824328,
+            "direction": "gt"
+          },
+          "quality": 0.25982293216926217,
+          "call_fraction": 0.28009259259259256,
+          "utility": 0.2542210803174103
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.41917352018037946,
+            "direction": "le"
+          },
+          "quality": 0.3203389308023526,
+          "call_fraction": 0.8842592592592593,
+          "utility": 0.3026537456171674
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "mean_entropy",
+            "threshold": 0.41917352018037946,
+            "direction": "gt"
+          },
+          "quality": 0.24134880636137673,
+          "call_fraction": 0.11574074074074073,
+          "utility": 0.2390339915465619
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "copy_fraction",
+            "threshold": 0.5714285714285714,
+            "direction": "le"
+          },
+          "quality": 0.24605460218769687,
+          "call_fraction": 0.11458333333333333,
+          "utility": 0.2437629355210302
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "copy_fraction",
+            "threshold": 0.5714285714285714,
+            "direction": "gt"
+          },
+          "quality": 0.31563313497603246,
+          "call_fraction": 0.8854166666666667,
+          "utility": 0.29792480164269913
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "copy_fraction",
+            "threshold": 0.8571428571428571,
+            "direction": "le"
+          },
+          "quality": 0.26695494331830116,
+          "call_fraction": 0.3090277777777778,
+          "utility": 0.2607743877627456
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "copy_fraction",
+            "threshold": 0.8571428571428571,
+            "direction": "gt"
+          },
+          "quality": 0.29473279384542816,
+          "call_fraction": 0.6909722222222223,
+          "utility": 0.2809133494009837
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "copy_fraction",
+            "threshold": 1.0,
+            "direction": "le"
+          },
+          "quality": 0.32664863417087947,
+          "call_fraction": 1.0,
+          "utility": 0.30664863417087945
+        },
+        {
+          "gate": {
+            "kind": "threshold",
+            "feature": "copy_fraction",
+            "threshold": 1.0,
+            "direction": "gt"
+          },
+          "quality": 0.23503910299284986,
+          "call_fraction": 0.0,
+          "utility": 0.23503910299284986
+        }
+      ]
+    },
+    "gate_development": [
+      {
+        "case_id": "r17/development/0000/begaselo/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.6000390648841858,
+          "mean_entropy": 0.3263321712158813,
+          "copy_fraction": 0.5714285714285714
+        },
+        "native_quality": 1,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0001/sebitaca/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.4559343457221985,
+          "mean_entropy": 0.17186529573800158,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 1,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0002/kapakumu/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.603661298751831,
+          "mean_entropy": 0.2835666235775989,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 0,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0003/puvepuni/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.6332583427429199,
+          "mean_entropy": 0.22796258302798833,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0004/ditodoku/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.5857893824577332,
+          "mean_entropy": 0.3008621523684951,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0005/korimere/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.6095329523086548,
+          "mean_entropy": 0.19408153075755763,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 1,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0006/vareludu/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.44374778866767883,
+          "mean_entropy": 0.3073845604824328,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0007/gumodeva/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.5962613821029663,
+          "mean_entropy": 0.23812630904797544,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0008/kunedeli/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.4067474603652954,
+          "mean_entropy": 0.4051761367979907,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0009/fibiroma/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.5630375742912292,
+          "mean_entropy": 0.23447148058556877,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0010/nirilate/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.5721982717514038,
+          "mean_entropy": 0.19984888632950515,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0011/bubatefe/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.546271026134491,
+          "mean_entropy": 0.3523942086545162,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0012/rinusevo/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.4634302258491516,
+          "mean_entropy": 0.23979749619849144,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 1,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0013/kasanito/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.8984774351119995,
+          "mean_entropy": 0.09622823992594931,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 1,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0014/libugobi/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.9514819979667664,
+          "mean_entropy": 0.05278357751906526,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0015/marubele/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.8338625431060791,
+          "mean_entropy": 0.09757403890199612,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0016/vobonuka/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.9235095977783203,
+          "mean_entropy": 0.053249067847758624,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0017/pecetumi/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.9457607865333557,
+          "mean_entropy": 0.05724095489573955,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0018/vepikulu/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.3941558599472046,
+          "mean_entropy": 0.47078142166355974,
+          "copy_fraction": 0.25
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0019/nibebevi/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.9030665755271912,
+          "mean_entropy": 0.08227895092363724,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0020/lativuko/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.8111478090286255,
+          "mean_entropy": 0.11652961250840121,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0021/kubofuro/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.8391914367675781,
+          "mean_entropy": 0.15141061765100972,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0022/buvipama/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.6279807090759277,
+          "mean_entropy": 0.17639653970377367,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0023/fesepaki/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.947034478187561,
+          "mean_entropy": 0.03849907899939353,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0024/vinolano/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.5953342318534851,
+          "mean_entropy": 0.2087951597656854,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 1,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0025/parapucu/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.7406688332557678,
+          "mean_entropy": 0.20551732025398906,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 1,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0026/ninokafi/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.6995230913162231,
+          "mean_entropy": 0.20651534539911154,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0027/mokunoki/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.5545996427536011,
+          "mean_entropy": 0.2021950282399132,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0028/botereli/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.7003701329231262,
+          "mean_entropy": 0.1633336818041471,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0029/nosasere/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.44733086228370667,
+          "mean_entropy": 0.2619474849079779,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0030/mamumeki/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.5917470455169678,
+          "mean_entropy": 0.33093668777291896,
+          "copy_fraction": 0.3333333333333333
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0031/kefunapa/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.743704080581665,
+          "mean_entropy": 0.1673792372221783,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0032/fegovise/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.5447655916213989,
+          "mean_entropy": 0.16514099844485486,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0033/fogibevi/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.6915714144706726,
+          "mean_entropy": 0.1820670003083933,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0034/danucebo/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.6999364495277405,
+          "mean_entropy": 0.20272664491631076,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0035/beguveli/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.7022047638893127,
+          "mean_entropy": 0.2023235319483092,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0036/biruvaba/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.3448025584220886,
+          "mean_entropy": 0.4897084654937771,
+          "copy_fraction": 0.5714285714285714
+        },
+        "native_quality": 1,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0037/febetocu/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.5018144845962524,
+          "mean_entropy": 0.4232354318031639,
+          "copy_fraction": 0.5714285714285714
+        },
+        "native_quality": 1,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0038/vemivupi/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.5407963395118713,
+          "mean_entropy": 0.3107470763100366,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 0,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0039/milobabu/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.7728018760681152,
+          "mean_entropy": 0.16378695718424297,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 0,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0040/gevusofu/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.8765307068824768,
+          "mean_entropy": 0.12304212390353086,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0041/camaluro/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.6250174641609192,
+          "mean_entropy": 0.26090840120011194,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0042/lofekiro/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.7918197512626648,
+          "mean_entropy": 0.2866301412923349,
+          "copy_fraction": 0.375
+        },
+        "native_quality": 1,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0043/rasisasi/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.5436972379684448,
+          "mean_entropy": 0.44933660575907197,
+          "copy_fraction": 0.5714285714285714
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0044/fubavosi/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.5620990991592407,
+          "mean_entropy": 0.17554597821083462,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0045/fabimige/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.4810115098953247,
+          "mean_entropy": 0.31779214556900115,
+          "copy_fraction": 0.5
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0046/norigiba/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.46789243817329407,
+          "mean_entropy": 0.2824051864200072,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0047/nakafube/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.6081530451774597,
+          "mean_entropy": 0.22047426166892592,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0048/kakusipi/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.4385874569416046,
+          "mean_entropy": 0.1762890153117027,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 1,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0049/bikafuce/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.8544009327888489,
+          "mean_entropy": 0.08098393227555789,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 1,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0050/batetunu/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.7047116160392761,
+          "mean_entropy": 0.1600085855666009,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 1,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0051/kitovipa/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.8733915090560913,
+          "mean_entropy": 0.08152751482521126,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0052/robofebe/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.8681090474128723,
+          "mean_entropy": 0.08694026325974846,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0053/gifedume/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.8731918931007385,
+          "mean_entropy": 0.09922609879305355,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0054/korefusu/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.4389708340167999,
+          "mean_entropy": 0.4221306537570513,
+          "copy_fraction": 0.25
+        },
+        "native_quality": 1,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0055/bipelobe/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.8904502391815186,
+          "mean_entropy": 0.07828666807449736,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0056/tukesete/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.7784351706504822,
+          "mean_entropy": 0.11509882516718051,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0057/kilaleda/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.862581729888916,
+          "mean_entropy": 0.07583128581570087,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0058/nesuledi/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.8698019981384277,
+          "mean_entropy": 0.06513116288300846,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0059/korimole/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.9176252484321594,
+          "mean_entropy": 0.07038306678691697,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0060/radadore/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.4192008078098297,
+          "mean_entropy": 0.19897686559744443,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 1,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0061/besapelu/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.6295655369758606,
+          "mean_entropy": 0.18379569896404746,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 1,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0062/fitifino/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.6222030520439148,
+          "mean_entropy": 0.2201869815441455,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0063/bumufisa/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.6770195960998535,
+          "mean_entropy": 0.19410547457482608,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0064/pinevusa/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.6668375730514526,
+          "mean_entropy": 0.16874927389926597,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0065/davonebe/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.5588793754577637,
+          "mean_entropy": 0.24778313161655063,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0066/futidumo/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.6421769857406616,
+          "mean_entropy": 0.3163494953029158,
+          "copy_fraction": 0.5714285714285714
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0067/robokeco/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.5563304424285889,
+          "mean_entropy": 0.2372033239198572,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0068/bedamusa/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.7657209634780884,
+          "mean_entropy": 0.1874016151381852,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0069/ciluvigo/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.5602661371231079,
+          "mean_entropy": 0.20846964951688207,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0070/lirifuci/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.5958194732666016,
+          "mean_entropy": 0.19652532375403098,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0071/vokekolu/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.7009802460670471,
+          "mean_entropy": 0.17659474843247835,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0072/nubanuli/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.45406970381736755,
+          "mean_entropy": 0.31575026473501566,
+          "copy_fraction": 0.5714285714285714
+        },
+        "native_quality": 1,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0073/divevube/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.428352415561676,
+          "mean_entropy": 0.21103981349779133,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 0,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0074/finutera/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.519348680973053,
+          "mean_entropy": 0.35934562678357906,
+          "copy_fraction": 0.5714285714285714
+        },
+        "native_quality": 0,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0075/ludavive/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.5266951322555542,
+          "mean_entropy": 0.2374809699385878,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0076/vorikifu/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.6686763167381287,
+          "mean_entropy": 0.2874821828779659,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 0,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0077/carofipi/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.4212155342102051,
+          "mean_entropy": 0.2130548149351057,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0078/bamukipa/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.5217146277427673,
+          "mean_entropy": 0.3973047954136746,
+          "copy_fraction": 0.375
+        },
+        "native_quality": 1,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0079/gokefutu/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.496105432510376,
+          "mean_entropy": 0.38199908673095706,
+          "copy_fraction": 0.5714285714285714
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0080/kinusova/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.42793959379196167,
+          "mean_entropy": 0.3149895376055838,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0081/foceroba/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.45359688997268677,
+          "mean_entropy": 0.3278881029190188,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0082/domoliva/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.7177177667617798,
+          "mean_entropy": 0.23543939566252448,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0083/fekufume/heavy",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.32813188433647156,
+          "mean_entropy": 0.261160056898575,
+          "copy_fraction": 0.5
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0084/kelipenu/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.778057336807251,
+          "mean_entropy": 0.09425988734555801,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 1,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0085/visotode/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.8239866495132446,
+          "mean_entropy": 0.08233947521409846,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 1,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0086/recegola/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.9032764434814453,
+          "mean_entropy": 0.06309334835873415,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 1,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0087/pititibi/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.942266583442688,
+          "mean_entropy": 0.042684261708586746,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0088/kipekeve/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.8429703116416931,
+          "mean_entropy": 0.10172147328330539,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0089/nesuferu/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.939445436000824,
+          "mean_entropy": 0.03684736235527453,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0090/nadumeca/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.5665522217750549,
+          "mean_entropy": 0.44562448681972455,
+          "copy_fraction": 0.25
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0091/galutiru/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.8281857967376709,
+          "mean_entropy": 0.07659993568880452,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0092/forenise/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.862341046333313,
+          "mean_entropy": 0.10106707010368154,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0093/molofubo/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.8705544471740723,
+          "mean_entropy": 0.07489029383533519,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0094/liradali/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.7368125319480896,
+          "mean_entropy": 0.10743917137119752,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0095/nocokofo/heavy/paraphrase",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.9610761404037476,
+          "mean_entropy": 0.03700439853403559,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0096/cubusate/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.7431315779685974,
+          "mean_entropy": 0.13884194397587635,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 1,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0097/noliduro/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.5742831826210022,
+          "mean_entropy": 0.18868197922267882,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 1,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0098/kecedalu/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.5740747451782227,
+          "mean_entropy": 0.20982347284223124,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 1
+      },
+      {
+        "case_id": "r17/development/0099/lefuniba/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.6700120568275452,
+          "mean_entropy": 0.1378626140795518,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0100/vicelemi/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.4738130271434784,
+          "mean_entropy": 0.4247265963749669,
+          "copy_fraction": 0.5714285714285714
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0101/felecosa/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.651996910572052,
+          "mean_entropy": 0.20198896882266126,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0102/girefore/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.7841475605964661,
+          "mean_entropy": 0.1855497755267379,
+          "copy_fraction": 0.5714285714285714
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0103/gavepele/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.654232919216156,
+          "mean_entropy": 0.22995869337390218,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0104/ropugaci/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.7691964507102966,
+          "mean_entropy": 0.16470459389375947,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0105/denerara/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.8165152668952942,
+          "mean_entropy": 0.1873451787864724,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0106/bifevedu/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.7055771350860596,
+          "mean_entropy": 0.19396258186781523,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/development/0107/naligete/heavy/dependency",
+        "family": "synthetic",
+        "features": {
+          "min_probability": 0.6314082145690918,
+          "mean_entropy": 0.21705073021050225,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0,
+        "guided_quality": 0
+      },
+      {
+        "case_id": "r17/hotpot/5ae3f7575542995dadf24277",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.4055497348308563,
+          "mean_entropy": 0.7523627294576727,
+          "copy_fraction": 0.5714285714285714
+        },
+        "native_quality": 0.13333333333333333,
+        "guided_quality": 0.6666666666666666
+      },
+      {
+        "case_id": "r17/hotpot/5a77c6e05542995d831812c7",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.4485028088092804,
+          "mean_entropy": 0.14595519057028206,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.23076923076923078,
+        "guided_quality": 1.0
+      },
+      {
+        "case_id": "r17/hotpot/5ab726415542993667793f52",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.5849096179008484,
+          "mean_entropy": 0.10098255329262429,
+          "copy_fraction": 0.875
+        },
+        "native_quality": 0.15384615384615385,
+        "guided_quality": 0.14285714285714285
+      },
+      {
+        "case_id": "r17/hotpot/5a75383a5542996c70cfaeb3",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.5853325128555298,
+          "mean_entropy": 0.21960676336129836,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.5,
+        "guided_quality": 0.5
+      },
+      {
+        "case_id": "r17/hotpot/5ab6238e554299710c8d1e6d",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.6752156615257263,
+          "mean_entropy": 0.1898701614323386,
+          "copy_fraction": 0.6666666666666666
+        },
+        "native_quality": 0.3157894736842105,
+        "guided_quality": 0.1
+      },
+      {
+        "case_id": "r17/hotpot/5ade595e5542992fa25da761",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.48882052302360535,
+          "mean_entropy": 0.30426796299980197,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.0,
+        "guided_quality": 0.0
+      },
+      {
+        "case_id": "r17/hotpot/5ae2133e554299495565d9e3",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.7150029540061951,
+          "mean_entropy": 0.2590838042087853,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.0,
+        "guided_quality": 0.0
+      },
+      {
+        "case_id": "r17/hotpot/5a7cc9db55429907fabef036",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.7718728184700012,
+          "mean_entropy": 0.08425991074038008,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.0,
+        "guided_quality": 0.08695652173913043
+      },
+      {
+        "case_id": "r17/hotpot/5ae6638555429908198fa5ba",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.6273517608642578,
+          "mean_entropy": 0.12306789235378801,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.2222222222222222,
+        "guided_quality": 0.18181818181818182
+      },
+      {
+        "case_id": "r17/hotpot/5abbdaac5542992ccd8e7fc0",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.6791985034942627,
+          "mean_entropy": 0.1371462025047201,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.0,
+        "guided_quality": 0.0
+      },
+      {
+        "case_id": "r17/hotpot/5abc25b6554299700f9d77f9",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.5249033570289612,
+          "mean_entropy": 0.45195287272326823,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.0,
+        "guided_quality": 0.0
+      },
+      {
+        "case_id": "r17/hotpot/5ab47e0a5542990594ba9c32",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.523423433303833,
+          "mean_entropy": 0.4406551654683426,
+          "copy_fraction": 0.875
+        },
+        "native_quality": 0.0,
+        "guided_quality": 0.0
+      },
+      {
+        "case_id": "r17/hotpot/5abfb4235542990832d3a1ca",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.7526235580444336,
+          "mean_entropy": 0.1672831576128715,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.0,
+        "guided_quality": 0.0
+      },
+      {
+        "case_id": "r17/hotpot/5ac1218c55429964131be15c",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.4801938533782959,
+          "mean_entropy": 0.1363126178951708,
+          "copy_fraction": 0.8333333333333334
+        },
+        "native_quality": 0.0,
+        "guided_quality": 0.0
+      },
+      {
+        "case_id": "r17/hotpot/5ae07db855429945ae95937a",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.7703236937522888,
+          "mean_entropy": 0.1103895214997408,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.5,
+        "guided_quality": 1.0
+      },
+      {
+        "case_id": "r17/hotpot/5a75462d5542996c70cfaed3",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.470216304063797,
+          "mean_entropy": 0.3892406759616165,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.5,
+        "guided_quality": 0.3333333333333333
+      },
+      {
+        "case_id": "r17/hotpot/5ae0a74e554299603e41842f",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.4575173854827881,
+          "mean_entropy": 0.3601765268467716,
+          "copy_fraction": 0.7142857142857143
+        },
+        "native_quality": 0.13333333333333333,
+        "guided_quality": 0.13333333333333333
+      },
+      {
+        "case_id": "r17/hotpot/5a7f90a15542995d8a8ddea5",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.9949296116828918,
+          "mean_entropy": 0.021416935606490977,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 1.0,
+        "guided_quality": 1.0
+      },
+      {
+        "case_id": "r17/hotpot/5ae7f6be554299540e5a56db",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.4015266001224518,
+          "mean_entropy": 0.2860171687957518,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.16666666666666666,
+        "guided_quality": 0.2
+      },
+      {
+        "case_id": "r17/hotpot/5aba9e2455429939ce03dd3a",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.712652862071991,
+          "mean_entropy": 0.13341512133668232,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.1111111111111111,
+        "guided_quality": 0.0
+      },
+      {
+        "case_id": "r17/hotpot/5ae0aaf35542993d6555ec02",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.6544855833053589,
+          "mean_entropy": 0.18699224469423825,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.15384615384615385,
+        "guided_quality": 0.15384615384615385
+      },
+      {
+        "case_id": "r17/hotpot/5a7b81715542997c3ec971d4",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.3616759181022644,
+          "mean_entropy": 0.41917352018037946,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.11764705882352941,
+        "guided_quality": 0.0
+      },
+      {
+        "case_id": "r17/hotpot/5add2397554299473435386f",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.6196584701538086,
+          "mean_entropy": 0.6075163160761198,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.0,
+        "guided_quality": 0.0
+      },
+      {
+        "case_id": "r17/hotpot/5a75e67d5542992db9473709",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.8416730761528015,
+          "mean_entropy": 0.13077839088313206,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.0,
+        "guided_quality": 0.0
+      },
+      {
+        "case_id": "r17/hotpot/5a73583455429901807dafcf",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.41715726256370544,
+          "mean_entropy": 0.32370678118772567,
+          "copy_fraction": 0.8571428571428571
+        },
+        "native_quality": 0.375,
+        "guided_quality": 0.375
+      },
+      {
+        "case_id": "r17/hotpot/5a7ca74c55429907fabeefe9",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.6384301781654358,
+          "mean_entropy": 0.19796863923582464,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.0,
+        "guided_quality": 0.0
+      },
+      {
+        "case_id": "r17/hotpot/5ab8f57b5542991b5579f097",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.7390341758728027,
+          "mean_entropy": 0.1759786130625116,
+          "copy_fraction": 0.8
+        },
+        "native_quality": 0.0,
+        "guided_quality": 0.0
+      },
+      {
+        "case_id": "r17/hotpot/5ae1367055429901ffe4adf3",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.6414673328399658,
+          "mean_entropy": 0.1333202607520505,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.23529411764705882,
+        "guided_quality": 0.23529411764705882
+      },
+      {
+        "case_id": "r17/hotpot/5ae6c2285542995703ce8b9a",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.9625290632247925,
+          "mean_entropy": 0.05910636422448571,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.0,
+        "guided_quality": 0.0
+      },
+      {
+        "case_id": "r17/hotpot/5a8e5f1f5542995a26add4d6",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.4997516870498657,
+          "mean_entropy": 0.29667513666208833,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 1.0,
+        "guided_quality": 0.18181818181818182
+      },
+      {
+        "case_id": "r17/hotpot/5a769b0d5542993569682c50",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.7414520382881165,
+          "mean_entropy": 0.13016939906148245,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 1.0,
+        "guided_quality": 1.0
+      },
+      {
+        "case_id": "r17/hotpot/5ac1c7605542994ab5c67e14",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.40281912684440613,
+          "mean_entropy": 0.40469112473162383,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.0,
+        "guided_quality": 0.0
+      },
+      {
+        "case_id": "r17/hotpot/5ae63e3255429929b0807aff",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.5977168679237366,
+          "mean_entropy": 0.534905087237712,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 1.0,
+        "guided_quality": 1.0
+      },
+      {
+        "case_id": "r17/hotpot/5a79cd665542994bb94570bf",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.47795647382736206,
+          "mean_entropy": 0.33396192842292294,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.0,
+        "guided_quality": 0.0
+      },
+      {
+        "case_id": "r17/hotpot/5ab3d764554299233954ffc7",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.7821508049964905,
+          "mean_entropy": 0.13032307660574816,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.2222222222222222,
+        "guided_quality": 0.2222222222222222
+      },
+      {
+        "case_id": "r17/hotpot/5ae1384355429920d5234329",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.7266991138458252,
+          "mean_entropy": 0.13418172750522217,
+          "copy_fraction": 0.8
+        },
+        "native_quality": 0.18181818181818182,
+        "guided_quality": 0.18181818181818182
+      },
+      {
+        "case_id": "r17/hotpot/5a82d71555429966c78a6a94",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.46932315826416016,
+          "mean_entropy": 0.2085152629742879,
+          "copy_fraction": 0.6666666666666666
+        },
+        "native_quality": 0.0,
+        "guided_quality": 0.0
+      },
+      {
+        "case_id": "r17/hotpot/5a8756aa5542994846c1cd69",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.9346076846122742,
+          "mean_entropy": 0.0419824400640878,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.46153846153846156,
+        "guided_quality": 0.46153846153846156
+      },
+      {
+        "case_id": "r17/hotpot/5ab7268b5542992aa3b8c7b1",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.3863060176372528,
+          "mean_entropy": 0.6048997785630945,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.23529411764705882,
+        "guided_quality": 0.3076923076923077
+      },
+      {
+        "case_id": "r17/hotpot/5a7d27f05542995ed0d1660d",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.671441912651062,
+          "mean_entropy": 0.557911666110158,
+          "copy_fraction": 0.0
+        },
+        "native_quality": 0.0,
+        "guided_quality": 0.0
+      },
+      {
+        "case_id": "r17/hotpot/5a8672e4554299211dda2b39",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.6240079402923584,
+          "mean_entropy": 0.40084527134119224,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.0,
+        "guided_quality": 1.0
+      },
+      {
+        "case_id": "r17/hotpot/5a7f39d055429934daa2fd2a",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.6594526171684265,
+          "mean_entropy": 0.2984938425695873,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 1.0,
+        "guided_quality": 1.0
+      },
+      {
+        "case_id": "r17/hotpot/5a77d2d25542992a6e59dfe2",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.64487224817276,
+          "mean_entropy": 0.44126299360050325,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 1.0,
+        "guided_quality": 1.0
+      },
+      {
+        "case_id": "r17/hotpot/5ab9ccef55429955dce3ed86",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.6373283863067627,
+          "mean_entropy": 0.22008205496922528,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 1.0,
+        "guided_quality": 1.0
+      },
+      {
+        "case_id": "r17/hotpot/5abd4c6d5542993062266c47",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.4944504499435425,
+          "mean_entropy": 0.3789289535757234,
+          "copy_fraction": 0.5714285714285714
+        },
+        "native_quality": 0.08695652173913043,
+        "guided_quality": 0.16666666666666666
+      },
+      {
+        "case_id": "r17/hotpot/5adcb30b5542994d58a2f69f",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.7153386473655701,
+          "mean_entropy": 0.14726158559826708,
+          "copy_fraction": 0.6
+        },
+        "native_quality": 0.0,
+        "guided_quality": 0.0
+      },
+      {
+        "case_id": "r17/hotpot/5ae0b0ab55429945ae959423",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.6220405101776123,
+          "mean_entropy": 0.32593483878179086,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.07407407407407407,
+        "guided_quality": 0.07407407407407407
+      },
+      {
+        "case_id": "r17/hotpot/5ab54e145542992aa134a2a1",
+        "family": "hotpot",
+        "features": {
+          "min_probability": 0.6205731630325317,
+          "mean_entropy": 0.3649926371381298,
+          "copy_fraction": 1.0
+        },
+        "native_quality": 0.23076923076923078,
+        "guided_quality": 0.32
+      }
+    ],
+    "development_sha256": "6219dbae934fd8d143e43c4e92ba8395b443e56f68716a534b2dc541cfd8bced"
+  },
+  "summaries": [
+    {
+      "domain": "synthetic",
+      "arm": "native",
+      "cases": 504,
+      "quality": 0.2876984126984127,
+      "em": 0,
+      "f1": 0.055866809997080526,
+      "parser_coverage": 0.6686507936507936,
+      "call_fraction": 0,
+      "actual_api_attempts": 0,
+      "fallbacks": 0,
+      "mean_model_seconds": 0.6005189736130828,
+      "mean_uncached_wall_seconds": 0.6022561501011888,
+      "median_uncached_wall_seconds": 0.5326110309999876,
+      "model_forwards": 10640,
+      "final_tokens": 10640,
+      "discarded_tokens": 0,
+      "eos": 335
+    },
+    {
+      "domain": "synthetic",
+      "arm": "r16",
+      "cases": 504,
+      "quality": 0.33134920634920634,
+      "em": 0,
+      "f1": 0.06536747341148048,
+      "parser_coverage": 0.4642857142857143,
+      "call_fraction": 1,
+      "actual_api_attempts": 0,
+      "fallbacks": 0,
+      "mean_model_seconds": 0.6958871397143344,
+      "mean_uncached_wall_seconds": 1.3432992344801369,
+      "median_uncached_wall_seconds": 1.3395977565000976,
+      "model_forwards": 10858,
+      "final_tokens": 10858,
+      "discarded_tokens": 0,
+      "eos": 309
+    },
+    {
+      "domain": "synthetic",
+      "arm": "mass_all",
+      "cases": 504,
+      "quality": 0.3472222222222222,
+      "em": 0,
+      "f1": 0.06975843292646329,
+      "parser_coverage": 0.5853174603174603,
+      "call_fraction": 1,
+      "actual_api_attempts": 0,
+      "fallbacks": 0,
+      "mean_model_seconds": 0.8105812212083333,
+      "mean_uncached_wall_seconds": 1.4577794323908542,
+      "median_uncached_wall_seconds": 1.4180550844998834,
+      "model_forwards": 10897,
+      "final_tokens": 10897,
+      "discarded_tokens": 0,
+      "eos": 331
+    },
+    {
+      "domain": "synthetic",
+      "arm": "always",
+      "cases": 504,
+      "quality": 0.33134920634920634,
+      "em": 0,
+      "f1": 0.06536747341148048,
+      "parser_coverage": 0.4642857142857143,
+      "call_fraction": 1,
+      "actual_api_attempts": 0,
+      "fallbacks": 0,
+      "mean_model_seconds": 0.6957713107321681,
+      "mean_uncached_wall_seconds": 1.3432073447182316,
+      "median_uncached_wall_seconds": 1.3392875044999073,
+      "model_forwards": 10858,
+      "final_tokens": 10858,
+      "discarded_tokens": 0,
+      "eos": 309
+    },
+    {
+      "domain": "synthetic",
+      "arm": "uncertainty_gate",
+      "cases": 504,
+      "quality": 0.33134920634920634,
+      "em": 0,
+      "f1": 0.06536747341148048,
+      "parser_coverage": 0.4642857142857143,
+      "call_fraction": 1,
+      "actual_api_attempts": 0,
+      "fallbacks": 0,
+      "mean_model_seconds": 0.9321841134484006,
+      "mean_uncached_wall_seconds": 1.5800833270377037,
+      "median_uncached_wall_seconds": 1.5764446489999955,
+      "model_forwards": 14834,
+      "final_tokens": 10858,
+      "discarded_tokens": 3976,
+      "eos": 309
+    },
+    {
+      "domain": "synthetic",
+      "arm": "benefit_gate",
+      "cases": 504,
+      "quality": 0.33134920634920634,
+      "em": 0,
+      "f1": 0.06536747341148048,
+      "parser_coverage": 0.4642857142857143,
+      "call_fraction": 1,
+      "actual_api_attempts": 504,
+      "fallbacks": 0,
+      "mean_model_seconds": 0.9339393699484744,
+      "mean_uncached_wall_seconds": 1.5914184854662567,
+      "median_uncached_wall_seconds": 1.586166182999932,
+      "model_forwards": 14834,
+      "final_tokens": 10858,
+      "discarded_tokens": 3976,
+      "eos": 309
+    },
+    {
+      "domain": "synthetic",
+      "arm": "random_gate",
+      "cases": 504,
+      "quality": 0.33134920634920634,
+      "em": 0,
+      "f1": 0.06536747341148048,
+      "parser_coverage": 0.4642857142857143,
+      "call_fraction": 1,
+      "actual_api_attempts": 0,
+      "fallbacks": 0,
+      "mean_model_seconds": 0.9318842192838579,
+      "mean_uncached_wall_seconds": 1.5797713473353012,
+      "median_uncached_wall_seconds": 1.5782564759997513,
+      "model_forwards": 14834,
+      "final_tokens": 10858,
+      "discarded_tokens": 3976,
+      "eos": 309
+    },
+    {
+      "domain": "synthetic",
+      "arm": "lexical",
+      "cases": 504,
+      "quality": 0.2123015873015873,
+      "em": 0,
+      "f1": 0.036461258428861255,
+      "parser_coverage": 0.36706349206349204,
+      "call_fraction": 0,
+      "actual_api_attempts": 0,
+      "fallbacks": 0,
+      "mean_model_seconds": 0.7376375407995253,
+      "mean_uncached_wall_seconds": 0.7497074848214352,
+      "median_uncached_wall_seconds": 0.8047787864998099,
+      "model_forwards": 11721,
+      "final_tokens": 11721,
+      "discarded_tokens": 0,
+      "eos": 291
+    },
+    {
+      "domain": "synthetic",
+      "arm": "shuffled",
+      "cases": 504,
+      "quality": 0.18253968253968253,
+      "em": 0,
+      "f1": 0.0305171325949374,
+      "parser_coverage": 0.5674603174603174,
+      "call_fraction": 1,
+      "actual_api_attempts": 0,
+      "fallbacks": 0,
+      "mean_model_seconds": 0.7033680860475175,
+      "mean_uncached_wall_seconds": 1.350894820456317,
+      "median_uncached_wall_seconds": 1.351345925500027,
+      "model_forwards": 10989,
+      "final_tokens": 10989,
+      "discarded_tokens": 0,
+      "eos": 296
+    },
+    {
+      "domain": "hotpot",
+      "arm": "native",
+      "cases": 200,
+      "quality": 0.2522963402936683,
+      "em": 0.11,
+      "f1": 0.2522963402936683,
+      "parser_coverage": null,
+      "call_fraction": 0,
+      "actual_api_attempts": 0,
+      "fallbacks": 0,
+      "mean_model_seconds": 0.7161345534200972,
+      "mean_uncached_wall_seconds": 0.7179021626500048,
+      "median_uncached_wall_seconds": 0.7355102065000665,
+      "model_forwards": 3528,
+      "final_tokens": 3528,
+      "discarded_tokens": 0,
+      "eos": 169
+    },
+    {
+      "domain": "hotpot",
+      "arm": "r16",
+      "cases": 200,
+      "quality": 0.2875862626013353,
+      "em": 0.145,
+      "f1": 0.2875862626013353,
+      "parser_coverage": null,
+      "call_fraction": 1,
+      "actual_api_attempts": 0,
+      "fallbacks": 0,
+      "mean_model_seconds": 0.9209196461699934,
+      "mean_uncached_wall_seconds": 1.6511751942249497,
+      "median_uncached_wall_seconds": 1.5678000045002136,
+      "model_forwards": 3171,
+      "final_tokens": 3171,
+      "discarded_tokens": 0,
+      "eos": 178
+    },
+    {
+      "domain": "hotpot",
+      "arm": "mass_all",
+      "cases": 200,
+      "quality": 0.28633282024942747,
+      "em": 0.145,
+      "f1": 0.28633282024942747,
+      "parser_coverage": null,
+      "call_fraction": 1,
+      "actual_api_attempts": 0,
+      "fallbacks": 0,
+      "mean_model_seconds": 1.0875743865998948,
+      "mean_uncached_wall_seconds": 1.819258886,
+      "median_uncached_wall_seconds": 1.717200776499567,
+      "model_forwards": 3386,
+      "final_tokens": 3386,
+      "discarded_tokens": 0,
+      "eos": 173
+    },
+    {
+      "domain": "hotpot",
+      "arm": "always",
+      "cases": 200,
+      "quality": 0.2875862626013353,
+      "em": 0.145,
+      "f1": 0.2875862626013353,
+      "parser_coverage": null,
+      "call_fraction": 1,
+      "actual_api_attempts": 0,
+      "fallbacks": 0,
+      "mean_model_seconds": 0.9195940126349319,
+      "mean_uncached_wall_seconds": 1.6498705881750424,
+      "median_uncached_wall_seconds": 1.5511899004998213,
+      "model_forwards": 3171,
+      "final_tokens": 3171,
+      "discarded_tokens": 0,
+      "eos": 178
+    },
+    {
+      "domain": "hotpot",
+      "arm": "uncertainty_gate",
+      "cases": 200,
+      "quality": 0.2875862626013353,
+      "em": 0.145,
+      "f1": 0.2875862626013353,
+      "parser_coverage": null,
+      "call_fraction": 1,
+      "actual_api_attempts": 0,
+      "fallbacks": 0,
+      "mean_model_seconds": 1.3357298280797818,
+      "mean_uncached_wall_seconds": 2.0666521397399924,
+      "median_uncached_wall_seconds": 1.9816946695000297,
+      "model_forwards": 4535,
+      "final_tokens": 3171,
+      "discarded_tokens": 1364,
+      "eos": 178
+    },
+    {
+      "domain": "hotpot",
+      "arm": "benefit_gate",
+      "cases": 200,
+      "quality": 0.2875862626013353,
+      "em": 0.145,
+      "f1": 0.2875862626013353,
+      "parser_coverage": null,
+      "call_fraction": 1,
+      "actual_api_attempts": 200,
+      "fallbacks": 0,
+      "mean_model_seconds": 1.3382454964449517,
+      "mean_uncached_wall_seconds": 2.076129165964967,
+      "median_uncached_wall_seconds": 1.9975694689999273,
+      "model_forwards": 4535,
+      "final_tokens": 3171,
+      "discarded_tokens": 1364,
+      "eos": 178
+    },
+    {
+      "domain": "hotpot",
+      "arm": "random_gate",
+      "cases": 200,
+      "quality": 0.2875862626013353,
+      "em": 0.145,
+      "f1": 0.2875862626013353,
+      "parser_coverage": null,
+      "call_fraction": 1,
+      "actual_api_attempts": 0,
+      "fallbacks": 0,
+      "mean_model_seconds": 1.3362183785449633,
+      "mean_uncached_wall_seconds": 2.06717261985498,
+      "median_uncached_wall_seconds": 1.9853776409997863,
+      "model_forwards": 4535,
+      "final_tokens": 3171,
+      "discarded_tokens": 1364,
+      "eos": 178
+    },
+    {
+      "domain": "hotpot",
+      "arm": "lexical",
+      "cases": 200,
+      "quality": 0.24857063038745802,
+      "em": 0.11,
+      "f1": 0.24857063038745802,
+      "parser_coverage": null,
+      "call_fraction": 0,
+      "actual_api_attempts": 0,
+      "fallbacks": 0,
+      "mean_model_seconds": 1.3044902650299286,
+      "mean_uncached_wall_seconds": 1.332563309540019,
+      "median_uncached_wall_seconds": 1.0534836674996768,
+      "model_forwards": 3238,
+      "final_tokens": 3238,
+      "discarded_tokens": 0,
+      "eos": 173
+    },
+    {
+      "domain": "hotpot",
+      "arm": "shuffled",
+      "cases": 200,
+      "quality": 0.1673172454009848,
+      "em": 0.075,
+      "f1": 0.1673172454009848,
+      "parser_coverage": null,
+      "call_fraction": 1,
+      "actual_api_attempts": 0,
+      "fallbacks": 0,
+      "mean_model_seconds": 0.944843680629956,
+      "mean_uncached_wall_seconds": 1.6748831626849734,
+      "median_uncached_wall_seconds": 1.5384501800003818,
+      "model_forwards": 3066,
+      "final_tokens": 3066,
+      "discarded_tokens": 0,
+      "eos": 176
+    }
+  ],
+  "contrasts": [
+    {
+      "domain": "synthetic",
+      "left": "always",
+      "right": "native",
+      "primary": true,
+      "difference": 0.04365079365079365,
+      "interval": [
+        0.0,
+        0.08928571428571429
+      ],
+      "level": 0.9875,
+      "units": 252,
+      "wins": 39,
+      "losses": 22,
+      "ties": 191,
+      "noninferior_at_3pp": null
+    },
+    {
+      "domain": "synthetic",
+      "left": "benefit_gate",
+      "right": "always",
+      "primary": true,
+      "difference": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "level": 0.9875,
+      "units": 252,
+      "wins": 0,
+      "losses": 0,
+      "ties": 252,
+      "noninferior_at_3pp": true
+    },
+    {
+      "domain": "synthetic",
+      "left": "benefit_gate",
+      "right": "native",
+      "primary": false,
+      "difference": 0.04365079365079365,
+      "interval": [
+        0.00992063492063492,
+        0.07738095238095238
+      ],
+      "level": 0.95,
+      "units": 252,
+      "wins": 39,
+      "losses": 22,
+      "ties": 191,
+      "noninferior_at_3pp": null
+    },
+    {
+      "domain": "synthetic",
+      "left": "benefit_gate",
+      "right": "random_gate",
+      "primary": false,
+      "difference": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "level": 0.95,
+      "units": 252,
+      "wins": 0,
+      "losses": 0,
+      "ties": 252,
+      "noninferior_at_3pp": null
+    },
+    {
+      "domain": "synthetic",
+      "left": "uncertainty_gate",
+      "right": "always",
+      "primary": false,
+      "difference": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "level": 0.95,
+      "units": 252,
+      "wins": 0,
+      "losses": 0,
+      "ties": 252,
+      "noninferior_at_3pp": null
+    },
+    {
+      "domain": "synthetic",
+      "left": "benefit_gate",
+      "right": "uncertainty_gate",
+      "primary": false,
+      "difference": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "level": 0.95,
+      "units": 252,
+      "wins": 0,
+      "losses": 0,
+      "ties": 252,
+      "noninferior_at_3pp": null
+    },
+    {
+      "domain": "synthetic",
+      "left": "always",
+      "right": "r16",
+      "primary": false,
+      "difference": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "level": 0.95,
+      "units": 252,
+      "wins": 0,
+      "losses": 0,
+      "ties": 252,
+      "noninferior_at_3pp": null
+    },
+    {
+      "domain": "synthetic",
+      "left": "mass_all",
+      "right": "r16",
+      "primary": false,
+      "difference": 0.015873015873015872,
+      "interval": [
+        -0.013888888888888888,
+        0.04563492063492063
+      ],
+      "level": 0.95,
+      "units": 252,
+      "wins": 30,
+      "losses": 22,
+      "ties": 200,
+      "noninferior_at_3pp": null
+    },
+    {
+      "domain": "synthetic",
+      "left": "always",
+      "right": "lexical",
+      "primary": false,
+      "difference": 0.11904761904761904,
+      "interval": [
+        0.08134920634920635,
+        0.15873015873015872
+      ],
+      "level": 0.95,
+      "units": 252,
+      "wins": 56,
+      "losses": 10,
+      "ties": 186,
+      "noninferior_at_3pp": null
+    },
+    {
+      "domain": "synthetic",
+      "left": "always",
+      "right": "shuffled",
+      "primary": false,
+      "difference": 0.1488095238095238,
+      "interval": [
+        0.10515873015873016,
+        0.19444444444444445
+      ],
+      "level": 0.95,
+      "units": 252,
+      "wins": 74,
+      "losses": 15,
+      "ties": 163,
+      "noninferior_at_3pp": null
+    },
+    {
+      "domain": "hotpot",
+      "left": "always",
+      "right": "native",
+      "primary": true,
+      "difference": 0.03528992230766696,
+      "interval": [
+        -0.014697652141048526,
+        0.08582261669876776
+      ],
+      "level": 0.9875,
+      "units": 200,
+      "wins": 51,
+      "losses": 36,
+      "ties": 113,
+      "noninferior_at_3pp": null
+    },
+    {
+      "domain": "hotpot",
+      "left": "benefit_gate",
+      "right": "always",
+      "primary": true,
+      "difference": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "level": 0.9875,
+      "units": 200,
+      "wins": 0,
+      "losses": 0,
+      "ties": 200,
+      "noninferior_at_3pp": true
+    },
+    {
+      "domain": "hotpot",
+      "left": "benefit_gate",
+      "right": "native",
+      "primary": false,
+      "difference": 0.03528992230766696,
+      "interval": [
+        -0.003821307784735562,
+        0.07532074007508929
+      ],
+      "level": 0.95,
+      "units": 200,
+      "wins": 51,
+      "losses": 36,
+      "ties": 113,
+      "noninferior_at_3pp": null
+    },
+    {
+      "domain": "hotpot",
+      "left": "benefit_gate",
+      "right": "random_gate",
+      "primary": false,
+      "difference": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "level": 0.95,
+      "units": 200,
+      "wins": 0,
+      "losses": 0,
+      "ties": 200,
+      "noninferior_at_3pp": null
+    },
+    {
+      "domain": "hotpot",
+      "left": "uncertainty_gate",
+      "right": "always",
+      "primary": false,
+      "difference": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "level": 0.95,
+      "units": 200,
+      "wins": 0,
+      "losses": 0,
+      "ties": 200,
+      "noninferior_at_3pp": null
+    },
+    {
+      "domain": "hotpot",
+      "left": "benefit_gate",
+      "right": "uncertainty_gate",
+      "primary": false,
+      "difference": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "level": 0.95,
+      "units": 200,
+      "wins": 0,
+      "losses": 0,
+      "ties": 200,
+      "noninferior_at_3pp": null
+    },
+    {
+      "domain": "hotpot",
+      "left": "always",
+      "right": "r16",
+      "primary": false,
+      "difference": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ],
+      "level": 0.95,
+      "units": 200,
+      "wins": 0,
+      "losses": 0,
+      "ties": 200,
+      "noninferior_at_3pp": null
+    },
+    {
+      "domain": "hotpot",
+      "left": "mass_all",
+      "right": "r16",
+      "primary": false,
+      "difference": -0.001253442351907824,
+      "interval": [
+        -0.036043975741638444,
+        0.033205277335034276
+      ],
+      "level": 0.95,
+      "units": 200,
+      "wins": 31,
+      "losses": 39,
+      "ties": 130,
+      "noninferior_at_3pp": null
+    },
+    {
+      "domain": "hotpot",
+      "left": "always",
+      "right": "lexical",
+      "primary": false,
+      "difference": 0.039015632213877265,
+      "interval": [
+        0.005105478379281887,
+        0.07341700366842553
+      ],
+      "level": 0.95,
+      "units": 200,
+      "wins": 53,
+      "losses": 26,
+      "ties": 121,
+      "noninferior_at_3pp": null
+    },
+    {
+      "domain": "hotpot",
+      "left": "always",
+      "right": "shuffled",
+      "primary": false,
+      "difference": 0.12026901720035049,
+      "interval": [
+        0.07615413901257244,
+        0.16561879784566344
+      ],
+      "level": 0.95,
+      "units": 200,
+      "wins": 81,
+      "losses": 26,
+      "ties": 93,
+      "noninferior_at_3pp": null
+    }
+  ],
+  "gate_diagnostics": [
+    {
+      "domain": "synthetic",
+      "arm": "benefit_gate",
+      "called": 504,
+      "skipped": 0,
+      "missed_benefits": 0,
+      "called_harms": 30,
+      "called_ties": 422,
+      "called_benefits": 52
+    },
+    {
+      "domain": "synthetic",
+      "arm": "uncertainty_gate",
+      "called": 504,
+      "skipped": 0,
+      "missed_benefits": 0,
+      "called_harms": 30,
+      "called_ties": 422,
+      "called_benefits": 52
+    },
+    {
+      "domain": "synthetic",
+      "arm": "random_gate",
+      "called": 504,
+      "skipped": 0,
+      "missed_benefits": 0,
+      "called_harms": 30,
+      "called_ties": 422,
+      "called_benefits": 52
+    },
+    {
+      "domain": "hotpot",
+      "arm": "benefit_gate",
+      "called": 200,
+      "skipped": 0,
+      "missed_benefits": 0,
+      "called_harms": 36,
+      "called_ties": 113,
+      "called_benefits": 51
+    },
+    {
+      "domain": "hotpot",
+      "arm": "uncertainty_gate",
+      "called": 200,
+      "skipped": 0,
+      "missed_benefits": 0,
+      "called_harms": 36,
+      "called_ties": 113,
+      "called_benefits": 51
+    },
+    {
+      "domain": "hotpot",
+      "arm": "random_gate",
+      "called": 200,
+      "skipped": 0,
+      "missed_benefits": 0,
+      "called_harms": 36,
+      "called_ties": 113,
+      "called_benefits": 51
+    }
+  ],
+  "artifact_hashes": {
+    "admission.json": "f7ba258ce9b419db3a0f9c8032d4cb67f447d60f066c8907d54b45f84e6173b2",
+    "completion.json": "ff44452680b308d2e2c10ca3dcb158ab634c5d1cef919173a7303f71edb48158",
+    "freeze.json": "779624d375016e68a14ab20b069f74182cc5863dc3e4afad698abc1e2fcc0132",
+    "inputs.jsonl": "4c705f56d6622f0dd33e503a9277962993e487fe598d692e099cdc77eff83fd0",
+    "ledger.jsonl": "c2542061c39f45689fc532c228f7c653b24d4c069b65b4150543a5681c04dc4b",
+    "loads.jsonl": "a9cd0670bfa4200a01d69b5c408d785a2b9ffce55d86d4fb5a8f52b0ae099697",
+    "outputs.jsonl": "7eaa31cb6f48603ad26b2c3d525cb8daf4cd6a8d314fd93d5c25d2b53c028941",
+    "receipts.jsonl": "984a9635d52998a07c69ffae6ca9d6659bc8abab21a731e8195fab3fffc21262",
+    "selected.json": "64738423a4c7043e79c7539594916c58ddc439a03e60cd02668f1644cdeb3f02",
+    "starts.jsonl": "b41f6c710f87b413e917d3a08131284ae905aca289f108442c5a6dda5c0ec301",
+    "test-freeze.json": "0cdd411e849ac8afab8417782ae90267d36ec244ad7cdc5fa0b08d7782c8fda0"
+  }
+}

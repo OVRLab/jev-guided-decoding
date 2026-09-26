@@ -1,0 +1,143 @@
+{"completed": 12, "planned": 192, "elapsed_seconds": 33.2}
+{"completed": 24, "planned": 192, "elapsed_seconds": 47.0}
+{"completed": 36, "planned": 192, "elapsed_seconds": 59.9}
+{"completed": 48, "planned": 192, "elapsed_seconds": 72.6}
+{"completed": 60, "planned": 192, "elapsed_seconds": 85.2}
+{"completed": 72, "planned": 192, "elapsed_seconds": 98.0}
+{"completed": 84, "planned": 192, "elapsed_seconds": 110.8}
+{"completed": 96, "planned": 192, "elapsed_seconds": 123.7}
+{"completed": 108, "planned": 192, "elapsed_seconds": 136.6}
+{"completed": 120, "planned": 192, "elapsed_seconds": 149.7}
+{"completed": 132, "planned": 192, "elapsed_seconds": 163.0}
+{"completed": 144, "planned": 192, "elapsed_seconds": 175.6}
+{"completed": 156, "planned": 192, "elapsed_seconds": 188.2}
+{"completed": 168, "planned": 192, "elapsed_seconds": 201.3}
+{"completed": 180, "planned": 192, "elapsed_seconds": 214.3}
+{"completed": 192, "planned": 192, "elapsed_seconds": 227.3}
+{
+  "admitted": false,
+  "gates": {
+    "all_records_complete": true,
+    "constructed_balanced_accuracy": true,
+    "every_motif": true,
+    "natural_coverage": true,
+    "natural_error_exposure": false,
+    "natural_balanced_accuracy": true
+  },
+  "planned": 192,
+  "complete": 192,
+  "missing": 0,
+  "failed": 0,
+  "constructed": {
+    "count": 384,
+    "supported": 192,
+    "unsupported": 192,
+    "true_positive": 192,
+    "false_negative": 0,
+    "true_negative": 192,
+    "false_positive": 0,
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "balanced_accuracy": 1.0,
+    "brier": 0.0011656250000000013
+  },
+  "natural": {
+    "count": 192,
+    "supported": 180,
+    "unsupported": 12,
+    "true_positive": 180,
+    "false_negative": 0,
+    "true_negative": 12,
+    "false_positive": 0,
+    "sensitivity": 1.0,
+    "specificity": 1.0,
+    "balanced_accuracy": 1.0,
+    "brier": 0.0015661458333333354
+  },
+  "natural_coverage": 1.0,
+  "by_motif": {
+    "direct": {
+      "count": 64,
+      "supported": 32,
+      "unsupported": 32,
+      "true_positive": 32,
+      "false_negative": 0,
+      "true_negative": 32,
+      "false_positive": 0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "brier": 0.0008796875000000012
+    },
+    "distractors": {
+      "count": 64,
+      "supported": 32,
+      "unsupported": 32,
+      "true_positive": 32,
+      "false_negative": 0,
+      "true_negative": 32,
+      "false_positive": 0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "brier": 0.0006281250000000008
+    },
+    "negation": {
+      "count": 64,
+      "supported": 32,
+      "unsupported": 32,
+      "true_positive": 32,
+      "false_negative": 0,
+      "true_negative": 32,
+      "false_positive": 0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "brier": 0.0016250000000000023
+    },
+    "passive": {
+      "count": 64,
+      "supported": 32,
+      "unsupported": 32,
+      "true_positive": 32,
+      "false_negative": 0,
+      "true_negative": 32,
+      "false_positive": 0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "brier": 0.0006125000000000007
+    },
+    "reassignment": {
+      "count": 64,
+      "supported": 32,
+      "unsupported": 32,
+      "true_positive": 32,
+      "false_negative": 0,
+      "true_negative": 32,
+      "false_positive": 0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "brier": 0.002259375000000002
+    },
+    "rumor": {
+      "count": 64,
+      "supported": 32,
+      "unsupported": 32,
+      "true_positive": 32,
+      "false_negative": 0,
+      "true_negative": 32,
+      "false_positive": 0,
+      "sensitivity": 1.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "brier": 0.000989062500000001
+    }
+  },
+  "constructed_world_bootstrap_95": [
+    1.0,
+    1.0
+  ],
+  "interpretation": "Signal admission only; no final-answer or adapter-quality result."
+}
