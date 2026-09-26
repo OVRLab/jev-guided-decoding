@@ -1,5 +1,12 @@
 # Granite + Jev research record
 
+**Contextual memory preparation, 2026-09-26:** [prospective candidate](contextual-memory-proposal.md)
+implements reference-free block-19 memory extraction and a token-position-matched
+embedding control. Four offline capability tests pass, and the pinned tokenizer
+aligns all 256 historical R29 native drafts without changing their IDs. This is
+engineering evidence, with no new model-quality result or additional cloud run;
+R30 attribution still determines the next admitted experiment.
+
 **R30 running, 2026-09-26:** [execution record](../reports/2026-09-26-feedback-pairing/README.md).
 Frozen source `d2ed7b8`, all 670 local tests and four CI jobs passed; 18 relevant
 checks passed on the AWS L4 worker. The real inference study started at 11:00 UTC

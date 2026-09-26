@@ -61,3 +61,19 @@ The [R30 protocol](research/feedback-pairing-plan-v1.md) and
 to their published lineage, retain fresh case denominators, preserve score multisets,
 reject changed prompts/tokens/charges and refuse manifests that relax the registered
 limits or omit checkpoints. Offline policy replay does not measure skipped calls.
+
+
+## Contextual memory candidate (not an admitted quality study)
+
+See [proposal](research/contextual-memory-proposal.md). Exact original prompt and
+native draft IDs become three question/field position sets. One frozen, unmodified
+prefill captures block-19 states; the matched embedding control pools identical
+positions. Neither path sees targets or reference labels. Duplicate/missing fields
+use question-only memory. Returned tensors are detached; hooks are scoped and
+removed on exceptions. This changes memory construction, not R30's running study.
+
+Regression: `uv run --no-sync pytest -q tests/test_contextual_memory.py` covers
+Unicode alignment, original-token binding, reference rejection, world-context
+sensitivity, matched pooling, frozen weights, invalid state and hook cleanup.
+Four tests and all 256 historical pinned-tokenizer alignments pass. Actual Granite
+context extraction and any trained-quality comparison remain unrun.
