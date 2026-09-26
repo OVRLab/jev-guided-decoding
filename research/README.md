@@ -1,5 +1,11 @@
 # Granite + Jev research record
 
+**MuSR feasibility inspection, 2026-09-26:** [structural admission](musr-transfer-admission.md)
+checks all 756 public rows and finds they fit an illustrative direct-answer prompt.
+Object placement has 64 shared stories with four questions each, requiring
+story-level split/uncertainty. No model/API inference or benchmark result exists;
+the current three-slot branch needs a separately tested input-contract extension.
+
 **Contextual memory preparation, 2026-09-26:** [prospective candidate](contextual-memory-proposal.md)
 implements reference-free block-19 memory extraction and a token-position-matched
 embedding control. Four offline capability tests pass, and the pinned tokenizer

@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "scope": "Dataset structural and length admission only; zero model/API inference. This illustrative direct-answer prompt is not a frozen evaluation contract.",
+  "dataset_revision": "7c365b439a222150f317764d4f16ae6c96d7d94a",
+  "license": "cc-by-4.0",
+  "granite_revision": "6a7381ba1f54d684ff508d991aeb7dc580157103",
+  "datasets": {
+    "murder_mystery": {
+      "rows": 250,
+      "unique_narratives": 250,
+      "narrative_multiplicity": {
+        "1": 250
+      },
+      "choice_counts": {
+        "2": 250
+      },
+      "min_prompt_tokens": 831,
+      "max_prompt_tokens": 1543,
+      "over_2048": 0,
+      "label_counts": {
+        "0": 125,
+        "1": 125
+      },
+      "sha256": "ce19b6dc0b953f698e79528c72705804bc97e772a4303734808971f63ce233a7"
+    },
+    "object_placements": {
+      "rows": 256,
+      "unique_narratives": 64,
+      "narrative_multiplicity": {
+        "4": 64
+      },
+      "choice_counts": {
+        "3": 112,
+        "4": 96,
+        "5": 44,
+        "2": 4
+      },
+      "min_prompt_tokens": 780,
+      "max_prompt_tokens": 1485,
+      "over_2048": 0,
+      "label_counts": {
+        "1": 65,
+        "0": 79,
+        "2": 69,
+        "3": 34,
+        "4": 9
+      },
+      "sha256": "98cd17d2c9ea53664e274365e901c90dfcaa40d17547dfbd369f1cd26fd2a81c"
+    },
+    "team_allocation": {
+      "rows": 250,
+      "unique_narratives": 250,
+      "narrative_multiplicity": {
+        "1": 250
+      },
+      "choice_counts": {
+        "3": 250
+      },
+      "min_prompt_tokens": 557,
+      "max_prompt_tokens": 853,
+      "over_2048": 0,
+      "label_counts": {
+        "1": 89,
+        "2": 95,
+        "0": 66
+      },
+      "sha256": "ddbef3bb61857a7cc3b73db62fac4605679e1b7ff4357d57fdfcf91f7caaa1f8"
+    }
+  }
+}
