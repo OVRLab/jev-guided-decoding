@@ -1,0 +1,30 @@
+{
+  "scope": "Post-hoc identity diagnostic; no additional inference or selection",
+  "cases": 256,
+  "seeds": {
+    "3101": {
+      "exact_token_matches": 254,
+      "exact_text_matches": 254,
+      "checkpoints_same_file_hash": false,
+      "checkpoint_max_parameter_difference": 0.1209627240896225,
+      "selected_epochs": {
+        "embedding": 2,
+        "contextual": 2
+      },
+      "correctness_matches": 256
+    },
+    "3102": {
+      "exact_token_matches": 251,
+      "exact_text_matches": 251,
+      "checkpoints_same_file_hash": false,
+      "checkpoint_max_parameter_difference": 0.13036085665225983,
+      "selected_epochs": {
+        "embedding": 2,
+        "contextual": 2
+      },
+      "correctness_matches": 256
+    }
+  },
+  "memory_pairs": 832,
+  "identical_memory_pairs": 0
+}

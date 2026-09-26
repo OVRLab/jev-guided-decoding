@@ -176,3 +176,17 @@ fixture produces 44 outputs and four fake requests. Exact native prefixes and th
 probability are independently checked. Regression also rejects nonfinite/invalid
 probability inputs and changed text-feedback prompt tokens. This is a prospective
 control addition; it changes no R31 execution or previously archived outcome.
+
+
+## Completed R31 report reconstruction
+
+[The report](reports/2026-09-26-contextual-memory/README.md) reconstructs 11,840 outputs,
+832 receipts, 832 paired memories, 12,288 training-example passes and 1,536 updates from four
+disjoint public archives. Use the corrected audit entrypoint on a disposable copy
+of the reconstructed run; exact analysis replay passes. Original device metadata
+and frozen sources are unchanged. All owned cloud resources are verified deleted.
+The report preserves the native gain, zero added scalar-memory accuracy, stronger
+constant-trained control, and correction/preservation trade-off. Both PNG figures
+were visually inspected; a caption collision was corrected before publication.
+The plotting command and pinned environment are in the report. Public transfer,
+conditional dispatch savings and larger-model superiority remain unverified.

@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "exact_analysis_reproduced": true,
+  "worker_source": "30bb4bc184d3ce553af9b4f59f8e0da17a6a2eaf",
+  "audit_revision": {
+    "name": "R31 CUDA alias correction v2",
+    "source_sha256": "a1a924ad556c8417fa6c69c1c17ea6e5fc4b104d4f15cfa61477327a69ab03b9",
+    "raw_device": "cuda:0",
+    "canonical_device": "cuda",
+    "raw_admission_sha256": "0f2192013f13d0537f45504120582336e83280b97940848e5c187f3a48bc0367",
+    "raw_evidence_unchanged": true,
+    "scope": "Device-label normalization only; all frozen integrity/statistical checks retained"
+  },
+  "outputs": 11840,
+  "requests": 832,
+  "training_steps": 12288,
+  "optimizer_updates": 1536,
+  "public_archives": {
+    "memories.tar.gz": "f155a686d18e91c154e055d940967094c00efbaaa408c6d55c3d548c3de79950",
+    "inputs.tar.gz": "f3ef501b2ba097a85aa165c6246324150e222cbf7c5f3187ea9922066dc4e8f1",
+    "adapters.tar.gz": "d4e3b52be4fb26856835c3b975703ce367b16ed087725c9dd59bbd86e98f2431",
+    "recorded-run.tar.gz": "682e84f695e96f8fdf75ac3d2da6a071838a6d6fa8bd8ac0eb2d436b40787447"
+  }
+}

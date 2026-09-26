@@ -1,5 +1,19 @@
 # Granite + Jev research record
 
+**R31 completed and audited, 2026-09-26:** [matched-memory study](../reports/2026-09-26-contextual-memory/README.md)
+records **30.08% original Granite, 46.29% scalar Jev repair and 47.85% separately
+constant-trained repair** on 256 fresh authored worlds. The scalar gain is
++16.21 pp (registered 98.75% interval [+10.94,+21.68]); contextual memory adds no
+complete-world accuracy over matched embeddings, and structured feedback performs
+worse. Scalar repair fixes 44/39 failures with zero native-pass damage; the stronger
+constant-trained control fixes 55/47 but damages 7/4. Thus useful feedback within a
+Jev-trained checkpoint does not establish superiority over a Jev-free recipe.
+All 11,840 outputs, 832 judgments and twelve trained adapters pass independent
+reconstruction. Owned resources are deleted; conservative cumulative estimate
+**$129.42/$175**, not an invoice. Public transfer and larger-model superiority
+remain unestablished. The follow-up MuSR admission will include the stronger
+constant-trained controls before fresh evaluation.
+
 **R30 completed and audited, 2026-09-26:** [fresh feedback-pairing replication](../reports/2026-09-26-feedback-pairing/README.md)
 records **28.65% original Granite, 32.16% structured Jev repair, 34.11% repeated mean
 and 34.77% separately trained scalar repair** on 384 authored worlds. Structured
@@ -23,12 +37,6 @@ The broad benchmark/larger-model objective remains unachieved.
 **Single-question mechanical check, registered 2026-09-26:** [unpaid admission plan](musr-mechanical-admission.md) uses one previously exposed MuSR question and a fixed synthetic draft on local Granite/MPS. No Jev call, quality grading, trained checkpoint selection or new cloud spend is included. A tiny-model regression passes after an observed missing-helper failure. [Actual Granite MPS mechanics](diagnostics/musr-single-interface-20260926/actual-mps-mechanics.json) now pass initial/off identity, unchanged original weights and cached/full agreement (maximum logit error 0.00007582, equal argmax). This is a synthetic-draft mechanics result, not task accuracy.
 
 **MuSR single-question preparation, 2026-09-26:** [conditional transfer design](musr-transfer-design-draft.md) adds a separate exact-prefix runtime, one-question verifier and strict reference-free readout. Token alignment passes on all 756 pinned rows; 742 assembled cases comprise 12 exposed development questions and 730 fresh questions in 428 groups. Four duplicate-text options remain flagged, not discarded. Tiny-model/runtime and fake-provider tests pass; no new MuSR model/API evaluation or transfer success is claimed. R31 frozen sources remain unchanged.
-
-**R31 running:** [matched contextual memory](../reports/2026-09-26-contextual-memory/README.md) started at 12:44 UTC on
-one AWS L4. The frozen twelve-adapter comparison passed actual CUDA mechanical
-admission and is collecting native drafts with live Jev judgments; no quality
-result exists yet. Its $16 stage envelope fits the cumulative $175 cap. The
-[device-label audit correction](contextual-memory-audit-correction.md) leaves the frozen experiment unchanged.
 
 Earlier status entries below are historical.
 

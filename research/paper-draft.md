@@ -2026,3 +2026,20 @@ is registered but not run: twelve matched adapters compare contextual memory and
 position-matched input embeddings under structured/scalar/constant feedback. Scalar
 is chosen as lead from R30 before new inference. No public-task or novelty claim
 is established by this registration.
+
+
+## 26 September 2026: R31 completed and independently reconstructed
+
+The [complete R31 report](../reports/2026-09-26-contextual-memory/README.md) records
+30.08% native, 46.29% scalar Jev repair and 47.85% independently constant-trained
+repair on 256 fresh authored worlds. Scalar exceeds its donor feedback control,
+but contextual memory adds no complete-world accuracy over matched embeddings.
+Structured conditioning performs worse than scalar. Scalar fixes 44/39 failures
+with no native-pass damage; contextual constant fixes 55/47 but damages 7/4.
+[Manuscript Appendix C](manuscript.md#appendix-c-r31-matched-contextual-memory-and-feedback)
+records all four registered contrasts and the distinction between within-checkpoint
+feedback dependence and a stronger independently trained Jev-free alternative.
+All 11,840 outputs and 832 receipts pass exact public replay; all owned cloud resources
+are deleted. Conservative cumulative estimate $129.42/$175, not an invoice.
+The subsequent MuSR admission must include constant-trained controls; its results
+and any fresh public evaluation remain pending.

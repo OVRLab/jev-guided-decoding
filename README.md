@@ -1,5 +1,19 @@
 # Jev-guided decoding
 
+**R31 completed and audited, 2026-09-26:** [matched-memory study](reports/2026-09-26-contextual-memory/README.md)
+records **30.08% original Granite, 46.29% scalar Jev repair and 47.85% separately
+constant-trained repair** on 256 fresh authored worlds. The scalar gain is
++16.21 pp (registered 98.75% interval [+10.94,+21.68]); contextual memory adds no
+complete-world accuracy over matched embeddings, and structured feedback performs
+worse. Scalar repair fixes 44/39 failures with zero native-pass damage; the stronger
+constant-trained control fixes 55/47 but damages 7/4. Thus useful feedback within a
+Jev-trained checkpoint does not establish superiority over a Jev-free recipe.
+All 11,840 outputs, 832 judgments and twelve trained adapters pass independent
+reconstruction. Owned resources are deleted; conservative cumulative estimate
+**$129.42/$175**, not an invoice. Public transfer and larger-model superiority
+remain unestablished. The follow-up MuSR admission will include the stronger
+constant-trained controls before fresh evaluation.
+
 **R30 completed and audited, 2026-09-26:** [fresh feedback-pairing replication](reports/2026-09-26-feedback-pairing/README.md)
 records **28.65% original Granite, 32.16% structured Jev repair, 34.11% repeated mean
 and 34.77% separately trained scalar repair** on 384 authored worlds. Structured
@@ -9,12 +23,6 @@ clear advantage over within-draft permutations. All 7,680 outputs and 384 judgme
 pass audit; public archives reproduce the identical analysis. Owned resources are
 deleted; conservative cumulative estimate **$122.90/$175**, not an invoice.
 The broad benchmark/larger-model objective remains unachieved.
-
-**R31 running:** [matched contextual memory](reports/2026-09-26-contextual-memory/README.md) started at 12:44 UTC on
-one AWS L4. The frozen twelve-adapter comparison passed actual CUDA mechanical
-admission and is collecting native drafts with live Jev judgments; no quality
-result exists yet. Its $16 stage envelope fits the cumulative $175 cap. The
-[device-label audit correction](research/contextual-memory-audit-correction.md) leaves the frozen experiment unchanged.
 
 Earlier status entries below are historical.
 

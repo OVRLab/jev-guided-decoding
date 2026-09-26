@@ -1,0 +1,305 @@
+{
+  "scope": "Post-hoc resource accounting over completed R31 records, no new inference",
+  "explanation": "Components measured in the staged study are summed for each algorithmic path; these are not measured interactive end-to-end latencies and include no queue/model-load/training/filesystem/unrecorded bookkeeping time. Native generation is counted once per path. The two seeds are separate alternatives, not an ensemble. Constant-trained and blind path sums omit verifier work unnecessary to those recipes, although the controlled study collected shared verifier records for every case. Branch paths include the joint embedding/contextual extraction actually measured; an embedding-only extractor could be cheaper and was not timed separately.",
+  "original_parameters": 1631750144,
+  "branch_parameters": 262144,
+  "jev_parameters": null,
+  "total_system_parameter_count_known": false,
+  "conditional_api_skipping_measured": false,
+  "profiles": {
+    "native": {
+      "cases": 256,
+      "profile": "Single fixed seed, not a two-model ensemble",
+      "mean_component_seconds": {
+        "native_generation": 0.5611786617539423,
+        "native_binding": 1.3775578100450048e-05,
+        "repair_generation": 0,
+        "repair_binding": 0,
+        "memory_extraction": 0,
+        "provider_request": 0,
+        "provider_dispatch_delay": 0
+      },
+      "mean_component_sum_seconds": 0.5611924373320427,
+      "p50_component_sum_seconds": 0.5472250600000734,
+      "p95_component_sum_seconds": 0.630989658250428,
+      "mean_generated_tokens": 12.515625,
+      "mean_backbone_processed_tokens": 303.015625,
+      "api_input_tokens": 0,
+      "api_calls_per_case": 0,
+      "extraction_prefills_per_case": 0
+    },
+    "blind": {
+      "cases": 256,
+      "profile": "Single fixed seed, not a two-model ensemble",
+      "mean_component_seconds": {
+        "native_generation": 0.5611786617539423,
+        "native_binding": 1.3775578100450048e-05,
+        "repair_generation": 0.5896501058867436,
+        "repair_binding": 1.4664468714897794e-05,
+        "memory_extraction": 0,
+        "provider_request": 0,
+        "provider_dispatch_delay": 0
+      },
+      "mean_component_sum_seconds": 1.1508572076875012,
+      "p50_component_sum_seconds": 1.1258487014997627,
+      "p95_component_sum_seconds": 1.299127150998629,
+      "mean_generated_tokens": 25.03515625,
+      "mean_backbone_processed_tokens": 675.55078125,
+      "api_input_tokens": 0,
+      "api_calls_per_case": 0,
+      "extraction_prefills_per_case": 0
+    },
+    "embedding-structured/3101": {
+      "cases": 256,
+      "profile": "Single fixed seed, not a two-model ensemble",
+      "mean_component_seconds": {
+        "native_generation": 0.5611786617539423,
+        "native_binding": 1.3775578100450048e-05,
+        "repair_generation": 0.5922060133750193,
+        "repair_binding": 0.0013341598046778813,
+        "memory_extraction": 0.13538903848829165,
+        "provider_request": 0.24696043375392307,
+        "provider_dispatch_delay": 0.25
+      },
+      "mean_component_sum_seconds": 1.7870820827539546,
+      "p50_component_sum_seconds": 1.7714084314989123,
+      "p95_component_sum_seconds": 1.9146757602507023,
+      "mean_generated_tokens": 24.57421875,
+      "mean_backbone_processed_tokens": 978.10546875,
+      "api_input_tokens": 218884,
+      "api_calls_per_case": 1,
+      "extraction_prefills_per_case": 1
+    },
+    "embedding-structured/3102": {
+      "cases": 256,
+      "profile": "Single fixed seed, not a two-model ensemble",
+      "mean_component_seconds": {
+        "native_generation": 0.5611786617539423,
+        "native_binding": 1.3775578100450048e-05,
+        "repair_generation": 0.5923553694843129,
+        "repair_binding": 0.001332966941429703,
+        "memory_extraction": 0.13538903848829165,
+        "provider_request": 0.24696043375392307,
+        "provider_dispatch_delay": 0.25
+      },
+      "mean_component_sum_seconds": 1.787230246,
+      "p50_component_sum_seconds": 1.7707136920007542,
+      "p95_component_sum_seconds": 1.920966050251991,
+      "mean_generated_tokens": 24.62890625,
+      "mean_backbone_processed_tokens": 978.16015625,
+      "api_input_tokens": 218884,
+      "api_calls_per_case": 1,
+      "extraction_prefills_per_case": 1
+    },
+    "embedding-scalar/3101": {
+      "cases": 256,
+      "profile": "Single fixed seed, not a two-model ensemble",
+      "mean_component_seconds": {
+        "native_generation": 0.5611786617539423,
+        "native_binding": 1.3775578100450048e-05,
+        "repair_generation": 0.5888691543867033,
+        "repair_binding": 0.0013362956484321842,
+        "memory_extraction": 0.13538903848829165,
+        "provider_request": 0.24696043375392307,
+        "provider_dispatch_delay": 0.25
+      },
+      "mean_component_sum_seconds": 1.783747359609393,
+      "p50_component_sum_seconds": 1.7693259900015619,
+      "p95_component_sum_seconds": 1.9038724124993678,
+      "mean_generated_tokens": 24.546875,
+      "mean_backbone_processed_tokens": 978.078125,
+      "api_input_tokens": 218884,
+      "api_calls_per_case": 1,
+      "extraction_prefills_per_case": 1
+    },
+    "embedding-scalar/3102": {
+      "cases": 256,
+      "profile": "Single fixed seed, not a two-model ensemble",
+      "mean_component_seconds": {
+        "native_generation": 0.5611786617539423,
+        "native_binding": 1.3775578100450048e-05,
+        "repair_generation": 0.58951317225781,
+        "repair_binding": 0.0013269905976862617,
+        "memory_extraction": 0.13538903848829165,
+        "provider_request": 0.24696043375392307,
+        "provider_dispatch_delay": 0.25
+      },
+      "mean_component_sum_seconds": 1.7843820724297537,
+      "p50_component_sum_seconds": 1.7709862020010405,
+      "p95_component_sum_seconds": 1.902226966250737,
+      "mean_generated_tokens": 24.55078125,
+      "mean_backbone_processed_tokens": 978.08203125,
+      "api_input_tokens": 218884,
+      "api_calls_per_case": 1,
+      "extraction_prefills_per_case": 1
+    },
+    "embedding-constant/3101": {
+      "cases": 256,
+      "profile": "Single fixed seed, not a two-model ensemble",
+      "mean_component_seconds": {
+        "native_generation": 0.5611786617539423,
+        "native_binding": 1.3775578100450048e-05,
+        "repair_generation": 0.5900507621054984,
+        "repair_binding": 0.001332166289014225,
+        "memory_extraction": 0.13538903848829165,
+        "provider_request": 0,
+        "provider_dispatch_delay": 0
+      },
+      "mean_component_sum_seconds": 1.287964404214847,
+      "p50_component_sum_seconds": 1.284690908500579,
+      "p95_component_sum_seconds": 1.3946502629999031,
+      "mean_generated_tokens": 24.5546875,
+      "mean_backbone_processed_tokens": 978.0859375,
+      "api_input_tokens": 0,
+      "api_calls_per_case": 0,
+      "extraction_prefills_per_case": 1
+    },
+    "embedding-constant/3102": {
+      "cases": 256,
+      "profile": "Single fixed seed, not a two-model ensemble",
+      "mean_component_seconds": {
+        "native_generation": 0.5611786617539423,
+        "native_binding": 1.3775578100450048e-05,
+        "repair_generation": 0.5914520370585947,
+        "repair_binding": 0.001336716773451485,
+        "memory_extraction": 0.13538903848829165,
+        "provider_request": 0,
+        "provider_dispatch_delay": 0
+      },
+      "mean_component_sum_seconds": 1.2893702296523806,
+      "p50_component_sum_seconds": 1.2848051074993236,
+      "p95_component_sum_seconds": 1.4009705619985198,
+      "mean_generated_tokens": 24.609375,
+      "mean_backbone_processed_tokens": 978.140625,
+      "api_input_tokens": 0,
+      "api_calls_per_case": 0,
+      "extraction_prefills_per_case": 1
+    },
+    "contextual-structured/3101": {
+      "cases": 256,
+      "profile": "Single fixed seed, not a two-model ensemble",
+      "mean_component_seconds": {
+        "native_generation": 0.5611786617539423,
+        "native_binding": 1.3775578100450048e-05,
+        "repair_generation": 0.5892024959257256,
+        "repair_binding": 0.0013222613789203308,
+        "memory_extraction": 0.13538903848829165,
+        "provider_request": 0.24696043375392307,
+        "provider_dispatch_delay": 0.25
+      },
+      "mean_component_sum_seconds": 1.7840666668789034,
+      "p50_component_sum_seconds": 1.7738988260011865,
+      "p95_component_sum_seconds": 1.9028476272510488,
+      "mean_generated_tokens": 24.546875,
+      "mean_backbone_processed_tokens": 978.078125,
+      "api_input_tokens": 218884,
+      "api_calls_per_case": 1,
+      "extraction_prefills_per_case": 1
+    },
+    "contextual-structured/3102": {
+      "cases": 256,
+      "profile": "Single fixed seed, not a two-model ensemble",
+      "mean_component_seconds": {
+        "native_generation": 0.5611786617539423,
+        "native_binding": 1.3775578100450048e-05,
+        "repair_generation": 0.5901624415000519,
+        "repair_binding": 0.0013346142773826841,
+        "memory_extraction": 0.13538903848829165,
+        "provider_request": 0.24696043375392307,
+        "provider_dispatch_delay": 0.25
+      },
+      "mean_component_sum_seconds": 1.785038965351692,
+      "p50_component_sum_seconds": 1.7692576864992589,
+      "p95_component_sum_seconds": 1.9072414252502767,
+      "mean_generated_tokens": 24.58203125,
+      "mean_backbone_processed_tokens": 978.11328125,
+      "api_input_tokens": 218884,
+      "api_calls_per_case": 1,
+      "extraction_prefills_per_case": 1
+    },
+    "contextual-scalar/3101": {
+      "cases": 256,
+      "profile": "Single fixed seed, not a two-model ensemble",
+      "mean_component_seconds": {
+        "native_generation": 0.5611786617539423,
+        "native_binding": 1.3775578100450048e-05,
+        "repair_generation": 0.5900025028085771,
+        "repair_binding": 0.001333228031189293,
+        "memory_extraction": 0.13538903848829165,
+        "provider_request": 0.24696043375392307,
+        "provider_dispatch_delay": 0.25
+      },
+      "mean_component_sum_seconds": 1.7848776404140239,
+      "p50_component_sum_seconds": 1.771055659999547,
+      "p95_component_sum_seconds": 1.9023405269995237,
+      "mean_generated_tokens": 24.546875,
+      "mean_backbone_processed_tokens": 978.078125,
+      "api_input_tokens": 218884,
+      "api_calls_per_case": 1,
+      "extraction_prefills_per_case": 1
+    },
+    "contextual-scalar/3102": {
+      "cases": 256,
+      "profile": "Single fixed seed, not a two-model ensemble",
+      "mean_component_seconds": {
+        "native_generation": 0.5611786617539423,
+        "native_binding": 1.3775578100450048e-05,
+        "repair_generation": 0.5891058310468473,
+        "repair_binding": 0.00132771298438783,
+        "memory_extraction": 0.13538903848829165,
+        "provider_request": 0.24696043375392307,
+        "provider_dispatch_delay": 0.25
+      },
+      "mean_component_sum_seconds": 1.7839754536054926,
+      "p50_component_sum_seconds": 1.7702175145009278,
+      "p95_component_sum_seconds": 1.9013728132506458,
+      "mean_generated_tokens": 24.55078125,
+      "mean_backbone_processed_tokens": 978.08203125,
+      "api_input_tokens": 218884,
+      "api_calls_per_case": 1,
+      "extraction_prefills_per_case": 1
+    },
+    "contextual-constant/3101": {
+      "cases": 256,
+      "profile": "Single fixed seed, not a two-model ensemble",
+      "mean_component_seconds": {
+        "native_generation": 0.5611786617539423,
+        "native_binding": 1.3775578100450048e-05,
+        "repair_generation": 0.5895846318046836,
+        "repair_binding": 0.0013373168281454184,
+        "memory_extraction": 0.13538903848829165,
+        "provider_request": 0,
+        "provider_dispatch_delay": 0
+      },
+      "mean_component_sum_seconds": 1.2875034244531633,
+      "p50_component_sum_seconds": 1.2879971924999154,
+      "p95_component_sum_seconds": 1.3919771215003038,
+      "mean_generated_tokens": 24.5546875,
+      "mean_backbone_processed_tokens": 978.0859375,
+      "api_input_tokens": 0,
+      "api_calls_per_case": 0,
+      "extraction_prefills_per_case": 1
+    },
+    "contextual-constant/3102": {
+      "cases": 256,
+      "profile": "Single fixed seed, not a two-model ensemble",
+      "mean_component_seconds": {
+        "native_generation": 0.5611786617539423,
+        "native_binding": 1.3775578100450048e-05,
+        "repair_generation": 0.5916012249492582,
+        "repair_binding": 0.001322562246112824,
+        "memory_extraction": 0.13538903848829165,
+        "provider_request": 0,
+        "provider_dispatch_delay": 0
+      },
+      "mean_component_sum_seconds": 1.2895052630157053,
+      "p50_component_sum_seconds": 1.285750826500589,
+      "p95_component_sum_seconds": 1.404226346999394,
+      "mean_generated_tokens": 24.6171875,
+      "mean_backbone_processed_tokens": 978.1484375,
+      "api_input_tokens": 0,
+      "api_calls_per_case": 0,
+      "extraction_prefills_per_case": 1
+    }
+  }
+}

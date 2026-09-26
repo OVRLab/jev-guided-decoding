@@ -14,6 +14,15 @@ $36.09832593965592 remains beyond that envelope. Scalar becomes lead from R30's
 completed result, while both informative forms remain tested. Earlier amounts
 above and below record the original allocation rather than additional spending.
 
+R31 is now complete and independently replayed: cumulative conservative estimate
+**$129.42416324505962**, leaving **$45.57583675494038** under the cap. Its stage
+cost is $6.522489184715528 including the operating allowance, not the $16 reserve.
+[The report](../reports/2026-09-26-contextual-memory/README.md) shows a strong repair
+improvement but no added contextual-memory accuracy; constant-trained repair is a
+strong Jev-free comparator. The next bounded MuSR admission will include those
+constant-trained adapters. This result-informed control addition changes no R31
+protocol or result, and must be frozen before the next paid run.
+
 ## Sequence and decisions
 
 1. **R30: frozen-checkpoint feedback attribution.** Replicate R29-A on 384 new

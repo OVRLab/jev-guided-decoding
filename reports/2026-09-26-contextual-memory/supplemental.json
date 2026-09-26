@@ -1,0 +1,24 @@
+{
+  "scope": "Retrospective class-balance reference, not additional inference",
+  "denominator": 256,
+  "reference_room_counts": {
+    "cellar": 98,
+    "bedroom": 101,
+    "hall": 104,
+    "garage": 86,
+    "kitchen": 91,
+    "attic": 90,
+    "lounge": 90,
+    "office": 108
+  },
+  "constant_room_all_three_correct_counts": {
+    "kitchen": 2,
+    "office": 4,
+    "garage": 3,
+    "bedroom": 4,
+    "attic": 3,
+    "cellar": 1,
+    "hall": 3,
+    "lounge": 4
+  }
+}

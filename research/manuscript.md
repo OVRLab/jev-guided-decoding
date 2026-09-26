@@ -9,39 +9,28 @@ it does not replace the project's broader, unachieved objective.
 
 ## Abstract
 
-External verification can influence a language model by selecting answers for
-revision or by supplying information that changes the revision itself. We study
-these roles in IBM Granite 4.0-1B with TypeSafe Jev, a hosted model returning typed
-judgments. Granite generates every answer token; Jev's probability scales a
-262,144-parameter residual adapter after decoder block 19 during a second pass.
-In a completed three-task evaluation, the guided system improves strict IFBench
-success from 55/300 to 71/300 and GPQA Diamond accuracy from 37/198 to 54/198,
-while all tested 1B variants solve zero of 30 AIME problems. Shuffled feedback
-recovers most of both gains. Those controls retain Jev's repair selection, so
-they do not isolate the value of routing. GPQA improvements also coincide with
-fewer unreadable final answers, and a retrospective constant-label reference
-outperforms the guided score. We therefore registered a separate, fresh policy
-comparison on 539 eligible IFEval cases, holding repair counts fixed across Jev,
-model-confidence and random selectors and comparing live, constant and shuffled
-internal feedback. Original Granite scores 408/539 (75.70%), while Jev-selected
-live repair scores 379/539 (70.32%). The repair fixes 11 native failures but damages
-40 native passes. Neither selection nor internal feedback meets its registered
-two-control criterion. These evaluations distinguish observed instruction
-compliance from verifier attribution and reveal failed transfer of this repair
-configuration; they do not establish a broadly superior language-model architecture.
+External verification can select answers for revision or supply information that
+changes the revision itself. We study these roles in frozen IBM Granite 4.0-1B
+with TypeSafe Jev, which returns typed judgments while Granite generates every
+answer token. A 262,144-parameter branch acts after decoder block 19 during repair.
+An initial complete evaluation improves strict IFBench from 55/300 to 71/300 and
+GPQA Diamond from 37/198 to 54/198, but shuffled feedback recovers most gains.
+A separate 539-case eligible IFEval study instead falls from 75.70% to 70.32%.
+Two authored tracking studies show narrower native improvements with preservation,
+without establishing the value of precise field-score localization.
 
-A subsequent registered mechanism study uses three localized judgments and
-preservation training on authored tracking worlds. Across 96 held-out worlds and
-two training seeds, raw structured repair scores 29.69%, versus 25.00% native,
-22.92% shuffled feedback and 28.65% scalar feedback. Exploratory paired intervals
-favor structured repair over native and shuffled feedback, but not over scalar
-feedback. A registered fixed-checkpoint replication on 384 fresh worlds yields
-28.65% native and 32.16% structured repair, +3.52 pp with a family-adjusted
-98.3333% interval [+1.69,+5.73]. Neither seed damages any of 110 native passes.
-Structured feedback does not demonstrate an advantage over within-draft rotations;
-repeated mean scores 34.11% and separately trained scalar repair 34.77%. Thus the
-native benefit replicates in this narrow setting, while precise slot localization,
-public-task transfer and larger-model superiority remain unestablished.
+A subsequent matched-memory study trains twelve adapters on 512 worlds and selects
+epochs on 64 development worlds before evaluating 256 fresh same-template worlds.
+Scalar Jev repair improves all-three-answer accuracy from 30.08% to 46.29%
+(+16.21 points; registered 98.75% interval [10.94,21.68]) and exceeds its donor
+feedback control by 8.40 points [3.71,13.48]. Contextual and embedding scalar repair
+have identical complete-world correctness; structured contextual feedback performs
+worse. A separately constant-trained, Jev-free recipe reaches 47.85%, while
+repairing more native failures and damaging 7/4 native passes across the two seeds;
+live scalar repair damages none. These findings distinguish feedback dependence
+within a trained model from superiority over an independently trained alternative.
+They motivate public transfer and preservation analysis, without establishing
+broad reasoning gains, a novel general architecture or larger-model superiority.
 
 ## 1. Research question
 
@@ -362,9 +351,9 @@ the generator has acquired broad reasoning ability. A scalar assessment also
 specifies neither which requirement failed nor how to repair it. Whether richer
 structured feedback would help is a separate hypothesis requiring another study.
 
-The evidence concerns one backbone, one adapter selected from a small supervised
-training study, one fixed layer and specific generation profiles. Greedy decoding
-and pinned software improve traceability but do not guarantee identical behavior
+The R27/R28 evidence concerns one backbone, one adapter selected from a small
+supervised training study, one fixed layer and specific generation profiles.
+Greedy decoding and pinned software improve traceability but do not guarantee identical behavior
 on other hardware. Hosted Jev's internal compute and parameters are unknown;
 reporting only Granite's size would understate the whole system. Colocation,
 production serving and end-to-end latency are not measured.
@@ -528,9 +517,86 @@ The secondary half-threshold policy replays saved outputs and makes no deploymen
 work-saving claim. The cumulative conservative estimate is $122.90 under the
 owner's $175 cap; it is not an invoice.
 
-The newly [registered R31 study](contextual-memory-plan-v1.md) compares contextual
-states with position-matched embeddings under all three feedback forms and matched
-training. It selects scalar as lead from R30, before any R31 inference. Its twelve
-adapters, four primary contrasts and new held-out worlds are a planned test of the
-representation hypothesis, not a result. Prior art already includes verifier-guided
-latent steering; any contribution needs a narrower mechanism and measured transfer.
+The prospectively registered R31 study selects scalar as lead from completed R30
+evidence and tests the memory representation hypothesis. Its completed results
+follow in Appendix C. Prior art already includes verifier-guided latent steering;
+any contribution needs a narrower mechanism and measured transfer.
+
+
+## Appendix C. R31: matched contextual memory and feedback
+
+The [frozen protocol](contextual-memory-plan-v1.md) fixes 512 training, 64 development
+and 256 test worlds, disjoint from the preceding studies but retaining their
+vocabulary and templates. Twelve rank-32 adapters cross embedding/contextual memory,
+structured/scalar/constant conditioning and seeds 3101/3102. Initialization, targets,
+training order, optimizer, capacity and selected token positions are matched.
+Earliest best development accuracy selects each checkpoint before test generation.
+
+Three detached vectors pool each question and its unique actual draft field, using
+original token positions. Contextual memory uses a frozen prefill through block 19;
+the control pools original input embeddings at the same positions. This matched
+embedding construction differs from R29's standalone retokenized text. Correct
+native outputs supply preservation targets; failed natives use the three reference
+room names. References enter training targets and independent grading, never memory
+extraction or provider inputs. Original weights remain frozen.
+
+| Trained condition | All-three accuracy | Temporal | Compositional |
+| --- | ---: | ---: | ---: |
+| Original Granite | 30.08% | 59.38% | 0.78% |
+| Blind repair | 31.25% | 60.94% | 1.56% |
+| Embedding structured | 40.23% | 65.62% | 14.84% |
+| Embedding scalar | 46.29% | 73.05% | 19.53% |
+| Embedding constant | 47.46% | 73.83% | 21.09% |
+| Contextual structured | 39.84% | 67.58% | 12.11% |
+| Contextual scalar | 46.29% | 73.05% | 19.53% |
+| Contextual constant | 47.85% | 73.83% | 21.88% |
+
+| Registered primary contrast | Difference (pp) | 98.75% interval |
+| --- | ---: | --- |
+| Contextual scalar − native | +16.21 | [+10.94,+21.68] |
+| Contextual scalar − embedding scalar | 0.00 | [0.00,0.00] |
+| Contextual structured − contextual scalar | −6.45 | [−10.55,−2.54] |
+| Contextual scalar − its donor feedback | +8.40 | [+3.71,+13.48] |
+
+All main arms pass formatting on all cases and have no length stops. Intervals
+resample worlds within task, averaging the fixed seeds within each world; they do
+not treat 512 seed outputs as independent or represent arbitrary training-seed
+uncertainty. Correctness matches exactly across memory types for both scalar seeds,
+although seven of 512 token sequences differ. A post-hoc integrity diagnostic
+confirms distinct tensors and checkpoints. The degenerate bootstrap interval does
+not prove identical unseen-input behavior. No memory-by-feedback interaction is
+established: −0.39 points, descriptive 95% interval [−2.93,+2.15].
+
+Scalar repair fixes 44/39 failed worlds without damaging any of 77 native passes;
+constant-trained contextual repair fixes 55/47 but damages 7/4. Live scalar minus
+constant-trained contextual repair is −1.56 points, descriptive 95% interval
+[−5.08,+2.15]; this establishes neither superiority nor equivalence. Same-checkpoint
+constant substitution scores only 31.64%, unlike the independently constant-trained
+47.85% condition. Informative feedback can therefore matter to a checkpoint trained
+with that signal without making the resulting recipe better than a Jev-free one.
+The observed preservation trade-off is exploratory evidence for a follow-up, not
+proof of a successful selective-repair policy.
+
+![R31 accuracy and registered effects](../reports/2026-09-26-contextual-memory/figures/r31-contextual-memory.svg)
+
+The stronger absolute results cannot be attributed to increased training data
+alone: sample size, selected memory positions, worlds and checkpoints also differ
+from prior studies. The within-R31 matched comparisons support no added contextual
+memory accuracy. They do not measure out-of-template reasoning, general knowledge
+transfer, colocation or larger-model superiority. Structured versus scalar compares
+separately trained checkpoints and is not a same-checkpoint permutation test.
+
+The [complete report](../reports/2026-09-26-contextual-memory/README.md) publishes
+all 11,840 outputs, 832 receipts, 832 paired memories, 36 initial/epoch checkpoint
+files and the full independent reconstruction of 12,288 training-example passes
+and 1,536 optimizer updates. Exact public-archive replay reproduces the analysis.
+The recorded run generated 143,167 tokens and used 711,344 Jev input tokens.
+Component sums are approximately 0.56 seconds for native, 1.78 for scalar repair
+and 1.29 for constant-trained repair per case; these are post-hoc sums excluding
+loading, queues and other overhead, not an interactive latency benchmark.
+
+Owned cloud resources are verified deleted. Conservative cumulative cost is
+$129.42/$175, including an operating allowance, not an invoice. The result-informed
+next MuSR admission retains both scalar memory conditions and adds independently
+constant-trained controls; it is separately registered before execution. No new
+public-task or model-release result is claimed here.

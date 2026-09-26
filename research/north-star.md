@@ -5,6 +5,13 @@ The [continuation program](feedback-exploration-program.md) starts from the R29-
 conservative estimate of $118.12; older budgets and proposed future stages below
 are historical. The broad objective remains unachieved.
 
+**Latest completed stage, R31:** the [matched-memory report](../reports/2026-09-26-contextual-memory/README.md)
+records 30.08% native, 46.29% scalar Jev repair and 47.85% constant-trained repair
+on authored worlds. Contextual memory adds no complete-world accuracy. All raw
+work is audited/replayed, owned cloud resources are deleted, and the cumulative
+conservative estimate is $129.42/$175. This remains a mechanism study, not broad
+benchmark or larger-model superiority. Older budgets/results below are historical.
+
 **R26-A completed and audited:** the [50-case exposed-data cost pilot](../reports/2026-09-24-selective-admission/README.md)
 measured actual selective repair: 20 cases repaired and 30 retained per arm, with
 50 successful Jev calls. All three native profiles finished, but output-format
