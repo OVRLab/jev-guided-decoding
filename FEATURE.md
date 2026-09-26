@@ -1,5 +1,9 @@
 # Feature: Jev-guided intermediate reasoning
 
+**R29-A running:** the [localized correction study](reports/2026-09-26-structured-correction/README.md)
+passed actual Granite mechanical admission and is executing on one AWS L4.
+Quality, feedback benefit and larger-model performance remain unestablished.
+
 **R29-A in preparation:** the owner authorized implementing and exploring the
 [localized correction protocol](research/structured-correction-plan-v1.md), with
 five matched conditions and explicit preservation targets. Quality remains untested.

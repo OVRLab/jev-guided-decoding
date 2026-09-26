@@ -1,5 +1,10 @@
 # Granite + Jev research record
 
+**R29-A running:** [execution record](../reports/2026-09-26-structured-correction/README.md).
+The real Granite CUDA admission passed and the AWS L4 worker started at
+06:03:52 UTC on 2026-09-26. Five matched training conditions and two seeds are
+planned; no test-quality score exists yet. Earlier preparation entries are historical.
+
 **R29-A authorized and in preparation, 2026-09-26:** the
 [prospective protocol](structured-correction-plan-v1.md) implements localized
 feedback with preservation training, five matched conditions, two seeds and

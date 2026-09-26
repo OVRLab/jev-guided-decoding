@@ -1,5 +1,12 @@
 # Study register
 
+**R29-A started, 2026-09-26:** [running report](../reports/2026-09-26-structured-correction/README.md).
+Frozen source `71bf964`; actual MPS/CUDA mechanical admission passed. Six API
+fixtures succeeded operationally but their all-correct judgment flag failed
+(16/18 slots); the unchanged protocol proceeds with disclosed verifier fallibility
+and its separate oracle diagnostic. One L4, five-hour maximum, $8.412 reserved.
+No test-quality result, cleanup completion or actual final spend is asserted yet.
+
 **R29-A planned, 2026-09-26:** [localized correction capacity study](structured-correction-plan-v1.md).
 128 train / 32 development / 96 test authored temporal and compositional worlds;
 natural Granite drafts, five matched training conditions, two seeds, shuffled
