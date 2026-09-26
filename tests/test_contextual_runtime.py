@@ -203,6 +203,19 @@ def test_serial_candidate_pipeline_binds_memory_and_all_controls(
     assert report["backbone_gradients_absent"] and report["cache_argmax_equal"]
     assert report["contextual_memory_shape"] == [3, 16]
     assert runner.runtime["weight_digest"](model) == before
+    audit_records = runpy.run_path(str(HERE / "audit.py"))["audit_records"]
+    audited = audit_records(
+        cases, refs, runner.rows, receipts, tmp_path, Tok(), contract, eos=0, width=16
+    )
+    assert audited["outputs"] == output_count and audited["memory_extractions"] == 6
+    assert audited["training_steps"] == len(steps)
+    assert audited["test_cases"] == 2
+    changed_rows = [dict(row) for row in runner.rows]
+    changed_rows[-1]["prompt_token_ids"] = [255]
+    with pytest.raises(ValueError, match="token"):
+        audit_records(
+            cases, refs, changed_rows, receipts, tmp_path, Tok(), contract, eos=0, width=16
+        )
     corrupted = [dict(row) for row in memories]
     corrupted[0]["input_token_ids"] = [255]
     with pytest.raises(ValueError, match="token"):

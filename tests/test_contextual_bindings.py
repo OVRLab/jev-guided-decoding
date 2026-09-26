@@ -1,4 +1,6 @@
 import copy
+import hashlib
+import json
 import runpy
 from pathlib import Path
 
@@ -35,3 +37,20 @@ def test_binding_audit_rejects_substituted_memory_weights_feedback_and_missing_w
         check([row], [], expected)
     with pytest.raises(ValueError, match="coverage"):
         check([row], [binding, binding], expected)
+
+
+def test_completed_audit_rejects_backbone_mutation_before_loading_optional_models(
+    tmp_path, monkeypatch
+):
+    a = runpy.run_path(str(ROOT / "research/iterations/contextual_memory/audit.py"))
+    namespace = a["audit"].__globals__
+    monkeypatch.setitem(namespace["FROZEN"], "verify", lambda _: {"sources": {}})
+    (tmp_path / "manifest.json").write_text("{}")
+    (tmp_path / "complete.json").write_text(
+        json.dumps(dict(backbone_before="a" * 64, backbone_after="b" * 64))
+    )
+    (tmp_path / "execution.json").write_text(
+        json.dumps(dict(sources={}, manifest_sha256=hashlib.sha256(b"{}").hexdigest()))
+    )
+    with pytest.raises(ValueError, match="backbone"):
+        a["audit"](tmp_path, tmp_path)

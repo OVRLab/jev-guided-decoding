@@ -14,17 +14,7 @@ T = runpy.run_path(str(HERE / "training.py"))
 D = runpy.run_path(str(HERE / "provenance.py"))
 
 
-def specifications(informative):
-    if informative not in ("structured", "scalar", "both"):
-        raise ValueError("Unknown informative feedback form")
-    feedbacks = (
-        ("structured", "scalar", "constant") if informative == "both" else (informative, "constant")
-    )
-    return [
-        (f"{memory}-{feedback}", memory, feedback)
-        for memory in ("embedding", "contextual")
-        for feedback in feedbacks
-    ]
+specifications = runpy.run_path(str(HERE / "common.py"))["specifications"]
 
 
 class Runner(OLD["Runner"]):

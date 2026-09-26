@@ -7,6 +7,13 @@ unconfirmed tax/network. Previous $125 protocols are historical, not rewritten.
 The [north star](north-star.md) remains broad improvement over native Granite and
 named larger models. No mechanism experiment by itself satisfies it.
 
+R30 is now closed and independently reconstructed: cumulative conservative estimate
+**$122.90167406034408**, leaving **$52.09832593965592** before unconfirmed charges.
+The [registered R31 factorial study](contextual-memory-plan-v1.md) reserves $16;
+$36.09832593965592 remains beyond that envelope. Scalar becomes lead from R30's
+completed result, while both informative forms remain tested. Earlier amounts
+above and below record the original allocation rather than additional spending.
+
 ## Sequence and decisions
 
 1. **R30: frozen-checkpoint feedback attribution.** Replicate R29-A on 384 new
@@ -21,6 +28,12 @@ named larger models. No mechanism experiment by itself satisfies it.
    pooled embeddings under matched training and feedback controls. Either path
    needs a new frozen protocol, new held-out cases, and a finite candidate set.
    Do not perform open-ended layer/learning-rate searches on the R30 answers.
+   **Preparation update before inspecting R30 quality:** the
+   [conditional factorial draft](contextual-memory-study-draft.md) retains both
+   structured and scalar feedback under each memory type. Richer memory could
+   change the value of localized feedback, an interaction that R30 alone cannot
+   rule out. This finite twelve-adapter design supersedes the earlier proposal to
+   choose only one feedback form; it remains contingent on admission and budget.
 3. **Public transfer.** After the selected mechanism has independently checked
    evidence, register a public-task study with source-disjoint development/test
    data, native and sensible extra-computation controls, and an appropriate larger

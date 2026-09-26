@@ -1,5 +1,23 @@
 # Granite + Jev research record
 
+**R30 completed and audited, 2026-09-26:** [fresh feedback-pairing replication](../reports/2026-09-26-feedback-pairing/README.md)
+records **28.65% original Granite, 32.16% structured Jev repair, 34.11% repeated mean
+and 34.77% separately trained scalar repair** on 384 authored worlds. Structured
+repair's +3.52 pp native gain has a registered adjusted interval [+1.69,+5.73] pp;
+both seeds preserve all 110 native passes. Precise field-score placement shows no
+clear advantage over within-draft permutations. All 7,680 outputs and 384 judgments
+pass audit; public archives reproduce the identical analysis. Owned resources are
+deleted; conservative cumulative estimate **$122.90/$175**, not an invoice.
+The broad benchmark/larger-model objective remains unachieved.
+
+**R31 registered, not run:** [matched contextual memory](contextual-memory-plan-v1.md) crosses two memory
+types, structured/scalar/constant feedback and two seeds. Scalar is the lead based
+on the earlier R30 result. Reserve at most $16; freeze source/inputs and admit the
+actual CUDA worker before training. This is a prospective twelve-adapter comparison,
+not an already improved model or a quality claim.
+
+Earlier status entries below are historical.
+
 **Conditional next-study draft, 2026-09-26:** [matched contextual-memory design](contextual-memory-study-draft.md)
 specifies a finite twelve-adapter comparison for review after R30, crossing both
 memory types with structured, scalar and constant feedback. A tested generator

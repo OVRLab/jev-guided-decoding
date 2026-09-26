@@ -1,5 +1,9 @@
 # Contextual correction study — conditional draft, not registered
 
+**Superseded:** the [final R31 protocol](contextual-memory-plan-v1.md) follows the
+completed R30 result and explicitly chooses scalar feedback as lead. This retained
+draft records the earlier design reasoning, not current registration or live status.
+
 Prepared 2026-09-26 while R30 remains running and its quality results have not been
 inspected. This is a bounded implementation plan, **not a frozen protocol or an
 additional paid run**. R30 completion/audit, its interpretation and cost reconciliation
@@ -72,9 +76,16 @@ Primary paired case effects would compare contextual structured repair with
 and (4) its same-checkpoint donor control. Constant-trained controls and the
 memory-by-feedback interaction would be prespecified secondary analyses.
 Average the two fixed seeds per
-case, report per-seed results, and use a four-contrast adjusted interval family
-alongside descriptive 95% intervals. Exact confidence levels, bootstrap seed and
-all secondary analyses belong in the final frozen protocol.
+case and report per-seed results. Candidate analysis code uses 10,000 within-family
+paired bootstrap draws, seed 3100, descriptive 95% intervals and 98.75% intervals
+for the family of four primary contrasts. The secondary interaction is
+(contextual structured − contextual scalar) − (embedding structured − embedding
+scalar), evaluated per case. The final protocol must explicitly adopt or revise
+these choices before inference; this conditional draft is not registration.
+
+All twelve adapters receive the same expanded training set. Comparisons with R29's
+absolute scores would confound training size and memory construction; the new
+position-matched embedding arms provide the within-study memory comparison.
 
 The implementation can prepare a serial runner independently of the feedback
 choice: exact native generation, one recorded judgment, reference-free memory

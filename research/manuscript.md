@@ -35,8 +35,13 @@ preservation training on authored tracking worlds. Across 96 held-out worlds and
 two training seeds, raw structured repair scores 29.69%, versus 25.00% native,
 22.92% shuffled feedback and 28.65% scalar feedback. Exploratory paired intervals
 favor structured repair over native and shuffled feedback, but not over scalar
-feedback. This narrow positive finding motivates replication; it does not establish
-the benefit of slot localization, public-task transfer or larger-model superiority.
+feedback. A registered fixed-checkpoint replication on 384 fresh worlds yields
+28.65% native and 32.16% structured repair, +3.52 pp with a family-adjusted
+98.3333% interval [+1.69,+5.73]. Neither seed damages any of 110 native passes.
+Structured feedback does not demonstrate an advantage over within-draft rotations;
+repeated mean scores 34.11% and separately trained scalar repair 34.77%. Thus the
+native benefit replicates in this narrow setting, while precise slot localization,
+public-task transfer and larger-model superiority remain unestablished.
 
 ## 1. Research question
 
@@ -460,9 +465,62 @@ costs are included in the [completed report](../reports/2026-09-26-structured-co
 Owned cloud resources are deleted. The conservative cumulative estimate is
 $118.12/$125, including operating allowances, not a final invoice.
 
-The next discriminating experiment is a fresh frozen-checkpoint replication with
-within-draft score permutations and repeated-mean feedback. Only after separating
-localization from aggregate reliability should a matched contextual-memory
-replacement or broader public-task transfer be evaluated. This follow-up is
-specified as a research decision, not implemented evidence or an established
-novel architecture.
+R30 below subsequently separates score placement from overall reliability using
+frozen checkpoints and fresh worlds. Its result motivates the registered R31
+memory comparison; neither registration nor a working hook is quality evidence.
+
+## Appendix B. R30: fresh feedback-pairing replication
+
+The [prospective protocol](feedback-pairing-plan-v1.md) froze four R29 structured/
+scalar checkpoints on 384 new worlds, 192 per family, without new training or
+threshold selection. Each world contributes original native and blind repair plus
+nine feedback/checkpoint conditions under two fixed training seeds: 7,680 outputs
+and one three-question Jev request per world. All final answers are Granite-generated.
+
+| Condition | All-three accuracy | Temporal | Compositional |
+| --- | ---: | ---: | ---: |
+| Original Granite | 28.65% | 55.21% | 2.08% |
+| Blind repair | 29.17% | 56.25% | 2.08% |
+| Structured Jev | 32.16% | 57.81% | 6.51% |
+| Repeated mean, same checkpoint | 34.11% | 61.46% | 6.77% |
+| Mean of two within-draft rotations | 32.03% | 58.20% | 5.86% |
+| Same-family donor feedback | 27.21% | 50.52% | 3.91% |
+| Constant 0.5, same checkpoint | 25.00% | 43.49% | 6.51% |
+| Known-room answer-type rule | 31.12% | 56.25% | 5.99% |
+| Oracle flags, same checkpoint | 32.16% | 57.81% | 6.51% |
+| Separately trained scalar | 34.77% | 62.24% | 7.29% |
+
+| Registered primary contrast | Difference (pp) | 98.3333% interval |
+| --- | ---: | --- |
+| Structured − native | +3.52 | [+1.69,+5.73] |
+| Structured − repeated mean | −1.95 | [−4.17,+0.13] |
+| Structured − within-draft rotation mean | +0.13 | [−1.50,+1.82] |
+
+The native advantage replicates within the authored task family. Structured repair
+fixes 15/12 failing worlds across the two seeds and damages none of the 110 native
+passes. The registered ±2 pp mean-equivalence criterion is not met. Correct field
+pairing shows no supported advantage over permutations, and donor feedback changes
+overall reliability as well as locality. The separately trained scalar advantage
+and live-minus-donor advantage are secondary/descriptive comparisons.
+
+The nondeployable oracle substitutes perfect flags into an adapter trained on Jev
+probabilities; its unchanged average score motivates, but does not establish, a
+memory/correction-capacity explanation. Absolute compositional accuracy remains
+low. R29 and R30 share templates/vocabulary and are not pooled as one prespecified
+sample. They do not reverse the earlier public-task transfer failure.
+
+![R30 scores and paired effects](../reports/2026-09-26-feedback-pairing/figures/r30-feedback-pairing.svg)
+
+The [complete report](../reports/2026-09-26-feedback-pairing/README.md) publishes raw
+records, inherited adapters, hashes and exact independent replay. It accounts for
+93,207 generated tokens, 328,283 Jev input tokens and verified cloud cleanup.
+The secondary half-threshold policy replays saved outputs and makes no deployment
+work-saving claim. The cumulative conservative estimate is $122.90 under the
+owner's $175 cap; it is not an invoice.
+
+The newly [registered R31 study](contextual-memory-plan-v1.md) compares contextual
+states with position-matched embeddings under all three feedback forms and matched
+training. It selects scalar as lead from R30, before any R31 inference. Its twelve
+adapters, four primary contrasts and new held-out worlds are a planned test of the
+representation hypothesis, not a result. Prior art already includes verifier-guided
+latent steering; any contribution needs a narrower mechanism and measured transfer.

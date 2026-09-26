@@ -63,14 +63,14 @@ reject changed prompts/tokens/charges and refuse manifests that relax the regist
 limits or omit checkpoints. Offline policy replay does not measure skipped calls.
 
 
-## Contextual memory candidate (not an admitted quality study)
+## R31 contextual memory (registered, not yet run)
 
 See [proposal](research/contextual-memory-proposal.md). Exact original prompt and
 native draft IDs become three question/field position sets. One frozen, unmodified
 prefill captures block-19 states; the matched embedding control pools identical
 positions. Neither path sees targets or reference labels. Duplicate/missing fields
 use question-only memory. Returned tensors are detached; hooks are scoped and
-removed on exceptions. This changes memory construction, not R30's running study.
+removed on exceptions. This changes memory construction; R30 is completed and its source is preserved.
 
 Regression: `uv run --no-sync pytest -q tests/test_contextual_memory.py` covers
 Unicode alignment, original-token binding, reference rejection, world-context
@@ -97,5 +97,12 @@ reject substituted memory, feedback, weights, targets, update order and developm
 selection; interrupted preparation cannot silently repeat a native draft.
 Regression: `uv run --no-sync pytest -q tests/test_contextual_runtime.py tests/test_contextual_bindings.py`.
 These are engineering tests with a fake scorer, not live Jev or task-quality results.
-A paid CLI, frozen protocol, actual CUDA admission and full recorded-run audit
-remain prerequisites for the next study.
+The [registered protocol](research/contextual-memory-plan-v1.md), bounded CLI and
+independent full-run auditor are implemented. Freeze source/inputs and run actual
+CUDA admission before any new training. CLI preparation rejects insufficient budget,
+changed lineage/source, input substitution and dirty source; execution preserves
+failed attempts and performs no ambiguous API retry.
+Regression: `uv run --no-sync pytest -q tests/test_contextual_contract.py tests/test_contextual_freeze.py tests/test_contextual_execution.py`.
+The four primary comparisons use scalar as lead, chosen after R30 but before R31
+inference; the structured-memory contrast and memory-by-feedback interaction remain
+reported secondary analyses.

@@ -2008,3 +2008,21 @@ admission failures, audits and remaining limitations are in the
 [completed report](../reports/2026-09-26-structured-correction/README.md) and
 [focused manuscript appendix](manuscript.md#appendix-a-r29-a-localized-correction-with-preservation-training).
 All owned resources are deleted; conservative cumulative estimate $118.12/$125.
+
+
+## 26 September 2026: R30 replication and R31 registration
+
+[R30](../reports/2026-09-26-feedback-pairing/README.md) completes all 7,680 outputs
+and 384 Jev judgments: native 28.65%, structured repair 32.16%, repeated mean
+34.11%, separately trained scalar 34.77%. The structured native gain replicates
+with a registered adjusted interval [+1.69,+5.73] pp and no damaged native passes
+in either seed. Correct field placement remains unsupported over within-draft
+permutations. Public replay is exact and all owned cloud resources are deleted;
+conservative cumulative estimate $122.90/$175, not an invoice.
+
+The working [manuscript Appendix B](manuscript.md#appendix-b-r30-fresh-feedback-pairing-replication)
+records the scoped positive result and limitations. [R31](contextual-memory-plan-v1.md)
+is registered but not run: twelve matched adapters compare contextual memory and
+position-matched input embeddings under structured/scalar/constant feedback. Scalar
+is chosen as lead from R30 before new inference. No public-task or novelty claim
+is established by this registration.

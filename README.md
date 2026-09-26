@@ -1,11 +1,22 @@
 # Jev-guided decoding
 
-**Active research continuation:** the owner raised the cumulative budget to **$175**.
-The [registered R30 replication](research/feedback-pairing-plan-v1.md) separates
-localized feedback from overall reliability using fixed checkpoints and 384 fresh
-authored cases. The [program](research/feedback-exploration-program.md) reserves
-funds for a subsequent architecture study and justified public transfer. R30 has
-no quality result yet; historical costs and caps below remain dated evidence.
+**R30 completed and audited, 2026-09-26:** [fresh feedback-pairing replication](reports/2026-09-26-feedback-pairing/README.md)
+records **28.65% original Granite, 32.16% structured Jev repair, 34.11% repeated mean
+and 34.77% separately trained scalar repair** on 384 authored worlds. Structured
+repair's +3.52 pp native gain has a registered adjusted interval [+1.69,+5.73] pp;
+both seeds preserve all 110 native passes. Precise field-score placement shows no
+clear advantage over within-draft permutations. All 7,680 outputs and 384 judgments
+pass audit; public archives reproduce the identical analysis. Owned resources are
+deleted; conservative cumulative estimate **$122.90/$175**, not an invoice.
+The broad benchmark/larger-model objective remains unachieved.
+
+**R31 registered, not run:** [matched contextual memory](research/contextual-memory-plan-v1.md) crosses two memory
+types, structured/scalar/constant feedback and two seeds. Scalar is the lead based
+on the earlier R30 result. Reserve at most $16; freeze source/inputs and admit the
+actual CUDA worker before training. This is a prospective twelve-adapter comparison,
+not an already improved model or a quality claim.
+
+Earlier status entries below are historical.
 
 **R29-A completed and audited:** [localized correction study](reports/2026-09-26-structured-correction/README.md) on
 96 held-out authored worlds, with five matched training conditions and two seeds.
