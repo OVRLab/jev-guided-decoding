@@ -10,6 +10,21 @@ def load():
     return runpy.run_path(str(ROOT / "research/iterations/contextual_memory/memory.py"))
 
 
+def test_token_alignment_imports_without_optional_inference_packages(monkeypatch):
+    import builtins
+
+    original = builtins.__import__
+
+    def without_inference(name, *args, **kwargs):
+        if name.split(".")[0] in {"torch", "transformers"}:
+            raise ModuleNotFoundError(name)
+        return original(name, *args, **kwargs)
+
+    monkeypatch.setattr(builtins, "__import__", without_inference)
+    tok, case, row = fixture()
+    assert load()["positions_for"](tok, case, row, eos=0)["slots"]
+
+
 class ByteTokenizer:
     def decode(self, ids, **kwargs):
         return bytes(ids).decode("utf-8", errors="replace")

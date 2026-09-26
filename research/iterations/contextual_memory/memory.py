@@ -5,9 +5,6 @@ import runpy
 import time
 from pathlib import Path
 
-import torch
-from transformers.modeling_utils import ALL_ATTENTION_FUNCTIONS
-
 C = runpy.run_path(str(Path(__file__).resolve().parents[1] / "structured_correction/common.py"))
 
 
@@ -71,6 +68,9 @@ def positions_for(tok, case, native, *, eos):
 
 def memories(model, ids, slots, *, layer=19):
     """One unmodified prefill; no labels, persistent cache, or trainable extractor."""
+    import torch
+    from transformers.modeling_utils import ALL_ATTENTION_FUNCTIONS
+
     if (
         not ids
         or len(ids) > 2048
