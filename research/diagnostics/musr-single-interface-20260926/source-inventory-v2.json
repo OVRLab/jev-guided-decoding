@@ -1,0 +1,10 @@
+{
+  "scope": "Unpaid corrected preparation; no MuSR model/API inference",
+  "prior_preparation": "b861bc0",
+  "sources": {
+    "research/iterations/musr_transfer/data.py": "2a0349e32d2ef519fe32953039dfcb38157886408fd918e72a74008137a71ab8",
+    "research/iterations/musr_transfer/feedback.py": "2e983947e446f5646b22657e1bbb6e483a04f6a1b835a4104942aad139baa65f",
+    "research/iterations/musr_transfer/runtime.py": "149209bfde61bb394ad4f1761c8a6b1a556cdae831d52233f7c443a0dc648588",
+    "research/iterations/musr_transfer/single.py": "23b6e756b0d30c0d6517c1843b353652e06154ea094369d762ce6ad0e3ee07eb"
+  }
+}

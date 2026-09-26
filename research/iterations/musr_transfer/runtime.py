@@ -7,11 +7,21 @@ from contextlib import nullcontext
 from pathlib import Path
 
 import torch
-from transformers import TemperatureLogitsWarper, TopKLogitsWarper, TopPLogitsWarper
+from transformers import DynamicCache, TemperatureLogitsWarper, TopKLogitsWarper, TopPLogitsWarper
 from transformers.modeling_utils import ALL_ATTENTION_FUNCTIONS
 
 R = runpy.run_path(str(Path(__file__).resolve().parents[1] / "structured_correction/runtime.py"))
 B, weight_digest = R["B"], R["weight_digest"]
+
+
+def new_cache(model):
+    if model.config.model_type == "granite":
+        return DynamicCache(config=model.config)
+    if model.config.model_type == "granitemoehybrid" and all(
+        kind == "attention" for kind in model.config.layer_types
+    ):
+        return B["new_cache"](model)
+    raise ValueError("Unsupported backbone cache")
 
 
 def idle_frozen(model):
@@ -93,10 +103,12 @@ def generate(
         raise ValueError("Invalid tokens, generation limit or context")
     if (adapter is None) != (memory is None) or (adapter is None) != (probabilities is None):
         raise ValueError("Incomplete intervention binding")
+    if adapter is not None and model.config.model_type != "granitemoehybrid":
+        raise ValueError("Repair binding supports the original Granite 4.0 backbone only")
     device = next(model.parameters()).device
     generator, warpers, settings = sample_setup(sampling, device)
     pending, accepted, past = list(ids), [], 0
-    cache, traces = B["new_cache"](model), []
+    cache, traces = new_cache(model), []
     context = (
         B["scope"](
             model, adapter, memory, probabilities, start=len(ids) - 1, layer=layer, trace=traces
@@ -200,30 +212,4 @@ def extract(model, ids, positions, *, layer=19):
     )
 
 
-def repair_prefix(tok, prompt, draft):
-    end = tok.convert_tokens_to_ids("<|end_of_text|>")
-    if (
-        not prompt
-        or not draft
-        or type(end) is not int
-        or end < 0
-        or any(type(i) is not int or i < 0 for i in list(prompt) + list(draft))
-        or end in draft[:-1]
-    ):
-        raise ValueError("Invalid repair prefix")
-    instruction = (
-        "Check your answer against the original story and question. Correct it if mistaken "
-        "and preserve it if already correct. End with exactly one final line in the form "
-        "ANSWER: <choice number>."
-    )
-    suffix = (
-        "\n<|start_of_role|>user<|end_of_role|>"
-        + instruction
-        + "<|end_of_text|>\n<|start_of_role|>assistant<|end_of_role|>"
-    )
-    return (
-        list(prompt)
-        + list(draft)
-        + ([] if draft[-1] == end else [end])
-        + tok.encode(suffix, add_special_tokens=False)
-    )
+repair_prefix = runpy.run_path(str(Path(__file__).with_name("single.py")))["repair_prefix"]

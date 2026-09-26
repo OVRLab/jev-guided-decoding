@@ -138,8 +138,18 @@ def test_single_memory_is_contextual_and_position_matched_with_frozen_weight_own
     assert all(p.grad is None and not p.requires_grad for p in model.parameters())
 
 
-def test_single_repair_keeps_native_ids_and_never_inserts_three_room_instruction():
-    r, tok = runtime(), Tok()
+def test_single_repair_keeps_native_ids_without_optional_inference_packages(monkeypatch):
+    import builtins
+
+    original = builtins.__import__
+
+    def core_only(name, *args, **kwargs):
+        if name.split(".")[0] in {"torch", "transformers"}:
+            raise ModuleNotFoundError(name)
+        return original(name, *args, **kwargs)
+
+    monkeypatch.setattr(builtins, "__import__", core_only)
+    r, tok = runpy.run_path(str(HERE / "single.py")), Tok()
     for draft in ([4, 5], [4, 5, 31]):
         prefix = r["repair_prefix"](tok, [1, 2, 3], draft)
         assert prefix == [1, 2, 3, 4, 5, 31, 7, 8]
@@ -147,3 +157,36 @@ def test_single_repair_keeps_native_ids_and_never_inserts_three_room_instruction
     for draft in ([], [31, 4], [True]):
         with pytest.raises(ValueError):
             r["repair_prefix"](tok, [1, 2, 3], draft)
+
+
+def test_larger_dense_granite_uses_its_own_cache_and_matches_full_prefix_argmax():
+    torch = pytest.importorskip("torch")
+    from transformers import GraniteConfig, GraniteForCausalLM
+
+    r = runtime()
+    model = (
+        GraniteForCausalLM(
+            GraniteConfig(
+                vocab_size=32,
+                hidden_size=16,
+                intermediate_size=32,
+                num_hidden_layers=2,
+                num_attention_heads=4,
+                num_key_value_heads=2,
+                max_position_embeddings=256,
+            )
+        )
+        .eval()
+        .requires_grad_(False)
+    )
+    ids, expected = [1, 2, 3], []
+    with torch.no_grad():
+        for _ in range(4):
+            token = int(
+                model(torch.tensor([ids + expected]), use_cache=False).logits[0, -1].argmax()
+            )
+            expected.append(token)
+            if token == 31:
+                break
+    actual = r["generate"](model, Tok(), ids, limit=4, eos=[31], context_limit=256)
+    assert actual["generated_token_ids"] == expected

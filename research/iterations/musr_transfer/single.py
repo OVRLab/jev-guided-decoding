@@ -62,11 +62,13 @@ def parse_choice(text, choices, *, thinking=False):
         raise ValueError("Answer text must be a string")
     invalid = dict(index=None, span=None, explicit_marker=False, format=False)
     offset = 0
-    if thinking:
-        close = text.rfind("</think>")
-        if close < 0:
-            return invalid
+    close = text.rfind("</think>")
+    if close >= 0:
         offset = close + len("</think>")
+    elif thinking:
+        return invalid
+    if "<think>" in text[offset:]:
+        return invalid
     visible = text[offset:]
     fields = list(re.finditer(r"(?im)^[ \t]*ANSWER:[ \t]*([^\n]*)$", visible))
     raw = fields[-1][1] if fields else visible
@@ -150,3 +152,32 @@ def as_three_slots(vector, probability):
     ):
         raise ValueError("Invalid detached memory or probability")
     return vector.repeat(3, 1), torch.full((3,), float(probability), device=vector.device)
+
+
+def repair_prefix(tok, prompt, draft):
+    end = tok.convert_tokens_to_ids("<|end_of_text|>")
+    if (
+        not prompt
+        or not draft
+        or type(end) is not int
+        or end < 0
+        or any(type(i) is not int or i < 0 for i in list(prompt) + list(draft))
+        or end in draft[:-1]
+    ):
+        raise ValueError("Invalid repair prefix")
+    instruction = (
+        "Check your answer against the original story and question. Correct it if mistaken "
+        "and preserve it if already correct. End with exactly one final line in the form "
+        "ANSWER: <choice number>."
+    )
+    suffix = (
+        "\n<|start_of_role|>user<|end_of_role|>"
+        + instruction
+        + "<|end_of_text|>\n<|start_of_role|>assistant<|end_of_role|>"
+    )
+    return (
+        list(prompt)
+        + list(draft)
+        + ([] if draft[-1] == end else [end])
+        + tok.encode(suffix, add_special_tokens=False)
+    )

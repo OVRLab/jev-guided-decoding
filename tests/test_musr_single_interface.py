@@ -32,6 +32,9 @@ def test_readout_never_guesses_or_uses_truth_and_keeps_last_field_ambiguity():
         assert parse(text, choices)["index"] is None
     assert parse("reasoning ANSWER: 2", choices, thinking=True)["index"] is None
     assert parse("Thinking about 1.</think>\nANSWER: 2", choices, thinking=True)["index"] == 1
+    assert parse("<think></think>ANSWER: 2", choices)["index"] == 1
+    assert parse("<think>ANSWER: 2", choices)["index"] is None
+    assert parse("<think>\nANSWER: 2", choices)["index"] is None
     assert parse("ANSWER: Alice", ["Alice", "alice"])["index"] is None
     repeated = ["cooking station", "dining tables", "pantry", "pantry ", "upper cabinet"]
     for answer, index in (("ANSWER: 3", 2), ("ANSWER: 4", 3), ("ANSWER: 4 - pantry", 3)):

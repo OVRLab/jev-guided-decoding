@@ -134,10 +134,35 @@ This validates token alignment, not an actual native draft or answer quality.
 produces 12 exposed development and 730 fresh questions, with all references kept
 in a separate mapping. Four object-placement records retain the duplicate-text flag.
 [Source inventory](diagnostics/musr-single-interface-20260926/source-inventory.json)
-binds this unpaid preparation; it is not a live-study freeze or GPU admission.
+binds the initial `b861bc0` preparation; it is not a live-study freeze or GPU admission.
 
 The verifier shape follows the inspected [TypeSafe API](https://docs.typesafe.ai/api)
 and [Noul contract](https://docs.typesafe.ai/primitives/noul): one yes/no probability
 about the generator's actual selected answer. Its typed output remains a fallible
 judgment. Live compatibility and useful discrimination on exposed MuSR drafts still
 need their own bounded admission before a final transfer run.
+
+### Larger-model compatibility correction before live admission
+
+Inspection of the pinned larger checkpoint's config showed `model_type=granite`;
+the original 4.0 checkpoint uses an all-attention `granitemoehybrid` implementation.
+A new regression first reproduced the wrong-cache failure, then verified the
+larger architecture's dynamic cache against full-prefix greedy logits. Only the
+original backbone accepts the repair branch in this prototype; the larger model
+remains an unmodified comparator. A second regression covers closed thinking tags
+before the final answer and refuses an unclosed thinking segment.
+
+[Larger-tokenizer/config admission](diagnostics/musr-single-interface-20260926/larger-tokenizer-admission.json)
+checks all 742 assembled cases in both supported modes (maximum 1,638 prompt
+tokens). Non-thinking places `<think></think>` in the prompt; thinking ends the
+prompt at `<think>`, so its generated output must close the segment before grading.
+Resolved pinned generation defaults are sampling, temperature 1.0, top-p 0.95 and
+top-k 50. These are tokenizer/config checks, not inference or quality evidence.
+
+CI at `b861bc0` exposed one pure-prefix test importing the optional Torch runtime
+in a core-only environment. The prefix helper now lives with the pure token
+interface; a test that explicitly blocks Torch/Transformers imports first failed,
+then passed. Twelve focused local tests pass after these corrections. The original
+preparation snapshot remains available; [revised sources](diagnostics/musr-single-interface-20260926/source-inventory-v2.json)
+bind the corrected preparation. Existing least-initialized-state guidance already
+covers this lesson; no additional optional dependency is added to core CI.
