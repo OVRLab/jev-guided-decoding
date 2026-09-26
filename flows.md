@@ -143,3 +143,28 @@ calls, unchanged original weights and no length stops. The original v1 readout
 accepted 11/12; the [tested v2 final-line correction](research/musr-readout-v2.md)
 accepts 12/12 by offline replay, preserving the original evidence. This admission
 does not establish public transfer or accuracy.
+
+## R32a conditional public-task admission (implemented, not launched)
+
+The [prospective bounded plan](research/musr-live-admission-v1.md) binds only twelve
+previously exposed questions and both scalar-trained R31 memory types/seeds.
+The [contract](research/iterations/musr_transfer/contract.py) refuses missing or
+incomplete R31 evidence, undeleted owned resources, insufficient cumulative budget,
+changed development-selected checkpoints, altered inputs/sources and symlinks.
+The worker exclusively claims its output before loading a model or key and never
+loads reference labels into inference. One original model and one larger model
+run serially, with explicit model unload and a shared deadline.
+
+The [comparator](research/iterations/musr_transfer/comparator.py) preserves the
+pinned larger model's templates, supported token ceilings, declared sampling and
+case-local seeds. Its cached/full mechanics, raw coverage, token strings, timing
+and original-weight identity are independently reconstructed. The exposed-case
+summary separates generator quality from Jev correctness judgments, retains every
+invalid/unfinished output and reports fix/damage counts without significance claims.
+
+Regression: `uv run --no-sync pytest -q tests/test_musr_contract.py tests/test_musr_comparator.py tests/test_musr_study.py tests/test_musr_completion.py`.
+All eight wrapper/comparator tests pass, including a complete tiny-model/fake-API
+flow with a simulated device gate. This fixture uses CPU tensors and cannot pass
+the actual CUDA/dtype completion audit. The real twelve-case CUDA/Jev/larger-model
+admission and any 730-case fresh evaluation remain unrun. R31's active freeze still
+verifies unchanged. CLI help works via `uv run --no-sync python research/iterations/musr_transfer/study.py --help`.

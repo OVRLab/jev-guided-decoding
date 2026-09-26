@@ -121,8 +121,8 @@ uses fewer parameters or resources than the larger comparator.
 
 Completion would include a separately frozen plan/source/data/readout, bounded
 admission, full planned inference, grouped paired analysis, public-safe raw
-evidence, original-weight checks and cloud cleanup. There is currently no new
-MuSR model result, no larger-model result and no public-transfer success claim.
+evidence, original-weight checks and cloud cleanup. There is no fresh MuSR accuracy result, larger-model result or public-transfer
+success claim; the separately registered exposed native check concerns readability only.
 
 ## Preparation evidence
 
@@ -208,3 +208,23 @@ The end-to-end fixture uses a tiny random model with an EOS-only output head and
 a fake provider, producing 32 real model completion decisions and four simulated
 judgments. It verifies mechanics, including empty EOS, and says nothing about
 MuSR quality. All additions remain outside the unchanged active R31 inventory.
+
+### Conditional execution wrapper
+
+The [implementation plan](musr-wrapper-plan.md) and [bounded R32a admission](musr-live-admission-v1.md)
+now have an executable source/data/checkpoint freeze, serial worker and full-study
+audit. Freeze requires completed R31 artifacts, verified resource deletion and
+sufficient reconciled budget. The current live study is unchanged. Both scalar
+memory conditions and seeds are chosen prospectively before inspecting R31 test
+quality; their epochs remain the original development selections. The complete
+offline fixture exercises model switching, 40 tiny-model outputs, four simulated
+provider receipts, exact prefixes and cleanup. Device admission is explicitly
+simulated in that fixture, not evidence of a GPU experiment.
+
+The larger comparator uses each supported output limit and its own pinned template;
+a BF16 cached/full check records actual error and equal argmax before generation.
+Its independent auditor binds sampling seeds and token records, and the final
+wrapper checks original/adapter identity, complete planned work, receipt counts
+and temporal order before descriptive development grading. All 723 local tests,
+lint/format, docs checks and packaging build pass at this preparation stage.
+Actual admission, fresh protocol selection and public accuracy remain pending.

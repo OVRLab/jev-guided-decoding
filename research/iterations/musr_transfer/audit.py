@@ -3,6 +3,7 @@
 import hashlib
 import json
 import math
+import re
 import runpy
 from decimal import Decimal
 from pathlib import Path
@@ -103,7 +104,9 @@ def receipts(cases, natives, output, manifest):
     return res, total
 
 
-def generation(row, prompt, probabilities, tok, *, limit, eos, layer, context, vocab):
+def generation(
+    row, prompt, probabilities, tok, *, limit, eos, layer, context, vocab, sampling=None
+):
     ids = row["generated_token_ids"]
     if row["prompt_token_ids"] != prompt or len(prompt) + limit > context:
         raise ValueError("Wrong exact prompt or generation envelope")
@@ -121,7 +124,7 @@ def generation(row, prompt, probabilities, tok, *, limit, eos, layer, context, v
         or row["finish_reason"] != ("eos" if ids[-1] == eos else "length")
         or (ids[-1] != eos and len(ids) != limit)
         or row["probabilities"] != probabilities
-        or row["sampling"] is not None
+        or row["sampling"] != sampling
         or row["processed_tokens"] != len(prompt) + len(ids) - 1
         or not nonnegative(row["seconds"])
     ):
@@ -270,4 +273,79 @@ def check_run(cases, groups, output, tok, manifest, adapter_digests, *, width=20
         generation_processed_tokens=sum(r["processed_tokens"] for r in rows),
         generation_seconds=sum(r["seconds"] for r in rows),
         binding_seconds=binding_seconds,
+    )
+
+
+def check_comparator(cases, profiles, output, tok, *, eos=100257, vocab=100352):
+    comparator = runpy.run_path(str(HERE / "comparator.py"))
+    expected_files = {"outputs.jsonl", "jobs.jsonl", "mechanical-admission.json", "complete.json"}
+    if {p.name for p in output.iterdir()} != expected_files or any(
+        p.is_symlink() or not p.is_file() for p in output.iterdir()
+    ):
+        raise ValueError("Incomplete or unexpected larger-model artifacts")
+    table = {c["id"]: c for c in cases}
+    if len(table) != len(cases) or not cases or not profiles or len(set(profiles)) != len(profiles):
+        raise ValueError("Invalid larger-model case/profile coverage")
+    for case in cases:
+        S["validate_case"](case)
+    rows, jobs = lines(output / "outputs.jsonl"), lines(output / "jobs.jsonl")
+    order = [(c["id"], p) for c in cases for p in profiles]
+    if [(r["id"], r["arm"]) for r in rows] != order or len(jobs) != 2 * len(rows):
+        raise ValueError("Incomplete or reordered larger-model coverage")
+    for i, row in enumerate(rows):
+        case = table[row["id"]]
+        settings = comparator["profile"](row["arm"], row["id"])
+        prompt = tok.apply_chat_template(
+            [dict(role="user", content=S["prompt_for"](case))],
+            tokenize=True,
+            add_generation_prompt=True,
+            thinking=settings["thinking"],
+        )
+        if row["task"] != case["task"] or row["split"] != case["split"]:
+            raise ValueError("Changed larger-model metadata")
+        generation(
+            row,
+            prompt,
+            None,
+            tok,
+            limit=settings["limit"],
+            eos=eos,
+            layer=19,
+            context=settings["context_limit"],
+            vocab=vocab,
+            sampling=settings["sampling"] | {"top_k": 50},
+        )
+        start, finish = jobs[2 * i : 2 * i + 2]
+        if (
+            any(j["id"] != row["id"] or j["arm"] != row["arm"] for j in (start, finish))
+            or start["event"] != "start"
+            or finish["event"] != "finish"
+            or not start["at"] <= row["at"] <= finish["at"]
+            or (i and jobs[2 * i - 1]["at"] > start["at"])
+        ):
+            raise ValueError("Changed or overlapping larger-model jobs")
+    complete = json.loads((output / "complete.json").read_text())
+    admission = json.loads((output / "mechanical-admission.json").read_text())
+    tolerance = 0.25 if admission["dtype"] == "torch.bfloat16" else 0.001
+    if (
+        complete["outputs"] != len(rows)
+        or not re.fullmatch(r"[a-f0-9]{64}", complete["backbone_before"])
+        or complete["backbone_after"] != complete["backbone_before"]
+        or not nonnegative(complete["seconds"])
+        or complete["at"] < jobs[-1]["at"]
+        or admission["passed"] is not True
+        or admission["cache_argmax_equal"] is not True
+        or not nonnegative(admission["cache_max_logit_error"])
+        or admission["cache_absolute_tolerance"] != tolerance
+        or admission["cache_max_logit_error"] > tolerance
+        or not nonnegative(admission["seconds"])
+        or admission["prompt_tokens"] != len(rows[0]["prompt_token_ids"])
+    ):
+        raise ValueError("Invalid larger-model completion or mechanics")
+    return dict(
+        passed=True,
+        outputs=len(rows),
+        generated_tokens=sum(len(r["generated_token_ids"]) for r in rows),
+        generation_processed_tokens=sum(r["processed_tokens"] for r in rows),
+        generation_seconds=sum(r["seconds"] for r in rows),
     )
