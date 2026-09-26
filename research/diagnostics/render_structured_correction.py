@@ -70,6 +70,8 @@ def render(source, destination):
     fig.tight_layout(rect=(0, 0.06, 1, 0.94), w_pad=2.5)
     for extension in ("svg", "png"):
         fig.savefig(destination / f"r29-correction.{extension}", dpi=180)
+    svg = destination / "r29-correction.svg"
+    svg.write_text("\n".join(line.rstrip() for line in svg.read_text().splitlines()) + "\n")
     plt.close(fig)
 
 
