@@ -1,0 +1,14 @@
+{
+  "cases": 742,
+  "references": 742,
+  "case_groups": 742,
+  "excluded_related_ids": 14,
+  "ambiguous_choice_ids": [
+    "musr/object_placements/140",
+    "musr/object_placements/141",
+    "musr/object_placements/142",
+    "musr/object_placements/143"
+  ],
+  "sources": 6,
+  "scope": "Pinned source assembly only; no model inference or quality evaluation"
+}

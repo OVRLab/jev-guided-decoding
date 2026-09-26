@@ -111,3 +111,18 @@ Actual R31 CUDA admission passed. The separate [audit correction](research/conte
 normalizes `cuda:0` to `cuda` in memory, preserves raw bytes and rejects non-CUDA or
 other-device records. Regression: `uv run --no-sync pytest -q tests/test_contextual_audit_device.py`.
 No frozen worker/source/protocol change is made; full quality audit remains pending.
+
+## MuSR single-question preparation (unpaid; no quality result)
+
+The [conditional design](research/musr-transfer-design-draft.md) preserves one public
+question, numbered choices and exact native IDs. References stay in a separate map;
+related exposed scenarios cannot enter the fresh test set. Duplicate choice text
+requires an explicit number. One pooled memory/probability is repeated internally
+with tested numerical single-slot equivalence. New generation limits and a distinct
+repair instruction do not change R31 sources. Fresh caches, hook cleanup, frozen
+extraction, sampling reproducibility and a one-attempt provider ledger are tested.
+
+Regression: `uv run --no-sync pytest -q tests/test_musr_single_interface.py tests/test_musr_runtime.py tests/test_musr_feedback.py tests/test_musr_data.py`.
+All 756 pinned-tokenizer alignments and the 742-case exposure-aware assembly pass.
+These are synthetic-span/tiny-model/fake-provider checks. Actual MuSR model/API
+admission, a final registered matrix and independent complete-run audit remain unrun.
