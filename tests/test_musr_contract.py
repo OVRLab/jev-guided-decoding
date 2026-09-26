@@ -109,3 +109,43 @@ def test_admission_budget_and_input_inventory_fail_closed(tmp_path):
     (folder / "link").symlink_to(tmp_path / "outside")
     with pytest.raises(ValueError, match="symlink"):
         c["inventory"](folder)
+
+
+def test_freeze_carries_upstream_notices_and_rejects_changed_notice_bytes(tmp_path, monkeypatch):
+    c = runpy.run_path(str(HERE / "contract.py"))
+    report = tmp_path / "upstream"
+    report.mkdir()
+    fixture(report)
+    prior = c["upstream"](report)
+    dataset = tmp_path / "dataset"
+    dataset.mkdir()
+    (dataset / "source.csv").write_text("fixture")
+    notice = tmp_path / "notice.md"
+    notice.write_text("Upstream fixture attribution")
+    data = dict(
+        cases=[],
+        references={},
+        groups={},
+        admission={},
+        sources={"source.csv": hashlib.sha256(b"fixture").hexdigest()},
+    )
+    ns = c["prepare"].__globals__
+    monkeypatch.setitem(ns, "upstream", lambda: prior)
+    monkeypatch.setitem(ns, "expected_data", lambda folder: data)
+    monkeypatch.setitem(ns, "sources", lambda: {"fixture": "bound"})
+    monkeypatch.setitem(ns, "NOTICES", {"NOTICE.md": notice})
+    monkeypatch.setattr(
+        ns["subprocess"],
+        "check_output",
+        lambda args, **kwargs: "a" * 40 if "rev-parse" in args else "",
+    )
+    frozen = tmp_path / "frozen"
+    c["prepare"](frozen, dataset)
+    copy = frozen / "licenses/NOTICE.md"
+    assert copy.read_bytes() == notice.read_bytes()
+    copy.write_text("changed attribution")
+    manifest = json.loads((frozen / "manifest.json").read_text())
+    manifest["files"] = c["inventory"](frozen)
+    (frozen / "manifest.json").write_text(json.dumps(manifest))
+    with pytest.raises(ValueError, match="notice|license"):
+        c["verify"](frozen)

@@ -12,6 +12,10 @@ epoch. This choice follows R30's scalar evidence, not a search across R31 test
 winners. No MuSR training, prompt search, checkpoint search or threshold tuning.
 References are available only to a separate post-run evaluator.
 
+Freeze the dataset's [source attribution and license notices](protocols/musr-transfer-v1/NOTICE.md)
+with the input bundle, preserving the original card and author repository notice.
+The dataset and its raw metadata retain their upstream terms.
+
 For each question generate original Granite, collect one Jev 1.13 judgment, extract
 one vector of each memory type from exact original tokens, and generate blind
 repair plus live/constant-0.5/scenario-independent-donor repairs for all four

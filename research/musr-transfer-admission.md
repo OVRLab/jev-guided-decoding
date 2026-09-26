@@ -86,3 +86,12 @@ source coverage. All 756 real rows bind successfully. A future full 756-row scor
 must disclose the 26 development-related rows separately; it cannot be called
 756 entirely fresh questions. A confirmatory untouched comparison can use the
 730 eligible rows with these scenario groups, after a separately frozen protocol.
+
+## Source notices preserved for distribution
+
+The [pinned upstream card and author license](protocols/musr-transfer-v1/NOTICE.md)
+are preserved without modification, with source revisions and hashes. Prospective
+input bundles carry these notices beside the unchanged source CSV/JSON and derived
+case records. The original author notice identifies copyright 2024 Zayne Sprague;
+the dataset card declares CC BY 4.0. This packaging addition changes no archived
+output, dataset row or scientific comparison.

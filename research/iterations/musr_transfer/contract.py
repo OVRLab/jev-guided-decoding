@@ -20,6 +20,10 @@ COMP = runpy.run_path(str(HERE / "comparator.py"))
 sha, dump = C["sha"], C["dump"]
 REPORT = ROOT / "reports/2026-09-26-contextual-memory"
 NATIVE = ROOT / "research/diagnostics/musr-single-interface-20260926/native-readability-v1.tar.gz"
+NOTICES = {
+    name: ROOT / "research/protocols/musr-transfer-v1" / name
+    for name in ("NOTICE.md", "LICENSE.author.txt", "README.dataset.md")
+}
 
 
 def fixed():
@@ -163,6 +167,7 @@ def sources():
     files = C["sources"]()
     paths = [
         *HERE.glob("*.py"),
+        *NOTICES.values(),
         ROOT / "research/musr-live-admission-v1.md",
         ROOT / "research/musr-readout-v2.md",
         DATA["ADMISSION"],
@@ -217,6 +222,9 @@ def prepare(folder, dataset):
     folder.mkdir(parents=True, exist_ok=False)
     (folder / "source").mkdir()
     (folder / "adapters").mkdir()
+    (folder / "licenses").mkdir()
+    for name, path in NOTICES.items():
+        shutil.copyfile(path, folder / "licenses" / name)
     for name in data["sources"]:
         shutil.copyfile(dataset / name, folder / "source" / name)
     for name, binary in prior["checkpoint_bytes"].items():
@@ -257,6 +265,10 @@ def verify(folder):
     expected = {"source/" + n for n in data["sources"]} | {
         "adapters/" + n for n in prior["checkpoint_bytes"]
     }
+    for name, path in NOTICES.items():
+        expected.add("licenses/" + name)
+        if (folder / "licenses" / name).read_bytes() != path.read_bytes():
+            raise ValueError("Changed upstream license or attribution notice")
     for name, value in (
         ("cases", data["cases"]),
         ("references", data["references"]),
