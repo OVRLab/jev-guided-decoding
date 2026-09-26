@@ -61,3 +61,7 @@ with narrative object placement among its domains. Admission must inspect its
 actual contract, length, license and split, and compare original/larger generators.
 Adapting our three-field branch to its question contract is a separate intervention;
 it must not be described as unchanged zero-shot transfer.
+
+The subsequent [focused prior-art check](contextual-memory-related-work.md) adds
+ATLAS and its text-verifier comparison. The mechanism must be positioned against
+adaptive verifier-guided steering, not only against ordinary decoding.

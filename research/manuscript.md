@@ -77,6 +77,13 @@ semantic quality. The [prior-art comparison](routing-feedback-related-work.md)
 records the review depth and relevant differences. No direct empirical comparison
 with these published methods has been performed.
 
+A later literature check also identifies [ATLAS](https://arxiv.org/html/2601.03093v4),
+which adaptively selects internal steering using latent verification and includes
+a text-verifier variant. Verifier-guided internal steering is therefore not a
+novelty claim for this project. The [contextual-memory comparison](contextual-memory-related-work.md)
+records the narrower implementation differences and review depth; no empirical
+ATLAS comparison has been performed.
+
 ## 3. Method
 
 ### 3.1 Generator, verifier and token ownership

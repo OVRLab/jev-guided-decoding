@@ -1,5 +1,10 @@
 # Study register
 
+**Prior-art update, 2026-09-26:** [focused comparison](contextual-memory-related-work.md)
+adds ATLAS, including its text-verifier variant, to the manuscript. Adaptive
+verifier-guided internal steering is existing work; any contribution requires a
+narrower mechanism argument and measured transfer. No comparison run occurred.
+
 **Contextual memory engineering admission, 2026-09-26:** nine focused tests pass
 for exact token alignment, reference isolation, matched training, preservation,
 frozen-weight ownership and checkpoint selection. [Actual Granite MPS checks](diagnostics/contextual-memory-20260926/context-mps-admission.json)
