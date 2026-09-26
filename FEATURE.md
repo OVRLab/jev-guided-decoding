@@ -1,5 +1,10 @@
 # Feature: Jev-guided intermediate reasoning
 
+**R30 running, 2026-09-26:** [execution record](reports/2026-09-26-feedback-pairing/README.md).
+Frozen source `d2ed7b8`, all 670 local tests and four CI jobs passed; 18 relevant
+checks passed on the AWS L4 worker. The real inference study started at 11:00 UTC
+with 384 new worlds and frozen checkpoints. No quality result exists yet.
+
 **R30 registered, 2026-09-26:** [fresh feedback-pairing replication](research/feedback-pairing-plan-v1.md)
 will compare fixed R29 checkpoints on 384 new authored worlds, separating score
 localization from overall reliability and cheap answer-type checking. The owner
