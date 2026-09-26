@@ -88,6 +88,21 @@ def test_single_question_memory_preserves_ids_and_excludes_reference_and_ambiguo
         s["positions_for"](tok, case, draft | dict(prompt_token_ids=[255]), eos=0)
 
 
+def test_final_numbered_option_after_prose_is_readable_without_relaxing_ambiguity():
+    parse = runpy.run_path(str(HERE / "single.py"))["parse_choice"]
+    choices = ["Alice", "Bob", "Charlie"]
+    text = "The question asks who arrived.\n\n  2. Bob  \n"
+    result = parse(text, choices)
+    assert result["index"] == 1
+    assert text[slice(*result["span"])] == "2. Bob"
+    assert result["format"] is False and result["explicit_marker"] is False
+    for ending in ("2", "Bob", "2. Alice", "2. Bob or 3. Charlie", "9. Bob"):
+        assert parse("Some reasoning.\n" + ending, choices)["index"] is None
+    assert parse("ANSWER: 1 or 3\n2. Bob", choices)["index"] is None
+    assert parse("<think>Some reasoning.\n2. Bob", choices)["index"] is None
+    assert parse("Some reasoning.</think>\nQuestion\n2. Bob", choices, thinking=True)["index"] == 1
+
+
 def test_repeated_internal_slots_equal_one_slot_for_nonzero_learned_branch():
     torch = pytest.importorskip("torch")
     s = runpy.run_path(str(HERE / "single.py"))

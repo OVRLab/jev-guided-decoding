@@ -6,6 +6,7 @@ import runpy
 from pathlib import Path
 
 M = runpy.run_path(str(Path(__file__).resolve().parents[1] / "contextual_memory/memory.py"))
+READOUT_VERSION = "musr-exact-selection-v2"
 
 
 def normalized(text):
@@ -72,12 +73,20 @@ def parse_choice(text, choices, *, thinking=False):
     visible = text[offset:]
     fields = list(re.finditer(r"(?im)^[ \t]*ANSWER:[ \t]*([^\n]*)$", visible))
     raw = fields[-1][1] if fields else visible
-    start = offset + (fields[-1].start(1) if fields else 0) + len(raw) - len(raw.lstrip())
+    field_offset = fields[-1].start(1) if fields else 0
+    lines = list(re.finditer(r"(?m)^[^\n]*\S[^\n]*$", visible))
+    final_line_fallback = not fields and len(lines) > 1
+    if final_line_fallback:
+        raw = lines[-1][0]
+        field_offset = lines[-1].start()
+    start = offset + field_offset + len(raw) - len(raw.lstrip())
     field = raw.strip()
     if not field:
         return invalid
     index = None
     numeric = re.fullmatch(r"(?:\((\d+)\)|(\d+))(?:[.)])?(?:[ \t]+(?:[-–:][ \t]+)?(.+))?", field)
+    if final_line_fallback and (numeric is None or numeric[3] is None):
+        return invalid
     if numeric:
         index = int(numeric[1] or numeric[2]) - 1
         if not 0 <= index < len(choices) or (

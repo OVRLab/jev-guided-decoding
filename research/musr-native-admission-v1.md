@@ -32,3 +32,24 @@ original native path. A paid transfer admission, trained R31 checkpoints, live J
 the larger comparator and fresh public scoring still require R31 completion,
 cleanup and budget reconciliation first. Extra cloud/API cost is zero; local
 electricity is not metered. The cumulative cloud/API ceiling remains $175.
+
+## Completed admission (separate from the frozen registration above)
+
+All twelve cases completed on MPS with identical original-weight digests before
+and after generation, zero Jev calls and no length stops. There were **11/12
+readable selections and 2/12 requested-format passes** under the frozen v1 parser.
+Generation took 45.01 seconds and total execution including loading took 70.70
+seconds. These local timings do not predict cloud throughput.
+
+[Provenance](diagnostics/musr-single-interface-20260926/native-readability-provenance.json)
+and the [raw archive](diagnostics/musr-single-interface-20260926/native-readability-v1.tar.gz)
+preserve the original manifest, twelve reference-free cases, all token/work records
+and the original readout. The manifest binds source commit `7e56016`; its protocol
+hash refers to the registration at that commit, before this outcome was appended.
+Raw MuSR material retains CC BY 4.0, credited to Zayne Sprague, Xi Ye, Kaj Bostrom,
+Swarat Chaudhuri and Greg Durrett; see the [source admission](musr-transfer-admission.md).
+
+The one unreadable response repeats its question, then gives one numbered option
+with exactly matching text. A separately versioned [readout correction](musr-readout-v2.md)
+accepts that unambiguous final line. All original v1 results remain intact. Neither
+readout result is accuracy, an architecture improvement or a fresh benchmark result.

@@ -136,3 +136,10 @@ separates indexed choices from duplicate-text sensitivity; uncertainty resamples
 whole scenarios. Regression: `uv run --no-sync pytest -q tests/test_musr_pipeline.py tests/test_musr_audit.py tests/test_musr_analysis.py`.
 These checks pass on a tiny EOS-only model and fake provider; the final study
 wrapper and actual public benchmark run are not admitted by the helper tests.
+
+The separate [native readability admission](research/musr-native-admission-v1.md)
+now has twelve real exposed-case Granite/MPS outputs, no accuracy labels or Jev
+calls, unchanged original weights and no length stops. The original v1 readout
+accepted 11/12; the [tested v2 final-line correction](research/musr-readout-v2.md)
+accepts 12/12 by offline replay, preserving the original evidence. This admission
+does not establish public transfer or accuracy.

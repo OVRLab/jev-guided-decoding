@@ -10,7 +10,7 @@ pass audit; public archives reproduce the identical analysis. Owned resources ar
 deleted; conservative cumulative estimate **$122.90/$175**, not an invoice.
 The broad benchmark/larger-model objective remains unachieved.
 
-**Original-Granite MuSR readability admission, registered 2026-09-26:** [zero-API local plan](musr-native-admission-v1.md) freezes one native greedy response on each of the twelve previously exposed questions. It tests the real output contract and token limits without accuracy grading, Jev, adapters or fresh test questions. This separate unpaid admission is prospective; paid transfer still waits for R31 closure.
+**Original-Granite MuSR readability admission, completed 2026-09-26:** [registered zero-API plan](musr-native-admission-v1.md) produced twelve native responses on previously exposed questions, with unchanged original weights and no truncations. The original parser read 11/12 selections (2/12 exact formats); the separately tested [v2 final-line correction](musr-readout-v2.md) reads 12/12 saved responses with the same two format passes. No accuracy was graded, no Jev/adapters were used, and fresh public questions remain untouched.
 
 **MuSR pipeline preparation, 2026-09-26:** [serial candidate and independent record audit](musr-transfer-design-draft.md#serial-pipeline-and-independent-record-checks) bind exact native/repair tokens, single-slot memory, fixed checkpoints, scenario-independent donor feedback and maximum pre-dispatch reservations. A tiny EOS-only model/fake-provider flow and mutation tests pass; paired analysis resamples scenarios. Final source/checkpoint admission and public model evaluation remain pending.
 
