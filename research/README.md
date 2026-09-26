@@ -1,5 +1,17 @@
 # Granite + Jev research record
 
+**R29-A authorized and in preparation, 2026-09-26:** the
+[prospective protocol](structured-correction-plan-v1.md) implements localized
+feedback with preservation training, five matched conditions, two seeds and
+independent oracle diagnostics on 256 authored worlds. This is a mechanism test,
+not a public benchmark. No quality result or additional cloud spend is claimed.
+
+**Next design proposal, 2026-09-26:** [localized Jev feedback with learned
+preservation](structured-correction-proposal.md) targets the gap between detecting
+errors and producing useful repairs. It records the evidence, internal mechanism,
+training changes, prior work and staged controls. This is unimplemented and unrun;
+no new protocol is frozen or paid execution started.
+
 **R28 completed and audited:** the [539-case IFEval report](../reports/2026-09-25-routing-feedback/README.md)
 scores original Granite **408/539 (75.70%)** and
 Jev-selected live repair **379/539 (70.32%)**.

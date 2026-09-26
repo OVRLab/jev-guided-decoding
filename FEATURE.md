@@ -1,5 +1,15 @@
 # Feature: Jev-guided intermediate reasoning
 
+**R29-A in preparation:** the owner authorized implementing and exploring the
+[localized correction protocol](research/structured-correction-plan-v1.md), with
+five matched conditions and explicit preservation targets. Quality remains untested.
+
+**Next design proposal, 2026-09-26:** [localized Jev feedback with learned
+preservation](research/structured-correction-proposal.md) proposes training an
+internal correction branch to use targeted diagnoses while preserving correct
+answers. This supersedes older next-step suggestions below as the current
+recommendation, not an implemented feature or frozen execution protocol.
+
 **R28 completed and audited:** the [539-case IFEval report](reports/2026-09-25-routing-feedback/README.md)
 scores original Granite **408/539 (75.70%)** and
 Jev-selected live repair **379/539 (70.32%)**.

@@ -1,5 +1,20 @@
 # Study register
 
+**R29-A planned, 2026-09-26:** [localized correction capacity study](structured-correction-plan-v1.md).
+128 train / 32 development / 96 test authored temporal and compositional worlds;
+natural Granite drafts, five matched training conditions, two seeds, shuffled
+feedback, independently replayed oracle, and development-frozen retention. Source
+and data freeze precede inference. Reserve <=$8.50 within the cumulative $125 cap.
+This is not fresh public-benchmark or larger-model evidence.
+
+**Design recommendation, 2026-09-26 (not a new live study):**
+[Localized feedback and learned preservation](structured-correction-proposal.md)
+records the proposed next architecture and controls. Its post-hoc saved-pair oracle
+calculation is `(408 + 11) / 539 = 77.74%`, using the published R28 transitions;
+this is not a deployable score or a bound on future architectures. No new training,
+inference, API call, cloud allocation or spend occurred. A prospective execution
+protocol, cost estimate and test freeze are still required.
+
 **R28 completed and audited:** the [539-case IFEval report](../reports/2026-09-25-routing-feedback/README.md)
 scores original Granite **408/539 (75.70%)** and
 Jev-selected live repair **379/539 (70.32%)**.
