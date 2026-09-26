@@ -10,6 +10,8 @@ pass audit; public archives reproduce the identical analysis. Owned resources ar
 deleted; conservative cumulative estimate **$122.90/$175**, not an invoice.
 The broad benchmark/larger-model objective remains unachieved.
 
+**Single-question mechanical check, registered 2026-09-26:** [unpaid admission plan](musr-mechanical-admission.md) uses one previously exposed MuSR question and a fixed synthetic draft on local Granite/MPS. No Jev call, quality grading, trained checkpoint selection or new cloud spend is included. A tiny-model regression passes after an observed missing-helper failure; actual MPS results are pending.
+
 **MuSR single-question preparation, 2026-09-26:** [conditional transfer design](musr-transfer-design-draft.md) adds a separate exact-prefix runtime, one-question verifier and strict reference-free readout. Token alignment passes on all 756 pinned rows; 742 assembled cases comprise 12 exposed development questions and 730 fresh questions in 428 groups. Four duplicate-text options remain flagged, not discarded. Tiny-model/runtime and fake-provider tests pass; no new MuSR model/API evaluation or transfer success is claimed. R31 frozen sources remain unchanged.
 
 **R31 running:** [matched contextual memory](../reports/2026-09-26-contextual-memory/README.md) started at 12:44 UTC on

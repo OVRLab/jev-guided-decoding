@@ -126,3 +126,5 @@ Regression: `uv run --no-sync pytest -q tests/test_musr_single_interface.py test
 All 756 pinned-tokenizer alignments and the 742-case exposure-aware assembly pass.
 These are synthetic-span/tiny-model/fake-provider checks. Actual MuSR model/API
 admission, a final registered matrix and independent complete-run audit remain unrun.
+
+The separate [mechanical admission](research/musr-mechanical-admission.md) compares initial/off logits and nonzero-branch cached/full logits on an exact single-memory prefix. Regression: `uv run --no-sync pytest -q tests/test_musr_admission.py`. Actual-device results must be recorded separately from the passing tiny-model fixture.
