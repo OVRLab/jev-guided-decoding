@@ -1,5 +1,12 @@
 # Study register
 
+**MuSR exposure binding, 2026-09-26:** [author-metadata audit](musr-transfer-admission.md#exposure-and-scenario-binding-subsequent-structural-check)
+finds 125 paired murder scenarios, 64 object-placement stories and 250 team
+identity groups. The 12 previously used questions expand to 26 development-related
+rows; **730 questions / 428 groups** remain eligible for a fresh comparison.
+All 756 rows bind to pinned author/HF data; three offline regression tests pass.
+No new MuSR generation or Jev call occurred.
+
 **Prior-art update, 2026-09-26:** [focused comparison](contextual-memory-related-work.md)
 adds ATLAS, including its text-verifier variant, to the manuscript. Adaptive
 verifier-guided internal steering is existing work; any contribution requires a

@@ -48,6 +48,16 @@ the exact condition set, sample sizes, seeds and spending remain unregistered
 until R30 closes. A tiny-model test must verify independent equal initialization,
 correct memory ownership and checkpoint selection before implementation.
 
+## Identity and retention are different contracts
+
+An all-one correctness vector makes the residual branch exactly inactive. That
+means equality with unmodified Granite **on the same repair prompt**; it does
+not return the saved native draft automatically. A blind second pass can still
+change an originally correct answer. Retaining the original answer is a separate
+policy decision, so mechanical off-identity cannot be reported as a guarantee of
+semantic preservation. R30 deliberately records raw repair and retained policies
+separately. No result-dependent change is being made to either condition.
+
 ## Related work and limits
 
 [ReFT](https://arxiv.org/abs/2404.03592) already studies learned interventions in

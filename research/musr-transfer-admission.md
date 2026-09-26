@@ -56,3 +56,33 @@ only in grading and a separately named oracle diagnostic, never in live feedback
 This public-task candidate remains conditional on R30 and the next architecture
 study. No claimed win, paid launch or corpus-specific training follows from access
 and length feasibility alone.
+
+## Exposure and scenario binding (subsequent structural check)
+
+Prior R23–R27 output/receipt records contain the same 12 MuSR questions selected
+for R23 development. They are not untouched test cases. The author's original
+JSON also identifies counterfactual murder variants with a shared `story_hash_id`:
+250 murder narratives form **125 two-variant scenarios**, despite their distinct
+text. Using exact text alone would miss this dependency.
+
+The [frozen grouping/exposure map](diagnostics/musr-admission-20260926/grouping-and-exposure.json)
+joins every HF row to the author's data at
+`b1f4d4168a9cfc6760e8b74d728e4516023dfaa5`, using exact narrative, question and
+choice text. No label, belief state, skill value, best allocation or reasoning
+tree enters a grouping key or model input. Team grouping uses task strings and
+character names only and finds no repeated identities in this corpus; that is a
+specified grouping rule, not proof against every possible latent dependence.
+
+| Domain | Scenario groups | Prior direct questions | Questions excluded with related variants | Eligible fresh questions / groups |
+| --- | ---: | ---: | ---: | ---: |
+| Murder mysteries | 125 | 4 | 6 | 244 / 122 |
+| Object placements | 64 | 4 | 16 | 240 / 60 |
+| Team allocation | 250 | 4 | 4 | 246 / 246 |
+| Total | 439 | 12 | 26 | **730 / 428** |
+
+The [binding helper](diagnostics/musr_groups.py) has three offline tests covering
+counterfactual groups, hidden-label independence, duplicate rejection and exact
+source coverage. All 756 real rows bind successfully. A future full 756-row score
+must disclose the 26 development-related rows separately; it cannot be called
+756 entirely fresh questions. A confirmatory untouched comparison can use the
+730 eligible rows with these scenario groups, after a separately frozen protocol.
