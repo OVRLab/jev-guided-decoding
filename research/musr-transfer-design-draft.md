@@ -68,6 +68,10 @@ support bounded prompt/readout and verifier admission; they cannot become fresh
 confirmatory test data. MuSR includes beliefs and soft reasoning, which physical
 room tracking does not establish.
 
+“Fresh” here means not used in this project's earlier development or experiments.
+MuSR is public, and absence from the original models' pretraining data is unknown;
+this study cannot certify pretraining contamination is absent.
+
 Proposed controls are original Granite, an ordinary extra repair pass, the selected
 trained branch with live Jev, and the same branch with constant/donor feedback.
 Keep all denominators, exact final-token provenance, failed parsings, truncations,

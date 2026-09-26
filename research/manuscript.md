@@ -73,6 +73,16 @@ interventions with frozen backbones. [SCoRe](https://arxiv.org/abs/2409.12917)
 studies correction training with reinforcement learning; our small supervised
 adapter does not test that approach.
 
+A subsequent [targeted literature update](contextual-memory-related-work.md#expanded-search-while-r31-runs-26-september-2026),
+made while R31 was running, identifies closer precedents. [PoPE](https://arxiv.org/html/2607.12962v1)
+compares feedback content with matched placebos in frozen small code models.
+[Latent Reward Steering](https://arxiv.org/html/2606.00726v3) applies selective
+reward-gradient corrections to latent states, while [CRN v2](https://arxiv.org/html/2609.16145v1)
+studies a frozen backbone with a trained logit correction and preservation loss.
+These works further restrict our contribution to the particular mechanism and
+controlled empirical findings. We have not reproduced their methods, and their
+results are not directly comparable with our task scores.
+
 [RouteLLM](https://arxiv.org/abs/2406.18665) addresses model routing under quality
 and cost trade-offs. Our allocation is between retaining an answer and running
 a second pass through the same generator. [IFEval](https://arxiv.org/abs/2311.07911)
