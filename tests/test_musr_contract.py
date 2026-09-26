@@ -17,17 +17,22 @@ def fixture(tmp_path):
         path.write_text(json.dumps(value))
 
     raw, selected = {}, {}
-    for memory in ("contextual", "embedding"):
+    for condition in (
+        "contextual-scalar",
+        "embedding-scalar",
+        "contextual-constant",
+        "embedding-constant",
+    ):
         for seed in (3101, 3102):
-            name = f"{memory}-scalar-{seed}-epoch2.safetensors"
+            name = f"{condition}-{seed}-epoch2.safetensors"
             raw[name] = name.encode()
-            selected[f"{memory}-scalar/{seed}"] = dict(
+            selected[f"{condition}/{seed}"] = dict(
                 file=name,
                 sha256=hashlib.sha256(raw[name]).hexdigest(),
                 epoch=2,
                 scores=[0.1, 0.2],
-                memory=memory,
-                feedback="scalar",
+                memory=condition.split("-")[0],
+                feedback=condition.split("-")[1],
             )
     raw["selection.json"] = json.dumps(dict(models=selected)).encode()
     archives = {}
@@ -79,7 +84,7 @@ def test_checkpoint_lineage_requires_complete_cleanup_and_exact_development_epoc
     c = runpy.run_path(str(HERE / "contract.py"))
     selected = fixture(tmp_path)
     bundle = c["upstream"](tmp_path)
-    assert bundle["selection"] == selected and len(bundle["checkpoint_bytes"]) == 4
+    assert bundle["selection"] == selected and len(bundle["checkpoint_bytes"]) == 8
     assert bundle["lineage"]["prior_conservative_usd"] == 130
     cost = tmp_path / "cost-and-cleanup.json"
     original = cost.read_text()
@@ -97,8 +102,8 @@ def test_checkpoint_lineage_requires_complete_cleanup_and_exact_development_epoc
 
 def test_admission_budget_and_input_inventory_fail_closed(tmp_path):
     c = runpy.run_path(str(HERE / "contract.py"))
-    assert c["budget_ok"](dict(prior_conservative_usd=169.75, cumulative_cap_usd=175)) is None
-    for value in (169.751, float("nan"), -1, True):
+    assert c["budget_ok"](dict(prior_conservative_usd=169.5, cumulative_cap_usd=175)) is None
+    for value in (169.51, float("nan"), -1, True):
         with pytest.raises(ValueError, match="budget"):
             c["budget_ok"](dict(prior_conservative_usd=value, cumulative_cap_usd=175))
     folder = tmp_path / "input"

@@ -1,5 +1,15 @@
 # Study register
 
+**R32a result-informed control amendment, 2026-09-26:** After completed R31, the
+[conditional admission](musr-live-admission-v1.md) adds four independently
+constant-trained checkpoints while retaining the four planned scalar checkpoints.
+The former receive only their training-matched 0.5 signal. The matrix is now
+252 outputs and twelve Jev requests on twelve already exposed cases. The reserve
+is $5.50, including conservative cleanup time under the unchanged $175 cap.
+Seven expected regressions first reproduced missing checkpoints, excess signal
+arms, old budget/counts and absent two-seed aggregation. Implementation now passes
+the 32 focused MuSR tests; no new GPU or fresh-question evaluation is running.
+
 **R31 completed and audited, 2026-09-26:** [matched-memory study](../reports/2026-09-26-contextual-memory/README.md)
 records **30.08% original Granite, 46.29% scalar Jev repair and 47.85% separately
 constant-trained repair** on 256 fresh authored worlds. The scalar gain is

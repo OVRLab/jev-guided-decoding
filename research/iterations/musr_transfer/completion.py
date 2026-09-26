@@ -16,7 +16,9 @@ def metadata(m, evidence, adapters):
     hw, large, admission, done, original = (
         evidence[k] for k in ("hardware", "larger_hardware", "admission", "complete", "original")
     )
-    original_outputs = m["planned_cases"] * (3 + 3 * len(m["specs"]))
+    original_outputs = m["planned_cases"] * (
+        3 + sum(1 if name.endswith("-constant") else 3 for name, _ in m["specs"])
+    )
     if (
         any(h["device"] not in ("cuda", "cuda:0") or h["eos"] != [100257] for h in (hw, large))
         or hw["dtype"] != "torch.float32"
@@ -74,7 +76,7 @@ def summarize(cases, refs, rows, responses):
         )
     grouped = {arm: [arm] for arm in arms}
     for arm in arms:
-        if re.fullmatch(r"(live|constant|donor)/(contextual|embedding)-scalar/\d+", arm):
+        if re.fullmatch(r"(live|constant|donor)/(contextual|embedding)-(scalar|constant)/\d+", arm):
             grouped.setdefault(arm.rsplit("/", 1)[0], []).append(arm)
     scores, preservation = {}, {}
     for name, members in grouped.items():

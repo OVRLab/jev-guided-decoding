@@ -127,7 +127,15 @@ def test_complete_worker_flow_with_tiny_models_fake_provider_and_simulated_devic
     inputs = tmp_path / "input"
     inputs.mkdir()
     (inputs / "adapters").mkdir()
-    specs = [["contextual-scalar", 3101], ["embedding-scalar", 3101]]
+    specs = [
+        [name, 3101]
+        for name in (
+            "contextual-scalar",
+            "embedding-scalar",
+            "contextual-constant",
+            "embedding-constant",
+        )
+    ]
     selection = {}
     for name, seed in specs:
         adapter = runtime["B"]["Repair"](16, 4).eval().requires_grad_(False)
@@ -151,7 +159,7 @@ def test_complete_worker_flow_with_tiny_models_fake_provider_and_simulated_devic
         api_delay_seconds=0,
         larger_profiles=["nonthinking", "thinking"],
         planned_cases=4,
-        planned_outputs=44,
+        planned_outputs=52,
         planned_requests=4,
     )
     for name, value in (
@@ -176,11 +184,11 @@ def test_complete_worker_flow_with_tiny_models_fake_provider_and_simulated_devic
     asyncio.run(execute(SimpleNamespace(input=inputs, output=output, device="cuda", key_file=key)))
     complete = json.loads((output / "complete.json").read_text())
     assert (
-        complete["outputs"] == 44
+        complete["outputs"] == 52
         and complete["requests"] == 4
         and complete["charged_input_tokens"] == 1000
     )
     assert not (output / "failed.json").exists()
-    assert len((output / "original/outputs.jsonl").read_text().splitlines()) == 36
+    assert len((output / "original/outputs.jsonl").read_text().splitlines()) == 44
     assert len((output / "larger/outputs.jsonl").read_text().splitlines()) == 8
     assert not any(b._forward_hooks for b in model.model.layers)

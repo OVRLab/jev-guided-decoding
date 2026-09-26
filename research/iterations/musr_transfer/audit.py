@@ -158,7 +158,13 @@ def check_run(cases, groups, output, tok, manifest, adapter_digests, *, width=20
         raise ValueError("Changed scenario donor mapping")
     ids = {c["id"] for c in cases}
     arms = ["native", "blind", "text"] + [
-        f"{control}/{name}" for name in adapter_digests for control in ("live", "constant", "donor")
+        f"{control}/{name}"
+        for name in adapter_digests
+        for control in (
+            ("constant",)
+            if name.partition("/")[0].endswith("-constant")
+            else ("live", "constant", "donor")
+        )
     ]
     rows = lines(output / "outputs.jsonl")
     table = {(r["id"], r["arm"]): r for r in rows}

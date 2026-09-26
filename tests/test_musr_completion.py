@@ -28,14 +28,14 @@ def test_completion_rejects_wrong_device_dtype_changed_weights_and_incomplete_wo
         dummy_adapter_parameters=262144,
     )
     complete = dict(
-        outputs=204,
+        outputs=252,
         requests=12,
         charged_input_tokens=1000,
         seconds=300,
         post_original_load_seconds=250,
     )
     original = dict(
-        outputs=180,
+        outputs=228,
         backbone_before=digest,
         backbone_after=digest,
         adapters_before=adapters,
@@ -55,7 +55,7 @@ def test_completion_rejects_wrong_device_dtype_changed_weights_and_incomplete_wo
         ("hardware", "dtype", "torch.bfloat16"),
         ("admission", "cache_argmax_equal", False),
         ("original", "backbone_after", "b" * 64),
-        ("complete", "outputs", 203),
+        ("complete", "outputs", 251),
         ("complete", "post_original_load_seconds", 5500),
     ):
         changed = copy.deepcopy(evidence)
@@ -84,11 +84,15 @@ def test_development_summary_keeps_unfinished_thinking_and_fix_damage_denominato
             ("native", "ANSWER: 1"),
             ("live/contextual-scalar/3101", "ANSWER: 2"),
             ("live/contextual-scalar/3102", "ANSWER: 1"),
+            ("constant/contextual-constant/3101", "ANSWER: 2"),
+            ("constant/contextual-constant/3102", "ANSWER: 1"),
             ("larger/thinking", "ANSWER: 2"),
         ):
             rows.append(dict(id=case["id"], arm=arm, text=text, finish_reason="eos"))
     responses = [dict(id=c["id"], probability=0.8) for c in cases]
     summary = module["summarize"](cases, refs, rows, responses)
+    assert summary["scores"]["constant/contextual-constant"]["accuracy"] == 0.5
+    assert summary["scores"]["constant/contextual-constant"]["seed_outputs"] == 2
     assert summary["scores"]["native"]["accuracy"] == 0.5
     assert summary["scores"]["live/contextual-scalar"]["accuracy"] == 0.5
     assert summary["preservation"]["live/contextual-scalar/3101"] == dict(fixed=1, damaged=1)

@@ -171,8 +171,9 @@ verifies unchanged. CLI help works via `uv run --no-sync python research/iterati
 
 Before the R32a freeze, an ordinary text-feedback arm was added to compare channels
 using the same actual Jev probability. No adapter or extra request enters that arm.
-The registered admission now plans 204 outputs and 12 requests; its full simulated worker
-fixture produces 44 outputs and four fake requests. Exact native prefixes and the rendered
+That initial amendment planned 204 outputs and 12 requests; its simulated worker
+fixture produced 44 outputs and four fake requests. The later constant-trained
+control amendment below expands this coverage. Exact native prefixes and the rendered
 probability are independently checked. Regression also rejects nonfinite/invalid
 probability inputs and changed text-feedback prompt tokens. This is a prospective
 control addition; it changes no R31 execution or previously archived outcome.
@@ -190,3 +191,16 @@ constant-trained control, and correction/preservation trade-off. Both PNG figure
 were visually inspected; a caption collision was corrected before publication.
 The plotting command and pinned environment are in the report. Public transfer,
 conditional dispatch savings and larger-model superiority remain unverified.
+
+
+## R32a independent constant-trained controls
+
+The amended MuSR flow includes scalar and separately constant-trained checkpoints
+under both memory types/seeds. Only scalar-trained checkpoints have live, same-
+checkpoint constant and donor transforms; constant-trained checkpoints receive
+0.5 only. Native, blind, ordinary text feedback and both larger-model modes remain.
+Regression-first coverage verifies 44 pipeline outputs and 52 combined outputs in the
+four-case tiny-model fixture, with only four simulated provider requests. The
+record auditor rejects changed constant-arm probabilities, while the completed
+summary retains both seeds. The actual admission plans 252 outputs/12 requests,
+with a $5.50 reserve and unchanged two-hour execution ceiling; it is not yet run.

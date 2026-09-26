@@ -12,7 +12,7 @@ def test_independent_transfer_records_reject_changed_prefix_feedback_memory_and_
     audit = runpy.run_path(str(ROOT / "research/iterations/musr_transfer/audit.py"))["check_run"]
     fixture = runpy.run_path(str(ROOT / "tests/test_musr_pipeline.py"))["exercise"](tmp_path)
     result = audit(**fixture)
-    assert result["outputs"] == 36 and result["requests"] == 4
+    assert result["outputs"] == 44 and result["requests"] == 4
     assert result["input_tokens"] == 1000 and result["memory_extractions"] == 4
 
     def reject(name, mutation):
@@ -38,6 +38,12 @@ def test_independent_transfer_records_reject_changed_prefix_feedback_memory_and_
     reject(
         "outputs.jsonl",
         lambda rows: next(r for r in rows if r["arm"] == "text")["prompt_token_ids"].append(1),
+    )
+    reject(
+        "outputs.jsonl",
+        lambda rows: next(r for r in rows if "-constant/" in r["arm"]).update(
+            probabilities=[0.2] * 3
+        ),
     )
     reject("outputs.jsonl", lambda rows: rows[0].update(processed_tokens=0))
     reject(

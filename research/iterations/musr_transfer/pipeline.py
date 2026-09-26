@@ -209,11 +209,16 @@ class Runner:
             )
             for (name, seed), adapter in sorted(adapters.items()):
                 vector = item["memories"][name.split("-")[0]]
-                for control, p in (
-                    ("live", item["p"]),
-                    ("constant", 0.5),
-                    ("donor", self.prepared[pairing[case["id"]]]["p"]),
-                ):
+                controls = (
+                    (("constant", 0.5),)
+                    if name.endswith("-constant")
+                    else (
+                        ("live", item["p"]),
+                        ("constant", 0.5),
+                        ("donor", self.prepared[pairing[case["id"]]]["p"]),
+                    )
+                )
+                for control, p in controls:
                     memory, _ = S["as_three_slots"](vector, p)
                     self.answer(
                         case,

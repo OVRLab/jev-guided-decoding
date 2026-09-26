@@ -37,7 +37,12 @@ def fixed():
         rank=32,
         specs=[
             [name, seed]
-            for name in ("contextual-scalar", "embedding-scalar")
+            for name in (
+                "contextual-scalar",
+                "embedding-scalar",
+                "contextual-constant",
+                "embedding-constant",
+            )
             for seed in (3101, 3102)
         ],
         readout_version=S["READOUT_VERSION"],
@@ -49,13 +54,13 @@ def fixed():
         usd_per_million=0.05,
         api_delay_seconds=0.25,
         planned_cases=12,
-        planned_outputs=204,
+        planned_outputs=252,
         planned_requests=12,
         larger_model=COMP["MODEL"],
         larger_revision=COMP["REVISION"],
         larger_dtype="torch.bfloat16",
         larger_profiles=["nonthinking", "thinking"],
-        stage_reserve_usd=5.25,
+        stage_reserve_usd=5.50,
         cumulative_cap_usd=175,
     )
 
@@ -143,9 +148,9 @@ def upstream(report=REPORT):
             row["epoch"] != epoch
             or row["file"] != file
             or row["memory"] != name.split("-")[0]
-            or row["feedback"] != "scalar"
+            or row["feedback"] != name.split("-")[1]
         ):
-            raise ValueError("Checkpoint is not the development-selected scalar condition")
+            raise ValueError("Checkpoint is not the registered development-selected condition")
         binary = member("adapters.tar.gz", file)
         if hashlib.sha256(binary).hexdigest() != row["sha256"]:
             raise ValueError("Checkpoint selection digest mismatch")

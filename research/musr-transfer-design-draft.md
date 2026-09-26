@@ -246,3 +246,23 @@ complete two-model fixture produces 44, each with the same four fake provider
 receipts. The final record auditor reconstructs the text prompt from the actual
 response and rejects alterations. Thirty-two focused MuSR tests pass. R31 sources
 remain frozen and its held-out quality was not inspected to choose this control.
+
+
+### Result-informed independent constant-trained controls
+
+Completed R31 yields 46.29% scalar repair and 47.85% contextual constant-trained
+repair, with zero versus 7/4 damaged native passes across seeds. The prospective
+[R32a amendment](musr-live-admission-v1.md) therefore preserves the scalar conditions
+and adds both constant-trained memory types/seeds, selected by their original
+R31 development epochs. Each constant-trained checkpoint receives only 0.5.
+This is a strong Jev-free recipe comparison, distinct from replacing feedback
+inside a Jev-trained checkpoint. No R31 source or result is modified.
+
+Seven tests first failed for the missing checkpoint set, incorrect arm matrix,
+old budget/counts and missing grouped summary. The corrected pipeline fixture now
+produces 44 real tiny-model EOS outputs and the combined fixture 52, with unchanged
+four fake provider requests. The independent auditor rejects altered feedback on
+a constant-trained arm. Thirty-two focused MuSR tests pass. The live matrix plans
+252 outputs/12 requests; the $5.50 envelope includes fifteen minutes of conservative
+cleanup accounting beyond the two-hour execution expiry. No new cloud run or
+fresh-case protocol is admitted by these offline fixtures.

@@ -97,15 +97,20 @@ def exercise(tmp_path):
             asyncio.run(runner.drafts(cases[:1]))
         assert budget.charged_tokens == 1000 and not budget.unresolved
     adapters = {}
-    for kind in ("contextual", "embedding"):
+    for kind in (
+        "contextual-scalar",
+        "embedding-scalar",
+        "contextual-constant",
+        "embedding-constant",
+    ):
         adapter = runner.runtime["B"]["Repair"](16, 4).eval()
         with torch.no_grad():
             adapter.up.weight.normal_(std=0.2)
-        adapters[kind + "-scalar", 1] = adapter
+        adapters[kind, 1] = adapter
     runner.repairs(cases, groups, adapters)
     rows = [json.loads(s) for s in (out / "outputs.jsonl").read_text().splitlines()]
     bindings = [json.loads(s) for s in (out / "generation-bindings.jsonl").read_text().splitlines()]
-    assert len(rows) == len(bindings) == 36
+    assert len(rows) == len(bindings) == 44
     assert len(list((out / "memories").glob("*.safetensors"))) == 4
     assert all(r["generated_token_ids"] == [0] and r["finish_reason"] == "eos" for r in rows)
     assert all(r["text"] == "" for r in rows)
@@ -127,6 +132,9 @@ def exercise(tmp_path):
             suffix = runner.tok.decode(row["prompt_token_ids"][len(original) :])
             assert str(probability) in suffix and "fallible" in suffix
             assert row["events"] == [] and row["probabilities"] is None
+        if "-constant/" in row["arm"]:
+            assert row["arm"].startswith("constant/")
+            assert row["probabilities"] == [0.5] * 3
         if row["arm"].startswith("live/"):
             actual_provider_probability = (int(row["id"].split("/")[-1]) + 1) / 5
             assert row["probabilities"] == [actual_provider_probability] * 3
