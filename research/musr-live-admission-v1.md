@@ -18,8 +18,12 @@ The dataset and its raw metadata retain their upstream terms.
 
 For each question generate original Granite, collect one Jev 1.13 judgment, extract
 one vector of each memory type from exact original tokens, and generate blind
-repair plus live/constant-0.5/scenario-independent-donor repairs for all four
-adapters. This is 14 original-backbone outputs per case, 168 total, and 12 Jev
+repair, ordinary text-feedback repair, and live/constant-0.5/scenario-independent-donor
+repairs for all four adapters. The text control conveys the same actual scalar
+judgment in a new user instruction; its model has no adapter. Keep the exact native
+token prefix, declare that its feedback channel changes the repair instruction,
+and count its additional prompt tokens. This is 15 original-backbone outputs per
+case, 180 total, and 12 Jev
 requests. Use the frozen single-question prompt and `musr-exact-selection-v2`
 parser, FP32, greedy decoding, 1,024 new tokens and 4,096 total-context ceiling.
 No truncation or constrained grammar. Granite owns every final token. A missing
@@ -32,7 +36,7 @@ ceiling and deterministic per-case/profile seeds from SHA-256 of
 `3200/{profile}/{case_id}`, first eight bytes modulo 2^63. Preserve its own chat
 template and require closed thinking before scoring. Its limits, precision and
 sampling differ from the small generator and must be reported. This adds 24
-outputs, making **192 planned outputs**. No Jev or adapter is attached to the
+outputs, making **204 planned outputs**. No Jev or adapter is attached to the
 larger comparator; Jev's undisclosed size still belongs to combined-system claims.
 
 Require actual CUDA initial/off identity and nonzero cached/full agreement for
@@ -58,3 +62,9 @@ test on twelve cases determines a winner. The next fresh-case protocol must be
 frozen separately, using measured throughput to choose an affordable complete
 matrix before fresh labels/outputs are inspected. A failure preserves evidence,
 cost and cleanup; it does not silently license modified reruns.
+
+Pre-freeze amendment: the text-feedback control was added while R31 held-out
+generation was running and before inspecting its quality. It tests the added
+value of an internal channel against an ordinary way to give Granite the same
+judgment. It adds twelve generations and no provider requests within the unchanged
+stage envelope. The running R31 protocol and comparisons are unaffected.

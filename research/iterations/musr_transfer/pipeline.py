@@ -197,6 +197,16 @@ class Runner:
         for case in cases:
             item = self.prepared[case["id"]]
             self.answer(case, "blind", item["prompt"])
+            self.answer(
+                case,
+                "text",
+                S["repair_prefix"](
+                    self.tok,
+                    item["native"]["prompt_token_ids"],
+                    item["native"]["generated_token_ids"],
+                    feedback=item["p"],
+                ),
+            )
             for (name, seed), adapter in sorted(adapters.items()):
                 vector = item["memories"][name.split("-")[0]]
                 for control, p in (

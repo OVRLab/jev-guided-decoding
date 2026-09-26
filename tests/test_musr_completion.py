@@ -28,14 +28,14 @@ def test_completion_rejects_wrong_device_dtype_changed_weights_and_incomplete_wo
         dummy_adapter_parameters=262144,
     )
     complete = dict(
-        outputs=192,
+        outputs=204,
         requests=12,
         charged_input_tokens=1000,
         seconds=300,
         post_original_load_seconds=250,
     )
     original = dict(
-        outputs=168,
+        outputs=180,
         backbone_before=digest,
         backbone_after=digest,
         adapters_before=adapters,
@@ -55,7 +55,7 @@ def test_completion_rejects_wrong_device_dtype_changed_weights_and_incomplete_wo
         ("hardware", "dtype", "torch.bfloat16"),
         ("admission", "cache_argmax_equal", False),
         ("original", "backbone_after", "b" * 64),
-        ("complete", "outputs", 191),
+        ("complete", "outputs", 203),
         ("complete", "post_original_load_seconds", 5500),
     ):
         changed = copy.deepcopy(evidence)

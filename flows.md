@@ -168,3 +168,11 @@ flow with a simulated device gate. This fixture uses CPU tensors and cannot pass
 the actual CUDA/dtype completion audit. The real twelve-case CUDA/Jev/larger-model
 admission and any 730-case fresh evaluation remain unrun. R31's active freeze still
 verifies unchanged. CLI help works via `uv run --no-sync python research/iterations/musr_transfer/study.py --help`.
+
+Before the R32a freeze, an ordinary text-feedback arm was added to compare channels
+using the same actual Jev probability. No adapter or extra request enters that arm.
+The registered admission now plans 204 outputs and 12 requests; its full simulated worker
+fixture produces 44 outputs and four fake requests. Exact native prefixes and the rendered
+probability are independently checked. Regression also rejects nonfinite/invalid
+probability inputs and changed text-feedback prompt tokens. This is a prospective
+control addition; it changes no R31 execution or previously archived outcome.

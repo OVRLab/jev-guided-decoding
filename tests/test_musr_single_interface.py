@@ -103,6 +103,29 @@ def test_final_numbered_option_after_prose_is_readable_without_relaxing_ambiguit
     assert parse("Some reasoning.</think>\nQuestion\n2. Bob", choices, thinking=True)["index"] == 1
 
 
+def test_text_feedback_prefix_preserves_native_tokens_and_only_accepts_real_probabilities():
+    prefix = runpy.run_path(str(HERE / "single.py"))["repair_prefix"]
+
+    class Tok:
+        def convert_tokens_to_ids(self, token):
+            return 0
+
+        def encode(self, text, **kwargs):
+            return list(text.encode())
+
+    original = [10, 11, 12]
+    draft = [65, 0]
+    result = prefix(Tok(), original, draft, feedback=0.2)
+    assert result[:5] == original + draft
+    suffix = bytes(result[5:]).decode()
+    assert "0.2" in suffix and "probability" in suffix and "fallible" in suffix
+    assert "ANSWER: <choice number>" in suffix
+    assert result != prefix(Tok(), original, draft)
+    for value in (True, float("nan"), float("inf"), -0.1, 1.1, "0.2"):
+        with pytest.raises(ValueError, match="probability"):
+            prefix(Tok(), original, draft, feedback=value)
+
+
 def test_repeated_internal_slots_equal_one_slot_for_nonzero_learned_branch():
     torch = pytest.importorskip("torch")
     s = runpy.run_path(str(HERE / "single.py"))

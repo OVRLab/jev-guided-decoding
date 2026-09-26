@@ -1,5 +1,6 @@
 """Unpaid single-question interface prototype; no public study is admitted here."""
 
+import json
 import math
 import re
 import runpy
@@ -163,7 +164,7 @@ def as_three_slots(vector, probability):
     return vector.repeat(3, 1), torch.full((3,), float(probability), device=vector.device)
 
 
-def repair_prefix(tok, prompt, draft):
+def repair_prefix(tok, prompt, draft, *, feedback=None):
     end = tok.convert_tokens_to_ids("<|end_of_text|>")
     if (
         not prompt
@@ -179,6 +180,19 @@ def repair_prefix(tok, prompt, draft):
         "and preserve it if already correct. End with exactly one final line in the form "
         "ANSWER: <choice number>."
     )
+    if feedback is not None:
+        if (
+            type(feedback) not in (int, float)
+            or not math.isfinite(feedback)
+            or not 0 <= feedback <= 1
+        ):
+            raise ValueError("Invalid text-feedback probability")
+        instruction = (
+            "A verifier estimates a probability of "
+            + json.dumps(float(feedback), allow_nan=False)
+            + " that your previous answer is correct. Use this fallible judgment when "
+            "checking the original story.\n\n" + instruction
+        )
     suffix = (
         "\n<|start_of_role|>user<|end_of_role|>"
         + instruction

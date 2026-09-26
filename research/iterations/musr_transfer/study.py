@@ -184,7 +184,7 @@ async def execute(args):
         CONTRACT["verify"](args.input)
         if time.monotonic() - started > m["max_seconds"]:
             raise TimeoutError("Combined R32a deadline exceeded")
-        total = m["planned_cases"] * (2 + 3 * len(m["specs"]) + len(m["larger_profiles"]))
+        total = m["planned_cases"] * (3 + 3 * len(m["specs"]) + len(m["larger_profiles"]))
         if total != m["planned_outputs"]:
             raise ValueError("Changed planned coverage")
         dump(

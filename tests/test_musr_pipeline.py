@@ -105,14 +105,14 @@ def exercise(tmp_path):
     runner.repairs(cases, groups, adapters)
     rows = [json.loads(s) for s in (out / "outputs.jsonl").read_text().splitlines()]
     bindings = [json.loads(s) for s in (out / "generation-bindings.jsonl").read_text().splitlines()]
-    assert len(rows) == len(bindings) == 32
+    assert len(rows) == len(bindings) == 36
     assert len(list((out / "memories").glob("*.safetensors"))) == 4
     assert all(r["generated_token_ids"] == [0] and r["finish_reason"] == "eos" for r in rows)
     assert all(r["text"] == "" for r in rows)
     assert all(
         b["adapter_digest"] is not None and b["memory_digest"] is not None
         for b in bindings
-        if b["arm"] not in ("native", "blind")
+        if b["arm"] not in ("native", "blind", "text")
     )
     natives = {r["id"]: r for r in rows if r["arm"] == "native"}
     for row in rows:
@@ -120,8 +120,13 @@ def exercise(tmp_path):
             continue
         original = natives[row["id"]]["prompt_token_ids"] + [0]
         assert row["prompt_token_ids"][: len(original)] == original
-        if row["arm"] != "blind":
+        if row["arm"] not in ("blind", "text"):
             assert row["events"][0]["positions"] == [len(row["prompt_token_ids"]) - 1]
+        if row["arm"] == "text":
+            probability = (int(row["id"].split("/")[-1]) + 1) / 5
+            suffix = runner.tok.decode(row["prompt_token_ids"][len(original) :])
+            assert str(probability) in suffix and "fallible" in suffix
+            assert row["events"] == [] and row["probabilities"] is None
         if row["arm"].startswith("live/"):
             actual_provider_probability = (int(row["id"].split("/")[-1]) + 1) / 5
             assert row["probabilities"] == [actual_provider_probability] * 3

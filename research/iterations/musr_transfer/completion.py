@@ -16,7 +16,7 @@ def metadata(m, evidence, adapters):
     hw, large, admission, done, original = (
         evidence[k] for k in ("hardware", "larger_hardware", "admission", "complete", "original")
     )
-    original_outputs = m["planned_cases"] * (2 + 3 * len(m["specs"]))
+    original_outputs = m["planned_cases"] * (3 + 3 * len(m["specs"]))
     if (
         any(h["device"] not in ("cuda", "cuda:0") or h["eos"] != [100257] for h in (hw, large))
         or hw["dtype"] != "torch.float32"

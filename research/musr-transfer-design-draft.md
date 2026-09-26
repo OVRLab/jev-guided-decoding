@@ -228,3 +228,21 @@ wrapper checks original/adapter identity, complete planned work, receipt counts
 and temporal order before descriptive development grading. All 723 local tests,
 lint/format, docs checks and packaging build pass at this preparation stage.
 Actual admission, fresh protocol selection and public accuracy remain pending.
+
+### Ordinary text-feedback control before the R32a freeze
+
+The same scalar can also be supplied to unmodified Granite as a fallible judgment
+in the repair instruction. The [conditional admission](musr-live-admission-v1.md)
+now includes this control alongside native and blind repair, so the internal branch
+can be compared with a simple information-matched feedback channel. Its prompt
+contains the exact round-trip decimal probability and original draft token prefix,
+with no adapter, new Jev request or reference label. Additional prompt tokens are
+recorded; these channels do not have identical prompt lengths.
+
+The added-prefix test first failed because the option was unavailable, and the
+serial-coverage regression first observed 32 instead of the required 36 fixture
+outputs. After implementation, the pipeline fixture produces 36 outputs and the
+complete two-model fixture produces 44, each with the same four fake provider
+receipts. The final record auditor reconstructs the text prompt from the actual
+response and rejects alterations. Thirty-two focused MuSR tests pass. R31 sources
+remain frozen and its held-out quality was not inspected to choose this control.

@@ -49,7 +49,7 @@ def fixed():
         usd_per_million=0.05,
         api_delay_seconds=0.25,
         planned_cases=12,
-        planned_outputs=192,
+        planned_outputs=204,
         planned_requests=12,
         larger_model=COMP["MODEL"],
         larger_revision=COMP["REVISION"],

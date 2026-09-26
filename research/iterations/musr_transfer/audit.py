@@ -157,7 +157,7 @@ def check_run(cases, groups, output, tok, manifest, adapter_digests, *, width=20
     if json.loads((output / "donors.json").read_text()) != pairing:
         raise ValueError("Changed scenario donor mapping")
     ids = {c["id"] for c in cases}
-    arms = ["native", "blind"] + [
+    arms = ["native", "blind", "text"] + [
         f"{control}/{name}" for name in adapter_digests for control in ("live", "constant", "donor")
     ]
     rows = lines(output / "outputs.jsonl")
@@ -215,10 +215,15 @@ def check_run(cases, groups, output, tok, manifest, adapter_digests, *, width=20
         )
         values = digest = adapter = None
         if arm != "native":
-            prompt = S["repair_prefix"](tok, prompt, native[ident]["generated_token_ids"])
+            prompt = S["repair_prefix"](
+                tok,
+                prompt,
+                native[ident]["generated_token_ids"],
+                feedback=response[ident]["probability"] if arm == "text" else None,
+            )
             if row["at"] < memory_rows[ident]["at"]:
                 raise ValueError("Repair precedes memory extraction")
-        if arm not in ("native", "blind"):
+        if arm not in ("native", "blind", "text"):
             control, name, seed = arm.split("/")
             p = (
                 0.5
