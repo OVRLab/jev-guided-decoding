@@ -10,11 +10,11 @@ pass audit; public archives reproduce the identical analysis. Owned resources ar
 deleted; conservative cumulative estimate **$122.90/$175**, not an invoice.
 The broad benchmark/larger-model objective remains unachieved.
 
-**R31 registered, not run:** [matched contextual memory](research/contextual-memory-plan-v1.md) crosses two memory
-types, structured/scalar/constant feedback and two seeds. Scalar is the lead based
-on the earlier R30 result. Reserve at most $16; freeze source/inputs and admit the
-actual CUDA worker before training. This is a prospective twelve-adapter comparison,
-not an already improved model or a quality claim.
+**R31 running:** [matched contextual memory](reports/2026-09-26-contextual-memory/README.md) started at 12:44 UTC on
+one AWS L4. The frozen twelve-adapter comparison passed actual CUDA mechanical
+admission and is collecting native drafts with live Jev judgments; no quality
+result exists yet. Its $16 stage envelope fits the cumulative $175 cap. The
+[device-label audit correction](research/contextual-memory-audit-correction.md) leaves the frozen experiment unchanged.
 
 Earlier status entries below are historical.
 

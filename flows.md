@@ -63,7 +63,7 @@ reject changed prompts/tokens/charges and refuse manifests that relax the regist
 limits or omit checkpoints. Offline policy replay does not measure skipped calls.
 
 
-## R31 contextual memory (registered, not yet run)
+## R31 contextual memory (running; quality unknown)
 
 See [proposal](research/contextual-memory-proposal.md). Exact original prompt and
 native draft IDs become three question/field position sets. One frozen, unmodified
@@ -106,3 +106,8 @@ Regression: `uv run --no-sync pytest -q tests/test_contextual_contract.py tests/
 The four primary comparisons use scalar as lead, chosen after R30 but before R31
 inference; the structured-memory contrast and memory-by-feedback interaction remain
 reported secondary analyses.
+
+Actual R31 CUDA admission passed. The separate [audit correction](research/contextual-memory-audit-correction.md)
+normalizes `cuda:0` to `cuda` in memory, preserves raw bytes and rejects non-CUDA or
+other-device records. Regression: `uv run --no-sync pytest -q tests/test_contextual_audit_device.py`.
+No frozen worker/source/protocol change is made; full quality audit remains pending.
