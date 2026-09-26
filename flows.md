@@ -128,3 +128,11 @@ These are synthetic-span/tiny-model/fake-provider checks. Actual MuSR model/API
 admission, a final registered matrix and independent complete-run audit remain unrun.
 
 The separate [mechanical admission](research/musr-mechanical-admission.md) compares initial/off logits and nonzero-branch cached/full logits on an exact single-memory prefix. Regression: `uv run --no-sync pytest -q tests/test_musr_admission.py`. Actual-device results must be recorded separately from the passing tiny-model fixture.
+
+The candidate serial pipeline and record auditor bind complete native/blind/live/
+constant/donor outputs to exact memory, fixed checkpoints, receipts and maximum
+pre-dispatch reservations. Donors never share a scenario group. Label-side grading
+separates indexed choices from duplicate-text sensitivity; uncertainty resamples
+whole scenarios. Regression: `uv run --no-sync pytest -q tests/test_musr_pipeline.py tests/test_musr_audit.py tests/test_musr_analysis.py`.
+These checks pass on a tiny EOS-only model and fake provider; the final study
+wrapper and actual public benchmark run are not admitted by the helper tests.

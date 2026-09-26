@@ -23,6 +23,12 @@ up to floating-point arithmetic. This needs a numerical regression using nonzero
 weights and multiple hidden states. It is an interface equivalence, not evidence
 that a three-question-trained adapter generalizes well to this distribution.
 
+With one effective slot, attention no longer chooses among distinct memories;
+the learned key projection has no effect on that weighting. The branch still
+uses the current hidden state and the memory's value projection. This is a real
+interface/distribution change to disclose in transfer results, not an assumption
+that the original three-question mechanism is preserved in every detail.
+
 Contextual and matched embedding memories must use the same positions. Keep the
 original block and trained matrices unchanged; exact native tokens remain in the
 repair prefix, with a new single-question repair instruction. R29's instruction
@@ -170,3 +176,35 @@ then passed. Twelve focused local tests pass after these corrections. The origin
 preparation snapshot remains available; [revised sources](diagnostics/musr-single-interface-20260926/source-inventory-v2.json)
 bind the corrected preparation. Existing least-initialized-state guidance already
 covers this lesson; no additional optional dependency is added to core CI.
+
+### Serial pipeline and independent record checks
+
+The [candidate pipeline](iterations/musr_transfer/pipeline.py) now archives native
+outputs, one-question receipts, single-vector memory tensors, exact repair prefixes
+and live/constant/donor repairs for supplied fixed checkpoints. It accepts no
+reference-label argument. Donor pairing preserves the within-task probability
+multiset while forbidding a shared scenario group; an impossible derangement
+fails before repair. Repeated preparation, output paths and repair phases are
+refused. Each call binds actual adapter/tensor digests, exact probabilities, work
+and intervention positions. Provider probabilities are preserved in records before
+the model's normal FP32 tensor conversion.
+
+The [record auditor](iterations/musr_transfer/audit.py) independently reconstructs
+that coverage, token chain, memory placement, feedback payloads, ledger settlements,
+checkpoint bindings and serial jobs. It replays maximum reservations before each
+dispatch rather than checking only cheap final usage. Mutation tests reject altered
+records. This is a record-level auditor; the final source/data/checkpoint freeze,
+actual GPU admission and completion/weight evidence still need their study wrapper.
+
+[Label-side analysis](iterations/musr_transfer/analysis.py) keeps indexed-choice
+accuracy separate from the duplicate-text equivalence sensitivity. Its paired
+bootstrap resamples scenarios within task and preserves task weights for the
+question-weighted effect, with an additional equal-task summary. Replicating each
+question within its original scenario does not artificially narrow uncertainty.
+The final protocol must bind the comparisons, seed and multiplicity family before
+inference; helper defaults are not study registration.
+
+The end-to-end fixture uses a tiny random model with an EOS-only output head and
+a fake provider, producing 32 real model completion decisions and four simulated
+judgments. It verifies mechanics, including empty EOS, and says nothing about
+MuSR quality. All additions remain outside the unchanged active R31 inventory.
